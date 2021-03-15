@@ -50,7 +50,7 @@ jobs:
           git clone --depth=1 https:///github.com/symbol-management/symbol-exporter
           pushd symbol-exporter
           pip install --no-deps .
-          conda install --file run.txt -y
+          conda install --file requirements/run.txt -y
           popd
 
       - name: extract_symbols
