@@ -1,10 +1,5 @@
 {
  "bad": [
-  "argcomplete.completers.ChoicesCompleter",
-  "catkin_pkg.package.InvalidPackage",
-  "catkin_pkg.package.has_ros_schema_reference",
-  "catkin_pkg.package.package_exists_at",
-  "catkin_pkg.package.parse_package",
   "colcon_argcomplete.argcomplete_completer.ArgcompleteCompleterExtensionPoint",
   "colcon_argcomplete.argcomplete_completer.ArgcompleteCompleterExtensionPoint.EXTENSION_POINT_VERSION",
   "colcon_cmake.argcomplete_completer.cmake_args.get_cmake_args_completer_choices",
@@ -42,30 +37,6 @@
   "colcon_core.task.python.get_setup_data",
   "colcon_core.task.python.test.PythonTestTask",
   "colcon_python_setup_py.package_identification.python_setup_py.get_setup_information",
-  "colcon_ros.argcomplete_completer.catkin_cmake_args.get_catkin_cmake_args_completer_choices",
-  "colcon_ros.package_identification.ros._cached_packages",
-  "colcon_ros.package_identification.ros._create_metadata",
-  "colcon_ros.package_identification.ros._get_build_type",
-  "colcon_ros.package_identification.ros._get_package",
-  "colcon_ros.package_identification.ros.get_package_with_build_type",
-  "colcon_ros.prefix_path.ament._get_ament_prefix_path_warnings",
-  "colcon_ros.prefix_path.ament.logger",
-  "colcon_ros.prefix_path.catkin._get_cmake_prefix_path_warnings",
-  "colcon_ros.prefix_path.catkin.logger",
-  "colcon_ros.task.add_app_to_cpp",
-  "colcon_ros.task.ament_cmake.build.logger",
-  "colcon_ros.task.ament_cmake.test.logger",
-  "colcon_ros.task.ament_python.build.logger",
-  "colcon_ros.task.ament_python.test.logger",
-  "colcon_ros.task.catkin.build.logger",
-  "colcon_ros.task.catkin.create_pythonpath_environment_hook",
-  "colcon_ros.task.catkin.logger",
-  "colcon_ros.task.catkin.test.logger",
-  "colcon_ros.task.cmake._multiarch",
-  "colcon_ros.task.cmake.build.logger",
-  "colcon_ros.task.cmake.create_pkg_config_path_environment_hooks",
-  "colcon_ros.task.cmake.get_multiarch",
-  "colcon_ros.task.cmake.test.logger",
   "collections.OrderedDict",
   "contextlib.suppress",
   "os.environ",
@@ -87,13 +58,19 @@
   "warnings.warn"
  ],
  "deps": {
-  "argcomplete": [],
-  "catkin_pkg": [],
+  "argcomplete": [
+   "argcomplete/conda-forge/noarch/argcomplete-1.9.5-py_0"
+  ],
+  "catkin_pkg": [
+   "catkin_pkg/conda-forge/noarch/catkin_pkg-0.4.22-pyh9f0ad1d_0"
+  ],
   "colcon_argcomplete": [],
   "colcon_cmake": [],
   "colcon_core": [],
   "colcon_python_setup_py": [],
-  "colcon_ros": [],
+  "colcon_ros": [
+   "colcon-ros/conda-forge/noarch/colcon-ros-0.3.19-py_0"
+  ],
   "collections": [],
   "contextlib": [],
   "os": [],

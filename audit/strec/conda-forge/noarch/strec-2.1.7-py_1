@@ -1,7 +1,6 @@
 {
  "bad": [
   "collections.OrderedDict",
-  "configparser.ConfigParser",
   "copy.deepcopy",
   "datetime.datetime",
   "datetime.datetime.utcnow",
@@ -9,11 +8,7 @@
   "glob.glob",
   "gzip.GzipFile",
   "io.StringIO",
-  "libcomcat.search.get_event_by_id",
   "logging.getLogger",
-  "mapio.geodict.GeoDict.createDictFromCenter",
-  "mapio.gmt.GMTGrid.getFileGeoDict",
-  "mapio.gmt.GMTGrid.load",
   "mapio.reader.read",
   "numpy.any",
   "numpy.arange",
@@ -56,7 +51,6 @@
   "pyproj.transform",
   "re.IGNORECASE",
   "re.match",
-  "shapely.ops.transform",
   "sqlite3.connect",
   "strec.cmt.getComposite",
   "strec.cmt.getCompositeCMT",
@@ -104,22 +98,31 @@
  ],
  "deps": {
   "collections": [],
-  "configparser": [],
+  "configparser": [
+   "configparser/conda-forge/noarch/configparser-5.0.1-py_0"
+  ],
   "copy": [],
   "datetime": [],
   "functools": [],
   "glob": [],
   "gzip": [],
   "io": [],
-  "libcomcat": [],
+  "libcomcat": [
+   "libcomcat/conda-forge/noarch/libcomcat-1.2.16-py_0",
+   "libcomcat/conda-forge/noarch/libcomcat-1.2.22-py_0"
+  ],
   "logging": [],
-  "mapio": [],
+  "mapio": [
+   "mapio/conda-forge/noarch/mapio-0.7.3-0"
+  ],
   "numpy": [],
   "obspy": [],
   "pandas": [],
   "pyproj": [],
   "re": [],
-  "shapely": [],
+  "shapely": [
+   "solaris/conda-forge/noarch/solaris-0.4.0-pyhe05a262_0"
+  ],
   "sqlite3": [],
   "strec": [],
   "tempfile": [],

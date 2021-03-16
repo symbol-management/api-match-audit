@@ -23,40 +23,39 @@
   "dagster.solid",
   "dagster.utils.merge_dicts",
   "dagster.utils.mkdir_p",
-  "dagster_ssh.resources.SSHResource",
-  "dagster_ssh.resources.key_from_str",
-  "dagster_ssh.sftp_solid",
-  "dagster_ssh.ssh_resource",
-  "dagster_ssh.version.__version__",
-  "dagster_ssh_tests.test_resources.generate_ssh_key",
   "getpass.getuser",
   "logging.root.getChild",
   "os.path.dirname",
   "os.path.expanduser",
   "os.path.isfile",
   "os.path.join",
-  "paramiko.AutoAddPolicy",
-  "paramiko.ProxyCommand",
   "paramiko.RSAKey.from_private_key",
-  "paramiko.SSHClient",
-  "paramiko.SSHConfig",
-  "paramiko.config.SSH_PORT",
   "six.StringIO",
   "six.ensure_str",
-  "sshtunnel.SSHTunnelForwarder",
   "version.__version__"
  ],
  "deps": {
   "cryptography": [],
   "dagster": [],
-  "dagster_ssh": [],
-  "dagster_ssh_tests": [],
+  "dagster_ssh": [
+   "dagster-ssh/conda-forge/noarch/dagster-ssh-0.8.1-pyh32f6830_1"
+  ],
+  "dagster_ssh_tests": [
+   "dagster-ssh/conda-forge/noarch/dagster-ssh-0.9.18-pyh44b312d_0",
+   "dagster-ssh/conda-forge/noarch/dagster-ssh-0.9.19-pyh44b312d_1",
+   "dagster-ssh/conda-forge/noarch/dagster-ssh-0.9.21-pyh44b312d_0"
+  ],
   "getpass": [],
   "logging": [],
   "os": [],
-  "paramiko": [],
+  "paramiko": [
+   "paramiko/conda-forge/noarch/paramiko-2.7.2-pyh9f0ad1d_0"
+  ],
   "six": [],
-  "sshtunnel": [],
+  "sshtunnel": [
+   "sshtunnel/conda-forge/noarch/sshtunnel-0.1.5-0",
+   "sshtunnel/conda-forge/noarch/sshtunnel-0.3.1-pyhd8ed1ab_0"
+  ],
   "version": []
  }
 }

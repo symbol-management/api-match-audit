@@ -2,8 +2,6 @@
  "bad": [
   "argparse.ArgumentParser",
   "bs4.BeautifulSoup",
-  "configparser.ConfigParser",
-  "crontab.CronTab",
   "data.export_dict",
   "datetime.datetime.fromtimestamp",
   "errno.EEXIST",
@@ -86,9 +84,6 @@
   "random.choice",
   "re.search",
   "re.sub",
-  "requests.get",
-  "requests.head",
-  "requests.post",
   "results.Task",
   "schedule.clear_schedule",
   "schedule.get_crontab",
@@ -258,8 +253,12 @@
  "deps": {
   "argparse": [],
   "bs4": [],
-  "configparser": [],
-  "crontab": [],
+  "configparser": [
+   "configparser/conda-forge/noarch/configparser-5.0.1-py_0"
+  ],
+  "crontab": [
+   "python-crontab/conda-forge/noarch/python-crontab-2.3.6-py_0"
+  ],
   "data": [],
   "datetime": [],
   "errno": [],
@@ -277,7 +276,9 @@
   "psutils": [],
   "random": [],
   "re": [],
-  "requests": [],
+  "requests": [
+   "requests/conda-forge/noarch/requests-2.23.0-pyh8c360ce_2"
+  ],
   "results": [],
   "schedule": [],
   "settings": [],

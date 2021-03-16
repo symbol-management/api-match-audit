@@ -1,6 +1,5 @@
 {
  "bad": [
-  "argcomplete.completers.ChoicesCompleter",
   "argparse.ArgumentTypeError",
   "colcon_core.command.add_subparsers",
   "colcon_core.location.get_config_path",
@@ -19,23 +18,7 @@
   "colcon_core.plugin_system.satisfies_version",
   "colcon_core.verb.VerbExtensionPoint",
   "colcon_core.verb.VerbExtensionPoint.EXTENSION_POINT_VERSION",
-  "colcon_metadata.metadata.colcon_pkg.logger",
-  "colcon_metadata.metadata.get_metadata_files",
-  "colcon_metadata.metadata.get_metadata_path",
-  "colcon_metadata.metadata.logger",
-  "colcon_metadata.metadata.merge_metadata",
-  "colcon_metadata.metadata.merge_metadata_value",
-  "colcon_metadata.metadata.metadata_by_name",
-  "colcon_metadata.metadata.metadata_by_path",
-  "colcon_metadata.metadata.repository.get_repositories",
-  "colcon_metadata.metadata.repository.get_repository_metadata_files",
-  "colcon_metadata.metadata.repository.load_url",
-  "colcon_metadata.metadata.repository.metadata_repositories_file",
-  "colcon_metadata.metadata.repository.set_repositories",
-  "colcon_metadata.package_discovery.colcon_meta.logger",
-  "colcon_metadata.subverb.MetadataSubverbExtensionPoint",
   "colcon_metadata.subverb.MetadataSubverbExtensionPoint.EXTENSION_POINT_VERSION",
-  "colcon_metadata.subverb.get_subverb_extensions",
   "collections.defaultdict",
   "os.makedirs",
   "os.path.basename",
@@ -56,10 +39,14 @@
   "yaml.safe_load"
  ],
  "deps": {
-  "argcomplete": [],
+  "argcomplete": [
+   "argcomplete/conda-forge/noarch/argcomplete-1.9.5-py_0"
+  ],
   "argparse": [],
   "colcon_core": [],
-  "colcon_metadata": [],
+  "colcon_metadata": [
+   "colcon-metadata/conda-forge/noarch/colcon-metadata-0.2.5-py_0"
+  ],
   "collections": [],
   "os": [],
   "pathlib": [],

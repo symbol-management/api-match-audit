@@ -4,26 +4,6 @@
   "abc.abstractmethod",
   "adapter_cls",
   "add_attr",
-  "bcdp.bounds.Bounds",
-  "bcdp.bounds.Domain",
-  "bcdp.constants.T_ATTR",
-  "bcdp.constants.T_LABELS",
-  "bcdp.constants.X_ATTR",
-  "bcdp.constants.X_LABELS",
-  "bcdp.constants.Y_ATTR",
-  "bcdp.constants.Y_LABELS",
-  "bcdp.constants.Z_ATTR",
-  "bcdp.constants.Z_LABELS",
-  "bcdp.ensemble.Ensemble",
-  "bcdp.extractors.MetadataExtractor",
-  "bcdp.extractors.build_extractor_from_params",
-  "bcdp.registry.Registry",
-  "bcdp.regridder.Regridder",
-  "bcdp.sources.DataSource",
-  "bcdp.sources.IntakeESMSource",
-  "bcdp.sources.IntakeSource",
-  "bcdp.sources.LocalFileSource",
-  "bcdp.sources.RCMEDSource",
   "bounds.Bounds",
   "bounds.PolygonBounds",
   "cartopy.io.shapereader.Reader",
@@ -40,7 +20,6 @@
   "func",
   "geom_sel",
   "glob.glob",
-  "intake.Catalog",
   "intake.open_esm_datastore",
   "json.load",
   "matplotlib.path.Path",
@@ -84,10 +63,6 @@
   "registry.register",
   "registry.registry",
   "regridder_cls",
-  "requests.get",
-  "shapely.geometry.multipolygon.MultiPolygon",
-  "shapely.geometry.shape",
-  "shapely.ops.unary_union",
   "string.Formatter",
   "types.FunctionType",
   "utils.build_series",
@@ -99,20 +74,15 @@
   "utils.season_to_range",
   "utils.subset_1d",
   "vars.symmetric_difference",
-  "warnings.warn",
-  "xarray.DataArray",
-  "xarray.Dataset",
-  "xarray.concat",
-  "xarray.decode_cf",
-  "xarray.open_dataset",
-  "xarray.open_mfdataset",
-  "xesmf.Regridder"
+  "warnings.warn"
  ],
  "deps": {
   "abc": [],
   "adapter_cls": [],
   "add_attr": [],
-  "bcdp": [],
+  "bcdp": [
+   "bcdp/conda-forge/noarch/bcdp-0.1.3-py_0"
+  ],
   "bounds": [],
   "cartopy": [],
   "collections": [],
@@ -123,7 +93,10 @@
   "func": [],
   "geom_sel": [],
   "glob": [],
-  "intake": [],
+  "intake": [
+   "intake/conda-forge/noarch/intake-0.5.3-py_0",
+   "intake/conda-forge/noarch/intake-0.6.0-py_0"
+  ],
   "json": [],
   "matplotlib": [],
   "max": [],
@@ -138,14 +111,23 @@
   "pyresample": [],
   "registry": [],
   "regridder_cls": [],
-  "requests": [],
-  "shapely": [],
+  "requests": [
+   "requests/conda-forge/noarch/requests-2.23.0-pyh8c360ce_2"
+  ],
+  "shapely": [
+   "solaris/conda-forge/noarch/solaris-0.4.0-pyhe05a262_0"
+  ],
   "string": [],
   "types": [],
   "utils": [],
   "vars": [],
   "warnings": [],
-  "xarray": [],
-  "xesmf": []
+  "xarray": [
+   "xarray/conda-forge/noarch/xarray-0.13.0-py_0"
+  ],
+  "xesmf": [
+   "xesmf/conda-forge/noarch/xesmf-0.1.2-py_0",
+   "xesmf/conda-forge/noarch/xesmf-0.4.0-pyhd8ed1ab_0"
+  ]
  }
 }
