@@ -1,7 +1,6 @@
 {
  "bad": [
   "IPython.paths.get_ipython_dir",
-  "_version.__version__",
   "aliases",
   "asyncio.WindowsProactorEventLoopPolicy",
   "asyncio.WindowsSelectorEventLoopPolicy",
@@ -20,15 +19,7 @@
   "gettext.translation",
   "handler.VoilaHandler",
   "io.open",
-  "ipython_genutils.py3compat.getcwd",
-  "jinja2.Environment",
-  "jinja2.FileSystemLoader",
-  "jinja2.Markup",
-  "jinja2.contextfilter",
   "json.load",
-  "jupyter_client.kernelspec.KernelSpecManager",
-  "jupyter_core.paths.jupyter_config_path",
-  "jupyter_core.paths.jupyter_path",
   "jupyter_server.base.handlers.FileFindHandler",
   "jupyter_server.base.handlers.JupyterHandler",
   "jupyter_server.base.handlers.path_regex",
@@ -45,8 +36,6 @@
   "logging.INFO",
   "make_url",
   "mimetypes.guess_type",
-  "nbclient.NotebookClient",
-  "nbclient.exceptions.CellExecutionError",
   "nbclient.util.ensure_async",
   "nbconvert.exporters.html.HTMLExporter",
   "nbconvert.exporters.templateexporter.TemplateExporter",
@@ -54,9 +43,6 @@
   "nbconvert.filters.markdown_mistune.IPythonRenderer",
   "nbconvert.filters.markdown_mistune.MarkdownWithMath",
   "nbconvert.preprocessors.ClearOutputPreprocessor",
-  "nbformat.NotebookNode",
-  "nbformat.v4.new_code_cell",
-  "nbformat.v4.new_notebook",
   "os.environ.copy",
   "os.getcwd",
   "os.path.abspath",
@@ -115,31 +101,14 @@
   "urllib.pathname2url",
   "urlparse.urljoin",
   "utils.get_server_root_dir",
-  "voila._version._specifier_",
-  "voila._version.version_info",
-  "voila.app.Voila",
-  "voila.app._",
-  "voila.app._kernel_id_regex",
-  "voila.app.errno",
-  "voila.app.main",
-  "voila.execute.VoilaExecutor",
-  "voila.execute.strip_code_cell_warnings",
-  "voila.exporter.VoilaExporter",
-  "voila.exporter.VoilaMarkdownRenderer",
-  "voila.paths.DEV_MODE",
-  "voila.paths.ROOT",
-  "voila.paths._default_root_dirs",
-  "voila.paths._find_template_hierarchy",
-  "voila.paths.collect_paths",
-  "voila.server_extension._load_jupyter_server_extension",
-  "voila.static_file_handler.MultiStaticFileHandler",
-  "voila.static_file_handler.WhiteListFileHandler",
   "webbrowser.Error",
   "webbrowser.get"
  ],
  "deps": {
   "IPython": [],
-  "_version": [],
+  "_version": [
+   "configobj/conda-forge/noarch/configobj-5.0.6-py_0"
+  ],
   "aliases": [],
   "asyncio": [],
   "cls": [],
@@ -150,18 +119,30 @@
   "gettext": [],
   "handler": [],
   "io": [],
-  "ipython_genutils": [],
-  "jinja2": [],
+  "ipython_genutils": [
+   "ipython_genutils/conda-forge/noarch/ipython_genutils-0.2.0-py_1"
+  ],
+  "jinja2": [
+   "jinja2/conda-forge/noarch/jinja2-2.11.3-pyh44b312d_0"
+  ],
   "json": [],
-  "jupyter_client": [],
-  "jupyter_core": [],
+  "jupyter_client": [
+   "jupyter_client/conda-forge/noarch/jupyter_client-6.1.2-py_0"
+  ],
+  "jupyter_core": [
+   "jupyter_core/conda-forge/noarch/jupyter_core-4.5.0-py_0"
+  ],
   "jupyter_server": [],
   "logging": [],
   "make_url": [],
   "mimetypes": [],
-  "nbclient": [],
+  "nbclient": [
+   "nbclient/conda-forge/noarch/nbclient-0.4.1-py_0"
+  ],
   "nbconvert": [],
-  "nbformat": [],
+  "nbformat": [
+   "nbformat/conda-forge/noarch/nbformat-5.0.4-py_0"
+  ],
   "os": [],
   "paths": [],
   "random": [],
@@ -180,7 +161,9 @@
   "urllib": [],
   "urlparse": [],
   "utils": [],
-  "voila": [],
+  "voila": [
+   "voila/conda-forge/noarch/voila-0.2.5-pyhd8ed1ab_0"
+  ],
   "webbrowser": []
  }
 }

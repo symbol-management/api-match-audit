@@ -1,6 +1,5 @@
 {
  "bad": [
-  "crontab.CronTab",
   "dagster.DagsterInstance",
   "dagster.ScheduleDefinition",
   "dagster.check.inst_param",
@@ -37,18 +36,6 @@
   "dagster.seven.get_current_datetime_in_utc",
   "dagster.seven.get_timestamp_from_utc_datetime",
   "dagster.utils.mkdir_p",
-  "dagster_cron.SystemCronScheduler",
-  "dagster_cron.cron_scheduler.SystemCronScheduler",
-  "dagster_cron.version.__version__",
-  "dagster_cron_tests.snapshots.snap_test_cron_scheduler.snapshots",
-  "dagster_cron_tests.test_cron_scheduler.define_scheduler_instance",
-  "dagster_cron_tests.test_cron_scheduler.define_schedules",
-  "dagster_cron_tests.test_cron_scheduler.get_cron_jobs",
-  "dagster_cron_tests.test_cron_scheduler.get_smaller_external_repo",
-  "dagster_cron_tests.test_cron_scheduler.get_test_external_repo",
-  "dagster_cron_tests.test_cron_scheduler.no_config_pipeline",
-  "dagster_cron_tests.test_cron_scheduler.schedules_dict",
-  "freezegun.freeze_time",
   "io.open",
   "os.chmod",
   "os.environ",
@@ -64,7 +51,6 @@
   "re.findall",
   "return_hello",
   "shutil.rmtree",
-  "six.text_type",
   "snapshottest.Snapshot",
   "stat.S_IEXEC",
   "subprocess.CalledProcessError",
@@ -74,18 +60,35 @@
   "yaml.dump"
  ],
  "deps": {
-  "crontab": [],
+  "crontab": [
+   "python-crontab/conda-forge/noarch/python-crontab-2.3.6-py_0"
+  ],
   "dagster": [],
-  "dagster_cron": [],
-  "dagster_cron_tests": [],
-  "freezegun": [],
+  "dagster_cron": [
+   "dagster-cron/conda-forge/noarch/dagster-cron-0.10.7-pyhd8ed1ab_0",
+   "dagster-cron/conda-forge/noarch/dagster-cron-0.7.13-py_0",
+   "dagster-cron/conda-forge/noarch/dagster-cron-0.7.13-py_1",
+   "dagster-cron/conda-forge/noarch/dagster-cron-0.9.15-pyhd8ed1ab_0",
+   "dagster-cron/conda-forge/noarch/dagster-cron-0.9.19-pyhd8ed1ab_1",
+   "dagster_cron/conda-forge/noarch/dagster_cron-0.6.5-py_0"
+  ],
+  "dagster_cron_tests": [
+   "dagster-cron/conda-forge/noarch/dagster-cron-0.10.7-pyhd8ed1ab_0",
+   "dagster-cron/conda-forge/noarch/dagster-cron-0.9.15-pyhd8ed1ab_0",
+   "dagster-cron/conda-forge/noarch/dagster-cron-0.9.19-pyhd8ed1ab_1"
+  ],
+  "freezegun": [
+   "freezegun/conda-forge/noarch/freezegun-1.1.0-pyhd8ed1ab_0"
+  ],
   "io": [],
   "os": [],
   "pytest": [],
   "re": [],
   "return_hello": [],
   "shutil": [],
-  "six": [],
+  "six": [
+   "six/conda-forge/noarch/six-1.14.0-py_1"
+  ],
   "snapshottest": [],
   "stat": [],
   "subprocess": [],

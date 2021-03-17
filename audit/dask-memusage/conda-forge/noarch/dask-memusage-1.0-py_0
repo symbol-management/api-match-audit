@@ -1,17 +1,12 @@
 {
  "bad": [
-  "click.command",
-  "click.option",
   "collections.defaultdict",
   "csv.writer",
   "dask_memusage.MemoryUsagePlugin",
   "dask_memusage._WorkerMemory",
   "dask_memusage._process_memory",
   "dask_memusage.install",
-  "distributed.client.Client",
-  "distributed.diagnostics.plugin.SchedulerPlugin",
   "distributed.diagnostics.plugin.SchedulerPlugin.__init__",
-  "distributed.scheduler.Scheduler",
   "os.getpid",
   "os.path.join",
   "psutil.Process",
@@ -20,11 +15,17 @@
   "time.sleep"
  ],
  "deps": {
-  "click": [],
+  "click": [
+   "click/conda-forge/noarch/click-6.7-py_1",
+   "click/conda-forge/noarch/click-7.1-pyh8c360ce_0"
+  ],
   "collections": [],
   "csv": [],
   "dask_memusage": [],
-  "distributed": [],
+  "distributed": [
+   "distributed/conda-forge/noarch/distributed-2.5.0-py_0",
+   "distributed/conda-forge/noarch/distributed-2.9.3-py_0"
+  ],
   "os": [],
   "psutil": [],
   "threading": [],

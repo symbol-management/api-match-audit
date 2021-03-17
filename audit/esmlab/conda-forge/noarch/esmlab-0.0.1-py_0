@@ -2,22 +2,6 @@
  "bad": [
   "_version.get_versions",
   "cftime.num2date",
-  "esmlab._module_imports",
-  "esmlab._version.version_json",
-  "esmlab.climatology",
-  "esmlab.climatology.compute_ann_climatology",
-  "esmlab.climatology.compute_mon_anomaly",
-  "esmlab.climatology.compute_mon_climatology",
-  "esmlab.statistics",
-  "esmlab.statistics._apply_nan_mask",
-  "esmlab.statistics._apply_nan_mask_for_two_arrays",
-  "esmlab.statistics._get_op_over_dims",
-  "esmlab.statistics.weighted_corr",
-  "esmlab.statistics.weighted_cov",
-  "esmlab.statistics.weighted_mean",
-  "esmlab.statistics.weighted_rmsd",
-  "esmlab.statistics.weighted_std",
-  "esmlab.statistics.weighted_sum",
   "json.loads",
   "numpy.append",
   "numpy.array",
@@ -28,11 +12,6 @@
   "numpy.testing.assert_allclose",
   "numpy.zeros",
   "pytest.mark.parametrize",
-  "tests.test_climatology.get_dataset_1",
-  "tests.test_climatology.get_dataset_2",
-  "tests.test_statistics._generate_data",
-  "tests.test_statistics.generate_data_1",
-  "tests.test_statistics.generate_data_2",
   "utils.compute_time_var",
   "utils.get_grid_vars",
   "utils.get_original_attrs",
@@ -41,23 +20,24 @@
   "utils.set_grid_vars",
   "utils.set_metadata",
   "utils.time_bound_var",
-  "utils.update_attrs",
-  "xarray.ALL_DIMS",
-  "xarray.DataArray",
-  "xarray.Dataset",
-  "xarray.merge",
-  "xarray.ones_like",
-  "xarray.tutorial.open_dataset"
+  "utils.update_attrs"
  ],
  "deps": {
   "_version": [],
   "cftime": [],
-  "esmlab": [],
+  "esmlab": [
+   "esmlab/conda-forge/noarch/esmlab-0.0.1-py_0"
+  ],
   "json": [],
   "numpy": [],
   "pytest": [],
-  "tests": [],
+  "tests": [
+   "esmlab/conda-forge/noarch/esmlab-0.0.1-py_0"
+  ],
   "utils": [],
-  "xarray": []
+  "xarray": [
+   "xarray/conda-forge/noarch/xarray-0.13.0-py_0",
+   "xarray/conda-forge/noarch/xarray-0.17.0-pyhd8ed1ab_0"
+  ]
  }
 }

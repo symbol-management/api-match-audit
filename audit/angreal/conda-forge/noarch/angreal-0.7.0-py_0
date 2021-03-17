@@ -1,67 +1,9 @@
 {
  "bad": [
   "Loader",
-  "angreal.__version__",
   "angreal.argument",
-  "angreal.cli.AngrealCLI",
-  "angreal.cli.base_init.print_nested_help",
-  "angreal.cli.get_base_commands",
-  "angreal.cli.list_cmd.get_adjacent_commands",
-  "angreal.cli.list_cmd.get_angreal_commands",
-  "angreal.cli.list_cmd.list_cmd",
-  "angreal.cli.print_version",
   "angreal.command",
-  "angreal.compat.get_template_version",
-  "angreal.compat.is_compat",
-  "angreal.cutter.initialize_cutter",
-  "angreal.get_angreal_path",
-  "angreal.import_from_file",
-  "angreal.integrations.GitRemote",
-  "angreal.integrations.cookiecutter.REPO_REGEX",
-  "angreal.integrations.cookiecutter.cookiecutter",
-  "angreal.integrations.cookiecutter.determine_repo_dir",
-  "angreal.integrations.cookiecutter.dump",
-  "angreal.integrations.cookiecutter.expand_abbreviations",
-  "angreal.integrations.cookiecutter.find.find_template",
-  "angreal.integrations.cookiecutter.find.logger",
-  "angreal.integrations.cookiecutter.generate.generate_files",
-  "angreal.integrations.cookiecutter.generate.logger",
-  "angreal.integrations.cookiecutter.get_file_name",
-  "angreal.integrations.cookiecutter.is_repo_url",
-  "angreal.integrations.cookiecutter.is_zip_file",
-  "angreal.integrations.cookiecutter.prompt.process_json",
-  "angreal.integrations.cookiecutter.prompt.prompt_choice_for_config",
-  "angreal.integrations.cookiecutter.prompt.prompt_for_config",
-  "angreal.integrations.cookiecutter.prompt.read_user_choice",
-  "angreal.integrations.cookiecutter.prompt.read_user_dict",
-  "angreal.integrations.cookiecutter.prompt.read_user_variable",
-  "angreal.integrations.cookiecutter.prompt.render_variable",
-  "angreal.integrations.cookiecutter.repository_has_cookiecutter_json",
-  "angreal.integrations.docker.CLIENT",
-  "angreal.integrations.docker.get_bound_host_ports",
-  "angreal.integrations.doit.run_doit_tasks",
-  "angreal.integrations.gh.GitHub",
-  "angreal.integrations.git.GitException",
-  "angreal.integrations.gitremote.GitRemote",
-  "angreal.integrations.gitremote.repo_required",
-  "angreal.integrations.gl.GitLab",
-  "angreal.integrations.virtual_env.VirtualEnv",
   "angreal.option",
-  "angreal.replay.Replay",
-  "angreal.utils.DEFAULT_FOLDER",
-  "angreal.utils.get_angreal_path",
-  "angreal.utils.import_from_file",
-  "click.BOOL",
-  "click.Choice",
-  "click.Context",
-  "click.MultiCommand",
-  "click.STRING",
-  "click.UNPROCESSED",
-  "click.UsageError",
-  "click.core.Command",
-  "click.echo",
-  "click.prompt",
-  "click.style",
   "collections.OrderedDict",
   "collections.abc.Callable",
   "collections.defaultdict",
@@ -85,8 +27,6 @@
   "datetime.datetime",
   "datetime.datetime.strptime",
   "distutils.spawn.find_executable",
-  "docker.client.from_env",
-  "docker.from_env",
   "doit.cmd_base.TaskLoader",
   "doit.doit_cmd.DoitMain",
   "doit.task.dict_to_task",
@@ -94,7 +34,6 @@
   "f.__name__",
   "fnmatch.fnmatch",
   "functools.wraps",
-  "future.utils.iteritems",
   "gitlab.DEVELOPER_ACCESS",
   "gitlab.MASTER_ACCESS",
   "gitlab.OWNER_ACCESS",
@@ -125,7 +64,6 @@
   "os.path.split",
   "os.unlink",
   "os.walk",
-  "past.builtins.basestring",
   "platform.system",
   "re.compile",
   "shutil.copy",
@@ -143,23 +81,31 @@
   "sys.stderr",
   "task",
   "tempfile.mkdtemp",
-  "text_in_file",
-  "validate"
+  "text_in_file"
  ],
  "deps": {
   "Loader": [],
-  "angreal": [],
-  "click": [],
+  "angreal": [
+   "angreal/conda-forge/noarch/angreal-0.7.0-py_0"
+  ],
+  "click": [
+   "click/conda-forge/noarch/click-6.7-py_1",
+   "click/conda-forge/noarch/click-7.1-pyh8c360ce_0"
+  ],
   "collections": [],
   "cookiecutter": [],
   "datetime": [],
   "distutils": [],
-  "docker": [],
+  "docker": [
+   "docker-py/conda-forge/linux-64/docker-py-3.5.1-py27_1000"
+  ],
   "doit": [],
   "f": [],
   "fnmatch": [],
   "functools": [],
-  "future": [],
+  "future": [
+   "future/conda-forge/linux-64/future-0.17.1-py36_1000"
+  ],
   "github": [
    "pygithub/conda-forge/noarch/pygithub-1.53-py_0"
   ],
@@ -173,7 +119,9 @@
   "json": [],
   "logging": [],
   "os": [],
-  "past": [],
+  "past": [
+   "future/conda-forge/linux-64/future-0.17.1-py36_1000"
+  ],
   "pathlib": [
    "pathlib/conda-forge/noarch/pathlib-1.0.1-py_1"
   ],
@@ -192,6 +140,8 @@
   "task": [],
   "tempfile": [],
   "text_in_file": [],
-  "validate": []
+  "validate": [
+   "configobj/conda-forge/noarch/configobj-5.0.6-py_0"
+  ]
  }
 }

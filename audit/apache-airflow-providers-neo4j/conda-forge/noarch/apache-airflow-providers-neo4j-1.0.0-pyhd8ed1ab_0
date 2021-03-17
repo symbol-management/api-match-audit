@@ -4,16 +4,8 @@
   "airflow.hooks.base.BaseHook",
   "airflow.models.BaseOperator",
   "airflow.models.Connection",
-  "airflow.providers.neo4j.example_dags.example_neo4j.dag",
-  "airflow.providers.neo4j.example_dags.example_neo4j.default_args",
-  "airflow.providers.neo4j.example_dags.example_neo4j.neo4j_task",
-  "airflow.providers.neo4j.hooks.neo4j.Neo4jHook",
-  "airflow.providers.neo4j.operators.neo4j.Neo4jOperator",
   "airflow.utils.dates.days_ago",
   "airflow.utils.decorators.apply_defaults",
-  "neo4j.GraphDatabase.driver",
-  "neo4j.Neo4jDriver",
-  "neo4j.Result",
   "typing.Dict",
   "typing.Iterable",
   "typing.Mapping",
@@ -21,8 +13,13 @@
   "typing.Union"
  ],
  "deps": {
-  "airflow": [],
-  "neo4j": [],
+  "airflow": [
+   "apache-airflow-providers-neo4j/conda-forge/noarch/apache-airflow-providers-neo4j-1.0.0-pyhd8ed1ab_0"
+  ],
+  "neo4j": [
+   "neo4j-python-driver/conda-forge/noarch/neo4j-python-driver-4.0.1-pyh8c4c3a4_0",
+   "neo4j-python-driver/conda-forge/noarch/neo4j-python-driver-4.1.1-pyh8c4c3a4_0"
+  ],
   "typing": []
  }
 }
