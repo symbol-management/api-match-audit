@@ -1,20 +1,19 @@
 {
  "bad": [
   "argparse.ArgumentParser",
-  "condastats.cli.data_source_month",
-  "condastats.cli.load_pkg_month",
-  "condastats.cli.main",
-  "condastats.cli.pkg_platform_month",
-  "condastats.cli.pkg_python_month",
-  "condastats.cli.pkg_version_month",
-  "dask.dataframe.read_parquet",
   "datetime.datetime.strptime",
   "sys.exit"
  ],
  "deps": {
   "argparse": [],
-  "condastats": [],
-  "dask": [],
+  "condastats": [
+   "condastats/conda-forge/noarch/condastats-0.1.1-py_0"
+  ],
+  "dask": [
+   "dask-core/conda-forge/noarch/dask-core-0.16.0-py_0",
+   "dask-core/conda-forge/noarch/dask-core-2.10.0-py_0",
+   "dask-core/conda-forge/noarch/dask-core-2.8.1-py_0"
+  ],
   "datetime": [],
   "sys": []
  }

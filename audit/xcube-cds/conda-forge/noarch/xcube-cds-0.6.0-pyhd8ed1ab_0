@@ -3,7 +3,6 @@
   "abc.ABC",
   "abc.abstractmethod",
   "atexit.register",
-  "cdsapi.Client",
   "datetime.datetime",
   "datetime.datetime.now",
   "json.dump",
@@ -15,7 +14,6 @@
   "os.path.join",
   "os.path.split",
   "os.walk",
-  "pathlib.Path",
   "re.match",
   "re.sub",
   "shutil.copy2",
@@ -29,9 +27,6 @@
   "typing.Optional",
   "typing.Tuple",
   "typing.Union",
-  "xarray.Dataset",
-  "xarray.open_dataset",
-  "xarray.open_mfdataset",
   "xcube.constants.EXTENSION_POINT_DATA_OPENERS",
   "xcube.constants.EXTENSION_POINT_DATA_STORES",
   "xcube.core.store.DataDescriptor",
@@ -44,41 +39,42 @@
   "xcube.core.store.TYPE_SPECIFIER_CUBE.satisfies",
   "xcube.core.store.TypeSpecifier",
   "xcube.core.store.VariableDescriptor",
-  "xcube.util.extension.ExtensionRegistry",
-  "xcube.util.extension.import_component",
   "xcube.util.jsonschema.JsonArraySchema",
   "xcube.util.jsonschema.JsonBooleanSchema",
   "xcube.util.jsonschema.JsonDateSchema.new_range",
   "xcube.util.jsonschema.JsonIntegerSchema",
   "xcube.util.jsonschema.JsonNumberSchema",
   "xcube.util.jsonschema.JsonObjectSchema",
-  "xcube.util.jsonschema.JsonStringSchema",
-  "xcube.util.undefined.UNDEFINED",
-  "xcube_cds.constants.CDS_DATA_OPENER_ID",
-  "xcube_cds.constants.CDS_DATA_STORE_ID",
-  "xcube_cds.constants.DEFAULT_NUM_RETRIES",
-  "xcube_cds.datasets.reanalysis_era5.ERA5DatasetHandler",
-  "xcube_cds.datasets.satellite_soil_moisture.SoilMoistureHandler",
-  "xcube_cds.store.CDSDataOpener",
-  "xcube_cds.store.CDSDataStore",
-  "xcube_cds.store.CDSDatasetHandler"
+  "xcube.util.jsonschema.JsonStringSchema"
  ],
  "deps": {
   "abc": [],
   "atexit": [],
-  "cdsapi": [],
+  "cdsapi": [
+   "cdsapi/conda-forge/noarch/cdsapi-0.1.6-py_0",
+   "cdsapi/conda-forge/noarch/cdsapi-0.4.0-pyh44b312d_0"
+  ],
   "datetime": [],
   "json": [],
   "numpy": [],
   "os": [],
-  "pathlib": [],
+  "pathlib": [
+   "pathlib/conda-forge/noarch/pathlib-1.0.1-py_1"
+  ],
   "re": [],
   "shutil": [],
   "tarfile": [],
   "tempfile": [],
   "typing": [],
-  "xarray": [],
-  "xcube": [],
-  "xcube_cds": []
+  "xarray": [
+   "xarray/conda-forge/noarch/xarray-0.13.0-py_0",
+   "xarray/conda-forge/noarch/xarray-0.17.0-pyhd8ed1ab_0"
+  ],
+  "xcube": [
+   "xcube/conda-forge/noarch/xcube-0.3.0-py_0"
+  ],
+  "xcube_cds": [
+   "xcube-cds/conda-forge/noarch/xcube-cds-0.6.0-pyhd8ed1ab_0"
+  ]
  }
 }

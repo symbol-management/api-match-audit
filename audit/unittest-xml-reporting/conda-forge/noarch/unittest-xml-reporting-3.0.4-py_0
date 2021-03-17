@@ -3,8 +3,6 @@
   "argparse.ArgumentParser",
   "datetime.datetime.fromtimestamp",
   "datetime.datetime.min.replace",
-  "django.conf.settings",
-  "django.test.runner.DiscoverRunner",
   "inspect.getsourcefile",
   "inspect.getsourcelines",
   "io.BytesIO",
@@ -37,32 +35,15 @@
   "unittest._TextTestResult.__init__",
   "unittest._TextTestResult.stopTest",
   "unittest.failfast",
-  "xml.dom.minidom.Document",
-  "xmlrunner.XMLTestRunner",
-  "xmlrunner.__main__.executable",
-  "xmlrunner.builder.TestXMLContext",
-  "xmlrunner.builder.UTF8",
-  "xmlrunner.builder._char_tail",
-  "xmlrunner.builder._nontext_sub",
-  "xmlrunner.builder.replace_nontext",
-  "xmlrunner.extra.xunit_plugin.TRANSFORM",
-  "xmlrunner.result.INVALID_XML_1_0_UNICODE_RE",
-  "xmlrunner.result._DuplicateWriter",
-  "xmlrunner.result._TestInfo",
-  "xmlrunner.result._XMLTestResult",
-  "xmlrunner.result._illegal_ranges",
-  "xmlrunner.result._illegal_unichrs",
-  "xmlrunner.result.resolve_filename",
-  "xmlrunner.result.safe_unicode",
-  "xmlrunner.result.testcase_name",
-  "xmlrunner.runner.UTF8",
-  "xmlrunner.runner.XMLTestProgram",
-  "xmlrunner.runner.XMLTestRunner"
+  "xml.dom.minidom.Document"
  ],
  "deps": {
   "argparse": [],
   "datetime": [],
-  "django": [],
+  "django": [
+   "django/conda-forge/noarch/django-1.11.7-py_0",
+   "django/conda-forge/noarch/django-3.1.1-py_0"
+  ],
   "inspect": [],
   "io": [],
   "lxml": [],
@@ -74,6 +55,8 @@
   "time": [],
   "unittest": [],
   "xml": [],
-  "xmlrunner": []
+  "xmlrunner": [
+   "unittest-xml-reporting/conda-forge/noarch/unittest-xml-reporting-3.0.4-py_0"
+  ]
  }
 }

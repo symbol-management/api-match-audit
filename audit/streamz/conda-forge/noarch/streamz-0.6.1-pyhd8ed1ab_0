@@ -64,27 +64,13 @@
   "core.zip",
   "custreamz.kafka.Consumer",
   "dask.DaskStream",
-  "dask.base.tokenize",
-  "dask.compatibility.apply",
-  "dask.dataframe.utils.assert_eq",
   "dask.scatter",
   "dataframe.DataFrame",
   "datetime.timedelta",
   "display_cls",
-  "distributed.Client",
-  "distributed.Future",
-  "distributed.client.default_client",
-  "distributed.utils.sync",
-  "distributed.utils_test.cluster",
-  "distributed.utils_test.gen_cluster",
-  "distributed.utils_test.inc",
-  "distributed.utils_test.loop",
   "distributed.utils_test.loop.add_callback",
   "distributed.utils_test.loop.run_sync",
-  "distributed.utils_test.loop.start",
-  "distributed.utils_test.slowinc",
   "f",
-  "flaky.flaky",
   "fn",
   "format.lower",
   "func",
@@ -96,7 +82,6 @@
   "glob.glob",
   "graph._clean_text",
   "graph.visualize",
-  "graphviz.Digraph",
   "grouper",
   "indexer",
   "inspect.getmodule",
@@ -184,8 +169,6 @@
   "s_type",
   "shlex.split",
   "shutil.rmtree",
-  "six.StringIO",
-  "six.reraise",
   "socket.AF_INET",
   "socket.SOCK_STREAM",
   "socket.socket",
@@ -366,8 +349,7 @@
   "utils.is_series_like",
   "weakref.WeakSet",
   "weakref.WeakValueDictionary",
-  "weakref.ref",
-  "zict.LRU"
+  "weakref.ref"
  ],
  "deps": {
   "Custom": [],
@@ -388,13 +370,24 @@
   "contextlib": [],
   "core": [],
   "custreamz": [],
-  "dask": [],
+  "dask": [
+   "dask-core/conda-forge/noarch/dask-core-0.16.0-py_0",
+   "dask-core/conda-forge/noarch/dask-core-2.10.0-py_0",
+   "dask-core/conda-forge/noarch/dask-core-2.8.1-py_0"
+  ],
   "dataframe": [],
   "datetime": [],
   "display_cls": [],
-  "distributed": [],
+  "distributed": [
+   "distributed/conda-forge/noarch/distributed-2.5.0-py_0",
+   "distributed/conda-forge/noarch/distributed-2.9.3-py_0"
+  ],
   "f": [],
-  "flaky": [],
+  "flaky": [
+   "flaky/conda-forge/noarch/flaky-3.5.0-py_0",
+   "flaky/conda-forge/noarch/flaky-3.5.1-py_0",
+   "flaky/conda-forge/noarch/flaky-3.6.1-py_0"
+  ],
   "fn": [],
   "format": [],
   "func": [],
@@ -403,7 +396,9 @@
   "gc": [],
   "glob": [],
   "graph": [],
-  "graphviz": [],
+  "graphviz": [
+   "python-graphviz/conda-forge/noarch/python-graphviz-0.11.1-py_1"
+  ],
   "grouper": [],
   "indexer": [],
   "inspect": [],
@@ -429,7 +424,9 @@
   "s_type": [],
   "shlex": [],
   "shutil": [],
-  "six": [],
+  "six": [
+   "six/conda-forge/noarch/six-1.14.0-py_1"
+  ],
   "socket": [],
   "sources": [],
   "streamz": [],
@@ -444,6 +441,8 @@
   "types": [],
   "utils": [],
   "weakref": [],
-  "zict": []
+  "zict": [
+   "zict/conda-forge/noarch/zict-0.1.4-py_0"
+  ]
  }
 }

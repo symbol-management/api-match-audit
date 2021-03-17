@@ -1,16 +1,7 @@
 {
  "bad": [
-  "cockroachdb.sqlalchemy.dialect.CockroachDBDialect",
-  "cockroachdb.sqlalchemy.dialect._SavepointState",
-  "cockroachdb.sqlalchemy.dialect._type_map",
-  "cockroachdb.sqlalchemy.dialect.savepoint_state",
-  "cockroachdb.sqlalchemy.stmt_compiler.CRDB_RESERVED_WORDS",
-  "cockroachdb.sqlalchemy.stmt_compiler.crdb_grammar_reserved",
-  "cockroachdb.sqlalchemy.transaction._NestedTransaction",
-  "cockroachdb.sqlalchemy.transaction._txn_retry_loop",
   "collections.defaultdict",
   "dialect.savepoint_state.cockroach_restart",
-  "migrate.changeset.databases.visitor.DIALECTS",
   "psycopg2.OperationalError",
   "psycopg2.errorcodes.SERIALIZATION_FAILURE",
   "re.compile",
@@ -48,10 +39,15 @@
   "type_class"
  ],
  "deps": {
-  "cockroachdb": [],
+  "cockroachdb": [
+   "cockroachdb-python/conda-forge/noarch/cockroachdb-python-0.3.3-py_0",
+   "cockroachdb-python/conda-forge/noarch/cockroachdb-python-0.3.5-pyh9f0ad1d_0"
+  ],
   "collections": [],
   "dialect": [],
-  "migrate": [],
+  "migrate": [
+   "sqlalchemy-migrate/conda-forge/noarch/sqlalchemy-migrate-0.12.0-py_0"
+  ],
   "psycopg2": [],
   "re": [],
   "sqlalchemy": [],

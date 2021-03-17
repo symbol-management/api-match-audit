@@ -1,11 +1,5 @@
 {
  "bad": [
-  "cdo.CDOException",
-  "cdo.CDO_PY_VERSION",
-  "cdo.CdoTempfileStore",
-  "cdo.auto_doc",
-  "cdo.getCdoVersion",
-  "cdo.setupLogging",
   "glob.glob",
   "io.StringIO",
   "logging",
@@ -38,19 +32,18 @@
   "signal.SIGTERM",
   "signal.siginterrupt",
   "signal.signal",
-  "six.raise_from",
-  "six.string_types",
   "str.strip",
   "string.strip",
   "subprocess.PIPE",
   "subprocess.Popen",
   "tempfile.NamedTemporaryFile",
-  "tempfile.gettempdir",
-  "xarray.core.dataset.Dataset",
-  "xarray.open_dataset"
+  "tempfile.gettempdir"
  ],
  "deps": {
-  "cdo": [],
+  "cdo": [
+   "python-cdo/conda-forge/noarch/python-cdo-1.5.3-py_0",
+   "python-cdo/conda-forge/noarch/python-cdo-1.5.4-pyhd8ed1ab_0"
+  ],
   "glob": [],
   "io": [],
   "logging": [],
@@ -61,11 +54,16 @@
   "random": [],
   "re": [],
   "signal": [],
-  "six": [],
+  "six": [
+   "six/conda-forge/noarch/six-1.14.0-py_1"
+  ],
   "str": [],
   "string": [],
   "subprocess": [],
   "tempfile": [],
-  "xarray": []
+  "xarray": [
+   "xarray/conda-forge/noarch/xarray-0.13.0-py_0",
+   "xarray/conda-forge/noarch/xarray-0.17.0-pyhd8ed1ab_0"
+  ]
  }
 }

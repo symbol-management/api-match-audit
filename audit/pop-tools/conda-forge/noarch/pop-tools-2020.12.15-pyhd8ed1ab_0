@@ -1,6 +1,5 @@
 {
  "bad": [
-  "dask.array.Array",
   "grid.get_grid",
   "grid.grid_defs",
   "numba.jit",
@@ -44,68 +43,44 @@
   "os.path.exists",
   "os.path.join",
   "os.walk",
-  "pathlib.Path",
   "pkg_resources.DistributionNotFound",
   "pkg_resources.get_distribution",
   "pkg_resources.resource_filename",
   "pkg_resources.resource_stream",
-  "pooch.HTTPDownloader",
-  "pooch.Pooch",
-  "pooch.core.download_action",
-  "pooch.core.stream_download",
-  "pooch.create",
-  "pooch.downloaders.choose_downloader",
-  "pooch.processors.Unzip",
-  "pooch.utils.get_logger",
-  "pop_tools.datasets.DATASETS",
-  "pop_tools.eos._compute_eos",
-  "pop_tools.eos._compute_eos_coeffs",
-  "pop_tools.eos.compute_pressure",
-  "pop_tools.fill._iterative_fill_POP_core",
-  "pop_tools.fill._iterative_fill_sor",
-  "pop_tools.fill.lateral_fill_np_array",
-  "pop_tools.grid.INPUTDATA",
-  "pop_tools.grid.INPUTDATA_DIR",
-  "pop_tools.grid._compute_TLAT_TLONG",
-  "pop_tools.grid._compute_corners",
-  "pop_tools.grid.cesm_data_root_path",
-  "pop_tools.grid.downloader",
-  "pop_tools.grid.fetch",
-  "pop_tools.grid.grid_def_file",
-  "pop_tools.grid.grid_defs",
-  "pop_tools.grid.input_templates_dir",
-  "pop_tools.region_masks._get_region_definitions",
-  "pop_tools.region_masks._verify_region_def_schema",
-  "pop_tools.region_masks.all_region_defs",
-  "pop_tools.region_masks.list_region_masks",
-  "pop_tools.region_masks.region_def_file",
-  "pop_tools.xgcm_util._add_pop_dims_to_dataset",
-  "pop_tools.xgcm_util._dims_from_grid_loc",
-  "pop_tools.xgcm_util._label_coord_grid_locs",
-  "pop_tools.xgcm_util.relabel_pop_dims",
-  "tqdm.tqdm",
-  "xarray.DataArray",
-  "xarray.Dataset",
-  "xarray.Variable",
-  "xarray.apply_ufunc",
-  "xarray.broadcast",
-  "xarray.full_like",
-  "xarray.where",
   "xgcm.Grid",
   "yaml.safe_load"
  ],
  "deps": {
-  "dask": [],
+  "dask": [
+   "dask-core/conda-forge/noarch/dask-core-0.16.0-py_0",
+   "dask-core/conda-forge/noarch/dask-core-2.10.0-py_0",
+   "dask-core/conda-forge/noarch/dask-core-2.8.1-py_0"
+  ],
   "grid": [],
   "numba": [],
   "numpy": [],
   "os": [],
-  "pathlib": [],
+  "pathlib": [
+   "pathlib/conda-forge/noarch/pathlib-1.0.1-py_1"
+  ],
   "pkg_resources": [],
-  "pooch": [],
-  "pop_tools": [],
-  "tqdm": [],
-  "xarray": [],
+  "pooch": [
+   "pooch/conda-forge/noarch/pooch-1.1.0-py_0"
+  ],
+  "pop_tools": [
+   "pop-tools/conda-forge/noarch/pop-tools-2020.12.15-pyhd8ed1ab_0"
+  ],
+  "tqdm": [
+   "tqdm/conda-forge/noarch/tqdm-4.19.2-py_0",
+   "tqdm/conda-forge/noarch/tqdm-4.36.1-py_0",
+   "tqdm/conda-forge/noarch/tqdm-4.41.0-py_0",
+   "tqdm/conda-forge/noarch/tqdm-4.44.0-py_0",
+   "tqdm/conda-forge/noarch/tqdm-4.46.0-pyh9f0ad1d_0"
+  ],
+  "xarray": [
+   "xarray/conda-forge/noarch/xarray-0.13.0-py_0",
+   "xarray/conda-forge/noarch/xarray-0.17.0-pyhd8ed1ab_0"
+  ],
   "xgcm": [],
   "yaml": []
  }

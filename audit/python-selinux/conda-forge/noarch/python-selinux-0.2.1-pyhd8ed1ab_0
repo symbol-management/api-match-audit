@@ -1,6 +1,5 @@
 {
  "bad": [
-  "distro.id",
   "imp.reload",
   "json.loads",
   "os.path.isdir",
@@ -8,11 +7,6 @@
   "os.path.join",
   "platform.python_version_tuple",
   "platform.system",
-  "selinux.add_location",
-  "selinux.add_path",
-  "selinux.check_system_sitepackages",
-  "selinux.get_system_sitepackages",
-  "selinux.should_have_selinux",
   "subprocess.check_output",
   "sys.modules",
   "sys.modules.is_selinux_enabled",
@@ -20,12 +14,16 @@
   "sys.path.remove"
  ],
  "deps": {
-  "distro": [],
+  "distro": [
+   "distro/conda-forge/noarch/distro-1.1.0-py_1001"
+  ],
   "imp": [],
   "json": [],
   "os": [],
   "platform": [],
-  "selinux": [],
+  "selinux": [
+   "python-selinux/conda-forge/noarch/python-selinux-0.2.1-pyhd8ed1ab_0"
+  ],
   "subprocess": [],
   "sys": []
  }

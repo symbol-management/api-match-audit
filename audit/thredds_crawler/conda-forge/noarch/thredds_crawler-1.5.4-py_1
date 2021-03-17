@@ -1,7 +1,6 @@
 {
  "bad": [
   "datetime.datetime",
-  "dateutil.parser.parse",
   "logging.DEBUG",
   "logging.Formatter",
   "logging.Handler",
@@ -18,20 +17,10 @@
   "os.path.splitext",
   "pytz.utc",
   "re.compile",
-  "requests.get",
   "requests.packages.urllib3.disable_warnings",
   "requests.packages.urllib3.exceptions.InsecureRequestWarning",
   "sys.stdout",
-  "thredds_crawler.crawl.Crawl",
   "thredds_crawler.crawl.Crawl.SKIPS",
-  "thredds_crawler.crawl.INV_NS",
-  "thredds_crawler.crawl.LeafDataset",
-  "thredds_crawler.crawl.XLINK_NS",
-  "thredds_crawler.crawl.logger",
-  "thredds_crawler.crawl.make_leaf",
-  "thredds_crawler.crawl.request_xml",
-  "thredds_crawler.tests.test_crawler.logger",
-  "thredds_crawler.utils.construct_url",
   "unittest.TestCase",
   "urllib.parse.quote_plus",
   "urllib.parse.urljoin",
@@ -39,7 +28,9 @@
  ],
  "deps": {
   "datetime": [],
-  "dateutil": [],
+  "dateutil": [
+   "python-dateutil/conda-forge/noarch/python-dateutil-2.7.4-py_0"
+  ],
   "logging": [],
   "lxml": [],
   "multiprocessing": [],
@@ -47,9 +38,13 @@
   "os": [],
   "pytz": [],
   "re": [],
-  "requests": [],
+  "requests": [
+   "requests/conda-forge/noarch/requests-2.23.0-pyh8c360ce_2"
+  ],
   "sys": [],
-  "thredds_crawler": [],
+  "thredds_crawler": [
+   "thredds_crawler/conda-forge/noarch/thredds_crawler-1.5.4-py_1"
+  ],
   "unittest": [],
   "urllib": []
  }

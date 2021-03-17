@@ -28,14 +28,6 @@
   "dagster.utils.merge_dicts",
   "dagster.utils.test.postgres_instance.postgres_instance_for_test",
   "dagster.utils.yaml_utils.merge_yamls",
-  "dagster_celery.config.DEFAULT_CONFIG",
-  "dagster_celery.config.dict_wrapper",
-  "dagster_celery.core_execution_loop.DELEGATE_MARKER",
-  "dagster_celery.core_execution_loop.core_celery_execution_loop",
-  "dagster_celery.defaults.broker_url",
-  "dagster_celery.defaults.result_backend",
-  "dagster_celery.executor.CELERY_CONFIG",
-  "dagster_celery.make_app.make_app_with_task_routes",
   "dagster_celery_docker.app.app",
   "dagster_celery_docker.celery_docker_executor",
   "dagster_celery_docker.executor.CELERY_DOCKER_CONFIG_KEY",
@@ -59,7 +51,9 @@
  "deps": {
   "contextlib": [],
   "dagster": [],
-  "dagster_celery": [],
+  "dagster_celery": [
+   "dagster-celery/conda-forge/noarch/dagster-celery-0.9.19-pyheb06c22_1"
+  ],
   "dagster_celery_docker": [],
   "dagster_celery_docker_tests": [],
   "dagster_test": [],
