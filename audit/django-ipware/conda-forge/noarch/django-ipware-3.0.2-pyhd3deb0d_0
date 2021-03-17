@@ -3,21 +3,6 @@
   "defaults.IPWARE_LOOPBACK_PREFIX",
   "defaults.IPWARE_META_PRECEDENCE_ORDER",
   "defaults.IPWARE_NON_PUBLIC_IP_PREFIX",
-  "django.apps.AppConfig",
-  "django.conf.settings",
-  "django.http.HttpRequest",
-  "django.test.TestCase",
-  "django.utils.translation.ugettext_lazy",
-  "ipware.defaults.IPWARE_LOOPBACK_PREFIX",
-  "ipware.defaults.IPWARE_PRIVATE_IP_PREFIX",
-  "ipware.get_client_ip",
-  "ipware.utils.cleanup_ip",
-  "ipware.utils.is_loopback_ip",
-  "ipware.utils.is_private_ip",
-  "ipware.utils.is_public_ip",
-  "ipware.utils.is_valid_ip",
-  "ipware.utils.is_valid_ipv4",
-  "ipware.utils.is_valid_ipv6",
   "socket.AF_INET",
   "socket.AF_INET6",
   "socket.error",
@@ -34,8 +19,13 @@
  ],
  "deps": {
   "defaults": [],
-  "django": [],
-  "ipware": [],
+  "django": [
+   "django/conda-forge/noarch/django-1.11.7-py_0",
+   "django/conda-forge/noarch/django-3.1.1-py_0"
+  ],
+  "ipware": [
+   "django-ipware/conda-forge/noarch/django-ipware-3.0.2-pyhd3deb0d_0"
+  ],
   "socket": [],
   "utils": []
  }

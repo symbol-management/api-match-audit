@@ -3,12 +3,6 @@
   "_check_result",
   "_version.get_versions",
   "core.histogram",
-  "dask.array.Array",
-  "dask.array.core.Array",
-  "dask.array.empty",
-  "dask.array.from_array",
-  "dask.array.from_delayed",
-  "dask.delayed",
   "duck_array_ops.bincount",
   "duck_array_ops.broadcast_arrays",
   "duck_array_ops.concatenate",
@@ -42,29 +36,17 @@
   "pytest.mark.parametrize",
   "pytest.skip",
   "reshape_input",
-  "xarray.DataArray",
-  "xarray.align",
-  "xarray.full_like",
-  "xarray.histogram",
-  "xarray.testing.assert_identical",
-  "xhistogram._version.version_json",
-  "xhistogram.core._bincount_2d",
-  "xhistogram.core._bincount_loop",
-  "xhistogram.core._determine_block_chunks",
-  "xhistogram.core._dispatch_bincount",
-  "xhistogram.core._ensure_bins_is_a_list_of_arrays",
-  "xhistogram.core._histogram_2d_vectorized",
-  "xhistogram.duck_array_ops._dask_or_eager_func",
-  "xhistogram.duck_array_ops.has_dask",
-  "xhistogram.test.test_xarray.COORDS",
-  "xhistogram.test.test_xarray.DIMS",
-  "xhistogram.test.test_xarray.ones"
+  "xarray.histogram"
  ],
  "deps": {
   "_check_result": [],
   "_version": [],
   "core": [],
-  "dask": [],
+  "dask": [
+   "dask-core/conda-forge/noarch/dask-core-0.16.0-py_0",
+   "dask-core/conda-forge/noarch/dask-core-2.10.0-py_0",
+   "dask-core/conda-forge/noarch/dask-core-2.8.1-py_0"
+  ],
   "duck_array_ops": [],
   "fixtures": [],
   "functools": [],
@@ -74,7 +56,12 @@
   "pandas": [],
   "pytest": [],
   "reshape_input": [],
-  "xarray": [],
-  "xhistogram": []
+  "xarray": [
+   "xarray/conda-forge/noarch/xarray-0.13.0-py_0",
+   "xarray/conda-forge/noarch/xarray-0.17.0-pyhd8ed1ab_0"
+  ],
+  "xhistogram": [
+   "xhistogram/conda-forge/noarch/xhistogram-0.1.0-py_0"
+  ]
  }
 }

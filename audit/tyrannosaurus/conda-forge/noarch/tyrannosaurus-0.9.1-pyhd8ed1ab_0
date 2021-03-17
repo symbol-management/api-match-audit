@@ -1,10 +1,7 @@
 {
  "bad": [
-  "dataclasses.dataclass",
   "datetime.datetime.now",
   "datetime.timezone.utc",
-  "enum.Enum",
-  "grayskull.base.factory.GrayskullFactory.create_recipe",
   "importlib.metadata.PackageNotFoundError",
   "importlib.metadata.metadata",
   "logging.DEBUG",
@@ -14,11 +11,8 @@
   "os.rename",
   "os.scandir",
   "os.unlink",
-  "pathlib.Path",
-  "pathlib.PurePath",
   "re.Pattern",
   "re.compile",
-  "requests.get",
   "shutil.copyfile",
   "shutil.rmtree",
   "stat.S_IWRITE",
@@ -29,14 +23,6 @@
   "subprocess.check_output",
   "textwrap.fill",
   "tomlkit.loads",
-  "typer.Exit",
-  "typer.Option",
-  "typer.Typer",
-  "typer.colors.BLUE",
-  "typer.colors.RED",
-  "typer.echo",
-  "typer.prompt",
-  "typer.style",
   "typing.Any",
   "typing.Dict",
   "typing.List",
@@ -53,67 +39,40 @@
   "tyrannosaurus.TyrannoInfo.today",
   "tyrannosaurus.TyrannoInfo.today.year",
   "tyrannosaurus.TyrannoInfo.version",
-  "tyrannosaurus.__copyright__",
-  "tyrannosaurus.__date__",
-  "tyrannosaurus.__version__",
-  "tyrannosaurus.clean.Clean",
-  "tyrannosaurus.clean.logger",
-  "tyrannosaurus.cli.CliCommands",
-  "tyrannosaurus.cli.CliState",
-  "tyrannosaurus.cli.Msg",
-  "tyrannosaurus.cli.cli",
-  "tyrannosaurus.cli.logger",
-  "tyrannosaurus.cli.tyranno_main",
-  "tyrannosaurus.context.Context",
-  "tyrannosaurus.context.Source",
-  "tyrannosaurus.context.logger",
-  "tyrannosaurus.enums.DevStatus",
-  "tyrannosaurus.enums.DevStatus.guess_from_version",
-  "tyrannosaurus.enums.License",
-  "tyrannosaurus.enums.License.apache2",
-  "tyrannosaurus.enums.License.of",
-  "tyrannosaurus.enums.Toml",
-  "tyrannosaurus.enums.Toml.read",
-  "tyrannosaurus.envs.CondaEnv",
-  "tyrannosaurus.envs.logger",
-  "tyrannosaurus.helpers.CondaForgeHelper",
-  "tyrannosaurus.helpers.EnvHelper",
-  "tyrannosaurus.helpers.PyPiHelper",
-  "tyrannosaurus.helpers.TrashList",
-  "tyrannosaurus.helpers._Env",
-  "tyrannosaurus.helpers.logger",
-  "tyrannosaurus.helpers.scandir_fast",
-  "tyrannosaurus.logger",
-  "tyrannosaurus.new.New",
-  "tyrannosaurus.new.VersionNotFoundError",
-  "tyrannosaurus.new.logger",
-  "tyrannosaurus.new.tyranno_url",
-  "tyrannosaurus.parser.LiteralParser",
-  "tyrannosaurus.pkg",
-  "tyrannosaurus.recipes.Recipe",
-  "tyrannosaurus.recipes.logger",
-  "tyrannosaurus.sync.Sync",
-  "tyrannosaurus.sync.logger",
-  "tyrannosaurus.update.Update"
+  "tyrannosaurus.enums.License.apache2"
  ],
  "deps": {
-  "dataclasses": [],
+  "dataclasses": [
+   "dataclasses/conda-forge/noarch/dataclasses-0.6-py_0"
+  ],
   "datetime": [],
-  "enum": [],
-  "grayskull": [],
+  "enum": [
+   "privy/conda-forge/noarch/privy-6.0.0-py_0"
+  ],
+  "grayskull": [
+   "grayskull/conda-forge/noarch/grayskull-0.2.0-py_0"
+  ],
   "importlib": [],
   "logging": [],
   "os": [],
-  "pathlib": [],
+  "pathlib": [
+   "pathlib/conda-forge/noarch/pathlib-1.0.1-py_1"
+  ],
   "re": [],
-  "requests": [],
+  "requests": [
+   "requests/conda-forge/noarch/requests-2.23.0-pyh8c360ce_2"
+  ],
   "shutil": [],
   "stat": [],
   "subprocess": [],
   "textwrap": [],
   "tomlkit": [],
-  "typer": [],
+  "typer": [
+   "typer/conda-forge/noarch/typer-0.2.1-py_0"
+  ],
   "typing": [],
-  "tyrannosaurus": []
+  "tyrannosaurus": [
+   "tyrannosaurus/conda-forge/noarch/tyrannosaurus-0.9.1-pyhd8ed1ab_0"
+  ]
  }
 }

@@ -3,11 +3,7 @@
   "abc.ABCMeta",
   "abc.abstractmethod",
   "abc.abstractproperty",
-  "bottle.hook",
   "bottle.response.headers",
-  "bottle.route",
-  "bottle.run",
-  "bottle.static_file",
   "collections.Mapping",
   "collections.OrderedDict",
   "collections.namedtuple",
@@ -24,7 +20,6 @@
   "has_constant",
   "io.StringIO",
   "itertools.izip",
-  "jinja2.Environment",
   "loader",
   "loader.construct_pairs",
   "loader.flatten_mapping",
@@ -111,11 +106,9 @@
   "pandas.concat",
   "pandas.merge",
   "patsy.dmatrix",
-  "patsy.parse_formula.parse_formula",
   "pmat.PMAT",
   "pmat.initialize_gpu",
   "pmat.random",
-  "prettytable.PrettyTable",
   "simplejson.dumps",
   "statsmodels.formula.api.ols",
   "sys.version_info",
@@ -219,7 +212,9 @@
  ],
  "deps": {
   "abc": [],
-  "bottle": [],
+  "bottle": [
+   "bottle/conda-forge/noarch/bottle-0.12.18-py_0"
+  ],
   "collections": [],
   "comp": [],
   "contextlib": [],
@@ -228,7 +223,9 @@
   "has_constant": [],
   "io": [],
   "itertools": [],
-  "jinja2": [],
+  "jinja2": [
+   "jinja2/conda-forge/noarch/jinja2-2.11.3-pyh44b312d_0"
+  ],
   "loader": [],
   "logging": [],
   "math": [],
@@ -242,9 +239,14 @@
   "orca": [],
   "os": [],
   "pandas": [],
-  "patsy": [],
+  "patsy": [
+   "patsy/conda-forge/noarch/patsy-0.5.1-py_0"
+  ],
   "pmat": [],
-  "prettytable": [],
+  "prettytable": [
+   "prettytable/conda-forge/noarch/prettytable-0.7.2-py_2",
+   "prettytable/conda-forge/noarch/prettytable-2.0.0-pyhd8ed1ab_0"
+  ],
   "simplejson": [],
   "statsmodels": [],
   "sys": [],

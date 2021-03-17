@@ -15,11 +15,6 @@
   "dagster.execute_solid",
   "dagster.seven.get_system_temp_directory",
   "dagster.solid",
-  "dagster_bash.bash_command_solid",
-  "dagster_bash.bash_script_solid",
-  "dagster_bash.solids.bash_command_solid",
-  "dagster_bash.solids.signal",
-  "dagster_bash.version.__version__",
   "os.environ.copy",
   "os.path.abspath",
   "os.path.dirname",
@@ -36,7 +31,10 @@
  ],
  "deps": {
   "dagster": [],
-  "dagster_bash": [],
+  "dagster_bash": [
+   "dagster-bash/conda-forge/noarch/dagster-bash-0.7.0-py_0",
+   "dagster_bash/conda-forge/noarch/dagster_bash-0.6.4-py_0"
+  ],
   "os": [],
   "pytest": [],
   "signal": [],

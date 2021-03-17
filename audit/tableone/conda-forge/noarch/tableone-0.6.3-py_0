@@ -1,22 +1,5 @@
 {
  "bad": [
-  "modality.KernelDensityDerivative",
-  "modality.RefBeta",
-  "modality.RefGaussian",
-  "modality.RefStudentt",
-  "modality.bandwidth_factor",
-  "modality.cum_distr",
-  "modality.dip_and_closest_unimodal_from_cdf",
-  "modality.dip_from_cdf",
-  "modality.dip_pval_tabinterpol",
-  "modality.greatest_convex_minorant_sorted",
-  "modality.hartigan_diptest",
-  "modality.least_concave_majorant_sorted",
-  "modality.pval_hartigan",
-  "modality.select_calibration_distribution",
-  "modality.silverman_bandwidth",
-  "modality.transform_dip_to_other_nbr_pts",
-  "modality.unique",
   "numpy.abs",
   "numpy.amax",
   "numpy.arange",
@@ -76,18 +59,24 @@
   "scipy.stats.normaltest",
   "scipy.stats.ttest_ind",
   "statsmodels.stats.multitest.multipletests",
-  "tableone.InputError",
-  "tableone.warnings",
   "warnings.simplefilter",
   "warnings.warn"
  ],
  "deps": {
-  "modality": [],
+  "modality": [
+   "tableone/conda-forge/noarch/tableone-0.5.15-py_0",
+   "tableone/conda-forge/noarch/tableone-0.6.3-py_0"
+  ],
   "numpy": [],
   "pandas": [],
   "scipy": [],
   "statsmodels": [],
-  "tableone": [],
+  "tableone": [
+   "tableone/conda-forge/noarch/tableone-0.5.0-py_0",
+   "tableone/conda-forge/noarch/tableone-0.5.1-py_0",
+   "tableone/conda-forge/noarch/tableone-0.5.15-py_0",
+   "tableone/conda-forge/noarch/tableone-0.6.3-py_0"
+  ],
   "warnings": []
  }
 }

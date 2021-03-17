@@ -1,29 +1,10 @@
 {
  "bad": [
-  "LbAPCommon.parsing.BASE_JOB_SCHEMA",
-  "LbAPCommon.parsing.DEFAULT_JOB_VALUES",
-  "LbAPCommon.parsing.FileNotFoundError",
-  "LbAPCommon.parsing.RE_APPLICATION",
-  "LbAPCommon.parsing.RE_INFORM",
-  "LbAPCommon.parsing.RE_JOB_NAME",
-  "LbAPCommon.parsing.RE_OPTIONS_FN",
-  "LbAPCommon.parsing.RE_OUTPUT_FILE_TYPE",
-  "LbAPCommon.parsing._ordered_dict_to_dict",
-  "LbAPCommon.validators.bookkeeping_xml.InputFile",
-  "LbAPCommon.validators.bookkeeping_xml.OutputFile",
-  "LbAPCommon.validators.bookkeeping_xml._find_input_files",
-  "LbAPCommon.validators.bookkeeping_xml._find_output_files",
-  "LbAPCommon.validators.logs.MESSAGE_RE",
-  "LbAPCommon.validators.logs._spit_by_level",
-  "LbAPCommon.validators.logs.known_messages",
   "check_func",
   "collections.OrderedDict",
   "collections.defaultdict",
   "collections.namedtuple",
   "datetime.timedelta",
-  "jinja2.StrictUndefined",
-  "jinja2.Template",
-  "jinja2.TemplateError",
   "lxml.etree.parse",
   "os.path.basename",
   "os.path.isfile",
@@ -48,11 +29,16 @@
   "yaml.safe_load"
  ],
  "deps": {
-  "LbAPCommon": [],
+  "LbAPCommon": [
+   "lbapcommon/conda-forge/noarch/lbapcommon-0.0.2-py_0",
+   "lbapcommon/conda-forge/noarch/lbapcommon-0.0.4-py_0"
+  ],
   "check_func": [],
   "collections": [],
   "datetime": [],
-  "jinja2": [],
+  "jinja2": [
+   "jinja2/conda-forge/noarch/jinja2-2.11.3-pyh44b312d_0"
+  ],
   "lxml": [],
   "os": [],
   "pkg_resources": [],

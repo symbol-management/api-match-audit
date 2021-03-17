@@ -3,14 +3,8 @@
   "airflow.exceptions.AirflowException",
   "airflow.hooks.base.BaseHook",
   "airflow.models.BaseOperator",
-  "airflow.providers.http.hooks.http.HttpHook",
-  "airflow.providers.http.operators.http.SimpleHttpOperator",
-  "airflow.providers.slack.hooks.slack.SlackHook",
-  "airflow.providers.slack.hooks.slack_webhook.SlackWebhookHook",
-  "airflow.providers.slack.operators.slack.SlackAPIOperator",
   "airflow.utils.decorators.apply_defaults",
   "json.dumps",
-  "slack_sdk.WebClient",
   "typing.Any",
   "typing.Dict",
   "typing.List",
@@ -20,7 +14,9 @@
  "deps": {
   "airflow": [],
   "json": [],
-  "slack_sdk": [],
+  "slack_sdk": [
+   "slack-sdk/conda-forge/noarch/slack-sdk-3.4.0-pyhd8ed1ab_0"
+  ],
   "typing": [],
   "warnings": []
  }

@@ -1,16 +1,5 @@
 {
  "bad": [
-  "ads2inspire.cli.append_needed_to_bib_file",
-  "ads2inspire.cli.filter_ads_keys",
-  "ads2inspire.cli.filter_matchable_fields",
-  "ads2inspire.cli.get_insp_replacements_query",
-  "ads2inspire.cli.load_bib_dbs",
-  "ads2inspire.cli.parse_aux",
-  "ads2inspire.cli.rewrite_tex_file",
-  "ads2inspire.extract_key_from_bib_str",
-  "ads2inspire.find_already_present_insp_keys",
-  "ads2inspire.maybe_get_insp_bib",
-  "ads2inspire.maybe_get_insp_bib_methods",
   "bibtexparser.bparser.BibTexParser",
   "bibtexparser.load",
   "click.Path",
@@ -19,18 +8,21 @@
   "click.option",
   "logging.basicConfig",
   "logging.getLogger",
-  "pathlib.Path",
   "re.compile",
   "re.match",
   "re.search",
   "time.sleep"
  ],
  "deps": {
-  "ads2inspire": [],
+  "ads2inspire": [
+   "ads2inspire/conda-forge/noarch/ads2inspire-0.1.1-py_0"
+  ],
   "bibtexparser": [],
   "click": [],
   "logging": [],
-  "pathlib": [],
+  "pathlib": [
+   "pathlib/conda-forge/noarch/pathlib-1.0.1-py_1"
+  ],
   "re": [],
   "time": []
  }
