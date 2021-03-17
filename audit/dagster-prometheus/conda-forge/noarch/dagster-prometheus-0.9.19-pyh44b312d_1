@@ -8,12 +8,6 @@
   "dagster.execute_solid",
   "dagster.resource",
   "dagster.solid",
-  "dagster_prometheus.prometheus_resource",
-  "dagster_prometheus.resources.PrometheusResource",
-  "dagster_prometheus.version.__version__",
-  "dagster_prometheus_tests.test_resources.ENV",
-  "dagster_prometheus_tests.test_resources.EPS",
-  "dagster_prometheus_tests.test_resources.MODE",
   "prometheus_client.CollectorRegistry",
   "prometheus_client.Counter",
   "prometheus_client.Enum",
@@ -31,8 +25,14 @@
  ],
  "deps": {
   "dagster": [],
-  "dagster_prometheus": [],
-  "dagster_prometheus_tests": [],
+  "dagster_prometheus": [
+   "dagster-prometheus/conda-forge/noarch/dagster-prometheus-0.7.2-py_0",
+   "dagster-prometheus/conda-forge/noarch/dagster-prometheus-0.9.20-pyh44b312d_1"
+  ],
+  "dagster_prometheus_tests": [
+   "dagster-prometheus/conda-forge/noarch/dagster-prometheus-0.7.2-py_0",
+   "dagster-prometheus/conda-forge/noarch/dagster-prometheus-0.9.20-pyh44b312d_1"
+  ],
   "prometheus_client": [],
   "time": [],
   "version": []

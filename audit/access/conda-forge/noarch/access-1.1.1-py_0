@@ -1,18 +1,9 @@
 {
  "bad": [
-  "access.access.access",
-  "access.access.access_log_stream",
-  "access.access.weights",
-  "access.datasets.datasets",
-  "access.fca.weighted_catchment",
-  "access.raam.iterate_raam",
   "fca.fca_ratio",
   "fca.three_stage_fca",
   "fca.two_stage_fca",
   "fca.weighted_catchment",
-  "geopandas.GeoDataFrame",
-  "geopandas.read_file",
-  "geopandas.sjoin",
   "helpers.normalized_access",
   "helpers.sanitize_demand_cost",
   "helpers.sanitize_supplies",
@@ -43,9 +34,13 @@
   "weights.step_fn"
  ],
  "deps": {
-  "access": [],
+  "access": [
+   "access/conda-forge/noarch/access-1.1.1-py_0"
+  ],
   "fca": [],
-  "geopandas": [],
+  "geopandas": [
+   "geopandas/conda-forge/noarch/geopandas-0.3.0-py_1"
+  ],
   "helpers": [],
   "logging": [],
   "numpy": [],

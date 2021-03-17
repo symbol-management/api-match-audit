@@ -36,14 +36,12 @@
   "csv.Sniffer",
   "csv.excel",
   "csv.reader",
-  "datapackage.DataPackage",
   "exceptions.FormatError",
   "exceptions.HTTPError",
   "exceptions.IOError",
   "exceptions.SchemeError",
   "exceptions.SourceError",
   "exceptions.TabulatorException",
-  "ezodf.opendoc",
   "gzip.open",
   "helpers.detect_encoding",
   "helpers.detect_html",
@@ -54,7 +52,6 @@
   "helpers.requote_uri",
   "helpers.reset_stream",
   "helpers.stringify_value",
-  "ijson.items",
   "importlib.import_module",
   "io.BufferedRandom",
   "io.BytesIO",
@@ -63,12 +60,9 @@
   "isoformat",
   "items",
   "itertools.chain",
-  "jsonlines.Reader",
   "loader.Loader",
   "loader_class",
   "loaders.stream.StreamLoader",
-  "openpyxl.load_workbook",
-  "openpyxl.utils.rows_from_range",
   "os.makedirs",
   "os.path.dirname",
   "os.path.exists",
@@ -81,30 +75,16 @@
   "re.compile",
   "re.search",
   "re.sub",
-  "requests.Session",
   "shutil.copyfileobj",
-  "six.BytesIO",
-  "six.PY2",
-  "six.PY3",
-  "six.add_metaclass",
   "six.moves.urllib.parse.parse_qs",
   "six.moves.urllib.parse.urlparse",
   "six.moves.urllib.parse.urlunparse",
-  "six.string_types",
-  "six.text_type",
   "sqlalchemy.create_engine",
   "sqlalchemy.sql.select",
   "sqlalchemy.sql.table",
   "sqlalchemy.sql.text",
   "stream.Stream",
   "sys.stderr",
-  "tabulator.Stream",
-  "tabulator.__version__",
-  "tabulator.cli.cli",
-  "tabulator.exceptions.IOError",
-  "tabulator.exceptions.TabulatorException",
-  "tabulator.helpers.normalize_encoding",
-  "tabulator.loaders.remote._RemoteStream",
   "tempfile.NamedTemporaryFile",
   "tempfile.TemporaryFile",
   "tsv.un",
@@ -113,9 +93,6 @@
   "warnings.warn",
   "writer.Writer",
   "writer_class",
-  "xlrd.XLRDError",
-  "xlrd.XL_CELL_BOOLEAN",
-  "xlrd.open_workbook",
   "zipfile.ZipFile"
  ],
  "deps": {
@@ -128,34 +105,56 @@
   "config": [],
   "copy": [],
   "csv": [],
-  "datapackage": [],
+  "datapackage": [
+   "datapackage/conda-forge/noarch/datapackage-1.6.2-py_0",
+   "datapackage/conda-forge/noarch/datapackage-1.9.3-py_0"
+  ],
   "exceptions": [],
-  "ezodf": [],
+  "ezodf": [
+   "pyexcel-ods3/conda-forge/noarch/pyexcel-ods3-0.5.3-py_0"
+  ],
   "gzip": [],
   "helpers": [],
-  "ijson": [],
+  "ijson": [
+   "ijson/conda-forge/noarch/ijson-2.5-py_0",
+   "ijson/conda-forge/noarch/ijson-3.1.2-pyh9f0ad1d_0"
+  ],
   "importlib": [],
   "io": [],
   "isoformat": [],
   "items": [],
   "itertools": [],
-  "jsonlines": [],
+  "jsonlines": [
+   "jsonlines/conda-forge/noarch/jsonlines-1.2.0-pyh9f0ad1d_2"
+  ],
   "loader": [],
   "loader_class": [],
   "loaders": [],
-  "openpyxl": [],
+  "openpyxl": [
+   "openpyxl/conda-forge/noarch/openpyxl-2.5.11-py_0"
+  ],
   "os": [],
   "parser": [],
   "parser_class": [],
   "processor": [],
   "re": [],
-  "requests": [],
+  "requests": [
+   "requests/conda-forge/noarch/requests-2.23.0-pyh8c360ce_2"
+  ],
   "shutil": [],
-  "six": [],
+  "six": [
+   "six/conda-forge/noarch/six-1.14.0-py_1"
+  ],
   "sqlalchemy": [],
   "stream": [],
   "sys": [],
-  "tabulator": [],
+  "tabulator": [
+   "tabulator/conda-forge/noarch/tabulator-1.15.0-py_0",
+   "tabulator/conda-forge/noarch/tabulator-1.28.0-py_0",
+   "tabulator/conda-forge/noarch/tabulator-1.38.3-pyh9f0ad1d_0",
+   "tabulator/conda-forge/noarch/tabulator-1.40.0-pyh9f0ad1d_0",
+   "tabulator/conda-forge/noarch/tabulator-1.47.0-pyh9f0ad1d_0"
+  ],
   "tempfile": [],
   "tsv": [],
   "unicodecsv": [],
@@ -163,7 +162,9 @@
   "warnings": [],
   "writer": [],
   "writer_class": [],
-  "xlrd": [],
+  "xlrd": [
+   "xlrd/conda-forge/noarch/xlrd-2.0.1-pyhd8ed1ab_3"
+  ],
   "zipfile": []
  }
 }

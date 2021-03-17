@@ -2,23 +2,8 @@
  "bad": [
   "clusterhandler.DaskClusterHandler",
   "dashboardhandler.DaskDashboardHandler",
-  "dask.config.get",
-  "dask.config.merge",
   "dask.distributed.Adaptive",
   "dask.distributed.utils.format_bytes",
-  "dask_labextension.dashboardhandler.PingableWSClientConnection",
-  "dask_labextension.dashboardhandler.WebSocketHandlerMixin",
-  "dask_labextension.dashboardhandler._normalize_dashboard_link",
-  "dask_labextension.dashboardhandler.pingable_ws_connect",
-  "dask_labextension.manager.Cluster",
-  "dask_labextension.manager.ClusterModel",
-  "dask_labextension.manager.DaskClusterManager",
-  "dask_labextension.manager.adaptive",
-  "dask_labextension.manager.cluster",
-  "dask_labextension.manager.configuration",
-  "dask_labextension.manager.kwargs",
-  "dask_labextension.manager.make_cluster_model",
-  "dask_labextension.manager.module",
   "importlib.import_module",
   "inspect.getmro",
   "json.dumps",
@@ -59,8 +44,13 @@
  "deps": {
   "clusterhandler": [],
   "dashboardhandler": [],
-  "dask": [],
-  "dask_labextension": [],
+  "dask": [
+   "dask-core/conda-forge/noarch/dask-core-2.10.0-py_0",
+   "dask-core/conda-forge/noarch/dask-core-2.8.1-py_0"
+  ],
+  "dask_labextension": [
+   "dask-labextension/conda-forge/noarch/dask-labextension-0.3.3-py_1"
+  ],
   "importlib": [],
   "inspect": [],
   "json": [],

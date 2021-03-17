@@ -1,7 +1,6 @@
 {
  "bad": [
   "Bio.SeqIO.index",
-  "appdirs.user_cache_dir",
   "common.build_local_filename",
   "common.build_path",
   "common.clear_cache",
@@ -14,26 +13,6 @@
   "database_table.DatabaseTable.from_dataframe",
   "database_table.DatabaseTable.from_fasta_dict",
   "database_types.db_type",
-  "datacache.cache.download",
-  "datacache.common.ensure_dir",
-  "datacache.common.get_data_dir",
-  "datacache.common.normalize_filename",
-  "datacache.database.METADATA_TABLE_NAME",
-  "datacache.database.logger",
-  "datacache.database_helpers._create_cached_db",
-  "datacache.database_helpers._db_filename_from_dataframe",
-  "datacache.database_helpers.build_tables",
-  "datacache.database_helpers.db_from_dataframe",
-  "datacache.database_helpers.db_from_dataframes",
-  "datacache.database_helpers.db_from_dataframes_with_absolute_path",
-  "datacache.database_helpers.logger",
-  "datacache.database_types._candidate_type_names",
-  "datacache.database_types._dtype_to_db_type_dict",
-  "datacache.database_types._lookup_type_name",
-  "datacache.download._download",
-  "datacache.download.fetch_file",
-  "datacache.download.logger",
-  "datacache.download.urllib_response",
   "download.fetch_csv_dataframe",
   "download.fetch_file",
   "download.file_exists",
@@ -52,7 +31,6 @@
   "pandas.read_csv",
   "pandas.read_html",
   "re.sub",
-  "requests.get",
   "shutil.move",
   "shutil.rmtree",
   "six.moves.urllib.request.Request",
@@ -66,13 +44,17 @@
  ],
  "deps": {
   "Bio": [],
-  "appdirs": [],
+  "appdirs": [
+   "appdirs/conda-forge/noarch/appdirs-1.4.3-py_1"
+  ],
   "common": [],
   "database": [],
   "database_helpers": [],
   "database_table": [],
   "database_types": [],
-  "datacache": [],
+  "datacache": [
+   "datacache/conda-forge/noarch/datacache-0.5.5-py_0"
+  ],
   "download": [],
   "gzip": [],
   "hashlib": [],
@@ -81,7 +63,9 @@
   "os": [],
   "pandas": [],
   "re": [],
-  "requests": [],
+  "requests": [
+   "requests/conda-forge/noarch/requests-2.23.0-pyh8c360ce_2"
+  ],
   "shutil": [],
   "six": [],
   "sqlite3": [],

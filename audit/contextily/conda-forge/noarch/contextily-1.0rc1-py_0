@@ -2,22 +2,9 @@
  "bad": [
   "PIL.Image.open",
   "cartopy.io.img_tiles._merge_tiles",
-  "contextily.place.Place",
-  "contextily.plotting.ATTRIBUTION",
-  "contextily.plotting.INTERPOLATION",
-  "contextily.plotting.ZOOM",
-  "contextily.plotting.add_attribution",
-  "contextily.tile._calculate_zoom",
-  "contextily.tile._retryer",
-  "contextily.tile._sm2ll",
-  "contextily.tile.bounds2img",
-  "geopy.geocoders.Nominatim",
   "io.BytesIO",
   "matplotlib.patheffects.withStroke",
   "matplotlib.pyplot.subplots",
-  "mercantile.bounds",
-  "mercantile.tiles",
-  "mercantile.xy",
   "numpy.arctan",
   "numpy.array",
   "numpy.asarray",
@@ -37,8 +24,6 @@
   "plotting.add_attribution",
   "rasterio.open",
   "rasterio.transform.from_origin",
-  "requests.HTTPError",
-  "requests.get",
   "tile._calculate_zoom",
   "tile._sm2ll",
   "tile.bounds2img",
@@ -50,17 +35,26 @@
  "deps": {
   "PIL": [],
   "cartopy": [],
-  "contextily": [],
-  "geopy": [],
+  "contextily": [
+   "contextily/conda-forge/noarch/contextily-1.0rc1-py_0"
+  ],
+  "geopy": [
+   "geopy/conda-forge/noarch/geopy-1.17.0-py_0"
+  ],
   "io": [],
   "matplotlib": [],
-  "mercantile": [],
+  "mercantile": [
+   "mercantile/conda-forge/noarch/mercantile-1.0.3-py_0",
+   "mercantile/conda-forge/noarch/mercantile-1.1.3-pyh9f0ad1d_0"
+  ],
   "numpy": [],
   "os": [],
   "pandas": [],
   "plotting": [],
   "rasterio": [],
-  "requests": [],
+  "requests": [
+   "requests/conda-forge/noarch/requests-2.23.0-pyh8c360ce_2"
+  ],
   "tile": [],
   "tile_providers": [],
   "warnings": []

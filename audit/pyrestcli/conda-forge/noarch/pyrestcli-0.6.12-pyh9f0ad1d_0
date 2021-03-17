@@ -1,7 +1,6 @@
 {
  "bad": [
   "datetime.datetime",
-  "dateutil.parser.parse",
   "exceptions.BaseException.create",
   "exceptions.NotFoundException",
   "fields.Field",
@@ -11,15 +10,15 @@
   "klass",
   "paginators.DummyPaginator",
   "requests.codes.no_content",
-  "six.iteritems",
-  "six.with_metaclass",
   "sys.modules",
   "urlparse.urljoin",
   "warnings.warn"
  ],
  "deps": {
   "datetime": [],
-  "dateutil": [],
+  "dateutil": [
+   "python-dateutil/conda-forge/noarch/python-dateutil-2.7.4-py_0"
+  ],
   "exceptions": [],
   "fields": [],
   "future": [],
@@ -33,7 +32,9 @@
   "requests": [
    "requests/conda-forge/noarch/requests-2.23.0-pyh8c360ce_2"
   ],
-  "six": [],
+  "six": [
+   "six/conda-forge/noarch/six-1.14.0-py_1"
+  ],
   "sys": [],
   "urlparse": [],
   "warnings": []

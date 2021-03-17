@@ -1,7 +1,6 @@
 {
  "bad": [
   "BadName",
-  "LbDevTools.DATA_DIR",
   "LbEnv.Banner._center",
   "LbEnv.Banner.generate",
   "LbEnv.Bootstrap.bin_path",
@@ -86,13 +85,6 @@
   "LbEnv.getProjectNames",
   "LbEnv.resource_string",
   "LbEnv.which",
-  "LbPlatformUtils.can_run",
-  "LbPlatformUtils.dirac_platform",
-  "LbPlatformUtils.get_viable_containers",
-  "LbPlatformUtils.host_os",
-  "LbPlatformUtils.host_supports_tag",
-  "LbPlatformUtils.inspect.SINGULARITY_ROOTS",
-  "LbPlatformUtils.requires",
   "NotReady",
   "_iter",
   "_unique",
@@ -186,16 +178,18 @@
   "urllib2.urlopen",
   "warnings.warn",
   "with_python",
-  "xenv.Control.Environment",
-  "xenv.Script",
   "xenv.path.extend",
   "xml.dom.minidom.parse"
  ],
  "deps": {
   "BadName": [],
-  "LbDevTools": [],
+  "LbDevTools": [
+   "lbdevtools/conda-forge/noarch/lbdevtools-2.0.15-pyhd8ed1ab_0"
+  ],
   "LbEnv": [],
-  "LbPlatformUtils": [],
+  "LbPlatformUtils": [
+   "lbplatformutils/conda-forge/noarch/lbplatformutils-4.2.5-py_0"
+  ],
   "NotReady": [],
   "_iter": [],
   "_unique": [],
@@ -231,7 +225,9 @@
   "urllib2": [],
   "warnings": [],
   "with_python": [],
-  "xenv": [],
+  "xenv": [
+   "xenv/conda-forge/noarch/xenv-1.0.0-pyh44b312d_0"
+  ],
   "xml": []
  }
 }

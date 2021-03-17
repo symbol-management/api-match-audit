@@ -4,30 +4,7 @@
   "apply_aggregation",
   "copy.copy",
   "copy.deepcopy",
-  "dask.compute",
-  "dask.config.set",
-  "dask.delayed",
-  "dask.diagnostics.ProgressBar",
-  "distributed.client._get_global_client",
-  "distributed.progress",
-  "fsspec.core.split_protocol",
-  "fsspec.get_mapper",
-  "fsspec.mapping.FSMap",
   "functools.reduce",
-  "intake.catalog.Catalog",
-  "intake_esm.core._get_subset",
-  "intake_esm.core._unique",
-  "intake_esm.core.logging",
-  "intake_esm.merge_util._open_asset",
-  "intake_esm.merge_util.dict_union",
-  "intake_esm.merge_util.join_existing",
-  "intake_esm.merge_util.join_new",
-  "intake_esm.merge_util.logger",
-  "intake_esm.merge_util.union",
-  "intake_esm.utils._is_valid_url",
-  "intake_esm.utils.formatter",
-  "intake_esm.utils.handle",
-  "intake_esm.utils.logger",
   "itertools.product",
   "json.dump",
   "json.load",
@@ -46,32 +23,38 @@
   "pandas.MultiIndex",
   "pandas.concat",
   "pandas.read_csv",
-  "pathlib.Path",
   "pkg_resources.DistributionNotFound",
   "pkg_resources.get_distribution",
-  "requests.get",
   "urllib.parse.urlparse",
   "utils._fetch_and_parse_json",
   "utils._fetch_catalog",
   "utils._get_dask_client",
   "utils.logger.info",
-  "utils.logger.setLevel",
-  "xarray.DataArray",
-  "xarray.concat",
-  "xarray.merge",
-  "xarray.open_dataset",
-  "xarray.open_zarr"
+  "utils.logger.setLevel"
  ],
  "deps": {
   "_clear_old_catalog": [],
   "apply_aggregation": [],
   "copy": [],
-  "dask": [],
-  "distributed": [],
-  "fsspec": [],
+  "dask": [
+   "dask-core/conda-forge/noarch/dask-core-2.10.0-py_0",
+   "dask-core/conda-forge/noarch/dask-core-2.8.1-py_0"
+  ],
+  "distributed": [
+   "distributed/conda-forge/noarch/distributed-2.5.0-py_0",
+   "distributed/conda-forge/noarch/distributed-2.9.3-py_0"
+  ],
+  "fsspec": [
+   "fsspec/conda-forge/noarch/fsspec-0.7.2-py_0"
+  ],
   "functools": [],
-  "intake": [],
-  "intake_esm": [],
+  "intake": [
+   "intake/conda-forge/noarch/intake-0.5.3-py_0",
+   "intake/conda-forge/noarch/intake-0.6.0-py_0"
+  ],
+  "intake_esm": [
+   "intake-esm/conda-forge/noarch/intake-esm-2020.3.16-py_0"
+  ],
   "itertools": [],
   "json": [],
   "load_group_dataset_delayed": [],
@@ -80,11 +63,18 @@
   "multiprocessing": [],
   "numpy": [],
   "pandas": [],
-  "pathlib": [],
+  "pathlib": [
+   "pathlib/conda-forge/noarch/pathlib-1.0.1-py_1"
+  ],
   "pkg_resources": [],
-  "requests": [],
+  "requests": [
+   "requests/conda-forge/noarch/requests-2.23.0-pyh8c360ce_2"
+  ],
   "urllib": [],
   "utils": [],
-  "xarray": []
+  "xarray": [
+   "xarray/conda-forge/noarch/xarray-0.13.0-py_0",
+   "xarray/conda-forge/noarch/xarray-0.17.0-pyhd8ed1ab_0"
+  ]
  }
 }

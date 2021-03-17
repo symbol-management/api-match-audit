@@ -12,26 +12,6 @@
   "click.get_current_context",
   "click.types.Choice.complete",
   "click.types.ParamType.complete",
-  "click_completion.BASH_COMPLETION_SCRIPT",
-  "click_completion.FISH_TEMPLATE",
-  "click_completion.POWERSHELL_COMPLETION_SCRIPT",
-  "click_completion.ZSH_TEMPLATE",
-  "click_completion._shellcomplete",
-  "click_completion.choice_complete",
-  "click_completion.do_bash_complete",
-  "click_completion.do_fish_complete",
-  "click_completion.do_powershell_complete",
-  "click_completion.do_zsh_complete",
-  "click_completion.find_unsafe",
-  "click_completion.get_auto_shell",
-  "click_completion.get_choices",
-  "click_completion.get_code",
-  "click_completion.install",
-  "click_completion.multicommand_get_command_short_help",
-  "click_completion.param_type_complete",
-  "click_completion.resolve_ctx",
-  "click_completion.split_args",
-  "click_completion.startswith",
   "escape",
   "os.environ",
   "os.environ.get",
@@ -47,14 +27,15 @@
   "re.sub",
   "shlex.shlex",
   "shlex.split",
-  "six.iteritems",
   "subprocess.check_call",
   "subprocess.check_output",
   "sys.exit"
  ],
  "deps": {
   "click": [],
-  "click_completion": [],
+  "click_completion": [
+   "click-completion/conda-forge/noarch/click-completion-0.2.1-py_0"
+  ],
   "escape": [],
   "jinja2": [
    "jinja2/conda-forge/noarch/jinja2-2.11.3-pyh44b312d_0"
@@ -65,7 +46,9 @@
   "quote": [],
   "re": [],
   "shlex": [],
-  "six": [],
+  "six": [
+   "six/conda-forge/noarch/six-1.14.0-py_1"
+  ],
   "subprocess": [],
   "sys": []
  }

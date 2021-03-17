@@ -2,11 +2,6 @@
  "bad": [
   "collections.defaultdict",
   "os.path.join",
-  "pyspark.AccumulatorParam",
-  "pyspark.profiler.Profiler",
-  "pyspark_flame.Collector",
-  "pyspark_flame.ResultsAccumulator",
-  "pyspark_flame.extract_stack",
   "sys._current_frames",
   "threading.Event",
   "threading.Thread"
@@ -14,8 +9,12 @@
  "deps": {
   "collections": [],
   "os": [],
-  "pyspark": [],
-  "pyspark_flame": [],
+  "pyspark": [
+   "pyspark/conda-forge/noarch/pyspark-2.4.5-py_0"
+  ],
+  "pyspark_flame": [
+   "pyspark-flame/conda-forge/noarch/pyspark-flame-0.2.6-pyh32f6830_1"
+  ],
   "sys": [],
   "threading": []
  }

@@ -1,9 +1,6 @@
 {
  "bad": [
-  "cryptography.hazmat.backends.default_backend",
-  "cryptography.hazmat.primitives.asymmetric.rsa.generate_private_key",
   "cryptography.hazmat.primitives.serialization.Encoding.PEM",
-  "cryptography.hazmat.primitives.serialization.NoEncryption",
   "cryptography.hazmat.primitives.serialization.PrivateFormat.TraditionalOpenSSL",
   "dagster.Field",
   "dagster.ModeDefinition",
@@ -21,42 +18,47 @@
   "dagster.solid",
   "dagster.utils.merge_dicts",
   "dagster.utils.mkdir_p",
-  "dagster_ssh.resources.SSHResource",
-  "dagster_ssh.resources.key_from_str",
-  "dagster_ssh.resources.ssh_resource",
   "dagster_ssh.resources.ssh_resource.get_connection",
   "dagster_ssh.resources.ssh_resource.get_tunnel",
   "dagster_ssh.resources.ssh_resource.log",
-  "dagster_ssh.version.__version__",
-  "dagster_ssh_tests.test_resources.generate_ssh_key",
   "getpass.getuser",
   "logging.root.getChild",
   "os.path.dirname",
   "os.path.expanduser",
   "os.path.isfile",
   "os.path.join",
-  "paramiko.AutoAddPolicy",
-  "paramiko.ProxyCommand",
   "paramiko.RSAKey.from_private_key",
-  "paramiko.SSHClient",
-  "paramiko.SSHConfig",
-  "paramiko.config.SSH_PORT",
-  "six.StringIO",
-  "six.ensure_str",
-  "sshtunnel.SSHTunnelForwarder",
   "version.__version__"
  ],
  "deps": {
-  "cryptography": [],
+  "cryptography": [
+   "privy/conda-forge/noarch/privy-6.0.0-py_0"
+  ],
   "dagster": [],
-  "dagster_ssh": [],
-  "dagster_ssh_tests": [],
+  "dagster_ssh": [
+   "dagster-ssh/conda-forge/noarch/dagster-ssh-0.8.1-pyh32f6830_1",
+   "dagster-ssh/conda-forge/noarch/dagster-ssh-0.9.18-pyh44b312d_0",
+   "dagster-ssh/conda-forge/noarch/dagster-ssh-0.9.19-pyh44b312d_1",
+   "dagster-ssh/conda-forge/noarch/dagster-ssh-0.9.21-pyh44b312d_0"
+  ],
+  "dagster_ssh_tests": [
+   "dagster-ssh/conda-forge/noarch/dagster-ssh-0.9.18-pyh44b312d_0",
+   "dagster-ssh/conda-forge/noarch/dagster-ssh-0.9.19-pyh44b312d_1",
+   "dagster-ssh/conda-forge/noarch/dagster-ssh-0.9.21-pyh44b312d_0"
+  ],
   "getpass": [],
   "logging": [],
   "os": [],
-  "paramiko": [],
-  "six": [],
-  "sshtunnel": [],
+  "paramiko": [
+   "paramiko/conda-forge/noarch/paramiko-2.7.2-pyh9f0ad1d_0"
+  ],
+  "six": [
+   "six/conda-forge/noarch/six-1.14.0-py_1"
+  ],
+  "sshtunnel": [
+   "sshtunnel/conda-forge/noarch/sshtunnel-0.1.5-0",
+   "sshtunnel/conda-forge/noarch/sshtunnel-0.3.1-pyhd8ed1ab_0"
+  ],
   "version": []
  }
 }

@@ -6,17 +6,18 @@
   "dagster.resource",
   "dagster.seven.json.dumps",
   "dagster.solid",
-  "dagster_slack.resources.SlackConnection",
-  "dagster_slack.slack_resource",
-  "dagster_slack.version.__version__",
   "responses.RequestsMock",
-  "responses.activate",
-  "slackclient.SlackClient"
+  "responses.activate"
  ],
  "deps": {
   "dagster": [],
-  "dagster_slack": [],
+  "dagster_slack": [
+   "dagster-slack/conda-forge/noarch/dagster-slack-0.7.1-py_0",
+   "dagster-slack/conda-forge/noarch/dagster-slack-0.8.5-pyh32f6830_0"
+  ],
   "responses": [],
-  "slackclient": []
+  "slackclient": [
+   "slackclient/conda-forge/noarch/slackclient-1.2.1-py_0"
+  ]
  }
 }

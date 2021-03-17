@@ -5,27 +5,12 @@
   "airflow.hooks.base.BaseHook",
   "airflow.models.BaseOperator",
   "airflow.operators.python.PythonOperator",
-  "airflow.providers.jenkins.example_dags.example_jenkins_job_trigger.artifact_grabber",
-  "airflow.providers.jenkins.example_dags.example_jenkins_job_trigger.default_args",
-  "airflow.providers.jenkins.example_dags.example_jenkins_job_trigger.grab_artifact_from_jenkins",
-  "airflow.providers.jenkins.example_dags.example_jenkins_job_trigger.job_trigger",
-  "airflow.providers.jenkins.hooks.jenkins.JenkinsHook",
-  "airflow.providers.jenkins.operators.jenkins_job_trigger.JenkinsJobTriggerOperator",
-  "airflow.providers.jenkins.operators.jenkins_job_trigger.JenkinsRequest",
-  "airflow.providers.jenkins.operators.jenkins_job_trigger.ParamType",
-  "airflow.providers.jenkins.operators.jenkins_job_trigger.jenkins_request_with_headers",
   "airflow.utils.decorators.apply_defaults",
   "ast.literal_eval",
   "datetime.datetime",
   "datetime.timedelta",
   "distutils.util.strtobool",
-  "jenkins.EmptyResponseException",
-  "jenkins.Jenkins",
-  "jenkins.JenkinsException",
-  "jenkins.NotFoundException",
-  "jenkins.TimeoutException",
   "json.loads",
-  "requests.Request",
   "six.moves.urllib.request.Request",
   "socket.timeout",
   "time.sleep",
@@ -39,13 +24,19 @@
   "urllib.error.URLError"
  ],
  "deps": {
-  "airflow": [],
+  "airflow": [
+   "apache-airflow-providers-jenkins/conda-forge/noarch/apache-airflow-providers-jenkins-1.0.1-pyhd8ed1ab_0"
+  ],
   "ast": [],
   "datetime": [],
   "distutils": [],
-  "jenkins": [],
+  "jenkins": [
+   "python-jenkins/conda-forge/noarch/python-jenkins-1.7.0-py_0"
+  ],
   "json": [],
-  "requests": [],
+  "requests": [
+   "requests/conda-forge/noarch/requests-2.23.0-pyh8c360ce_2"
+  ],
   "six": [],
   "socket": [],
   "time": [],
