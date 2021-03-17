@@ -1,20 +1,6 @@
 {
  "bad": [
   "DecimalComparator",
-  "datacompy.core.LOG",
-  "datacompy.core.calculate_max_diff",
-  "datacompy.core.columns_equal",
-  "datacompy.core.compare_string_and_date_columns",
-  "datacompy.core.generate_id_within_group",
-  "datacompy.core.get_merged_columns",
-  "datacompy.core.render",
-  "datacompy.core.temp_column_name",
-  "datacompy.sparkcompare.MatchType",
-  "datacompy.sparkcompare.NUMERIC_SPARK_TYPES",
-  "datacompy.sparkcompare._is_comparable",
-  "datacompy.sparkcompare.decimal_comparator",
-  "enum.Enum",
-  "helper",
   "itertools.chain",
   "logging.getLogger",
   "numpy.isclose",
@@ -26,21 +12,28 @@
   "pandas.to_datetime",
   "pyspark.sql.functions.col",
   "pyspark.sql.functions.lit",
-  "pyspark.sql.functions.struct",
   "pyspark.sql.functions.sum",
   "sys.stdout"
  ],
  "deps": {
   "DecimalComparator": [],
-  "datacompy": [],
-  "enum": [],
-  "helper": [],
+  "datacompy": [
+   "datacompy/conda-forge/noarch/datacompy-0.7.1-pyhd8ed1ab_0"
+  ],
+  "enum": [
+   "privy/conda-forge/noarch/privy-6.0.0-py_0"
+  ],
+  "helper": [
+   "helper/conda-forge/noarch/helper-2.5.0-pyh44b312d_0"
+  ],
   "itertools": [],
   "logging": [],
   "numpy": [],
   "os": [],
   "pandas": [],
-  "pyspark": [],
+  "pyspark": [
+   "pyspark/conda-forge/noarch/pyspark-2.4.5-py_0"
+  ],
   "sys": []
  }
 }

@@ -1,9 +1,7 @@
 {
  "bad": [
   "core.RemoteRunner",
-  "dataclasses.dataclass",
   "datetime.datetime.now",
-  "fabric.Connection",
   "getpass.getpass",
   "invoke.exceptions.UnexpectedExit",
   "jupyter_forward.cli.app",
@@ -13,9 +11,6 @@
   "jupyter_forward.core.is_port_available",
   "jupyter_forward.core.open_browser",
   "jupyter_forward.core.parse_stdout",
-  "paramiko.ssh_exception.AuthenticationException",
-  "paramiko.ssh_exception.BadAuthenticationType",
-  "pathlib.Path",
   "pkg_resources.DistributionNotFound",
   "pkg_resources.get_distribution",
   "re.findall",
@@ -26,31 +21,36 @@
   "socket.socket",
   "sys.exit",
   "time.sleep",
-  "typer.Exit",
-  "typer.Option",
-  "typer.Typer",
-  "typer.echo",
-  "typer.run",
   "typing.Optional",
   "webbrowser.open"
  ],
  "deps": {
   "core": [],
-  "dataclasses": [],
+  "dataclasses": [
+   "dataclasses/conda-forge/noarch/dataclasses-0.6-py_0"
+  ],
   "datetime": [],
-  "fabric": [],
+  "fabric": [
+   "fabric/conda-forge/noarch/fabric-2.6.0-pyh44b312d_0"
+  ],
   "getpass": [],
   "invoke": [],
   "jupyter_forward": [],
-  "paramiko": [],
-  "pathlib": [],
+  "paramiko": [
+   "paramiko/conda-forge/noarch/paramiko-2.7.2-pyh9f0ad1d_0"
+  ],
+  "pathlib": [
+   "pathlib/conda-forge/noarch/pathlib-1.0.1-py_1"
+  ],
   "pkg_resources": [],
   "re": [],
   "rich": [],
   "socket": [],
   "sys": [],
   "time": [],
-  "typer": [],
+  "typer": [
+   "typer/conda-forge/noarch/typer-0.2.1-py_0"
+  ],
   "typing": [],
   "webbrowser": []
  }

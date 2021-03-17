@@ -1,10 +1,7 @@
 {
  "bad": [
   "GithubResourceTesting",
-  "cryptography.hazmat.backends.default_backend",
-  "cryptography.hazmat.primitives.asymmetric.rsa.generate_private_key",
   "cryptography.hazmat.primitives.serialization.Encoding.PEM",
-  "cryptography.hazmat.primitives.serialization.NoEncryption",
   "cryptography.hazmat.primitives.serialization.PrivateFormat.TraditionalOpenSSL",
   "dagster.Field",
   "dagster.IntSource",
@@ -14,17 +11,9 @@
   "dagster.execute_solid",
   "dagster.resource",
   "dagster.solid",
-  "dagster_github.github_resource",
-  "dagster_github.resources.GithubResource",
-  "dagster_github.resources.GithubResource.__init__",
-  "dagster_github.resources.to_seconds",
-  "dagster_github.version.__version__",
-  "dagster_github_tests.test_resources.FAKE_PRIVATE_RSA_KEY",
   "datetime.datetime",
   "datetime.datetime.strptime",
   "jwt.encode",
-  "requests.Session",
-  "requests.post",
   "responses.RequestsMock",
   "responses.activate",
   "time.time",
@@ -32,13 +21,21 @@
  ],
  "deps": {
   "GithubResourceTesting": [],
-  "cryptography": [],
+  "cryptography": [
+   "privy/conda-forge/noarch/privy-6.0.0-py_0"
+  ],
   "dagster": [],
-  "dagster_github": [],
-  "dagster_github_tests": [],
+  "dagster_github": [
+   "dagster-github/conda-forge/noarch/dagster-github-0.9.5-py_0"
+  ],
+  "dagster_github_tests": [
+   "dagster-github/conda-forge/noarch/dagster-github-0.9.5-py_0"
+  ],
   "datetime": [],
   "jwt": [],
-  "requests": [],
+  "requests": [
+   "requests/conda-forge/noarch/requests-2.23.0-pyh8c360ce_2"
+  ],
   "responses": [],
   "time": [],
   "version": []

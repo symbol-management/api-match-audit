@@ -1,14 +1,9 @@
 {
  "bad": [
   "django.conf.settings.DEBUG",
-  "django.template.Library",
-  "django.utils.encoding.force_str",
-  "django.utils.safestring.mark_safe",
   "doctest.testmod",
   "f",
   "functools.wraps",
-  "jinja2.Markup",
-  "jinja2.exceptions.TemplateError",
   "nose.main",
   "os.path.dirname",
   "os.path.join",
@@ -24,7 +19,6 @@
   "sys.path.insert",
   "titlecase.ALL_CAPS.match",
   "titlecase.UC_INITIALS.match",
-  "titlecase.titlecase",
   "typogrify.filters.TypogrifyError",
   "typogrify.filters._test",
   "typogrify.filters.amp",
@@ -56,17 +50,24 @@
   "typogrify.templatetags.typogrify_tags.register"
  ],
  "deps": {
-  "django": [],
+  "django": [
+   "django/conda-forge/noarch/django-1.11.7-py_0",
+   "django/conda-forge/noarch/django-3.1.1-py_0"
+  ],
   "doctest": [],
   "f": [],
   "functools": [],
-  "jinja2": [],
+  "jinja2": [
+   "jinja2/conda-forge/noarch/jinja2-2.11.3-pyh44b312d_0"
+  ],
   "nose": [],
   "os": [],
   "re": [],
   "smartypants": [],
   "sys": [],
-  "titlecase": [],
+  "titlecase": [
+   "titlecase/conda-forge/noarch/titlecase-1.1.1-pyh9f0ad1d_0"
+  ],
   "typogrify": []
  }
 }

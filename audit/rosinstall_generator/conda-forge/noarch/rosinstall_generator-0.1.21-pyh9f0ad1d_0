@@ -2,9 +2,6 @@
  "bad": [
   "argparse.ArgumentParser",
   "argparse.ArgumentTypeError",
-  "catkin_pkg.package.InvalidPackage",
-  "catkin_pkg.package.parse_package_string",
-  "catkin_pkg.packages.find_packages_allowing_duplicates",
   "copy.deepcopy",
   "logging.DEBUG",
   "logging.INFO",
@@ -59,11 +56,6 @@
   "rosinstall_generator.generator.get_wet_distro",
   "rosinstall_generator.generator.logger",
   "rosinstall_generator.generator.sort_rosinstall",
-  "rospkg.RosPack",
-  "rospkg.RosStack",
-  "rospkg.distro.distro_uri",
-  "rospkg.distro.load_distro",
-  "rospkg.environment.ROS_PACKAGE_PATH",
   "sys.argv",
   "sys.stderr",
   "urllib2.URLError",
@@ -72,14 +64,18 @@
  ],
  "deps": {
   "argparse": [],
-  "catkin_pkg": [],
+  "catkin_pkg": [
+   "catkin_pkg/conda-forge/noarch/catkin_pkg-0.4.22-pyh9f0ad1d_0"
+  ],
   "copy": [],
   "logging": [],
   "os": [],
   "re": [],
   "rosdistro": [],
   "rosinstall_generator": [],
-  "rospkg": [],
+  "rospkg": [
+   "rospkg/conda-forge/noarch/rospkg-1.2.10-pyh44b312d_0"
+  ],
   "sys": [],
   "urllib2": [],
   "yaml": []

@@ -5,15 +5,12 @@
   "cftime.datetime",
   "collections.OrderedDict",
   "collections.abc.Sequence",
-  "configparser.ConfigParser",
-  "dask.utils.byte_sizes",
   "datetime.MAXYEAR",
   "datetime.MINYEAR",
   "datetime.datetime",
   "datetime.datetime.now",
   "datetime.timedelta",
   "dateutil.parser._parser.ParserError",
-  "dateutil.parser.parse",
   "get_credentials",
   "glob.glob",
   "itertools.chain",
@@ -129,21 +126,24 @@
   "subprocess.check_call",
   "sys.exit",
   "time.sleep",
-  "traceback.format_exc",
-  "xarray.core.dataarray.DataArray",
-  "xarray.core.dataset.Dataset",
-  "xarray.open_dataset",
-  "xarray.open_mfdataset"
+  "traceback.format_exc"
  ],
  "deps": {
   "CaringoStore": [],
   "argparse": [],
   "cftime": [],
   "collections": [],
-  "configparser": [],
-  "dask": [],
+  "configparser": [
+   "configparser/conda-forge/noarch/configparser-5.0.1-py_0"
+  ],
+  "dask": [
+   "dask-core/conda-forge/noarch/dask-core-2.10.0-py_0",
+   "dask-core/conda-forge/noarch/dask-core-2.8.1-py_0"
+  ],
   "datetime": [],
-  "dateutil": [],
+  "dateutil": [
+   "python-dateutil/conda-forge/noarch/python-dateutil-2.7.4-py_0"
+  ],
   "get_credentials": [],
   "glob": [],
   "itertools": [],
@@ -160,6 +160,9 @@
   "sys": [],
   "time": [],
   "traceback": [],
-  "xarray": []
+  "xarray": [
+   "xarray/conda-forge/noarch/xarray-0.13.0-py_0",
+   "xarray/conda-forge/noarch/xarray-0.17.0-pyhd8ed1ab_0"
+  ]
  }
 }

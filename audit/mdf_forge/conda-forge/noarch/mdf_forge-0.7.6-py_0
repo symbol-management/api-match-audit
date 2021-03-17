@@ -1,7 +1,5 @@
 {
  "bad": [
-  "globus_sdk.LocalGlobusConnectPersonal",
-  "globus_sdk.NullAuthorizer",
   "mdf_forge.forge.HTTP_NUM_LIMIT",
   "mdf_toolbox.AggregateHelper",
   "mdf_toolbox.SearchHelper",
@@ -19,19 +17,27 @@
   "os.path.normpath",
   "os.path.splitext",
   "re.search",
-  "requests.get",
-  "tqdm.tqdm",
   "urllib.parse.urlparse",
   "version.__version__"
  ],
  "deps": {
-  "globus_sdk": [],
+  "globus_sdk": [
+   "globus-sdk/conda-forge/noarch/globus-sdk-1.8.0-py_0"
+  ],
   "mdf_forge": [],
   "mdf_toolbox": [],
   "os": [],
   "re": [],
-  "requests": [],
-  "tqdm": [],
+  "requests": [
+   "requests/conda-forge/noarch/requests-2.23.0-pyh8c360ce_2"
+  ],
+  "tqdm": [
+   "tqdm/conda-forge/noarch/tqdm-4.19.2-py_0",
+   "tqdm/conda-forge/noarch/tqdm-4.36.1-py_0",
+   "tqdm/conda-forge/noarch/tqdm-4.41.0-py_0",
+   "tqdm/conda-forge/noarch/tqdm-4.44.0-py_0",
+   "tqdm/conda-forge/noarch/tqdm-4.46.0-pyh9f0ad1d_0"
+  ],
   "urllib": [],
   "version": []
  }

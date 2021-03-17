@@ -2,7 +2,6 @@
  "bad": [
   "convert",
   "exceptions.InvalidInputType",
-  "geopandas.GeoDataFrame",
   "geopandas.GeoDataFrame.from_features",
   "numbers.Number",
   "numpy.isclose",
@@ -10,21 +9,11 @@
   "pkg_resources.DistributionNotFound",
   "pkg_resources.get_distribution",
   "project",
-  "pygeoutils.pygeoutils.DEF_CRS",
-  "pygeoutils.pygeoutils._create_dataset",
-  "pygeoutils.pygeoutils._geometry_mask",
-  "pygeoutils.pygeoutils.arcgis2geojson",
-  "pygeoutils.pygeoutils.check_bbox",
   "pyproj.Transformer.from_crs",
   "rasterio.MemoryFile",
   "rasterio.features.geometry_mask",
   "rasterio.warp.calculate_default_transform",
   "rings2geojson",
-  "shapely.geometry.LineString",
-  "shapely.geometry.Point",
-  "shapely.geometry.Polygon",
-  "shapely.geometry.box",
-  "shapely.ops.transform",
   "simplejson.dumps",
   "simplejson.loads",
   "typing.Any",
@@ -33,28 +22,33 @@
   "typing.Optional",
   "typing.Tuple",
   "typing.Union",
-  "warnings.warn",
-  "xarray.DataArray",
-  "xarray.Dataset",
-  "xarray.merge",
-  "xarray.open_rasterio"
+  "warnings.warn"
  ],
  "deps": {
   "convert": [],
   "exceptions": [],
-  "geopandas": [],
+  "geopandas": [
+   "geopandas/conda-forge/noarch/geopandas-0.3.0-py_1"
+  ],
   "numbers": [],
   "numpy": [],
   "pkg_resources": [],
   "project": [],
-  "pygeoutils": [],
+  "pygeoutils": [
+   "pygeoutils/conda-forge/noarch/pygeoutils-0.1.4-py_0"
+  ],
   "pyproj": [],
   "rasterio": [],
   "rings2geojson": [],
-  "shapely": [],
+  "shapely": [
+   "solaris/conda-forge/noarch/solaris-0.4.0-pyhe05a262_0"
+  ],
   "simplejson": [],
   "typing": [],
   "warnings": [],
-  "xarray": []
+  "xarray": [
+   "xarray/conda-forge/noarch/xarray-0.13.0-py_0",
+   "xarray/conda-forge/noarch/xarray-0.17.0-pyhd8ed1ab_0"
+  ]
  }
 }
