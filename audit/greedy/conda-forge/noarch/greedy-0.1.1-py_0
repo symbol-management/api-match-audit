@@ -1,11 +1,5 @@
 {
  "bad": [
-  "geopandas.datasets.get_path",
-  "geopandas.read_file",
-  "greedy.greedy",
-  "greedy.greedy.STRATEGIES",
-  "greedy.greedy._balanced",
-  "greedy.greedy._geos_sw",
   "libpysal.weights.Queen.from_dataframe",
   "libpysal.weights.Rook.from_dataframe",
   "libpysal.weights.W",
@@ -13,18 +7,22 @@
   "operator.itemgetter",
   "pandas.Series",
   "pytest.mark.parametrize",
-  "pytest.raises",
-  "tests.test_greedy.sw",
-  "tests.test_greedy.world"
+  "pytest.raises"
  ],
  "deps": {
-  "geopandas": [],
-  "greedy": [],
+  "geopandas": [
+   "geopandas/conda-forge/noarch/geopandas-0.3.0-py_1"
+  ],
+  "greedy": [
+   "greedy/conda-forge/noarch/greedy-0.1.1-py_0"
+  ],
   "libpysal": [],
   "networkx": [],
   "operator": [],
   "pandas": [],
   "pytest": [],
-  "tests": []
+  "tests": [
+   "greedy/conda-forge/noarch/greedy-0.1.1-py_0"
+  ]
  }
 }

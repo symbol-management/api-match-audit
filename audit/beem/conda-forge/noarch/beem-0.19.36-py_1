@@ -35,14 +35,6 @@
   "builtins.str",
   "calendar.timegm",
   "chains.known_chains",
-  "click.argument",
-  "click.disable_unicode_literals_warning",
-  "click.get_text_stream",
-  "click.group",
-  "click.option",
-  "click.progressbar",
-  "click.prompt",
-  "click.version_option",
   "collections.Mapping",
   "collections.OrderedDict",
   "comment.Comment",
@@ -112,7 +104,6 @@
   "exceptions.decodeRPCErrorMsg",
   "fetchkeys",
   "fractions.Fraction",
-  "future.utils.python_2_unicode_compatible",
   "graphenerpc.GrapheneRPC",
   "hashlib.new",
   "hashlib.sha1",
@@ -254,10 +245,8 @@
   "vote.ActiveVotes",
   "wallet.Wallet",
   "websocket.WebSocket",
-  "websocket.WebSocketApp",
   "websocket.WebSocketException",
-  "websocket.WebSocketTimeoutException",
-  "websocket._exceptions.WebSocketConnectionClosedException"
+  "websocket.WebSocketTimeoutException"
  ],
  "deps": {
   "Crypto": [],
@@ -272,18 +261,23 @@
   "base58": [],
   "base64": [],
   "beem": [
-   "beem/conda-forge/noarch/beem-0.19.36-py_1"
+   "beem/conda-forge/noarch/beem-0.19.36-py_1",
+   "beem/conda-forge/noarch/beem-0.19.46-py_1"
   ],
   "beemapi": [
    "beem/conda-forge/noarch/beem-0.19.36-py_1",
+   "beem/conda-forge/noarch/beem-0.19.46-py_1",
    "beem/conda-forge/noarch/beem-0.22.3-pyh9f0ad1d_0"
   ],
   "beembase": [
-   "beem/conda-forge/noarch/beem-0.19.36-py_1"
+   "beem/conda-forge/noarch/beem-0.19.36-py_1",
+   "beem/conda-forge/noarch/beem-0.19.46-py_1"
   ],
   "beemgraphenebase": [
+   "beem/conda-forge/noarch/beem-0.19.26-py_0",
    "beem/conda-forge/noarch/beem-0.19.27-py_0",
    "beem/conda-forge/noarch/beem-0.19.36-py_1",
+   "beem/conda-forge/noarch/beem-0.19.46-py_1",
    "beem/conda-forge/noarch/beem-0.22.3-pyh9f0ad1d_0",
    "beem/conda-forge/noarch/beem-0.23.1-pyh9f0ad1d_0",
    "beem/conda-forge/noarch/beem-0.23.3-pyh9f0ad1d_0"
@@ -295,7 +289,10 @@
   "builtins": [],
   "calendar": [],
   "chains": [],
-  "click": [],
+  "click": [
+   "click/conda-forge/noarch/click-6.7-py_1",
+   "click/conda-forge/noarch/click-7.1-pyh8c360ce_0"
+  ],
   "collections": [],
   "comment": [],
   "concurrent": [],
@@ -319,7 +316,9 @@
   "exceptions": [],
   "fetchkeys": [],
   "fractions": [],
-  "future": [],
+  "future": [
+   "future/conda-forge/linux-64/future-0.17.1-py36_1000"
+  ],
   "graphenerpc": [],
   "hashlib": [],
   "instance": [],
@@ -379,6 +378,8 @@
   "version": [],
   "vote": [],
   "wallet": [],
-  "websocket": []
+  "websocket": [
+   "websocket-client/conda-forge/noarch/websocket-client-0.47.0-py_0"
+  ]
  }
 }

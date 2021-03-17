@@ -11,9 +11,6 @@
   "http.server.SimpleHTTPRequestHandler",
   "http.server.SimpleHTTPRequestHandler.translate_path",
   "jenkspy.jenks_breaks",
-  "mapboxgl.utils.create_color_stops",
-  "mapboxgl.utils.df_to_geojson",
-  "mapboxgl.viz.CircleViz",
   "math.floor",
   "matplotlib.figure.Figure",
   "matplotlib.image.AxesImage",
@@ -77,8 +74,6 @@
   "pytest.fixture",
   "pytest.raises",
   "re.match",
-  "requests.ConnectionError",
-  "requests.session",
   "scipy.signal.savgol_filter",
   "skimage.measure.block_reduce",
   "string.Formatter",
@@ -107,9 +102,7 @@
   "swepy.tests.test_process.arrays",
   "swepy.tests.test_process.scraped_files",
   "swepy.tests.test_process.swe",
-  "sys.stderr",
-  "tqdm.tqdm",
-  "xarray.open_dataset"
+  "sys.stderr"
  ],
  "deps": {
   "affine": [],
@@ -118,7 +111,9 @@
   "glob": [],
   "http": [],
   "jenkspy": [],
-  "mapboxgl": [],
+  "mapboxgl": [
+   "mapboxgl/conda-forge/noarch/mapboxgl-0.10.2-py_0"
+  ],
   "math": [],
   "matplotlib": [],
   "multiprocessing": [],
@@ -130,13 +125,24 @@
   "pandas": [],
   "pytest": [],
   "re": [],
-  "requests": [],
+  "requests": [
+   "requests/conda-forge/noarch/requests-2.23.0-pyh8c360ce_2"
+  ],
   "scipy": [],
   "skimage": [],
   "string": [],
   "swepy": [],
   "sys": [],
-  "tqdm": [],
-  "xarray": []
+  "tqdm": [
+   "tqdm/conda-forge/noarch/tqdm-4.19.2-py_0",
+   "tqdm/conda-forge/noarch/tqdm-4.36.1-py_0",
+   "tqdm/conda-forge/noarch/tqdm-4.41.0-py_0",
+   "tqdm/conda-forge/noarch/tqdm-4.44.0-py_0",
+   "tqdm/conda-forge/noarch/tqdm-4.46.0-pyh9f0ad1d_0"
+  ],
+  "xarray": [
+   "xarray/conda-forge/noarch/xarray-0.13.0-py_0",
+   "xarray/conda-forge/noarch/xarray-0.17.0-pyhd8ed1ab_0"
+  ]
  }
 }

@@ -1,23 +1,7 @@
 {
  "bad": [
-  "dataclasses.dataclass",
   "datetime.datetime",
   "datetime.datetime.strptime",
-  "loadmydata.config.CONFIG",
-  "loadmydata.config.HERE",
-  "loadmydata.container.DataSet",
-  "loadmydata.load_nyc_taxi.ANOMALY_LABELS",
-  "loadmydata.load_nyc_taxi.DATAFILE_NAME",
-  "loadmydata.load_nyc_taxi.DATASET_NAME",
-  "loadmydata.load_nyc_taxi.DESCRIPTION",
-  "loadmydata.load_nyc_taxi.get_nyc_taxi_download_link",
-  "loadmydata.load_nyc_taxi.read_timestamps_str",
-  "loadmydata.load_uea_ucr.load_Xy_from_arff",
-  "loadmydata.padding.pad_at_the_end",
-  "loadmydata.utils.download_from_remote_uea_ucr",
-  "loadmydata.utils.get_cache_home",
-  "loadmydata.utils.get_local_data_path",
-  "loadmydata.utils.get_uea_ucr_download_link",
   "numpy.array",
   "numpy.float",
   "numpy.ma.core.MaskedArray",
@@ -31,26 +15,37 @@
   "os.rmdir",
   "pandas.DataFrame",
   "pandas.read_csv",
-  "pathlib.Path",
-  "requests.get",
   "scipy.io.arff.loadarff",
   "shutil.move",
-  "tqdm.tqdm",
   "yarl.URL",
   "zipfile.ZipFile"
  ],
  "deps": {
-  "dataclasses": [],
+  "dataclasses": [
+   "dataclasses/conda-forge/noarch/dataclasses-0.6-py_0"
+  ],
   "datetime": [],
-  "loadmydata": [],
+  "loadmydata": [
+   "loadmydata/conda-forge/noarch/loadmydata-0.0.7-pyhd8ed1ab_0"
+  ],
   "numpy": [],
   "os": [],
   "pandas": [],
-  "pathlib": [],
-  "requests": [],
+  "pathlib": [
+   "pathlib/conda-forge/noarch/pathlib-1.0.1-py_1"
+  ],
+  "requests": [
+   "requests/conda-forge/noarch/requests-2.23.0-pyh8c360ce_2"
+  ],
   "scipy": [],
   "shutil": [],
-  "tqdm": [],
+  "tqdm": [
+   "tqdm/conda-forge/noarch/tqdm-4.19.2-py_0",
+   "tqdm/conda-forge/noarch/tqdm-4.36.1-py_0",
+   "tqdm/conda-forge/noarch/tqdm-4.41.0-py_0",
+   "tqdm/conda-forge/noarch/tqdm-4.44.0-py_0",
+   "tqdm/conda-forge/noarch/tqdm-4.46.0-pyh9f0ad1d_0"
+  ],
   "yarl": [],
   "zipfile": []
  }

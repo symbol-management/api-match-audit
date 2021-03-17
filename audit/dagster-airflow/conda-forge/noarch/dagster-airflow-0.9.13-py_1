@@ -26,12 +26,6 @@
   "airflow.utils.state.State.SUCCESS",
   "airflow.utils.timezone.utcnow",
   "ast.literal_eval",
-  "click.Path",
-  "click.STRING",
-  "click.UsageError",
-  "click.echo",
-  "click.group",
-  "click.option",
   "collections.OrderedDict",
   "collections.defaultdict",
   "collections.namedtuple",
@@ -90,15 +84,9 @@
   "dagster.utils.indenting_printer.IndentingStringIoPrinter",
   "dagster.utils.load_yaml_from_glob_list",
   "dagster_graphql.client.util.construct_execute_plan_variables",
-  "dagster_graphql.client.util.parse_raw_log_lines",
   "datetime.datetime",
   "datetime.datetime.now",
   "datetime.timedelta",
-  "dateutil.parser.parse",
-  "docker.APIClient",
-  "docker.from_env",
-  "docker.tls.TLSConfig",
-  "events",
   "factory.make_airflow_dag_containerized_for_recon_repo",
   "factory.make_airflow_dag_for_operator",
   "factory.make_airflow_dag_for_recon_repo",
@@ -123,7 +111,6 @@
   "pkg_resources.get_distribution",
   "pytest.fixture",
   "re.sub",
-  "six.ensure_str",
   "sys.exc_info",
   "sys.stdout",
   "time.sleep",
@@ -143,23 +130,33 @@
   "_format_sublist": [],
   "airflow": [],
   "ast": [],
-  "click": [],
+  "click": [
+   "click/conda-forge/noarch/click-6.7-py_1",
+   "click/conda-forge/noarch/click-7.1-pyh8c360ce_0"
+  ],
   "collections": [],
   "compile": [],
   "contextlib": [],
   "dagster": [],
   "dagster_airflow": [
    "dagster-airflow/conda-forge/noarch/dagster-airflow-0.7.13-py_1",
+   "dagster-airflow/conda-forge/noarch/dagster-airflow-0.8.2-py_1",
    "dagster-airflow/conda-forge/noarch/dagster-airflow-0.9.14-py_1",
    "dagster-airflow/conda-forge/noarch/dagster-airflow-0.9.15-pyhd8ed1ab_1"
   ],
   "dagster_graphql": [
-   "dagster_graphql/conda-forge/noarch/dagster_graphql-0.6.7.post0-py_0"
+   "dagster-graphql/conda-forge/noarch/dagster-graphql-0.7.16-pyhc8dfbb8_0"
   ],
   "datetime": [],
-  "dateutil": [],
-  "docker": [],
-  "events": [],
+  "dateutil": [
+   "python-dateutil/conda-forge/noarch/python-dateutil-2.7.4-py_0"
+  ],
+  "docker": [
+   "docker-py/conda-forge/linux-64/docker-py-3.5.1-py27_1000"
+  ],
+  "events": [
+   "events/conda-forge/noarch/events-0.4-pyhd8ed1ab_0"
+  ],
   "factory": [],
   "itertools": [],
   "json": [],
@@ -173,7 +170,9 @@
   "pkg_resources": [],
   "pytest": [],
   "re": [],
-  "six": [],
+  "six": [
+   "six/conda-forge/noarch/six-1.14.0-py_1"
+  ],
   "sys": [],
   "time": [],
   "util": [],

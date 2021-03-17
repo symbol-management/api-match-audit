@@ -1,14 +1,5 @@
 {
  "bad": [
-  "click.Group",
-  "click.Path",
-  "click.STRING",
-  "click.UNPROCESSED",
-  "click.argument",
-  "click.command",
-  "click.group",
-  "click.option",
-  "click.testing.CliRunner",
   "collections.OrderedDict.fromkeys",
   "config.DEFAULT_CONFIG",
   "config.dict_wrapper",
@@ -108,8 +99,6 @@
   "defaults.result_backend",
   "defaults.task_default_priority",
   "defaults.task_default_queue",
-  "docker.errors.ImageNotFound",
-  "docker.from_env",
   "events.append",
   "executor.CELERY_CONFIG",
   "executor.CeleryExecutor",
@@ -117,7 +106,6 @@
   "executor.celery_executor.config_field.config_type",
   "executor_k8s.CeleryK8sJobExecutor",
   "hashlib.md5",
-  "kombu.Queue",
   "os.environ",
   "os.environ.copy",
   "os.environ.get",
@@ -155,7 +143,10 @@
   "celery": [
    "celery/conda-forge/noarch/celery-4.3.0-py_1"
   ],
-  "click": [],
+  "click": [
+   "click/conda-forge/noarch/click-6.7-py_1",
+   "click/conda-forge/noarch/click-7.1-pyh8c360ce_0"
+  ],
   "collections": [],
   "config": [],
   "contextlib": [],
@@ -182,14 +173,18 @@
   ],
   "dagster_test": [],
   "defaults": [],
-  "docker": [],
+  "docker": [
+   "docker-py/conda-forge/linux-64/docker-py-3.5.1-py27_1000"
+  ],
   "events": [
    "events/conda-forge/noarch/events-0.4-pyhd8ed1ab_0"
   ],
   "executor": [],
   "executor_k8s": [],
   "hashlib": [],
-  "kombu": [],
+  "kombu": [
+   "kombu/conda-forge/noarch/kombu-4.6.1-py_0"
+  ],
   "kubernetes": [
    "python-kubernetes/conda-forge/noarch/python-kubernetes-12.0.1-pyhd3deb0d_0"
   ],

@@ -1,6 +1,5 @@
 {
  "bad": [
-  "appconf.AppConf",
   "cache.cache.get",
   "cache.cache.set",
   "conf.settings.SELECT2_CACHE_BACKEND",
@@ -9,33 +8,10 @@
   "conf.settings.SELECT2_I18N_AVAILABLE_LANGUAGES",
   "conf.settings.SELECT2_I18N_PATH",
   "conf.settings.SELECT2_JS",
-  "django.apps.AppConfig",
   "django.contrib.admin.widgets.SELECT2_TRANSLATIONS.get",
-  "django.core.cache.caches",
-  "django.core.signing.BadSignature",
-  "django.core.signing.dumps",
-  "django.core.signing.loads",
-  "django.db.models.Q",
   "django.forms.Media",
   "django.forms.Select",
   "django.forms.SelectMultiple",
-  "django.forms.models.ModelChoiceIterator",
-  "django.http.Http404",
-  "django.http.JsonResponse",
-  "django.urls.path",
-  "django.urls.reverse",
-  "django.utils.translation.get_language",
-  "django.views.generic.list.BaseListView",
-  "django_select2.forms.HeavySelect2Mixin",
-  "django_select2.forms.HeavySelect2MultipleWidget",
-  "django_select2.forms.HeavySelect2TagWidget",
-  "django_select2.forms.HeavySelect2Widget",
-  "django_select2.forms.ModelSelect2Mixin",
-  "django_select2.forms.Select2Mixin",
-  "django_select2.forms.Select2MultipleWidget",
-  "django_select2.forms.Select2TagMixin",
-  "django_select2.forms.Select2TagWidget",
-  "django_select2.forms.Select2Widget",
   "itertools.chain",
   "pickle.PicklingError",
   "re.compile",
@@ -44,11 +20,17 @@
   "widget_cls"
  ],
  "deps": {
-  "appconf": [],
+  "appconf": [
+   "django-appconf/conda-forge/noarch/django-appconf-1.0.4-pyh9f0ad1d_0"
+  ],
   "cache": [],
   "conf": [],
-  "django": [],
-  "django_select2": [],
+  "django": [
+   "django/conda-forge/noarch/django-3.1.1-py_0"
+  ],
+  "django_select2": [
+   "django-select2/conda-forge/noarch/django-select2-7.6.1-pyh44b312d_0"
+  ],
   "itertools": [],
   "pickle": [],
   "re": [],

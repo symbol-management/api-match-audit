@@ -1,8 +1,5 @@
 {
  "bad": [
-  "ads.ExportQuery",
-  "ads.SearchQuery",
-  "ads.exceptions.APIResponseError",
   "astropy.__version__",
   "astropy.constants.GM_sun.value",
   "astropy.constants.c.value",
@@ -30,7 +27,6 @@
   "astropy.utils.data.download_file",
   "astropy.utils.data.get_cached_urls",
   "astropy.utils.data.is_url_in_cache",
-  "bs4.BeautifulSoup",
   "collections.OrderedDict",
   "config.ADS_URL.format",
   "config.ATNF_BASE_URL",
@@ -83,39 +79,17 @@
   "numpy.zeros",
   "os.path.join",
   "os.remove",
-  "packaging.version.parse",
   "pandas.DataFrame",
   "pandas.Series",
-  "psrqpy.config.ATNF_BASE_URL",
-  "psrqpy.config.PSR_BINARY",
-  "psrqpy.config.PSR_BINARY_PARS",
-  "psrqpy.config.PSR_DERIVED",
-  "psrqpy.config.PSR_DERIVED_PARS",
-  "psrqpy.config.PSR_GENERAL",
-  "psrqpy.config.PSR_GENERAL_PARS",
-  "psrqpy.config.PSR_TIMING",
-  "psrqpy.config.PSR_TIMING_PARS",
-  "psrqpy.pulsar.Pulsar",
-  "psrqpy.pulsar.Pulsars",
-  "psrqpy.search.ASTROPY_V32",
-  "psrqpy.search.QueryATNF",
-  "psrqpy.search._",
-  "psrqpy.utils.LOGEXPRS",
-  "psrqpy.utils.check_old_references",
-  "psrqpy.utils.check_update",
-  "psrqpy.warning_format",
   "pulsar.Pulsar",
   "pulsar.Pulsars",
   "re.compile",
   "re.split",
   "re.sub",
-  "requests.get",
   "scipy.optimize.newton",
   "search.QueryATNF",
-  "six.iteritems",
   "six.moves.cPickle.dump",
   "six.moves.cPickle.load",
-  "six.string_types",
   "tarfile.open",
   "tempfile.gettempdir",
   "utils.B_field",
@@ -132,9 +106,14 @@
   "warnings.warn"
  ],
  "deps": {
-  "ads": [],
+  "ads": [
+   "ads/conda-forge/noarch/ads-0.12.3-py_2"
+  ],
   "astropy": [],
-  "bs4": [],
+  "bs4": [
+   "beautifulsoup4/conda-forge/noarch/beautifulsoup4-4.9.1-py_1",
+   "beautifulsoup4/conda-forge/noarch/beautifulsoup4-4.9.2-py_0"
+  ],
   "collections": [],
   "config": [],
   "copy": [],
@@ -145,15 +124,24 @@
   "matplotlib": [],
   "numpy": [],
   "os": [],
-  "packaging": [],
+  "packaging": [
+   "packaging/conda-forge/noarch/packaging-20.4-pyh9f0ad1d_0",
+   "packaging/conda-forge/noarch/packaging-20.8-pyhd3deb0d_0"
+  ],
   "pandas": [],
-  "psrqpy": [],
+  "psrqpy": [
+   "psrqpy/conda-forge/noarch/psrqpy-1.0.9-pyh9f0ad1d_1"
+  ],
   "pulsar": [],
   "re": [],
-  "requests": [],
+  "requests": [
+   "requests/conda-forge/noarch/requests-2.23.0-pyh8c360ce_2"
+  ],
   "scipy": [],
   "search": [],
-  "six": [],
+  "six": [
+   "six/conda-forge/noarch/six-1.14.0-py_1"
+  ],
   "tarfile": [],
   "tempfile": [],
   "utils": [],
