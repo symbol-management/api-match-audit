@@ -1,13 +1,9 @@
 {
  "bad": [
   "__builtin__.bytes",
-  "base64.b64decode",
-  "base64.b64encode",
   "builtins.bytes",
   "f",
-  "functools.wraps",
   "hashlib.md5",
-  "hmac.HMAC",
   "kerberos.AUTH_GSS_COMPLETE",
   "kerberos.authGSSClientClean",
   "kerberos.authGSSClientInit",
@@ -23,25 +19,33 @@
   "puresasl.QOP.AUTH_CONF",
   "puresasl.QOP.AUTH_INT",
   "puresasl.QOP.all",
-  "random.random",
   "struct.pack",
   "struct.unpack",
   "sys.version_info"
  ],
  "deps": {
   "__builtin__": [],
-  "base64": [],
+  "base64": [
+   "python/conda-forge/linux-64/python-3.8.5-h425cb1d_2_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "builtins": [],
   "f": [],
-  "functools": [],
+  "functools": [
+   "python/conda-forge/linux-64/python-2.7.15-h721da81_1008",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "hashlib": [],
-  "hmac": [],
+  "hmac": [
+   "python/conda-forge/linux-64/python-2.7.15-h721da81_1008",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "kerberos": [],
   "mech_class": [],
-  "puresasl": [
-   "pure-sasl/conda-forge/noarch/pure-sasl-0.4.0-py_0"
+  "puresasl": [],
+  "random": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
   ],
-  "random": [],
   "struct": [],
   "sys": []
  }

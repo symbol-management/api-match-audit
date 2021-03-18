@@ -3,16 +3,10 @@
   "asyncio.Future",
   "asyncio.InvalidStateError",
   "asyncio.ensure_future",
-  "asyncio.futures._chain_future",
   "asyncio.iscoroutine",
   "asyncio.new_event_loop",
   "asyncio.set_event_loop",
-  "concurrent.futures.Future",
-  "concurrent.futures.ProcessPoolExecutor",
-  "concurrent.futures.ThreadPoolExecutor",
   "continuation",
-  "functools.update_wrapper",
-  "inspect.iscoroutinefunction",
   "self",
   "self.concurrent_future",
   "self.concurrent_future.done",
@@ -29,20 +23,26 @@
   "threading.Thread",
   "threading.current_thread",
   "typing.Generic",
-  "typing.TypeVar",
-  "unsync.unsync._isfunction"
+  "typing.TypeVar"
  ],
  "deps": {
-  "asyncio": [],
-  "concurrent": [],
+  "asyncio": [
+   "python/conda-forge/linux-64/python-3.8.5-h425cb1d_2_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "concurrent": [
+   "futures/conda-forge/linux-64/futures-3.2.0-py27_0"
+  ],
   "continuation": [],
-  "functools": [],
-  "inspect": [],
+  "functools": [
+   "python/conda-forge/linux-64/python-2.7.15-h721da81_1008",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "inspect": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "self": [],
   "threading": [],
-  "typing": [],
-  "unsync": [
-   "unsync/conda-forge/noarch/unsync-1.2.1-pyh9f0ad1d_0"
-  ]
+  "typing": []
  }
 }

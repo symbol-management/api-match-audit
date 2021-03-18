@@ -1,37 +1,15 @@
 {
  "bad": [
-  "IPython.__version__",
-  "IPython.core.magic_arguments.argument",
-  "IPython.core.magic_arguments.magic_arguments",
-  "IPython.core.magic_arguments.parse_argstring",
   "IPython.display.clear_output",
-  "IPython.get_ipython",
   "_raise_on_closed",
-  "ast.literal_eval",
-  "base64.standard_b64decode",
-  "base64.standard_b64encode",
   "call",
   "close_transports",
-  "collections.OrderedDict",
   "collections.abc.Iterator",
   "collections.abc.Mapping",
   "collections.abc.Sequence",
-  "collections.namedtuple",
-  "concurrent.futures.TimeoutError",
-  "contextlib.contextmanager",
   "converter",
-  "copy.deepcopy",
   "data_type_constructor",
-  "datetime.date",
-  "datetime.date.fromtimestamp",
-  "datetime.datetime",
-  "datetime.datetime.fromtimestamp",
-  "datetime.datetime.strptime",
-  "datetime.time",
-  "decimal.Decimal",
   "exc_class",
-  "functools.partial",
-  "functools.update_wrapper",
   "get_column_data",
   "google.api.client_pb2.DESCRIPTOR",
   "google.api.field_behavior_pb2.DESCRIPTOR",
@@ -40,13 +18,6 @@
   "google.api_core.client_options.ClientOptions",
   "google.api_core.iam.Policy",
   "google.api_core.iam.Policy.from_api_repr",
-  "google.cloud._helpers.UTC",
-  "google.cloud._helpers._RFC3339_MICROS",
-  "google.cloud._helpers._RFC3339_NO_FRACTION",
-  "google.cloud._helpers._date_from_iso8601_date",
-  "google.cloud._helpers._datetime_from_microseconds",
-  "google.cloud._helpers._to_bytes",
-  "google.cloud._http.JSONConnection",
   "google.cloud.bigquery._helpers._SCALAR_VALUE_TO_JSON_PARAM.get",
   "google.cloud.bigquery.job.SourceFormat.NEWLINE_DELIMITED_JSON",
   "google.cloud.bigquery.job.SourceFormat.PARQUET",
@@ -90,8 +61,6 @@
   "google.cloud.bigquery_v2.types.StandardSqlDataType.TypeKind.TIMESTAMP",
   "google.cloud.bigquery_v2.types.StandardSqlDataType.TypeKind.TYPE_KIND_UNSPECIFIED",
   "google.cloud.bigquery_v2.types.StandardSqlDataType.TypeKind.__doc__",
-  "google.cloud.client.ClientWithProject",
-  "google.cloud.exceptions.from_http_response",
   "google.protobuf.descriptor.Descriptor",
   "google.protobuf.descriptor.EnumDescriptor",
   "google.protobuf.descriptor.EnumValueDescriptor",
@@ -125,29 +94,18 @@
   "google.protobuf.wrappers_pb2._INT64VALUE",
   "google.protobuf.wrappers_pb2._STRINGVALUE",
   "google.protobuf.wrappers_pb2._UINT32VALUE",
-  "gzip.GzipFile",
   "gzip.READ",
-  "io.BytesIO",
-  "io.IOBase",
   "itertools.chain",
   "itertools.chain.from_iterable",
   "itertools.islice",
   "json.dump",
   "json.dumps",
   "json.load",
-  "logging.getLogger",
-  "math.ceil",
   "method",
-  "numbers.Integral",
-  "numbers.Real",
   "opentelemetry.instrumentation.utils.http_status_to_canonical_code",
-  "opentelemetry.trace.get_tracer",
-  "opentelemetry.trace.status.Status",
-  "operator.itemgetter",
   "optcls",
   "optcls._RESOURCE_NAME",
   "optcls.from_api_repr",
-  "os.SEEK_SET",
   "os.close",
   "os.path.getsize",
   "os.remove",
@@ -155,8 +113,6 @@
   "range.setter",
   "re.IGNORECASE",
   "re.VERBOSE",
-  "re.compile",
-  "re.search",
   "six.moves.collections_abc.Mapping",
   "six.moves.filterfalse",
   "six.moves.http_client.BAD_REQUEST",
@@ -181,39 +137,88 @@
   "weakref.WeakSet"
  ],
  "deps": {
-  "IPython": [],
+  "IPython": [
+   "ipython/conda-forge/linux-64/ipython-5.0.0-py34_0"
+  ],
   "_raise_on_closed": [],
-  "ast": [],
-  "base64": [],
+  "ast": [
+   "python/conda-forge/linux-64/python-2.7.15-h721da81_1008",
+   "python/conda-forge/linux-64/python-3.8.5-h425cb1d_2_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "base64": [
+   "python/conda-forge/linux-64/python-3.8.5-h425cb1d_2_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "call": [],
   "close_transports": [],
-  "collections": [],
-  "concurrent": [],
-  "contextlib": [],
+  "collections": [
+   "python/conda-forge/linux-64/python-3.8.5-h425cb1d_2_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "concurrent": [
+   "futures/conda-forge/linux-64/futures-3.2.0-py27_0",
+   "python/conda-forge/linux-64/python-3.8.5-h425cb1d_2_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "contextlib": [
+   "python/conda-forge/linux-64/python-3.8.5-h425cb1d_2_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "converter": [],
-  "copy": [],
+  "copy": [
+   "python/conda-forge/linux-64/python-3.8.5-h425cb1d_2_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "data_type_constructor": [],
-  "datetime": [],
-  "decimal": [],
+  "datetime": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "decimal": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "enum": [
-   "privy/conda-forge/noarch/privy-6.0.0-py_0"
+   "privy/conda-forge/noarch/privy-6.0.0-py_0",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
   ],
   "exc_class": [],
-  "functools": [],
+  "functools": [
+   "python/conda-forge/linux-64/python-2.7.15-h721da81_1008",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "get_column_data": [],
   "google": [],
-  "gzip": [],
-  "io": [],
+  "gzip": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "io": [
+   "python/conda-forge/linux-64/python-2.7.15-h721da81_1008",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "itertools": [],
   "json": [],
-  "logging": [],
-  "math": [],
+  "logging": [
+   "python/conda-forge/linux-64/python-2.7.15-h721da81_1008",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "math": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "method": [],
-  "numbers": [],
-  "opentelemetry": [],
-  "operator": [],
+  "numbers": [
+   "python/conda-forge/linux-64/python-2.7.15-h721da81_1008",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "opentelemetry": [
+   "opentelemetry-api/conda-forge/linux-64/opentelemetry-api-0.15b0-py37h89c1867_0"
+  ],
+  "operator": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "optcls": [],
-  "os": [],
+  "os": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "parse_nonparams_options": [],
   "proto": [
    "proto-plus/conda-forge/noarch/proto-plus-1.11.0-pyh9f0ad1d_0"
@@ -222,11 +227,14 @@
    "pytz/conda-forge/noarch/pytz-2019.2-py_0"
   ],
   "range": [],
-  "re": [],
+  "re": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "requests": [
    "requests/conda-forge/noarch/requests-2.23.0-pyh8c360ce_2"
   ],
   "six": [
+   "lldb/conda-forge/linux-64/lldb-6.0.0-py35_0",
    "six/conda-forge/noarch/six-1.14.0-py_1"
   ],
   "str": [],

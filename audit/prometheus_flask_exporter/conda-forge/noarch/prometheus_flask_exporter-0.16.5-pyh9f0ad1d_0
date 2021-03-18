@@ -1,19 +1,12 @@
 {
  "bad": [
   "CombinedLabels",
-  "abc.ABCMeta",
-  "abc.abstractmethod",
   "argspec",
   "before",
   "duration_group",
   "f",
-  "flask.Flask",
-  "flask.Response",
-  "flask.current_app",
   "flask.current_app.handle_user_exception",
   "flask.current_app.view_functions",
-  "flask.make_response",
-  "flask.request",
   "flask.request.args",
   "flask.request.args.getlist",
   "flask.request.endpoint",
@@ -23,43 +16,27 @@
   "flask.request.prom_do_not_track",
   "flask.request.prom_exclude_all",
   "flask.request.prom_start_time",
-  "flask.views.MethodViewType",
-  "functools.WRAPPER_ASSIGNMENTS",
-  "functools.WRAPPER_UPDATES",
-  "functools.wraps",
   "get_metric",
-  "inspect.getargspec",
-  "inspect.getfullargspec",
   "label_value",
   "metric_call",
-  "os.environ",
   "os.environ.get",
   "os.getpid",
   "os.path.isdir",
-  "prometheus_client.CONTENT_TYPE_LATEST",
-  "prometheus_client.CollectorRegistry",
-  "prometheus_client.Counter",
-  "prometheus_client.Gauge",
-  "prometheus_client.Histogram",
-  "prometheus_client.REGISTRY",
-  "prometheus_client.Summary",
-  "prometheus_client.generate_latest",
-  "prometheus_client.multiprocess.MultiProcessCollector",
-  "prometheus_client.multiprocess.mark_process_dead",
-  "prometheus_client.start_http_server",
-  "re.compile",
   "revert_when_not_tracked",
   "sys.version_info",
   "threading.Thread",
   "timeit.default_timer",
   "uwsgi.masterpid",
   "value",
-  "warnings.warn",
-  "wrapper"
+  "warnings.warn"
  ],
  "deps": {
   "CombinedLabels": [],
-  "abc": [],
+  "abc": [
+   "python/conda-forge/linux-64/python-2.7.15-h721da81_1008",
+   "python/conda-forge/linux-64/python-3.8.5-h425cb1d_2_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "argspec": [],
   "before": [],
   "connexion": [
@@ -67,18 +44,28 @@
   ],
   "duration_group": [],
   "f": [],
-  "flask": [],
-  "functools": [],
+  "flask": [
+   "flask/conda-forge/noarch/flask-1.0.3-py_0"
+  ],
+  "functools": [
+   "python/conda-forge/linux-64/python-2.7.15-h721da81_1008",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "get_metric": [],
-  "inspect": [],
+  "inspect": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "label_value": [],
   "metric_call": [],
-  "os": [],
-  "prometheus_client": [],
-  "prometheus_flask_exporter": [
-   "prometheus_flask_exporter/conda-forge/noarch/prometheus_flask_exporter-0.16.5-pyh9f0ad1d_0"
+  "os": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
   ],
-  "re": [],
+  "prometheus_client": [
+   "prometheus_client/conda-forge/noarch/prometheus_client-0.6.0-py_0"
+  ],
+  "re": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "revert_when_not_tracked": [],
   "sys": [],
   "threading": [],
@@ -89,6 +76,8 @@
   "werkzeug": [
    "werkzeug/conda-forge/noarch/werkzeug-0.15.0-py_0"
   ],
-  "wrapper": []
+  "wrapper": [
+   "randomgen/conda-forge/linux-64/randomgen-1.19.3-py37h161383b_1"
+  ]
  }
 }

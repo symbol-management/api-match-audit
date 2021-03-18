@@ -1,12 +1,5 @@
 {
  "bad": [
-  "PIL.Image.fromarray",
-  "argparse.ArgumentParser",
-  "base64.b64decode",
-  "base64.b64encode",
-  "bs4.BeautifulSoup",
-  "bs4.FeatureNotFound",
-  "copy.deepcopy",
   "cv2.VideoWriter",
   "cv2.VideoWriter_fourcc",
   "cv2.__version__.startswith",
@@ -15,28 +8,9 @@
   "f",
   "f.readlines",
   "func",
-  "functools.wraps",
-  "getpass.getpass",
-  "getpass.getuser",
   "handler",
   "hashlib.md5",
   "hashlib.sha256",
-  "inspect.currentframe",
-  "inspect.getfile",
-  "io.StringIO",
-  "json.dumps",
-  "json.loads",
-  "logging.CRITICAL",
-  "logging._checkLevel",
-  "logging.error",
-  "logging.getLogger",
-  "logging.info",
-  "logging.warn",
-  "logging.warning",
-  "math.ceil",
-  "math.isnan",
-  "numbers.Number",
-  "numpy.abs",
   "numpy.add",
   "numpy.all",
   "numpy.arange",
@@ -55,7 +29,6 @@
   "numpy.histogram",
   "numpy.int16",
   "numpy.linspace",
-  "numpy.max",
   "numpy.mod",
   "numpy.multiply",
   "numpy.nan",
@@ -72,9 +45,7 @@
   "numpy.transpose",
   "numpy.uint8",
   "numpy.zeros",
-  "os.environ",
   "os.listdir",
-  "os.makedirs",
   "os.path.abspath",
   "os.path.dirname",
   "os.path.exists",
@@ -82,14 +53,8 @@
   "os.path.isfile",
   "os.path.join",
   "os.remove",
-  "plotly.utils.PlotlyJSONEncoder",
   "re.DOTALL",
-  "re.match",
-  "re.search",
-  "requests.RequestException",
-  "requests.Session",
   "requests.codes.ok",
-  "six.BytesIO",
   "six.moves.urllib.error.HTTPError",
   "six.moves.urllib.error.URLError",
   "six.moves.urllib.parse.urlparse",
@@ -99,119 +64,108 @@
   "six.moves.urllib.request.Request",
   "six.moves.urllib.request.build_opener",
   "six.moves.urllib.request.install_opener",
-  "six.raise_from",
-  "six.string_types",
   "tempfile._get_candidate_names",
   "threading.Thread",
   "time.sleep",
   "time.time",
-  "torch.Tensor",
-  "torch.autograd.Variable",
-  "torch.nn.Parameter",
-  "torchfile.T7Reader",
-  "traceback.format_exc",
-  "traceback.format_exception",
-  "traceback.print_exc",
-  "visdom.BS4_AVAILABLE",
-  "visdom.ConnectionError",
-  "visdom.Visdom",
   "visdom.__file__",
-  "visdom.__version__",
-  "visdom._assert_opts",
-  "visdom._axisformat",
-  "visdom._axisformat3d",
-  "visdom._dashCheck",
-  "visdom._lineColorCheck",
-  "visdom._markerColorCheck",
-  "visdom._opts2layout",
-  "visdom._scrub_dict",
-  "visdom._title2str",
-  "visdom._to_numpy",
-  "visdom.base64",
-  "visdom.from_t7",
-  "visdom.here",
-  "visdom.isndarray",
-  "visdom.isnum",
-  "visdom.isstr",
-  "visdom.loadfile",
-  "visdom.logger",
-  "visdom.nan2none",
-  "visdom.pytorch_wrap",
-  "visdom.server.Application",
-  "visdom.server.BaseHandler",
-  "visdom.server.BaseWebSocketHandler",
-  "visdom.server.DEFAULT_BASE_URL",
-  "visdom.server.DEFAULT_ENV_PATH",
-  "visdom.server.DEFAULT_HOSTNAME",
-  "visdom.server.DEFAULT_PORT",
-  "visdom.server.LAYOUT_FILE",
-  "visdom.server.UpdateHandler",
-  "visdom.server.broadcast",
-  "visdom.server.broadcast_envs",
-  "visdom.server.check_auth",
-  "visdom.server.compare_envs",
-  "visdom.server.download_scripts",
-  "visdom.server.download_scripts_and_run",
-  "visdom.server.ensure_dir_exists",
-  "visdom.server.escape_eid",
-  "visdom.server.extract_eid",
-  "visdom.server.gather_envs",
-  "visdom.server.get_path",
-  "visdom.server.get_rand_id",
-  "visdom.server.hash_password",
-  "visdom.server.here",
-  "visdom.server.load_env",
-  "visdom.server.main",
-  "visdom.server.register_window",
-  "visdom.server.send_to_sources",
-  "visdom.server.serialize_env",
-  "visdom.server.set_cookie",
-  "visdom.server.start_server",
-  "visdom.server.tornado_settings",
-  "visdom.server.unpack_lua",
-  "visdom.server.update_window",
-  "visdom.server.window",
-  "visdom.torch_types",
   "warnings.warn",
-  "websocket.WebSocketApp",
-  "zmq.eventloop.ioloop.IOLoop.instance",
-  "zmq.eventloop.ioloop.install"
+  "zmq.eventloop.ioloop.IOLoop.instance"
  ],
  "deps": {
-  "PIL": [],
-  "argparse": [],
-  "base64": [],
-  "bs4": [],
-  "copy": [],
+  "PIL": [
+   "pillow/conda-forge/linux-64/pillow-8.1.2-py38ha0e1e83_0"
+  ],
+  "argparse": [
+   "python/conda-forge/linux-64/python-2.7.15-h721da81_1008",
+   "python/conda-forge/linux-64/python-3.8.5-h425cb1d_2_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "base64": [
+   "python/conda-forge/linux-64/python-3.8.5-h425cb1d_2_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "bs4": [
+   "beautifulsoup4/conda-forge/noarch/beautifulsoup4-4.9.1-py_1",
+   "beautifulsoup4/conda-forge/noarch/beautifulsoup4-4.9.2-py_0"
+  ],
+  "copy": [
+   "python/conda-forge/linux-64/python-3.8.5-h425cb1d_2_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "cv2": [],
   "errno": [],
   "f": [],
   "func": [],
-  "functools": [],
-  "getpass": [],
+  "functools": [
+   "python/conda-forge/linux-64/python-2.7.15-h721da81_1008",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "getpass": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "handler": [],
   "hashlib": [],
-  "inspect": [],
-  "io": [],
-  "json": [],
-  "logging": [],
-  "math": [],
-  "numbers": [],
-  "numpy": [],
-  "os": [],
-  "plotly": [],
-  "re": [],
-  "requests": [],
-  "six": [],
+  "inspect": [
+   "python/conda-forge/linux-64/python-2.7.15-h721da81_1008",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "io": [
+   "python/conda-forge/linux-64/python-2.7.15-h721da81_1008",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "json": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "logging": [
+   "python/conda-forge/linux-64/python-2.7.15-h721da81_1008",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "math": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "numbers": [
+   "python/conda-forge/linux-64/python-2.7.15-h721da81_1008",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "numpy": [
+   "numpy/conda-forge/linux-64/numpy-1.9.3-py27_blas_openblas_203"
+  ],
+  "os": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "plotly": [
+   "plotly/conda-forge/noarch/plotly-3.7.0-py_0"
+  ],
+  "re": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "requests": [
+   "requests/conda-forge/noarch/requests-2.23.0-pyh8c360ce_2"
+  ],
+  "six": [
+   "lldb/conda-forge/linux-64/lldb-6.0.0-py35_0",
+   "six/conda-forge/noarch/six-1.14.0-py_1"
+  ],
   "tempfile": [],
   "threading": [],
   "time": [],
-  "torch": [],
-  "torchfile": [],
-  "traceback": [],
+  "torch": [
+   "pytorch-cpu/conda-forge/linux-64/pytorch-cpu-1.6.0-cpu_py36h3ab7d31_1"
+  ],
+  "torchfile": [
+   "torchfile/conda-forge/noarch/torchfile-0.1.0-py_0"
+  ],
+  "traceback": [
+   "python/conda-forge/linux-64/python-2.7.15-h721da81_1008"
+  ],
   "visdom": [],
   "warnings": [],
-  "websocket": [],
-  "zmq": []
+  "websocket": [
+   "websocket-client/conda-forge/noarch/websocket-client-0.47.0-py_0"
+  ],
+  "zmq": [
+   "pyzmq/conda-forge/linux-64/pyzmq-20.0.0-py39hea8fd45_1"
+  ]
  }
 }

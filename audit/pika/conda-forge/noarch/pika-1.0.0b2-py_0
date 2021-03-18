@@ -1,25 +1,13 @@
 {
  "bad": [
-  "abc.ABCMeta",
-  "abc.abstractmethod",
-  "ast.literal_eval",
   "asyncio.ensure_future",
   "asyncio.get_event_loop",
-  "calendar.timegm",
   "callback",
   "checker",
   "cls",
   "cls._start_connection_workflow",
-  "collections.defaultdict",
-  "collections.deque",
-  "collections.namedtuple",
   "compat.as_bytes",
   "connection_factory",
-  "contextlib.contextmanager",
-  "copy.deepcopy",
-  "datetime.datetime",
-  "datetime.datetime.utcfromtimestamp",
-  "decimal.Decimal",
   "dict.iteritems",
   "dict.itervalues",
   "dict.keys",
@@ -29,29 +17,11 @@
   "errno.EINTR",
   "errno.EWOULDBLOCK",
   "func",
-  "function",
-  "functools.partial",
-  "functools.wraps",
   "handler",
-  "heapq.heapify",
-  "heapq.heappop",
-  "heapq.heappush",
   "is_done",
-  "logging.DEBUG",
-  "logging.ERROR",
-  "logging.NullHandler",
-  "logging.getLogger",
-  "math.ceil",
   "method",
-  "numbers.Integral",
-  "numbers.Real",
   "on_done",
-  "os.name",
   "os.strerror",
-  "platform.python_version",
-  "platform.release",
-  "platform.system",
-  "re.compile",
   "ready",
   "select.KQ_EV_ADD",
   "select.KQ_EV_DELETE",
@@ -88,11 +58,8 @@
   "socket.inet_pton",
   "socket.socket",
   "socket.timeout",
-  "ssl.SSLContext",
-  "ssl.SSLError",
   "ssl.SSL_ERROR_WANT_READ",
   "ssl.SSL_ERROR_WANT_WRITE",
-  "ssl.create_default_context",
   "struct.error",
   "struct.pack",
   "struct.unpack",
@@ -105,7 +72,6 @@
   "time.sleep",
   "time.time",
   "tornado.ioloop.IOLoop.instance",
-  "traceback.format_exception",
   "twisted.internet.defer.Deferred",
   "twisted.internet.defer.DeferredQueue",
   "twisted.internet.defer.DeferredQueue.get",
@@ -128,53 +94,99 @@
   "wrapped"
  ],
  "deps": {
-  "abc": [],
-  "ast": [],
+  "abc": [
+   "python/conda-forge/linux-64/python-2.7.15-h721da81_1008",
+   "python/conda-forge/linux-64/python-3.8.5-h425cb1d_2_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "ast": [
+   "python/conda-forge/linux-64/python-2.7.15-h721da81_1008",
+   "python/conda-forge/linux-64/python-3.8.5-h425cb1d_2_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "asyncio": [],
-  "calendar": [],
+  "calendar": [
+   "python/conda-forge/linux-64/python-3.8.5-h425cb1d_2_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "callback": [],
   "checker": [],
   "cls": [],
-  "collections": [],
+  "collections": [
+   "python/conda-forge/linux-64/python-3.8.5-h425cb1d_2_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "compat": [],
   "connection_factory": [],
-  "contextlib": [],
-  "copy": [],
-  "datetime": [],
-  "decimal": [],
+  "contextlib": [
+   "python/conda-forge/linux-64/python-3.8.5-h425cb1d_2_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "copy": [
+   "python/conda-forge/linux-64/python-3.8.5-h425cb1d_2_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "datetime": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "decimal": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "dict": [],
   "errno": [],
   "events": [
    "events/conda-forge/noarch/events-0.4-pyhd8ed1ab_0"
   ],
   "func": [],
-  "function": [],
-  "functools": [],
-  "handler": [],
-  "heapq": [],
-  "is_done": [],
-  "logging": [],
-  "math": [],
-  "method": [],
-  "numbers": [],
-  "on_done": [],
-  "os": [],
-  "pika": [
-   "pika/conda-forge/noarch/pika-1.0.0b2-py_0"
+  "function": [
+   "cupy/conda-forge/linux-64/cupy-7.5.0-py38hb1193b0_0"
   ],
-  "platform": [],
-  "re": [],
+  "functools": [
+   "python/conda-forge/linux-64/python-2.7.15-h721da81_1008",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "handler": [],
+  "heapq": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "is_done": [],
+  "logging": [
+   "python/conda-forge/linux-64/python-2.7.15-h721da81_1008",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "math": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "method": [],
+  "numbers": [
+   "python/conda-forge/linux-64/python-2.7.15-h721da81_1008",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "on_done": [],
+  "os": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "platform": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "re": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "ready": [],
   "select": [],
   "set_value": [],
   "socket": [],
-  "ssl": [],
+  "ssl": [
+   "python/conda-forge/linux-64/python-2.7.15-h721da81_1008"
+  ],
   "struct": [],
   "sys": [],
   "threading": [],
   "time": [],
   "tornado": [],
-  "traceback": [],
+  "traceback": [
+   "python/conda-forge/linux-64/python-2.7.15-h721da81_1008"
+  ],
   "twisted": [],
   "uuid": [],
   "warnings": [],

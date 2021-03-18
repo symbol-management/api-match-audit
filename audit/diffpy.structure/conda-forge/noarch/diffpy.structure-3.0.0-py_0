@@ -1,18 +1,10 @@
 {
  "bad": [
-  "CifFile.CifFile",
-  "CifFile.StarError",
-  "CifFile.yapps3_compiled_rt.print_error",
   "MyDerivedStructure",
   "__doc__.replace",
   "__name__.count",
   "_resolveindex",
-  "codecs.open",
   "collections.Iterable",
-  "collections.namedtuple",
-  "contextlib.contextmanager",
-  "copy.copy",
-  "copy.deepcopy",
   "cosd",
   "dict.fromkeys",
   "diffpy.Structure.Parsers.P_cif",
@@ -20,23 +12,9 @@
   "diffpy.structure.Structure.__copy__",
   "diffpy.structure.parsers.StructureParser.__init__",
   "diffpy.structure.parsers.parser_index_mod.parser_index.items",
-  "fnmatch.fnmatch",
   "fset",
-  "functools.reduce",
-  "getopt.GetoptError",
-  "getopt.getopt",
-  "importlib.abc.Loader",
-  "importlib.abc.MetaPathFinder",
-  "importlib.import_module",
-  "importlib.util.find_spec",
   "itertools.chain.from_iterable",
   "list.__getitem__",
-  "math.acos",
-  "math.ceil",
-  "math.cos",
-  "math.degrees",
-  "math.radians",
-  "math.sqrt",
   "norm",
   "numpy.all",
   "numpy.allclose",
@@ -92,8 +70,6 @@
   "op",
   "op.R",
   "os.P_NOWAIT",
-  "os.P_WAIT",
-  "os.environ",
   "os.environ.copy",
   "os.path.basename",
   "os.path.dirname",
@@ -102,17 +78,10 @@
   "os.remove",
   "os.rename",
   "os.rmdir",
-  "os.spawnlpe",
   "os.wait",
   "pkg_resources.resource_filename",
-  "pkgutil.extend_path",
   "pmethod",
   "pos2tuple",
-  "re.compile",
-  "re.match",
-  "re.search",
-  "re.split",
-  "re.sub",
   "rp",
   "rule",
   "setlat",
@@ -144,54 +113,80 @@
   "time.gmtime",
   "time.sleep",
   "toarray",
-  "unittest.TestCase",
-  "unittest.TestSuite",
-  "unittest.TextTestRunner",
-  "unittest.defaultTestLoader",
-  "unittest.main",
   "urllib.request.pathname2url",
   "warnings.catch_warnings",
   "warnings.simplefilter",
   "warnings.warn"
  ],
  "deps": {
-  "CifFile": [],
+  "CifFile": [
+   "pycifrw/conda-forge/linux-64/pycifrw-4.3-py36_0"
+  ],
   "MyDerivedStructure": [],
   "__doc__": [],
   "__name__": [],
   "_resolveindex": [],
-  "codecs": [],
-  "collections": [],
-  "contextlib": [],
-  "copy": [],
+  "codecs": [
+   "python/conda-forge/linux-64/python-3.8.5-h425cb1d_2_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "collections": [
+   "python/conda-forge/linux-64/python-3.8.5-h425cb1d_2_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "contextlib": [
+   "python/conda-forge/linux-64/python-3.8.5-h425cb1d_2_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "copy": [
+   "python/conda-forge/linux-64/python-3.8.5-h425cb1d_2_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "cosd": [],
   "dict": [],
-  "diffpy": [
-   "diffpy.structure/conda-forge/noarch/diffpy.structure-3.0.0-py_0"
+  "diffpy": [],
+  "fnmatch": [
+   "python/conda-forge/linux-64/python-2.7.15-h721da81_1008",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
   ],
-  "fnmatch": [],
   "fset": [],
-  "functools": [],
-  "getopt": [],
-  "importlib": [],
+  "functools": [
+   "python/conda-forge/linux-64/python-2.7.15-h721da81_1008",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "getopt": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "importlib": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "itertools": [],
   "list": [],
-  "math": [],
+  "math": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "norm": [],
   "numpy": [],
   "op": [],
-  "os": [],
+  "os": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "pkg_resources": [],
-  "pkgutil": [],
+  "pkgutil": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "pmethod": [],
   "pos2tuple": [],
-  "re": [],
+  "re": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "rp": [],
   "rule": [],
   "setlat": [],
   "shutil": [],
   "signal": [],
   "six": [
+   "lldb/conda-forge/linux-64/lldb-6.0.0-py35_0",
    "six/conda-forge/noarch/six-1.14.0-py_1"
   ],
   "symop": [],
@@ -199,7 +194,9 @@
   "tempfile": [],
   "time": [],
   "toarray": [],
-  "unittest": [],
+  "unittest": [
+   "python/conda-forge/linux-64/python-2.7.15-h721da81_1008"
+  ],
   "urllib": [],
   "warnings": []
  }

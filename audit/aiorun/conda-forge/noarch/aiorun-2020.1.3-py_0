@@ -11,14 +11,9 @@
   "asyncio.set_event_loop",
   "asyncio.set_event_loop_policy",
   "asyncio.sleep",
-  "concurrent.futures.Executor",
-  "concurrent.futures.ThreadPoolExecutor",
   "coro_proxy",
-  "functools.partial",
   "inner",
-  "logging.getLogger",
   "new_coro",
-  "sep",
   "set_fut_done",
   "shutdown_handler",
   "signal.SIGBREAK",
@@ -36,17 +31,24 @@
   "windows_support_wakeup"
  ],
  "deps": {
-  "aiorun": [
-   "aiorun/conda-forge/noarch/aiorun-2020.1.3-py_0"
-  ],
   "asyncio": [],
-  "concurrent": [],
+  "concurrent": [
+   "futures/conda-forge/linux-64/futures-3.2.0-py27_0"
+  ],
   "coro_proxy": [],
-  "functools": [],
+  "functools": [
+   "python/conda-forge/linux-64/python-2.7.15-h721da81_1008",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "inner": [],
-  "logging": [],
+  "logging": [
+   "python/conda-forge/linux-64/python-2.7.15-h721da81_1008",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "new_coro": [],
-  "sep": [],
+  "sep": [
+   "sep/conda-forge/linux-64/sep-1.1.1-py38h5c078b8_0"
+  ],
   "set_fut_done": [],
   "shutdown_handler": [],
   "signal": [],

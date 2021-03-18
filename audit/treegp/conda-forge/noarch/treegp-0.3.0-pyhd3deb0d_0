@@ -2,9 +2,6 @@
  "bad": [
   "PCF",
   "chi2",
-  "copy.deepcopy",
-  "fitsio.FITS",
-  "fitsio.read",
   "iminuit.Minuit.from_array_func",
   "kernels.eval_kernel",
   "numpy.arange",
@@ -30,10 +27,8 @@
   "numpy.linalg.inv",
   "numpy.linspace",
   "numpy.log",
-  "numpy.max",
   "numpy.mean",
   "numpy.meshgrid",
-  "numpy.min",
   "numpy.newaxis",
   "numpy.ones_like",
   "numpy.pi",
@@ -56,9 +51,6 @@
   "scipy.optimize.fmin",
   "scipy.optimize.fsolve",
   "scipy.optimize.minimize",
-  "scipy.spatial.distance.cdist",
-  "scipy.spatial.distance.pdist",
-  "scipy.spatial.distance.squareform",
   "scipy.special.gamma",
   "scipy.special.kv",
   "scipy.stats.binned_statistic_2d",
@@ -77,18 +69,25 @@
  "deps": {
   "PCF": [],
   "chi2": [],
-  "copy": [],
-  "fitsio": [],
+  "copy": [
+   "python/conda-forge/linux-64/python-3.8.5-h425cb1d_2_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "fitsio": [
+   "fitsio/conda-forge/linux-64/fitsio-1.1.3-py36hb9cc59d_3"
+  ],
   "iminuit": [],
   "kernels": [],
-  "numpy": [],
+  "numpy": [
+   "numpy/conda-forge/linux-64/numpy-1.9.3-py27_blas_openblas_203"
+  ],
   "recurse_subclasses": [],
-  "scipy": [],
+  "scipy": [
+   "scipy/conda-forge/linux-64/scipy-0.18.0-np110py34_blas_openblas_200",
+   "scipy/conda-forge/linux-64/scipy-0.18.1-np111py34_blas_openblas_200"
+  ],
   "sklearn": [],
   "treecorr": [],
-  "treegp": [
-   "treegp/conda-forge/noarch/treegp-0.3.0-pyhd3deb0d_0"
-  ],
   "warnings": []
  }
 }

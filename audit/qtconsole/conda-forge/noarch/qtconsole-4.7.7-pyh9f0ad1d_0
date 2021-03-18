@@ -2,9 +2,6 @@
  "bad": [
   "DummyCommHandler",
   "IPython.core.inputtransformer2.TransformerManager",
-  "IPython.lib.latextools.latex_to_png",
-  "IPython.lib.lexers.IPython3Lexer",
-  "IPython.lib.lexers.IPythonLexer",
   "QMouseEvent",
   "TestIPyKernelClient",
   "TestKernelClient",
@@ -14,11 +11,8 @@
   "asyncio.WindowsSelectorEventLoopPolicy",
   "asyncio.get_event_loop_policy",
   "asyncio.set_event_loop_policy",
-  "base64.b64decode",
   "bracket_matcher.BracketMatcher",
   "call_tip_widget.CallTipWidget",
-  "collections.namedtuple",
-  "colorsys.rgb_to_hls",
   "comms.CommManager",
   "completion_html.CompletionHtml",
   "completion_plain.CompletionPlain",
@@ -38,53 +32,16 @@
   "format.setName",
   "format.stringProperty",
   "format.upper",
-  "functools.partial",
   "handler",
   "history_console_widget.HistoryConsoleWidget",
-  "inspect.isclass",
   "int.connect",
-  "io.open",
-  "ipykernel.inprocess.InProcessHBChannel",
-  "ipykernel.inprocess.InProcessKernelClient",
-  "ipykernel.inprocess.InProcessKernelManager",
-  "ipykernel.inprocess.channels.InProcessChannel",
-  "ipython_genutils.importstring.import_item",
-  "ipython_genutils.path.ensure_dir_exists",
-  "ipython_genutils.py3compat.PY3",
-  "ipython_genutils.py3compat.cast_unicode",
-  "ipython_genutils.py3compat.iteritems",
-  "ipython_genutils.py3compat.string_types",
-  "ipython_genutils.py3compat.unicode_type",
-  "ipython_genutils.text",
-  "ipython_genutils.text.columnize",
-  "ipython_genutils.text.compute_item_matrix",
-  "jupyter_client.KernelManager",
-  "jupyter_client.blocking.channels.Empty",
-  "jupyter_client.channels.HBChannel",
-  "jupyter_client.consoleapp.JupyterConsoleApp",
   "jupyter_client.consoleapp.JupyterConsoleApp.classes",
-  "jupyter_client.consoleapp.JupyterConsoleApp.initialize",
-  "jupyter_client.consoleapp.app_aliases",
-  "jupyter_client.consoleapp.app_flags",
-  "jupyter_client.localinterfaces.is_local_ip",
-  "jupyter_client.protocol_version_info",
-  "jupyter_client.restarter.KernelRestarter",
-  "jupyter_client.threaded.ThreadedKernelClient",
-  "jupyter_client.threaded.ThreadedZMQSocketChannel",
-  "jupyter_core.application.JupyterApp",
-  "jupyter_core.application.base_aliases",
-  "jupyter_core.application.base_flags",
-  "jupyter_core.paths.jupyter_config_dir",
-  "jupyter_core.paths.jupyter_runtime_dir",
   "kernel_mixins.QtKernelClientMixin",
   "kernel_mixins.QtKernelManagerMixin",
   "kernel_mixins.QtKernelRestarterMixin",
   "kill_ring.QtKillRing",
   "lexer_class",
-  "logging.DEBUG",
   "os.environ.get",
-  "os.makedirs",
-  "os.name",
   "os.path.abspath",
   "os.path.basename",
   "os.path.commonprefix",
@@ -308,10 +265,6 @@
   "qtpy.QtWidgets.QWidget",
   "qtpy.QtWidgets.QWidget.height",
   "qtpy.QtWidgets.QWidget.width",
-  "re.compile",
-  "re.escape",
-  "re.match",
-  "re.sub",
   "rexmatch",
   "rich_jupyter_widget.RichJupyterWidget",
   "run_line",
@@ -338,7 +291,6 @@
   "threading.Thread",
   "time.sleep",
   "time.time",
-  "traceback.format_exception",
   "traitlets.Any",
   "traitlets.Bool",
   "traitlets.CBool",
@@ -352,37 +304,42 @@
   "traitlets.Type",
   "traitlets.Unicode",
   "traitlets.config.LoggingConfigurable",
-  "traitlets.config.application.boolean_flag",
-  "traitlets.config.application.catch_config_error",
-  "traitlets.config.configurable.LoggingConfigurable",
   "traitlets.default",
   "traitlets.observe",
-  "traitlets.tests.utils.check_help_all_output",
   "unicodedata.category",
-  "unittest.TestCase",
-  "unittest.main",
   "util.MetaQObjectHasTraits",
   "util.SuperQObject",
   "uuid.uuid1",
   "v",
   "warnings.warn",
-  "webbrowser.open",
-  "xml.sax.saxutils.escape"
+  "webbrowser.open"
  ],
  "deps": {
   "DummyCommHandler": [],
-  "IPython": [],
+  "IPython": [
+   "ipython/conda-forge/linux-64/ipython-5.0.0-py34_0"
+  ],
   "QMouseEvent": [],
   "TestIPyKernelClient": [],
   "TestKernelClient": [],
   "action": [],
   "ansi_code_processor": [],
   "asyncio": [],
-  "base64": [],
+  "base64": [
+   "python/conda-forge/linux-64/python-3.8.5-h425cb1d_2_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "bracket_matcher": [],
   "call_tip_widget": [],
-  "collections": [],
-  "colorsys": [],
+  "collections": [
+   "python/conda-forge/linux-64/python-3.8.5-h425cb1d_2_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "colorsys": [
+   "python/conda-forge/linux-64/python-2.7.15-h721da81_1008",
+   "python/conda-forge/linux-64/python-3.8.5-h425cb1d_2_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "comms": [],
   "completion_html": [],
   "completion_plain": [],
@@ -397,35 +354,56 @@
    "flaky/conda-forge/noarch/flaky-3.6.1-py_0"
   ],
   "format": [],
-  "functools": [],
+  "functools": [
+   "python/conda-forge/linux-64/python-2.7.15-h721da81_1008",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "handler": [],
   "history_console_widget": [],
-  "inspect": [],
+  "inspect": [
+   "python/conda-forge/linux-64/python-2.7.15-h721da81_1008",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "int": [],
-  "io": [],
-  "ipykernel": [],
-  "ipython_genutils": [],
-  "jupyter_client": [],
-  "jupyter_core": [],
+  "io": [
+   "python/conda-forge/linux-64/python-2.7.15-h721da81_1008",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "ipykernel": [
+   "ipykernel/conda-forge/linux-64/ipykernel-5.2.0-py38h23f93f0_0"
+  ],
+  "ipython_genutils": [
+   "ipython_genutils/conda-forge/noarch/ipython_genutils-0.2.0-py_1"
+  ],
+  "jupyter_client": [
+   "jupyter_client/conda-forge/noarch/jupyter_client-6.1.2-py_0",
+   "jupyter_client/conda-forge/noarch/jupyter_client-6.1.5-py_0"
+  ],
+  "jupyter_core": [
+   "jupyter_core/conda-forge/noarch/jupyter_core-4.5.0-py_0"
+  ],
   "kernel_mixins": [],
   "kill_ring": [],
   "lexer_class": [],
-  "logging": [],
-  "os": [],
+  "logging": [
+   "python/conda-forge/linux-64/python-2.7.15-h721da81_1008",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "os": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "pos": [],
   "pygments": [
    "pygments/conda-forge/noarch/pygments-2.5.1-py_0"
   ],
   "pygments_highlighter": [],
   "pytest": [],
-  "qtconsole": [
-   "qtconsole/conda-forge/noarch/qtconsole-4.7.4-pyh9f0ad1d_0",
-   "qtconsole/conda-forge/noarch/qtconsole-4.7.7-pyh9f0ad1d_0"
-  ],
   "qtpy": [
    "qtpy/conda-forge/noarch/qtpy-1.6.0-pyh8a2030e_0"
   ],
-  "re": [],
+  "re": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "rexmatch": [],
   "rich_jupyter_widget": [],
   "run_line": [],
@@ -439,15 +417,23 @@
   "textwrap": [],
   "threading": [],
   "time": [],
-  "traceback": [],
-  "traitlets": [],
+  "traceback": [
+   "python/conda-forge/linux-64/python-2.7.15-h721da81_1008"
+  ],
+  "traitlets": [
+   "traitlets/conda-forge/noarch/traitlets-5.0.4-py_1"
+  ],
   "unicodedata": [],
-  "unittest": [],
+  "unittest": [
+   "python/conda-forge/linux-64/python-2.7.15-h721da81_1008"
+  ],
   "util": [],
   "uuid": [],
   "v": [],
   "warnings": [],
   "webbrowser": [],
-  "xml": []
+  "xml": [
+   "python/conda-forge/linux-64/python-2.7.15-h721da81_1008"
+  ]
  }
 }

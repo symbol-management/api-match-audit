@@ -1,86 +1,23 @@
 {
  "bad": [
-  "MarkupPy.markup.page",
   "__doc__.split",
   "_metric",
   "_metric.needs_triggers",
-  "_version.get_versions",
   "add_config_entry",
   "astropy.io.registry._get_valid_format",
   "astropy.units.Quantity",
   "astropy.units.Unit",
-  "collections.OrderedDict",
-  "configparser.NoOptionError",
   "core.Metric",
   "core.evaluate_flag",
-  "cycler.cycler",
   "decorator.decorator",
-  "dqsegdb.urifunctions.getDataUrllib2",
   "etg.get_etg_parameters",
   "format_result",
   "glue.lal.Cache",
-  "gwdetchar.io.html.table",
-  "gwdetchar.plot.texify",
-  "gwpy.segments.DataQualityDict",
   "gwpy.segments.DataQualityDict.query",
   "gwpy.segments.DataQualityDict.read",
-  "gwpy.segments.DataQualityFlag",
   "gwpy.segments.DataQualityFlag.query",
   "gwpy.segments.DataQualityFlag.read",
-  "gwpy.segments.Segment",
-  "gwpy.segments.SegmentList",
-  "gwpy.table.filters.in_segmentlist",
-  "gwpy.time.Time",
-  "gwpy.time.to_gps",
-  "gwsumm.channels.get_channel",
-  "gwsumm.globalv.TRIGGERS",
-  "gwsumm.plot.get_column_label",
-  "gwsumm.plot.get_plot",
-  "gwsumm.segments.format_padding",
-  "gwsumm.segments.get_segments",
-  "gwsumm.state.ALLSTATE",
-  "gwsumm.state.SummaryState",
-  "gwsumm.state.generate_all_state",
-  "gwsumm.tabs.get_tab",
-  "gwsumm.tabs.register_tab",
-  "gwsumm.triggers.get_times",
-  "gwsumm.triggers.get_triggers",
   "gwsumm.utils.re_cchar.sub",
-  "gwsumm.utils.vprint",
-  "gwvet._version.version_json",
-  "gwvet.cli.flag",
-  "gwvet.etg.ETG_EQUIVALENTS",
-  "gwvet.etg.ETG_PARAMETERS",
-  "gwvet.etg._DEFAULTS",
-  "gwvet.etg.get_canonical_etg_name",
-  "gwvet.etg.register_etg_parameters",
-  "gwvet.metric.core.Metric",
-  "gwvet.metric.core.builtins",
-  "gwvet.metric.core.re_quote",
-  "gwvet.metric.metrics.OPERATORS",
-  "gwvet.metric.metrics.SAFETY_THRESHOLD",
-  "gwvet.metric.metrics._use_dqflag",
-  "gwvet.metric.metrics.deadtime",
-  "gwvet.metric.metrics.efficiency",
-  "gwvet.metric.metrics.efficiency_over_deadtime",
-  "gwvet.metric.metrics.operator",
-  "gwvet.metric.metrics.safety",
-  "gwvet.metric.metrics.use_percentage",
-  "gwvet.metric.registry.REGEX_LOUDEST_EVENT_FACTORY",
-  "gwvet.metric.registry.REGEX_METRIC_FACTORY",
-  "gwvet.metric.registry._METRICS",
-  "gwvet.tabs.FlagTab",
-  "gwvet.tabs.ParentTab",
-  "gwvet.tabs.etg",
-  "gwvet.triggers.re_meta",
-  "gwvet.triggers.veto_tag",
-  "imp.load_source",
-  "importlib.import_module",
-  "inspect.getargspec",
-  "inspect.getmembers",
-  "inspect.isfunction",
-  "json.loads",
-  "matplotlib.rcParams",
   "metric",
   "metric.Metric",
   "metric.description.splitlines",
@@ -91,17 +28,7 @@
   "metrics.loudest_event_metric_factory",
   "metrics.metric_by_column_value_factory",
   "numpy.logical_and",
-  "operator.eq",
-  "operator.ge",
-  "operator.gt",
-  "operator.is_",
-  "operator.is_not",
-  "operator.le",
-  "operator.lt",
-  "os.curdir",
   "re.I",
-  "re.compile",
-  "re.sub",
   "registry.get_metric",
   "registry.register_metric",
   "scipy.stats.poisson.cdf",
@@ -111,36 +38,75 @@
   "triggers.veto_tag"
  ],
  "deps": {
-  "MarkupPy": [],
+  "MarkupPy": [
+   "markuppy/conda-forge/noarch/markuppy-1.14-py_0"
+  ],
   "__doc__": [],
   "_metric": [],
-  "_version": [],
+  "_version": [
+   "diffusioncma/conda-forge/linux-64/diffusioncma-0.5.8-py37h0da4684_0"
+  ],
   "add_config_entry": [],
   "astropy": [],
-  "collections": [],
-  "configparser": [],
+  "collections": [
+   "python/conda-forge/linux-64/python-3.8.5-h425cb1d_2_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "configparser": [
+   "configparser/conda-forge/noarch/configparser-5.0.1-py_0",
+   "python/conda-forge/linux-64/python-3.8.5-h425cb1d_2_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "core": [],
-  "cycler": [],
+  "cycler": [
+   "cycler/conda-forge/noarch/cycler-0.10.0-py_2"
+  ],
   "decorator": [],
-  "dqsegdb": [],
+  "dqsegdb": [
+   "dqsegdb/conda-forge/linux-64/dqsegdb-1.6.0-py36_0"
+  ],
   "etg": [],
   "format_result": [],
   "glue": [],
-  "gwdetchar": [],
-  "gwpy": [],
-  "gwsumm": [],
-  "gwvet": [],
-  "imp": [],
-  "importlib": [],
-  "inspect": [],
-  "json": [],
-  "matplotlib": [],
+  "gwdetchar": [
+   "gwdetchar/conda-forge/noarch/gwdetchar-2.0.2-pyhd8ed1ab_0"
+  ],
+  "gwpy": [
+   "gwpy/conda-forge/noarch/gwpy-2.0.2-pyhd8ed1ab_0"
+  ],
+  "gwsumm": [
+   "gwsumm/conda-forge/linux-64/gwsumm-1.0.1-py37_0",
+   "gwsumm/conda-forge/noarch/gwsumm-2.0.1-pyhd8ed1ab_0"
+  ],
+  "imp": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "importlib": [
+   "python/conda-forge/linux-64/python-2.7.15-h721da81_1008",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "inspect": [
+   "python/conda-forge/linux-64/python-2.7.15-h721da81_1008",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "json": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "matplotlib": [
+   "matplotlib-base/conda-forge/linux-64/matplotlib-base-2.2.4-py37h250f245_2"
+  ],
   "metric": [],
   "metrics": [],
   "numpy": [],
-  "operator": [],
-  "os": [],
-  "re": [],
+  "operator": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "os": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "re": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "registry": [],
   "scipy": [],
   "select_flag": [],

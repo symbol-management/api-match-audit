@@ -1,6 +1,5 @@
 {
  "bad": [
-  "Queue.Queue",
   "Source",
   "XRootD.client.file.File",
   "aliases",
@@ -17,15 +16,10 @@
   "ast.Load",
   "ast.Mult",
   "ast.Name",
-  "ast.Num",
-  "ast.Str",
   "ast.Sub",
   "ast.USub",
   "ast.UnaryOp",
-  "ast.dump",
-  "ast.parse",
   "atexit.register",
-  "backports.lzma",
   "cls",
   "collections.Iterable",
   "collections.Mapping",
@@ -43,17 +37,10 @@
   "format.unpack",
   "gc.get_objects",
   "glob.fnmatch.fnmatchcase",
-  "glob.glob",
   "httplib.HTTPConnection",
   "httplib.HTTPSConnection",
-  "importlib.reload",
   "itertools.product",
-  "json.dumps",
-  "json.loads",
   "lgamma",
-  "multiprocessing.cpu_count",
-  "numbers.Integral",
-  "numbers.Real",
   "numpy.absolute",
   "numpy.add",
   "numpy.add.at",
@@ -71,7 +58,6 @@
   "numpy.array2string",
   "numpy.array_equal",
   "numpy.asarray",
-  "numpy.bool",
   "numpy.bool_",
   "numpy.broadcast_to",
   "numpy.cbrt",
@@ -117,7 +103,6 @@
   "numpy.log2",
   "numpy.logical_and",
   "numpy.logical_or",
-  "numpy.long",
   "numpy.ma.MaskedArray",
   "numpy.memmap",
   "numpy.multiply",
@@ -126,14 +111,12 @@
   "numpy.newaxis.ravel",
   "numpy.nextafter",
   "numpy.number",
-  "numpy.object",
   "numpy.ones",
   "numpy.real",
   "numpy.repeat",
   "numpy.reshape",
   "numpy.right_shift",
   "numpy.rint",
-  "numpy.round",
   "numpy.searchsorted",
   "numpy.signbit",
   "numpy.sin",
@@ -153,9 +136,6 @@
   "numpy.where",
   "numpy.zeros",
   "os.cpu_count",
-  "os.environ",
-  "os.fspath",
-  "os.name",
   "os.path.expanduser",
   "pandas.DataFrame",
   "pandas.Int64Index",
@@ -166,18 +146,12 @@
   "pandas.Series",
   "pandas.concat",
   "pandas.merge",
-  "pkgutil.walk_packages",
   "re.I",
   "re.L",
   "re.M",
   "re.S",
   "re.U",
   "re.X",
-  "re.compile",
-  "re.findall",
-  "re.match",
-  "re.split",
-  "re.sub",
   "replace",
   "str.__repr__",
   "struct.Struct",
@@ -189,7 +163,6 @@
   "threading.Lock",
   "threading.Thread",
   "time.sleep",
-  "types.GeneratorType",
   "uproot.models.TBasket.Model_TBasket.read",
   "uproot.models.TList.Model_TList.read",
   "uproot.models.TNamed.Model_TNamed.read",
@@ -204,13 +177,21 @@
   "zlib.decompress"
  ],
  "deps": {
-  "Queue": [],
+  "Queue": [
+   "python/conda-forge/linux-64/python-2.7.15-h721da81_1008"
+  ],
   "Source": [],
   "XRootD": [],
   "aliases": [],
-  "ast": [],
+  "ast": [
+   "python/conda-forge/linux-64/python-3.8.5-h425cb1d_2_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "atexit": [],
-  "backports": [],
+  "backports": [
+   "backports.lzma/conda-forge/linux-64/backports.lzma-0.0.8-py27_0",
+   "backports.lzma/conda-forge/linux-64/backports.lzma-0.0.9-py27_0"
+  ],
   "cls": [],
   "collections": [],
   "f": [],
@@ -218,22 +199,43 @@
   "form": [],
   "format": [],
   "gc": [],
-  "glob": [],
+  "glob": [
+   "python/conda-forge/linux-64/python-2.7.15-h721da81_1008",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "httplib": [],
-  "importlib": [],
+  "importlib": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "itertools": [],
-  "json": [],
+  "json": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "lgamma": [],
-  "multiprocessing": [],
-  "numbers": [],
-  "numpy": [],
-  "os": [],
+  "multiprocessing": [
+   "python/conda-forge/linux-64/python-2.7.15-h721da81_1008"
+  ],
+  "numbers": [
+   "python/conda-forge/linux-64/python-2.7.15-h721da81_1008",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "numpy": [
+   "numpy/conda-forge/linux-64/numpy-1.9.3-py27_blas_openblas_203"
+  ],
+  "os": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "pandas": [],
   "pathlib": [
-   "pathlib/conda-forge/noarch/pathlib-1.0.1-py_1"
+   "pathlib/conda-forge/noarch/pathlib-1.0.1-py_1",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
   ],
-  "pkgutil": [],
-  "re": [],
+  "pkgutil": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "re": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "replace": [],
   "str": [],
   "struct": [],
@@ -241,11 +243,10 @@
   "task": [],
   "threading": [],
   "time": [],
-  "types": [],
-  "uproot": [
-   "uproot-base/conda-forge/noarch/uproot-base-4.0.0-pyh050c7b8_1",
-   "uproot-base/conda-forge/noarch/uproot-base-4.0.0-pyh8a188c0_1"
+  "types": [
+   "python/conda-forge/linux-64/python-2.7.15-h721da81_1008"
   ],
+  "uproot": [],
   "urlparse": [],
   "uuid": [],
   "weakref": [],

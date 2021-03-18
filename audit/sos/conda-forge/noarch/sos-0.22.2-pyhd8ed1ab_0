@@ -1,22 +1,12 @@
 {
  "bad": [
   "Exception.__init__",
-  "IPython.core.display.HTML",
-  "PIL.Image.new",
-  "PIL.Image.open",
-  "PIL.ImageDraw.Draw",
-  "PIL.ImageFont.truetype",
   "__main__.get_run_parser",
   "_flatten",
   "_get_tokens",
   "_version.SOS_FULL_VERSION",
-  "_version.__version__",
   "actions.get_actions",
   "aliases",
-  "argparse.ArgumentParser",
-  "argparse.Namespace",
-  "argparse.REMAINDER",
-  "argparse.SUPPRESS",
   "ast.Assign",
   "ast.Call",
   "ast.ClassDef",
@@ -27,32 +17,14 @@
   "ast.ImportFrom",
   "ast.Module",
   "ast.Name",
-  "ast.NodeTransformer",
-  "ast.iter_child_nodes",
-  "ast.iter_fields",
-  "ast.literal_eval",
-  "ast.parse",
-  "ast.walk",
-  "base64.b64decode",
-  "base64.b64encode",
-  "cProfile.Profile",
   "client.SoS_DockerClient",
   "client.SoS_SingularityClient",
-  "collections.Counter",
-  "collections.OrderedDict",
-  "collections.OrderedDict.fromkeys",
   "collections.Sequence",
   "collections.abc.Iterable",
   "collections.abc.KeysView",
   "collections.abc.Mapping",
   "collections.abc.Sequence",
   "collections.abc.Set",
-  "collections.defaultdict",
-  "collections.namedtuple",
-  "concurrent.futures.ProcessPoolExecutor",
-  "contextlib.contextmanager",
-  "contextlib.redirect_stderr",
-  "contextlib.redirect_stdout",
   "controller.Controller",
   "controller.close_socket",
   "controller.connect_controllers",
@@ -61,13 +33,10 @@
   "controller.request_answer_from_controller",
   "controller.send_message_to_controller",
   "converter.extract_workflow",
-  "copy.deepcopy",
   "dag.SoS_DAG",
-  "datetime.datetime.now",
   "dict.fromkeys",
   "disp_matched",
   "docker.client.SoS_DockerClient",
-  "enum.Enum",
   "eval.KeepOnlyImportAndDefine",
   "eval.SoS_eval",
   "eval.SoS_exec",
@@ -97,69 +66,29 @@
   "executor_utils.verify_input",
   "fasteners.InterProcessLock",
   "file_only",
-  "fnmatch.fnmatch",
   "func",
   "func.__name__",
-  "functools.wraps",
   "get_dirs",
-  "getpass.getpass",
-  "getpass.getuser",
-  "glob.glob",
-  "graphviz.Source",
-  "gzip.open",
   "has_job",
   "hashlib.md5",
   "hashlib.md5.hexdigest",
   "hashlib.md5.update",
   "hashlib.md5.write",
   "hosts.Host",
-  "html.parser.HTMLParser",
-  "html.parser.HTMLParser.__init__",
   "id.append",
   "id.update",
-  "imghdr.what",
-  "importlib.__import__",
-  "importlib.import_module",
-  "importlib.reload",
-  "importlib.util.find_spec",
   "interpolate_dict",
-  "io.BytesIO",
-  "io.FileIO",
   "io.FileIO.__init__",
   "io.FileIO.read",
-  "io.StringIO",
-  "io.TextIOBase",
   "itertools.chain",
   "itertools.combinations",
   "itertools.product",
   "itertools.tee",
-  "json.dumps",
-  "keyword.kwlist",
-  "logging.DEBUG",
-  "logging.ERROR",
-  "logging.FileHandler",
-  "logging.Formatter",
-  "logging.Formatter.__init__",
-  "logging.Formatter.format",
-  "logging.INFO",
-  "logging.StreamHandler",
-  "logging.WARNING",
-  "logging.getLogger",
-  "lzma.compress",
-  "lzma.decompress",
-  "math.ceil",
-  "math.floor",
-  "math.log",
-  "math.log10",
   "merge_dict",
   "messages.decode_msg",
   "messages.encode_msg",
   "monitor.ProcessMonitor",
   "monitor.summarizeExecution",
-  "multiprocessing.Pool",
-  "multiprocessing.Process",
-  "multiprocessing.pool.Pool",
-  "multiprocessing.pool.ThreadPool",
   "networkx.DiGraph",
   "networkx.DiGraph.__init__",
   "networkx.find_cycle",
@@ -167,33 +96,23 @@
   "normalize_value",
   "numpy.issubdtype",
   "numpy.number",
-  "operator.le",
-  "os.PathLike",
   "os.W_OK",
-  "os._exit",
   "os.access",
   "os.chdir",
   "os.chmod",
   "os.cpu_count",
-  "os.devnull",
   "os.dup2",
-  "os.environ",
   "os.environ.clear",
   "os.environ.items",
   "os.environ.split",
   "os.environ.strip",
   "os.environ.update",
-  "os.execvp",
   "os.fork",
   "os.getcwd",
   "os.getgid",
   "os.getpid",
   "os.getuid",
-  "os.linesep",
   "os.listdir",
-  "os.makedirs",
-  "os.name",
-  "os.pardir",
   "os.path.abspath",
   "os.path.basename",
   "os.path.dirname",
@@ -213,17 +132,14 @@
   "os.path.samefile",
   "os.path.split",
   "os.path.splitext",
-  "os.pathsep",
   "os.pathsep.join",
   "os.remove",
   "os.rename",
-  "os.sep",
   "os.setsid",
   "os.stat",
   "os.umask",
   "os.unlink",
   "os.utime",
-  "os.walk",
   "pandas.DataFrame",
   "pandas.Index",
   "pandas.RangeIndex",
@@ -234,26 +150,12 @@
   "parser.SoS_Script",
   "parser.SoS_Step",
   "parser.SoS_Workflow",
-  "pathlib.Path",
-  "pathlib.PosixPath",
-  "pathlib.WindowsPath",
   "pattern.expand_pattern",
   "pattern.extract_pattern",
-  "pexpect.EOF",
-  "pexpect.TIMEOUT",
-  "pexpect.popen_spawn.PopenSpawn",
-  "pexpect.spawn",
-  "pickle.dump",
-  "pickle.dumps",
-  "pickle.load",
-  "pickle.loads",
   "pkg_resources.get_distribution",
   "pkg_resources.iter_entry_points",
   "pkg_resources.parse_version",
   "pkg_resources.require",
-  "platform.system",
-  "pprint.PrettyPrinter",
-  "pprint.pformat",
   "preview.get_previewers",
   "previewer_func",
   "process_based_on",
@@ -266,16 +168,7 @@
   "pygments.lexers.PythonLexer.tokens.insert",
   "pygments.token.Keyword.Namespace",
   "pygments.token.Keyword.Pseudo",
-  "random.choices",
-  "random.randint",
   "re.VERBOSE",
-  "re.compile",
-  "re.error",
-  "re.escape",
-  "re.match",
-  "re.search",
-  "re.split",
-  "re.sub",
   "read_f",
   "remote.list_queues",
   "remote.login_host",
@@ -436,10 +329,6 @@
   "time.strftime",
   "time.time",
   "tokenize.generate_tokens",
-  "traceback.extract_tb",
-  "traceback.print_exception",
-  "traceback.print_tb",
-  "types.ModuleType",
   "typing.Any",
   "typing.Callable",
   "typing.Dict",
@@ -577,12 +466,9 @@
   "workflow_engines.BackgroundProcess_WorkflowEngine",
   "workflow_executor.Base_Executor",
   "workflow_report.render_report",
-  "writer",
   "x",
   "x.startswith",
   "x.values",
-  "yaml.safe_dump",
-  "yaml.safe_load",
   "zipfile.ZipFile",
   "zipfile.is_zipfile",
   "zmq.Context",
@@ -593,93 +479,180 @@
   "zmq.PUSH",
   "zmq.Poller",
   "zmq.REP",
-  "zmq.REQ",
-  "zmq.log.handlers.PUBHandler"
+  "zmq.REQ"
  ],
  "deps": {
   "Exception": [],
-  "IPython": [],
-  "PIL": [],
+  "IPython": [
+   "ipython/conda-forge/linux-64/ipython-5.0.0-py34_0"
+  ],
+  "PIL": [
+   "pillow/conda-forge/linux-64/pillow-8.1.2-py38ha0e1e83_0"
+  ],
   "__main__": [],
   "_flatten": [],
   "_get_tokens": [],
-  "_version": [],
+  "_version": [
+   "configobj/conda-forge/noarch/configobj-5.0.6-py_0"
+  ],
   "actions": [],
   "aliases": [],
-  "argparse": [],
-  "ast": [],
-  "base64": [],
-  "cProfile": [],
+  "argparse": [
+   "python/conda-forge/linux-64/python-2.7.15-h721da81_1008",
+   "python/conda-forge/linux-64/python-3.8.5-h425cb1d_2_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "ast": [
+   "python/conda-forge/linux-64/python-2.7.15-h721da81_1008",
+   "python/conda-forge/linux-64/python-3.8.5-h425cb1d_2_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "base64": [
+   "python/conda-forge/linux-64/python-3.8.5-h425cb1d_2_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "cProfile": [
+   "python/conda-forge/linux-64/python-3.8.5-h425cb1d_2_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "client": [],
-  "collections": [],
-  "concurrent": [],
-  "contextlib": [],
+  "collections": [
+   "python/conda-forge/linux-64/python-3.8.5-h425cb1d_2_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "concurrent": [
+   "futures/conda-forge/linux-64/futures-3.2.0-py27_0"
+  ],
+  "contextlib": [
+   "python/conda-forge/linux-64/python-3.8.5-h425cb1d_2_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "controller": [],
   "converter": [],
-  "copy": [],
+  "copy": [
+   "python/conda-forge/linux-64/python-3.8.5-h425cb1d_2_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "dag": [],
-  "datetime": [],
+  "datetime": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "dict": [],
   "disp_matched": [],
   "docker": [],
-  "enum": [],
+  "enum": [
+   "privy/conda-forge/noarch/privy-6.0.0-py_0",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "eval": [],
   "executor_utils": [],
   "fasteners": [],
   "file_only": [],
-  "fnmatch": [],
+  "fnmatch": [
+   "python/conda-forge/linux-64/python-2.7.15-h721da81_1008",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "func": [],
-  "functools": [],
+  "functools": [
+   "python/conda-forge/linux-64/python-2.7.15-h721da81_1008",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "get_dirs": [],
-  "getpass": [],
-  "glob": [],
-  "graphviz": [],
-  "gzip": [],
+  "getpass": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "glob": [
+   "python/conda-forge/linux-64/python-2.7.15-h721da81_1008",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "graphviz": [
+   "python-graphviz/conda-forge/noarch/python-graphviz-0.11.1-py_1"
+  ],
+  "gzip": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "has_job": [],
   "hashlib": [],
   "hosts": [],
-  "html": [],
+  "html": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "id": [],
-  "imghdr": [],
-  "importlib": [],
+  "imghdr": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "importlib": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "interpolate_dict": [],
-  "io": [],
+  "io": [
+   "python/conda-forge/linux-64/python-2.7.15-h721da81_1008",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "itertools": [],
   "jinja2": [
    "jinja2/conda-forge/noarch/jinja2-2.11.3-pyh44b312d_0"
   ],
-  "json": [],
-  "keyword": [],
-  "logging": [],
-  "lzma": [],
+  "json": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "keyword": [
+   "python/conda-forge/linux-64/python-2.7.15-h721da81_1008",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "logging": [
+   "python/conda-forge/linux-64/python-2.7.15-h721da81_1008",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "lzma": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "markdown": [
    "markdown/conda-forge/noarch/markdown-3.1.1-py_0",
    "markdown/conda-forge/noarch/markdown-3.3-pyh9f0ad1d_0"
   ],
-  "math": [],
+  "math": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "merge_dict": [],
   "messages": [],
   "monitor": [],
   "multiprocessing": [],
   "nbformat": [
-   "nbformat/conda-forge/noarch/nbformat-5.0.4-py_0"
+   "nbformat/conda-forge/noarch/nbformat-5.0.4-py_0",
+   "nbformat/conda-forge/noarch/nbformat-5.0.6-py_0"
   ],
   "networkx": [
    "networkx/conda-forge/noarch/networkx-2.3-py_0"
   ],
   "normalize_value": [],
   "numpy": [],
-  "operator": [],
-  "os": [],
+  "operator": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "os": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "pandas": [],
   "parser": [],
-  "pathlib": [],
+  "pathlib": [
+   "pathlib/conda-forge/noarch/pathlib-1.0.1-py_1",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "pattern": [],
-  "pexpect": [],
-  "pickle": [],
+  "pexpect": [
+   "pexpect/conda-forge/noarch/pexpect-4.8.0-pyh9f0ad1d_2"
+  ],
+  "pickle": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "pkg_resources": [],
-  "platform": [],
-  "pprint": [],
+  "platform": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "pprint": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "preview": [],
   "previewer_func": [],
   "process_based_on": [],
@@ -687,8 +660,12 @@
   "pygments": [
    "pygments/conda-forge/noarch/pygments-2.5.1-py_0"
   ],
-  "random": [],
-  "re": [],
+  "random": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "re": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "read_f": [],
   "remote": [],
   "ret_type": [],
@@ -703,9 +680,7 @@
   "signatures": [],
   "singularity": [],
   "socket": [],
-  "sos": [
-   "sos/conda-forge/noarch/sos-0.22.2-pyhd8ed1ab_0"
-  ],
+  "sos": [],
   "sqlite3": [],
   "stat": [],
   "step_executor": [],
@@ -729,14 +704,20 @@
   "time": [],
   "tokenize": [],
   "tqdm": [
+   "tqdm/conda-forge/noarch/tqdm-4.18.0-py_0",
    "tqdm/conda-forge/noarch/tqdm-4.19.2-py_0",
    "tqdm/conda-forge/noarch/tqdm-4.36.1-py_0",
+   "tqdm/conda-forge/noarch/tqdm-4.38.0-py_0",
    "tqdm/conda-forge/noarch/tqdm-4.41.0-py_0",
    "tqdm/conda-forge/noarch/tqdm-4.44.0-py_0",
    "tqdm/conda-forge/noarch/tqdm-4.46.0-pyh9f0ad1d_0"
   ],
-  "traceback": [],
-  "types": [],
+  "traceback": [
+   "python/conda-forge/linux-64/python-2.7.15-h721da81_1008"
+  ],
+  "types": [
+   "python/conda-forge/linux-64/python-2.7.15-h721da81_1008"
+  ],
   "typing": [],
   "unset_key": [],
   "urllib": [],
@@ -754,10 +735,16 @@
   "workflow_engines": [],
   "workflow_executor": [],
   "workflow_report": [],
-  "writer": [],
+  "writer": [
+   "ffpyplayer/conda-forge/linux-64/ffpyplayer-4.3.1-py37h0cd0771_1"
+  ],
   "x": [],
-  "yaml": [],
+  "yaml": [
+   "pyyaml/conda-forge/linux-64/pyyaml-3.13-py37h470a237_1"
+  ],
   "zipfile": [],
-  "zmq": []
+  "zmq": [
+   "pyzmq/conda-forge/linux-64/pyzmq-20.0.0-py39hea8fd45_1"
+  ]
  }
 }

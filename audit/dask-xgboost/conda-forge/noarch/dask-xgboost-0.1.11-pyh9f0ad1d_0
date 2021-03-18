@@ -1,17 +1,7 @@
 {
  "bad": [
-  "argparse.ArgumentParser",
-  "collections.defaultdict",
   "dask.distributed.default_client",
   "dask.distributed.wait",
-  "logging.DEBUG",
-  "logging.INFO",
-  "logging.basicConfig",
-  "logging.debug",
-  "logging.error",
-  "logging.getLogger",
-  "logging.info",
-  "logging.warn",
   "numpy.all",
   "numpy.asarray",
   "numpy.concatenate",
@@ -22,7 +12,6 @@
   "pandas.DataFrame",
   "pandas.Series",
   "pandas.concat",
-  "scipy.sparse",
   "scipy.sparse.csr_matrix",
   "scipy.sparse.vstack",
   "socket.AF_INET",
@@ -47,31 +36,34 @@
   "tornado.gen.Return",
   "tornado.gen.coroutine",
   "tracker.RabitTracker",
-  "tracker.get_host_ip",
-  "xgboost.DMatrix",
-  "xgboost.XGBClassifier",
-  "xgboost.XGBRegressor",
-  "xgboost.rabit.finalize",
-  "xgboost.rabit.get_rank",
-  "xgboost.rabit.init",
-  "xgboost.train"
+  "tracker.get_host_ip"
  ],
  "deps": {
-  "argparse": [],
-  "collections": [],
+  "argparse": [
+   "python/conda-forge/linux-64/python-2.7.15-h721da81_1008",
+   "python/conda-forge/linux-64/python-3.8.5-h425cb1d_2_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "collections": [
+   "python/conda-forge/linux-64/python-3.8.5-h425cb1d_2_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "dask": [
    "dask-core/conda-forge/noarch/dask-core-0.16.0-py_0",
    "dask-core/conda-forge/noarch/dask-core-2.10.0-py_0",
    "dask-core/conda-forge/noarch/dask-core-2.8.1-py_0"
   ],
-  "dask_xgboost": [
-   "dask-xgboost/conda-forge/noarch/dask-xgboost-0.1.11-pyh9f0ad1d_0"
+  "logging": [
+   "python/conda-forge/linux-64/python-2.7.15-h721da81_1008",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
   ],
-  "logging": [],
   "numpy": [],
   "os": [],
   "pandas": [],
-  "scipy": [],
+  "scipy": [
+   "scipy/conda-forge/linux-64/scipy-0.18.0-np110py34_blas_openblas_200",
+   "scipy/conda-forge/linux-64/scipy-0.18.1-np111py34_blas_openblas_200"
+  ],
   "socket": [],
   "struct": [],
   "subprocess": [],
@@ -81,6 +73,8 @@
   "toolz": [],
   "tornado": [],
   "tracker": [],
-  "xgboost": []
+  "xgboost": [
+   "py-xgboost/conda-forge/linux-64/py-xgboost-1.0.2-py37hc8dfbb8_1"
+  ]
  }
 }

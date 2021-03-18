@@ -1,26 +1,15 @@
 {
  "bad": [
-  "Queue.Empty",
-  "Queue.Queue",
   "_summarize_file_coverage",
-  "argparse.ArgumentParser",
-  "argparse.ArgumentTypeError",
   "cobertura_xml_generator.print_xml_report",
-  "contextlib.contextmanager",
-  "coverage.CoverageData",
-  "datetime.datetime.now",
   "dict.fromkeys",
   "fn",
   "gcov.get_datafiles",
   "gcov.process_datafile",
   "gcov.process_existing_gcov_file",
   "html_generator.print_html_report",
-  "io.open",
   "itertools.izip",
-  "locale.getpreferredencoding",
-  "multiprocessing.cpu_count",
   "os.chdir",
-  "os.environ",
   "os.environ.get",
   "os.getcwd",
   "os.listdir",
@@ -42,12 +31,6 @@
   "os.path.splitdrive",
   "os.readlink",
   "os.remove",
-  "os.sep",
-  "os.walk",
-  "re.compile",
-  "re.escape",
-  "re.sub",
-  "re.subn",
   "shutil.copyfile",
   "shutil.rmtree",
   "subprocess.PIPE",
@@ -65,7 +48,6 @@
   "threading.RLock",
   "threading.Thread",
   "time.time",
-  "traceback.print_exception",
   "txt_generator.print_text_report",
   "utils.AlwaysMatchFilter",
   "utils.DirectoryPrefixFilter",
@@ -77,36 +59,56 @@
   "utils.get_global_stats",
   "utils.search_file",
   "utils.sort_coverage",
-  "version.__version__",
   "work",
   "workers.Workers",
   "workers.locked_directory",
   "zlib.crc32"
  ],
  "deps": {
-  "Queue": [],
+  "Queue": [
+   "python/conda-forge/linux-64/python-2.7.15-h721da81_1008"
+  ],
   "_summarize_file_coverage": [],
-  "argparse": [],
+  "argparse": [
+   "python/conda-forge/linux-64/python-2.7.15-h721da81_1008",
+   "python/conda-forge/linux-64/python-3.8.5-h425cb1d_2_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "cobertura_xml_generator": [],
-  "contextlib": [],
-  "coverage": [],
-  "datetime": [],
+  "contextlib": [
+   "python/conda-forge/linux-64/python-3.8.5-h425cb1d_2_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "coverage": [
+   "coverage/conda-forge/linux-64/coverage-4.3.4-py27_0"
+  ],
+  "datetime": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "dict": [],
   "fn": [],
   "gcov": [],
-  "gcovr": [
-   "gcovr/conda-forge/noarch/gcovr-4.1-py_0"
-  ],
   "html_generator": [],
-  "io": [],
+  "io": [
+   "python/conda-forge/linux-64/python-2.7.15-h721da81_1008",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "itertools": [],
   "jinja2": [
    "jinja2/conda-forge/noarch/jinja2-2.11.3-pyh44b312d_0"
   ],
-  "locale": [],
-  "multiprocessing": [],
-  "os": [],
-  "re": [],
+  "locale": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "multiprocessing": [
+   "python/conda-forge/linux-64/python-2.7.15-h721da81_1008"
+  ],
+  "os": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "re": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "shutil": [],
   "subprocess": [],
   "summary_generator": [],
@@ -115,10 +117,14 @@
   "textwrap": [],
   "threading": [],
   "time": [],
-  "traceback": [],
+  "traceback": [
+   "python/conda-forge/linux-64/python-2.7.15-h721da81_1008"
+  ],
   "txt_generator": [],
   "utils": [],
-  "version": [],
+  "version": [
+   "telegram-send/conda-forge/noarch/telegram-send-0.25-py_0"
+  ],
   "work": [],
   "workers": [],
   "zlib": []
