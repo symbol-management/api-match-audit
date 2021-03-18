@@ -5,10 +5,6 @@
   "InsufficientNetworkQueryArguments",
   "InvalidDistanceType",
   "UnknownNetworkType",
-  "ast.literal_eval",
-  "bz2.BZ2File",
-  "collections.Counter",
-  "collections.OrderedDict",
   "core.bbox_from_point",
   "core.consolidate_subdivide_geometry",
   "core.gdf_from_place",
@@ -17,7 +13,6 @@
   "core.graph_from_point",
   "core.overpass_request",
   "datetime.datetime.today",
-  "datetime.datetime.utcnow",
   "downloader.get_from_cache",
   "downloader.get_osm_filter",
   "downloader.nominatim_request",
@@ -32,32 +27,8 @@
   "geopandas.GeoDataFrame.from_dict",
   "geopandas.GeoDataFrame.from_features",
   "hashlib.md5",
-  "io.open",
   "itertools.chain.from_iterable",
   "itertools.groupby",
-  "json.dumps",
-  "json.load",
-  "logging.DEBUG",
-  "logging.ERROR",
-  "logging.FileHandler",
-  "logging.Formatter",
-  "logging.INFO",
-  "logging.WARNING",
-  "logging.getLogger",
-  "math.atan2",
-  "math.ceil",
-  "math.cos",
-  "math.degrees",
-  "math.floor",
-  "math.radians",
-  "math.sin",
-  "math.sqrt",
-  "matplotlib.cm.get_cmap",
-  "matplotlib.collections.LineCollection",
-  "matplotlib.collections.PatchCollection",
-  "matplotlib.pyplot.close",
-  "matplotlib.pyplot.show",
-  "matplotlib.pyplot.subplots",
   "networkx.DiGraph",
   "networkx.Graph",
   "networkx.MultiDiGraph",
@@ -93,7 +64,6 @@
   "numpy.array",
   "numpy.cos",
   "numpy.deg2rad",
-  "numpy.float",
   "numpy.int64",
   "numpy.linspace",
   "numpy.minimum",
@@ -104,7 +74,6 @@
   "numpy.unique",
   "opener",
   "os.extsep.join",
-  "os.makedirs",
   "os.path.exists",
   "os.path.isfile",
   "os.path.join",
@@ -119,8 +88,6 @@
   "projection.project_gdf",
   "projection.project_geometry",
   "pyproj.CRS.from_user_input",
-  "re.findall",
-  "re.sub",
   "save_load.graph_to_gdfs",
   "scipy.spatial.cKDTree",
   "settings.all_oneway",
@@ -178,11 +145,23 @@
   "InsufficientNetworkQueryArguments": [],
   "InvalidDistanceType": [],
   "UnknownNetworkType": [],
-  "ast": [],
-  "bz2": [],
-  "collections": [],
+  "ast": [
+   "python/conda-forge/linux-64/python-2.7.15-h721da81_1008",
+   "python/conda-forge/linux-64/python-3.8.5-h425cb1d_2_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "bz2": [
+   "python/conda-forge/linux-64/python-3.8.5-h425cb1d_2_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "collections": [
+   "python/conda-forge/linux-64/python-3.8.5-h425cb1d_2_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "core": [],
-  "datetime": [],
+  "datetime": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "dateutil": [
    "python-dateutil/conda-forge/noarch/python-dateutil-2.7.4-py_0"
   ],
@@ -195,26 +174,40 @@
    "geopandas/conda-forge/noarch/geopandas-0.3.0-py_1"
   ],
   "hashlib": [],
-  "io": [],
-  "itertools": [],
-  "json": [],
-  "logging": [],
-  "math": [],
-  "matplotlib": [],
-  "networkx": [],
-  "numpy": [],
-  "opener": [],
-  "os": [],
-  "osm_content_handler": [],
-  "osmnx": [
-   "osmnx/conda-forge/noarch/osmnx-0.11.3-py_0",
-   "osmnx/conda-forge/noarch/osmnx-0.12-pyh9f0ad1d_0"
+  "io": [
+   "python/conda-forge/linux-64/python-2.7.15-h721da81_1008",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
   ],
+  "itertools": [],
+  "json": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "logging": [
+   "python/conda-forge/linux-64/python-2.7.15-h721da81_1008",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "math": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "matplotlib": [
+   "matplotlib-base/conda-forge/linux-64/matplotlib-base-2.2.4-py37h250f245_2"
+  ],
+  "networkx": [],
+  "numpy": [
+   "numpy/conda-forge/linux-64/numpy-1.9.3-py27_blas_openblas_203"
+  ],
+  "opener": [],
+  "os": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "osm_content_handler": [],
   "pandas": [],
   "plot": [],
   "projection": [],
   "pyproj": [],
-  "re": [],
+  "re": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "requests": [
    "requests/conda-forge/noarch/requests-2.23.0-pyh8c360ce_2"
   ],
@@ -222,6 +215,7 @@
   "scipy": [],
   "settings": [],
   "shapely": [
+   "shapely/conda-forge/linux-64/shapely-1.5.17-np110py34_0",
    "solaris/conda-forge/noarch/solaris-0.4.0-pyhe05a262_0"
   ],
   "simplify": [],

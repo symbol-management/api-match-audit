@@ -1,36 +1,17 @@
 {
  "bad": [
-  "concurrent.futures.ThreadPoolExecutor",
   "get_cpu_percent",
-  "json.dumps",
-  "json.load",
-  "jupyter_resource_usage.HERE",
-  "jupyter_resource_usage._jupyter_nbextension_paths",
-  "jupyter_resource_usage._jupyter_server_extension_paths",
-  "jupyter_resource_usage.api.ApiHandler",
-  "jupyter_resource_usage.config.PSUtilMetric",
-  "jupyter_resource_usage.config.ResourceUseDisplay",
-  "jupyter_resource_usage.data",
-  "jupyter_resource_usage.load_jupyter_server_extension",
-  "jupyter_resource_usage.metrics.PSUtilMetricsLoader",
-  "jupyter_resource_usage.metrics.psutil",
-  "jupyter_resource_usage.prometheus.PrometheusHandler",
   "metric_value",
   "mock.MagicMock",
   "mock.patch",
-  "notebook.base.handlers.IPythonHandler",
-  "notebook.notebookapp.NotebookApp",
-  "notebook.utils.url_path_join",
   "os.environ.get",
   "os.path.abspath",
   "os.path.dirname",
   "os.path.join",
   "process_metric_value",
-  "prometheus_client.Gauge",
   "psutil.Process",
   "psutil.cpu_count",
   "psutil_metrics_loader",
-  "six.callable",
   "tornado.concurrent.run_on_executor",
   "tornado.ioloop.PeriodicCallback",
   "tornado.web.authenticated",
@@ -46,19 +27,29 @@
   "utils.Callable"
  ],
  "deps": {
-  "concurrent": [],
+  "concurrent": [
+   "futures/conda-forge/linux-64/futures-3.2.0-py27_0"
+  ],
   "get_cpu_percent": [],
-  "json": [],
-  "jupyter_resource_usage": [],
+  "json": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "metric_value": [],
   "mock": [],
-  "notebook": [],
+  "notebook": [
+   "notebook/conda-forge/linux-64/notebook-5.7.1-py37_1000"
+  ],
   "os": [],
   "process_metric_value": [],
-  "prometheus_client": [],
+  "prometheus_client": [
+   "prometheus_client/conda-forge/noarch/prometheus_client-0.6.0-py_0"
+  ],
   "psutil": [],
   "psutil_metrics_loader": [],
-  "six": [],
+  "six": [
+   "lldb/conda-forge/linux-64/lldb-6.0.0-py35_0",
+   "six/conda-forge/noarch/six-1.14.0-py_1"
+  ],
   "tornado": [],
   "traitlets": [],
   "typing": [],

@@ -1,33 +1,14 @@
 {
  "bad": [
-  "abc.ABCMeta",
-  "abc.abstractmethod",
-  "base64.b64decode",
   "cast",
   "check",
   "cli.cli",
-  "click.argument",
-  "click.echo",
-  "click.group",
-  "click.option",
-  "collections.OrderedDict",
-  "collections.defaultdict",
-  "collections.namedtuple",
   "config.DEFAULT_FIELD_FORMAT",
   "config.DEFAULT_FIELD_TYPE",
   "config.DEFAULT_MISSING_VALUES",
   "config.ERROR",
   "config.REMOTE_SCHEMES",
   "config.VERSION",
-  "copy.copy",
-  "copy.deepcopy",
-  "datetime.date",
-  "datetime.datetime",
-  "datetime.datetime.strptime",
-  "datetime.time",
-  "datetime.timedelta",
-  "dateutil.parser.parse",
-  "decimal.Decimal",
   "exceptions.CastError",
   "exceptions.IntegrityError",
   "exceptions.LoadError",
@@ -40,45 +21,21 @@
   "field.Field",
   "format.replace",
   "format.startswith",
-  "functools.partial",
   "helpers.PluginImporter",
   "helpers.default_exc_handler",
   "helpers.ensure_dir",
   "helpers.expand_field_descriptor",
   "helpers.expand_schema_descriptor",
   "helpers.retrieve_descriptor",
-  "importlib.import_module",
-  "io.open",
-  "isodate.Duration",
-  "isodate.parse_duration",
-  "json.dump",
-  "json.dumps",
-  "json.load",
-  "json.loads",
-  "jsonschema.FormatChecker",
   "jsonschema.exceptions.SchemaError.create_from",
-  "jsonschema.exceptions.ValidationError",
-  "jsonschema.validate",
-  "jsonschema.validators.validator_for",
   "object.__hash__",
-  "os.makedirs",
   "os.path.dirname",
   "os.path.exists",
   "os.path.join",
   "parent_cls",
   "processor",
-  "profile.Profile",
-  "re.compile",
-  "re.match",
-  "re.sub",
-  "requests.get",
-  "schema.Schema",
-  "six.PY2",
-  "six.add_metaclass",
-  "six.integer_types",
   "six.moves.urllib.parse.urlparse",
   "six.moves.zip_longest",
-  "six.string_types",
   "storage.Storage",
   "storage.Storage.connect",
   "sys.exit",
@@ -86,74 +43,103 @@
   "sys.meta_path.append",
   "sys.modules",
   "table.Table",
-  "tableschema.cli.cli",
-  "tableschema.constraints.pattern.COMPILED_RE",
-  "tableschema.exceptions.CastError",
-  "tableschema.exceptions.DataPackageException",
-  "tableschema.exceptions.RelationError",
-  "tableschema.exceptions.TableSchemaException",
-  "tableschema.exceptions.ValidationError",
-  "tableschema.field._get_field_constraints",
-  "tableschema.field.constraints",
-  "tableschema.field.types",
-  "tableschema.infer",
-  "tableschema.plugins.importer",
-  "tableschema.profile._CONSTRAINT_ALLOWED_FIELD_TYPE",
-  "tableschema.profile._PROFILES",
-  "tableschema.profile._TableSchemaValidator",
-  "tableschema.profile._load_profile",
-  "tableschema.schema.FailedCast",
-  "tableschema.schema._INFER_TYPE_ORDER",
-  "tableschema.schema.types",
-  "tableschema.storage.Storage",
-  "tableschema.table._create_unique_fields_cache",
-  "tableschema.table._resolve_relations",
-  "tableschema.types.geopoint._geopoint",
-  "tableschema.types.string._uri_from_string",
-  "tableschema.types.yearmonth._yearmonth",
-  "tableschema.validate",
-  "tabulator.Stream",
   "uuid.UUID",
   "warnings.warn"
  ],
  "deps": {
-  "abc": [],
-  "base64": [],
+  "abc": [
+   "python/conda-forge/linux-64/python-2.7.15-h721da81_1008",
+   "python/conda-forge/linux-64/python-3.8.5-h425cb1d_2_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "base64": [
+   "python/conda-forge/linux-64/python-3.8.5-h425cb1d_2_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "cast": [],
   "check": [],
   "cli": [],
-  "click": [],
-  "collections": [],
+  "click": [
+   "click/conda-forge/noarch/click-6.7-py_1",
+   "click/conda-forge/noarch/click-7.1-pyh8c360ce_0"
+  ],
+  "collections": [
+   "python/conda-forge/linux-64/python-3.8.5-h425cb1d_2_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "config": [],
-  "copy": [],
-  "datetime": [],
-  "dateutil": [],
-  "decimal": [],
+  "copy": [
+   "python/conda-forge/linux-64/python-3.8.5-h425cb1d_2_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "datetime": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "dateutil": [
+   "python-dateutil/conda-forge/noarch/python-dateutil-2.7.4-py_0"
+  ],
+  "decimal": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "exceptions": [],
   "expand": [],
   "field": [],
   "format": [],
-  "functools": [],
+  "functools": [
+   "python/conda-forge/linux-64/python-2.7.15-h721da81_1008",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "helpers": [],
-  "importlib": [],
-  "io": [],
-  "isodate": [],
-  "json": [],
-  "jsonschema": [],
+  "importlib": [
+   "python/conda-forge/linux-64/python-2.7.15-h721da81_1008",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "io": [
+   "python/conda-forge/linux-64/python-2.7.15-h721da81_1008",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "isodate": [
+   "isodate/conda-forge/noarch/isodate-0.6.0-py_0"
+  ],
+  "json": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "jsonschema": [
+   "jsonschema/conda-forge/noarch/jsonschema-3.2.0-py_2"
+  ],
   "object": [],
-  "os": [],
+  "os": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "parent_cls": [],
   "processor": [],
-  "profile": [],
-  "re": [],
-  "requests": [],
-  "schema": [],
-  "six": [],
+  "profile": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "re": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "requests": [
+   "requests/conda-forge/noarch/requests-2.23.0-pyh8c360ce_2"
+  ],
+  "schema": [
+   "schema/conda-forge/noarch/schema-0.7.1-py_0"
+  ],
+  "six": [
+   "lldb/conda-forge/linux-64/lldb-6.0.0-py35_0",
+   "six/conda-forge/noarch/six-1.14.0-py_1"
+  ],
   "storage": [],
   "sys": [],
   "table": [],
-  "tableschema": [],
-  "tabulator": [],
+  "tabulator": [
+   "tabulator-py/conda-forge/noarch/tabulator-py-1.14.0-py_1",
+   "tabulator/conda-forge/noarch/tabulator-1.15.0-py_0",
+   "tabulator/conda-forge/noarch/tabulator-1.28.0-py_0",
+   "tabulator/conda-forge/noarch/tabulator-1.38.3-pyh9f0ad1d_0",
+   "tabulator/conda-forge/noarch/tabulator-1.40.0-pyh9f0ad1d_0",
+   "tabulator/conda-forge/noarch/tabulator-1.47.0-pyh9f0ad1d_0"
+  ],
   "uuid": [],
   "warnings": []
  }

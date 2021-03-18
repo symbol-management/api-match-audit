@@ -2,13 +2,7 @@
  "bad": [
   "MockDebugRequest",
   "StringIO.StringIO",
-  "appconf.AppConf",
-  "base64.b64encode",
-  "bs4.BeautifulSoup",
-  "codecs.open",
   "collapse",
-  "collections.OrderedDict",
-  "collections.defaultdict",
   "compressor.base.SOURCE_FILE",
   "compressor.base.SOURCE_HUNK",
   "compressor.cache.cache.__class__",
@@ -72,9 +66,6 @@
   "compressor.storage.default_storage.open",
   "compressor.storage.default_storage.save",
   "compressor.utils.staticfiles.finders.BaseStorageFinder",
-  "copy.copy",
-  "copy.deepcopy",
-  "datetime.datetime.fromtimestamp",
   "django.apps.apps.is_installed",
   "django.conf.settings.COMPRESS_TEMPLATE_FILTER_CONTEXT",
   "django.conf.settings.DEBUG",
@@ -96,29 +87,17 @@
   "filter.options",
   "filter_cls",
   "filter_func",
-  "fnmatch.fnmatch",
-  "fnmatch.fnmatchcase",
   "get_template_sources",
-  "gzip.GzipFile",
   "hashlib.sha1",
   "hashlib.sha256",
-  "imp.reload",
-  "importlib.import_module",
-  "io.open",
   "jinja2.Template.from_code",
-  "json.dumps",
-  "json.loads",
-  "logging.getLogger",
   "lxml.etree.tostring",
   "mangle",
-  "mimetypes.guess_type",
   "mock.Mock",
   "mock.patch",
   "mock.patch.object",
-  "optparse.OptionParser",
   "original_remove",
   "os.environ.get",
-  "os.linesep",
   "os.path.abspath",
   "os.path.dirname",
   "os.path.exists",
@@ -133,19 +112,11 @@
   "os.path.splitext",
   "os.pathsep.join",
   "os.remove",
-  "os.sep",
   "os.stat",
   "os.utime",
-  "os.walk",
   "output_func",
-  "parser",
-  "pipes.quote",
-  "platform.system",
-  "posixpath.normpath",
   "precompiler_class",
   "re.VERBOSE",
-  "re.compile",
-  "re.sub",
   "sekizai.context.SekizaiContext",
   "shutil.copytree",
   "shutil.rmtree",
@@ -158,24 +129,39 @@
   "sys.stdout",
   "sys.version_info",
   "tempfile.mkdtemp",
-  "time.time",
-  "unittest.SkipTest",
-  "unittest.skipIf"
+  "time.time"
  ],
  "deps": {
   "MockDebugRequest": [],
   "StringIO": [],
-  "appconf": [],
-  "base64": [],
-  "bs4": [],
-  "codecs": [],
-  "collapse": [],
-  "collections": [],
-  "compressor": [
-   "django_compressor/conda-forge/noarch/django_compressor-2.2-py_1"
+  "appconf": [
+   "django-appconf/conda-forge/noarch/django-appconf-1.0.4-pyh9f0ad1d_0"
   ],
-  "copy": [],
-  "datetime": [],
+  "base64": [
+   "python/conda-forge/linux-64/python-3.8.5-h425cb1d_2_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "bs4": [
+   "beautifulsoup4/conda-forge/noarch/beautifulsoup4-4.9.1-py_1",
+   "beautifulsoup4/conda-forge/noarch/beautifulsoup4-4.9.2-py_0"
+  ],
+  "codecs": [
+   "python/conda-forge/linux-64/python-3.8.5-h425cb1d_2_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "collapse": [],
+  "collections": [
+   "python/conda-forge/linux-64/python-3.8.5-h425cb1d_2_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "compressor": [],
+  "copy": [
+   "python/conda-forge/linux-64/python-3.8.5-h425cb1d_2_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "datetime": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "django": [
    "django/conda-forge/noarch/django-1.11.7-py_0"
   ],
@@ -184,34 +170,71 @@
   "filter": [],
   "filter_cls": [],
   "filter_func": [],
-  "fnmatch": [],
+  "fnmatch": [
+   "python/conda-forge/linux-64/python-2.7.15-h721da81_1008",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "get_template_sources": [],
-  "gzip": [],
+  "gzip": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "hashlib": [],
-  "imp": [],
-  "importlib": [],
-  "io": [],
+  "imp": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "importlib": [
+   "python/conda-forge/linux-64/python-2.7.15-h721da81_1008",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "io": [
+   "python/conda-forge/linux-64/python-2.7.15-h721da81_1008",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "jinja2": [
    "jinja2/conda-forge/noarch/jinja2-2.11.3-pyh44b312d_0"
   ],
-  "json": [],
-  "logging": [],
+  "json": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "logging": [
+   "python/conda-forge/linux-64/python-2.7.15-h721da81_1008",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "lxml": [
+   "lxml/conda-forge/linux-64/lxml-4.3.1-py37h23eabaa_0",
    "pyexcel-ods3/conda-forge/noarch/pyexcel-ods3-0.5.3-py_0"
   ],
   "mangle": [],
-  "mimetypes": [],
+  "mimetypes": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "mock": [],
-  "optparse": [],
+  "optparse": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "original_remove": [],
-  "os": [],
+  "os": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "output_func": [],
-  "parser": [],
-  "pipes": [],
-  "platform": [],
-  "posixpath": [],
+  "parser": [
+   "httptools/conda-forge/linux-64/httptools-0.0.13-py38h516909a_0",
+   "httptools/conda-forge/linux-64/httptools-0.1.1-py39h3811e60_1",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "pipes": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "platform": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "posixpath": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "precompiler_class": [],
-  "re": [],
+  "re": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "sekizai": [],
   "shutil": [],
   "socket": [],
@@ -219,6 +242,8 @@
   "sys": [],
   "tempfile": [],
   "time": [],
-  "unittest": []
+  "unittest": [
+   "python/conda-forge/linux-64/python-2.7.15-h721da81_1008"
+  ]
  }
 }

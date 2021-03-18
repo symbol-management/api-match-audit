@@ -7,46 +7,15 @@
   "asyncio.new_event_loop",
   "asyncio.set_event_loop",
   "asyncio.sleep",
-  "binascii.hexlify",
-  "datetime.datetime.now",
   "envmanager.EnvManager",
   "errno.EEXIST",
   "execute_task",
   "f",
-  "functools.partial",
   "get_info",
   "get_uri",
-  "glob.glob",
-  "json.JSONDecodeError",
-  "json.dump",
-  "json.dumps",
-  "json.load",
-  "json.loads",
   "jupyter_conda.envmanager.EnvManager._conda_version",
-  "jupyter_conda.tests.test_actionsstack.a",
-  "jupyter_conda.tests.test_actionsstack.code",
-  "jupyter_conda.tests.test_actionsstack.dt",
-  "jupyter_conda.tests.test_actionsstack.elapsed",
-  "jupyter_conda.tests.test_actionsstack.i",
-  "jupyter_conda.tests.test_actionsstack.idxs",
-  "jupyter_conda.tests.test_actionsstack.loop",
-  "jupyter_conda.tests.test_actionsstack.proc",
-  "jupyter_conda.tests.test_actionsstack.r",
-  "jupyter_conda.tests.test_actionsstack.to_be_tested",
-  "jupyter_conda.tests.test_api.TestEnvironmentsHandlerWhiteList",
-  "jupyter_server.serverapp.ServerApp",
-  "jupyter_server.tests.launchserver.ServerTestBase",
-  "jupyter_server.utils.url_path_join",
-  "logging.Logger",
-  "logging.getLogger",
-  "notebook.jstest",
-  "notebook.jstest.JSController",
-  "notebook.jstest.get_js_test_dir",
-  "notebook.jstest.main",
   "os.chmod",
-  "os.environ",
   "os.environ.get",
-  "os.makedirs",
   "os.mkdir",
   "os.path.abspath",
   "os.path.basename",
@@ -61,11 +30,8 @@
   "os.stat",
   "os.unlink",
   "os.urandom",
-  "platform.system",
   "pytest.mark.asyncio",
   "pytest.raises",
-  "random.randint",
-  "re.match",
   "server.APIHandler",
   "server.url2path",
   "server.url_path_join",
@@ -95,9 +61,6 @@
   "tornado.ioloop.IOLoop.current",
   "tornado.web.HTTPError",
   "tornado.web.authenticated",
-  "traceback.format_tb",
-  "traitlets.config.Config",
-  "traitlets.config.configurable.LoggingConfigurable",
   "typing.Any",
   "typing.Callable",
   "typing.ClassVar",
@@ -112,43 +75,68 @@
   "unittest.mock.patch.dict",
   "unittest.mock.patch.multiple",
   "unittest.mock.patch.object",
-  "unittest.skipIf",
   "uuid.uuid4"
  ],
  "deps": {
   "asyncio": [],
-  "binascii": [],
-  "datetime": [],
+  "binascii": [
+   "python/conda-forge/linux-64/python-3.8.5-h425cb1d_2_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "datetime": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "envmanager": [],
   "errno": [],
   "execute_task": [],
   "f": [],
-  "functools": [],
+  "functools": [
+   "python/conda-forge/linux-64/python-2.7.15-h721da81_1008",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "get_info": [],
   "get_uri": [],
-  "glob": [],
+  "glob": [
+   "python/conda-forge/linux-64/python-2.7.15-h721da81_1008",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "ipython_genutils": [
    "ipython_genutils/conda-forge/noarch/ipython_genutils-0.2.0-py_1"
   ],
-  "json": [],
-  "jupyter_conda": [
-   "jupyter_conda/conda-forge/noarch/jupyter_conda-3.0.0-py_0"
+  "json": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
   ],
-  "jupyter_server": [],
-  "logging": [],
+  "jupyter_conda": [],
+  "jupyter_server": [
+   "jupyter_server/conda-forge/linux-64/jupyter_server-0.1.1-py38_0"
+  ],
+  "logging": [
+   "python/conda-forge/linux-64/python-2.7.15-h721da81_1008",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "nb_conda_kernels": [
    "nb_conda_kernels/conda-forge/linux-64/nb_conda_kernels-2.2.3-py36_0"
   ],
-  "notebook": [],
-  "os": [],
+  "notebook": [
+   "notebook/conda-forge/linux-64/notebook-5.7.1-py37_1000"
+  ],
+  "os": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "packaging": [
    "packaging/conda-forge/noarch/packaging-20.4-pyh9f0ad1d_0",
    "packaging/conda-forge/noarch/packaging-20.8-pyhd3deb0d_0"
   ],
-  "platform": [],
+  "platform": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "pytest": [],
-  "random": [],
-  "re": [],
+  "random": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "re": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "server": [],
   "stat": [],
   "subprocess": [],
@@ -158,10 +146,16 @@
   "time": [],
   "tmp": [],
   "tornado": [],
-  "traceback": [],
-  "traitlets": [],
+  "traceback": [
+   "python/conda-forge/linux-64/python-2.7.15-h721da81_1008"
+  ],
+  "traitlets": [
+   "traitlets/conda-forge/noarch/traitlets-5.0.4-py_1"
+  ],
   "typing": [],
-  "unittest": [],
+  "unittest": [
+   "python/conda-forge/linux-64/python-2.7.15-h721da81_1008"
+  ],
   "uuid": []
  }
 }

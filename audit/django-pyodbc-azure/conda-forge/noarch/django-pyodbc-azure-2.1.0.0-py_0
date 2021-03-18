@@ -1,12 +1,7 @@
 {
  "bad": [
-  "binascii.hexlify",
   "client.DatabaseClient",
   "creation.DatabaseCreation",
-  "datetime.date",
-  "datetime.datetime",
-  "datetime.datetime.now",
-  "datetime.time",
   "django.conf.settings.DATABASE_CONNECTION_POOLING",
   "django.conf.settings.USE_TZ",
   "django.db.backends.base.schema.logger.debug",
@@ -18,7 +13,6 @@
   "introspection.DatabaseIntrospection",
   "itertools.chain.from_iterable",
   "operations.DatabaseOperations",
-  "os.name",
   "pyodbc",
   "pyodbc.Error",
   "pyodbc.SQL_BIGINT",
@@ -48,21 +42,23 @@
   "pyodbc.connect",
   "pyodbc.pooling",
   "pyodbc.version",
-  "pytz.timezone",
   "qn",
-  "re.compile",
   "schema.DatabaseSchemaEditor",
   "subprocess.check_call",
   "time.sleep",
-  "types.MethodType",
   "uuid.UUID",
   "warnings.warn"
  ],
  "deps": {
-  "binascii": [],
+  "binascii": [
+   "python/conda-forge/linux-64/python-3.8.5-h425cb1d_2_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "client": [],
   "creation": [],
-  "datetime": [],
+  "datetime": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "django": [
    "django/conda-forge/noarch/django-3.1.1-py_0"
   ],
@@ -70,18 +66,23 @@
   "introspection": [],
   "itertools": [],
   "operations": [],
-  "os": [],
-  "pyodbc": [],
-  "pytz": [],
-  "qn": [],
-  "re": [],
-  "schema": [],
-  "sql_server": [
-   "django-pyodbc-azure/conda-forge/noarch/django-pyodbc-azure-2.1.0.0-py_0"
+  "os": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
   ],
+  "pyodbc": [],
+  "pytz": [
+   "pytz/conda-forge/noarch/pytz-2019.2-py_0"
+  ],
+  "qn": [],
+  "re": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "schema": [],
   "subprocess": [],
   "time": [],
-  "types": [],
+  "types": [
+   "python/conda-forge/linux-64/python-2.7.15-h721da81_1008"
+  ],
   "uuid": [],
   "warnings": []
  }

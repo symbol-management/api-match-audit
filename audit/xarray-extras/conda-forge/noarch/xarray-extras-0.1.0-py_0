@@ -11,7 +11,6 @@
   "kernels.interpolate.make_interp_coeffs",
   "kernels.interpolate.make_interp_knots",
   "kernels.interpolate.splev",
-  "numba.guvectorize",
   "numba_extras.guvectorize",
   "numpy.any",
   "numpy.arange",
@@ -20,8 +19,6 @@
   "numpy.ascontiguousarray",
   "numpy.clip",
   "numpy.core.multiarray.normalize_axis_index",
-  "numpy.core.numeric.arange",
-  "numpy.core.numeric.asanyarray",
   "numpy.core.numeric.integer",
   "numpy.core.numeric.issubdtype",
   "numpy.cumsum",
@@ -49,30 +46,7 @@
   "scipy.interpolate._bsplines._as_float_array",
   "scipy.interpolate._bsplines._augknt",
   "scipy.interpolate._bsplines._not_a_knot",
-  "scipy.interpolate.make_interp_spline",
-  "spline",
-  "xarray_extras.backport.numpy._make_along_axis_idx",
-  "xarray_extras.cumulatives._compound",
-  "xarray_extras.cumulatives.compound_mean",
-  "xarray_extras.cumulatives.compound_prod",
-  "xarray_extras.cumulatives.compound_sum",
-  "xarray_extras.cumulatives.cummean",
-  "xarray_extras.interpolate.splev",
-  "xarray_extras.interpolate.splrep",
-  "xarray_extras.kernels.interpolate._memoryview_safe",
-  "xarray_extras.kernels.interpolate.make_interp_coeffs",
-  "xarray_extras.kernels.interpolate.make_interp_knots",
-  "xarray_extras.kernels.interpolate.splev",
-  "xarray_extras.numba_extras.guvectorize",
-  "xarray_extras.sort.argtopk",
-  "xarray_extras.sort.take_along_dim",
-  "xarray_extras.sort.topk",
-  "xarray_extras.tests.test_cumulatives.DTYPES",
-  "xarray_extras.tests.test_cumulatives.INPUT",
-  "xarray_extras.tests.test_cumulatives.S_COMPOUND_MATRIX",
-  "xarray_extras.tests.test_cumulatives.T_COMPOUND_MATRIX",
-  "xarray_extras.tests.test_numba_extras.DTYPES",
-  "xarray_extras.tests.test_numba_extras.dumb_copy"
+  "scipy.interpolate.make_interp_spline"
  ],
  "deps": {
   "backport": [],
@@ -83,17 +57,23 @@
   ],
   "duck": [],
   "kernels": [],
-  "numba": [],
+  "numba": [
+   "numba/conda-forge/linux-64/numba-0.43.0-py37hf484d3e_0"
+  ],
   "numba_extras": [],
-  "numpy": [],
+  "numpy": [
+   "numpy/conda-forge/linux-64/numpy-1.9.3-py27_blas_openblas_203"
+  ],
   "pytest": [],
   "ro_array": [],
   "scipy": [],
-  "spline": [],
+  "spline": [
+   "scipy/conda-forge/linux-64/scipy-0.18.0-np110py34_blas_openblas_200",
+   "scipy/conda-forge/linux-64/scipy-0.18.1-np111py34_blas_openblas_200"
+  ],
   "xarray": [
    "xarray/conda-forge/noarch/xarray-0.13.0-py_0",
    "xarray/conda-forge/noarch/xarray-0.17.0-pyhd8ed1ab_0"
-  ],
-  "xarray_extras": []
+  ]
  }
 }

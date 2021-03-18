@@ -3,14 +3,11 @@
   "cb",
   "collections.Mapping",
   "collections.MutableMapping",
-  "collections.defaultdict",
   "common.ZictBase",
   "common.close",
   "heapdict.heapdict",
   "itertools.chain",
   "itertools.chain.from_iterable",
-  "lmdb.open",
-  "lru.LRU",
   "os.listdir",
   "os.mkdir",
   "os.path.exists",
@@ -21,26 +18,27 @@
   "sys.version_info",
   "urllib.quote",
   "urllib.unquote",
-  "zict.file._safe_key",
-  "zict.file._unsafe_key",
-  "zict.func.funcname",
-  "zict.lmdb._decode_key",
-  "zict.lmdb._encode_key",
-  "zict.zip.to_bytes",
   "zipfile.ZipFile"
  ],
  "deps": {
   "cb": [],
-  "collections": [],
+  "collections": [
+   "python/conda-forge/linux-64/python-3.8.5-h425cb1d_2_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "common": [],
   "heapdict": [],
   "itertools": [],
-  "lmdb": [],
-  "lru": [],
+  "lmdb": [
+   "python-lmdb/conda-forge/linux-64/python-lmdb-0.96-py39he80948d_1",
+   "python-lmdb/conda-forge/linux-64/python-lmdb-0.99-py39he80948d_0"
+  ],
+  "lru": [
+   "lru-dict/conda-forge/linux-64/lru-dict-1.1.6-py36h8c4c3a4_1"
+  ],
   "os": [],
   "sys": [],
   "urllib": [],
-  "zict": [],
   "zipfile": []
  }
 }

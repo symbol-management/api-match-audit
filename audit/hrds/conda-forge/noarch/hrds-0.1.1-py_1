@@ -1,8 +1,6 @@
 {
  "bad": [
   "itertools.izip",
-  "math.ceil",
-  "math.floor",
   "numpy.amax",
   "numpy.amin",
   "numpy.array",
@@ -10,23 +8,24 @@
   "numpy.full",
   "os.path.splitext",
   "osgeo.gdal.GDT_Float32",
-  "osgeo.gdal.GetDriverByName",
-  "osgeo.gdal.Open",
   "raster.RasterInterpolator",
-  "raster_buffer.CreateBuffer",
-  "scipy.ndimage.morphology.distance_transform_edt"
+  "raster_buffer.CreateBuffer"
  ],
  "deps": {
-  "hrds": [
-   "hrds/conda-forge/noarch/hrds-0.1.1-py_1"
-  ],
   "itertools": [],
-  "math": [],
+  "math": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "numpy": [],
   "os": [],
-  "osgeo": [],
+  "osgeo": [
+   "gdal/conda-forge/linux-64/gdal-2.4.2-py36h0b7157c_7"
+  ],
   "raster": [],
   "raster_buffer": [],
-  "scipy": []
+  "scipy": [
+   "scipy/conda-forge/linux-64/scipy-0.18.0-np110py34_blas_openblas_200",
+   "scipy/conda-forge/linux-64/scipy-0.18.1-np111py34_blas_openblas_200"
+  ]
  }
 }

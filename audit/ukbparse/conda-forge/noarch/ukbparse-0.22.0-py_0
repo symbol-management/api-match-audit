@@ -1,24 +1,13 @@
 {
  "bad": [
   "LogHandler",
-  "argparse.ArgumentParser",
-  "argparse.RawDescriptionHelpFormatter",
-  "calendar.day_name",
-  "calendar.isleap",
   "check",
-  "collections.Counter",
-  "collections.OrderedDict",
   "collections.Sequence",
-  "collections.defaultdict",
   "config.DEFAULT_CFILE",
   "config.DEFAULT_DFILES",
   "config.DEFAULT_PFILE",
   "config.DEFAULT_TFILE",
   "config.DEFAULT_VFILES",
-  "contextlib.contextmanager",
-  "csv.Error",
-  "csv.Sniffer",
-  "csv.reader",
   "ct",
   "custom.cleaner",
   "custom.exists",
@@ -35,69 +24,32 @@
   "datatable.AUTO_VARIABLE_ID",
   "datatable.Column",
   "datatable.DataTable",
-  "datetime.date",
-  "datetime.date.today",
-  "datetime.datetime",
-  "datetime.datetime.combine",
-  "datetime.time",
-  "datetime.timedelta",
-  "datetime.timezone",
   "eval_cmd",
   "expand",
   "expression.Expression",
   "fileinfo.fileinfo",
   "fixabs",
   "fmt",
-  "fnmatch.fnmatch",
   "func",
-  "functools.lru_cache",
-  "functools.partial",
-  "functools.reduce",
-  "functools.update_wrapper",
   "genTable",
-  "glob.glob",
-  "h5py.File",
-  "h5py.special_dtype",
   "hierarchy.getHierarchyFilePath",
   "hierarchy.loadHierarchyFile",
   "icd10.codeToNumeric",
   "icd10.numericToCode",
   "icd10.storeCodes",
-  "importlib.reload",
-  "importlib.util.module_from_spec",
-  "importlib.util.spec_from_file_location",
   "inferType",
-  "inspect.unwrap",
-  "io.StringIO",
   "isCategorised",
   "isProcessed",
   "itertools.chain",
   "itertools.combinations",
   "itertools.product",
-  "json.loads",
   "loadIfExists",
   "loadtables.addNewVariable",
   "loadtables.categoryVariables",
   "loadtables.columnTypes",
-  "logging.CRITICAL",
-  "logging.DEBUG",
-  "logging.FileHandler",
-  "logging.Formatter",
-  "logging.INFO",
-  "logging.StreamHandler",
-  "logging.WARNING",
-  "logging.getLogger",
   "makexprs",
   "merging.mergeDataFrames",
-  "multiprocessing.Lock",
-  "multiprocessing.Manager",
-  "multiprocessing.Pool",
-  "multiprocessing.Process",
-  "multiprocessing.cpu_count",
-  "multiprocessing.dummy.Pool",
-  "notebook.notebookapp.list_running_servers",
   "notebook.notebookapp.main",
-  "notebook.notebookapp.shutdown_server",
   "numlist",
   "numpy.all",
   "numpy.any",
@@ -106,20 +58,17 @@
   "numpy.array",
   "numpy.asarray",
   "numpy.atleast_2d",
-  "numpy.bool",
   "numpy.ceil",
   "numpy.concatenate",
   "numpy.copy",
   "numpy.corrcoef",
   "numpy.dot",
   "numpy.empty",
-  "numpy.float",
   "numpy.float16",
   "numpy.float32",
   "numpy.floor",
   "numpy.fromstring",
   "numpy.full",
-  "numpy.int",
   "numpy.int32",
   "numpy.integer",
   "numpy.isclose",
@@ -147,7 +96,6 @@
   "numpy.zeros",
   "os.chdir",
   "os.getcwd",
-  "os.path",
   "os.path.abspath",
   "os.path.basename",
   "os.path.dirname",
@@ -184,11 +132,7 @@
   "pyparsing.pyparsing_common.integer.setParseAction",
   "pyparsing.pyparsing_common.number",
   "pytest.raises",
-  "random.choice",
-  "random.sample",
   "re.IGNORECASE",
-  "re.compile",
-  "re.sub",
   "replaceIDs",
   "set.difference",
   "set.intersection",
@@ -262,7 +206,11 @@
  ],
  "deps": {
   "LogHandler": [],
-  "argparse": [],
+  "argparse": [
+   "python/conda-forge/linux-64/python-2.7.15-h721da81_1008",
+   "python/conda-forge/linux-64/python-3.8.5-h425cb1d_2_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "bash_kernel": [
    "bash_kernel/conda-forge/noarch/bash_kernel-0.7.2-py_0"
   ],
@@ -270,18 +218,33 @@
    "beautifulsoup4/conda-forge/noarch/beautifulsoup4-4.9.1-py_1",
    "beautifulsoup4/conda-forge/noarch/beautifulsoup4-4.9.2-py_0"
   ],
-  "calendar": [],
+  "calendar": [
+   "python/conda-forge/linux-64/python-3.8.5-h425cb1d_2_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "check": [],
-  "collections": [],
+  "collections": [
+   "python/conda-forge/linux-64/python-3.8.5-h425cb1d_2_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "config": [],
-  "contextlib": [],
-  "csv": [],
+  "contextlib": [
+   "python/conda-forge/linux-64/python-3.8.5-h425cb1d_2_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "csv": [
+   "python/conda-forge/linux-64/python-3.8.5-h425cb1d_2_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "ct": [],
   "custom": [],
   "datatable": [],
-  "datetime": [],
+  "datetime": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "enum": [
-   "privy/conda-forge/noarch/privy-6.0.0-py_0"
+   "privy/conda-forge/noarch/privy-6.0.0-py_0",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
   ],
   "eval_cmd": [],
   "expand": [],
@@ -289,35 +252,65 @@
   "fileinfo": [],
   "fixabs": [],
   "fmt": [],
-  "fnmatch": [],
+  "fnmatch": [
+   "python/conda-forge/linux-64/python-2.7.15-h721da81_1008",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "func": [],
-  "functools": [],
+  "functools": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "genTable": [],
-  "glob": [],
-  "h5py": [],
+  "glob": [
+   "python/conda-forge/linux-64/python-2.7.15-h721da81_1008",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "h5py": [
+   "h5py/conda-forge/linux-64/h5py-2.8.0-py37he5c79e1_5"
+  ],
   "hierarchy": [],
   "icd10": [],
-  "importlib": [],
+  "importlib": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "inferType": [],
-  "inspect": [],
-  "io": [],
+  "inspect": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "io": [
+   "python/conda-forge/linux-64/python-2.7.15-h721da81_1008",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "isCategorised": [],
   "isProcessed": [],
   "itertools": [],
   "jinja2": [
    "jinja2/conda-forge/noarch/jinja2-2.11.3-pyh44b312d_0"
   ],
-  "json": [],
+  "json": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "loadIfExists": [],
   "loadtables": [],
-  "logging": [],
+  "logging": [
+   "python/conda-forge/linux-64/python-2.7.15-h721da81_1008",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "makexprs": [],
   "merging": [],
-  "multiprocessing": [],
-  "notebook": [],
+  "multiprocessing": [
+   "python/conda-forge/linux-64/python-2.7.15-h721da81_1008"
+  ],
+  "notebook": [
+   "notebook/conda-forge/linux-64/notebook-5.7.1-py37_1000"
+  ],
   "numlist": [],
-  "numpy": [],
-  "os": [],
+  "numpy": [
+   "numpy/conda-forge/linux-64/numpy-1.9.3-py27_blas_openblas_203"
+  ],
+  "os": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "pandas": [],
   "parseBlow": [],
   "processing": [],
@@ -326,13 +319,18 @@
    "pyparsing/conda-forge/noarch/pyparsing-2.2.2-py_0"
   ],
   "pytest": [],
-  "random": [],
-  "re": [],
+  "random": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "re": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "replaceIDs": [],
   "set": [],
   "shlex": [],
   "shutil": [],
   "six": [
+   "lldb/conda-forge/linux-64/lldb-6.0.0-py35_0",
    "six/conda-forge/noarch/six-1.14.0-py_1"
   ],
   "split_udi": [],
@@ -343,9 +341,7 @@
   "tempfile": [],
   "textwrap": [],
   "time": [],
-  "ukbparse": [
-   "ukbparse/conda-forge/noarch/ukbparse-0.22.0-py_0"
-  ],
+  "ukbparse": [],
   "unittest": [],
   "update": [],
   "util": [],
