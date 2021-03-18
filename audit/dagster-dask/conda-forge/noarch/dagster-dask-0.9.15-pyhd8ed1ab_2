@@ -1,74 +1,13 @@
 {
  "bad": [
   "cluster_class",
-  "contextlib.suppress",
-  "dagster.Any",
   "dagster.AssetMaterialization.file",
-  "dagster.Bool",
   "dagster.DagsterInstance.local_temp",
-  "dagster.DagsterInvariantViolationError",
-  "dagster.DagsterType",
-  "dagster.DagsterUnmetExecutorRequirementsError",
-  "dagster.Dict",
-  "dagster.Enum",
-  "dagster.EnumValue",
   "dagster.EventMetadataEntry.json",
-  "dagster.Executor",
-  "dagster.Field",
-  "dagster.Float",
-  "dagster.InputDefinition",
-  "dagster.Int",
-  "dagster.ModeDefinition",
-  "dagster.Output",
-  "dagster.OutputDefinition",
-  "dagster.Permissive",
-  "dagster.Selector",
-  "dagster.Shape",
-  "dagster.String",
-  "dagster.TypeCheck",
-  "dagster.check.failed",
-  "dagster.check.inst",
-  "dagster.check.inst_param",
-  "dagster.check.invariant",
-  "dagster.check.opt_dict_param",
-  "dagster.check.opt_str_param",
-  "dagster.check.param_invariant",
-  "dagster.cli.workspace.Workspace",
-  "dagster.core.definitions.executor.check_cross_process_constraints",
-  "dagster.core.definitions.executor.default_executors",
-  "dagster.core.definitions.executor.executor",
-  "dagster.core.definitions.reconstructable.ReconstructablePipeline.for_file",
-  "dagster.core.definitions.reconstructable.ReconstructableRepository.for_file",
-  "dagster.core.events.DagsterEvent",
   "dagster.core.events.DagsterEventType.PIPELINE_FAILURE",
   "dagster.core.events.DagsterEventType.STEP_FAILURE",
   "dagster.core.events.DagsterEventType.STEP_START",
-  "dagster.core.execution.context.system.SystemPipelineExecutionContext",
-  "dagster.core.execution.plan.plan.ExecutionPlan",
-  "dagster.core.execution.retries.Retries.disabled_mode",
   "dagster.core.host_representation.RepositoryLocationHandle.create_in_process_location",
-  "dagster.core.instance.DagsterInstance.local_temp",
-  "dagster.core.test_utils.nesting_composite_pipeline",
-  "dagster.core.utils.check_dagster_package_version",
-  "dagster.dagster_type_loader",
-  "dagster.dagster_type_materializer",
-  "dagster.execute_pipeline",
-  "dagster.execute_pipeline_iterator",
-  "dagster.execute_solid",
-  "dagster.file_relative_path",
-  "dagster.pipeline",
-  "dagster.reconstructable",
-  "dagster.resource",
-  "dagster.seven.TemporaryDirectory",
-  "dagster.seven.json.loads",
-  "dagster.solid",
-  "dagster.utils.file_relative_path",
-  "dagster.utils.frozentags",
-  "dagster.utils.hosted_user_process.create_in_process_ephemeral_workspace",
-  "dagster.utils.iterate_with_context",
-  "dagster.utils.raise_interrupts_immediately",
-  "dagster.utils.send_interrupt",
-  "dagster.utils.test.get_temp_dir",
   "dagster_dask.data_frame.DataFrameReadTypes.keys",
   "dagster_dask.data_frame.DataFrameToTypes.keys",
   "dagster_dask.utils.DataFrameUtilities.keys",
@@ -89,13 +28,10 @@
   "dask.distributed.as_completed",
   "dask_yarn.YarnCluster",
   "graphql.execution.executors.sync.SyncExecutor",
-  "importlib.import_module",
   "pytest.mark.parametrize",
   "pytest.param",
   "pytest.raises",
   "pytest.warns",
-  "re.compile",
-  "re.escape",
   "read_function",
   "shutil.rmtree",
   "threading.Thread",
@@ -105,23 +41,22 @@
   "util_func",
   "utils.DataFrameUtilities.items",
   "utils.apply_utilities_to_df",
-  "version.__version__",
   "warnings.warn"
  ],
  "deps": {
   "cluster_class": [],
-  "contextlib": [],
-  "dagster": [],
-  "dagster_dask": [
-   "dagster-dask/conda-forge/noarch/dagster-dask-0.10.8-pyhd8ed1ab_1"
+  "contextlib": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
   ],
-  "dagster_dask_tests": [
-   "dagster-dask/conda-forge/noarch/dagster-dask-0.10.8-pyhd8ed1ab_1"
+  "dagster": [
+   "dagster/conda-forge/linux-64/dagster-0.9.14-py37hc8dfbb8_0"
   ],
+  "dagster_dask": [],
   "dagster_graphql": [],
   "dagster_pandas": [
    "dagster-pandas/conda-forge/noarch/dagster-pandas-0.7.16-pyh32f6830_0",
    "dagster-pandas/conda-forge/noarch/dagster-pandas-0.8.5-pyh32f6830_1",
+   "dagster-pandas/conda-forge/noarch/dagster-pandas-0.9.15-pyh44b312d_2",
    "dagster_pandas/conda-forge/noarch/dagster_pandas-0.6.7.post0-py_0"
   ],
   "dask": [
@@ -138,9 +73,14 @@
   "graphql": [
    "graphql-core/conda-forge/noarch/graphql-core-3.1.0-py_0"
   ],
-  "importlib": [],
+  "importlib": [
+   "python/conda-forge/linux-64/python-2.7.15-h721da81_1008",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "pytest": [],
-  "re": [],
+  "re": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "read_function": [],
   "shutil": [],
   "threading": [],
@@ -148,7 +88,9 @@
   "to_function": [],
   "util_func": [],
   "utils": [],
-  "version": [],
+  "version": [
+   "telegram-send/conda-forge/noarch/telegram-send-0.25-py_0"
+  ],
   "warnings": []
  }
 }

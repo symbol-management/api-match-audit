@@ -1,7 +1,5 @@
 {
  "bad": [
-  "copy.copy",
-  "functools.partial",
   "gdal_merge.main",
   "matplotlib.colors.LightSource",
   "matplotlib.pyplot.colorbar",
@@ -9,8 +7,6 @@
   "matplotlib.pyplot.gca",
   "matplotlib.pyplot.subplots",
   "matplotlib.ticker.MaxNLocator",
-  "multiprocessing.Pool",
-  "multiprocessing.cpu_count",
   "numpy.abs",
   "numpy.arange",
   "numpy.cos",
@@ -49,7 +45,6 @@
   "pyfftw.interfaces.numpy_fft.fft2",
   "pyfftw.interfaces.numpy_fft.fftshift",
   "pyfftw.interfaces.numpy_fft.ifft2",
-  "rasterio.fill.fillnodata",
   "scipy.ndimage.gaussian_filter",
   "scipy.special.erfinv",
   "sys.argv",
@@ -57,11 +52,18 @@
   "sys.setrecursionlimit"
  ],
  "deps": {
-  "copy": [],
-  "functools": [],
+  "copy": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "functools": [
+   "python/conda-forge/linux-64/python-2.7.15-h721da81_1008",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "gdal_merge": [],
   "matplotlib": [],
-  "multiprocessing": [],
+  "multiprocessing": [
+   "python/conda-forge/linux-64/python-2.7.15-h721da81_1008"
+  ],
   "numexpr": [
    "numexpr/conda-forge/linux-64/numexpr-2.7.3-py36h284efc9_0"
   ],
@@ -69,9 +71,8 @@
   "os": [],
   "osgeo": [],
   "pyfftw": [],
-  "rasterio": [],
-  "scarplet": [
-   "scarplet/conda-forge/noarch/scarplet-0.1.0-py_0"
+  "rasterio": [
+   "rasterio/conda-forge/linux-64/rasterio-1.0.25-py27hdff7cfa_0"
   ],
   "scipy": [],
   "sys": []

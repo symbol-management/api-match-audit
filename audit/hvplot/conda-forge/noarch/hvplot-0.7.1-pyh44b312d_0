@@ -1,6 +1,5 @@
 {
  "bad": [
-  "abc.ABCMeta",
   "bokeh.models.HoverTool",
   "bokeh.sampledata.iris.flowers",
   "cartopy.crs",
@@ -16,24 +15,18 @@
   "cartopy.crs.UTM",
   "cartopy.crs.epsg",
   "cl",
-  "collections.OrderedDict",
-  "collections.defaultdict",
-  "colorcet.palette",
   "converter.HoloViewsConverter",
   "converter.HoloViewsConverter._kind_mapping",
   "converter.HoloViewsConverter._kind_mapping.items",
   "core.hvPlotTabular",
   "cudf.DataFrame",
   "cudf.Series",
-  "difflib.get_close_matches",
-  "distutils.version.LooseVersion",
   "element",
   "element.__name__",
   "element.name",
   "element.vdims",
   "fn",
   "func",
-  "functools.partial",
   "get_ipython",
   "holoviews.Curve",
   "holoviews.Dataset",
@@ -93,56 +86,12 @@
   "hvplot._data",
   "hvplot._data.ndim",
   "hvplot._data.time",
-  "hvplot._get_doc_and_signature",
-  "hvplot.cudf.hvPlotTabular",
-  "hvplot.cudf.patch",
-  "hvplot.cudf.post_patch",
   "hvplot.custom_scatter",
-  "hvplot.dask.DaskInteractive",
-  "hvplot.dask.hvPlotTabular",
-  "hvplot.dask.post_patch",
-  "hvplot.ibis.hvPlotTabular",
-  "hvplot.ibis.patch",
-  "hvplot.ibis.post_patch",
-  "hvplot.intake.hvPlot",
-  "hvplot.intake.post_patch",
-  "hvplot.interactive.Interactive",
-  "hvplot.interactive._find_widgets",
   "hvplot.line",
-  "hvplot.pandas.hvPlotTabular",
-  "hvplot.pandas.post_patch",
-  "hvplot.plotting.core.hvPlotBase",
-  "hvplot.plotting.core.hvPlotTabular",
-  "hvplot.plotting.core.panel_available",
-  "hvplot.plotting.hvPlot",
-  "hvplot.plotting.hvPlotTabular",
-  "hvplot.plotting.plot",
   "hvplot.scatter",
-  "hvplot.streamz.hvPlotTabular",
-  "hvplot.streamz.post_patch",
-  "hvplot.tests.testcharts.TestChart1DDask",
-  "hvplot.tests.testcharts.TestChart2D",
-  "hvplot.tests.testcharts.TestChart2DDask",
-  "hvplot.tests.testgeo.TestCRSInference",
-  "hvplot.tests.testoptions.TestOptions",
-  "hvplot.tests.testpanel.look_for_class",
-  "hvplot.tests.testplotting.TestPandasHoloviewsPlotting",
-  "hvplot.tests.testplotting.no_args",
-  "hvplot.tests.testplotting.no_args_mapping",
-  "hvplot.tests.testplotting.x_y",
-  "hvplot.tests.testplotting.x_y_mapping",
-  "hvplot.util.panel_available",
-  "hvplot.util.process_derived_datetime_xarray",
-  "hvplot.xarray.XArrayInteractive",
-  "hvplot.xarray.hvPlot",
-  "hvplot.xarray.post_patch",
   "ibis.Expr",
-  "inspect.Parameter",
   "inspect.Parameter.KEYWORD_ONLY",
   "inspect.Parameter.VAR_KEYWORD",
-  "inspect.Signature",
-  "inspect.getargspec",
-  "inspect.signature",
   "interactive.Interactive",
   "interactive.Interactive.__call__.__doc__",
   "ipywidgets.Widget",
@@ -181,31 +130,9 @@
   "numpy.tile",
   "object.__getattribute__",
   "operation",
-  "operator.add",
-  "operator.and_",
   "operator.div",
-  "operator.eq",
-  "operator.floordiv",
-  "operator.ge",
-  "operator.getitem",
-  "operator.gt",
-  "operator.inv",
-  "operator.le",
-  "operator.lshift",
-  "operator.lt",
-  "operator.mod",
-  "operator.mul",
-  "operator.ne",
-  "operator.neg",
-  "operator.not_",
-  "operator.or_",
-  "operator.pos",
-  "operator.pow",
   "operator.rlshift",
   "operator.rrshift",
-  "operator.rshift",
-  "operator.sub",
-  "operator.truediv",
   "os.path.dirname",
   "os.path.isdir",
   "os.path.join",
@@ -227,7 +154,6 @@
   "parameterized.parameterized.expand",
   "plotting.hvPlot",
   "plotting.hvPlotTabular",
-  "pyproj.Proj",
   "streamz.dataframe",
   "streamz.dataframe.DataFrame",
   "streamz.dataframe.DataFrames",
@@ -240,10 +166,6 @@
   "textwrap.dedent",
   "tile_source",
   "transform",
-  "types.FunctionType",
-  "unittest.SkipTest",
-  "unittest.TestCase",
-  "unittest.expectedFailure",
   "util.check_library",
   "util.filter_opts",
   "util.get_ipy",
@@ -270,12 +192,19 @@
   "xarray.DataArray.sel.__doc__"
  ],
  "deps": {
-  "abc": [],
+  "abc": [
+   "python/conda-forge/linux-64/python-2.7.15-h721da81_1008",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "bokeh": [],
   "cartopy": [],
   "cl": [],
-  "collections": [],
-  "colorcet": [],
+  "collections": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "colorcet": [
+   "colorcet/conda-forge/noarch/colorcet-1.0.0-py_0"
+  ],
   "converter": [],
   "core": [],
   "cudf": [],
@@ -287,12 +216,19 @@
   "datashader": [
    "datashader/conda-forge/noarch/datashader-0.7.0-py_1"
   ],
-  "difflib": [],
-  "distutils": [],
+  "difflib": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "distutils": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "element": [],
   "fn": [],
   "func": [],
-  "functools": [],
+  "functools": [
+   "python/conda-forge/linux-64/python-2.7.15-h721da81_1008",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "geopandas": [
    "geopandas/conda-forge/noarch/geopandas-0.3.0-py_1"
   ],
@@ -305,11 +241,11 @@
   ],
   "hvPlot": [],
   "hvPlotTabular": [],
-  "hvplot": [
-   "hvplot/conda-forge/noarch/hvplot-0.4.0-py_0"
-  ],
+  "hvplot": [],
   "ibis": [],
-  "inspect": [],
+  "inspect": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "intake": [
    "intake/conda-forge/noarch/intake-0.5.3-py_0",
    "intake/conda-forge/noarch/intake-0.6.0-py_0"
@@ -324,7 +260,9 @@
   "numpy": [],
   "object": [],
   "operation": [],
-  "operator": [],
+  "operator": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "os": [],
   "osgeo": [],
   "pandas": [],
@@ -337,7 +275,9 @@
   ],
   "parameterized": [],
   "plotting": [],
-  "pyproj": [],
+  "pyproj": [
+   "pyproj/conda-forge/linux-64/pyproj-1.9.6-py37h516909a_1002"
+  ],
   "spatialpandas": [
    "spatialpandas/conda-forge/noarch/spatialpandas-0.3.6-pyhd8ed1ab_0"
   ],
@@ -346,8 +286,12 @@
   "textwrap": [],
   "tile_source": [],
   "transform": [],
-  "types": [],
-  "unittest": [],
+  "types": [
+   "python/conda-forge/linux-64/python-2.7.15-h721da81_1008"
+  ],
+  "unittest": [
+   "python/conda-forge/linux-64/python-2.7.15-h721da81_1008"
+  ],
   "util": [],
   "v": [],
   "xarray": [

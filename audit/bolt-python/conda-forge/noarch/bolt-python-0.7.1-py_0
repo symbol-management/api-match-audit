@@ -2,13 +2,10 @@
  "bad": [
   "check",
   "collections.Iterable",
-  "copy.deepcopy",
   "extract",
   "f",
   "func",
-  "functools.reduce",
   "inrange",
-  "inspect.getargspec",
   "itertools.chain",
   "itertools.groupby",
   "itertools.product",
@@ -52,24 +49,28 @@
   "numpy.where",
   "numpy.zeros",
   "object.__setattr__",
-  "operator.add",
   "removepad",
   "test_func",
   "vfunc"
  ],
  "deps": {
-  "bolt": [
-   "bolt-python/conda-forge/noarch/bolt-python-0.7.1-py_0"
-  ],
   "check": [],
   "collections": [],
-  "copy": [],
+  "copy": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "extract": [],
   "f": [],
   "func": [],
-  "functools": [],
+  "functools": [
+   "python/conda-forge/linux-64/python-2.7.15-h721da81_1008",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "inrange": [],
-  "inspect": [],
+  "inspect": [
+   "python/conda-forge/linux-64/python-2.7.15-h721da81_1008",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "itertools": [],
   "key_check": [],
   "key_func": [],
@@ -77,7 +78,9 @@
   "newkey": [],
   "numpy": [],
   "object": [],
-  "operator": [],
+  "operator": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "pyspark": [
    "pyspark/conda-forge/noarch/pyspark-2.4.5-py_0"
   ],

@@ -2,12 +2,6 @@
  "bad": [
   "_calculateRatio",
   "_get_descr",
-  "abc.ABC",
-  "abc.ABCMeta",
-  "abc.abstractmethod",
-  "affine.Affine",
-  "affine.Affine.scale",
-  "affine.Affine.translation",
   "asyncio.gather",
   "attr.ib",
   "attr.s",
@@ -15,9 +9,7 @@
   "base.MosaicMethodBase",
   "base.MultiBaseReader",
   "cogeo.COGReader",
-  "collections.UserDict",
   "colormap.apply_cmap",
-  "concurrent.futures.Future",
   "concurrent.futures.ThreadPoolExecutor",
   "constants.BBox",
   "constants.ColorTuple",
@@ -41,17 +33,8 @@
   "errors.TileOutsideBounds",
   "expression.apply_expression",
   "expression.parse_expression",
-  "functools.lru_cache",
-  "functools.partial",
-  "future",
-  "inspect.isclass",
-  "io.BytesIO",
-  "json.load",
-  "json.loads",
   "logger.logger.debug",
   "logger.logger.info",
-  "logging.getLogger",
-  "math.ceil",
   "methods.base.MosaicMethodBase",
   "methods.defaults.FirstMethod",
   "models.ImageData",
@@ -62,7 +45,6 @@
   "models.SpatialInfo",
   "morecantile.Tile",
   "morecantile.TileMatrixSet",
-  "numexpr.evaluate",
   "numpy.add",
   "numpy.all",
   "numpy.array",
@@ -98,35 +80,12 @@
   "numpy.zeros",
   "ops",
   "pystac.Item.from_dict",
-  "rasterio.coords.BoundingBox",
-  "rasterio.crs.CRS",
   "rasterio.enums.ColorInterp.alpha",
   "rasterio.enums.MaskFlags.alpha",
   "rasterio.enums.MaskFlags.per_dataset",
-  "rasterio.enums.Resampling",
-  "rasterio.features.bounds",
-  "rasterio.features.is_valid_geom",
-  "rasterio.io.DatasetReader",
-  "rasterio.io.DatasetWriter",
-  "rasterio.io.MemoryFile",
-  "rasterio.open",
-  "rasterio.plot.reshape_as_image",
-  "rasterio.profiles.Profile",
-  "rasterio.rio.helpers.coords",
   "rasterio.rio.overview.get_maximum_overview_level",
-  "rasterio.transform.from_bounds",
   "rasterio.transform.from_gcps",
-  "rasterio.transform.rowcol",
-  "rasterio.vrt.WarpedVRT",
-  "rasterio.warp.calculate_default_transform",
-  "rasterio.warp.transform",
-  "rasterio.warp.transform_bounds",
-  "rasterio.warp.transform_geom",
-  "rasterio.windows.Window",
-  "rasterio.windows.from_bounds",
   "re.IGNORECASE",
-  "re.compile",
-  "re.findall",
   "reader.part",
   "reader.point",
   "reader.preview",
@@ -169,8 +128,12 @@
  "deps": {
   "_calculateRatio": [],
   "_get_descr": [],
-  "abc": [],
-  "affine": [],
+  "abc": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "affine": [
+   "affine/conda-forge/noarch/affine-2.2.0-py_0"
+  ],
   "asyncio": [],
   "attr": [
    "attrs/conda-forge/noarch/attrs-20.3.0-pyhd3deb0d_0"
@@ -185,18 +148,21 @@
    "boto3/conda-forge/noarch/boto3-1.10.48-py_0",
    "boto3/conda-forge/noarch/boto3-1.11.13-py_0",
    "boto3/conda-forge/noarch/boto3-1.12.35-pyh9f0ad1d_0",
+   "boto3/conda-forge/noarch/boto3-1.12.42-pyh9f0ad1d_0",
    "boto3/conda-forge/noarch/boto3-1.13.14-pyh9f0ad1d_0",
    "boto3/conda-forge/noarch/boto3-1.13.24-pyh9f0ad1d_0",
    "boto3/conda-forge/noarch/boto3-1.14.23-pyh9f0ad1d_0",
    "boto3/conda-forge/noarch/boto3-1.14.34-pyh9f0ad1d_0",
    "boto3/conda-forge/noarch/boto3-1.14.44-pyh9f0ad1d_0",
    "boto3/conda-forge/noarch/boto3-1.14.46-pyh9f0ad1d_0",
+   "boto3/conda-forge/noarch/boto3-1.14.50-pyh9f0ad1d_0",
    "boto3/conda-forge/noarch/boto3-1.14.59-pyh9f0ad1d_0",
    "boto3/conda-forge/noarch/boto3-1.14.9-pyh9f0ad1d_0",
    "boto3/conda-forge/noarch/boto3-1.15.16-pyh9f0ad1d_0",
    "boto3/conda-forge/noarch/boto3-1.15.17-pyh9f0ad1d_0",
    "boto3/conda-forge/noarch/boto3-1.15.5-pyh9f0ad1d_0",
    "boto3/conda-forge/noarch/boto3-1.16.14-pyhd8ed1ab_0",
+   "boto3/conda-forge/noarch/boto3-1.16.19-pyhd8ed1ab_0",
    "boto3/conda-forge/noarch/boto3-1.16.30-pyhd8ed1ab_0",
    "boto3/conda-forge/noarch/boto3-1.16.5-pyh9f0ad1d_0",
    "boto3/conda-forge/noarch/boto3-1.16.53-pyhd8ed1ab_0",
@@ -207,6 +173,7 @@
    "boto3/conda-forge/noarch/boto3-1.6.23-py_0",
    "boto3/conda-forge/noarch/boto3-1.7.47-py_0",
    "boto3/conda-forge/noarch/boto3-1.7.9-py_0",
+   "boto3/conda-forge/noarch/boto3-1.9.100-py_0",
    "boto3/conda-forge/noarch/boto3-1.9.112-py_0",
    "boto3/conda-forge/noarch/boto3-1.9.140-py_0",
    "boto3/conda-forge/noarch/boto3-1.9.16-py_0",
@@ -222,27 +189,51 @@
    "boto3/conda-forge/noarch/boto3-1.9.95-py_0"
   ],
   "cogeo": [],
-  "collections": [],
+  "collections": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "colormap": [],
-  "concurrent": [],
+  "concurrent": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "constants": [],
   "enum": [
-   "privy/conda-forge/noarch/privy-6.0.0-py_0"
+   "privy/conda-forge/noarch/privy-6.0.0-py_0",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
   ],
   "errors": [],
   "expression": [],
-  "functools": [],
-  "future": [],
-  "inspect": [],
-  "io": [],
-  "json": [],
+  "functools": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "future": [
+   "future/conda-forge/linux-64/future-0.17.1-py36_1000"
+  ],
+  "inspect": [
+   "python/conda-forge/linux-64/python-2.7.15-h721da81_1008",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "io": [
+   "python/conda-forge/linux-64/python-2.7.15-h721da81_1008",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "json": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "logger": [],
-  "logging": [],
-  "math": [],
+  "logging": [
+   "python/conda-forge/linux-64/python-2.7.15-h721da81_1008",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "math": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "methods": [],
   "models": [],
   "morecantile": [],
-  "numexpr": [],
+  "numexpr": [
+   "numexpr/conda-forge/linux-64/numexpr-2.7.3-py36h284efc9_0"
+  ],
   "numpy": [],
   "ops": [],
   "pydantic": [
@@ -251,16 +242,17 @@
   "pystac": [
    "pystac/conda-forge/noarch/pystac-0.5.5-pyhd8ed1ab_0"
   ],
-  "rasterio": [],
-  "re": [],
+  "rasterio": [
+   "rasterio/conda-forge/linux-64/rasterio-1.0.25-py27hdff7cfa_0"
+  ],
+  "re": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "reader": [],
   "requests": [
    "requests/conda-forge/noarch/requests-2.23.0-pyh8c360ce_2"
   ],
   "rio_color": [],
-  "rio_tiler": [
-   "rio-tiler/conda-forge/noarch/rio-tiler-2.0.2-pyhd8ed1ab_0"
-  ],
   "tasks": [],
   "typing": [],
   "urllib": [],

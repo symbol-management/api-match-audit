@@ -1,9 +1,6 @@
 {
  "bad": [
-  "argparse.ArgumentParser",
   "attachment_class",
-  "codecs.open",
-  "collections.OrderedDict",
   "config.ConfigDumper.to_yaml_file",
   "config.ConfigLoader.from_yaml",
   "config.PageImageAattachmentConfig",
@@ -16,26 +13,17 @@
   "confluence_api_class",
   "constants.DEFAULT_CONFLUENCE_API_VERSION",
   "constants.DEFAULT_WATERMARK_CONTENT",
-  "copy.copy",
   "data_provider_class",
   "data_providers.sphinx_fjson_data_provider.SphinxFJsonDataProvider",
   "data_providers.sphinx_html_data_provider.SphinxHTMLDataProvider",
   "errors.ConfigError",
-  "json.dump",
-  "json.load",
   "log.debug",
   "log.error",
   "log.info",
   "log.warning",
-  "logging.DEBUG",
-  "logging.INFO",
-  "logging.StreamHandler",
-  "logging.WARNING",
-  "logging.getLogger",
   "mutators.page_mutator.AnchorPageMutator",
   "mutators.page_mutator.LinkPageMutator",
   "mutators.page_mutator.WatermarkPageMutator",
-  "operator.attrgetter",
   "os.path.abspath",
   "os.path.basename",
   "os.path.isabs",
@@ -43,10 +31,6 @@
   "re.DOTALL",
   "re.I",
   "re.U",
-  "re.compile",
-  "re.escape",
-  "re.findall",
-  "re.sub",
   "requests.codes.ok",
   "serializers.json_serializer.load",
   "serializers.yaml_serializer.dump",
@@ -63,29 +47,44 @@
   "yaml.load"
  ],
  "deps": {
-  "argparse": [],
+  "argparse": [
+   "python/conda-forge/linux-64/python-2.7.15-h721da81_1008",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "attachment_class": [],
-  "codecs": [],
-  "collections": [],
-  "conf_publisher": [
-   "confluence-publisher/conda-forge/noarch/confluence-publisher-v1.2.1-py_2"
+  "codecs": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "collections": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
   ],
   "config": [],
   "confluence": [],
   "confluence_api": [],
   "confluence_api_class": [],
   "constants": [],
-  "copy": [],
+  "copy": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "data_provider_class": [],
   "data_providers": [],
   "errors": [],
-  "json": [],
+  "json": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "log": [],
-  "logging": [],
+  "logging": [
+   "python/conda-forge/linux-64/python-2.7.15-h721da81_1008",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "mutators": [],
-  "operator": [],
+  "operator": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "os": [],
-  "re": [],
+  "re": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "requests": [
    "requests/conda-forge/noarch/requests-2.23.0-pyh8c360ce_2"
   ],

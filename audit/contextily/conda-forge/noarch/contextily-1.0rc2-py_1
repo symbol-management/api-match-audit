@@ -2,7 +2,6 @@
  "bad": [
   "PIL.Image.open",
   "atexit.register",
-  "io.BytesIO",
   "matplotlib.patheffects.withStroke",
   "matplotlib.pyplot.draw",
   "matplotlib.pyplot.subplots",
@@ -25,11 +24,6 @@
   "plotting.add_attribution",
   "providers.Stamen.Terrain",
   "rasterio.enums.Resampling.bilinear",
-  "rasterio.io.MemoryFile",
-  "rasterio.open",
-  "rasterio.transform.from_origin",
-  "rasterio.vrt.WarpedVRT",
-  "rasterio.warp.transform_bounds",
   "shutil.rmtree",
   "tempfile.mkdtemp",
   "tile._calculate_zoom",
@@ -45,13 +39,13 @@
  "deps": {
   "PIL": [],
   "atexit": [],
-  "contextily": [
-   "contextily/conda-forge/noarch/contextily-1.0rc2-py_1"
-  ],
   "geopy": [
    "geopy/conda-forge/noarch/geopy-1.17.0-py_0"
   ],
-  "io": [],
+  "io": [
+   "python/conda-forge/linux-64/python-2.7.15-h721da81_1008",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "joblib": [
    "joblib/conda-forge/noarch/joblib-1.0.1-pyhd8ed1ab_0"
   ],
@@ -64,7 +58,9 @@
   "os": [],
   "plotting": [],
   "providers": [],
-  "rasterio": [],
+  "rasterio": [
+   "rasterio/conda-forge/linux-64/rasterio-1.0.25-py27hdff7cfa_0"
+  ],
   "requests": [
    "requests/conda-forge/noarch/requests-2.23.0-pyh8c360ce_2"
   ],

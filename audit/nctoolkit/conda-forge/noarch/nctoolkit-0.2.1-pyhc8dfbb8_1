@@ -1,81 +1,12 @@
 {
  "bad": [
   "atexit.register",
-  "copy.deepcopy",
-  "datetime.datetime.strptime",
   "dict.fromkeys",
-  "glob.glob",
   "holoviews.Store.renderers",
-  "holoviews.extension",
-  "inspect.currentframe",
-  "multiprocessing.Pool",
-  "multiprocessing.cpu_count",
-  "nctoolkit.add_etc.arithall",
-  "nctoolkit.add_etc.operation",
-  "nctoolkit.api.DataSet",
-  "nctoolkit.api.convert_bytes",
-  "nctoolkit.api.custom_formatwarning",
-  "nctoolkit.api.file_size",
-  "nctoolkit.api.is_url",
-  "nctoolkit.api.letters",
-  "nctoolkit.api.open_data",
-  "nctoolkit.api.range",
-  "nctoolkit.api.result",
-  "nctoolkit.api.sum",
-  "nctoolkit.cdo_check",
-  "nctoolkit.cdo_version",
-  "nctoolkit.cleanup.clean_all",
-  "nctoolkit.cleanup.cleanup",
-  "nctoolkit.cleanup.temp_check",
-  "nctoolkit.compare.fix_expr",
-  "nctoolkit.corr.cor",
-  "nctoolkit.dailyclim.ydaystat",
-  "nctoolkit.dailystat.dailystat",
-  "nctoolkit.ensembles.cdo_version",
-  "nctoolkit.ensembles.ensemble_nco",
-  "nctoolkit.expr.fix_expression",
-  "nctoolkit.flatten.str_flatten",
-  "nctoolkit.fldstat.cdo_version",
-  "nctoolkit.fldstat.fldstat",
-  "nctoolkit.generate_grid.generate_grid",
-  "nctoolkit.mergers.cdo_version",
-  "nctoolkit.meridonials.zonstat",
-  "nctoolkit.monstat.monstat",
-  "nctoolkit.monthlyclim.ymonstat",
-  "nctoolkit.plot.ctrc",
-  "nctoolkit.plot.in_notebook",
-  "nctoolkit.plot.is_curvilinear",
-  "nctoolkit.plot.variable_dims",
-  "nctoolkit.remove.nc_remove",
-  "nctoolkit.rollstat.rollstat",
-  "nctoolkit.runthis.file_size",
-  "nctoolkit.runthis.run_cdo",
-  "nctoolkit.runthis.run_nco",
-  "nctoolkit.runthis.run_this",
-  "nctoolkit.runthis.tidy_command",
-  "nctoolkit.seasclim.seasstat",
-  "nctoolkit.seasstat.seasstat",
-  "nctoolkit.session.nc_protected",
   "nctoolkit.session.nc_protected.append",
-  "nctoolkit.session.nc_safe",
   "nctoolkit.session.nc_safe.append",
   "nctoolkit.session.nc_safe.remove",
-  "nctoolkit.session.session_info",
-  "nctoolkit.session.temp_dirs",
   "nctoolkit.session.temp_dirs.add",
-  "nctoolkit.show.nc_levels",
-  "nctoolkit.show.nc_months",
-  "nctoolkit.show.nc_times",
-  "nctoolkit.show.nc_variables",
-  "nctoolkit.show.nc_years",
-  "nctoolkit.split.split_cdo",
-  "nctoolkit.temp_file.temp_file",
-  "nctoolkit.time_stat.time_stat",
-  "nctoolkit.valid",
-  "nctoolkit.verticals.bottom",
-  "nctoolkit.verticals.vertstat",
-  "nctoolkit.yearlystat.yearlystat",
-  "nctoolkit.zonals.zonstat",
   "netCDF4.Dataset",
   "numpy.arange",
   "numpy.array",
@@ -93,16 +24,7 @@
   "pandas.DataFrame",
   "pandas.DataFrame.from_records",
   "pandas.Series",
-  "panel",
-  "panel.panel",
-  "platform.system",
-  "random.choice",
   "re.IGNORECASE",
-  "re.compile",
-  "re.findall",
-  "re.finditer",
-  "re.match",
-  "re.sub",
   "shutil.copyfile",
   "string.ascii_lowercase",
   "subprocess.PIPE",
@@ -116,28 +38,51 @@
   "time.sleep",
   "vars.reset_index",
   "warnings.formatwarning",
-  "warnings.warn",
-  "xarray.open_dataset",
-  "xarray.open_mfdataset"
+  "warnings.warn"
  ],
  "deps": {
   "atexit": [],
-  "copy": [],
-  "datetime": [],
+  "copy": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "datetime": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "dict": [],
-  "glob": [],
-  "holoviews": [],
-  "inspect": [],
-  "multiprocessing": [],
+  "glob": [
+   "python/conda-forge/linux-64/python-2.7.15-h721da81_1008",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "holoviews": [
+   "holoviews/conda-forge/noarch/holoviews-1.10.0-py_1",
+   "holoviews/conda-forge/noarch/holoviews-1.10.9-py_0",
+   "holoviews/conda-forge/noarch/holoviews-1.11.1-py_0",
+   "holoviews/conda-forge/noarch/holoviews-1.12.5-py_0"
+  ],
+  "inspect": [
+   "python/conda-forge/linux-64/python-2.7.15-h721da81_1008",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "multiprocessing": [
+   "python/conda-forge/linux-64/python-2.7.15-h721da81_1008"
+  ],
   "nctoolkit": [],
   "netCDF4": [],
   "numpy": [],
   "os": [],
   "pandas": [],
-  "panel": [],
-  "platform": [],
-  "random": [],
-  "re": [],
+  "panel": [
+   "panel/conda-forge/noarch/panel-0.10.0-py_0"
+  ],
+  "platform": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "random": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "re": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "shutil": [],
   "string": [],
   "subprocess": [],
@@ -147,6 +92,9 @@
   "time": [],
   "vars": [],
   "warnings": [],
-  "xarray": []
+  "xarray": [
+   "xarray/conda-forge/noarch/xarray-0.13.0-py_0",
+   "xarray/conda-forge/noarch/xarray-0.17.0-pyhd8ed1ab_0"
+  ]
  }
 }

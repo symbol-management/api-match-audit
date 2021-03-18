@@ -1,46 +1,22 @@
 {
  "bad": [
-  "IPython.core.history.HistoryAccessorBase",
-  "IPython.core.page.page",
-  "IPython.lib.lexers.IPython3Lexer",
-  "IPython.lib.lexers.IPythonLexer",
   "PIL.Image",
   "PIL.Image.open",
   "PIL.ImageShow",
   "PIL.ImageShow.show",
-  "Queue.Empty",
-  "base64.decodestring",
-  "base64.encodestring",
   "completer.ZMQCompleter",
   "errno.EINTR",
-  "getpass.getpass",
   "handler",
-  "io.BytesIO",
-  "ipython_genutils.tempdir.NamedFileInTemporaryDirectory",
-  "ipython_genutils.tempdir.TemporaryDirectory",
-  "ipython_genutils.testing.decorators.skip_win32",
-  "ipython_genutils.testing.decorators.skip_without",
-  "jupyter_client.consoleapp.JupyterConsoleApp",
   "jupyter_client.consoleapp.JupyterConsoleApp.classes",
-  "jupyter_client.consoleapp.JupyterConsoleApp.initialize",
-  "jupyter_client.consoleapp.app_aliases",
-  "jupyter_client.consoleapp.app_flags",
   "jupyter_console.app.launch_new_instance",
   "jupyter_console.ptshell.ZMQTerminalInteractiveShell.instance",
-  "jupyter_core.application.JupyterApp",
-  "jupyter_core.application.base_aliases",
-  "jupyter_core.application.base_flags",
-  "main",
   "mock.patch.object",
   "nose.SkipTest",
-  "os.devnull",
-  "os.environ",
   "os.environ.copy",
   "os.path.abspath",
   "os.path.dirname",
   "os.path.isfile",
   "os.path.join",
-  "pexpect.spawn",
   "prompt_toolkit.filters.emacs_insert_mode",
   "prompt_toolkit.filters.has_focus",
   "prompt_toolkit.filters.is_done",
@@ -56,7 +32,6 @@
   "pygments.token.Token.Prompt",
   "pygments.token.Token.PromptNum",
   "pygments.token.Token.String",
-  "queue.Empty",
   "read",
   "real_handler",
   "set_doc",
@@ -92,42 +67,65 @@
   "traitlets.config.boolean_flag",
   "traitlets.config.catch_config_error",
   "traitlets.tests.utils.check_help_all_output",
-  "unittest.TestCase",
   "warnings.warn",
   "zmq.ZMQError",
   "zmqhistory.ZMQHistoryManager"
  ],
  "deps": {
-  "IPython": [],
+  "IPython": [
+   "ipython/conda-forge/linux-64/ipython-5.0.0-py34_0"
+  ],
   "PIL": [],
-  "Queue": [],
-  "base64": [],
+  "Queue": [
+   "python/conda-forge/linux-64/python-2.7.15-h721da81_1008"
+  ],
+  "base64": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "colorama": [
    "colorama/conda-forge/noarch/colorama-0.4.0-py_0"
   ],
   "completer": [],
   "errno": [],
-  "getpass": [],
-  "handler": [],
-  "io": [],
-  "ipython_genutils": [],
-  "jupyter_client": [],
-  "jupyter_console": [
-   "jupyter_console/conda-forge/noarch/jupyter_console-6.1.0-py_0"
+  "getpass": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
   ],
-  "jupyter_core": [],
-  "main": [],
+  "handler": [],
+  "io": [
+   "python/conda-forge/linux-64/python-2.7.15-h721da81_1008",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "ipython_genutils": [
+   "ipython_genutils/conda-forge/noarch/ipython_genutils-0.2.0-py_1"
+  ],
+  "jupyter_client": [
+   "jupyter_client/conda-forge/noarch/jupyter_client-6.1.2-py_0",
+   "jupyter_client/conda-forge/noarch/jupyter_client-6.1.5-py_0"
+  ],
+  "jupyter_console": [],
+  "jupyter_core": [
+   "jupyter_core/conda-forge/noarch/jupyter_core-4.5.0-py_0"
+  ],
+  "main": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "mock": [],
   "nose": [],
-  "os": [],
-  "pexpect": [],
+  "os": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "pexpect": [
+   "pexpect/conda-forge/noarch/pexpect-4.8.0-pyh9f0ad1d_2"
+  ],
   "prompt_toolkit": [
    "prompt-toolkit/conda-forge/noarch/prompt-toolkit-3.0.11-pyha770c72_0"
   ],
   "pygments": [
    "pygments/conda-forge/noarch/pygments-2.5.1-py_0"
   ],
-  "queue": [],
+  "queue": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "read": [],
   "real_handler": [],
   "set_doc": [],
@@ -138,7 +136,9 @@
   "tempfile": [],
   "time": [],
   "traitlets": [],
-  "unittest": [],
+  "unittest": [
+   "python/conda-forge/linux-64/python-2.7.15-h721da81_1008"
+  ],
   "warnings": [],
   "zmq": [],
   "zmqhistory": []

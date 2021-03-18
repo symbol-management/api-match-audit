@@ -1,15 +1,7 @@
 {
  "bad": [
-  "argparse.Action",
-  "argparse.ArgumentDefaultsHelpFormatter",
-  "argparse.ArgumentParser",
-  "datetime.datetime",
-  "datetime.datetime.utcfromtimestamp",
-  "datetime.datetime.utcnow",
-  "datetime.timedelta",
   "dateutil.tz.tzutc",
   "docker.DEFAULT_HOST",
-  "docker.DockerClient",
   "docker.ErrorMessage",
   "docker.prepare",
   "docker.verify",
@@ -17,15 +9,7 @@
   "git.prepare",
   "git.repository",
   "git.verify",
-  "importlib_metadata.PackageNotFoundError",
-  "importlib_metadata.version",
-  "json.dumps",
-  "json.loads",
-  "math.fabs",
-  "math.isfinite",
-  "os.environ",
   "os.environ.get",
-  "platform.system",
   "prepare.cli",
   "prepare.cli_subparser",
   "pygit2.Commit",
@@ -63,27 +47,42 @@
   "web3.exceptions.TransactionNotFound"
  ],
  "deps": {
-  "argparse": [],
-  "datetime": [],
+  "argparse": [
+   "python/conda-forge/linux-64/python-2.7.15-h721da81_1008",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "datetime": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "dateutil": [
    "python-dateutil/conda-forge/noarch/python-dateutil-2.7.4-py_0"
   ],
-  "docker": [],
-  "git": [],
-  "importlib_metadata": [],
-  "json": [],
-  "math": [],
-  "os": [],
-  "pathlib": [
-   "pathlib/conda-forge/noarch/pathlib-1.0.1-py_1"
+  "docker": [
+   "docker-py/conda-forge/linux-64/docker-py-3.5.1-py27_1000"
   ],
-  "platform": [],
+  "git": [],
+  "importlib_metadata": [
+   "importlib-metadata/conda-forge/noarch/importlib-metadata-2.0.0-py_1"
+  ],
+  "json": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "math": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "os": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "pathlib": [
+   "pathlib/conda-forge/noarch/pathlib-1.0.1-py_1",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "platform": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "prepare": [],
   "pygit2": [],
   "shutil": [],
-  "stakesign": [
-   "stakesign/conda-forge/noarch/stakesign-0.2.1-pyhd3deb0d_0"
-  ],
   "subprocess": [],
   "sys": [],
   "tempfile": [],

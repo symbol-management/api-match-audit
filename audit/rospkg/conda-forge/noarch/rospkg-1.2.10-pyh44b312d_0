@@ -1,21 +1,15 @@
 {
  "bad": [
-  "argparse.ArgumentParser",
-  "argparse.RawTextHelpFormatter",
   "basename",
   "clazz",
-  "codecs.open",
-  "collections.namedtuple",
   "common.MANIFEST_FILE",
   "common.PACKAGE_FILE",
   "common.ResourceNotFound",
   "common.STACK_FILE",
   "environment.get_etc_ros_dir",
   "environment.get_ros_paths",
-  "locale.getpreferredencoding",
   "manifest.InvalidManifest",
   "manifest.parse_manifest_file",
-  "os.environ",
   "os.path.abspath",
   "os.path.basename",
   "os.path.dirname",
@@ -25,18 +19,10 @@
   "os.path.join",
   "os.path.normpath",
   "os.path.realpath",
-  "os.pathsep",
   "os.pathsep.join",
-  "os.sep",
-  "os.walk",
   "platform.dist",
   "platform.linux_distribution",
-  "platform.release",
-  "platform.system",
-  "platform.version",
   "printer",
-  "re.compile",
-  "re.search",
   "rosdep2.rospack.init_rospack_interface",
   "rosdep2.rospack.is_ros_package",
   "rosdep2.rospack.is_system_dependency",
@@ -55,7 +41,6 @@
   "sys.stderr.write",
   "sys.version_info",
   "threading.Lock",
-  "traceback.print_exc",
   "urllib2.urlopen",
   "xml.dom.minidom.parseString",
   "xml.etree.ElementTree.ElementTree",
@@ -63,33 +48,47 @@
   "yaml.load"
  ],
  "deps": {
-  "argparse": [],
+  "argparse": [
+   "python/conda-forge/linux-64/python-2.7.15-h721da81_1008",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "basename": [],
   "catkin_pkg": [
    "catkin_pkg/conda-forge/noarch/catkin_pkg-0.4.22-pyh9f0ad1d_0"
   ],
   "clazz": [],
-  "codecs": [],
-  "collections": [],
+  "codecs": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "collections": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "common": [],
   "environment": [],
-  "locale": [],
+  "locale": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "manifest": [],
-  "os": [],
-  "platform": [],
+  "os": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "platform": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "printer": [],
-  "re": [],
+  "re": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "rosdep2": [],
   "rospack": [],
-  "rospkg": [
-   "rospkg/conda-forge/noarch/rospkg-1.2.10-pyh44b312d_0"
-  ],
   "stack": [],
   "string": [],
   "subprocess": [],
   "sys": [],
   "threading": [],
-  "traceback": [],
+  "traceback": [
+   "python/conda-forge/linux-64/python-2.7.15-h721da81_1008"
+  ],
   "urllib2": [],
   "xml": [],
   "yaml": []

@@ -1,9 +1,5 @@
 {
  "bad": [
-  "abc.abstractmethod",
-  "collections.namedtuple",
-  "datetime.datetime",
-  "datetime.timedelta",
   "eolearn.core.FeatureType.DATA",
   "eolearn.core.FeatureType.DATA_TIMELESS",
   "eolearn.core.FeatureType.MASK",
@@ -11,7 +7,6 @@
   "eolearn.core.FeatureType.SCALAR",
   "feature_parser",
   "itertools.repeat",
-  "logging.getLogger",
   "numpy.abs",
   "numpy.array",
   "numpy.asarray",
@@ -33,16 +28,10 @@
   "numpy.uint16",
   "numpy.uint8",
   "numpy.where",
-  "os.makedirs",
   "os.path.dirname",
   "os.path.exists",
   "os.path.join",
-  "rasterio.band",
-  "rasterio.open",
-  "rasterio.transform.from_bounds",
   "rasterio.warp.Resampling.nearest",
-  "rasterio.warp.calculate_default_transform",
-  "rasterio.warp.reproject",
   "sentinelhub.CRS.POP_WEB",
   "sentinelhub.CRS.ogc_string",
   "sentinelhub.CustomUrlParam.EVALSCRIPT",
@@ -66,19 +55,37 @@
   "warnings.warn"
  ],
  "deps": {
-  "abc": [],
-  "collections": [],
-  "datetime": [],
+  "abc": [
+   "python/conda-forge/linux-64/python-2.7.15-h721da81_1008",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "collections": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "datetime": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "dateutil": [
    "python-dateutil/conda-forge/noarch/python-dateutil-2.7.4-py_0"
   ],
-  "eolearn": [],
+  "eolearn": [
+   "eo-learn-core/conda-forge/noarch/eo-learn-core-0.6.0-py_0",
+   "eo-learn-core/conda-forge/noarch/eo-learn-core-0.7.3-py_0",
+   "eo-learn-core/conda-forge/noarch/eo-learn-core-0.8.0-py_0"
+  ],
   "feature_parser": [],
   "itertools": [],
-  "logging": [],
+  "logging": [
+   "python/conda-forge/linux-64/python-2.7.15-h721da81_1008",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "numpy": [],
-  "os": [],
-  "rasterio": [],
+  "os": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "rasterio": [
+   "rasterio/conda-forge/linux-64/rasterio-1.0.25-py27hdff7cfa_0"
+  ],
   "sentinelhub": [
    "sentinelhub/conda-forge/noarch/sentinelhub-3.0.3-py_0",
    "sentinelhub/conda-forge/noarch/sentinelhub-3.0.4-py_0"

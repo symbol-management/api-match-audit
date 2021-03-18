@@ -1,24 +1,12 @@
 {
  "bad": [
-  "abc.ABCMeta",
-  "abc.abstractmethod",
-  "abc.abstractproperty",
   "base64.b64decode",
   "base64.b64encode",
   "base64.urlsafe_b64decode",
   "base64.urlsafe_b64encode",
-  "calendar.timegm",
   "certifi.where",
   "checker",
   "collections.Mapping",
-  "copy.copy",
-  "copy.deepcopy",
-  "datetime.datetime.fromtimestamp",
-  "datetime.datetime.strptime",
-  "datetime.datetime.utcfromtimestamp",
-  "datetime.datetime.utcnow",
-  "datetime.timedelta",
-  "functools.partial",
   "google.appengine.api.app_identity",
   "google.appengine.api.app_identity.get_access_token",
   "google.appengine.api.app_identity.get_application_id",
@@ -32,17 +20,7 @@
   "grpc.metadata_call_credentials",
   "grpc.secure_channel",
   "grpc.ssl_channel_credentials",
-  "io.open",
-  "json.dumps",
-  "json.load",
-  "json.loads",
-  "logging.NullHandler",
-  "logging.getLogger",
-  "numbers.Number",
-  "os.environ",
   "os.environ.get",
-  "os.getenv",
-  "os.name",
   "os.path.exists",
   "os.path.expanduser",
   "os.path.isfile",
@@ -51,8 +29,6 @@
   "pkg_resources.get_distribution",
   "pkg_resources.parse_version",
   "re.DOTALL",
-  "re.compile",
-  "re.findall",
   "requests.packages.urllib3.util.ssl_.create_urllib3_context",
   "rsa.PublicKey.load_pkcs1",
   "rsa.key.PrivateKey.load_pkcs1",
@@ -83,31 +59,55 @@
   "OpenSSL": [
    "pyopenssl/conda-forge/noarch/pyopenssl-19.1.0-py_1"
   ],
-  "abc": [],
+  "abc": [
+   "python/conda-forge/linux-64/python-2.7.15-h721da81_1008",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "base64": [],
   "cachetools": [
+   "cachetools/conda-forge/noarch/cachetools-2.1.0-py_0",
    "cachetools/conda-forge/noarch/cachetools-4.2.1-pyhd8ed1ab_0",
    "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1"
   ],
-  "calendar": [],
+  "calendar": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "certifi": [],
   "checker": [],
   "collections": [],
-  "copy": [],
+  "copy": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "cryptography": [
    "privy/conda-forge/noarch/privy-6.0.0-py_0"
   ],
-  "datetime": [],
-  "functools": [],
-  "google": [
-   "google-auth/conda-forge/noarch/google-auth-1.21.1-py_0"
+  "datetime": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
   ],
+  "functools": [
+   "python/conda-forge/linux-64/python-2.7.15-h721da81_1008",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "google": [],
   "grpc": [],
-  "io": [],
-  "json": [],
-  "logging": [],
-  "numbers": [],
-  "os": [],
+  "io": [
+   "python/conda-forge/linux-64/python-2.7.15-h721da81_1008",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "json": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "logging": [
+   "python/conda-forge/linux-64/python-2.7.15-h721da81_1008",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "numbers": [
+   "python/conda-forge/linux-64/python-2.7.15-h721da81_1008",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "os": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "pkg_resources": [],
   "pyasn1": [
    "pyasn1/conda-forge/noarch/pyasn1-0.3.4-py_0"
@@ -115,7 +115,9 @@
   "pyasn1_modules": [
    "pyasn1-modules/conda-forge/noarch/pyasn1-modules-0.2.1-py_0"
   ],
-  "re": [],
+  "re": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "requests": [
    "requests/conda-forge/noarch/requests-2.23.0-pyh8c360ce_2"
   ],
@@ -123,6 +125,7 @@
    "rsa/conda-forge/noarch/rsa-4.7.2-pyh44b312d_0"
   ],
   "six": [
+   "lldb/conda-forge/linux-64/lldb-6.0.0-py35_0",
    "six/conda-forge/noarch/six-1.14.0-py_1"
   ],
   "socket": [],

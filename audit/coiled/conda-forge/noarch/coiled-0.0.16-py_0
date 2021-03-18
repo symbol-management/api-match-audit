@@ -12,49 +12,33 @@
   "asyncio.create_subprocess_shell",
   "asyncio.run",
   "asyncio.sleep",
-  "asyncio.subprocess.PIPE",
   "asyncio.wait_for",
   "backends.in_process.ClusterManager",
   "cli.install.install",
   "cli.install.install.callback",
-  "click.argument",
-  "click.command",
-  "click.group",
-  "click.option",
-  "click.prompt",
-  "click.testing.CliRunner",
   "cloud.apps.CloudConfig.backend",
   "cloud.apps.CloudConfig.initialize_periodic_callbacks",
   "cloud.models.Scheduler.objects.get",
   "coiled.Cloud.current",
   "coiled.cli.core.cli.commands",
-  "copy.deepcopy",
   "core.Cloud",
   "core.Cloud.current",
   "core.create_software_environment",
   "create_conda_env",
   "dask.distributed.Client",
   "dask.distributed.Security",
-  "distutils.util.strtobool",
   "func",
   "get_solved_spec",
   "handle_api_exception",
   "install.install",
-  "io.StringIO",
   "itertools.cycle",
   "itertools.permutations",
-  "json.JSONDecodeError",
-  "json.loads",
   "login.login",
-  "main",
-  "os.environ",
   "os.environ.get",
   "os.environ.pop",
-  "os.makedirs",
   "os.path.dirname",
   "os.path.expanduser",
   "os.path.join",
-  "platform.system",
   "pytest.fail",
   "pytest.fixture",
   "pytest.importorskip",
@@ -68,11 +52,8 @@
   "pytest.raises",
   "pytest.skip",
   "pytest.warns",
-  "re.match",
   "shutil.which",
-  "ssl.CERT_REQUIRED",
   "ssl.Purpose.SERVER_AUTH",
-  "ssl.create_default_context",
   "subprocess.check_output",
   "sys.platform",
   "sys.stdout",
@@ -123,15 +104,20 @@
   "asgiref": [
    "asgiref/conda-forge/noarch/asgiref-3.2.9-py_0"
   ],
-  "asyncio": [],
+  "asyncio": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "backends": [],
   "cli": [],
-  "click": [],
-  "cloud": [],
-  "coiled": [
-   "coiled/conda-forge/noarch/coiled-0.0.16-py_0"
+  "click": [
+   "click/conda-forge/noarch/click-6.7-py_1",
+   "click/conda-forge/noarch/click-7.1-pyh8c360ce_0"
   ],
-  "copy": [],
+  "cloud": [],
+  "coiled": [],
+  "copy": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "core": [],
   "create_conda_env": [],
   "dask": [
@@ -142,28 +128,46 @@
    "distributed/conda-forge/noarch/distributed-2.5.0-py_0",
    "distributed/conda-forge/noarch/distributed-2.9.3-py_0"
   ],
-  "distutils": [],
+  "distutils": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "func": [],
   "get_solved_spec": [],
   "handle_api_exception": [],
   "install": [],
-  "io": [],
-  "itertools": [],
-  "json": [],
-  "login": [],
-  "main": [],
-  "os": [],
-  "pathlib": [
-   "pathlib/conda-forge/noarch/pathlib-1.0.1-py_1"
+  "io": [
+   "python/conda-forge/linux-64/python-2.7.15-h721da81_1008",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
   ],
-  "platform": [],
+  "itertools": [],
+  "json": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "login": [],
+  "main": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "os": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "pathlib": [
+   "pathlib/conda-forge/noarch/pathlib-1.0.1-py_1",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "platform": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "pytest": [],
-  "re": [],
+  "re": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "s3fs": [
    "s3fs/conda-forge/noarch/s3fs-0.4.0-py_0"
   ],
   "shutil": [],
-  "ssl": [],
+  "ssl": [
+   "python/conda-forge/linux-64/python-2.7.15-h721da81_1008"
+  ],
   "subprocess": [],
   "sys": [],
   "tempfile": [],

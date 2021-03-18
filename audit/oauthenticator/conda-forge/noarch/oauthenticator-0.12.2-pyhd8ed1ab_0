@@ -1,22 +1,9 @@
 {
  "bad": [
   "asyncio.wrap_future",
-  "base64.b64encode",
-  "base64.urlsafe_b64decode",
-  "base64.urlsafe_b64encode",
-  "binascii.a2b_base64",
   "concurrent.futures.ThreadPoolExecutor",
-  "json.dumps",
-  "json.loads",
-  "jupyterhub.auth.Authenticator",
-  "jupyterhub.auth.LocalAuthenticator",
-  "jupyterhub.crypto.EncryptionUnavailable",
-  "jupyterhub.crypto.InvalidToken",
-  "jupyterhub.crypto.decrypt",
   "jupyterhub.handlers.BaseHandler",
   "jupyterhub.handlers.LogoutHandler",
-  "jupyterhub.utils.url_path_join",
-  "jwt.decode",
   "mwoauth.ConsumerToken",
   "mwoauth.Handshaker",
   "mwoauth.tokens.RequestToken",
@@ -26,10 +13,7 @@
   "oauthenticator.OAuthCallbackHandler",
   "oauthenticator.OAuthenticator",
   "os.environ.get",
-  "os.getenv",
   "os.path.exists",
-  "pickle.dumps",
-  "re.split",
   "tornado.auth.GoogleOAuth2Mixin",
   "tornado.auth.OAuth2Mixin",
   "tornado.escape.url_escape",
@@ -60,8 +44,12 @@
  ],
  "deps": {
   "asyncio": [],
-  "base64": [],
-  "binascii": [],
+  "base64": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "binascii": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "concurrent": [],
   "google": [
    "google-auth/conda-forge/noarch/google-auth-1.21.1-py_0"
@@ -69,17 +57,27 @@
   "googleapiclient": [
    "google-api-python-client/conda-forge/noarch/google-api-python-client-1.6.4-py_0"
   ],
-  "json": [],
-  "jupyterhub": [],
-  "jwt": [],
+  "json": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "jupyterhub": [
+   "jupyterhub-base/conda-forge/linux-64/jupyterhub-base-1.3.0-py37h89c1867_1"
+  ],
+  "jwt": [
+   "pyjwt/conda-forge/noarch/pyjwt-1.7.1-py_0"
+  ],
   "mwoauth": [],
   "oauth2": [],
-  "oauthenticator": [
-   "oauthenticator/conda-forge/noarch/oauthenticator-0.12.2-pyhd8ed1ab_0"
+  "oauthenticator": [],
+  "os": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
   ],
-  "os": [],
-  "pickle": [],
-  "re": [],
+  "pickle": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "re": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "requests": [
    "requests/conda-forge/noarch/requests-2.23.0-pyh8c360ce_2"
   ],

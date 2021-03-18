@@ -1,18 +1,13 @@
 {
  "bad": [
   "Bar",
-  "csv.DictReader",
   "errno.EEXIST",
   "hashlib.sha256",
-  "json.dumps",
-  "json.load",
-  "json.loads",
   "jsonld",
   "lxml.etree.XPath",
   "os.close",
   "os.environ.get",
   "os.listdir",
-  "os.makedirs",
   "os.mkdir",
   "os.path.abspath",
   "os.path.basename",
@@ -23,8 +18,6 @@
   "os.path.join",
   "os.path.splitext",
   "os.remove",
-  "random.choice",
-  "re.search",
   "read_json",
   "schemaorg.logger.bot.debug",
   "schemaorg.logger.bot.error",
@@ -50,29 +43,35 @@
   "time.sleep",
   "time.strftime",
   "time.time",
-  "unittest.TestCase",
-  "unittest.main",
   "yaml.FullLoader",
   "yaml.dump",
   "yaml.load"
  ],
  "deps": {
   "Bar": [],
-  "csv": [],
+  "csv": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "errno": [],
   "hashlib": [],
-  "json": [],
+  "json": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "jsonld": [],
   "lxml": [
    "pyexcel-ods3/conda-forge/noarch/pyexcel-ods3-0.5.3-py_0"
   ],
-  "os": [],
-  "random": [],
-  "re": [],
-  "read_json": [],
-  "schemaorg": [
-   "schemaorg/conda-forge/noarch/schemaorg-0.0.24-py_0"
+  "os": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
   ],
+  "random": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "re": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "read_json": [],
+  "schemaorg": [],
   "shutil": [],
   "spinner": [],
   "subprocess": [],
@@ -80,7 +79,9 @@
   "tempfile": [],
   "threading": [],
   "time": [],
-  "unittest": [],
+  "unittest": [
+   "python/conda-forge/linux-64/python-2.7.15-h721da81_1008"
+  ],
   "yaml": []
  }
 }

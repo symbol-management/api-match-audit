@@ -1,17 +1,12 @@
 {
  "bad": [
-  "abc.ABCMeta",
-  "abc.abstractmethod",
   "bytes.read",
   "bytes.seek",
   "bytes.write",
   "cchardet.detect",
   "codecs.BOM_UTF16_BE",
   "codecs.BOM_UTF16_LE",
-  "codecs.BOM_UTF8",
-  "codecs.iterencode",
   "codecs.lookup",
-  "collections.deque",
   "config.CSV_SAMPLE_LINES",
   "config.DEFAULT_BYTES_SAMPLE_SIZE",
   "config.DEFAULT_ENCODING",
@@ -25,21 +20,12 @@
   "config.SQL_SCHEMES",
   "config.SUPPORTED_COMPRESSION",
   "config.WRITERS",
-  "copy.copy",
-  "csv.Error",
-  "csv.QUOTE_NONE",
-  "csv.Sniffer",
-  "csv.excel",
-  "csv.reader",
-  "datetime.datetime",
-  "datetime.datetime.strptime",
   "exceptions.FormatError",
   "exceptions.HTTPError",
   "exceptions.IOError",
   "exceptions.SchemeError",
   "exceptions.SourceError",
   "exceptions.TabulatorException",
-  "gzip.open",
   "helpers.detect_encoding",
   "helpers.detect_html",
   "helpers.detect_scheme_and_format",
@@ -49,11 +35,6 @@
   "helpers.requote_uri",
   "helpers.reset_stream",
   "helpers.stringify_value",
-  "importlib.import_module",
-  "io.BufferedRandom",
-  "io.BytesIO",
-  "io.TextIOWrapper",
-  "io.open",
   "isoformat",
   "items",
   "itertools.chain",
@@ -61,7 +42,6 @@
   "loader_class",
   "loaders.stream.StreamLoader",
   "os.environ.get",
-  "os.makedirs",
   "os.path.dirname",
   "os.path.exists",
   "os.path.join",
@@ -70,9 +50,6 @@
   "parser_class",
   "processor",
   "re.IGNORECASE",
-  "re.compile",
-  "re.search",
-  "re.sub",
   "shutil.copyfileobj",
   "six.moves.urllib.parse.parse_qs",
   "six.moves.urllib.parse.urlparse",
@@ -98,7 +75,10 @@
   "zipfile.ZipFile"
  ],
  "deps": {
-  "abc": [],
+  "abc": [
+   "python/conda-forge/linux-64/python-2.7.15-h721da81_1008",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "boto3": [
    "boto3/conda-forge/noarch/boto3-1.10.1-py_0",
    "boto3/conda-forge/noarch/boto3-1.10.30-py_0",
@@ -108,6 +88,7 @@
    "boto3/conda-forge/noarch/boto3-1.10.48-py_0",
    "boto3/conda-forge/noarch/boto3-1.11.13-py_0",
    "boto3/conda-forge/noarch/boto3-1.12.35-pyh9f0ad1d_0",
+   "boto3/conda-forge/noarch/boto3-1.12.42-pyh9f0ad1d_0",
    "boto3/conda-forge/noarch/boto3-1.13.14-pyh9f0ad1d_0",
    "boto3/conda-forge/noarch/boto3-1.13.24-pyh9f0ad1d_0",
    "boto3/conda-forge/noarch/boto3-1.14.23-pyh9f0ad1d_0",
@@ -121,6 +102,7 @@
    "boto3/conda-forge/noarch/boto3-1.15.17-pyh9f0ad1d_0",
    "boto3/conda-forge/noarch/boto3-1.15.5-pyh9f0ad1d_0",
    "boto3/conda-forge/noarch/boto3-1.16.14-pyhd8ed1ab_0",
+   "boto3/conda-forge/noarch/boto3-1.16.19-pyhd8ed1ab_0",
    "boto3/conda-forge/noarch/boto3-1.16.30-pyhd8ed1ab_0",
    "boto3/conda-forge/noarch/boto3-1.16.5-pyh9f0ad1d_0",
    "boto3/conda-forge/noarch/boto3-1.16.53-pyhd8ed1ab_0",
@@ -131,6 +113,7 @@
    "boto3/conda-forge/noarch/boto3-1.6.23-py_0",
    "boto3/conda-forge/noarch/boto3-1.7.47-py_0",
    "boto3/conda-forge/noarch/boto3-1.7.9-py_0",
+   "boto3/conda-forge/noarch/boto3-1.9.100-py_0",
    "boto3/conda-forge/noarch/boto3-1.9.112-py_0",
    "boto3/conda-forge/noarch/boto3-1.9.140-py_0",
    "boto3/conda-forge/noarch/boto3-1.9.16-py_0",
@@ -151,30 +134,48 @@
    "click/conda-forge/noarch/click-6.7-py_1",
    "click/conda-forge/noarch/click-7.1-pyh8c360ce_0"
   ],
-  "codecs": [],
-  "collections": [],
+  "codecs": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "collections": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "config": [],
-  "copy": [],
-  "csv": [],
+  "copy": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "csv": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "datapackage": [
    "datapackage/conda-forge/noarch/datapackage-1.6.2-py_0",
    "datapackage/conda-forge/noarch/datapackage-1.9.3-py_0"
   ],
-  "datetime": [],
+  "datetime": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "exceptions": [],
   "ezodf": [
    "ezodf/conda-forge/noarch/ezodf-0.3.2-py_2",
    "pyexcel-ezodf/conda-forge/noarch/pyexcel-ezodf-0.3.4-py_0",
    "pyexcel-ods3/conda-forge/noarch/pyexcel-ods3-0.5.3-py_0"
   ],
-  "gzip": [],
+  "gzip": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "helpers": [],
   "ijson": [
    "ijson/conda-forge/noarch/ijson-2.5-py_0",
    "ijson/conda-forge/noarch/ijson-3.1.2-pyh9f0ad1d_0"
   ],
-  "importlib": [],
-  "io": [],
+  "importlib": [
+   "python/conda-forge/linux-64/python-2.7.15-h721da81_1008",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "io": [
+   "python/conda-forge/linux-64/python-2.7.15-h721da81_1008",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "isoformat": [],
   "items": [],
   "itertools": [],
@@ -187,24 +188,26 @@
   "openpyxl": [
    "openpyxl/conda-forge/noarch/openpyxl-2.5.11-py_0"
   ],
-  "os": [],
+  "os": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "parser": [],
   "parser_class": [],
   "processor": [],
-  "re": [],
+  "re": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "requests": [
    "requests/conda-forge/noarch/requests-2.23.0-pyh8c360ce_2"
   ],
   "shutil": [],
   "six": [
+   "lldb/conda-forge/linux-64/lldb-6.0.0-py35_0",
    "six/conda-forge/noarch/six-1.14.0-py_1"
   ],
   "sqlalchemy": [],
   "stream": [],
   "sys": [],
-  "tabulator": [
-   "tabulator/conda-forge/noarch/tabulator-1.28.0-py_0"
-  ],
   "tempfile": [],
   "tsv": [
    "linear-tsv/conda-forge/noarch/linear-tsv-1.1.0-py_1"

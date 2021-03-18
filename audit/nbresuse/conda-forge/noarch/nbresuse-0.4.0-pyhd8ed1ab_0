@@ -2,16 +2,11 @@
  "bad": [
   "concurrent.futures.ThreadPoolExecutor",
   "get_cpu_percent",
-  "json.dumps",
   "metric_value",
   "mock.MagicMock",
   "mock.patch",
-  "notebook.base.handlers.IPythonHandler",
-  "notebook.notebookapp.NotebookApp",
-  "notebook.utils.url_path_join",
   "os.environ.get",
   "process_metric_value",
-  "prometheus_client.Gauge",
   "psutil.Process",
   "psutil.cpu_count",
   "psutil_metrics_loader",
@@ -32,19 +27,23 @@
  "deps": {
   "concurrent": [],
   "get_cpu_percent": [],
-  "json": [],
+  "json": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "metric_value": [],
   "mock": [],
-  "nbresuse": [
-   "nbresuse/conda-forge/noarch/nbresuse-0.4.0-pyhd8ed1ab_0"
+  "notebook": [
+   "notebook/conda-forge/linux-64/notebook-5.7.1-py37_1000"
   ],
-  "notebook": [],
   "os": [],
   "process_metric_value": [],
-  "prometheus_client": [],
+  "prometheus_client": [
+   "prometheus_client/conda-forge/noarch/prometheus_client-0.6.0-py_0"
+  ],
   "psutil": [],
   "psutil_metrics_loader": [],
   "six": [
+   "lldb/conda-forge/linux-64/lldb-6.0.0-py35_0",
    "six/conda-forge/noarch/six-1.14.0-py_1"
   ],
   "tornado": [],

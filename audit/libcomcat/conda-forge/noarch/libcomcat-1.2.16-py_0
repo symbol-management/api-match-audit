@@ -1,18 +1,11 @@
 {
  "bad": [
-  "collections.OrderedDict",
-  "datetime.datetime.utcfromtimestamp",
-  "datetime.timedelta",
   "events.append",
   "fiona.open",
-  "functools.partial",
   "impactutils.time.ancient_time.HistoricTime.strptime",
   "impactutils.time.ancient_time.HistoricTime.utcnow",
-  "io.StringIO",
-  "json.loads",
   "libcomcat.classes.VersionOption.ALL",
   "libcomcat.classes.VersionOption.PREFERRED",
-  "math.floor",
   "numpy.arange",
   "numpy.ceil",
   "numpy.cos",
@@ -34,9 +27,6 @@
   "pandas.read_csv",
   "pandas.read_excel",
   "pkg_resources.resource_filename",
-  "pyproj.Proj",
-  "pyproj.transform",
-  "re.search",
   "scipy.special.erfcinv",
   "string.ascii_uppercase",
   "sys.stderr.write",
@@ -51,27 +41,39 @@
   "xml.dom.minidom.parseString"
  ],
  "deps": {
-  "collections": [],
-  "datetime": [],
+  "collections": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "datetime": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "dateutil": [
    "python-dateutil/conda-forge/noarch/python-dateutil-2.7.4-py_0"
   ],
   "enum": [
-   "privy/conda-forge/noarch/privy-6.0.0-py_0"
+   "privy/conda-forge/noarch/privy-6.0.0-py_0",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
   ],
   "events": [
    "events/conda-forge/noarch/events-0.4-pyhd8ed1ab_0"
   ],
   "fiona": [],
-  "functools": [],
-  "impactutils": [],
-  "io": [],
-  "json": [],
-  "libcomcat": [
-   "libcomcat/conda-forge/noarch/libcomcat-1.2.16-py_0",
-   "libcomcat/conda-forge/noarch/libcomcat-1.2.22-py_0"
+  "functools": [
+   "python/conda-forge/linux-64/python-2.7.15-h721da81_1008",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
   ],
-  "math": [],
+  "impactutils": [],
+  "io": [
+   "python/conda-forge/linux-64/python-2.7.15-h721da81_1008",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "json": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "libcomcat": [],
+  "math": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "numpy": [],
   "obspy": [],
   "openpyxl": [
@@ -79,8 +81,12 @@
   ],
   "pandas": [],
   "pkg_resources": [],
-  "pyproj": [],
-  "re": [],
+  "pyproj": [
+   "pyproj/conda-forge/linux-64/pyproj-1.9.6-py37h516909a_1002"
+  ],
+  "re": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "requests": [
    "requests/conda-forge/noarch/requests-2.23.0-pyh8c360ce_2"
   ],

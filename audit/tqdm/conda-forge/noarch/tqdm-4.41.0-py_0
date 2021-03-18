@@ -1,13 +1,11 @@
 {
  "bad": [
   "IPython.display.display",
-  "IPython.get_ipython",
   "IPython.html.widgets.ContainerWidget",
   "IPython.html.widgets.FloatProgressWidget",
   "IPython.html.widgets.HTML",
   "_dynamic_ncols",
   "_monitor.TMonitor",
-  "_version.__version__",
   "array.array",
   "atexit.register",
   "auto.tqdm",
@@ -20,28 +18,19 @@
   "collections.MutableMapping.setdefault",
   "collections.MutableMapping.update",
   "collections.MutableMapping.values",
-  "collections.deque",
-  "contextlib.contextmanager",
-  "copy.deepcopy",
-  "ctypes.create_string_buffer",
   "ctypes.windll.kernel32.GetConsoleScreenBufferInfo",
   "ctypes.windll.kernel32.GetStdHandle",
   "dict.__delitem__",
   "dict.__setitem__",
   "dict.clear",
   "dict.pop",
-  "fcntl.ioctl",
   "format_sizeof",
   "fp_flush",
   "fp_write",
   "func",
-  "functools.wraps",
   "inner_generator",
-  "io.open",
   "ipywidgets.__version__.split",
   "keras.callbacks.Callback",
-  "logging.basicConfig",
-  "logging.getLogger",
   "matplotlib",
   "matplotlib.pyplot",
   "matplotlib.pyplot.axhspan",
@@ -49,15 +38,11 @@
   "matplotlib.pyplot.isinteractive",
   "matplotlib.pyplot.subplots",
   "matplotlib.pyplot.ticklabel_format",
-  "multiprocessing.RLock",
   "notebook.tqdm",
   "notebook.trange",
-  "numbers.Number",
   "object.__getattr__",
   "object.__new__",
   "object.__setattr__",
-  "os.environ",
-  "os.name",
   "os.path.abspath",
   "os.path.dirname",
   "os.path.isdir",
@@ -83,8 +68,6 @@
   "params",
   "pkg_resources.Requirement.parse",
   "pkg_resources.resource_filename",
-  "platform.system",
-  "re.compile",
   "shlex.split",
   "shutil.copyfile",
   "std.TqdmDeprecationWarning",
@@ -137,10 +120,14 @@
   "weakref.WeakSet"
  ],
  "deps": {
-  "IPython": [],
+  "IPython": [
+   "ipython/conda-forge/linux-64/ipython-5.0.0-py34_0"
+  ],
   "_dynamic_ncols": [],
   "_monitor": [],
-  "_version": [],
+  "_version": [
+   "configobj/conda-forge/noarch/configobj-5.0.6-py_0"
+  ],
   "array": [],
   "atexit": [],
   "auto": [],
@@ -149,36 +136,67 @@
   "cli": [
    "neptune-client/conda-forge/noarch/neptune-client-0.4.101-py_0"
   ],
-  "collections": [],
-  "contextlib": [],
-  "copy": [],
-  "ctypes": [],
+  "collections": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "contextlib": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "copy": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "ctypes": [
+   "python/conda-forge/linux-64/python-2.7.15-h721da81_1008",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "delta": [
    "delta/conda-forge/noarch/delta-0.4.2-py_0"
   ],
   "dict": [],
-  "fcntl": [],
+  "fcntl": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "format_sizeof": [],
   "fp_flush": [],
   "fp_write": [],
   "func": [],
-  "functools": [],
+  "functools": [
+   "python/conda-forge/linux-64/python-2.7.15-h721da81_1008",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "inner_generator": [],
-  "io": [],
+  "io": [
+   "python/conda-forge/linux-64/python-2.7.15-h721da81_1008",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "ipywidgets": [],
   "keras": [],
-  "logging": [],
+  "logging": [
+   "python/conda-forge/linux-64/python-2.7.15-h721da81_1008",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "matplotlib": [],
-  "multiprocessing": [],
+  "multiprocessing": [
+   "python/conda-forge/linux-64/python-2.7.15-h721da81_1008"
+  ],
   "notebook": [],
-  "numbers": [],
+  "numbers": [
+   "python/conda-forge/linux-64/python-2.7.15-h721da81_1008",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "object": [],
-  "os": [],
+  "os": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "pandas": [],
   "params": [],
   "pkg_resources": [],
-  "platform": [],
-  "re": [],
+  "platform": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "re": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "shlex": [],
   "shutil": [],
   "std": [],
@@ -189,11 +207,7 @@
   "termios": [],
   "threading": [],
   "time": [],
-  "tqdm": [
-   "tqdm/conda-forge/noarch/tqdm-4.41.0-py_0",
-   "tqdm/conda-forge/noarch/tqdm-4.44.0-py_0",
-   "tqdm/conda-forge/noarch/tqdm-4.46.0-pyh9f0ad1d_0"
-  ],
+  "tqdm": [],
   "unicodedata": [],
   "utils": [],
   "warnings": [],

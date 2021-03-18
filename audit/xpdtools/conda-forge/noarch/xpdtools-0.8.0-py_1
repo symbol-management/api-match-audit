@@ -1,12 +1,8 @@
 {
  "bad": [
   "concurrent.futures.ThreadPoolExecutor",
-  "concurrent.futures.as_completed",
-  "copy.deepcopy",
-  "datetime.datetime.fromtimestamp",
   "fabio.open",
   "func",
-  "functools.wraps",
   "numba.boolean",
   "numba.jit",
   "numpy.abs",
@@ -54,12 +50,7 @@
   "numpy.sum",
   "numpy.where",
   "numpy.zeros",
-  "operator.add",
-  "operator.mul",
-  "operator.sub",
-  "operator.truediv",
   "os.listdir",
-  "os.makedirs",
   "os.path.dirname",
   "os.path.expanduser",
   "os.path.join",
@@ -78,16 +69,9 @@
   "pyFAI.load",
   "rapidz.Stream",
   "rapidz.destroy_pipeline",
-  "rapidz.link.link",
   "rapidz.no_default",
   "rbinned",
   "scipy.integrate.simps",
-  "skbeam.core.accumulators.binned_statistic.BinnedStatistic1D",
-  "skbeam.core.mask.margin",
-  "skbeam.core.utils.q_to_twotheta",
-  "skbeam.io.fit2d.fit2d_save",
-  "skbeam.io.fit2d.read_fit2d_msk",
-  "skbeam.io.save_powder_output.save_output",
   "sklearn.decomposition.PCA",
   "tempfile.TemporaryDirectory",
   "tifffile.imread",
@@ -95,39 +79,60 @@
   "time.time",
   "tomopy.minus_log",
   "tomopy.normalize",
-  "tomopy.recon",
   "toolz.get",
   "yaml.dump"
  ],
  "deps": {
-  "concurrent": [],
-  "copy": [],
-  "datetime": [],
+  "concurrent": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "copy": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "datetime": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "fabio": [],
   "fire": [
    "fire/conda-forge/noarch/fire-0.1.3-py_0",
    "fire/conda-forge/noarch/fire-0.2.1-py_0"
   ],
   "func": [],
-  "functools": [],
+  "functools": [
+   "python/conda-forge/linux-64/python-2.7.15-h721da81_1008",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "numba": [],
   "numpy": [],
-  "operator": [],
-  "os": [],
+  "operator": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "os": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "pg": [],
   "progress": [
    "progress/conda-forge/noarch/progress-1.5-py_1"
   ],
   "pyFAI": [],
-  "rapidz": [],
+  "rapidz": [
+   "rapidz/conda-forge/noarch/rapidz-0.1.2-py_0"
+  ],
   "rbinned": [],
   "scipy": [],
-  "skbeam": [],
+  "skbeam": [
+   "scikit-beam/conda-forge/linux-64/scikit-beam-0.0.23-py36ha112f06_2"
+  ],
   "sklearn": [],
   "tempfile": [],
   "tifffile": [],
   "time": [],
-  "tomopy": [],
+  "tomopy": [
+   "tomopy/conda-forge/linux-64/tomopy-1.4.2-py27h516909a_0",
+   "tomopy/conda-forge/linux-64/tomopy-1.8.1-cuda10.2py37h57bf044_0",
+   "tomopy/conda-forge/linux-64/tomopy-1.9.1-cuda10.0py37h8e1d5d8_2",
+   "tomopy/conda-forge/linux-64/tomopy-1.9.1-cuda11.1py36he2f1c86_3"
+  ],
   "toolz": [],
   "tqdm": [
    "tqdm/conda-forge/noarch/tqdm-4.19.2-py_0",
@@ -135,9 +140,6 @@
    "tqdm/conda-forge/noarch/tqdm-4.41.0-py_0",
    "tqdm/conda-forge/noarch/tqdm-4.44.0-py_0",
    "tqdm/conda-forge/noarch/tqdm-4.46.0-pyh9f0ad1d_0"
-  ],
-  "xpdtools": [
-   "xpdtools/conda-forge/noarch/xpdtools-0.8.2-py_0"
   ],
   "yaml": []
  }

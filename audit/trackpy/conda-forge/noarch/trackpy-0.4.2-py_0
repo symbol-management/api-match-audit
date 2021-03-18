@@ -1,20 +1,10 @@
 {
  "bad": [
-  "IPython.core.display.clear_output",
-  "IPython.get_ipython",
   "_version.get_versions",
-  "abc.ABCMeta",
-  "abc.abstractmethod",
-  "abc.abstractproperty",
   "center_of_mass.refine_com",
   "collections.Hashable",
   "collections.Iterable",
-  "collections.OrderedDict",
-  "collections.deque",
   "coordmap_as_arr",
-  "datetime.datetime.strptime",
-  "datetime.timedelta",
-  "distutils.version.LooseVersion",
   "dr2_fun",
   "feature.characterize",
   "feature.locate",
@@ -22,26 +12,15 @@
   "find.grey_dilation",
   "find.where_close",
   "func",
-  "functools.partial",
-  "functools.update_wrapper",
-  "functools.wraps",
   "handle_logging",
-  "importlib.import_module",
   "itertools.chain",
   "itertools.count",
   "itertools.filterfalse",
   "itertools.islice",
   "itertools.tee",
-  "json.loads",
   "linking.Linker",
   "linking.link_df_iter",
   "linking.link_iter",
-  "logging.Formatter",
-  "logging.INFO",
-  "logging.NOTSET",
-  "logging.StreamHandler",
-  "logging.WARN",
-  "logging.getLogger",
   "make_lines",
   "map_func",
   "masks.N_binary_mask",
@@ -71,7 +50,6 @@
   "matplotlib.rcParams",
   "model_dfun",
   "model_fun",
-  "multiprocessing.pool.Pool",
   "numba.jit",
   "numdifftools.Hessian",
   "numpy.Inf",
@@ -229,8 +207,6 @@
   "pyfftw.n_byte_align",
   "r2_fun",
   "re.DOTALL",
-  "re.match",
-  "re.search",
   "refine.refine_brightfield_ring",
   "refine.refine_com",
   "refine.refine_com_arr",
@@ -307,32 +283,56 @@
   "yaml.dump"
  ],
  "deps": {
-  "IPython": [],
+  "IPython": [
+   "ipython/conda-forge/linux-64/ipython-5.0.0-py34_0"
+  ],
   "_version": [],
-  "abc": [],
+  "abc": [
+   "python/conda-forge/linux-64/python-2.7.15-h721da81_1008",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "center_of_mass": [],
-  "collections": [],
+  "collections": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "coordmap_as_arr": [],
-  "datetime": [],
-  "distutils": [],
+  "datetime": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "distutils": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "dr2_fun": [],
   "feature": [],
   "find": [],
   "func": [],
-  "functools": [],
+  "functools": [
+   "python/conda-forge/linux-64/python-2.7.15-h721da81_1008",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "handle_logging": [],
-  "importlib": [],
+  "importlib": [
+   "python/conda-forge/linux-64/python-2.7.15-h721da81_1008",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "itertools": [],
-  "json": [],
+  "json": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "linking": [],
-  "logging": [],
+  "logging": [
+   "python/conda-forge/linux-64/python-2.7.15-h721da81_1008",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "make_lines": [],
   "map_func": [],
   "masks": [],
   "matplotlib": [],
   "model_dfun": [],
   "model_fun": [],
-  "multiprocessing": [],
+  "multiprocessing": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "numba": [],
   "numdifftools": [],
   "numpy": [],
@@ -344,11 +344,14 @@
   "prof_interp": [],
   "pyfftw": [],
   "r2_fun": [],
-  "re": [],
+  "re": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "refine": [],
   "return_decorator": [],
   "scipy": [],
   "six": [
+   "lldb/conda-forge/linux-64/lldb-6.0.0-py35_0",
    "six/conda-forge/noarch/six-1.14.0-py_1"
   ],
   "sklearn": [],
@@ -356,9 +359,7 @@
   "subnet": [],
   "subnetlinker": [],
   "sys": [],
-  "trackpy": [
-   "trackpy/conda-forge/noarch/trackpy-0.4.2-py_0"
-  ],
+  "trackpy": [],
   "try_numba": [],
   "uncertainty": [],
   "utils": [],

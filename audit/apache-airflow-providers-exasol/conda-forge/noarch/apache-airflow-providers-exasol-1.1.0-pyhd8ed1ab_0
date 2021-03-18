@@ -2,11 +2,7 @@
  "bad": [
   "airflow.hooks.dbapi.DbApiHook",
   "airflow.models.BaseOperator",
-  "airflow.providers.exasol.hooks.exasol.ExasolHook",
   "airflow.utils.decorators.apply_defaults",
-  "contextlib.closing",
-  "pyexasol.ExaConnection",
-  "pyexasol.connect",
   "typing.Any",
   "typing.Dict",
   "typing.List",
@@ -16,8 +12,12 @@
  ],
  "deps": {
   "airflow": [],
-  "contextlib": [],
-  "pyexasol": [],
+  "contextlib": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "pyexasol": [
+   "pyexasol/conda-forge/noarch/pyexasol-0.14.1-py_0"
+  ],
   "typing": []
  }
 }

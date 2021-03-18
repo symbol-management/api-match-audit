@@ -1,99 +1,44 @@
 {
  "bad": [
-  "IPython.core.display.HTML",
-  "IPython.core.display._display_mimetype",
-  "IPython.core.events.EventManager",
-  "IPython.core.events.available_events",
-  "IPython.core.formatters.BaseFormatter",
   "IPython.core.interactiveshell.InteractiveShellABC.register",
-  "IPython.core.magic_arguments.argument",
-  "IPython.core.magic_arguments.magic_arguments",
-  "IPython.core.magic_arguments.parse_argstring",
   "IPython.display.DisplayObject",
   "IPython.display.HTML",
   "IPython.display.Javascript",
   "IPython.display.display",
   "IPython.display.publish_display_data",
-  "IPython.get_ipython",
   "IPython.kernel.zmq.pylab.backend_inline.flush_figures",
-  "IPython.utils.text.LSString",
-  "IPython.utils.text.SList",
-  "IPython.utils.tokenutil.token_at_cursor",
   "IPython.utils.traitlets.ObjectName",
   "IPython.utils.traitlets.Unicode",
-  "IPython.version_info",
   "PIL.Image.fromarray",
-  "__future__.print_function",
   "_row_to_js",
-  "abc.ABCMeta",
-  "abc.abstractmethod",
-  "base64.b64decode",
-  "base64.b64encode",
   "callback",
   "cgi.escape",
-  "codecs.getincrementaldecoder",
   "collections.Mapping",
-  "collections.defaultdict",
   "context_manager",
-  "contextlib.contextmanager",
-  "csv.DictReader",
-  "csv.reader",
   "custom_formatter",
   "cv2.COLOR_BGR2RGB",
   "cv2.COLOR_BGRA2RGBA",
   "cv2.cvtColor",
-  "datetime.datetime",
   "display_one_cell",
   "formatter_for_type",
   "func",
-  "functools.partial",
-  "functools.wraps",
   "get_ipython",
-  "getpass.getpass",
   "google.colab.output._js_builder.js_global.colab_lib.createTabBar",
   "google.colab.output._js_builder.js_global.setSelectedTabIndex",
   "handler",
   "hashlib.md5",
-  "html.escape",
-  "imp.find_module",
-  "imp.load_module",
-  "ipykernel.ipkernel.IPythonKernel",
-  "ipykernel.jsonutil.json_clean",
-  "ipykernel.zmqshell.ZMQInteractiveShell",
   "itertools.chain",
-  "json.JSONDecoder",
-  "json.JSONEncoder",
   "json.JSONEncoder.__init__",
   "json.JSONEncoder.default",
   "json.JSONEncoder.encode",
-  "json.dumps",
-  "json.load",
-  "json.loads",
-  "locale.getpreferredencoding",
-  "logging.ERROR",
-  "logging.Filter",
-  "logging.exception",
-  "logging.getLogger",
-  "logging.info",
-  "logging.warning",
-  "mimetypes.guess_type",
   "normalize_dist",
-  "notebook.auth.login.LoginHandler",
-  "notebook.base.handlers.APIHandler",
-  "notebook.base.handlers.AuthenticatedFileHandler",
-  "notebook.services.contents.largefilemanager.LargeFileManager",
-  "notebook.utils.url_path_join",
-  "numbers.Number",
   "object.__setattr__",
   "os.close",
-  "os.environ",
   "os.environ.get",
   "os.environ.split",
   "os.fsync",
-  "os.getenv",
   "os.listdir",
   "os.lstat",
-  "os.makedirs",
   "os.path.abspath",
   "os.path.basename",
   "os.path.dirname",
@@ -111,13 +56,8 @@
   "os.remove",
   "os.write",
   "pandas.to_datetime",
-  "pkgutil.get_data",
   "portpicker.pick_unused_port",
-  "pty.openpty",
   "re.MULTILINE",
-  "re.compile",
-  "re.match",
-  "re.search",
   "render",
   "represent_as_string",
   "select.EPOLLERR",
@@ -175,7 +115,6 @@
   "time.sleep",
   "time.time",
   "tornado.web.authenticated",
-  "traceback.print_exc",
   "url_maker",
   "uuid.UUID",
   "uuid.uuid1",
@@ -184,64 +123,120 @@
   "zmq.NOBLOCK"
  ],
  "deps": {
-  "IPython": [],
+  "IPython": [
+   "ipython/conda-forge/linux-64/ipython-5.0.0-py34_0"
+  ],
   "PIL": [],
-  "__future__": [],
+  "__future__": [
+   "python/conda-forge/linux-64/python-2.7.15-h721da81_1008",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "_row_to_js": [],
-  "abc": [],
-  "base64": [],
+  "abc": [
+   "python/conda-forge/linux-64/python-2.7.15-h721da81_1008",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "base64": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "callback": [],
   "cgi": [],
-  "codecs": [],
-  "collections": [],
+  "codecs": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "collections": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "context_manager": [],
-  "contextlib": [],
-  "csv": [],
+  "contextlib": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "csv": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "custom_formatter": [],
   "cv2": [],
-  "datetime": [],
+  "datetime": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "display_one_cell": [],
   "events": [
    "events/conda-forge/noarch/events-0.4-pyhd8ed1ab_0"
   ],
   "formatter_for_type": [],
   "func": [],
-  "functools": [],
+  "functools": [
+   "python/conda-forge/linux-64/python-2.7.15-h721da81_1008",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "get_ipython": [],
-  "getpass": [],
-  "google": [],
+  "getpass": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "google": [
+   "google-auth/conda-forge/noarch/google-auth-1.21.1-py_0"
+  ],
   "handler": [],
   "hashlib": [],
-  "html": [],
-  "imp": [],
-  "ipykernel": [],
+  "html": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "imp": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "ipykernel": [
+   "ipykernel/conda-forge/linux-64/ipykernel-5.2.0-py38h23f93f0_0"
+  ],
   "ipython_genutils": [
    "ipython_genutils/conda-forge/noarch/ipython_genutils-0.2.0-py_1"
   ],
   "itertools": [],
-  "json": [],
-  "locale": [],
-  "logging": [],
-  "mimetypes": [],
+  "json": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "locale": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "logging": [
+   "python/conda-forge/linux-64/python-2.7.15-h721da81_1008",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "mimetypes": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "normalize_dist": [],
-  "notebook": [],
-  "numbers": [],
+  "notebook": [
+   "notebook/conda-forge/linux-64/notebook-5.7.1-py37_1000"
+  ],
+  "numbers": [
+   "python/conda-forge/linux-64/python-2.7.15-h721da81_1008",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "object": [],
-  "os": [],
+  "os": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "pandas": [],
   "pexpect": [
    "pexpect/conda-forge/noarch/pexpect-4.8.0-pyh9f0ad1d_2"
   ],
-  "pkgutil": [],
+  "pkgutil": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "portpicker": [],
-  "pty": [],
-  "re": [],
+  "pty": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "re": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "render": [],
   "represent_as_string": [],
   "select": [],
   "signal": [],
   "site": [],
   "six": [
+   "lldb/conda-forge/linux-64/lldb-6.0.0-py35_0",
    "six/conda-forge/noarch/six-1.14.0-py_1"
   ],
   "socket": [],
@@ -258,7 +253,9 @@
   "threading": [],
   "time": [],
   "tornado": [],
-  "traceback": [],
+  "traceback": [
+   "python/conda-forge/linux-64/python-2.7.15-h721da81_1008"
+  ],
   "url_maker": [],
   "uuid": [],
   "weakref": [],

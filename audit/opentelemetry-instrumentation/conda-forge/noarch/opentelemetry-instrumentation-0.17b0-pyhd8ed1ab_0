@@ -1,48 +1,15 @@
 {
  "bad": [
-  "abc.ABC",
-  "abc.abstractmethod",
-  "argparse.ArgumentParser",
-  "argparse.REMAINDER",
   "celery.signals.worker_process_init.connect",
-  "cmd",
-  "contextlib.contextmanager",
   "func",
-  "logging.getLogger",
   "object.__new__",
   "opentelemetry.configuration.Configuration",
-  "opentelemetry.instrumentation.auto_instrumentation.load_config_from_cli_args",
-  "opentelemetry.instrumentation.auto_instrumentation.parse_args",
-  "opentelemetry.instrumentation.auto_instrumentation.sitecustomize._load_configurators",
-  "opentelemetry.instrumentation.auto_instrumentation.sitecustomize._load_distros",
-  "opentelemetry.instrumentation.auto_instrumentation.sitecustomize._load_instrumentors",
-  "opentelemetry.instrumentation.auto_instrumentation.sitecustomize.initialize",
-  "opentelemetry.instrumentation.auto_instrumentation.sitecustomize.logger",
-  "opentelemetry.instrumentation.auto_instrumentation.sitecustomize.sys",
-  "opentelemetry.instrumentation.bootstrap._find_installed_libraries",
-  "opentelemetry.instrumentation.bootstrap._install_package",
-  "opentelemetry.instrumentation.bootstrap._is_installed",
-  "opentelemetry.instrumentation.bootstrap._pip_check",
-  "opentelemetry.instrumentation.bootstrap._run_install",
-  "opentelemetry.instrumentation.bootstrap._run_requirements",
-  "opentelemetry.instrumentation.bootstrap._sys_pip_freeze",
-  "opentelemetry.instrumentation.bootstrap._sys_pip_install",
-  "opentelemetry.instrumentation.bootstrap._sys_pip_uninstall",
-  "opentelemetry.instrumentation.bootstrap._syscall",
-  "opentelemetry.instrumentation.bootstrap.instrumentations",
-  "opentelemetry.instrumentation.bootstrap.libraries",
-  "opentelemetry.instrumentation.bootstrap.logger",
-  "opentelemetry.instrumentation.instrumentor._LOG",
-  "opentelemetry.instrumentation.metric.HTTPMetricType",
-  "opentelemetry.instrumentation.metric.MetricRecorder",
   "opentelemetry.metrics.Meter",
   "opentelemetry.metrics.get_meter",
   "opentelemetry.trace.status.StatusCode",
   "opentelemetry.trace.status.StatusCode.ERROR",
   "opentelemetry.trace.status.StatusCode.UNSET",
-  "os.environ",
   "os.environ.get",
-  "os.execl",
   "os.getcwd",
   "os.path.abspath",
   "os.path.dirname",
@@ -50,7 +17,6 @@
   "os.path.pathsep.join",
   "os.path.sep",
   "pkg_resources.iter_entry_points",
-  "pkgutil.find_loader",
   "shutil.which",
   "subprocess.PIPE",
   "subprocess.Popen",
@@ -68,21 +34,38 @@
   "wrapt.ObjectProxy"
  ],
  "deps": {
-  "abc": [],
-  "argparse": [],
+  "abc": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "argparse": [
+   "python/conda-forge/linux-64/python-2.7.15-h721da81_1008",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "celery": [],
-  "cmd": [],
-  "contextlib": [],
+  "cmd": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "contextlib": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "enum": [
-   "privy/conda-forge/noarch/privy-6.0.0-py_0"
+   "privy/conda-forge/noarch/privy-6.0.0-py_0",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
   ],
   "func": [],
-  "logging": [],
+  "logging": [
+   "python/conda-forge/linux-64/python-2.7.15-h721da81_1008",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "object": [],
   "opentelemetry": [],
-  "os": [],
+  "os": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "pkg_resources": [],
-  "pkgutil": [],
+  "pkgutil": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "shutil": [],
   "subprocess": [],
   "sys": [],

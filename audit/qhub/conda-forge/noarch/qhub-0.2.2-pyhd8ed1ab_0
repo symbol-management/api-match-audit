@@ -1,32 +1,15 @@
 {
  "bad": [
-  "CloudFlare.CloudFlare",
-  "argparse.ArgumentParser",
-  "auth0.v3.authentication.GetToken",
-  "auth0.v3.management.Auth0",
-  "base64.b64encode",
-  "collections.ChainMap",
-  "contextlib.contextmanager",
   "cookiecutter.generate.generate_files",
   "cookiecutter.main.cookiecutter",
-  "enum.Enum",
-  "functools.lru_cache",
-  "json.dumps",
-  "json.load",
-  "json.loads",
-  "logging.INFO",
-  "logging.basicConfig",
-  "logging.getLogger",
   "nacl.encoding.Base64Encoder",
   "nacl.public.PublicKey",
   "nacl.public.SealedBox",
   "os.chdir",
-  "os.environ",
   "os.environ.get",
   "os.environ.split",
   "os.getcwd",
   "os.listdir",
-  "os.makedirs",
   "os.path.abspath",
   "os.path.curdir",
   "os.path.dirname",
@@ -35,91 +18,8 @@
   "os.path.pardir",
   "os.path.realpath",
   "os.remove",
-  "pathlib.Path",
   "pytest.mark.parametrize",
   "qhub.__file__",
-  "qhub.__main__.main",
-  "qhub.cli.cli",
-  "qhub.cli.deploy.create_deploy_subcommand",
-  "qhub.cli.destroy.create_destroy_subcommand",
-  "qhub.cli.initialize.create_init_subcommand",
-  "qhub.cli.render.create_render_subcommand",
-  "qhub.cli.root_dir",
-  "qhub.cli.validate.create_validate_subcommand",
-  "qhub.cli.version",
-  "qhub.constants.DEFAULT_TERRAFORM_VERSION",
-  "qhub.constants.SUPPORTED_TERRAFORM_MINOR_RELEASES",
-  "qhub.deploy.deploy_configuration",
-  "qhub.deploy.guided_install",
-  "qhub.deploy.logger",
-  "qhub.destroy.destroy_configuration",
-  "qhub.destroy.logger",
-  "qhub.initialize.AMAZON_WEB_SERVICES",
-  "qhub.initialize.BASE_CONFIGURATION",
-  "qhub.initialize.DEFAULT_ENVIRONMENTS",
-  "qhub.initialize.DEFAULT_PROFILES",
-  "qhub.initialize.DIGITAL_OCEAN",
-  "qhub.initialize.GOOGLE_PLATFORM",
-  "qhub.initialize.OAUTH_AUTH0",
-  "qhub.initialize.OAUTH_GITHUB",
-  "qhub.initialize.auth0_auto_provision",
-  "qhub.initialize.git_repository_initialize",
-  "qhub.initialize.github_auto_provision",
-  "qhub.initialize.render_config",
-  "qhub.provider.cicd.github.create_repository",
-  "qhub.provider.cicd.github.encrypt",
-  "qhub.provider.cicd.github.get_repo_public_key",
-  "qhub.provider.cicd.github.get_repository",
-  "qhub.provider.cicd.github.github_request",
-  "qhub.provider.cicd.github.update_secret",
-  "qhub.provider.cloud.digital_ocean._kubernetes_options",
-  "qhub.provider.cloud.digital_ocean.digital_ocean_request",
-  "qhub.provider.cloud.digital_ocean.kubernetes_versions",
-  "qhub.provider.dns.cloudflare.logger",
-  "qhub.provider.dns.cloudflare.update_record",
-  "qhub.provider.git.add_git_remote",
-  "qhub.provider.git.initialize_git",
-  "qhub.provider.git.is_git_repo",
-  "qhub.provider.oauth.auth0.create_client",
-  "qhub.provider.oauth.auth0.logger",
-  "qhub.provider.terraform.logger",
-  "qhub.render.deep_merge",
-  "qhub.render.patch_dask_gateway_extra_config",
-  "qhub.render.render_default_template",
-  "qhub.render.render_template",
-  "qhub.schema.AuthConfig",
-  "qhub.schema.Authentication",
-  "qhub.schema.Base",
-  "qhub.schema.CiEnum",
-  "qhub.schema.DaskWorker",
-  "qhub.schema.Group",
-  "qhub.schema.JupyterLabProfile",
-  "qhub.schema.KubeSpawner",
-  "qhub.schema.Main",
-  "qhub.schema.NodeGroup",
-  "qhub.schema.Profiles",
-  "qhub.schema.Provider",
-  "qhub.schema.ProviderEnum",
-  "qhub.schema.Security",
-  "qhub.schema.User",
-  "qhub.schema.verify",
-  "qhub.template.hooks.post_gen_project.ENVIRONMENTS",
-  "qhub.template.hooks.post_gen_project.PROJECT_DIRECTORY",
-  "qhub.template.hooks.post_gen_project.PROVIDER",
-  "qhub.template.hooks.post_gen_project.remove_file",
-  "qhub.template.hooks.pre_gen_project.ENDPOINT",
-  "qhub.template.hooks.pre_gen_project.PROJECT_NAME",
-  "qhub.utils.AWS_ENV_DOCS",
-  "qhub.utils.DO_ENV_DOCS",
-  "qhub.utils.GCP_ENV_DOCS",
-  "qhub.utils.change_directory",
-  "qhub.utils.check_cloud_credentials",
-  "qhub.utils.check_terraform",
-  "qhub.utils.timer",
-  "qhub.utils.verify_configuration_file_exists",
-  "re.findall",
-  "re.fullmatch",
-  "re.search",
   "shutil.which",
   "subprocess.check_output",
   "subprocess.run",
@@ -133,32 +33,63 @@
   "yaml.safe_load"
  ],
  "deps": {
-  "CloudFlare": [],
-  "argparse": [],
-  "auth0": [],
-  "base64": [],
-  "collections": [],
-  "configparser": [
-   "configparser/conda-forge/noarch/configparser-5.0.1-py_0"
+  "CloudFlare": [
+   "cloudflare/conda-forge/noarch/cloudflare-2.8.13-pyhd8ed1ab_0"
   ],
-  "contextlib": [],
+  "argparse": [
+   "python/conda-forge/linux-64/python-2.7.15-h721da81_1008",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "auth0": [
+   "auth0-python/conda-forge/noarch/auth0-python-3.13.0-pyhd8ed1ab_0"
+  ],
+  "base64": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "collections": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "configparser": [
+   "configparser/conda-forge/noarch/configparser-5.0.1-py_0",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "contextlib": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "cookiecutter": [],
-  "enum": [],
-  "functools": [],
+  "enum": [
+   "privy/conda-forge/noarch/privy-6.0.0-py_0",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "functools": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "jinja2": [
    "jinja2/conda-forge/noarch/jinja2-2.11.3-pyh44b312d_0"
   ],
-  "json": [],
-  "logging": [],
+  "json": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "logging": [
+   "python/conda-forge/linux-64/python-2.7.15-h721da81_1008",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "nacl": [],
-  "os": [],
-  "pathlib": [],
+  "os": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "pathlib": [
+   "pathlib/conda-forge/noarch/pathlib-1.0.1-py_1",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "pydantic": [
    "pydantic/conda-forge/noarch/pydantic-0.18.1-py_1"
   ],
   "pytest": [],
   "qhub": [],
-  "re": [],
+  "re": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "requests": [
    "requests/conda-forge/noarch/requests-2.23.0-pyh8c360ce_2"
   ],

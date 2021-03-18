@@ -1,10 +1,7 @@
 {
  "bad": [
-  "abc.ABCMeta",
-  "abc.abstractmethod",
   "callback",
   "channel.Channel",
-  "collections.namedtuple",
   "common.BaseChannel",
   "common.BaseChannel._ensure_channel_is_open",
   "common.ConfirmationTypes",
@@ -17,11 +14,6 @@
   "compat.suppress",
   "connection.Connection",
   "connection.connect",
-  "contextlib.contextmanager",
-  "contextlib.wraps",
-  "datetime.datetime",
-  "datetime.datetime.now",
-  "datetime.timedelta",
   "exceptions.ChannelClosed",
   "exceptions.MessageProcessError",
   "exceptions.NackError",
@@ -36,15 +28,10 @@
   "exchange.on_reconnect",
   "func",
   "func_or_coro",
-  "functools.partial",
-  "functools.wraps",
   "inner",
   "log_method",
-  "logging.getLogger",
   "message.IncomingMessage",
   "message.ReturnedMessage",
-  "pprint.pformat",
-  "queue.Queue",
   "queue.declare",
   "robust_channel.RobustChannel",
   "robust_exchange.RobustExchange",
@@ -54,40 +41,6 @@
   "tools.create_future",
   "tools.create_task",
   "tools.iscoroutinepartial",
-  "topika.channel.Channel",
-  "topika.channel.LOGGER",
-  "topika.channel.exchange",
-  "topika.channel.queue",
-  "topika.common.FutureStore",
-  "topika.common.ensure_coroutine",
-  "topika.common.future_with_timeout",
-  "topika.compat.ConnectionError",
-  "topika.compat.T_co",
-  "topika.compat._Awaitable",
-  "topika.connection.Connection",
-  "topika.connection.LOGGER",
-  "topika.exceptions.AMQPException",
-  "topika.exceptions.ConnectionError",
-  "topika.exchange.Exchange",
-  "topika.exchange.ExchangeType",
-  "topika.exchange.log",
-  "topika.message.DeliveryMode",
-  "topika.message.IncomingMessage",
-  "topika.message.LOGGER",
-  "topika.message.Message",
-  "topika.message.NoneType",
-  "topika.message.convert_timestamp",
-  "topika.queue.DeclarationResult",
-  "topika.queue.LOGGER",
-  "topika.queue.Queue",
-  "topika.robust_channel.RobustChannel",
-  "topika.robust_channel.exchange",
-  "topika.robust_connection.RobustConnection",
-  "topika.robust_connection.log",
-  "topika.robust_exchange.RobustExchange",
-  "topika.robust_queue.RobustQueue",
-  "topika.version.author_info",
-  "topika.version.version_info",
   "tornado.gen.Return",
   "tornado.gen._make_coroutine_wrapper",
   "tornado.gen.convert_yielded",
@@ -97,6 +50,7 @@
   "tornado.gen.sleep",
   "tornado.ioloop.IOLoop.current",
   "tornado.locks.Lock",
+  "transaction.Transaction",
   "type.value",
   "typing.Any",
   "typing.Callable",
@@ -105,32 +59,52 @@
   "typing.Union"
  ],
  "deps": {
-  "abc": [],
+  "abc": [
+   "python/conda-forge/linux-64/python-2.7.15-h721da81_1008",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "callback": [],
   "channel": [],
-  "collections": [],
+  "collections": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "common": [],
   "compat": [],
   "connection": [],
-  "contextlib": [],
-  "datetime": [],
+  "contextlib": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "datetime": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "enum": [
-   "privy/conda-forge/noarch/privy-6.0.0-py_0"
+   "privy/conda-forge/noarch/privy-6.0.0-py_0",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
   ],
   "exceptions": [],
   "exchange": [],
   "func": [],
   "func_or_coro": [],
-  "functools": [],
+  "functools": [
+   "python/conda-forge/linux-64/python-2.7.15-h721da81_1008",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "inner": [],
   "log_method": [],
-  "logging": [],
+  "logging": [
+   "python/conda-forge/linux-64/python-2.7.15-h721da81_1008",
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "message": [],
   "pika": [
    "pika/conda-forge/noarch/pika-1.0.0b2-py_0"
   ],
-  "pprint": [],
-  "queue": [],
+  "pprint": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
+  "queue": [
+   "python/conda-forge/linux-64/python-3.8.5-h6f2ec95_1_cpython"
+  ],
   "robust_channel": [],
   "robust_exchange": [],
   "robust_queue": [],
@@ -141,15 +115,12 @@
    "singledispatch/conda-forge/noarch/singledispatch-3.5.0-pyh44b312d_0"
   ],
   "six": [
+   "lldb/conda-forge/linux-64/lldb-6.0.0-py35_0",
    "six/conda-forge/noarch/six-1.14.0-py_1"
   ],
   "tools": [],
-  "topika": [],
   "tornado": [],
-  "transaction": [
-   "transaction/conda-forge/noarch/transaction-2.2.0-py_0",
-   "transaction/conda-forge/noarch/transaction-2.2.1-py_0"
-  ],
+  "transaction": [],
   "type": [],
   "typing": []
  }
