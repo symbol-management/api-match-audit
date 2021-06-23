@@ -1,0 +1,310 @@
+{
+ "bad": [
+  "_append_to_nolock",
+  "_apply_geooperation_to_layer",
+  "_read_file_base",
+  "_single_layer_vector_operation",
+  "_two_layer_vector_operation",
+  "general_util.MissingRuntimeDependencyError",
+  "geofileops.geofile.GeometryType.MULTIPOLYGON",
+  "geofileops.geofile.GeometryType.POINT",
+  "geofileops.util.geometry_util.GeometryType.MULTIPOLYGON",
+  "geofileops.util.geometry_util.GeometryType.POLYGON",
+  "geofileops.util.geometry_util.PrimitiveType.LINESTRING",
+  "geofileops.util.geometry_util.PrimitiveType.POINT",
+  "geofileops.util.geometry_util.PrimitiveType.POLYGON",
+  "geofileops.util.geometry_util.SimplifyAlgorithm.RAMER_DOUGLAS_PEUCKER",
+  "geometry_util.GeometryType",
+  "geometry_util.GeometryType.GEOMETRY",
+  "geometry_util.GeometryType.MULTILINESTRING",
+  "geometry_util.GeometryType.MULTIPOINT",
+  "geometry_util.GeometryType.MULTIPOLYGON",
+  "geometry_util.PrimitiveType",
+  "geometry_util.SimplifyAlgorithm",
+  "geometry_util.SimplifyAlgorithm.RAMER_DOUGLAS_PEUCKER",
+  "geometry_util.collection_extract",
+  "geometry_util.simplify_ext",
+  "get_driver",
+  "get_gdal_to_use",
+  "io_util.create_tempdir",
+  "load_spatialite",
+  "ogr_util.VectorTranslateInfo",
+  "ogr_util.get_gdal_to_use",
+  "ogr_util.vector_translate",
+  "ogr_util.vector_translate_async",
+  "ogr_util.vector_translate_by_info",
+  "os.O_CREAT",
+  "os.O_EXCL",
+  "os.close",
+  "os.environ.get",
+  "os.mkdir",
+  "os.open",
+  "os.path.splitext",
+  "osgeo.gdal.OF_READONLY",
+  "osgeo.gdal.OF_UPDATE",
+  "osgeo.gdal.ogr.GeometryTypeToName",
+  "point_line_distance",
+  "pyproj.CRS.from_epsg",
+  "remove_inner_rings_polygon",
+  "simplification.cutil",
+  "simplification.cutil.simplify_coords_idx",
+  "simplification.cutil.simplify_coords_vw_idx",
+  "simplify_coords",
+  "simplify_linestring",
+  "simplify_polygon",
+  "sqlite3.PARSE_DECLTYPES",
+  "sqlite3.connect",
+  "sqlite_util.SqliteProfile.SPEED",
+  "sqlite_util.check_runtimedependencies",
+  "sqlite_util.create_table_as_sql",
+  "time",
+  "time.sleep",
+  "to_string_for_sql",
+  "type.upper",
+  "write_to_file"
+ ],
+ "deps": {
+  "_append_to_nolock": [],
+  "_apply_geooperation_to_layer": [],
+  "_read_file_base": [],
+  "_single_layer_vector_operation": [],
+  "_two_layer_vector_operation": [],
+  "concurrent": [
+   "futures/conda-forge/linux-64/futures-3.2.0-py27_1000",
+   "futures/conda-forge/linux-64/futures-3.3.0-py27_0",
+   "python/conda-forge/linux-64/python-3.5.3-1",
+   "python/conda-forge/linux-64/python-3.6.6-h5001a0f_0"
+  ],
+  "datetime": [
+   "python/conda-forge/linux-64/python-3.5.3-1",
+   "python/conda-forge/linux-64/python-3.6.6-h5001a0f_0",
+   "python/conda-forge/linux-64/python-3.7.0-h5001a0f_4",
+   "python/conda-forge/linux-64/python-3.7.8-hffdb5ce_3_cpython",
+   "python/conda-forge/linux-64/python-3.8.0-h357f687_1",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_4_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_5_cpython"
+  ],
+  "enum": [
+   "privy/conda-forge/noarch/privy-6.0.0-py_0",
+   "python/conda-forge/linux-64/python-3.5.3-1",
+   "python/conda-forge/linux-64/python-3.6.6-h5001a0f_0",
+   "python/conda-forge/linux-64/python-3.7.0-h5001a0f_4",
+   "python/conda-forge/linux-64/python-3.7.8-hffdb5ce_3_cpython",
+   "python/conda-forge/linux-64/python-3.8.0-h357f687_1",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_4_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_5_cpython"
+  ],
+  "filecmp": [
+   "python/conda-forge/linux-64/python-3.5.3-1",
+   "python/conda-forge/linux-64/python-3.6.6-h5001a0f_0",
+   "python/conda-forge/linux-64/python-3.7.0-h5001a0f_4",
+   "python/conda-forge/linux-64/python-3.7.8-hffdb5ce_3_cpython",
+   "python/conda-forge/linux-64/python-3.8.0-h357f687_1",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_4_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_5_cpython"
+  ],
+  "fiona": [
+   "fiona/conda-forge/linux-64/fiona-1.6.3-np110py27_0",
+   "fiona/conda-forge/linux-64/fiona-1.6.3-np110py34_3",
+   "fiona/conda-forge/linux-64/fiona-1.7.0-np110py34_4",
+   "fiona/conda-forge/linux-64/fiona-1.8.13-py36h70cb5cc_1",
+   "fiona/conda-forge/linux-64/fiona-1.8.18-py39h494ca2c_2",
+   "fiona/conda-forge/linux-64/fiona-1.8.6-py36hf242f0b_1",
+   "fiona/conda-forge/linux-64/fiona-1.8.9.post2-py37hdff7cfa_0"
+  ],
+  "general_util": [],
+  "geofileops": [],
+  "geometry_util": [],
+  "geopandas": [
+   "geopandas-base/conda-forge/noarch/geopandas-base-0.9.0-pyhd8ed1ab_1",
+   "geopandas/conda-forge/noarch/geopandas-0.8.0-py_1",
+   "geopandas/conda-forge/noarch/geopandas-0.8.2-pyhd8ed1ab_0"
+  ],
+  "get_driver": [],
+  "get_gdal_to_use": [],
+  "io": [
+   "python/conda-forge/linux-64/python-2.7.14-0",
+   "python/conda-forge/linux-64/python-2.7.15-h33da82c_4",
+   "python/conda-forge/linux-64/python-3.5.3-1",
+   "python/conda-forge/linux-64/python-3.6.6-h5001a0f_0",
+   "python/conda-forge/linux-64/python-3.7.0-h5001a0f_4",
+   "python/conda-forge/linux-64/python-3.7.8-hffdb5ce_3_cpython",
+   "python/conda-forge/linux-64/python-3.8.0-h357f687_1",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_4_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_5_cpython"
+  ],
+  "io_util": [],
+  "load_spatialite": [],
+  "logging": [
+   "python/conda-forge/linux-64/python-3.7.8-hffdb5ce_3_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_4_cpython"
+  ],
+  "math": [
+   "python/conda-forge/linux-64/python-3.5.3-1",
+   "python/conda-forge/linux-64/python-3.6.6-h5001a0f_0",
+   "python/conda-forge/linux-64/python-3.7.0-h5001a0f_4",
+   "python/conda-forge/linux-64/python-3.7.8-hffdb5ce_3_cpython",
+   "python/conda-forge/linux-64/python-3.8.0-h357f687_1",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_5_cpython"
+  ],
+  "multiprocessing": [
+   "python/conda-forge/linux-64/python-2.7.14-0",
+   "python/conda-forge/linux-64/python-2.7.15-h33da82c_4"
+  ],
+  "numpy": [
+   "numpy/conda-forge/linux-64/numpy-1.10.4-py34_blas_openblas_200",
+   "numpy/conda-forge/linux-64/numpy-1.11.3-py37_blas_openblash1522bff_1205",
+   "numpy/conda-forge/linux-64/numpy-1.14.1-py35_blas_openblas_200",
+   "numpy/conda-forge/linux-64/numpy-1.14.6-py35_blas_openblashd3ea46f_200",
+   "numpy/conda-forge/linux-64/numpy-1.14.6-py36_blas_openblash1522bff_1000",
+   "numpy/conda-forge/linux-64/numpy-1.19.2-py37h7ea13bd_1",
+   "numpy/conda-forge/linux-64/numpy-1.19.5-py39hdbf815f_1",
+   "numpy/conda-forge/linux-64/numpy-1.8.2-py27_blas_openblas_200",
+   "numpy/conda-forge/linux-64/numpy-1.9.3-py35_blas_openblas_200"
+  ],
+  "ogr_util": [],
+  "os": [
+   "python/conda-forge/linux-64/python-3.5.3-1",
+   "python/conda-forge/linux-64/python-3.6.6-h5001a0f_0",
+   "python/conda-forge/linux-64/python-3.7.0-h5001a0f_4",
+   "python/conda-forge/linux-64/python-3.7.8-hffdb5ce_3_cpython",
+   "python/conda-forge/linux-64/python-3.8.0-h357f687_1",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_5_cpython"
+  ],
+  "osgeo": [
+   "gdal/conda-forge/linux-64/gdal-3.0.2-py37hbb6b9fb_6",
+   "gdal/conda-forge/linux-64/gdal-3.1.0-py37h4b180d9_0",
+   "gdal/conda-forge/linux-64/gdal-3.1.0-py37h4b180d9_2",
+   "gdal/conda-forge/linux-64/gdal-3.1.2-py37h518339e_4",
+   "gdal/conda-forge/linux-64/gdal-3.1.4-py36h8cf1c0a_11",
+   "gdal/conda-forge/linux-64/gdal-3.1.4-py37h56f316d_13",
+   "gdal/conda-forge/linux-64/gdal-3.2.1-py38hc0b2d6b_0",
+   "gdal/conda-forge/linux-64/gdal-3.2.2-py38h507a4fd_5"
+  ],
+  "pandas": [
+   "pandas/conda-forge/linux-64/pandas-1.1.3-py37hb33c840_2",
+   "pandas/conda-forge/linux-64/pandas-1.2.2-py39hde0f152_0"
+  ],
+  "pathlib": [
+   "pathlib/conda-forge/noarch/pathlib-1.0.1-py_1",
+   "python/conda-forge/linux-64/python-3.5.3-1",
+   "python/conda-forge/linux-64/python-3.6.6-h5001a0f_0",
+   "python/conda-forge/linux-64/python-3.7.0-h5001a0f_4",
+   "python/conda-forge/linux-64/python-3.7.8-hffdb5ce_3_cpython",
+   "python/conda-forge/linux-64/python-3.8.0-h357f687_1",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_5_cpython"
+  ],
+  "point_line_distance": [],
+  "pprint": [
+   "python/conda-forge/linux-64/python-3.5.3-1",
+   "python/conda-forge/linux-64/python-3.6.6-h5001a0f_0",
+   "python/conda-forge/linux-64/python-3.7.0-h5001a0f_4",
+   "python/conda-forge/linux-64/python-3.7.8-hffdb5ce_3_cpython",
+   "python/conda-forge/linux-64/python-3.8.0-h357f687_1",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_5_cpython"
+  ],
+  "psutil": [
+   "psutil/conda-forge/linux-64/psutil-5.3.1-py35_0",
+   "psutil/conda-forge/linux-64/psutil-5.3.1-py36_0",
+   "psutil/conda-forge/linux-64/psutil-5.4.5-py35_0",
+   "psutil/conda-forge/linux-64/psutil-5.5.0-py27h14c3975_0",
+   "psutil/conda-forge/linux-64/psutil-5.5.1-py36h14c3975_0",
+   "psutil/conda-forge/linux-64/psutil-5.6.5-py36h516909a_0"
+  ],
+  "pygeos": [
+   "pygeos/conda-forge/linux-64/pygeos-0.8-py37hedb1597_0",
+   "pygeos/conda-forge/linux-64/pygeos-0.8-py38h604dc72_2",
+   "pygeos/conda-forge/linux-64/pygeos-0.9-py36h2414def_1"
+  ],
+  "pyproj": [
+   "pyproj/conda-forge/linux-64/pyproj-2.1.2-py36h516909a_0",
+   "pyproj/conda-forge/linux-64/pyproj-2.1.2-py37h516909a_0",
+   "pyproj/conda-forge/linux-64/pyproj-2.2.1-py27h2fd02e8_1",
+   "pyproj/conda-forge/linux-64/pyproj-2.5.0-py37he3cd046_1"
+  ],
+  "re": [
+   "python/conda-forge/linux-64/python-3.5.3-1",
+   "python/conda-forge/linux-64/python-3.6.6-h5001a0f_0",
+   "python/conda-forge/linux-64/python-3.7.0-h5001a0f_4",
+   "python/conda-forge/linux-64/python-3.7.8-hffdb5ce_3_cpython",
+   "python/conda-forge/linux-64/python-3.8.0-h357f687_1",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_5_cpython"
+  ],
+  "remove_inner_rings_polygon": [],
+  "shapely": [
+   "shapely/conda-forge/linux-64/shapely-1.6.3-py36_0",
+   "shapely/conda-forge/linux-64/shapely-1.6.4-py36h164cb2d_0",
+   "shapely/conda-forge/linux-64/shapely-1.6.4-py36h5d51c17_1007",
+   "shapely/conda-forge/linux-64/shapely-1.7.1-py38h2765ab7_1",
+   "shapely/conda-forge/linux-64/shapely-1.7.1-py38haeee4fe_4",
+   "solaris/conda-forge/noarch/solaris-0.4.0-pyhe05a262_0"
+  ],
+  "shutil": [
+   "python/conda-forge/linux-64/python-3.5.3-1",
+   "python/conda-forge/linux-64/python-3.6.6-h5001a0f_0",
+   "python/conda-forge/linux-64/python-3.7.0-h5001a0f_4",
+   "python/conda-forge/linux-64/python-3.7.8-hffdb5ce_3_cpython",
+   "python/conda-forge/linux-64/python-3.8.0-h357f687_1",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_5_cpython"
+  ],
+  "simplification": [],
+  "simplify_coords": [],
+  "simplify_linestring": [],
+  "simplify_polygon": [],
+  "sqlite3": [
+   "python/conda-forge/linux-64/python-3.5.3-1",
+   "python/conda-forge/linux-64/python-3.6.6-h5001a0f_0",
+   "python/conda-forge/linux-64/python-3.7.0-h5001a0f_4",
+   "python/conda-forge/linux-64/python-3.7.8-hffdb5ce_3_cpython",
+   "python/conda-forge/linux-64/python-3.8.0-h357f687_1",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_5_cpython"
+  ],
+  "sqlite_util": [],
+  "subprocess": [
+   "python/conda-forge/linux-64/python-3.5.3-1",
+   "python/conda-forge/linux-64/python-3.6.6-h5001a0f_0",
+   "python/conda-forge/linux-64/python-3.7.0-h5001a0f_4",
+   "python/conda-forge/linux-64/python-3.7.8-hffdb5ce_3_cpython",
+   "python/conda-forge/linux-64/python-3.8.0-h357f687_1",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_5_cpython"
+  ],
+  "tempfile": [
+   "python/conda-forge/linux-64/python-3.5.3-1",
+   "python/conda-forge/linux-64/python-3.6.6-h5001a0f_0",
+   "python/conda-forge/linux-64/python-3.7.0-h5001a0f_4",
+   "python/conda-forge/linux-64/python-3.7.8-hffdb5ce_3_cpython",
+   "python/conda-forge/linux-64/python-3.8.0-h357f687_1",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_5_cpython"
+  ],
+  "threading": [
+   "python/conda-forge/linux-64/python-3.5.3-1",
+   "python/conda-forge/linux-64/python-3.6.6-h5001a0f_0",
+   "python/conda-forge/linux-64/python-3.7.0-h5001a0f_4",
+   "python/conda-forge/linux-64/python-3.7.8-hffdb5ce_3_cpython",
+   "python/conda-forge/linux-64/python-3.8.0-h357f687_1",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_5_cpython"
+  ],
+  "time": [],
+  "to_string_for_sql": [],
+  "type": [],
+  "typing": [
+   "python/conda-forge/linux-64/python-3.5.3-1",
+   "python/conda-forge/linux-64/python-3.6.6-h5001a0f_0",
+   "python/conda-forge/linux-64/python-3.7.0-h5001a0f_4",
+   "python/conda-forge/linux-64/python-3.7.8-hffdb5ce_3_cpython",
+   "python/conda-forge/linux-64/python-3.8.0-h357f687_1",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_5_cpython",
+   "typing/conda-forge/linux-64/typing-3.6.2-py27_0",
+   "typing/conda-forge/linux-64/typing-3.6.6-py35_0"
+  ],
+  "warnings": [
+   "python/conda-forge/linux-64/python-3.5.3-1",
+   "python/conda-forge/linux-64/python-3.6.6-h5001a0f_0",
+   "python/conda-forge/linux-64/python-3.7.0-h5001a0f_4",
+   "python/conda-forge/linux-64/python-3.7.8-hffdb5ce_3_cpython",
+   "python/conda-forge/linux-64/python-3.8.0-h357f687_1",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_5_cpython"
+  ],
+  "write_to_file": []
+ }
+}
