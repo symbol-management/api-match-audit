@@ -1,9 +1,5 @@
 {
  "bad": [
-  "Crypto.Cipher.PKCS1_OAEP",
-  "Crypto.Cipher.PKCS1_OAEP.new",
-  "Crypto.PublicKey.RSA",
-  "Crypto.PublicKey.RSA.importKey",
   "codecs.unicode_escape_decode",
   "cymysql.__init__.Connect",
   "cymysql.__init__.DBAPISet",
@@ -37,7 +33,11 @@
   "xrange"
  ],
  "deps": {
-  "Crypto": [],
+  "Crypto": [
+   "pycrypto/conda-forge/linux-64/pycrypto-2.6.1-py37h516909a_1003",
+   "pycryptodome/conda-forge/linux-64/pycryptodome-3.7.1-py37ha14ba45_1000",
+   "pycryptodome/conda-forge/linux-64/pycryptodome-3.9.8-py36hb9a097d_1"
+  ],
   "codecs": [
    "python/conda-forge/linux-64/python-3.5.3-1",
    "python/conda-forge/linux-64/python-3.6.6-h5001a0f_0",

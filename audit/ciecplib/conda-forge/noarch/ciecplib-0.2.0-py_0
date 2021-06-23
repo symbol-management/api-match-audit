@@ -1,27 +1,6 @@
 {
  "bad": [
-  "M2Crypto.ASN1",
-  "M2Crypto.ASN1.ASN1_UTCTIME",
-  "M2Crypto.ASN1.MBSTRING_ASC",
-  "M2Crypto.EVP",
-  "M2Crypto.EVP.MessageDigest",
-  "M2Crypto.EVP.PKey",
-  "M2Crypto.EVP.load_key_string",
-  "M2Crypto.RSA",
-  "M2Crypto.RSA.gen_key",
-  "M2Crypto.X509",
-  "M2Crypto.X509.X509",
-  "M2Crypto.X509.X509_Name",
-  "M2Crypto.X509.load_cert_string",
-  "M2Crypto.X509.new_extension",
-  "M2Crypto.m2",
   "M2Crypto.m2.x509_name_add_entry",
-  "OpenSSL.crypto",
-  "OpenSSL.crypto.FILETYPE_PEM",
-  "OpenSSL.crypto.dump_certificate",
-  "OpenSSL.crypto.dump_privatekey",
-  "OpenSSL.crypto.load_certificate",
-  "OpenSSL.crypto.load_pkcs12",
   "__version__",
   "cookies.ECPCookieJar",
   "cookies.extract_session_cookie",
@@ -77,8 +56,19 @@
   "x509.write_cert"
  ],
  "deps": {
-  "M2Crypto": [],
-  "OpenSSL": [],
+  "M2Crypto": [
+   "m2crypto/conda-forge/linux-64/m2crypto-0.24.0-py27_0",
+   "m2crypto/conda-forge/linux-64/m2crypto-0.30.1-py36_1",
+   "m2crypto/conda-forge/linux-64/m2crypto-0.34.0-py27h72c5cf5_0",
+   "m2crypto/conda-forge/linux-64/m2crypto-0.36.0-py27hcdb4288_1",
+   "m2crypto/conda-forge/linux-64/m2crypto-0.36.0-py37hb09aad4_0"
+  ],
+  "OpenSSL": [
+   "pyopenssl/conda-forge/linux-64/pyopenssl-17.4.0-py27_0",
+   "pyopenssl/conda-forge/linux-64/pyopenssl-17.4.0-py35_0",
+   "pyopenssl/conda-forge/noarch/pyopenssl-20.0.0-pyhd8ed1ab_0",
+   "pyopenssl/conda-forge/noarch/pyopenssl-20.0.1-pyhd8ed1ab_0"
+  ],
   "__version__": [],
   "argparse": [
    "argparse/conda-forge/linux-64/argparse-1.4.0-py26_0",
