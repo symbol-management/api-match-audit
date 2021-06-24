@@ -1,8 +1,5 @@
 {
  "bad": [
-  "PIL.Image",
-  "PIL.Image.fromarray",
-  "PIL.Image.open",
   "_compiler.compiler",
   "allsky.HipsTileAllskyArray.fetch",
   "allsky.HipsTileAllskyArray.from_numpy",
@@ -25,26 +22,8 @@
   "healpix.hips_tile_healpix_ipix_array",
   "io.tile_default_path",
   "io.tile_default_url",
-  "numpy",
-  "numpy.array",
-  "numpy.clip",
-  "numpy.flipud",
   "numpy.float32",
-  "numpy.indices",
   "numpy.log2",
-  "numpy.min",
-  "numpy.ndarray",
-  "numpy.ones",
-  "numpy.pi",
-  "numpy.repeat",
-  "numpy.round",
-  "numpy.sqrt",
-  "numpy.sum",
-  "numpy.testing.assert_allclose",
-  "numpy.testing.assert_equal",
-  "numpy.tile",
-  "numpy.unique",
-  "numpy.zeros",
   "os.environ.get",
   "os.getcwd",
   "os.path.abspath",
@@ -98,7 +77,10 @@
   "wcs.WCSGeometry.create_from_dict"
  ],
  "deps": {
-  "PIL": [],
+  "PIL": [
+   "pillow/conda-forge/linux-64/pillow-4.1.0-py36_0",
+   "pillow/conda-forge/linux-64/pillow-8.1.2-py38ha0e1e83_0"
+  ],
   "__future__": [
    "python/conda-forge/linux-64/python-2.7.14-0",
    "python/conda-forge/linux-64/python-2.7.15-h33da82c_4",
@@ -223,7 +205,17 @@
    "matplotlib-base/conda-forge/linux-64/matplotlib-base-3.3.2-py38h5c7f4ab_1",
    "matplotlib-base/conda-forge/linux-64/matplotlib-base-3.3.3-py38h5c7f4ab_0"
   ],
-  "numpy": [],
+  "numpy": [
+   "numpy/conda-forge/linux-64/numpy-1.10.4-py34_blas_openblas_200",
+   "numpy/conda-forge/linux-64/numpy-1.11.3-py37_blas_openblash1522bff_1205",
+   "numpy/conda-forge/linux-64/numpy-1.14.1-py35_blas_openblas_200",
+   "numpy/conda-forge/linux-64/numpy-1.14.6-py35_blas_openblashd3ea46f_200",
+   "numpy/conda-forge/linux-64/numpy-1.14.6-py36_blas_openblash1522bff_1000",
+   "numpy/conda-forge/linux-64/numpy-1.19.2-py37h7ea13bd_1",
+   "numpy/conda-forge/linux-64/numpy-1.19.5-py39hdbf815f_1",
+   "numpy/conda-forge/linux-64/numpy-1.8.2-py27_blas_openblas_200",
+   "numpy/conda-forge/linux-64/numpy-1.9.3-py35_blas_openblas_200"
+  ],
   "os": [
    "python/conda-forge/linux-64/python-3.5.3-1",
    "python/conda-forge/linux-64/python-3.6.6-h5001a0f_0",
