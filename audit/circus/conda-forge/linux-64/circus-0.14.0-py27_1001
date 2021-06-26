@@ -92,6 +92,9 @@
   "gevent.shutdown",
   "gid_min_max",
   "handler",
+  "importlib",
+  "importlib.invalidate_caches",
+  "importlib.reload",
   "incr_processes",
   "int32",
   "itertools.chain",
@@ -99,7 +102,23 @@
   "itertools.zip_longest",
   "klass",
   "load",
+  "logging",
+  "logging.CRITICAL",
+  "logging.DEBUG",
+  "logging.ERROR",
+  "logging.FileHandler",
+  "logging.Formatter",
+  "logging.INFO",
+  "logging.StreamHandler",
+  "logging.WARNING",
+  "logging.basicConfig",
+  "logging.config",
+  "logging.config.dictConfig",
+  "logging.config.fileConfig",
+  "logging.getLogger",
+  "logging.handlers.SysLogHandler",
   "logging.handlers.SysLogHandler.facility_names",
+  "logging.handlers.WatchedFileHandler",
   "mock.patch.object",
   "mock.sentinel.context",
   "nb_processes",
@@ -471,15 +490,7 @@
    "python/conda-forge/linux-64/python-3.7.8-hffdb5ce_3_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_4_cpython"
   ],
-  "importlib": [
-   "python/conda-forge/linux-64/python-3.5.3-1",
-   "python/conda-forge/linux-64/python-3.6.6-h5001a0f_0",
-   "python/conda-forge/linux-64/python-3.7.0-h5001a0f_4",
-   "python/conda-forge/linux-64/python-3.7.8-hffdb5ce_3_cpython",
-   "python/conda-forge/linux-64/python-3.8.0-h357f687_1",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_4_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_5_cpython"
-  ],
+  "importlib": [],
   "incr_processes": [],
   "int32": [],
   "io": [
@@ -505,10 +516,7 @@
   ],
   "klass": [],
   "load": [],
-  "logging": [
-   "python/conda-forge/linux-64/python-3.7.8-hffdb5ce_3_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_4_cpython"
-  ],
+  "logging": [],
   "mock": [
    "mock/conda-forge/linux-64/mock-1.0.1-py27_0"
   ],
@@ -751,6 +759,7 @@
    "python/conda-forge/linux-64/python-3.7.0-h5001a0f_4",
    "python/conda-forge/linux-64/python-3.7.8-hffdb5ce_3_cpython",
    "python/conda-forge/linux-64/python-3.8.0-h357f687_1",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_4_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_5_cpython"
   ],
   "textwrap": [
@@ -759,6 +768,7 @@
    "python/conda-forge/linux-64/python-3.7.0-h5001a0f_4",
    "python/conda-forge/linux-64/python-3.7.8-hffdb5ce_3_cpython",
    "python/conda-forge/linux-64/python-3.8.0-h357f687_1",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_4_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_5_cpython"
   ],
   "thread": [],
@@ -768,6 +778,7 @@
    "python/conda-forge/linux-64/python-3.7.0-h5001a0f_4",
    "python/conda-forge/linux-64/python-3.7.8-hffdb5ce_3_cpython",
    "python/conda-forge/linux-64/python-3.8.0-h357f687_1",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_4_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_5_cpython"
   ],
   "time": [],
@@ -786,6 +797,7 @@
    "python/conda-forge/linux-64/python-3.7.0-h5001a0f_4",
    "python/conda-forge/linux-64/python-3.7.8-hffdb5ce_3_cpython",
    "python/conda-forge/linux-64/python-3.8.0-h357f687_1",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_4_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_5_cpython"
   ],
   "type": [],
@@ -796,6 +808,7 @@
    "python/conda-forge/linux-64/python-3.7.0-h5001a0f_4",
    "python/conda-forge/linux-64/python-3.7.8-hffdb5ce_3_cpython",
    "python/conda-forge/linux-64/python-3.8.0-h357f687_1",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_4_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_5_cpython"
   ],
   "urlparse": [],
@@ -806,6 +819,7 @@
    "python/conda-forge/linux-64/python-3.7.0-h5001a0f_4",
    "python/conda-forge/linux-64/python-3.7.8-hffdb5ce_3_cpython",
    "python/conda-forge/linux-64/python-3.8.0-h357f687_1",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_4_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_5_cpython"
   ],
   "warnings": [
@@ -814,6 +828,7 @@
    "python/conda-forge/linux-64/python-3.7.0-h5001a0f_4",
    "python/conda-forge/linux-64/python-3.7.8-hffdb5ce_3_cpython",
    "python/conda-forge/linux-64/python-3.8.0-h357f687_1",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_4_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_5_cpython"
   ],
   "yaml": [
