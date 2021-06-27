@@ -1,7 +1,10 @@
 {
  "bad": [
+  "collections",
+  "collections.OrderedDict",
   "collections.abc.Mapping",
   "collections.abc.Sequence",
+  "collections.defaultdict",
   "fn",
   "heuristics.AbstractHeuristic",
   "heuristics.BALD",
@@ -23,12 +26,13 @@
   "os.getpid",
   "scipy.special.expit",
   "scipy.special.xlogy",
+  "sklearn.metrics.auc",
+  "sklearn.metrics.confusion_matrix",
+  "sklearn.utils.check_random_state",
   "sys",
   "sys.stdout",
   "t",
-  "torch",
   "torch.FloatTensor",
-  "torch.Tensor",
   "torch.argmax",
   "torch.cat",
   "torch.exp",
@@ -38,35 +42,14 @@
   "torch.gather",
   "torch.isfinite",
   "torch.log",
-  "torch.manual_seed",
   "torch.max",
   "torch.mean",
   "torch.min",
   "torch.mul",
   "torch.multinomial",
-  "torch.nn",
-  "torch.nn.Conv2d",
-  "torch.nn.Dropout",
-  "torch.nn.Dropout2d",
-  "torch.nn.Linear",
-  "torch.nn.Module",
-  "torch.nn.functional",
-  "torch.nn.functional.dropout",
-  "torch.nn.functional.dropout2d",
-  "torch.nn.functional.linear",
-  "torch.nn.functional.softmax",
-  "torch.nn.modules.dropout._DropoutNd",
-  "torch.no_grad",
   "torch.ones_like",
-  "torch.optim.Adam",
-  "torch.optim.Optimizer",
   "torch.stack",
   "torch.sum",
-  "torch.utils.data",
-  "torch.utils.data.DataLoader",
-  "torch.utils.data.Dataset",
-  "torch.utils.data.Subset",
-  "torch.utils.data.dataloader.default_collate",
   "torch.zeros",
   "utils.log_configuration.set_logger_config"
  ],
@@ -84,15 +67,7 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_4_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_5_cpython"
   ],
-  "collections": [
-   "python/conda-forge/linux-64/python-3.5.3-1",
-   "python/conda-forge/linux-64/python-3.6.6-h5001a0f_0",
-   "python/conda-forge/linux-64/python-3.7.0-h5001a0f_4",
-   "python/conda-forge/linux-64/python-3.7.8-hffdb5ce_3_cpython",
-   "python/conda-forge/linux-64/python-3.8.0-h357f687_1",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_4_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_5_cpython"
-  ],
+  "collections": [],
   "copy": [
    "python/conda-forge/linux-64/python-3.7.8-hffdb5ce_3_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_4_cpython"
@@ -180,16 +155,7 @@
    "scipy/conda-forge/linux-64/scipy-1.5.3-py36he350d85_0",
    "scipy/conda-forge/linux-64/scipy-1.5.3-py38hb2138dd_0"
   ],
-  "sklearn": [
-   "scikit-learn/conda-forge/linux-64/scikit-learn-0.18.1-np112py27_blas_openblas_200",
-   "scikit-learn/conda-forge/linux-64/scikit-learn-0.19.2-py36_blas_openblasha84fab4_201",
-   "scikit-learn/conda-forge/linux-64/scikit-learn-0.22-py36hcdab131_0",
-   "scikit-learn/conda-forge/linux-64/scikit-learn-0.22.2.post1-py38hcdab131_0",
-   "scikit-learn/conda-forge/linux-64/scikit-learn-0.23.0-py37h8a51577_0",
-   "scikit-learn/conda-forge/linux-64/scikit-learn-0.23.2-py36h4c8dc72_3",
-   "scikit-learn/conda-forge/linux-64/scikit-learn-0.23.2-py36hd0533df_1",
-   "scikit-learn/conda-forge/linux-64/scikit-learn-0.23.2-py38hee58b96_0"
-  ],
+  "sklearn": [],
   "structlog": [
    "structlog/conda-forge/noarch/structlog-17.2.0-py_0",
    "structlog/conda-forge/noarch/structlog-18.1.0-py_0",
@@ -208,7 +174,11 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_4_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_5_cpython"
   ],
-  "torch": [],
+  "torch": [
+   "pytorch-cpu/conda-forge/linux-64/pytorch-cpu-1.6.0-cpu_py39he5e7b68_1",
+   "pytorch/conda-forge/linux-64/pytorch-1.6.0-cuda100py36hd82b6f9_1",
+   "pytorch/conda-forge/linux-64/pytorch-1.6.0-cuda100py39h2b73809_1"
+  ],
   "tqdm": [
    "tqdm/conda-forge/linux-64/tqdm-4.10.0-py35_0",
    "tqdm/conda-forge/linux-64/tqdm-4.8.4-py35_0",
