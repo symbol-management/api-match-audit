@@ -34,12 +34,6 @@
   "base64",
   "base64.b64decode",
   "base64.b64encode",
-  "boto3",
-  "boto3.client",
-  "boto3.session.Session",
-  "botocore",
-  "botocore.exceptions.ClientError",
-  "box.Box",
   "check",
   "check_valid_keys",
   "click",
@@ -53,9 +47,6 @@
   "click.option",
   "click.pass_context",
   "click.secho",
-  "cloudpickle",
-  "cloudpickle.dump",
-  "cloudpickle.dumps",
   "cloudpickle.load",
   "cloudpickle.loads",
   "collections",
@@ -81,12 +72,8 @@
   "curses.endwin",
   "curses.initscr",
   "dask",
-  "dask.base.tokenize",
-  "dask.callbacks.Callback",
   "dask.compute",
   "dask.config.set",
-  "dask.delayed",
-  "dask_kubernetes.KubeCluster",
   "dask_kubernetes.KubeCluster.from_dict",
   "datetime",
   "datetime.datetime",
@@ -94,10 +81,6 @@
   "datetime.time",
   "datetime.timedelta",
   "deserializer",
-  "distributed.Client",
-  "distributed.Future",
-  "distributed.deploy.cluster.Cluster",
-  "distributed.security.Security",
   "docker",
   "docker.APIClient",
   "docker.errors.APIError",
@@ -108,8 +91,6 @@
   "email.mime.text.MIMEText",
   "executor",
   "extra_context",
-  "feedparser",
-  "feedparser.parse",
   "filecmp",
   "filecmp.cmp",
   "filter_fn",
@@ -135,7 +116,6 @@
   "graphviz",
   "graphviz.Digraph",
   "graphviz.backend.ExecutableNotFound",
-  "great_expectations",
   "great_expectations.DataContext",
   "gspread",
   "gspread.service_account",
@@ -199,30 +179,6 @@
   "logging.getLogger",
   "logging.setLogRecordFactory",
   "marshmallow.EXCLUDE",
-  "marshmallow.Schema",
-  "marshmallow.SchemaOpts",
-  "marshmallow.ValidationError",
-  "marshmallow.fields",
-  "marshmallow.fields.Boolean",
-  "marshmallow.fields.DateTime",
-  "marshmallow.fields.Dict",
-  "marshmallow.fields.Field",
-  "marshmallow.fields.Function",
-  "marshmallow.fields.Int",
-  "marshmallow.fields.Integer",
-  "marshmallow.fields.List",
-  "marshmallow.fields.Method",
-  "marshmallow.fields.Nested",
-  "marshmallow.fields.Str",
-  "marshmallow.fields.String",
-  "marshmallow.fields.TimeDelta",
-  "marshmallow.fields.UUID",
-  "marshmallow.missing",
-  "marshmallow.post_dump",
-  "marshmallow.post_load",
-  "marshmallow.pre_load",
-  "marshmallow.utils",
-  "marshmallow.utils.get_value",
   "marshmallow_oneofschema",
   "marshmallow_oneofschema.OneOfSchema",
   "math",
@@ -232,7 +188,6 @@
   "multiprocessing.Process",
   "multiprocessing.Queue",
   "multiprocessing.current_process",
-  "mypy_extensions.TypedDict",
   "ntpath",
   "ntpath.normpath",
   "ntpath.splitdrive",
@@ -356,8 +311,6 @@
   "psycopg2.connect",
   "pushbullet.Pushbullet",
   "pymysql.cursors",
-  "pytz",
-  "pytz.timezone",
   "queue.Empty",
   "queue.Queue",
   "re",
@@ -367,18 +320,11 @@
   "re.sub",
   "redis",
   "redis.Redis",
-  "requests",
-  "requests.Session",
-  "requests.adapters.HTTPAdapter",
-  "requests.exceptions.HTTPError",
-  "requests.get",
   "requests.packages.urllib3.util.retry.Retry",
-  "requests.post",
   "result_type",
   "run_method",
   "runner_cls",
   "runner_method",
-  "schema",
   "shutil",
   "shutil.copy2",
   "signal",
@@ -416,7 +362,6 @@
   "sys.stdout",
   "sys.version_info.major",
   "sys.version_info.minor",
-  "tabulate.tabulate",
   "target",
   "target.format",
   "tempfile",
@@ -441,7 +386,6 @@
   "toml",
   "toml.dump",
   "toml.load",
-  "toolz.curry",
   "tornado.ioloop.IOLoop",
   "tornado.ioloop.IOLoop.current",
   "tornado.web",
@@ -480,13 +424,7 @@
   "warnings",
   "warnings.warn",
   "webbrowser",
-  "webbrowser.open",
-  "yaml",
-  "yaml.dump",
-  "yaml.safe_dump",
-  "yaml.safe_dump_all",
-  "yaml.safe_load",
-  "yaml.safe_load_all"
+  "webbrowser.open"
  ],
  "deps": {
   "Client": [],
@@ -504,30 +442,46 @@
   "azureml": [],
   "backend_path": [],
   "base64": [],
-  "boto3": [],
-  "botocore": [],
-  "box": [],
+  "boto3": [
+   "boto3/conda-forge/noarch/boto3-1.13.1-pyh9f0ad1d_0"
+  ],
+  "botocore": [
+   "botocore/conda-forge/noarch/botocore-1.10.82-py_0"
+  ],
+  "box": [
+   "python-box/conda-forge/noarch/python-box-5.1.1-py_0"
+  ],
   "check": [],
   "check_valid_keys": [],
   "click": [],
-  "cloudpickle": [],
+  "cloudpickle": [
+   "cloudpickle/conda-forge/noarch/cloudpickle-1.4.1-py_0"
+  ],
   "collections": [],
   "concurrent": [],
   "contextlib": [],
   "copy": [],
   "croniter": [],
   "curses": [],
-  "dask": [],
-  "dask_kubernetes": [],
+  "dask": [
+   "dask-core/conda-forge/noarch/dask-core-0.15.3-py_0"
+  ],
+  "dask_kubernetes": [
+   "dask-kubernetes/conda-forge/noarch/dask-kubernetes-0.10.0-py_0"
+  ],
   "datetime": [],
   "deserializer": [],
-  "distributed": [],
+  "distributed": [
+   "distributed/conda-forge/noarch/distributed-2.1.0-py_0"
+  ],
   "docker": [],
   "dropbox": [],
   "email": [],
   "executor": [],
   "extra_context": [],
-  "feedparser": [],
+  "feedparser": [
+   "feedparser/conda-forge/noarch/feedparser-6.0.8-pyhd8ed1ab_0"
+  ],
   "filecmp": [],
   "filter_fn": [],
   "fn": [],
@@ -537,7 +491,9 @@
   "github": [],
   "google": [],
   "graphviz": [],
-  "great_expectations": [],
+  "great_expectations": [
+   "great-expectations/conda-forge/noarch/great-expectations-0.6.1-py_0"
+  ],
   "gspread": [],
   "gzip": [],
   "handler": [],
@@ -554,12 +510,16 @@
   "keyword": [],
   "kubernetes": [],
   "logging": [],
-  "marshmallow": [],
+  "marshmallow": [
+   "marshmallow/conda-forge/noarch/marshmallow-2.13.1-py_1"
+  ],
   "marshmallow_oneofschema": [],
   "math": [],
   "method": [],
   "multiprocessing": [],
-  "mypy_extensions": [],
+  "mypy_extensions": [
+   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1"
+  ],
   "ntpath": [],
   "object_class": [],
   "operator": [],
@@ -573,16 +533,22 @@
   "psycopg2": [],
   "pushbullet": [],
   "pymysql": [],
-  "pytz": [],
+  "pytz": [
+   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1"
+  ],
   "queue": [],
   "re": [],
   "redis": [],
-  "requests": [],
+  "requests": [
+   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1"
+  ],
   "result_type": [],
   "run_method": [],
   "runner_cls": [],
   "runner_method": [],
-  "schema": [],
+  "schema": [
+   "schema/conda-forge/noarch/schema-0.7.1-py_0"
+  ],
   "shutil": [],
   "signal": [],
   "slugify": [],
@@ -594,7 +560,9 @@
   "ssl": [],
   "subprocess": [],
   "sys": [],
-  "tabulate": [],
+  "tabulate": [
+   "tabulate/conda-forge/noarch/tabulate-0.8.7-pyh9f0ad1d_0"
+  ],
   "target": [],
   "tempfile": [],
   "textwrap": [],
@@ -602,7 +570,9 @@
   "time": [],
   "timeout_handler": [],
   "toml": [],
-  "toolz": [],
+  "toolz": [
+   "toolz/conda-forge/noarch/toolz-0.8.2-py_3"
+  ],
   "tornado": [],
   "tweepy": [],
   "type": [],
@@ -613,6 +583,8 @@
   "validation_fn": [],
   "warnings": [],
   "webbrowser": [],
-  "yaml": []
+  "yaml": [
+   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1"
+  ]
  }
 }

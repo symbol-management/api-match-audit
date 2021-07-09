@@ -1,8 +1,6 @@
 {
  "bad": [
   "_",
-  "aiobotocore",
-  "aiobotocore.get_session",
   "aiohttp",
   "aiohttp.ClientSession",
   "aiohttp.ContentTypeError",
@@ -20,7 +18,6 @@
   "asyncio.wait_for",
   "backends.in_process",
   "backends.in_process.ClusterManager",
-  "botocore.exceptions",
   "cli.install.install.callback",
   "click",
   "click.argument",
@@ -43,16 +40,9 @@
   "dask.config.merge",
   "dask.config.set",
   "dask.config.update_defaults",
-  "dask.distributed",
   "dask.distributed.Client",
   "dask.distributed.Security",
   "dask.utils.parse_bytes",
-  "distributed.deploy",
-  "distributed.utils.LoopRunner",
-  "distributed.utils.sync",
-  "distributed.utils.thread_state",
-  "distributed.utils.tmpfile",
-  "distributed.utils_test.loop",
   "distutils.util.strtobool",
   "func",
   "get_solved_spec",
@@ -91,7 +81,6 @@
   "pytest.warns",
   "re",
   "re.match",
-  "s3fs",
   "shutil",
   "shutil.which",
   "sparse",
@@ -116,9 +105,6 @@
   "time",
   "time.sleep",
   "time.time",
-  "toolz",
-  "toolz.first",
-  "toolz.merge",
   "tornado.ioloop.IOLoop",
   "tornado.ioloop.IOLoop.current",
   "typing.NamedTuple",
@@ -138,26 +124,31 @@
   "warnings",
   "warnings.warn",
   "weakref",
-  "weakref.WeakSet",
-  "yaml",
-  "yaml.dump",
-  "yaml.safe_load"
+  "weakref.WeakSet"
  ],
  "deps": {
   "_": [],
-  "aiobotocore": [],
+  "aiobotocore": [
+   "aiobotocore/conda-forge/noarch/aiobotocore-0.9.3-py_0"
+  ],
   "aiohttp": [],
   "asgiref": [],
   "asyncio": [],
   "backends": [],
-  "botocore": [],
+  "botocore": [
+   "botocore/conda-forge/noarch/botocore-1.10.82-py_0"
+  ],
   "cli": [],
   "click": [],
   "cloud": [],
   "coiled": [],
   "create_conda_env": [],
-  "dask": [],
-  "distributed": [],
+  "dask": [
+   "dask-core/conda-forge/noarch/dask-core-0.15.3-py_0"
+  ],
+  "distributed": [
+   "distributed/conda-forge/noarch/distributed-2.1.0-py_0"
+  ],
   "distutils": [],
   "func": [],
   "get_solved_spec": [],
@@ -172,7 +163,9 @@
   "platform": [],
   "pytest": [],
   "re": [],
-  "s3fs": [],
+  "s3fs": [
+   "s3fs/conda-forge/noarch/s3fs-0.4.0-py_0"
+  ],
   "shutil": [],
   "sparse": [],
   "ssl": [],
@@ -181,7 +174,9 @@
   "tempfile": [],
   "threading": [],
   "time": [],
-  "toolz": [],
+  "toolz": [
+   "toolz/conda-forge/noarch/toolz-0.8.2-py_3"
+  ],
   "tornado": [],
   "typing": [],
   "unittest": [],
@@ -189,6 +184,8 @@
   "uuid": [],
   "warnings": [],
   "weakref": [],
-  "yaml": []
+  "yaml": [
+   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1"
+  ]
  }
 }

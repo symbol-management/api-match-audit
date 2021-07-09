@@ -57,16 +57,11 @@
   "dagster.utils.merge_dicts",
   "dagster.utils.safe_tempfile_path",
   "dagster.utils.yaml_utils.merge_yamls",
-  "dagster_celery.executor.CELERY_CONFIG",
   "dagster_celery.executor_k8s.CELERY_K8S_CONFIG_KEY",
   "dagster_celery.executor_k8s.CELERY_K8S_CONFIG_KEY.get",
-  "dagster_celery.executor_k8s.celery_k8s_config",
-  "dagster_graphql.client.util.parse_raw_log_lines",
   "dagster_k8s.DagsterK8sJobConfig.from_dict",
   "dagster_k8s.__init__.__version__",
   "dagster_k8s.utils.WaitForPodState.Terminated",
-  "dagster_postgres.PostgresEventLogStorage",
-  "dagster_postgres.PostgresRunStorage",
   "dagster_test.test_project.build_and_tag_test_image",
   "dagster_test.test_project.get_test_project_external_pipeline",
   "dagster_test.test_project.test_project_docker_image",
@@ -126,10 +121,6 @@
   "pytest.raises",
   "random",
   "random.randint",
-  "six",
-  "six.ensure_binary",
-  "six.ensure_str",
-  "six.raise_from",
   "socket",
   "socket.AF_INET",
   "socket.SOCK_STREAM",
@@ -146,20 +137,23 @@
   "time.sleep",
   "time.time",
   "uuid",
-  "uuid.uuid4",
-  "yaml",
-  "yaml.dump",
-  "yaml.safe_load"
+  "uuid.uuid4"
  ],
  "deps": {
   "base64": [],
   "collections": [],
   "contextlib": [],
   "dagster": [],
-  "dagster_celery": [],
-  "dagster_graphql": [],
+  "dagster_celery": [
+   "dagster-celery/conda-forge/noarch/dagster-celery-0.7.13-pyhc8dfbb8_0"
+  ],
+  "dagster_graphql": [
+   "dagster-graphql/conda-forge/noarch/dagster-graphql-0.8.2-pyhc8dfbb8_0"
+  ],
   "dagster_k8s": [],
-  "dagster_postgres": [],
+  "dagster_postgres": [
+   "dagster-postgres/conda-forge/noarch/dagster-postgres-0.10.8-pyhd8ed1ab_1"
+  ],
   "dagster_test": [],
   "distutils": [],
   "enum": [],
@@ -173,11 +167,15 @@
   "psycopg2": [],
   "pytest": [],
   "random": [],
-  "six": [],
+  "six": [
+   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1"
+  ],
   "socket": [],
   "subprocess": [],
   "time": [],
   "uuid": [],
-  "yaml": []
+  "yaml": [
+   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1"
+  ]
  }
 }

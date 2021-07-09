@@ -1,7 +1,6 @@
 {
  "bad": [
   "apiclient.discovery.build",
-  "apiclient.errors",
   "apiclient.errors.HttpError",
   "apiclient.http.MediaIoBaseUpload",
   "concurrent.futures.ThreadPoolExecutor",
@@ -13,8 +12,6 @@
   "filecmp",
   "filecmp.cmp",
   "functools.wraps",
-  "funcy.py3.cat",
-  "funcy.retry",
   "httplib2",
   "httplib2.Http",
   "io",
@@ -53,8 +50,6 @@
   "re",
   "re.compile",
   "shutil.copyfile",
-  "six.Iterator",
-  "six.iteritems",
   "six.moves.input",
   "six.moves.range",
   "socket",
@@ -70,20 +65,20 @@
   "unittest.TestCase",
   "unittest.main",
   "webbrowser",
-  "webbrowser.open",
-  "yaml.CLoader",
-  "yaml.Loader",
-  "yaml.YAMLError",
-  "yaml.load"
+  "webbrowser.open"
  ],
  "deps": {
-  "apiclient": [],
+  "apiclient": [
+   "google-api-python-client/conda-forge/noarch/google-api-python-client-1.7.8-py_0"
+  ],
   "concurrent": [],
   "decoratee": [],
   "dict": [],
   "filecmp": [],
   "functools": [],
-  "funcy": [],
+  "funcy": [
+   "funcy/conda-forge/noarch/funcy-1.9.1-py_0"
+  ],
   "httplib2": [],
   "io": [],
   "mimetypes": [],
@@ -94,7 +89,9 @@
   "random": [],
   "re": [],
   "shutil": [],
-  "six": [],
+  "six": [
+   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1"
+  ],
   "socket": [],
   "sys": [],
   "threading": [],
@@ -102,6 +99,8 @@
   "timeout_decorator": [],
   "unittest": [],
   "webbrowser": [],
-  "yaml": []
+  "yaml": [
+   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1"
+  ]
  }
 }

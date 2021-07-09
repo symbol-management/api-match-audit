@@ -1,13 +1,6 @@
 {
  "bad": [
-  "boto3",
-  "boto3.Session",
   "boto3.s3.transfer.S3_RETRYABLE_ERRORS",
-  "botocore.UNSIGNED",
-  "botocore.client.Config",
-  "botocore.exceptions.BotoCoreError",
-  "botocore.exceptions.ClientError",
-  "botocore.exceptions.ParamValidationError",
   "constructor",
   "contextlib.contextmanager",
   "core.S3FileSystem.current",
@@ -18,8 +11,6 @@
   "errno.ENOENT",
   "errno.ENOSYS",
   "errno.EPERM",
-  "fsspec.AbstractFileSystem",
-  "fsspec.spec.AbstractBufferedFile",
   "functools",
   "functools.partial",
   "json",
@@ -38,13 +29,19 @@
   "time.sleep"
  ],
  "deps": {
-  "boto3": [],
-  "botocore": [],
+  "boto3": [
+   "boto3/conda-forge/noarch/boto3-1.13.1-pyh9f0ad1d_0"
+  ],
+  "botocore": [
+   "botocore/conda-forge/noarch/botocore-1.10.82-py_0"
+  ],
   "constructor": [],
   "contextlib": [],
   "core": [],
   "errno": [],
-  "fsspec": [],
+  "fsspec": [
+   "fsspec/conda-forge/noarch/fsspec-0.8.7-pyhd8ed1ab_0"
+  ],
   "functools": [],
   "json": [],
   "logging": [],

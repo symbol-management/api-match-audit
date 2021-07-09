@@ -92,10 +92,6 @@
   "fairscale.optim.OSS",
   "fairscale.optim.grad_scaler.ShardedGradScaler",
   "fn",
-  "fsspec",
-  "fsspec.filesystem",
-  "fsspec.implementations.local.LocalFileSystem",
-  "fsspec.open",
   "func",
   "func_to_decorate",
   "functools",
@@ -124,10 +120,6 @@
   "horovod.torch.local_size",
   "horovod.torch.rank",
   "horovod.torch.size",
-  "hydra.core.hydra_config.HydraConfig",
-  "hydra.core.hydra_config.HydraConfig.initialized",
-  "hydra.utils.get_original_cwd",
-  "hydra.utils.to_absolute_path",
   "importlib",
   "importlib.import_module",
   "importlib.util.find_spec",
@@ -175,11 +167,7 @@
   "multiprocessing.Process",
   "multiprocessing.Queue",
   "multiprocessing.cpu_count",
-  "neptune",
-  "neptune.OfflineBackend",
-  "neptune.Session",
   "neptune.Session.with_default_backend",
-  "neptune.experiments.Experiment",
   "numbers",
   "numbers.Number",
   "numpy",
@@ -256,7 +244,6 @@
   "os.path.split",
   "os.path.splitext",
   "os.remove",
-  "packaging.version.Version",
   "path_lib",
   "pathlib.Path",
   "pathlib.Path.cwd",
@@ -638,7 +625,6 @@
   "torchvision.transforms.ToTensor",
   "torchvision.utils.make_grid",
   "tqdm.auto.tqdm",
-  "tqdm.tqdm",
   "tqdm.tqdm.format_num",
   "traceback",
   "traceback.print_exc",
@@ -671,20 +657,11 @@
   "urllib.error.HTTPError",
   "uuid",
   "uuid.uuid4",
-  "wandb",
-  "wandb.init",
-  "wandb.run",
-  "wandb.save",
-  "wandb.wandb_run.Run",
   "warnings",
   "warnings.filterwarnings",
   "warnings.warn",
   "weakref.proxy",
-  "write",
-  "yaml",
-  "yaml.UnsafeLoader",
-  "yaml.dump",
-  "yaml.load"
+  "write"
  ],
  "deps": {
   "PIL": [],
@@ -726,7 +703,9 @@
   "enum": [],
   "fairscale": [],
   "fn": [],
-  "fsspec": [],
+  "fsspec": [
+   "fsspec/conda-forge/noarch/fsspec-0.8.7-pyhd8ed1ab_0"
+  ],
   "func": [],
   "func_to_decorate": [],
   "functools": [],
@@ -737,7 +716,9 @@
   "gym": [],
   "hook_fx": [],
   "horovod": [],
-  "hydra": [],
+  "hydra": [
+   "hydra-core/conda-forge/noarch/hydra-core-1.0.4-pyhd8ed1ab_0"
+  ],
   "importlib": [],
   "input": [],
   "inspect": [],
@@ -755,14 +736,18 @@
   "model_func": [],
   "monitor_op": [],
   "multiprocessing": [],
-  "neptune": [],
+  "neptune": [
+   "neptune-client/conda-forge/noarch/neptune-client-0.5.1-pyh44b312d_0"
+  ],
   "numbers": [],
   "numpy": [],
   "nvidia": [],
   "omegaconf": [],
   "operator": [],
   "os": [],
-  "packaging": [],
+  "packaging": [
+   "packaging/conda-forge/noarch/packaging-18.0-py_0"
+  ],
   "path_lib": [],
   "pathlib": [],
   "pickle": [],
@@ -798,7 +783,9 @@
   "torchmetrics": [],
   "torchtext": [],
   "torchvision": [],
-  "tqdm": [],
+  "tqdm": [
+   "tqdm/conda-forge/noarch/tqdm-4.20.0-py_0"
+  ],
   "traceback": [],
   "trainer_hook": [],
   "trigger_condition": [],
@@ -808,10 +795,14 @@
   "unittest": [],
   "urllib": [],
   "uuid": [],
-  "wandb": [],
+  "wandb": [
+   "wandb/conda-forge/noarch/wandb-0.10.8-pyh9f0ad1d_0"
+  ],
   "warnings": [],
   "weakref": [],
   "write": [],
-  "yaml": []
+  "yaml": [
+   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1"
+  ]
  }
 }

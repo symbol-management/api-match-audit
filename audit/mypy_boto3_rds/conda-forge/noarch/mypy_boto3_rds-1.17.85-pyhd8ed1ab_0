@@ -1,8 +1,5 @@
 {
  "bad": [
-  "botocore.client.ClientMeta",
-  "botocore.paginate.Paginator",
-  "botocore.waiter.Waiter",
   "datetime.datetime",
   "mypy_boto3_rds.__init__.RDSClient",
   "sys",
@@ -15,16 +12,19 @@
   "typing.Literal",
   "typing.Type",
   "typing.TypedDict",
-  "typing.overload",
-  "typing_extensions.Literal",
-  "typing_extensions.TypedDict"
+  "typing.overload"
  ],
  "deps": {
-  "botocore": [],
+  "botocore": [
+   "botocore/conda-forge/noarch/botocore-1.10.82-py_0"
+  ],
   "datetime": [],
   "mypy_boto3_rds": [],
   "sys": [],
   "typing": [],
-  "typing_extensions": []
+  "typing_extensions": [
+   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
+   "typing_extensions/conda-forge/noarch/typing_extensions-3.7.4.3-py_0"
+  ]
  }
 }

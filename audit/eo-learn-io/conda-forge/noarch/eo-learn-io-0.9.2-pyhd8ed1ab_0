@@ -1,36 +1,25 @@
 {
  "bad": [
   "abc.abstractmethod",
-  "boto3",
-  "boto3.session.Session",
   "collections",
   "collections.namedtuple",
   "datetime",
   "datetime.datetime",
   "dateutil",
   "dateutil.parser.parse",
-  "eolearn.core.EOPatch",
-  "eolearn.core.EOTask",
-  "eolearn.core.FeatureType",
   "eolearn.core.FeatureType.DATA",
   "eolearn.core.FeatureType.MASK",
   "eolearn.core.FeatureType.MASK_TIMELESS",
   "eolearn.core.FeatureType.META_INFO",
   "eolearn.core.FeatureType.SCALAR",
-  "eolearn.core.FeatureTypeSet",
   "eolearn.core.FeatureTypeSet.RASTER_TYPES.union",
   "eolearn.core.fs_utils.get_base_filesystem_and_path",
   "fiona",
   "fiona.Env",
   "fiona.open",
   "fiona.session.AWSSession",
-  "fs",
-  "fs.path.dirname",
-  "geopandas",
   "geopandas.GeoDataFrame.from_features",
-  "geopandas.GeoSeries",
   "geopandas.clip",
-  "geopandas.read_file",
   "itertools.repeat",
   "logging",
   "logging.getLogger",
@@ -87,14 +76,22 @@
  ],
  "deps": {
   "abc": [],
-  "boto3": [],
+  "boto3": [
+   "boto3/conda-forge/noarch/boto3-1.13.1-pyh9f0ad1d_0"
+  ],
   "collections": [],
   "datetime": [],
   "dateutil": [],
-  "eolearn": [],
+  "eolearn": [
+   "eo-learn-core/conda-forge/noarch/eo-learn-core-0.7.0-py_0"
+  ],
   "fiona": [],
-  "fs": [],
-  "geopandas": [],
+  "fs": [
+   "fs/conda-forge/noarch/fs-2.0.9-py_0"
+  ],
+  "geopandas": [
+   "geopandas/conda-forge/noarch/geopandas-0.5.0-py_0"
+  ],
   "itertools": [],
   "logging": [],
   "numpy": [],

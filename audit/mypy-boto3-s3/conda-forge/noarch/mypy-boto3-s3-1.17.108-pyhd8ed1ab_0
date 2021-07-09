@@ -1,13 +1,5 @@
 {
  "bad": [
-  "boto3.resources.base.ServiceResource",
-  "boto3.resources.collection.ResourceCollection",
-  "boto3.s3.transfer.TransferConfig",
-  "botocore.client.BaseClient",
-  "botocore.client.ClientMeta",
-  "botocore.paginate.Paginator",
-  "botocore.response.StreamingBody",
-  "botocore.waiter.Waiter",
   "datetime.datetime",
   "mypy_boto3_s3.__init__.S3Client",
   "mypy_boto3_s3.__init__.S3ServiceResource",
@@ -24,17 +16,22 @@
   "typing.Type",
   "typing.TypedDict",
   "typing.Union",
-  "typing.overload",
-  "typing_extensions.Literal",
-  "typing_extensions.TypedDict"
+  "typing.overload"
  ],
  "deps": {
-  "boto3": [],
-  "botocore": [],
+  "boto3": [
+   "boto3/conda-forge/noarch/boto3-1.13.1-pyh9f0ad1d_0"
+  ],
+  "botocore": [
+   "botocore/conda-forge/noarch/botocore-1.10.82-py_0"
+  ],
   "datetime": [],
   "mypy_boto3_s3": [],
   "sys": [],
   "typing": [],
-  "typing_extensions": []
+  "typing_extensions": [
+   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
+   "typing_extensions/conda-forge/noarch/typing_extensions-3.7.4.3-py_0"
+  ]
  }
 }

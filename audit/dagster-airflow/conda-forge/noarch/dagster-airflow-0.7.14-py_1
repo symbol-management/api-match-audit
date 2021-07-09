@@ -101,14 +101,6 @@
   "dagster.utils.indenting_printer.IndentingStringIoPrinter",
   "dagster.utils.load_yaml_from_glob_list",
   "dagster_airflow.__init__.__version__",
-  "dagster_graphql.client.mutations.DagsterGraphQLClientError",
-  "dagster_graphql.client.mutations.execute_execute_plan_mutation",
-  "dagster_graphql.client.mutations.handle_execute_plan_result_raw",
-  "dagster_graphql.client.mutations.handle_execution_errors",
-  "dagster_graphql.client.query.EXECUTE_PLAN_MUTATION",
-  "dagster_graphql.client.query.RAW_EXECUTE_PLAN_MUTATION",
-  "dagster_graphql.client.util.construct_variables",
-  "dagster_graphql.client.util.parse_raw_log_lines",
   "datetime",
   "datetime.datetime",
   "datetime.datetime.now",
@@ -153,17 +145,13 @@
   "pytest.fixture",
   "re",
   "re.sub",
-  "six",
-  "six.ensure_str",
   "sys",
   "sys.exc_info",
   "sys.stdout",
   "time",
   "time.sleep",
   "vendor.python_operator.PythonOperator",
-  "warnings",
-  "yaml",
-  "yaml.dump"
+  "warnings"
  ],
  "deps": {
   "_DummyHook": [],
@@ -177,7 +165,9 @@
   "contextlib": [],
   "dagster": [],
   "dagster_airflow": [],
-  "dagster_graphql": [],
+  "dagster_graphql": [
+   "dagster-graphql/conda-forge/noarch/dagster-graphql-0.8.2-pyhc8dfbb8_0"
+  ],
   "datetime": [],
   "dateutil": [],
   "docker": [],
@@ -192,11 +182,15 @@
   "pkg_resources": [],
   "pytest": [],
   "re": [],
-  "six": [],
+  "six": [
+   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1"
+  ],
   "sys": [],
   "time": [],
   "vendor": [],
   "warnings": [],
-  "yaml": []
+  "yaml": [
+   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1"
+  ]
  }
 }
