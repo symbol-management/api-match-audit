@@ -1,14 +1,6 @@
 {
  "bad": [
   "__future__.absolute_import",
-  "click",
-  "click.INT",
-  "click.Path",
-  "click.STRING",
-  "click.command",
-  "click.confirm",
-  "click.option",
-  "click.version_option",
   "collections.OrderedDict",
   "contextlib.contextmanager",
   "dagit.__init__.__version__",
@@ -45,14 +37,12 @@
   "flask_sockets.Sockets",
   "gevent.pywsgi",
   "gevent.pywsgi.WSGIServer",
-  "geventwebsocket.handler.WebSocketHandler",
   "graphql_ws.constants.GQL_COMPLETE",
   "graphql_ws.constants.GQL_DATA",
   "graphql_ws.gevent.GeventSubscriptionServer",
   "graphql_ws.gevent.SubscriptionObserver",
   "io",
   "io.BytesIO",
-  "nbconvert.HTMLExporter",
   "os",
   "os.getcwd",
   "os.getpid",
@@ -74,7 +64,9 @@
  ],
  "deps": {
   "__future__": [],
-  "click": [],
+  "click": [
+   "click/conda-forge/noarch/click-7.0-py_0"
+  ],
   "collections": [],
   "contextlib": [],
   "dagit": [],
@@ -92,13 +84,17 @@
   "flask_graphql": [],
   "flask_sockets": [],
   "gevent": [],
-  "geventwebsocket": [],
+  "geventwebsocket": [
+   "gevent-websocket/conda-forge/noarch/gevent-websocket-0.10.1-py_0"
+  ],
   "graphql": [
    "graphql-core/conda-forge/noarch/graphql-core-2.0-py_0"
   ],
   "graphql_ws": [],
   "io": [],
-  "nbconvert": [],
+  "nbconvert": [
+   "nbconvert/conda-forge/noarch/nbconvert-5.5.0-py_0"
+  ],
   "nbformat": [
    "nbformat/conda-forge/noarch/nbformat-5.1.3-pyhd8ed1ab_0"
   ],

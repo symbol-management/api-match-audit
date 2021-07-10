@@ -1,7 +1,5 @@
 {
  "bad": [
-  "boto3.session",
-  "boto3.session.Session",
   "importlib.util",
   "logging",
   "logging.DEBUG",
@@ -79,8 +77,6 @@
   "mypy_boto3_dms.client.DatabaseMigrationServiceClient",
   "mypy_boto3_docdb.client.DocDBClient",
   "mypy_boto3_ds.client.DirectoryServiceClient",
-  "mypy_boto3_dynamodb.client.DynamoDBClient",
-  "mypy_boto3_dynamodb.service_resource.DynamoDBServiceResource",
   "mypy_boto3_dynamodbstreams.client.DynamoDBStreamsClient",
   "mypy_boto3_ebs.client.EBSClient",
   "mypy_boto3_ec2_instance_connect.client.EC2InstanceConnectClient",
@@ -281,7 +277,9 @@
   "typing.overload"
  ],
  "deps": {
-  "boto3": [],
+  "boto3": [
+   "boto3/conda-forge/noarch/boto3-1.13.1-pyh9f0ad1d_0"
+  ],
   "botocore": [
    "botocore/conda-forge/noarch/botocore-1.10.82-py_0"
   ],
@@ -365,7 +363,9 @@
   "mypy_boto3_dms": [],
   "mypy_boto3_docdb": [],
   "mypy_boto3_ds": [],
-  "mypy_boto3_dynamodb": [],
+  "mypy_boto3_dynamodb": [
+   "mypy_boto3_dynamodb/conda-forge/noarch/mypy_boto3_dynamodb-1.17.106-pyhd8ed1ab_0"
+  ],
   "mypy_boto3_dynamodbstreams": [],
   "mypy_boto3_ebs": [],
   "mypy_boto3_ec2": [

@@ -67,10 +67,6 @@
   "functools.partial",
   "inspect",
   "inspect.isawaitable",
-  "jinja2.ChoiceLoader",
-  "jinja2.Environment",
-  "jinja2.FileSystemLoader",
-  "jinja2.PrefixLoader",
   "json",
   "json.dumps",
   "json.loads",
@@ -108,7 +104,6 @@
   "jupyterhub.traitlets.EntryPointType",
   "jupyterhub.utils.iterate_until",
   "jupyterhub.utils.url_path_join",
-  "kubespawner.KubeSpawner",
   "logging",
   "logging.config.fileConfig",
   "logging.getLogger",
@@ -128,9 +123,6 @@
   "os.path.exists",
   "os.path.join",
   "os.path.split",
-  "pluggy",
-  "pluggy.HookimplMarker",
-  "pluggy.PluginManager",
   "pluggymanager.pm.hook.get_builder_DockerBuilder",
   "pluggymanager.pm.hook.get_hubextension_main_DashboardEditHandler",
   "pluggymanager.pm.register",
@@ -179,22 +171,6 @@
   "tornado.web",
   "tornado.web.HTTPError",
   "tornado.web.authenticated",
-  "traitlets.Any",
-  "traitlets.Bool",
-  "traitlets.Dict",
-  "traitlets.Integer",
-  "traitlets.List",
-  "traitlets.TraitError",
-  "traitlets.Unicode",
-  "traitlets.config.Application",
-  "traitlets.config.Configurable",
-  "traitlets.config.LoggingConfigurable",
-  "traitlets.config.MultipleInstanceError",
-  "traitlets.config.SingletonConfigurable",
-  "traitlets.config.catch_config_error",
-  "traitlets.default",
-  "traitlets.observe",
-  "traitlets.validate",
   "urllib.parse.urlparse"
  ],
  "deps": {
@@ -220,15 +196,21 @@
   "f": [],
   "functools": [],
   "inspect": [],
-  "jinja2": [],
+  "jinja2": [
+   "jinja2/conda-forge/noarch/jinja2-2.10-py_1"
+  ],
   "json": [],
   "jupyterhub": [],
-  "kubespawner": [],
+  "kubespawner": [
+   "jupyterhub-kubespawner/conda-forge/noarch/jupyterhub-kubespawner-1.0.0-pyhd8ed1ab_0"
+  ],
   "logging": [],
   "m": [],
   "orm": [],
   "os": [],
-  "pluggy": [],
+  "pluggy": [
+   "pluggy/conda-forge/noarch/pluggy-0.10.0-py_0"
+  ],
   "pluggymanager": [],
   "re": [],
   "ready_event": [],
@@ -241,7 +223,9 @@
   "tempfile": [],
   "tljh": [],
   "tornado": [],
-  "traitlets": [],
+  "traitlets": [
+   "traitlets/conda-forge/noarch/traitlets-5.0.3-py_0"
+  ],
   "urllib": []
  }
 }

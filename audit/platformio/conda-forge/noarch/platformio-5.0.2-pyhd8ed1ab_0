@@ -1,9 +1,6 @@
 {
  "bad": [
   "ConfigParser",
-  "OpenSSL.SSL",
-  "OpenSSL.SSL.VERIFY_FAIL_IF_NO_PEER_CERT",
-  "OpenSSL.SSL.VERIFY_PEER",
   "Queue",
   "Queue.Empty",
   "SCons",
@@ -144,9 +141,7 @@
   "json.dumps",
   "json.load",
   "json.loads",
-  "jsonrpc",
   "jsonrpc.JSONRPCResponseManager.handle",
-  "jsonrpc.exceptions.JSONRPCDispatchException",
   "locale",
   "locale.getdefaultlocale",
   "mDNSListener",
@@ -445,7 +440,9 @@
  ],
  "deps": {
   "ConfigParser": [],
-  "OpenSSL": [],
+  "OpenSSL": [
+   "pyopenssl/conda-forge/noarch/pyopenssl-19.1.0-py_1"
+  ],
   "Queue": [],
   "SCons": [],
   "__future__": [],
@@ -535,7 +532,9 @@
   "io": [],
   "itertools": [],
   "json": [],
-  "jsonrpc": [],
+  "jsonrpc": [
+   "json-rpc/conda-forge/noarch/json-rpc-1.12.1-py_0"
+  ],
   "locale": [],
   "mDNSListener": [],
   "marshmallow": [

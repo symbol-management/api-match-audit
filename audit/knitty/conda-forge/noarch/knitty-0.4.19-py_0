@@ -8,13 +8,6 @@
   "base64.decodebytes",
   "base64.encodebytes",
   "check",
-  "click",
-  "click.File",
-  "click.Path",
-  "click.argument",
-  "click.command",
-  "click.option",
-  "click.pass_context",
   "collections.abc.Mapping",
   "collections.namedtuple",
   "comments",
@@ -34,7 +27,6 @@
   "json",
   "json.dumps",
   "json.loads",
-  "jupyter_client.manager.start_new_kernel",
   "knitty.__init__.get_versions",
   "knitty.notedown.__init__.err",
   "logging",
@@ -43,10 +35,6 @@
   "meta",
   "mimetypes",
   "mimetypes.guess_extension",
-  "nbconvert.TemplateExporter",
-  "nbconvert.preprocessors.execute.ExecutePreprocessor",
-  "nbconvert.utils.base.NbConvertBase",
-  "nbconvert.utils.io.unicode_std_stream",
   "notebook.services.contents.filemanager.FileContentsManager",
   "notebook.transutils",
   "options.Bool",
@@ -119,14 +107,13 @@
   "traceback",
   "traceback.print_exc",
   "trailing_space",
-  "traitlets.Enum",
-  "traitlets.HasTraits",
-  "traitlets.TraitType",
   "transform_key",
   "typing.Iterable",
   "typing.List",
   "typing.Tuple",
-  "typing.Union"
+  "typing.Union",
+  "yaml",
+  "yaml.load"
  ],
  "deps": {
   "IPython": [],
@@ -134,7 +121,9 @@
   "b64_encode": [],
   "base64": [],
   "check": [],
-  "click": [],
+  "click": [
+   "click/conda-forge/noarch/click-7.0-py_0"
+  ],
   "collections": [],
   "comments": [],
   "contentsmanager": [],
@@ -147,12 +136,16 @@
   "io": [],
   "is_exe": [],
   "json": [],
-  "jupyter_client": [],
+  "jupyter_client": [
+   "jupyter_client/conda-forge/noarch/jupyter_client-6.1.7-py_0"
+  ],
   "knitty": [],
   "logging": [],
   "meta": [],
   "mimetypes": [],
-  "nbconvert": [],
+  "nbconvert": [
+   "nbconvert/conda-forge/noarch/nbconvert-5.5.0-py_0"
+  ],
   "nbformat": [
    "nbformat/conda-forge/noarch/nbformat-5.1.3-pyhd8ed1ab_0"
   ],
@@ -178,11 +171,11 @@
   "tornado": [],
   "traceback": [],
   "trailing_space": [],
-  "traitlets": [],
+  "traitlets": [
+   "traitlets/conda-forge/noarch/traitlets-5.0.3-py_0"
+  ],
   "transform_key": [],
   "typing": [],
-  "yaml": [
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1"
-  ]
+  "yaml": []
  }
 }

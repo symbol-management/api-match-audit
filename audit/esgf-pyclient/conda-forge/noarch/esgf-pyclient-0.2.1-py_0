@@ -1,8 +1,5 @@
 {
  "bad": [
-  "OpenSSL",
-  "OpenSSL.SSL.FILETYPE_PEM",
-  "OpenSSL.crypto.load_certificate",
   "ResultClass",
   "_cmp",
   "append",
@@ -28,7 +25,6 @@
   "datetime.timedelta",
   "decode",
   "getpass.getpass",
-  "jinja2.Template",
   "logging",
   "logging.INFO",
   "logging.basicConfig",
@@ -55,8 +51,6 @@
   "re.match",
   "re.split",
   "re.sub",
-  "requests_cache",
-  "requests_cache.core.CachedSession",
   "search.consts.OPERATOR_NEQ",
   "shutil",
   "shutil.rmtree",
@@ -79,7 +73,9 @@
   "xml.etree.ElementTree.fromstring"
  ],
  "deps": {
-  "OpenSSL": [],
+  "OpenSSL": [
+   "pyopenssl/conda-forge/noarch/pyopenssl-19.1.0-py_1"
+  ],
   "ResultClass": [],
   "_cmp": [],
   "append": [],
@@ -93,7 +89,9 @@
   "datetime": [],
   "decode": [],
   "getpass": [],
-  "jinja2": [],
+  "jinja2": [
+   "jinja2/conda-forge/noarch/jinja2-2.10-py_1"
+  ],
   "logging": [],
   "myproxy": [],
   "os": [],
@@ -103,7 +101,9 @@
    "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
    "requests/conda-forge/noarch/requests-2.23.0-pyh8c360ce_2"
   ],
-  "requests_cache": [],
+  "requests_cache": [
+   "requests-cache/conda-forge/noarch/requests-cache-0.4.13-py_1"
+  ],
   "search": [],
   "shutil": [],
   "six": [
