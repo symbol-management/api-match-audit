@@ -32,19 +32,24 @@
   "datetime.datetime.now",
   "datetime.time",
   "datetime.timedelta",
-  "dateutil.parser",
   "enum.Enum",
   "fiona",
   "fiona.drivers",
   "fiona.open",
+  "flask.Flask",
+  "flask.current_app",
   "flask.current_app.config.data_interface",
   "flask.current_app.config.scheduler.add",
   "flask.current_app.config.scheduler.get_status",
   "flask.current_app.config.scheduler.kill",
+  "flask.jsonify",
+  "flask.render_template",
+  "flask.request",
   "flask.request.args",
   "flask.request.args.keys",
   "flask.request.form",
   "flask.request.get_json",
+  "flask.views.MethodView",
   "functools.lru_cache",
   "glob",
   "glob.glob",
@@ -55,7 +60,6 @@
   "itertools",
   "itertools.chain",
   "itertools.product",
-  "jinja2.exceptions",
   "json",
   "json.dumps",
   "json.loads",
@@ -221,12 +225,12 @@
   "collections": [],
   "copy": [],
   "datetime": [],
-  "dateutil": [],
+  "dateutil": [
+   "python-dateutil/conda-forge/noarch/python-dateutil-2.7.4-py_0"
+  ],
   "enum": [],
   "fiona": [],
-  "flask": [
-   "flask/conda-forge/noarch/flask-2.0.0-pyhd8ed1ab_0"
-  ],
+  "flask": [],
   "functools": [],
   "glob": [],
   "importlib": [],
@@ -235,7 +239,9 @@
    "isodate/conda-forge/noarch/isodate-0.6.0-py_1"
   ],
   "itertools": [],
-  "jinja2": [],
+  "jinja2": [
+   "jinja2/conda-forge/noarch/jinja2-2.10-py_1"
+  ],
   "json": [],
   "logging": [],
   "networkx": [
