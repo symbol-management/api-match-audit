@@ -1,15 +1,11 @@
 {
  "bad": [
-  "attr",
-  "attr.asdict",
   "attr.ib",
   "attr.s",
   "calc_comparison",
   "copy.copy",
   "datetime.datetime",
   "datetime.datetime.strptime",
-  "dateutil.tz",
-  "dateutil.tz.gettz",
   "decode_trf",
   "get_grid",
   "get_logfile_mosaiq_results",
@@ -121,9 +117,6 @@
   "pathlib",
   "pathlib.Path",
   "plot_results",
-  "pydicom",
-  "pydicom.dataset.FileDataset",
-  "pydicom.uid",
   "pymedphys._pack2.dcm.__init__.ClobberCheck",
   "pymedphys._pack2.dcm.__init__.__clobber_check",
   "pymedphys._pack2.utilities.__init__.ClobberCheck",
@@ -161,11 +154,15 @@
   "typing.List"
  ],
  "deps": {
-  "attr": [],
+  "attr": [
+   "attrs/conda-forge/noarch/attrs-18.2.0-py_0"
+  ],
   "calc_comparison": [],
   "copy": [],
   "datetime": [],
-  "dateutil": [],
+  "dateutil": [
+   "python-dateutil/conda-forge/noarch/python-dateutil-2.7.4-py_0"
+  ],
   "decode_trf": [],
   "get_grid": [],
   "get_logfile_mosaiq_results": [],
@@ -183,7 +180,9 @@
   "pandas": [],
   "pathlib": [],
   "plot_results": [],
-  "pydicom": [],
+  "pydicom": [
+   "pydicom/conda-forge/noarch/pydicom-1.0.1-py_1"
+  ],
   "pymedphys": [],
   "pymssql": [],
   "scipy": [],

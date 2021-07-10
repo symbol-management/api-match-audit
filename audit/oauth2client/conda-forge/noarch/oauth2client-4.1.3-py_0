@@ -7,15 +7,6 @@
   "Crypto.Signature.PKCS1_v1_5",
   "Crypto.Signature.PKCS1_v1_5.new",
   "Crypto.Util.asn1.DerSequence",
-  "OpenSSL.crypto",
-  "OpenSSL.crypto.Error",
-  "OpenSSL.crypto.FILETYPE_PEM",
-  "OpenSSL.crypto.dump_privatekey",
-  "OpenSSL.crypto.load_certificate",
-  "OpenSSL.crypto.load_pkcs12",
-  "OpenSSL.crypto.load_privatekey",
-  "OpenSSL.crypto.sign",
-  "OpenSSL.crypto.verify",
   "__future__.absolute_import",
   "__future__.print_function",
   "_get_application_default_credential_from_file",
@@ -47,7 +38,6 @@
   "django.core.urlresolvers",
   "django.core.urlresolvers.reverse",
   "django.db.models.Field",
-  "fasteners",
   "flask._app_ctx_stack.top",
   "flask.current_app.logger.error",
   "flask.current_app.logger.exception",
@@ -206,7 +196,9 @@
  ],
  "deps": {
   "Crypto": [],
-  "OpenSSL": [],
+  "OpenSSL": [
+   "pyopenssl/conda-forge/noarch/pyopenssl-19.1.0-py_1"
+  ],
   "__future__": [],
   "_get_application_default_credential_from_file": [],
   "_get_well_known_file": [],
@@ -223,7 +215,9 @@
   "django": [
    "django/conda-forge/noarch/django-3.1.4-pyhd8ed1ab_0"
   ],
-  "fasteners": [],
+  "fasteners": [
+   "fasteners/conda-forge/noarch/fasteners-0.16-pyhd8ed1ab_0"
+  ],
   "flask": [
    "flask/conda-forge/noarch/flask-2.0.0-pyhd8ed1ab_0"
   ],
