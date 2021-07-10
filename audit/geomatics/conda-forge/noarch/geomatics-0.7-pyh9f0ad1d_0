@@ -5,8 +5,6 @@
   "datetime.datetime.strptime",
   "datetime.datetime.utcnow",
   "datetime.timedelta",
-  "dateutil",
-  "dateutil.relativedelta.relativedelta",
   "glob",
   "glob.glob",
   "json",
@@ -42,15 +40,14 @@
   "rasterio.transform.from_bounds",
   "rasterio.transform.from_origin",
   "rasterstats",
-  "rasterstats.zonal_stats",
-  "shapefile",
-  "shapefile.POLYGON",
-  "shapefile.Writer"
+  "rasterstats.zonal_stats"
  ],
  "deps": {
   "__get_dimension_order": [],
   "datetime": [],
-  "dateutil": [],
+  "dateutil": [
+   "python-dateutil/conda-forge/noarch/python-dateutil-2.7.4-py_0"
+  ],
   "glob": [],
   "json": [],
   "netCDF4": [],
@@ -61,8 +58,11 @@
   "rasterio": [],
   "rasterstats": [],
   "requests": [
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1"
+   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
+   "requests/conda-forge/noarch/requests-2.23.0-pyh8c360ce_2"
   ],
-  "shapefile": []
+  "shapefile": [
+   "pyshp/conda-forge/noarch/pyshp-1.2.12-py_0"
+  ]
  }
 }
