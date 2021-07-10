@@ -16,8 +16,6 @@
   "asyncio.get_event_loop",
   "autopep8",
   "autopep8.fix_code",
-  "black.FileMode",
-  "black.format_str",
   "click",
   "click.ClickException",
   "click.argument",
@@ -81,21 +79,11 @@
   "jsonschema.ValidationError",
   "jsonschema.draft7_format_checker",
   "jsonschema.validate",
-  "jupyter_client.asynchronous.client.AsyncKernelClient",
-  "jupyter_client.clientabc.KernelClientABC",
   "jupyter_client.clientabc.KernelClientABC.register",
-  "jupyter_client.manager.AsyncKernelManager",
-  "jupyter_client.managerabc.KernelManagerABC",
   "jupyter_client.managerabc.KernelManagerABC.register",
   "jupyter_core.paths",
-  "jupyter_server.base.handlers.APIHandler",
-  "jupyter_server.gateway.managers.GatewayClient",
   "jupyter_server.gateway.managers.GatewayClient.instance",
-  "jupyter_server.gateway.managers.gateway_request",
   "jupyter_server.utils.ensure_async",
-  "jupyter_server.utils.url_path_join",
-  "jupyter_server.utils.url_unescape",
-  "kfp_notebook.pipeline.NotebookOp",
   "logging",
   "logging.DEBUG",
   "logging.INFO",
@@ -210,10 +198,7 @@
   "warnings",
   "warnings.catch_warnings",
   "warnings.simplefilter",
-  "warnings.warn",
-  "websocket",
-  "websocket.WebSocketConnectionClosedException",
-  "websocket.create_connection"
+  "warnings.warn"
  ],
  "deps": {
   "_compose_instance_location": [],
@@ -228,7 +213,9 @@
   "ast": [],
   "asyncio": [],
   "autopep8": [],
-  "black": [],
+  "black": [
+   "black/conda-forge/noarch/black-18.5b1-py_0"
+  ],
   "click": [],
   "collections": [],
   "colorama": [
@@ -249,13 +236,19 @@
   "jp_fetch": [],
   "json": [],
   "jsonschema": [],
-  "jupyter_client": [],
+  "jupyter_client": [
+   "jupyter_client/conda-forge/noarch/jupyter_client-6.1.7-py_0"
+  ],
   "jupyter_core": [],
-  "jupyter_server": [],
+  "jupyter_server": [
+   "jupyter_server/conda-forge/noarch/jupyter_server-1.8.0-pyhd8ed1ab_0"
+  ],
   "kfp": [
    "kfp/conda-forge/noarch/kfp-1.3.0-pyhd8ed1ab_0"
   ],
-  "kfp_notebook": [],
+  "kfp_notebook": [
+   "kfp-notebook/conda-forge/noarch/kfp-notebook-0.17.0-pyhd8ed1ab_0"
+  ],
   "kfp_server_api": [
    "kfp-server-api/conda-forge/noarch/kfp-server-api-1.0.3-pyh9f0ad1d_0"
   ],
@@ -278,7 +271,8 @@
   "queue": [],
   "re": [],
   "requests": [
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1"
+   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
+   "requests/conda-forge/noarch/requests-2.23.0-pyh8c360ce_2"
   ],
   "schema": [],
   "shutil": [],
@@ -300,7 +294,9 @@
   ],
   "uuid": [],
   "warnings": [],
-  "websocket": [],
+  "websocket": [
+   "websocket-client/conda-forge/noarch/websocket-client-0.46.0-py_0"
+  ],
   "yaspin": [
    "yaspin/conda-forge/noarch/yaspin-1.5.0-pyhd8ed1ab_0"
   ]

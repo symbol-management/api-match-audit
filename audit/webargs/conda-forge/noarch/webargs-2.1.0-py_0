@@ -4,9 +4,6 @@
   "asyncio",
   "asyncio.coroutine",
   "asyncio.iscoroutinefunction",
-  "bottle",
-  "bottle.HTTPError",
-  "bottle.request",
   "cls",
   "collections",
   "collections.Mapping",
@@ -15,9 +12,6 @@
   "falcon.Request",
   "falcon.status_codes",
   "falcon.util.uri.parse_query_string",
-  "flask",
-  "flask.abort",
-  "flask.request",
   "func",
   "function",
   "functools",
@@ -44,19 +38,20 @@
   "webapp2.get_request",
   "webapp2_extras.json",
   "webargs.core.Parser.DEFAULT_LOCATIONS",
-  "webargs.core.Parser.__location_map__",
-  "webob.multidict",
-  "webob.multidict.MultiDict",
-  "werkzeug.exceptions.HTTPException"
+  "webargs.core.Parser.__location_map__"
  ],
  "deps": {
   "__future__": [],
   "asyncio": [],
-  "bottle": [],
+  "bottle": [
+   "bottle/conda-forge/noarch/bottle-0.12.16-py_0"
+  ],
   "cls": [],
   "collections": [],
   "falcon": [],
-  "flask": [],
+  "flask": [
+   "flask/conda-forge/noarch/flask-2.0.0-pyhd8ed1ab_0"
+  ],
   "func": [],
   "function": [],
   "functools": [],
@@ -64,7 +59,8 @@
   "json": [],
   "logging": [],
   "marshmallow": [
-   "marshmallow/conda-forge/noarch/marshmallow-2.13.1-py_1"
+   "marshmallow/conda-forge/noarch/marshmallow-2.13.1-py_1",
+   "toastedmarshmallow/conda-forge/noarch/toastedmarshmallow-0.2.6-py_0"
   ],
   "pyramid": [],
   "simplejson": [],
@@ -75,7 +71,11 @@
   "webapp2": [],
   "webapp2_extras": [],
   "webargs": [],
-  "webob": [],
-  "werkzeug": []
+  "webob": [
+   "webob/conda-forge/noarch/webob-1.8.7-pyhd8ed1ab_0"
+  ],
+  "werkzeug": [
+   "werkzeug/conda-forge/noarch/werkzeug-1.0.0-py_0"
+  ]
  }
 }

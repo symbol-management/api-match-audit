@@ -1,10 +1,7 @@
 {
  "bad": [
   "fixtures.config.addinivalue_line",
-  "flask._request_ctx_stack",
   "flask._request_ctx_stack.top",
-  "flask.json",
-  "flask.json.loads",
   "logging",
   "logging.error",
   "multiprocessing",
@@ -28,12 +25,13 @@
   "urllib.error.URLError",
   "urllib.request.urlopen",
   "urllib2.URLError",
-  "urllib2.urlopen",
-  "werkzeug.utils.cached_property"
+  "urllib2.urlopen"
  ],
  "deps": {
   "fixtures": [],
-  "flask": [],
+  "flask": [
+   "flask/conda-forge/noarch/flask-2.0.0-pyhd8ed1ab_0"
+  ],
   "logging": [],
   "multiprocessing": [],
   "os": [],
@@ -45,6 +43,8 @@
   "time": [],
   "urllib": [],
   "urllib2": [],
-  "werkzeug": []
+  "werkzeug": [
+   "werkzeug/conda-forge/noarch/werkzeug-1.0.0-py_0"
+  ]
  }
 }
