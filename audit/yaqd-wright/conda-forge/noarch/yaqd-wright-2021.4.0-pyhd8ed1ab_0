@@ -22,9 +22,6 @@
   "typing.Any",
   "typing.Dict",
   "typing.List",
-  "yaqc",
-  "yaqc.Client",
-  "yaqd_core.ContinuousHardware",
   "yaqd_core.HasLimits",
   "yaqd_core.HasMapping",
   "yaqd_core.HasMeasureTrigger",
@@ -34,9 +31,7 @@
   "yaqd_core.IsHomeable",
   "yaqd_core.IsSensor",
   "yaqd_core.UsesSerial",
-  "yaqd_core.UsesUart",
-  "yaqd_core.aserial",
-  "yaqd_core.aserial.ASerial"
+  "yaqd_core.UsesUart"
  ],
  "deps": {
   "asyncio": [],
@@ -45,7 +40,11 @@
   "serial": [],
   "time": [],
   "typing": [],
-  "yaqc": [],
-  "yaqd_core": []
+  "yaqc": [
+   "yaqc/conda-forge/noarch/yaqc-0.2.0-py_0"
+  ],
+  "yaqd_core": [
+   "yaqd-core/conda-forge/noarch/yaqd-core-2020.7.1-py_0"
+  ]
  }
 }

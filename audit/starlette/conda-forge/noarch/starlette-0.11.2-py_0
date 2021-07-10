@@ -1,7 +1,5 @@
 {
  "bad": [
-  "aiofiles",
-  "aiofiles.os.stat",
   "aiofiles.os.stat.S_ISDIR",
   "aiofiles.os.stat.S_ISLNK",
   "aiofiles.os.stat.S_ISREG",
@@ -48,9 +46,6 @@
   "instance",
   "io",
   "io.BytesIO",
-  "itsdangerous",
-  "itsdangerous.exc.BadTimeSignature",
-  "itsdangerous.exc.SignatureExpired",
   "jinja2",
   "json",
   "json.decoder.JSONDecodeError",
@@ -125,7 +120,9 @@
   "urllib.parse.urlsplit"
  ],
  "deps": {
-  "aiofiles": [],
+  "aiofiles": [
+   "aiofiles/conda-forge/noarch/aiofiles-0.5.0-py_0"
+  ],
   "asgi": [],
   "asyncio": [],
   "base64": [],
@@ -154,7 +151,9 @@
   "inspect": [],
   "instance": [],
   "io": [],
-  "itsdangerous": [],
+  "itsdangerous": [
+   "itsdangerous/conda-forge/noarch/itsdangerous-1.1.0-py_0"
+  ],
   "jinja2": [],
   "json": [],
   "math": [],

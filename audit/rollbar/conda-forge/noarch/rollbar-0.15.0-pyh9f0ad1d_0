@@ -42,9 +42,6 @@
   "base64",
   "base64.b64decode",
   "base64.b64encode",
-  "bottle",
-  "bottle.BaseRequest",
-  "bottle.request",
   "callback",
   "cmd",
   "collections",
@@ -155,14 +152,6 @@
   "pylons.request.url",
   "pylons.request.user",
   "pylons.request.user_id",
-  "pyramid.httpexceptions.WSGIHTTPException",
-  "pyramid.request.Request",
-  "pyramid.settings.asbool",
-  "pyramid.threadlocal.get_current_request",
-  "pyramid.tweens.EXCVIEW",
-  "pyramid.util.DottedNameResolver",
-  "pyramid_debugtoolbar.tbtools",
-  "pyramid_debugtoolbar.tbtools.Traceback.render_full",
   "pyramid_handler",
   "quart.request.url_rule",
   "queue",
@@ -171,8 +160,6 @@
   "re",
   "re.compile",
   "report_exc_info",
-  "rest_framework.request.Request",
-  "rest_framework.views.exception_handler",
   "rollbar.__init__.ANONYMIZE",
   "rollbar.__init__.ApiError",
   "rollbar.__init__.ApiException",
@@ -302,7 +289,6 @@
   "tornado.httpserver.HTTPRequest",
   "traceback",
   "traceback.extract_tb",
-  "treq",
   "tuple.__new__",
   "twisted.internet.protocol",
   "twisted.internet.protocol.Factory",
@@ -330,11 +316,7 @@
   "user_prop",
   "uuid",
   "uuid.uuid4",
-  "webob",
-  "webob.BaseRequest",
   "webob.Request.blank",
-  "werkzeug.local.LocalProxy",
-  "werkzeug.wrappers.BaseRequest",
   "wsgiref.util"
  ],
  "deps": {
@@ -375,7 +357,9 @@
   "_wsgi_extract_user_ip": [],
   "array": [],
   "base64": [],
-  "bottle": [],
+  "bottle": [
+   "bottle/conda-forge/noarch/bottle-0.12.16-py_0"
+  ],
   "callback": [],
   "cmd": [],
   "collections": [],
@@ -415,8 +399,12 @@
   "pathlib": [],
   "poll": [],
   "pylons": [],
-  "pyramid": [],
-  "pyramid_debugtoolbar": [],
+  "pyramid": [
+   "pyramid/conda-forge/noarch/pyramid-1.10.8-pyhd8ed1ab_0"
+  ],
+  "pyramid_debugtoolbar": [
+   "pyramid_debugtoolbar/conda-forge/noarch/pyramid_debugtoolbar-4.9-pyhd8ed1ab_0"
+  ],
   "pyramid_handler": [],
   "quart": [
    "quart/conda-forge/noarch/quart-0.11.1-py_0"
@@ -426,9 +414,12 @@
   "re": [],
   "report_exc_info": [],
   "requests": [
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1"
+   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
+   "requests/conda-forge/noarch/requests-2.23.0-pyh8c360ce_2"
   ],
-  "rest_framework": [],
+  "rest_framework": [
+   "djangorestframework/conda-forge/noarch/djangorestframework-3.12.1-py_0"
+  ],
   "rollbar": [],
   "rollbar_person_prop": [],
   "sanic": [],
@@ -445,7 +436,9 @@
   "tmp": [],
   "tornado": [],
   "traceback": [],
-  "treq": [],
+  "treq": [
+   "treq/conda-forge/noarch/treq-17.8.0-py_1"
+  ],
   "tuple": [],
   "twisted": [],
   "types": [],
@@ -454,8 +447,12 @@
   "user_id_prop": [],
   "user_prop": [],
   "uuid": [],
-  "webob": [],
-  "werkzeug": [],
+  "webob": [
+   "webob/conda-forge/noarch/webob-1.8.7-pyhd8ed1ab_0"
+  ],
+  "werkzeug": [
+   "werkzeug/conda-forge/noarch/werkzeug-1.0.0-py_0"
+  ],
   "wsgiref": []
  }
 }

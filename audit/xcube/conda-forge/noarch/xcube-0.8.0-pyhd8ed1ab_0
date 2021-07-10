@@ -43,8 +43,6 @@
   "abc.ABC",
   "abc.ABCMeta",
   "abc.abstractmethod",
-  "affine",
-  "affine.Affine",
   "ast",
   "ast.AST",
   "ast.Add",
@@ -111,8 +109,6 @@
   "config.CubeConfig.get_schema",
   "config.InputConfig.get_schema",
   "config.OutputConfig.get_schema",
-  "configparser",
-  "configparser.ConfigParser",
   "contextlib.AbstractContextManager",
   "convert_geometry",
   "converter",
@@ -186,13 +182,6 @@
   "jsonschema.draft7_format_checker",
   "jsonschema.exceptions.ValidationError",
   "jsonschema.validate",
-  "jwt",
-  "jwt.ExpiredSignatureError",
-  "jwt.InvalidTokenError",
-  "jwt.algorithms.RSAAlgorithm",
-  "jwt.algorithms.RSAAlgorithm.from_jwk",
-  "jwt.decode",
-  "jwt.get_unverified_header",
   "list_s3_bucket",
   "list_s3_bucket_keys",
   "logging",
@@ -483,15 +472,7 @@
   "xcube.core.store.TYPE_SPECIFIER_MULTILEVEL_DATASET.satisfies",
   "xcube.core.store.TypeSpecifier.normalize",
   "xcube.core.store.TypeSpecifier.parse",
-  "zarr",
-  "zarr.Blosc",
-  "zarr.LRUStoreCache",
-  "zarr.convenience.consolidate_metadata",
-  "zarr.convenience.open_array",
-  "zarr.convenience.save_array",
-  "zarr.creation.empty",
-  "zarr.open",
-  "zarr.open_group"
+  "zarr.Blosc"
  ],
  "deps": {
   "IPython": [],
@@ -530,7 +511,9 @@
   "_update_dataset_attrs": [],
   "_validate_points": [],
   "abc": [],
-  "affine": [],
+  "affine": [
+   "affine/conda-forge/noarch/affine-2.3.0-py_0"
+  ],
   "ast": [],
   "asyncio": [],
   "base64": [],
@@ -543,7 +526,9 @@
   "collections": [],
   "component": [],
   "config": [],
-  "configparser": [],
+  "configparser": [
+   "configparser/conda-forge/noarch/configparser-5.0.0-py_0"
+  ],
   "contextlib": [],
   "convert_geometry": [],
   "converter": [],
@@ -595,7 +580,9 @@
   ],
   "json": [],
   "jsonschema": [],
-  "jwt": [],
+  "jwt": [
+   "pyjwt/conda-forge/noarch/pyjwt-1.6.3-py_0"
+  ],
   "list_s3_bucket": [],
   "list_s3_bucket_keys": [],
   "logging": [],
@@ -668,6 +655,8 @@
   "yaml": [
    "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1"
   ],
-  "zarr": []
+  "zarr": [
+   "zarr/conda-forge/noarch/zarr-2.7.0-pyhd8ed1ab_0"
+  ]
  }
 }

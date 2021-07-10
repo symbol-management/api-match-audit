@@ -28,13 +28,10 @@
   "hmac.new",
   "http",
   "http.HTTPStatus",
-  "httpx",
   "json",
   "json.dumps",
   "json.load",
   "json.loads",
-  "jwt",
-  "jwt.encode",
   "os",
   "os.environ",
   "os.fspath",
@@ -72,8 +69,6 @@
   "typing.Type",
   "typing.Union",
   "typing.cast",
-  "uritemplate",
-  "uritemplate.expand",
   "urllib.parse"
  ],
  "deps": {
@@ -89,9 +84,13 @@
   "hashlib": [],
   "hmac": [],
   "http": [],
-  "httpx": [],
+  "httpx": [
+   "httpx/conda-forge/noarch/httpx-0.12.0-py_0"
+  ],
   "json": [],
-  "jwt": [],
+  "jwt": [
+   "pyjwt/conda-forge/noarch/pyjwt-1.6.3-py_0"
+  ],
   "os": [],
   "pathlib": [],
   "re": [],
@@ -99,7 +98,9 @@
   "time": [],
   "tornado": [],
   "typing": [],
-  "uritemplate": [],
+  "uritemplate": [
+   "uritemplate/conda-forge/noarch/uritemplate-3.0.0-py_1"
+  ],
   "urllib": []
  }
 }

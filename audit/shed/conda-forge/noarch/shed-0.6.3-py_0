@@ -1,23 +1,12 @@
 {
  "bad": [
   "RunEngine",
-  "bluesky.callbacks.CallbackBase",
-  "bluesky.plan_stubs.abs_set",
-  "bluesky.plan_stubs.checkpoint",
-  "bluesky.plan_stubs.trigger_and_read",
-  "bluesky.plans",
-  "bluesky.plans.count",
-  "bluesky.plans.scan",
-  "bluesky.tests.conftest",
-  "bluesky.utils.sanitize_np",
   "collections.MutableMapping",
   "collections.deque",
   "compose_datum",
   "copy",
   "copy.deepcopy",
   "data",
-  "event_model.compose_resource",
-  "event_model.compose_run",
   "func",
   "handler",
   "importlib",
@@ -44,8 +33,6 @@
   "operator.add",
   "operator.mul",
   "operator.truediv",
-  "ophyd.sim",
-  "ophyd.sim.SynSignalWithRegistry",
   "os",
   "os.makedirs",
   "os.path.dirname",
@@ -79,7 +66,9 @@
  ],
  "deps": {
   "RunEngine": [],
-  "bluesky": [],
+  "bluesky": [
+   "bluesky/conda-forge/noarch/bluesky-1.5.5-py_0"
+  ],
   "collections": [],
   "compose_datum": [],
   "copy": [],
@@ -90,7 +79,9 @@
   "distributed": [
    "distributed/conda-forge/noarch/distributed-2.1.0-py_0"
   ],
-  "event_model": [],
+  "event_model": [
+   "event-model/conda-forge/noarch/event-model-1.11.1-py_0"
+  ],
   "func": [],
   "handler": [],
   "importlib": [],
@@ -101,7 +92,9 @@
   "node": [],
   "numpy": [],
   "operator": [],
-  "ophyd": [],
+  "ophyd": [
+   "ophyd/conda-forge/noarch/ophyd-1.5.2-py_0"
+  ],
   "os": [],
   "pprint": [],
   "pytest": [],
