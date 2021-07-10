@@ -12,19 +12,14 @@
   "datetime.datetime.now",
   "datetime.datetime.utcnow",
   "datetime.timedelta",
-  "flask._app_ctx_stack",
-  "flask._request_ctx_stack",
   "flask._request_ctx_stack.top",
   "flask._request_ctx_stack.top.expired_jwt",
   "flask._request_ctx_stack.top.jwt",
   "flask._request_ctx_stack.top.jwt_user",
-  "flask.current_app",
   "flask.current_app.config",
   "flask.current_app.config.get",
   "flask.current_app.extensions",
   "flask.current_app.json_encoder",
-  "flask.jsonify",
-  "flask.request",
   "flask.request.args.get",
   "flask.request.content_type",
   "flask.request.cookies.get",
@@ -85,10 +80,7 @@
   "jwt.get_unverified_header",
   "uuid",
   "uuid.uuid4",
-  "warnings.warn",
-  "werkzeug.exceptions.BadRequest",
-  "werkzeug.local.LocalProxy",
-  "werkzeug.security.safe_str_cmp"
+  "warnings.warn"
  ],
  "deps": {
   "_decode_jwt_from_request": [],
@@ -96,7 +88,9 @@
   "calendar": [],
   "collections": [],
   "datetime": [],
-  "flask": [],
+  "flask": [
+   "flask/conda-forge/noarch/flask-2.0.0-pyhd8ed1ab_0"
+  ],
   "flask_jwt_extended": [],
   "fn": [],
   "functools": [],
@@ -107,6 +101,8 @@
   ],
   "uuid": [],
   "warnings": [],
-  "werkzeug": []
+  "werkzeug": [
+   "werkzeug/conda-forge/noarch/werkzeug-1.0.0-py_0"
+  ]
  }
 }
