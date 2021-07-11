@@ -2,9 +2,6 @@
  "bad": [
   "Airway.valid",
   "CoordinatePoint.valid",
-  "OpenSSL.crypto",
-  "OpenSSL.crypto.PKey.from_cryptography_key",
-  "OpenSSL.crypto.X509.from_cryptography",
   "Point.valid",
   "_clip_generator",
   "airports",
@@ -12,8 +9,6 @@
   "airspaces.eurocontrol_aixm.AIXMAirspaceParser.cache_dir",
   "all_aligned_segments",
   "altair.datum.name",
-  "appdirs.user_cache_dir",
-  "appdirs.user_config_dir",
   "argparse",
   "argparse.ArgumentParser",
   "argparse.REMAINDER",
@@ -28,12 +23,8 @@
   "cache_dir",
   "cached_values",
   "calendar.timegm",
-  "cartes.crs",
-  "cartes.osm.Nominatim",
   "cartes.osm.Nominatim.search",
-  "cartes.osm.Overpass",
   "cartes.osm.Overpass.request",
-  "cartes.osm.requests.session",
   "cartes.osm.requests.session.proxies.update",
   "cartes.osm.requests.session.trust_env",
   "cartopy",
@@ -337,27 +328,9 @@
   "scipy.spatial.distance.pdist",
   "scipy.spatial.distance.squareform",
   "session.get",
-  "shapely.geometry.GeometryCollection",
-  "shapely.geometry.LineString",
-  "shapely.geometry.MultiLineString",
-  "shapely.geometry.MultiPoint",
-  "shapely.geometry.Point",
-  "shapely.geometry.Polygon",
-  "shapely.geometry.base",
-  "shapely.geometry.base.BaseGeometry",
-  "shapely.geometry.base.BaseMultipartGeometry",
   "shapely.geometry.base.mark_line",
   "shapely.geometry.base.transform_fold",
-  "shapely.geometry.mapping",
-  "shapely.geometry.polygon",
-  "shapely.geometry.polygon.orient",
-  "shapely.geometry.shape",
   "shapely.geometry.shape.shape",
-  "shapely.ops.cascaded_union",
-  "shapely.ops.linemerge",
-  "shapely.ops.transform",
-  "shapely.ops.unary_union",
-  "shapely.wkt.dumps",
   "signal",
   "signal.SIGINT",
   "signal.signal",
@@ -547,7 +520,9 @@
  "deps": {
   "Airway": [],
   "CoordinatePoint": [],
-  "OpenSSL": [],
+  "OpenSSL": [
+   "pyopenssl/conda-forge/noarch/pyopenssl-19.1.0-py_1"
+  ],
   "Point": [],
   "_clip_generator": [],
   "airports": [],
@@ -556,7 +531,9 @@
   "altair": [
    "altair/conda-forge/noarch/altair-4.1.0-py_1"
   ],
-  "appdirs": [],
+  "appdirs": [
+   "appdirs/conda-forge/noarch/appdirs-1.4.4-pyh9f0ad1d_0"
+  ],
   "argparse": [],
   "basic": [],
   "bs4": [],
@@ -564,7 +541,9 @@
   "cache_dir": [],
   "cached_values": [],
   "calendar": [],
-  "cartes": [],
+  "cartes": [
+   "cartes/conda-forge/noarch/cartes-0.3-pyhd8ed1ab_0"
+  ],
   "cartopy": [],
   "cascaded_filters": [],
   "collections": [],
@@ -648,7 +627,9 @@
   "rtlsdr": [],
   "scipy": [],
   "session": [],
-  "shapely": [],
+  "shapely": [
+   "solaris/conda-forge/noarch/solaris-0.4.0-pyhe05a262_0"
+  ],
   "signal": [],
   "socket": [],
   "ssl": [],
