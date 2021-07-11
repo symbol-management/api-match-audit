@@ -23,9 +23,6 @@
   "json.dumps",
   "json.load",
   "json.loads",
-  "jsonschema",
-  "jsonschema.ValidationError",
-  "jsonschema.validate",
   "logging",
   "logging.DEBUG",
   "logging.ERROR",
@@ -56,7 +53,6 @@
   "os.path.join",
   "os.symlink",
   "os.unlink",
-  "pathlib.Path",
   "pkg_resources",
   "pkg_resources.DistributionNotFound",
   "pkg_resources.get_distribution",
@@ -95,7 +91,8 @@
  ],
  "deps": {
   "ansible": [
-   "ansible-base/conda-forge/noarch/ansible-base-2.10.4-pyhd8ed1ab_0"
+   "ansible-base/conda-forge/noarch/ansible-base-2.10.4-pyhd8ed1ab_0",
+   "ansible-core/conda-forge/noarch/ansible-core-2.11.1-pyhd8ed1ab_0"
   ],
   "ansible_bender": [],
   "argparse": [],
@@ -109,10 +106,14 @@
   "hashlib": [],
   "importlib": [],
   "json": [],
-  "jsonschema": [],
+  "jsonschema": [
+   "jsonschema/conda-forge/noarch/jsonschema-3.2.0-py_2"
+  ],
   "logging": [],
   "os": [],
-  "pathlib": [],
+  "pathlib": [
+   "pathlib/conda-forge/noarch/pathlib-1.0.1-py_1"
+  ],
   "pkg_resources": [],
   "random": [],
   "re": [],
