@@ -2,8 +2,6 @@
  "bad": [
   "__future__.unicode_literals",
   "__future__.with_statement",
-  "boto",
-  "boto.connect_s3",
   "django.conf.settings.AWS_STORAGE_BUCKET_NAME",
   "django.contrib.staticfiles.management.commands.collectstatic",
   "django.contrib.staticfiles.management.commands.collectstatic.Command",
@@ -35,8 +33,6 @@
   "random.random",
   "settings.threads",
   "storages.backends.s3boto.S3BotoStorage",
-  "storages.backends.s3boto3.S3Boto3Storage",
-  "storages.utils.safe_join",
   "string",
   "string.ascii_letters",
   "string.digits",
@@ -53,7 +49,9 @@
  ],
  "deps": {
   "__future__": [],
-  "boto": [],
+  "boto": [
+   "boto/conda-forge/noarch/boto-2.49.0-py_0"
+  ],
   "django": [
    "django/conda-forge/noarch/django-3.1.4-pyhd8ed1ab_0"
   ],
@@ -73,7 +71,9 @@
   "platform": [],
   "random": [],
   "settings": [],
-  "storages": [],
+  "storages": [
+   "django-storages/conda-forge/noarch/django-storages-1.11.1-pyhd8ed1ab_0"
+  ],
   "string": [],
   "tempfile": [],
   "unittest": [],
