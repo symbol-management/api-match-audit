@@ -2,19 +2,7 @@
  "bad": [
   "MyApp",
   "StringIO.StringIO",
-  "abc",
-  "abc.ABCMeta",
-  "abc.abstractmethod",
-  "abc.abstractproperty",
   "action",
-  "argparse",
-  "argparse.Action",
-  "argparse.ArgumentError",
-  "argparse.ArgumentParser",
-  "argparse.HelpFormatter",
-  "argparse.SUPPRESS",
-  "argparse._ArgumentGroup",
-  "argparse._MutuallyExclusiveGroup",
   "base.ListFormatter",
   "base.SingleFormatter",
   "cliff.app.NAME",
@@ -47,25 +35,13 @@
   "cliff.app.stdout.content",
   "cliff.command.return_value",
   "cliff_app_class",
-  "cmd2",
-  "cmd2.Cmd",
   "cmd2.Cmd.completenames",
-  "cmd2.Cmd.do_help",
-  "cmd2.Cmd.do_quit",
   "cmd2.Cmd.get_names",
   "cmd2.Statement",
   "cmd2.exceptions.Cmd2ArgparseError",
   "cmd_factory",
-  "codecs",
-  "codecs.StreamReader",
-  "codecs.StreamWriter",
-  "codecs.getreader",
-  "codecs.getwriter",
   "command.Command",
   "command._get_distributions_by_modules",
-  "csv",
-  "ctypes",
-  "ctypes.create_string_buffer",
   "ctypes.windll.kernel32.GetConsoleScreenBufferInfo",
   "ctypes.windll.kernel32.GetStdHandle",
   "display.DisplayCommandBase",
@@ -75,64 +51,27 @@
   "docutils.nodes.make_id",
   "docutils.nodes.section",
   "docutils.nodes.title",
-  "docutils.parsers.rst",
-  "docutils.parsers.rst.Directive",
   "docutils.parsers.rst.directives",
   "docutils.parsers.rst.directives.unchanged",
   "docutils.statemachine",
   "docutils.statemachine.ViewList",
   "docutils.statemachine.string2lines",
   "emitter",
-  "fcntl.ioctl",
   "fixtures",
   "fixtures.MonkeyPatch",
   "fixtures.StringStream",
-  "fnmatch",
-  "fnmatch.fnmatch",
-  "functools",
-  "functools.partial",
   "help.HelpAction",
   "help.HelpExit",
-  "importlib",
-  "importlib.import_module",
-  "inspect",
-  "inspect.getargspec",
-  "inspect.getdoc",
-  "inspect.getfullargspec",
-  "inspect.getmodule",
-  "inspect.isclass",
   "interactive.InteractiveApp",
-  "io.StringIO",
   "itertools",
   "itertools.chain",
   "itertools.compress",
   "itertools.takewhile",
-  "json",
-  "json.dump",
-  "json.loads",
-  "locale",
-  "locale.Error",
-  "locale.LC_ALL",
-  "locale.getpreferredencoding",
-  "locale.setlocale",
-  "logging",
-  "logging.DEBUG",
   "logging.DEBUG.get",
-  "logging.FileHandler",
-  "logging.Formatter",
   "logging.INFO.get",
-  "logging.NullHandler",
-  "logging.StreamHandler",
   "logging.WARNING.get",
-  "logging.getLogger",
-  "logging.handlers",
-  "operator",
-  "operator.itemgetter",
-  "os",
-  "os.environ",
   "os.environ.get",
   "os.get_terminal_size",
-  "os.linesep",
   "os.path.basename",
   "os.path.dirname",
   "os.path.split",
@@ -144,13 +83,8 @@
   "prefixed_lines",
   "prettytable",
   "prettytable.PrettyTable",
-  "re",
   "re.VERBOSE",
-  "re.compile",
   "shell_factory",
-  "shlex",
-  "shlex.split",
-  "struct",
   "struct.calcsize",
   "struct.unpack",
   "sys",
@@ -161,84 +95,108 @@
   "sys.stdin",
   "sys.stdout",
   "sys.version_info",
-  "termios",
   "termios.TIOCGWINSZ",
   "testscenarios",
   "testscenarios.load_tests_apply_scenarios",
   "testtools",
   "testtools.TestCase",
-  "textwrap",
-  "textwrap.dedent",
-  "traceback",
-  "traceback.print_exc",
   "unicodecsv",
   "unicodecsv.QUOTE_ALL",
   "unicodecsv.QUOTE_MINIMAL",
   "unicodecsv.QUOTE_NONE",
   "unicodecsv.QUOTE_NONNUMERIC",
   "unicodecsv.writer",
-  "unittest",
-  "unittest.TestCase",
-  "unittest.mock",
-  "unittest.mock.ANY",
-  "unittest.mock.MagicMock",
-  "unittest.mock.Mock",
-  "unittest.mock.call",
-  "unittest.mock.patch",
   "unittest.mock.patch.dict",
   "unittest.mock.patch.object",
   "utils.COST",
   "utils.damerau_levenshtein",
   "utils.getargspec",
-  "utils.getwriter",
-  "warnings",
-  "warnings.warn",
-  "weakref"
+  "utils.getwriter"
  ],
  "deps": {
   "MyApp": [],
   "StringIO": [],
-  "abc": [],
+  "abc": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "action": [],
-  "argparse": [],
+  "argparse": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "base": [],
   "cliff": [],
   "cliff_app_class": [],
-  "cmd2": [],
+  "cmd2": [
+   "cmd2/conda-forge/linux-64/cmd2-0.8.5-py36_0"
+  ],
   "cmd_factory": [],
-  "codecs": [],
+  "codecs": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "command": [],
-  "csv": [],
-  "ctypes": [],
+  "csv": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "ctypes": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "display": [],
   "dist_for_obj": [],
-  "docutils": [],
+  "docutils": [
+   "docutils/conda-forge/linux-64/docutils-0.14-py27_0"
+  ],
   "emitter": [],
   "factory": [
    "factory_boy/conda-forge/noarch/factory_boy-2.11.1-pyh9f0ad1d_1"
   ],
-  "fcntl": [],
+  "fcntl": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "fixtures": [],
-  "fnmatch": [],
-  "functools": [],
+  "fnmatch": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "functools": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "help": [],
-  "importlib": [],
-  "inspect": [],
+  "importlib": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "inspect": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "interactive": [],
-  "io": [],
+  "io": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "itertools": [],
-  "json": [],
-  "locale": [],
-  "logging": [],
-  "operator": [],
-  "os": [],
+  "json": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "locale": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "logging": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "operator": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "os": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "parsed": [],
   "pkg_resources": [],
   "prefixed_lines": [],
   "prettytable": [],
-  "re": [],
+  "re": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "shell_factory": [],
-  "shlex": [],
+  "shlex": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "six": [
    "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
    "privy/conda-forge/noarch/privy-6.0.0-py_0"
@@ -246,18 +204,32 @@
   "stevedore": [
    "stevedore/conda-forge/noarch/stevedore-1.26.0-py_0"
   ],
-  "struct": [],
+  "struct": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "sys": [],
-  "termios": [],
+  "termios": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "testscenarios": [],
   "testtools": [],
-  "textwrap": [],
-  "traceback": [],
+  "textwrap": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "traceback": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "unicodecsv": [],
-  "unittest": [],
+  "unittest": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "utils": [],
-  "warnings": [],
-  "weakref": [],
+  "warnings": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "weakref": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "yaml": [
    "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1"
   ]

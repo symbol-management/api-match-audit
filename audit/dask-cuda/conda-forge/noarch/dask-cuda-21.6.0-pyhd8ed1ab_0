@@ -1,28 +1,10 @@
 {
  "bad": [
   "Cluster",
-  "__future__.absolute_import",
-  "__future__.division",
-  "__future__.print_function",
   "_run",
-  "argparse",
-  "argparse.ArgumentParser",
-  "asyncio",
-  "asyncio.gather",
-  "asyncio.get_event_loop",
-  "asyncio.run_coroutine_threadsafe",
-  "asyncio.sleep",
   "atexit",
-  "collections.OrderedDict",
-  "collections.defaultdict",
   "comms.default_comms",
-  "concurrent.futures",
-  "contextlib",
-  "contextlib.contextmanager",
   "contextlib.nullcontext",
-  "contextlib.suppress",
-  "copy",
-  "copy.deepcopy",
   "coroutine",
   "cudf",
   "cudf.DataFrame",
@@ -35,13 +17,7 @@
   "cudf.core.multiindex",
   "cudf.core.series",
   "cudf.from_pandas",
-  "cupy",
-  "cupy.cuda.memory",
   "cupy.cuda.memory.MemoryPointer",
-  "cupy.cuda.set_allocator",
-  "cupy.ndarray",
-  "cupy.random.RandomState",
-  "cupyx.scipy.ndimage.filters.convolve",
   "dask",
   "dask.array.core.einsum_lookup",
   "dask.base.compute_as_if_collection",
@@ -74,8 +50,6 @@
   "dask_cuda.__init__.get_versions",
   "dask_cuda.__init__.proxify_decorator",
   "dask_cuda.__init__.unproxify_decorator",
-  "datetime.datetime",
-  "datetime.datetime.now",
   "distributed.MultiLock",
   "distributed.protocol.dask_deserialize.register",
   "distributed.protocol.dask_serialize.register",
@@ -84,51 +58,18 @@
   "external_finalize",
   "finalize",
   "func",
-  "functools",
-  "functools.partial",
-  "functools.wraps",
-  "inspect",
-  "inspect.signature",
   "is_device_object.is_device_object.register",
-  "json",
-  "json.dump",
-  "json.loads",
-  "logging",
-  "logging.getLogger",
-  "math",
-  "math.ceil",
   "multiprocessing.cpu_count",
-  "numba.cuda",
-  "numpy",
-  "numpy.arange",
-  "numpy.binary_repr",
-  "numpy.bool",
-  "numpy.concatenate",
   "numpy.cuda.Device",
-  "numpy.empty",
-  "numpy.fft.fft",
   "numpy.flip",
-  "numpy.frombuffer",
-  "numpy.full",
-  "numpy.full_like",
-  "numpy.linalg.svd",
-  "numpy.prod",
   "numpy.quantile",
   "numpy.random.RandomState",
   "numpy.random.permutation",
   "numpy.random.seed",
-  "numpy.repeat",
-  "numpy.where",
   "nvtx.annotate",
   "nvtx.end_range",
   "nvtx.start_range",
   "object.__setattr__",
-  "operator",
-  "operator.getitem",
-  "operator.index",
-  "operator.itruediv",
-  "operator.truediv",
-  "os",
   "os.environ.get",
   "os.environ.split",
   "os.path.exists",
@@ -136,16 +77,6 @@
   "os.path.join",
   "os.remove",
   "os.sched_setaffinity",
-  "pandas",
-  "pandas.DataFrame",
-  "pandas.Index",
-  "pandas.Series",
-  "pandas.read_csv",
-  "pickle",
-  "pickle.dumps",
-  "pickle.loads",
-  "pydoc",
-  "pydoc.locate",
   "recv",
   "rmm",
   "rmm.enable_logging",
@@ -154,10 +85,8 @@
   "rmm.reinitialize",
   "rmm.rmm_cupy_allocator",
   "run",
-  "scipy.ndimage.convolve",
   "send",
   "subclass",
-  "threading",
   "time",
   "time.monotonic",
   "time.perf_counter",
@@ -166,28 +95,10 @@
   "tornado.ioloop.IOLoop",
   "tornado.ioloop.IOLoop.current",
   "tornado.ioloop.TimeoutError",
-  "typing.Any",
-  "typing.DefaultDict",
-  "typing.Dict",
-  "typing.Hashable",
-  "typing.Iterator",
-  "typing.List",
-  "typing.MutableMapping",
-  "typing.Optional",
-  "typing.Set",
-  "typing.Tuple",
   "ucp",
   "ucp._libs.topological_distance.TopologicalDistance",
   "ucp.get_ucx_version",
-  "uuid",
   "val",
-  "warnings",
-  "warnings.filterwarnings",
-  "warnings.warn",
-  "weakref",
-  "weakref.finalize",
-  "weakref.proxy",
-  "weakref.ref",
   "zict.Buffer",
   "zict.File",
   "zict.Func",
@@ -195,75 +106,134 @@
  ],
  "deps": {
   "Cluster": [],
-  "__future__": [],
+  "__future__": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "_run": [],
-  "argparse": [],
-  "asyncio": [],
+  "argparse": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "asyncio": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "atexit": [],
   "click": [
    "click/conda-forge/noarch/click-7.0-py_0"
   ],
-  "collections": [],
+  "collections": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "comms": [],
-  "concurrent": [],
-  "contextlib": [],
-  "copy": [],
+  "concurrent": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "contextlib": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "copy": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "coroutine": [],
   "cudf": [],
-  "cupy": [],
-  "cupyx": [],
+  "cupy": [
+   "cupy/conda-forge/linux-64/cupy-8.4.0-py38h7fa8657_1",
+   "cupy/conda-forge/linux-64/cupy-8.5.0-py37hd2f5b3b_1"
+  ],
+  "cupyx": [
+   "cupy/conda-forge/linux-64/cupy-8.4.0-py38h7fa8657_1",
+   "cupy/conda-forge/linux-64/cupy-8.5.0-py37hd2f5b3b_1"
+  ],
   "dask": [
    "dask-core/conda-forge/noarch/dask-core-0.15.3-py_0"
   ],
   "dask_cuda": [],
-  "datetime": [],
+  "datetime": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "distributed": [
    "distributed/conda-forge/noarch/distributed-2.1.0-py_0"
   ],
   "external_finalize": [],
   "finalize": [],
   "func": [],
-  "functools": [],
-  "inspect": [],
+  "functools": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "inspect": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "is_device_object": [],
-  "json": [],
-  "logging": [],
-  "math": [],
+  "json": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "logging": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "math": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "multiprocessing": [],
-  "numba": [],
-  "numpy": [],
+  "numba": [
+   "numba/conda-forge/linux-64/numba-0.45.0-py37hb3f55d8_0"
+  ],
+  "numpy": [
+   "numpy/conda-forge/linux-64/numpy-1.9.3-py27_blas_openblashb06ca3d_7"
+  ],
   "nvtx": [],
   "object": [],
-  "operator": [],
-  "os": [],
-  "pandas": [],
-  "pickle": [],
-  "pydoc": [],
+  "operator": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "os": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "pandas": [
+   "pandas/conda-forge/linux-64/pandas-0.25.0-py37hb3f55d8_0"
+  ],
+  "pickle": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "pydoc": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "pynvml": [
-   "nvidia-ml/conda-forge/noarch/nvidia-ml-7.352.0-py_0"
+   "nvidia-ml/conda-forge/noarch/nvidia-ml-7.352.0-py_0",
+   "pynvml/conda-forge/noarch/pynvml-11.0.0-pyhd8ed1ab_0"
   ],
   "recv": [],
   "rmm": [],
   "run": [],
-  "scipy": [],
+  "scipy": [
+   "scipy/conda-forge/linux-64/scipy-0.18.1-np111py34_blas_openblas_200"
+  ],
   "seaborn": [
    "seaborn-base/conda-forge/noarch/seaborn-base-0.11.0-pyhd8ed1ab_1",
    "seaborn/conda-forge/noarch/seaborn-0.9.0-py_2"
   ],
   "send": [],
   "subclass": [],
-  "threading": [],
+  "threading": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "time": [],
   "toolz": [
    "toolz/conda-forge/noarch/toolz-0.8.2-py_3"
   ],
   "tornado": [],
-  "typing": [],
+  "typing": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "ucp": [],
-  "uuid": [],
+  "uuid": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "val": [],
-  "warnings": [],
-  "weakref": [],
+  "warnings": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "weakref": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "zict": []
  }
 }

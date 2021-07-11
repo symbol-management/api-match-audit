@@ -5,7 +5,6 @@
   "_get_tracer_dict_key",
   "add_tracer",
   "aiohttp",
-  "asyncio",
   "atexit",
   "atexit.register",
   "autodynatrace.__init__.INSTRUMENT_LIBS",
@@ -50,25 +49,15 @@
   "flask.request.environ",
   "flask.request.headers",
   "flask.request.headers.get",
-  "functools",
-  "functools.wraps",
   "get_task_id",
   "get_tracer",
   "grpc.StatusCode.OK",
-  "importlib",
-  "importlib.import_module",
   "instrument_grpc_callable",
   "log.logger.debug",
   "log.logger.error",
   "log.logger.info",
   "log.logger.warn",
   "log.logger.warning",
-  "logging",
-  "logging.Formatter",
-  "logging.INFO",
-  "logging.StreamHandler",
-  "logging.getLevelName",
-  "logging.getLogger",
   "mock.patch",
   "oneagent",
   "oneagent.common.AgentState.ACTIVE",
@@ -85,20 +74,12 @@
   "oneagent.sdk.ChannelType.TCP_IP",
   "oneagent.sdk.DatabaseVendor.ORACLE",
   "oneagent.shutdown",
-  "os",
-  "os.environ",
   "os.environ.get",
   "os.environ.pop",
-  "psycopg2",
-  "psycopg2.connect",
-  "psycopg2.extensions.connection",
-  "psycopg2.extensions.cursor",
   "pymongo.monitoring",
   "pymongo.monitoring.CommandListener",
   "pymongo.monitoring.CommandSucceededEvent",
   "pymongo.monitoring.register",
-  "re",
-  "re.search",
   "remove_tracer",
   "sdk.sdk.add_custom_request_attribute",
   "sdk.sdk.create_database_info",
@@ -118,7 +99,6 @@
   "six.moves.urllib.parse",
   "six.moves.urllib.parse.ParseResult",
   "six.moves.urllib.parse.urlunparse",
-  "socket",
   "socket.AF_INET6",
   "socket.gethostname",
   "socket.inet_pton",
@@ -132,8 +112,6 @@
   "sys.argv.endswith",
   "sys.modules",
   "sys.version_info",
-  "threading",
-  "threading.Lock",
   "time",
   "time.sleep",
   "trace_query",
@@ -143,8 +121,7 @@
   "wrapt.ObjectProxy",
   "wrapt.importer.when_imported",
   "wrapt.patch_function_wrapper",
-  "wrapt.wrap_function_wrapper",
-  "wsgiref.util.request_uri"
+  "wrapt.wrap_function_wrapper"
  ],
  "deps": {
   "DynatraceMongoListener": [],
@@ -152,7 +129,9 @@
   "_get_tracer_dict_key": [],
   "add_tracer": [],
   "aiohttp": [],
-  "asyncio": [],
+  "asyncio": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "atexit": [],
   "autodynatrace": [],
   "celery": [
@@ -172,29 +151,41 @@
   "flask": [
    "flask/conda-forge/noarch/flask-2.0.0-pyhd8ed1ab_0"
   ],
-  "functools": [],
+  "functools": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "get_task_id": [],
   "get_tracer": [],
   "grpc": [
    "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1"
   ],
-  "importlib": [],
+  "importlib": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "instrument_grpc_callable": [],
   "log": [],
-  "logging": [],
+  "logging": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "mock": [],
   "oneagent": [],
-  "os": [],
+  "os": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "pika": [
    "pika/conda-forge/noarch/pika-1.0.0b2-py_0",
    "pika/conda-forge/noarch/pika-1.1.0-pyh9f0ad1d_1"
   ],
-  "psycopg2": [],
+  "psycopg2": [
+   "psycopg2/conda-forge/linux-64/psycopg2-2.8.6-py39hba1e1b8_1"
+  ],
   "pymongo": [],
   "pysnmp": [
    "pysnmp/conda-forge/noarch/pysnmp-4.4.11-py_0"
   ],
-  "re": [],
+  "re": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "redis": [
    "redis-py/conda-forge/noarch/redis-py-3.2.1-py_0"
   ],
@@ -205,18 +196,24 @@
    "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
    "privy/conda-forge/noarch/privy-6.0.0-py_0"
   ],
-  "socket": [],
+  "socket": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "sqlalchemy": [],
   "starlette": [
    "starlette-base/conda-forge/noarch/starlette-base-0.13.5-py_2",
    "starlette/conda-forge/noarch/starlette-0.11.2-py_0"
   ],
   "sys": [],
-  "threading": [],
+  "threading": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "time": [],
   "trace_query": [],
   "wrapped": [],
   "wrapt": [],
-  "wsgiref": []
+  "wsgiref": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ]
  }
 }

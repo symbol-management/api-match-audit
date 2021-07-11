@@ -1,12 +1,5 @@
 {
  "bad": [
-  "__future__.absolute_import",
-  "__future__.division",
-  "__future__.unicode_literals",
-  "abc",
-  "abc.ABC",
-  "abc.ABCMeta",
-  "abc.abstractmethod",
   "array.array",
   "attestation.Attestation.__subclasses__",
   "attestation.FidoU2FAttestation.FORMAT",
@@ -15,9 +8,6 @@
   "base.AttestationType.ATT_CA",
   "base.AttestationType.BASIC",
   "base.AttestationType.SELF",
-  "base64.urlsafe_b64decode",
-  "base64.urlsafe_b64encode",
-  "binascii.b2a_hex",
   "cbor.decode",
   "cbor.decode_from",
   "cbor.encode",
@@ -25,7 +15,6 @@
   "client.WEBAUTHN_TYPE.GET_ASSERTION",
   "client.WEBAUTHN_TYPE.MAKE_CREDENTIAL",
   "cls",
-  "collections.namedtuple",
   "cose.CoseKey.for_alg",
   "cose.CoseKey.for_name",
   "cose.CoseKey.parse",
@@ -75,56 +64,12 @@
   "ctap2.ClientPin.PERMISSION.MAKE_CREDENTIAL",
   "ctap2.Info.create",
   "ctap2.extensions.Ctap2Extension.__subclasses__",
-  "ctypes",
-  "ctypes.CFUNCTYPE",
-  "ctypes.HRESULT",
-  "ctypes.LibraryLoader",
-  "ctypes.POINTER",
-  "ctypes.Structure",
-  "ctypes.WinDLL",
-  "ctypes.WinError",
-  "ctypes.byref",
-  "ctypes.c_bool",
-  "ctypes.c_byte",
-  "ctypes.c_char",
-  "ctypes.c_char_p",
-  "ctypes.c_double",
-  "ctypes.c_int",
-  "ctypes.c_int32",
-  "ctypes.c_long",
-  "ctypes.c_ubyte",
-  "ctypes.c_uint",
-  "ctypes.c_uint16",
-  "ctypes.c_uint32",
-  "ctypes.c_uint64",
-  "ctypes.c_uint8",
-  "ctypes.c_ulong",
-  "ctypes.c_ushort",
-  "ctypes.c_void_p",
-  "ctypes.c_wchar_p",
-  "ctypes.cast",
   "ctypes.cdll.LoadLibrary",
-  "ctypes.create_string_buffer",
-  "ctypes.pointer",
-  "ctypes.py_object",
-  "ctypes.sizeof",
-  "ctypes.string_at",
-  "ctypes.util",
-  "ctypes.util.find_library",
   "ctypes.windll.webauthn",
-  "ctypes.wintypes",
-  "ctypes.wintypes.BOOL",
-  "ctypes.wintypes.BOOLEAN",
-  "ctypes.wintypes.DWORD",
-  "ctypes.wintypes.HWND",
-  "ctypes.wintypes.LONG",
   "ctypes.wintypes.LPCWSTR",
   "decode_from",
   "encode",
-  "enum.auto",
   "f",
-  "fcntl",
-  "fcntl.ioctl",
   "fido2.__init__.ABC",
   "fido2.ctap2.__init__.Ctap2",
   "fido2.hid.__init__.CTAPHID",
@@ -138,41 +83,22 @@
   "fido2.hid.__init__.logger",
   "fido2.hid.__init__.open_connection",
   "fido2.pcsc.PCSCDevice",
-  "functools.wraps",
-  "glob",
-  "glob.glob",
   "hid.CAPABILITY.CBOR",
   "hid.CTAPHID.CBOR",
   "hid.CTAPHID.MSG",
   "hid.STATUS.UPNEEDED",
-  "io.BytesIO",
-  "json",
-  "json.dumps",
-  "json.loads",
-  "logging",
-  "logging.getLogger",
   "openbsd.get_descriptor",
   "openbsd.list_descriptors",
   "openbsd.open_connection",
-  "os",
   "os.O_RDONLY",
   "os.close",
   "os.listdir",
   "os.open",
-  "os.path",
   "os.path.dirname",
   "os.path.join",
   "os.read",
   "os.urandom",
   "os.write",
-  "platform",
-  "platform.architecture",
-  "platform.system",
-  "re",
-  "re.sub",
-  "select",
-  "select.POLLIN",
-  "select.poll",
   "six.moves.queue.Empty",
   "six.moves.queue.Queue",
   "six.moves.urllib.parse.urlparse",
@@ -182,7 +108,6 @@
   "smartcard.pcsc.PCSCContext.PCSCContext",
   "smartcard.pcsc.PCSCContext.PCSCContext.instance",
   "smartcard.pcsc.PCSCExceptions.ListReadersException",
-  "struct",
   "struct.Struct",
   "struct.error",
   "struct.pack",
@@ -190,10 +115,6 @@
   "struct.unpack_from",
   "sys",
   "sys.platform.startswith",
-  "threading",
-  "threading.Event",
-  "threading.Thread",
-  "threading.Timer",
   "uhid_freebsd",
   "uhid_freebsd.enumerate",
   "uhid_freebsd.get_report_data",
@@ -209,25 +130,31 @@
   "win_api.WebAuthNAuthenticatorAttachment.ANY",
   "win_api.WebAuthNAuthenticatorAttachment.from_string",
   "win_api.WebAuthNUserVerificationRequirement.from_string",
-  "win_api.WinAPI.version",
-  "zlib",
-  "zlib.compress",
-  "zlib.decompress",
-  "zlib.error"
+  "win_api.WinAPI.version"
  ],
  "deps": {
-  "__future__": [],
-  "abc": [],
+  "__future__": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "abc": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "array": [],
   "attestation": [],
   "base": [],
-  "base64": [],
-  "binascii": [],
+  "base64": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "binascii": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "cbor": [],
   "ce": [],
   "client": [],
   "cls": [],
-  "collections": [],
+  "collections": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "cose": [],
   "cryptography": [
    "privy/conda-forge/noarch/privy-6.0.0-py_0"
@@ -235,38 +162,66 @@
   "ctap": [],
   "ctap1": [],
   "ctap2": [],
-  "ctypes": [],
+  "ctypes": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "decode_from": [],
   "encode": [],
   "enum": [
-   "privy/conda-forge/noarch/privy-6.0.0-py_0"
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
   ],
   "f": [],
-  "fcntl": [],
+  "fcntl": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "fido2": [],
-  "functools": [],
-  "glob": [],
+  "functools": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "glob": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "hid": [],
-  "io": [],
-  "json": [],
-  "logging": [],
+  "io": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "json": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "logging": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "openbsd": [],
-  "os": [],
-  "platform": [],
-  "re": [],
-  "select": [],
+  "os": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "platform": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "re": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "select": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "six": [
    "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
    "privy/conda-forge/noarch/privy-6.0.0-py_0"
   ],
   "smartcard": [],
-  "struct": [],
+  "struct": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "sys": [],
-  "threading": [],
+  "threading": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "uhid_freebsd": [],
   "v": [],
   "webauthn": [],
   "win_api": [],
-  "zlib": []
+  "zlib": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ]
  }
 }

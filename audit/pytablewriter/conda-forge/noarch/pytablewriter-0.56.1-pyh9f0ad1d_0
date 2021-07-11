@@ -2,8 +2,6 @@
  "bad": [
   "TomlTableEncoder",
   "_GenericAlias",
-  "_collections_abc",
-  "_collections_abc._check_methods",
   "_common.import_error_msg_template.format",
   "_factory.TableWriterFactory.create_from_format_name",
   "_font.FontSize.LARGE",
@@ -16,9 +14,6 @@
   "_font.FontWeight.BOLD",
   "_font.FontWeight.NORMAL",
   "_logger.logger.debug",
-  "_pytest.capture.CaptureIO",
-  "_pytest.capture.EncodedFile",
-  "_pytest.compat.CaptureIO",
   "_style.Align.AUTO",
   "_style.Align.CENTER",
   "_style.Align.LEFT",
@@ -32,10 +27,6 @@
   "_table_format.FormatAttr.SECONDARY_EXT",
   "_table_format.FormatAttr.SECONDARY_NAME",
   "_text_writer.IndentationTextTableWriter.write_table",
-  "abc",
-  "abc.ABCMeta",
-  "abc.abstractmethod",
-  "abc.abstractproperty",
   "cls",
   "cls.__bases__",
   "cls.__dict__",
@@ -52,71 +43,40 @@
   "cls._gorg",
   "cls._is_protocol",
   "cls._is_runtime_protocol",
-  "collections",
-  "collections.ChainMap",
-  "collections.Counter",
-  "collections.abc",
   "collections.abc.AsyncGenerator",
   "collections.abc.AsyncIterable",
   "collections.abc.AsyncIterator",
   "collections.abc.Awaitable",
   "collections.abc.Coroutine",
-  "collections.defaultdict",
-  "collections.deque",
-  "collections.namedtuple",
   "cons",
-  "contextlib",
   "contextlib.AbstractAsyncContextManager",
-  "copy",
-  "copy.deepcopy",
   "dataproperty.Align.AUTO",
   "dataproperty.Align.CENTER",
   "dataproperty.DefaultValue.DATETIME_FORMAT",
   "dataproperty.Format.NONE",
   "dataproperty.Format.THOUSAND_SEPARATOR",
   "decimal.Decimal",
-  "importlib",
-  "importlib.import_module",
-  "io",
-  "io.StringIO",
   "ipykernel.iostream.OutStream",
   "itertools.chain",
   "itertools.chain.from_iterable",
-  "json",
   "loguru.logger.disable",
   "loguru.logger.enable",
-  "math",
-  "math.ceil",
   "mbstrdecoder.MultiByteStrDecoder",
-  "msgfy",
-  "msgfy.to_error_message",
-  "operator",
-  "operator.getitem",
-  "os",
   "os.path.abspath",
   "os.path.splitext",
-  "pandas",
-  "pandas.read_pickle",
   "pathvalidate.ErrorReason.NULL_NAME",
   "pathvalidate.error.ErrorReason.INVALID_CHARACTER",
   "pathvalidate.error.ErrorReason.INVALID_LENGTH",
   "pathvalidate.error.ErrorReason.RESERVED_NAME",
-  "pkgutil",
-  "pkgutil.iter_modules",
   "pytablereader",
   "pytablereader.CsvTableFileLoader",
   "pytablereader.CsvTableTextLoader",
   "pytablereader.DataError",
   "pytablereader.set_logger",
-  "re",
   "re.IGNORECASE",
   "re.MULTILINE",
   "re.UNICODE",
-  "re.compile",
-  "re.escape",
   "sanitizer.ElasticsearchIndexNameSanitizer",
-  "simplejson",
-  "simplejson.dumps",
   "simplesqlite",
   "simplesqlite.SimpleSQLite",
   "simplesqlite.set_logger",
@@ -140,8 +100,6 @@
   "sys.stdout",
   "sys.version_info",
   "text._html.HtmlTableWriter",
-  "textwrap.dedent",
-  "textwrap.indent",
   "toml.encoder.TomlEncoder",
   "type_hint",
   "typepy",
@@ -174,62 +132,16 @@
   "typepy.is_not_empty_sequence",
   "typepy.is_not_null_string",
   "typepy.is_null_string",
-  "typing",
-  "typing.Any",
-  "typing.AsyncContextManager",
-  "typing.Callable",
-  "typing.ChainMap",
-  "typing.ClassVar",
-  "typing.ContextManager",
-  "typing.Counter",
-  "typing.DefaultDict",
-  "typing.Deque",
-  "typing.Dict",
   "typing.Final",
-  "typing.Generator",
-  "typing.Generic",
-  "typing.GenericMeta",
-  "typing.IO",
-  "typing.List",
   "typing.Literal",
-  "typing.Mapping",
-  "typing.MutableMapping",
-  "typing.MutableSequence",
-  "typing.NewType",
-  "typing.NoReturn",
-  "typing.Optional",
-  "typing.Pattern",
   "typing.Protocol",
-  "typing.Sequence",
-  "typing.TYPE_CHECKING",
-  "typing.Text",
-  "typing.Tuple",
-  "typing.Type",
-  "typing.TypeVar",
   "typing.TypedDict",
-  "typing.TypingMeta",
-  "typing.Union",
-  "typing._FinalTypingBase",
   "typing._GenericAlias",
   "typing._SpecialForm",
-  "typing._TypingEllipsis",
-  "typing._TypingEmpty",
   "typing._collect_type_vars",
-  "typing._eval_type",
-  "typing._generic_new",
   "typing._geqv",
-  "typing._next_in_mro",
-  "typing._subs_tree",
-  "typing._tp_cache",
-  "typing._type_check",
-  "typing._type_repr",
-  "typing._type_vars",
-  "typing.cast",
   "typing.final",
-  "typing.get_type_hints",
   "typing.runtime_checkable",
-  "warnings",
-  "warnings.warn",
   "writer.BoldUnicodeTableWriter.FORMAT_NAME",
   "writer.BorderlessTableWriter.FORMAT_NAME",
   "writer.CssTableWriter.FORMAT_NAME",
@@ -266,21 +178,33 @@
  "deps": {
   "TomlTableEncoder": [],
   "_GenericAlias": [],
-  "_collections_abc": [],
+  "_collections_abc": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "_common": [],
   "_factory": [],
   "_font": [],
   "_logger": [],
-  "_pytest": [],
+  "_pytest": [
+   "pytest/conda-forge/linux-64/pytest-4.6.3-py27_0"
+  ],
   "_style": [],
   "_table_format": [],
   "_text_writer": [],
-  "abc": [],
+  "abc": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "cls": [],
-  "collections": [],
+  "collections": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "cons": [],
-  "contextlib": [],
-  "copy": [],
+  "contextlib": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "copy": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "dataproperty": [
    "dataproperty/conda-forge/noarch/dataproperty-0.50.0-py_0"
   ],
@@ -292,30 +216,53 @@
    "elasticsearch/conda-forge/noarch/elasticsearch-7.13.0-pyhd8ed1ab_0"
   ],
   "enum": [
-   "privy/conda-forge/noarch/privy-6.0.0-py_0"
+   "privy/conda-forge/noarch/privy-6.0.0-py_0",
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
   ],
-  "importlib": [],
-  "io": [],
+  "importlib": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "io": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "ipykernel": [],
   "itertools": [],
-  "json": [],
+  "json": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "loguru": [
    "loguru/conda-forge/noarch/loguru-0.2.4-py_0"
   ],
-  "math": [],
+  "math": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "mbstrdecoder": [],
-  "msgfy": [],
-  "operator": [],
-  "os": [],
-  "pandas": [],
+  "msgfy": [
+   "msgfy/conda-forge/noarch/msgfy-0.1.0-py_0"
+  ],
+  "operator": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "os": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "pandas": [
+   "pandas/conda-forge/linux-64/pandas-0.25.0-py37hb3f55d8_0"
+  ],
   "pathvalidate": [
    "pathvalidate/conda-forge/noarch/pathvalidate-2.3.0-py_0"
   ],
-  "pkgutil": [],
+  "pkgutil": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "pytablereader": [],
-  "re": [],
+  "re": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "sanitizer": [],
-  "simplejson": [],
+  "simplejson": [
+   "simplejson/conda-forge/linux-64/simplejson-3.16.0-py36h14c3975_1002"
+  ],
   "simplesqlite": [],
   "style": [],
   "style_filter": [],
@@ -327,14 +274,20 @@
    "tcolorpy/conda-forge/noarch/tcolorpy-0.0.9-pyhd8ed1ab_0"
   ],
   "text": [],
-  "textwrap": [],
+  "textwrap": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "toml": [
    "toml/conda-forge/noarch/toml-0.9.4-py_0"
   ],
   "type_hint": [],
   "typepy": [],
-  "typing": [],
-  "warnings": [],
+  "typing": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "warnings": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "writer": [],
   "xlsxwriter": [
    "xlsxwriter/conda-forge/noarch/xlsxwriter-1.4.0-pyhd8ed1ab_0"

@@ -12,20 +12,8 @@
   "backends.has_einsum",
   "backends.has_tensordot",
   "blas.can_blas",
-  "collections.Counter",
-  "collections.OrderedDict",
-  "collections.defaultdict",
-  "collections.deque",
-  "collections.namedtuple",
-  "concurrent.futures.ProcessPoolExecutor",
-  "contextlib",
-  "contextlib.contextmanager",
-  "cupy",
-  "cupy.asarray",
-  "cupy.asnumpy",
   "cupy.build_expression",
   "cupy.evaluate_constants",
-  "cupy.ndarray",
   "decimal.Decimal",
   "einsum",
   "expr",
@@ -36,24 +24,13 @@
   "fn",
   "frozenset.intersection",
   "frozenset.union",
-  "functools",
-  "functools.partial",
-  "functools.reduce",
-  "functools.wraps",
   "gen",
   "gen_inner_sum",
   "grad_expr",
   "graph",
-  "heapq",
-  "heapq.heapify",
-  "heapq.heappop",
-  "heapq.heappush",
-  "heapq.heappushpop",
   "helpers.compute_size_by_dict",
   "helpers.find_contraction",
   "helpers.flop_count",
-  "importlib",
-  "importlib.import_module",
   "itertools",
   "itertools.chain",
   "itertools.chain.from_iterable",
@@ -65,48 +42,18 @@
   "jax.evaluate_constants",
   "jax_expr",
   "jit_expr",
-  "json",
-  "json.loads",
-  "math",
-  "math.exp",
   "method1",
   "method2",
-  "multiprocessing.pool.ThreadPool",
-  "numbers",
-  "numbers.Number",
-  "numpy",
-  "numpy.allclose",
-  "numpy.arange",
-  "numpy.array",
-  "numpy.asanyarray",
-  "numpy.asarray",
-  "numpy.dot",
-  "numpy.einsum",
-  "numpy.empty",
-  "numpy.empty_like",
-  "numpy.full",
-  "numpy.int32",
-  "numpy.ndarray",
-  "numpy.ndindex",
-  "numpy.ones",
   "numpy.random.choice",
   "numpy.random.permutation",
   "numpy.random.rand",
   "numpy.random.randint",
   "numpy.random.randn",
   "numpy.random.seed",
-  "numpy.squeeze",
-  "numpy.tensordot",
-  "numpy.transpose",
   "object_arrays.object_einsum",
-  "operator",
-  "operator.add",
-  "operator.mul",
   "opt_einsum.__init__.get_versions",
   "opt_einsum.__init__.versions",
   "optimizer",
-  "os",
-  "os.environ",
   "parser.convert_interleaved_input",
   "parser.convert_to_valid_einsum_chars",
   "parser.find_output_shape",
@@ -124,20 +71,11 @@
   "paths.register_path_fn",
   "paths.ssa_greedy_optimize",
   "paths.ssa_to_linear",
-  "pytest",
-  "pytest.approx",
-  "pytest.importorskip",
   "pytest.mark.parametrize",
   "pytest.mark.skip",
   "pytest.mark.skipif",
-  "pytest.param",
-  "pytest.raises",
-  "random",
-  "random.choices",
   "random.choices.append",
   "random.choices.pop",
-  "random.gauss",
-  "random.seed",
   "set.union",
   "sharing.einsum_cache_wrap",
   "sharing.tensordot_cache_wrap",
@@ -158,33 +96,20 @@
   "tensorflow.get_default_session",
   "tensorflow.placeholder",
   "tensorflow.test.gpu_device_name",
-  "theano",
   "theano.build_expression",
   "theano.evaluate_constants",
-  "theano.function",
-  "theano.tensor.TensorConstant",
   "theano.tensor.TensorType",
-  "theano.tensor.TensorVariable",
   "theano.tensor.constant",
-  "threading",
-  "threading.get_ident",
   "time",
   "time.time",
   "to_backend",
   "to_backend.__name__",
   "to_jax",
-  "torch",
-  "torch.Tensor",
   "torch.build_expression",
-  "torch.cuda.is_available",
-  "torch.einsum",
   "torch.evaluate_constants",
   "torch.from_numpy",
-  "torch.tensordot",
   "transpose",
-  "trial_fn",
-  "weakref",
-  "weakref.WeakValueDictionary"
+  "trial_fn"
  ],
  "deps": {
   "NaiveOptimizer": [],
@@ -197,62 +122,105 @@
   ],
   "backends": [],
   "blas": [],
-  "collections": [],
-  "concurrent": [],
-  "contextlib": [],
-  "cupy": [],
+  "collections": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "concurrent": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "contextlib": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "cupy": [
+   "cupy/conda-forge/linux-64/cupy-8.4.0-py38h7fa8657_1",
+   "cupy/conda-forge/linux-64/cupy-8.5.0-py37hd2f5b3b_1"
+  ],
   "decimal": [],
   "einsum": [],
   "expr": [],
   "fn": [],
   "frozenset": [],
-  "functools": [],
+  "functools": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "gen": [],
   "gen_inner_sum": [],
   "grad_expr": [],
   "graph": [],
-  "heapq": [],
+  "heapq": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "helpers": [],
-  "importlib": [],
+  "importlib": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "itertools": [],
   "jax": [
    "jax/conda-forge/noarch/jax-0.1.73-py_0"
   ],
   "jax_expr": [],
   "jit_expr": [],
-  "json": [],
-  "math": [],
+  "json": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "math": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "method1": [],
   "method2": [],
-  "multiprocessing": [],
-  "numbers": [],
-  "numpy": [],
+  "multiprocessing": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "numbers": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "numpy": [
+   "numpy/conda-forge/linux-64/numpy-1.9.3-py27_blas_openblashb06ca3d_7"
+  ],
   "object_arrays": [],
-  "operator": [],
+  "operator": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "opt_einsum": [],
   "optimizer": [],
-  "os": [],
+  "os": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "parser": [],
   "path_func": [],
   "path_optimizer": [],
   "path_random": [],
   "path_type": [],
   "paths": [],
-  "pytest": [],
-  "random": [],
+  "pytest": [
+   "pytest/conda-forge/linux-64/pytest-4.6.3-py27_0",
+   "pytest/conda-forge/linux-64/pytest-6.0.2-py36hc560c46_0"
+  ],
+  "random": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "set": [],
   "sharing": [],
   "sys": [],
   "tensordot": [],
   "tensorflow": [],
-  "theano": [],
-  "threading": [],
+  "theano": [
+   "theano-pymc/conda-forge/linux-64/theano-pymc-1.0.5-py36h831f99a_0",
+   "theano/conda-forge/linux-64/theano-1.0.1-py35_1"
+  ],
+  "threading": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "time": [],
   "to_backend": [],
   "to_jax": [],
-  "torch": [],
+  "torch": [
+   "pytorch-cpu/conda-forge/linux-64/pytorch-cpu-1.0.1-py27hf484d3e_0"
+  ],
   "transpose": [],
   "trial_fn": [],
-  "weakref": []
+  "weakref": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ]
  }
 }

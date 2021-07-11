@@ -16,16 +16,8 @@
   "_prediction_to_probabilities",
   "_seed_current_object",
   "_send_request",
-  "abc.ABC",
-  "abc.abstractmethod",
-  "argparse",
-  "argparse.ArgumentParser",
-  "argparse.Namespace",
   "cast_fn",
   "cls",
-  "collections",
-  "collections.OrderedDict",
-  "collections.namedtuple",
   "config.apikey",
   "config.connection_n_retries",
   "config.get_cache_directory",
@@ -33,14 +25,11 @@
   "config.server",
   "config.server.split",
   "configure_field",
-  "copy",
-  "copy.copy",
   "data_feature.OpenMLDataFeature.LEGAL_DATA_TYPES",
   "datasets.OpenMLDataset",
   "datasets.functions.get_dataset",
   "datasets.get_dataset",
   "decode_arff",
-  "distutils.version.LooseVersion",
   "extension_class",
   "extension_class.can_handle_model",
   "extract_parameters",
@@ -50,75 +39,23 @@
   "func",
   "functions._get_dataset_arff",
   "functions._get_dataset_parquet",
-  "functools.wraps",
   "get_flow_dict",
   "get_run",
   "get_task_and_type_conversion",
-  "gzip",
-  "gzip.open",
-  "hashlib",
   "hashlib.md5",
-  "importlib",
-  "importlib.import_module",
   "input.get",
-  "inspect",
   "inspect.Signature.empty",
-  "inspect.getdoc",
-  "inspect.getfile",
-  "inspect.isfunction",
-  "inspect.signature",
-  "io",
-  "io.StringIO",
-  "io.open",
   "is_subcomponent_specification",
   "itertools",
   "itertools.product",
-  "json",
-  "json.decoder.JSONDecodeError",
-  "json.dumps",
-  "json.loads",
-  "logging",
-  "logging.CRITICAL",
-  "logging.DEBUG",
-  "logging.ERROR",
-  "logging.Formatter",
-  "logging.Handler",
-  "logging.INFO",
-  "logging.NOTSET",
-  "logging.StreamHandler",
-  "logging.WARNING",
-  "logging.getLogger",
-  "logging.handlers",
-  "logging.handlers.RotatingFileHandler",
-  "logging.info",
-  "logging.warning",
   "match_format",
-  "math",
-  "math.exp",
   "model_class",
-  "numpy",
-  "numpy.__version__",
-  "numpy.all",
-  "numpy.arange",
-  "numpy.argsort",
-  "numpy.array",
-  "numpy.array_split",
-  "numpy.asarray",
-  "numpy.float",
   "numpy.float32",
   "numpy.float64",
-  "numpy.int",
-  "numpy.int32",
-  "numpy.int64",
-  "numpy.integer",
-  "numpy.isnan",
-  "numpy.ma.masked",
   "numpy.nan",
-  "numpy.ndarray",
   "numpy.random.RandomState",
   "numpy.random.uniform",
   "numpy.sctypes.items",
-  "numpy.sum",
   "object.__init__",
   "obtain_field",
   "openml.config.logger.info",
@@ -132,15 +69,12 @@
   "openml.tasks.TaskType.LEARNING_CURVE",
   "openml.tasks.TaskType.SUPERVISED_CLASSIFICATION",
   "openml.tasks.TaskType.SUPERVISED_REGRESSION",
-  "os",
   "os.chdir",
   "os.environ.get",
   "os.getcwd",
   "os.getpid",
   "os.listdir",
-  "os.makedirs",
   "os.mkdir",
-  "os.name",
   "os.path.abspath",
   "os.path.dirname",
   "os.path.exists",
@@ -150,47 +84,14 @@
   "os.path.isfile",
   "os.path.join",
   "os.sep.join",
-  "pandas",
-  "pandas.Categorical",
-  "pandas.DataFrame",
   "pandas.DataFrame.from_dict",
   "pandas.DataFrame.from_records",
   "pandas.DataFrame.sparse.from_spmatrix",
-  "pandas.Series",
-  "pandas.SparseDtype",
-  "pandas.api.types.infer_dtype",
-  "pandas.concat",
-  "pandas.factorize",
-  "pandas.merge",
-  "pandas.read_feather",
-  "pandas.read_parquet",
-  "pickle",
-  "pickle.HIGHEST_PROTOCOL",
-  "pickle.dump",
-  "pickle.load",
-  "platform",
-  "platform.system",
-  "random",
-  "random.gauss",
-  "re",
   "re.IGNORECASE",
-  "re.compile",
-  "re.match",
-  "re.sub",
-  "re.subn",
   "remove_all_in_parentheses",
   "runs.functions.get_run",
   "rv_class",
-  "scipy",
-  "scipy.__version__",
-  "scipy.sparse",
-  "scipy.sparse.coo_matrix",
-  "scipy.sparse.spmatrix",
-  "scipy.stats",
-  "scipy.stats.distributions.rv_frozen",
   "set_field_function",
-  "shutil",
-  "shutil.rmtree",
   "sklearn",
   "sklearn.__version__",
   "sklearn._min_dependencies",
@@ -212,9 +113,6 @@
   "sklearn.pipeline.Pipeline",
   "sklearn.preprocessing.Imputer",
   "split.OpenMLSplit._from_arff_file",
-  "string",
-  "string.hexdigits",
-  "struct",
   "struct.calcsize",
   "sys",
   "sys.version_info",
@@ -243,32 +141,7 @@
   "time.time",
   "trace.OpenMLRunTrace.merge_traces",
   "trace.OpenMLRunTrace.trace_from_xml",
-  "typing.Any",
-  "typing.Callable",
-  "typing.Dict",
-  "typing.IO",
-  "typing.Iterable",
-  "typing.List",
-  "typing.Optional",
-  "typing.Set",
-  "typing.TYPE_CHECKING",
-  "typing.TextIO",
-  "typing.Tuple",
-  "typing.Type",
-  "typing.Union",
-  "typing.cast",
-  "unittest",
-  "unittest.TestCase",
-  "urllib.parse",
-  "urllib.parse.urlparse",
   "valid_category",
-  "warnings",
-  "warnings.catch_warnings",
-  "warnings.simplefilter",
-  "warnings.warn",
-  "webbrowser",
-  "webbrowser.open",
-  "xml",
   "xml.parsers.expat.ExpatError"
  ],
  "deps": {
@@ -288,29 +161,41 @@
   "_prediction_to_probabilities": [],
   "_seed_current_object": [],
   "_send_request": [],
-  "abc": [],
+  "abc": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "arff": [
    "liac-arff/conda-forge/noarch/liac-arff-2.5.0-pyhd8ed1ab_0"
   ],
-  "argparse": [],
+  "argparse": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "cast_fn": [],
   "cls": [],
-  "collections": [],
+  "collections": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "config": [],
   "configparser": [
-   "configparser/conda-forge/noarch/configparser-5.0.0-py_0"
+   "configparser/conda-forge/noarch/configparser-5.0.0-py_0",
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
   ],
   "configure_field": [],
-  "copy": [],
+  "copy": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "data_feature": [],
   "datasets": [],
   "dateutil": [
    "python-dateutil/conda-forge/noarch/python-dateutil-2.7.4-py_0"
   ],
   "decode_arff": [],
-  "distutils": [],
+  "distutils": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "enum": [
-   "privy/conda-forge/noarch/privy-6.0.0-py_0"
+   "privy/conda-forge/noarch/privy-6.0.0-py_0",
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
   ],
   "extension_class": [],
   "extract_parameters": [],
@@ -319,45 +204,78 @@
   "format": [],
   "func": [],
   "functions": [],
-  "functools": [],
+  "functools": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "get_flow_dict": [],
   "get_run": [],
   "get_task_and_type_conversion": [],
-  "gzip": [],
-  "hashlib": [],
-  "importlib": [],
+  "gzip": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "hashlib": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "importlib": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "input": [],
-  "inspect": [],
-  "io": [],
+  "inspect": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "io": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "is_subcomponent_specification": [],
   "itertools": [],
   "joblib": [
    "joblib/conda-forge/noarch/joblib-0.14.0-py_0"
   ],
-  "json": [],
-  "logging": [],
+  "json": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "logging": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "match_format": [],
-  "math": [],
+  "math": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "minio": [
    "minio/conda-forge/noarch/minio-7.0.0-pyhd3deb0d_0"
   ],
   "model_class": [],
-  "numpy": [],
+  "numpy": [
+   "numpy/conda-forge/linux-64/numpy-1.9.3-py27_blas_openblashb06ca3d_7"
+  ],
   "object": [],
   "obtain_field": [],
   "openml": [],
-  "os": [],
+  "os": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "oslo_concurrency": [
    "oslo.concurrency/conda-forge/noarch/oslo.concurrency-4.2.0-py_0"
   ],
-  "pandas": [],
-  "pathlib": [
-   "pathlib/conda-forge/noarch/pathlib-1.0.1-py_1"
+  "pandas": [
+   "pandas/conda-forge/linux-64/pandas-0.25.0-py37hb3f55d8_0"
   ],
-  "pickle": [],
-  "platform": [],
-  "random": [],
-  "re": [],
+  "pathlib": [
+   "pathlib/conda-forge/noarch/pathlib-1.0.1-py_1",
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "pickle": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "platform": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "random": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "re": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "remove_all_in_parentheses": [],
   "requests": [
    "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
@@ -365,30 +283,50 @@
   ],
   "runs": [],
   "rv_class": [],
-  "scipy": [],
+  "scipy": [
+   "scipy/conda-forge/linux-64/scipy-0.18.1-np111py34_blas_openblas_200"
+  ],
   "set_field_function": [],
-  "shutil": [],
+  "shutil": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "sklearn": [],
   "split": [],
-  "string": [],
-  "struct": [],
+  "string": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "struct": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "sys": [],
   "task": [],
   "task_cls": [],
   "tasks": [],
   "time": [],
   "trace": [],
-  "typing": [],
-  "unittest": [],
-  "urllib": [],
+  "typing": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "unittest": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "urllib": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "urllib3": [
    "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
    "urllib3/conda-forge/noarch/urllib3-1.26.5-pyhd8ed1ab_0"
   ],
   "valid_category": [],
-  "warnings": [],
-  "webbrowser": [],
-  "xml": [],
+  "warnings": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "webbrowser": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "xml": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "xmltodict": [
    "xmltodict/conda-forge/noarch/xmltodict-0.12.0-py_0"
   ]

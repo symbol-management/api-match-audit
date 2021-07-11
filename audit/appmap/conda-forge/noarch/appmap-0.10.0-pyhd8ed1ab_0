@@ -10,8 +10,6 @@
   "_build",
   "_implementation.env.Env.current.enabled",
   "_synchronized_lock",
-  "abc.ABC",
-  "abc.abstractmethod",
   "app",
   "app.app.test_client",
   "appmap._implementation.__init__.appmapenv",
@@ -29,13 +27,9 @@
   "callback",
   "collections.abc.MutableMapping",
   "collections.abc.MutableSequence",
-  "collections.namedtuple",
   "configuration.initialize",
-  "contextlib.contextmanager",
   "django.conf.settings.MIDDLEWARE",
   "django.conf.settings.MIDDLEWARE.insert",
-  "enum.IntFlag",
-  "enum.auto",
   "env.Env.current.display_params",
   "env.Env.current.enabled",
   "env.Env.current.get",
@@ -69,99 +63,35 @@
   "flask.request.url_rule.rule",
   "fn",
   "fn.__name__",
-  "functools",
-  "functools.lru_cache",
-  "functools.partial",
-  "functools.partialmethod",
-  "functools.wraps",
   "g",
-  "glob.glob",
   "hook",
-  "importlib",
-  "importlib.find_loader",
-  "importlib.reload",
-  "importlib.util",
-  "importlib.util.find_spec",
-  "inspect",
-  "inspect.Parameter",
-  "inspect.Signature",
-  "inspect._is_type",
-  "inspect.formatargspec",
-  "inspect.getattr_static",
-  "inspect.getcallargs",
-  "inspect.getfile",
-  "inspect.getmro",
-  "inspect.getsourcefile",
-  "inspect.getsourcelines",
-  "inspect.isclass",
-  "inspect.ismethod",
-  "inspect.signature",
-  "inspect.unwrap",
   "instrument_functions",
-  "io",
-  "io.StringIO",
   "is_member_func",
   "itertools.chain",
   "itertools.chain.from_iterable",
-  "json",
-  "json.JSONEncoder",
   "json.JSONEncoder.default",
-  "json.decoder.JSONDecodeError",
-  "json.dumps",
-  "json.load",
-  "json.loads",
-  "logging",
-  "logging.DEBUG",
-  "logging.config",
-  "logging.config.dictConfig",
-  "logging.getLogger",
-  "logging.info",
   "long",
   "lookup_attribute",
   "make_call_event",
   "object.__delattr__",
   "object.__setattr__",
-  "operator",
   "operator.div",
   "operator.idiv",
-  "operator.index",
-  "operator.itemgetter",
-  "operator.itruediv",
-  "operator.truediv",
-  "os",
   "os.environ.copy",
   "os.environ.get",
   "os.getcwd",
-  "os.path",
   "os.path.dirname",
   "os.path.join",
   "os.path.realpath",
   "params.C",
-  "pathlib.Path",
   "pkg_resources",
   "pkg_resources.iter_entry_points",
-  "platform",
-  "platform.python_implementation",
-  "platform.python_version",
-  "pytest",
-  "pytest.__version__",
-  "pytest.fixture",
-  "pytest.hookimpl",
-  "pytest.importorskip",
   "pytest.mark.appmap_enabled",
   "pytest.mark.example_dir",
   "pytest.mark.parametrize",
   "pytest.mark.skipif",
   "pytest.mark.usefixtures",
-  "pytest.raises",
-  "queue.Queue",
-  "re",
-  "re.compile",
-  "re.fullmatch",
-  "re.sub",
   "recording.initialize",
-  "shlex",
-  "shlex.split",
   "sqlalchemy.Column",
   "sqlalchemy.ForeignKey",
   "sqlalchemy.Integer",
@@ -172,10 +102,6 @@
   "sqlalchemy.engine.Engine",
   "sqlalchemy.event",
   "sqlalchemy.event.listens_for",
-  "subprocess",
-  "subprocess.CalledProcessError",
-  "subprocess.STDOUT",
-  "subprocess.check_output",
   "sys",
   "sys.exc_info",
   "sys.executable",
@@ -186,28 +112,11 @@
   "sys.modules",
   "sys.modules.get",
   "sys.version_info",
-  "threading",
-  "threading.Lock",
-  "threading.RLock",
-  "threading.Thread",
-  "threading.Thread.join",
-  "threading.Thread.start",
-  "threading.local",
   "time",
   "time.gmtime",
   "time.monotonic",
   "time.time",
-  "traceback",
-  "traceback.extract_stack",
-  "traceback.format_list",
   "type.__new__",
-  "types",
-  "types.BuiltinFunctionType",
-  "types.BuiltinMethodType",
-  "types.FunctionType",
-  "types.MethodType",
-  "unittest",
-  "unittest.main",
   "utils.FnType.CLASS",
   "utils.FnType.MODULE",
   "utils.FnType.STATIC",
@@ -216,7 +125,6 @@
   "utils.subprocess_run",
   "vendor.wrapt.src.appmap.wrapt",
   "vendor.wrapt.src.appmap.wrapt.wrap_function_wrapper",
-  "weakref",
   "wrapped"
  ],
  "deps": {
@@ -230,18 +138,26 @@
   "_build": [],
   "_implementation": [],
   "_synchronized_lock": [],
-  "abc": [],
+  "abc": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "app": [],
   "appmap": [],
   "builtins": [],
   "callback": [],
-  "collections": [],
+  "collections": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "configuration": [],
-  "contextlib": [],
+  "contextlib": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "django": [
    "django/conda-forge/noarch/django-3.1.4-pyhd8ed1ab_0"
   ],
-  "enum": [],
+  "enum": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "env": [],
   "event": [],
   "example_class": [],
@@ -251,57 +167,102 @@
    "flask/conda-forge/noarch/flask-2.0.0-pyhd8ed1ab_0"
   ],
   "fn": [],
-  "functools": [],
+  "functools": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "g": [],
   "git": [
    "gitpython/conda-forge/noarch/gitpython-3.0.8-py_0"
   ],
-  "glob": [],
+  "glob": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "hook": [],
-  "importlib": [],
+  "importlib": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "importlib_metadata": [
    "importlib-metadata/conda-forge/noarch/importlib-metadata-3.0.0-pyhd8ed1ab_0"
   ],
   "inflection": [
    "inflection/conda-forge/noarch/inflection-0.4.0-pyh9f0ad1d_0"
   ],
-  "inspect": [],
+  "inspect": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "instrument_functions": [],
-  "io": [],
+  "io": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "is_member_func": [],
   "itertools": [],
-  "json": [],
-  "logging": [],
+  "json": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "logging": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "long": [],
   "lookup_attribute": [],
   "make_call_event": [],
   "object": [],
-  "operator": [],
-  "os": [],
+  "operator": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "os": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "params": [],
-  "pathlib": [],
+  "pathlib": [
+   "pathlib/conda-forge/noarch/pathlib-1.0.1-py_1",
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "pdb": [
-   "pdbpp/conda-forge/noarch/pdbpp-0.9.5-py_1"
+   "pdbpp/conda-forge/noarch/pdbpp-0.9.5-py_1",
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
   ],
   "pkg_resources": [],
-  "platform": [],
-  "pytest": [],
-  "queue": [],
-  "re": [],
+  "platform": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "pytest": [
+   "pytest/conda-forge/linux-64/pytest-4.6.3-py27_0",
+   "pytest/conda-forge/linux-64/pytest-6.0.2-py36hc560c46_0"
+  ],
+  "queue": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "re": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "recording": [],
-  "shlex": [],
+  "shlex": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "sqlalchemy": [],
-  "subprocess": [],
+  "subprocess": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "sys": [],
-  "threading": [],
+  "threading": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "time": [],
-  "traceback": [],
+  "traceback": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "type": [],
-  "types": [],
-  "unittest": [],
+  "types": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "unittest": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "utils": [],
   "vendor": [],
-  "weakref": [],
+  "weakref": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "wrapped": [],
   "yaml": [
    "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1"

@@ -1,6 +1,5 @@
 {
  "bad": [
-  "ESMF",
   "ESMF.CoordSys.SPH_DEG",
   "ESMF.Field",
   "ESMF.Grid",
@@ -17,13 +16,6 @@
   "_add_metadata",
   "_get_points",
   "_give_extra_dims",
-  "abc.ABC",
-  "abc.abstractmethod",
-  "cartopy.crs",
-  "cartopy.crs.Geodetic",
-  "collections.namedtuple",
-  "copy",
-  "copy.deepcopy",
   "copy_coords",
   "esmf_regrid.tests.__init__._RESULT_PATH",
   "esmpy_dstarea_regridder",
@@ -35,47 +27,32 @@
   "iris.coords.DimCoord",
   "iris.cube.Cube",
   "iris.fileformats.pp.EARTH_RADIUS",
-  "numpy",
-  "numpy.allclose",
-  "numpy.arange",
-  "numpy.array",
-  "numpy.array_equal",
-  "numpy.asfortranarray",
-  "numpy.empty",
   "numpy.float64",
-  "numpy.int32",
-  "numpy.linspace",
   "numpy.logical_not",
-  "numpy.ma",
-  "numpy.ma.allclose",
-  "numpy.ma.array",
-  "numpy.ma.filled",
-  "numpy.ma.getmaskarray",
   "numpy.ma.stack",
-  "numpy.meshgrid",
   "numpy.moveaxis",
-  "numpy.newaxis",
-  "numpy.ones",
-  "numpy.prod",
   "numpy.stack",
-  "numpy.zeros",
-  "pathlib",
-  "pathlib.Path",
-  "pathlib.PurePath",
-  "pytest",
-  "pytest.raises",
-  "regridder",
-  "scipy.sparse"
+  "regridder"
  ],
  "deps": {
-  "ESMF": [],
+  "ESMF": [
+   "esmpy/conda-forge/linux-64/esmpy-8.0.1-mpi_mpich_py37ha4619bd_101"
+  ],
   "_add_metadata": [],
   "_get_points": [],
   "_give_extra_dims": [],
-  "abc": [],
-  "cartopy": [],
-  "collections": [],
-  "copy": [],
+  "abc": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "cartopy": [
+   "cartopy/conda-forge/linux-64/cartopy-0.17.0-py27hbeedcd3_1007"
+  ],
+  "collections": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "copy": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "copy_coords": [],
   "esmf_regrid": [],
   "esmpy_dstarea_regridder": [],
@@ -83,10 +60,20 @@
   "iris": [
    "iris-ued/conda-forge/noarch/iris-ued-5.3.1-pyhd8ed1ab_0"
   ],
-  "numpy": [],
-  "pathlib": [],
-  "pytest": [],
+  "numpy": [
+   "numpy/conda-forge/linux-64/numpy-1.9.3-py27_blas_openblashb06ca3d_7"
+  ],
+  "pathlib": [
+   "pathlib/conda-forge/noarch/pathlib-1.0.1-py_1",
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "pytest": [
+   "pytest/conda-forge/linux-64/pytest-4.6.3-py27_0",
+   "pytest/conda-forge/linux-64/pytest-6.0.2-py36hc560c46_0"
+  ],
   "regridder": [],
-  "scipy": []
+  "scipy": [
+   "scipy/conda-forge/linux-64/scipy-0.18.1-np111py34_blas_openblas_200"
+  ]
  }
 }

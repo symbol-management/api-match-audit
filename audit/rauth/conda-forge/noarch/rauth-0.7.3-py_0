@@ -1,17 +1,8 @@
 {
  "bad": [
-  "Crypto.Hash.SHA",
   "Crypto.Hash.SHA.sign",
-  "base64",
-  "base64.b64encode",
-  "copy.deepcopy",
-  "datetime.datetime",
-  "datetime.datetime.utcnow",
   "hashlib.md5",
   "hashlib.sha1",
-  "hmac",
-  "hmac.new",
-  "random.SystemRandom",
   "rauth.__init__.__author__",
   "rauth.__init__.__copyright__",
   "rauth.__init__.__license__",
@@ -23,12 +14,6 @@
   "sys",
   "sys.version_info",
   "time.time",
-  "urllib.parse.parse_qsl",
-  "urllib.parse.quote",
-  "urllib.parse.urlencode",
-  "urllib.parse.urljoin",
-  "urllib.parse.urlsplit",
-  "urllib.parse.urlunsplit",
   "urllib.quote",
   "urllib.urlencode",
   "urlparse.parse_qsl",
@@ -37,13 +22,25 @@
   "urlparse.urlunsplit"
  ],
  "deps": {
-  "Crypto": [],
-  "base64": [],
-  "copy": [],
-  "datetime": [],
+  "Crypto": [
+   "pycryptodome/conda-forge/linux-64/pycryptodome-3.7.3-py37ha14ba45_0"
+  ],
+  "base64": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "copy": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "datetime": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "hashlib": [],
-  "hmac": [],
-  "random": [],
+  "hmac": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "random": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "rauth": [],
   "requests": [
    "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
@@ -52,7 +49,9 @@
   "sorting_gen": [],
   "sys": [],
   "time": [],
-  "urllib": [],
+  "urllib": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "urlparse": []
  }
 }

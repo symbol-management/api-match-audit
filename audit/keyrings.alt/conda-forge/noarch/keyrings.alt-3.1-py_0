@@ -1,15 +1,6 @@
 {
  "bad": [
-  "Crypto.Cipher.AES",
-  "Crypto.Cipher.AES.MODE_CFB",
-  "Crypto.Cipher.AES.block_size",
-  "Crypto.Cipher.AES.new",
-  "Crypto.Protocol.KDF.PBKDF2",
-  "Crypto.Random.get_random_bytes",
   "UnicodeWriterAdapter",
-  "__future__.absolute_import",
-  "__future__.unicode_literals",
-  "__future__.with_statement",
   "_win_crypto.__name__",
   "_win_crypto.decrypt",
   "_win_crypto.encrypt",
@@ -25,49 +16,14 @@
   "_winreg.QueryValueEx",
   "_winreg.REG_SZ",
   "_winreg.SetValueEx",
-  "abc",
-  "abc.abstractmethod",
-  "abc.abstractproperty",
-  "base64",
-  "base64.decodebytes",
-  "base64.decodestring",
-  "base64.encodebytes",
-  "base64.encodestring",
-  "base64.urlsafe_b64decode",
-  "base64.urlsafe_b64encode",
-  "codecs",
-  "codecs.BOM_UTF8",
-  "copy",
-  "copy.deepcopy",
-  "ctypes.POINTER",
-  "ctypes.Structure",
-  "ctypes.WINFUNCTYPE",
-  "ctypes.WinDLL",
-  "ctypes.byref",
-  "ctypes.c_char_p",
-  "ctypes.c_void_p",
-  "ctypes.cast",
-  "ctypes.create_string_buffer",
-  "ctypes.memmove",
-  "ctypes.windll",
   "ctypes.windll.kernel32.LocalFree",
-  "ctypes.wintypes",
-  "ctypes.wintypes.BOOL",
-  "ctypes.wintypes.BYTE",
-  "ctypes.wintypes.DWORD",
-  "ctypes.wintypes.HWND",
-  "ctypes.wintypes.WCHAR",
   "file_base.Keyring",
   "fs.remote",
-  "functools",
-  "functools.partial",
   "gdata",
   "gdata.MediaSource",
   "gdata.docs.service",
   "gdata.docs.service.DocumentQuery",
   "gdata.service.RequestError",
-  "getpass",
-  "getpass.getpass",
   "gi",
   "gi.repository.GnomeKeyring",
   "gi.repository.GnomeKeyring.Attribute.list_append_string",
@@ -81,13 +37,8 @@
   "gi.repository.GnomeKeyring.item_create_sync",
   "gi.repository.GnomeKeyring.item_delete_sync",
   "gi.require_version",
-  "io",
-  "io.BytesIO",
   "itertools",
   "itertools.count",
-  "json",
-  "json.dumps",
-  "json.loads",
   "keyczar.has_keyczar",
   "keyczar.keyczar",
   "keyczar.keyczar.Crypter",
@@ -95,46 +46,19 @@
   "keyczar.keyczar.__name__",
   "keyczar.keyczar.readers.CreateReader",
   "keyczar.keyczar.readers.EncryptedReader",
-  "keyring.backend.Crypter",
-  "keyring.backend.KeyringBackend",
-  "keyring.backend.NullCrypter",
-  "keyring.credentials",
-  "keyring.credentials.EnvironCredential",
-  "keyring.errors",
-  "keyring.errors.ExceptionRaisedContext",
-  "keyring.errors.InitError",
-  "keyring.errors.PasswordDeleteError",
-  "keyring.errors.PasswordSetError",
-  "keyring.util.platform_",
-  "keyring.util.platform_.data_root",
-  "keyring.util.properties",
-  "keyring.util.properties.ClassProperty",
-  "keyring.util.properties.NonDataProperty",
-  "os",
   "os.chmod",
   "os.environ.get",
-  "os.makedirs",
   "os.path.dirname",
   "os.path.exists",
   "os.path.isdir",
   "os.path.isfile",
   "os.path.join",
   "os.path.split",
-  "pickle",
-  "pickle.UnpicklingError",
-  "pickle.dumps",
-  "pickle.loads",
-  "platform",
-  "platform.system",
-  "re",
-  "re.compile",
   "six.moves.configparser",
   "six.moves.configparser.NoOptionError",
   "six.moves.configparser.NoSectionError",
   "six.moves.configparser.RawConfigParser",
   "six.moves.input",
-  "string",
-  "string.digits",
   "sys",
   "sys.exc_info",
   "sys.stderr.write",
@@ -146,38 +70,72 @@
   "winreg"
  ],
  "deps": {
-  "Crypto": [],
+  "Crypto": [
+   "pycryptodome/conda-forge/linux-64/pycryptodome-3.7.3-py37ha14ba45_0"
+  ],
   "UnicodeWriterAdapter": [],
-  "__future__": [],
+  "__future__": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "_win_crypto": [],
   "_winreg": [],
-  "abc": [],
-  "base64": [],
-  "codecs": [],
-  "copy": [],
-  "ctypes": [],
+  "abc": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "base64": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "codecs": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "copy": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "ctypes": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "file_base": [],
   "fs": [
    "fs/conda-forge/noarch/fs-2.0.9-py_0"
   ],
-  "functools": [],
+  "functools": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "gdata": [],
-  "getpass": [],
+  "getpass": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "gi": [],
-  "io": [],
+  "io": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "itertools": [],
-  "json": [],
+  "json": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "keyczar": [],
-  "keyring": [],
-  "os": [],
-  "pickle": [],
-  "platform": [],
-  "re": [],
+  "keyring": [
+   "keyring/conda-forge/linux-64/keyring-9.0-py27_0"
+  ],
+  "os": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "pickle": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "platform": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "re": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "six": [
    "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
    "privy/conda-forge/noarch/privy-6.0.0-py_0"
   ],
-  "string": [],
+  "string": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "sys": [],
   "win32cred": [],
   "win32ctypes": [],

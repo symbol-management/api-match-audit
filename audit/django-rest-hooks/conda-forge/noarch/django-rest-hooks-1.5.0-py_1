@@ -1,10 +1,5 @@
 {
  "bad": [
-  "__future__.unicode_literals",
-  "collections",
-  "collections.OrderedDict",
-  "datetime.datetime",
-  "datetime.datetime.now",
   "deliverer",
   "django.conf.settings.AUTH_USER_MODEL",
   "django.conf.settings.HOOK_DELIVERER",
@@ -27,9 +22,6 @@
   "django_comments.models.Comment.objects.create",
   "django_comments.models.Comment.serialize_hook",
   "finder",
-  "importlib.import_module",
-  "json",
-  "json.dumps",
   "mock.ANY",
   "mock.MagicMock",
   "mock.patch",
@@ -51,26 +43,34 @@
   "south.db.db.send_create_signal",
   "south.utils.datetime_utils",
   "south.v2.SchemaMigration",
-  "threading",
-  "threading.Thread",
   "time",
   "time.sleep"
  ],
  "deps": {
-  "__future__": [],
+  "__future__": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "celery": [
    "celery/conda-forge/noarch/celery-4.4.0rc1-py_0"
   ],
-  "collections": [],
-  "datetime": [],
+  "collections": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "datetime": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "deliverer": [],
   "django": [
    "django/conda-forge/noarch/django-3.1.4-pyhd8ed1ab_0"
   ],
   "django_comments": [],
   "finder": [],
-  "importlib": [],
-  "json": [],
+  "importlib": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "json": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "mock": [],
   "requests": [
    "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
@@ -79,7 +79,9 @@
   "rest_hooks": [],
   "serializer": [],
   "south": [],
-  "threading": [],
+  "threading": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "time": []
  }
 }

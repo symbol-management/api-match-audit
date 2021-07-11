@@ -1,7 +1,5 @@
 {
  "bad": [
-  "__future__.absolute_import",
-  "__future__.print_function",
   "astroid",
   "astroid.Attribute",
   "astroid.Call",
@@ -41,11 +39,6 @@
   "astroid.scoped_nodes.builtin_lookup",
   "astroid.util.Uninferable",
   "astroid.util.YES",
-  "datetime.date",
-  "datetime.date.today",
-  "datetime.datetime",
-  "datetime.datetime.now",
-  "datetime.timedelta",
   "decimal.Decimal",
   "django.contrib.auth.forms.UserCreationForm.declared_fields",
   "django.contrib.auth.models.Permission.objects.get",
@@ -100,9 +93,6 @@
   "iterat",
   "itertools",
   "itertools.chain.from_iterable",
-  "json",
-  "json.dumps",
-  "os",
   "os.environ.setdefault",
   "os.listdir",
   "os.path.abspath",
@@ -166,11 +156,7 @@
   "pylint_django.augmentations.__init__.pylint_newstyle_classdef_compat",
   "pylint_django.augmentations.__init__.wrap",
   "pylint_django.transforms.__init__._add_transform",
-  "pytest",
-  "pytest.main",
   "pytest.mark.parametrize",
-  "re",
-  "re.sub",
   "sys",
   "sys.argv",
   "sys.exit",
@@ -182,9 +168,13 @@
   "with_method"
  ],
  "deps": {
-  "__future__": [],
+  "__future__": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "astroid": [],
-  "datetime": [],
+  "datetime": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "decimal": [],
   "django": [
    "django/conda-forge/noarch/django-3.1.4-pyhd8ed1ab_0"
@@ -195,11 +185,15 @@
   ],
   "iterat": [],
   "itertools": [],
-  "json": [],
+  "json": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "model_utils": [
    "django-model-utils/conda-forge/noarch/django-model-utils-3.1.2-py_0"
   ],
-  "os": [],
+  "os": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "pylint": [
    "pylint/conda-forge/noarch/pylint-2.9.1-pyhd8ed1ab_0"
   ],
@@ -207,8 +201,13 @@
   "pylint_plugin_utils": [
    "pylint-plugin-utils/conda-forge/noarch/pylint-plugin-utils-0.6-pyhd8ed1ab_0"
   ],
-  "pytest": [],
-  "re": [],
+  "pytest": [
+   "pytest/conda-forge/linux-64/pytest-4.6.3-py27_0",
+   "pytest/conda-forge/linux-64/pytest-6.0.2-py36hc560c46_0"
+  ],
+  "re": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "rest_framework": [
    "djangorestframework/conda-forge/noarch/djangorestframework-3.12.1-py_0"
   ],

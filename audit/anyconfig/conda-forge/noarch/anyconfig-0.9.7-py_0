@@ -2,8 +2,6 @@
  "bad": [
   "ConfigParser",
   "StringIO.StringIO",
-  "__future__.absolute_import",
-  "__future__.print_function",
   "_update_fn",
   "anyconfig.__init__.AUTHOR",
   "anyconfig.__init__.VERSION",
@@ -16,23 +14,15 @@
   "anyconfig.globals.IOI_STREAM",
   "anyconfig.globals.LOGGER.info",
   "anyconfig.globals.LOGGER.warning",
-  "argparse",
-  "argparse.ArgumentParser",
   "cPickle",
   "cPickle.dump",
   "cPickle.dumps",
   "cPickle.load",
   "cPickle.loads",
   "cStringIO.StringIO",
-  "codecs",
-  "codecs.getwriter",
-  "codecs.open",
-  "collections",
   "collections.Iterable",
   "collections.Mapping",
-  "collections.OrderedDict",
   "collections.Sequence",
-  "collections.namedtuple",
   "container",
   "container_to_etree",
   "elementtree.ElementTree",
@@ -43,69 +33,24 @@
   "elementtree.ElementTree.parse",
   "fnc",
   "func",
-  "functools",
-  "functools.reduce",
-  "functools.wraps",
   "gen_schema",
-  "glob",
-  "glob.glob",
-  "inspect",
-  "inspect.getargspec",
-  "inspect.getfullargspec",
-  "io",
-  "io.BytesIO",
-  "io.StringIO",
-  "io.TextIOWrapper",
   "itertools",
   "itertools.chain.from_iterable",
   "itertools.dropwhile",
   "itertools.groupby",
-  "json",
-  "jsonschema",
-  "jsonschema.Draft4Validator",
-  "jsonschema.SchemaError",
-  "jsonschema.ValidationError",
-  "jsonschema.validate",
-  "locale",
-  "locale.getdefaultlocale",
-  "logging",
-  "logging.DEBUG",
-  "logging.Handler",
-  "logging.INFO",
-  "logging.NullHandler",
-  "logging.StreamHandler",
-  "logging.WARN",
-  "logging.basicConfig",
-  "logging.getLogger",
   "merge",
-  "operator",
-  "operator.getitem",
-  "operator.itemgetter",
-  "operator.methodcaller",
   "ordereddict.OrderedDict",
-  "os",
-  "os.curdir",
   "os.environ.copy",
-  "os.linesep",
   "os.linesep.join",
-  "os.makedirs",
-  "os.path",
   "os.path.abspath",
   "os.path.basename",
   "os.path.dirname",
   "os.path.exists",
   "os.path.normpath",
-  "pathlib",
-  "pickle",
   "pkg_resources",
   "pkg_resources.iter_entry_points",
   "processor",
-  "re",
   "re.I",
-  "re.compile",
-  "re.match",
-  "re.split",
-  "re.sub",
   "ruamel.yaml",
   "ruamel.yaml.Dumper",
   "ruamel.yaml.Loader",
@@ -113,11 +58,6 @@
   "ruamel.yaml.constructor.ConstructorError",
   "ruamel.yaml.error.UnsafeLoaderWarning",
   "ruamel.yaml.resolver.BaseResolver.DEFAULT_MAPPING_TAG",
-  "simplejson",
-  "simplejson.dump",
-  "simplejson.dumps",
-  "simplejson.load",
-  "simplejson.loads",
   "sys",
   "sys.argv",
   "sys.exit",
@@ -127,74 +67,112 @@
   "sys.stdout",
   "sys.stdout.buffer",
   "sys.stdout.write",
-  "sys.version_info",
-  "types",
-  "types.GeneratorType",
-  "warnings",
-  "warnings.simplefilter",
-  "warnings.warn",
-  "xml.etree.ElementTree",
-  "xml.etree.cElementTree"
+  "sys.version_info"
  ],
  "deps": {
   "ConfigParser": [],
   "StringIO": [],
-  "__future__": [],
+  "__future__": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "_update_fn": [],
   "anyconfig": [],
-  "argparse": [],
+  "argparse": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "cPickle": [],
   "cStringIO": [],
-  "codecs": [],
-  "collections": [],
+  "codecs": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "collections": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "configobj": [
    "configobj/conda-forge/noarch/configobj-5.0.6-py_0"
   ],
   "configparser": [
-   "configparser/conda-forge/noarch/configparser-5.0.0-py_0"
+   "configparser/conda-forge/noarch/configparser-5.0.0-py_0",
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
   ],
   "container": [],
   "container_to_etree": [],
   "elementtree": [],
   "fnc": [],
   "func": [],
-  "functools": [],
+  "functools": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "gen_schema": [],
-  "glob": [],
-  "inspect": [],
-  "io": [],
+  "glob": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "inspect": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "io": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "itertools": [],
   "jinja2": [
    "jinja2/conda-forge/noarch/jinja2-2.10-py_1"
   ],
   "jmespath": [
+   "jmespath/conda-forge/noarch/jmespath-0.9.3-py_1",
    "jmespath/conda-forge/noarch/jmespath-0.9.5-py_0"
   ],
-  "json": [],
-  "jsonschema": [],
-  "locale": [],
-  "logging": [],
+  "json": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "jsonschema": [
+   "jsonschema/conda-forge/noarch/jsonschema-3.2.0-py_2"
+  ],
+  "locale": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "logging": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "merge": [],
-  "operator": [],
+  "operator": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "ordereddict": [],
-  "os": [],
+  "os": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "parse": [
    "parse/conda-forge/noarch/parse-1.8.4-py_1"
   ],
-  "pathlib": [],
-  "pickle": [],
+  "pathlib": [
+   "pathlib/conda-forge/noarch/pathlib-1.0.1-py_1",
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "pickle": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "pkg_resources": [],
   "processor": [],
-  "re": [],
+  "re": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "ruamel": [],
-  "simplejson": [],
+  "simplejson": [
+   "simplejson/conda-forge/linux-64/simplejson-3.16.0-py36h14c3975_1002"
+  ],
   "sys": [],
   "toml": [
    "toml/conda-forge/noarch/toml-0.9.4-py_0"
   ],
-  "types": [],
-  "warnings": [],
-  "xml": [],
+  "types": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "warnings": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "xml": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "yaml": [
    "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1"
   ]

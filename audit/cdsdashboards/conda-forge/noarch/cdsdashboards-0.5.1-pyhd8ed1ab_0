@@ -13,12 +13,6 @@
   "app.CDS_TEMPLATE_PATHS",
   "app.JupyterHub",
   "app.cds_tornado_settings",
-  "asyncio",
-  "asyncio.CancelledError",
-  "asyncio.Future",
-  "asyncio.ensure_future",
-  "asyncio.sleep",
-  "asyncio.wrap_future",
   "base.CDSConfigStore.get_instance",
   "base.SpawnPermissionsController.get_instance",
   "builder_class",
@@ -39,36 +33,17 @@
   "cdsdashboards.hubextension.__init__.UserSelfAPIHandler",
   "cdsdashboards.hubextension.__init__.cds_extra_handlers",
   "cdsdashboards.orm.Dashboard.metadata",
-  "collections.defaultdict",
-  "concurrent.futures",
-  "concurrent.futures.ThreadPoolExecutor",
-  "contextlib.contextmanager",
-  "copy.deepcopy",
-  "datetime.datetime",
-  "datetime.datetime.now",
   "datetime.datetime.today",
-  "datetime.datetime.utcnow",
   "dbutil._temp_alembic_ini",
   "dbutil.is_upgrade_needed",
   "dbutil.upgrade_if_needed",
   "do_build",
-  "docker",
-  "docker.APIClient",
-  "docker.tls.TLSConfig",
-  "docker.utils.kwargs_from_env",
   "dockerspawner.DockerSpawner",
   "dockerspawner.SwarmSpawner",
   "dockerspawner.SystemUserSpawner",
   "f",
   "f.cancelled",
   "f.exception",
-  "functools",
-  "functools.partial",
-  "inspect",
-  "inspect.isawaitable",
-  "json",
-  "json.dumps",
-  "json.loads",
   "jupyterhub.__version__",
   "jupyterhub.apihandlers.base.APIHandler",
   "jupyterhub.apihandlers.users.SpawnProgressAPIHandler",
@@ -103,9 +78,6 @@
   "jupyterhub.traitlets.EntryPointType",
   "jupyterhub.utils.iterate_until",
   "jupyterhub.utils.url_path_join",
-  "logging",
-  "logging.config.fileConfig",
-  "logging.getLogger",
   "m",
   "orm.Dashboard.allow_all",
   "orm.Dashboard.find",
@@ -114,9 +86,6 @@
   "orm.DatabaseSchemaMismatch",
   "orm.check_db_revision",
   "orm.new_session_factory",
-  "os",
-  "os.getenv",
-  "os.path",
   "os.path.abspath",
   "os.path.dirname",
   "os.path.exists",
@@ -125,13 +94,7 @@
   "pluggymanager.pm.hook.get_builder_DockerBuilder",
   "pluggymanager.pm.hook.get_hubextension_main_DashboardEditHandler",
   "pluggymanager.pm.register",
-  "re",
-  "re.compile",
-  "re.match",
-  "re.sub",
   "ready_event",
-  "shutil",
-  "shutil.copy",
   "sqlalchemy.create_engine",
   "sqlalchemy.engine_from_config",
   "sqlalchemy.exc.OperationalError",
@@ -139,15 +102,12 @@
   "sqlalchemy.orm.backref",
   "sqlalchemy.pool",
   "sqlalchemy.pool.NullPool",
-  "subprocess.check_call",
-  "sudospawner.SudoSpawner",
   "sys",
   "sys.argv",
   "sys.exit",
   "sys.modules",
   "sys.prefix",
   "systemdspawner.SystemdSpawner",
-  "tempfile.TemporaryDirectory",
   "tljh.normalize.generate_system_username",
   "tljh.user",
   "tljh.user.ensure_user",
@@ -169,8 +129,7 @@
   "tornado.options",
   "tornado.web",
   "tornado.web.HTTPError",
-  "tornado.web.authenticated",
-  "urllib.parse.urlparse"
+  "tornado.web.authenticated"
  ],
  "deps": {
   "IPython": [],
@@ -181,52 +140,88 @@
   "async_generator": [
    "async_generator/conda-forge/noarch/async_generator-1.9-0"
   ],
-  "asyncio": [],
+  "asyncio": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "base": [],
   "builder_class": [],
   "cdsdashboards": [],
-  "collections": [],
-  "concurrent": [],
-  "contextlib": [],
-  "copy": [],
-  "datetime": [],
+  "collections": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "concurrent": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "contextlib": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "copy": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "datetime": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "dbutil": [],
   "do_build": [],
-  "docker": [],
+  "docker": [
+   "docker-py/conda-forge/linux-64/docker-py-4.4.4-py37h9c2f6ca_0"
+  ],
   "dockerspawner": [],
   "f": [],
-  "functools": [],
-  "inspect": [],
+  "functools": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "inspect": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "jinja2": [
    "jinja2/conda-forge/noarch/jinja2-2.10-py_1"
   ],
-  "json": [],
+  "json": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "jupyterhub": [],
   "kubespawner": [
    "jupyterhub-kubespawner/conda-forge/noarch/jupyterhub-kubespawner-1.0.0-pyhd8ed1ab_0"
   ],
-  "logging": [],
+  "logging": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "m": [],
   "orm": [],
-  "os": [],
+  "os": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "pluggy": [
    "pluggy/conda-forge/noarch/pluggy-0.10.0-py_0"
   ],
   "pluggymanager": [],
-  "re": [],
+  "re": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "ready_event": [],
-  "shutil": [],
+  "shutil": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "sqlalchemy": [],
-  "subprocess": [],
-  "sudospawner": [],
+  "subprocess": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "sudospawner": [
+   "sudospawner/conda-forge/noarch/sudospawner-0.5.2-py_1"
+  ],
   "sys": [],
   "systemdspawner": [],
-  "tempfile": [],
+  "tempfile": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "tljh": [],
   "tornado": [],
   "traitlets": [
    "traitlets/conda-forge/noarch/traitlets-5.0.3-py_0"
   ],
-  "urllib": []
+  "urllib": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ]
  }
 }

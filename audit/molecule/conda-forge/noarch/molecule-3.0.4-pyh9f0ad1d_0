@@ -1,21 +1,7 @@
 {
  "bad": [
-  "__future__.absolute_import",
-  "__future__.division",
-  "__future__.print_function",
-  "abc",
-  "abc.ABCMeta",
-  "abc.abstractmethod",
-  "abc.abstractproperty",
-  "binascii",
-  "binascii.b2a_hex",
   "check_func",
-  "collections",
-  "collections.Counter",
-  "collections.UserList",
   "collections.abc.Mapping",
-  "collections.defaultdict",
-  "collections.namedtuple",
   "color_text",
   "colorama.Back.RESET",
   "colorama.Back.WHITE",
@@ -28,59 +14,19 @@
   "colorama.Style.BRIGHT",
   "colorama.Style.RESET_ALL",
   "command",
-  "contextlib",
-  "contextlib.contextmanager",
-  "copy",
-  "copy.copy",
-  "copy.deepcopy",
-  "distutils.spawn",
-  "distutils.version.LooseVersion",
-  "docker",
-  "docker.from_env",
-  "fcntl",
-  "fcntl.ioctl",
-  "fnmatch",
-  "fnmatch.fnmatch",
   "func",
-  "functools",
-  "functools.lru_cache",
-  "functools.partial",
-  "functools.reduce",
-  "glob",
-  "glob.glob",
-  "inspect",
-  "io",
-  "io.IOBase",
-  "logging",
-  "logging.CRITICAL",
-  "logging.DEBUG",
-  "logging.ERROR",
-  "logging.Formatter",
-  "logging.INFO",
-  "logging.StreamHandler",
-  "logging.WARN",
-  "logging.getLogger",
-  "logging.getLoggerClass",
-  "logging.setLoggerClass",
   "molecule.__file__",
   "molecule.config.action",
   "molecule.config.getoption",
   "molecule.util.merge",
   "open_file",
-  "operator",
-  "operator.itemgetter",
-  "os",
   "os.W_OK",
   "os.access",
   "os.chdir",
-  "os.environ",
   "os.environ.copy",
   "os.environ.get",
   "os.getcwd",
-  "os.getenv",
-  "os.makedirs",
   "os.mkdir",
-  "os.pardir",
   "os.path.abspath",
   "os.path.basename",
   "os.path.dirname",
@@ -95,15 +41,11 @@
   "os.path.pardir",
   "os.path.sep",
   "os.path.split",
-  "os.popen",
   "os.remove",
-  "os.removedirs",
-  "os.sep",
   "os.symlink",
   "os.umask",
   "os.unlink",
   "os.urandom",
-  "os.walk",
   "p",
   "parallelize",
   "pkg_resources",
@@ -111,11 +53,6 @@
   "pkg_resources.get_distribution",
   "pkg_resources.parse_version",
   "pkg_resources.require",
-  "platform",
-  "platform.system",
-  "pytest",
-  "pytest.fail",
-  "pytest.fixture",
   "pytest.helpers.get_molecule_file",
   "pytest.helpers.idempotence",
   "pytest.helpers.init_role",
@@ -134,20 +71,10 @@
   "pytest.helpers.test",
   "pytest.helpers.verify",
   "pytest.helpers.write_molecule_file",
-  "pytest.mark",
   "pytest.mark.extensive",
   "pytest.mark.parametrize",
   "pytest.mark.skip",
-  "pytest.raises",
-  "pytest.skip",
-  "random",
-  "random.choice",
-  "re",
   "re.DOTALL",
-  "re.compile",
-  "re.match",
-  "re.search",
-  "re.sub",
   "red_text",
   "safe_dump",
   "set_env_from_file",
@@ -168,26 +95,10 @@
   "sh.pytest",
   "sh.which",
   "sh.yamllint.bake",
-  "shlex",
-  "shlex.split",
-  "shutil",
-  "shutil.copy",
-  "shutil.rmtree",
-  "signal",
   "signal.SIGWINCH",
-  "signal.signal",
   "str.__lt__",
-  "string",
-  "string.Template",
-  "string.ascii_uppercase",
-  "struct",
   "struct.pack",
   "struct.unpack",
-  "subprocess",
-  "subprocess.PIPE",
-  "subprocess.STDOUT",
-  "subprocess.check_output",
-  "subprocess.run",
   "sys",
   "sys.exit",
   "sys.stderr",
@@ -195,23 +106,25 @@
   "sys.stdout.fileno",
   "sys.stdout.isatty",
   "sys.version_info",
-  "termios",
   "termios.TIOCGWINSZ",
   "time",
   "time.sleep",
-  "traceback",
-  "traceback.format_exc",
-  "type.__call__",
-  "uuid.uuid4"
+  "type.__call__"
  ],
  "deps": {
-  "__future__": [],
-  "abc": [],
+  "__future__": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "abc": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "ansible": [
    "ansible-base/conda-forge/noarch/ansible-base-2.10.4-pyhd8ed1ab_0",
    "ansible-core/conda-forge/noarch/ansible-core-2.11.1-pyhd8ed1ab_0"
   ],
-  "binascii": [],
+  "binascii": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "cerberus": [
    "cerberus/conda-forge/noarch/cerberus-1.3.2-py_0"
   ],
@@ -225,50 +138,88 @@
   "click_help_colors": [
    "click-help-colors/conda-forge/noarch/click-help-colors-0.5-py_0"
   ],
-  "collections": [],
+  "collections": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "color_text": [],
   "colorama": [
    "colorama/conda-forge/noarch/colorama-0.4.4-pyh9f0ad1d_0"
   ],
   "command": [],
-  "contextlib": [],
+  "contextlib": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "cookiecutter": [
    "cookiecutter/conda-forge/noarch/cookiecutter-1.7.3-pyh6c4a22f_0"
   ],
-  "copy": [],
-  "distutils": [],
-  "docker": [],
-  "fcntl": [],
-  "fnmatch": [],
+  "copy": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "distutils": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "docker": [
+   "docker-py/conda-forge/linux-64/docker-py-4.4.4-py37h9c2f6ca_0"
+  ],
+  "fcntl": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "fnmatch": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "func": [],
-  "functools": [],
-  "glob": [],
-  "inspect": [],
-  "io": [],
+  "functools": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "glob": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "inspect": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "io": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "jinja2": [
    "jinja2/conda-forge/noarch/jinja2-2.10-py_1"
   ],
-  "logging": [],
+  "logging": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "molecule": [],
   "open_file": [],
-  "operator": [],
-  "os": [],
+  "operator": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "os": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "p": [],
   "parallelize": [],
   "pathlib": [
-   "pathlib/conda-forge/noarch/pathlib-1.0.1-py_1"
+   "pathlib/conda-forge/noarch/pathlib-1.0.1-py_1",
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
   ],
   "pexpect": [
    "pexpect/conda-forge/noarch/pexpect-4.8.0-pyh9f0ad1d_2"
   ],
   "pkg_resources": [],
-  "platform": [],
+  "platform": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "pluggy": [
    "pluggy/conda-forge/noarch/pluggy-0.10.0-py_0"
   ],
-  "pytest": [],
-  "random": [],
-  "re": [],
+  "pytest": [
+   "pytest/conda-forge/linux-64/pytest-4.6.3-py27_0",
+   "pytest/conda-forge/linux-64/pytest-6.0.2-py36hc560c46_0"
+  ],
+  "random": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "re": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "red_text": [],
   "requests": [
    "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
@@ -277,25 +228,43 @@
   "safe_dump": [],
   "set_env_from_file": [],
   "sh": [],
-  "shlex": [],
-  "shutil": [],
-  "signal": [],
+  "shlex": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "shutil": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "signal": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "str": [],
-  "string": [],
-  "struct": [],
-  "subprocess": [],
+  "string": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "struct": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "subprocess": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "sys": [],
   "tabulate": [
    "tabulate/conda-forge/noarch/tabulate-0.8.7-pyh9f0ad1d_0"
   ],
-  "termios": [],
+  "termios": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "time": [],
-  "traceback": [],
+  "traceback": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "tree_format": [
    "tree-format/conda-forge/noarch/tree-format-0.1.2-py_0"
   ],
   "type": [],
-  "uuid": [],
+  "uuid": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "yaml": [
    "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1"
   ]

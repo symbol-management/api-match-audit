@@ -17,26 +17,9 @@
   "cli.cli.main",
   "click_didyoumean.DYMGroup",
   "cloudpickle.load",
-  "collections",
-  "collections.Counter",
-  "collections.UserDict",
-  "collections.abc",
   "collections.abc.Sequence",
-  "collections.defaultdict",
-  "concurrent.futures.thread.ThreadPoolExecutor",
   "condor.get_schedd",
-  "contextlib",
-  "contextlib.redirect_stderr",
-  "contextlib.redirect_stdout",
-  "copy.copy",
   "create_map",
-  "csv",
-  "csv.DictWriter",
-  "datetime",
-  "datetime.datetime",
-  "datetime.datetime.fromtimestamp",
-  "datetime.datetime.utcnow",
-  "datetime.timedelta",
   "dir.exists",
   "dir.mkdir",
   "errors.ComponentError",
@@ -62,19 +45,7 @@
   "exceptions.TagNotFound",
   "exceptions.TimeoutError",
   "exceptions.UnknownPythonDeliveryMethod",
-  "fnmatch",
-  "fnmatch.fnmatchcase",
   "func",
-  "functools",
-  "functools.partial",
-  "functools.reduce",
-  "functools.total_ordering",
-  "functools.wraps",
-  "getpass",
-  "getpass.getuser",
-  "gzip",
-  "gzip.open",
-  "hashlib",
   "hashlib.md5",
   "holds.ComponentHold",
   "htcondor",
@@ -133,27 +104,10 @@
   "htmap.state.ComponentStatus.IDLE",
   "htmap.state.ComponentStatus.REMOVED",
   "htmap.state.ComponentStatus.RUNNING",
-  "inspect",
-  "inspect.getmembers",
-  "inspect.isfunction",
-  "io",
-  "io.StringIO",
   "itertools",
   "itertools.chain.from_iterable",
   "itertools.repeat",
   "itertools.zip_longest",
-  "json",
-  "json.dump",
-  "json.dumps",
-  "json.load",
-  "logging",
-  "logging.DEBUG",
-  "logging.Formatter",
-  "logging.NullHandler",
-  "logging.StreamHandler",
-  "logging.getLogger",
-  "logging.handlers",
-  "logging.handlers.RotatingFileHandler",
   "map._map_dir.open",
   "map.component_statuses",
   "map.is_done",
@@ -226,37 +180,12 @@
   "options.MapOptions",
   "options.MapOptions.merge",
   "options.create_submit_object_and_itemdata",
-  "os",
-  "os.PathLike",
-  "os.environ",
-  "os.getenv",
   "os.path.exists",
   "os.scandir",
-  "pathlib.Path",
-  "pathlib.Path.cwd",
-  "pathlib.Path.home",
-  "pickle",
-  "pickle.dump",
-  "pickle.load",
-  "pprint.pformat",
-  "random",
-  "random.choice",
-  "random.choices",
-  "random.sample",
-  "re",
   "re.ASCII",
   "re.VERBOSE",
-  "re.compile",
   "read_events",
   "settings.get",
-  "shutil",
-  "shutil.copy2",
-  "shutil.get_terminal_size",
-  "shutil.make_archive",
-  "shutil.move",
-  "shutil.rmtree",
-  "socket",
-  "socket.getfqdn",
   "socket.gethostbyname",
   "socket.gethostname",
   "spinners.Spinners",
@@ -268,12 +197,6 @@
   "state.ComponentStatus.REMOVED",
   "state.ComponentStatus.UNMATERIALIZED",
   "state.ComponentStatus.display_statuses",
-  "string",
-  "string.ascii_letters",
-  "string.digits",
-  "subprocess",
-  "subprocess.PIPE",
-  "subprocess.run",
   "sys",
   "sys.argv",
   "sys.argv.remove",
@@ -291,40 +214,12 @@
   "tags.raise_if_tag_is_invalid",
   "tags.random_tag",
   "tags.tag_file_path",
-  "textwrap",
-  "textwrap.dedent",
-  "textwrap.indent",
-  "textwrap.wrap",
-  "threading",
-  "threading.Lock",
   "time",
   "time.monotonic",
   "time.sleep",
   "time.time",
-  "traceback",
-  "traceback.FrameSummary",
-  "traceback.StackSummary.from_list",
-  "traceback.format_exc",
-  "traceback.format_exception_only",
-  "traceback.print_exc",
-  "traceback.walk_tb",
   "transfer.TransferPath",
-  "typing.Any",
-  "typing.Callable",
-  "typing.Collection",
-  "typing.Dict",
-  "typing.Iterable",
-  "typing.Iterator",
-  "typing.List",
-  "typing.Mapping",
-  "typing.MutableMapping",
   "typing.MutableMapping.register",
-  "typing.NamedTuple",
-  "typing.Optional",
-  "typing.Set",
-  "typing.Tuple",
-  "typing.Union",
-  "urllib.parse.urlunsplit",
   "utils.BINDINGS_VERSION_INFO",
   "utils.CAN_USE_URL_OUTPUT_TRANSFER",
   "utils.StrEnum",
@@ -338,12 +233,7 @@
   "utils.rstr",
   "utils.table",
   "utils.timeout_to_seconds",
-  "utils.wait_for_path_to_exist",
-  "uuid",
-  "uuid.UUID",
-  "uuid.uuid4",
-  "weakref",
-  "weakref.WeakSet"
+  "utils.wait_for_path_to_exist"
  ],
  "deps": {
   "__main__": [],
@@ -366,38 +256,69 @@
   "cloudpickle": [
    "cloudpickle/conda-forge/noarch/cloudpickle-1.4.1-py_0"
   ],
-  "collections": [],
-  "concurrent": [],
+  "collections": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "concurrent": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "condor": [],
-  "contextlib": [],
-  "copy": [],
+  "contextlib": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "copy": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "create_map": [],
-  "csv": [],
-  "datetime": [],
+  "csv": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "datetime": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "dir": [],
   "enum": [
-   "privy/conda-forge/noarch/privy-6.0.0-py_0"
+   "privy/conda-forge/noarch/privy-6.0.0-py_0",
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
   ],
   "errors": [],
   "exceptions": [],
-  "fnmatch": [],
+  "fnmatch": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "func": [],
-  "functools": [],
-  "getpass": [],
-  "gzip": [],
+  "functools": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "getpass": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "gzip": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "halo": [
    "halo/conda-forge/noarch/halo-0.0.28-py_0"
   ],
-  "hashlib": [],
+  "hashlib": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "holds": [],
   "htcondor": [],
   "htio": [],
   "htmap": [],
-  "inspect": [],
-  "io": [],
+  "inspect": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "io": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "itertools": [],
-  "json": [],
-  "logging": [],
+  "json": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "logging": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "map": [],
   "mapping": [],
   "maps": [],
@@ -405,24 +326,48 @@
   "method": [],
   "names": [],
   "options": [],
-  "os": [],
-  "pathlib": [],
-  "pickle": [],
-  "pprint": [],
-  "random": [],
-  "re": [],
+  "os": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "pathlib": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "pickle": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "pprint": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "random": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "re": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "read_events": [],
   "settings": [],
-  "shutil": [],
-  "socket": [],
+  "shutil": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "socket": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "spinners": [],
   "state": [],
-  "string": [],
-  "subprocess": [],
+  "string": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "subprocess": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "sys": [],
   "tags": [],
-  "textwrap": [],
-  "threading": [],
+  "textwrap": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "threading": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "time": [],
   "toml": [
    "toml/conda-forge/noarch/toml-0.9.4-py_0"
@@ -430,12 +375,22 @@
   "tqdm": [
    "tqdm/conda-forge/noarch/tqdm-4.20.0-py_0"
   ],
-  "traceback": [],
+  "traceback": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "transfer": [],
-  "typing": [],
-  "urllib": [],
+  "typing": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "urllib": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "utils": [],
-  "uuid": [],
-  "weakref": []
+  "uuid": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "weakref": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ]
  }
 }

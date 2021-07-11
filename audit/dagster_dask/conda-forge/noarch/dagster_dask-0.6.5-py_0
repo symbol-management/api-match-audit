@@ -1,55 +1,25 @@
 {
  "bad": [
-  "collections.namedtuple",
-  "dagster.Bool",
   "dagster.ExecutionTargetHandle",
   "dagster.ExecutionTargetHandle.for_pipeline_python_file",
-  "dagster.Field",
-  "dagster.InputDefinition",
-  "dagster.Int",
-  "dagster.ModeDefinition",
-  "dagster.String",
-  "dagster.check",
-  "dagster.check.inst",
-  "dagster.check.inst_param",
-  "dagster.check.invariant",
-  "dagster.check.opt_bool_param",
-  "dagster.check.opt_int_param",
-  "dagster.check.opt_str_param",
-  "dagster.check.param_invariant",
-  "dagster.core.definitions.executor.default_executors",
-  "dagster.core.definitions.executor.executor",
   "dagster.core.engine.engine_base.Engine",
-  "dagster.core.events.DagsterEvent",
   "dagster.core.execution.config.ExecutorConfig",
   "dagster.core.execution.config.check_non_ephemeral_instance",
   "dagster.core.execution.config.check_persistent_storage_requirement",
   "dagster.core.execution.context.system.SystemPipelineExecutionContext",
-  "dagster.core.execution.plan.plan.ExecutionPlan",
-  "dagster.core.instance.DagsterInstance",
-  "dagster.core.instance.DagsterInstance.local_temp",
-  "dagster.core.test_utils.nesting_composite_pipeline",
-  "dagster.execute_pipeline",
-  "dagster.file_relative_path",
-  "dagster.pipeline",
-  "dagster.seven",
   "dagster.seven.TemporaryDirectory",
-  "dagster.solid",
-  "dagster.utils.script_relative_path",
   "dask",
   "dask.distributed.Client",
   "dask.distributed.as_completed",
-  "engine.DaskEngine",
-  "os",
-  "os.getenv",
-  "pytest",
-  "pytest.fixture",
-  "re",
-  "re.match"
+  "engine.DaskEngine"
  ],
  "deps": {
-  "collections": [],
-  "dagster": [],
+  "collections": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "dagster": [
+   "dagster/conda-forge/linux-64/dagster-0.11.10-py37h89c1867_0"
+  ],
   "dagster_graphql": [
    "dagster_graphql/conda-forge/noarch/dagster_graphql-0.6.7-py_0"
   ],
@@ -64,8 +34,15 @@
   "graphql": [
    "graphql-core/conda-forge/noarch/graphql-core-2.0-py_0"
   ],
-  "os": [],
-  "pytest": [],
-  "re": []
+  "os": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "pytest": [
+   "pytest/conda-forge/linux-64/pytest-4.6.3-py27_0",
+   "pytest/conda-forge/linux-64/pytest-6.0.2-py36hc560c46_0"
+  ],
+  "re": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ]
  }
 }

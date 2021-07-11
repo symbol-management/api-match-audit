@@ -1,62 +1,30 @@
 {
  "bad": [
   "CompositionalMetric",
-  "abc.ABC",
-  "abc.abstractmethod",
-  "collections.Counter",
-  "collections.OrderedDict",
   "collections.abc.Sequence",
   "compute",
-  "contextlib.contextmanager",
-  "copy.deepcopy",
   "elem_type",
   "fn",
-  "functools",
-  "functools.wraps",
-  "importlib.import_module",
-  "importlib.util.find_spec",
-  "inspect",
   "inspect.Parameter.VAR_KEYWORD",
   "inspect.Parameter.VAR_POSITIONAL",
-  "inspect.signature",
-  "logging",
-  "logging.INFO",
-  "logging.StreamHandler",
-  "logging.getLogger",
   "m",
   "m._filter_kwargs",
   "m.compute",
   "m.persistent",
   "m.reset",
   "m.update",
-  "numpy",
-  "numpy.float_",
-  "operator",
-  "operator.ge",
-  "operator.lt",
-  "os",
   "os.environ.get",
   "os.path.dirname",
   "os.path.join",
   "pkg_resources.DistributionNotFound",
   "pkg_resources.get_distribution",
-  "re",
   "re.DOTALL",
   "re.IGNORECASE",
-  "re.sub",
   "reduction_fn",
-  "scipy",
-  "scipy.linalg.solve_sylvester",
-  "scipy.linalg.sqrtm",
-  "torch",
-  "torch.Tensor",
   "torch.abs",
   "torch.add",
   "torch.arange",
-  "torch.argmax",
-  "torch.argsort",
   "torch.as_tensor",
-  "torch.autograd.Function",
   "torch.bincount",
   "torch.bitwise_and",
   "torch.bitwise_not",
@@ -70,13 +38,7 @@
   "torch.cumsum",
   "torch.device",
   "torch.diag",
-  "torch.distributed.all_gather",
-  "torch.distributed.barrier",
-  "torch.distributed.get_world_size",
   "torch.distributed.group.WORLD",
-  "torch.distributed.is_available",
-  "torch.distributed.is_initialized",
-  "torch.distributions.Poisson",
   "torch.div",
   "torch.dtype",
   "torch.empty_like",
@@ -95,8 +57,6 @@
   "torch.index_select",
   "torch.int",
   "torch.is_nonzero",
-  "torch.isfinite",
-  "torch.isnan",
   "torch.jit.unused",
   "torch.le",
   "torch.lerp",
@@ -109,18 +69,9 @@
   "torch.matmul",
   "torch.max",
   "torch.mean",
-  "torch.mul",
   "torch.multinomial",
   "torch.ne",
-  "torch.nn",
-  "torch.nn.Module",
-  "torch.nn.ModuleDict",
-  "torch.nn.functional",
-  "torch.nn.functional.conv2d",
-  "torch.nn.functional.pad",
-  "torch.no_grad",
   "torch.nonzero",
-  "torch.norm",
   "torch.ones",
   "torch.ones_like",
   "torch.pow",
@@ -131,12 +82,10 @@
   "torch.stack",
   "torch.sub",
   "torch.sum",
-  "torch.tensor",
   "torch.trace",
   "torch.transpose",
   "torch.trapz",
   "torch.true_divide",
-  "torch.unique",
   "torch.where",
   "torch.zeros",
   "torch.zeros_like",
@@ -164,54 +113,73 @@
   "torchmetrics.utilities.imports._TORCH_FIDELITY_AVAILABLE",
   "torchmetrics.utilities.imports._TORCH_GREATER_EQUAL_1_7",
   "torchmetrics.utilities.imports._TORCH_LOWER_1_6",
-  "typing.Any",
-  "typing.Callable",
-  "typing.Dict",
-  "typing.Generator",
-  "typing.Hashable",
-  "typing.Iterable",
-  "typing.List",
-  "typing.Mapping",
-  "typing.Optional",
-  "typing.Sequence",
-  "typing.Tuple",
-  "typing.Union",
-  "update",
-  "warnings",
-  "warnings.warn"
+  "update"
  ],
  "deps": {
   "CompositionalMetric": [],
-  "abc": [],
-  "collections": [],
+  "abc": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "collections": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "compute": [],
-  "contextlib": [],
-  "copy": [],
+  "contextlib": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "copy": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "elem_type": [],
   "enum": [
-   "privy/conda-forge/noarch/privy-6.0.0-py_0"
+   "privy/conda-forge/noarch/privy-6.0.0-py_0",
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
   ],
   "fn": [],
-  "functools": [],
-  "importlib": [],
-  "inspect": [],
-  "logging": [],
+  "functools": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "importlib": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "inspect": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "logging": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "m": [],
-  "numpy": [],
-  "operator": [],
-  "os": [],
+  "numpy": [
+   "numpy/conda-forge/linux-64/numpy-1.9.3-py27_blas_openblashb06ca3d_7"
+  ],
+  "operator": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "os": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "packaging": [
    "packaging/conda-forge/noarch/packaging-18.0-py_0"
   ],
   "pkg_resources": [],
-  "re": [],
+  "re": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "reduction_fn": [],
-  "scipy": [],
-  "torch": [],
+  "scipy": [
+   "scipy/conda-forge/linux-64/scipy-0.18.1-np111py34_blas_openblas_200"
+  ],
+  "torch": [
+   "pytorch-cpu/conda-forge/linux-64/pytorch-cpu-1.0.1-py27hf484d3e_0"
+  ],
   "torch_fidelity": [],
   "torchmetrics": [],
-  "typing": [],
+  "typing": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "update": [],
-  "warnings": []
+  "warnings": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ]
  }
 }

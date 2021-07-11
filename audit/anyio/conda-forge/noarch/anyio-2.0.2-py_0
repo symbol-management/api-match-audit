@@ -8,7 +8,6 @@
   "_core._sockets.convert_ipv6_sockaddr",
   "_eventloop.threadlocals.current_async_module",
   "_iterate_signals",
-  "abc.ABCMeta",
   "abc.BlockingPortal",
   "abc.ByteReceiveStream",
   "abc.ByteSendStream",
@@ -27,93 +26,32 @@
   "abc.TaskGroup.register",
   "abc.TestRunner",
   "abc.UDPSocket",
-  "abc.abstractmethod",
   "anyio._core._lowlevel.checkpoint",
   "anyio._core._resources.aclose_forcefully",
   "anyio._core._threads.run_sync_in_worker_thread",
-  "asyncio",
-  "asyncio.AbstractEventLoop",
-  "asyncio.AbstractEventLoopPolicy",
-  "asyncio.BaseTransport",
-  "asyncio.CancelledError",
-  "asyncio.DatagramProtocol",
-  "asyncio.DatagramTransport",
-  "asyncio.Event",
-  "asyncio.Protocol",
-  "asyncio.Queue",
-  "asyncio.StreamReader",
-  "asyncio.StreamWriter",
-  "asyncio.Task",
   "asyncio.Task.all_tasks",
   "asyncio.Task.current_task",
-  "asyncio.Transport",
-  "asyncio._get_running_loop",
   "asyncio.all_tasks",
-  "asyncio.coroutines",
-  "asyncio.coroutines.iscoroutine",
-  "asyncio.create_subprocess_exec",
-  "asyncio.create_subprocess_shell",
   "asyncio.create_task",
   "asyncio.current_task",
-  "asyncio.events",
-  "asyncio.events._get_running_loop",
   "asyncio.events.append",
-  "asyncio.events.new_event_loop",
-  "asyncio.events.set_event_loop",
-  "asyncio.gather",
   "asyncio.get_running_loop",
-  "asyncio.iscoroutine",
   "asyncio.run",
-  "asyncio.run_coroutine_threadsafe",
-  "asyncio.set_event_loop",
-  "asyncio.set_event_loop_policy",
-  "asyncio.sleep",
   "asyncio.sleep.__code__",
-  "asyncio.subprocess.Process",
-  "asyncio.tasks",
-  "asyncio.tasks.gather",
-  "asyncio.wait",
   "checkpoint",
   "cls",
-  "codecs",
-  "codecs.IncrementalDecoder",
-  "codecs.getencoder",
-  "codecs.getincrementaldecoder",
-  "collections.OrderedDict",
-  "collections.defaultdict",
-  "collections.deque",
-  "concurrent.futures",
-  "concurrent.futures.Future",
   "contextlib.asynccontextmanager",
-  "contextlib.contextmanager",
   "create_task_group",
   "decoder_class",
   "func",
   "func_",
-  "functools.wraps",
   "get_asynclib",
   "getaddrinfo",
   "handler",
-  "importlib.import_module",
-  "inspect",
-  "inspect.isasyncgenfunction",
-  "inspect.iscoroutine",
-  "inspect.iscoroutinefunction",
-  "inspect.isgenerator",
-  "math",
-  "math.inf",
-  "math.isinf",
   "open_process",
-  "os",
-  "os.PathLike",
-  "os.SEEK_SET",
   "os.chmod",
   "process_signal_queue",
-  "pytest",
-  "pytest.fixture",
-  "pytest.hookimpl",
   "pytest.mark.usefixtures",
-  "signal.signal",
   "sleep",
   "sniffio",
   "sniffio.AsyncLibraryNotFoundError",
@@ -121,7 +59,6 @@
   "sniffio.current_async_library_cvar.get",
   "sniffio.current_async_library_cvar.reset",
   "sniffio.current_async_library_cvar.set",
-  "socket",
   "socket.AF_INET",
   "socket.AF_INET6",
   "socket.AF_UNIX",
@@ -144,36 +81,15 @@
   "socket.SocketKind",
   "socket.SocketType",
   "socket.TCP_NODELAY",
-  "socket.socket",
-  "ssl",
-  "ssl.MemoryBIO",
   "ssl.Purpose.CLIENT_AUTH",
   "ssl.Purpose.SERVER_AUTH",
-  "ssl.SSLContext",
-  "ssl.SSLEOFError",
-  "ssl.SSLObject",
-  "ssl.SSLSyscallError",
-  "ssl.SSLWantReadError",
-  "ssl.SSLWantWriteError",
-  "ssl.create_default_context",
   "streams.tls.TLSStream.wrap",
-  "subprocess.CalledProcessError",
-  "subprocess.CompletedProcess",
-  "subprocess.DEVNULL",
-  "subprocess.PIPE",
   "sys",
   "sys.implementation.name",
   "sys.modules",
   "sys.platform",
   "sys.version_info",
-  "threading",
-  "threading.Event",
-  "threading.Thread",
-  "threading.current_thread",
-  "threading.get_ident",
-  "threading.local",
   "timeout",
-  "traceback.format_exception",
   "trio.from_thread",
   "trio.hazmat",
   "trio.hazmat.current_root_task",
@@ -185,37 +101,11 @@
   "trio.lowlevel.wait_writable",
   "trio.testing",
   "trio.to_thread.run_sync",
-  "types.TracebackType",
-  "typing.Any",
-  "typing.AsyncContextManager",
-  "typing.AsyncIterator",
-  "typing.Awaitable",
-  "typing.Callable",
-  "typing.Coroutine",
-  "typing.DefaultDict",
-  "typing.Deque",
-  "typing.Dict",
-  "typing.Generator",
-  "typing.Generic",
-  "typing.Iterator",
-  "typing.List",
   "typing.Literal",
-  "typing.Mapping",
-  "typing.NoReturn",
-  "typing.Optional",
-  "typing.Sequence",
-  "typing.Set",
-  "typing.Tuple",
-  "typing.Type",
-  "typing.TypeVar",
-  "typing.Union",
-  "typing.cast",
   "typing.final",
-  "typing.overload",
   "uvloop",
   "uvloop.EventLoopPolicy",
   "uvloop.loop.Loop",
-  "weakref.WeakKeyDictionary",
   "wrapper"
  ],
  "deps": {
@@ -224,18 +114,30 @@
   "_core": [],
   "_eventloop": [],
   "_iterate_signals": [],
-  "abc": [],
+  "abc": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "anyio": [],
   "async_generator": [
    "async_generator/conda-forge/noarch/async_generator-1.9-0"
   ],
-  "asyncio": [],
+  "asyncio": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "checkpoint": [],
   "cls": [],
-  "codecs": [],
-  "collections": [],
-  "concurrent": [],
-  "contextlib": [],
+  "codecs": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "collections": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "concurrent": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "contextlib": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "create_task_group": [],
   "curio": [
    "curio/conda-forge/noarch/curio-1.2-py_0"
@@ -247,7 +149,9 @@
   "decoder_class": [],
   "func": [],
   "func_": [],
-  "functools": [],
+  "functools": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "get_asynclib": [],
   "getaddrinfo": [],
   "handler": [],
@@ -256,43 +160,74 @@
    "idna/conda-forge/noarch/idna-3.0-pyhd3deb0d_0",
    "privy/conda-forge/noarch/privy-6.0.0-py_0"
   ],
-  "importlib": [],
-  "inspect": [],
+  "importlib": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "inspect": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "ipaddress": [
    "ipaddress/conda-forge/noarch/ipaddress-1.0.22-py_1",
-   "privy/conda-forge/noarch/privy-6.0.0-py_0"
+   "privy/conda-forge/noarch/privy-6.0.0-py_0",
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
   ],
-  "math": [],
+  "math": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "open_process": [],
-  "os": [],
+  "os": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "outcome": [
    "outcome/conda-forge/noarch/outcome-1.1.0-pyhd8ed1ab_0"
   ],
   "pathlib": [
-   "pathlib/conda-forge/noarch/pathlib-1.0.1-py_1"
+   "pathlib/conda-forge/noarch/pathlib-1.0.1-py_1",
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
   ],
   "process_signal_queue": [],
-  "pytest": [],
-  "signal": [],
+  "pytest": [
+   "pytest/conda-forge/linux-64/pytest-4.6.3-py27_0",
+   "pytest/conda-forge/linux-64/pytest-6.0.2-py36hc560c46_0"
+  ],
+  "signal": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "sleep": [],
   "sniffio": [],
-  "socket": [],
-  "ssl": [],
+  "socket": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "ssl": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "streams": [],
-  "subprocess": [],
+  "subprocess": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "sys": [],
-  "threading": [],
+  "threading": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "timeout": [],
-  "traceback": [],
+  "traceback": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "trio": [],
-  "types": [],
-  "typing": [],
+  "types": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "typing": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "typing_extensions": [
    "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
    "typing_extensions/conda-forge/noarch/typing_extensions-3.7.4.3-py_0"
   ],
   "uvloop": [],
-  "weakref": [],
+  "weakref": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "wrapper": []
  }
 }

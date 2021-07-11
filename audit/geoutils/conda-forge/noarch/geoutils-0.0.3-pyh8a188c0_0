@@ -1,18 +1,8 @@
 {
  "bad": [
   "__future__.annotations",
-  "argparse",
-  "argparse.ArgumentParser",
-  "argparse.Namespace",
-  "collections.abc",
   "collections.abc.Iterable",
-  "copy",
-  "copy.copy",
-  "datetime",
-  "datetime.date",
-  "datetime.datetime",
   "datetime.datetime.fromordinal",
-  "datetime.datetime.strptime",
   "format_value",
   "geoutils.datasets.__init__._module_path",
   "geoutils.datasets.__init__.available",
@@ -32,45 +22,11 @@
   "matplotlib.pyplot.show",
   "matplotlib.pyplot.subplots",
   "matplotlib.pyplot.tight_layout",
-  "numbers.Number",
-  "numpy",
-  "numpy.abs",
-  "numpy.any",
-  "numpy.arange",
-  "numpy.array",
-  "numpy.array_equal",
-  "numpy.asarray",
-  "numpy.ceil",
-  "numpy.dtype",
-  "numpy.expand_dims",
-  "numpy.find_common_type",
   "numpy.float32",
   "numpy.float64",
   "numpy.floating",
-  "numpy.floor",
-  "numpy.integer",
-  "numpy.linspace",
-  "numpy.ma.core.MaskedArray",
-  "numpy.ma.isMaskedArray",
-  "numpy.ma.masked_array",
-  "numpy.ma.mean",
-  "numpy.ma.median",
-  "numpy.meshgrid",
   "numpy.nan",
-  "numpy.nanmax",
-  "numpy.nanmean",
-  "numpy.nanmin",
-  "numpy.nanstd",
-  "numpy.ndarray",
-  "numpy.ones",
-  "numpy.percentile",
-  "numpy.round",
-  "numpy.shape",
   "numpy.sign",
-  "numpy.sum",
-  "numpy.vectorize",
-  "numpy.zeros",
-  "os",
   "os.cpu_count",
   "os.path.abspath",
   "os.path.basename",
@@ -78,59 +34,32 @@
   "os.path.exists",
   "os.path.join",
   "os.path.splitext",
-  "pyproj",
-  "pyproj.CRS",
   "pyproj.Transformer.from_crs",
-  "rasterio",
-  "rasterio.control.GroundControlPoint",
-  "rasterio.coords.BoundingBox",
-  "rasterio.crs.CRS",
-  "rasterio.crs.CRS.from_epsg",
-  "rasterio.crs.CRS.from_user_input",
-  "rasterio.features",
-  "rasterio.features.rasterize",
   "rasterio.io.Dataset",
-  "rasterio.io.DatasetReader",
-  "rasterio.io.MemoryFile",
-  "rasterio.mask",
-  "rasterio.mask.mask",
-  "rasterio.open",
-  "rasterio.plot.show",
-  "rasterio.transform",
-  "rasterio.transform.Affine",
-  "rasterio.transform.from_bounds",
-  "rasterio.warp",
-  "rasterio.warp.Resampling",
   "rasterio.warp.Resampling.nearest",
-  "rasterio.warp.reproject",
-  "rasterio.warp.transform_bounds",
-  "rasterio.windows",
-  "rasterio.windows.Window",
-  "rasterio.windows.from_bounds",
-  "re",
-  "re.match",
   "reducer_function",
   "rioxarray.DataArray",
-  "scipy.ndimage.map_coordinates",
   "sys",
   "sys.exit",
-  "sys.stderr.write",
-  "typing.Any",
-  "typing.Callable",
-  "typing.IO",
-  "typing.TypeVar",
-  "warnings",
-  "warnings.warn"
+  "sys.stderr.write"
  ],
  "deps": {
   "__future__": [],
   "affine": [
    "affine/conda-forge/noarch/affine-2.3.0-py_0"
   ],
-  "argparse": [],
-  "collections": [],
-  "copy": [],
-  "datetime": [],
+  "argparse": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "collections": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "copy": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "datetime": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "format_value": [],
   "geopandas": [
    "geopandas-base/conda-forge/noarch/geopandas-base-0.9.0-pyhd8ed1ab_1",
@@ -138,22 +67,41 @@
   ],
   "geoutils": [],
   "matplotlib": [],
-  "numbers": [],
-  "numpy": [],
-  "os": [],
-  "pyproj": [],
-  "rasterio": [],
-  "re": [],
+  "numbers": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "numpy": [
+   "numpy/conda-forge/linux-64/numpy-1.9.3-py27_blas_openblashb06ca3d_7"
+  ],
+  "os": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "pyproj": [
+   "pyproj/conda-forge/linux-64/pyproj-2.6.1.post1-py36he34cbb8_0"
+  ],
+  "rasterio": [
+   "rasterio/conda-forge/linux-64/rasterio-1.0.28-py27h900e953_1",
+   "rasterio/conda-forge/linux-64/rasterio-1.2.5-py39hbc9cc8e_0"
+  ],
+  "re": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "reducer_function": [],
   "rioxarray": [
    "rioxarray/conda-forge/noarch/rioxarray-0.3.0-pyhd8ed1ab_0"
   ],
-  "scipy": [],
+  "scipy": [
+   "scipy/conda-forge/linux-64/scipy-0.18.1-np111py34_blas_openblas_200"
+  ],
   "shapely": [
    "solaris/conda-forge/noarch/solaris-0.4.0-pyhe05a262_0"
   ],
   "sys": [],
-  "typing": [],
-  "warnings": []
+  "typing": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "warnings": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ]
  }
 }

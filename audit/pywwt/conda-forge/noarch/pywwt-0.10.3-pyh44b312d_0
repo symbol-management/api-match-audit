@@ -7,35 +7,19 @@
   "OpenGL.GL.GL_VERSION",
   "OpenGL.GL.glGetString",
   "WebServer",
-  "__future__.absolute_import",
-  "__future__.division",
-  "__future__.print_function",
   "app.cleanup_qapp",
   "app.get_qapp",
-  "astropy.coordinates.ICRS",
-  "astropy.coordinates.SkyCoord",
   "astropy.coordinates.SkyCoord.from_name",
-  "astropy.coordinates.concatenate",
-  "astropy.io.fits",
-  "astropy.io.fits.writeto",
-  "astropy.table.Column",
-  "astropy.table.Table",
-  "astropy.time.Time",
   "astropy.time.Time.now",
-  "astropy.units",
   "astropy.units.Mpc",
-  "astropy.units.Quantity",
-  "astropy.units.Unit",
   "astropy.units.arcsec",
   "astropy.units.au",
   "astropy.units.day",
-  "astropy.units.def_unit",
   "astropy.units.deg",
   "astropy.units.deg.value",
   "astropy.units.degree",
   "astropy.units.hour",
   "astropy.units.hourangle",
-  "astropy.units.imperial.enable",
   "astropy.units.imperial.foot",
   "astropy.units.imperial.inch",
   "astropy.units.imperial.mile",
@@ -44,46 +28,19 @@
   "astropy.units.lyr",
   "astropy.units.m",
   "astropy.units.meter",
-  "astropy.units.one",
   "astropy.units.pc",
   "astropy.units.pix",
   "astropy.units.pixel",
-  "astropy.units.rad",
-  "astropy.utils.console.ProgressBar",
-  "astropy.wcs.WCS",
-  "asyncio",
-  "asyncio.new_event_loop",
-  "asyncio.set_event_loop",
-  "base64.b64encode",
   "bs4.BeautifulSoup",
-  "codecs",
-  "codecs.getencoder",
-  "collections.OrderedDict",
-  "csv",
-  "csv.DictWriter",
-  "datetime.datetime",
-  "datetime.datetime.utcnow",
-  "datetime.timedelta",
   "hashlib.md5",
-  "io",
-  "io.BytesIO",
-  "io.StringIO",
-  "io.open",
   "ipykernel",
   "ipykernel.connect.get_connection_file",
-  "json",
-  "json.dump",
-  "json.dumps",
-  "json.load",
-  "json.loads",
   "layers.ImageLayer",
   "layers.UI_COLORMAPS",
   "layers.UI_COLORMAPS.items",
   "layers.UI_COLORMAPS.keys",
   "layers.VALID_STRETCHES",
   "logger.logger.debug",
-  "logging",
-  "logging.getLogger",
   "matplotlib.cm",
   "matplotlib.cm.ScalarMappable",
   "matplotlib.colors.Colormap",
@@ -97,34 +54,18 @@
   "matplotlib.pyplot.cm.get_cmap",
   "matplotlib.pyplot.cm.viridis",
   "matplotlib.testing.compare.compare_images",
-  "mimetypes",
-  "mimetypes.add_type",
-  "mimetypes.guess_type",
   "notebook.base.handlers.IPythonHandler",
   "notebook.utils.check_pid",
   "notebook.utils.url_path_join",
-  "numpy",
-  "numpy.arange",
   "numpy.arccos",
-  "numpy.arctan2",
-  "numpy.cos",
   "numpy.float32",
-  "numpy.issubdtype",
-  "numpy.nanmax",
-  "numpy.nanmin",
   "numpy.rad2deg",
-  "numpy.sin",
-  "numpy.sqrt",
   "numpy.string_",
   "numpy.unicode_",
-  "os",
   "os.environ.get",
-  "os.linesep",
   "os.linesep.join",
   "os.listdir",
-  "os.makedirs",
   "os.mkdir",
-  "os.path",
   "os.path.abspath",
   "os.path.basename",
   "os.path.dirname",
@@ -134,14 +75,8 @@
   "os.path.join",
   "os.path.splitext",
   "os.unlink",
-  "pytest",
-  "pytest.approx",
-  "pytest.fail",
-  "pytest.fixture",
   "pytest.mark.parametrize",
   "pytest.mark.skipif",
-  "pytest.raises",
-  "pytest.warns",
   "pytz.utc.localize",
   "pywwt.tests.__init__.DATA",
   "pywwt.tests.__init__.FRAMEWORK",
@@ -157,29 +92,15 @@
   "qtpy.QtWidgets.QApplication.instance",
   "qtpy.QtWidgets.QOpenGLWidget",
   "qtpy.QtWidgets.QWidget",
-  "re",
-  "re.match",
-  "re.search",
-  "re.sub",
   "reproject.mosaicking.find_optimal_celestial_wcs",
   "reproject.reproject_interp",
-  "shutil",
-  "shutil.copy",
-  "shutil.copyfile",
-  "shutil.make_archive",
-  "socket",
   "socket.AF_INET",
   "socket.SOCK_STREAM",
   "socket.gethostbyname",
-  "socket.socket",
-  "struct",
   "struct.pack",
   "sys",
   "sys.platform.startswith",
   "sys.version_info",
-  "tempfile",
-  "tempfile.mkdtemp",
-  "threading.Thread",
   "time",
   "time.sleep",
   "time.time",
@@ -189,13 +110,7 @@
   "tornado.web",
   "tornado.web.Application",
   "tornado.web.HTTPError",
-  "tornado.web.RequestHandler",
-  "traceback.print_exc",
-  "uuid",
-  "uuid.uuid4",
-  "warnings",
-  "warnings.warn",
-  "xml.etree.ElementTree.ElementTree"
+  "tornado.web.RequestHandler"
  ],
  "deps": {
   "DataServer": [],
@@ -203,21 +118,39 @@
    "pyopengl/conda-forge/noarch/pyopengl-3.1.3b2-py_0"
   ],
   "WebServer": [],
-  "__future__": [],
+  "__future__": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "app": [],
-  "astropy": [],
-  "asyncio": [],
-  "base64": [],
+  "astropy": [
+   "astropy/conda-forge/linux-64/astropy-2.0.4-py27_0"
+  ],
+  "asyncio": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "base64": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "bs4": [],
-  "codecs": [],
-  "collections": [],
-  "csv": [],
-  "datetime": [],
+  "codecs": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "collections": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "csv": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "datetime": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "dateutil": [
    "python-dateutil/conda-forge/noarch/python-dateutil-2.7.4-py_0"
   ],
   "hashlib": [],
-  "io": [],
+  "io": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "ipyevents": [
    "ipyevents/conda-forge/noarch/ipyevents-0.4.1-py_0"
   ],
@@ -225,19 +158,32 @@
   "ipywidgets": [
    "ipywidgets/conda-forge/noarch/ipywidgets-7.5.0-py_0"
   ],
-  "json": [],
+  "json": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "jupyter_core": [
    "jupyter_core/conda-forge/noarch/jupyter_core-4.5.0-py_0"
   ],
   "layers": [],
   "logger": [],
-  "logging": [],
+  "logging": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "matplotlib": [],
-  "mimetypes": [],
+  "mimetypes": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "notebook": [],
-  "numpy": [],
-  "os": [],
-  "pytest": [],
+  "numpy": [
+   "numpy/conda-forge/linux-64/numpy-1.9.3-py27_blas_openblashb06ca3d_7"
+  ],
+  "os": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "pytest": [
+   "pytest/conda-forge/linux-64/pytest-4.6.3-py27_0",
+   "pytest/conda-forge/linux-64/pytest-6.0.2-py36hc560c46_0"
+  ],
   "pytz": [
    "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
    "pytz/conda-forge/noarch/pytz-2018.4-py_0"
@@ -247,26 +193,46 @@
   "qtpy": [
    "qtpy/conda-forge/noarch/qtpy-1.7.1-pyhde82777_0"
   ],
-  "re": [],
+  "re": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "reproject": [],
   "requests": [
    "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
    "requests/conda-forge/noarch/requests-2.23.0-pyh8c360ce_2"
   ],
-  "shutil": [],
-  "socket": [],
-  "struct": [],
+  "shutil": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "socket": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "struct": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "sys": [],
-  "tempfile": [],
-  "threading": [],
+  "tempfile": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "threading": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "time": [],
   "tornado": [],
-  "traceback": [],
+  "traceback": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "traitlets": [
    "traitlets/conda-forge/noarch/traitlets-5.0.3-py_0"
   ],
-  "uuid": [],
-  "warnings": [],
-  "xml": []
+  "uuid": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "warnings": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "xml": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ]
  }
 }
