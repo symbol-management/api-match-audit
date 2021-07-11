@@ -38,31 +38,12 @@
   "base64",
   "base64.b64decode",
   "base64.b64encode",
-  "bravado.client.SwaggerClient",
-  "bravado.client.SwaggerClient.from_url",
-  "bravado.exception.BravadoConnectionError",
-  "bravado.exception.BravadoTimeoutError",
-  "bravado.exception.HTTPBadGateway",
   "bravado.exception.HTTPBadGateway.status_code",
-  "bravado.exception.HTTPBadRequest",
-  "bravado.exception.HTTPConflict",
-  "bravado.exception.HTTPError",
-  "bravado.exception.HTTPForbidden",
   "bravado.exception.HTTPForbidden.status_code",
-  "bravado.exception.HTTPGatewayTimeout",
   "bravado.exception.HTTPGatewayTimeout.status_code",
-  "bravado.exception.HTTPInternalServerError",
   "bravado.exception.HTTPInternalServerError.status_code",
-  "bravado.exception.HTTPNotFound",
-  "bravado.exception.HTTPRequestTimeout",
-  "bravado.exception.HTTPServerError",
-  "bravado.exception.HTTPServiceUnavailable",
   "bravado.exception.HTTPServiceUnavailable.status_code",
-  "bravado.exception.HTTPUnauthorized",
   "bravado.exception.HTTPUnauthorized.status_code",
-  "bravado.exception.HTTPUnprocessableEntity",
-  "bravado.requests_client.Authenticator",
-  "bravado.requests_client.RequestsClient",
   "build_call",
   "byref",
   "c_bool",
@@ -70,9 +51,6 @@
   "c_int",
   "c_uint",
   "c_ulonglong",
-  "click",
-  "click.echo",
-  "click.group",
   "clocks_array",
   "collections.OrderedDict",
   "collections.namedtuple",
@@ -84,7 +62,6 @@
   "datetime.datetime.now",
   "device_array",
   "e",
-  "enum.Enum",
   "errno",
   "errno.ENOENT",
   "f",
@@ -110,9 +87,6 @@
   "json",
   "json.dumps",
   "json.loads",
-  "jwt",
-  "jwt.decode",
-  "jwt.encode",
   "logging",
   "logging.StreamHandler",
   "logging.getLogger",
@@ -129,7 +103,6 @@
   "mock.call",
   "mock.call._send_channels_values",
   "mock.patch",
-  "munch.Munch",
   "neptune.__init__.__lock",
   "neptune.__init__.get_experiment",
   "neptune.__init__.get_versions",
@@ -160,8 +133,6 @@
   "numpy.random.seed",
   "numpy.uint8",
   "numpy.unique",
-  "oauthlib.oauth2.OAuth2Error",
-  "oauthlib.oauth2.TokenExpiredError",
   "objectUnderTest",
   "os",
   "os.environ",
@@ -225,7 +196,6 @@
   "re.search",
   "re.split",
   "read_top_card_memory_in_bytes",
-  "requests_oauthlib.OAuth2Session",
   "sampleArray",
   "six.moves.urllib",
   "six.moves.urllib.parse.urlparse",
@@ -281,11 +251,7 @@
   "unittest.skipIf",
   "uuid",
   "uuid.uuid4",
-  "websocket.ABNF",
-  "websocket.ABNF.OPCODE_TEXT",
-  "websocket.WebSocketConnectionClosedException",
-  "websocket.WebSocketTimeoutException",
-  "websocket.create_connection"
+  "websocket.ABNF.OPCODE_TEXT"
  ],
  "deps": {
   "CDLL": [],
@@ -318,7 +284,9 @@
   "affinity_array": [],
   "atexit": [],
   "base64": [],
-  "bravado": [],
+  "bravado": [
+   "bravado/conda-forge/noarch/bravado-11.0.2-pyh9f0ad1d_0"
+  ],
   "bravado_core": [
    "bravado-core/conda-forge/noarch/bravado-core-5.0.4-py_1"
   ],
@@ -329,7 +297,9 @@
   "c_int": [],
   "c_uint": [],
   "c_ulonglong": [],
-  "click": [],
+  "click": [
+   "click/conda-forge/noarch/click-7.0-py_0"
+  ],
   "clocks_array": [],
   "collections": [],
   "create_string_buffer": [],
@@ -337,7 +307,9 @@
   "datetime": [],
   "device_array": [],
   "e": [],
-  "enum": [],
+  "enum": [
+   "privy/conda-forge/noarch/privy-6.0.0-py_0"
+  ],
   "errno": [],
   "f": [],
   "fn": [],
@@ -355,17 +327,23 @@
   "ipykernel": [],
   "itertools": [],
   "json": [],
-  "jwt": [],
+  "jwt": [
+   "pyjwt/conda-forge/noarch/pyjwt-1.6.3-py_0"
+  ],
   "logging": [],
   "make_row": [],
   "math": [],
   "matplotlib": [],
   "mock": [],
-  "munch": [],
+  "munch": [
+   "munch/conda-forge/noarch/munch-2.4.0-py_0"
+  ],
   "neptune": [],
   "ntpath": [],
   "numpy": [],
-  "oauthlib": [],
+  "oauthlib": [
+   "oauthlib/conda-forge/noarch/oauthlib-3.0.1-py_0"
+  ],
   "objectUnderTest": [],
   "os": [],
   "packaging": [
@@ -385,12 +363,16 @@
   "re": [],
   "read_top_card_memory_in_bytes": [],
   "requests": [
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1"
+   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
+   "requests/conda-forge/noarch/requests-2.23.0-pyh8c360ce_2"
   ],
-  "requests_oauthlib": [],
+  "requests_oauthlib": [
+   "requests-oauthlib/conda-forge/noarch/requests-oauthlib-1.2.0-py_0"
+  ],
   "sampleArray": [],
   "six": [
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1"
+   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
+   "privy/conda-forge/noarch/privy-6.0.0-py_0"
   ],
   "socket": [],
   "ssl": [],
@@ -410,6 +392,8 @@
    "urllib3/conda-forge/noarch/urllib3-1.26.5-pyhd8ed1ab_0"
   ],
   "uuid": [],
-  "websocket": []
+  "websocket": [
+   "websocket-client/conda-forge/noarch/websocket-client-0.46.0-py_0"
+  ]
  }
 }

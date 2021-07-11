@@ -9,7 +9,6 @@
   "argparse.RawTextHelpFormatter",
   "cdms2",
   "cdms2.open",
-  "cdutil.vertical.reconstructPressureFromHybrid",
   "cmor",
   "cmor.CMOR_REPLACE",
   "cmor.axis",
@@ -115,19 +114,15 @@
   "threading.Timer",
   "traceback",
   "traceback.print_tb",
-  "xarray",
-  "xarray.DataArray",
-  "xarray.DataArray.from_dict",
-  "xarray.Dataset",
-  "xarray.concat",
-  "xarray.open_dataset",
-  "xarray.open_mfdataset"
+  "xarray.DataArray.from_dict"
  ],
  "deps": {
   "__future__": [],
   "argparse": [],
   "cdms2": [],
-  "cdutil": [],
+  "cdutil": [
+   "cdutil/conda-forge/noarch/cdutil-8.2-py_1"
+  ],
   "cmor": [],
   "concurrent": [],
   "dask": [
@@ -160,7 +155,9 @@
    "tqdm/conda-forge/noarch/tqdm-4.20.0-py_0"
   ],
   "traceback": [],
-  "xarray": [],
+  "xarray": [
+   "xarray/conda-forge/noarch/xarray-0.15.0-py_0"
+  ],
   "yaml": [
    "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1"
   ]

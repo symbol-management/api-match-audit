@@ -1,7 +1,5 @@
 {
  "bad": [
-  "CloudFlare",
-  "CloudFlare.CloudFlare",
   "argparse",
   "argparse.ArgumentParser",
   "base64",
@@ -10,10 +8,6 @@
   "collections.ChainMap",
   "contextlib",
   "contextlib.contextmanager",
-  "cookiecutter.generate.generate_files",
-  "cookiecutter.main.cookiecutter",
-  "enum",
-  "enum.Enum",
   "functools",
   "functools.lru_cache",
   "json",
@@ -44,9 +38,6 @@
   "os.path.pardir",
   "pathlib",
   "pathlib.Path",
-  "pydantic",
-  "pydantic.BaseModel",
-  "pydantic.validator",
   "pytest",
   "pytest.mark.parametrize",
   "qhub.__file__",
@@ -73,7 +64,9 @@
   "typing.List"
  ],
  "deps": {
-  "CloudFlare": [],
+  "CloudFlare": [
+   "cloudflare/conda-forge/noarch/cloudflare-2.8.14-pyhd8ed1ab_0"
+  ],
   "argparse": [],
   "auth0": [
    "auth0-python/conda-forge/noarch/auth0-python-3.16.2-pyhd8ed1ab_0"
@@ -84,8 +77,12 @@
    "configparser/conda-forge/noarch/configparser-5.0.0-py_0"
   ],
   "contextlib": [],
-  "cookiecutter": [],
-  "enum": [],
+  "cookiecutter": [
+   "cookiecutter/conda-forge/noarch/cookiecutter-1.7.3-pyh6c4a22f_0"
+  ],
+  "enum": [
+   "privy/conda-forge/noarch/privy-6.0.0-py_0"
+  ],
   "functools": [],
   "jinja2": [
    "jinja2/conda-forge/noarch/jinja2-2.10-py_1"
@@ -95,7 +92,9 @@
   "nacl": [],
   "os": [],
   "pathlib": [],
-  "pydantic": [],
+  "pydantic": [
+   "pydantic/conda-forge/noarch/pydantic-0.18.1-py_1"
+  ],
   "pytest": [],
   "qhub": [],
   "re": [],
