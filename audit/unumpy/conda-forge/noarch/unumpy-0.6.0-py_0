@@ -4,13 +4,8 @@
   "builtins",
   "builtins.all",
   "builtins.max",
-  "collections",
   "collections.abc.Iterable",
   "convert",
-  "cupy",
-  "cupy.asarray",
-  "cupy.generic",
-  "cupy.ndarray",
   "cupy.ufunc.__call__",
   "f",
   "f_kwargs",
@@ -18,54 +13,28 @@
   "f_reduce",
   "func",
   "func.__name__",
-  "functools",
-  "functools.partial",
-  "functools.reduce",
-  "functools.wraps",
   "gumath",
   "gumath.functions",
   "gumath.gufunc.__call__",
   "gumath.reduce",
   "itertools",
   "itertools.product",
-  "json",
-  "json.loads",
   "mark_dtype",
   "mark_non_coercible",
   "mark_ufunc",
   "ndtypes.ndt",
-  "numpy",
-  "numpy.asarray",
-  "numpy.count_nonzero",
-  "numpy.dtype",
-  "numpy.generic",
-  "numpy.ndarray",
-  "numpy.ufunc",
   "numpy.ufunc.__call__",
   "numpy.ufunc.reduce",
-  "operator",
-  "operator.mul",
-  "pytest",
-  "pytest.fixture",
   "pytest.mark.parametrize",
   "pytest.mark.skip",
   "pytest.mark.xfail",
-  "pytest.param",
-  "pytest.xfail",
-  "random",
-  "random.randrange",
   "reduce",
   "replacer",
   "self_method",
   "sys",
   "sys.modules",
-  "torch",
-  "torch.Tensor",
   "torch.arange",
   "torch.from_numpy",
-  "torch.is_tensor",
-  "torch.tensor",
-  "typing.Dict",
   "uarray",
   "uarray.BackendNotImplementedError",
   "uarray.Dispatchable",
@@ -96,9 +65,14 @@
  "deps": {
   "block": [],
   "builtins": [],
-  "collections": [],
+  "collections": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "convert": [],
-  "cupy": [],
+  "cupy": [
+   "cupy/conda-forge/linux-64/cupy-8.4.0-py38h7fa8657_1",
+   "cupy/conda-forge/linux-64/cupy-8.5.0-py37hd2f5b3b_1"
+  ],
   "dask": [
    "dask-core/conda-forge/noarch/dask-core-0.15.3-py_0"
   ],
@@ -107,18 +81,31 @@
   "f_map": [],
   "f_reduce": [],
   "func": [],
-  "functools": [],
+  "functools": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "gumath": [],
   "itertools": [],
-  "json": [],
+  "json": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "mark_dtype": [],
   "mark_non_coercible": [],
   "mark_ufunc": [],
   "ndtypes": [],
-  "numpy": [],
-  "operator": [],
-  "pytest": [],
-  "random": [],
+  "numpy": [
+   "numpy/conda-forge/linux-64/numpy-1.9.3-py27_blas_openblashb06ca3d_7"
+  ],
+  "operator": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "pytest": [
+   "pytest/conda-forge/linux-64/pytest-4.6.3-py27_0",
+   "pytest/conda-forge/linux-64/pytest-6.0.2-py36hc560c46_0"
+  ],
+  "random": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "reduce": [],
   "replacer": [],
   "self_method": [],
@@ -127,8 +114,12 @@
    "sparse/conda-forge/noarch/sparse-0.9.1-py_0"
   ],
   "sys": [],
-  "torch": [],
-  "typing": [],
+  "torch": [
+   "pytorch-cpu/conda-forge/linux-64/pytorch-cpu-1.0.1-py27hf484d3e_0"
+  ],
+  "typing": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "uarray": [],
   "unumpy": [],
   "ureduce": [],

@@ -2,20 +2,11 @@
  "bad": [
   "IPython",
   "IPython.start_ipython",
-  "abc",
-  "abc.ABCMeta",
-  "abc.abstractmethod",
   "alert_cls",
   "alert_cls.class_setup",
   "alert_cls.class_teardown",
   "alert_cls.runner_class",
   "archive_context",
-  "argparse",
-  "argparse.ArgumentParser",
-  "argparse.ArgumentTypeError",
-  "argparse.FileType",
-  "argparse.HelpFormatter",
-  "argparse.REMAINDER",
   "atexit",
   "atexit.register",
   "attr.ib",
@@ -27,20 +18,8 @@
   "cli.load_commands_module",
   "cli.load_project_commands",
   "cls",
-  "code",
-  "code.InteractiveConsole",
-  "codecs",
-  "codecs.open",
   "collect",
-  "collections",
-  "collections.OrderedDict",
-  "collections.defaultdict",
-  "collections.namedtuple",
   "configure_pep8",
-  "contextlib",
-  "contextlib.contextmanager",
-  "copy",
-  "copy.deepcopy",
   "core.get_description",
   "core.in_test",
   "core.logger.debug",
@@ -81,9 +60,6 @@
   "create_engine",
   "creator.create_pipeline",
   "database_exists",
-  "datetime",
-  "datetime.datetime.now",
-  "datetime.datetime.utcnow",
   "db.Model",
   "db.alembic",
   "db.and_",
@@ -103,13 +79,10 @@
   "db.session_scope",
   "db.setup",
   "default_models",
-  "distutils.log",
-  "distutils.log.warn",
   "docs.create_doc",
   "docs.models_diagram",
   "docs.qa_report",
   "downloader",
-  "email.mime.text.MIMEText",
   "exceptions.DBError",
   "exceptions.ImproperlyConfigured",
   "extract_modules",
@@ -119,51 +92,28 @@
   "flake8.reporter",
   "flake8.reporter.QueueReport",
   "get_cli_text",
-  "gettext.gettext",
-  "importlib",
-  "importlib.import_module",
-  "inspect",
-  "inspect.isclass",
-  "keyword",
-  "keyword.kwlist",
   "libs.argparse_ext.FileType",
   "libs.sqlalchemy_sql_shell.run",
   "loader_cls",
   "loader_cls.class_setup",
   "loader_cls.class_teardown",
   "loader_cls.runner_class",
-  "logging",
-  "logging.INFO",
-  "logging.Logger",
   "logging.Logger.manager.loggerDict.items",
-  "logging.WARNING",
-  "logging.basicConfig",
-  "logging.getLogger",
-  "math",
-  "math.exp",
   "mock",
   "mock.patch",
   "mock.patch.dict",
   "mock.patch.multiple",
   "mock.patch.object",
-  "multiprocessing",
   "multiprocessing.Process",
   "namedtuple",
-  "notebook.notebookapp.NotebookApp",
   "notebook.notebookapp.NotebookApp.instance",
-  "optparse",
-  "optparse.OptionParser",
-  "os",
   "os.F_OK",
   "os.access",
   "os.chdir",
-  "os.curdir",
-  "os.environ",
   "os.environ.get",
   "os.environ.setdefault",
   "os.getcwd",
   "os.listdir",
-  "os.makedirs",
   "os.path.abspath",
   "os.path.basename",
   "os.path.devnull",
@@ -178,19 +128,11 @@
   "os.path.split",
   "os.path.splitext",
   "os.unlink",
-  "os.walk",
   "out_func",
   "pkg_resources",
   "pkg_resources.DistributionNotFound",
   "pkg_resources.VersionConflict",
   "pkg_resources.require",
-  "pkgutil",
-  "pkgutil.iter_modules",
-  "platform",
-  "platform.system",
-  "profile",
-  "pstats",
-  "pstats.Stats",
   "qa.get_qai_function",
   "qa.get_score_cualifications",
   "qa.get_tau",
@@ -198,10 +140,7 @@
   "qa.run_profile",
   "qa.run_tests",
   "qai_func",
-  "re",
   "re.UNICODE",
-  "re.compile",
-  "re.match",
   "recursive_search",
   "res.fullpath",
   "run.Alert",
@@ -233,16 +172,9 @@
   "sh.coverage.run",
   "sh.coverage.xml",
   "sh.snakeviz",
-  "shutil",
-  "shutil.copy",
-  "shutil.move",
-  "shutil.rmtree",
-  "site.USER_SITE",
   "six.moves.builtins",
   "six.moves.input",
   "six.sys.exc_traceback",
-  "smtplib",
-  "smtplib.SMTP",
   "sqlalchemy",
   "sqlalchemy.engine.url",
   "sqlalchemy.engine.url.make_url",
@@ -257,12 +189,6 @@
   "step_cls.class_setup",
   "step_cls.class_teardown",
   "step_cls.runner_class",
-  "string",
-  "string.Template",
-  "subprocess",
-  "subprocess.CalledProcessError",
-  "subprocess.call",
-  "subprocess.check_call",
   "sys",
   "sys.argv",
   "sys.argv.append",
@@ -278,37 +204,28 @@
   "sys.stdout",
   "sys.stdout.write",
   "sys.version_info",
-  "tempfile",
-  "tempfile.NamedTemporaryFile",
-  "tempfile.mkdtemp",
   "termcolor.colored",
   "texttable.Texttable.BORDER",
   "texttable.Texttable.HEADER",
   "texttable.Texttable.VLINES",
-  "textwrap",
-  "textwrap.dedent",
-  "unittest",
-  "unittest.TestCase",
-  "unittest.TestSuite",
-  "unittest.runner.TextTestRunner",
-  "urllib.request.urlopen",
   "urllib2.urlopen",
   "util.collect_subclasses",
   "util.dimport",
-  "util.to_namedtuple",
-  "warnings",
-  "zipfile",
-  "zipfile.ZipFile"
+  "util.to_namedtuple"
  ],
  "deps": {
   "IPython": [],
-  "abc": [],
+  "abc": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "alembic": [
    "alembic/conda-forge/noarch/alembic-1.0.7-py_0"
   ],
   "alert_cls": [],
   "archive_context": [],
-  "argparse": [],
+  "argparse": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "atexit": [],
   "attr": [
    "attrs/conda-forge/noarch/attrs-18.2.0-py_0"
@@ -316,62 +233,108 @@
   "bpython": [],
   "cli": [],
   "cls": [],
-  "code": [],
-  "codecs": [],
+  "code": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "codecs": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "collect": [],
-  "collections": [],
+  "collections": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "configure_pep8": [],
-  "contextlib": [],
-  "copy": [],
+  "contextlib": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "copy": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "core": [],
   "corral": [],
   "create_engine": [],
   "creator": [],
   "database_exists": [],
-  "datetime": [],
+  "datetime": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "db": [],
   "default_models": [],
-  "distutils": [],
+  "distutils": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "docs": [],
   "downloader": [],
-  "email": [],
+  "email": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "exceptions": [],
   "extract_modules": [],
   "f": [],
   "flake8": [],
   "get_cli_text": [],
-  "gettext": [],
-  "importlib": [],
-  "inspect": [],
+  "gettext": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "importlib": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "inspect": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "jinja2": [
    "jinja2/conda-forge/noarch/jinja2-2.10-py_1"
   ],
-  "keyword": [],
+  "keyword": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "libs": [],
   "loader_cls": [],
-  "logging": [],
-  "math": [],
+  "logging": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "math": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "mock": [],
-  "multiprocessing": [],
+  "multiprocessing": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "mycli": [
    "mycli/conda-forge/noarch/mycli-1.20.0-py_0"
   ],
   "namedtuple": [],
-  "notebook": [],
-  "optparse": [],
-  "os": [],
+  "notebook": [
+   "notebook/conda-forge/linux-64/notebook-6.3.0-py36hd000896_0"
+  ],
+  "optparse": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "os": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "out_func": [],
   "pgcli": [
    "pgcli/conda-forge/noarch/pgcli-2.0.1-py_0"
   ],
   "pkg_resources": [],
-  "pkgutil": [],
-  "platform": [],
-  "profile": [],
-  "pstats": [],
+  "pkgutil": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "platform": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "profile": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "pstats": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "qa": [],
   "qai_func": [],
-  "re": [],
+  "re": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "recursive_search": [],
   "res": [],
   "run": [],
@@ -382,35 +345,57 @@
   "setup": [],
   "setuptools": [],
   "sh": [],
-  "shutil": [],
-  "site": [],
+  "shutil": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "site": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "six": [
    "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
    "privy/conda-forge/noarch/privy-6.0.0-py_0"
   ],
-  "smtplib": [],
+  "smtplib": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "sqlalchemy": [],
   "sqlalchemy_utils": [
    "sqlalchemy-utils/conda-forge/noarch/sqlalchemy-utils-0.36.8-pyhd3deb0d_0"
   ],
   "step_cls": [],
-  "string": [],
-  "subprocess": [],
+  "string": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "subprocess": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "sys": [],
-  "tempfile": [],
+  "tempfile": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "termcolor": [],
   "texttable": [
    "texttable/conda-forge/noarch/texttable-1.6.2-py_0"
   ],
-  "textwrap": [],
-  "unittest": [],
-  "urllib": [],
+  "textwrap": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "unittest": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "urllib": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "urllib2": [],
   "util": [],
-  "warnings": [],
+  "warnings": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "xmltodict": [
    "xmltodict/conda-forge/noarch/xmltodict-0.12.0-py_0"
   ],
-  "zipfile": []
+  "zipfile": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ]
  }
 }

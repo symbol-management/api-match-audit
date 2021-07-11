@@ -1,24 +1,11 @@
 {
  "bad": [
-  "abc",
-  "abc.ABC",
-  "abc.abstractmethod",
   "actor",
   "actor_class",
-  "argparse",
-  "argparse.ArgumentError",
-  "argparse.ArgumentParser",
-  "argparse.RawDescriptionHelpFormatter",
   "atexit",
   "atexit.register",
   "brokers.rabbitmq.RabbitmqBroker",
   "clazz",
-  "collections.defaultdict",
-  "collections.namedtuple",
-  "contextlib.contextmanager",
-  "ctypes",
-  "ctypes.c_long",
-  "ctypes.py_object",
   "ctypes.pythonapi.PyThreadState_SetAsyncExc",
   "dispatch",
   "dramatiq.middleware.__init__.AgeLimit",
@@ -30,53 +17,18 @@
   "dramatiq.middleware.__init__.ShutdownNotifications",
   "dramatiq.middleware.__init__.TimeLimit",
   "dramatiq.middleware.__init__.__all__",
-  "fcntl",
-  "fcntl.LOCK_EX",
-  "fcntl.LOCK_NB",
-  "fcntl.LOCK_UN",
-  "fcntl.flock",
-  "functools",
-  "functools.partial",
-  "functools.reduce",
-  "glob",
-  "glob.glob",
-  "hashlib",
   "hashlib.md5",
-  "http.server.BaseHTTPRequestHandler",
-  "http.server.HTTPServer",
-  "importlib",
-  "importlib.import_module",
-  "inspect",
-  "inspect.isclass",
   "itertools.chain",
-  "json",
-  "json.dumps",
-  "json.loads",
-  "logging",
-  "logging.CRITICAL",
-  "logging.DEBUG",
-  "logging.Filter",
-  "logging.INFO",
-  "logging.basicConfig",
-  "logging.getLogger",
   "m",
   "message.Message",
   "message.Message.decode",
-  "multiprocessing",
   "multiprocessing.Pipe",
   "multiprocessing.Process",
-  "multiprocessing.connection.wait",
   "multiprocessing.cpu_count",
   "observer_class",
-  "os",
   "os.chmod",
-  "os.environ",
-  "os.execvp",
-  "os.getenv",
   "os.getpid",
   "os.kill",
-  "os.makedirs",
-  "os.path",
   "os.path.abspath",
   "os.path.basename",
   "os.path.dirname",
@@ -85,26 +37,10 @@
   "os.path.join",
   "os.path.splitext",
   "os.remove",
-  "pickle",
-  "pickle.dumps",
-  "pickle.loads",
-  "platform",
-  "platform.python_implementation",
-  "platform.system",
   "pylibmc.Client",
   "pylibmc.ClientPool",
   "pylibmc.NotFound",
-  "queue.Empty",
-  "queue.PriorityQueue",
-  "queue.Queue",
-  "random",
-  "random.randint",
-  "random.seed",
-  "random.uniform",
-  "re",
-  "re.compile",
   "retry_when",
-  "signal",
   "signal.SIGBREAK",
   "signal.SIGHUP",
   "signal.SIGINT",
@@ -112,8 +48,6 @@
   "signal.SIG_BLOCK",
   "signal.SIG_IGN",
   "signal.SIG_UNBLOCK",
-  "signal.pthread_sigmask",
-  "signal.signal",
   "stderr_wrapper",
   "stop_worker_processes",
   "sys",
@@ -124,92 +58,129 @@
   "sys.path.insert",
   "sys.stderr",
   "sys.stdout",
-  "threading",
-  "threading.Condition",
-  "threading.Event",
-  "threading.Lock",
-  "threading.Thread",
-  "threading.get_ident",
-  "threading.local",
   "time",
   "time.monotonic",
   "time.perf_counter",
   "time.sleep",
   "time.time",
-  "traceback",
-  "traceback.format_exc",
-  "typing",
-  "typing.Any",
-  "typing.Dict",
-  "typing.Union",
-  "uuid",
-  "uuid.uuid4",
-  "warnings",
-  "warnings.warn",
   "watchdog.events",
-  "watchdog.observers.polling",
-  "watchdog_gevent",
-  "watchdog_gevent.Observer"
+  "watchdog.observers.polling"
  ],
  "deps": {
-  "abc": [],
+  "abc": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "actor": [],
   "actor_class": [],
-  "argparse": [],
+  "argparse": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "atexit": [],
   "brokers": [],
   "clazz": [],
-  "collections": [],
-  "contextlib": [],
-  "ctypes": [],
+  "collections": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "contextlib": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "ctypes": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "decorator": [
    "decorator/conda-forge/noarch/decorator-4.3.0-py_0"
   ],
   "dispatch": [],
   "dramatiq": [],
-  "fcntl": [],
-  "functools": [],
-  "glob": [],
-  "hashlib": [],
-  "http": [],
-  "importlib": [],
-  "inspect": [],
+  "fcntl": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "functools": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "glob": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "hashlib": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "http": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "importlib": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "inspect": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "itertools": [],
-  "json": [],
-  "logging": [],
+  "json": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "logging": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "m": [],
   "message": [],
-  "multiprocessing": [],
+  "multiprocessing": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "observer_class": [],
-  "os": [],
-  "pickle": [],
+  "os": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "pickle": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "pika": [
    "pika/conda-forge/noarch/pika-1.0.0b2-py_0",
    "pika/conda-forge/noarch/pika-1.1.0-pyh9f0ad1d_1"
   ],
-  "platform": [],
+  "platform": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "prometheus_client": [
    "prometheus_client/conda-forge/noarch/prometheus_client-0.9.0-pyhd3deb0d_0"
   ],
   "pylibmc": [],
-  "queue": [],
-  "random": [],
-  "re": [],
+  "queue": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "random": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "re": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "redis": [
    "redis-py/conda-forge/noarch/redis-py-3.2.1-py_0"
   ],
   "retry_when": [],
-  "signal": [],
+  "signal": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "stderr_wrapper": [],
   "stop_worker_processes": [],
   "sys": [],
-  "threading": [],
+  "threading": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "time": [],
-  "traceback": [],
-  "typing": [],
-  "uuid": [],
-  "warnings": [],
+  "traceback": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "typing": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "uuid": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "warnings": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "watchdog": [],
-  "watchdog_gevent": []
+  "watchdog_gevent": [
+   "watchdog-gevent/conda-forge/noarch/watchdog-gevent-0.1.0-py_0"
+  ]
  }
 }

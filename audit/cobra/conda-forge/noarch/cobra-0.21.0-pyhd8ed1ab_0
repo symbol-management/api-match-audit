@@ -3,14 +3,9 @@
   "IPython.get_ipython",
   "Problem",
   "Renamer",
-  "__future__.absolute_import",
-  "__future__.division",
-  "__future__.print_function",
   "_create_parameter",
   "_fetch_model",
   "_optimize_or_value",
-  "abc.ABC",
-  "abc.abstractmethod",
   "add_SBO",
   "append",
   "array_builder",
@@ -20,9 +15,7 @@
   "ast.BoolOp",
   "ast.Expression",
   "ast.Name",
-  "ast.NodeTransformer",
   "ast.Or",
-  "ast.parse",
   "builtins.dict",
   "builtins.map",
   "builtins.object",
@@ -41,19 +34,8 @@
   "cobra.util.nullspace",
   "cobra.util.resettable",
   "cobra.util.show_versions",
-  "collections.Counter",
-  "collections.OrderedDict",
-  "collections.defaultdict",
-  "collections.namedtuple",
   "context",
   "context.reset",
-  "copy.copy",
-  "copy.deepcopy",
-  "ctypes",
-  "ctypes.c_double",
-  "ctypes.c_int64",
-  "datetime",
-  "datetime.datetime.now",
   "delete_model_genes",
   "dict.fromkeys",
   "entry",
@@ -63,33 +45,20 @@
   "find_gene_knockout_reactions",
   "find_gene_knockout_reactions_fast",
   "func",
-  "functools.partial",
   "future.utils.raise_from",
   "future.utils.raise_with_traceback",
   "get_compiled_gene_reaction_rules",
   "get_components",
   "get_item",
   "get_removed",
-  "gzip",
-  "gzip.compress",
-  "gzip.decompress",
-  "hashlib",
   "hashlib.md5",
   "httpx.HTTPStatusError",
   "httpx.RequestError",
   "id.id",
   "id.setter",
-  "io",
-  "io.BytesIO",
-  "io.StringIO",
-  "io.open",
   "itertools.chain",
   "itertools.islice",
   "itertools.product",
-  "json",
-  "json.dump",
-  "json.load",
-  "keyword.kwlist",
   "libsbml",
   "libsbml.BIOLOGICAL_QUALIFIER",
   "libsbml.BQB_ENCODES",
@@ -148,88 +117,30 @@
   "list.pop",
   "list.reverse",
   "list.sort",
-  "logging",
-  "logging.Formatter",
-  "logging.INFO",
-  "logging.StreamHandler",
-  "logging.getLogger",
   "m_ind",
-  "math.isinf",
-  "multiprocessing",
   "multiprocessing.Array",
   "multiprocessing.Pool",
-  "numbers.Number",
-  "numpy",
-  "numpy.abs",
-  "numpy.allclose",
-  "numpy.any",
-  "numpy.array",
-  "numpy.atleast_2d",
-  "numpy.bool_",
-  "numpy.c_",
-  "numpy.ceil",
   "numpy.char.add",
-  "numpy.corrcoef",
-  "numpy.dtype",
-  "numpy.empty",
   "numpy.float64",
-  "numpy.float_",
-  "numpy.frombuffer",
-  "numpy.full",
-  "numpy.hstack",
-  "numpy.iinfo",
   "numpy.inf",
-  "numpy.int32",
   "numpy.isinf",
-  "numpy.isnan",
-  "numpy.linalg.svd",
-  "numpy.linspace",
   "numpy.logical_not",
-  "numpy.matrix",
   "numpy.minimum",
   "numpy.nan",
-  "numpy.ndarray",
-  "numpy.object",
-  "numpy.prod",
   "numpy.random.randint",
   "numpy.random.seed",
   "numpy.random.uniform",
-  "numpy.repeat",
-  "numpy.sqrt",
-  "numpy.tril",
-  "numpy.vstack",
-  "numpy.where",
-  "numpy.zeros",
   "object.id",
-  "operator.attrgetter",
-  "operator.itemgetter",
-  "os",
   "os.cpu_count",
   "os.path.abspath",
   "os.path.dirname",
   "os.path.exists",
   "os.path.join",
-  "pandas",
-  "pandas.DataFrame",
-  "pandas.Series",
-  "pandas.api.extensions.register_dataframe_accessor",
-  "pandas.concat",
-  "pandas.option_context",
-  "pickle.dump",
-  "pickle.load",
   "process_association",
   "pydantic.Field",
-  "pytest",
-  "pytest.fixture",
-  "pytest.raises",
-  "pytest.warns",
   "r_ind",
-  "re",
   "re.DOTALL",
   "re.IGNORECASE",
-  "re.compile",
-  "re.escape",
-  "re.sub",
   "remove_genes",
   "rich.progress.BarColumn",
   "rich.progress.DownloadColumn",
@@ -240,72 +151,55 @@
   "ruamel.yaml.compat.StringIO",
   "ruamel.yaml.main.YAML",
   "ruamel.yaml.main.YAML.dump",
-  "scipy.io",
-  "scipy.io.loadmat",
-  "scipy.io.savemat",
-  "scipy.sparse",
-  "scipy.sparse.coo_matrix",
-  "scipy.sparse.dok_matrix",
-  "scipy.sparse.lil_matrix",
   "select_attribute",
   "set_active_bound",
-  "simplejson",
-  "simplejson.dump",
-  "simplejson.dumps",
-  "simplejson.load",
-  "simplejson.loads",
   "stringify",
   "sys.platform",
   "test_computation",
-  "textwrap",
-  "textwrap.dedent",
-  "textwrap.shorten",
   "time.time",
-  "traceback",
-  "types",
-  "types.ModuleType",
-  "typing.Any",
-  "typing.Callable",
-  "typing.Dict",
-  "typing.Iterable",
-  "typing.List",
-  "typing.NamedTuple",
-  "typing.Optional",
-  "typing.Set",
-  "typing.TYPE_CHECKING",
-  "typing.Tuple",
-  "typing.Union",
-  "undelete_model_genes",
-  "uuid.uuid4",
-  "warnings.warn"
+  "undelete_model_genes"
  ],
  "deps": {
   "IPython": [],
   "Problem": [],
   "Renamer": [],
-  "__future__": [],
+  "__future__": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "_create_parameter": [],
   "_fetch_model": [],
   "_optimize_or_value": [],
-  "abc": [],
+  "abc": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "add_SBO": [],
   "appdirs": [
    "appdirs/conda-forge/noarch/appdirs-1.4.4-pyh9f0ad1d_0"
   ],
   "append": [],
   "array_builder": [],
-  "ast": [],
+  "ast": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "builtins": [],
   "cPickle": [],
   "cStringIO": [],
   "check_mass_balance": [],
   "check_metabolite_compartment_formula": [],
   "cobra": [],
-  "collections": [],
+  "collections": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "context": [],
-  "copy": [],
-  "ctypes": [],
-  "datetime": [],
+  "copy": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "ctypes": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "datetime": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "delete_model_genes": [],
   "depinfo": [
    "depinfo/conda-forge/noarch/depinfo-1.7.0-pyhd8ed1ab_0"
@@ -321,58 +215,98 @@
   "find_gene_knockout_reactions": [],
   "find_gene_knockout_reactions_fast": [],
   "func": [],
-  "functools": [],
+  "functools": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "future": [],
   "get_compiled_gene_reaction_rules": [],
   "get_components": [],
   "get_item": [],
   "get_removed": [],
-  "gzip": [],
-  "hashlib": [],
+  "gzip": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "hashlib": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "httpx": [
    "httpx/conda-forge/noarch/httpx-0.12.0-py_0"
   ],
   "id": [],
-  "io": [],
+  "io": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "itertools": [],
-  "json": [],
-  "keyword": [],
+  "json": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "keyword": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "libsbml": [],
   "list": [],
-  "logging": [],
+  "logging": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "m_ind": [],
-  "math": [],
-  "multiprocessing": [],
-  "numbers": [],
-  "numpy": [],
+  "math": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "multiprocessing": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "numbers": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "numpy": [
+   "numpy/conda-forge/linux-64/numpy-1.9.3-py27_blas_openblashb06ca3d_7"
+  ],
   "object": [],
-  "operator": [],
+  "operator": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "optlang": [
    "optlang/conda-forge/noarch/optlang-1.4.7-pyh9f0ad1d_0"
   ],
-  "os": [],
-  "pandas": [],
-  "pathlib": [
-   "pathlib/conda-forge/noarch/pathlib-1.0.1-py_1"
+  "os": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
   ],
-  "pickle": [],
+  "pandas": [
+   "pandas/conda-forge/linux-64/pandas-0.25.0-py37hb3f55d8_0"
+  ],
+  "pathlib": [
+   "pathlib/conda-forge/noarch/pathlib-1.0.1-py_1",
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "pickle": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "process_association": [],
   "pydantic": [
    "pydantic/conda-forge/noarch/pydantic-0.18.1-py_1"
   ],
-  "pytest": [],
+  "pytest": [
+   "pytest/conda-forge/linux-64/pytest-4.6.3-py27_0",
+   "pytest/conda-forge/linux-64/pytest-6.0.2-py36hc560c46_0"
+  ],
   "pytest_benchmark": [
    "pytest-benchmark/conda-forge/noarch/pytest-benchmark-3.2.3-pyh9f0ad1d_0"
   ],
   "r_ind": [],
-  "re": [],
+  "re": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "remove_genes": [],
   "rich": [],
   "ruamel": [],
-  "scipy": [],
+  "scipy": [
+   "scipy/conda-forge/linux-64/scipy-0.18.1-np111py34_blas_openblas_200"
+  ],
   "select_attribute": [],
   "set_active_bound": [],
-  "simplejson": [],
+  "simplejson": [
+   "simplejson/conda-forge/linux-64/simplejson-3.16.0-py36h14c3975_1002"
+  ],
   "six": [
    "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
    "privy/conda-forge/noarch/privy-6.0.0-py_0"
@@ -380,13 +314,25 @@
   "stringify": [],
   "sys": [],
   "test_computation": [],
-  "textwrap": [],
+  "textwrap": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "time": [],
-  "traceback": [],
-  "types": [],
-  "typing": [],
+  "traceback": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "types": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "typing": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "undelete_model_genes": [],
-  "uuid": [],
-  "warnings": []
+  "uuid": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "warnings": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ]
  }
 }

@@ -8,41 +8,16 @@
   "PIL.Image",
   "PIL.Image.Image",
   "PIL.Image.open",
-  "abc.ABC",
-  "abc.abstractmethod",
-  "argparse",
-  "argparse.ArgumentParser",
-  "argparse.Namespace",
-  "base64",
-  "base64.b64encode",
   "cmap",
   "coerce_seconds",
-  "collections",
-  "collections.Counter",
   "collections.Mapping",
   "concatenate",
-  "contextlib",
-  "contextlib.contextmanager",
-  "contextlib.suppress",
-  "copy",
-  "copy.copy",
-  "copy.deepcopy",
-  "datetime.datetime",
-  "datetime.datetime.fromtimestamp",
-  "datetime.datetime.utcnow",
-  "datetime.timedelta",
   "dateutil.parser.ParserError",
-  "decimal",
   "decimal.Decimal",
   "encode_it",
-  "enum.auto",
   "f",
   "fmt",
   "fn",
-  "functools",
-  "functools.partial",
-  "functools.reduce",
-  "functools.wraps",
   "g",
   "google.colab.files",
   "google.colab.files.download",
@@ -51,21 +26,10 @@
   "great_expectations.profile.base.ProfilerTypeMapping.FLOAT_TYPE_NAMES",
   "great_expectations.profile.base.ProfilerTypeMapping.INT_TYPE_NAMES",
   "hex.lstrip",
-  "html",
-  "html.escape",
-  "imghdr",
-  "imghdr.tests",
   "imghdr.tests.append",
-  "imghdr.what",
-  "io.BytesIO",
-  "io.StringIO",
   "itertools",
   "itertools.combinations",
-  "json",
-  "json.dumps",
   "make_autopct",
-  "math",
-  "math.floor",
   "matplotlib",
   "matplotlib.cbook",
   "matplotlib.cbook.mplDeprecation",
@@ -95,40 +59,15 @@
   "matplotlib.ticker.FuncFormatter",
   "missing_diagram",
   "multiprocess_1d",
-  "multiprocessing",
   "multiprocessing.cpu_count",
-  "multiprocessing.pool",
-  "multiprocessing.pool.ThreadPool",
   "networkx.line_graph",
   "networkx.topological_sort",
-  "numpy",
   "numpy.NaN",
-  "numpy.abs",
-  "numpy.arange",
-  "numpy.diff",
-  "numpy.errstate",
-  "numpy.fill_diagonal",
-  "numpy.generic",
-  "numpy.histogram",
   "numpy.inf",
-  "numpy.int64",
   "numpy.isfinite",
-  "numpy.isnan",
-  "numpy.linspace",
-  "numpy.max",
-  "numpy.mean",
-  "numpy.median",
-  "numpy.min",
   "numpy.nan",
-  "numpy.ndarray",
   "numpy.printoptions",
-  "numpy.sqrt",
-  "numpy.std",
-  "numpy.sum",
-  "numpy.var",
-  "numpy.zeros",
   "op",
-  "os",
   "os.path.basename",
   "os.path.commonprefix",
   "os.path.dirname",
@@ -137,14 +76,9 @@
   "os.path.splitdrive",
   "os.path.splitext",
   "os.stat",
-  "pandas",
-  "pandas.DataFrame",
   "pandas.DataFrame.profile_report",
-  "pandas.Index",
-  "pandas.Series",
   "pandas.Timestamp.to_pydatetime",
   "pandas.__version__.split",
-  "pandas.api.types",
   "pandas.api.types.add",
   "pandas.api.types.is_bool_dtype",
   "pandas.api.types.is_categorical_dtype",
@@ -152,21 +86,6 @@
   "pandas.api.types.is_numeric_dtype",
   "pandas.api.types.is_object_dtype",
   "pandas.api.types.is_string_dtype",
-  "pandas.concat",
-  "pandas.core.arrays.integer._IntegerDtype",
-  "pandas.core.base.DataError",
-  "pandas.crosstab",
-  "pandas.plotting.deregister_matplotlib_converters",
-  "pandas.plotting.register_matplotlib_converters",
-  "pandas.read_csv",
-  "pandas.read_excel",
-  "pandas.read_hdf",
-  "pandas.read_json",
-  "pandas.read_parquet",
-  "pandas.read_pickle",
-  "pandas.read_sas",
-  "pandas.read_stata",
-  "pandas.to_numeric",
   "pandas_profiling.__init__.ProfileReport",
   "pandas_profiling.__init__.__version__",
   "pandas_profiling.config.IframeAttribute.src",
@@ -176,22 +95,9 @@
   "pandas_profiling.config.Theme.united",
   "pandas_profiling.model.messages.MessageType.REJECTED",
   "pathlib.Path.copy",
-  "pickle",
-  "pickle.dumps",
-  "pickle.loads",
   "pluralize",
   "pydantic.Field",
-  "re",
-  "re.sub",
   "round_number",
-  "scipy.stats",
-  "scipy.stats.chi2_contingency",
-  "scipy.stats.stats.chisquare",
-  "shutil",
-  "shutil.copy",
-  "shutil.rmtree",
-  "string",
-  "string.punctuation",
   "tangled_up_in_unicode.block",
   "tangled_up_in_unicode.block_abbr",
   "tangled_up_in_unicode.category",
@@ -200,82 +106,76 @@
   "tester",
   "toggle_func",
   "tqdm.auto.tqdm",
-  "typing.Any",
-  "typing.Callable",
-  "typing.Dict",
-  "typing.List",
-  "typing.Mapping",
-  "typing.Optional",
-  "typing.Sequence",
-  "typing.Set",
-  "typing.TYPE_CHECKING",
-  "typing.Tuple",
-  "typing.Type",
-  "typing.TypeVar",
-  "typing.Union",
-  "unicodedata",
-  "unicodedata.normalize",
-  "urllib.parse.quote",
-  "urllib.parse.urlparse",
-  "urllib.parse.urlsplit",
-  "uuid",
-  "uuid.uuid4",
   "visions.Generic",
   "visions.VisionsBaseType",
   "visions.VisionsTypeset",
   "warn_missing",
-  "warning_value",
-  "warnings",
-  "warnings.catch_warnings",
-  "warnings.filterwarnings",
-  "warnings.simplefilter",
-  "warnings.warn",
-  "webbrowser",
-  "webbrowser.open_new_tab",
-  "zipfile",
-  "zipfile.BadZipFile",
-  "zipfile.ZipFile"
+  "warning_value"
  ],
  "deps": {
   "IPython": [],
   "PIL": [],
-  "abc": [],
-  "argparse": [],
-  "base64": [],
+  "abc": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "argparse": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "base64": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "cmap": [],
   "coerce_seconds": [],
-  "collections": [],
+  "collections": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "concatenate": [],
-  "contextlib": [],
-  "copy": [],
-  "datetime": [],
+  "contextlib": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "copy": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "datetime": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "dateutil": [
    "python-dateutil/conda-forge/noarch/python-dateutil-2.7.4-py_0"
   ],
-  "decimal": [],
+  "decimal": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "encode_it": [],
   "enum": [
-   "privy/conda-forge/noarch/privy-6.0.0-py_0"
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
   ],
   "f": [],
   "fmt": [],
   "fn": [],
-  "functools": [],
+  "functools": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "g": [],
   "google": [],
   "great_expectations": [
    "great-expectations/conda-forge/noarch/great-expectations-0.6.1-py_0"
   ],
   "hex": [],
-  "html": [],
+  "html": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "htmlmin": [
    "htmlmin/conda-forge/noarch/htmlmin-0.1.12-py_0"
   ],
   "imagehash": [
    "imagehash/conda-forge/noarch/imagehash-4.1.0-pyh9f0ad1d_0"
   ],
-  "imghdr": [],
-  "io": [],
+  "imghdr": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "io": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "ipywidgets": [
    "ipywidgets/conda-forge/noarch/ipywidgets-7.5.0-py_0"
   ],
@@ -286,9 +186,13 @@
   "joblib": [
    "joblib/conda-forge/noarch/joblib-0.14.0-py_0"
   ],
-  "json": [],
+  "json": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "make_autopct": [],
-  "math": [],
+  "math": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "matplotlib": [],
   "missing_diagram": [],
   "missingno": [
@@ -298,59 +202,92 @@
    "multimethod/conda-forge/noarch/multimethod-1.4-py_0"
   ],
   "multiprocess_1d": [],
-  "multiprocessing": [],
+  "multiprocessing": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "networkx": [
    "networkx/conda-forge/noarch/networkx-2.3-py_0"
   ],
-  "numpy": [],
+  "numpy": [
+   "numpy/conda-forge/linux-64/numpy-1.9.3-py27_blas_openblashb06ca3d_7"
+  ],
   "op": [],
-  "os": [],
-  "pandas": [],
+  "os": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "pandas": [
+   "pandas/conda-forge/linux-64/pandas-0.25.0-py37hb3f55d8_0"
+  ],
   "pandas_profiling": [],
   "pathlib": [
-   "pathlib/conda-forge/noarch/pathlib-1.0.1-py_1"
+   "pathlib/conda-forge/noarch/pathlib-1.0.1-py_1",
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
   ],
   "phik": [
    "phik/conda-forge/noarch/phik-0.9.11-py_1"
   ],
-  "pickle": [],
+  "pickle": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "pluralize": [],
   "pydantic": [
    "pydantic/conda-forge/noarch/pydantic-0.18.1-py_1"
   ],
-  "re": [],
+  "re": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "requests": [
    "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
    "requests/conda-forge/noarch/requests-2.23.0-pyh8c360ce_2"
   ],
   "round_number": [],
-  "scipy": [],
+  "scipy": [
+   "scipy/conda-forge/linux-64/scipy-0.18.1-np111py34_blas_openblas_200"
+  ],
   "seaborn": [
    "seaborn-base/conda-forge/noarch/seaborn-base-0.11.0-pyhd8ed1ab_1",
    "seaborn/conda-forge/noarch/seaborn-0.9.0-py_2"
   ],
-  "shutil": [],
-  "string": [],
+  "shutil": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "string": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "tangled_up_in_unicode": [],
   "tester": [],
   "toggle_func": [],
   "tqdm": [
    "tqdm/conda-forge/noarch/tqdm-4.20.0-py_0"
   ],
-  "typing": [],
-  "unicodedata": [],
-  "urllib": [],
-  "uuid": [],
+  "typing": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "unicodedata": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "urllib": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "uuid": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "visions": [
    "visions/conda-forge/noarch/visions-0.7.0-pyhd8ed1ab_0"
   ],
   "warn_missing": [],
   "warning_value": [],
-  "warnings": [],
-  "webbrowser": [],
+  "warnings": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "webbrowser": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "yaml": [
    "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1"
   ],
-  "zipfile": []
+  "zipfile": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ]
  }
 }

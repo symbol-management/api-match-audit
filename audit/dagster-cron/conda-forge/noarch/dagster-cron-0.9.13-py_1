@@ -1,95 +1,60 @@
 {
  "bad": [
-  "__future__.unicode_literals",
-  "dagster.DagsterInstance",
-  "dagster.ScheduleDefinition",
-  "dagster.check",
-  "dagster.check.inst_param",
-  "dagster.check.str_param",
-  "dagster.core.definitions.lambda_solid",
-  "dagster.core.definitions.pipeline",
-  "dagster.core.definitions.repository",
-  "dagster.core.host_representation.ExternalSchedule",
   "dagster.core.host_representation.PythonEnvRepositoryLocation",
   "dagster.core.host_representation.RepositoryLocationHandle",
   "dagster.core.host_representation.RepositoryLocationHandle.create_python_env_location",
-  "dagster.core.instance.DagsterInstance",
-  "dagster.core.instance.DagsterInstance.get",
-  "dagster.core.instance.InstanceType",
   "dagster.core.instance.InstanceType.EPHEMERAL",
-  "dagster.core.launcher.sync_in_memory_run_launcher.SyncInMemoryRunLauncher",
-  "dagster.core.scheduler.DagsterSchedulerError",
   "dagster.core.scheduler.ScheduleState",
   "dagster.core.scheduler.ScheduleStatus",
   "dagster.core.scheduler.ScheduleStatus.RUNNING",
   "dagster.core.scheduler.ScheduleStatus.STOPPED",
-  "dagster.core.scheduler.Scheduler",
-  "dagster.core.scheduler.scheduler.DagsterScheduleDoesNotExist",
-  "dagster.core.scheduler.scheduler.DagsterScheduleReconciliationError",
-  "dagster.core.scheduler.scheduler.DagsterSchedulerError",
-  "dagster.core.storage.event_log.InMemoryEventLogStorage",
-  "dagster.core.storage.noop_compute_log_manager.NoOpComputeLogManager",
-  "dagster.core.storage.pipeline_run.PipelineRunStatus",
   "dagster.core.storage.pipeline_run.PipelineRunStatus.SUCCESS",
-  "dagster.core.storage.root.LocalArtifactStorage",
-  "dagster.core.storage.runs.InMemoryRunStorage",
-  "dagster.core.storage.schedules.SqliteScheduleStorage",
   "dagster.core.storage.schedules.SqliteScheduleStorage.from_local",
-  "dagster.core.test_utils.environ",
-  "dagster.core.types.loadable_target_origin.LoadableTargetOrigin",
-  "dagster.core.utils.check_dagster_package_version",
-  "dagster.serdes.ConfigurableClass",
   "dagster.seven.TemporaryDirectory",
-  "dagster.seven.get_current_datetime_in_utc",
-  "dagster.seven.get_timestamp_from_utc_datetime",
-  "dagster.utils",
-  "dagster.utils.mkdir_p",
   "dagster_cron.__init__.__version__",
-  "io",
-  "io.open",
-  "os",
   "os.chmod",
-  "os.environ",
-  "os.getenv",
   "os.listdir",
   "os.path.isdir",
   "os.path.isfile",
   "os.path.join",
   "os.remove",
   "os.stat",
-  "pytest",
-  "pytest.fixture",
-  "pytest.raises",
-  "re",
-  "re.findall",
   "return_hello",
-  "shutil",
-  "shutil.rmtree",
-  "stat",
-  "stat.S_IEXEC",
-  "subprocess",
-  "subprocess.CalledProcessError",
-  "subprocess.check_output",
   "sys",
   "sys.executable"
  ],
  "deps": {
-  "__future__": [],
+  "__future__": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "crontab": [
    "crontab/conda-forge/noarch/crontab-0.22.9-pyh9f0ad1d_0",
    "python-crontab/conda-forge/noarch/python-crontab-2.5.1-pyh9f0ad1d_0"
   ],
-  "dagster": [],
+  "dagster": [
+   "dagster/conda-forge/linux-64/dagster-0.11.10-py37h89c1867_0"
+  ],
   "dagster_cron": [],
   "freezegun": [
    "freezegun/conda-forge/noarch/freezegun-1.0.0-py_0"
   ],
-  "io": [],
-  "os": [],
-  "pytest": [],
-  "re": [],
+  "io": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "os": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "pytest": [
+   "pytest/conda-forge/linux-64/pytest-4.6.3-py27_0",
+   "pytest/conda-forge/linux-64/pytest-6.0.2-py36hc560c46_0"
+  ],
+  "re": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "return_hello": [],
-  "shutil": [],
+  "shutil": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "six": [
    "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
    "privy/conda-forge/noarch/privy-6.0.0-py_0"
@@ -97,8 +62,12 @@
   "snapshottest": [
    "snapshottest/conda-forge/noarch/snapshottest-0.5.0-py_0"
   ],
-  "stat": [],
-  "subprocess": [],
+  "stat": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "subprocess": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "sys": [],
   "yaml": [
    "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1"

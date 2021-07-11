@@ -2,74 +2,30 @@
  "bad": [
   "IPython.core.interactiveshell.InteractiveShell",
   "IPython.get_ipython",
-  "abc.ABCMeta",
-  "abc.abstractmethod",
-  "abc.abstractproperty",
-  "asyncio",
-  "asyncio.BoundedSemaphore",
-  "asyncio.Queue",
-  "asyncio.gather",
-  "asyncio.get_event_loop",
-  "asyncio.wait",
   "atqdm",
-  "concurrent.futures.ProcessPoolExecutor",
-  "concurrent.futures.thread.ThreadPoolExecutor",
-  "concurrent.futures.wait",
-  "copy",
-  "copy.copy",
-  "copy.deepcopy",
-  "datetime.datetime",
   "datetime.datetime.max",
   "datetime.datetime.min",
-  "datetime.datetime.strptime",
-  "datetime.datetime.utcnow",
-  "datetime.timedelta",
   "func",
-  "glob.glob",
   "gridfs",
   "gridfs.GridFS",
   "grouper",
-  "hashlib",
   "hashlib.md5",
   "hashlib.sha1",
-  "importlib.abc.Loader",
-  "importlib.abc.MetaPathFinder",
-  "importlib.import_module",
-  "importlib.machinery.ModuleSpec",
-  "importlib.machinery.SourceFileLoader",
-  "importlib.util",
-  "inspect",
-  "inspect.Parameter",
   "inspect.Parameter.POSITIONAL_OR_KEYWORD",
-  "inspect.Signature",
   "itertools",
   "itertools.chain",
   "itertools.chain.from_iterable",
   "itertools.groupby",
   "itertools.islice",
-  "json",
-  "json.dumps",
-  "json.loads",
-  "logging",
-  "logging.DEBUG",
-  "logging.Formatter",
-  "logging.Handler",
-  "logging.INFO",
-  "logging.WARNING",
-  "logging.getLogger",
   "maggma.cli.distributed.manager",
   "maggma.cli.multiprocessing.multi",
-  "math.ceil",
   "mongogrant.Client",
   "mongogrant.client.check",
   "mongogrant.config.Config",
   "msgpack",
   "msgpack.packb",
   "msgpack.unpackb",
-  "os",
   "os.path.commonprefix",
-  "pathlib.Path",
-  "pathlib.PosixPath",
   "pkg_resources.DistributionNotFound",
   "pkg_resources.get_distribution",
   "pydantic.Field",
@@ -84,54 +40,27 @@
   "pymongo.uri_parser",
   "pynng.Pair1",
   "regex.match",
-  "signal",
   "signal.SIGALRM",
   "signal.alarm",
-  "signal.signal",
-  "socket.socket",
   "sshtunnel.SSHTunnelForwarder",
   "sys",
   "sys.meta_path.append",
   "sys.modules",
-  "threading",
-  "threading.current_thread",
   "time.time",
   "tqdm.autonotebook.tqdm",
-  "tqdm.autonotebook.tqdm.write",
-  "traceback",
-  "traceback.format_exc",
-  "types.GeneratorType",
-  "typing.Any",
-  "typing.Callable",
-  "typing.Dict",
-  "typing.Generic",
-  "typing.Iterable",
-  "typing.Iterator",
-  "typing.List",
-  "typing.Optional",
-  "typing.Set",
-  "typing.Tuple",
-  "typing.Type",
-  "typing.TypeVar",
-  "typing.Union",
-  "uuid",
-  "uuid.UUID",
-  "uuid.getnode",
-  "uuid.uuid4",
-  "uvicorn",
-  "uvicorn.run",
-  "warnings",
-  "zlib",
-  "zlib.compress",
-  "zlib.decompress"
+  "tqdm.autonotebook.tqdm.write"
  ],
  "deps": {
   "IPython": [],
-  "abc": [],
+  "abc": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "aioitertools": [
    "aioitertools/conda-forge/noarch/aioitertools-0.6.1-py_0"
   ],
-  "asyncio": [],
+  "asyncio": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "atqdm": [],
   "boto3": [
    "boto3/conda-forge/noarch/boto3-1.13.1-pyh9f0ad1d_0"
@@ -145,33 +74,54 @@
   "click": [
    "click/conda-forge/noarch/click-7.0-py_0"
   ],
-  "concurrent": [],
-  "copy": [],
-  "datetime": [],
+  "concurrent": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "copy": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "datetime": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "enum": [
-   "privy/conda-forge/noarch/privy-6.0.0-py_0"
+   "privy/conda-forge/noarch/privy-6.0.0-py_0",
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
   ],
   "fastapi": [
    "fastapi/conda-forge/noarch/fastapi-0.52.0-py_0"
   ],
   "func": [],
-  "glob": [],
+  "glob": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "gridfs": [],
   "grouper": [],
-  "hashlib": [],
+  "hashlib": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "hvac": [
    "hvac/conda-forge/noarch/hvac-0.10.9-pyhd8ed1ab_0"
   ],
-  "importlib": [],
-  "inspect": [],
+  "importlib": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "inspect": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "itertools": [],
-  "json": [],
+  "json": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "jsonschema": [
    "jsonschema/conda-forge/noarch/jsonschema-3.2.0-py_2"
   ],
-  "logging": [],
+  "logging": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "maggma": [],
-  "math": [],
+  "math": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "mongogrant": [],
   "mongomock": [
    "mongomock/conda-forge/noarch/mongomock-3.20.0-pyh9f0ad1d_0"
@@ -183,8 +133,13 @@
   "nbformat": [
    "nbformat/conda-forge/noarch/nbformat-5.1.3-pyhd8ed1ab_0"
   ],
-  "os": [],
-  "pathlib": [],
+  "os": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "pathlib": [
+   "pathlib/conda-forge/noarch/pathlib-1.0.1-py_1",
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "pkg_resources": [],
   "pydantic": [
    "pydantic/conda-forge/noarch/pydantic-0.18.1-py_1"
@@ -195,29 +150,49 @@
   "pymongo": [],
   "pynng": [],
   "regex": [],
-  "signal": [],
-  "socket": [],
+  "signal": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "socket": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "sshtunnel": [],
   "starlette": [
    "starlette-base/conda-forge/noarch/starlette-base-0.13.5-py_2",
    "starlette/conda-forge/noarch/starlette-0.11.2-py_0"
   ],
   "sys": [],
-  "threading": [],
+  "threading": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "time": [],
   "tqdm": [
    "tqdm/conda-forge/noarch/tqdm-4.20.0-py_0"
   ],
-  "traceback": [],
-  "types": [],
-  "typing": [],
+  "traceback": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "types": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "typing": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "typing_extensions": [
    "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
    "typing_extensions/conda-forge/noarch/typing_extensions-3.7.4.3-py_0"
   ],
-  "uuid": [],
-  "uvicorn": [],
-  "warnings": [],
-  "zlib": []
+  "uuid": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "uvicorn": [
+   "uvicorn/conda-forge/linux-64/uvicorn-0.4.6-py36_0"
+  ],
+  "warnings": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "zlib": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ]
  }
 }

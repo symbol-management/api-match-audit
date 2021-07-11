@@ -2,30 +2,11 @@
  "bad": [
   "ExceptionColumn",
   "Opts",
-  "abc",
-  "abc.ABCMeta",
-  "argparse",
-  "argparse.Action",
-  "argparse.ArgumentError",
-  "argparse.ArgumentParser",
-  "argparse.ArgumentTypeError",
-  "argparse.SUPPRESS",
-  "contextlib",
-  "contextlib.contextmanager",
-  "copy",
-  "copy.deepcopy",
-  "datetime",
-  "datetime.timedelta",
   "fixtures",
   "fixtures.Fixture",
   "fixtures.MonkeyPatch",
   "fixtures.StringStream",
-  "formatter",
   "getlist",
-  "getpass",
-  "getpass.getpass",
-  "json",
-  "json.dumps",
   "keystoneauth1.exceptions.BadRequest",
   "keystoneauth1.exceptions.EndpointNotFound",
   "keystoneauth1.exceptions.NoMatchingPlugin",
@@ -33,26 +14,12 @@
   "keystoneauth1.fixture.DiscoveryList",
   "keystoneauth1.loading.get_plugin_loader",
   "keystoneauth1.session.request",
-  "locale",
-  "locale.getpreferredencoding",
-  "logging",
-  "logging.CRITICAL",
   "logging.CRITICAL.get",
-  "logging.DEBUG",
   "logging.DEBUG.get",
-  "logging.ERROR",
   "logging.ERROR.get",
-  "logging.FileHandler",
-  "logging.Formatter",
-  "logging.INFO",
   "logging.INFO.get",
   "logging.Logger.manager.loggerDict.keys",
-  "logging.NOTSET",
-  "logging.WARNING",
   "logging.WARNING.get",
-  "logging.basicConfig",
-  "logging.getLevelName",
-  "logging.getLogger",
   "mock",
   "mock.MagicMock",
   "mock.Mock",
@@ -74,10 +41,6 @@
   "openstack.config.loader.load_from_options",
   "openstack.config.loader.pop",
   "openstack.config.loader.startswith",
-  "operator",
-  "operator.itemgetter",
-  "os",
-  "os.environ",
   "os.environ.get",
   "osc_lib.shell.run",
   "osc_lib.tests.utils.__init__.ParserException",
@@ -94,13 +57,9 @@
   "osc_lib.utils.__init__.format_list",
   "osc_lib.utils.__init__.get_field",
   "osc_lib.utils.__init__.sort_items",
-  "oslo_i18n",
-  "oslo_i18n.TranslatorFactory",
   "pkg_resources",
   "pkg_resources.iter_entry_points",
   "raise_not_found",
-  "simplejson",
-  "simplejson.JSONDecodeError",
   "sort_type",
   "sys",
   "sys.argv",
@@ -115,44 +74,63 @@
   "testtools.TestCase.setUp",
   "testtools.skip",
   "time",
-  "time.sleep",
-  "traceback",
-  "traceback.format_exc",
-  "uuid",
-  "uuid.uuid4",
-  "warnings",
-  "warnings.simplefilter",
-  "warnings.warn"
+  "time.sleep"
  ],
  "deps": {
   "ExceptionColumn": [],
   "Opts": [],
-  "abc": [],
-  "argparse": [],
+  "abc": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "argparse": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "cliff": [
    "cliff/conda-forge/noarch/cliff-3.5.0-pyhd8ed1ab_0"
   ],
-  "contextlib": [],
-  "copy": [],
-  "datetime": [],
+  "contextlib": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "copy": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "datetime": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "fixtures": [],
-  "formatter": [],
+  "formatter": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "getlist": [],
-  "getpass": [],
-  "json": [],
+  "getpass": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "json": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "keystoneauth1": [
    "keystoneauth1/conda-forge/noarch/keystoneauth1-3.11.2-py_0"
   ],
-  "locale": [],
-  "logging": [],
+  "locale": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "logging": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "mock": [],
   "openstack": [
    "openstacksdk/conda-forge/noarch/openstacksdk-0.9.19-py_0"
   ],
-  "operator": [],
-  "os": [],
+  "operator": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "os": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "osc_lib": [],
-  "oslo_i18n": [],
+  "oslo_i18n": [
+   "oslo.i18n/conda-forge/noarch/oslo.i18n-3.23.1-py_0"
+  ],
   "oslo_utils": [
    "oslo.utils/conda-forge/noarch/oslo.utils-4.3.0-py_0"
   ],
@@ -164,7 +142,9 @@
   "requests_mock": [
    "requests-mock/conda-forge/noarch/requests-mock-1.9.1-pyhd8ed1ab_0"
   ],
-  "simplejson": [],
+  "simplejson": [
+   "simplejson/conda-forge/linux-64/simplejson-3.16.0-py36h14c3975_1002"
+  ],
   "six": [
    "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
    "privy/conda-forge/noarch/privy-6.0.0-py_0"
@@ -173,8 +153,14 @@
   "sys": [],
   "testtools": [],
   "time": [],
-  "traceback": [],
-  "uuid": [],
-  "warnings": []
+  "traceback": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "uuid": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "warnings": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ]
  }
 }
