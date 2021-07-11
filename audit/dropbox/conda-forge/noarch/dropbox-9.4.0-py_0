@@ -1,9 +1,5 @@
 {
  "bad": [
-  "__future__.absolute_import",
-  "__future__.unicode_literals",
-  "abc.ABCMeta",
-  "abc.abstractmethod",
   "async_",
   "async_.AsyncJobId_validator",
   "async_.LaunchEmptyResult_validator",
@@ -21,12 +17,6 @@
   "auth.TokenFromOAuth1Arg",
   "auth.token_from_oauth1",
   "auth.token_revoke",
-  "base64",
-  "base64.b64decode",
-  "base64.b64encode",
-  "base64.urlsafe_b64encode",
-  "collections",
-  "collections.OrderedDict",
   "common",
   "common.Date_validator",
   "common.DisplayNameLegacy_validator",
@@ -41,11 +31,6 @@
   "contacts.DeleteManualContactsArg",
   "contacts.delete_manual_contacts",
   "contacts.delete_manual_contacts_batch",
-  "contextlib",
-  "contextlib.closing",
-  "datetime",
-  "datetime.datetime",
-  "datetime.datetime.strptime",
   "encode",
   "encode_f",
   "encode_sub",
@@ -228,26 +213,12 @@
   "files.upload_session_finish_batch_check",
   "files.upload_session_start",
   "format.deleter",
-  "functools",
-  "functools.partial",
-  "hashlib",
   "hashlib.md5",
   "id.deleter",
-  "json",
-  "json.dumps",
-  "json.loads",
-  "logging",
-  "math",
-  "math.isinf",
-  "math.isnan",
   "msgpack",
   "msgpack.dumps",
   "msgpack.loads",
-  "numbers",
-  "numbers.Integral",
-  "numbers.Real",
   "open.deleter",
-  "os",
   "os.environ.get",
   "os.urandom",
   "paper.AddPaperDocUser",
@@ -286,11 +257,6 @@
   "pkg_resources",
   "pkg_resources.resource_filename",
   "processor",
-  "random",
-  "random.random",
-  "re",
-  "re.compile",
-  "re.search",
   "seen_state",
   "seen_state.PlatformType_validator",
   "sharing",
@@ -384,7 +350,6 @@
   "sharing.update_file_member",
   "sharing.update_folder_member",
   "sharing.update_folder_policy",
-  "ssl",
   "ssl.CERT_REQUIRED",
   "stone_base",
   "stone_base.Route",
@@ -565,11 +530,6 @@
   "time.sleep",
   "time.strftime",
   "type.deleter",
-  "typing",
-  "typing.TypeVar",
-  "urllib",
-  "urllib.parse.quote",
-  "urllib.parse.urlencode",
   "urllib.quote",
   "urllib.urlencode",
   "users",
@@ -586,21 +546,31 @@
   "users_common",
   "users_common.AccountId_validator",
   "users_common.AccountType_validator",
-  "validate_f",
-  "warnings",
-  "warnings.warn"
+  "validate_f"
  ],
  "deps": {
-  "__future__": [],
-  "abc": [],
+  "__future__": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "abc": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "async_": [],
   "auth": [],
-  "base64": [],
-  "collections": [],
+  "base64": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "collections": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "common": [],
   "contacts": [],
-  "contextlib": [],
-  "datetime": [],
+  "contextlib": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "datetime": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "encode": [],
   "encode_f": [],
   "encode_sub": [],
@@ -608,21 +578,39 @@
   "file_requests": [],
   "files": [],
   "format": [],
-  "functools": [],
-  "hashlib": [],
+  "functools": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "hashlib": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "id": [],
-  "json": [],
-  "logging": [],
-  "math": [],
+  "json": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "logging": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "math": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "msgpack": [],
-  "numbers": [],
+  "numbers": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "open": [],
-  "os": [],
+  "os": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "paper": [],
   "pkg_resources": [],
   "processor": [],
-  "random": [],
-  "re": [],
+  "random": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "re": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "requests": [
    "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
    "requests/conda-forge/noarch/requests-2.23.0-pyh8c360ce_2"
@@ -633,7 +621,9 @@
    "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
    "privy/conda-forge/noarch/privy-6.0.0-py_0"
   ],
-  "ssl": [],
+  "ssl": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "stone_base": [],
   "stone_serializers": [],
   "stone_validators": [],
@@ -643,8 +633,12 @@
   "team_policies": [],
   "time": [],
   "type": [],
-  "typing": [],
-  "urllib": [],
+  "typing": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "urllib": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "urllib3": [
    "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
    "urllib3/conda-forge/noarch/urllib3-1.26.5-pyhd8ed1ab_0"
@@ -652,6 +646,8 @@
   "users": [],
   "users_common": [],
   "validate_f": [],
-  "warnings": []
+  "warnings": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ]
  }
 }

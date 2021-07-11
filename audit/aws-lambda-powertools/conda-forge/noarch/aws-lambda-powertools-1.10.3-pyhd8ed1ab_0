@@ -1,7 +1,5 @@
 {
  "bad": [
-  "abc.ABC",
-  "abc.abstractmethod",
   "aws_lambda_powertools.__init__.set_package_logger_handler",
   "aws_xray_sdk.core.xray_recorder.configure",
   "aws_xray_sdk.ext.aiohttp.client.aws_xray_trace_config",
@@ -10,47 +8,7 @@
   "base.DEFAULT_PROVIDERS.get",
   "base.DEFAULT_PROVIDERS.get_multiple",
   "base.MetricUnit.Count",
-  "base64",
-  "base64.b64decode",
-  "binascii.Error",
-  "collections.defaultdict",
-  "collections.namedtuple",
-  "contextlib",
-  "contextlib.contextmanager",
-  "copy",
-  "copy.copy",
-  "datetime",
-  "datetime.date",
-  "datetime.datetime",
-  "datetime.datetime.now",
-  "datetime.timedelta",
-  "distutils.util.strtobool",
-  "functools",
-  "functools.partial",
-  "functools.wraps",
-  "gzip",
-  "gzip.decompress",
-  "inspect",
-  "inspect.currentframe",
-  "inspect.iscoroutinefunction",
-  "inspect.isfunction",
-  "inspect.isgeneratorfunction",
-  "json",
-  "json.decoder.JSONDecodeError",
-  "json.dumps",
-  "json.load",
-  "json.loads",
   "lambda_handler",
-  "logging",
-  "logging.DEBUG",
-  "logging.Filter",
-  "logging.Formatter",
-  "logging.INFO",
-  "logging.LogRecord",
-  "logging.Logger",
-  "logging.NullHandler",
-  "logging.StreamHandler",
-  "logging.getLogger",
   "logging.root.handlers",
   "method",
   "middleware",
@@ -61,10 +19,6 @@
   "models.SnsModel.parse_obj",
   "models.SnsNotificationModel.parse_raw",
   "models.SqsModel.parse_obj",
-  "numbers",
-  "numbers.Number",
-  "os",
-  "os.getenv",
   "processor",
   "processor.process",
   "pydantic.Field",
@@ -72,8 +26,6 @@
   "pydantic.networks.HttpUrl",
   "pydantic.networks.IPvAnyNetwork",
   "pydantic.root_validator",
-  "random",
-  "random.random",
   "shared.constants.CHALICE_LOCAL_ENV",
   "shared.constants.LOGGER_LOG_EVENT_ENV",
   "shared.constants.MIDDLEWARE_FACTORY_TRACE_ENV",
@@ -86,90 +38,116 @@
   "sys",
   "sys.exc_info",
   "sys.stdout",
-  "traceback",
-  "traceback.format_exception",
   "transform_value",
-  "typing.Any",
-  "typing.Callable",
-  "typing.Dict",
-  "typing.Iterable",
-  "typing.Iterator",
-  "typing.List",
-  "typing.Literal",
-  "typing.Optional",
-  "typing.Tuple",
-  "typing.Type",
-  "typing.TypeVar",
-  "typing.Union",
-  "urllib.parse.unquote_plus",
-  "uuid.uuid4",
-  "warnings",
-  "warnings.warn",
-  "zlib",
-  "zlib.MAX_WBITS",
-  "zlib.decompress"
+  "typing.Literal"
  ],
  "deps": {
-  "abc": [],
+  "abc": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "aws_lambda_powertools": [],
   "aws_xray_sdk": [
    "aws-xray-sdk/conda-forge/noarch/aws-xray-sdk-0.95-py_0"
   ],
   "base": [],
-  "base64": [],
-  "binascii": [],
+  "base64": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "binascii": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "boto3": [
    "boto3/conda-forge/noarch/boto3-1.13.1-pyh9f0ad1d_0"
   ],
   "botocore": [
    "botocore/conda-forge/noarch/botocore-1.10.82-py_0"
   ],
-  "collections": [],
-  "contextlib": [],
-  "copy": [],
-  "datetime": [],
-  "distutils": [],
+  "collections": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "contextlib": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "copy": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "datetime": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "distutils": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "enum": [
-   "privy/conda-forge/noarch/privy-6.0.0-py_0"
+   "privy/conda-forge/noarch/privy-6.0.0-py_0",
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
   ],
   "fastjsonschema": [
    "python-fastjsonschema/conda-forge/noarch/python-fastjsonschema-2.15.1-pyhd8ed1ab_0"
   ],
-  "functools": [],
-  "gzip": [],
-  "inspect": [],
+  "functools": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "gzip": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "inspect": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "jmespath": [
    "jmespath/conda-forge/noarch/jmespath-0.9.3-py_1",
    "jmespath/conda-forge/noarch/jmespath-0.9.5-py_0"
   ],
-  "json": [],
+  "json": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "lambda_handler": [],
-  "logging": [],
+  "logging": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "method": [],
   "middleware": [],
   "models": [],
-  "numbers": [],
-  "os": [],
+  "numbers": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "os": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "pathlib": [
-   "pathlib/conda-forge/noarch/pathlib-1.0.1-py_1"
+   "pathlib/conda-forge/noarch/pathlib-1.0.1-py_1",
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
   ],
   "processor": [],
   "pydantic": [
    "pydantic/conda-forge/noarch/pydantic-0.18.1-py_1"
   ],
-  "random": [],
+  "random": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "shared": [],
   "sys": [],
-  "traceback": [],
+  "traceback": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "transform_value": [],
-  "typing": [],
+  "typing": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "typing_extensions": [
    "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
    "typing_extensions/conda-forge/noarch/typing_extensions-3.7.4.3-py_0"
   ],
-  "urllib": [],
-  "uuid": [],
-  "warnings": [],
-  "zlib": []
+  "urllib": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "uuid": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "warnings": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "zlib": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ]
  }
 }

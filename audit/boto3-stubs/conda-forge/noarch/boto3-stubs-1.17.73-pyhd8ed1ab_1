@@ -1,9 +1,5 @@
 {
  "bad": [
-  "importlib.util",
-  "logging",
-  "logging.DEBUG",
-  "logging.Handler",
   "mypy_boto3_accessanalyzer.client.AccessAnalyzerClient",
   "mypy_boto3_acm.client.ACMClient",
   "mypy_boto3_acm_pca.client.ACMPCAClient",
@@ -270,11 +266,7 @@
   "sys",
   "sys.argv",
   "sys.version_info",
-  "typing.Any",
-  "typing.Literal",
-  "typing.Optional",
-  "typing.Union",
-  "typing.overload"
+  "typing.Literal"
  ],
  "deps": {
   "boto3": [
@@ -283,8 +275,12 @@
   "botocore": [
    "botocore/conda-forge/noarch/botocore-1.10.82-py_0"
   ],
-  "importlib": [],
-  "logging": [],
+  "importlib": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "logging": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "mypy_boto3_accessanalyzer": [],
   "mypy_boto3_acm": [],
   "mypy_boto3_acm_pca": [],
@@ -571,7 +567,9 @@
   "mypy_boto3_workspaces": [],
   "mypy_boto3_xray": [],
   "sys": [],
-  "typing": [],
+  "typing": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "typing_extensions": [
    "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
    "typing_extensions/conda-forge/noarch/typing_extensions-3.7.4.3-py_0"

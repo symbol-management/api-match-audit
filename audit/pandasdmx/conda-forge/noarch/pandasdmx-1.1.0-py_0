@@ -3,68 +3,33 @@
   "Reader",
   "_get_attrs",
   "_get_dims",
-  "abc.ABC",
-  "abc.abstractmethod",
   "add_item",
   "cls",
   "cls._Item",
   "cls.__name__",
-  "collections",
-  "collections.ChainMap",
-  "collections.OrderedDict",
   "collections.abc.Collection",
   "collections.abc.Iterable",
-  "collections.defaultdict",
   "cond",
-  "copy.copy",
-  "datetime.date",
-  "datetime.datetime",
-  "datetime.timedelta",
   "dim",
   "dispatcher",
   "dispatcher.register",
   "dispatcher.registry",
   "format.lower",
   "func",
-  "functools.lru_cache",
-  "functools.partial",
-  "functools.singledispatch",
   "id.lower",
-  "importlib.import_module",
   "importlib.resources",
   "importlib.resources.open_binary",
-  "inspect.isclass",
-  "io.BufferedIOBase",
-  "io.BytesIO",
   "itertools.chain",
   "itertools.product",
-  "json",
-  "json.load",
-  "json.loads",
-  "logging",
-  "logging.DEBUG",
-  "logging.ERROR",
-  "logging.Formatter",
-  "logging.StreamHandler",
-  "logging.getLogger",
-  "lxml.builder.ElementMaker",
   "lxml.etree",
   "lxml.etree.QName",
   "lxml.etree.iterparse",
   "lxml.etree.tostring",
   "model.DataStructureDefinition.from_keys",
-  "numpy",
   "numpy.float64",
-  "operator.attrgetter",
-  "operator.itemgetter",
-  "pandas",
-  "pandas.DataFrame",
   "pandas.DataFrame.from_dict",
-  "pandas.Series",
   "pandas._libs.tslibs.offsets.prefix_mapping",
-  "pandas.concat",
   "pandas.offsets.prefix_mapping",
-  "pandas.to_datetime",
   "pandasdmx.__init__._init_logger",
   "pandasdmx.__init__.logger",
   "pandasdmx.format.xml.NS.items",
@@ -83,39 +48,17 @@
   "pandasdmx.source.__init__.add_source",
   "pandasdmx.source.__init__.load_package_sources",
   "pandasdmx.util.Resource.data",
-  "pathlib.Path",
   "pydantic.Extra",
   "pydantic.Extra.allow",
   "pydantic.class_validators.make_generic_validator",
-  "re",
-  "re.compile",
   "reader",
   "sdmxjson.Reader",
   "sdmxml.Reader",
   "sys.maxsize",
-  "tempfile.NamedTemporaryFile",
   "time.sleep",
   "to_tags",
-  "typing",
-  "typing.Any",
-  "typing.Dict",
-  "typing.Generic",
-  "typing.Iterable",
-  "typing.List",
-  "typing.Mapping",
-  "typing.MutableMapping",
-  "typing.Optional",
   "typing.OrderedDict",
-  "typing.Set",
-  "typing.TYPE_CHECKING",
-  "typing.Text",
-  "typing.Type",
-  "typing.TypeVar",
-  "typing.Union",
   "typing._alias",
-  "typing.cast",
-  "typing.no_type_check",
-  "urllib.parse.urlparse",
   "util.Resource.categoryscheme",
   "util.Resource.data",
   "util.Resource.dataflow",
@@ -123,50 +66,82 @@
   "util.Resource.describe",
   "util.Resource.from_obj",
   "warn",
-  "warnings.warn",
-  "writer.to_pandas",
-  "zipfile.ZipFile"
+  "writer.to_pandas"
  ],
  "deps": {
   "Reader": [],
   "_get_attrs": [],
   "_get_dims": [],
-  "abc": [],
+  "abc": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "add_item": [],
   "attr": [
    "attrs/conda-forge/noarch/attrs-18.2.0-py_0"
   ],
   "cls": [],
-  "collections": [],
+  "collections": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "cond": [],
-  "copy": [],
-  "datetime": [],
+  "copy": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "datetime": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "dim": [],
   "dispatcher": [],
   "enum": [
-   "privy/conda-forge/noarch/privy-6.0.0-py_0"
+   "privy/conda-forge/noarch/privy-6.0.0-py_0",
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
   ],
   "format": [],
   "func": [],
-  "functools": [],
+  "functools": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "id": [],
-  "importlib": [],
-  "inspect": [],
-  "io": [],
+  "importlib": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "inspect": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "io": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "itertools": [],
-  "json": [],
-  "logging": [],
-  "lxml": [],
+  "json": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "logging": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "lxml": [
+   "pyexcel-ods3/conda-forge/noarch/pyexcel-ods3-0.5.3-py_0"
+  ],
   "model": [],
-  "numpy": [],
-  "operator": [],
-  "pandas": [],
+  "numpy": [
+   "numpy/conda-forge/linux-64/numpy-1.9.3-py27_blas_openblashb06ca3d_7"
+  ],
+  "operator": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "pandas": [
+   "pandas/conda-forge/linux-64/pandas-0.25.0-py37hb3f55d8_0"
+  ],
   "pandasdmx": [],
-  "pathlib": [],
+  "pathlib": [
+   "pathlib/conda-forge/noarch/pathlib-1.0.1-py_1",
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "pydantic": [
    "pydantic/conda-forge/noarch/pydantic-0.18.1-py_1"
   ],
-  "re": [],
+  "re": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "reader": [],
   "requests": [
    "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
@@ -178,15 +153,25 @@
   "sdmxjson": [],
   "sdmxml": [],
   "sys": [],
-  "tempfile": [],
+  "tempfile": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "time": [],
   "to_tags": [],
-  "typing": [],
-  "urllib": [],
+  "typing": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "urllib": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "util": [],
   "warn": [],
-  "warnings": [],
+  "warnings": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "writer": [],
-  "zipfile": []
+  "zipfile": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ]
  }
 }

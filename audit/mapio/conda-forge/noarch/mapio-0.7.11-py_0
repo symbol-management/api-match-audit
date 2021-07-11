@@ -1,18 +1,6 @@
 {
  "bad": [
   "StringIO",
-  "__future__.print_function",
-  "abc",
-  "abc.abstractmethod",
-  "collections",
-  "collections.OrderedDict",
-  "copy",
-  "datetime",
-  "datetime.datetime",
-  "datetime.datetime.now",
-  "datetime.datetime.strptime",
-  "datetime.datetime.utcfromtimestamp",
-  "datetime.datetime.utcnow",
   "f",
   "geodict.GeoDict.DEFAULT_PROJ4",
   "geodict.GeoDict.EPS",
@@ -22,9 +10,6 @@
   "grid2d.Grid2D.verifyBounds",
   "h5py",
   "h5py.File",
-  "io",
-  "io.BytesIO",
-  "io.StringIO",
   "long",
   "matplotlib.font_manager",
   "matplotlib.patheffects",
@@ -35,77 +20,22 @@
   "matplotlib.pyplot.close",
   "matplotlib.pyplot.figure",
   "matplotlib.pyplot.sca",
-  "numpy",
-  "numpy.abs",
-  "numpy.any",
-  "numpy.arange",
-  "numpy.array",
-  "numpy.ceil",
-  "numpy.concatenate",
-  "numpy.empty_like",
-  "numpy.errstate",
-  "numpy.fliplr",
-  "numpy.flipud",
   "numpy.float32",
   "numpy.float64",
-  "numpy.floor",
-  "numpy.hstack",
   "numpy.inf",
-  "numpy.int16",
-  "numpy.int32",
-  "numpy.int8",
-  "numpy.isclose",
   "numpy.isinf",
-  "numpy.isnan",
-  "numpy.linspace",
-  "numpy.log10",
   "numpy.maximum",
-  "numpy.meshgrid",
   "numpy.minimum",
   "numpy.nan",
-  "numpy.nanmax",
-  "numpy.nanmin",
-  "numpy.ndarray",
-  "numpy.ones",
-  "numpy.round",
-  "numpy.savetxt",
-  "numpy.squeeze",
-  "numpy.tile",
   "numpy.uint16",
   "numpy.uint32",
-  "numpy.uint8",
-  "numpy.vstack",
-  "numpy.where",
-  "numpy.zeros",
-  "os.path",
   "osgeo.osr",
   "osgeo.osr.SpatialReference",
-  "pandas",
   "pandas.DataFrame.from_dict",
-  "pandas.__version__",
-  "pandas.read_csv",
-  "rasterio",
-  "rasterio.crs.CRS",
-  "rasterio.enums.Resampling",
   "rasterio.enums.Resampling.bilinear",
   "rasterio.enums.Resampling.cubic",
   "rasterio.enums.Resampling.nearest",
-  "rasterio.features",
-  "rasterio.features.rasterize",
-  "rasterio.open",
-  "rasterio.warp.calculate_default_transform",
-  "rasterio.warp.reproject",
-  "re",
-  "re.compile",
-  "scipy.interpolate",
-  "scipy.interpolate.NearestNDInterpolator",
-  "scipy.interpolate.griddata",
-  "scipy.interpolate.interp2d",
-  "scipy.io.netcdf",
-  "scipy.io.netcdf.NetCDFFile",
-  "scipy.io.netcdf.netcdf_file",
   "shake.ShakeGrid.load",
-  "struct",
   "struct.pack",
   "struct.unpack",
   "super.subdivide",
@@ -113,35 +43,31 @@
   "sys.argv",
   "sys.byteorder",
   "sys.version_info.major",
-  "tempfile",
-  "tempfile.mkdtemp",
-  "textwrap",
-  "textwrap.dedent",
   "time",
   "time.mktime",
-  "urllib.request",
   "urllib2",
-  "urllib2.urlopen",
-  "warnings",
-  "warnings.catch_warnings",
-  "warnings.simplefilter",
-  "warnings.warn",
-  "xml.dom.minidom",
-  "xml.dom.minidom.parse",
-  "xml.dom.minidom.parseString",
-  "zipfile",
-  "zipfile.ZipFile"
+  "urllib2.urlopen"
  ],
  "deps": {
   "StringIO": [],
-  "__future__": [],
-  "abc": [],
+  "__future__": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "abc": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "affine": [
    "affine/conda-forge/noarch/affine-2.3.0-py_0"
   ],
-  "collections": [],
-  "copy": [],
-  "datetime": [],
+  "collections": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "copy": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "datetime": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "f": [],
   "geodict": [],
   "grid2d": [],
@@ -149,30 +75,59 @@
   "impactutils": [
    "impactutils/conda-forge/noarch/impactutils-0.8.10-py_0"
   ],
-  "io": [],
+  "io": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "long": [],
   "matplotlib": [],
-  "numpy": [],
-  "os": [],
+  "numpy": [
+   "numpy/conda-forge/linux-64/numpy-1.9.3-py27_blas_openblashb06ca3d_7"
+  ],
+  "os": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "osgeo": [],
-  "pandas": [],
-  "rasterio": [],
-  "re": [],
-  "scipy": [],
+  "pandas": [
+   "pandas/conda-forge/linux-64/pandas-0.25.0-py37hb3f55d8_0"
+  ],
+  "rasterio": [
+   "rasterio/conda-forge/linux-64/rasterio-1.0.28-py27h900e953_1",
+   "rasterio/conda-forge/linux-64/rasterio-1.2.5-py39hbc9cc8e_0"
+  ],
+  "re": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "scipy": [
+   "scipy/conda-forge/linux-64/scipy-0.18.1-np111py34_blas_openblas_200"
+  ],
   "shake": [],
   "shapely": [
    "solaris/conda-forge/noarch/solaris-0.4.0-pyhe05a262_0"
   ],
-  "struct": [],
+  "struct": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "super": [],
   "sys": [],
-  "tempfile": [],
-  "textwrap": [],
+  "tempfile": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "textwrap": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "time": [],
-  "urllib": [],
+  "urllib": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "urllib2": [],
-  "warnings": [],
-  "xml": [],
-  "zipfile": []
+  "warnings": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "xml": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "zipfile": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ]
  }
 }

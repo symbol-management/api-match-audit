@@ -21,8 +21,6 @@
   "TmpDir",
   "Xor",
   "agg_func",
-  "collections.defaultdict",
-  "contextlib.contextmanager",
   "dask.base.normalize_token.register",
   "dask.config",
   "dask.config.config",
@@ -30,11 +28,6 @@
   "dask.config.get",
   "dask_geomodeling.core.Block.from_json",
   "dask_geomodeling.utils.POLYGON.format",
-  "datetime.datetime",
-  "datetime.datetime.strptime",
-  "datetime.datetime.utcfromtimestamp",
-  "datetime.timedelta",
-  "datetime.timedelta.total_seconds",
   "equal",
   "fiona",
   "fiona.Env",
@@ -47,146 +40,36 @@
   "fiona.supported_drivers.get",
   "format.lower",
   "func",
-  "functools.lru_cache",
-  "functools.partial",
-  "functools.wraps",
   "geopandas.GeoDataFrame.from_file",
-  "glob",
-  "glob.glob",
-  "inspect",
-  "inspect.currentframe",
-  "io.BytesIO",
   "itertools",
   "itertools.chain",
   "itertools.product",
   "itertools.repeat",
-  "json",
-  "json.dumps",
-  "json.loads",
-  "logging",
-  "logging.getLogger",
-  "math",
-  "math.ceil",
-  "math.cos",
-  "math.floor",
-  "math.log",
-  "math.log10",
-  "math.radians",
-  "math.sin",
-  "math.sqrt",
   "matplotlib.cm",
   "matplotlib.cm.get_cmap",
   "matplotlib.colors.Normalize",
   "move_or_copy",
-  "notebook.base.handlers.IPythonHandler",
-  "notebook.notebookapp",
-  "notebook.utils.url_path_join",
-  "numbers",
-  "numpy",
-  "numpy.add",
-  "numpy.all",
-  "numpy.append",
-  "numpy.arange",
-  "numpy.arctan2",
-  "numpy.argsort",
-  "numpy.around",
-  "numpy.array",
-  "numpy.asanyarray",
-  "numpy.asarray",
-  "numpy.bool",
-  "numpy.broadcast_arrays",
-  "numpy.ceil",
-  "numpy.clip",
-  "numpy.concatenate",
-  "numpy.cumsum",
-  "numpy.diag",
-  "numpy.digitize",
   "numpy.divide",
-  "numpy.dtype",
-  "numpy.empty",
   "numpy.equal",
-  "numpy.errstate",
-  "numpy.finfo",
-  "numpy.float",
   "numpy.float32",
   "numpy.float64",
   "numpy.floating",
-  "numpy.floor",
-  "numpy.full",
-  "numpy.full_like",
   "numpy.greater",
-  "numpy.greater_equal",
-  "numpy.iinfo",
-  "numpy.in1d",
-  "numpy.indices",
   "numpy.inf",
-  "numpy.int",
-  "numpy.int32",
-  "numpy.int64",
-  "numpy.integer",
-  "numpy.interp",
-  "numpy.isclose",
   "numpy.isfinite",
-  "numpy.isnan",
-  "numpy.isscalar",
-  "numpy.issubdtype",
   "numpy.less",
-  "numpy.less_equal",
-  "numpy.lexsort",
   "numpy.logical_and",
   "numpy.logical_not",
   "numpy.logical_or",
   "numpy.logical_xor",
-  "numpy.ma.masked_equal",
-  "numpy.multiply",
   "numpy.nan",
   "numpy.nancumsum",
-  "numpy.nanmax",
-  "numpy.nanmean",
-  "numpy.nanmedian",
-  "numpy.nanmin",
-  "numpy.nanpercentile",
-  "numpy.nansum",
-  "numpy.newaxis",
   "numpy.not_equal",
-  "numpy.pad",
-  "numpy.percentile",
   "numpy.power",
-  "numpy.repeat",
-  "numpy.result_type",
-  "numpy.searchsorted",
   "numpy.signedinteger",
-  "numpy.sin",
-  "numpy.sqrt",
   "numpy.subtract",
-  "numpy.sum",
-  "numpy.take",
-  "numpy.uint8",
-  "numpy.unique",
   "numpy.unsignedinteger",
-  "numpy.where",
-  "numpy.zeros",
-  "operator",
-  "operator.add",
-  "operator.and_",
-  "operator.eq",
-  "operator.floordiv",
-  "operator.ge",
-  "operator.gt",
-  "operator.inv",
-  "operator.le",
-  "operator.lt",
-  "operator.mod",
-  "operator.mul",
-  "operator.ne",
-  "operator.or_",
-  "operator.pow",
-  "operator.sub",
-  "operator.truediv",
-  "operator.xor",
-  "os",
   "os.getcwd",
-  "os.makedirs",
   "os.path.abspath",
   "os.path.exists",
   "os.path.isabs",
@@ -219,46 +102,11 @@
   "osgeo.osr.GetUserInputAsWKT",
   "osgeo.osr.SpatialReference",
   "osgeo.osr.UseExceptions",
-  "pandas",
   "pandas.Categorical.from_codes",
-  "pandas.DataFrame",
-  "pandas.DatetimeIndex",
-  "pandas.Series",
-  "pandas.Timedelta",
-  "pandas.Timestamp",
-  "pandas.concat",
-  "pandas.cut",
-  "pandas.date_range",
-  "pandas.merge",
-  "pandas.tseries.frequencies.to_offset",
-  "parser",
-  "re",
-  "re.compile",
-  "scipy.ndimage",
-  "scipy.ndimage.affine_transform",
-  "scipy.ndimage.binary_dilation",
-  "scipy.ndimage.gaussian_filter",
-  "scipy.ndimage.maximum",
-  "scipy.ndimage.maximum_filter",
-  "scipy.ndimage.mean",
-  "scipy.ndimage.median",
-  "scipy.ndimage.minimum",
-  "scipy.ndimage.sum",
-  "scipy.ndimage.zoom",
-  "shutil",
-  "shutil.copy",
-  "shutil.move",
   "single_group",
   "sys",
   "sys.modules",
-  "sys.platform",
-  "tempfile",
-  "tempfile.TemporaryDirectory",
-  "urllib.parse.urljoin",
-  "warnings",
-  "warnings.catch_warnings",
-  "warnings.simplefilter",
-  "warnings.warn"
+  "sys.platform"
  ],
  "deps": {
   "Add": [],
@@ -281,59 +129,105 @@
   "TmpDir": [],
   "Xor": [],
   "agg_func": [],
-  "collections": [],
-  "contextlib": [],
+  "collections": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "contextlib": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "dask": [
    "dask-core/conda-forge/noarch/dask-core-0.15.3-py_0"
   ],
   "dask_geomodeling": [],
-  "datetime": [],
+  "datetime": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "equal": [],
   "fiona": [],
   "format": [],
   "func": [],
-  "functools": [],
+  "functools": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "geopandas": [
    "geopandas-base/conda-forge/noarch/geopandas-base-0.9.0-pyhd8ed1ab_1",
    "geopandas/conda-forge/noarch/geopandas-0.5.0-py_0"
   ],
-  "glob": [],
-  "inspect": [],
-  "io": [],
+  "glob": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "inspect": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "io": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "ipyleaflet": [
    "ipyleaflet/conda-forge/noarch/ipyleaflet-0.13.6-pyhd8ed1ab_1"
   ],
   "itertools": [],
-  "json": [],
-  "logging": [],
-  "math": [],
+  "json": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "logging": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "math": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "matplotlib": [],
   "move_or_copy": [],
-  "notebook": [],
-  "numbers": [],
-  "numpy": [],
-  "operator": [],
-  "os": [],
+  "notebook": [
+   "notebook/conda-forge/linux-64/notebook-6.3.0-py36hd000896_0"
+  ],
+  "numbers": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "numpy": [
+   "numpy/conda-forge/linux-64/numpy-1.9.3-py27_blas_openblashb06ca3d_7"
+  ],
+  "operator": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "os": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "osgeo": [],
-  "pandas": [],
-  "parser": [],
+  "pandas": [
+   "pandas/conda-forge/linux-64/pandas-0.25.0-py37hb3f55d8_0"
+  ],
+  "parser": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "pytz": [
    "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
    "pytz/conda-forge/noarch/pytz-2018.4-py_0"
   ],
-  "re": [],
-  "scipy": [],
+  "re": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "scipy": [
+   "scipy/conda-forge/linux-64/scipy-0.18.1-np111py34_blas_openblas_200"
+  ],
   "shapely": [
    "solaris/conda-forge/noarch/solaris-0.4.0-pyhe05a262_0"
   ],
-  "shutil": [],
+  "shutil": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "single_group": [],
   "sys": [],
-  "tempfile": [],
+  "tempfile": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "traitlets": [
    "traitlets/conda-forge/noarch/traitlets-5.0.3-py_0"
   ],
-  "urllib": [],
-  "warnings": []
+  "urllib": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "warnings": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ]
  }
 }

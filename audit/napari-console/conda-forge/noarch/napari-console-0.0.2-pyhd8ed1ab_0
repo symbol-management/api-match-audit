@@ -2,43 +2,44 @@
  "bad": [
   "IPython.get_ipython",
   "IPython.terminal.interactiveshell.TerminalInteractiveShell",
-  "asyncio",
   "asyncio.WindowsProactorEventLoopPolicy",
   "asyncio.WindowsSelectorEventLoopPolicy",
-  "asyncio.get_event_loop_policy",
-  "asyncio.set_event_loop_policy",
   "ipykernel.connect.get_connection_file",
   "ipykernel.inprocess.ipkernel.InProcessInteractiveShell",
   "ipykernel.zmqshell.ZMQInteractiveShell",
   "napari.utils.theme.get_theme",
-  "napari_plugin_engine.napari_hook_implementation",
-  "pytest",
-  "pytest.fixture",
-  "re",
-  "re.match",
   "sys",
   "sys.platform.startswith",
-  "sys.version_info",
-  "unittest.mock",
-  "unittest.mock.patch"
+  "sys.version_info"
  ],
  "deps": {
   "IPython": [],
-  "asyncio": [],
+  "asyncio": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "ipykernel": [],
   "napari": [
    "napari/conda-forge/noarch/napari-0.3.4-py_0"
   ],
-  "napari_plugin_engine": [],
-  "pytest": [],
+  "napari_plugin_engine": [
+   "napari-plugin-engine/conda-forge/linux-64/napari-plugin-engine-0.1.9-py37h89c1867_0"
+  ],
+  "pytest": [
+   "pytest/conda-forge/linux-64/pytest-4.6.3-py27_0",
+   "pytest/conda-forge/linux-64/pytest-6.0.2-py36hc560c46_0"
+  ],
   "qtconsole": [
    "qtconsole/conda-forge/noarch/qtconsole-4.5.1-py_0"
   ],
   "qtpy": [
    "qtpy/conda-forge/noarch/qtpy-1.7.1-pyhde82777_0"
   ],
-  "re": [],
+  "re": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "sys": [],
-  "unittest": []
+  "unittest": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ]
  }
 }

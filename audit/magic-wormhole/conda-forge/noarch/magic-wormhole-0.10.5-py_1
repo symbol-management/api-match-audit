@@ -1,8 +1,5 @@
 {
  "bad": [
-  "__future__.absolute_import",
-  "__future__.print_function",
-  "__future__.unicode_literals",
   "_allocator.Allocator",
   "_boss.Boss",
   "_code.Code",
@@ -42,10 +39,6 @@
   "_terminator.Terminator",
   "add",
   "autobahn.twisted.websocket.WebSocketClientFactory.buildProtocol",
-  "base64",
-  "base64.b32encode",
-  "binascii.hexlify",
-  "binascii.unhexlify",
   "checklog",
   "cli.cli._dispatch_command",
   "cli.cli.wormhole",
@@ -65,14 +58,8 @@
   "cmd_ssh.accept",
   "cmd_ssh.find_public_key",
   "cmd_ssh.invite",
-  "collections",
-  "collections.defaultdict",
-  "collections.deque",
-  "collections.namedtuple",
   "common.ServerBase.setUp",
   "common.ServerBase.tearDown",
-  "contextlib",
-  "contextlib.contextmanager",
   "d",
   "d.cancel",
   "ef",
@@ -97,22 +84,14 @@
   "fn",
   "gc",
   "gc.collect",
-  "hashlib",
   "hashlib.sha256",
   "hkdf.Hkdf",
   "input.mock_calls",
-  "io",
-  "io.BytesIO",
-  "io.StringIO",
   "ipaddrs.find_addresses",
   "itertools",
   "itertools.count",
   "journal.ImmediateJournal",
   "journal.Journal",
-  "json",
-  "json.dump",
-  "json.dumps",
-  "json.loads",
   "message",
   "meth",
   "mock",
@@ -141,17 +120,12 @@
   "nacl.secret.SecretBox.NONCE_SIZE",
   "nacl.utils",
   "nacl.utils.random",
-  "os",
   "os.chmod",
   "os.close",
-  "os.environ",
   "os.kill",
-  "os.linesep",
   "os.listdir",
   "os.mkdir",
   "os.mkfifo",
-  "os.name",
-  "os.pardir",
   "os.path.abspath",
   "os.path.basename",
   "os.path.dirname",
@@ -165,13 +139,11 @@
   "os.path.realpath",
   "os.remove",
   "os.rename",
-  "os.sep",
   "os.stat",
   "os.statvfs",
   "os.symlink",
   "os.unlink",
   "os.urandom",
-  "os.walk",
   "out",
   "p",
   "p._d.callback",
@@ -184,19 +156,9 @@
   "public_relay.RENDEZVOUS_RELAY",
   "public_relay.TRANSIT_RELAY",
   "q",
-  "random",
-  "random.choice",
-  "random.randrange",
-  "re",
   "re.I",
   "re.M",
   "re.S",
-  "re.compile",
-  "re.search",
-  "readline",
-  "resource.RLIMIT_NOFILE",
-  "resource.getrlimit",
-  "resource.setrlimit",
   "s",
   "send_f",
   "sent_messages",
@@ -205,49 +167,30 @@
   "server.rendezvous.CrowdedError",
   "server.rendezvous.Rendezvous",
   "server.server.RelayServer",
-  "shutil",
-  "shutil.rmtree",
   "six.moves.input",
   "six.moves.urllib_parse.urlparse",
-  "socket",
   "socket.AF_INET",
   "socket.SOCK_STREAM",
   "socket.SOL_SOCKET",
   "socket.SO_REUSEADDR",
-  "socket.socket",
   "spake2.SPAKE2_Symmetric",
-  "sqlite3",
   "sqlite3.DatabaseError",
   "sqlite3.OperationalError",
   "sqlite3.Row",
   "sqlite3.connect",
-  "stat",
-  "stat.S_IMODE",
   "stop_f",
-  "subprocess",
-  "subprocess.PIPE",
-  "subprocess.Popen",
   "sys",
   "sys.executable",
   "sys.platform",
   "sys.stderr",
   "sys.stdin.read",
   "sys.stdout",
-  "tempfile",
-  "tempfile.SpooledTemporaryFile",
-  "tempfile.mkstemp",
-  "textwrap.dedent",
-  "textwrap.fill",
-  "threading",
-  "threading.current_thread",
   "time",
   "time.ctime",
   "time.sleep",
   "time.time",
   "timing.DebugTiming",
   "tor_manager.get_tor",
-  "traceback",
-  "traceback.print_exc",
   "transit.BadHandshake",
   "transit.BadNonce",
   "transit.Common",
@@ -346,11 +289,6 @@
   "twisted.web.server.Site.log",
   "twisted.web.static",
   "txtorcon",
-  "unicodedata",
-  "unicodedata.lookup",
-  "unicodedata.normalize",
-  "unittest",
-  "unittest.TestCase",
   "util.bytes_to_dict",
   "util.bytes_to_hexstr",
   "util.dict_to_bytes",
@@ -363,16 +301,15 @@
   "wormhole_transit_relay.transit_server.TransitConnection",
   "xfer_util.receive",
   "xfer_util.send",
-  "zipfile",
-  "zipfile.ZIP_DEFLATED",
-  "zipfile.ZipFile",
   "zope.interface.Interface",
   "zope.interface.declarations.directlyProvides",
   "zope.interface.directlyProvides",
   "zope.interface.implementer"
  ],
  "deps": {
-  "__future__": [],
+  "__future__": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "_allocator": [],
   "_boss": [],
   "_code": [],
@@ -398,8 +335,12 @@
   "automat": [
    "automat/conda-forge/noarch/automat-0.8.0-py_0"
   ],
-  "base64": [],
-  "binascii": [],
+  "base64": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "binascii": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "checklog": [],
   "cli": [],
   "click": [
@@ -408,9 +349,13 @@
   "cmd_receive": [],
   "cmd_send": [],
   "cmd_ssh": [],
-  "collections": [],
+  "collections": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "common": [],
-  "contextlib": [],
+  "contextlib": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "d": [],
   "ef": [],
   "efho": [],
@@ -418,68 +363,108 @@
   "errors": [],
   "fn": [],
   "gc": [],
-  "hashlib": [],
+  "hashlib": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "hkdf": [],
   "humanize": [
    "humanize/conda-forge/noarch/humanize-2.4.1-py_0"
   ],
   "input": [],
-  "io": [],
+  "io": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "ipaddrs": [],
   "itertools": [],
   "journal": [],
-  "json": [],
+  "json": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "message": [],
   "meth": [],
   "mock": [],
   "nacl": [],
-  "os": [],
+  "os": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "out": [],
   "p": [],
   "patch_s": [],
   "pkg_resources": [],
   "public_relay": [],
   "q": [],
-  "random": [],
-  "re": [],
-  "readline": [],
-  "resource": [],
+  "random": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "re": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "readline": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "resource": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "s": [],
   "send_f": [],
   "sent_messages": [],
   "server": [],
-  "shutil": [],
+  "shutil": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "six": [
    "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
    "privy/conda-forge/noarch/privy-6.0.0-py_0"
   ],
-  "socket": [],
+  "socket": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "spake2": [],
-  "sqlite3": [],
-  "stat": [],
+  "sqlite3": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "stat": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "stop_f": [],
-  "subprocess": [],
+  "subprocess": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "sys": [],
-  "tempfile": [],
-  "textwrap": [],
-  "threading": [],
+  "tempfile": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "textwrap": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "threading": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "time": [],
   "timing": [],
   "tor_manager": [],
   "tqdm": [
    "tqdm/conda-forge/noarch/tqdm-4.20.0-py_0"
   ],
-  "traceback": [],
+  "traceback": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "transit": [],
   "twisted": [],
   "txtorcon": [],
-  "unicodedata": [],
-  "unittest": [],
+  "unicodedata": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "unittest": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "util": [],
   "wormhole": [],
   "wormhole_transit_relay": [],
   "xfer_util": [],
-  "zipfile": [],
+  "zipfile": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "zope": []
  }
 }

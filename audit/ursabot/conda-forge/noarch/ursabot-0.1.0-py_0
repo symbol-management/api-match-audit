@@ -31,67 +31,27 @@
   "builders",
   "callback",
   "click.error",
-  "collections",
   "collections.abc.Set",
-  "collections.defaultdict",
-  "collections.deque",
   "configs.Config.load_from",
-  "contextlib.contextmanager",
-  "contextlib.redirect_stderr",
-  "contextlib.redirect_stdout",
-  "copy",
   "dockermap.api.DockerFile.add_file",
   "dockermap.api.DockerFile.run",
   "dockerpty",
   "dockerpty.exec_command",
   "extractor",
   "fn",
-  "fnmatch.filter",
-  "fnmatch.fnmatch",
-  "functools.partial",
-  "functools.reduce",
-  "functools.wraps",
   "image_filter",
-  "io",
-  "io.BytesIO",
-  "io.StringIO",
   "itertools",
   "itertools.count",
-  "json",
-  "json.dumps",
-  "logging",
-  "logging.INFO",
-  "logging.basicConfig",
-  "logging.getLogger",
   "method",
-  "operator",
-  "operator.add",
-  "operator.attrgetter",
-  "operator.methodcaller",
-  "os",
   "os.environ.copy",
-  "os.getenv",
-  "platform.mac_ver",
-  "platform.machine",
-  "platform.system",
-  "platform.win32_ver",
-  "re",
-  "re.search",
   "respond",
   "ruamel.yaml.YAML",
   "run",
-  "shlex",
-  "shlex.split",
   "start_consuming",
   "sys",
   "sys.path",
   "sys.path.append",
-  "textwrap",
-  "textwrap.dedent",
-  "textwrap.indent",
   "toposort.toposort",
-  "traceback",
-  "traceback.format_exc",
   "twisted.internet.defer",
   "twisted.internet.defer.Deferred",
   "twisted.internet.defer.ensureDeferred",
@@ -106,21 +66,11 @@
   "twisted.python.compat.execfile",
   "twisted.python.log.PythonLoggingObserver",
   "type.__args__",
-  "typing.Callable",
-  "typing.ClassVar",
-  "typing.Dict",
-  "typing.List",
-  "typing.Optional",
-  "typing.Union",
   "ul",
-  "urllib.parse.urlparse",
   "utils.GithubClientService.getService",
   "utils.HTTPClientService.getService",
   "utils.Platform.detect",
   "validator",
-  "warnings",
-  "warnings.catch_warnings",
-  "warnings.warn",
   "zope.interface.implementer"
  ],
  "deps": {
@@ -132,10 +82,16 @@
   "click": [
    "click/conda-forge/noarch/click-7.0-py_0"
   ],
-  "collections": [],
+  "collections": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "configs": [],
-  "contextlib": [],
-  "copy": [],
+  "contextlib": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "copy": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "dateutil": [
    "python-dateutil/conda-forge/noarch/python-dateutil-2.7.4-py_0"
   ],
@@ -148,47 +104,78 @@
   "dockerpty": [],
   "extractor": [],
   "fn": [],
-  "fnmatch": [],
-  "functools": [],
+  "fnmatch": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "functools": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "image_filter": [],
-  "io": [],
+  "io": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "itertools": [],
   "jinja2": [
    "jinja2/conda-forge/noarch/jinja2-2.10-py_1"
   ],
-  "json": [],
-  "logging": [],
-  "method": [],
-  "operator": [],
-  "os": [],
-  "pathlib": [
-   "pathlib/conda-forge/noarch/pathlib-1.0.1-py_1"
+  "json": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
   ],
-  "platform": [],
-  "re": [],
+  "logging": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "method": [],
+  "operator": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "os": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "pathlib": [
+   "pathlib/conda-forge/noarch/pathlib-1.0.1-py_1",
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "platform": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "re": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "respond": [],
   "ruamel": [],
   "run": [],
-  "shlex": [],
+  "shlex": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "start_consuming": [],
   "sys": [],
-  "textwrap": [],
+  "textwrap": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "toolz": [
    "toolz/conda-forge/noarch/toolz-0.8.2-py_3"
   ],
   "toposort": [],
-  "traceback": [],
+  "traceback": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "twisted": [],
   "type": [],
   "typeguard": [
    "typeguard/conda-forge/noarch/typeguard-2.5.1-py_0"
   ],
-  "typing": [],
+  "typing": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "ul": [],
-  "urllib": [],
+  "urllib": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "utils": [],
   "validator": [],
-  "warnings": [],
+  "warnings": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "zope": []
  }
 }

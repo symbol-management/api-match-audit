@@ -1,6 +1,5 @@
 {
  "bad": [
-  "__future__.unicode_literals",
   "_patch_cursor_execute",
   "assert_function",
   "bs4.BeautifulSoup",
@@ -10,14 +9,7 @@
   "cache.cachalot_caches.exit_atomic",
   "cache.cachalot_caches.get_cache",
   "collections.Iterable",
-  "collections.defaultdict",
   "converter",
-  "datetime",
-  "datetime.date",
-  "datetime.datetime",
-  "datetime.datetime.fromtimestamp",
-  "datetime.time",
-  "datetime.timedelta",
   "decimal.Decimal",
   "django.apps.apps.get_app_config",
   "django.apps.apps.get_model",
@@ -154,13 +146,6 @@
   "original",
   "patch_enter",
   "patch_exit",
-  "psycopg2.Binary",
-  "psycopg2.extras.DateRange",
-  "psycopg2.extras.DateTimeRange",
-  "psycopg2.extras.DateTimeTZRange",
-  "psycopg2.extras.Inet",
-  "psycopg2.extras.Json",
-  "psycopg2.extras.NumericRange",
   "settings.SUPPORTED_DATABASE_ENGINES.add",
   "settings.SUPPORTED_DATABASE_ENGINES.remove",
   "settings.cachalot_settings.CACHALOT_CACHE",
@@ -178,25 +163,26 @@
   "signals.post_invalidation.connect",
   "signals.post_invalidation.disconnect",
   "signals.post_invalidation.send",
-  "threading.Thread",
-  "threading.local",
   "time.sleep",
   "time.time",
-  "unittest.skipIf",
-  "unittest.skipUnless",
-  "utils._invalidate_tables",
-  "uuid.UUID"
+  "utils._invalidate_tables"
  ],
  "deps": {
-  "__future__": [],
+  "__future__": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "_patch_cursor_execute": [],
   "assert_function": [],
   "bs4": [],
   "cachalot": [],
   "cache": [],
-  "collections": [],
+  "collections": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "converter": [],
-  "datetime": [],
+  "datetime": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "debug_toolbar": [
    "django-debug-toolbar/conda-forge/noarch/django-debug-toolbar-1.9.1-py_0"
   ],
@@ -217,17 +203,25 @@
   "original": [],
   "patch_enter": [],
   "patch_exit": [],
-  "psycopg2": [],
+  "psycopg2": [
+   "psycopg2/conda-forge/linux-64/psycopg2-2.8.6-py39hba1e1b8_1"
+  ],
   "pytz": [
    "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
    "pytz/conda-forge/noarch/pytz-2018.4-py_0"
   ],
   "settings": [],
   "signals": [],
-  "threading": [],
+  "threading": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "time": [],
-  "unittest": [],
+  "unittest": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "utils": [],
-  "uuid": []
+  "uuid": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ]
  }
 }

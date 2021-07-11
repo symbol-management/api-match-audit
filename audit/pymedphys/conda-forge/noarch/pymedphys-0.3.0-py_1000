@@ -3,24 +3,12 @@
   "attr.ib",
   "attr.s",
   "calc_comparison",
-  "copy.copy",
-  "datetime.datetime",
-  "datetime.datetime.strptime",
   "decode_trf",
   "get_grid",
   "get_logfile_mosaiq_results",
-  "getpass.getpass",
-  "glob.glob",
-  "hashlib",
   "hashlib.sha1",
   "itertools",
   "itertools.combinations",
-  "json",
-  "json.dump",
-  "json.load",
-  "keyring",
-  "keyring.get_password",
-  "keyring.set_password",
   "matplotlib.path",
   "matplotlib.path.Path",
   "matplotlib.pyplot",
@@ -38,70 +26,14 @@
   "mpl_toolkits.mplot3d.art3d.Poly3DCollection",
   "multiprocessing.Process",
   "multiprocessing.Queue",
-  "numpy",
-  "numpy.abs",
-  "numpy.all",
-  "numpy.any",
-  "numpy.append",
-  "numpy.arange",
-  "numpy.argmax",
-  "numpy.argmin",
-  "numpy.argsort",
-  "numpy.array",
-  "numpy.array_split",
-  "numpy.ceil",
-  "numpy.concatenate",
-  "numpy.copy",
-  "numpy.cos",
-  "numpy.cross",
-  "numpy.cumsum",
   "numpy.datetime64",
-  "numpy.delete",
-  "numpy.diff",
-  "numpy.dot",
-  "numpy.expand_dims",
-  "numpy.floor",
-  "numpy.histogram",
-  "numpy.hstack",
   "numpy.hypot",
   "numpy.inf",
-  "numpy.invert",
   "numpy.isinf",
-  "numpy.isnan",
-  "numpy.ix_",
-  "numpy.linalg.norm",
-  "numpy.linspace",
-  "numpy.max",
-  "numpy.mean",
-  "numpy.median",
-  "numpy.meshgrid",
-  "numpy.min",
   "numpy.nan",
-  "numpy.ndarray",
-  "numpy.ones_like",
-  "numpy.pi",
   "numpy.random.shuffle",
-  "numpy.ravel",
-  "numpy.reshape",
-  "numpy.round",
-  "numpy.shape",
   "numpy.sign",
-  "numpy.sin",
-  "numpy.size",
-  "numpy.sort",
-  "numpy.split",
-  "numpy.sqrt",
-  "numpy.squeeze",
-  "numpy.sum",
-  "numpy.swapaxes",
   "numpy.timedelta64",
-  "numpy.transpose",
-  "numpy.unique",
-  "numpy.vstack",
-  "numpy.where",
-  "numpy.zeros",
-  "numpy.zeros_like",
-  "os",
   "os.path.abspath",
   "os.path.basename",
   "os.path.exists",
@@ -110,10 +42,6 @@
   "os.remove",
   "os.rename",
   "os.replace",
-  "pandas",
-  "pandas.DataFrame",
-  "pandas.core.frame.DataFrame",
-  "pandas.core.series.Series",
   "plot_results",
   "pymedphys._pack2.dcm.__init__.ClobberCheck",
   "pymedphys._pack2.dcm.__init__.__clobber_check",
@@ -127,50 +55,58 @@
   "pymedphys._pack5.logfile.__init__.__clobber_check",
   "pymssql",
   "pymssql.connect",
-  "scipy.interpolate.RegularGridInterpolator",
-  "scipy.interpolate.SmoothBivariateSpline",
-  "scipy.interpolate.splev",
-  "scipy.interpolate.splprep",
-  "scipy.optimize.basinhopping",
-  "string",
-  "string.ascii_letters",
-  "string.digits",
-  "struct",
   "struct.unpack",
   "sys",
-  "sys.argv",
-  "traceback",
-  "traceback.format_exc",
-  "traceback.print_exc",
-  "typing.List"
+  "sys.argv"
  ],
  "deps": {
   "attr": [
    "attrs/conda-forge/noarch/attrs-18.2.0-py_0"
   ],
   "calc_comparison": [],
-  "copy": [],
-  "datetime": [],
+  "copy": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "datetime": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "dateutil": [
    "python-dateutil/conda-forge/noarch/python-dateutil-2.7.4-py_0"
   ],
   "decode_trf": [],
   "get_grid": [],
   "get_logfile_mosaiq_results": [],
-  "getpass": [],
-  "glob": [],
-  "hashlib": [],
+  "getpass": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "glob": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "hashlib": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "itertools": [],
-  "json": [],
-  "keyring": [],
+  "json": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "keyring": [
+   "keyring/conda-forge/linux-64/keyring-9.0-py27_0"
+  ],
   "matplotlib": [],
   "mpl_toolkits": [],
   "multiprocessing": [],
-  "numpy": [],
-  "os": [],
-  "pandas": [],
+  "numpy": [
+   "numpy/conda-forge/linux-64/numpy-1.9.3-py27_blas_openblashb06ca3d_7"
+  ],
+  "os": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "pandas": [
+   "pandas/conda-forge/linux-64/pandas-0.25.0-py37hb3f55d8_0"
+  ],
   "pathlib": [
-   "pathlib/conda-forge/noarch/pathlib-1.0.1-py_1"
+   "pathlib/conda-forge/noarch/pathlib-1.0.1-py_1",
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
   ],
   "plot_results": [],
   "pydicom": [
@@ -178,14 +114,24 @@
   ],
   "pymedphys": [],
   "pymssql": [],
-  "scipy": [],
+  "scipy": [
+   "scipy/conda-forge/linux-64/scipy-0.18.1-np111py34_blas_openblas_200"
+  ],
   "shapely": [
    "solaris/conda-forge/noarch/solaris-0.4.0-pyhe05a262_0"
   ],
-  "string": [],
-  "struct": [],
+  "string": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "struct": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "sys": [],
-  "traceback": [],
-  "typing": []
+  "traceback": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "typing": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ]
  }
 }

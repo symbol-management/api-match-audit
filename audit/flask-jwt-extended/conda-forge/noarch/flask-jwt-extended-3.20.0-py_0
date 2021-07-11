@@ -2,16 +2,10 @@
  "bad": [
   "_decode_jwt_from_request",
   "_load_user",
-  "calendar.timegm",
   "collections.Sequence",
   "collections.Set",
   "collections.abc.Sequence",
   "collections.abc.Set",
-  "datetime",
-  "datetime.datetime",
-  "datetime.datetime.now",
-  "datetime.datetime.utcnow",
-  "datetime.timedelta",
   "flask._request_ctx_stack.top",
   "flask._request_ctx_stack.top.expired_jwt",
   "flask._request_ctx_stack.top.jwt",
@@ -68,24 +62,26 @@
   "flask_jwt_extended.config.config.user_claims_in_refresh_token",
   "flask_jwt_extended.config.config.user_claims_key",
   "fn",
-  "functools.wraps",
-  "get_encoded_token_function",
-  "uuid",
-  "uuid.uuid4",
-  "warnings.warn"
+  "get_encoded_token_function"
  ],
  "deps": {
   "_decode_jwt_from_request": [],
   "_load_user": [],
-  "calendar": [],
+  "calendar": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "collections": [],
-  "datetime": [],
+  "datetime": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "flask": [
    "flask/conda-forge/noarch/flask-2.0.0-pyhd8ed1ab_0"
   ],
   "flask_jwt_extended": [],
   "fn": [],
-  "functools": [],
+  "functools": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "get_encoded_token_function": [],
   "jwt": [
    "pyjwt/conda-forge/noarch/pyjwt-1.6.3-py_0"
@@ -94,8 +90,12 @@
    "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
    "privy/conda-forge/noarch/privy-6.0.0-py_0"
   ],
-  "uuid": [],
-  "warnings": [],
+  "uuid": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "warnings": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "werkzeug": [
    "werkzeug/conda-forge/noarch/werkzeug-1.0.0-py_0"
   ]

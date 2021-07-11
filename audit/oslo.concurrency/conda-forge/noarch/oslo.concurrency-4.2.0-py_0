@@ -2,31 +2,28 @@
  "bad": [
   "__original_module_threading",
   "__original_module_threading.current_thread.__globals__",
-  "argparse",
-  "argparse.ArgumentParser",
   "bar",
-  "collections",
-  "collections.deque",
   "conf",
   "conf.oslo_concurrency.disable_process_locking",
   "conf.oslo_concurrency.lock_path",
   "conf.register_opts",
-  "contextlib",
-  "contextlib.contextmanager",
-  "copy",
-  "copy.deepcopy",
-  "distutils.spawn",
   "errno",
   "errno.EAGAIN",
   "errno.ENOENT",
   "errno.EPERM",
+  "eventlet",
+  "eventlet.event.Event",
+  "eventlet.green.subprocess",
   "eventlet.green.subprocess.PIPE",
+  "eventlet.green.subprocess.Popen",
+  "eventlet.green.subprocess.TimeoutExpired",
+  "eventlet.greenpool",
+  "eventlet.greenpool.GreenPool",
+  "eventlet.monkey_patch",
+  "eventlet.sleep",
+  "eventlet.tpool",
+  "eventlet.tpool.execute",
   "f",
-  "fcntl",
-  "fcntl.LOCK_EX",
-  "fcntl.LOCK_NB",
-  "fcntl.LOCK_UN",
-  "fcntl.flock",
   "fixtures",
   "fixtures.FakeLogger",
   "fixtures.Fixture",
@@ -34,39 +31,24 @@
   "fixtures.MonkeyPatch",
   "fixtures.TempDir",
   "foo",
-  "functools",
-  "functools.partial",
-  "functools.wraps",
   "inner_lock",
-  "io",
-  "io.BytesIO",
-  "logging",
-  "logging.DEBUG",
-  "logging.getLogger",
   "msvcrt",
   "msvcrt.LK_NBLCK",
   "msvcrt.LK_UNLCK",
   "msvcrt.locking",
-  "multiprocessing",
   "multiprocessing.Process",
   "multiprocessing.Queue",
   "multiprocessing.cpu_count",
   "on_completion",
   "on_execute",
-  "os",
-  "os._exit",
   "os.chmod",
-  "os.devnull",
-  "os.environ",
   "os.environ.get",
   "os.execv",
-  "os.fdopen",
   "os.fork",
   "os.fsdecode",
   "os.fsencode",
   "os.geteuid",
   "os.kill",
-  "os.name",
   "os.path.basename",
   "os.path.dirname",
   "os.path.exists",
@@ -74,53 +56,15 @@
   "os.path.join",
   "os.remove",
   "os.rmdir",
-  "os.sep",
   "os.unlink",
   "oslo_config.fixture.lock",
-  "oslo_i18n",
-  "oslo_i18n.TranslatorFactory",
   "oslotest.base",
   "oslotest.base.BaseTestCase",
   "outer_lock",
-  "pickle",
-  "pickle.dumps",
-  "pickle.loads",
-  "random",
-  "random.randint",
-  "resource",
-  "resource.RLIMIT_AS",
-  "resource.RLIMIT_CORE",
-  "resource.RLIMIT_CPU",
-  "resource.RLIMIT_DATA",
-  "resource.RLIMIT_FSIZE",
-  "resource.RLIMIT_MEMLOCK",
-  "resource.RLIMIT_NOFILE",
-  "resource.RLIMIT_NPROC",
-  "resource.RLIMIT_RSS",
-  "resource.RLIMIT_STACK",
-  "resource.getrlimit",
-  "resource.setrlimit",
-  "shlex",
-  "shlex.split",
-  "shutil",
-  "shutil.rmtree",
-  "shutil.which",
-  "signal",
   "signal.SIGKILL",
   "signal.SIGPIPE",
   "signal.SIG_DFL",
-  "signal.signal",
-  "socket",
   "socket.timeout",
-  "stat",
-  "stat.S_IRGRP",
-  "stat.S_IROTH",
-  "stat.S_IRWXU",
-  "stat.S_IXGRP",
-  "stat.S_IXOTH",
-  "subprocess",
-  "subprocess.Popen",
-  "subprocess.call",
   "sys",
   "sys.argv",
   "sys.executable",
@@ -129,68 +73,76 @@
   "sys.platform.startswith",
   "sys.stderr",
   "sys.version_info",
-  "tempfile",
-  "tempfile.mkdtemp",
-  "tempfile.mkstemp",
   "test_without_hypen",
   "test_without_prefix",
-  "threading",
-  "threading.Event",
-  "threading.Semaphore",
-  "threading.Thread",
-  "threading.Timer",
-  "threading._active",
   "time",
   "time.sleep",
   "time.time",
-  "unittest.mock",
-  "unittest.mock.ANY",
-  "unittest.mock.MagicMock",
-  "unittest.mock.Mock",
   "unittest.mock.mock.call_count",
-  "unittest.mock.patch",
   "unittest.mock.patch.object",
   "unittest.mock.sentinel.lock_path",
   "unittest.mock.sentinel.name",
-  "unittest.mock.sentinel.prefix",
-  "weakref"
+  "unittest.mock.sentinel.prefix"
  ],
  "deps": {
   "__original_module_threading": [],
-  "argparse": [],
+  "argparse": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "bar": [],
-  "collections": [],
+  "collections": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "conf": [],
-  "contextlib": [],
-  "copy": [],
-  "distutils": [],
+  "contextlib": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "copy": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "distutils": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "enum": [
-   "privy/conda-forge/noarch/privy-6.0.0-py_0"
+   "privy/conda-forge/noarch/privy-6.0.0-py_0",
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
   ],
   "errno": [],
-  "eventlet": [
-   "eventlet/conda-forge/noarch/eventlet-0.28.0-py_0"
-  ],
+  "eventlet": [],
   "f": [],
   "fasteners": [
    "fasteners/conda-forge/noarch/fasteners-0.16-pyhd8ed1ab_0"
   ],
-  "fcntl": [],
+  "fcntl": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "fixtures": [],
   "foo": [],
-  "functools": [],
+  "functools": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "inner_lock": [],
-  "io": [],
-  "logging": [],
+  "io": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "logging": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "msvcrt": [],
-  "multiprocessing": [],
+  "multiprocessing": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "on_completion": [],
   "on_execute": [],
-  "os": [],
+  "os": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "oslo_config": [
    "oslo.config/conda-forge/noarch/oslo.config-4.12.0-py_0"
   ],
-  "oslo_i18n": [],
+  "oslo_i18n": [
+   "oslo.i18n/conda-forge/noarch/oslo.i18n-3.23.1-py_0"
+  ],
   "oslo_utils": [
    "oslo.utils/conda-forge/noarch/oslo.utils-4.3.0-py_0"
   ],
@@ -199,22 +151,48 @@
   "pbr": [
    "pbr/conda-forge/noarch/pbr-5.1.1-py_0"
   ],
-  "pickle": [],
-  "random": [],
-  "resource": [],
-  "shlex": [],
-  "shutil": [],
-  "signal": [],
-  "socket": [],
-  "stat": [],
-  "subprocess": [],
+  "pickle": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "random": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "resource": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "shlex": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "shutil": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "signal": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "socket": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "stat": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "subprocess": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "sys": [],
-  "tempfile": [],
+  "tempfile": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "test_without_hypen": [],
   "test_without_prefix": [],
-  "threading": [],
+  "threading": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "time": [],
-  "unittest": [],
-  "weakref": []
+  "unittest": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "weakref": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ]
  }
 }

@@ -10,13 +10,11 @@
   "StringIO",
   "UserDict.DictMixin",
   "__builtin__",
-  "__future__.print_function",
   "_thread",
   "_winreg",
   "bdb.Breakpoint.bpbynumber",
   "bdb.Breakpoint.bplist",
   "bdb.Breakpoint.next",
-  "bdb.effective",
   "bs4",
   "bs4.element.NavigableString",
   "builtins",
@@ -24,40 +22,14 @@
   "cloudpickle.loads",
   "cls",
   "collections.MutableMapping",
-  "collections.defaultdict",
-  "copy",
-  "copy.copy",
-  "copy.deepcopy",
-  "datetime",
-  "datetime.date",
-  "datetime.datetime",
-  "datetime.timedelta",
   "dict.__delitem__",
   "dict.__getitem__",
   "dict.__setitem__",
-  "dis",
   "dis.opmap",
   "dis.opmap.get",
-  "distutils.version.LooseVersion",
   "get_ipython",
   "get_new_name",
   "guiqwt.pyplot",
-  "inspect",
-  "inspect.currentframe",
-  "inspect.formatargspec",
-  "inspect.getargs",
-  "inspect.getargspec",
-  "inspect.getcomments",
-  "inspect.getdoc",
-  "inspect.getfullargspec",
-  "inspect.getsource",
-  "inspect.isbuiltin",
-  "inspect.isclass",
-  "inspect.isfunction",
-  "inspect.ismethod",
-  "io",
-  "io.BytesIO",
-  "io.open",
   "ipykernel",
   "ipykernel.__version__",
   "ipykernel.ipkernel.IPythonKernel",
@@ -66,8 +38,6 @@
   "itertools.islice",
   "itertools.izip_longest",
   "itertools.zip_longest",
-  "json",
-  "json.load",
   "load_func",
   "matplotlib",
   "matplotlib.get_backend",
@@ -77,48 +47,20 @@
   "matplotlib.pyplot.show",
   "matplotlib.rcParams",
   "np_dtype",
-  "numpy",
-  "numpy.all",
-  "numpy.array",
-  "numpy.bool_",
-  "numpy.complex",
   "numpy.complex128",
   "numpy.complex64",
-  "numpy.dtype",
-  "numpy.eye",
   "numpy.float16",
   "numpy.float32",
   "numpy.float64",
-  "numpy.generic",
-  "numpy.get_printoptions",
-  "numpy.int16",
-  "numpy.int32",
-  "numpy.int64",
-  "numpy.int8",
-  "numpy.load",
-  "numpy.ma.MaskedArray",
-  "numpy.matrix",
-  "numpy.mean",
-  "numpy.ndarray",
   "numpy.random.rand",
-  "numpy.recarray",
-  "numpy.save",
-  "numpy.savetxt",
-  "numpy.set_printoptions",
   "numpy.uint16",
   "numpy.uint32",
   "numpy.uint64",
-  "numpy.uint8",
-  "operator",
-  "operator.methodcaller",
-  "os",
   "os.chdir",
   "os.environ.copy",
   "os.environ.get",
   "os.getcwd",
   "os.getcwdu",
-  "os.name",
-  "os.path",
   "os.path.abspath",
   "os.path.basename",
   "os.path.dirname",
@@ -127,33 +69,7 @@
   "os.path.realpath",
   "os.path.splitext",
   "os.remove",
-  "pandas",
-  "pandas.DataFrame",
-  "pandas.DatetimeIndex",
-  "pandas.Panel",
-  "pandas.Series",
-  "pandas.read_pickle",
-  "pickle",
-  "pickle.loads",
-  "pytest",
-  "pytest.fixture",
-  "pytest.main",
   "pytest.mark.skipif",
-  "queue",
-  "re",
-  "re.findall",
-  "re.match",
-  "re.split",
-  "reprlib",
-  "scipy.io",
-  "shlex.split",
-  "shutil",
-  "shutil.rmtree",
-  "site",
-  "site.addsitedir",
-  "spyder.otherplugins.get_spyderplugins_mods",
-  "spyder.pil_patch",
-  "spyder.pil_patch.Image",
   "spyder.pil_patch.Image.Image",
   "spyder.pil_patch.Image.open",
   "spyder_kernels.py3compat.builtins.__dict__",
@@ -166,9 +82,7 @@
   "spyder_kernels.utils.iofuncs.iofunctions.save",
   "spydercustomize",
   "str.lower",
-  "string",
   "string.lower",
-  "subprocess.Popen",
   "sys",
   "sys.argv",
   "sys.argv.append",
@@ -184,21 +98,11 @@
   "sys.stderr",
   "sys.stdout",
   "sys.version",
-  "tarfile",
-  "tarfile.open",
-  "tempfile",
-  "tempfile.mkdtemp",
   "thread",
   "time",
   "time.sleep",
   "time.time",
-  "traceback",
-  "traceback.format_exc",
   "unicode",
-  "unittest.TestProgram",
-  "warnings",
-  "warnings.catch_warnings",
-  "warnings.simplefilter",
   "winreg"
  ],
  "deps": {
@@ -213,10 +117,14 @@
   ],
   "UserDict": [],
   "__builtin__": [],
-  "__future__": [],
+  "__future__": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "_thread": [],
   "_winreg": [],
-  "bdb": [],
+  "bdb": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "bs4": [],
   "builtins": [],
   "cPickle": [],
@@ -224,66 +132,127 @@
    "cloudpickle/conda-forge/noarch/cloudpickle-1.4.1-py_0"
   ],
   "cls": [],
-  "collections": [],
-  "configparser": [
-   "configparser/conda-forge/noarch/configparser-5.0.0-py_0"
+  "collections": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
   ],
-  "copy": [],
-  "datetime": [],
+  "configparser": [
+   "configparser/conda-forge/noarch/configparser-5.0.0-py_0",
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "copy": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "datetime": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "dateutil": [
    "python-dateutil/conda-forge/noarch/python-dateutil-2.7.4-py_0"
   ],
   "dict": [],
-  "dis": [],
-  "distutils": [],
+  "dis": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "distutils": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "get_ipython": [],
   "get_new_name": [],
   "guiqwt": [],
-  "inspect": [],
-  "io": [],
+  "inspect": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "io": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "ipykernel": [],
   "itertools": [],
-  "json": [],
+  "json": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "load_func": [],
   "matplotlib": [],
   "np_dtype": [],
-  "numpy": [],
-  "operator": [],
-  "os": [],
-  "pandas": [],
-  "pdb": [
-   "pdbpp/conda-forge/noarch/pdbpp-0.9.5-py_1"
+  "numpy": [
+   "numpy/conda-forge/linux-64/numpy-1.9.3-py27_blas_openblashb06ca3d_7"
   ],
-  "pickle": [],
-  "pytest": [],
+  "operator": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "os": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "pandas": [
+   "pandas/conda-forge/linux-64/pandas-0.25.0-py37hb3f55d8_0"
+  ],
+  "pdb": [
+   "pdbpp/conda-forge/noarch/pdbpp-0.9.5-py_1",
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "pickle": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "pytest": [
+   "pytest/conda-forge/linux-64/pytest-4.6.3-py27_0",
+   "pytest/conda-forge/linux-64/pytest-6.0.2-py36hc560c46_0"
+  ],
   "qtpy": [
    "qtpy/conda-forge/noarch/qtpy-1.7.1-pyhde82777_0"
   ],
-  "queue": [],
-  "re": [],
-  "reprlib": [],
-  "scipy": [],
-  "shlex": [],
-  "shutil": [],
-  "site": [],
-  "spyder": [],
+  "queue": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "re": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "reprlib": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "scipy": [
+   "scipy/conda-forge/linux-64/scipy-0.18.1-np111py34_blas_openblas_200"
+  ],
+  "shlex": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "shutil": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "site": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "spyder": [
+   "spyder/conda-forge/linux-64/spyder-3.3.1-py27_1003"
+  ],
   "spyder_kernels": [],
   "spydercustomize": [],
   "str": [],
-  "string": [],
-  "subprocess": [],
+  "string": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "subprocess": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "sys": [],
-  "tarfile": [],
-  "tempfile": [],
+  "tarfile": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "tempfile": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "thread": [],
   "time": [],
-  "traceback": [],
+  "traceback": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "traitlets": [
    "traitlets/conda-forge/noarch/traitlets-5.0.3-py_0"
   ],
   "unicode": [],
-  "unittest": [],
-  "warnings": [],
+  "unittest": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "warnings": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "winreg": []
  }
 }

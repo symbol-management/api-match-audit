@@ -13,17 +13,11 @@
   "antijoin",
   "atexit",
   "atexit.register",
-  "base64",
-  "base64.b64decode",
   "bytes.splitlines",
   "check",
-  "codecs",
   "codecs.BOM_UTF16_BE",
   "codecs.BOM_UTF16_LE",
-  "codecs.BOM_UTF8",
   "codecs.lookup",
-  "collections.OrderedDict",
-  "collections.namedtuple",
   "common.basepath",
   "common.buffer_size",
   "common.compression",
@@ -118,27 +112,8 @@
   "config.items",
   "contains_posix_var",
   "contains_windows_var",
-  "contextlib.contextmanager",
-  "copy.copy",
-  "copy.deepcopy",
-  "csv",
-  "csv.Error",
-  "csv.QUOTE_MINIMAL",
-  "csv.QUOTE_NONE",
-  "csv.Sniffer",
-  "csv.excel",
-  "csv.reader",
-  "csv.writer",
   "data",
   "data.append",
-  "datetime",
-  "datetime.date",
-  "datetime.datetime",
-  "datetime.datetime.now",
-  "datetime.datetime.strptime",
-  "datetime.time",
-  "datetime.timedelta",
-  "decimal",
   "decimal.Decimal",
   "decimal.InvalidOperation",
   "dict.__setitem__",
@@ -195,17 +170,8 @@
   "evalclass",
   "func",
   "function",
-  "functools",
-  "functools.partial",
-  "functools.wraps",
-  "glob",
-  "glob.glob",
-  "glob.has_magic",
-  "gzip",
   "gzip.BadGzipFile",
-  "gzip.open",
   "hash.split",
-  "hashlib",
   "hashlib.sha256",
   "helpers.ControlledDict",
   "helpers.ControlledList",
@@ -232,45 +198,23 @@
   "helpers.stringify_csv_string",
   "helpers.stringify_label",
   "helpers.write_file",
-  "importlib.import_module",
   "index_class",
-  "inspect",
-  "inspect.signature",
-  "io",
-  "io.BufferedRandom",
-  "io.BytesIO",
-  "io.DEFAULT_BUFFER_SIZE",
-  "io.RawIOBase",
-  "io.SEEK_CUR",
-  "io.SEEK_END",
-  "io.SEEK_SET",
-  "io.StringIO",
-  "io.TextIOWrapper",
-  "io.open",
   "itertools.chain",
   "itertools.chain.from_iterable",
   "itertools.zip_longest",
   "join",
-  "json",
-  "json.dump",
-  "json.dumps",
-  "json.loads",
   "leftjoin",
   "list.__setitem__",
   "main.program.command",
   "metadata.Metadata.property",
   "metadata_property",
   "metadata_to_dict",
-  "multiprocessing",
   "multiprocessing.Pool",
   "multiprocessing.cpu_count",
   "object.put",
-  "operator.setitem",
-  "os",
   "os.chmod",
   "os.environ.get",
   "os.getcwd",
-  "os.makedirs",
   "os.path.abspath",
   "os.path.basename",
   "os.path.commonprefix",
@@ -285,7 +229,6 @@
   "os.path.sep",
   "os.path.splitext",
   "os.remove",
-  "pathlib.Path",
   "petl.Table",
   "petl.annex",
   "petl.antijoin",
@@ -312,27 +255,14 @@
   "petl.split",
   "petl.stack",
   "petl.sub",
-  "pkgutil",
-  "pkgutil.iter_modules",
-  "platform",
-  "platform.system",
   "pq",
   "process",
   "processor",
   "quote",
-  "re",
-  "re.compile",
-  "re.match",
-  "re.search",
   "report.Report.from_validate",
   "rightjoin",
   "row_stream",
   "search",
-  "shutil",
-  "shutil.copy",
-  "shutil.copyfileobj",
-  "shutil.move",
-  "shutil.rmtree",
   "simpleeval",
   "simpleeval.EvalWithCompoundTypes",
   "simpleeval.simple_eval",
@@ -353,36 +283,14 @@
   "system.system.create_step",
   "system.system.create_storage",
   "system.system.create_type",
-  "tempfile",
-  "tempfile.NamedTemporaryFile",
-  "tempfile.TemporaryFile",
-  "tempfile.mkdtemp",
-  "textwrap",
-  "textwrap.dedent",
   "time",
   "time.sleep",
   "transform",
   "type_value",
-  "types",
   "types.AnyType",
-  "types.FunctionType",
-  "typing",
-  "typing.Generator",
-  "typing.Iterator",
-  "typing.List",
-  "typing.Optional",
-  "typing.Pattern",
-  "urllib.parse.parse_qs",
-  "urllib.parse.urlparse",
   "validator_class",
-  "warnings",
-  "warnings.filterwarnings",
-  "warnings.warn",
   "write",
-  "zip.extractall",
-  "zipfile",
-  "zipfile.BadZipFile",
-  "zipfile.ZipFile"
+  "zip.extractall"
  ],
  "deps": {
   "BigqueryStorage": [],
@@ -397,48 +305,80 @@
   "_thread": [],
   "antijoin": [],
   "atexit": [],
-  "base64": [],
+  "base64": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "bytes": [],
   "chardet": [
    "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1"
   ],
   "check": [],
-  "codecs": [],
-  "collections": [],
+  "codecs": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "collections": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "common": [],
   "config": [],
   "contains_posix_var": [],
   "contains_windows_var": [],
-  "contextlib": [],
-  "copy": [],
-  "csv": [],
+  "contextlib": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "copy": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "csv": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "data": [],
-  "datetime": [],
+  "datetime": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "dateutil": [
    "python-dateutil/conda-forge/noarch/python-dateutil-2.7.4-py_0"
   ],
-  "decimal": [],
+  "decimal": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "dict": [],
   "errors": [],
   "evalclass": [],
   "func": [],
   "function": [],
-  "functools": [],
-  "glob": [],
-  "gzip": [],
+  "functools": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "glob": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "gzip": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "hash": [],
-  "hashlib": [],
+  "hashlib": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "helpers": [],
-  "importlib": [],
+  "importlib": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "index_class": [],
-  "inspect": [],
-  "io": [],
+  "inspect": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "io": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "isodate": [
    "isodate/conda-forge/noarch/isodate-0.6.0-py_1"
   ],
   "itertools": [],
   "join": [],
-  "json": [],
+  "json": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "jsonschema": [
    "jsonschema/conda-forge/noarch/jsonschema-3.2.0-py_2"
   ],
@@ -448,21 +388,36 @@
   "metadata": [],
   "metadata_property": [],
   "metadata_to_dict": [],
-  "multiprocessing": [],
+  "multiprocessing": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "object": [],
-  "operator": [],
-  "os": [],
-  "pathlib": [],
+  "operator": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "os": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "pathlib": [
+   "pathlib/conda-forge/noarch/pathlib-1.0.1-py_1",
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "petl": [
    "petl/conda-forge/noarch/petl-1.7.2-pyh44b312d_0"
   ],
-  "pkgutil": [],
-  "platform": [],
+  "pkgutil": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "platform": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "pq": [],
   "process": [],
   "processor": [],
   "quote": [],
-  "re": [],
+  "re": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "report": [],
   "requests": [
    "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
@@ -474,28 +429,41 @@
   "rightjoin": [],
   "row_stream": [],
   "search": [],
-  "shutil": [],
+  "shutil": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "simpleeval": [],
   "slugify": [
    "python-slugify/conda-forge/noarch/python-slugify-3.0.1-py_0"
   ],
   "statistics": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython",
    "statistics/conda-forge/noarch/statistics-1.0.3.5-py_1002"
   ],
   "stringcase": [],
   "sys": [],
   "system": [],
-  "tempfile": [],
-  "textwrap": [],
+  "tempfile": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "textwrap": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "time": [],
   "transform": [],
   "type_value": [],
   "typer": [
    "typer/conda-forge/noarch/typer-0.3.1-py_0"
   ],
-  "types": [],
-  "typing": [],
-  "urllib": [],
+  "types": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "typing": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "urllib": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "validate": [
    "configobj/conda-forge/noarch/configobj-5.0.6-py_0"
   ],
@@ -503,12 +471,16 @@
   "validators": [
    "validators/conda-forge/noarch/validators-0.14.3-pyh9f0ad1d_0"
   ],
-  "warnings": [],
+  "warnings": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "write": [],
   "yaml": [
    "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1"
   ],
   "zip": [],
-  "zipfile": []
+  "zipfile": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ]
  }
 }

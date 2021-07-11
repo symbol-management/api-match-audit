@@ -1,34 +1,30 @@
 {
  "bad": [
-  "_pytest.compat.getfslineno",
-  "_pytest.runner",
-  "_pytest.runner.CallInfo",
-  "_pytest.runner.CallInfo.from_call",
-  "_pytest.runner.TestReport",
-  "_pytest.runner.pytest_runtest_makereport",
-  "_pytest.runner.runtestprotocol",
   "marshal",
   "marshal.dumps",
   "marshal.loads",
-  "os",
-  "os._exit",
   "py.path.local",
   "py.process.ForkedFunc",
-  "pytest",
-  "pytest.exit",
   "pytest.mark.tryfirst",
   "pytest_forked.__init__.forked_run_report",
   "pytest_forked.__init__.report_process_crash",
   "pytest_forked.__init__.serialize_report"
  ],
  "deps": {
-  "_pytest": [],
+  "_pytest": [
+   "pytest/conda-forge/linux-64/pytest-4.6.3-py27_0"
+  ],
   "marshal": [],
-  "os": [],
+  "os": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "py": [
    "py/conda-forge/noarch/py-1.8.2-pyh9f0ad1d_0"
   ],
-  "pytest": [],
+  "pytest": [
+   "pytest/conda-forge/linux-64/pytest-4.6.3-py27_0",
+   "pytest/conda-forge/linux-64/pytest-6.0.2-py36hc560c46_0"
+  ],
   "pytest_forked": []
  }
 }

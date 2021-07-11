@@ -1,15 +1,7 @@
 {
  "bad": [
-  "abc",
-  "abc.ABCMeta",
-  "abc.abstractmethod",
   "alerts.AlertProvider.get_provider_by_name",
   "alerts.AlertProvider.providers_by_name",
-  "argparse",
-  "argparse.Action",
-  "argparse.ArgumentError",
-  "argparse.ArgumentParser",
-  "argparse.Namespace",
   "awslimitchecker.services.__init__._services",
   "awslimitchecker.services._services.keys",
   "awslimitchecker.services.base._AwsService.__subclasses__",
@@ -76,26 +68,6 @@
   "cls.get_limits",
   "cls.required_iam_permissions",
   "cls.service_name",
-  "collections.defaultdict",
-  "copy.deepcopy",
-  "datetime.datetime",
-  "datetime.datetime.now",
-  "datetime.datetime.utcnow",
-  "datetime.timedelta",
-  "json",
-  "json.dumps",
-  "json.loads",
-  "logging",
-  "logging.CRITICAL",
-  "logging.DEBUG",
-  "logging.ERROR",
-  "logging.Formatter",
-  "logging.INFO",
-  "logging.NOTSET",
-  "logging.WARN",
-  "logging.WARNING",
-  "logging.basicConfig",
-  "logging.getLogger",
   "metrics.MetricsProvider.get_provider_by_name",
   "metrics.MetricsProvider.providers_by_name",
   "mock.ANY",
@@ -107,18 +79,10 @@
   "mock.patch",
   "onetimepass",
   "onetimepass.get_totp",
-  "os",
-  "os.environ",
   "os.environ.get",
-  "platform.python_implementation",
-  "pytest",
   "pytest.mark.integration",
   "pytest.mark.skipif",
-  "pytest.raises",
   "pytz.utc",
-  "re",
-  "re.compile",
-  "re.sub",
   "sys",
   "sys.argv",
   "sys.version_info",
@@ -127,11 +91,6 @@
   "time",
   "time.sleep",
   "time.time",
-  "unittest.mock.ANY",
-  "unittest.mock.DEFAULT",
-  "unittest.mock.Mock",
-  "unittest.mock.PropertyMock",
-  "unittest.mock.call",
   "unittest.mock.call.AccountSummary",
   "unittest.mock.call._add_current_usage",
   "unittest.mock.call._set_quotas_limit",
@@ -202,21 +161,19 @@
   "unittest.mock.call.vpc_addresses.all",
   "unittest.mock.call.warn",
   "unittest.mock.call.warning",
-  "unittest.mock.mock_open",
-  "unittest.mock.patch",
   "unittest.mock.patch.dict",
   "unittest.mock.patch.multiple",
   "unittest.mock.patch.object",
-  "urllib.parse.urlparse",
-  "urlparse.urlparse",
-  "warnings",
-  "warnings.filterwarnings",
-  "warnings.warn"
+  "urlparse.urlparse"
  ],
  "deps": {
-  "abc": [],
+  "abc": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "alerts": [],
-  "argparse": [],
+  "argparse": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "awslimitchecker": [],
   "boto3": [
    "boto3/conda-forge/noarch/boto3-1.13.1-pyh9f0ad1d_0"
@@ -225,33 +182,56 @@
    "botocore/conda-forge/noarch/botocore-1.10.82-py_0"
   ],
   "cls": [],
-  "collections": [],
-  "copy": [],
-  "datetime": [],
+  "collections": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "copy": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "datetime": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "dateutil": [
    "python-dateutil/conda-forge/noarch/python-dateutil-2.7.4-py_0"
   ],
   "freezegun": [
    "freezegun/conda-forge/noarch/freezegun-1.0.0-py_0"
   ],
-  "json": [],
-  "logging": [],
+  "json": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "logging": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "metrics": [],
   "mock": [],
   "onetimepass": [],
-  "os": [],
-  "platform": [],
-  "pytest": [],
+  "os": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "platform": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "pytest": [
+   "pytest/conda-forge/linux-64/pytest-4.6.3-py27_0",
+   "pytest/conda-forge/linux-64/pytest-6.0.2-py36hc560c46_0"
+  ],
   "pytz": [],
-  "re": [],
+  "re": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "sys": [],
   "termcolor": [],
   "testfixtures": [
    "testfixtures/conda-forge/noarch/testfixtures-5.2.0-py_0"
   ],
   "time": [],
-  "unittest": [],
-  "urllib": [],
+  "unittest": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "urllib": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "urllib3": [
    "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
    "urllib3/conda-forge/noarch/urllib3-1.26.5-pyhd8ed1ab_0"
@@ -260,6 +240,8 @@
   "versionfinder": [
    "versionfinder/conda-forge/noarch/versionfinder-1.1.1-pyhd8ed1ab_1"
   ],
-  "warnings": []
+  "warnings": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ]
  }
 }

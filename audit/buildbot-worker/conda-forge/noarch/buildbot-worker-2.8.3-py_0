@@ -1,9 +1,6 @@
 {
  "bad": [
   "__builtin__",
-  "__future__.absolute_import",
-  "__future__.division",
-  "__future__.print_function",
   "buildbot_worker.__init__.getVersion",
   "buildbot_worker.__init__.getVersionFromArchiveId",
   "buildbot_worker.__init__.gitDescribeToPep440",
@@ -19,13 +16,8 @@
   "buildbot_worker.util.sibpath",
   "builtins",
   "check",
-  "codecs.getincrementaldecoder",
-  "collections.deque",
-  "contextlib.contextmanager",
   "createFile",
   "data_type",
-  "datetime",
-  "datetime.datetime.utcfromtimestamp",
   "do_start",
   "errno",
   "errno.EEXIST",
@@ -40,11 +32,6 @@
   "future.utils.iteritems",
   "future.utils.string_types",
   "future.utils.text_type",
-  "glob",
-  "glob.glob",
-  "io",
-  "io.BytesIO",
-  "io.StringIO",
   "itertools",
   "itertools.groupby",
   "mock",
@@ -53,33 +40,24 @@
   "mock.call.setServiceParent",
   "mock.mock_open",
   "mock.patch.dict",
-  "multiprocessing",
   "multiprocessing.cpu_count",
   "old_getCommand",
   "old_startService",
   "old_stopService",
   "on_keepalive",
-  "os",
   "os.chdir",
   "os.chmod",
-  "os.environ",
   "os.environ.copy",
   "os.environ.get",
   "os.environ.split",
-  "os.errno",
-  "os.fdopen",
   "os.fork",
   "os.getcwd",
   "os.getpid",
   "os.getppid",
   "os.kill",
   "os.killpg",
-  "os.linesep",
   "os.listdir",
-  "os.makedirs",
   "os.mkdir",
-  "os.name",
-  "os.path",
   "os.path.abspath",
   "os.path.dirname",
   "os.path.exists",
@@ -90,7 +68,6 @@
   "os.path.isdir",
   "os.path.isfile",
   "os.path.join",
-  "os.pathsep",
   "os.pathsep.join",
   "os.remove",
   "os.rename",
@@ -100,27 +77,13 @@
   "os.symlink",
   "os.uname",
   "os.unlink",
-  "os.walk",
-  "pipes",
-  "pipes.quote",
-  "platform",
-  "platform.system",
   "poll",
-  "pprint",
-  "pprint.pformat",
   "print_error",
   "pythoncom",
   "pythoncom.com_error",
   "pywintypes",
   "pywintypes.error",
   "quote",
-  "re",
-  "re.compile",
-  "re.match",
-  "re.search",
-  "re.sub",
-  "select",
-  "select.select",
   "servicemanager",
   "servicemanager.EVENTLOG_INFORMATION_TYPE",
   "servicemanager.LogErrorMsg",
@@ -129,31 +92,12 @@
   "servicemanager.LogWarningMsg",
   "servicemanager.PYS_SERVICE_STARTED",
   "servicemanager.PYS_SERVICE_STOPPED",
-  "shutil",
-  "shutil.copytree",
-  "shutil.rmtree",
-  "signal",
   "signal.SIGHUP",
   "signal.SIGKILL",
   "signal.SIGTERM",
   "signal.SIG_IGN",
   "signal.alarm",
-  "signal.signal",
-  "socket",
-  "socket.getfqdn",
-  "stat",
-  "stat.ST_CTIME",
-  "stat.ST_MODE",
-  "stat.ST_MTIME",
-  "stat.ST_SIZE",
-  "stat.S_ISDIR",
-  "stat.S_ISREG",
   "subcommandFunction",
-  "subprocess",
-  "subprocess.PIPE",
-  "subprocess.Popen",
-  "subprocess.STDOUT",
-  "subprocess.check_call",
   "sys",
   "sys.argv",
   "sys.exc_info",
@@ -166,21 +110,9 @@
   "sys.prefix",
   "sys.stderr",
   "sys.version_info",
-  "tarfile",
-  "tarfile.open",
-  "tempfile",
-  "tempfile.NamedTemporaryFile",
-  "tempfile.mkstemp",
-  "textwrap",
-  "textwrap.dedent",
-  "textwrap.fill",
-  "threading",
-  "threading.Thread",
   "time",
   "time.sleep",
   "time.time",
-  "traceback",
-  "traceback.format_exc",
   "twisted",
   "twisted.application.internet.ClientService",
   "twisted.application.internet.backoffPolicy",
@@ -291,8 +223,6 @@
   "twisted.version.major",
   "twisted.web.server.Site",
   "twisted.web.static.Data",
-  "unittest",
-  "unittest.TestCase",
   "unittest.TestCase.assertRaisesRegex",
   "unittest.TestCase.assertRaisesRegexp",
   "win32api",
@@ -347,19 +277,29 @@
  ],
  "deps": {
   "__builtin__": [],
-  "__future__": [],
+  "__future__": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "buildbot": [
    "buildbot/conda-forge/noarch/buildbot-3.1.1-pyhd8ed1ab_0"
   ],
   "buildbot_worker": [],
   "builtins": [],
   "check": [],
-  "codecs": [],
-  "collections": [],
-  "contextlib": [],
+  "codecs": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "collections": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "contextlib": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "createFile": [],
   "data_type": [],
-  "datetime": [],
+  "datetime": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "do_start": [],
   "errno": [],
   "factory": [
@@ -367,42 +307,82 @@
   ],
   "fakeOpen": [],
   "future": [],
-  "glob": [],
-  "io": [],
+  "glob": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "io": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "itertools": [],
   "mock": [],
-  "multiprocessing": [],
+  "multiprocessing": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "old_getCommand": [],
   "old_startService": [],
   "old_stopService": [],
   "on_keepalive": [],
-  "os": [],
-  "pipes": [],
-  "platform": [],
+  "os": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "pipes": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "platform": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "poll": [],
-  "pprint": [],
+  "pprint": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "print_error": [],
   "pythoncom": [],
   "pywintypes": [],
   "quote": [],
-  "re": [],
-  "select": [],
+  "re": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "select": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "servicemanager": [],
-  "shutil": [],
-  "signal": [],
-  "socket": [],
-  "stat": [],
+  "shutil": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "signal": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "socket": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "stat": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "subcommandFunction": [],
-  "subprocess": [],
+  "subprocess": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "sys": [],
-  "tarfile": [],
-  "tempfile": [],
-  "textwrap": [],
-  "threading": [],
+  "tarfile": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "tempfile": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "textwrap": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "threading": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "time": [],
-  "traceback": [],
+  "traceback": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "twisted": [],
-  "unittest": [],
+  "unittest": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "win32api": [],
   "win32com": [],
   "win32con": [],

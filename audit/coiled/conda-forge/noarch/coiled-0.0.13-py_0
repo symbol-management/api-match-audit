@@ -8,13 +8,7 @@
   "aiohttp.WSMsgType.ERROR",
   "aiohttp.WSMsgType.TEXT",
   "aiohttp.WSServerHandshakeError",
-  "asyncio",
-  "asyncio.create_subprocess_shell",
-  "asyncio.gather",
   "asyncio.run",
-  "asyncio.sleep",
-  "asyncio.subprocess.PIPE",
-  "asyncio.wait_for",
   "backends.in_process",
   "backends.in_process.ClusterManager",
   "cli.install.install.callback",
@@ -38,85 +32,41 @@
   "dask.distributed.Client",
   "dask.distributed.Security",
   "dask.utils.parse_bytes",
-  "distutils.util.strtobool",
   "func",
   "get_solved_spec",
-  "getpass.getpass",
   "handle_api_exception",
-  "io",
-  "io.StringIO",
   "itertools",
   "itertools.permutations",
-  "json",
-  "json.JSONDecodeError",
-  "json.loads",
-  "main",
-  "os",
-  "os.environ",
   "os.environ.get",
   "os.environ.pop",
   "os.path.dirname",
   "os.path.expanduser",
   "os.path.join",
-  "platform",
-  "platform.system",
-  "pytest",
-  "pytest.fixture",
-  "pytest.importorskip",
   "pytest.mark.asyncio",
   "pytest.mark.django_db",
   "pytest.mark.skip",
   "pytest.mark.skipif",
   "pytest.mark.slow",
   "pytest.mark.xfail",
-  "pytest.raises",
-  "pytest.skip",
-  "pytest.warns",
-  "re",
-  "re.match",
-  "shutil",
-  "shutil.which",
-  "ssl",
   "ssl.CERT_REQUIRED",
   "ssl.Purpose.SERVER_AUTH",
-  "ssl.create_default_context",
-  "subprocess",
-  "subprocess.check_output",
   "sys",
   "sys.platform",
   "sys.stdout",
   "sys.stdout.flush",
   "sys.stdout.isatty",
   "sys.stdout.write",
-  "tempfile",
-  "tempfile.TemporaryDirectory",
-  "threading",
-  "threading.Lock",
-  "threading.RLock",
-  "threading.Thread",
   "time",
   "time.sleep",
   "time.time",
   "tornado.ioloop.IOLoop",
   "tornado.ioloop.IOLoop.current",
-  "typing.NamedTuple",
-  "typing.Optional",
-  "typing.Tuple",
-  "typing.Union",
-  "unittest.mock",
-  "unittest.mock.patch",
   "users.models.Account",
   "users.models.Account.objects.create",
   "users.models.Membership",
   "users.models.Membership.objects.create",
   "users.models.Membership.objects.filter",
-  "users.models.User",
-  "uuid",
-  "uuid.uuid4",
-  "warnings",
-  "warnings.warn",
-  "weakref",
-  "weakref.WeakSet"
+  "users.models.User"
  ],
  "deps": {
   "_": [],
@@ -127,7 +77,9 @@
   "asgiref": [
    "asgiref/conda-forge/noarch/asgiref-3.2.9-py_0"
   ],
-  "asyncio": [],
+  "asyncio": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "backends": [],
   "botocore": [
    "botocore/conda-forge/noarch/botocore-1.10.82-py_0"
@@ -145,46 +97,86 @@
   "distributed": [
    "distributed/conda-forge/noarch/distributed-2.1.0-py_0"
   ],
-  "distutils": [],
+  "distutils": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "func": [],
   "get_solved_spec": [],
-  "getpass": [],
-  "handle_api_exception": [],
-  "io": [],
-  "itertools": [],
-  "json": [],
-  "main": [],
-  "os": [],
-  "pathlib": [
-   "pathlib/conda-forge/noarch/pathlib-1.0.1-py_1"
+  "getpass": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
   ],
-  "platform": [],
-  "pytest": [],
-  "re": [],
+  "handle_api_exception": [],
+  "io": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "itertools": [],
+  "json": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "main": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "os": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "pathlib": [
+   "pathlib/conda-forge/noarch/pathlib-1.0.1-py_1",
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "platform": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "pytest": [
+   "pytest/conda-forge/linux-64/pytest-4.6.3-py27_0",
+   "pytest/conda-forge/linux-64/pytest-6.0.2-py36hc560c46_0"
+  ],
+  "re": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "s3fs": [
    "s3fs/conda-forge/noarch/s3fs-0.4.0-py_0"
   ],
-  "shutil": [],
+  "shutil": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "sparse": [
    "sparse/conda-forge/noarch/sparse-0.11.0-py_0",
    "sparse/conda-forge/noarch/sparse-0.9.1-py_0"
   ],
-  "ssl": [],
-  "subprocess": [],
+  "ssl": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "subprocess": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "sys": [],
-  "tempfile": [],
-  "threading": [],
+  "tempfile": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "threading": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "time": [],
   "toolz": [
    "toolz/conda-forge/noarch/toolz-0.8.2-py_3"
   ],
   "tornado": [],
-  "typing": [],
-  "unittest": [],
+  "typing": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "unittest": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "users": [],
-  "uuid": [],
-  "warnings": [],
-  "weakref": [],
+  "uuid": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "warnings": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "weakref": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "yaml": [
    "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1"
   ]

@@ -1,36 +1,12 @@
 {
  "bad": [
   "geopandas.GeoDataFrame.from_features",
-  "json",
-  "json.loads",
-  "math",
-  "math.floor",
-  "numpy",
-  "numpy.any",
-  "numpy.append",
-  "numpy.arange",
-  "numpy.array",
-  "numpy.asarray",
-  "numpy.diag",
-  "numpy.dot",
-  "numpy.empty",
   "numpy.float32",
-  "numpy.isnan",
   "numpy.ndarray.flatten",
-  "numpy.where",
-  "numpy.zeros",
-  "pandas",
-  "pandas.DataFrame",
   "pandas.DataFrame.from_dict",
-  "pandas.concat",
   "quilt3.Package.install",
   "quilt3.data.rasters.nlcd",
   "quilt3.data.rasters.nlcd.get",
-  "rasterio",
-  "rasterio.mask.mask",
-  "rasterio.open",
-  "scipy.sparse.diags",
-  "scipy.sparse.dok_matrix",
   "shap",
   "shap.TreeExplainer",
   "sklearn.model_selection.GridSearchCV",
@@ -40,31 +16,32 @@
   "statsmodels.genmod.families.Gaussian",
   "statsmodels.genmod.families.NegativeBinomial",
   "statsmodels.genmod.families.Poisson",
-  "tqdm.auto.tqdm",
-  "urllib.parse.unquote",
-  "urllib.parse.urlparse",
-  "warnings",
-  "warnings.catch_warnings",
-  "warnings.simplefilter",
-  "warnings.warn",
-  "xgboost",
-  "xgboost.DMatrix",
-  "xgboost.XGBRegressor",
-  "xgboost.train"
+  "tqdm.auto.tqdm"
  ],
  "deps": {
   "geopandas": [
    "geopandas-base/conda-forge/noarch/geopandas-base-0.9.0-pyhd8ed1ab_1",
    "geopandas/conda-forge/noarch/geopandas-0.5.0-py_0"
   ],
-  "json": [],
-  "math": [],
-  "numpy": [],
-  "pandas": [],
+  "json": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "math": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "numpy": [
+   "numpy/conda-forge/linux-64/numpy-1.9.3-py27_blas_openblashb06ca3d_7"
+  ],
+  "pandas": [
+   "pandas/conda-forge/linux-64/pandas-0.25.0-py37hb3f55d8_0"
+  ],
   "quilt3": [
    "quilt3/conda-forge/noarch/quilt3-3.1.14-pyh9f0ad1d_1"
   ],
-  "rasterio": [],
+  "rasterio": [
+   "rasterio/conda-forge/linux-64/rasterio-1.0.28-py27h900e953_1",
+   "rasterio/conda-forge/linux-64/rasterio-1.2.5-py39hbc9cc8e_0"
+  ],
   "rasterstats": [
    "rasterstats/conda-forge/noarch/rasterstats-0.12.0-py_2"
   ],
@@ -72,13 +49,21 @@
    "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
    "requests/conda-forge/noarch/requests-2.23.0-pyh8c360ce_2"
   ],
-  "scipy": [],
+  "scipy": [
+   "scipy/conda-forge/linux-64/scipy-0.18.1-np111py34_blas_openblas_200"
+  ],
   "shap": [],
   "sklearn": [],
   "statsmodels": [],
   "tqdm": [],
-  "urllib": [],
-  "warnings": [],
-  "xgboost": []
+  "urllib": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "warnings": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "xgboost": [
+   "py-xgboost/conda-forge/linux-64/py-xgboost-1.1.1-py37hc8dfbb8_0"
+  ]
  }
 }
