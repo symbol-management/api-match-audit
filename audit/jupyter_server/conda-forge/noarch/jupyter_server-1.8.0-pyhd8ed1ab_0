@@ -8,10 +8,6 @@
   "anyio.to_thread.run_sync",
   "api_handlers.TerminalHandler",
   "api_handlers.TerminalRootHandler",
-  "argon2",
-  "argon2.PasswordHasher",
-  "argon2.exceptions",
-  "argon2.exceptions.VerificationError",
   "argparse",
   "argparse.ArgumentParser",
   "async_copy2_safe",
@@ -136,24 +132,12 @@
   "jupyter_client.clientabc.KernelClientABC.register",
   "jupyter_client.managerabc.KernelManagerABC.register",
   "jupyter_client.protocol_version.split",
-  "jupyter_core.application.JupyterApp",
   "jupyter_core.application.JupyterApp.aliases",
   "jupyter_core.application.JupyterApp.flags",
-  "jupyter_core.application.NoStart",
-  "jupyter_core.application.base_aliases",
-  "jupyter_core.application.base_flags",
-  "jupyter_core.paths",
-  "jupyter_core.paths.ENV_CONFIG_PATH",
-  "jupyter_core.paths.SYSTEM_CONFIG_PATH",
   "jupyter_core.paths.exists",
   "jupyter_core.paths.is_file_hidden",
   "jupyter_core.paths.is_hidden",
-  "jupyter_core.paths.jupyter_config_dir",
-  "jupyter_core.paths.jupyter_config_path",
-  "jupyter_core.paths.jupyter_path",
-  "jupyter_core.paths.jupyter_runtime_dir",
   "jupyter_core.paths.secure_write",
-  "jupyter_core.utils.ensure_dir_exists",
   "jupyter_server.__file__",
   "jupyter_server.__init__._cleanup",
   "jupyter_server.extension.serverextension.ServerExtensionApp.description.splitlines",
@@ -448,7 +432,9 @@
   "_safe_literal_eval": [],
   "anyio": [],
   "api_handlers": [],
-  "argon2": [],
+  "argon2": [
+   "privy/conda-forge/noarch/privy-6.0.0-py_0"
+  ],
   "argparse": [],
   "async_copy2_safe": [],
   "async_replace_file": [],
@@ -498,7 +484,8 @@
   "interrupt_kernel": [],
   "io": [],
   "ipaddress": [
-   "ipaddress/conda-forge/noarch/ipaddress-1.0.22-py_1"
+   "ipaddress/conda-forge/noarch/ipaddress-1.0.22-py_1",
+   "privy/conda-forge/noarch/privy-6.0.0-py_0"
   ],
   "ipython_genutils": [],
   "is_kernel_running": [],
@@ -514,7 +501,9 @@
   "jupyter_client": [
    "jupyter_client/conda-forge/noarch/jupyter_client-6.1.7-py_0"
   ],
-  "jupyter_core": [],
+  "jupyter_core": [
+   "jupyter_core/conda-forge/noarch/jupyter_core-4.5.0-py_0"
+  ],
   "jupyter_server": [],
   "linker": [],
   "list_running_servers": [],
@@ -566,7 +555,8 @@
   "shutil": [],
   "signal": [],
   "six": [
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1"
+   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
+   "privy/conda-forge/noarch/privy-6.0.0-py_0"
   ],
   "socket": [],
   "sqlite3": [],

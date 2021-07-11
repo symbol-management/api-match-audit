@@ -9,12 +9,8 @@
   "_hstores.HBotoStore",
   "_hstores.HDictStore",
   "_hstores.HFilesystemStore",
-  "boto.s3.connection.OrdinaryCallingFormat",
-  "boto.s3.connection.S3Connection",
-  "boto.s3.connection.S3ResponseError",
   "cPickle",
   "cStringIO.StringIO",
-  "configparser.ConfigParser",
   "copy_reg",
   "copyreg",
   "functools.reduce",
@@ -26,14 +22,6 @@
   "os.path.exists",
   "os.path.getsize",
   "pickle",
-  "simplekv.contrib.ExtendedKeyspaceMixin",
-  "simplekv.decorator.ReadOnlyDecorator",
-  "simplekv.decorator.URLEncodeKeysDecorator",
-  "simplekv.fs.FilesystemStore",
-  "simplekv.memory.DictStore",
-  "simplekv.memory.redisstore.RedisStore",
-  "simplekv.net.azurestore.AzureBlockBlobStore",
-  "simplekv.net.botostore.BotoStore",
   "storefact.__init__.create_store",
   "storefact.__init__.decorate_store",
   "storefact.__init__.get_store",
@@ -41,18 +29,21 @@
   "storefact.__init__.url2dict",
   "sys",
   "sys.version_info",
-  "type.split",
-  "uritools.urisplit"
+  "type.split"
  ],
  "deps": {
   "ConfigParser": [],
   "__future__": [],
   "_boto": [],
   "_hstores": [],
-  "boto": [],
+  "boto": [
+   "boto/conda-forge/noarch/boto-2.49.0-py_0"
+  ],
   "cPickle": [],
   "cStringIO": [],
-  "configparser": [],
+  "configparser": [
+   "configparser/conda-forge/noarch/configparser-5.0.0-py_0"
+  ],
   "copy_reg": [],
   "copyreg": [],
   "functools": [],
@@ -63,10 +54,14 @@
   "redis": [
    "redis-py/conda-forge/noarch/redis-py-3.2.1-py_0"
   ],
-  "simplekv": [],
+  "simplekv": [
+   "simplekv/conda-forge/noarch/simplekv-0.11.11-py_0"
+  ],
   "storefact": [],
   "sys": [],
   "type": [],
-  "uritools": []
+  "uritools": [
+   "uritools/conda-forge/noarch/uritools-3.0.1-pyhd8ed1ab_0"
+  ]
  }
 }
