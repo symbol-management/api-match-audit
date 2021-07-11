@@ -1,11 +1,6 @@
 {
  "bad": [
-  "cryptography.hazmat.backends.default_backend",
-  "cryptography.hazmat.primitives.asymmetric.rsa",
-  "cryptography.hazmat.primitives.asymmetric.rsa.generate_private_key",
-  "cryptography.hazmat.primitives.serialization",
   "cryptography.hazmat.primitives.serialization.Encoding.PEM",
-  "cryptography.hazmat.primitives.serialization.NoEncryption",
   "cryptography.hazmat.primitives.serialization.PrivateFormat.TraditionalOpenSSL",
   "dagster.Enum",
   "dagster.EnumValue",
@@ -33,7 +28,9 @@
   "sshtunnel.SSHTunnelForwarder"
  ],
  "deps": {
-  "cryptography": [],
+  "cryptography": [
+   "privy/conda-forge/noarch/privy-6.0.0-py_0"
+  ],
   "dagster": [],
   "getpass": [],
   "logging": [],

@@ -2,7 +2,6 @@
  "bad": [
   "base64",
   "base64.b64decode",
-  "cryptography.hazmat.primitives.serialization",
   "cryptography.hazmat.primitives.serialization.Encoding.PEM",
   "cryptography.hazmat.primitives.serialization.PublicFormat.SubjectPublicKeyInfo",
   "json",
@@ -29,7 +28,9 @@
  ],
  "deps": {
   "base64": [],
-  "cryptography": [],
+  "cryptography": [
+   "privy/conda-forge/noarch/privy-6.0.0-py_0"
+  ],
   "json": [],
   "jwt": [
    "pyjwt/conda-forge/noarch/pyjwt-1.6.3-py_0"
