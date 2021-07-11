@@ -4,8 +4,6 @@
   "UserEmail",
   "UserInvitation",
   "__future__.print_function",
-  "auth0.v3.authentication.GetToken",
-  "auth0.v3.authentication.Users",
   "base64",
   "cryptography.fernet.InvalidToken",
   "datetime",
@@ -79,17 +77,12 @@
   "os.path.isdir",
   "os.path.join",
   "os.path.realpath",
-  "pynamodb.attributes.UnicodeAttribute",
   "pytest",
   "pytest.fixture",
   "roles_accepted_view",
   "roles_accepted_without",
   "roles_required_view",
   "roles_required_without",
-  "sendgrid.helpers.mail.Content",
-  "sendgrid.helpers.mail.Email",
-  "sendgrid.helpers.mail.Mail",
-  "sendgrid.helpers.mail.Substitution",
   "signals.user_changed_password.send",
   "signals.user_changed_username.send",
   "signals.user_confirmed_email.send",
@@ -128,19 +121,16 @@
   "wtforms.HiddenField",
   "wtforms.PasswordField",
   "wtforms.StringField",
-  "wtforms.SubmitField",
-  "wtforms.ValidationError",
-  "wtforms.validators",
-  "wtforms.validators.DataRequired",
-  "wtforms.validators.Email",
-  "wtforms.validators.EqualTo"
+  "wtforms.SubmitField"
  ],
  "deps": {
   "User": [],
   "UserEmail": [],
   "UserInvitation": [],
   "__future__": [],
-  "auth0": [],
+  "auth0": [
+   "auth0-python/conda-forge/noarch/auth0-python-3.16.2-pyhd8ed1ab_0"
+  ],
   "base64": [],
   "cryptography": [],
   "datetime": [],
@@ -178,13 +168,17 @@
   "pdb": [
    "pdbpp/conda-forge/noarch/pdbpp-0.9.5-py_1"
   ],
-  "pynamodb": [],
+  "pynamodb": [
+   "pynamodb/conda-forge/noarch/pynamodb-5.0.3-pyhd8ed1ab_1"
+  ],
   "pytest": [],
   "roles_accepted_view": [],
   "roles_accepted_without": [],
   "roles_required_view": [],
   "roles_required_without": [],
-  "sendgrid": [],
+  "sendgrid": [
+   "sendgrid/conda-forge/noarch/sendgrid-5.6.0-py_0"
+  ],
   "signals": [],
   "smtplib": [],
   "socket": [],
@@ -196,6 +190,8 @@
   "urlparse": [],
   "view_function": [],
   "without_view": [],
-  "wtforms": []
+  "wtforms": [
+   "wtforms/conda-forge/noarch/wtforms-2.3.2-pyh9f0ad1d_0"
+  ]
  }
 }
