@@ -2,24 +2,14 @@
  "bad": [
   "__name__.split",
   "_collections.defaultdict",
-  "argparse",
-  "argparse.ArgumentParser",
   "calculator.Calculator.__new__",
   "calculator.Calculator.__subclasses__",
   "calculator.pt.get_subclasses",
   "conv",
-  "copy.copy",
-  "ctypes",
-  "ctypes.POINTER",
-  "ctypes.c_double",
-  "ctypes.cast",
-  "ctypes.sizeof",
   "dict.fromkeys",
   "dummy_function",
   "fitsnap3.io.outputs.output_factory.output_factory",
   "fitsnap3.io.sections.section_factory.new_section",
-  "importlib.import_module",
-  "inspect.isclass",
   "io.input.config.args.lammpslog",
   "io.input.config.args.printlammps",
   "io.input.config.sections",
@@ -59,64 +49,20 @@
   "io.output.output.screen",
   "itertools.chain",
   "itertools.chain.from_iterable",
-  "json.loads",
-  "lammps.lammps",
   "method",
   "method.__name__",
   "method.__name__.upper",
-  "mpi4py",
-  "mpi4py.MPI",
   "mpi4py.MPI.COMM_TYPE_SHARED",
   "mpi4py.MPI.DOUBLE.Get_size",
-  "mpi4py.__version__",
-  "numpy",
-  "numpy.__version__",
-  "numpy.abs",
-  "numpy.all",
-  "numpy.allclose",
-  "numpy.arange",
-  "numpy.array",
-  "numpy.asarray",
-  "numpy.concatenate",
-  "numpy.count_nonzero",
-  "numpy.diag",
-  "numpy.diagflat",
   "numpy.divmod",
-  "numpy.dtype",
-  "numpy.exp",
-  "numpy.eye",
-  "numpy.frombuffer",
-  "numpy.insert",
-  "numpy.isclose",
   "numpy.isinf",
-  "numpy.isnan",
-  "numpy.linalg.det",
-  "numpy.linalg.inv",
-  "numpy.linalg.qr",
-  "numpy.median",
-  "numpy.ndarray",
-  "numpy.newaxis",
-  "numpy.prod",
-  "numpy.savez_compressed",
-  "numpy.shape",
   "numpy.sign",
-  "numpy.sqrt",
   "numpy.square",
-  "numpy.std",
-  "numpy.sum",
-  "numpy.tril_indices",
-  "numpy.vstack",
-  "numpy.zeros",
-  "numpy.zeros_like",
   "os.listdir",
-  "os.path",
   "os.path.abspath",
   "os.path.join",
   "os.stat",
-  "pandas",
-  "pandas.DataFrame",
   "pandas.DataFrame.from_records",
-  "pandas.__version__",
   "parallel_tools.output.screen",
   "parallel_tools.pt.all_barrier",
   "parallel_tools.pt.allgather",
@@ -153,25 +99,13 @@
   "parallel_tools.pt.split_within_node",
   "parallel_tools.pt.sub_barrier",
   "parallel_tools.pt.sub_rank_zero",
-  "pathlib.Path",
-  "pickle.HIGHEST_PROTOCOL",
-  "pkgutil.iter_modules",
   "psutil.virtual_memory",
-  "random.random",
-  "random.shuffle",
-  "re",
-  "re.findall",
-  "scipy",
-  "scipy.__version__",
-  "scipy.linalg.lstsq",
   "scrape.Scraper.__new__",
   "scrape.Scraper.__subclasses__",
   "scrape.pt.get_subclasses",
-  "signal",
   "solver.Solver.__new__",
   "solver.Solver.__subclasses__",
   "solver.pt.get_subclasses",
-  "tensorflow",
   "tensorflow.linalg.lstsq",
   "time.sleep",
   "time.time",
@@ -180,43 +114,83 @@
  "deps": {
   "__name__": [],
   "_collections": [],
-  "argparse": [],
+  "argparse": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "calculator": [],
   "configparser": [
-   "configparser/conda-forge/noarch/configparser-5.0.0-py_0"
+   "configparser/conda-forge/noarch/configparser-5.0.0-py_0",
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
   ],
   "conv": [],
-  "copy": [],
-  "ctypes": [],
+  "copy": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "ctypes": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "decorator": [
    "decorator/conda-forge/noarch/decorator-4.3.0-py_0"
   ],
   "dict": [],
   "dummy_function": [],
   "fitsnap3": [],
-  "importlib": [],
-  "inspect": [],
+  "importlib": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "inspect": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "io": [],
   "itertools": [],
-  "json": [],
-  "lammps": [],
+  "json": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "lammps": [
+   "lammps/conda-forge/linux-64/lammps-2020.12.24-py36hefad35f_mpich_4"
+  ],
   "method": [],
-  "mpi4py": [],
-  "numpy": [],
-  "os": [],
-  "pandas": [],
+  "mpi4py": [
+   "mpi4py/conda-forge/linux-64/mpi4py-3.0.3-py36h7b8b12a_6"
+  ],
+  "numpy": [
+   "numpy/conda-forge/linux-64/numpy-1.9.3-py27_blas_openblashb06ca3d_7"
+  ],
+  "os": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "pandas": [
+   "pandas/conda-forge/linux-64/pandas-0.25.0-py37hb3f55d8_0"
+  ],
   "parallel_tools": [],
-  "pathlib": [],
-  "pickle": [],
-  "pkgutil": [],
+  "pathlib": [
+   "pathlib/conda-forge/noarch/pathlib-1.0.1-py_1",
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "pickle": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "pkgutil": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "psutil": [],
-  "random": [],
-  "re": [],
-  "scipy": [],
+  "random": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "re": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "scipy": [
+   "scipy/conda-forge/linux-64/scipy-0.18.1-np111py34_blas_openblas_200"
+  ],
   "scrape": [],
-  "signal": [],
+  "signal": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "solver": [],
-  "tensorflow": [],
+  "tensorflow": [
+   "tensorflow/conda-forge/linux-64/tensorflow-0.12.1-py27_2"
+  ],
   "time": [],
   "vprint": []
  }

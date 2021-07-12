@@ -1,9 +1,6 @@
 {
  "bad": [
-  "IPython",
   "Output",
-  "base64",
-  "base64.b64encode",
   "birdy.BirdyClient",
   "birdy.__init__.WPSClient",
   "birdy.dependencies.IPython.display.Image",
@@ -29,37 +26,10 @@
   "birdy.import_wps",
   "cls",
   "cls.__subclasses__",
-  "collections",
-  "collections.OrderedDict",
   "collections.abc.Iterable",
-  "collections.namedtuple",
-  "datetime",
-  "datetime.date",
-  "datetime.date.today",
-  "datetime.datetime",
-  "datetime.datetime.now",
-  "datetime.time",
-  "distutils.version.StrictVersion",
-  "importlib.import_module",
-  "io",
-  "io.StringIO",
-  "json",
-  "json.dumps",
-  "json.load",
-  "json.loads",
-  "keyword",
-  "keyword.iskeyword",
-  "logging",
-  "logging.Formatter",
-  "logging.INFO",
-  "logging.StreamHandler",
-  "mimetypes",
-  "mimetypes.guess_type",
-  "netCDF4",
   "netCDF4.Dataset",
   "netCDF4.getlibversion",
   "notebook.is_notebook",
-  "os",
   "os.environ.get",
   "os.path.dirname",
   "os.path.join",
@@ -67,48 +37,23 @@
   "owslib_esgfwps.Dimension",
   "owslib_esgfwps.Domain",
   "owslib_esgfwps.Variable",
-  "pathlib.Path",
-  "pytest",
-  "pytest.fixture",
-  "pytest.importorskip",
   "pytest.mark.online",
   "pytest.mark.skip",
   "pytest.mark.xfail",
-  "pytest.raises",
-  "re",
-  "re.sub",
-  "signal",
   "signal.SIGINT",
-  "signal.signal",
   "str.lower",
   "sys",
   "sys.stdout",
-  "tempfile",
-  "tempfile.NamedTemporaryFile",
-  "tempfile.mkdtemp",
-  "tempfile.mktemp",
-  "textwrap.dedent",
-  "threading",
-  "threading.Thread",
-  "types",
-  "types.MethodType",
-  "unittest.mock",
-  "unittest.mock.Mock",
-  "urllib.parse.urlparse",
-  "utils.from_owslib",
-  "warnings",
-  "warnings.filterwarnings",
-  "warnings.warn",
-  "xarray",
-  "xarray.Dataset",
-  "xarray.open_dataset",
-  "zipfile",
-  "zipfile.ZipFile"
+  "utils.from_owslib"
  ],
  "deps": {
-  "IPython": [],
+  "IPython": [
+   "ipython/conda-forge/linux-64/ipython-7.23.0-py39hef51801_0"
+  ],
   "Output": [],
-  "base64": [],
+  "base64": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "birdy": [],
   "boltons": [
    "boltons/conda-forge/noarch/boltons-19.0.1-py_0"
@@ -117,17 +62,27 @@
    "click/conda-forge/noarch/click-7.0-py_0"
   ],
   "cls": [],
-  "collections": [],
-  "datetime": [],
+  "collections": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "datetime": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "dateutil": [
    "python-dateutil/conda-forge/noarch/python-dateutil-2.7.4-py_0"
   ],
-  "distutils": [],
+  "distutils": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "geojson": [
    "geojson/conda-forge/noarch/geojson-2.5.0-py_0"
   ],
-  "importlib": [],
-  "io": [],
+  "importlib": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "io": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "ipyleaflet": [
    "ipyleaflet/conda-forge/noarch/ipyleaflet-0.13.6-pyhd8ed1ab_1"
   ],
@@ -137,43 +92,84 @@
   "jinja2": [
    "jinja2/conda-forge/noarch/jinja2-2.10-py_1"
   ],
-  "json": [],
-  "keyword": [],
-  "logging": [],
+  "json": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "keyword": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "logging": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "metalink": [
    "pymetalink/conda-forge/noarch/pymetalink-6.2-pyhd8ed1ab_0"
   ],
-  "mimetypes": [],
-  "netCDF4": [],
+  "mimetypes": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "netCDF4": [
+   "netcdf4/conda-forge/linux-64/netcdf4-1.4.3.2-py27h597e859_0",
+   "netcdf4/conda-forge/linux-64/netcdf4-1.5.4-mpi_mpich_py38hf106642_1"
+  ],
   "notebook": [],
-  "os": [],
+  "os": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "owslib": [
    "owslib/conda-forge/noarch/owslib-0.24.1-pyhd8ed1ab_0"
   ],
   "owslib_esgfwps": [],
-  "pathlib": [],
-  "pytest": [],
-  "re": [],
+  "pathlib": [
+   "pathlib/conda-forge/noarch/pathlib-1.0.1-py_1",
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "pytest": [
+   "pytest/conda-forge/linux-64/pytest-4.6.3-py27_0",
+   "pytest/conda-forge/linux-64/pytest-6.0.2-py36hc560c46_0"
+  ],
+  "re": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "requests": [
    "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
    "requests/conda-forge/noarch/requests-2.23.0-pyh8c360ce_2"
   ],
-  "signal": [],
+  "signal": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "str": [],
   "sys": [],
-  "tempfile": [],
-  "textwrap": [],
-  "threading": [],
-  "types": [],
-  "unittest": [],
-  "urllib": [],
+  "tempfile": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "textwrap": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "threading": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "types": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "unittest": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "urllib": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "urllib3": [
    "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
    "urllib3/conda-forge/noarch/urllib3-1.26.5-pyhd8ed1ab_0"
   ],
   "utils": [],
-  "warnings": [],
-  "xarray": [],
-  "zipfile": []
+  "warnings": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "xarray": [
+   "xarray/conda-forge/noarch/xarray-0.15.0-py_0"
+  ],
+  "zipfile": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ]
  }
 }

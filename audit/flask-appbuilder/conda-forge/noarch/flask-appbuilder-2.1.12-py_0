@@ -1,20 +1,11 @@
 {
  "bad": [
   "Model.metadata",
-  "PIL.Image",
   "PIL.Image.ANTIALIAS",
-  "PIL.Image.open",
-  "PIL.ImageOps",
-  "PIL.ImageOps.fit",
-  "__future__.unicode_literals",
   "addon_class",
   "addon_class.post_process",
   "addon_class.pre_process",
   "addon_class.register_views",
-  "base64",
-  "base64.urlsafe_b64decode",
-  "calendar",
-  "calendar.month_name",
   "const.AUTH_DB",
   "const.AUTH_LDAP",
   "const.AUTH_OAUTH",
@@ -70,13 +61,6 @@
   "const.LOGMSG_WAR_SEC_LOGIN_FAILED.format",
   "const.LOGMSG_WAR_SEC_NOLDAP_OBJ.format",
   "const.PERMISSION_PREFIX.add",
-  "copy",
-  "copy.copy",
-  "datetime",
-  "datetime.date",
-  "datetime.datetime",
-  "datetime.datetime.now",
-  "datetime.datetime.strptime",
   "f",
   "f.__name__",
   "f._permission_name",
@@ -196,23 +180,9 @@
   "flask_appbuilder.security.mongoengine.models.User.objects.filter",
   "flask_login.current_user.is_authenticated",
   "flask_mongoengine.MongoEngine",
-  "flask_openid.OpenID",
-  "flask_openid.OpenIDResponse",
-  "flask_openid.SessionWrapper",
   "func",
-  "functools",
-  "functools.reduce",
-  "functools.update_wrapper",
-  "inspect.isclass",
-  "io.BytesIO",
   "item",
   "itertools.groupby",
-  "json",
-  "json.dumps",
-  "json.loads",
-  "jsonschema",
-  "jsonschema.ValidationError",
-  "jsonschema.validate",
   "ldap.LDAPError",
   "ldap.OPT_REFERRALS",
   "ldap.OPT_X_TLS_ALLOW",
@@ -225,14 +195,7 @@
   "ldap.OPT_X_TLS_REQUIRE_CERT",
   "ldap.initialize",
   "ldap.set_option",
-  "logging",
-  "logging.DEBUG",
-  "logging.ERROR",
-  "logging.basicConfig",
-  "logging.exception",
-  "logging.getLogger",
   "login_handler",
-  "marshmallow_enum.EnumField",
   "marshmallow_enum.EnumField.NAME",
   "marshmallow_enum.EnumField.VALUE",
   "meta",
@@ -261,106 +224,32 @@
   "openid.consumer.consumer.CANCEL",
   "openid.consumer.consumer.Consumer",
   "openid.consumer.consumer.SUCCESS",
-  "operator",
-  "operator.attrgetter",
-  "os",
   "os.chdir",
-  "os.environ",
   "os.getcwd",
-  "os.makedirs",
-  "os.path",
   "os.path.abspath",
   "os.path.dirname",
   "os.path.exists",
   "os.path.isdir",
   "os.path.join",
   "os.path.splitext",
-  "os.popen",
   "os.remove",
   "os.rename",
-  "random",
-  "random.choice",
-  "random.randint",
-  "random.uniform",
-  "re",
-  "re.compile",
-  "re.findall",
-  "re.match",
-  "re.search",
-  "re.sub",
-  "shutil",
-  "shutil.copytree",
   "sqla.models.Model1CustomSchema",
   "sqla.models.TmpEnum.e1",
   "sqla.models.TmpEnum.e2",
-  "sqlalchemy",
-  "sqlalchemy.Boolean",
-  "sqlalchemy.Column",
-  "sqlalchemy.Date",
-  "sqlalchemy.DateTime",
-  "sqlalchemy.Enum",
-  "sqlalchemy.Float",
-  "sqlalchemy.ForeignKey",
-  "sqlalchemy.Integer",
-  "sqlalchemy.Sequence",
-  "sqlalchemy.String",
-  "sqlalchemy.Table",
-  "sqlalchemy.UniqueConstraint",
-  "sqlalchemy.and_",
-  "sqlalchemy.engine.Engine",
-  "sqlalchemy.engine.reflection.Inspector",
-  "sqlalchemy.engine.reflection.Inspector.from_engine",
-  "sqlalchemy.event",
-  "sqlalchemy.event.listens_for",
-  "sqlalchemy.exc.IntegrityError",
-  "sqlalchemy.ext.declarative.api.as_declarative",
-  "sqlalchemy.ext.declarative.as_declarative",
-  "sqlalchemy.ext.declarative.declared_attr",
-  "sqlalchemy.func",
   "sqlalchemy.func.count",
   "sqlalchemy.func.lower",
-  "sqlalchemy.literal",
-  "sqlalchemy.orm.Load",
-  "sqlalchemy.orm.backref",
-  "sqlalchemy.orm.descriptor_props.SynonymProperty",
   "sqlalchemy.orm.properties.RelationshipProperty",
-  "sqlalchemy.orm.relationship",
-  "sqlalchemy.orm.util.identity_key",
-  "sqlalchemy.types",
-  "sqlalchemy.types.Boolean",
-  "sqlalchemy.types.Date",
-  "sqlalchemy.types.DateTime",
-  "sqlalchemy.types.Enum",
-  "sqlalchemy.types.Float",
-  "sqlalchemy.types.Integer",
-  "sqlalchemy.types.LargeBinary",
-  "sqlalchemy.types.Numeric",
-  "sqlalchemy.types.String",
-  "sqlalchemy.types.Text",
-  "sqlalchemy.types.TypeDecorator",
-  "string",
-  "string.ascii_letters",
   "sys",
   "sys.exc_info",
   "sys.path.append",
   "sys.version_info",
-  "traceback",
-  "traceback.format_exc",
   "type.__call__",
   "type.__init__",
   "type.__new__",
-  "typing.Dict",
-  "typing.List",
-  "typing.Optional",
   "unicode",
-  "unittest",
-  "unittest.TestCase",
-  "urllib.parse.quote",
   "urllib.quote",
-  "urllib.request.urlopen",
   "urllib2.urlopen",
-  "uuid",
-  "uuid.uuid1",
   "v",
   "widget",
   "wtforms.BooleanField",
@@ -381,30 +270,42 @@
   "wtforms.widgets.PasswordInput",
   "wtforms.widgets.Select",
   "wtforms.widgets.TextArea",
-  "wtforms.widgets.TextInput",
-  "zipfile.ZipFile"
+  "wtforms.widgets.TextInput"
  ],
  "deps": {
   "Model": [],
-  "PIL": [],
-  "__future__": [],
+  "PIL": [
+   "pillow/conda-forge/linux-64/pillow-7.2.0-py36hfc7c323_2"
+  ],
+  "__future__": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "addon_class": [],
   "apispec": [
    "apispec/conda-forge/noarch/apispec-4.7.0-pyhd8ed1ab_0"
   ],
-  "base64": [],
-  "calendar": [],
+  "base64": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "calendar": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "click": [
    "click/conda-forge/noarch/click-7.0-py_0"
   ],
   "const": [],
-  "copy": [],
-  "datetime": [],
+  "copy": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "datetime": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "dateutil": [
    "python-dateutil/conda-forge/noarch/python-dateutil-2.7.4-py_0"
   ],
   "enum": [
-   "privy/conda-forge/noarch/privy-6.0.0-py_0"
+   "privy/conda-forge/noarch/privy-6.0.0-py_0",
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
   ],
   "f": [],
   "field": [],
@@ -427,7 +328,9 @@
    "flask-mail/conda-forge/noarch/flask-mail-0.9.1-py_2"
   ],
   "flask_mongoengine": [],
-  "flask_openid": [],
+  "flask_openid": [
+   "flask-openid/conda-forge/noarch/flask-openid-1.2.5-py_2"
+  ],
   "flask_sqlalchemy": [
    "flask-sqlalchemy/conda-forge/noarch/flask-sqlalchemy-2.4.3-pyh9f0ad1d_0"
   ],
@@ -435,29 +338,43 @@
    "flask-wtf/conda-forge/noarch/flask-wtf-0.14.2-py_1"
   ],
   "func": [],
-  "functools": [],
-  "inspect": [],
-  "io": [],
+  "functools": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "inspect": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "io": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "item": [],
   "itertools": [],
   "jinja2": [
    "jinja2/conda-forge/noarch/jinja2-2.10-py_1"
   ],
-  "json": [],
-  "jsonschema": [],
+  "json": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "jsonschema": [
+   "jsonschema/conda-forge/noarch/jsonschema-3.2.0-py_2"
+  ],
   "jwt": [
    "pyjwt/conda-forge/noarch/pyjwt-1.6.3-py_0"
   ],
   "ldap": [
    "ldap/conda-forge/noarch/ldap-1.0.2-py_0"
   ],
-  "logging": [],
+  "logging": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "login_handler": [],
   "marshmallow": [
    "marshmallow/conda-forge/noarch/marshmallow-2.13.1-py_1",
    "toastedmarshmallow/conda-forge/noarch/toastedmarshmallow-0.2.6-py_0"
   ],
-  "marshmallow_enum": [],
+  "marshmallow_enum": [
+   "marshmallow-enum/conda-forge/noarch/marshmallow-enum-1.5.1-pyh9f0ad1d_3"
+  ],
   "marshmallow_sqlalchemy": [
    "marshmallow-sqlalchemy/conda-forge/noarch/marshmallow-sqlalchemy-0.23.0-py_0"
   ],
@@ -471,29 +388,53 @@
   "nose": [],
   "objs": [],
   "openid": [],
-  "operator": [],
-  "os": [],
+  "operator": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "os": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "prison": [
    "prison/conda-forge/noarch/prison-0.1.2-py_0"
   ],
-  "random": [],
-  "re": [],
-  "shutil": [],
+  "random": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "re": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "shutil": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "sqla": [],
-  "sqlalchemy": [],
+  "sqlalchemy": [
+   "sqlalchemy/conda-forge/linux-64/sqlalchemy-1.3.15-py36h8c4c3a4_1"
+  ],
   "sqlalchemy_utils": [
    "sqlalchemy-utils/conda-forge/noarch/sqlalchemy-utils-0.36.8-pyhd3deb0d_0"
   ],
-  "string": [],
+  "string": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "sys": [],
-  "traceback": [],
+  "traceback": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "type": [],
-  "typing": [],
+  "typing": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "unicode": [],
-  "unittest": [],
-  "urllib": [],
+  "unittest": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "urllib": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "urllib2": [],
-  "uuid": [],
+  "uuid": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "v": [],
   "werkzeug": [
    "werkzeug/conda-forge/noarch/werkzeug-1.0.0-py_0"
@@ -503,8 +444,11 @@
    "wtforms/conda-forge/noarch/wtforms-2.3.2-pyh9f0ad1d_0"
   ],
   "yaml": [
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1"
+   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
+   "pyyaml/conda-forge/linux-64/pyyaml-5.4.1-py36h70b1f00_0"
   ],
-  "zipfile": []
+  "zipfile": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ]
  }
 }

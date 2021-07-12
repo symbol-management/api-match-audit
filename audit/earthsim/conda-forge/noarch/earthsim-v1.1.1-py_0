@@ -1,42 +1,11 @@
 {
  "bad": [
-  "PIL.Image",
-  "PIL.Image.new",
-  "PIL.ImageDraw",
-  "PIL.ImageDraw.Draw",
   "_missing_cmd",
-  "argparse",
-  "argparse.ArgumentParser",
-  "bokeh.core.enums.Dimensions",
-  "bokeh.core.properties.Any",
-  "bokeh.core.properties.Dict",
-  "bokeh.core.properties.Instance",
-  "bokeh.core.properties.List",
-  "bokeh.core.properties.String",
-  "bokeh.models.ColumnDataSource",
-  "bokeh.models.CustomAction",
-  "bokeh.models.CustomJS",
-  "bokeh.models.DataTable",
-  "bokeh.models.Plot",
-  "bokeh.models.PolyDrawTool",
-  "bokeh.models.PolyEditTool",
-  "bokeh.models.Tool",
-  "bokeh.util.compiler.AttrDict",
-  "bokeh.util.compiler.get_cache_hook",
-  "bokeh.util.compiler.set_cache_hook",
-  "cartopy.crs",
-  "cartopy.crs.GOOGLE_MERCATOR",
-  "cartopy.crs.PlateCarree",
-  "cartopy.crs.Projection",
-  "cartopy.crs.epsg",
   "collections.Callable",
   "collections.Iterable",
   "cv2",
   "cv2.GC_INIT_WITH_MASK",
   "cv2.grabCut",
-  "datetime.datetime",
-  "datetime.timedelta",
-  "distutils.spawn",
   "earthsim.__init__._err",
   "earthsim.__init__._missing_cmd",
   "earthsim.gssha.__init__.CreateGSSHAModel",
@@ -50,64 +19,28 @@
   "fiona",
   "fiona.open",
   "function",
-  "functools.partial",
-  "gsshapy.modeling.GSSHAModel",
-  "hashlib",
   "hashlib.sha256",
   "holoviews.Store.options",
   "holoviews.core.util.pd.T",
   "holoviews.operation.datashader.rasterize.instance",
   "holoviews.streams.Stream._callbacks",
-  "json",
-  "json.dumps",
-  "json.load",
   "latRad",
-  "math",
-  "math.floor",
-  "math.log",
-  "math.pi",
-  "math.sin",
-  "numpy",
   "numpy.NaN",
-  "numpy.array",
-  "numpy.column_stack",
-  "numpy.dstack",
   "numpy.float64",
-  "numpy.hstack",
   "numpy.isfinite",
-  "numpy.linspace",
   "numpy.nan",
-  "numpy.ones",
-  "numpy.split",
-  "numpy.testing.assert_allclose",
-  "numpy.vstack",
-  "numpy.where",
-  "numpy.zeros",
-  "os",
   "os.environ.copy",
   "os.getcwd",
-  "os.makedirs",
   "os.path.abspath",
   "os.path.dirname",
   "os.path.isfile",
   "os.path.join",
-  "osgeo.gdal",
-  "osgeo.osr",
-  "osgeo.osr.SpatialReference",
-  "pandas",
-  "pandas.DataFrame",
-  "pandas.concat",
-  "pandas.read_table",
   "poly_draw",
   "poly_edit",
   "rasterize_op",
-  "subprocess",
-  "subprocess.PIPE",
-  "subprocess.Popen",
   "sys",
   "sys.exit",
   "t",
-  "warnings",
   "xmsmesh",
   "xmsmesh.meshing.MultiPolyMesherIo",
   "xmsmesh.meshing.PolyInput",
@@ -117,11 +50,19 @@
   "zoom"
  ],
  "deps": {
-  "PIL": [],
+  "PIL": [
+   "pillow/conda-forge/linux-64/pillow-7.2.0-py36hfc7c323_2"
+  ],
   "_missing_cmd": [],
-  "argparse": [],
-  "bokeh": [],
-  "cartopy": [],
+  "argparse": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "bokeh": [
+   "bokeh/conda-forge/linux-64/bokeh-2.3.2-py38h578d9bd_0"
+  ],
+  "cartopy": [
+   "cartopy/conda-forge/linux-64/cartopy-0.17.0-py27hbeedcd3_1007"
+  ],
   "collections": [],
   "cv2": [],
   "dask": [
@@ -130,12 +71,18 @@
   "datashader": [
    "datashader/conda-forge/noarch/datashader-0.6.8-py_0"
   ],
-  "datetime": [],
-  "distutils": [],
+  "datetime": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "distutils": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "earthsim": [],
   "fiona": [],
   "function": [],
-  "functools": [],
+  "functools": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "geopandas": [
    "geopandas-base/conda-forge/noarch/geopandas-base-0.9.0-pyhd8ed1ab_1",
    "geopandas/conda-forge/noarch/geopandas-0.5.0-py_0"
@@ -143,18 +90,34 @@
   "geoviews": [
    "geoviews-core/conda-forge/noarch/geoviews-core-1.6.6-py_0"
   ],
-  "gsshapy": [],
-  "hashlib": [],
+  "gsshapy": [
+   "gsshapy/conda-forge/linux-64/gsshapy-2.3.5-py27_0"
+  ],
+  "hashlib": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "holoviews": [
    "holoviews/conda-forge/noarch/holoviews-1.14.2-pyhd8ed1ab_0"
   ],
-  "json": [],
+  "json": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "latRad": [],
-  "math": [],
-  "numpy": [],
-  "os": [],
-  "osgeo": [],
-  "pandas": [],
+  "math": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "numpy": [
+   "numpy/conda-forge/linux-64/numpy-1.9.3-py27_blas_openblashb06ca3d_7"
+  ],
+  "os": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "osgeo": [
+   "gdal/conda-forge/linux-64/gdal-3.2.2-py39h409cc32_4"
+  ],
+  "pandas": [
+   "pandas/conda-forge/linux-64/pandas-0.25.0-py37hb3f55d8_0"
+  ],
   "panel": [
    "panel/conda-forge/noarch/panel-0.9.3-py_0"
   ],
@@ -175,12 +138,17 @@
   ],
   "rasterize_op": [],
   "shapely": [
+   "shapely/conda-forge/linux-64/shapely-1.5.17-np111py27_0",
    "solaris/conda-forge/noarch/solaris-0.4.0-pyhe05a262_0"
   ],
-  "subprocess": [],
+  "subprocess": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "sys": [],
   "t": [],
-  "warnings": [],
+  "warnings": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "xarray": [
    "xarray/conda-forge/noarch/xarray-0.15.0-py_0"
   ],

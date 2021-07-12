@@ -177,7 +177,6 @@
   "PyQt4.QtWebKit.QWebView",
   "PyQt4.QtXmlPatterns",
   "PyQt4.uic",
-  "PyQt5",
   "PyQt5.Qt",
   "PyQt5.Qt.PYQT_VERSION_STR",
   "PyQt5.Qt.QT_VERSION_STR",
@@ -219,7 +218,6 @@
   "PyQt5.QtWidgets",
   "PyQt5.QtWidgets.QWidget",
   "PyQt5.QtXmlPatterns",
-  "PyQt5.uic",
   "PySide",
   "PySide.QtCore",
   "PySide.QtCore.QEvent",
@@ -394,7 +392,6 @@
   "PySide.QtWebKit.QWebView",
   "PySide.QtXmlPatterns",
   "PySide.__version__",
-  "PySide2",
   "PySide2.QtCharts",
   "PySide2.QtCore",
   "PySide2.QtCore.QEvent",
@@ -427,7 +424,6 @@
   "PySide2.QtWidgets",
   "PySide2.QtWidgets.QWidget",
   "PySide2.QtXmlPatterns",
-  "PySide2.__version__",
   "QtCore.QString",
   "QtCore.Qt.UserRole",
   "QtGui.QIcon",
@@ -437,8 +433,6 @@
   "StringIO",
   "UserDict.DictMixin",
   "__builtin__",
-  "__future__.absolute_import",
-  "__future__.print_function",
   "_addItem",
   "_insertItem",
   "_isClickable",
@@ -453,41 +447,21 @@
   "_winreg",
   "builtins",
   "cPickle",
-  "codecs",
-  "collections",
   "collections.MutableMapping",
   "collections.abc.MutableMapping",
-  "contextlib",
-  "contextlib.contextmanager",
-  "distutils.version.LooseVersion",
   "func",
-  "importlib",
-  "importlib.import_module",
-  "io",
   "itertools.izip_longest",
   "itertools.zip_longest",
   "mock",
   "mock.patch.object",
-  "os",
-  "os.environ",
   "os.environ.get",
   "os.environ.lower",
   "os.environ.setdefault",
   "os.getcwd",
   "os.getcwdu",
-  "os.linesep",
-  "os.name",
   "os.path.dirname",
   "os.path.join",
-  "pickle",
-  "platform",
-  "platform.mac_ver",
-  "pytest",
-  "pytest.fail",
-  "pytest.main",
   "pytest.mark.skipif",
-  "pytest.raises",
-  "pytest.warns",
   "qcombobox_subclass._QComboBoxSubclass",
   "qtpy.QtCharts.QtCharts.QChart",
   "qtpy.QtCore.QAbstractListModel",
@@ -737,12 +711,10 @@
   "qtpy.__init__.binding_specified",
   "qtpy.__init__.initial_api",
   "qtpy.__init__.macos_version",
-  "reprlib",
   "sip",
   "sip.getapi",
   "sip.setapi",
   "str.lower",
-  "string",
   "string.lower",
   "sys",
   "sys.exit",
@@ -759,28 +731,29 @@
   "thread",
   "unicode",
   "userDataWrapper",
-  "warnings",
-  "warnings.catch_warnings",
-  "warnings.simplefilter",
-  "warnings.warn",
-  "winreg",
-  "xml.etree.ElementTree.ElementTree"
+  "winreg"
  ],
  "deps": {
   "CStringIO": [],
   "ConfigParser": [],
   "Model": [],
   "PyQt4": [],
-  "PyQt5": [],
+  "PyQt5": [
+   "pyqt-impl/conda-forge/linux-64/pyqt-impl-5.12.3-py36hcf76f5f_7"
+  ],
   "PySide": [],
-  "PySide2": [],
+  "PySide2": [
+   "pyside2/conda-forge/linux-64/pyside2-5.13.2-py36hbee1fde_1"
+  ],
   "QtCore": [],
   "QtGui": [],
   "QtWidgets": [],
   "StringIO": [],
   "UserDict": [],
   "__builtin__": [],
-  "__future__": [],
+  "__future__": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "_addItem": [],
   "_insertItem": [],
   "_isClickable": [],
@@ -795,34 +768,64 @@
   "_winreg": [],
   "builtins": [],
   "cPickle": [],
-  "codecs": [],
-  "collections": [],
-  "configparser": [
-   "configparser/conda-forge/noarch/configparser-5.0.0-py_0"
+  "codecs": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
   ],
-  "contextlib": [],
-  "distutils": [],
+  "collections": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "configparser": [
+   "configparser/conda-forge/noarch/configparser-5.0.0-py_0",
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "contextlib": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "distutils": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "func": [],
-  "importlib": [],
-  "io": [],
+  "importlib": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "io": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "itertools": [],
   "mock": [],
-  "os": [],
-  "pickle": [],
-  "platform": [],
-  "pytest": [],
+  "os": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "pickle": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "platform": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "pytest": [
+   "pytest/conda-forge/linux-64/pytest-4.6.3-py27_0",
+   "pytest/conda-forge/linux-64/pytest-6.0.2-py36hc560c46_0"
+  ],
   "qcombobox_subclass": [],
   "qtpy": [],
-  "reprlib": [],
+  "reprlib": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "sip": [],
   "str": [],
-  "string": [],
+  "string": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "sys": [],
   "thread": [],
   "unicode": [],
   "userDataWrapper": [],
-  "warnings": [],
+  "warnings": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "winreg": [],
-  "xml": []
+  "xml": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ]
  }
 }

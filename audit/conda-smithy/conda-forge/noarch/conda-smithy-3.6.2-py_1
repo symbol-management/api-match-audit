@@ -1,58 +1,23 @@
 {
  "bad": [
-  "Crypto.Cipher.PKCS1_v1_5",
-  "Crypto.Cipher.PKCS1_v1_5.new",
-  "Crypto.PublicKey.RSA",
-  "Crypto.PublicKey.RSA.importKey",
   "_render_template_exe_files",
   "add_compiler",
-  "argparse",
-  "argparse.ArgumentParser",
-  "argparse.Namespace",
   "azure_ci_utils.AzureConfig",
   "azure_ci_utils.default_config.token",
   "azure_ci_utils.get_build_id",
   "azure_ci_utils.register_repo",
   "azure_ci_utils.repo_registered",
-  "base64",
-  "base64.b64encode",
-  "collections",
-  "collections.OrderedDict",
   "collections.abc.Mapping",
   "collections.abc.Sequence",
-  "collections.defaultdict",
-  "conda",
-  "conda.__version__",
-  "conda.exports.VersionOrder",
-  "conda_build.__version__",
-  "conda_build.api",
-  "conda_build.conda_interface",
-  "conda_build.conda_interface.MatchSpec",
-  "conda_build.conda_interface.VersionOrder",
-  "conda_build.config.Config",
-  "conda_build.metadata.FIELDS",
   "conda_build.metadata.FIELDS.add",
   "conda_build.metadata.FIELDS.get",
   "conda_build.metadata.FIELDS.keys",
-  "conda_build.metadata.MetaData",
-  "conda_build.metadata.ensure_valid_license_family",
-  "conda_build.metadata.ns_cfg",
-  "conda_build.metadata.select_lines",
-  "conda_build.render",
-  "conda_build.utils",
-  "conda_build.utils.ensure_list",
   "conda_build.variants",
   "conda_build.variants.trim_empty_keys",
   "conda_smithy.__init__.get_versions",
   "configure_feedstock.copytree",
   "configure_feedstock.main",
-  "contextlib.contextmanager",
-  "copy",
-  "copy.deepcopy",
-  "datetime",
-  "distutils.version.LooseVersion",
   "feedstock_io.write_file",
-  "functools.partial",
   "git.GitCommandError",
   "git.InvalidGitRepositoryError",
   "git.Repo.clone_from",
@@ -60,38 +25,22 @@
   "github.create_github_repo",
   "github.gh_token",
   "github.remove_from_project",
-  "glob",
-  "glob.glob",
-  "hashlib",
   "hashlib.sha256",
-  "inspect",
-  "inspect.getfullargspec",
-  "io",
-  "io.open",
   "itertools",
   "itertools.chain",
   "itertools.chain.from_iterable",
   "itertools.product",
   "itertools.takewhile",
-  "json",
-  "json.loads",
   "license.lower",
   "license.strip",
   "lint_recipe.main",
-  "logging",
-  "logging.getLogger",
-  "multiprocessing",
   "multiprocessing.Pool",
   "multiprocessing.cpu_count",
-  "os",
   "os.chmod",
-  "os.environ",
   "os.environ.copy",
   "os.environ.get",
   "os.getcwd",
-  "os.getenv",
   "os.listdir",
-  "os.makedirs",
   "os.path.abspath",
   "os.path.basename",
   "os.path.dirname",
@@ -102,138 +51,163 @@
   "os.path.relpath",
   "os.path.splitext",
   "os.remove",
-  "os.removedirs",
   "os.stat",
-  "random",
-  "random.choice",
-  "random.shuffle",
-  "re",
   "re.DOTALL",
-  "re.compile",
-  "re.findall",
-  "re.match",
   "ruamel.yaml",
-  "shutil",
-  "shutil.copy",
-  "shutil.copymode",
-  "shutil.rmtree",
-  "stat",
-  "stat.S_IXGRP",
-  "stat.S_IXOTH",
-  "stat.S_IXUSR",
   "subcommand",
-  "subprocess",
-  "subprocess.call",
-  "subprocess.check_call",
   "sys",
   "sys.argv",
   "sys.exc_info",
   "sys.exit",
   "sys.stdout.flush",
   "sys.version_info",
-  "tarfile",
-  "tarfile.TarFile",
-  "tarfile.TarInfo",
-  "tarfile.open",
   "tarzip_open",
-  "tempfile",
-  "tempfile.mkdtemp",
-  "textwrap",
-  "textwrap.dedent",
   "time",
   "time.sleep",
-  "typing",
-  "typing.Any",
-  "typing.Dict",
-  "typing.List",
-  "typing.Optional",
-  "typing.Union",
-  "urllib.parse.urljoin",
   "utils.update_conda_forge_config",
   "utils.yaml.load",
   "variant_algebra.parse_variant",
-  "variant_algebra.variant_add",
-  "warnings",
-  "warnings.warn",
-  "zipfile",
-  "zipfile.ZipFile",
-  "zipfile.ZipInfo"
+  "variant_algebra.variant_add"
  ],
  "deps": {
-  "Crypto": [],
+  "Crypto": [
+   "pycryptodome/conda-forge/linux-64/pycryptodome-3.7.3-py37ha14ba45_0"
+  ],
   "_render_template_exe_files": [],
   "add_compiler": [],
-  "argparse": [],
+  "argparse": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "azure_ci_utils": [],
-  "base64": [],
-  "collections": [],
-  "conda": [],
-  "conda_build": [],
+  "base64": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "collections": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "conda": [
+   "conda/conda-forge/linux-64/conda-4.5.6-py35_0"
+  ],
+  "conda_build": [
+   "conda-build/conda-forge/linux-64/conda-build-2.0.12-py27_0"
+  ],
   "conda_smithy": [],
   "configure_feedstock": [],
-  "contextlib": [],
-  "copy": [],
-  "datetime": [],
-  "distutils": [],
+  "contextlib": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "copy": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "datetime": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "distutils": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "feedstock_io": [],
-  "functools": [],
+  "functools": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "git": [
    "gitpython/conda-forge/noarch/gitpython-3.0.8-py_0"
   ],
   "github": [
    "pygithub/conda-forge/noarch/pygithub-1.54.1-pyhd3deb0d_0"
   ],
-  "glob": [],
-  "hashlib": [],
-  "inspect": [],
-  "io": [],
+  "glob": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "hashlib": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "inspect": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "io": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "itertools": [],
   "jinja2": [
    "jinja2/conda-forge/noarch/jinja2-2.10-py_1"
   ],
-  "json": [],
+  "json": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "license": [],
   "lint_recipe": [],
-  "logging": [],
+  "logging": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "msrest": [
    "msrest/conda-forge/noarch/msrest-0.6.17-pyh9f0ad1d_0"
   ],
-  "multiprocessing": [],
-  "os": [],
-  "pathlib": [
-   "pathlib/conda-forge/noarch/pathlib-1.0.1-py_1"
+  "multiprocessing": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
   ],
-  "random": [],
-  "re": [],
+  "os": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "pathlib": [
+   "pathlib/conda-forge/noarch/pathlib-1.0.1-py_1",
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "random": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "re": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "requests": [
    "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
    "requests/conda-forge/noarch/requests-2.23.0-pyh8c360ce_2"
   ],
   "ruamel": [],
-  "shutil": [],
-  "stat": [],
+  "shutil": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "stat": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "subcommand": [],
-  "subprocess": [],
+  "subprocess": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "sys": [],
-  "tarfile": [],
+  "tarfile": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "tarzip_open": [],
-  "tempfile": [],
-  "textwrap": [],
+  "tempfile": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "textwrap": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "time": [],
   "toolz": [
    "toolz/conda-forge/noarch/toolz-0.8.2-py_3"
   ],
-  "typing": [],
-  "urllib": [],
+  "typing": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "urllib": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "utils": [],
   "variant_algebra": [],
   "vsts": [
    "vsts-python-api/conda-forge/noarch/vsts-python-api-0.1.18-py_0"
   ],
-  "warnings": [],
-  "yaml": [
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1"
+  "warnings": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
   ],
-  "zipfile": []
+  "yaml": [
+   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
+   "pyyaml/conda-forge/linux-64/pyyaml-5.4.1-py36h70b1f00_0"
+  ],
+  "zipfile": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ]
  }
 }

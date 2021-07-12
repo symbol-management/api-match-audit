@@ -2,84 +2,16 @@
  "bad": [
   "_assert_scheduler_info_result",
   "_run_test",
-  "asyncio",
-  "asyncio.get_event_loop",
-  "contextlib",
-  "contextlib.suppress",
-  "dagster.Any",
-  "dagster.AssetMaterialization",
   "dagster.AssetMaterialization.file",
-  "dagster.Bool",
-  "dagster.DagsterInvariantViolationError",
-  "dagster.DagsterType",
-  "dagster.DagsterUnmetExecutorRequirementsError",
-  "dagster.Dict",
-  "dagster.Enum",
-  "dagster.EnumValue",
-  "dagster.EventMetadataEntry",
   "dagster.EventMetadataEntry.json",
-  "dagster.Executor",
-  "dagster.Field",
-  "dagster.Float",
-  "dagster.InputDefinition",
-  "dagster.Int",
-  "dagster.ModeDefinition",
-  "dagster.Output",
-  "dagster.OutputDefinition",
-  "dagster.Permissive",
-  "dagster.Selector",
-  "dagster.Shape",
-  "dagster.String",
-  "dagster.StringSource",
-  "dagster.TypeCheck",
-  "dagster.check",
-  "dagster.check.failed",
-  "dagster.check.inst",
-  "dagster.check.inst_param",
-  "dagster.check.invariant",
-  "dagster.check.param_invariant",
-  "dagster.cli.workspace.get_workspace_from_kwargs",
-  "dagster.core.definitions.executor.check_cross_process_constraints",
-  "dagster.core.definitions.executor.default_executors",
-  "dagster.core.definitions.executor.executor",
-  "dagster.core.definitions.reconstructable.ReconstructablePipeline",
-  "dagster.core.definitions.reconstructable.ReconstructablePipeline.for_file",
-  "dagster.core.events.DagsterEvent",
-  "dagster.core.events.DagsterEventType",
   "dagster.core.events.DagsterEventType.PIPELINE_FAILURE",
   "dagster.core.events.DagsterEventType.STEP_FAILURE",
   "dagster.core.events.DagsterEventType.STEP_START",
-  "dagster.core.execution.api.create_execution_plan",
-  "dagster.core.execution.api.execute_plan",
   "dagster.core.execution.context.system.SystemPipelineExecutionContext",
-  "dagster.core.execution.plan.plan.ExecutionPlan",
   "dagster.core.execution.retries.Retries",
   "dagster.core.execution.retries.Retries.disabled_mode",
-  "dagster.core.instance.DagsterInstance",
-  "dagster.core.instance.DagsterInstance.from_ref",
-  "dagster.core.test_utils.instance_for_test",
-  "dagster.core.test_utils.instance_for_test_tempdir",
-  "dagster.core.test_utils.nesting_composite_pipeline",
-  "dagster.core.utils.check_dagster_package_version",
-  "dagster.dagster_type_loader",
-  "dagster.dagster_type_materializer",
-  "dagster.execute_pipeline",
-  "dagster.execute_pipeline_iterator",
-  "dagster.execute_solid",
-  "dagster.file_relative_path",
-  "dagster.pipeline",
-  "dagster.reconstructable",
-  "dagster.resource",
-  "dagster.seven",
   "dagster.seven.TemporaryDirectory",
-  "dagster.seven.json.loads",
-  "dagster.solid",
-  "dagster.utils.file_relative_path",
-  "dagster.utils.frozentags",
-  "dagster.utils.iterate_with_context",
   "dagster.utils.raise_interrupts_immediately",
-  "dagster.utils.send_interrupt",
-  "dagster.utils.test.get_temp_dir",
   "dagster_dask.__init__.__version__",
   "dagster_dask.data_frame.DataFrameReadTypes.keys",
   "dagster_dask.data_frame.DataFrameToTypes.keys",
@@ -107,34 +39,27 @@
   "dask.distributed.as_completed",
   "dask_jobqueue.LSFCluster",
   "dask_jobqueue.OARCluster",
-  "dask_yarn.YarnCluster",
-  "pytest",
   "pytest.mark.parametrize",
-  "pytest.param",
-  "pytest.raises",
-  "pytest.warns",
-  "re",
-  "re.compile",
-  "re.escape",
   "read_function",
-  "shutil",
-  "shutil.rmtree",
-  "threading.Thread",
   "time",
   "time.sleep",
   "time.time",
   "to_function",
   "util_func",
-  "utils.DataFrameUtilities.items",
-  "warnings",
-  "warnings.warn"
+  "utils.DataFrameUtilities.items"
  ],
  "deps": {
   "_assert_scheduler_info_result": [],
   "_run_test": [],
-  "asyncio": [],
-  "contextlib": [],
-  "dagster": [],
+  "asyncio": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "contextlib": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "dagster": [
+   "dagster/conda-forge/linux-64/dagster-0.11.10-py37h89c1867_0"
+  ],
   "dagster_dask": [],
   "dagster_graphql": [
    "dagster-graphql/conda-forge/noarch/dagster-graphql-0.8.2-pyhc8dfbb8_0"
@@ -152,19 +77,32 @@
   "dask_kubernetes": [
    "dask-kubernetes/conda-forge/noarch/dask-kubernetes-0.10.0-py_0"
   ],
-  "dask_yarn": [],
+  "dask_yarn": [
+   "dask-yarn/conda-forge/linux-64/dask-yarn-0.2.0-py35_0"
+  ],
   "graphql": [
    "graphql-core/conda-forge/noarch/graphql-core-2.0-py_0"
   ],
-  "pytest": [],
-  "re": [],
+  "pytest": [
+   "pytest/conda-forge/linux-64/pytest-4.6.3-py27_0",
+   "pytest/conda-forge/linux-64/pytest-6.0.2-py36hc560c46_0"
+  ],
+  "re": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "read_function": [],
-  "shutil": [],
-  "threading": [],
+  "shutil": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "threading": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "time": [],
   "to_function": [],
   "util_func": [],
   "utils": [],
-  "warnings": []
+  "warnings": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ]
  }
 }
