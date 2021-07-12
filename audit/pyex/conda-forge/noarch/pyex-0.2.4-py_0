@@ -1,10 +1,6 @@
 {
  "bad": [
   "IPython.display.Image",
-  "PIL.Image",
-  "PIL.Image.open",
-  "__future__.print_function",
-  "collections.namedtuple",
   "commodities.CommoditiesPoints.BRENT.value",
   "commodities.CommoditiesPoints.DIESEL.value",
   "commodities.CommoditiesPoints.GASMID.value",
@@ -21,8 +17,6 @@
   "common._SSE_URL_PREFIX_ALL.format",
   "common._SSE_URL_PREFIX_ALL_SANDBOX.format",
   "common._SSE_URL_PREFIX_SANDBOX.format",
-  "datetime.datetime",
-  "datetime.datetime.now",
   "datetime.datetime.today",
   "economic.EconomicPoints.CDJ.value",
   "economic.EconomicPoints.CDNJ.value",
@@ -42,38 +36,22 @@
   "economic.EconomicPoints.US30.value",
   "economic.EconomicPoints.US5.value",
   "economic.EconomicPoints.VEHICLES.value",
-  "functools.lru_cache",
-  "functools.partial",
-  "functools.wraps",
-  "io.BytesIO",
   "itertools",
   "itertools.chain",
   "itertools.chain.from_iterable",
-  "json",
   "list_orig",
   "meth",
   "mock.MagicMock",
   "mock.patch",
-  "multiprocessing.pool.ThreadPool",
-  "numpy",
   "numpy.nan",
   "on_close",
   "on_data",
   "on_open",
-  "os",
-  "os.environ",
   "os.environ.get",
   "os.environ.pop",
-  "os.makedirs",
-  "os.path",
   "os.path.abspath",
   "os.path.exists",
   "os.path.join",
-  "pandas",
-  "pandas.DataFrame",
-  "pandas.concat",
-  "pandas.io.json.json_normalize",
-  "pandas.to_datetime",
   "points.points.__doc__",
   "pyEX.premium.auditanalytics.__init__._UTC",
   "pyEX.premium.auditanalytics.__init__._base",
@@ -136,45 +114,65 @@
   "studies.peerCorrelation",
   "studies.sar",
   "studies.sma",
-  "tempfile",
-  "tempfile.gettempdir",
   "time",
   "time.sleep",
   "ujson",
   "ujson.JSONDecodeError",
   "ujson.loads",
-  "urllib.parse.urlparse",
   "urlparse.urlparse"
  ],
  "deps": {
   "IPython": [],
-  "PIL": [],
-  "__future__": [],
-  "collections": [],
+  "PIL": [
+   "pillow/conda-forge/linux-64/pillow-7.2.0-py36hfc7c323_2"
+  ],
+  "__future__": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "collections": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "commodities": [],
   "common": [],
-  "datetime": [],
+  "datetime": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "deprecation": [
    "deprecation/conda-forge/noarch/deprecation-2.0.1-py_0"
   ],
   "economic": [],
   "enum": [
-   "privy/conda-forge/noarch/privy-6.0.0-py_0"
+   "privy/conda-forge/noarch/privy-6.0.0-py_0",
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
   ],
-  "functools": [],
-  "io": [],
+  "functools": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "io": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "itertools": [],
-  "json": [],
+  "json": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "list_orig": [],
   "meth": [],
   "mock": [],
-  "multiprocessing": [],
-  "numpy": [],
+  "multiprocessing": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "numpy": [
+   "numpy/conda-forge/linux-64/numpy-1.9.3-py27_blas_openblashb06ca3d_7"
+  ],
   "on_close": [],
   "on_data": [],
   "on_open": [],
-  "os": [],
-  "pandas": [],
+  "os": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "pandas": [
+   "pandas/conda-forge/linux-64/pandas-0.25.0-py37hb3f55d8_0"
+  ],
   "points": [],
   "pyEX": [],
   "pytz": [
@@ -188,7 +186,8 @@
   ],
   "six": [
    "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
-   "privy/conda-forge/noarch/privy-6.0.0-py_0"
+   "privy/conda-forge/noarch/privy-6.0.0-py_0",
+   "six/conda-forge/linux-64/six-1.14.0-py36_0"
   ],
   "socketIO_client_nexus": [
    "socketio-client-nexus/conda-forge/noarch/socketio-client-nexus-0.7.6-py_0"
@@ -198,13 +197,17 @@
    "sseclient/conda-forge/noarch/sseclient-0.0.22-py_0"
   ],
   "studies": [],
-  "tempfile": [],
+  "tempfile": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "temporalcache": [
    "temporal-cache/conda-forge/noarch/temporal-cache-0.1.3-pyhd8ed1ab_0"
   ],
   "time": [],
   "ujson": [],
-  "urllib": [],
+  "urllib": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "urlparse": []
  }
 }

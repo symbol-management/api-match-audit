@@ -1,29 +1,11 @@
 {
  "bad": [
   "AST",
-  "IPython.core.compilerop.CachingCompiler",
-  "IPython.core.inputsplitter.IPythonInputSplitter",
-  "IPython.core.interactiveshell.InteractiveShell",
-  "IPython.get_ipython",
-  "IPython.paths",
-  "IPython.paths.locate_profile",
-  "IPython.utils.capture.capture_output",
-  "argparse",
-  "argparse.ArgumentParser",
-  "ast",
   "ast.Assign",
   "ast.Module",
-  "ast.NodeTransformer",
-  "ast.NodeTransformer.generic_visit",
   "ast.Str",
   "ast.Tuple",
-  "ast.dump",
-  "ast.fix_missing_locations",
-  "ast.increment_lineno",
-  "ast.literal_eval",
-  "ast.parse",
   "capture.capture_output",
-  "codeop.Compile",
   "compile.AST",
   "compile.Compile",
   "compile.__IPYTHON__",
@@ -33,52 +15,15 @@
   "compile_python.Compiler",
   "compile_python.PythonExporter",
   "compile_python.PythonExporter.exclude_input_prompt",
-  "contextlib.ExitStack",
-  "contextlib.contextmanager",
-  "contextlib.redirect_stderr",
-  "contextlib.redirect_stdout",
   "decoder.load",
   "dict.pop",
-  "doctest.DocTestSuite",
-  "doctest.FAIL_FAST",
-  "doctest.OPTIONFLAGS_BY_NAME",
   "doctest.OPTIONFLAGS_BY_NAME.keys",
-  "doctest.testfile",
-  "doctest.testmod",
-  "functools.partial",
-  "functools.partialmethod",
-  "functools.singledispatch",
-  "glob.glob",
-  "importlib",
   "importlib._bootstrap._SpecMethods",
-  "importlib._bootstrap_external.FileFinder",
-  "importlib.machinery.FileFinder",
   "importlib.machinery.FileFinder.path_hook",
-  "importlib.machinery.SourceFileLoader",
-  "importlib.reload",
-  "importlib.util.LazyLoader",
-  "importlib.util.LazyLoader.factory",
-  "importlib.util.module_from_spec",
-  "importlib.util.spec_from_loader",
   "importnb.Notebook.from_filename",
   "importnb.compiler_python.ScriptExporter",
-  "inspect",
-  "inspect.Parameter",
   "inspect.Parameter.KEYWORD_ONLY",
-  "inspect.Signature",
-  "inspect.getclosurevars",
-  "inspect.getsource",
-  "io.StringIO",
-  "json",
-  "json.JSONDecodeError",
-  "json.decoder.JSONDecoder",
-  "json.decoder.JSONObject",
-  "json.decoder.WHITESPACE",
   "json.decoder.WHITESPACE.match",
-  "json.decoder.WHITESPACE_STR",
-  "json.dump",
-  "json.load",
-  "json.loads",
   "loader.Lazy",
   "loader.Notebook",
   "loader.Notebook.from_filename",
@@ -92,56 +37,67 @@
   "nbtest.testmod",
   "next.rsplit",
   "object.update",
-  "os",
   "os.path.abspath",
   "os.path.basename",
   "os.path.join",
   "os.path.splitext",
-  "os.sep",
   "parameterize.Parameterize",
-  "pathlib.Path",
-  "pytest",
-  "pytest.Module",
-  "setuptools.command.build_py.build_py",
   "sys",
   "sys.path_hooks",
   "sys.path_hooks.insert",
   "sys.path_hooks.pop",
   "sys.path_importer_cache.clear",
   "sys.stderr",
-  "textwrap.dedent",
-  "traceback.format_exc",
-  "traceback.print_exc",
-  "types.ModuleType",
-  "unittest.TestCase",
-  "unittest.TestProgram",
-  "warnings.warn",
   "watchdog.tricks.ShellCommandTrick"
  ],
  "deps": {
   "AST": [],
-  "IPython": [],
-  "argparse": [],
-  "ast": [],
+  "IPython": [
+   "ipython/conda-forge/linux-64/ipython-7.23.0-py39hef51801_0"
+  ],
+  "argparse": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "ast": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "black": [
    "black/conda-forge/noarch/black-18.5b1-py_0"
   ],
   "capture": [],
-  "codeop": [],
+  "codeop": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "compile": [],
   "compile_ipython": [],
   "compile_python": [],
-  "contextlib": [],
+  "contextlib": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "decoder": [],
   "dict": [],
-  "doctest": [],
-  "functools": [],
-  "glob": [],
-  "importlib": [],
+  "doctest": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "functools": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "glob": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "importlib": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "importnb": [],
-  "inspect": [],
-  "io": [],
-  "json": [],
+  "inspect": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "io": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "json": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "loader": [],
   "nbconvert": [
    "nbconvert/conda-forge/noarch/nbconvert-5.5.0-py_0"
@@ -152,17 +108,37 @@
   "nbtest": [],
   "next": [],
   "object": [],
-  "os": [],
+  "os": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "parameterize": [],
-  "pathlib": [],
-  "pytest": [],
-  "setuptools": [],
+  "pathlib": [
+   "pathlib/conda-forge/noarch/pathlib-1.0.1-py_1",
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "pytest": [
+   "pytest/conda-forge/linux-64/pytest-4.6.3-py27_0",
+   "pytest/conda-forge/linux-64/pytest-6.0.2-py36hc560c46_0"
+  ],
+  "setuptools": [
+   "setuptools/conda-forge/linux-64/setuptools-41.2.0-py27_0"
+  ],
   "sys": [],
-  "textwrap": [],
-  "traceback": [],
-  "types": [],
-  "unittest": [],
-  "warnings": [],
+  "textwrap": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "traceback": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "types": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "unittest": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "warnings": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "watchdog": []
  }
 }

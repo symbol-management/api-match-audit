@@ -1,10 +1,6 @@
 {
  "bad": [
   "HTMLStripper",
-  "PIL.Image",
-  "PIL.Image.ADAPTIVE",
-  "PIL.Image.new",
-  "PIL.Image.open",
   "Renderer",
   "Renderer._select",
   "__future__.annotations",
@@ -63,6 +59,10 @@
   "img2unicode.Renderer",
   "inner_parser",
   "input.setter",
+  "logging",
+  "logging.config",
+  "logging.config.dictConfig",
+  "logging.getLogger",
   "mtable.MarkupTable",
   "mtable.MarkupTable.from_html",
   "node_to_text",
@@ -114,12 +114,13 @@
   "timg",
   "timg.Ansi24HblockMethod",
   "timg.SixelMethod",
-  "typing.Literal",
-  "zmq.asyncio"
+  "typing.Literal"
  ],
  "deps": {
   "HTMLStripper": [],
-  "PIL": [],
+  "PIL": [
+   "pillow/conda-forge/linux-64/pillow-7.2.0-py36hfc7c323_2"
+  ],
   "Renderer": [],
   "__future__": [],
   "_make_handler": [],
@@ -192,9 +193,7 @@
   "jupyter_client": [
    "jupyter_client/conda-forge/noarch/jupyter_client-6.1.7-py_0"
   ],
-  "logging": [
-   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
-  ],
+  "logging": [],
   "math": [
    "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
   ],
@@ -256,6 +255,8 @@
   "typing": [
    "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
   ],
-  "zmq": []
+  "zmq": [
+   "pyzmq/conda-forge/linux-64/pyzmq-21.0.1-py36h81c33ee_0"
+  ]
  }
 }

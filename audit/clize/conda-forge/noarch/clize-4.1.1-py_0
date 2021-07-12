@@ -11,8 +11,6 @@
   "Shell",
   "Spam",
   "Target",
-  "__future__.print_function",
-  "__future__.unicode_literals",
   "attr.ib",
   "attr.s",
   "checker",
@@ -29,15 +27,9 @@
   "clize.parser.parse",
   "clize.runner.helper",
   "cls",
-  "collections.OrderedDict",
-  "collections.defaultdict",
-  "contextlib",
-  "contextlib.contextmanager",
   "conv",
-  "datetime.datetime",
   "dateutil.parser.value_converter",
   "decorate",
-  "difflib.SequenceMatcher",
   "docutils.frontend.OptionParser",
   "docutils.nodes",
   "docutils.nodes.GenericNodeVisitor",
@@ -50,29 +42,15 @@
   "docutils.nodes.literal_block",
   "docutils.nodes.paragraph",
   "docutils.nodes.system_message",
-  "docutils.parsers.rst.Parser",
-  "docutils.transforms",
-  "docutils.transforms.Transformer",
-  "docutils.transforms.references",
-  "docutils.transforms.references.Substitutions",
   "docutils.utils.new_document",
   "fn",
   "fn.signature",
   "func",
   "func.__doc__",
   "func.__name__",
-  "functools.partial",
-  "functools.update_wrapper",
-  "functools.wraps",
   "get_usages",
   "help.show_full_usage",
   "help.show_help",
-  "inspect",
-  "inspect.cleandoc",
-  "inspect.getdoc",
-  "io",
-  "io.StringIO",
-  "io.open",
   "itertools",
   "itertools.chain",
   "itertools.chain.from_iterable",
@@ -82,7 +60,6 @@
   "lines_getter",
   "od",
   "ordereddict.OrderedDict",
-  "os",
   "os.F_OK",
   "os.W_OK",
   "os.access",
@@ -98,21 +75,12 @@
   "os.path.join",
   "os.path.relpath",
   "os.path.splitext",
-  "pathlib",
-  "pathlib2",
-  "pathlib2.Path",
-  "pathlib2.PurePath",
   "raiseSysexitIfArg",
-  "re",
-  "re.compile",
   "repeated_test",
   "repeated_test.WithTestClass",
   "repeated_test.tup",
   "ru",
   "ru.owner",
-  "shutil",
-  "shutil.rmtree",
-  "shutil.which",
   "sigtools.modifiers",
   "sigtools.modifiers.annotate",
   "sigtools.modifiers.autokwoargs",
@@ -133,8 +101,6 @@
   "sphinx.domains.python.PythonDomain.directives",
   "sphinx.ext.autodoc.AutoDirective",
   "sphinx.ext.autodoc.AutoDirective._registry",
-  "stat",
-  "stat.S_IRUSR",
   "sys",
   "sys.argv",
   "sys.executable",
@@ -146,19 +112,10 @@
   "sys.stdin",
   "sys.stdout",
   "sys.version_info",
-  "tempfile",
-  "tempfile.mkdtemp",
-  "textwrap",
-  "textwrap.wrap",
-  "unittest",
-  "unittest.TestCase",
   "unittest2",
   "unittest2.TestCase",
   "util.Fixtures",
-  "warnings",
   "warnings.filters.pop",
-  "warnings.filterwarnings",
-  "warnings.warn",
   "which"
  ],
  "deps": {
@@ -172,7 +129,9 @@
   "Shell": [],
   "Spam": [],
   "Target": [],
-  "__future__": [],
+  "__future__": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "attr": [
    "attrs/conda-forge/noarch/attrs-18.2.0-py_0"
   ],
@@ -180,51 +139,89 @@
   "cli": [],
   "clize": [],
   "cls": [],
-  "collections": [],
-  "contextlib": [],
+  "collections": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "contextlib": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "conv": [],
-  "datetime": [],
+  "datetime": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "dateutil": [
    "python-dateutil/conda-forge/noarch/python-dateutil-2.7.4-py_0"
   ],
   "decorate": [],
-  "difflib": [],
-  "docutils": [],
+  "difflib": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "docutils": [
+   "docutils/conda-forge/linux-64/docutils-0.14-py27_0"
+  ],
   "fn": [],
   "func": [],
-  "functools": [],
+  "functools": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "get_usages": [],
   "help": [],
-  "inspect": [],
-  "io": [],
+  "inspect": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "io": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "itertools": [],
   "lines_getter": [],
   "od": [],
   "ordereddict": [],
-  "os": [],
-  "pathlib": [],
-  "pathlib2": [],
+  "os": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "pathlib": [
+   "pathlib/conda-forge/noarch/pathlib-1.0.1-py_1",
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "pathlib2": [
+   "pathlib2/conda-forge/linux-64/pathlib2-2.3.5-py36h5fab9bb_3"
+  ],
   "raiseSysexitIfArg": [],
-  "re": [],
+  "re": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "repeated_test": [],
   "ru": [],
-  "shutil": [],
+  "shutil": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "sigtools": [],
   "six": [
    "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
-   "privy/conda-forge/noarch/privy-6.0.0-py_0"
+   "privy/conda-forge/noarch/privy-6.0.0-py_0",
+   "six/conda-forge/linux-64/six-1.14.0-py36_0"
   ],
   "sphinx": [
    "sphinx/conda-forge/noarch/sphinx-3.4.2-pyhd8ed1ab_0"
   ],
-  "stat": [],
+  "stat": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "sys": [],
-  "tempfile": [],
-  "textwrap": [],
-  "unittest": [],
+  "tempfile": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "textwrap": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "unittest": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "unittest2": [],
   "util": [],
-  "warnings": [],
+  "warnings": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "which": []
  }
 }

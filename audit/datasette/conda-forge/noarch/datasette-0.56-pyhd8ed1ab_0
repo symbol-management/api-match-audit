@@ -5,30 +5,14 @@
   "_sql_params_pks",
   "add_route",
   "app.pm.hook.publish_subcommand",
-  "asgi_csrf",
-  "asgi_csrf.asgi_csrf",
   "asgi_send",
   "asgi_send_file",
   "asgi_send_html",
   "asgi_start",
-  "asyncio",
-  "asyncio.Task",
   "asyncio.all_tasks",
-  "asyncio.get_event_loop",
-  "asyncio.iscoroutine",
-  "base64",
-  "base64.b64encode",
   "baseconv",
   "baseconv.base62.decode",
   "check_databases",
-  "collections",
-  "collections.Counter",
-  "collections.OrderedDict",
-  "collections.namedtuple",
-  "concurrent.futures",
-  "contextlib.contextmanager",
-  "csv",
-  "csv.writer",
   "datasette.plugins.pm.hook.database_actions",
   "datasette.plugins.pm.hook.register_facet_classes",
   "datasette.plugins.pm.hook.render_cell",
@@ -90,8 +74,6 @@
   "datasette.utils.internal_db.populate_schema_tables",
   "datasette.utils.resolve_table_and_format",
   "datasette.utils.sqlite3.OperationalError",
-  "datetime",
-  "datetime.datetime.utcnow",
   "extra_template_data",
   "filter.display",
   "filter.human_clause",
@@ -99,46 +81,21 @@
   "filter.no_argument",
   "filter.where_clause",
   "fn",
-  "glob",
   "handler",
-  "hashlib",
   "hashlib.md5",
   "hashlib.sha1",
   "hashlib.sha256",
-  "html.escape",
-  "http.cookies.Morsel",
   "http.cookies.Morsel._reserved",
-  "http.cookies.SimpleCookie",
-  "importlib",
-  "importlib.import_module",
-  "inspect",
-  "inspect.iscoroutinefunction",
-  "inspect.signature",
   "inspect_",
   "itertools",
   "itertools.chain.from_iterable",
-  "janus",
-  "janus.Queue",
-  "json",
-  "json.JSONDecodeError",
-  "json.JSONEncoder",
   "json.JSONEncoder.default",
-  "json.decoder.JSONDecodeError",
-  "json.dumps",
-  "json.load",
-  "json.loads",
   "klass",
   "markupsafe.Markup",
-  "mimetypes.guess_type",
-  "numbers",
-  "numbers.Number",
-  "os",
   "os.chdir",
-  "os.environ",
   "os.getcwd",
   "os.link",
   "os.listdir",
-  "os.makedirs",
   "os.mkdir",
   "os.path.abspath",
   "os.path.basename",
@@ -150,13 +107,6 @@
   "os.scandir",
   "os.symlink",
   "os.urandom",
-  "pathlib",
-  "pathlib.Path",
-  "pkg_resources",
-  "pkg_resources.DistributionNotFound",
-  "pkg_resources.get_distribution",
-  "pkg_resources.resource_filename",
-  "pkg_resources.resource_isdir",
   "plugins.pm.hook",
   "plugins.pm.hook.actor_from_request",
   "plugins.pm.hook.asgi_wrapper",
@@ -173,35 +123,13 @@
   "pysqlite3",
   "pysqlite3.connect",
   "pysqlite3.enable_callback_tracebacks",
-  "queue",
-  "queue.Queue",
-  "re",
-  "re.compile",
-  "re.escape",
-  "re.match",
   "receive",
-  "runpy.run_module",
-  "secrets",
-  "secrets.compare_digest",
   "send",
-  "shlex",
-  "shlex.quote",
   "should_remove",
-  "shutil",
-  "shutil.Error",
-  "shutil.copy",
-  "shutil.copy2",
-  "shutil.copyfile",
-  "shutil.copystat",
-  "shutil.which",
   "sqlite.sqlite3.Cursor",
   "sqlite.sqlite3.OperationalError",
   "sqlite.sqlite3.Row",
   "sqlite.sqlite3.connect",
-  "sqlite3",
-  "subprocess.call",
-  "subprocess.check_call",
-  "subprocess.check_output",
   "sys",
   "sys.argv",
   "sys.exit",
@@ -212,32 +140,9 @@
   "sys.version_info",
   "table_column_details",
   "table_exists",
-  "tempfile",
-  "tempfile.TemporaryDirectory",
-  "textwrap",
-  "textwrap.dedent",
-  "threading",
-  "threading.Thread",
-  "threading.enumerate",
-  "threading.local",
   "time",
   "time.perf_counter",
   "time.time",
-  "traceback",
-  "traceback.extract_stack",
-  "traceback.format_list",
-  "traceback.print_exc",
-  "types",
-  "types.ModuleType",
-  "urllib",
-  "urllib.parse",
-  "urllib.parse.parse_qs",
-  "urllib.parse.parse_qsl",
-  "urllib.parse.quote",
-  "urllib.parse.quote_plus",
-  "urllib.parse.unquote_plus",
-  "urllib.parse.urlencode",
-  "urllib.parse.urlunparse",
   "utils.asgi.Response.redirect",
   "utils.sqlite.sqlite3.OperationalError",
   "utils.sqlite.sqlite3.Row",
@@ -245,12 +150,6 @@
   "utils.sqlite3.DatabaseError",
   "utils.sqlite3.OperationalError",
   "utils.sqlite3.connect",
-  "uuid",
-  "uuid.NAMESPACE_DNS",
-  "uuid.uuid5",
-  "uvicorn",
-  "uvicorn.__version__",
-  "uvicorn.run",
   "view",
   "views.base.ureg.define",
   "views.database.DatabaseDownload.as_view",
@@ -265,8 +164,6 @@
   "views.special.PermissionsDebugView.as_view",
   "views.table.RowView.as_view",
   "views.table.TableView.as_view",
-  "webbrowser",
-  "webbrowser.open",
   "wrapper"
  ],
  "deps": {
@@ -278,7 +175,9 @@
    "aiofiles/conda-forge/noarch/aiofiles-0.5.0-py_0"
   ],
   "app": [],
-  "asgi_csrf": [],
+  "asgi_csrf": [
+   "asgi-csrf/conda-forge/noarch/asgi-csrf-0.8-pyhd8ed1ab_0"
+  ],
   "asgi_send": [],
   "asgi_send_file": [],
   "asgi_send_html": [],
@@ -286,8 +185,12 @@
   "asgiref": [
    "asgiref/conda-forge/noarch/asgiref-3.2.9-py_0"
   ],
-  "asyncio": [],
-  "base64": [],
+  "asyncio": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "base64": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "baseconv": [],
   "check_databases": [],
   "click": [
@@ -296,93 +199,166 @@
   "click_default_group": [
    "click-default-group/conda-forge/noarch/click-default-group-1.2.2-pyhd8ed1ab_1"
   ],
-  "collections": [],
-  "concurrent": [],
-  "contextlib": [],
-  "csv": [],
+  "collections": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "concurrent": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "contextlib": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "csv": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "datasette": [],
-  "datetime": [],
+  "datetime": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "decorator": [
    "decorator/conda-forge/noarch/decorator-4.3.0-py_0"
   ],
   "extra_template_data": [],
   "filter": [],
   "fn": [],
-  "glob": [],
+  "glob": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "handler": [],
-  "hashlib": [],
-  "html": [],
-  "http": [],
+  "hashlib": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "html": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "http": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "httpx": [
    "httpx/conda-forge/noarch/httpx-0.12.0-py_0"
   ],
   "hupper": [
    "hupper/conda-forge/noarch/hupper-1.8-py_0"
   ],
-  "importlib": [],
-  "inspect": [],
+  "importlib": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "inspect": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "inspect_": [],
   "itertools": [],
   "itsdangerous": [
    "itsdangerous/conda-forge/noarch/itsdangerous-1.1.0-py_0"
   ],
-  "janus": [],
+  "janus": [
+   "janus/conda-forge/noarch/janus-0.4.0-py_0"
+  ],
   "jinja2": [
    "jinja2/conda-forge/noarch/jinja2-2.10-py_1"
   ],
-  "json": [],
+  "json": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "klass": [],
   "markupsafe": [],
   "mergedeep": [
    "mergedeep/conda-forge/noarch/mergedeep-1.3.0-pyhd8ed1ab_0"
   ],
-  "mimetypes": [],
-  "numbers": [],
-  "os": [],
-  "pathlib": [],
+  "mimetypes": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "numbers": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "os": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "pathlib": [
+   "pathlib/conda-forge/noarch/pathlib-1.0.1-py_1",
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "pdb": [
-   "pdbpp/conda-forge/noarch/pdbpp-0.9.5-py_1"
+   "pdbpp/conda-forge/noarch/pdbpp-0.9.5-py_1",
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
   ],
   "pint": [
    "pint/conda-forge/noarch/pint-0.11-py_1"
   ],
-  "pkg_resources": [],
+  "pkg_resources": [
+   "setuptools/conda-forge/linux-64/setuptools-41.2.0-py27_0"
+  ],
   "pluggy": [
    "pluggy/conda-forge/noarch/pluggy-0.10.0-py_0"
   ],
   "plugins": [],
   "pysqlite3": [],
-  "queue": [],
-  "re": [],
+  "queue": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "re": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "receive": [],
-  "runpy": [],
-  "secrets": [],
+  "runpy": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "secrets": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "send": [],
-  "shlex": [],
+  "shlex": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "should_remove": [],
-  "shutil": [],
+  "shutil": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "sqlite": [],
-  "sqlite3": [],
-  "subprocess": [],
+  "sqlite3": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "subprocess": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "sys": [],
   "table_column_details": [],
   "table_exists": [],
-  "tempfile": [],
-  "textwrap": [],
-  "threading": [],
+  "tempfile": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "textwrap": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "threading": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "time": [],
-  "traceback": [],
-  "types": [],
-  "urllib": [],
+  "traceback": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "types": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "urllib": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "utils": [],
-  "uuid": [],
-  "uvicorn": [],
+  "uuid": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "uvicorn": [
+   "uvicorn/conda-forge/linux-64/uvicorn-0.4.6-py36_0"
+  ],
   "view": [],
   "views": [],
-  "webbrowser": [],
+  "webbrowser": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "wrapper": [],
   "yaml": [
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1"
+   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
+   "pyyaml/conda-forge/linux-64/pyyaml-5.4.1-py36h70b1f00_0"
   ]
  }
 }

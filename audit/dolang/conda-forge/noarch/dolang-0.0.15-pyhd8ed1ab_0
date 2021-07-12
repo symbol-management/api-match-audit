@@ -1,6 +1,5 @@
 {
  "bad": [
-  "ast",
   "ast.AST",
   "ast.Assign",
   "ast.BinOp",
@@ -18,8 +17,6 @@
   "ast.LtE",
   "ast.Module",
   "ast.Name",
-  "ast.NodeTransformer",
-  "ast.NodeVisitor",
   "ast.Num",
   "ast.Pow",
   "ast.Store",
@@ -30,66 +27,26 @@
   "ast.UnaryOp",
   "ast.arg",
   "ast.arguments",
-  "ast.fix_missing_locations",
-  "ast.parse",
-  "codegen.to_source",
-  "collections.OrderedDict",
-  "copy",
-  "copy.copy",
-  "copy.deepcopy",
   "dolo.compiler.language.constants",
   "dolo.compiler.language.functions",
   "dolo.compiler.language.functions.keys",
   "f",
   "fun",
-  "functools",
-  "functools.reduce",
-  "functools.wraps",
   "generator_visit",
-  "io",
-  "io.StringIO",
   "matfun",
-  "math",
-  "math.atan",
-  "math.atanh",
-  "math.cos",
-  "math.exp",
-  "math.log",
-  "math.pi",
-  "math.sin",
-  "math.tan",
-  "math.tanh",
-  "numba.guvectorize",
-  "numba.jit",
-  "numpy",
-  "numpy.abs",
   "numpy.arctan",
   "numpy.arctanh",
-  "numpy.array",
-  "numpy.concatenate",
-  "numpy.cos",
-  "numpy.cumsum",
-  "numpy.exp",
   "numpy.inf",
   "numpy.log",
   "numpy.maximum",
   "numpy.minimum",
-  "numpy.sin",
   "numpy.tan",
   "numpy.tanh",
-  "numpy.zeros",
-  "numpy.zeros_like",
   "objclass",
   "objclass.__name__",
-  "operator",
-  "operator.concat",
-  "os",
   "os.path.join",
   "os.path.split",
   "paren_or_comma",
-  "re",
-  "re.compile",
-  "re.match",
   "sequence_visit",
   "str.join",
   "str.split",
@@ -101,14 +58,7 @@
   "sympy.sympify",
   "sys",
   "sys.version_info",
-  "typing.Dict",
-  "typing.List",
-  "typing.Set",
-  "typing.Tuple",
-  "typing.Union",
   "vectfun",
-  "warnings",
-  "warnings.warn",
   "write_comma",
   "yaml.MappingNode.__contains__",
   "yaml.MappingNode.__getitem__",
@@ -125,10 +75,18 @@
   "yaml.SequenceNode.__len__"
  ],
  "deps": {
-  "ast": [],
-  "codegen": [],
-  "collections": [],
-  "copy": [],
+  "ast": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "codegen": [
+   "pytest-ast-back-to-python/conda-forge/noarch/pytest-ast-back-to-python-1.1.0-py_0"
+  ],
+  "collections": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "copy": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "dataclasses": [
    "dataclasses/conda-forge/noarch/dataclasses-0.8-pyh787bdff_0",
    "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1"
@@ -136,32 +94,53 @@
   "dolo": [],
   "f": [],
   "fun": [],
-  "functools": [],
+  "functools": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "generator_visit": [],
-  "io": [],
+  "io": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "lark": [
    "lark-parser/conda-forge/noarch/lark-parser-0.11.2-pyh44b312d_0"
   ],
   "matfun": [],
-  "math": [],
-  "numba": [],
-  "numpy": [],
+  "math": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "numba": [
+   "numba/conda-forge/linux-64/numba-0.45.0-py37hb3f55d8_0"
+  ],
+  "numpy": [
+   "numpy/conda-forge/linux-64/numpy-1.9.3-py27_blas_openblashb06ca3d_7"
+  ],
   "objclass": [],
-  "operator": [],
-  "os": [],
+  "operator": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "os": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "paren_or_comma": [],
-  "re": [],
+  "re": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "sequence_visit": [],
   "str": [],
   "symbolic": [],
   "sympy": [],
   "sys": [],
-  "typing": [],
+  "typing": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "vectfun": [],
-  "warnings": [],
+  "warnings": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "write_comma": [],
   "yaml": [
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1"
+   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
+   "pyyaml/conda-forge/linux-64/pyyaml-5.4.1-py36h70b1f00_0"
   ]
  }
 }

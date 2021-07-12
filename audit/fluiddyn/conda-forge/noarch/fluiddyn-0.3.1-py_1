@@ -1,14 +1,7 @@
 {
  "bad": [
   "Class",
-  "IPython.get_ipython",
-  "IPython.terminal.embed.InteractiveShellEmbed",
   "ImageH5File",
-  "PIL",
-  "PIL.Image",
-  "PIL.Image.fromarray",
-  "PIL.Image.open",
-  "PIL.__version__",
   "ReadIM",
   "ReadIM.extra.buffer_as_array",
   "ReadIM.extra.get_Buffer_andAttributeList",
@@ -26,13 +19,9 @@
   "cleanmat.is_comment_line",
   "cleanmat.modif_code",
   "cleanmat.treat_matlab_directory",
-  "colorlog",
-  "colorlog.ColoredFormatter",
   "colorlog.DEBUG",
   "colorlog.Formatter",
   "colorlog.INFO",
-  "colorlog.StreamHandler",
-  "colorlog.getLogger",
   "cv2.IMREAD_ANYDEPTH",
   "cv2.imread",
   "dict.__repr__",
@@ -75,13 +64,6 @@
   "functools.cached_property",
   "get_approximate_number_images",
   "get_new_name",
-  "h5py",
-  "h5py.Dataset",
-  "h5py.File",
-  "h5py.Group",
-  "h5py.get_config",
-  "h5py.version.hdf5_version",
-  "h5py.version.hdf5_version_tuple",
   "im",
   "im.n_frames",
   "imageio.imread",
@@ -96,25 +78,14 @@
   "lxml.etree",
   "mat2wrongpy.create_py_code",
   "mat2wrongpy.treat_matlab_directory",
-  "matplotlib",
   "matplotlib.backends.qt_compat.QtCore",
   "matplotlib.backends.qt_compat.QtCore.QString.fromUtf8",
   "matplotlib.backends.qt_compat.QtWidgets",
   "matplotlib.backends.qt_compat.QtWidgets.QApplication.UnicodeUTF8",
   "matplotlib.backends.qt_compat.QtWidgets.QApplication.translate",
   "matplotlib.backends.qt_compat.QtWidgets.QFileDialog.getOpenFileName",
-  "matplotlib.figure.Figure",
-  "matplotlib.patches.Rectangle",
-  "matplotlib.pyplot",
   "matplotlib.pyplot.cm.hsv",
-  "matplotlib.pyplot.figure",
-  "matplotlib.pyplot.gca",
-  "matplotlib.pyplot.imread",
-  "matplotlib.pyplot.ioff",
-  "matplotlib.pyplot.ion",
-  "matplotlib.pyplot.rc",
   "matplotlib.pyplot.rcParams.update",
-  "matplotlib.pyplot.show",
   "mock.Mock",
   "mpi.MPI.DOUBLE",
   "mpi.MPI.SUM",
@@ -125,7 +96,6 @@
   "mpi.comm.rank",
   "mpi.nb_proc",
   "mpi.rank",
-  "mpi4py.MPI",
   "mpi4py.MPI.COMM_WORLD",
   "mpi4py.MPI.COMM_WORLD.Abort",
   "mreplace",
@@ -180,7 +150,6 @@
   "pbs.ClusterPBS",
   "pbs.input",
   "pims.open",
-  "pkg_resources.resource_filename",
   "png",
   "png.from_array",
   "print_pkg",
@@ -262,9 +231,13 @@
  ],
  "deps": {
   "Class": [],
-  "IPython": [],
+  "IPython": [
+   "ipython/conda-forge/linux-64/ipython-7.23.0-py39hef51801_0"
+  ],
   "ImageH5File": [],
-  "PIL": [],
+  "PIL": [
+   "pillow/conda-forge/linux-64/pillow-7.2.0-py36hfc7c323_2"
+  ],
   "ReadIM": [],
   "__doc__": [],
   "__future__": [
@@ -291,7 +264,9 @@
   "collections": [
    "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
   ],
-  "colorlog": [],
+  "colorlog": [
+   "colorlog/conda-forge/linux-64/colorlog-4.6.2-py37h89c1867_1"
+  ],
   "colorsys": [
    "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
   ],
@@ -337,7 +312,9 @@
   "h5netcdf": [
    "h5netcdf/conda-forge/noarch/h5netcdf-0.7.4-py_0"
   ],
-  "h5py": [],
+  "h5py": [
+   "h5py/conda-forge/linux-64/h5py-2.7.1-py36_1"
+  ],
   "im": [],
   "imageio": [],
   "importlib": [
@@ -365,13 +342,17 @@
   "math": [
    "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
   ],
-  "matplotlib": [],
+  "matplotlib": [
+   "matplotlib-base/conda-forge/linux-64/matplotlib-base-3.3.3-py36h159efd9_0"
+  ],
   "mimetypes": [
    "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
   ],
   "mock": [],
   "mpi": [],
-  "mpi4py": [],
+  "mpi4py": [
+   "mpi4py/conda-forge/linux-64/mpi4py-3.0.3-py36h7b8b12a_6"
+  ],
   "mreplace": [],
   "multiprocessing": [],
   "nbstripout": [
@@ -399,7 +380,9 @@
   "pims": [
    "pims/conda-forge/noarch/pims-0.5-pyh9f0ad1d_0"
   ],
-  "pkg_resources": [],
+  "pkg_resources": [
+   "setuptools/conda-forge/linux-64/setuptools-41.2.0-py27_0"
+  ],
   "platform": [
    "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
   ],
@@ -430,7 +413,8 @@
   ],
   "six": [
    "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
-   "privy/conda-forge/noarch/privy-6.0.0-py_0"
+   "privy/conda-forge/noarch/privy-6.0.0-py_0",
+   "six/conda-forge/linux-64/six-1.14.0-py36_0"
   ],
   "skimage": [],
   "slurm": [],

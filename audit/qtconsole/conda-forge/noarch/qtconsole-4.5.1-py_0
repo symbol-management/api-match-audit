@@ -2,11 +2,6 @@
  "bad": [
   "Comm",
   "DummyCommHandler",
-  "IPython.core.inputsplitter.InputSplitter",
-  "IPython.core.inputtransformer2.TransformerManager",
-  "IPython.lib.latextools.latex_to_png",
-  "IPython.lib.lexers.IPython3Lexer",
-  "IPython.lib.lexers.IPythonLexer",
   "PyQt4.QtCore",
   "PyQt4.QtCore.PYQT_VERSION_STR",
   "PyQt4.QtCore.Signal",
@@ -66,10 +61,6 @@
   "format.stringProperty",
   "format.upper",
   "handler",
-  "ipykernel.inprocess.InProcessHBChannel",
-  "ipykernel.inprocess.InProcessKernelClient",
-  "ipykernel.inprocess.InProcessKernelManager",
-  "ipykernel.inprocess.channels.InProcessChannel",
   "ipython_genutils.importstring.import_item",
   "ipython_genutils.path.ensure_dir_exists",
   "ipython_genutils.py3compat",
@@ -326,15 +317,14 @@
   "time.sleep",
   "time.time",
   "v",
-  "zmq",
-  "zmq.ZMQError",
-  "zmq.eventloop.ioloop",
-  "zmq.eventloop.zmqstream"
+  "zmq.ZMQError"
  ],
  "deps": {
   "Comm": [],
   "DummyCommHandler": [],
-  "IPython": [],
+  "IPython": [
+   "ipython/conda-forge/linux-64/ipython-7.23.0-py39hef51801_0"
+  ],
   "PyQt4": [],
   "PyQt5": [],
   "PySide": [],
@@ -380,7 +370,9 @@
   "io": [
    "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
   ],
-  "ipykernel": [],
+  "ipykernel": [
+   "ipykernel/conda-forge/linux-64/ipykernel-5.5.3-py39hef51801_0"
+  ],
   "ipython_genutils": [],
   "jupyter_client": [
    "jupyter_client/conda-forge/noarch/jupyter_client-6.1.7-py_0"
@@ -453,6 +445,8 @@
   "xml": [
    "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
   ],
-  "zmq": []
+  "zmq": [
+   "pyzmq/conda-forge/linux-64/pyzmq-21.0.1-py36h81c33ee_0"
+  ]
  }
 }

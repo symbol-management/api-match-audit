@@ -1,33 +1,7 @@
 {
  "bad": [
-  "contextlib.contextmanager",
-  "dagster.DagsterInstance",
   "dagster.DagsterInstance.from_ref",
-  "dagster.EventMetadataEntry",
   "dagster.EventMetadataEntry.text",
-  "dagster.Executor",
-  "dagster.ExecutorDefinition",
-  "dagster.Field",
-  "dagster.StringSource",
-  "dagster.check",
-  "dagster.check.dict_param",
-  "dagster.check.inst",
-  "dagster.check.inst_param",
-  "dagster.cli.api.ExecuteStepArgs",
-  "dagster.core.definitions.executor.check_cross_process_constraints",
-  "dagster.core.events.EngineEventData",
-  "dagster.core.execution.retries.RetryMode",
-  "dagster.core.execution.retries.RetryMode.from_config",
-  "dagster.core.storage.pipeline_run.PipelineRun",
-  "dagster.core.utils.check_dagster_package_version",
-  "dagster.execute_pipeline",
-  "dagster.executor",
-  "dagster.serdes.pack_value",
-  "dagster.serdes.serialize_dagster_namedtuple",
-  "dagster.serdes.unpack_value",
-  "dagster.utils.merge_dicts",
-  "dagster.utils.test.postgres_instance.postgres_instance_for_test",
-  "dagster.utils.yaml_utils.merge_yamls",
   "dagster_celery.core_execution_loop.DELEGATE_MARKER",
   "dagster_celery.core_execution_loop.core_celery_execution_loop",
   "dagster_celery.make_app.make_app_with_task_routes",
@@ -37,23 +11,28 @@
   "dagster_test.test_project.get_test_project_docker_image",
   "dagster_test.test_project.get_test_project_environments_path",
   "dagster_test.test_project.get_test_project_recon_pipeline",
-  "docker.client",
-  "json",
-  "json.dumps",
-  "os",
-  "os.getenv",
   "os.path.join"
  ],
  "deps": {
-  "contextlib": [],
-  "dagster": [],
+  "contextlib": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "dagster": [
+   "dagster/conda-forge/linux-64/dagster-0.11.10-py37h89c1867_0"
+  ],
   "dagster_celery": [
    "dagster-celery/conda-forge/noarch/dagster-celery-0.7.13-pyhc8dfbb8_0"
   ],
   "dagster_celery_docker": [],
   "dagster_test": [],
-  "docker": [],
-  "json": [],
-  "os": []
+  "docker": [
+   "docker-py/conda-forge/linux-64/docker-py-4.4.4-py37h9c2f6ca_0"
+  ],
+  "json": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "os": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ]
  }
 }

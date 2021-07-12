@@ -1,13 +1,5 @@
 {
  "bad": [
-  "PIL.Image",
-  "PIL.Image.open",
-  "PIL.ImageDraw",
-  "PIL.ImageDraw.Draw",
-  "PIL.ImageGrab",
-  "PIL.ImageOps",
-  "PIL.ImageOps.grayscale",
-  "ctypes.windll",
   "ctypes.windll.gdi32.GetPixel",
   "ctypes.windll.user32.GetDC",
   "cv2",
@@ -21,18 +13,10 @@
   "cv2.cvtColor",
   "cv2.imread",
   "cv2.matchTemplate",
-  "datetime",
-  "datetime.datetime.now",
   "errno",
   "errno.ENOENT",
   "firstFindFunc",
   "locateAll",
-  "numpy",
-  "numpy.arange",
-  "numpy.array",
-  "numpy.ndarray",
-  "numpy.unravel_index",
-  "os",
   "os.unlink",
   "pyscreeze.__init__.GRAYSCALE_DEFAULT",
   "pyscreeze.__init__.ImageNotFoundException",
@@ -57,10 +41,6 @@
   "pyscreeze.__init__.useOpenCV",
   "pyscreeze.__init__.whichProc",
   "screenshot",
-  "subprocess",
-  "subprocess.PIPE",
-  "subprocess.Popen",
-  "subprocess.call",
   "sys",
   "sys.platform",
   "sys.platform.startswith",
@@ -69,18 +49,30 @@
   "time.time"
  ],
  "deps": {
-  "PIL": [],
-  "ctypes": [],
+  "PIL": [
+   "pillow/conda-forge/linux-64/pillow-7.2.0-py36hfc7c323_2"
+  ],
+  "ctypes": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "cv2": [],
-  "datetime": [],
+  "datetime": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "errno": [],
   "firstFindFunc": [],
   "locateAll": [],
-  "numpy": [],
-  "os": [],
+  "numpy": [
+   "numpy/conda-forge/linux-64/numpy-1.9.3-py27_blas_openblashb06ca3d_7"
+  ],
+  "os": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "pyscreeze": [],
   "screenshot": [],
-  "subprocess": [],
+  "subprocess": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "sys": [],
   "time": []
  }

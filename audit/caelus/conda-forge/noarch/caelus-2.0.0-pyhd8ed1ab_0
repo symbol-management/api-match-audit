@@ -1,15 +1,9 @@
 {
  "bad": [
-  "IPython",
-  "IPython.embed",
   "_exec_clean_case",
   "_get_latest_version",
   "_init_cml_versions",
   "_init_config",
-  "abc",
-  "abc.ABCMeta",
-  "abc.abstractmethod",
-  "argparse",
   "caelus.config.cmlenv.cml_get_version",
   "caelus.config.config.get_config",
   "caelus.config.config.rcfiles_loaded",
@@ -18,7 +12,6 @@
   "cls.from_yaml",
   "cls.yaml_decoder",
   "cls.yaml_encoder",
-  "cmd",
   "cml_cmd",
   "cml_cmd.cml_exe_args",
   "cml_cmd.job_id",
@@ -29,7 +22,6 @@
   "cml_cmd.runner.update",
   "collections.Mapping",
   "collections.MutableMapping",
-  "collections.OrderedDict",
   "config.CaelusCfg",
   "config.cmlenv.CMLEnv",
   "config.cmlenv.FOAMEnv",
@@ -39,16 +31,12 @@
   "config.get_caelus_root",
   "config.get_config",
   "config.get_cpl_root",
-  "contextlib.contextmanager",
   "core.clean_casedir",
   "core.clone_case",
   "core.get_mpi_size",
   "ctasks",
   "ctasks.dep_job_id",
   "ctasks.tasks",
-  "datetime.datetime",
-  "datetime.datetime.now",
-  "distutils.version.LooseVersion",
   "dtypes.BoundaryList",
   "dtypes.CalcDirective",
   "dtypes.CodeStream",
@@ -61,84 +49,23 @@
   "dtypes.MacroSubstitution",
   "dtypes.MultipleValues",
   "fh",
-  "fnmatch",
-  "fnmatch.filter",
-  "fnmatch.fnmatch",
   "func",
   "func.__doc__",
-  "functools",
-  "functools.wraps",
   "get_default_log_file",
   "get_file",
-  "getpass",
-  "getpass.getuser",
-  "glob",
-  "glob.glob",
-  "importlib",
-  "importlib.util.module_from_spec",
-  "importlib.util.spec_from_file_location",
   "io.caelusdict.CaelusDict.load_yaml",
   "io.dictfile.DictFile.load",
   "io.dictfile.DictFile.read_if_present",
   "io.dictfile.cml_std_files",
   "itertools",
   "itertools.product",
-  "json",
-  "json.JSONEncoder",
   "json.JSONEncoder.default",
-  "json.dump",
-  "json.dumps",
-  "json.load",
-  "logging",
-  "logging.basicConfig",
-  "logging.config.dictConfig",
-  "logging.getLogger",
-  "math",
-  "math.ceil",
-  "math.log10",
-  "matplotlib.pyplot",
-  "matplotlib.pyplot.close",
-  "matplotlib.pyplot.figure",
-  "matplotlib.pyplot.get_backend",
-  "matplotlib.pyplot.grid",
-  "matplotlib.pyplot.interactive",
-  "matplotlib.pyplot.legend",
-  "matplotlib.pyplot.pause",
-  "matplotlib.pyplot.savefig",
-  "matplotlib.pyplot.show",
-  "matplotlib.pyplot.subplot",
-  "matplotlib.pyplot.subplots",
-  "matplotlib.pyplot.switch_backend",
-  "matplotlib.pyplot.title",
   "modfunc",
-  "multiprocessing",
   "multiprocessing.cpu_count",
-  "numpy",
-  "numpy.abs",
-  "numpy.arange",
-  "numpy.array",
-  "numpy.array_str",
-  "numpy.asarray",
-  "numpy.float_",
-  "numpy.get_printoptions",
-  "numpy.int",
-  "numpy.int64",
-  "numpy.int_",
-  "numpy.loadtxt",
-  "numpy.ndarray",
-  "numpy.r_",
-  "numpy.set_printoptions",
-  "numpy.str",
-  "os",
   "os.chdir",
-  "os.environ",
   "os.environ.get",
   "os.getcwd",
   "os.listdir",
-  "os.makedirs",
-  "os.name",
-  "os.pardir",
-  "os.path",
   "os.path.abspath",
   "os.path.basename",
   "os.path.dirname",
@@ -154,49 +81,27 @@
   "os.path.normpath",
   "os.path.split",
   "os.path.splitext",
-  "os.pathsep",
   "os.pathsep.join",
   "os.remove",
   "os.uname",
-  "os.walk",
   "osutils.abspath",
   "osutils.split_path",
   "parser.CaelusParser",
   "path_to_cfg",
-  "platform",
-  "platform.system",
   "ply.lex",
   "ply.lex.TOKEN",
   "ply.yacc",
-  "pprint",
   "printer.DictPrinter",
   "printer.foam_writer",
   "pytz.utc",
-  "re",
-  "re.compile",
-  "re.sub",
   "run.cmd.CaelusCmd",
   "run.core.find_recipe_dirs",
   "run.parametric.CMLParametricRun.json_file",
   "run.parametric.CMLParametricRun.load",
   "run.tasks.Tasks.load",
   "runner",
-  "shlex",
-  "shlex.split",
-  "shutil",
-  "shutil.copy",
-  "shutil.copy2",
-  "shutil.copytree",
-  "shutil.ignore_patterns",
-  "shutil.rmtree",
-  "signal",
   "signal.SIGINT",
-  "signal.signal",
   "six.moves.input",
-  "subprocess",
-  "subprocess.PIPE",
-  "subprocess.Popen",
-  "subprocess.STDOUT",
   "sys",
   "sys.executable",
   "sys.path.append",
@@ -210,8 +115,6 @@
   "tasks.cmd_clean_case",
   "tasks.task_file",
   "tasks.tasks",
-  "textwrap",
-  "textwrap.dedent",
   "time",
   "time.sleep",
   "utils.coroutines.coroutine",
@@ -230,85 +133,142 @@
   "utils.pyutils.import_script",
   "utils.struct.Struct",
   "utils.struct.Struct.load_yaml",
-  "warnings",
-  "warnings.catch_warnings",
-  "warnings.simplefilter",
   "wlog"
  ],
  "deps": {
-  "IPython": [],
+  "IPython": [
+   "ipython/conda-forge/linux-64/ipython-7.23.0-py39hef51801_0"
+  ],
   "_exec_clean_case": [],
   "_get_latest_version": [],
   "_init_cml_versions": [],
   "_init_config": [],
-  "abc": [],
-  "argparse": [],
+  "abc": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "argparse": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "caelus": [],
   "caelusdict": [],
   "cls": [],
-  "cmd": [],
+  "cmd": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "cml_cmd": [],
-  "collections": [],
+  "collections": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "config": [],
-  "contextlib": [],
+  "contextlib": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "core": [],
   "ctasks": [],
-  "datetime": [],
-  "distutils": [],
+  "datetime": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "distutils": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "dtypes": [],
   "fh": [],
-  "fnmatch": [],
+  "fnmatch": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "func": [],
-  "functools": [],
+  "functools": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "get_default_log_file": [],
   "get_file": [],
-  "getpass": [],
-  "glob": [],
-  "importlib": [],
+  "getpass": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "glob": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "importlib": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "io": [],
   "itertools": [],
   "jinja2": [
    "jinja2/conda-forge/noarch/jinja2-2.10-py_1"
   ],
-  "json": [],
-  "logging": [],
-  "math": [],
-  "matplotlib": [],
+  "json": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "logging": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "math": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "matplotlib": [
+   "matplotlib-base/conda-forge/linux-64/matplotlib-base-3.3.3-py36h159efd9_0"
+  ],
   "modfunc": [],
-  "multiprocessing": [],
-  "numpy": [],
-  "os": [],
+  "multiprocessing": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "numpy": [
+   "numpy/conda-forge/linux-64/numpy-1.9.3-py27_blas_openblashb06ca3d_7"
+  ],
+  "os": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "osutils": [],
   "parser": [],
   "path_to_cfg": [],
-  "platform": [],
+  "platform": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "ply": [],
-  "pprint": [],
+  "pprint": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "printer": [],
   "pytz": [
    "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
    "pytz/conda-forge/noarch/pytz-2018.4-py_0"
   ],
-  "re": [],
+  "re": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "run": [],
   "runner": [],
-  "shlex": [],
-  "shutil": [],
-  "signal": [],
+  "shlex": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "shutil": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "signal": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "six": [
    "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
-   "privy/conda-forge/noarch/privy-6.0.0-py_0"
+   "privy/conda-forge/noarch/privy-6.0.0-py_0",
+   "six/conda-forge/linux-64/six-1.14.0-py36_0"
   ],
-  "subprocess": [],
+  "subprocess": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "sys": [],
   "tasks": [],
-  "textwrap": [],
+  "textwrap": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "time": [],
   "utils": [],
-  "warnings": [],
+  "warnings": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "wlog": [],
   "yaml": [
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1"
+   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
+   "pyyaml/conda-forge/linux-64/pyyaml-5.4.1-py36h70b1f00_0"
   ]
  }
 }

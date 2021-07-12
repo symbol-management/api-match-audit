@@ -1,20 +1,11 @@
 {
  "bad": [
-  "Crypto.Cipher.AES",
-  "Crypto.Protocol.KDF",
-  "Crypto.Protocol.KDF.PBKDF2",
   "HeaderDecrypt",
   "XFile",
   "XTempFile",
   "_inc_volname",
-  "binascii.crc32",
-  "binascii.hexlify",
   "check_returncode",
   "custom_popen",
-  "datetime.datetime",
-  "datetime.datetime.fromtimestamp",
-  "datetime.timedelta",
-  "datetime.timezone",
   "errno",
   "errno.EACCES",
   "errno.ENOENT",
@@ -23,9 +14,6 @@
   "hashlib.blake2s",
   "hashlib.sha1",
   "hashlib.sha256",
-  "hmac.HMAC",
-  "io.BytesIO",
-  "io.RawIOBase",
   "is_filelike",
   "ldr",
   "load_byte",
@@ -35,45 +23,46 @@
   "load_vint",
   "load_vstr",
   "md_class",
-  "os",
-  "os.fdopen",
-  "os.sep",
   "os.unlink",
   "parse_dos_time",
-  "pathlib.Path",
   "rar3_decompress",
-  "struct",
   "struct.Struct",
   "struct.error",
   "struct.pack",
   "struct.unpack",
-  "subprocess.PIPE",
-  "subprocess.Popen",
-  "subprocess.STDOUT",
   "sys",
   "sys.platform",
-  "tempfile.mkstemp",
   "to_datetime",
   "tool_setup"
  ],
  "deps": {
-  "Crypto": [],
+  "Crypto": [
+   "pycryptodome/conda-forge/linux-64/pycryptodome-3.7.3-py37ha14ba45_0"
+  ],
   "HeaderDecrypt": [],
   "XFile": [],
   "XTempFile": [],
   "_inc_volname": [],
-  "binascii": [],
+  "binascii": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "check_returncode": [],
   "cryptography": [
    "privy/conda-forge/noarch/privy-6.0.0-py_0"
   ],
   "custom_popen": [],
-  "datetime": [],
+  "datetime": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "errno": [],
   "exc": [],
   "hashlib": [],
-  "hmac": [],
-  "io": [],
+  "hmac": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "io": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "is_filelike": [],
   "ldr": [],
   "load_byte": [],
@@ -83,14 +72,25 @@
   "load_vint": [],
   "load_vstr": [],
   "md_class": [],
-  "os": [],
+  "os": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "parse_dos_time": [],
-  "pathlib": [],
+  "pathlib": [
+   "pathlib/conda-forge/noarch/pathlib-1.0.1-py_1",
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "rar3_decompress": [],
-  "struct": [],
-  "subprocess": [],
+  "struct": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "subprocess": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "sys": [],
-  "tempfile": [],
+  "tempfile": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "to_datetime": [],
   "tool_setup": []
  }

@@ -1,18 +1,11 @@
 {
  "bad": [
-  "PIL.Image",
-  "PIL.Image.open",
-  "abc",
-  "abc.ABC",
-  "abc.abstractmethod",
   "affine_grid_generator",
   "apply_axis",
   "bilinear_sampler",
   "calculate_fitness",
   "cclip",
   "collections.abc.Iterable",
-  "copy",
-  "copy.copy",
   "create_meshgrid",
   "criterion",
   "criterion_",
@@ -23,98 +16,39 @@
   "foolbox.attacks.__init__.LinfFastGradientAttack",
   "foolbox.attacks.__init__.LinfPGD",
   "foolbox.attacks.__init__.LinfProjectedGradientDescentAttack",
-  "functools.partial",
-  "functools.wraps",
   "get_criterion",
   "get_is_adversarial",
   "get_pixel_value",
   "git.Repo.clone_from",
   "grad_and_logits",
   "grid_search_generator",
-  "hashlib",
   "hashlib.sha256",
-  "importlib",
-  "importlib.import_module",
   "interpolate_bilinear",
   "is_adversarial",
-  "logging",
-  "logging.exception",
-  "logging.info",
   "logits_diff_and_grads",
   "loss_aux_and_grad",
-  "math",
-  "math.ceil",
-  "math.cos",
-  "math.log",
-  "math.pi",
-  "math.sqrt",
-  "matplotlib.pyplot",
-  "matplotlib.pyplot.subplots",
   "model",
   "model.bounds",
   "model_loader.ModelLoader.get",
   "nptype",
-  "numba",
   "numba.experimental.jitclass",
-  "numpy",
-  "numpy.abs",
-  "numpy.all",
-  "numpy.arange",
-  "numpy.argsort",
-  "numpy.array",
-  "numpy.asarray",
-  "numpy.atleast_2d",
-  "numpy.bool",
-  "numpy.ceil",
-  "numpy.clip",
-  "numpy.cos",
-  "numpy.empty",
-  "numpy.empty_like",
-  "numpy.expand_dims",
-  "numpy.eye",
   "numpy.float16",
   "numpy.float32",
   "numpy.float64",
-  "numpy.floor",
-  "numpy.full",
   "numpy.inf",
-  "numpy.int32",
   "numpy.isinf",
-  "numpy.isnan",
-  "numpy.linalg.norm",
-  "numpy.linalg.solve",
-  "numpy.linspace",
   "numpy.logical_or",
-  "numpy.logspace",
-  "numpy.meshgrid",
   "numpy.minimum",
   "numpy.nan",
-  "numpy.nanmean",
-  "numpy.ndarray",
-  "numpy.newaxis",
   "numpy.nextafter",
-  "numpy.ones",
-  "numpy.prod",
   "numpy.quantile",
   "numpy.random.choice",
   "numpy.random.randint",
   "numpy.random.uniform",
   "numpy.sign",
-  "numpy.sin",
-  "numpy.sort",
-  "numpy.sqrt",
   "numpy.stack",
-  "numpy.sum",
-  "numpy.tile",
-  "numpy.transpose",
-  "numpy.uint8",
-  "numpy.where",
-  "numpy.zeros",
-  "numpy.zeros_like",
   "optimizer",
-  "os",
   "os.listdir",
-  "os.makedirs",
   "os.path.dirname",
   "os.path.exists",
   "os.path.expanduser",
@@ -123,15 +57,8 @@
   "rclip",
   "restore_fn",
   "restore_type",
-  "scipy.ndimage.filters.gaussian_filter",
-  "shutil",
-  "shutil.copyfileobj",
-  "shutil.rmtree",
   "sys",
   "sys.path.insert",
-  "tarfile",
-  "tarfile.TarFile.open",
-  "tensorflow",
   "tensorflow.add_n",
   "tensorflow.cast",
   "tensorflow.clip_by_value",
@@ -155,50 +82,29 @@
   "to_attack_space",
   "to_model_space",
   "to_tensor",
-  "torch",
-  "torch.Tensor",
-  "torch.cuda.is_available",
   "torch.device",
   "torch.linspace",
   "torch.matmul",
-  "torch.meshgrid",
-  "torch.nn.functional.grid_sample",
-  "torch.nn.functional.interpolate",
   "torch.ones",
-  "torch.set_grad_enabled",
   "torch.stack",
-  "torch.tensor",
-  "types.ModuleType",
-  "typing.Any",
-  "typing.Callable",
-  "typing.Dict",
-  "typing.Generator",
-  "typing.List",
-  "typing.NamedTuple",
-  "typing.NewType",
-  "typing.Optional",
-  "typing.Sequence",
-  "typing.Tuple",
-  "typing.Type",
-  "typing.TypeVar",
-  "typing.Union",
-  "typing.cast",
-  "value_and_grad",
-  "warnings",
-  "warnings.warn",
-  "zipfile",
-  "zipfile.ZipFile"
+  "value_and_grad"
  ],
  "deps": {
-  "PIL": [],
-  "abc": [],
+  "PIL": [
+   "pillow/conda-forge/linux-64/pillow-7.2.0-py36hfc7c323_2"
+  ],
+  "abc": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "affine_grid_generator": [],
   "apply_axis": [],
   "bilinear_sampler": [],
   "calculate_fitness": [],
   "cclip": [],
   "collections": [],
-  "copy": [],
+  "copy": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "create_meshgrid": [],
   "criterion": [],
   "criterion_": [],
@@ -207,7 +113,9 @@
   ],
   "f": [],
   "foolbox": [],
-  "functools": [],
+  "functools": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "get_criterion": [],
   "get_is_adversarial": [],
   "get_pixel_value": [],
@@ -216,25 +124,41 @@
   ],
   "grad_and_logits": [],
   "grid_search_generator": [],
-  "hashlib": [],
-  "importlib": [],
+  "hashlib": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "importlib": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "interpolate_bilinear": [],
   "is_adversarial": [],
   "jax": [
    "jax/conda-forge/noarch/jax-0.1.73-py_0"
   ],
-  "logging": [],
+  "logging": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "logits_diff_and_grads": [],
   "loss_aux_and_grad": [],
-  "math": [],
-  "matplotlib": [],
+  "math": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "matplotlib": [
+   "matplotlib-base/conda-forge/linux-64/matplotlib-base-3.3.3-py36h159efd9_0"
+  ],
   "model": [],
   "model_loader": [],
   "nptype": [],
-  "numba": [],
-  "numpy": [],
+  "numba": [
+   "numba/conda-forge/linux-64/numba-0.45.0-py37hb3f55d8_0"
+  ],
+  "numpy": [
+   "numpy/conda-forge/linux-64/numpy-1.9.3-py27_blas_openblashb06ca3d_7"
+  ],
   "optimizer": [],
-  "os": [],
+  "os": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "random_search_generator": [],
   "rclip": [],
   "requests": [
@@ -243,23 +167,41 @@
   ],
   "restore_fn": [],
   "restore_type": [],
-  "scipy": [],
-  "shutil": [],
+  "scipy": [
+   "scipy/conda-forge/linux-64/scipy-0.18.1-np111py34_blas_openblas_200"
+  ],
+  "shutil": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "sys": [],
-  "tarfile": [],
-  "tensorflow": [],
+  "tarfile": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "tensorflow": [
+   "tensorflow/conda-forge/linux-64/tensorflow-0.12.1-py27_2"
+  ],
   "to_attack_space": [],
   "to_model_space": [],
   "to_tensor": [],
-  "torch": [],
-  "types": [],
-  "typing": [],
+  "torch": [
+   "pytorch-cpu/conda-forge/linux-64/pytorch-cpu-1.0.1-py27hf484d3e_0"
+  ],
+  "types": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "typing": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "typing_extensions": [
    "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
    "typing_extensions/conda-forge/noarch/typing_extensions-3.7.4.3-py_0"
   ],
   "value_and_grad": [],
-  "warnings": [],
-  "zipfile": []
+  "warnings": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "zipfile": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ]
  }
 }
