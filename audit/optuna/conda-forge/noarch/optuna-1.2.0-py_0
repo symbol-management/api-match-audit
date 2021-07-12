@@ -27,21 +27,12 @@
   "alembic.context.is_offline_mode",
   "alembic.context.run_migrations",
   "app",
-  "bokeh.command.bootstrap",
-  "bokeh.document",
-  "bokeh.layouts",
-  "bokeh.models",
-  "bokeh.models.widgets",
-  "bokeh.plotting",
-  "bokeh.themes",
   "callback",
   "callback_env",
   "cdf_func",
   "check_set_and_get",
   "cls",
   "collections.ValuesView",
-  "colorlog",
-  "colorlog.ColoredFormatter",
   "comp",
   "create_test_storage",
   "create_trial",
@@ -66,18 +57,9 @@
   "ignite.engine.Engine",
   "itertools",
   "itertools.product",
-  "keras.Sequential",
   "keras.callbacks.Callback",
   "keras.layers.Dense",
-  "lightgbm",
-  "lightgbm.Dataset",
-  "lightgbm.LGBMClassifier",
-  "lightgbm.LGBMModel",
-  "lightgbm.LGBMRegressor",
   "lightgbm.__dict__",
-  "lightgbm.callback.CallbackEnv",
-  "lightgbm.cv",
-  "lightgbm.train",
   "mock",
   "mock.MagicMock",
   "mock.Mock",
@@ -160,8 +142,6 @@
   "os.path.join",
   "pandas.MultiIndex.from_tuples",
   "parallel",
-  "pkg_resources",
-  "pkg_resources.parse_version",
   "pruning_callback",
   "pytest.mark.filterwarnings",
   "pytest.mark.parametrize",
@@ -191,34 +171,7 @@
   "sklearn.utils.validation._num_samples",
   "sklearn.utils.validation.check_is_fitted",
   "sorted_values",
-  "sqlalchemy.CheckConstraint",
-  "sqlalchemy.Column",
-  "sqlalchemy.DateTime",
-  "sqlalchemy.Enum",
-  "sqlalchemy.Float",
-  "sqlalchemy.ForeignKey",
-  "sqlalchemy.Integer",
-  "sqlalchemy.String",
-  "sqlalchemy.UniqueConstraint",
-  "sqlalchemy.asc",
-  "sqlalchemy.create_engine",
-  "sqlalchemy.desc",
-  "sqlalchemy.engine.Engine",
-  "sqlalchemy.engine.create_engine",
-  "sqlalchemy.engine_from_config",
-  "sqlalchemy.exc.IntegrityError",
-  "sqlalchemy.exc.SQLAlchemyError",
-  "sqlalchemy.ext.declarative.declarative_base",
-  "sqlalchemy.func",
   "sqlalchemy.func.count",
-  "sqlalchemy.orm",
-  "sqlalchemy.orm.Session",
-  "sqlalchemy.orm.backref",
-  "sqlalchemy.orm.relationship",
-  "sqlalchemy.orm.scoped_session",
-  "sqlalchemy.orm.sessionmaker",
-  "sqlalchemy.pool",
-  "sqlalchemy.pool.NullPool",
   "sys",
   "sys.argv",
   "sys.exc_info",
@@ -226,7 +179,6 @@
   "sys.version_info.major",
   "sys.version_info.micro",
   "sys.version_info.minor",
-  "tensorflow",
   "tensorflow.__version__",
   "tensorflow.compat.v1.data.make_one_shot_iterator",
   "tensorflow.compat.v1.train.get_global_step",
@@ -248,7 +200,6 @@
   "torch.float32",
   "torch.int64",
   "torch.zeros",
-  "tornado.gen",
   "tqdm.auto.tqdm",
   "tqdm.auto.tqdm.write",
   "trial_pruned_class",
@@ -289,7 +240,9 @@
   "argparse": [
    "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
   ],
-  "bokeh": [],
+  "bokeh": [
+   "bokeh/conda-forge/linux-64/bokeh-2.3.2-py38h578d9bd_0"
+  ],
   "callback": [],
   "callback_env": [],
   "cdf_func": [],
@@ -310,7 +263,9 @@
   "collections": [
    "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
   ],
-  "colorlog": [],
+  "colorlog": [
+   "colorlog/conda-forge/linux-64/colorlog-4.6.2-py37h89c1867_1"
+  ],
   "comp": [],
   "contextlib": [
    "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
@@ -360,8 +315,12 @@
   "json": [
    "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
   ],
-  "keras": [],
-  "lightgbm": [],
+  "keras": [
+   "keras/conda-forge/noarch/keras-2.4.3-py_0"
+  ],
+  "lightgbm": [
+   "lightgbm/conda-forge/linux-64/lightgbm-2.2.1-py27hfc679d8_0"
+  ],
   "logging": [
    "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
   ],
@@ -392,7 +351,9 @@
   "pickle": [
    "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
   ],
-  "pkg_resources": [],
+  "pkg_resources": [
+   "setuptools/conda-forge/linux-64/setuptools-41.2.0-py27_0"
+  ],
   "plotly": [
    "plotly/conda-forge/noarch/plotly-4.4.1-py_0"
   ],
@@ -421,7 +382,9 @@
    "scikit-optimize/conda-forge/noarch/scikit-optimize-0.4-py_0"
   ],
   "sorted_values": [],
-  "sqlalchemy": [],
+  "sqlalchemy": [
+   "sqlalchemy/conda-forge/linux-64/sqlalchemy-1.3.15-py36h8c4c3a4_1"
+  ],
   "subprocess": [
    "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
   ],
@@ -429,7 +392,9 @@
   "tempfile": [
    "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
   ],
-  "tensorflow": [],
+  "tensorflow": [
+   "tensorflow/conda-forge/linux-64/tensorflow-0.12.1-py27_2"
+  ],
   "tensorflow_estimator": [
    "tensorflow-estimator/conda-forge/noarch/tensorflow-estimator-2.4.0-pyh9656e83_0"
   ],
@@ -440,7 +405,9 @@
   "torch": [
    "pytorch-cpu/conda-forge/linux-64/pytorch-cpu-1.0.1-py27hf484d3e_0"
   ],
-  "tornado": [],
+  "tornado": [
+   "tornado/conda-forge/linux-64/tornado-5.1.1-py36h97a6639_1"
+  ],
   "tqdm": [
    "tqdm/conda-forge/noarch/tqdm-4.20.0-py_0"
   ],
@@ -462,7 +429,8 @@
   ],
   "with_lock": [],
   "xgboost": [
-   "py-xgboost/conda-forge/linux-64/py-xgboost-1.1.1-py37hc8dfbb8_0"
+   "py-xgboost/conda-forge/linux-64/py-xgboost-1.1.1-py37hc8dfbb8_0",
+   "xgboost/conda-forge/linux-64/xgboost-0.6a2-py27_2"
   ]
  }
 }

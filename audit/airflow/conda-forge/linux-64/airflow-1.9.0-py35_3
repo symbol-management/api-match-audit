@@ -1,0 +1,845 @@
+{
+ "bad": [
+  "AirflowException",
+  "Chart",
+  "DagRun.dag_id",
+  "DagRun.dag_id.in_",
+  "DagRun.state",
+  "FileLoadStat",
+  "GoogleCloudBucketHelper",
+  "GraphForm",
+  "KET",
+  "KET.know_event_type",
+  "Log",
+  "MySQLdb",
+  "MySQLdb.connect",
+  "MySQLdb.constants.FIELD_TYPE",
+  "MySQLdb.constants.FIELD_TYPE.BIT",
+  "MySQLdb.constants.FIELD_TYPE.DATE",
+  "MySQLdb.constants.FIELD_TYPE.DATETIME",
+  "MySQLdb.constants.FIELD_TYPE.DECIMAL",
+  "MySQLdb.constants.FIELD_TYPE.DOUBLE",
+  "MySQLdb.constants.FIELD_TYPE.FLOAT",
+  "MySQLdb.constants.FIELD_TYPE.INT24",
+  "MySQLdb.constants.FIELD_TYPE.LONG",
+  "MySQLdb.constants.FIELD_TYPE.LONGLONG",
+  "MySQLdb.constants.FIELD_TYPE.NEWDECIMAL",
+  "MySQLdb.constants.FIELD_TYPE.SHORT",
+  "MySQLdb.constants.FIELD_TYPE.TIMESTAMP",
+  "MySQLdb.constants.FIELD_TYPE.TINY",
+  "MySQLdb.constants.FIELD_TYPE.YEAR",
+  "MySQLdb.cursors",
+  "MySQLdb.cursors.DictCursor",
+  "MySQLdb.cursors.SSCursor",
+  "MySQLdb.cursors.SSDictCursor",
+  "NVd3ChartClass",
+  "QueryForm",
+  "StringIO",
+  "StringIO.StringIO",
+  "TI",
+  "TI.dag_id",
+  "TI.execution_date",
+  "TI.task_id",
+  "TIDepStatus",
+  "VariableAccessor",
+  "VariableJsonAccessor",
+  "_infer_field_types_from_df",
+  "_split_tablename",
+  "_str",
+  "_tabulate",
+  "airflow.__init__.login",
+  "airflow.api.__init__.api_auth",
+  "airflow.api.__init__.log",
+  "airflow.api.api_auth.client_auth",
+  "airflow.api.api_auth.init_app",
+  "airflow.api.common.experimental.pool.to_json",
+  "airflow.contrib.hooks.__init__._hooks",
+  "airflow.contrib.operators.__init__._operators",
+  "airflow.executors.__init__.DEFAULT_EXECUTOR",
+  "airflow.executors.__init__._get_executor",
+  "airflow.executors.__init__._integrate_plugins",
+  "airflow.executors.celery_executor.CeleryExecutor",
+  "airflow.executors.celery_executor.app",
+  "airflow.hooks.__init__._hooks",
+  "airflow.jobs.BackfillJob.ID_FORMAT_PREFIX",
+  "airflow.jobs.BackfillJob.ID_PREFIX",
+  "airflow.jobs.BaseJob.id.in_",
+  "airflow.jobs.LocalTaskJob.id",
+  "airflow.jobs.LocalTaskJob.latest_heartbeat",
+  "airflow.jobs.LocalTaskJob.state",
+  "airflow.jobs.models.Base.metadata",
+  "airflow.login.current_user",
+  "airflow.login.login",
+  "airflow.login.login_manager.init_app",
+  "airflow.login.login_required",
+  "airflow.login.logout_user",
+  "airflow.models.Base.metadata.drop_all",
+  "airflow.models.Connection._types",
+  "airflow.models.Connection.conn_id",
+  "airflow.models.Connection.conn_type",
+  "airflow.models.Connection.host",
+  "airflow.models.Connection.is_encrypted",
+  "airflow.models.Connection.is_extra_encrypted",
+  "airflow.models.Connection.port",
+  "airflow.models.DagModel.dag_id",
+  "airflow.models.DagModel.is_active",
+  "airflow.models.DagModel.is_paused",
+  "airflow.models.DagModel.is_subdag",
+  "airflow.models.DagPickle.id",
+  "airflow.models.DagRun.ID_PREFIX",
+  "airflow.models.DagRun.dag_id",
+  "airflow.models.DagRun.execution_date",
+  "airflow.models.DagRun.external_trigger",
+  "airflow.models.DagRun.id.in_",
+  "airflow.models.DagRun.run_id.like",
+  "airflow.models.ImportError.filename",
+  "airflow.models.ImportError.filename.in_",
+  "airflow.models.TaskInstance.dag_id",
+  "airflow.models.TaskInstance.dag_id.in_",
+  "airflow.models.TaskInstance.execution_date",
+  "airflow.models.TaskInstance.max_tries",
+  "airflow.models.TaskInstance.state",
+  "airflow.models.TaskInstance.state.in_",
+  "airflow.models.TaskInstance.task_id",
+  "airflow.models.User.id",
+  "airflow.models.User.username",
+  "airflow.models.XCom.dag_id",
+  "airflow.models.XCom.execution_date",
+  "airflow.models.XCom.task_id",
+  "airflow.operators.__init__._operators",
+  "airflow.settings.Session.query",
+  "airflow.settings.Session.remove",
+  "airflow.settings.Stats.gauge",
+  "airflow.settings.Stats.incr",
+  "airflow.settings.engine.dispose",
+  "airflow.settings.engine.url",
+  "airflow.task_runner.__init__._TASK_RUNNER",
+  "airflow.utils.__init__._apply_defaults",
+  "airflow.utils.state.State.FAILED",
+  "airflow.utils.state.State.NONE",
+  "airflow.utils.state.State.QUEUED",
+  "airflow.utils.state.State.REMOVED",
+  "airflow.utils.state.State.RUNNING",
+  "airflow.utils.state.State.SCHEDULED",
+  "airflow.utils.state.State.SHUTDOWN",
+  "airflow.utils.state.State.SKIPPED",
+  "airflow.utils.state.State.SUCCESS",
+  "airflow.utils.state.State.UPSTREAM_FAILED",
+  "airflow.utils.state.State.UP_FOR_RETRY",
+  "airflow.utils.state.State.dag_states",
+  "airflow.utils.state.State.task_states",
+  "airflow.utils.trigger_rule.TriggerRule.ALL_DONE",
+  "airflow.version.version.replace",
+  "airflow.www.app.csrf.exempt",
+  "airflow_local_settings",
+  "alembic.context.begin_transaction",
+  "alembic.context.config",
+  "alembic.context.config.get_main_option",
+  "alembic.context.configure",
+  "alembic.context.is_offline_mode",
+  "alembic.context.run_migrations",
+  "alembic.migration.MigrationContext",
+  "alembic.migration.MigrationContext.configure",
+  "alembic.op.add_column",
+  "alembic.op.alter_column",
+  "alembic.op.batch_alter_table",
+  "alembic.op.create_index",
+  "alembic.op.create_table",
+  "alembic.op.drop_column",
+  "alembic.op.drop_index",
+  "alembic.op.drop_table",
+  "alembic.op.get_bind",
+  "alembic.op.rename_table",
+  "apache_beam",
+  "apache_beam.CombineGlobally",
+  "apache_beam.Map",
+  "apache_beam.Pipeline",
+  "apache_beam.combiners.TupleCombineFn",
+  "apache_beam.io.ReadFromText",
+  "apache_beam.io.WriteToText",
+  "apache_beam.pipeline.PipelineOptions",
+  "apache_beam.ptransform_fn",
+  "apiclient.discovery.HttpError",
+  "apiclient.discovery.build",
+  "apiclient.errors.HttpError",
+  "apiclient.http.MediaFileUpload",
+  "azure.storage.blob.BlockBlobService",
+  "backend",
+  "builtins.bytes",
+  "builtins.chr",
+  "builtins.input",
+  "builtins.next",
+  "builtins.object",
+  "builtins.range",
+  "builtins.str",
+  "builtins.zip",
+  "c",
+  "camel_to_snake",
+  "celery.bin.worker.run",
+  "cloudant.Account",
+  "cx_Oracle",
+  "cx_Oracle.connect",
+  "cx_Oracle.makedsn",
+  "datadog.api.Event.create",
+  "datadog.api.Event.query",
+  "datadog.api.Metric.query",
+  "datadog.api.Metric.send",
+  "datetime.datetime.min",
+  "datetime.datetime.min.time",
+  "datetime.datetime.today",
+  "datetime.timedelta.max",
+  "datetime.timedelta.max.total_seconds",
+  "decimal.Decimal",
+  "docker.Client",
+  "errno",
+  "errno.EEXIST",
+  "errno.ENOENT",
+  "f",
+  "f.read",
+  "f.readline",
+  "flask._compat.PY2",
+  "flask._request_ctx_stack.top",
+  "flask.current_app.config",
+  "flask.current_app.errorhandler",
+  "flask.g.user",
+  "flask.request.args",
+  "flask.request.args.get",
+  "flask.request.args.items",
+  "flask.request.files.read",
+  "flask.request.form",
+  "flask.request.form.get",
+  "flask.request.get_json",
+  "flask.request.headers.get",
+  "flask.request.json",
+  "flask.request.method",
+  "flask.request.path",
+  "flask.request.referrer",
+  "flask_bcrypt.check_password_hash",
+  "flask_bcrypt.generate_password_hash",
+  "flask_cache.Cache",
+  "flask_login.current_user.data_profiling",
+  "flask_login.current_user.is_anonymous",
+  "flask_login.current_user.is_authenticated",
+  "flask_login.current_user.is_superuser",
+  "flask_login.current_user.username",
+  "flask_login.flash",
+  "fmodule",
+  "ftplib.FTP_TLS.port",
+  "func",
+  "function",
+  "future.moves.urllib.parse.urljoin",
+  "future.standard_library",
+  "future.standard_library.install_aliases",
+  "future.utils.native",
+  "get_downstream",
+  "get_int_arg",
+  "get_num_ready_workers_running",
+  "get_num_workers_running",
+  "get_upstream",
+  "hashlib.sha1",
+  "hive_service.ThriftHive",
+  "hive_service.ThriftHive.Client",
+  "id.split",
+  "impala.dbapi.connect",
+  "impala.error.ProgrammingError",
+  "integrate_plugins",
+  "is_current",
+  "itertools",
+  "itertools.product",
+  "jira.resources.Resource",
+  "json.JSONEncoder.default",
+  "kerberos",
+  "kerberos.AUTH_GSS_COMPLETE",
+  "kerberos.AUTH_GSS_CONTINUE",
+  "kerberos.GSSError",
+  "kerberos.KrbError",
+  "kerberos.authGSSServerClean",
+  "kerberos.authGSSServerInit",
+  "kerberos.authGSSServerResponse",
+  "kerberos.authGSSServerStep",
+  "kerberos.authGSSServerUserName",
+  "kerberos.checkPassword",
+  "kerberos.getServerPrincipalDetails",
+  "logging.root.getChild",
+  "mesos.interface",
+  "mesos.interface.mesos_pb2",
+  "mesos.interface.mesos_pb2.CommandInfo",
+  "mesos.interface.mesos_pb2.Credential",
+  "mesos.interface.mesos_pb2.FrameworkInfo",
+  "mesos.interface.mesos_pb2.TASK_FAILED",
+  "mesos.interface.mesos_pb2.TASK_FINISHED",
+  "mesos.interface.mesos_pb2.TASK_KILLED",
+  "mesos.interface.mesos_pb2.TASK_LOST",
+  "mesos.interface.mesos_pb2.TaskInfo",
+  "mesos.interface.mesos_pb2.TaskState.Name",
+  "mesos.interface.mesos_pb2.Value.SCALAR",
+  "mesos.native",
+  "monitor_gunicorn",
+  "multiprocessing.JoinableQueue",
+  "multiprocessing.Process",
+  "multiprocessing.Queue",
+  "numpy.complex128",
+  "numpy.complex64",
+  "numpy.datetime64",
+  "numpy.float16",
+  "numpy.float32",
+  "numpy.float64",
+  "numpy.uint16",
+  "numpy.uint32",
+  "numpy.uint64",
+  "object.__getattribute__",
+  "object.__setattr__",
+  "open_fn",
+  "os.chmod",
+  "os.environ.copy",
+  "os.environ.get",
+  "os.getpgid",
+  "os.getpid",
+  "os.kill",
+  "os.killpg",
+  "os.path.abspath",
+  "os.path.basename",
+  "os.path.dirname",
+  "os.path.exists",
+  "os.path.expanduser",
+  "os.path.expandvars",
+  "os.path.getmtime",
+  "os.path.isdir",
+  "os.path.isfile",
+  "os.path.islink",
+  "os.path.join",
+  "os.path.normpath",
+  "os.path.realpath",
+  "os.path.relpath",
+  "os.path.split",
+  "os.path.splitext",
+  "os.readlink",
+  "os.remove",
+  "os.setsid",
+  "os.stat",
+  "os.symlink",
+  "os.umask",
+  "os.unlink",
+  "pandas.DataFrame.from_records",
+  "pandas.np.NaN",
+  "pandas.tools.merge.concat",
+  "parameterized_config",
+  "past.builtins.basestring",
+  "past.builtins.unicode",
+  "poke_partition",
+  "psutil",
+  "psutil.NoSuchProcess",
+  "psutil.Process",
+  "psutil.TimeoutExpired",
+  "psutil.pid_exists",
+  "psutil.wait_procs",
+  "pull_fn",
+  "pygments.formatters.HtmlFormatter",
+  "pygments.lexers.BashLexer",
+  "pygments.lexers.IniLexer",
+  "pygments.lexers.JsonLexer",
+  "pygments.lexers.PythonLexer",
+  "pygments.lexers.RstLexer",
+  "pygments.lexers.SqlLexer",
+  "pygments.lexers.TextLexer",
+  "pygments.lexers.YamlLexer",
+  "pymssql",
+  "pymssql.connect",
+  "qds_sdk.commands.Command.find",
+  "qds_sdk.qubole.Qubole.poll_interval",
+  "re.IGNORECASE",
+  "recurse_nodes",
+  "reload",
+  "request_func",
+  "requests.codes.ok",
+  "requests_kerberos.HTTPKerberosAuth",
+  "rt",
+  "saslwrapper",
+  "saslwrapper.Client",
+  "sessionmaker",
+  "set_duration",
+  "set_is_paused",
+  "setproctitle",
+  "setproctitle.getproctitle",
+  "setproctitle.setproctitle",
+  "signal.SIGALRM",
+  "signal.SIGINT",
+  "signal.SIGKILL",
+  "signal.SIGQUIT",
+  "signal.SIGTERM",
+  "signal.SIGTTIN",
+  "signal.SIGTTOU",
+  "signal.SIG_DFL",
+  "signal.alarm",
+  "simple_salesforce.Salesforce",
+  "six.moves.configparser",
+  "six.moves.configparser.ConfigParser",
+  "six.moves.configparser.SafeConfigParser",
+  "six.moves.urllib.parse.urlsplit",
+  "six.moves.zip",
+  "smbclient.SambaClient",
+  "socket.gethostbyaddr",
+  "sqlalchemy.func.cast",
+  "sqlalchemy.func.coalesce",
+  "sqlalchemy.func.count",
+  "sqlalchemy.func.max",
+  "sqlalchemy.func.now",
+  "sqlalchemy.func.sum",
+  "sqlite3.connect",
+  "ssl.CERT_REQUIRED",
+  "start_refresh",
+  "sys",
+  "sys.__stderr__",
+  "sys.__stdout__",
+  "sys._current_frames",
+  "sys.exc_info",
+  "sys.exit",
+  "sys.getdefaultencoding",
+  "sys.getsizeof",
+  "sys.maxsize",
+  "sys.modules",
+  "sys.path",
+  "sys.path.append",
+  "sys.path.insert",
+  "sys.setrecursionlimit",
+  "sys.stderr",
+  "sys.stderr.flush",
+  "sys.stdout",
+  "sys.stdout.flush",
+  "sys.version_info",
+  "thrift_sasl.TSaslClientTransport",
+  "time",
+  "time.mktime",
+  "time.sleep",
+  "time.time",
+  "unicodecsv.writer",
+  "urlparse",
+  "urlparse.urlparse",
+  "validate_fn",
+  "var_print",
+  "wait_until_true",
+  "wtforms.DateTimeField",
+  "wtforms.PasswordField",
+  "wtforms.SelectField",
+  "wtforms.StringField",
+  "wtforms.TextAreaField",
+  "wtforms.widgets.TextArea",
+  "zdesk.RateLimitError",
+  "zdesk.Zendesk",
+  "zdesk.ZendeskError",
+  "zope.deprecation.deprecated"
+ ],
+ "deps": {
+  "AirflowException": [],
+  "Chart": [],
+  "DagRun": [],
+  "FileLoadStat": [],
+  "GoogleCloudBucketHelper": [],
+  "GraphForm": [],
+  "KET": [],
+  "Log": [],
+  "MySQLdb": [],
+  "NVd3ChartClass": [],
+  "QueryForm": [],
+  "StringIO": [],
+  "TI": [],
+  "TIDepStatus": [],
+  "VariableAccessor": [],
+  "VariableJsonAccessor": [],
+  "__future__": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "_infer_field_types_from_df": [],
+  "_split_tablename": [],
+  "_str": [],
+  "_tabulate": [],
+  "abc": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "airflow": [],
+  "airflow_local_settings": [],
+  "alembic": [
+   "alembic/conda-forge/noarch/alembic-1.0.7-py_0"
+  ],
+  "apache_beam": [],
+  "apiclient": [
+   "google-api-python-client/conda-forge/noarch/google-api-python-client-1.7.8-py_0"
+  ],
+  "argparse": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "ast": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "av": [
+   "av/conda-forge/linux-64/av-0.3.3-py36_1"
+  ],
+  "azure": [],
+  "backend": [],
+  "base64": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "bleach": [
+   "bleach/conda-forge/noarch/bleach-3.1.0-py_0"
+  ],
+  "boto3": [
+   "boto3/conda-forge/noarch/boto3-1.13.1-pyh9f0ad1d_0"
+  ],
+  "builtins": [],
+  "bz2": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "c": [],
+  "camel_to_snake": [],
+  "celery": [
+   "celery/conda-forge/noarch/celery-4.4.0rc1-py_0"
+  ],
+  "cgi": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "cgroupspy": [
+   "cgroupspy/conda-forge/noarch/cgroupspy-0.1.6-py_0"
+  ],
+  "cloudant": [
+   "cloudant/conda-forge/noarch/cloudant-2.12.0-py_0"
+  ],
+  "collections": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "configparser": [
+   "configparser/conda-forge/noarch/configparser-5.0.0-py_0",
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "contextlib": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "copy": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "croniter": [
+   "croniter/conda-forge/noarch/croniter-0.3.35-pyh9f0ad1d_0"
+  ],
+  "cryptography": [
+   "privy/conda-forge/noarch/privy-6.0.0-py_0"
+  ],
+  "cx_Oracle": [],
+  "daemon": [
+   "python-daemon/conda-forge/noarch/python-daemon-2.3.0-pyhd8ed1ab_1"
+  ],
+  "datadog": [
+   "datadog/conda-forge/noarch/datadog-0.39.0-pyh9f0ad1d_0"
+  ],
+  "datetime": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "dateutil": [
+   "python-dateutil/conda-forge/noarch/python-dateutil-2.7.4-py_0"
+  ],
+  "decimal": [],
+  "dill": [
+   "dill/conda-forge/noarch/dill-0.3.2-pyh9f0ad1d_0"
+  ],
+  "distributed": [
+   "distributed/conda-forge/noarch/distributed-2.1.0-py_0"
+  ],
+  "docker": [
+   "docker-py/conda-forge/linux-64/docker-py-4.4.4-py37h9c2f6ca_0"
+  ],
+  "email": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "errno": [],
+  "f": [],
+  "flask": [
+   "flask/conda-forge/noarch/flask-2.0.0-pyhd8ed1ab_0"
+  ],
+  "flask_admin": [
+   "flask-admin/conda-forge/noarch/flask-admin-1.5.1-py_1"
+  ],
+  "flask_bcrypt": [],
+  "flask_cache": [],
+  "flask_login": [
+   "flask-login/conda-forge/noarch/flask-login-0.5.0-pyh9f0ad1d_0"
+  ],
+  "flask_oauthlib": [
+   "flask-oauthlib/conda-forge/noarch/flask-oauthlib-0.9.5-py_0"
+  ],
+  "flask_wtf": [
+   "flask-wtf/conda-forge/noarch/flask-wtf-0.14.2-py_1"
+  ],
+  "fmodule": [],
+  "fnmatch": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "ftplib": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "func": [],
+  "funcsigs": [
+   "funcsigs/conda-forge/noarch/funcsigs-1.0.2-py_3"
+  ],
+  "function": [],
+  "functools": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "future": [],
+  "get_downstream": [],
+  "get_int_arg": [],
+  "get_num_ready_workers_running": [],
+  "get_num_workers_running": [],
+  "get_upstream": [],
+  "getpass": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "googleapiclient": [
+   "google-api-python-client/conda-forge/noarch/google-api-python-client-1.7.8-py_0"
+  ],
+  "gzip": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "hashlib": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "hdfs": [
+   "python-hdfs/conda-forge/noarch/python-hdfs-2.5.7-py_0"
+  ],
+  "hive_metastore": [
+   "hive-thrift-py/conda-forge/noarch/hive-thrift-py-0.0.1-py_1"
+  ],
+  "hive_service": [],
+  "httplib2": [
+   "httplib2/conda-forge/noarch/httplib2-0.17.1-pyh9f0ad1d_0"
+  ],
+  "id": [],
+  "imp": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "impala": [],
+  "importlib": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "inspect": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "integrate_plugins": [],
+  "io": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "is_current": [],
+  "itertools": [],
+  "jaydebeapi": [
+   "jaydebeapi/conda-forge/noarch/jaydebeapi-1.2.3-pyh9f0ad1d_0"
+  ],
+  "jinja2": [
+   "jinja2/conda-forge/noarch/jinja2-2.10-py_1"
+  ],
+  "jira": [
+   "jira/conda-forge/noarch/jira-1.0.14-py_0"
+  ],
+  "json": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "kerberos": [],
+  "ldap3": [
+   "ldap3/conda-forge/noarch/ldap3-2.5.1-py_0"
+  ],
+  "logging": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "markdown": [
+   "markdown/conda-forge/noarch/markdown-3.3.1-pyh9f0ad1d_0"
+  ],
+  "math": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "mesos": [],
+  "monitor_gunicorn": [],
+  "multiprocessing": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "numpy": [
+   "numpy/conda-forge/linux-64/numpy-1.9.3-py27_blas_openblashb06ca3d_7"
+  ],
+  "nvd3": [
+   "python-nvd3/conda-forge/noarch/python-nvd3-0.15.0-py_1"
+  ],
+  "oauth2client": [
+   "oauth2client/conda-forge/noarch/oauth2client-4.1.3-py_0"
+  ],
+  "object": [],
+  "open_fn": [],
+  "os": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "pandas": [
+   "pandas/conda-forge/linux-64/pandas-0.25.0-py37hb3f55d8_0"
+  ],
+  "pandas_gbq": [
+   "pandas-gbq/conda-forge/noarch/pandas-gbq-0.6.1-py_0"
+  ],
+  "parameterized_config": [],
+  "paramiko": [
+   "paramiko/conda-forge/noarch/paramiko-2.7.1-pyh9f0ad1d_1"
+  ],
+  "past": [],
+  "pickle": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "pkg_resources": [
+   "setuptools/conda-forge/linux-64/setuptools-41.2.0-py27_0"
+  ],
+  "poke_partition": [],
+  "pprint": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "psutil": [],
+  "psycopg2": [
+   "psycopg2/conda-forge/linux-64/psycopg2-2.8.6-py39hba1e1b8_1"
+  ],
+  "pull_fn": [],
+  "pygments": [
+   "pygments/conda-forge/noarch/pygments-2.5.0-py_0"
+  ],
+  "pyhive": [
+   "pyhive/conda-forge/noarch/pyhive-0.6.3-pyhd3deb0d_0"
+  ],
+  "pymssql": [],
+  "qds_sdk": [
+   "qds-sdk/conda-forge/noarch/qds-sdk-1.16.1-pyhd8ed1ab_0"
+  ],
+  "queue": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "random": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "re": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "recurse_nodes": [],
+  "redis": [
+   "redis-py/conda-forge/noarch/redis-py-3.2.1-py_0"
+  ],
+  "reload": [],
+  "reprlib": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "request_func": [],
+  "requests": [
+   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
+   "requests/conda-forge/noarch/requests-2.23.0-pyh8c360ce_2"
+  ],
+  "requests_kerberos": [],
+  "rt": [],
+  "sasl": [
+   "sasl/conda-forge/linux-64/sasl-0.3a1-py38hadf7658_0"
+  ],
+  "saslwrapper": [],
+  "select": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "sessionmaker": [],
+  "set_duration": [],
+  "set_is_paused": [],
+  "setproctitle": [],
+  "shlex": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "shutil": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "signal": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "simple_salesforce": [],
+  "six": [
+   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
+   "privy/conda-forge/noarch/privy-6.0.0-py_0",
+   "six/conda-forge/linux-64/six-1.14.0-py36_0"
+  ],
+  "slackclient": [
+   "slackclient/conda-forge/noarch/slackclient-1.2.1-py_0"
+  ],
+  "smbclient": [],
+  "smtplib": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "snakebite": [
+   "snakebite-py3/conda-forge/noarch/snakebite-py3-3.0.5-pyhd8ed1ab_1"
+  ],
+  "socket": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "sqlalchemy": [
+   "sqlalchemy/conda-forge/linux-64/sqlalchemy-1.3.15-py36h8c4c3a4_1"
+  ],
+  "sqlite3": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "ssl": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "start_refresh": [],
+  "statsd": [
+   "statsd/conda-forge/noarch/statsd-3.2.2-py_1"
+  ],
+  "subprocess": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "sys": [],
+  "tabulate": [
+   "tabulate/conda-forge/noarch/tabulate-0.8.7-pyh9f0ad1d_0"
+  ],
+  "tempfile": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "textwrap": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "threading": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "thrift": [
+   "python-awips/conda-forge/noarch/python-awips-18.1.2-py_0",
+   "thrift/conda-forge/linux-64/thrift-0.13.0-py38h709712a_2"
+  ],
+  "thrift_sasl": [],
+  "time": [],
+  "traceback": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "types": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "unicodecsv": [
+   "unicodecsv/conda-forge/noarch/unicodecsv-0.14.1-py_1"
+  ],
+  "unittest": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "urllib": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "urlparse": [],
+  "uuid": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "validate_fn": [],
+  "var_print": [],
+  "vertica_python": [
+   "vertica-python/conda-forge/noarch/vertica-python-0.7.4-py_0"
+  ],
+  "wait_until_true": [],
+  "warnings": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "wtforms": [
+   "wtforms/conda-forge/noarch/wtforms-2.3.2-pyh9f0ad1d_0"
+  ],
+  "zdesk": [],
+  "zipfile": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "zope": []
+ }
+}

@@ -2,12 +2,6 @@
  "bad": [
   "Binding",
   "Decimal",
-  "abc",
-  "abc.ABCMeta",
-  "abc.abstractmethod",
-  "aiohttp",
-  "aiohttp.ClientResponseError",
-  "aiohttp.ClientSession",
   "aiohttp.WSMsgType.close",
   "aiohttp.WSMsgType.closed",
   "aiohttp.WSMsgType.error",
@@ -17,25 +11,7 @@
   "async_connect",
   "async_read",
   "async_write",
-  "asyncio",
-  "base64",
-  "base64.b64decode",
-  "base64.b64encode",
-  "calendar",
-  "calendar.timegm",
   "cb",
-  "collections",
-  "collections.OrderedDict",
-  "collections.namedtuple",
-  "concurrent.futures.Future",
-  "concurrent.futures.ThreadPoolExecutor",
-  "copy",
-  "copy.deepcopy",
-  "datetime",
-  "datetime.datetime",
-  "datetime.datetime.utcfromtimestamp",
-  "datetime.timedelta",
-  "decimal",
   "double_unpack",
   "float_unpack",
   "gremlin_python.process.traversal.TraversalStrategies.global_cache",
@@ -53,12 +29,6 @@
   "int64_unpack",
   "int8_pack",
   "int8_unpack",
-  "io",
-  "io.BufferedIOBase",
-  "io.BytesIO",
-  "json",
-  "json.dumps",
-  "json.loads",
   "kerberos",
   "kerberos.AUTH_GSS_COMPLETE",
   "kerberos.GSS_C_MUTUAL_FLAG",
@@ -69,11 +39,6 @@
   "kerberos.authGSSClientUnwrap",
   "kerberos.authGSSClientUserName",
   "kerberos.authGSSClientWrap",
-  "logging",
-  "logging.getLogger",
-  "math",
-  "math.isinf",
-  "math.isnan",
   "multiprocessing.cpu_count",
   "op_method",
   "property.element",
@@ -83,32 +48,29 @@
   "six.moves.queue.Queue",
   "statics.add_static",
   "str.__new__",
-  "struct",
   "struct.Struct",
   "struct.pack",
   "struct.unpack",
   "sys",
   "sys.maxsize",
-  "types.FunctionType",
   "uint8_pack",
   "uint8_unpack",
   "ujson",
   "ujson.dumps",
-  "ujson.loads",
-  "uuid",
-  "uuid.UUID",
-  "uuid.uuid4",
-  "warnings",
-  "warnings.warn"
+  "ujson.loads"
  ],
  "deps": {
   "Binding": [],
   "Decimal": [],
-  "abc": [],
+  "abc": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "aenum": [
    "aenum/conda-forge/noarch/aenum-2.2.5-pyhd3deb0d_0"
   ],
-  "aiohttp": [],
+  "aiohttp": [
+   "aiohttp/conda-forge/linux-64/aiohttp-3.7.0-py36h8c4c3a4_0"
+  ],
   "arg": [],
   "async_close": [],
   "async_connect": [],
@@ -117,15 +79,31 @@
    "async_timeout/conda-forge/noarch/async_timeout-3.0.1-py_0"
   ],
   "async_write": [],
-  "asyncio": [],
-  "base64": [],
-  "calendar": [],
+  "asyncio": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "base64": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "calendar": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "cb": [],
-  "collections": [],
-  "concurrent": [],
-  "copy": [],
-  "datetime": [],
-  "decimal": [],
+  "collections": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "concurrent": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "copy": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "datetime": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "decimal": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "double_unpack": [],
   "float_unpack": [],
   "gremlin_python": [],
@@ -136,30 +114,47 @@
   "int64_unpack": [],
   "int8_pack": [],
   "int8_unpack": [],
-  "io": [],
+  "io": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "isodate": [
    "isodate/conda-forge/noarch/isodate-0.6.0-py_1"
   ],
-  "json": [],
+  "json": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "kerberos": [],
-  "logging": [],
-  "math": [],
+  "logging": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "math": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "multiprocessing": [],
   "op_method": [],
   "property": [],
   "six": [
    "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
-   "privy/conda-forge/noarch/privy-6.0.0-py_0"
+   "privy/conda-forge/noarch/privy-6.0.0-py_0",
+   "six/conda-forge/linux-64/six-1.14.0-py36_0"
   ],
   "statics": [],
   "str": [],
-  "struct": [],
+  "struct": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "sys": [],
-  "types": [],
+  "types": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "uint8_pack": [],
   "uint8_unpack": [],
   "ujson": [],
-  "uuid": [],
-  "warnings": []
+  "uuid": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "warnings": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ]
  }
 }

@@ -1,26 +1,11 @@
 {
  "bad": [
-  "Crypto.Cipher.AES",
-  "Crypto.Cipher.AES.new",
-  "__future__.absolute_import",
-  "__future__.unicode_literals",
-  "abc",
-  "abc.ABCMeta",
-  "abc.abstractmethod",
-  "argparse",
-  "argparse.ArgumentParser",
-  "base64",
-  "base64.b64decode",
-  "calendar.timegm",
   "decryptAES",
   "errno",
   "errno.ECONNREFUSED",
   "func",
   "gethostbyname",
   "gethostname",
-  "getpass",
-  "getpass.getuser",
-  "http.client.HTTPConnection",
   "http.client.OK",
   "httplib.HTTPConnection",
   "httplib.OK",
@@ -28,102 +13,70 @@
   "ipython_genutils.py3compat.bytes_to_str",
   "ipython_genutils.py3compat.str_to_bytes",
   "ipython_genutils.py3compat.with_metaclass",
-  "json",
-  "json.dump",
-  "json.dumps",
-  "json.load",
-  "json.loads",
-  "logging",
-  "logging.DEBUG",
-  "logging.WARNING",
-  "logging.basicConfig",
-  "logging.getLogger",
-  "notebook._tz",
-  "notebook._tz.utcnow",
-  "notebook.services.kernels.kernelmanager.MappingKernelManager",
-  "os",
-  "os.devnull",
   "os.environ.copy",
-  "os.getenv",
   "os.getpgid",
   "os.killpg",
-  "os.makedirs",
   "os.path.basename",
   "os.path.exists",
   "os.path.join",
-  "pprint.pprint",
   "process_proxy_class",
   "processproxy.BaseProcessProxyABC.ip_is_local",
   "processproxy.RemoteProcessProxy.get_current_time",
   "processproxy.RemoteProcessProxy.get_time_diff",
-  "random",
-  "random.randint",
-  "random.seed",
-  "re",
-  "re.compile",
-  "re.findall",
-  "re.match",
-  "signal",
   "signal.SIGINT",
   "signal.SIGKILL",
   "signal.SIGTERM",
   "signal.SIG_IGN",
-  "signal.signal",
-  "socket",
   "socket.error",
   "socket.gethostbyname",
-  "subprocess",
-  "subprocess.PIPE",
-  "subprocess.Popen",
-  "subprocess.STDOUT",
-  "subprocess.call",
   "sys",
   "sys.platform",
   "sys.stdout",
-  "threading",
-  "threading.Lock",
   "time",
   "time.sleep",
-  "tornado.gen",
-  "tornado.gen.Return",
-  "tornado.gen.coroutine",
-  "tornado.gen.maybe_future",
-  "tornado.log.LogFormatter",
-  "tornado.web",
-  "tornado.web.HTTPError",
-  "urllib.parse.urlencode",
-  "urllib.parse.urlparse",
   "urllib.urlencode",
   "urlparse.urlparse",
-  "xml.etree.ElementTree",
-  "xml.etree.ElementTree.parse",
-  "zmq.eventloop.ioloop",
-  "zmq.eventloop.ioloop.IOLoop.current",
-  "zmq.eventloop.ioloop.install",
-  "zmq.ssh.tunnel",
-  "zmq.ssh.tunnel.paramiko_tunnel",
-  "zmq.ssh.tunnel.try_passwordless_ssh"
+  "zmq.eventloop.ioloop.IOLoop.current"
  ],
  "deps": {
-  "Crypto": [],
-  "__future__": [],
-  "abc": [],
-  "argparse": [],
-  "base64": [],
-  "calendar": [],
+  "Crypto": [
+   "pycryptodome/conda-forge/linux-64/pycryptodome-3.7.3-py37ha14ba45_0"
+  ],
+  "__future__": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "abc": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "argparse": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "base64": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "calendar": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "decryptAES": [],
   "enum": [
-   "privy/conda-forge/noarch/privy-6.0.0-py_0"
+   "privy/conda-forge/noarch/privy-6.0.0-py_0",
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
   ],
   "errno": [],
   "func": [],
   "gethostbyname": [],
   "gethostname": [],
-  "getpass": [],
-  "http": [],
+  "getpass": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "http": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "httplib": [],
   "ipython_genutils": [],
-  "json": [],
+  "json": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "jupyter_client": [
    "jupyter_client/conda-forge/noarch/jupyter_client-6.1.7-py_0"
   ],
@@ -133,9 +86,15 @@
   "kernel_gateway": [
    "jupyter_kernel_gateway/conda-forge/noarch/jupyter_kernel_gateway-2.1.0-py_0"
   ],
-  "logging": [],
-  "notebook": [],
-  "os": [],
+  "logging": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "notebook": [
+   "notebook/conda-forge/linux-64/notebook-6.3.0-py36hd000896_0"
+  ],
+  "os": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "paramiko": [
    "paramiko/conda-forge/noarch/paramiko-2.7.1-pyh9f0ad1d_1"
   ],
@@ -145,24 +104,46 @@
   "pexpect": [
    "pexpect/conda-forge/noarch/pexpect-4.8.0-pyh9f0ad1d_2"
   ],
-  "pprint": [],
+  "pprint": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "process_proxy_class": [],
   "processproxy": [],
-  "random": [],
-  "re": [],
-  "signal": [],
-  "socket": [],
-  "subprocess": [],
+  "random": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "re": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "signal": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "socket": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "subprocess": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "sys": [],
-  "threading": [],
+  "threading": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "time": [],
-  "tornado": [],
+  "tornado": [
+   "tornado/conda-forge/linux-64/tornado-5.1.1-py36h97a6639_1"
+  ],
   "traitlets": [
    "traitlets/conda-forge/noarch/traitlets-5.0.3-py_0"
   ],
-  "urllib": [],
+  "urllib": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "urlparse": [],
-  "xml": [],
-  "zmq": []
+  "xml": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "zmq": [
+   "pyzmq/conda-forge/linux-64/pyzmq-21.0.1-py36h81c33ee_0"
+  ]
  }
 }

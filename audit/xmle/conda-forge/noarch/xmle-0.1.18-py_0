@@ -3,16 +3,8 @@
   "HTMLParser_MetaDataLoader",
   "atexit",
   "atexit.register",
-  "base64",
-  "base64.standard_b64decode",
-  "base64.standard_b64encode",
   "bs4.BeautifulSoup",
   "colors.strcolor_rgb256",
-  "contextlib.contextmanager",
-  "copy",
-  "copy.deepcopy",
-  "datetime.datetime",
-  "datetime.datetime.fromtimestamp",
   "docutils.core.publish_parts",
   "file_util.append_date_to_filename",
   "file_util.creation_date",
@@ -20,27 +12,10 @@
   "filez.open_file_writer",
   "fn",
   "format.format",
-  "glob",
-  "glob.glob",
-  "gzip",
-  "gzip.open",
-  "html.parser.HTMLParser",
   "html_table_to_txt.xml_table_to_txt",
-  "io.BufferedIOBase",
-  "io.BytesIO",
-  "io.StringIO",
-  "io.TextIOBase",
   "itertools.chain",
   "local_logo.local_favicon",
   "local_logo.local_logo",
-  "math",
-  "matplotlib.figure",
-  "matplotlib.pyplot",
-  "matplotlib.pyplot.close",
-  "matplotlib.pyplot.figure",
-  "numpy",
-  "os",
-  "os.makedirs",
   "os.path.basename",
   "os.path.dirname",
   "os.path.exists",
@@ -55,45 +30,16 @@
   "os.remove",
   "os.rename",
   "os.stat",
-  "pandas",
-  "pandas.DataFrame",
-  "pandas.Series",
-  "pandas.io.formats.style.Styler",
-  "pickle",
-  "pickle.dumps",
-  "pickle.loads",
-  "platform",
-  "platform.system",
-  "pprint.pformat",
-  "pprint.pprint",
-  "re",
-  "re.sub",
   "render_list_item",
   "restructuredtext.rst_to_xhtml",
   "rst_to_xhtml",
-  "shutil",
-  "shutil.move",
-  "shutil.rmtree",
   "styles.body_font",
-  "tempfile",
-  "tempfile.NamedTemporaryFile",
   "tempfile.name",
-  "textwrap",
-  "textwrap.dedent",
   "time",
   "time.ctime",
   "time.strftime",
   "time.time",
-  "traceback",
-  "traceback.print_exc",
-  "xhtml.XHTML",
-  "xml.etree.ElementTree",
-  "xml.etree.ElementTree.Element",
-  "xml.etree.ElementTree.SubElement",
-  "xml.etree.ElementTree.TreeBuilder",
-  "xml.etree.ElementTree.XMLParser",
-  "zlib",
-  "zlib.decompress"
+  "xhtml.XHTML"
  ],
  "deps": {
   "HTMLParser_MetaDataLoader": [],
@@ -101,7 +47,9 @@
    "appdirs/conda-forge/noarch/appdirs-1.4.4-pyh9f0ad1d_0"
   ],
   "atexit": [],
-  "base64": [],
+  "base64": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "bs4": [],
   "cairosvg": [
    "cairosvg/conda-forge/noarch/cairosvg-2.5.1-pyhd8ed1ab_0"
@@ -110,47 +58,92 @@
    "cloudpickle/conda-forge/noarch/cloudpickle-1.4.1-py_0"
   ],
   "colors": [],
-  "contextlib": [],
-  "copy": [],
-  "datetime": [],
+  "contextlib": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "copy": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "datetime": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "docutils": [],
   "file_util": [],
   "filez": [],
   "fn": [],
   "format": [],
-  "glob": [],
-  "gzip": [],
-  "html": [],
+  "glob": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "gzip": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "html": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "html_table_to_txt": [],
-  "io": [],
+  "io": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "itertools": [],
   "local_logo": [],
-  "math": [],
-  "matplotlib": [],
-  "numpy": [],
-  "os": [],
-  "pandas": [],
-  "pathlib": [
-   "pathlib/conda-forge/noarch/pathlib-1.0.1-py_1"
+  "math": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
   ],
-  "pickle": [],
-  "platform": [],
+  "matplotlib": [
+   "matplotlib-base/conda-forge/linux-64/matplotlib-base-3.3.3-py36h159efd9_0"
+  ],
+  "numpy": [
+   "numpy/conda-forge/linux-64/numpy-1.9.3-py27_blas_openblashb06ca3d_7"
+  ],
+  "os": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "pandas": [
+   "pandas/conda-forge/linux-64/pandas-0.25.0-py37hb3f55d8_0"
+  ],
+  "pathlib": [
+   "pathlib/conda-forge/noarch/pathlib-1.0.1-py_1",
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "pickle": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "platform": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "plotly": [
    "plotly/conda-forge/noarch/plotly-4.4.1-py_0"
   ],
-  "pprint": [],
-  "re": [],
+  "pprint": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "re": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "render_list_item": [],
   "restructuredtext": [],
   "rst_to_xhtml": [],
-  "shutil": [],
+  "shutil": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "styles": [],
-  "tempfile": [],
-  "textwrap": [],
+  "tempfile": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "textwrap": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "time": [],
-  "traceback": [],
+  "traceback": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "xhtml": [],
-  "xml": [],
-  "zlib": []
+  "xml": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "zlib": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ]
  }
 }
