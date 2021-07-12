@@ -2,7 +2,6 @@
  "bad": [
   "Mock",
   "PyQt4",
-  "PyQt5",
   "PyQt5.sip",
   "PyQt5.sip.__name__",
   "PyQt5.sip.delete",
@@ -12,8 +11,6 @@
   "PySide.__version__",
   "PySide.shiboken",
   "PySide.shiboken.delete",
-  "PySide2",
-  "PySide2.__version__",
   "PySide2.shiboken2",
   "PySide2.shiboken2.delete",
   "QtSiteConfig",
@@ -28,7 +25,6 @@
   "headerToModule",
   "os.path.splitext",
   "shiboken",
-  "shiboken2",
   "sip",
   "some_function",
   "some_function.__doc__",
@@ -42,9 +38,13 @@
  "deps": {
   "Mock": [],
   "PyQt4": [],
-  "PyQt5": [],
+  "PyQt5": [
+   "pyqt-impl/conda-forge/linux-64/pyqt-impl-5.12.3-py36hcf76f5f_7"
+  ],
   "PySide": [],
-  "PySide2": [],
+  "PySide2": [
+   "pyside2/conda-forge/linux-64/pyside2-5.13.2-py36hbee1fde_1"
+  ],
   "QtSiteConfig": [],
   "_UiLoader": [],
   "_log": [],
@@ -64,7 +64,9 @@
    "parse/conda-forge/noarch/parse-1.8.4-py_1"
   ],
   "shiboken": [],
-  "shiboken2": [],
+  "shiboken2": [
+   "pyside2/conda-forge/linux-64/pyside2-5.13.2-py36hbee1fde_1"
+  ],
   "shutil": [
    "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
   ],

@@ -1,30 +1,12 @@
 {
  "bad": [
   "aiapy.__init__._get_bibtex",
-  "astropy.config.configuration.ConfigurationDefaultMissingError",
-  "astropy.config.configuration.ConfigurationDefaultMissingWarning",
-  "astropy.config.configuration.update_default_config",
-  "astropy.constants",
   "astropy.constants.c",
   "astropy.constants.h",
-  "astropy.coordinates.CartesianRepresentation",
   "astropy.coordinates.HeliocentricMeanEcliptic",
-  "astropy.coordinates.SkyCoord",
-  "astropy.io.ascii",
-  "astropy.io.fits",
-  "astropy.io.fits.open",
-  "astropy.io.fits.verify.VerifyWarning",
-  "astropy.table",
-  "astropy.table.QTable",
   "astropy.table.QTable.from_pandas",
-  "astropy.tests.helper.assert_quantity_allclose",
-  "astropy.tests.runner.TestRunner",
   "astropy.tests.runner.TestRunner.make_test_runner_in",
-  "astropy.time",
-  "astropy.time.Time",
   "astropy.time.Time.now",
-  "astropy.units",
-  "astropy.units.Quantity",
   "astropy.units.allclose",
   "astropy.units.angstrom",
   "astropy.units.arcsec",
@@ -33,7 +15,6 @@
   "astropy.units.day",
   "astropy.units.deg",
   "astropy.units.degree",
-  "astropy.units.dimensionless_unscaled",
   "astropy.units.eV",
   "astropy.units.electron",
   "astropy.units.h",
@@ -41,76 +22,29 @@
   "astropy.units.ph",
   "astropy.units.pix",
   "astropy.units.pixel",
-  "astropy.units.quantity_input",
-  "astropy.units.s",
   "astropy.units.s.utc.isot",
   "astropy.units.steradian",
   "astropy.units.um",
   "astropy.units.year",
-  "astropy.utils.exceptions.AstropyWarning",
   "astropy.wcs.utils.pixel_to_pixel",
   "builtins",
   "builtins._ASTROPY_SETUP_",
-  "collections",
-  "collections.OrderedDict",
-  "copy",
-  "copy.deepcopy",
-  "cupy",
-  "cupy.array",
-  "cupy.asnumpy",
   "hissw",
   "hissw.Environment",
   "idl_available",
   "importlib.resources",
   "importlib_resources",
   "importlib_resources.path",
-  "matplotlib",
-  "matplotlib.use",
-  "numpy",
-  "numpy.all",
-  "numpy.allclose",
-  "numpy.arange",
-  "numpy.array",
-  "numpy.copy",
-  "numpy.cos",
-  "numpy.exp",
   "numpy.fabs",
-  "numpy.fft.fft2",
-  "numpy.fft.irfft2",
-  "numpy.fft.rfft2",
-  "numpy.floor",
-  "numpy.identity",
-  "numpy.interp",
-  "numpy.linspace",
   "numpy.logical_and",
-  "numpy.ndarray",
-  "numpy.ones",
-  "numpy.outer",
-  "numpy.roll",
-  "numpy.sin",
-  "numpy.sinc",
-  "numpy.testing.assert_allclose",
-  "numpy.unravel_index",
-  "numpy.where",
-  "numpy.zeros",
-  "numpy.zeros_like",
-  "os",
   "os.environ.get",
   "os.path.dirname",
   "os.path.isfile",
   "os.path.join",
-  "pathlib",
-  "pathlib.Path",
   "psf.psf.conj",
   "psf.psf.shape",
-  "pytest",
-  "pytest.fixture",
   "pytest.mark.parametrize",
   "pytest.mark.remote_data",
-  "pytest.param",
-  "pytest.raises",
-  "pytest.skip",
-  "pytest.warns",
   "sunpy.data.manager",
   "sunpy.data.manager.get",
   "sunpy.data.manager.require",
@@ -135,23 +69,25 @@
   "sunpy.net.jsoc.JSOCClient",
   "sunpy.time.parse_time",
   "sunpy.util.metadata.MetaDict",
-  "tempfile",
-  "tempfile.NamedTemporaryFile",
-  "textwrap",
-  "textwrap.dedent",
-  "version.__version__",
   "version.githash",
-  "version.version",
-  "warnings",
-  "warnings.warn"
+  "version.version"
  ],
  "deps": {
   "aiapy": [],
-  "astropy": [],
+  "astropy": [
+   "astropy/conda-forge/linux-64/astropy-2.0.4-py27_0"
+  ],
   "builtins": [],
-  "collections": [],
-  "copy": [],
-  "cupy": [],
+  "collections": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "copy": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "cupy": [
+   "cupy/conda-forge/linux-64/cupy-8.4.0-py38h7fa8657_1",
+   "cupy/conda-forge/linux-64/cupy-8.5.0-py37hd2f5b3b_1"
+  ],
   "drms": [
    "drms/conda-forge/noarch/drms-0.5.2-py_0"
   ],
@@ -159,20 +95,40 @@
   "idl_available": [],
   "importlib": [],
   "importlib_resources": [],
-  "matplotlib": [],
-  "numpy": [],
-  "os": [],
-  "pathlib": [],
+  "matplotlib": [
+   "matplotlib-base/conda-forge/linux-64/matplotlib-base-3.3.3-py36h159efd9_0"
+  ],
+  "numpy": [
+   "numpy/conda-forge/linux-64/numpy-1.9.3-py27_blas_openblashb06ca3d_7"
+  ],
+  "os": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "pathlib": [
+   "pathlib/conda-forge/noarch/pathlib-1.0.1-py_1",
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "psf": [],
-  "pytest": [],
+  "pytest": [
+   "pytest/conda-forge/linux-64/pytest-4.6.3-py27_0",
+   "pytest/conda-forge/linux-64/pytest-6.0.2-py36hc560c46_0"
+  ],
   "setuptools_scm": [
    "setuptools-scm/conda-forge/noarch/setuptools-scm-5.0.1-pyhd3deb0d_0",
    "setuptools_scm/conda-forge/noarch/setuptools_scm-3.1.0-py_0"
   ],
   "sunpy": [],
-  "tempfile": [],
-  "textwrap": [],
-  "version": [],
-  "warnings": []
+  "tempfile": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "textwrap": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "version": [
+   "telegram-send/conda-forge/noarch/telegram-send-0.25-py_0"
+  ],
+  "warnings": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ]
  }
 }

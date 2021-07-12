@@ -7,13 +7,7 @@
   "ROOT.TChain",
   "ROOT.TFile",
   "_write_option",
-  "argparse",
-  "argparse.ArgumentDefaultsHelpFormatter",
-  "argparse.ArgumentParser",
-  "argparse.RawDescriptionHelpFormatter",
   "classad.ClassAd",
-  "collections.OrderedDict",
-  "collections.defaultdict",
   "condor.JOB_STATUS",
   "condor.dag_is_running",
   "condor.find_job",
@@ -31,101 +25,40 @@
   "const.OMICRON_FILETAG.upper",
   "const.OMICRON_PROD.resolve",
   "const.ifo",
-  "contextlib.contextmanager",
-  "copy.deepcopy",
   "data.find_frames",
-  "datetime.datetime",
-  "datetime.datetime.fromtimestamp",
-  "datetime.datetime.now",
-  "distutils.spawn.find_executable",
-  "distutils.version.StrictVersion",
   "dqsegdb2.http.request",
   "dqsegdb2.query.DEFAULT_SEGMENT_SERVER",
   "f",
   "find_job",
-  "functools.reduce",
-  "functools.wraps",
   "get_job_status",
-  "getpass.getuser",
-  "glob",
-  "glob.glob",
-  "glob.iglob",
-  "glue.pipeline",
-  "glue.pipeline.CondorDAG",
-  "glue.pipeline.CondorDAGJob",
   "glue.pipeline.CondorDAGJob.add_opt",
   "glue.pipeline.CondorDAGJob.add_opt.__doc__",
   "glue.pipeline.CondorDAGJob.write_sub_file",
-  "glue.pipeline.CondorDAGNode",
-  "gwdatafind",
-  "gwdatafind.find_latest",
-  "gwdatafind.find_urls",
-  "gwdatafind.utils.file_segment",
-  "gwdatafind.utils.filename_metadata",
   "gwpy.segments.DataQualityFlag.query",
   "gwpy.segments.SegmentList.read",
   "gwpy.table.EventTable.read",
   "gwpy.timeseries.StateVector.read",
   "gwpy.timeseries.TimeSeriesDict.read",
-  "h5py",
-  "h5py.File",
   "htcondor",
   "htcondor.Schedd",
-  "importlib.reload",
-  "io.StringIO",
   "io.get_archive_filename",
-  "json",
-  "json.dumps",
-  "json.loads",
   "ligo.segments.segment",
   "ligo.segments.segmentlist",
   "log.Logger",
   "log.bold",
   "log.color_text",
   "log.logging.DEBUG",
-  "logging",
-  "logging.Filter",
-  "logging.Formatter",
-  "logging.Formatter.format",
-  "logging.Logger",
-  "math.ceil",
-  "math.exp",
-  "math.floor",
-  "math.log",
-  "matplotlib.gridspec.GridSpec",
-  "matplotlib.rcParams",
   "matplotlib.rcParams.update",
-  "matplotlib.use",
   "mock_htcondor.Schedd",
-  "numpy",
-  "numpy.concatenate",
-  "numpy.ndarray",
-  "numpy.sum",
-  "numpy.zeros",
   "omicron.__init__.get_versions",
   "omicron.const.OMICRON_FILETAG.lower",
   "omicron.const.OMICRON_FILETAG.upper",
   "omicron.const.OMICRON_VERSION",
-  "operator",
-  "operator.eq",
-  "operator.ge",
-  "operator.gt",
-  "operator.is_",
-  "operator.is_not",
-  "operator.le",
-  "operator.lt",
-  "operator.ne",
-  "operator.or_",
-  "os",
   "os.X_OK",
   "os.access",
   "os.chmod",
-  "os.environ",
   "os.environ.pop",
   "os.environ.setdefault",
-  "os.getenv",
-  "os.makedirs",
-  "os.path",
   "os.path.basename",
   "os.path.dirname",
   "os.path.isdir",
@@ -134,31 +67,13 @@
   "os.pathsep.join",
   "os.remove",
   "parameters.OmicronParameters.from_channel_list_config",
-  "pathlib.Path",
-  "pathlib.Path.cwd",
-  "pathlib.Path.home",
   "print_nagios_json",
-  "pytest",
-  "pytest.fixture",
   "pytest.mark.parametrize",
-  "pytest.raises",
-  "re",
-  "re.compile",
-  "re.match",
-  "re.sub",
   "segments.get_frame_segments",
   "segments.get_last_run_segment",
   "segments.query_state_segments",
   "segments.read_segments",
   "segments.write_segments",
-  "shutil",
-  "shutil.copyfile",
-  "shutil.rmtree",
-  "socket.getfqdn",
-  "subprocess",
-  "subprocess.CalledProcessError",
-  "subprocess.check_call",
-  "subprocess.check_output",
   "sys",
   "sys.argv",
   "sys.executable",
@@ -169,82 +84,138 @@
   "sys.stdout.read",
   "sys.stdout.seek",
   "sys.version_info",
-  "tempfile",
-  "tempfile.NamedTemporaryFile",
-  "tempfile.gettempdir",
   "time",
   "time.sleep",
   "time.timezone",
-  "unittest.mock",
-  "unittest.mock.patch",
   "unittest.mock.patch.dict",
-  "urllib.parse.urlparse",
   "utils.astropy_config_path",
   "utils.find_omicron",
-  "utils.get_omicron_version",
-  "warnings",
-  "warnings.warn"
+  "utils.get_omicron_version"
  ],
  "deps": {
   "LDAStools": [],
   "MarkupPy": [],
   "ROOT": [],
   "_write_option": [],
-  "argparse": [],
+  "argparse": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "classad": [],
-  "collections": [],
+  "collections": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "condor": [],
   "configparser": [
-   "configparser/conda-forge/noarch/configparser-5.0.0-py_0"
+   "configparser/conda-forge/noarch/configparser-5.0.0-py_0",
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
   ],
   "const": [],
-  "contextlib": [],
-  "copy": [],
+  "contextlib": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "copy": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "data": [],
-  "datetime": [],
-  "distutils": [],
+  "datetime": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "distutils": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "dqsegdb2": [],
   "f": [],
   "find_job": [],
-  "functools": [],
+  "functools": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "get_job_status": [],
-  "getpass": [],
-  "glob": [],
-  "glue": [],
-  "gwdatafind": [],
+  "getpass": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "glob": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "glue": [
+   "lscsoft-glue/conda-forge/linux-64/lscsoft-glue-2.0.0-py36h8c4c3a4_3"
+  ],
+  "gwdatafind": [
+   "gwdatafind/conda-forge/noarch/gwdatafind-1.0.3-py_1001"
+  ],
   "gwpy": [
    "gwpy/conda-forge/noarch/gwpy-2.0.0-pyh9f0ad1d_0"
   ],
-  "h5py": [],
+  "h5py": [
+   "h5py/conda-forge/linux-64/h5py-2.7.1-py36_1"
+  ],
   "htcondor": [],
-  "importlib": [],
-  "io": [],
-  "json": [],
+  "importlib": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "io": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "json": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "ligo": [],
   "log": [],
-  "logging": [],
-  "math": [],
-  "matplotlib": [],
+  "logging": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "math": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "matplotlib": [
+   "matplotlib-base/conda-forge/linux-64/matplotlib-base-3.3.3-py36h159efd9_0"
+  ],
   "mock_htcondor": [],
-  "numpy": [],
+  "numpy": [
+   "numpy/conda-forge/linux-64/numpy-1.9.3-py27_blas_openblashb06ca3d_7"
+  ],
   "omicron": [],
-  "operator": [],
-  "os": [],
+  "operator": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "os": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "parameters": [],
-  "pathlib": [],
+  "pathlib": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "print_nagios_json": [],
-  "pytest": [],
-  "re": [],
+  "pytest": [
+   "pytest/conda-forge/linux-64/pytest-4.6.3-py27_0",
+   "pytest/conda-forge/linux-64/pytest-6.0.2-py36hc560c46_0"
+  ],
+  "re": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "segments": [],
-  "shutil": [],
-  "socket": [],
-  "subprocess": [],
+  "shutil": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "socket": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "subprocess": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "sys": [],
-  "tempfile": [],
+  "tempfile": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "time": [],
-  "unittest": [],
-  "urllib": [],
+  "unittest": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "urllib": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "utils": [],
-  "warnings": []
+  "warnings": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ]
  }
 }

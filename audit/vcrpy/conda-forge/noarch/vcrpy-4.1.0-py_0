@@ -1,21 +1,6 @@
 {
  "bad": [
   "_async_vcr_send",
-  "aiohttp.ClientConnectionError",
-  "aiohttp.ClientResponse",
-  "aiohttp.CookieJar",
-  "aiohttp.RequestInfo",
-  "aiohttp.client",
-  "aiohttp.client.ClientSession",
-  "aiohttp.hdrs",
-  "aiohttp.hdrs.COOKIE",
-  "aiohttp.hdrs.SET_COOKIE",
-  "aiohttp.helpers.strip_auth_from_url",
-  "aiohttp.streams",
-  "aiohttp.streams.AsyncStreamReaderMixin",
-  "asyncio",
-  "asyncio.StreamReader",
-  "asyncio.iscoroutinefunction",
   "boto.https_connection.HTTPConnection",
   "boto.https_connection.HTTPConnectionPool",
   "boto.https_connection.HTTPSConnection",
@@ -26,11 +11,8 @@
   "cassette.Cassette.use",
   "cassette.Cassette.use_arg_getter",
   "checker",
-  "collections",
-  "collections.Counter",
   "collections.Mapping",
   "collections.MutableMapping",
-  "collections.abc",
   "collections.abc.Iterable",
   "collections.abc.Mapping",
   "collections.abc.MutableMapping",
@@ -38,12 +20,6 @@
   "compat.get_headers",
   "compat.get_httpmessage",
   "connection_class_getter",
-  "contextlib",
-  "contextlib.ExitStack",
-  "contextlib.contextmanager",
-  "copy",
-  "copy.copy",
-  "copy.deepcopy",
   "decompress_body",
   "filters.decode_response",
   "filters.replace_headers",
@@ -52,43 +28,18 @@
   "fn",
   "function",
   "function.__name__",
-  "functools",
-  "functools.partial",
-  "functools.wraps",
   "get_conn",
-  "http.client",
-  "http.client.HTTPConnection",
   "http.client.HTTPConnection.__dict__.items",
-  "http.client.HTTPResponse",
-  "http.client.HTTPSConnection",
-  "http.cookies.CookieError",
-  "http.cookies.Morsel",
-  "http.cookies.SimpleCookie",
   "httpx.AsyncClient.send",
   "httpx.Client.send",
-  "inspect",
-  "inspect.getfile",
-  "inspect.isgeneratorfunction",
-  "io.BytesIO",
   "is_compressed",
   "itertools",
   "itertools.chain",
-  "json",
-  "json.dumps",
-  "json.load",
-  "json.loads",
   "loads",
-  "logging",
-  "logging.NullHandler",
-  "logging.getLogger",
   "matchers.append",
   "maybe_decorate",
-  "multidict.CIMultiDict",
-  "multidict.CIMultiDictProxy",
   "name_generator",
   "new_conn",
-  "os",
-  "os.makedirs",
   "os.path.abspath",
   "os.path.dirname",
   "os.path.exists",
@@ -96,7 +47,6 @@
   "os.path.isdir",
   "os.path.join",
   "os.path.split",
-  "os.walk",
   "predicate",
   "real_fetch_impl",
   "real_send",
@@ -114,11 +64,6 @@
   "requests.packages.urllib3.connectionpool.VerifiedHTTPSConnection",
   "rv",
   "rv.encode",
-  "shutil",
-  "shutil.copyfileobj",
-  "simplejson",
-  "simplejson.dumps",
-  "simplejson.loads",
   "stubs.aiohttp_stubs.vcr_request",
   "stubs.boto3_stubs",
   "stubs.boto3_stubs.VCRRequestsHTTPConnection",
@@ -135,29 +80,8 @@
   "sys.argv",
   "sys.exc_info",
   "sys.stderr.write",
-  "tempfile",
-  "tempfile.TemporaryFile",
-  "tornado.curl_httpclient",
-  "tornado.curl_httpclient.CurlAsyncHTTPClient",
-  "tornado.httpclient.HTTPResponse",
-  "tornado.httputil",
-  "tornado.httputil.HTTPHeaders",
-  "tornado.simple_httpclient",
-  "tornado.simple_httpclient.SimpleAsyncHTTPClient",
   "transformer",
-  "types",
-  "types.FunctionType",
-  "unittest.mock",
-  "unittest.mock.MagicMock",
-  "unittest.mock.Mock",
-  "unittest.mock.patch",
   "unittest.mock.patch.object",
-  "urllib",
-  "urllib.parse.parse_qs",
-  "urllib.parse.parse_qsl",
-  "urllib.parse.urlencode",
-  "urllib.parse.urlparse",
-  "urllib.parse.urlunparse",
   "vcr.__init__.VCR",
   "vcr.__init__.default_vcr",
   "vcr._handle_coroutine.handle_coroutine",
@@ -166,21 +90,16 @@
   "vcr.stubs.__init__.VCRHTTPResponse",
   "vcr.stubs.__init__.log",
   "vcr.stubs.__init__.parse_headers",
-  "vcr.stubs.__init__.serialize_headers",
-  "warnings",
-  "warnings.warn",
-  "wrapt",
-  "wrapt.decorator",
-  "xmlrpc.client",
-  "yarl.URL",
-  "zlib",
-  "zlib.MAX_WBITS",
-  "zlib.decompress"
+  "vcr.stubs.__init__.serialize_headers"
  ],
  "deps": {
   "_async_vcr_send": [],
-  "aiohttp": [],
-  "asyncio": [],
+  "aiohttp": [
+   "aiohttp/conda-forge/linux-64/aiohttp-3.7.0-py36h8c4c3a4_0"
+  ],
+  "asyncio": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "boto": [
    "boto/conda-forge/noarch/boto-2.49.0-py_0"
   ],
@@ -190,43 +109,66 @@
   "callback": [],
   "cassette": [],
   "checker": [],
-  "collections": [],
+  "collections": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "compat": [],
   "connection_class_getter": [],
-  "contextlib": [],
-  "copy": [],
+  "contextlib": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "copy": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "decompress_body": [],
   "decorator": [
    "decorator/conda-forge/noarch/decorator-4.3.0-py_0"
   ],
   "enum": [
-   "privy/conda-forge/noarch/privy-6.0.0-py_0"
+   "privy/conda-forge/noarch/privy-6.0.0-py_0",
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
   ],
   "filters": [],
   "fn": [],
   "function": [],
-  "functools": [],
+  "functools": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "get_conn": [],
-  "http": [],
+  "http": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "httplib2": [
    "httplib2/conda-forge/noarch/httplib2-0.17.1-pyh9f0ad1d_0"
   ],
   "httpx": [
    "httpx/conda-forge/noarch/httpx-0.12.0-py_0"
   ],
-  "inspect": [],
-  "io": [],
+  "inspect": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "io": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "is_compressed": [],
   "itertools": [],
-  "json": [],
+  "json": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "loads": [],
-  "logging": [],
+  "logging": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "matchers": [],
   "maybe_decorate": [],
-  "multidict": [],
+  "multidict": [
+   "multidict/conda-forge/linux-64/multidict-4.5.0-py36h470a237_0"
+  ],
   "name_generator": [],
   "new_conn": [],
-  "os": [],
+  "os": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "predicate": [],
   "real_fetch_impl": [],
   "real_send": [],
@@ -239,32 +181,58 @@
    "requests/conda-forge/noarch/requests-2.23.0-pyh8c360ce_2"
   ],
   "rv": [],
-  "shutil": [],
-  "simplejson": [],
+  "shutil": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "simplejson": [
+   "simplejson/conda-forge/linux-64/simplejson-3.16.0-py36h14c3975_1002"
+  ],
   "six": [
    "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
-   "privy/conda-forge/noarch/privy-6.0.0-py_0"
+   "privy/conda-forge/noarch/privy-6.0.0-py_0",
+   "six/conda-forge/linux-64/six-1.14.0-py36_0"
   ],
   "stubs": [],
   "sys": [],
-  "tempfile": [],
-  "tornado": [],
+  "tempfile": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "tornado": [
+   "tornado/conda-forge/linux-64/tornado-5.1.1-py36h97a6639_1"
+  ],
   "transformer": [],
-  "types": [],
-  "unittest": [],
-  "urllib": [],
+  "types": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "unittest": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "urllib": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "urllib3": [
    "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
    "urllib3/conda-forge/noarch/urllib3-1.26.5-pyhd8ed1ab_0"
   ],
   "vcr": [],
-  "warnings": [],
-  "wrapt": [],
-  "xmlrpc": [],
-  "yaml": [
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1"
+  "warnings": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
   ],
-  "yarl": [],
-  "zlib": []
+  "wrapt": [
+   "wrapt/conda-forge/linux-64/wrapt-1.12.1-py38h25fe258_2"
+  ],
+  "xmlrpc": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "yaml": [
+   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
+   "pyyaml/conda-forge/linux-64/pyyaml-5.4.1-py36h70b1f00_0"
+  ],
+  "yarl": [
+   "yarl/conda-forge/linux-64/yarl-1.6.0-py36h8c4c3a4_0"
+  ],
+  "zlib": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ]
  }
 }

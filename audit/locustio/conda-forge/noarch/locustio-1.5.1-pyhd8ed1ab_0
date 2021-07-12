@@ -71,13 +71,7 @@
   "gevent.ssl.create_default_context",
   "gevent.timeout.Timeout",
   "geventhttpclient._parser.HTTPParseError",
-  "geventhttpclient.response.HTTPConnectionClosed",
-  "geventhttpclient.useragent.CompatRequest",
   "geventhttpclient.useragent.CompatRequest.type",
-  "geventhttpclient.useragent.CompatRequest.unverifiable",
-  "geventhttpclient.useragent.CompatResponse",
-  "geventhttpclient.useragent.ConnectionError",
-  "geventhttpclient.useragent.UserAgent",
   "greenlet",
   "greenlet.getcurrent",
   "handler",
@@ -107,11 +101,6 @@
   "logging.root.setLevel",
   "mock",
   "mock.patch",
-  "msgpack",
-  "msgpack.dumps",
-  "msgpack.exceptions",
-  "msgpack.exceptions.ExtraData",
-  "msgpack.loads",
   "os.getcwd",
   "os.path.abspath",
   "os.path.dirname",
@@ -168,12 +157,8 @@
   "win32console.ENABLE_PROCESSED_INPUT",
   "win32console.GetStdHandle",
   "win32console.KEY_EVENT",
-  "zmq",
   "zmq.TCP_KEEPALIVE",
   "zmq.TCP_KEEPALIVE_IDLE",
-  "zmq.error",
-  "zmq.error.ZMQError",
-  "zmq.green",
   "zmq.green.NOBLOCK"
  ],
  "deps": {
@@ -249,7 +234,9 @@
   ],
   "generate": [],
   "gevent": [],
-  "geventhttpclient": [],
+  "geventhttpclient": [
+   "geventhttpclient/conda-forge/linux-64/geventhttpclient-1.4.5-py37he226ad3_0"
+  ],
   "greenlet": [],
   "handler": [],
   "hashlib": [
@@ -284,7 +271,9 @@
    "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
   ],
   "mock": [],
-  "msgpack": [],
+  "msgpack": [
+   "msgpack-python/conda-forge/linux-64/msgpack-python-0.5.6-py27h2d50403_3"
+  ],
   "os": [
    "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
   ],
@@ -381,6 +370,8 @@
   ],
   "win32api": [],
   "win32console": [],
-  "zmq": []
+  "zmq": [
+   "pyzmq/conda-forge/linux-64/pyzmq-21.0.1-py36h81c33ee_0"
+  ]
  }
 }

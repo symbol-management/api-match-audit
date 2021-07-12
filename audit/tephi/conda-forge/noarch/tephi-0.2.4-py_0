@@ -1,102 +1,22 @@
 {
  "bad": [
-  "PIL.Image",
-  "PIL.Image.open",
   "_create_missing",
-  "argparse",
-  "argparse.ArgumentParser",
-  "argparse.RawTextHelpFormatter",
-  "codecs",
-  "codecs.getreader",
-  "codecs.getwriter",
-  "collections",
   "collections.abc.Iterable",
-  "collections.defaultdict",
-  "collections.namedtuple",
-  "contextlib",
-  "contextlib.contextmanager",
   "dict.__getitem__",
   "func",
-  "functools.partial",
-  "glob.glob",
-  "io",
-  "io.BytesIO",
   "isopleths.Profile",
   "itertools",
   "itertools.chain.from_iterable",
-  "json",
-  "json.dump",
-  "json.load",
-  "math",
-  "math.cos",
-  "math.radians",
-  "math.sin",
-  "matplotlib",
-  "matplotlib.collections.PathCollection",
-  "matplotlib.font_manager.FontProperties",
-  "matplotlib.image",
-  "matplotlib.image.imread",
-  "matplotlib.path.Path",
   "matplotlib.path.Path.LINETO",
   "matplotlib.path.Path.MOVETO",
-  "matplotlib.pyplot",
-  "matplotlib.pyplot.axes",
-  "matplotlib.pyplot.barbs",
-  "matplotlib.pyplot.close",
-  "matplotlib.pyplot.figure",
-  "matplotlib.pyplot.gcf",
-  "matplotlib.pyplot.legend",
-  "matplotlib.pyplot.show",
-  "matplotlib.pyplot.subplot",
-  "matplotlib.pyplot.suptitle",
-  "matplotlib.pyplot.text",
-  "matplotlib.testing.compare",
-  "matplotlib.testing.compare.compare_images",
-  "matplotlib.testing.exceptions.ImageComparisonFailure",
-  "matplotlib.transforms",
-  "matplotlib.transforms.Affine2D",
-  "matplotlib.transforms.IdentityTransform",
-  "matplotlib.transforms.Transform",
-  "matplotlib.use",
-  "matplotlib.widgets",
-  "matplotlib.widgets.Button",
   "mpl_toolkits.axisartist.Subplot",
   "mpl_toolkits.axisartist.grid_helper_curvelinear.GridHelperCurveLinear",
-  "numbers",
-  "numpy",
-  "numpy.all",
-  "numpy.arange",
-  "numpy.argmax",
-  "numpy.argmin",
-  "numpy.array",
-  "numpy.asarray",
-  "numpy.clip",
-  "numpy.column_stack",
-  "numpy.concatenate",
-  "numpy.dtype",
-  "numpy.empty",
-  "numpy.exp",
-  "numpy.hstack",
-  "numpy.int32",
-  "numpy.linspace",
-  "numpy.load",
-  "numpy.loadtxt",
   "numpy.log",
-  "numpy.max",
-  "numpy.min",
-  "numpy.object",
-  "numpy.ones",
   "numpy.power",
-  "numpy.searchsorted",
-  "numpy.testing.assert_array_almost_equal",
-  "numpy.testing.assert_array_equal",
-  "os",
   "os.W_OK",
   "os.access",
   "os.environ.get",
   "os.getcwd",
-  "os.makedirs",
-  "os.path",
   "os.path.abspath",
   "os.path.basename",
   "os.path.dirname",
@@ -105,16 +25,11 @@
   "os.path.join",
   "os.path.splitext",
   "requests.codes.ok",
-  "scipy.interpolate.interp1d",
-  "shutil",
-  "shutil.copy",
   "sys",
   "sys.argv",
   "sys.argv.append",
   "sys.argv.remove",
   "sys.modules.__file__",
-  "tempfile",
-  "tempfile.mkstemp",
   "tephi.__init__.RESOURCES_DIR",
   "tephi.__init__._refresh_isopleths",
   "tephi.tests.__init__.BASE_URL",
@@ -132,55 +47,87 @@
   "transforms.convert_pT2Tt",
   "transforms.convert_pt2pT",
   "transforms.convert_pw2T",
-  "transforms.convert_xy2Tt",
-  "unittest",
-  "unittest.TestCase",
-  "unittest.main",
-  "unittest.skipIf",
-  "warnings",
-  "warnings.warn"
+  "transforms.convert_xy2Tt"
  ],
  "deps": {
-  "PIL": [],
+  "PIL": [
+   "pillow/conda-forge/linux-64/pillow-7.2.0-py36hfc7c323_2"
+  ],
   "_create_missing": [],
-  "argparse": [],
-  "codecs": [],
-  "collections": [],
-  "contextlib": [],
+  "argparse": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "codecs": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "collections": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "contextlib": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "dict": [],
   "filelock": [
    "filelock/conda-forge/noarch/filelock-3.0.12-pyh9f0ad1d_0"
   ],
   "func": [],
-  "functools": [],
-  "glob": [],
+  "functools": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "glob": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "imagehash": [
    "imagehash/conda-forge/noarch/imagehash-4.1.0-pyh9f0ad1d_0"
   ],
-  "io": [],
+  "io": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "isopleths": [],
   "itertools": [],
-  "json": [],
-  "math": [],
-  "matplotlib": [],
+  "json": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "math": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "matplotlib": [
+   "matplotlib-base/conda-forge/linux-64/matplotlib-base-3.3.3-py36h159efd9_0"
+  ],
   "mpl_toolkits": [],
-  "numbers": [],
-  "numpy": [],
-  "os": [],
+  "numbers": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "numpy": [
+   "numpy/conda-forge/linux-64/numpy-1.9.3-py27_blas_openblashb06ca3d_7"
+  ],
+  "os": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "requests": [
    "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
    "requests/conda-forge/noarch/requests-2.23.0-pyh8c360ce_2"
   ],
-  "scipy": [],
-  "shutil": [],
+  "scipy": [
+   "scipy/conda-forge/linux-64/scipy-0.18.1-np111py34_blas_openblas_200"
+  ],
+  "shutil": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "sys": [],
-  "tempfile": [],
+  "tempfile": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "tephi": [],
   "tephidata": [],
   "to_hash": [],
   "transform": [],
   "transforms": [],
-  "unittest": [],
-  "warnings": []
+  "unittest": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "warnings": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ]
  }
 }
