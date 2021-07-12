@@ -1,72 +1,38 @@
 {
  "bad": [
-  "PIL.Image",
-  "PIL.Image.open",
-  "PIL.ImageChops",
-  "PIL.ImageChops.invert",
   "Parser",
-  "array",
   "array.array",
   "bytes.tostring",
   "cmapdb.CMapDB.CMapNotFound",
   "cmapdb.CMapDB.get_cmap",
-  "collections",
-  "collections.OrderedDict",
-  "copy",
   "decode",
   "dist",
   "encoder",
   "func",
   "get_colorspace",
   "glyphlist.glyphname2unicode.get",
-  "gzip",
-  "gzip.open",
   "hash.digest",
   "hash.update",
   "hashlib.md5",
   "hashlib.sha256",
-  "heapq",
-  "heapq.heapify",
-  "heapq.heappop",
-  "heapq.heappush",
-  "html.escape",
-  "io",
-  "io.BytesIO",
-  "io.StringIO",
   "isany",
-  "logging",
-  "logging.DEBUG",
-  "logging.getLogger",
   "lookup",
-  "math",
-  "math.ceil",
-  "os",
-  "os.SEEK_CUR",
   "os.environ.get",
-  "os.path",
   "os.path.dirname",
   "os.path.exists",
   "os.path.join",
-  "parser",
   "pdfcolor.PREDEFINED_COLORSPACE.copy",
   "pdfcolor.PREDEFINED_COLORSPACE.get",
   "pdfminer.__init__.__version__",
   "pdfpage.PDFPage.get_pages",
-  "pickle",
-  "pickle.loads",
   "psparser.PSStackParser.seek",
   "pygame",
   "pygame.image.save",
-  "re",
   "re.IGNORECASE",
-  "re.compile",
-  "re.finditer",
-  "re.sub",
   "render",
   "search",
   "settings.STRICT",
   "show_group",
-  "struct",
   "struct.calcsize",
   "struct.pack",
   "struct.unpack",
@@ -76,32 +42,33 @@
   "sys.stdout",
   "sys.stdout.buffer",
   "sys.version_info",
-  "unittest",
-  "unittest.main",
   "utils.bbox2str",
   "utils.compatible_encode_method",
   "utils.enc",
   "utils.isnumber",
   "utils.make_compat_bytes",
   "utils.mult_matrix",
-  "utils.translate_matrix",
-  "warnings",
-  "warnings.warn",
-  "zlib",
-  "zlib.decompress",
-  "zlib.error"
+  "utils.translate_matrix"
  ],
  "deps": {
-  "PIL": [],
+  "PIL": [
+   "pillow/conda-forge/linux-64/pillow-7.2.0-py36hfc7c323_2"
+  ],
   "Parser": [],
-  "array": [],
+  "array": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "bytes": [],
   "chardet": [
    "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1"
   ],
   "cmapdb": [],
-  "collections": [],
-  "copy": [],
+  "collections": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "copy": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "cryptography": [
    "privy/conda-forge/noarch/privy-6.0.0-py_0"
   ],
@@ -114,37 +81,66 @@
   "func": [],
   "get_colorspace": [],
   "glyphlist": [],
-  "gzip": [],
+  "gzip": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "hash": [],
   "hashlib": [],
-  "heapq": [],
-  "html": [],
-  "io": [],
+  "heapq": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "html": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "io": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "isany": [],
-  "logging": [],
+  "logging": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "lookup": [],
-  "math": [],
-  "os": [],
-  "parser": [],
+  "math": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "os": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "parser": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "pathlib": [
-   "pathlib/conda-forge/noarch/pathlib-1.0.1-py_1"
+   "pathlib/conda-forge/noarch/pathlib-1.0.1-py_1",
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
   ],
   "pdfcolor": [],
   "pdfminer": [],
   "pdfpage": [],
-  "pickle": [],
+  "pickle": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "psparser": [],
   "pygame": [],
-  "re": [],
+  "re": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "render": [],
   "search": [],
   "settings": [],
   "show_group": [],
-  "struct": [],
+  "struct": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "sys": [],
-  "unittest": [],
+  "unittest": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "utils": [],
-  "warnings": [],
-  "zlib": []
+  "warnings": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "zlib": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ]
  }
 }

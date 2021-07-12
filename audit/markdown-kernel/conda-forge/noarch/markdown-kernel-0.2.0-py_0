@@ -1,9 +1,8 @@
 {
  "bad": [
-  "IPython.utils.tempdir.TemporaryDirectory",
-  "ipykernel.kernelapp.IPKernelApp",
   "ipykernel.kernelapp.IPKernelApp.launch_instance",
-  "ipykernel.kernelbase.Kernel",
+  "logging",
+  "logging.ERROR",
   "os.chmod",
   "os.geteuid",
   "os.path.join",
@@ -13,20 +12,22 @@
   "sys.prefix"
  ],
  "deps": {
-  "IPython": [],
+  "IPython": [
+   "ipython/conda-forge/linux-64/ipython-7.23.0-py39hef51801_0"
+  ],
   "argparse": [
    "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
   ],
-  "ipykernel": [],
+  "ipykernel": [
+   "ipykernel/conda-forge/linux-64/ipykernel-5.5.3-py39hef51801_0"
+  ],
   "json": [
    "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
   ],
   "jupyter_client": [
    "jupyter_client/conda-forge/noarch/jupyter_client-6.1.7-py_0"
   ],
-  "logging": [
-   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
-  ],
+  "logging": [],
   "os": [
    "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
   ],

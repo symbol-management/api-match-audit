@@ -1,26 +1,11 @@
 {
  "bad": [
   "_",
-  "__future__.absolute_import",
-  "__future__.division",
-  "__future__.print_function",
   "_cleanup_stale_resources",
-  "aiohttp",
-  "aiohttp.ClientSession",
-  "aiohttp.ContentTypeError",
-  "asyncio",
-  "asyncio.ALL_COMPLETED",
-  "asyncio.Lock",
-  "asyncio.sleep",
-  "asyncio.wait",
   "azure.common.credentials.get_azure_cli_credentials",
   "azure.mgmt.compute.ComputeManagementClient",
   "azure.mgmt.network.NetworkManagementClient",
-  "base64",
-  "base64.b64encode",
   "create_default_security_group",
-  "cupy",
-  "cupy.random.random",
   "dask",
   "dask.config",
   "dask.config.ensure_file",
@@ -44,12 +29,6 @@
   "dask_cloudprovider.azure.AzureVMCluster.get_cloud_init",
   "dask_cloudprovider.digitalocean.droplet.DropletCluster.get_cloud_init",
   "dask_cloudprovider.gcp.instances.GCPCluster.get_cloud_init",
-  "datetime",
-  "datetime.datetime",
-  "datetime.datetime.now",
-  "datetime.datetime.strptime",
-  "datetime.datetime.utcnow",
-  "datetime.timedelta",
   "digitalocean",
   "digitalocean.Droplet",
   "distributed.core.Status",
@@ -64,62 +43,42 @@
   "f",
   "google.auth.credentials",
   "google.oauth2.service_account",
-  "json",
-  "json.dumps",
-  "json.loads",
-  "logging",
-  "logging.getLogger",
-  "os",
-  "os.environ",
   "os.environ.get",
   "os.path.abspath",
   "os.path.dirname",
   "os.path.exists",
   "os.path.expanduser",
   "os.path.join",
-  "pytest",
-  "pytest.fixture",
-  "pytest.importorskip",
   "pytest.mark.asyncio",
   "pytest.mark.skip",
   "pytest.mark.timeout",
   "pytest.mark.xfail",
-  "pytest.raises",
-  "pytest.skip",
-  "random",
-  "random.choice",
   "skip_without_credentials",
-  "socket",
   "socket.AF_INET",
   "socket.SOCK_STREAM",
-  "socket.socket",
-  "sqlite3",
   "sqlite3.connect",
   "sys",
-  "sys.exit",
-  "tornado.ioloop.IOLoop",
-  "tornado.ioloop.IOLoop.current",
-  "tornado.ioloop.PeriodicCallback",
-  "tornado.ioloop.TimeoutError",
-  "typing.List",
-  "uuid",
-  "uuid.uuid4",
-  "warnings",
-  "warnings.warn",
-  "weakref",
-  "weakref.finalize"
+  "sys.exit"
  ],
  "deps": {
   "_": [],
-  "__future__": [],
+  "__future__": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "_cleanup_stale_resources": [],
   "aiobotocore": [
    "aiobotocore/conda-forge/noarch/aiobotocore-0.9.3-py_0"
   ],
-  "aiohttp": [],
-  "asyncio": [],
+  "aiohttp": [
+   "aiohttp/conda-forge/linux-64/aiohttp-3.7.0-py36h8c4c3a4_0"
+  ],
+  "asyncio": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "azure": [],
-  "base64": [],
+  "base64": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "botocore": [
    "botocore/conda-forge/noarch/botocore-1.10.82-py_0"
   ],
@@ -127,12 +86,17 @@
    "click/conda-forge/noarch/click-7.0-py_0"
   ],
   "create_default_security_group": [],
-  "cupy": [],
+  "cupy": [
+   "cupy/conda-forge/linux-64/cupy-8.4.0-py38h7fa8657_1",
+   "cupy/conda-forge/linux-64/cupy-8.5.0-py37hd2f5b3b_1"
+  ],
   "dask": [
    "dask-core/conda-forge/noarch/dask-core-0.15.3-py_0"
   ],
   "dask_cloudprovider": [],
-  "datetime": [],
+  "datetime": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "digitalocean": [],
   "distributed": [
    "distributed/conda-forge/noarch/distributed-2.1.0-py_0"
@@ -154,25 +118,51 @@
   "jinja2": [
    "jinja2/conda-forge/noarch/jinja2-2.10-py_1"
   ],
-  "json": [],
-  "logging": [],
-  "os": [],
+  "json": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "logging": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "os": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "pynvml": [
    "pynvml/conda-forge/noarch/pynvml-11.0.0-pyhd8ed1ab_0"
   ],
-  "pytest": [],
-  "random": [],
+  "pytest": [
+   "pytest/conda-forge/linux-64/pytest-4.6.3-py27_0",
+   "pytest/conda-forge/linux-64/pytest-6.0.2-py36hc560c46_0"
+  ],
+  "random": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "skip_without_credentials": [],
-  "socket": [],
-  "sqlite3": [],
+  "socket": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "sqlite3": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "sys": [],
-  "tornado": [],
-  "typing": [],
-  "uuid": [],
-  "warnings": [],
-  "weakref": [],
+  "tornado": [
+   "tornado/conda-forge/linux-64/tornado-5.1.1-py36h97a6639_1"
+  ],
+  "typing": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "uuid": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "warnings": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "weakref": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "yaml": [
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1"
+   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
+   "pyyaml/conda-forge/linux-64/pyyaml-5.4.1-py36h70b1f00_0"
   ]
  }
 }

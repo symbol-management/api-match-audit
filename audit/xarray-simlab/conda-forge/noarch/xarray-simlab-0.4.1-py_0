@@ -1,7 +1,6 @@
 {
  "bad": [
   "FakeModel",
-  "IPython.display",
   "IPython.display.Image",
   "IPython.display.SVG",
   "P",
@@ -14,15 +13,10 @@
   "attr.s",
   "cls",
   "cls.append",
-  "collections.OrderedDict",
   "collections.abc.ItemsView",
   "collections.abc.KeysView",
   "collections.abc.MutableMapping",
   "collections.abc.ValuesView",
-  "collections.defaultdict",
-  "contextlib.suppress",
-  "copy",
-  "copy.copy",
   "dask",
   "dask.base.get_scheduler",
   "dask.compute",
@@ -32,85 +26,29 @@
   "dsk_get",
   "errno.ENOENT",
   "format.lower",
-  "functools.partial",
   "h",
   "hook.RuntimeHook.active",
-  "importlib",
-  "importlib.import_module",
-  "inspect",
-  "inspect.getmembers",
-  "inspect.isclass",
-  "inspect.signature",
-  "io.StringIO",
   "itertools",
   "itertools.groupby",
-  "json",
-  "json.loads",
   "make_prop_func",
   "model.Model.active",
-  "numpy",
-  "numpy.any",
-  "numpy.arange",
-  "numpy.array",
-  "numpy.asarray",
-  "numpy.in1d",
-  "numpy.int32",
-  "numpy.isscalar",
-  "numpy.issubdtype",
   "numpy.maximum",
   "numpy.nan",
-  "numpy.ndarray",
-  "numpy.number",
-  "numpy.ones",
-  "numpy.roll",
-  "numpy.shape",
-  "numpy.testing.assert_array_equal",
-  "numpy.uint8",
-  "numpy.zeros",
-  "numpy.zeros_like",
   "object.__setattr__",
-  "os",
   "os.environ.get",
   "os.path.exists",
   "os.path.isfile",
   "os.path.splitext",
   "os.unlink",
-  "pandas",
-  "pandas.MultiIndex",
   "pandas.MultiIndex.from_tuples",
-  "pandas.testing.assert_index_equal",
-  "pytest",
-  "pytest.fixture",
-  "pytest.importorskip",
   "pytest.mark.parametrize",
   "pytest.mark.skipif",
   "pytest.mark.xfail",
-  "pytest.param",
-  "pytest.raises",
-  "pytest.warns",
-  "pytest.yield_fixture",
-  "re",
-  "re.compile",
   "sys",
   "sys.stdout",
-  "textwrap",
-  "textwrap.dedent",
-  "textwrap.fill",
-  "textwrap.indent",
   "time",
   "time.sleep",
   "to_lines",
-  "typing.Any",
-  "typing.Callable",
-  "typing.Dict",
-  "typing.Iterable",
-  "typing.Iterator",
-  "typing.List",
-  "typing.Mapping",
-  "typing.Optional",
-  "typing.Tuple",
-  "typing.TypeVar",
-  "typing.Union",
   "v",
   "var_converter",
   "variable.VarIntent.IN",
@@ -122,8 +60,6 @@
   "variable.VarType.ON_DEMAND",
   "variable.VarType.VARIABLE",
   "vars.items",
-  "warnings",
-  "warnings.warn",
   "wrap",
   "wrapper",
   "xr_attr_to_dict",
@@ -144,7 +80,9 @@
  ],
  "deps": {
   "FakeModel": [],
-  "IPython": [],
+  "IPython": [
+   "ipython/conda-forge/linux-64/ipython-7.23.0-py39hef51801_0"
+  ],
   "P": [],
   "TestHook": [],
   "_ExampleProcess": [],
@@ -152,9 +90,15 @@
    "attrs/conda-forge/noarch/attrs-18.2.0-py_0"
   ],
   "cls": [],
-  "collections": [],
-  "contextlib": [],
-  "copy": [],
+  "collections": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "contextlib": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "copy": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "dask": [
    "dask-core/conda-forge/noarch/dask-core-0.15.3-py_0"
   ],
@@ -162,36 +106,64 @@
   "dot": [],
   "dsk_get": [],
   "enum": [
-   "privy/conda-forge/noarch/privy-6.0.0-py_0"
+   "privy/conda-forge/noarch/privy-6.0.0-py_0",
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
   ],
   "errno": [],
   "format": [],
-  "functools": [],
+  "functools": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "h": [],
   "hook": [],
-  "importlib": [],
-  "inspect": [],
-  "io": [],
+  "importlib": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "inspect": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "io": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "itertools": [],
-  "json": [],
+  "json": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "make_prop_func": [],
   "model": [],
-  "numpy": [],
+  "numpy": [
+   "numpy/conda-forge/linux-64/numpy-1.9.3-py27_blas_openblashb06ca3d_7"
+  ],
   "object": [],
-  "os": [],
-  "pandas": [],
-  "pytest": [],
-  "re": [],
+  "os": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "pandas": [
+   "pandas/conda-forge/linux-64/pandas-0.25.0-py37hb3f55d8_0"
+  ],
+  "pytest": [
+   "pytest/conda-forge/linux-64/pytest-4.6.3-py27_0",
+   "pytest/conda-forge/linux-64/pytest-6.0.2-py36hc560c46_0"
+  ],
+  "re": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "sys": [],
-  "textwrap": [],
+  "textwrap": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "time": [],
   "to_lines": [],
-  "typing": [],
+  "typing": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "v": [],
   "var_converter": [],
   "variable": [],
   "vars": [],
-  "warnings": [],
+  "warnings": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "wrap": [],
   "wrapper": [],
   "xarray": [
