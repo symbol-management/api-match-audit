@@ -1,13 +1,5 @@
 {
  "bad": [
-  "argparse",
-  "argparse.ArgumentParser",
-  "argparse.FileType",
-  "cmath",
-  "cmath.log",
-  "collections",
-  "collections.OrderedDict",
-  "collections.OrderedDict.fromkeys",
   "discretisedfield.Field.fromfile",
   "discretisedfield.util.axesdict.keys",
   "discretisedfield.util.axesdict.values",
@@ -57,8 +49,6 @@
   "field.plane",
   "field.x.k3d_voxels",
   "func",
-  "h5py",
-  "h5py.File",
   "itertools",
   "itertools.product",
   "line",
@@ -66,104 +56,52 @@
   "line.length",
   "line.mpl",
   "line.n",
-  "matplotlib.pyplot",
-  "matplotlib.pyplot.colorbar",
-  "matplotlib.pyplot.figure",
-  "matplotlib.pyplot.savefig",
   "mpl_toolkits.axes_grid1",
   "mpl_toolkits.mplot3d.Axes3D",
   "norm_field",
-  "numbers",
-  "numbers.Real",
-  "numpy",
-  "numpy.abs",
-  "numpy.add",
-  "numpy.all",
-  "numpy.allclose",
-  "numpy.arange",
-  "numpy.around",
-  "numpy.array",
-  "numpy.array_equal",
-  "numpy.clip",
-  "numpy.copy",
-  "numpy.cos",
-  "numpy.cross",
   "numpy.divide",
-  "numpy.dot",
-  "numpy.einsum",
-  "numpy.empty",
   "numpy.equal",
   "numpy.float32",
-  "numpy.gradient",
   "numpy.greater",
-  "numpy.greater_equal",
   "numpy.less",
-  "numpy.linalg.norm",
-  "numpy.linspace",
-  "numpy.loadtxt",
   "numpy.logical_or",
   "numpy.maximum",
   "numpy.minimum",
-  "numpy.multiply",
   "numpy.nan",
-  "numpy.ndarray",
-  "numpy.newaxis",
-  "numpy.ones",
-  "numpy.ones_like",
-  "numpy.pi",
   "numpy.power",
-  "numpy.prod",
   "numpy.random.random",
-  "numpy.sin",
-  "numpy.sqrt",
   "numpy.stack",
   "numpy.subtract",
-  "numpy.sum",
-  "numpy.swapaxes",
-  "numpy.testing.assert_allclose",
-  "numpy.uint8",
-  "numpy.zeros",
-  "numpy.zeros_like",
-  "os",
   "os.path.dirname",
   "os.path.join",
   "os.remove",
-  "pkg_resources",
-  "pkg_resources.get_distribution",
-  "pkg_resources.require",
-  "pytest",
-  "pytest.main",
-  "pytest.raises",
   "pyvtk",
   "pyvtk.RectilinearGrid",
   "pyvtk.Scalars",
   "pyvtk.Vectors",
   "pyvtk.VtkData",
-  "random",
-  "random.random",
-  "re",
-  "re.search",
-  "struct",
   "struct.iter_unpack",
   "struct.pack",
-  "subprocess",
-  "subprocess.run",
   "sys",
-  "sys.executable.split",
-  "tempfile",
-  "tempfile.TemporaryDirectory",
-  "types",
-  "types.GeneratorType"
+  "sys.executable.split"
  ],
  "deps": {
-  "argparse": [],
-  "cmath": [],
-  "collections": [],
+  "argparse": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "cmath": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "collections": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "discretisedfield": [],
   "f": [],
   "field": [],
   "func": [],
-  "h5py": [],
+  "h5py": [
+   "h5py/conda-forge/linux-64/h5py-2.7.1-py36_1"
+  ],
   "ipywidgets": [
    "ipywidgets/conda-forge/noarch/ipywidgets-7.5.0-py_0"
   ],
@@ -172,26 +110,51 @@
    "k3d/conda-forge/noarch/k3d-2.6.2-py_0"
   ],
   "line": [],
-  "matplotlib": [],
+  "matplotlib": [
+   "matplotlib-base/conda-forge/linux-64/matplotlib-base-3.3.3-py36h159efd9_0"
+  ],
   "mpl_toolkits": [],
   "norm_field": [],
-  "numbers": [],
-  "numpy": [],
-  "os": [],
-  "pkg_resources": [],
-  "pytest": [],
+  "numbers": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "numpy": [
+   "numpy/conda-forge/linux-64/numpy-1.9.3-py27_blas_openblashb06ca3d_7"
+  ],
+  "os": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "pkg_resources": [
+   "setuptools/conda-forge/linux-64/setuptools-41.2.0-py27_0"
+  ],
+  "pytest": [
+   "pytest/conda-forge/linux-64/pytest-4.6.3-py27_0",
+   "pytest/conda-forge/linux-64/pytest-6.0.2-py36hc560c46_0"
+  ],
   "pyvtk": [],
-  "random": [],
-  "re": [],
+  "random": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "re": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "seaborn": [
    "seaborn-base/conda-forge/noarch/seaborn-base-0.11.0-pyhd8ed1ab_1",
    "seaborn/conda-forge/noarch/seaborn-0.9.0-py_2"
   ],
-  "struct": [],
-  "subprocess": [],
+  "struct": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "subprocess": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "sys": [],
-  "tempfile": [],
-  "types": [],
+  "tempfile": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "types": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "ubermagutil": [
    "ubermagutil/conda-forge/noarch/ubermagutil-0.4-pyhd8ed1ab_0"
   ]

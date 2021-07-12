@@ -1,22 +1,12 @@
 {
  "bad": [
-  "IPython.get_ipython",
-  "__future__.absolute_import",
-  "__future__.division",
-  "__future__.print_function",
   "adapter_cls",
-  "ast",
-  "ast.literal_eval",
-  "collections",
   "collections.Iterable",
-  "collections.OrderedDict",
   "compare",
   "edit",
   "filter.items",
   "get_name",
   "id.setter",
-  "importlib.import_module",
-  "inspect.stack",
   "install_except_hook",
   "itertools.chain",
   "larray.Axis",
@@ -47,66 +37,17 @@
   "larray_editor.utils.logger.debug",
   "larray_editor.utils.logger.isEnabledFor",
   "larray_editor.utils.logger.setLevel",
-  "logging",
-  "logging.DEBUG",
-  "logging.getLogger",
-  "math",
-  "math.ceil",
-  "math.floor",
-  "math.log10",
-  "matplotlib",
-  "matplotlib.axes.Subplot",
   "matplotlib.backends.backend_qt4agg.FigureCanvas",
-  "matplotlib.backends.backend_qt4agg.NavigationToolbar2QT",
   "matplotlib.backends.backend_qt5agg.FigureCanvas",
-  "matplotlib.backends.backend_qt5agg.NavigationToolbar2QT",
-  "matplotlib.figure.Figure",
-  "matplotlib.get_backend",
-  "numpy",
-  "numpy.abs",
-  "numpy.any",
-  "numpy.append",
-  "numpy.arange",
-  "numpy.array",
-  "numpy.asarray",
-  "numpy.atleast_2d",
-  "numpy.bool",
-  "numpy.bool_",
   "numpy.broadcast_to",
   "numpy.complex128",
   "numpy.complex64",
-  "numpy.cumprod",
-  "numpy.empty_like",
-  "numpy.errstate",
   "numpy.inf",
-  "numpy.integer",
   "numpy.isfinite",
-  "numpy.isnan",
-  "numpy.isscalar",
-  "numpy.ma.masked",
-  "numpy.max",
-  "numpy.min",
   "numpy.nan",
-  "numpy.nanmax",
-  "numpy.nanmin",
-  "numpy.ndarray",
-  "numpy.number",
   "numpy.object_",
-  "numpy.prod",
   "numpy.random.normal",
-  "numpy.ravel",
-  "numpy.round",
-  "numpy.searchsorted",
-  "numpy.set_printoptions",
-  "numpy.str",
   "numpy.str_",
-  "numpy.unravel_index",
-  "numpy.vectorize",
-  "numpy.where",
-  "os",
-  "os.devnull",
-  "os.getenv",
-  "os.name",
   "os.path.basename",
   "os.path.commonpath",
   "os.path.dirname",
@@ -117,12 +58,6 @@
   "os.path.realpath",
   "os.path.relpath",
   "os.path.splitext",
-  "platform",
-  "platform.python_version",
-  "platform.system",
-  "pytest",
-  "pytest.fixture",
-  "pytest.main",
   "qtpy.QtCore.QAbstractTableModel",
   "qtpy.QtCore.QAbstractTableModel.flags",
   "qtpy.QtCore.QByteArray",
@@ -241,8 +176,6 @@
   "qtpy.QtWidgets.QVBoxLayout",
   "qtpy.QtWidgets.QWidget",
   "qtpy.QtWidgets.QWidget.keyPressEvent",
-  "re",
-  "re.compile",
   "restore_except_hook",
   "set.union",
   "str_width",
@@ -258,54 +191,84 @@
   "sys.stdout",
   "sys.version",
   "to_global",
-  "traceback",
-  "traceback.print_exception",
   "unicode",
-  "urllib.parse.quote",
   "urllib.quote",
   "vrepr"
  ],
  "deps": {
-  "IPython": [],
-  "__future__": [],
+  "IPython": [
+   "ipython/conda-forge/linux-64/ipython-7.23.0-py39hef51801_0"
+  ],
+  "__future__": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "adapter_cls": [],
-  "ast": [],
-  "collections": [],
+  "ast": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "collections": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "compare": [],
   "edit": [],
   "filter": [],
   "get_name": [],
   "id": [],
-  "importlib": [],
-  "inspect": [],
+  "importlib": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "inspect": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "install_except_hook": [],
   "itertools": [],
   "larray": [
    "larray/conda-forge/noarch/larray-0.28-py_1"
   ],
   "larray_editor": [],
-  "logging": [],
-  "math": [],
-  "matplotlib": [],
-  "numpy": [],
-  "os": [],
-  "platform": [],
-  "pytest": [],
+  "logging": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "math": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "matplotlib": [
+   "matplotlib-base/conda-forge/linux-64/matplotlib-base-3.3.3-py36h159efd9_0"
+  ],
+  "numpy": [
+   "numpy/conda-forge/linux-64/numpy-1.9.3-py27_blas_openblashb06ca3d_7"
+  ],
+  "os": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "platform": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "pytest": [
+   "pytest/conda-forge/linux-64/pytest-4.6.3-py27_0",
+   "pytest/conda-forge/linux-64/pytest-6.0.2-py36hc560c46_0"
+  ],
   "qtconsole": [
    "qtconsole/conda-forge/noarch/qtconsole-4.5.1-py_0"
   ],
   "qtpy": [
    "qtpy/conda-forge/noarch/qtpy-1.7.1-pyhde82777_0"
   ],
-  "re": [],
+  "re": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "restore_except_hook": [],
   "set": [],
   "str_width": [],
   "sys": [],
   "to_global": [],
-  "traceback": [],
+  "traceback": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "unicode": [],
-  "urllib": [],
+  "urllib": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "vrepr": []
  }
 }

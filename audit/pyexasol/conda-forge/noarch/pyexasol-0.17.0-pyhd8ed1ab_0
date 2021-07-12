@@ -7,10 +7,6 @@
   "ExaConnectionFailedError",
   "ExaRequestError",
   "ExaRuntimeError",
-  "argparse",
-  "argparse.ArgumentParser",
-  "base64",
-  "base64.b64encode",
   "callback.export_to_file",
   "callback.export_to_list",
   "callback.export_to_pandas",
@@ -18,8 +14,6 @@
   "callback.import_from_iterable",
   "callback.import_from_pandas",
   "cls_err",
-  "collections",
-  "collections.Counter",
   "constant.DEFAULT_FETCHMANY_SIZE",
   "constant.DEFAULT_PORT",
   "constant.DRIVER_NAME",
@@ -27,57 +21,20 @@
   "constant.LOGGER_FILENAME_TIMESTAMP_FORMAT",
   "constant.LOGGER_MAX_JSON_LENGTH",
   "constant.PROTOCOL_V2",
-  "csv",
-  "csv.QUOTE_NONNUMERIC",
-  "csv.reader",
-  "csv.writer",
-  "datetime",
-  "datetime.date",
-  "datetime.datetime",
-  "datetime.datetime.now",
-  "datetime.timedelta",
-  "decimal",
   "decimal.Decimal",
-  "getpass",
-  "getpass.getuser",
   "http_transport.ExaHTTPProcess",
   "http_transport.ExaSQLExportThread",
   "http_transport.ExaSQLImportThread",
   "http_transport.HTTP_EXPORT",
   "http_transport.HTTP_IMPORT",
-  "io",
-  "io.TextIOWrapper",
   "itertools",
   "itertools.cycle",
   "itertools.islice",
-  "json",
-  "json.dumps",
-  "json.loads",
-  "logging",
-  "logging.DEBUG",
-  "logging.FileHandler",
-  "logging.Formatter",
-  "logging.Logger",
-  "logging.NullHandler",
-  "logging.StreamHandler",
-  "logging.getLevelName",
-  "multiprocessing",
   "multiprocessing.Process",
   "multiprocessing.Queue",
-  "os",
-  "os.devnull",
   "os.environ.get",
   "os.getpid",
   "os.getppid",
-  "pandas",
-  "pandas.DataFrame",
-  "pandas.read_csv",
-  "pathlib",
-  "pathlib.Path",
-  "pathlib.Path.home",
-  "platform",
-  "platform.platform",
-  "platform.python_version",
   "pyexasol.__init__.ExaConnection",
   "pyexasol.__init__.ExaHTTPTransportWrapper",
   "pyexasol.__init__.ExaLocalConfig",
@@ -85,39 +42,17 @@
   "pyexasol.db2.__init__.DB2Connection",
   "pyexasol.db2.__init__.DB2Cursor",
   "pyexasol.db2.__init__.ExaConnection",
-  "queue",
-  "queue.Empty",
-  "random",
-  "random.shuffle",
   "rapidjson",
   "rapidjson.NM_NATIVE",
   "rapidjson.dumps",
   "rapidjson.loads",
-  "re",
   "re.IGNORECASE",
-  "re.compile",
   "rsa.PublicKey.load_pkcs1",
-  "shutil",
-  "shutil.copyfileobj",
-  "socket",
-  "socket.getfqdn",
   "socket.gethostbyname",
   "socket.gethostbyname_ex",
-  "socketserver",
-  "socketserver.StreamRequestHandler",
-  "socketserver.TCPServer",
-  "socketserver.ThreadingMixIn",
-  "ssl",
   "ssl.CERT_NONE",
-  "ssl.SSLContext",
-  "string",
-  "string.Formatter",
-  "struct",
   "struct.pack",
   "struct.unpack",
-  "subprocess",
-  "subprocess.PIPE",
-  "subprocess.Popen",
   "sys",
   "sys.executable",
   "sys.platform",
@@ -128,25 +63,12 @@
   "sys.stdout.buffer.write",
   "sys.stdout.flush",
   "sys.stdout.write",
-  "tempfile",
-  "tempfile.TemporaryDirectory",
-  "tempfile.gettempdir",
-  "threading",
-  "threading.Thread",
   "time",
   "time.sleep",
   "time.time",
   "ujson",
   "ujson.dumps",
-  "ujson.loads",
-  "urllib.parse",
-  "zlib",
-  "zlib.MAX_WBITS",
-  "zlib.Z_FINISH",
-  "zlib.compress",
-  "zlib.compressobj",
-  "zlib.decompress",
-  "zlib.decompressobj"
+  "ujson.loads"
  ],
  "deps": {
   "ExaAuthError": [],
@@ -159,54 +81,113 @@
   "OpenSSL": [
    "pyopenssl/conda-forge/noarch/pyopenssl-19.1.0-py_1"
   ],
-  "argparse": [],
-  "base64": [],
+  "argparse": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "base64": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "callback": [],
   "cls_err": [],
-  "collections": [],
+  "collections": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "configparser": [
-   "configparser/conda-forge/noarch/configparser-5.0.0-py_0"
+   "configparser/conda-forge/noarch/configparser-5.0.0-py_0",
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
   ],
   "constant": [],
-  "csv": [],
-  "datetime": [],
-  "decimal": [],
-  "getpass": [],
+  "csv": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "datetime": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "decimal": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "getpass": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "http_transport": [],
-  "io": [],
+  "io": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "itertools": [],
-  "json": [],
-  "logging": [],
-  "multiprocessing": [],
-  "os": [],
-  "pandas": [],
-  "pathlib": [],
-  "platform": [],
+  "json": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "logging": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "multiprocessing": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "os": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "pandas": [
+   "pandas/conda-forge/linux-64/pandas-0.25.0-py37hb3f55d8_0"
+  ],
+  "pathlib": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "platform": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "pyexasol": [],
-  "queue": [],
-  "random": [],
+  "queue": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "random": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "rapidjson": [],
-  "re": [],
+  "re": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "rsa": [
    "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
    "rsa/conda-forge/noarch/rsa-4.4.1-pyh9f0ad1d_0"
   ],
-  "shutil": [],
-  "socket": [],
-  "socketserver": [],
-  "ssl": [],
-  "string": [],
-  "struct": [],
-  "subprocess": [],
+  "shutil": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "socket": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "socketserver": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "ssl": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "string": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "struct": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "subprocess": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "sys": [],
-  "tempfile": [],
-  "threading": [],
+  "tempfile": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "threading": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "time": [],
   "ujson": [],
-  "urllib": [],
+  "urllib": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "websocket": [
    "websocket-client/conda-forge/noarch/websocket-client-0.46.0-py_0"
   ],
-  "zlib": []
+  "zlib": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ]
  }
 }

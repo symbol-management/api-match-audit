@@ -11,40 +11,17 @@
   "Foo",
   "Image",
   "MockedUID",
-  "PIL.Image",
-  "PIL.Image.open",
   "PIL._imaging",
   "TagLike",
   "TupleTag",
-  "__future__.absolute_import",
-  "__future__.print_function",
   "_test",
-  "argparse",
-  "argparse.ArgumentParser",
-  "argparse.FileType",
-  "binascii.a2b_hex",
-  "binascii.b2a_hex",
   "cPickle",
   "cPickle.dumps",
   "cPickle.loads",
-  "cProfile",
-  "cProfile.run",
   "collections.MutableSequence",
-  "collections.namedtuple",
-  "contextlib.contextmanager",
   "convert_string",
   "converter",
-  "copy",
-  "copy.copy",
-  "copy.deepcopy",
   "data_elem",
-  "datetime",
-  "datetime.date",
-  "datetime.datetime",
-  "datetime.time",
-  "datetime.timedelta",
-  "datetime.timezone",
-  "datetime.tzinfo",
   "datetime.tzinfo.__new__",
   "decimal.Decimal",
   "decode_data_element",
@@ -56,8 +33,6 @@
   "element_struct_unpack",
   "errno",
   "extra_length_unpack",
-  "fnmatch",
-  "fnmatch.filter",
   "fp_read",
   "fp_tell",
   "gdcm",
@@ -72,56 +47,21 @@
   "gdcm.PixelFormat.UINT8",
   "get_siblings",
   "get_valtype",
-  "glob",
-  "glob.glob",
-  "gzip",
-  "gzip.open",
-  "hashlib",
   "hashlib.sha512",
   "hexdump",
-  "inspect",
-  "inspect.getmembers",
-  "inspect.isdatadescriptor",
-  "inspect.isroutine",
   "int.__str__",
-  "io",
-  "io.BytesIO",
   "jpeg_ls",
   "jpeg_ls.decode",
   "logger_debug",
-  "logging",
-  "logging.DEBUG",
-  "logging.Formatter",
-  "logging.INFO",
-  "logging.StreamHandler",
-  "logging.WARNING",
-  "logging.basicConfig",
-  "logging.getLogger",
-  "logging.info",
   "long",
-  "numpy",
-  "numpy.any",
   "numpy.byte",
-  "numpy.dot",
-  "numpy.dtype",
-  "numpy.float",
   "numpy.float32",
   "numpy.float64",
-  "numpy.frombuffer",
-  "numpy.fromstring",
-  "numpy.int16",
-  "numpy.int32",
-  "numpy.int8",
-  "numpy.ndarray",
-  "numpy.testing",
   "numpy.uint16",
   "numpy.uint32",
-  "numpy.uint8",
   "object.__hash__",
-  "os",
   "os.getcwd",
   "os.getpid",
-  "os.path",
   "os.path.abspath",
   "os.path.basename",
   "os.path.dirname",
@@ -131,15 +71,8 @@
   "os.remove",
   "os.stat",
   "os.system",
-  "os.walk",
   "parent_read",
-  "pickle",
-  "pickle.HIGHEST_PROTOCOL",
-  "platform",
-  "platform.python_implementation",
   "print_character",
-  "pstats",
-  "pstats.Stats",
   "pydicom._dicom_dict.DicomDictionary.update",
   "pydicom._dicom_dict.RepeatersDictionary.values",
   "pydicom.compat.text_type.__new__",
@@ -161,29 +94,16 @@
   "pydicom.util.fixes.timezone.utc.tzname",
   "pydicom.util.fixes.timezone.utc.utcoffset",
   "pydicom.values.converters.keys",
-  "pytest",
-  "pytest.fixture",
   "pytest.mark.parametrize",
   "pytest.mark.skip",
   "pytest.mark.skipif",
   "pytest.mark.xfail",
-  "pytest.param",
-  "pytest.raises",
-  "pytest.warns",
   "raiser",
-  "random",
-  "random.getrandbits",
-  "random.shuffle",
   "raw_input",
-  "re",
-  "re.compile",
-  "re.match",
   "read_preamble",
   "read_value",
   "reraise",
   "rf",
-  "shutil",
-  "shutil.copyfile",
   "str.__eq__",
   "str.__str__",
   "str_io",
@@ -202,32 +122,13 @@
   "sys.stdout",
   "sys.version",
   "sys.version_info",
-  "tempfile",
-  "tempfile.TemporaryFile",
-  "tempfile.gettempdir",
   "time.sleep",
-  "trace",
-  "trace.Trace",
-  "traceback",
-  "traceback.format_exc",
   "unicode",
-  "unittest",
-  "unittest.TestCase",
-  "unittest.main",
-  "unittest.skipIf",
-  "unittest.skipUnless",
   "unittest2",
   "unittest2.TestCase",
   "unittest2.main",
   "unittest2.skipIf",
-  "uuid",
-  "uuid.uuid1",
-  "warnings",
-  "warnings.warn",
-  "writer_function",
-  "zlib",
-  "zlib.MAX_WBITS",
-  "zlib.decompress"
+  "writer_function"
  ],
  "deps": {
   "BaseTagPlus": [],
@@ -241,22 +142,40 @@
   "Foo": [],
   "Image": [],
   "MockedUID": [],
-  "PIL": [],
+  "PIL": [
+   "pillow/conda-forge/linux-64/pillow-7.2.0-py36hfc7c323_2"
+  ],
   "TagLike": [],
   "TupleTag": [],
-  "__future__": [],
+  "__future__": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "_test": [],
-  "argparse": [],
-  "binascii": [],
+  "argparse": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "binascii": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "cPickle": [],
-  "cProfile": [],
-  "collections": [],
-  "contextlib": [],
+  "cProfile": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "collections": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "contextlib": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "convert_string": [],
   "converter": [],
-  "copy": [],
+  "copy": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "data_elem": [],
-  "datetime": [],
+  "datetime": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "decimal": [],
   "decode_data_element": [],
   "dict": [],
@@ -264,56 +183,103 @@
   "element_struct_unpack": [],
   "errno": [],
   "extra_length_unpack": [],
-  "fnmatch": [],
+  "fnmatch": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "fp_read": [],
   "fp_tell": [],
   "gdcm": [],
   "get_siblings": [],
   "get_valtype": [],
-  "glob": [],
-  "gzip": [],
-  "hashlib": [],
+  "glob": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "gzip": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "hashlib": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "hexdump": [],
-  "inspect": [],
+  "inspect": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "int": [],
-  "io": [],
+  "io": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "jpeg_ls": [],
   "logger_debug": [],
-  "logging": [],
+  "logging": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "long": [],
-  "numpy": [],
+  "numpy": [
+   "numpy/conda-forge/linux-64/numpy-1.9.3-py27_blas_openblashb06ca3d_7"
+  ],
   "object": [],
-  "os": [],
+  "os": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "parent_read": [],
-  "pickle": [],
-  "platform": [],
+  "pickle": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "platform": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "print_character": [],
-  "pstats": [],
+  "pstats": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "pydicom": [],
-  "pytest": [],
+  "pytest": [
+   "pytest/conda-forge/linux-64/pytest-4.6.3-py27_0",
+   "pytest/conda-forge/linux-64/pytest-6.0.2-py36hc560c46_0"
+  ],
   "raiser": [],
-  "random": [],
+  "random": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "raw_input": [],
-  "re": [],
+  "re": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "read_preamble": [],
   "read_value": [],
   "reraise": [],
   "rf": [],
-  "shutil": [],
+  "shutil": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "str": [],
   "str_io": [],
   "struct": [],
   "sys": [],
-  "tempfile": [],
+  "tempfile": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "time": [],
-  "trace": [],
-  "traceback": [],
+  "trace": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "traceback": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "unicode": [],
-  "unittest": [],
+  "unittest": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "unittest2": [],
-  "uuid": [],
-  "warnings": [],
+  "uuid": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "warnings": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "writer_function": [],
-  "zlib": []
+  "zlib": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ]
  }
 }

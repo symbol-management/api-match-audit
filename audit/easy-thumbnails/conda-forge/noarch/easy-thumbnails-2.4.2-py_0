@@ -4,38 +4,9 @@
   "ImageChops",
   "ImageDraw",
   "ImageFilter",
-  "PIL.Image",
   "PIL.Image.ANTIALIAS",
   "PIL.Image.EXTENSION.get",
-  "PIL.Image.FLIP_LEFT_RIGHT",
-  "PIL.Image.FLIP_TOP_BOTTOM",
-  "PIL.Image.Image",
-  "PIL.Image.ROTATE_180",
-  "PIL.Image.ROTATE_270",
-  "PIL.Image.ROTATE_90",
-  "PIL.Image.init",
-  "PIL.Image.new",
-  "PIL.Image.open",
-  "PIL.ImageChops",
-  "PIL.ImageChops.difference",
-  "PIL.ImageDraw",
-  "PIL.ImageDraw.Draw",
-  "PIL.ImageFilter",
-  "PIL.ImageFilter.DETAIL",
-  "PIL.ImageFilter.SHARPEN",
-  "__future__.unicode_literals",
-  "base64",
-  "base64.b64decode",
-  "base64.b64encode",
-  "base64.urlsafe_b64encode",
   "cStringIO.cStringIO",
-  "datetime",
-  "datetime.date",
-  "datetime.date.today",
-  "datetime.datetime",
-  "datetime.datetime.now",
-  "datetime.datetime.utcfromtimestamp",
-  "datetime.timedelta",
   "deferred_profile",
   "django.core.files.storage.default_storage._wrapped",
   "django.db.models.AutoField",
@@ -116,26 +87,13 @@
   "gc",
   "gc.collect",
   "generator",
-  "hashlib",
   "hashlib.md5",
   "hashlib.sha1",
-  "imghdr.what",
-  "inspect",
-  "inspect.getargspec",
   "itertools",
   "itertools.repeat",
-  "logging",
-  "logging.getLogger",
-  "math",
-  "math.log",
-  "mimetypes",
-  "mimetypes.guess_type",
   "namer_func",
   "open.alters_data",
-  "optparse.make_option",
-  "os",
   "os.listdir",
-  "os.path",
   "os.path.abspath",
   "os.path.dirname",
   "os.path.exists",
@@ -147,16 +105,7 @@
   "os.path.split",
   "os.path.splitext",
   "os.remove",
-  "os.walk",
-  "pickle",
-  "pickle.dumps",
-  "pickle.loads",
   "processor",
-  "re",
-  "re.compile",
-  "re.match",
-  "shutil",
-  "shutil.rmtree",
   "south.db.db",
   "south.db.db.add_column",
   "south.db.db.alter_column",
@@ -176,34 +125,31 @@
   "south.modelsinspector.introspector",
   "south.v2.DataMigration",
   "south.v2.SchemaMigration",
-  "subprocess",
-  "subprocess.CalledProcessError",
-  "subprocess.PIPE",
-  "subprocess.Popen",
-  "subprocess.STDOUT",
-  "subprocess.check_output",
   "sys",
   "sys.argv",
   "sys.exc_info",
   "sys.exit",
-  "tempfile",
   "time",
-  "time.time",
-  "unittest",
-  "unittest.TestCase",
-  "unittest.skipIf",
-  "unittest.skipUnless"
+  "time.time"
  ],
  "deps": {
   "Image": [],
   "ImageChops": [],
   "ImageDraw": [],
   "ImageFilter": [],
-  "PIL": [],
-  "__future__": [],
-  "base64": [],
+  "PIL": [
+   "pillow/conda-forge/linux-64/pillow-7.2.0-py36hfc7c323_2"
+  ],
+  "__future__": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "base64": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "cStringIO": [],
-  "datetime": [],
+  "datetime": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "deferred_profile": [],
   "django": [
    "django/conda-forge/noarch/django-3.1.4-pyhd8ed1ab_0"
@@ -215,29 +161,57 @@
   "get_version": [
    "get_version/conda-forge/noarch/get_version-3.2-pyhd8ed1ab_0"
   ],
-  "hashlib": [],
-  "imghdr": [],
-  "inspect": [],
+  "hashlib": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "imghdr": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "inspect": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "itertools": [],
-  "logging": [],
-  "math": [],
-  "mimetypes": [],
+  "logging": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "math": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "mimetypes": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "namer_func": [],
   "open": [],
-  "optparse": [],
-  "os": [],
-  "pickle": [],
+  "optparse": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "os": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "pickle": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "processor": [],
-  "re": [],
-  "shutil": [],
+  "re": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "shutil": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "south": [],
-  "subprocess": [],
+  "subprocess": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "sys": [],
-  "tempfile": [],
+  "tempfile": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "testfixtures": [
    "testfixtures/conda-forge/noarch/testfixtures-5.2.0-py_0"
   ],
   "time": [],
-  "unittest": []
+  "unittest": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ]
  }
 }

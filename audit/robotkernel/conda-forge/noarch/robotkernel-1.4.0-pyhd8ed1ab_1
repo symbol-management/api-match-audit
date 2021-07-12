@@ -1,15 +1,5 @@
 {
  "bad": [
-  "IPython.core.completerlib.get_root_modules",
-  "IPython.core.display.Image",
-  "IPython.core.display.JSON",
-  "IPython.core.display.clear_output",
-  "IPython.core.display.display",
-  "IPython.utils.tempdir.TemporaryDirectory",
-  "IPython.utils.tokenutil.line_at_cursor",
-  "PIL.Image",
-  "PIL.Image.MIME",
-  "PIL.Image.open",
   "System.Drawing.Bitmap",
   "System.Drawing.Color",
   "System.Drawing.Color.FromArgb",
@@ -47,15 +37,6 @@
   "TestStack.White.InputDevices.Mouse",
   "TestStack.White.InputDevices.Mouse.Instance.Click",
   "WhiteLibrary",
-  "argparse",
-  "argparse.ArgumentParser",
-  "base64",
-  "base64.b64decode",
-  "base64.b64encode",
-  "binascii",
-  "binascii.Error",
-  "collections.OrderedDict",
-  "copy.deepcopy",
   "cv2",
   "cv2.IMREAD_COLOR",
   "cv2.TM_CCOEFF_NORMED",
@@ -63,29 +44,10 @@
   "cv2.imread",
   "cv2.matchTemplate",
   "cv2.minMaxLoc",
-  "difflib.SequenceMatcher",
   "execute",
-  "glob.glob",
-  "inspect",
-  "inspect.currentframe",
-  "io.BytesIO",
-  "io.StringIO",
-  "ipykernel.comm.CommManager",
-  "ipykernel.kernelapp.IPKernelApp",
   "ipykernel.kernelapp.IPKernelApp.launch_instance",
-  "ipykernel.kernelbase.Kernel",
-  "ipykernel.zmqshell.ZMQInteractiveShell",
-  "json",
-  "json.JSONDecodeError",
-  "json.dump",
-  "json.dumps",
   "nbimporter",
-  "numpy",
-  "numpy.frombuffer",
-  "numpy.uint8",
   "old",
-  "operator.itemgetter",
-  "os",
   "os.chmod",
   "os.getcwd",
   "os.geteuid",
@@ -96,26 +58,13 @@
   "os.path.join",
   "os.path.sep",
   "os.path.splitext",
-  "pkg_resources",
-  "pkg_resources.DistributionNotFound",
-  "pkg_resources.VersionConflict",
-  "pkg_resources.get_distribution",
-  "pkg_resources.resource_stream",
-  "platform",
-  "pprint.pprint",
   "pprint.pprint.pprint",
   "pygments.formatters.HtmlFormatter",
   "pywintypes",
   "pywintypes.com_error",
-  "re",
   "re.I",
   "re.M",
   "re.U",
-  "re.compile",
-  "re.findall",
-  "re.match",
-  "re.split",
-  "re.sub",
   "robot.libdocpkg.builder.RESOURCE_EXTENSIONS.add",
   "robot.output.LOGGER.info",
   "robot.parsing.TEST_EXTENSIONS",
@@ -137,8 +86,6 @@
   "selenium.common.exceptions.InvalidSessionIdException",
   "selenium.common.exceptions.TimeoutException",
   "selenium.common.exceptions.WebDriverException",
-  "shutil",
-  "shutil.copy2",
   "sys",
   "sys.__stdout__",
   "sys.argv",
@@ -147,43 +94,59 @@
   "sys.modules.__dict__",
   "sys.modules.items",
   "sys.prefix",
-  "tempfile.TemporaryDirectory",
   "time",
   "time.sleep",
   "time.time",
-  "traceback.format_exc",
-  "types",
-  "types.ModuleType",
-  "typing.Dict",
-  "typing.List",
-  "typing.Tuple",
-  "urllib.parse.unquote",
-  "uuid",
-  "uuid.uuid4",
   "win32com.client"
  ],
  "deps": {
-  "IPython": [],
-  "PIL": [],
+  "IPython": [
+   "ipython/conda-forge/linux-64/ipython-7.23.0-py39hef51801_0"
+  ],
+  "PIL": [
+   "pillow/conda-forge/linux-64/pillow-7.2.0-py36hfc7c323_2"
+  ],
   "System": [],
   "TestStack": [],
   "WhiteLibrary": [],
-  "argparse": [],
-  "base64": [],
-  "binascii": [],
-  "collections": [],
-  "copy": [],
+  "argparse": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "base64": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "binascii": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "collections": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "copy": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "cv2": [],
-  "difflib": [],
+  "difflib": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "execute": [],
-  "glob": [],
-  "inspect": [],
-  "io": [],
-  "ipykernel": [],
+  "glob": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "inspect": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "io": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "ipykernel": [
+   "ipykernel/conda-forge/linux-64/ipykernel-5.5.3-py39hef51801_0"
+  ],
   "ipywidgets": [
    "ipywidgets/conda-forge/noarch/ipywidgets-7.5.0-py_0"
   ],
-  "json": [],
+  "json": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "jupyter_client": [
    "jupyter_client/conda-forge/noarch/jupyter_client-6.1.7-py_0"
   ],
@@ -194,36 +157,64 @@
    "nbformat/conda-forge/noarch/nbformat-5.1.3-pyhd8ed1ab_0"
   ],
   "nbimporter": [],
-  "numpy": [],
+  "numpy": [
+   "numpy/conda-forge/linux-64/numpy-1.9.3-py27_blas_openblashb06ca3d_7"
+  ],
   "old": [],
-  "operator": [],
-  "os": [],
-  "pkg_resources": [],
-  "platform": [],
-  "pprint": [],
+  "operator": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "os": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "pkg_resources": [
+   "setuptools/conda-forge/linux-64/setuptools-41.2.0-py27_0"
+  ],
+  "platform": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "pprint": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "pygments": [
    "pygments/conda-forge/noarch/pygments-2.5.0-py_0"
   ],
   "pywintypes": [],
-  "re": [],
+  "re": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "robot": [
    "robotframework/conda-forge/noarch/robotframework-3.2.2-pyh9f0ad1d_0"
   ],
   "robotkernel": [],
   "run_robot_suite": [],
   "selenium": [],
-  "shutil": [],
+  "shutil": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "sys": [],
-  "tempfile": [],
+  "tempfile": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "time": [],
-  "traceback": [],
+  "traceback": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "traitlets": [
    "traitlets/conda-forge/noarch/traitlets-5.0.3-py_0"
   ],
-  "types": [],
-  "typing": [],
-  "urllib": [],
-  "uuid": [],
+  "types": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "typing": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "urllib": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "uuid": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "win32com": []
  }
 }

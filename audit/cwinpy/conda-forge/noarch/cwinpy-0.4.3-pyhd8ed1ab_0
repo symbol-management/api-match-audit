@@ -1,43 +1,18 @@
 {
  "bad": [
   "DummyClass",
-  "argparse.ArgumentParser",
-  "ast",
-  "ast.literal_eval",
-  "astropy.coordinates.Galactic",
-  "astropy.coordinates.Galactocentric",
-  "astropy.coordinates.ICRS",
-  "astropy.coordinates.SkyCoord",
-  "astropy.io.registry",
-  "astropy.io.registry.write",
-  "astropy.units",
   "astropy.units.deg",
   "astropy.units.hour",
   "astropy.units.kg",
   "astropy.units.kpc",
   "astropy.units.kpc.to",
   "astropy.units.m",
-  "astropy.units.rad",
   "bilby.core.prior.PriorDict.from_json",
   "bilby_pipe.job_creation.dag.Dag",
   "bilby_pipe.job_creation.node.Node",
-  "ctypes",
-  "ctypes.CFUNCTYPE",
-  "ctypes.c_double",
-  "ctypes.c_int",
   "cwinpy.__init__.get_versions",
-  "functools.reduce",
-  "glob",
-  "glob.glob",
   "gwpy.types.Series._metadata_slots",
-  "gzip",
-  "gzip.open",
-  "io",
   "itertools.compress",
-  "json",
-  "json.dump",
-  "json.load",
-  "json.loads",
   "lal",
   "lal.CreateREAL8FrequencySeries",
   "lal.DAYSID_SI",
@@ -51,7 +26,6 @@
   "lalpulsar.GetSiteInfo",
   "lalpulsar.PulsarParametersWrapper.PulsarParametersPy",
   "lalpulsar.simulateHeterodynedCW.HeterodynedCWSimulator",
-  "lalsimulation",
   "lalsimulation.SimNoisePSDAdvVirgo",
   "lalsimulation.SimNoisePSDFromFile",
   "lalsimulation.SimNoisePSDGEO",
@@ -63,87 +37,22 @@
   "lalsimulation.SimNoisePSDiLIGOSRD",
   "lintegrate.logtrapz",
   "ll",
-  "math.gcd",
-  "matplotlib.axes.Axes",
-  "matplotlib.colors",
-  "matplotlib.colors.Normalize",
-  "matplotlib.font_manager.FontProperties",
-  "matplotlib.mlab.specgram",
-  "matplotlib.offsetbox.AnchoredText",
-  "matplotlib.pyplot",
-  "matplotlib.pyplot.subplots",
-  "numba.extending.get_cython_function_address",
-  "numba.jit",
-  "numba.njit",
-  "numba.typed.Dict",
   "numba.typed.Dict.empty",
-  "numba.types",
-  "numba.types.complex128",
-  "numba.types.float64",
-  "numba.types.unicode_type",
-  "numpy",
-  "numpy.abs",
-  "numpy.all",
-  "numpy.any",
-  "numpy.arange",
   "numpy.arccos",
-  "numpy.argwhere",
-  "numpy.array",
-  "numpy.array_equal",
-  "numpy.asarray",
-  "numpy.atleast_2d",
-  "numpy.bool",
-  "numpy.column_stack",
-  "numpy.complex",
-  "numpy.concatenate",
-  "numpy.copy",
-  "numpy.cos",
-  "numpy.cumsum",
-  "numpy.diff",
-  "numpy.dot",
-  "numpy.exp",
-  "numpy.flipud",
   "numpy.float32",
-  "numpy.full",
-  "numpy.full_like",
-  "numpy.hstack",
-  "numpy.in1d",
   "numpy.inf",
-  "numpy.insert",
-  "numpy.int",
-  "numpy.interp",
   "numpy.isfinite",
   "numpy.isinf",
-  "numpy.linspace",
-  "numpy.loadtxt",
   "numpy.log",
-  "numpy.log10",
   "numpy.logaddexp",
-  "numpy.logspace",
-  "numpy.mean",
-  "numpy.median",
-  "numpy.min",
   "numpy.nan",
-  "numpy.ndarray",
-  "numpy.ones",
-  "numpy.pi",
   "numpy.random.RandomState",
   "numpy.random.rand",
   "numpy.random.randint",
   "numpy.random.uniform",
-  "numpy.savetxt",
-  "numpy.shape",
-  "numpy.sqrt",
-  "numpy.sum",
-  "numpy.vdot",
-  "numpy.where",
-  "numpy.zeros",
-  "numpy.zeros_like",
   "openfunc",
-  "os",
   "os.getcwd",
   "os.listdir",
-  "os.makedirs",
   "os.path.basename",
   "os.path.isdir",
   "os.path.isfile",
@@ -153,46 +62,28 @@
   "os.path.splitext",
   "os.remove",
   "plfunc",
-  "pycondor.Job",
-  "re",
-  "re.findall",
-  "re.sub",
-  "scipy.interpolate.interp1d",
-  "scipy.signal.periodogram",
-  "scipy.signal.tukey",
-  "scipy.stats.expon",
   "scipy.stats.expon.logpdf",
   "scipy.stats.expon.rvs",
-  "scipy.stats.gaussian_kde",
-  "scipy.stats.truncnorm",
   "scipy.stats.truncnorm.logpdf",
   "scipy.stats.truncnorm.rvs",
-  "shutil",
-  "shutil.which",
-  "signal",
   "signal.SIGALRM",
   "signal.alarm",
-  "signal.signal",
-  "string",
-  "string.ascii_lowercase",
-  "string.ascii_uppercase",
-  "subprocess",
-  "subprocess.PIPE",
-  "subprocess.Popen",
   "sys",
   "sys.argv",
   "sys.exit",
-  "tempfile",
-  "tempfile.mkstemp",
-  "vars.setter",
-  "warnings",
-  "warnings.warn"
+  "vars.setter"
  ],
  "deps": {
   "DummyClass": [],
-  "argparse": [],
-  "ast": [],
-  "astropy": [],
+  "argparse": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "ast": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "astropy": [
+   "astropy/conda-forge/linux-64/astropy-2.0.4-py27_0"
+  ],
   "bilby": [
    "bilby/conda-forge/noarch/bilby-1.0.3-py_0"
   ],
@@ -203,41 +94,84 @@
    "configargparse/conda-forge/noarch/configargparse-1.4-pyhd8ed1ab_0"
   ],
   "configparser": [
-   "configparser/conda-forge/noarch/configparser-5.0.0-py_0"
+   "configparser/conda-forge/noarch/configparser-5.0.0-py_0",
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
   ],
-  "ctypes": [],
+  "ctypes": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "cwinpy": [],
-  "functools": [],
-  "glob": [],
+  "functools": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "glob": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "gwpy": [
    "gwpy/conda-forge/noarch/gwpy-2.0.0-pyh9f0ad1d_0"
   ],
-  "gzip": [],
-  "io": [],
+  "gzip": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "io": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "itertools": [],
-  "json": [],
+  "json": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "lal": [],
   "lalpulsar": [],
-  "lalsimulation": [],
+  "lalsimulation": [
+   "python-lalsimulation/conda-forge/linux-64/python-lalsimulation-1.8.2-py27h3010b51_1"
+  ],
   "lintegrate": [],
   "ll": [],
-  "math": [],
-  "matplotlib": [],
-  "numba": [],
-  "numpy": [],
+  "math": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "matplotlib": [
+   "matplotlib-base/conda-forge/linux-64/matplotlib-base-3.3.3-py36h159efd9_0"
+  ],
+  "numba": [
+   "numba/conda-forge/linux-64/numba-0.45.0-py37hb3f55d8_0"
+  ],
+  "numpy": [
+   "numpy/conda-forge/linux-64/numpy-1.9.3-py27_blas_openblashb06ca3d_7"
+  ],
   "openfunc": [],
-  "os": [],
+  "os": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "plfunc": [],
-  "pycondor": [],
-  "re": [],
-  "scipy": [],
-  "shutil": [],
-  "signal": [],
-  "string": [],
-  "subprocess": [],
+  "pycondor": [
+   "pycondor/conda-forge/noarch/pycondor-0.4.0-py_0"
+  ],
+  "re": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "scipy": [
+   "scipy/conda-forge/linux-64/scipy-0.18.1-np111py34_blas_openblas_200"
+  ],
+  "shutil": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "signal": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "string": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "subprocess": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "sys": [],
-  "tempfile": [],
+  "tempfile": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "vars": [],
-  "warnings": []
+  "warnings": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ]
  }
 }

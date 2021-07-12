@@ -1,13 +1,11 @@
 {
  "bad": [
-  "IPython",
   "IPython.display.HTML",
   "IPython.display.display",
   "IPython.external.qt_for_kernel.QtGui.QIcon",
   "IPython.external.qt_for_kernel.QtGui.QImage",
   "IPython.external.qt_for_kernel.QtGui.QImage.Format_RGB888",
   "IPython.external.qt_for_kernel.QtGui.QPixmap.fromImage",
-  "PIL.Image",
   "Plotter",
   "Plotter.last_update_time",
   "PyQt5.QtCore",
@@ -49,9 +47,6 @@
   "imageio.get_writer",
   "imageio.imwrite",
   "itertools.cycle",
-  "matplotlib",
-  "matplotlib.cm.get_cmap",
-  "matplotlib.rcParams",
   "numpy.double",
   "numpy.flip",
   "numpy.geomspace",
@@ -289,8 +284,12 @@
   "writer"
  ],
  "deps": {
-  "IPython": [],
-  "PIL": [],
+  "IPython": [
+   "ipython/conda-forge/linux-64/ipython-7.23.0-py39hef51801_0"
+  ],
+  "PIL": [
+   "pillow/conda-forge/linux-64/pillow-7.2.0-py36hfc7c323_2"
+  ],
   "Plotter": [],
   "PyQt5": [],
   "_calc_start_value": [],
@@ -334,7 +333,9 @@
   "logging": [
    "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
   ],
-  "matplotlib": [],
+  "matplotlib": [
+   "matplotlib-base/conda-forge/linux-64/matplotlib-base-3.3.3-py36h159efd9_0"
+  ],
   "numpy": [
    "numpy/conda-forge/linux-64/numpy-1.9.3-py27_blas_openblashb06ca3d_7"
   ],

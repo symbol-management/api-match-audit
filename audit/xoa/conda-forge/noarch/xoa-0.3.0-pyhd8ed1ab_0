@@ -7,12 +7,6 @@
   "accessors.register_cf_accessors",
   "accessors.register_sigma_accessor",
   "accessors.register_xoa_accessors",
-  "argparse",
-  "argparse.Action",
-  "argparse.ArgumentDefaultsHelpFormatter",
-  "argparse.ArgumentParser",
-  "argparse.HelpFormatter",
-  "argparse._HelpAction",
   "cc",
   "cdtime",
   "cdtime.s2c",
@@ -28,7 +22,6 @@
   "cf.reset_cache",
   "cfgm.ConfigManager",
   "check",
-  "collections.OrderedDict",
   "collections.abc.Mapping",
   "color.CmapAdapter",
   "color.cmap_custom",
@@ -52,121 +45,42 @@
   "coords.positive_attr.rst_with_links",
   "coords.reorder",
   "coords.transpose",
-  "copy",
-  "copy.deepcopy",
-  "datetime",
-  "datetime.datetime.strptime",
   "dyn.flow2d",
   "extrap1d",
   "filter_section",
-  "fnmatch",
-  "fnmatch.fnmatch",
   "format.format",
   "func",
   "func.__module__",
   "func.__name__",
-  "functools",
-  "functools.lru_cache",
   "geo.get_extent",
   "geo.haversine",
   "get_validator",
   "grid.decode_cf_dz2depth",
   "grid.get_edges_1d",
   "grid.to_rect",
-  "inspect",
-  "inspect.getdoc",
-  "inspect.getfullargspec",
-  "inspect.signature",
   "interp.grid2locs",
   "kwread",
-  "logging",
-  "logging.info",
-  "math",
   "math.arctan2",
-  "math.asin",
-  "math.cos",
-  "math.pi",
-  "math.sin",
-  "math.sqrt",
-  "matplotlib.collections",
-  "matplotlib.collections.LineCollection",
-  "matplotlib.colors",
-  "matplotlib.colors.ColorConverter",
-  "matplotlib.colors.to_rgb",
-  "matplotlib.pyplot",
-  "matplotlib.pyplot.gca",
-  "matplotlib.pyplot.get_cmap",
   "misc.DefaultEnumMeta",
   "misc.ERRORS",
   "misc.ERRORS.format_function_docstring",
   "misc.ERRORS.format_method_docstring",
   "misc.IntEnumChoices",
   "misc.XEnumMeta",
-  "numba",
-  "numba.njit",
-  "numba.prange",
-  "numba.vectorize",
-  "numpy",
-  "numpy.abs",
-  "numpy.allclose",
-  "numpy.arange",
-  "numpy.array",
-  "numpy.asarray",
-  "numpy.clip",
-  "numpy.concatenate",
-  "numpy.cos",
-  "numpy.cumsum",
   "numpy.datetime64",
-  "numpy.diff",
   "numpy.double",
-  "numpy.expand_dims",
-  "numpy.finfo",
   "numpy.float64",
-  "numpy.full",
-  "numpy.indices",
   "numpy.inf",
-  "numpy.interp",
-  "numpy.isclose",
-  "numpy.isnan",
-  "numpy.isscalar",
-  "numpy.linspace",
-  "numpy.max",
-  "numpy.meshgrid",
-  "numpy.mgrid",
-  "numpy.min",
   "numpy.nan",
-  "numpy.nanmax",
-  "numpy.nanmin",
-  "numpy.nansum",
-  "numpy.ndarray",
-  "numpy.ndim",
-  "numpy.ones",
-  "numpy.pi",
   "numpy.random.normal",
   "numpy.random.seed",
   "numpy.random.uniform",
-  "numpy.repeat",
-  "numpy.reshape",
-  "numpy.resize",
-  "numpy.searchsorted",
   "numpy.sinh",
-  "numpy.split",
-  "numpy.sqrt",
   "numpy.tanh",
-  "numpy.tensordot",
-  "numpy.testing.assert_allclose",
-  "numpy.testing.assert_almost_equal",
   "numpy.timedelta64",
-  "numpy.where",
-  "numpy.zeros",
-  "numpy.zeros_like",
   "object.__getattribute__",
-  "operator",
-  "operator.attrgetter",
-  "os",
   "os.environ.get",
   "os.listdir",
-  "os.makedirs",
   "os.path.abspath",
   "os.path.basename",
   "os.path.dirname",
@@ -176,30 +90,10 @@
   "os.path.join",
   "os.remove",
   "os.stat",
-  "pandas",
-  "pandas.Timedelta",
-  "pandas.Timestamp",
   "pandas.Timestamp.now",
-  "pandas.read_csv",
   "pandas.time_range",
-  "pandas.to_datetime",
-  "pickle",
-  "pickle.dump",
-  "pickle.load",
-  "pkg_resources",
-  "pkg_resources.DistributionNotFound",
-  "pkg_resources.get_distribution",
-  "platform",
-  "platform.python_version",
-  "pprint",
-  "pprint.pprint",
-  "pytest",
   "pytest.mark.parametrize",
-  "pytest.raises",
-  "re",
   "re.I",
-  "re.compile",
-  "re.search",
   "re_match_initcom",
   "re_match_specs_match",
   "re_opt",
@@ -207,12 +101,7 @@
   "regrid_methods",
   "regrid_methods.name",
   "remove",
-  "scipy.signal",
-  "scipy.signal.convolve",
-  "scipy.signal.windows",
   "seen_add",
-  "shutil",
-  "shutil.copy",
   "sigma",
   "sigma.decode_cf_sigma",
   "sigma.get_sigma_terms",
@@ -223,10 +112,6 @@
   "test_interp.get_grid2locs_coords",
   "test_interp.get_interp1d_data",
   "test_interp.vfunc",
-  "traceback",
-  "traceback.format_exc",
-  "types",
-  "types.GeneratorType",
   "validator",
   "validator.__name__",
   "validator.__name__.startswith",
@@ -235,11 +120,6 @@
   "validator.functions",
   "validator.functions.items",
   "validator.functions.update",
-  "warnings",
-  "warnings.catch_warnings",
-  "warnings.filterwarnings",
-  "warnings.simplefilter",
-  "warnings.warn",
   "wrap_argparse_type",
   "xoa.__init__.CONFIG_SPECS",
   "xoa.__init__.DEFAULT_USER_CONFIG_FILE",
@@ -273,7 +153,9 @@
   "appdirs": [
    "appdirs/conda-forge/noarch/appdirs-1.4.4-pyh9f0ad1d_0"
   ],
-  "argparse": [],
+  "argparse": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "cc": [],
   "cdtime": [],
   "cf": [],
@@ -282,65 +164,117 @@
   "cmocean": [
    "cmocean/conda-forge/noarch/cmocean-2.0-py_0"
   ],
-  "collections": [],
+  "collections": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "color": [],
   "configobj": [
    "configobj/conda-forge/noarch/configobj-5.0.6-py_0"
   ],
   "coords": [],
-  "copy": [],
-  "datetime": [],
+  "copy": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "datetime": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "dyn": [],
   "enum": [
-   "privy/conda-forge/noarch/privy-6.0.0-py_0"
+   "privy/conda-forge/noarch/privy-6.0.0-py_0",
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
   ],
   "extrap1d": [],
   "filter_section": [],
-  "fnmatch": [],
+  "fnmatch": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "format": [],
   "func": [],
-  "functools": [],
+  "functools": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "geo": [],
   "get_validator": [],
   "grid": [],
-  "inspect": [],
+  "inspect": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "interp": [],
   "kwread": [],
-  "logging": [],
-  "math": [],
-  "matplotlib": [],
+  "logging": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "math": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "matplotlib": [
+   "matplotlib-base/conda-forge/linux-64/matplotlib-base-3.3.3-py36h159efd9_0"
+  ],
   "misc": [],
-  "numba": [],
-  "numpy": [],
+  "numba": [
+   "numba/conda-forge/linux-64/numba-0.45.0-py37hb3f55d8_0"
+  ],
+  "numpy": [
+   "numpy/conda-forge/linux-64/numpy-1.9.3-py27_blas_openblashb06ca3d_7"
+  ],
   "object": [],
-  "operator": [],
-  "os": [],
-  "pandas": [],
-  "pickle": [],
-  "pkg_resources": [],
-  "platform": [],
-  "pprint": [],
-  "pytest": [],
-  "re": [],
+  "operator": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "os": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "pandas": [
+   "pandas/conda-forge/linux-64/pandas-0.25.0-py37hb3f55d8_0"
+  ],
+  "pickle": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "pkg_resources": [
+   "setuptools/conda-forge/linux-64/setuptools-41.2.0-py27_0"
+  ],
+  "platform": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "pprint": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "pytest": [
+   "pytest/conda-forge/linux-64/pytest-4.6.3-py27_0",
+   "pytest/conda-forge/linux-64/pytest-6.0.2-py36hc560c46_0"
+  ],
+  "re": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "re_match_initcom": [],
   "re_match_specs_match": [],
   "re_opt": [],
   "re_sec": [],
   "regrid_methods": [],
   "remove": [],
-  "scipy": [],
+  "scipy": [
+   "scipy/conda-forge/linux-64/scipy-0.18.1-np111py34_blas_openblas_200"
+  ],
   "seen_add": [],
-  "shutil": [],
+  "shutil": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "sigma": [],
   "sys": [],
   "test_interp": [],
-  "traceback": [],
-  "types": [],
+  "traceback": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "types": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "validate": [
    "configobj/conda-forge/noarch/configobj-5.0.6-py_0"
   ],
   "validator": [],
-  "warnings": [],
+  "warnings": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "wrap_argparse_type": [],
   "xarray": [
    "xarray/conda-forge/noarch/xarray-0.15.0-py_0"

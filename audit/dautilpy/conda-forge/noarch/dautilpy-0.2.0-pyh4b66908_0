@@ -1,138 +1,44 @@
 {
  "bad": [
   "IPython.display.display",
-  "PIL.Image",
-  "PIL.Image.fromarray",
-  "PIL.ImageDraw",
-  "PIL.ImageDraw.Draw",
-  "PIL.ImageFont",
-  "PIL.ImageFont.truetype",
   "StringIO.StringIO",
-  "__future__.print_function",
   "_print",
-  "astropy.stats.freedman_bin_width",
-  "astropy.stats.scott_bin_width",
   "bs4.BeautifulSoup",
   "builtins.map",
   "chart",
-  "collections.Counter",
-  "collections.OrderedDict",
   "collections.abc.Iterable",
-  "collections.defaultdict",
-  "concurrent.futures.ProcessPoolExecutor",
-  "concurrent.futures.ThreadPoolExecutor",
-  "copy.deepcopy",
   "corr_func",
   "corr_matrix_func",
-  "datetime.datetime",
-  "datetime.datetime.strptime",
-  "datetime.datetime.utcfromtimestamp",
   "dautil.IO.__init__.PY2",
   "dautil.IO.__init__._read_pkl_all_iter_helper",
   "dautil.IO.__init__._read_pkl_helper",
   "f",
   "func",
-  "functools.partial",
-  "functools.reduce",
-  "functools.wraps",
   "g",
   "get_index_levels_names",
   "get_types",
-  "glom.glom",
-  "h5py",
-  "h5py.ExternalLink",
-  "h5py.File",
-  "h5py._hl.dataset.Dataset",
-  "h5py._hl.group.Group",
   "inv",
-  "io.StringIO",
   "itertools.starmap",
-  "matplotlib",
-  "matplotlib.pyplot",
-  "matplotlib.pyplot.close",
-  "matplotlib.pyplot.figure",
-  "matplotlib.pyplot.plot",
-  "matplotlib.pyplot.savefig",
-  "matplotlib.pyplot.show",
-  "matplotlib.pyplot.title",
   "matplotlib.rcParams.update",
-  "mpi4py.futures.MPIPoolExecutor",
-  "multiprocessing",
   "multiprocessing.Pool",
   "nltk.corpus.stopwords.words",
   "nltk.corpus.wordnet.words",
   "nltk.word_tokenize",
-  "numba",
-  "numba.complex128",
-  "numba.complex64",
-  "numba.float32",
-  "numba.float64",
-  "numba.jit",
-  "numba.prange",
-  "numba.vectorize",
-  "numpy",
   "numpy.NINF",
-  "numpy.abs",
   "numpy.absolute",
-  "numpy.all",
-  "numpy.amin",
-  "numpy.angle",
-  "numpy.arange",
-  "numpy.array",
-  "numpy.array_equal",
-  "numpy.asarray",
-  "numpy.bool",
-  "numpy.bool_",
-  "numpy.ceil",
-  "numpy.column_stack",
-  "numpy.complex",
-  "numpy.concatenate",
   "numpy.datetime64",
-  "numpy.empty",
-  "numpy.empty_like",
-  "numpy.exp",
-  "numpy.fill_diagonal",
   "numpy.float32",
-  "numpy.identity",
-  "numpy.imag",
   "numpy.inf",
-  "numpy.int16",
-  "numpy.int32",
-  "numpy.int64",
-  "numpy.int8",
-  "numpy.iscomplexobj",
   "numpy.isfinite",
-  "numpy.isnan",
-  "numpy.linspace",
   "numpy.maximum",
-  "numpy.mean",
   "numpy.minimum",
   "numpy.nan",
-  "numpy.nan_to_num",
-  "numpy.nanmax",
-  "numpy.nanmin",
-  "numpy.ndarray",
-  "numpy.nonzero",
-  "numpy.object",
-  "numpy.real",
   "numpy.reciprocal",
-  "numpy.round",
-  "numpy.sqrt",
   "numpy.square",
-  "numpy.testing.assert_allclose",
-  "numpy.testing.assert_array_equal",
-  "numpy.triu_indices_from",
-  "numpy.uint8",
-  "numpy.zeros",
-  "numpy.zeros_like",
-  "operator",
-  "operator.mul",
-  "os",
   "os.O_CREAT",
   "os.O_WRONLY",
   "os.close",
   "os.dup2",
-  "os.makedirs",
   "os.open",
   "os.path.basename",
   "os.path.dirname",
@@ -142,41 +48,16 @@
   "os.path.split",
   "os.path.splitext",
   "os.remove",
-  "pandas",
-  "pandas.DataFrame",
   "pandas.MultiIndex.from_product",
   "pandas.MultiIndex.from_tuples",
-  "pandas.Series",
   "pandas.api.types.is_numeric_dtype",
   "pandas.api.types.is_string_dtype",
-  "pandas.concat",
-  "pandas.core.indexes.api.MultiIndex",
-  "pandas.read_csv",
-  "pandas.to_datetime",
-  "pandas.to_timedelta",
-  "pathlib.Path",
-  "pickle",
-  "pickle.load",
   "plotly.graph_objects.Figure",
   "pymediainfo.MediaInfo",
   "pymediainfo.MediaInfo.parse",
   "pypandoc",
   "pypandoc.convert_text",
   "reduction_func",
-  "scipy",
-  "scipy.linalg.inv",
-  "scipy.linalg.pinv",
-  "scipy.misc.derivative",
-  "scipy.signal",
-  "scipy.signal.argrelmax",
-  "scipy.signal.argrelmin",
-  "scipy.stats.gaussian_kde",
-  "scipy.stats.linregress",
-  "scipy.stats.sem",
-  "subprocess",
-  "subprocess.PIPE",
-  "subprocess.getoutput",
-  "subprocess.run",
   "sympy.ntheory.factorint",
   "sys",
   "sys.stderr",
@@ -188,70 +69,104 @@
   "sys.version_info",
   "time",
   "time.sleep",
-  "time.time",
-  "timeit",
-  "timeit.default_timer",
-  "types",
-  "types.ModuleType",
-  "typing.Callable",
-  "typing.List",
-  "typing.Optional",
-  "typing.Tuple",
-  "typing.Union"
+  "time.time"
  ],
  "deps": {
   "IPython": [],
-  "PIL": [],
+  "PIL": [
+   "pillow/conda-forge/linux-64/pillow-7.2.0-py36hfc7c323_2"
+  ],
   "StringIO": [],
-  "__future__": [],
+  "__future__": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "_print": [],
-  "astropy": [],
+  "astropy": [
+   "astropy/conda-forge/linux-64/astropy-2.0.4-py27_0"
+  ],
   "bs4": [],
   "builtins": [],
   "chart": [],
-  "collections": [],
-  "concurrent": [],
-  "copy": [],
+  "collections": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "concurrent": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "copy": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "corr_func": [],
   "corr_matrix_func": [],
-  "datetime": [],
+  "datetime": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "dautil": [],
   "defopt": [
    "defopt/conda-forge/noarch/defopt-6.0-py_1"
   ],
   "f": [],
   "func": [],
-  "functools": [],
+  "functools": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "g": [],
   "get_index_levels_names": [],
   "get_types": [],
-  "glom": [],
-  "h5py": [],
+  "glom": [
+   "glom/conda-forge/noarch/glom-19.2.0-py_0"
+  ],
+  "h5py": [
+   "h5py/conda-forge/linux-64/h5py-2.7.1-py36_1"
+  ],
   "holoviews": [
    "holoviews/conda-forge/noarch/holoviews-1.14.2-pyhd8ed1ab_0"
   ],
   "inv": [],
-  "io": [],
+  "io": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "ipywidgets": [
    "ipywidgets/conda-forge/noarch/ipywidgets-7.5.0-py_0"
   ],
   "itertools": [],
-  "matplotlib": [],
+  "matplotlib": [
+   "matplotlib-base/conda-forge/linux-64/matplotlib-base-3.3.3-py36h159efd9_0"
+  ],
   "matplotlib2tikz": [
    "matplotlib2tikz/conda-forge/noarch/matplotlib2tikz-0.7.2-py_0"
   ],
-  "mpi4py": [],
-  "multiprocessing": [],
+  "mpi4py": [
+   "mpi4py/conda-forge/linux-64/mpi4py-3.0.3-py36h7b8b12a_6"
+  ],
+  "multiprocessing": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "nltk": [
    "nltk/conda-forge/noarch/nltk-3.6-pyhd8ed1ab_0"
   ],
-  "numba": [],
-  "numpy": [],
-  "operator": [],
-  "os": [],
-  "pandas": [],
-  "pathlib": [],
-  "pickle": [],
+  "numba": [
+   "numba/conda-forge/linux-64/numba-0.45.0-py37hb3f55d8_0"
+  ],
+  "numpy": [
+   "numpy/conda-forge/linux-64/numpy-1.9.3-py27_blas_openblashb06ca3d_7"
+  ],
+  "operator": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "os": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "pandas": [
+   "pandas/conda-forge/linux-64/pandas-0.25.0-py37hb3f55d8_0"
+  ],
+  "pathlib": [
+   "pathlib/conda-forge/noarch/pathlib-1.0.1-py_1",
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "pickle": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "plotly": [
    "plotly/conda-forge/noarch/plotly-4.4.1-py_0"
   ],
@@ -265,19 +180,30 @@
    "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
    "requests/conda-forge/noarch/requests-2.23.0-pyh8c360ce_2"
   ],
-  "scipy": [],
+  "scipy": [
+   "scipy/conda-forge/linux-64/scipy-0.18.1-np111py34_blas_openblas_200"
+  ],
   "seaborn": [
    "seaborn/conda-forge/noarch/seaborn-0.9.0-py_2"
   ],
-  "subprocess": [],
+  "subprocess": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "sympy": [],
   "sys": [],
   "time": [],
-  "timeit": [],
-  "types": [],
-  "typing": [],
+  "timeit": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "types": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "typing": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "yaml": [
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1"
+   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
+   "pyyaml/conda-forge/linux-64/pyyaml-5.4.1-py36h70b1f00_0"
   ]
  }
 }
