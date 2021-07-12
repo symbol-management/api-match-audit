@@ -1,18 +1,10 @@
 {
  "bad": [
-  "ast",
-  "ast.literal_eval",
   "block_reader",
-  "collections",
   "collections.Iterator",
-  "copy",
-  "copy.deepcopy",
   "func_b",
   "func_t",
-  "glob",
-  "glob.glob",
   "id.setter",
-  "io.open",
   "itertools",
   "itertools.chain",
   "mayavi.mlab",
@@ -20,91 +12,26 @@
   "mayavi.mlab.pipeline.open",
   "mayavi.mlab.pipeline.surface",
   "mayavi.mlab.show",
-  "numpy",
-  "numpy.abs",
-  "numpy.all",
-  "numpy.arange",
-  "numpy.argsort",
-  "numpy.around",
-  "numpy.array",
-  "numpy.asanyarray",
-  "numpy.ascontiguousarray",
-  "numpy.asfarray",
-  "numpy.ceil",
-  "numpy.concatenate",
-  "numpy.copy",
-  "numpy.cos",
-  "numpy.cross",
-  "numpy.delete",
-  "numpy.dtype",
-  "numpy.einsum",
-  "numpy.empty",
-  "numpy.exp",
   "numpy.expm1",
-  "numpy.eye",
   "numpy.floating",
-  "numpy.fromfile",
-  "numpy.full_like",
   "numpy.geomspace",
-  "numpy.hstack",
-  "numpy.in1d",
   "numpy.inf",
-  "numpy.inner",
-  "numpy.int",
-  "numpy.int32",
-  "numpy.int64",
-  "numpy.integer",
-  "numpy.invert",
-  "numpy.issubdtype",
-  "numpy.linalg.norm",
-  "numpy.linspace",
-  "numpy.loadtxt",
   "numpy.log",
-  "numpy.log10",
   "numpy.log1p",
   "numpy.logical_not",
-  "numpy.max",
   "numpy.maximum",
-  "numpy.mean",
-  "numpy.min",
-  "numpy.ndarray",
-  "numpy.ndim",
-  "numpy.nonzero",
   "numpy.object0",
-  "numpy.ones",
-  "numpy.ones_like",
-  "numpy.outer",
-  "numpy.pi",
   "numpy.power",
   "numpy.random.rand",
-  "numpy.ravel",
-  "numpy.reshape",
-  "numpy.savetxt",
-  "numpy.searchsorted",
-  "numpy.setdiff1d",
-  "numpy.sin",
-  "numpy.sqrt",
-  "numpy.squeeze",
   "numpy.subtract.outer",
-  "numpy.sum",
-  "numpy.swapaxes",
-  "numpy.tril_indices_from",
-  "numpy.unique",
-  "numpy.void",
-  "numpy.vstack",
-  "numpy.where",
-  "numpy.zeros",
   "ogs5py.__init__.__all__",
   "ogs5py.tools.types.NODE_NO.astype",
   "ogs5py.tools.types.PLY_KEY_LIST.index",
   "ogs5py.tools.types.SRF_KEY_LIST.index",
   "ogs5py.tools.types.VOL_KEY_LIST.index",
-  "os",
   "os.defpath.split",
-  "os.environ",
   "os.environ.get",
   "os.getcwd",
-  "os.makedirs",
   "os.path.abspath",
   "os.path.basename",
   "os.path.dirname",
@@ -117,44 +44,24 @@
   "os.path.realpath",
   "os.path.split",
   "os.path.splitext",
-  "os.pathsep",
   "os.remove",
   "os.symlink",
   "out",
   "out.add_polyline",
   "out.add_surface",
-  "pandas",
-  "pandas.DataFrame",
-  "pandas.read_csv",
-  "platform",
-  "platform.system",
   "ply_typ",
   "pygmsh",
   "pygmsh.Geometry",
   "pygmsh.built_in.Geometry",
   "pygmsh.generate_mesh",
-  "re",
-  "re.compile",
-  "re.escape",
   "shift_mesh",
-  "shutil",
-  "shutil.copy",
-  "shutil.copyfile",
-  "shutil.rmtree",
-  "shutil.which",
   "srf_typ",
   "sys",
   "sys.platform",
   "sys.stdout.flush",
   "sys.stdout.write",
-  "tarfile",
-  "tarfile.open",
-  "tempfile",
-  "tempfile.mkdtemp",
   "time",
   "time.strftime",
-  "urllib.request.urlopen",
-  "urllib.request.urlretrieve",
   "vol_typ",
   "vtk.util.numpy_support.numpy_to_vtk",
   "vtk.util.numpy_support.vtk_to_numpy",
@@ -174,27 +81,31 @@
   "vtk.vtkXMLPolyDataReader",
   "vtk.vtkXMLRectilinearGridReader",
   "vtk.vtkXMLStructuredGridReader",
-  "vtk.vtkXMLUnstructuredGridReader",
-  "warnings",
-  "warnings.warn",
-  "xml.etree.ElementTree",
-  "xml.etree.ElementTree.parse",
-  "zipfile",
-  "zipfile.ZipFile"
+  "vtk.vtkXMLUnstructuredGridReader"
  ],
  "deps": {
-  "ast": [],
+  "ast": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "block_reader": [],
-  "collections": [],
-  "copy": [],
+  "collections": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "copy": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "func_b": [],
   "func_t": [],
-  "glob": [],
+  "glob": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "gmsh": [
    "python-gmsh/conda-forge/noarch/python-gmsh-4.6.0-0"
   ],
   "id": [],
-  "io": [],
+  "io": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "itertools": [],
   "lxml": [
    "pyexcel-ods3/conda-forge/noarch/pyexcel-ods3-0.5.3-py_0"
@@ -203,30 +114,54 @@
   "meshio": [
    "meshio/conda-forge/noarch/meshio-4.4.0-pyhd8ed1ab_0"
   ],
-  "numpy": [],
+  "numpy": [
+   "numpy/conda-forge/linux-64/numpy-1.9.3-py27_blas_openblashb06ca3d_7"
+  ],
   "ogs5py": [],
-  "os": [],
+  "os": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "out": [],
-  "pandas": [],
+  "pandas": [
+   "pandas/conda-forge/linux-64/pandas-0.25.0-py37hb3f55d8_0"
+  ],
   "pexpect": [
    "pexpect/conda-forge/noarch/pexpect-4.8.0-pyh9f0ad1d_2"
   ],
-  "platform": [],
+  "platform": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "ply_typ": [],
   "pygmsh": [],
-  "re": [],
+  "re": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "shift_mesh": [],
-  "shutil": [],
+  "shutil": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "srf_typ": [],
   "sys": [],
-  "tarfile": [],
-  "tempfile": [],
+  "tarfile": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "tempfile": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "time": [],
-  "urllib": [],
+  "urllib": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "vol_typ": [],
   "vtk": [],
-  "warnings": [],
-  "xml": [],
-  "zipfile": []
+  "warnings": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "xml": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "zipfile": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ]
  }
 }

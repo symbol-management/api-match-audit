@@ -1,44 +1,20 @@
 {
  "bad": [
-  "__future__.absolute_import",
-  "__future__.division",
-  "__future__.print_function",
   "_decode",
   "_delete",
   "ansible.__file__",
   "ansible.constants.DISPLAY_ARGS_TO_STDOUT",
   "ansible_runner.display_callback.minimal.CallbackModule",
   "ansible_runner.runner_config.ExecutionMode.ANSIBLE_PLAYBOOK",
-  "argparse",
-  "argparse.ArgumentParser",
-  "ast",
-  "ast.literal_eval",
   "atexit",
   "atexit.register",
-  "base64",
-  "base64.b64decode",
-  "base64.b64encode",
-  "codecs",
-  "codecs.open",
-  "collections",
   "collections.Iterable",
   "collections.Mapping",
-  "collections.OrderedDict",
   "collections.abc.Iterable",
   "collections.abc.Mapping",
-  "collections.namedtuple",
-  "contextlib",
-  "contextlib.contextmanager",
-  "copy.copy",
-  "datetime",
-  "datetime.date",
-  "datetime.datetime",
-  "datetime.datetime.now",
-  "datetime.datetime.utcnow",
   "deserializer",
   "display_callback.AWXDefaultCallbackModule",
   "display_callback.AWXMinimalCallbackModule",
-  "distutils.dir_util.copy_tree",
   "errno",
   "errno.EEXIST",
   "events.event_context.add_global",
@@ -51,58 +27,24 @@
   "events.event_context.remove_local",
   "events.event_context.set_local",
   "f",
-  "fcntl",
-  "fcntl.LOCK_EX",
-  "fcntl.LOCK_UN",
-  "fcntl.lockf",
-  "functools",
-  "functools.partial",
-  "functools.wraps",
-  "getpass",
-  "getpass.getuser",
-  "glob",
-  "glob.glob",
-  "grp",
-  "grp.getgrgid",
-  "hashlib",
   "hashlib.sha1",
-  "io.BytesIO",
-  "io.StringIO",
-  "json",
-  "json.JSONEncoder",
-  "json.dump",
-  "json.dumps",
-  "json.load",
-  "json.loads",
-  "logging",
-  "logging.FileHandler",
-  "logging.Formatter",
-  "logging.NullHandler",
-  "logging.StreamHandler",
-  "logging.getLogger",
   "mock",
   "mock.Mock",
   "mock.mock_open",
   "mock.patch",
   "mock.patch.object",
-  "multiprocessing",
-  "os",
   "os.O_CREAT",
   "os.O_RDWR",
   "os.O_WRONLY",
   "os.chmod",
   "os.close",
-  "os.environ",
   "os.environ.copy",
   "os.environ.get",
-  "os.fdopen",
-  "os.getenv",
   "os.getgid",
   "os.getpid",
   "os.getuid",
   "os.kill",
   "os.listdir",
-  "os.makedirs",
   "os.mkdir",
   "os.mkfifo",
   "os.open",
@@ -120,17 +62,6 @@
   "os.path.split",
   "os.remove",
   "os.rename",
-  "pexpect",
-  "pexpect.EOF",
-  "pexpect.TIMEOUT",
-  "pexpect.exceptions.ExceptionPexpect",
-  "pexpect.spawn",
-  "pipes",
-  "pipes.quote",
-  "pkg_resources",
-  "pkg_resources.iter_entry_points",
-  "pkg_resources.require",
-  "pprint.pprint",
   "psutil",
   "psutil.Error",
   "psutil.NoSuchProcess",
@@ -139,36 +70,13 @@
   "psutil.wait_procs",
   "pwd",
   "pwd.getpwuid",
-  "pytest",
-  "pytest.fixture",
   "pytest.mark.parametrize",
   "pytest.mark.timeout",
-  "pytest.raises",
-  "re",
   "re.M",
   "re.Pattern",
-  "re._pattern_type",
-  "re.compile",
-  "re.match",
-  "re.sub",
-  "shlex",
-  "shlex.split",
-  "shutil",
-  "shutil.rmtree",
-  "signal",
   "signal.SIGKILL",
   "signal.SIG_DFL",
   "six.moves.xrange",
-  "stat",
-  "stat.S_IEXEC",
-  "stat.S_IREAD",
-  "stat.S_IRUSR",
-  "stat.S_IWRITE",
-  "stat.S_IWUSR",
-  "stat.S_IXUSR",
-  "subprocess",
-  "subprocess.PIPE",
-  "subprocess.Popen",
   "sys",
   "sys.argv",
   "sys.executable",
@@ -179,87 +87,152 @@
   "sys.stdout",
   "sys.stdout.flush",
   "sys.stdout.write",
-  "tempfile",
-  "tempfile.gettempdir",
-  "tempfile.mkdtemp",
-  "tempfile.mkstemp",
-  "textwrap",
-  "textwrap.dedent",
-  "threading",
-  "threading.Lock",
-  "threading.Thread",
   "time",
   "time.sleep",
-  "time.time",
-  "traceback",
-  "traceback.format_exc",
-  "uuid",
-  "uuid.uuid4"
+  "time.time"
  ],
  "deps": {
-  "__future__": [],
+  "__future__": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "_decode": [],
   "_delete": [],
   "ansible": [
-   "ansible-base/conda-forge/noarch/ansible-base-2.10.4-pyhd8ed1ab_0"
+   "ansible-base/conda-forge/noarch/ansible-base-2.10.4-pyhd8ed1ab_0",
+   "ansible-core/conda-forge/noarch/ansible-core-2.11.1-pyhd8ed1ab_0"
   ],
   "ansible_runner": [],
-  "argparse": [],
-  "ast": [],
+  "argparse": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "ast": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "atexit": [],
-  "base64": [],
-  "codecs": [],
-  "collections": [],
-  "contextlib": [],
-  "copy": [],
+  "base64": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "codecs": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "collections": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "contextlib": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "copy": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "daemon": [
    "python-daemon/conda-forge/noarch/python-daemon-2.3.0-pyhd8ed1ab_1"
   ],
-  "datetime": [],
+  "datetime": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "deserializer": [],
   "display_callback": [],
-  "distutils": [],
+  "distutils": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "errno": [],
   "events": [],
   "f": [],
-  "fcntl": [],
-  "functools": [],
-  "getpass": [],
-  "glob": [],
-  "grp": [],
-  "hashlib": [],
-  "io": [],
-  "json": [],
-  "logging": [],
+  "fcntl": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "functools": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "getpass": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "glob": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "grp": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "hashlib": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "io": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "json": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "logging": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "mock": [],
-  "multiprocessing": [],
-  "os": [],
-  "pexpect": [],
-  "pipes": [],
-  "pkg_resources": [],
-  "pprint": [],
+  "multiprocessing": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "os": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "pexpect": [
+   "pexpect/conda-forge/noarch/pexpect-4.8.0-pyh9f0ad1d_2"
+  ],
+  "pipes": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "pkg_resources": [
+   "setuptools/conda-forge/linux-64/setuptools-41.2.0-py27_0"
+  ],
+  "pprint": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "psutil": [],
   "pwd": [],
-  "pytest": [],
-  "re": [],
-  "shlex": [],
-  "shutil": [],
-  "signal": [],
+  "pytest": [
+   "pytest/conda-forge/linux-64/pytest-4.6.3-py27_0",
+   "pytest/conda-forge/linux-64/pytest-6.0.2-py36hc560c46_0"
+  ],
+  "re": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "shlex": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "shutil": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "signal": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "six": [
    "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
-   "privy/conda-forge/noarch/privy-6.0.0-py_0"
+   "privy/conda-forge/noarch/privy-6.0.0-py_0",
+   "six/conda-forge/linux-64/six-1.14.0-py36_0"
   ],
-  "stat": [],
-  "subprocess": [],
+  "stat": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "subprocess": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "sys": [],
-  "tempfile": [],
-  "textwrap": [],
-  "threading": [],
+  "tempfile": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "textwrap": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "threading": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "time": [],
-  "traceback": [],
-  "uuid": [],
+  "traceback": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "uuid": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "yaml": [
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1"
+   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
+   "pyyaml/conda-forge/linux-64/pyyaml-5.4.1-py36h70b1f00_0"
   ]
  }
 }
