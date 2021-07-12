@@ -1,73 +1,23 @@
 {
  "bad": [
   "OnClose",
-  "base64",
-  "base64.b64decode",
   "errno",
   "errno.EWOULDBLOCK",
   "get_params",
-  "glob",
-  "glob.glob",
   "import_auth",
   "install_alpine_package",
-  "json",
-  "json.dumps",
-  "json.loads",
-  "localstack",
   "localstack.__file__",
-  "localstack.config",
-  "localstack.config.CLI_COMMANDS",
-  "localstack.config.CONFIG_ENV_VARS",
-  "localstack.config.DOCKER_HOST_FROM_CONTAINER",
   "localstack.config.EDGE_PORT",
   "localstack.config.EDGE_PORT_HTTP",
-  "localstack.config.TMP_FOLDER",
-  "localstack.config.in_docker",
-  "localstack.config.populate_configs",
-  "localstack.constants",
-  "localstack.constants.API_ENDPOINT",
-  "localstack.constants.DEFAULT_SERVICE_PORTS",
-  "localstack.constants.DOCKER_IMAGE_NAME",
   "localstack.constants.FALSE_STRINGS",
   "localstack.constants.LOCALSTACK_INFRA_PROCESS",
-  "localstack.constants.LOCALSTACK_ROOT_FOLDER",
   "localstack.constants.LOCALSTACK_WEB_PROCESS",
   "localstack.constants.TRUE_STRINGS",
-  "localstack.dashboard.infra",
-  "localstack.dashboard.infra.get_graph",
-  "localstack.services.apigateway.apigateway_listener",
   "localstack.services.apigateway.apigateway_listener.UPDATE_APIGATEWAY.forward_request",
-  "localstack.services.generic_proxy",
-  "localstack.services.generic_proxy.SERVER_CERT_PEM_FILE",
   "localstack.services.plugins.Plugin",
   "localstack.services.plugins.register_plugin",
-  "localstack.utils.aws.aws_models",
-  "localstack.utils.aws.aws_models.Component",
-  "localstack.utils.aws.aws_models.LambdaFunction",
-  "localstack.utils.aws.aws_stack",
-  "localstack.utils.aws.aws_stack.connect_to_service",
-  "localstack.utils.bootstrap.API_DEPENDENCIES",
-  "localstack.utils.bootstrap.is_api_enabled",
-  "localstack.utils.common",
-  "localstack.utils.common.chmod_r",
-  "localstack.utils.common.download",
   "localstack.utils.common.get_arch",
-  "localstack.utils.common.in_docker",
-  "localstack.utils.common.is_alpine",
-  "localstack.utils.common.is_port_open",
-  "localstack.utils.common.load_file",
-  "localstack.utils.common.mkdir",
-  "localstack.utils.common.new_tmp_file",
-  "localstack.utils.common.now",
-  "localstack.utils.common.rm_rf",
-  "localstack.utils.common.run",
-  "localstack.utils.common.safe_requests",
   "localstack.utils.common.safe_requests.post",
-  "localstack.utils.common.save_file",
-  "localstack.utils.common.short_uid",
-  "localstack.utils.common.to_bytes",
-  "localstack.utils.common.to_str",
-  "localstack.utils.common.unzip",
   "localstack_ext.services.apigateway.apigateway_extended",
   "localstack_ext.services.apigateway.apigateway_extended.patch_apigateway",
   "localstack_ext.services.appsync.appsync_starter",
@@ -168,15 +118,6 @@
   "localstack_ext.utils.persistence",
   "localstack_ext.utils.persistence.enable_extended_persistence",
   "log",
-  "logging",
-  "logging.ERROR",
-  "logging.INFO",
-  "logging.WARNING",
-  "logging.basicConfig",
-  "logging.getLogger",
-  "os",
-  "os._exit",
-  "os.environ",
   "os.environ.get",
   "os.path.dirname",
   "os.path.exists",
@@ -185,18 +126,12 @@
   "os.path.join",
   "os.path.realpath",
   "os.remove",
-  "re",
   "re.DOTALL",
   "re.MULTILINE",
-  "re.match",
   "run_cmd",
-  "select.select",
-  "shutil",
-  "shutil.copy",
   "six.moves.BaseHTTPServer.BaseHTTPRequestHandler",
   "six.moves.BaseHTTPServer.HTTPServer",
   "six.moves.socketserver.ThreadingMixIn",
-  "socket",
   "socket.AF_INET",
   "socket.AF_INET6",
   "socket.IPPROTO_IPV6",
@@ -207,11 +142,6 @@
   "socket.SO_REUSEADDR",
   "socket.TCP_NODELAY",
   "socket.error",
-  "socket.socket",
-  "subprocess",
-  "subprocess.CalledProcessError",
-  "subprocess.STDOUT",
-  "subprocess.check_output",
   "sys",
   "sys.argv",
   "sys.executable",
@@ -219,17 +149,13 @@
   "sys.path.append",
   "sys.stdout.flush",
   "tcp_proxy.server_loop",
-  "tempfile",
-  "tempfile.mkdtemp",
-  "threading",
-  "threading.Thread",
-  "to_str",
-  "uuid",
-  "uuid.uuid4"
+  "to_str"
  ],
  "deps": {
   "OnClose": [],
-  "base64": [],
+  "base64": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "boto3": [
    "boto3/conda-forge/noarch/boto3-1.13.1-pyh9f0ad1d_0"
   ],
@@ -238,37 +164,64 @@
   ],
   "errno": [],
   "get_params": [],
-  "glob": [],
+  "glob": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "import_auth": [],
   "install_alpine_package": [],
-  "json": [],
-  "localstack": [],
+  "json": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "localstack": [
+   "localstack/conda-forge/noarch/localstack-0.10.3-py_0"
+  ],
   "localstack_ext": [],
   "log": [],
-  "logging": [],
-  "os": [],
+  "logging": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "os": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "pyaes": [
    "pyaes/conda-forge/noarch/pyaes-1.6.1-py_0"
   ],
-  "re": [],
+  "re": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "requests": [
    "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
    "requests/conda-forge/noarch/requests-2.23.0-pyh8c360ce_2"
   ],
   "run_cmd": [],
-  "select": [],
-  "shutil": [],
+  "select": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "shutil": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "six": [
    "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
-   "privy/conda-forge/noarch/privy-6.0.0-py_0"
+   "privy/conda-forge/noarch/privy-6.0.0-py_0",
+   "six/conda-forge/linux-64/six-1.14.0-py36_0"
   ],
-  "socket": [],
-  "subprocess": [],
+  "socket": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "subprocess": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "sys": [],
   "tcp_proxy": [],
-  "tempfile": [],
-  "threading": [],
+  "tempfile": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "threading": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "to_str": [],
-  "uuid": []
+  "uuid": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ]
  }
 }

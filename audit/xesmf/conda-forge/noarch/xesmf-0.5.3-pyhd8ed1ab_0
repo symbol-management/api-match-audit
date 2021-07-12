@@ -1,6 +1,5 @@
 {
  "bad": [
-  "ESMF",
   "ESMF.CoordSys.SPH_DEG",
   "ESMF.ExtrapMethod.NEAREST_IDAVG",
   "ESMF.ExtrapMethod.NEAREST_STOD",
@@ -21,7 +20,6 @@
   "ESMF.StaggerLoc.CENTER",
   "ESMF.StaggerLoc.CORNER",
   "ESMF.UnmappedAction.IGNORE",
-  "ESMF.api.locstream.LocStream",
   "backend.Grid.from_xarray",
   "backend.LocStream.from_xarray",
   "backend.Mesh.from_polygons",
@@ -32,61 +30,27 @@
   "dask.distributed.Client",
   "dask.distributed.LocalCluster",
   "dask.is_dask_collection",
-  "numpy",
   "numpy.NaN",
-  "numpy.abs",
-  "numpy.allclose",
-  "numpy.arange",
-  "numpy.array",
-  "numpy.array_equal",
-  "numpy.asarray",
-  "numpy.cos",
-  "numpy.dtype",
-  "numpy.empty",
-  "numpy.expand_dims",
   "numpy.float32",
-  "numpy.int32",
-  "numpy.isclose",
-  "numpy.lib.recfunctions",
   "numpy.lib.recfunctions.structured_to_unstructured",
-  "numpy.max",
-  "numpy.meshgrid",
   "numpy.nan",
-  "numpy.ndarray",
-  "numpy.pi",
   "numpy.random.rand",
   "numpy.random.randint",
-  "numpy.round",
-  "numpy.testing.assert_allclose",
-  "numpy.testing.assert_almost_equal",
-  "numpy.testing.assert_array_equal",
-  "numpy.testing.assert_equal",
   "numpy.uint32",
-  "numpy.where",
-  "numpy.zeros",
-  "os",
   "os.path.exists",
   "os.remove",
-  "pytest",
-  "pytest.fixture",
   "pytest.mark.parametrize",
   "pytest.mark.skip",
   "pytest.mark.testcases",
-  "pytest.raises",
-  "pytest.warns",
   "regrid_to_1x1",
   "regrid_to_5x5",
   "regridder",
-  "savg",
-  "scipy.sparse",
-  "scipy.sparse.coo_matrix",
-  "scipy.sparse.hstack",
-  "warnings",
-  "warnings.catch_warnings",
-  "warnings.warn"
+  "savg"
  ],
  "deps": {
-  "ESMF": [],
+  "ESMF": [
+   "esmpy/conda-forge/linux-64/esmpy-8.0.1-mpi_mpich_py37ha4619bd_101"
+  ],
   "_version": [
    "configobj/conda-forge/noarch/configobj-5.0.6-py_0"
   ],
@@ -98,21 +62,34 @@
   "dask": [
    "dask-core/conda-forge/noarch/dask-core-0.15.3-py_0"
   ],
-  "numpy": [],
-  "os": [],
-  "pathlib": [
-   "pathlib/conda-forge/noarch/pathlib-1.0.1-py_1"
+  "numpy": [
+   "numpy/conda-forge/linux-64/numpy-1.9.3-py27_blas_openblashb06ca3d_7"
   ],
-  "pytest": [],
+  "os": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "pathlib": [
+   "pathlib/conda-forge/noarch/pathlib-1.0.1-py_1",
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "pytest": [
+   "pytest/conda-forge/linux-64/pytest-4.6.3-py27_0",
+   "pytest/conda-forge/linux-64/pytest-6.0.2-py36hc560c46_0"
+  ],
   "regrid_to_1x1": [],
   "regrid_to_5x5": [],
   "regridder": [],
   "savg": [],
-  "scipy": [],
+  "scipy": [
+   "scipy/conda-forge/linux-64/scipy-0.18.1-np111py34_blas_openblas_200"
+  ],
   "shapely": [
+   "shapely/conda-forge/linux-64/shapely-1.5.17-np111py27_0",
    "solaris/conda-forge/noarch/solaris-0.4.0-pyhe05a262_0"
   ],
-  "warnings": [],
+  "warnings": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "xarray": [
    "xarray/conda-forge/noarch/xarray-0.15.0-py_0"
   ]

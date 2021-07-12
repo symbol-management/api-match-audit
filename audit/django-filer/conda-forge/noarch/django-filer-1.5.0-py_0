@@ -5,19 +5,8 @@
   "FileForm",
   "Image",
   "ImageDraw",
-  "PIL.ExifTags",
-  "PIL.Image",
   "PIL.Image.ANTIALIAS",
-  "PIL.Image.new",
-  "PIL.ImageDraw",
-  "PIL.ImageDraw.Draw",
-  "__future__.absolute_import",
-  "__future__.division",
-  "__future__.unicode_literals",
   "abstract.BaseImage.Meta",
-  "base64",
-  "base64.b64decode",
-  "base64.b64encode",
   "bytes.endswith",
   "cms.cms_toolbars.ADMINISTRATION_BREAK",
   "cms.cms_toolbars.ADMIN_MENU_IDENTIFIER",
@@ -25,10 +14,7 @@
   "cms.toolbar_base.CMSToolbar",
   "cms.toolbar_pool.toolbar_pool",
   "cms.toolbar_pool.toolbar_pool.register",
-  "collections.OrderedDict",
-  "collections.defaultdict",
   "construct_search",
-  "datetime.datetime",
   "django.apps.apps.get_model",
   "django.conf.settings.AUTH_USER_MODEL",
   "django.conf.settings.DATABASES.endswith",
@@ -102,20 +88,10 @@
   "format.startswith",
   "format_callback",
   "func",
-  "hashlib",
   "hashlib.sha1",
-  "importlib.import_module",
-  "io.BytesIO",
   "itertools",
   "itertools.count",
-  "logging",
-  "logging.getLogger",
   "long",
-  "math",
-  "math.log",
-  "math.pow",
-  "mimetypes",
-  "mimetypes.guess_type",
   "mixins.IconsMixin",
   "models.Clipboard.objects.get",
   "models.File.DoesNotExist",
@@ -138,7 +114,6 @@
   "models.tools.move_files_from_clipboard_to_folder",
   "move_files",
   "move_folders",
-  "os",
   "os.path.abspath",
   "os.path.basename",
   "os.path.exists",
@@ -148,13 +123,9 @@
   "os.path.split",
   "os.path.splitext",
   "os.stat",
-  "os.walk",
   "permission_method",
   "polymorphic.PolymorphicManager",
   "polymorphic.PolymorphicModel",
-  "re",
-  "re.compile",
-  "re.sub",
   "set_files",
   "set_folders",
   "settings.DEBUG",
@@ -183,17 +154,12 @@
   "settings.FILER_PUBLICMEDIA_UPLOAD_TO",
   "settings.FILER_UPLOADER_CONNECTIONS",
   "settings.USE_TZ",
-  "stat",
-  "stat.ST_MTIME",
-  "stat.ST_SIZE",
   "sys",
   "sys.getdefaultencoding",
   "sys.getfilesystemencoding",
   "upload_to",
   "utils.compatibility.PILExifTags.TAGS.get",
   "utils.compatibility.PILImage.open",
-  "uuid",
-  "uuid.uuid4",
   "views.canonical",
   "views.delete_clipboard",
   "views.discard_clipboard",
@@ -202,13 +168,10 @@
   "views.serve_protected_file",
   "views.serve_protected_thumbnail",
   "virtualitems.UnsortedImages",
-  "warnings",
-  "warnings.warn",
   "zip.close",
   "zip.infolist",
   "zip.read",
-  "zip.testzip",
-  "zipfile.ZipFile"
+  "zip.testzip"
  ],
  "deps": {
   "Clipboard": [],
@@ -216,15 +179,25 @@
   "FileForm": [],
   "Image": [],
   "ImageDraw": [],
-  "PIL": [],
-  "__future__": [],
+  "PIL": [
+   "pillow/conda-forge/linux-64/pillow-7.2.0-py36hfc7c323_2"
+  ],
+  "__future__": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "abstract": [],
-  "base64": [],
+  "base64": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "bytes": [],
   "cms": [],
-  "collections": [],
+  "collections": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "construct_search": [],
-  "datetime": [],
+  "datetime": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "django": [
    "django/conda-forge/noarch/django-3.1.4-pyhd8ed1ab_0"
   ],
@@ -238,14 +211,26 @@
   "format": [],
   "format_callback": [],
   "func": [],
-  "hashlib": [],
-  "importlib": [],
-  "io": [],
+  "hashlib": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "importlib": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "io": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "itertools": [],
-  "logging": [],
+  "logging": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "long": [],
-  "math": [],
-  "mimetypes": [],
+  "math": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "mimetypes": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "mixins": [],
   "models": [],
   "move_files": [],
@@ -253,27 +238,39 @@
   "mptt": [
    "django-mptt/conda-forge/noarch/django-mptt-0.8.7-py_0"
   ],
-  "os": [],
+  "os": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "permission_method": [],
   "polymorphic": [
    "django_polymorphic/conda-forge/noarch/django_polymorphic-2.0.2-py_0"
   ],
-  "re": [],
+  "re": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "set_files": [],
   "set_folders": [],
   "settings": [],
-  "stat": [],
+  "stat": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "sys": [],
   "unidecode": [
    "unidecode/conda-forge/noarch/unidecode-1.1.2-pyhd8ed1ab_0"
   ],
   "upload_to": [],
   "utils": [],
-  "uuid": [],
+  "uuid": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "views": [],
   "virtualitems": [],
-  "warnings": [],
+  "warnings": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "zip": [],
-  "zipfile": []
+  "zipfile": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ]
  }
 }

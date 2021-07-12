@@ -15,21 +15,15 @@
   "api.locate_ns",
   "api.oneway",
   "api.resolve",
-  "argparse.ArgumentParser",
-  "array",
   "array.array",
   "bind_unused_port",
   "builtins",
-  "cgi",
-  "cgi.parse",
   "client.BatchProxy",
   "client.Proxy",
   "client.Proxy.__new__",
   "client.SerializedBlob",
-  "collections",
   "collections.Iterator",
   "collections.abc.MutableMapping",
-  "collections.defaultdict",
   "config.BROADCAST_ADDRS",
   "config.COMMTIMEOUT",
   "config.DETAILED_TRACEBACK",
@@ -61,8 +55,6 @@
   "config.THREADPOOL_SIZE",
   "config.THREADPOOL_SIZE_MIN",
   "connect_and_handshake",
-  "contextlib",
-  "contextlib.suppress",
   "converter",
   "core.DAEMON_NAME",
   "core.DAEMON_NAME.get_metadata",
@@ -82,19 +74,7 @@
   "core.locate_ns",
   "core.resolve",
   "createInstance",
-  "ctypes.WinError",
-  "ctypes.windll",
   "ctypes.windll.kernel32.SetHandleInformation",
-  "ctypes.wintypes",
-  "ctypes.wintypes.BOOL",
-  "ctypes.wintypes.DWORD",
-  "ctypes.wintypes.HANDLE",
-  "datetime",
-  "datetime.date",
-  "datetime.date.fromordinal",
-  "datetime.datetime",
-  "datetime.datetime.fromtimestamp",
-  "decimal",
   "decimal.Decimal",
   "errno",
   "errno.EADDRINUSE",
@@ -124,55 +104,28 @@
   "errors.excepthook",
   "errors.format_traceback",
   "errors.get_pyro_traceback",
-  "fcntl",
   "formatRemoteTraceback",
   "get_exposed_members",
   "getaddr",
   "greenlet.getcurrent",
-  "inspect",
-  "inspect.isclass",
-  "inspect.isdatadescriptor",
-  "inspect.isfunction",
-  "inspect.isgenerator",
-  "inspect.ismethod",
-  "inspect.ismethoddescriptor",
   "int.from_bytes",
-  "json",
-  "json.dumps",
-  "json.loads",
-  "linecache",
-  "linecache.getline",
-  "logging",
-  "logging.DEBUG",
-  "logging.basicConfig",
-  "logging.getLogger",
   "logging.root.handlers",
   "makeStrValue",
   "marshal",
   "marshal.dumps",
   "marshal.loads",
   "method",
-  "msgpack",
-  "msgpack.version",
   "nameserver.start_ns",
   "nsbatch",
-  "numbers",
-  "numbers.Number",
   "object.__hash__",
   "object.__new__",
-  "os",
   "os.environ.get",
   "os.environ.items",
-  "os.name",
   "os.path.dirname",
   "os.path.exists",
   "os.path.isdir",
   "os.path.isfile",
   "os.remove",
-  "platform",
-  "platform.python_implementation",
-  "platform.python_version",
-  "platform.system",
   "print_list_result",
   "protocol.FLAGS_BATCH",
   "protocol.FLAGS_CORR_ID",
@@ -190,18 +143,8 @@
   "protocol.SendingMessage",
   "protocol.log_wiredata",
   "protocol.recv_stub",
-  "random",
-  "random.choice",
-  "re",
-  "re.compile",
-  "re.error",
-  "re.match",
   "replacement_function",
   "replacer",
-  "select",
-  "select.select",
-  "selectors",
-  "selectors.EVENT_READ",
   "serializers.MarshalSerializer.serializer_id",
   "serializers.SerializerBase",
   "serializers.SerializerBase.class_to_dict",
@@ -217,7 +160,6 @@
   "server.expose",
   "server.oneway",
   "set_reuseaddr",
-  "socket",
   "socket.AF_INET",
   "socket.AF_INET6",
   "socket.AF_UNIX",
@@ -236,10 +178,8 @@
   "socket.TCP_NODELAY",
   "socket.error",
   "socket.gaierror",
-  "socket.getaddrinfo",
   "socket.gethostbyaddr",
   "socket.gethostname",
-  "socket.socket",
   "socket.timeout",
   "socketutil.ERRNO_BADF",
   "socketutil.ERRNO_EADDRINUSE",
@@ -255,18 +195,12 @@
   "socketutil.interrupt_socket",
   "socketutil.receive_data",
   "socketutil.send_data",
-  "sqlite3",
   "sqlite3.DatabaseError",
   "sqlite3.connect",
-  "ssl",
   "ssl.CERT_NONE",
   "ssl.CERT_REQUIRED",
   "ssl.Purpose.CLIENT_AUTH",
   "ssl.Purpose.SERVER_AUTH",
-  "ssl.SSLContext",
-  "ssl.SSLSocket",
-  "ssl.create_default_context",
-  "struct",
   "struct.calcsize",
   "struct.error",
   "struct.pack",
@@ -277,110 +211,153 @@
   "sys.modules",
   "sys.stderr.write",
   "sys.stdout.encoding",
-  "threading",
-  "threading.Lock",
-  "threading.Thread",
-  "threading.current_thread",
-  "threading.get_ident",
-  "threading.local",
   "time",
   "time.asctime",
   "time.sleep",
   "time.time",
-  "traceback",
-  "traceback.format_exception",
-  "traceback.print_exc",
-  "typing.Any",
-  "typing.Dict",
-  "typing.Optional",
-  "typing.Tuple",
-  "typing.Type",
-  "typing.Union",
-  "uuid",
-  "uuid.UUID",
-  "uuid.uuid4",
-  "valuetype",
-  "warnings",
-  "warnings.warn",
-  "weakref",
-  "wsgiref.simple_server.make_server",
-  "zlib",
-  "zlib.decompress"
+  "valuetype"
  ],
  "deps": {
   "Pyro5": [],
   "api": [],
-  "argparse": [],
-  "array": [],
+  "argparse": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "array": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "bind_unused_port": [],
   "builtins": [],
-  "cgi": [],
+  "cgi": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "client": [],
-  "collections": [],
+  "collections": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "config": [],
   "connect_and_handshake": [],
-  "contextlib": [],
+  "contextlib": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "converter": [],
   "core": [],
   "createInstance": [],
-  "ctypes": [],
-  "datetime": [],
-  "decimal": [],
+  "ctypes": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "datetime": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "decimal": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "errno": [],
   "errors": [],
-  "fcntl": [],
+  "fcntl": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "formatRemoteTraceback": [],
   "get_exposed_members": [],
   "getaddr": [],
   "greenlet": [],
-  "inspect": [],
+  "inspect": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "int": [],
   "ipaddress": [
    "ipaddress/conda-forge/noarch/ipaddress-1.0.22-py_1",
-   "privy/conda-forge/noarch/privy-6.0.0-py_0"
+   "privy/conda-forge/noarch/privy-6.0.0-py_0",
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
   ],
-  "json": [],
-  "linecache": [],
-  "logging": [],
+  "json": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "linecache": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "logging": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "makeStrValue": [],
   "marshal": [],
   "method": [],
-  "msgpack": [],
+  "msgpack": [
+   "msgpack-python/conda-forge/linux-64/msgpack-python-0.5.6-py27h2d50403_3"
+  ],
   "nameserver": [],
   "nsbatch": [],
-  "numbers": [],
+  "numbers": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "object": [],
-  "os": [],
-  "platform": [],
+  "os": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "platform": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "print_list_result": [],
   "protocol": [],
-  "random": [],
-  "re": [],
+  "random": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "re": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "replacement_function": [],
   "replacer": [],
-  "select": [],
-  "selectors": [],
+  "select": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "selectors": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "serializers": [],
   "serpent": [
    "serpent/conda-forge/noarch/serpent-1.30-py_0"
   ],
   "server": [],
   "set_reuseaddr": [],
-  "socket": [],
+  "socket": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "socketutil": [],
-  "sqlite3": [],
-  "ssl": [],
-  "struct": [],
+  "sqlite3": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "ssl": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "struct": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "sys": [],
-  "threading": [],
+  "threading": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "time": [],
-  "traceback": [],
-  "typing": [],
-  "uuid": [],
+  "traceback": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "typing": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "uuid": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "valuetype": [],
-  "warnings": [],
-  "weakref": [],
-  "wsgiref": [],
-  "zlib": []
+  "warnings": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "weakref": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "wsgiref": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "zlib": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ]
  }
 }
