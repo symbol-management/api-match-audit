@@ -5,16 +5,6 @@
   "_read_file_base",
   "_single_layer_vector_operation",
   "_two_layer_vector_operation",
-  "concurrent.futures",
-  "concurrent.futures.ProcessPoolExecutor",
-  "concurrent.futures.ThreadPoolExecutor",
-  "concurrent.futures.as_completed",
-  "datetime",
-  "datetime.date",
-  "datetime.datetime",
-  "datetime.datetime.now",
-  "filecmp",
-  "filecmp.cmp",
   "fiona",
   "fiona.listlayers",
   "fiona.open",
@@ -36,104 +26,46 @@
   "geometry_util.simplify_ext",
   "get_driver",
   "get_gdal_to_use",
-  "io.StringIO",
   "io_util.create_tempdir",
   "load_spatialite",
-  "logging",
-  "logging.config",
-  "logging.getLogger",
-  "math",
-  "math.ceil",
-  "math.sqrt",
-  "multiprocessing",
   "multiprocessing.cpu_count",
-  "numpy",
-  "numpy.array",
-  "numpy.ndarray",
-  "numpy.zeros",
   "ogr_util.VectorTranslateInfo",
   "ogr_util.get_gdal_to_use",
   "ogr_util.vector_translate",
   "ogr_util.vector_translate_async",
   "ogr_util.vector_translate_by_info",
-  "os",
   "os.O_CREAT",
   "os.O_EXCL",
   "os.close",
-  "os.environ",
   "os.environ.get",
-  "os.getenv",
-  "os.makedirs",
   "os.mkdir",
-  "os.name",
   "os.open",
   "os.path.splitext",
-  "osgeo.gdal",
   "osgeo.gdal.OF_READONLY",
   "osgeo.gdal.OF_UPDATE",
-  "osgeo.gdal.OpenEx",
-  "osgeo.gdal.SetConfigOption",
-  "osgeo.gdal.UseExceptions",
-  "osgeo.gdal.VectorTranslate",
-  "osgeo.gdal.VectorTranslateOptions",
   "osgeo.gdal.ogr.GeometryTypeToName",
-  "pandas",
-  "pandas.DataFrame",
-  "pathlib.Path",
   "point_line_distance",
-  "pprint",
-  "pprint.pformat",
   "psutil",
   "psutil.swap_memory",
   "psutil.virtual_memory",
-  "pygeos",
-  "pygeos.io.from_shapely",
-  "pygeos.io.to_wkb",
   "pygeos.make_valid",
-  "pyproj",
-  "pyproj.CRS",
   "pyproj.CRS.from_epsg",
-  "re",
-  "re.match",
-  "re.sub",
   "remove_inner_rings_polygon",
-  "shutil",
-  "shutil.copy",
-  "shutil.copyfileobj",
-  "shutil.move",
-  "shutil.rmtree",
   "simplification.cutil",
   "simplification.cutil.simplify_coords_idx",
   "simplification.cutil.simplify_coords_vw_idx",
   "simplify_coords",
   "simplify_linestring",
   "simplify_polygon",
-  "sqlite3",
   "sqlite3.PARSE_DECLTYPES",
   "sqlite3.connect",
   "sqlite_util.SqliteProfile.SPEED",
   "sqlite_util.check_runtimedependencies",
   "sqlite_util.create_table_as_sql",
-  "subprocess",
-  "subprocess.PIPE",
-  "subprocess.Popen",
-  "subprocess.check_output",
-  "tempfile",
-  "tempfile.TemporaryDirectory",
-  "tempfile.gettempdir",
-  "threading.Lock",
   "time",
   "time.sleep",
   "to_string_for_sql",
   "type.upper",
-  "typing.Any",
-  "typing.List",
-  "typing.NamedTuple",
-  "typing.Optional",
-  "typing.Tuple",
-  "typing.Union",
-  "warnings",
-  "warnings.filterwarnings",
   "write_to_file"
  ],
  "deps": {
@@ -142,12 +74,19 @@
   "_read_file_base": [],
   "_single_layer_vector_operation": [],
   "_two_layer_vector_operation": [],
-  "concurrent": [],
-  "datetime": [],
-  "enum": [
-   "privy/conda-forge/noarch/privy-6.0.0-py_0"
+  "concurrent": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
   ],
-  "filecmp": [],
+  "datetime": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "enum": [
+   "privy/conda-forge/noarch/privy-6.0.0-py_0",
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "filecmp": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "fiona": [],
   "geofileops": [],
   "geometry_util": [],
@@ -156,43 +95,84 @@
   ],
   "get_driver": [],
   "get_gdal_to_use": [],
-  "io": [],
+  "io": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "io_util": [],
   "load_spatialite": [],
-  "logging": [],
-  "math": [],
-  "multiprocessing": [],
-  "numpy": [],
+  "logging": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "math": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "multiprocessing": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "numpy": [
+   "numpy/conda-forge/linux-64/numpy-1.9.3-py27_blas_openblashb06ca3d_7"
+  ],
   "ogr_util": [],
-  "os": [],
-  "osgeo": [],
-  "pandas": [],
-  "pathlib": [],
+  "os": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "osgeo": [
+   "gdal/conda-forge/linux-64/gdal-3.2.2-py39h409cc32_4"
+  ],
+  "pandas": [
+   "pandas/conda-forge/linux-64/pandas-0.25.0-py37hb3f55d8_0"
+  ],
+  "pathlib": [
+   "pathlib/conda-forge/noarch/pathlib-1.0.1-py_1",
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "point_line_distance": [],
-  "pprint": [],
+  "pprint": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "psutil": [],
-  "pygeos": [],
-  "pyproj": [],
-  "re": [],
+  "pygeos": [
+   "pygeos/conda-forge/linux-64/pygeos-0.6-py36h3d6ee9d_2"
+  ],
+  "pyproj": [
+   "pyproj/conda-forge/linux-64/pyproj-2.6.1.post1-py36he34cbb8_0"
+  ],
+  "re": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "remove_inner_rings_polygon": [],
   "shapely": [
    "solaris/conda-forge/noarch/solaris-0.4.0-pyhe05a262_0"
   ],
-  "shutil": [],
+  "shutil": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "simplification": [],
   "simplify_coords": [],
   "simplify_linestring": [],
   "simplify_polygon": [],
-  "sqlite3": [],
+  "sqlite3": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "sqlite_util": [],
-  "subprocess": [],
-  "tempfile": [],
-  "threading": [],
+  "subprocess": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "tempfile": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "threading": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "time": [],
   "to_string_for_sql": [],
   "type": [],
-  "typing": [],
-  "warnings": [],
+  "typing": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "warnings": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "write_to_file": []
  }
 }

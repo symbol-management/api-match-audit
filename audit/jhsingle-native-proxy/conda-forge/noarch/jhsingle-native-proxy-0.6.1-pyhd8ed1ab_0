@@ -1,45 +1,16 @@
 {
  "bad": [
-  "aiohttp",
-  "aiohttp.ClientConnectionError",
-  "aiohttp.ClientSession",
-  "argparse",
-  "argparse.ArgumentParser",
-  "asyncio",
-  "asyncio.Future",
-  "asyncio.Lock",
-  "asyncio.ensure_future",
-  "asyncio.sleep",
-  "asyncio.wrap_future",
-  "concurrent.futures",
   "conda_runner.get_conda_prefix_and_env",
-  "datetime",
-  "datetime.datetime",
-  "datetime.datetime.now",
-  "datetime.datetime.utcnow",
   "flush",
-  "functools.partial",
-  "inspect",
-  "inspect.isawaitable",
-  "json",
-  "json.dumps",
-  "json.loads",
   "jupyterhub.__version__",
   "jupyterhub.services.auth.HubOAuthCallbackHandler",
   "jupyterhub.services.auth.HubOAuthenticated",
   "jupyterhub.utils.exponential_backoff",
   "jupyterhub.utils.isoformat",
   "jupyterhub.utils.make_ssl_context",
-  "logging",
-  "logging.DEBUG",
-  "logging.INFO",
-  "logging.basicConfig",
-  "logging.info",
-  "os",
   "os.chdir",
   "os.environ.copy",
   "os.environ.get",
-  "os.execvp",
   "os.getcwd",
   "os.path.basename",
   "os.path.dirname",
@@ -53,104 +24,99 @@
   "os.rename",
   "os.urandom",
   "pipe_output",
-  "pipes.quote",
-  "queue.Empty",
-  "queue.Queue",
-  "re",
-  "re.escape",
-  "shlex.quote",
-  "socket",
-  "socket.socket",
-  "ssl",
   "ssl.CERT_REQUIRED",
   "ssl.PROTOCOL_SSLv23",
-  "subprocess",
-  "subprocess.CalledProcessError",
-  "subprocess.PIPE",
-  "subprocess.Popen",
-  "subprocess.STDOUT",
-  "subprocess.check_call",
-  "subprocess.check_output",
   "sys",
   "sys.argv",
   "sys.platform",
-  "threading",
-  "threading.Thread",
   "time",
   "time.time",
-  "tornado.escape.xhtml_escape",
-  "tornado.httpclient",
-  "tornado.httpclient.AsyncHTTPClient",
-  "tornado.httpclient.AsyncHTTPClient.configure",
-  "tornado.httpclient.HTTPError",
-  "tornado.httpclient.HTTPRequest",
   "tornado.httpclient.HTTPRequest._DEFAULTS",
-  "tornado.httpclient._RequestProxy",
-  "tornado.httpserver.HTTPServer",
-  "tornado.httputil",
-  "tornado.httputil.HTTPHeaders",
-  "tornado.ioloop",
-  "tornado.ioloop.IOLoop.current",
-  "tornado.ioloop.PeriodicCallback",
-  "tornado.log.app_log",
   "tornado.log.app_log.setLevel",
-  "tornado.log.gen_log",
   "tornado.log.gen_log.debug",
-  "tornado.web",
-  "tornado.web.Application",
-  "tornado.web.HTTPError",
-  "tornado.web.RedirectHandler",
-  "tornado.web.RequestHandler",
-  "tornado.web.RequestHandler._orig_set_default_headers",
-  "tornado.web.RequestHandler.set_default_headers",
-  "tornado.web.authenticated",
-  "tornado.websocket",
-  "tornado.websocket.WebSocketClientConnection",
-  "tornado.websocket.WebSocketHandler",
-  "traceback",
-  "traceback.format_exception",
-  "typing.Any",
-  "urllib.parse.quote",
-  "urllib.parse.urlparse",
-  "urllib.parse.urlunparse"
+  "tornado.web.RequestHandler._orig_set_default_headers"
  ],
  "deps": {
-  "aiohttp": [],
-  "argparse": [],
-  "asyncio": [],
+  "aiohttp": [
+   "aiohttp/conda-forge/linux-64/aiohttp-3.7.0-py36h8c4c3a4_0"
+  ],
+  "argparse": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "asyncio": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "click": [
    "click/conda-forge/noarch/click-7.0-py_0"
   ],
-  "concurrent": [],
+  "concurrent": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "conda_runner": [],
-  "datetime": [],
+  "datetime": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "flush": [],
-  "functools": [],
-  "inspect": [],
-  "json": [],
+  "functools": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "inspect": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "json": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "jupyterhub": [],
-  "logging": [],
-  "os": [],
+  "logging": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "os": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "pipe_output": [],
-  "pipes": [],
-  "queue": [],
-  "re": [],
-  "shlex": [],
+  "pipes": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "queue": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "re": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "shlex": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "simpervisor": [
    "simpervisor/conda-forge/noarch/simpervisor-0.3-py_1"
   ],
-  "socket": [],
-  "ssl": [],
-  "subprocess": [],
+  "socket": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "ssl": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "subprocess": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "sys": [],
-  "threading": [],
+  "threading": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "time": [],
-  "tornado": [],
-  "traceback": [],
+  "tornado": [
+   "tornado/conda-forge/linux-64/tornado-5.1.1-py36h97a6639_1"
+  ],
+  "traceback": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "traitlets": [
    "traitlets/conda-forge/noarch/traitlets-5.0.3-py_0"
   ],
-  "typing": [],
-  "urllib": []
+  "typing": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "urllib": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ]
  }
 }

@@ -1,14 +1,5 @@
 {
  "bad": [
-  "PIL",
-  "PIL.Image",
-  "PIL.ImageDraw",
-  "PIL.ImageDraw.Draw",
-  "PIL.ImageFont",
-  "PIL.ImageFont.truetype",
-  "PIL.ImageOps",
-  "PIL.ImageOps.crop",
-  "PIL.PngImagePlugin.PngImageFile",
   "_sanifix4.sanifix",
   "anybreak",
   "datamol.PERIODIC_TABLE.GetDefaultValence",
@@ -24,46 +15,29 @@
   "itertools.product",
   "loguru.logger.info",
   "loguru.logger.warning",
-  "matplotlib.font_manager.FontManager",
   "mmpa_frag",
   "networkx.Graph",
   "networkx.all_simple_paths",
   "numpy.isfinite",
   "numpy.random.permutation",
-  "pkg_resources",
-  "pkg_resources.resource_stream",
   "random_fragment_add",
-  "rdkit.Chem",
   "rdkit.Chem.AddHs",
-  "rdkit.Chem.AllChem",
   "rdkit.Chem.AllChem.ChemicalReaction",
   "rdkit.Chem.AllChem.EmbedMultipleConfs",
-  "rdkit.Chem.AllChem.GetConformerRMSMatrix",
   "rdkit.Chem.AllChem.ReactionFromSmarts",
   "rdkit.Chem.AllChem.UFFOptimizeMoleculeConfs",
   "rdkit.Chem.AssignStereochemistry",
   "rdkit.Chem.Atom",
-  "rdkit.Chem.BRICS",
-  "rdkit.Chem.BRICS.BRICSDecompose",
   "rdkit.Chem.CanonicalRankAtoms",
   "rdkit.Chem.CombineMols",
-  "rdkit.Chem.DataStructs",
   "rdkit.Chem.DataStructs.BulkTanimotoSimilarity",
   "rdkit.Chem.DataStructs.ExplicitBitVect",
   "rdkit.Chem.DataStructs.TanimotoSimilarity",
   "rdkit.Chem.DeleteSubstructs",
-  "rdkit.Chem.Descriptors",
   "rdkit.Chem.Descriptors.NumRotatableBonds",
-  "rdkit.Chem.Draw",
-  "rdkit.Chem.Draw.MolToImage",
-  "rdkit.Chem.Draw.MolsToGridImage",
   "rdkit.Chem.EditableMol",
-  "rdkit.Chem.EnumerateStereoisomers.EnumerateStereoisomers",
-  "rdkit.Chem.EnumerateStereoisomers.StereoEnumerationOptions",
   "rdkit.Chem.FindPotentialStereoBonds",
   "rdkit.Chem.ForwardSDMolSupplier",
-  "rdkit.Chem.Fraggle.FraggleSim",
-  "rdkit.Chem.Fraggle.FraggleSim.generate_fraggle_fragmentation",
   "rdkit.Chem.FragmentOnBonds",
   "rdkit.Chem.GetMolFrags",
   "rdkit.Chem.GetSymmSSSR",
@@ -72,8 +46,6 @@
   "rdkit.Chem.MolFromInchi",
   "rdkit.Chem.MolFromSmarts",
   "rdkit.Chem.MolFromSmiles",
-  "rdkit.Chem.MolStandardize.canonicalize_tautomer_smiles",
-  "rdkit.Chem.MolStandardize.rdMolStandardize",
   "rdkit.Chem.MolStandardize.rdMolStandardize.FragmentParent",
   "rdkit.Chem.MolStandardize.rdMolStandardize.MetalDisconnector",
   "rdkit.Chem.MolStandardize.rdMolStandardize.Normalize",
@@ -86,25 +58,12 @@
   "rdkit.Chem.MolToInchi",
   "rdkit.Chem.MolToInchiKey",
   "rdkit.Chem.MolToSmiles",
-  "rdkit.Chem.PandasTools",
-  "rdkit.Chem.PandasTools.AddMoleculeColumnToFrame",
-  "rdkit.Chem.PandasTools.PrintAsBase64PNGString",
-  "rdkit.Chem.PandasTools.PrintDefaultMolRep",
-  "rdkit.Chem.PandasTools.RenderImagesInAllDataFrames",
-  "rdkit.Chem.PandasTools.defPandasRepr",
-  "rdkit.Chem.PandasTools.patchPandasHTMLrepr",
-  "rdkit.Chem.PandasTools.patchPandasrepr",
   "rdkit.Chem.RWMol",
-  "rdkit.Chem.Recap",
-  "rdkit.Chem.Recap.RecapDecompose",
   "rdkit.Chem.RemoveHs",
   "rdkit.Chem.RenumberAtoms",
   "rdkit.Chem.ReplaceSubstructs",
   "rdkit.Chem.SDWriter",
   "rdkit.Chem.SanitizeMol",
-  "rdkit.Chem.Scaffolds.MurckoScaffold",
-  "rdkit.Chem.Scaffolds.MurckoScaffold.GetScaffoldForMol",
-  "rdkit.Chem.Scaffolds.MurckoScaffold.MakeScaffoldGeneric",
   "rdkit.Chem.SetDoubleBondNeighborDirections",
   "rdkit.Chem.SetHybridization",
   "rdkit.Chem.SmilesMolSupplier",
@@ -153,10 +112,6 @@
   "rdkit.Chem.rdmolops.GetAdjacencyMatrix",
   "rdkit.Chem.rdmolops.GetMolFrags",
   "rdkit.DataManip.Metric.GetTanimotoDistMat",
-  "rdkit.ML.Cluster.Butina",
-  "rdkit.ML.Cluster.Butina.ClusterData",
-  "rdkit.RDLogger",
-  "rdkit.RDLogger._levels",
   "rdkit.SimDivFilters.rdSimDivPickers.ClusterMethod",
   "rdkit.SimDivFilters.rdSimDivPickers.ClusterMethod.names",
   "rdkit.SimDivFilters.rdSimDivPickers.ClusterMethod.names.keys",
@@ -171,7 +126,9 @@
   "tqdm.auto.tqdm"
  ],
  "deps": {
-  "PIL": [],
+  "PIL": [
+   "pillow/conda-forge/linux-64/pillow-7.2.0-py36hfc7c323_2"
+  ],
   "_sanifix4": [],
   "anybreak": [],
   "collections": [
@@ -221,7 +178,9 @@
   "math": [
    "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
   ],
-  "matplotlib": [],
+  "matplotlib": [
+   "matplotlib-base/conda-forge/linux-64/matplotlib-base-3.3.3-py36h159efd9_0"
+  ],
   "mmpa_frag": [],
   "networkx": [
    "networkx/conda-forge/noarch/networkx-2.3-py_0"
@@ -246,7 +205,9 @@
    "pathlib/conda-forge/noarch/pathlib-1.0.1-py_1",
    "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
   ],
-  "pkg_resources": [],
+  "pkg_resources": [
+   "setuptools/conda-forge/linux-64/setuptools-41.2.0-py27_0"
+  ],
   "platform": [
    "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
   ],
@@ -254,7 +215,9 @@
    "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
   ],
   "random_fragment_add": [],
-  "rdkit": [],
+  "rdkit": [
+   "rdkit/conda-forge/linux-64/rdkit-2020.09.3-py38h2bca085_0"
+  ],
   "re": [
    "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
   ],

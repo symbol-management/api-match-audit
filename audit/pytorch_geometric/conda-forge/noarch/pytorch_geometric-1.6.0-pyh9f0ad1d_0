@@ -1,8 +1,6 @@
 {
  "bad": [
-  "PIL.Image",
   "PIL.Image.BICUBIC",
-  "PIL.Image.open",
   "PreTransform",
   "_reset",
   "ase.units.Bohr",
@@ -19,8 +17,6 @@
   "gdist",
   "generate_grid",
   "google_drive_downloader.GoogleDriveDownloader.download_file_from_google_drive",
-  "h5py",
-  "h5py.File",
   "inspect.Parameter.empty",
   "interaction",
   "interaction_block",
@@ -37,8 +33,6 @@
   "lin",
   "lin.bias",
   "lin.weight",
-  "matplotlib.pyplot",
-  "matplotlib.pyplot.gca",
   "multiprocessing.Pool",
   "multiprocessing.cpu_count",
   "networkx.DiGraph",
@@ -75,8 +69,6 @@
   "output_block",
   "rdflib",
   "rdflib.Graph",
-  "rdkit",
-  "rdkit.Chem",
   "rdkit.Chem.GetSymmSSSR",
   "rdkit.Chem.MolFromSmiles",
   "rdkit.Chem.SDMolSupplier",
@@ -89,8 +81,6 @@
   "rdkit.Chem.rdchem.HybridizationType.SP",
   "rdkit.Chem.rdchem.HybridizationType.SP2",
   "rdkit.Chem.rdchem.HybridizationType.SP3",
-  "rdkit.RDLogger",
-  "rdkit.RDLogger.DisableLog",
   "scipy.sparse.load_npz",
   "set.union",
   "six.moves.urllib",
@@ -111,7 +101,6 @@
   "sys.modules",
   "sys.version_info",
   "t",
-  "tensorflow",
   "tensorflow.train.load_checkpoint",
   "torch.Size",
   "torch._six.container_abcs.Mapping",
@@ -223,7 +212,9 @@
   "vgg16"
  ],
  "deps": {
-  "PIL": [],
+  "PIL": [
+   "pillow/conda-forge/linux-64/pillow-7.2.0-py36hfc7c323_2"
+  ],
   "PreTransform": [],
   "__future__": [
    "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
@@ -262,7 +253,9 @@
   "gzip": [
    "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
   ],
-  "h5py": [],
+  "h5py": [
+   "h5py/conda-forge/linux-64/h5py-2.7.1-py36_1"
+  ],
   "importlib": [
    "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
   ],
@@ -286,7 +279,9 @@
   "math": [
    "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
   ],
-  "matplotlib": [],
+  "matplotlib": [
+   "matplotlib-base/conda-forge/linux-64/matplotlib-base-3.3.3-py36h159efd9_0"
+  ],
   "multiprocessing": [
    "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
   ],
@@ -321,7 +316,10 @@
    "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
   ],
   "rdflib": [],
-  "rdkit": [],
+  "rdkit": [
+   "rdkit/conda-forge/linux-64/rdkit-2020.03.1-py36h866857e_1",
+   "rdkit/conda-forge/linux-64/rdkit-2020.09.3-py38h2bca085_0"
+  ],
   "re": [
    "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
   ],
@@ -347,7 +345,9 @@
   "tempfile": [
    "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
   ],
-  "tensorflow": [],
+  "tensorflow": [
+   "tensorflow/conda-forge/linux-64/tensorflow-0.12.1-py27_2"
+  ],
   "torch": [
    "pytorch-cpu/conda-forge/linux-64/pytorch-cpu-1.0.1-py27hf484d3e_0"
   ],

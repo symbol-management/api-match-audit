@@ -1,23 +1,9 @@
 {
  "bad": [
-  "datetime.date",
-  "datetime.datetime",
-  "datetime.datetime.combine",
-  "datetime.datetime.strptime",
-  "datetime.time",
-  "datetime.timedelta",
-  "datetime.tzinfo",
   "decimal.Decimal",
   "decimal.ROUND_FLOOR",
   "dogetest",
   "doletest",
-  "operator",
-  "operator.add",
-  "operator.mul",
-  "operator.sub",
-  "re",
-  "re.compile",
-  "re.sub",
   "six.moves.cPickle",
   "six.moves.cPickle.HIGHEST_PROTOCOL",
   "six.moves.cPickle.dumps",
@@ -29,25 +15,29 @@
   "time.mktime",
   "time.struct_time",
   "time.timezone",
-  "time.tzname",
-  "unittest",
-  "unittest.TestCase",
-  "unittest.TestLoader",
-  "unittest.TestSuite",
-  "unittest.main"
+  "time.tzname"
  ],
  "deps": {
-  "datetime": [],
+  "datetime": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "decimal": [],
   "dogetest": [],
   "doletest": [],
-  "operator": [],
-  "re": [],
+  "operator": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "re": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "six": [
    "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
-   "privy/conda-forge/noarch/privy-6.0.0-py_0"
+   "privy/conda-forge/noarch/privy-6.0.0-py_0",
+   "six/conda-forge/linux-64/six-1.14.0-py36_0"
   ],
   "time": [],
-  "unittest": []
+  "unittest": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ]
  }
 }
