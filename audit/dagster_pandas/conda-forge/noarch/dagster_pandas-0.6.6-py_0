@@ -1,58 +1,37 @@
 {
  "bad": [
-  "dagster.DagsterInvariantViolationError",
-  "dagster.DependencyDefinition",
-  "dagster.Dict",
-  "dagster.EventMetadataEntry",
   "dagster.EventMetadataEntry.json",
   "dagster.EventMetadataEntry.text",
-  "dagster.Field",
-  "dagster.InputDefinition",
-  "dagster.Materialization",
   "dagster.Materialization.file",
-  "dagster.OutputDefinition",
   "dagster.Path",
-  "dagster.PresetDefinition",
   "dagster.PresetDefinition.from_files",
-  "dagster.RepositoryDefinition",
-  "dagster.String",
-  "dagster.TypeCheck",
   "dagster.as_dagster_type",
-  "dagster.check",
-  "dagster.check.dict_param",
-  "dagster.check.failed",
-  "dagster.check.inst_param",
-  "dagster.check.str_param",
   "dagster.core.types.NamedSelector",
   "dagster.core.types.input_selector_schema",
   "dagster.core.types.output_selector_schema",
-  "dagster.core.utility_solids.define_stub_solid",
-  "dagster.execute_pipeline",
-  "dagster.file_relative_path",
-  "dagster.lambda_solid",
-  "dagster.pipeline",
-  "dagster.utils.script_relative_path",
   "dagster_pandas.examples.__init__.DataFrame",
   "dagster_pandas.examples.__init__.define_papermill_pandas_hello_world_solid",
   "dagster_pandas.examples.__init__.nb_test_path",
   "dagster_pandas.examples.__init__.pandas_hello_world",
   "hello_world",
-  "pandas",
-  "pandas.DataFrame",
-  "pandas.read_csv",
-  "pandas.read_parquet",
-  "pytest",
   "sys"
  ],
  "deps": {
-  "dagster": [],
+  "dagster": [
+   "dagster/conda-forge/linux-64/dagster-0.11.10-py37h89c1867_0"
+  ],
   "dagster_pandas": [],
   "dagstermill": [
    "dagstermill/conda-forge/noarch/dagstermill-0.9.21-pyhd8ed1ab_1"
   ],
   "hello_world": [],
-  "pandas": [],
-  "pytest": [],
+  "pandas": [
+   "pandas/conda-forge/linux-64/pandas-0.25.0-py37hb3f55d8_0"
+  ],
+  "pytest": [
+   "pytest/conda-forge/linux-64/pytest-4.6.3-py27_0",
+   "pytest/conda-forge/linux-64/pytest-6.0.2-py36hc560c46_0"
+  ],
   "sys": []
  }
 }

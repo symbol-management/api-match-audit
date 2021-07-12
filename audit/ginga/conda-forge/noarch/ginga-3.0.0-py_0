@@ -87,30 +87,10 @@
   "OpenGL.GL.glViewport",
   "OpenGL.GLU.gluProject",
   "OpenGL.GLU.gluUnProject",
-  "PIL.ExifTags.TAGS",
   "PIL.ExifTags.TAGS.get",
-  "PIL.Image",
   "PIL.Image.BICUBIC",
-  "PIL.Image.fromarray",
-  "PIL.Image.new",
-  "PIL.Image.open",
-  "PIL.ImageCms",
   "PIL.ImageCms.BLACKPOINTCOMPENSATION",
-  "PIL.ImageCms.FLAGS",
-  "PIL.ImageCms.INTENT_ABSOLUTE_COLORIMETRIC",
-  "PIL.ImageCms.INTENT_PERCEPTUAL",
-  "PIL.ImageCms.INTENT_RELATIVE_COLORIMETRIC",
-  "PIL.ImageCms.INTENT_SATURATION",
   "PIL.ImageCms.SOFTPROOFING",
-  "PIL.ImageCms.applyTransform",
-  "PIL.ImageCms.buildProofTransform",
-  "PIL.ImageCms.buildTransform",
-  "PIL.ImageCms.profileToProfile",
-  "PIL.ImageDraw",
-  "PIL.ImageDraw.Draw",
-  "PIL.ImageFont",
-  "PIL.ImageFont.truetype",
-  "PIL.ImageTk.PhotoImage",
   "Point",
   "Polygon",
   "PyQt5.QtOpenGL.QGLWidget",
@@ -161,18 +141,9 @@
   "astropy.vo.client.conesearch.list_catalogs",
   "atexit",
   "bclass",
-  "bokeh.events.MouseEnter",
-  "bokeh.events.MouseLeave",
-  "bokeh.events.MouseMove",
-  "bokeh.events.MouseWheel",
-  "bokeh.events.Tap",
-  "bokeh.io.push_notebook",
-  "bokeh.models.ColumnDataSource",
-  "bokeh.plotting.curdoc",
   "bs4.BeautifulSoup",
   "builtins",
   "builtins._ASTROPY_SETUP_",
-  "cairo",
   "cairo.Context",
   "cairo.FONT_SLANT_NORMAL",
   "cairo.FORMAT_ARGB32",
@@ -227,7 +198,6 @@
   "fwhm_fn",
   "geometry_helper.Matrix4x4.look_at",
   "geometry_helper.Matrix4x4.rotation_around_origin",
-  "gi",
   "gi.repository.GObject",
   "gi.repository.GObject.TYPE_STRING",
   "gi.repository.GObject.idle_add",
@@ -321,7 +291,6 @@
   "gi.repository.Pango.FontDescription",
   "gi.repository.WebKit",
   "gi.repository.WebKit2",
-  "gi.require_version",
   "ginga.__init__.UnsupportedPythonError",
   "ginga.__init__.__minimum_python_version__",
   "ginga.aggw.ImageViewAgg.ImageViewAggError",
@@ -520,57 +489,21 @@
   "klass",
   "load_buffer",
   "load_fits_buffer",
-  "magic",
   "magic.DEFAULT_MODE",
   "magic.from_file",
   "magic.open",
-  "make",
   "make_widget",
   "marshall",
-  "matplotlib",
-  "matplotlib.__version__",
   "matplotlib.__version__.startswith",
-  "matplotlib.axes.Axes",
   "matplotlib.axes.Axes.set_xscale",
   "matplotlib.axes.Axes.set_yscale",
-  "matplotlib.backends.backend_agg.FigureCanvasAgg",
-  "matplotlib.backends.backend_gtk3agg.FigureCanvasGTK3Agg",
-  "matplotlib.backends.backend_qt4agg.FigureCanvasQTAgg",
-  "matplotlib.backends.backend_qt5agg.FigureCanvasQTAgg",
-  "matplotlib.cbook.mplDeprecation",
-  "matplotlib.cm",
-  "matplotlib.cm.cmap_d",
-  "matplotlib.cm.get_cmap",
-  "matplotlib.colors.ListedColormap",
-  "matplotlib.figure.Figure",
-  "matplotlib.lines",
-  "matplotlib.lines.Line2D",
-  "matplotlib.patches",
-  "matplotlib.patches.Circle",
-  "matplotlib.patches.PathPatch",
-  "matplotlib.patches.Polygon",
-  "matplotlib.path.Path",
   "matplotlib.path.Path.CURVE4",
   "matplotlib.path.Path.MOVETO",
-  "matplotlib.projections.register_projection",
-  "matplotlib.pyplot",
-  "matplotlib.pyplot.figure",
-  "matplotlib.pyplot.get_cmap",
-  "matplotlib.pyplot.imsave",
-  "matplotlib.rcParams",
-  "matplotlib.rcParamsDefault",
-  "matplotlib.textpath",
-  "matplotlib.textpath.TextPath",
-  "matplotlib.ticker.FormatStrFormatter",
-  "matplotlib.ticker.LinearLocator",
-  "matplotlib.transforms.BboxTransformTo",
-  "matplotlib.transforms.Transform",
   "matplotlib.transforms.Transform.invalidate",
   "matplotlib.transforms.Transform.inverted.__doc__",
   "matplotlib.transforms.Transform.transform_non_affine.__doc__",
   "matplotlib.transforms.Transform.transform_path.__doc__",
   "matplotlib.transforms.Transform.transform_path_non_affine.__doc__",
-  "matplotlib.use",
   "method",
   "method.__doc__",
   "mpl_toolkits.mplot3d.Axes3D",
@@ -629,7 +562,6 @@
   "os.stat",
   "paths.ginga_home",
   "piexif.TAGS.get",
-  "pkg_resources.iter_entry_points",
   "play_axis_change",
   "play_axis_change_func_creator",
   "polynomial",
@@ -704,12 +636,6 @@
   "time.strftime",
   "time.time",
   "toplevel",
-  "tornado.ioloop",
-  "tornado.ioloop.IOLoop",
-  "tornado.ioloop.IOLoop.current",
-  "tornado.template",
-  "tornado.web",
-  "tornado.websocket",
   "tran",
   "unmarshall",
   "util.grc.RemoteClient",
@@ -739,7 +665,9 @@
   "OpenGL": [
    "pyopengl/conda-forge/noarch/pyopengl-3.1.3b2-py_0"
   ],
-  "PIL": [],
+  "PIL": [
+   "pillow/conda-forge/linux-64/pillow-7.2.0-py36hfc7c323_2"
+  ],
   "Point": [],
   "Polygon": [],
   "PyQt5": [],
@@ -787,13 +715,17 @@
   "binascii": [
    "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
   ],
-  "bokeh": [],
+  "bokeh": [
+   "bokeh/conda-forge/linux-64/bokeh-2.3.2-py38h578d9bd_0"
+  ],
   "bs4": [],
   "builtins": [],
   "bz2": [
    "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
   ],
-  "cairo": [],
+  "cairo": [
+   "pycairo/conda-forge/linux-64/pycairo-1.20.0-py38h323dad1_1"
+  ],
   "calc_from_cd": [],
   "calc_from_crota": [],
   "cb": [],
@@ -834,7 +766,9 @@
   ],
   "fwhm_fn": [],
   "geometry_helper": [],
-  "gi": [],
+  "gi": [
+   "pygobject/conda-forge/linux-64/pygobject-3.38.0-py38h0ae79dc_3"
+  ],
   "ginga": [],
   "ginga_config": [],
   "glob": [
@@ -875,14 +809,20 @@
   "logging": [
    "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
   ],
-  "magic": [],
-  "make": [],
+  "magic": [
+   "filemagic/conda-forge/noarch/filemagic-1.6-pyh9f0ad1d_0"
+  ],
+  "make": [
+   "vispy/conda-forge/linux-64/vispy-0.6.0-py36hf5ce8a7_0"
+  ],
   "make_widget": [],
   "marshall": [],
   "math": [
    "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
   ],
-  "matplotlib": [],
+  "matplotlib": [
+   "matplotlib-base/conda-forge/linux-64/matplotlib-base-3.3.3-py36h159efd9_0"
+  ],
   "method": [],
   "mimetypes": [
    "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
@@ -906,7 +846,9 @@
   "piexif": [
    "piexif/conda-forge/noarch/piexif-1.1.2-py_0"
   ],
-  "pkg_resources": [],
+  "pkg_resources": [
+   "setuptools/conda-forge/linux-64/setuptools-41.2.0-py27_0"
+  ],
   "platform": [
    "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
   ],
@@ -972,7 +914,9 @@
    "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
   ],
   "toplevel": [],
-  "tornado": [],
+  "tornado": [
+   "tornado/conda-forge/linux-64/tornado-5.1.1-py36h97a6639_1"
+  ],
   "traceback": [
    "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
   ],

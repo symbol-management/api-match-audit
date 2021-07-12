@@ -1,102 +1,29 @@
 {
  "bad": [
-  "M2Crypto.ASN1",
-  "M2Crypto.ASN1.ASN1_UTCTIME",
-  "M2Crypto.ASN1.MBSTRING_ASC",
-  "M2Crypto.EVP",
-  "M2Crypto.EVP.MessageDigest",
-  "M2Crypto.EVP.PKey",
-  "M2Crypto.EVP.load_key_string",
-  "M2Crypto.RSA",
-  "M2Crypto.RSA.gen_key",
-  "M2Crypto.X509",
-  "M2Crypto.X509.X509",
-  "M2Crypto.X509.X509_Name",
-  "M2Crypto.X509.load_cert_string",
-  "M2Crypto.X509.new_extension",
-  "M2Crypto.m2",
   "M2Crypto.m2.x509_name_add_entry",
-  "argparse",
-  "argparse.Action",
-  "argparse.ArgumentDefaultsHelpFormatter",
-  "argparse.ArgumentParser",
-  "argparse.ArgumentParser.parse_args",
-  "argparse.RawDescriptionHelpFormatter",
-  "argparse.SUPPRESS",
-  "calendar",
-  "calendar.timegm",
-  "datetime",
-  "datetime.timedelta",
-  "distutils.spawn.find_executable",
   "ecp_cert_info.main",
   "ecp_get_cert.main",
   "env._get_default_idp",
   "func",
-  "functools.wraps",
-  "http.client",
-  "http.client.HTTPConnection",
   "http.client.HTTPConnection.debuglevel",
   "http.client.__name__",
-  "http.cookiejar.Cookie",
-  "http.cookiejar.LoadError",
-  "http.cookiejar.MozillaCookieJar",
   "kerberos.has_credential",
-  "logging",
-  "logging.DEBUG",
-  "logging.FATAL",
   "logging.Logger.manager.loggerDict",
-  "logging.basicConfig",
-  "logging.getLogger",
-  "math",
-  "math.ceil",
   "meth",
-  "os",
-  "os.environ",
   "os.environ.update",
-  "os.getenv",
   "os.getlogin",
   "os.getuid",
-  "os.name",
   "os.unlink",
-  "pytest",
-  "pytest.fixture",
   "pytest.mark.parametrize",
-  "pytest.raises",
-  "pytest.skip",
-  "random",
-  "random.SystemRandom",
-  "re",
-  "re.compile",
-  "re.escape",
-  "shutil",
-  "shutil.move",
   "str.strip",
-  "string",
-  "string.ascii_letters",
-  "string.ascii_lowercase",
-  "string.digits",
-  "struct",
   "struct.unpack",
-  "subprocess",
-  "subprocess.CalledProcessError",
-  "subprocess.check_output",
   "sys",
   "sys.argv",
   "sys.stdout",
-  "tempfile",
-  "tempfile.NamedTemporaryFile",
   "time",
   "time.strptime",
   "time.time",
-  "unittest.mock",
-  "unittest.mock.MagicMock",
-  "unittest.mock.Mock",
-  "unittest.mock.patch",
   "unittest.mock.patch.dict",
-  "urllib.error.URLError",
-  "urllib.parse",
-  "urllib.parse.urlencode",
-  "urllib.parse.urlparse",
   "utils.ArgumentParser",
   "utils.HelpFormatter",
   "utils.format_endpoint_url",
@@ -116,31 +43,59 @@
   "x509.write_cert"
  ],
  "deps": {
-  "M2Crypto": [],
+  "M2Crypto": [
+   "m2crypto/conda-forge/linux-64/m2crypto-0.37.0-py37h7f0c10b_0"
+  ],
   "OpenSSL": [
    "pyopenssl/conda-forge/noarch/pyopenssl-19.1.0-py_1"
   ],
-  "argparse": [],
-  "calendar": [],
-  "datetime": [],
-  "distutils": [],
+  "argparse": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "calendar": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "datetime": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "distutils": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "ecp_cert_info": [],
   "ecp_get_cert": [],
   "env": [],
   "func": [],
-  "functools": [],
-  "http": [],
-  "kerberos": [],
-  "logging": [],
-  "math": [],
-  "meth": [],
-  "os": [],
-  "pathlib": [
-   "pathlib/conda-forge/noarch/pathlib-1.0.1-py_1"
+  "functools": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
   ],
-  "pytest": [],
-  "random": [],
-  "re": [],
+  "http": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "kerberos": [],
+  "logging": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "math": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "meth": [],
+  "os": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "pathlib": [
+   "pathlib/conda-forge/noarch/pathlib-1.0.1-py_1",
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "pytest": [
+   "pytest/conda-forge/linux-64/pytest-4.6.3-py27_0",
+   "pytest/conda-forge/linux-64/pytest-6.0.2-py36hc560c46_0"
+  ],
+  "random": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "re": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "requests": [
    "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
    "requests/conda-forge/noarch/requests-2.23.0-pyh8c360ce_2"
@@ -148,16 +103,30 @@
   "requests_ecp": [
    "requests-ecp/conda-forge/noarch/requests-ecp-0.2.2-pyhd8ed1ab_0"
   ],
-  "shutil": [],
+  "shutil": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "str": [],
-  "string": [],
-  "struct": [],
-  "subprocess": [],
+  "string": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "struct": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "subprocess": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "sys": [],
-  "tempfile": [],
+  "tempfile": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "time": [],
-  "unittest": [],
-  "urllib": [],
+  "unittest": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "urllib": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "utils": [],
   "vprint": [],
   "x509": []
