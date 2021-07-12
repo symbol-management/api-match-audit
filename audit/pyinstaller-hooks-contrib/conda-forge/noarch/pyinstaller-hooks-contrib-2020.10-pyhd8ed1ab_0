@@ -1,65 +1,20 @@
 {
  "bad": [
-  "PyInstaller.compat",
-  "PyInstaller.compat.EXTENSION_SUFFIXES",
-  "PyInstaller.compat.base_prefix",
-  "PyInstaller.compat.getenv",
-  "PyInstaller.compat.getsitepackages",
-  "PyInstaller.compat.is_conda",
-  "PyInstaller.compat.is_cygwin",
-  "PyInstaller.compat.is_darwin",
-  "PyInstaller.compat.is_linux",
-  "PyInstaller.compat.is_win",
-  "PyInstaller.compat.modname_tkinter",
-  "PyInstaller.depend.utils._resolveCtypesImports",
-  "PyInstaller.utils.conftest",
-  "PyInstaller.utils.hooks.collect_all",
-  "PyInstaller.utils.hooks.collect_data_files",
-  "PyInstaller.utils.hooks.collect_dynamic_libs",
-  "PyInstaller.utils.hooks.collect_submodules",
-  "PyInstaller.utils.hooks.copy_metadata",
-  "PyInstaller.utils.hooks.exec_statement",
-  "PyInstaller.utils.hooks.get_installer",
-  "PyInstaller.utils.hooks.get_module_file_attribute",
-  "PyInstaller.utils.hooks.get_package_paths",
-  "PyInstaller.utils.hooks.get_pyextension_imports",
-  "PyInstaller.utils.hooks.get_pywin32_module_file_attribute",
-  "PyInstaller.utils.hooks.is_module_or_submodule",
-  "PyInstaller.utils.hooks.is_module_satisfies",
-  "PyInstaller.utils.hooks.logger",
   "PyInstaller.utils.hooks.logger.debug",
   "PyInstaller.utils.hooks.logger.warning",
-  "PyInstaller.utils.tests.importorskip",
   "PyInstaller.utils.tests.skipif_win",
-  "PyInstaller.utils.tests.xfail",
   "_pyinstaller_hooks_contrib.hooks.__init__._FILE_DIR",
   "_pyinstaller_hooks_contrib.hooks.rthooks.__init__.DIR",
   "_pyinstaller_hooks_contrib.hooks.stdhooks.__init__.DIR",
   "_pyinstaller_hooks_contrib.tests.__init__.DIR",
   "connect_func",
-  "ctypes",
-  "ctypes.CDLL",
-  "ctypes.WinDLL",
-  "ctypes.c_void_p",
-  "ctypes.sizeof",
-  "ctypes.util",
-  "ctypes.util.find_library",
   "enchant",
   "enchant.Broker",
   "enchant.Dict",
   "enchant.list_dicts",
   "enchant.list_languages",
-  "functools.partial",
-  "glob",
-  "glob.glob",
-  "inspect.getmembers",
-  "inspect.isfunction",
   "nltk.data.path.append",
-  "os",
-  "os.environ",
   "os.listdir",
-  "os.name",
-  "os.path",
   "os.path.basename",
   "os.path.dirname",
   "os.path.exists",
@@ -68,17 +23,10 @@
   "os.path.normpath",
   "os.path.splitext",
   "os.pathsep.join",
-  "os.sep",
   "os.unlink",
-  "os.walk",
-  "pytest",
-  "pytest.freeze_includes",
   "pytest.mark.parametrize",
   "pytest.mark.skipif",
-  "pytest.skip",
   "rthooks.get_hook_dirs",
-  "ssl",
-  "ssl.get_default_verify_paths",
   "stdhooks.get_hook_dirs",
   "sys",
   "sys._MEIPASS",
@@ -87,7 +35,6 @@
   "sys.platform.startswith",
   "sys.prefix",
   "sys.real_prefix",
-  "tensorflow",
   "tensorflow.keras.datasets.mnist",
   "tensorflow.keras.layers.Conv2D",
   "tensorflow.keras.layers.Dense",
@@ -96,43 +43,62 @@
   "tensorflow.keras.losses.SparseCategoricalCrossentropy",
   "tensorflow.keras.models.Sequential",
   "tensorflow.random.normal",
-  "twisted.internet.default",
-  "twisted.internet.default.install",
   "usb.backend.libusb01",
   "usb.backend.libusb10"
  ],
  "deps": {
-  "PyInstaller": [],
+  "PyInstaller": [
+   "pyinstaller/conda-forge/linux-64/pyinstaller-4.3-py36ha0a8d69_0"
+  ],
   "_pyinstaller_hooks_contrib": [],
   "boto": [
    "boto/conda-forge/noarch/boto-2.49.0-py_0"
   ],
   "connect_func": [],
-  "ctypes": [],
+  "ctypes": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "enchant": [],
-  "functools": [],
-  "glob": [],
-  "inspect": [],
+  "functools": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "glob": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "inspect": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "jupyter_core": [
    "jupyter_core/conda-forge/noarch/jupyter_core-4.5.0-py_0"
   ],
   "nltk": [
    "nltk/conda-forge/noarch/nltk-3.6-pyhd8ed1ab_0"
   ],
-  "os": [],
+  "os": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "pycparser": [
    "privy/conda-forge/noarch/privy-6.0.0-py_0",
    "pycparser/conda-forge/noarch/pycparser-2.18-py_1"
   ],
-  "pytest": [],
+  "pytest": [
+   "pytest/conda-forge/linux-64/pytest-4.6.3-py27_0",
+   "pytest/conda-forge/linux-64/pytest-6.0.2-py36hc560c46_0"
+  ],
   "rthooks": [],
-  "ssl": [],
+  "ssl": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "stdhooks": [],
   "sys": [],
-  "tensorflow": [],
+  "tensorflow": [
+   "tensorflow/conda-forge/linux-64/tensorflow-0.12.1-py27_2"
+  ],
   "test": [
    "abtem/conda-forge/noarch/abtem-1.0.0b11-pyhd8ed1ab_0",
+   "aiohttp-client-cache/conda-forge/noarch/aiohttp-client-cache-0.3.0-pyhd8ed1ab_0",
    "ansible-runner/conda-forge/noarch/ansible-runner-1.4.6-pyh9f0ad1d_0",
+   "awssert/conda-forge/noarch/awssert-1.0.0-pyhd8ed1ab_0",
    "bletchley/conda-forge/noarch/bletchley-0.2.0-py_0",
    "botorch/conda-forge/noarch/botorch-0.2.2-py_0",
    "dbt/conda-forge/noarch/dbt-0.14.4-py_0",
@@ -140,6 +106,7 @@
    "easybuild-framework/conda-forge/noarch/easybuild-framework-4.3.4-pyhd8ed1ab_0",
    "ensureconda/conda-forge/noarch/ensureconda-1.2.1-py_0",
    "fairlearn/conda-forge/noarch/fairlearn-0.4.6-py_0",
+   "flask-redis/conda-forge/noarch/flask-redis-0.4.0-py_0",
    "forest/conda-forge/noarch/forest-0.3.1-py_0",
    "gpytorch/conda-forge/noarch/gpytorch-1.4.0-pyhd8ed1ab_0",
    "hopcroftkarp/conda-forge/noarch/hopcroftkarp-1.2.4-py_0",
@@ -154,17 +121,21 @@
    "pypd/conda-forge/noarch/pypd-1.1.0-py_0",
    "pyreportjasper/conda-forge/noarch/pyreportjasper-2.1.0-pyhd3deb0d_0",
    "python-awips/conda-forge/noarch/python-awips-18.1.2-py_0",
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython",
    "pyulog/conda-forge/noarch/pyulog-0.6.0-py_0",
    "pyzotero/conda-forge/noarch/pyzotero-1.3.16-py_0",
    "radiant-mlhub/conda-forge/noarch/radiant-mlhub-0.1.3-pyhd8ed1ab_0",
    "sat-search/conda-forge/noarch/sat-search-0.3.0-py_0",
    "signalrcore/conda-forge/noarch/signalrcore-0.9.2-pyhd8ed1ab_0",
-   "snorkel/conda-forge/noarch/snorkel-0.9.4-py_0"
+   "snorkel/conda-forge/noarch/snorkel-0.9.4-py_0",
+   "tatsu/conda-forge/noarch/tatsu-5.6.1-pyhd8ed1ab_0"
   ],
   "traitlets": [
    "traitlets/conda-forge/noarch/traitlets-5.0.3-py_0"
   ],
-  "twisted": [],
+  "twisted": [
+   "twisted/conda-forge/linux-64/twisted-20.3.0-py38h497a2fe_2"
+  ],
   "usb": [
    "pyusb/conda-forge/noarch/pyusb-1.2.1-pyhd8ed1ab_0"
   ]

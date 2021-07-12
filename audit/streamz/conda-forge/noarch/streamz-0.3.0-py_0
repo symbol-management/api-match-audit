@@ -1,7 +1,5 @@
 {
  "bad": [
-  "IPython",
-  "IPython.display",
   "IPython.display.Image",
   "IPython.display.SVG",
   "IPython.display.clear_output",
@@ -26,14 +24,7 @@
   "aggregations.window_accumulator",
   "aggregations.windowed_groupby_accumulator",
   "batch.Batch",
-  "bokeh.io.output_notebook",
-  "bokeh.io.push_notebook",
-  "bokeh.io.show",
-  "bokeh.models.value",
   "bokeh.models.value.columns",
-  "bokeh.palettes.Category10",
-  "bokeh.plotting.ColumnDataSource",
-  "bokeh.plotting.figure",
   "builtins",
   "callback",
   "collection._stream_types.append",
@@ -87,22 +78,6 @@
   "sys.version_info",
   "thread.get_ident",
   "time.time",
-  "tornado.gen",
-  "tornado.gen.Return",
-  "tornado.gen.convert_yielded",
-  "tornado.gen.coroutine",
-  "tornado.gen.isawaitable",
-  "tornado.gen.maybe_future",
-  "tornado.gen.moment",
-  "tornado.gen.sleep",
-  "tornado.gen.with_timeout",
-  "tornado.ioloop",
-  "tornado.ioloop.IOLoop",
-  "tornado.ioloop.IOLoop.clear_current",
-  "tornado.ioloop.IOLoop.clear_instance",
-  "tornado.ioloop.IOLoop.current",
-  "tornado.locks.Condition",
-  "tornado.queues.Queue",
   "utils.M.astype",
   "utils.M.count",
   "utils.M.mean",
@@ -118,14 +93,18 @@
   "utils.M.var"
  ],
  "deps": {
-  "IPython": [],
+  "IPython": [
+   "ipython/conda-forge/linux-64/ipython-7.23.0-py39hef51801_0"
+  ],
   "__builtin__": [],
   "__future__": [
    "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
   ],
   "aggregations": [],
   "batch": [],
-  "bokeh": [],
+  "bokeh": [
+   "bokeh/conda-forge/linux-64/bokeh-2.3.2-py38h578d9bd_0"
+  ],
   "builtins": [],
   "callback": [],
   "collection": [],
@@ -196,7 +175,8 @@
   ],
   "six": [
    "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
-   "privy/conda-forge/noarch/privy-6.0.0-py_0"
+   "privy/conda-forge/noarch/privy-6.0.0-py_0",
+   "six/conda-forge/linux-64/six-1.14.0-py36_0"
   ],
   "sources": [],
   "sys": [],
@@ -211,7 +191,9 @@
   "toolz": [
    "toolz/conda-forge/noarch/toolz-0.8.2-py_3"
   ],
-  "tornado": [],
+  "tornado": [
+   "tornado/conda-forge/linux-64/tornado-5.1.1-py36h97a6639_1"
+  ],
   "utils": [],
   "weakref": [
    "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
