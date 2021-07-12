@@ -1,39 +1,10 @@
 {
  "bad": [
-  "Crypto.Hash.SHA256",
-  "Crypto.Hash.SHA256.new",
-  "Crypto.PublicKey.RSA",
-  "Crypto.PublicKey.RSA.importKey",
-  "Crypto.Signature.PKCS1_v1_5",
-  "Crypto.Signature.PKCS1_v1_5.new",
-  "Crypto.Util.asn1.DerSequence",
-  "__future__.absolute_import",
-  "__future__.print_function",
   "_get_application_default_credential_from_file",
   "_get_well_known_file",
   "_raise_exception_for_reading_json",
-  "argparse",
-  "argparse.ArgumentParser",
-  "base64",
-  "base64.b64decode",
-  "base64.b64encode",
-  "base64.urlsafe_b64decode",
-  "base64.urlsafe_b64encode",
-  "binascii",
-  "binascii.Error",
-  "cgi",
-  "cgi.escape",
   "checker",
-  "collections",
-  "collections.namedtuple",
-  "copy",
-  "copy.copy",
   "curry_wrapper",
-  "datetime",
-  "datetime.datetime",
-  "datetime.datetime.strptime",
-  "datetime.datetime.utcnow",
-  "datetime.timedelta",
   "django.conf.settings.LOGIN_URL",
   "django.core.urlresolvers",
   "django.core.urlresolvers.reverse",
@@ -48,8 +19,6 @@
   "flask.request.referrer",
   "flask.request.url",
   "flask.session.pop",
-  "functools",
-  "functools.wraps",
   "google.appengine",
   "google.appengine.api.app_identity",
   "google.appengine.api.app_identity.Error",
@@ -78,28 +47,8 @@
   "google.appengine.ext.ndb.PickleProperty",
   "google.appengine.ext.ndb.StringProperty",
   "google.appengine.ext.webapp.util.login_required",
-  "hashlib",
   "hashlib.sha256",
-  "hmac",
-  "hmac.new",
   "http_callable",
-  "importlib",
-  "importlib.import_module",
-  "inspect",
-  "inspect.getargspec",
-  "json",
-  "json.dump",
-  "json.dumps",
-  "json.load",
-  "json.loads",
-  "jsonpickle",
-  "jsonpickle.decode",
-  "jsonpickle.encode",
-  "keyring",
-  "keyring.get_password",
-  "keyring.set_password",
-  "logging",
-  "logging.getLogger",
   "markupsafe",
   "markupsafe.escape",
   "method",
@@ -120,14 +69,9 @@
   "oauth2client.crypt.Signer.from_string",
   "oauth2client.service_account._JWTAccessCredentials.from_json",
   "oauth2client.service_account._JWTAccessCredentials.from_json_keyfile_dict",
-  "os",
   "os.O_CREAT",
   "os.O_WRONLY",
-  "os.environ",
   "os.environ.get",
-  "os.fdopen",
-  "os.getenv",
-  "os.name",
   "os.open",
   "os.path.abspath",
   "os.path.dirname",
@@ -140,14 +84,9 @@
   "os.umask",
   "os.unlink",
   "os.urandom",
-  "pickle",
-  "pickle.dumps",
-  "pickle.loads",
   "request",
   "rsa.PublicKey.load_pkcs1",
   "rsa.key.PrivateKey.load_pkcs1",
-  "shutil",
-  "shutil.move",
   "six.moves.BaseHTTPServer",
   "six.moves.BaseHTTPServer.BaseHTTPRequestHandler",
   "six.moves.BaseHTTPServer.HTTPServer",
@@ -167,48 +106,55 @@
   "six.moves.urllib.parse.urlparse",
   "six.moves.urllib.parse.urlunparse",
   "six.moves.xrange",
-  "socket",
   "socket.MSG_WAITALL",
   "socket.error",
-  "socket.socket",
-  "sqlalchemy.types",
   "sys",
   "sys.exit",
   "sys.hexversion",
-  "tempfile",
-  "tempfile.mktemp",
-  "threading",
-  "threading.Lock",
   "time",
   "time.time",
-  "warnings",
-  "warnings.warn",
   "webapp2",
   "webapp2.RequestHandler",
   "webapp2.WSGIApplication",
-  "webbrowser",
-  "webbrowser.open",
   "wrapped",
   "wrapped_function"
  ],
  "deps": {
-  "Crypto": [],
+  "Crypto": [
+   "pycryptodome/conda-forge/linux-64/pycryptodome-3.7.3-py37ha14ba45_0"
+  ],
   "OpenSSL": [
    "pyopenssl/conda-forge/noarch/pyopenssl-19.1.0-py_1"
   ],
-  "__future__": [],
+  "__future__": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "_get_application_default_credential_from_file": [],
   "_get_well_known_file": [],
   "_raise_exception_for_reading_json": [],
-  "argparse": [],
-  "base64": [],
-  "binascii": [],
-  "cgi": [],
+  "argparse": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "base64": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "binascii": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "cgi": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "checker": [],
-  "collections": [],
-  "copy": [],
+  "collections": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "copy": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "curry_wrapper": [],
-  "datetime": [],
+  "datetime": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "django": [
    "django/conda-forge/noarch/django-3.1.4-pyhd8ed1ab_0"
   ],
@@ -218,25 +164,47 @@
   "flask": [
    "flask/conda-forge/noarch/flask-2.0.0-pyhd8ed1ab_0"
   ],
-  "functools": [],
+  "functools": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "google": [],
-  "hashlib": [],
-  "hmac": [],
+  "hashlib": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "hmac": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "http_callable": [],
   "httplib2": [
    "httplib2/conda-forge/noarch/httplib2-0.17.1-pyh9f0ad1d_0"
   ],
-  "importlib": [],
-  "inspect": [],
-  "json": [],
-  "jsonpickle": [],
-  "keyring": [],
-  "logging": [],
+  "importlib": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "inspect": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "json": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "jsonpickle": [
+   "jsonpickle/conda-forge/noarch/jsonpickle-1.4.1-pyh9f0ad1d_0"
+  ],
+  "keyring": [
+   "keyring/conda-forge/linux-64/keyring-9.0-py27_0"
+  ],
+  "logging": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "markupsafe": [],
   "method": [],
   "oauth2client": [],
-  "os": [],
-  "pickle": [],
+  "os": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "pickle": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "pyasn1": [
    "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
    "pyasn1/conda-forge/noarch/pyasn1-0.4.8-py_0"
@@ -250,20 +218,35 @@
    "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
    "rsa/conda-forge/noarch/rsa-4.4.1-pyh9f0ad1d_0"
   ],
-  "shutil": [],
+  "shutil": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "six": [
    "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
-   "privy/conda-forge/noarch/privy-6.0.0-py_0"
+   "privy/conda-forge/noarch/privy-6.0.0-py_0",
+   "six/conda-forge/linux-64/six-1.14.0-py36_0"
   ],
-  "socket": [],
-  "sqlalchemy": [],
+  "socket": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "sqlalchemy": [
+   "sqlalchemy/conda-forge/linux-64/sqlalchemy-1.3.15-py36h8c4c3a4_1"
+  ],
   "sys": [],
-  "tempfile": [],
-  "threading": [],
+  "tempfile": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "threading": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "time": [],
-  "warnings": [],
+  "warnings": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "webapp2": [],
-  "webbrowser": [],
+  "webbrowser": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "wrapped": [],
   "wrapped_function": []
  }

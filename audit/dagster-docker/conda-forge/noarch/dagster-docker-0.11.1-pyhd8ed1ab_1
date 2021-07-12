@@ -1,24 +1,7 @@
 {
  "bad": [
-  "contextlib.contextmanager",
-  "dagster.Field",
-  "dagster.StringSource",
-  "dagster.check",
-  "dagster.check.inst_param",
-  "dagster.core.host_representation.ExternalPipeline",
-  "dagster.core.launcher.base.RunLauncher",
-  "dagster.core.storage.pipeline_run.PipelineRun",
-  "dagster.core.storage.pipeline_run.PipelineRunStatus",
   "dagster.core.storage.pipeline_run.PipelineRunStatus.CANCELED",
   "dagster.core.storage.pipeline_run.PipelineRunStatus.SUCCESS",
-  "dagster.core.test_utils.poll_for_finished_run",
-  "dagster.core.test_utils.poll_for_step_start",
-  "dagster.core.utils.check_dagster_package_version",
-  "dagster.grpc.types.ExecuteRunArgs",
-  "dagster.serdes.ConfigurableClass",
-  "dagster.serdes.serialize_dagster_namedtuple",
-  "dagster.utils.test.postgres_instance.postgres_instance_for_test",
-  "dagster.utils.yaml_utils.merge_yamls",
   "dagster_docker.__init__.__version__",
   "dagster_test.test_project.ReOriginatedExternalPipelineForTest",
   "dagster_test.test_project.find_local_test_image",
@@ -27,31 +10,35 @@
   "dagster_test.test_project.get_test_project_environments_path",
   "dagster_test.test_project.get_test_project_external_pipeline",
   "dagster_test.test_project.get_test_project_recon_pipeline",
-  "docker",
-  "docker.client.from_env",
-  "docker.errors.ImageNotFound",
-  "json",
-  "json.dumps",
-  "os",
-  "os.getenv",
-  "os.path.join",
-  "pytest",
-  "pytest.raises",
-  "re",
-  "re.escape"
+  "os.path.join"
  ],
  "deps": {
-  "contextlib": [],
-  "dagster": [],
+  "contextlib": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "dagster": [
+   "dagster/conda-forge/linux-64/dagster-0.11.10-py37h89c1867_0"
+  ],
   "dagster_docker": [],
   "dagster_test": [],
-  "docker": [],
+  "docker": [
+   "docker-py/conda-forge/linux-64/docker-py-4.4.4-py37h9c2f6ca_0"
+  ],
   "docker_image": [
    "docker-image-py/conda-forge/noarch/docker-image-py-0.1.10-pyh7cb4289_0"
   ],
-  "json": [],
-  "os": [],
-  "pytest": [],
-  "re": []
+  "json": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "os": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "pytest": [
+   "pytest/conda-forge/linux-64/pytest-4.6.3-py27_0",
+   "pytest/conda-forge/linux-64/pytest-6.0.2-py36hc560c46_0"
+  ],
+  "re": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ]
  }
 }
