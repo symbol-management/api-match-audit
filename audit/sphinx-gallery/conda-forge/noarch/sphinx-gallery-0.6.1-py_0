@@ -1,110 +1,39 @@
 {
  "bad": [
   "Image",
-  "PIL.Image",
   "PIL.Image.BICUBIC",
-  "PIL.Image.new",
-  "PIL.Image.open",
   "SphinxLoggerAdapter",
-  "__future__.absolute_import",
-  "__future__.division",
-  "__future__.print_function",
-  "__future__.unicode_literals",
-  "argparse",
-  "argparse.ArgumentParser",
-  "ast",
   "ast.Assign",
   "ast.Attribute",
   "ast.Expr",
   "ast.Module",
   "ast.Name",
-  "ast.NodeVisitor",
   "ast.PyCF_ONLY_AST",
   "ast.Store",
   "ast.Str",
-  "ast.fix_missing_locations",
-  "ast.get_docstring",
-  "ast.increment_lineno",
-  "ast.literal_eval",
-  "ast.parse",
   "ast_Module",
   "check_binder_conf",
-  "codecs",
-  "codecs.open",
-  "codeop",
-  "codeop.Compile",
-  "collections",
-  "collections.OrderedDict",
-  "collections.namedtuple",
   "colorfunc",
-  "contextlib",
-  "contextlib.contextmanager",
-  "copy",
-  "copy.deepcopy",
-  "datetime.datetime",
-  "datetime.timedelta",
-  "distutils.version.LooseVersion",
   "downloads.CODE_DOWNLOAD.format",
   "figure_rst",
   "func",
-  "functools.partial",
   "gc",
   "gc.collect",
   "gen_gallery.DEFAULT_GALLERY_CONF",
   "gen_gallery._expected_failing_examples",
-  "gzip",
-  "gzip.GzipFile",
-  "hashlib",
   "hashlib.md5",
-  "html.escape",
-  "importlib",
-  "importlib.import_module",
-  "importlib.util.module_from_spec",
-  "importlib.util.spec_from_loader",
-  "inspect",
-  "inspect.getmodule",
-  "inspect.isclass",
-  "inspect.ismethod",
-  "io",
-  "io.BytesIO",
-  "io.StringIO",
-  "json",
-  "json.dump",
-  "json.load",
   "klass",
   "klass.__name__",
-  "matplotlib",
   "matplotlib.colors.colorConverter.to_rgba",
-  "matplotlib.get_backend",
-  "matplotlib.pyplot",
-  "matplotlib.pyplot.axes",
-  "matplotlib.pyplot.close",
-  "matplotlib.pyplot.figure",
-  "matplotlib.pyplot.get_fignums",
-  "matplotlib.pyplot.pcolor",
-  "matplotlib.pyplot.plot",
-  "matplotlib.pyplot.rcdefaults",
-  "matplotlib.pyplot.savefig",
-  "matplotlib.pyplot.subplots",
-  "matplotlib.rcParams",
-  "matplotlib.use",
   "mayavi.mlab",
   "mayavi.mlab.close",
   "mayavi.mlab.get_engine",
   "mayavi.mlab.options.offscreen",
   "mayavi.mlab.savefig",
   "mayavi.mlab.test_plot3d",
-  "numpy",
-  "numpy.abs",
-  "numpy.asarray",
-  "numpy.corrcoef",
-  "numpy.testing.assert_allclose",
-  "os",
   "os.chdir",
   "os.getcwd",
   "os.listdir",
-  "os.makedirs",
-  "os.path",
   "os.path.abspath",
   "os.path.basename",
   "os.path.dirname",
@@ -118,55 +47,21 @@
   "os.path.sep",
   "os.path.splitext",
   "os.remove",
-  "os.sep",
   "os.stat",
-  "os.walk",
-  "pathlib",
-  "pathlib.Path",
-  "pickle",
-  "pickle.HIGHEST_PROTOCOL",
-  "pickle.dump",
-  "pickle.load",
-  "posixpath",
-  "posixpath.join",
-  "pytest",
-  "pytest.fixture",
   "pytest.mark.conf_file",
   "pytest.mark.parametrize",
-  "pytest.param",
-  "pytest.raises",
-  "pytest.skip",
-  "re",
   "re.DOTALL",
   "re.M",
   "re.MULTILINE",
-  "re.compile",
-  "re.escape",
-  "re.findall",
-  "re.finditer",
-  "re.match",
-  "re.search",
-  "re.sub",
-  "re.subn",
   "reset_module",
   "rst_path",
   "scraper",
-  "shelve",
-  "shelve.open",
-  "shutil",
-  "shutil.copy",
-  "shutil.copyfile",
-  "shutil.copytree",
-  "shutil.move",
-  "shutil.rmtree",
   "sorter",
   "sphinx.__file__",
   "sphinx.util.console.red",
   "sphinx_compatibility._app",
   "sphinx_compatibility.getLogger",
   "sphinx_compatibility.status_iterator",
-  "subprocess",
-  "subprocess.Popen",
   "sys",
   "sys.argv",
   "sys.exc_info",
@@ -185,103 +80,156 @@
   "sys.stdout.write",
   "sys.version",
   "sys.version_info",
-  "tempfile",
-  "tempfile.NamedTemporaryFile",
-  "textwrap.dedent",
-  "textwrap.indent",
   "time",
   "time.sleep",
   "time.time",
-  "to_rgba",
-  "tokenize",
-  "tokenize.tokenize",
-  "traceback",
-  "traceback.extract_tb",
-  "traceback.format_exception_only",
-  "traceback.format_list",
-  "types",
-  "urllib.error.HTTPError",
-  "urllib.error.URLError",
-  "urllib.parse",
-  "urllib.parse.urlparse",
-  "urllib.request",
-  "urllib.request.Request",
-  "urllib.request.urlopen",
-  "warnings",
-  "warnings.catch_warnings",
-  "warnings.formatwarning",
-  "warnings.showwarning",
-  "warnings.simplefilter",
-  "xml.sax.saxutils.escape",
-  "xml.sax.saxutils.quoteattr",
-  "zipfile",
-  "zipfile.ZipFile"
+  "to_rgba"
  ],
  "deps": {
   "Image": [],
-  "PIL": [],
+  "PIL": [
+   "pillow/conda-forge/linux-64/pillow-7.2.0-py36hfc7c323_2"
+  ],
   "SphinxLoggerAdapter": [],
-  "__future__": [],
-  "argparse": [],
-  "ast": [],
+  "__future__": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "argparse": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "ast": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "ast_Module": [],
   "check_binder_conf": [],
-  "codecs": [],
-  "codeop": [],
-  "collections": [],
+  "codecs": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "codeop": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "collections": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "colorfunc": [],
-  "contextlib": [],
-  "copy": [],
-  "datetime": [],
-  "distutils": [],
+  "contextlib": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "copy": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "datetime": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "distutils": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "downloads": [],
   "figure_rst": [],
   "func": [],
-  "functools": [],
+  "functools": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "gc": [],
   "gen_gallery": [],
-  "gzip": [],
-  "hashlib": [],
-  "html": [],
-  "importlib": [],
-  "inspect": [],
-  "io": [],
-  "json": [],
+  "gzip": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "hashlib": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "html": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "importlib": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "inspect": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "io": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "json": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "klass": [],
-  "matplotlib": [],
+  "matplotlib": [
+   "matplotlib-base/conda-forge/linux-64/matplotlib-base-3.3.3-py36h159efd9_0"
+  ],
   "mayavi": [],
   "memory_profiler": [
    "memory_profiler/conda-forge/noarch/memory_profiler-0.54.0-py_0"
   ],
-  "numpy": [],
-  "os": [],
-  "pathlib": [],
-  "pickle": [],
-  "posixpath": [],
-  "pytest": [],
-  "re": [],
+  "numpy": [
+   "numpy/conda-forge/linux-64/numpy-1.9.3-py27_blas_openblashb06ca3d_7"
+  ],
+  "os": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "pathlib": [
+   "pathlib/conda-forge/noarch/pathlib-1.0.1-py_1",
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "pickle": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "posixpath": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "pytest": [
+   "pytest/conda-forge/linux-64/pytest-4.6.3-py27_0",
+   "pytest/conda-forge/linux-64/pytest-6.0.2-py36hc560c46_0"
+  ],
+  "re": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "reset_module": [],
   "rst_path": [],
   "scraper": [],
-  "shelve": [],
-  "shutil": [],
+  "shelve": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "shutil": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "sorter": [],
   "sphinx": [
    "sphinx/conda-forge/noarch/sphinx-3.4.2-pyhd8ed1ab_0"
   ],
   "sphinx_compatibility": [],
-  "subprocess": [],
+  "subprocess": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "sys": [],
-  "tempfile": [],
-  "textwrap": [],
+  "tempfile": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "textwrap": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "time": [],
   "to_rgba": [],
-  "tokenize": [],
-  "traceback": [],
-  "types": [],
-  "urllib": [],
-  "warnings": [],
-  "xml": [],
-  "zipfile": []
+  "tokenize": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "traceback": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "types": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "urllib": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "warnings": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "xml": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "zipfile": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ]
  }
 }

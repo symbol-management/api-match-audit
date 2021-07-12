@@ -2,12 +2,7 @@
  "bad": [
   "IPython.display.HTML",
   "IPython.display.Image",
-  "PIL",
-  "PIL.Image",
-  "PIL.Image.Image",
   "PIL.Image.LANCZOS",
-  "PIL.Image.alpha_composite",
-  "PIL.Image.fromarray",
   "_check_booster_args",
   "_features",
   "_fmt_pws",
@@ -31,11 +26,6 @@
   "attr.ib",
   "attr.s",
   "base_scorer",
-  "catboost",
-  "catboost.CatBoost",
-  "catboost.CatBoostClassifier",
-  "catboost.CatBoostRegressor",
-  "catboost.Pool",
   "eli5.explain.explain_prediction.dispatch",
   "eli5.explain.explain_prediction.register",
   "eli5.explain.explain_weights.dispatch",
@@ -56,8 +46,6 @@
   "itertools.chain",
   "itertools.chain.from_iterable",
   "itertools.groupby",
-  "keras",
-  "keras.backend",
   "keras.backend.argmax",
   "keras.backend.constant",
   "keras.backend.epsilon",
@@ -72,11 +60,7 @@
   "keras.layers.GlobalMaxPooling2D",
   "keras.layers.Layer",
   "keras.layers.MaxPooling2D",
-  "keras.models.Model",
   "keras.preprocessing.image.array_to_img",
-  "lightgbm",
-  "lightgbm.LGBMClassifier",
-  "lightgbm.LGBMRegressor",
   "lightning.classification",
   "lightning.classification.AdaGradClassifier",
   "lightning.classification.CDClassifier",
@@ -96,7 +80,6 @@
   "lightning.regression.SAGRegressor",
   "lightning.regression.SDCARegressor",
   "lightning.regression.SGDRegressor",
-  "matplotlib.cm",
   "norm",
   "numpy.float32",
   "numpy.float64",
@@ -195,7 +178,9 @@
  ],
  "deps": {
   "IPython": [],
-  "PIL": [],
+  "PIL": [
+   "pillow/conda-forge/linux-64/pillow-7.2.0-py36hfc7c323_2"
+  ],
   "__future__": [
    "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
   ],
@@ -226,7 +211,9 @@
    "attrs/conda-forge/noarch/attrs-18.2.0-py_0"
   ],
   "base_scorer": [],
-  "catboost": [],
+  "catboost": [
+   "catboost/conda-forge/linux-64/catboost-0.22-py36h9f0ad1d_1"
+  ],
   "cgi": [
    "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
   ],
@@ -264,13 +251,19 @@
   "jinja2": [
    "jinja2/conda-forge/noarch/jinja2-2.10-py_1"
   ],
-  "keras": [],
-  "lightgbm": [],
+  "keras": [
+   "keras/conda-forge/noarch/keras-2.4.3-py_0"
+  ],
+  "lightgbm": [
+   "lightgbm/conda-forge/linux-64/lightgbm-2.2.1-py27hfc679d8_0"
+  ],
   "lightning": [],
   "math": [
    "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
   ],
-  "matplotlib": [],
+  "matplotlib": [
+   "matplotlib-base/conda-forge/linux-64/matplotlib-base-3.3.3-py36h159efd9_0"
+  ],
   "norm": [],
   "numbers": [
    "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
@@ -294,7 +287,8 @@
   ],
   "six": [
    "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
-   "privy/conda-forge/noarch/privy-6.0.0-py_0"
+   "privy/conda-forge/noarch/privy-6.0.0-py_0",
+   "six/conda-forge/linux-64/six-1.14.0-py36_0"
   ],
   "sklearn": [],
   "sklearn_crfsuite": [],
@@ -316,7 +310,8 @@
   ],
   "weight_color_hsl": [],
   "xgboost": [
-   "py-xgboost/conda-forge/linux-64/py-xgboost-1.1.1-py37hc8dfbb8_0"
+   "py-xgboost/conda-forge/linux-64/py-xgboost-1.1.1-py37hc8dfbb8_0",
+   "xgboost/conda-forge/linux-64/xgboost-0.6a2-py27_2"
   ]
  }
 }
