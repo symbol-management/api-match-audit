@@ -1,8 +1,6 @@
 {
  "bad": [
   "Custom",
-  "IPython",
-  "IPython.display",
   "IPython.display.Image",
   "IPython.display.SVG",
   "IPython.display.clear_output",
@@ -11,9 +9,6 @@
   "NewStream",
   "_",
   "__builtin__",
-  "__future__.absolute_import",
-  "__future__.division",
-  "__future__.print_function",
   "agg",
   "aggregations.Count",
   "aggregations.Full",
@@ -39,21 +34,15 @@
   "builtins",
   "callback",
   "collection._stream_types.append",
-  "collections",
   "collections.Hashable",
   "collections.Iterable",
   "collections.MutableMapping",
   "collections.MutableSet",
-  "collections.OrderedDict",
   "collections.Sequence",
-  "collections.deque",
-  "concurrent.futures.Future",
-  "concurrent.futures.ThreadPoolExecutor",
   "confluent_kafka",
   "confluent_kafka.Consumer",
   "confluent_kafka.KafkaException",
   "confluent_kafka.TopicPartition",
-  "contextlib.contextmanager",
   "core.Stream.from_kafka",
   "core.Stream.from_kafka_batched",
   "core.Stream.register_api",
@@ -70,7 +59,6 @@
   "core.zip",
   "core.zip_latest",
   "dataframe.DataFrame",
-  "datetime.timedelta",
   "display_cls",
   "distributed.utils_test.loop.add_callback",
   "distributed.utils_test.loop.run_sync",
@@ -80,65 +68,22 @@
   "func",
   "func.__name__",
   "function",
-  "functools",
-  "functools.partial",
-  "functools.wraps",
   "gc",
   "gc.collect",
-  "glob.glob",
   "graph.visualize",
-  "graphviz",
-  "graphviz.Digraph",
   "grouper",
   "indexer",
   "itertools",
   "itertools.count",
-  "json",
-  "json.dumps",
-  "json.loads",
-  "logging",
-  "logging.INFO",
-  "logging.StreamHandler",
-  "logging.getLogger",
   "make_coro",
   "modifier",
   "n",
   "networkx.DiGraph",
   "networkx.relabel_nodes",
-  "numbers.Number",
-  "numpy",
-  "numpy.arange",
-  "numpy.ndarray",
   "numpy.random.normal",
   "numpy.random.poisson",
   "numpy.random.random",
   "object.__new__",
-  "operator",
-  "operator.abs",
-  "operator.add",
-  "operator.and_",
-  "operator.eq",
-  "operator.floordiv",
-  "operator.ge",
-  "operator.getitem",
-  "operator.gt",
-  "operator.inv",
-  "operator.invert",
-  "operator.le",
-  "operator.lshift",
-  "operator.lt",
-  "operator.mod",
-  "operator.mul",
-  "operator.ne",
-  "operator.neg",
-  "operator.not_",
-  "operator.or_",
-  "operator.pow",
-  "operator.rshift",
-  "operator.sub",
-  "operator.truediv",
-  "operator.xor",
-  "os",
   "os.close",
   "os.environ.get",
   "os.mkdir",
@@ -149,35 +94,19 @@
   "os.path.splitext",
   "os.remove",
   "output_ref",
-  "pandas",
-  "pandas.DataFrame",
   "pandas.DataFrame.assign",
   "pandas.DataFrame.query",
-  "pandas.DatetimeIndex",
-  "pandas.Index",
-  "pandas.Series",
-  "pandas.Timedelta",
   "pandas.compat.isidentifier",
   "pandas.compat.string_types",
-  "pandas.concat",
   "parallel.scatter",
   "pipe",
-  "pytest",
-  "pytest.fail",
-  "pytest.fixture",
-  "pytest.importorskip",
   "pytest.mark.gen_test",
   "pytest.mark.parametrize",
   "pytest.mark.slow",
   "pytest.mark.xfail",
-  "pytest.raises",
   "pytest.skip.Exception",
-  "random",
-  "random.randint",
   "rapidz.core.Stream.filenames",
   "rapidz.core.Stream.from_textfile",
-  "re",
-  "re.sub",
   "s",
   "s.emit",
   "s.loop",
@@ -185,49 +114,15 @@
   "s.start",
   "s_ref",
   "s_type",
-  "shlex",
-  "shlex.split",
-  "shutil",
-  "shutil.rmtree",
   "sources.filenames",
   "sources.from_textfile",
-  "subprocess",
-  "subprocess.CalledProcessError",
-  "subprocess.STDOUT",
-  "subprocess.call",
-  "subprocess.check_call",
-  "subprocess.check_output",
   "sys",
   "sys.exc_info",
   "sys.version_info",
-  "tempfile",
-  "tempfile.mkstemp",
   "thread.get_ident",
-  "threading",
-  "threading.Event",
-  "threading.Thread",
-  "threading.get_ident",
-  "threading.local",
   "time",
   "time.sleep",
   "time.time",
-  "tornado.gen",
-  "tornado.gen.Return",
-  "tornado.gen.TimeoutError",
-  "tornado.gen.convert_yielded",
-  "tornado.gen.coroutine",
-  "tornado.gen.isawaitable",
-  "tornado.gen.maybe_future",
-  "tornado.gen.moment",
-  "tornado.gen.sleep",
-  "tornado.gen.with_timeout",
-  "tornado.ioloop",
-  "tornado.ioloop.IOLoop",
-  "tornado.ioloop.IOLoop.clear_current",
-  "tornado.ioloop.IOLoop.clear_instance",
-  "tornado.ioloop.IOLoop.current",
-  "tornado.locks.Condition",
-  "tornado.queues.Queue",
   "utils.M.astype",
   "utils.M.count",
   "utils.M.mean",
@@ -240,20 +135,20 @@
   "utils.M.sum",
   "utils.M.tail",
   "utils.M.to_frame",
-  "utils.M.var",
-  "weakref",
-  "weakref.WeakSet",
-  "weakref.WeakValueDictionary",
-  "weakref.ref"
+  "utils.M.var"
  ],
  "deps": {
   "Custom": [],
-  "IPython": [],
+  "IPython": [
+   "ipython/conda-forge/linux-64/ipython-7.23.0-py39hef51801_0"
+  ],
   "MySource": [],
   "NewStream": [],
   "_": [],
   "__builtin__": [],
-  "__future__": [],
+  "__future__": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "agg": [],
   "aggregations": [],
   "atexit": [],
@@ -261,16 +156,24 @@
   "builtins": [],
   "callback": [],
   "collection": [],
-  "collections": [],
-  "concurrent": [],
+  "collections": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "concurrent": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "confluent_kafka": [],
-  "contextlib": [],
+  "contextlib": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "core": [],
   "dask": [
    "dask-core/conda-forge/noarch/dask-core-0.15.3-py_0"
   ],
   "dataframe": [],
-  "datetime": [],
+  "datetime": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "display_cls": [],
   "distributed": [
    "distributed/conda-forge/noarch/distributed-2.1.0-py_0"
@@ -280,38 +183,65 @@
   "format": [],
   "func": [],
   "function": [],
-  "functools": [],
+  "functools": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "gc": [],
-  "glob": [],
+  "glob": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "graph": [],
-  "graphviz": [],
+  "graphviz": [
+   "python-graphviz/conda-forge/noarch/python-graphviz-0.14.2-pyh9f0ad1d_0"
+  ],
   "grouper": [],
   "indexer": [],
   "ipywidgets": [
    "ipywidgets/conda-forge/noarch/ipywidgets-7.5.0-py_0"
   ],
   "itertools": [],
-  "json": [],
-  "logging": [],
+  "json": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "logging": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "make_coro": [],
   "modifier": [],
   "n": [],
   "networkx": [
    "networkx/conda-forge/noarch/networkx-2.3-py_0"
   ],
-  "numbers": [],
-  "numpy": [],
+  "numbers": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "numpy": [
+   "numpy/conda-forge/linux-64/numpy-1.9.3-py27_blas_openblashb06ca3d_7"
+  ],
   "object": [],
-  "operator": [],
-  "os": [],
+  "operator": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "os": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "output_ref": [],
-  "pandas": [],
+  "pandas": [
+   "pandas/conda-forge/linux-64/pandas-0.25.0-py37hb3f55d8_0"
+  ],
   "parallel": [],
   "pipe": [],
-  "pytest": [],
-  "random": [],
+  "pytest": [
+   "pytest/conda-forge/linux-64/pytest-4.6.3-py27_0",
+   "pytest/conda-forge/linux-64/pytest-6.0.2-py36hc560c46_0"
+  ],
+  "random": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "rapidz": [],
-  "re": [],
+  "re": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "requests": [
    "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
    "requests/conda-forge/noarch/requests-2.23.0-pyh8c360ce_2"
@@ -319,23 +249,39 @@
   "s": [],
   "s_ref": [],
   "s_type": [],
-  "shlex": [],
-  "shutil": [],
+  "shlex": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "shutil": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "six": [
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1"
+   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
+   "privy/conda-forge/noarch/privy-6.0.0-py_0",
+   "six/conda-forge/linux-64/six-1.14.0-py36_0"
   ],
   "sources": [],
-  "subprocess": [],
+  "subprocess": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "sys": [],
-  "tempfile": [],
+  "tempfile": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "thread": [],
-  "threading": [],
+  "threading": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "time": [],
   "toolz": [
    "toolz/conda-forge/noarch/toolz-0.8.2-py_3"
   ],
-  "tornado": [],
+  "tornado": [
+   "tornado/conda-forge/linux-64/tornado-5.1.1-py36h97a6639_1"
+  ],
   "utils": [],
-  "weakref": []
+  "weakref": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ]
  }
 }

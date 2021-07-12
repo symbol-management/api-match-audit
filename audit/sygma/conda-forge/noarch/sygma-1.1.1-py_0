@@ -1,17 +1,6 @@
 {
  "bad": [
-  "argparse",
-  "argparse.ArgumentParser",
   "builtins.str",
-  "copy",
-  "copy.copy",
-  "logging",
-  "logging.basicConfig",
-  "logging.getLogger",
-  "pkg_resources",
-  "pkg_resources.resource_filename",
-  "rdkit.Chem",
-  "rdkit.Chem.AllChem",
   "rdkit.Chem.AllChem.Compute2DCoords",
   "rdkit.Chem.AllChem.InchiToInchiKey",
   "rdkit.Chem.AllChem.MolToInchi",
@@ -22,11 +11,7 @@
   "rdkit.Chem.SanitizeMol",
   "rdkit.Chem.rdMolTransforms",
   "rdkit.Chem.rdMolTransforms.GetBondLength",
-  "rdkit.Geometry",
   "rdkit.Geometry.Point2D",
-  "rdkit.RDLogger",
-  "rdkit.RDLogger.ERROR",
-  "rdkit.RDLogger.logger",
   "sygma.Scenario",
   "sygma.script.__init__.get_sygma_parser",
   "sygma.script.__init__.logger",
@@ -37,12 +22,23 @@
   "sys.stdout"
  ],
  "deps": {
-  "argparse": [],
+  "argparse": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "builtins": [],
-  "copy": [],
-  "logging": [],
-  "pkg_resources": [],
-  "rdkit": [],
+  "copy": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "logging": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "pkg_resources": [
+   "setuptools/conda-forge/linux-64/setuptools-41.2.0-py27_0"
+  ],
+  "rdkit": [
+   "rdkit/conda-forge/linux-64/rdkit-2020.03.1-py36h866857e_1",
+   "rdkit/conda-forge/linux-64/rdkit-2020.09.3-py38h2bca085_0"
+  ],
   "sygma": [],
   "sys": []
  }

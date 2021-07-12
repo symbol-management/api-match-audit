@@ -2,34 +2,9 @@
  "bad": [
   "_evaluate_typevar",
   "_evaluate_union",
-  "abc",
-  "abc.ABC",
-  "abc.ABCMeta",
-  "abc.abstractmethod",
   "assign",
-  "base64",
-  "base64.b16encode",
-  "base64.b64decode",
-  "base64.b64encode",
-  "binascii",
-  "binascii.unhexlify",
   "calculate",
-  "calendar.isleap",
   "cmp",
-  "collections.UserString",
-  "collections.defaultdict",
-  "copy",
-  "copy.deepcopy",
-  "datetime",
-  "datetime.date",
-  "datetime.date.today",
-  "datetime.datetime",
-  "datetime.datetime.now",
-  "datetime.datetime.strptime",
-  "datetime.datetime.utcnow",
-  "datetime.time",
-  "datetime.timedelta",
-  "datetime.timezone",
   "datetime.timezone.utc",
   "decimal.Decimal",
   "decimal.InvalidOperation",
@@ -39,77 +14,36 @@
   "find_or_die",
   "flush",
   "func",
-  "functools",
-  "functools.lru_cache",
   "generator_class",
   "getter",
   "has_default",
-  "importlib",
-  "importlib.import_module",
   "importlib.metadata",
   "importlib.metadata.entry_points",
   "index_aliases",
-  "io",
-  "io.BytesIO",
-  "io.StringIO",
   "is_invalid",
   "is_new",
   "itertools",
   "itertools.chain",
-  "json",
-  "json.dump",
-  "json.load",
   "load",
-  "logging",
-  "logging.ERROR",
-  "logging.getLogger",
   "lxml.etree",
   "lxml.etree.XMLParser",
   "lxml.etree.iterparse",
   "lxml.etree.iterwalk",
   "lxml.etree.parse",
   "lxml.etree.tostring",
-  "lxml.sax.ElementTreeContentHandler",
   "match_type",
-  "math",
-  "math.isfinite",
-  "math.isnan",
   "method",
-  "operator",
-  "operator.attrgetter",
-  "operator.eq",
-  "operator.ge",
-  "operator.gt",
-  "operator.le",
-  "operator.lt",
-  "operator.ne",
-  "os",
   "os.path.basename",
   "os.path.commonpath",
   "os.path.dirname",
   "os.path.relpath",
   "os.path.splitext",
-  "pathlib",
-  "pathlib.Path",
-  "pathlib.Path.cwd",
-  "pkg_resources.get_distribution",
-  "random",
-  "random.choice",
-  "re",
-  "re.compile",
-  "re.findall",
-  "re.match",
-  "re.split",
-  "re.sub",
   "score",
   "split",
   "split_words",
   "str.lower",
   "str.strip",
   "str.title",
-  "string",
-  "string.punctuation",
-  "string.whitespace",
   "sys",
   "sys.exit",
   "sys.intern",
@@ -118,52 +52,7 @@
   "sys.modules.__dict__",
   "sys.stdout",
   "sys.version_info",
-  "textwrap",
-  "textwrap.dedent",
-  "textwrap.wrap",
-  "toposort.toposort_flatten",
   "type_patterns",
-  "typing.Any",
-  "typing.Callable",
-  "typing.ClassVar",
-  "typing.Dict",
-  "typing.Generator",
-  "typing.Generic",
-  "typing.Iterable",
-  "typing.Iterator",
-  "typing.List",
-  "typing.Mapping",
-  "typing.Match",
-  "typing.NamedTuple",
-  "typing.Optional",
-  "typing.Sequence",
-  "typing.Set",
-  "typing.TextIO",
-  "typing.Tuple",
-  "typing.Type",
-  "typing.TypeVar",
-  "typing.Union",
-  "typing._eval_type",
-  "typing.cast",
-  "typing.get_type_hints",
-  "unittest",
-  "unittest.TestCase",
-  "urllib.parse.urljoin",
-  "urllib.parse.urlparse",
-  "urllib.request.urlopen",
-  "warnings",
-  "warnings.catch_warnings",
-  "warnings.filterwarnings",
-  "warnings.simplefilter",
-  "warnings.warn",
-  "xml.etree.ElementTree.QName",
-  "xml.etree.ElementTree.iterparse",
-  "xml.sax",
-  "xml.sax.handler.ContentHandler",
-  "xml.sax.handler.feature_namespaces",
-  "xml.sax.make_parser",
-  "xml.sax.saxutils.XMLGenerator",
-  "xml.sax.saxutils.quoteattr",
   "xsdata.codegen.models.Status.PROCESSED",
   "xsdata.codegen.models.Status.PROCESSING",
   "xsdata.codegen.models.Status.RAW",
@@ -259,12 +148,20 @@
  "deps": {
   "_evaluate_typevar": [],
   "_evaluate_union": [],
-  "abc": [],
+  "abc": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "assign": [],
-  "base64": [],
-  "binascii": [],
+  "base64": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "binascii": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "calculate": [],
-  "calendar": [],
+  "calendar": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "click": [
    "click/conda-forge/noarch/click-7.0-py_0"
   ],
@@ -275,52 +172,86 @@
    "click-log/conda-forge/noarch/click-log-0.3.2-py_0"
   ],
   "cmp": [],
-  "collections": [],
-  "copy": [],
+  "collections": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "copy": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "dataclasses": [
    "dataclasses/conda-forge/noarch/dataclasses-0.8-pyh787bdff_0",
    "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1"
   ],
-  "datetime": [],
+  "datetime": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "decimal": [],
   "docformatter": [],
   "enum": [
-   "privy/conda-forge/noarch/privy-6.0.0-py_0"
+   "privy/conda-forge/noarch/privy-6.0.0-py_0",
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
   ],
   "extract_metadata": [],
   "find_by_namespace": [],
   "find_or_die": [],
   "flush": [],
   "func": [],
-  "functools": [],
+  "functools": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "generator_class": [],
   "getter": [],
   "has_default": [],
-  "importlib": [],
+  "importlib": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "importlib_metadata": [
    "importlib-metadata/conda-forge/noarch/importlib-metadata-3.0.0-pyhd8ed1ab_0"
   ],
   "index_aliases": [],
-  "io": [],
+  "io": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "is_invalid": [],
   "is_new": [],
   "itertools": [],
   "jinja2": [
    "jinja2/conda-forge/noarch/jinja2-2.10-py_1"
   ],
-  "json": [],
+  "json": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "load": [],
-  "logging": [],
-  "lxml": [],
+  "logging": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "lxml": [
+   "pyexcel-ods3/conda-forge/noarch/pyexcel-ods3-0.5.3-py_0"
+  ],
   "match_type": [],
-  "math": [],
+  "math": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "method": [],
-  "operator": [],
-  "os": [],
-  "pathlib": [],
-  "pkg_resources": [],
-  "random": [],
-  "re": [],
+  "operator": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "os": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "pathlib": [
+   "pathlib/conda-forge/noarch/pathlib-1.0.1-py_1",
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "pkg_resources": [
+   "setuptools/conda-forge/linux-64/setuptools-41.2.0-py27_0"
+  ],
+  "random": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "re": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "requests": [
    "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
    "requests/conda-forge/noarch/requests-2.23.0-pyh8c360ce_2"
@@ -329,16 +260,32 @@
   "split": [],
   "split_words": [],
   "str": [],
-  "string": [],
+  "string": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "sys": [],
-  "textwrap": [],
-  "toposort": [],
+  "textwrap": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "toposort": [
+   "toposort/conda-forge/noarch/toposort-1.6-pyhd8ed1ab_0"
+  ],
   "type_patterns": [],
-  "typing": [],
-  "unittest": [],
-  "urllib": [],
-  "warnings": [],
-  "xml": [],
+  "typing": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "unittest": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "urllib": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "warnings": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "xml": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "xsdata": []
  }
 }

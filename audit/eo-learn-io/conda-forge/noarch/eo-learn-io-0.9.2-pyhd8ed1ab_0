@@ -1,10 +1,5 @@
 {
  "bad": [
-  "abc.abstractmethod",
-  "collections",
-  "collections.namedtuple",
-  "datetime",
-  "datetime.datetime",
   "eolearn.core.FeatureType.DATA",
   "eolearn.core.FeatureType.MASK",
   "eolearn.core.FeatureType.MASK_TIMELESS",
@@ -18,36 +13,10 @@
   "fiona.session.AWSSession",
   "geopandas.GeoDataFrame.from_features",
   "itertools.repeat",
-  "logging",
-  "logging.getLogger",
-  "numpy",
-  "numpy.abs",
-  "numpy.array",
-  "numpy.asarray",
-  "numpy.atleast_3d",
-  "numpy.concatenate",
-  "numpy.expand_dims",
   "numpy.float32",
-  "numpy.int32",
-  "numpy.int64",
-  "numpy.mean",
   "numpy.moveaxis",
-  "numpy.newaxis",
-  "numpy.nonzero",
-  "numpy.ones",
-  "numpy.round",
   "numpy.uint16",
-  "numpy.uint8",
-  "numpy.where",
-  "rasterio",
-  "rasterio.band",
-  "rasterio.open",
-  "rasterio.transform",
-  "rasterio.transform.from_bounds",
-  "rasterio.warp",
   "rasterio.warp.Resampling.nearest",
-  "rasterio.warp.calculate_default_transform",
-  "rasterio.warp.reproject",
   "sentinelhub.CRS.POP_WEB",
   "sentinelhub.CRS.POP_WEB.ogc_string",
   "sentinelhub.DataCollection",
@@ -56,17 +25,21 @@
   "sentinelhub.SentinelHubCatalog",
   "sentinelhub.SentinelHubRequest.input_data",
   "sentinelhub.SentinelHubRequest.output_response",
-  "sentinelhub.data_collections.handle_deprecated_data_source",
-  "warnings",
-  "warnings.warn"
+  "sentinelhub.data_collections.handle_deprecated_data_source"
  ],
  "deps": {
-  "abc": [],
+  "abc": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "boto3": [
    "boto3/conda-forge/noarch/boto3-1.13.1-pyh9f0ad1d_0"
   ],
-  "collections": [],
-  "datetime": [],
+  "collections": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "datetime": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "dateutil": [
    "python-dateutil/conda-forge/noarch/python-dateutil-2.7.4-py_0"
   ],
@@ -81,12 +54,21 @@
    "geopandas-base/conda-forge/noarch/geopandas-base-0.9.0-pyhd8ed1ab_1"
   ],
   "itertools": [],
-  "logging": [],
-  "numpy": [],
-  "rasterio": [],
+  "logging": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "numpy": [
+   "numpy/conda-forge/linux-64/numpy-1.9.3-py27_blas_openblashb06ca3d_7"
+  ],
+  "rasterio": [
+   "rasterio/conda-forge/linux-64/rasterio-1.0.28-py27h900e953_1",
+   "rasterio/conda-forge/linux-64/rasterio-1.2.5-py39hbc9cc8e_0"
+  ],
   "sentinelhub": [
    "sentinelhub/conda-forge/noarch/sentinelhub-3.0.0-py_0"
   ],
-  "warnings": []
+  "warnings": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ]
  }
 }

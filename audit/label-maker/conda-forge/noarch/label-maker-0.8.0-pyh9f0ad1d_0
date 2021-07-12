@@ -1,129 +1,83 @@
 {
  "bad": [
-  "PIL.Image",
-  "PIL.Image.fromarray",
-  "PIL.Image.new",
-  "PIL.Image.open",
-  "PIL.ImageColor",
-  "PIL.ImageColor.getrgb",
-  "PIL.ImageDraw",
-  "PIL.ImageDraw.Draw",
   "_create_empty_label",
   "_stringify",
-  "argparse",
-  "argparse.ArgumentDefaultsHelpFormatter",
-  "argparse.ArgumentParser",
   "bc",
   "class_test",
-  "copy",
-  "copy.deepcopy",
   "ff",
-  "functools.partial",
-  "gzip",
-  "gzip.open",
   "image_function",
-  "json",
-  "json.dump",
-  "json.dumps",
-  "json.load",
-  "json.loads",
   "label_maker.__file__",
-  "logging",
-  "logging.getLogger",
   "mapbox_vector_tile",
   "mapbox_vector_tile.decode",
-  "numpy",
-  "numpy.any",
-  "numpy.append",
-  "numpy.array",
-  "numpy.array_equal",
-  "numpy.concatenate",
-  "numpy.count_nonzero",
-  "numpy.cumsum",
-  "numpy.empty",
-  "numpy.int",
-  "numpy.integer",
-  "numpy.isclose",
-  "numpy.load",
   "numpy.moveaxis",
-  "numpy.nditer",
-  "numpy.newaxis",
-  "numpy.ones",
   "numpy.random.choice",
   "numpy.random.seed",
   "numpy.random.shuffle",
-  "numpy.savez",
-  "numpy.split",
-  "numpy.sum",
-  "numpy.uint8",
-  "numpy.zeros",
-  "os",
-  "os.makedirs",
-  "os.path",
   "os.path.basename",
   "os.path.dirname",
   "os.path.exists",
   "os.path.isdir",
   "os.path.join",
   "os.path.splitext",
-  "random.shuffle",
-  "rasterio",
-  "rasterio.crs.CRS",
-  "rasterio.crs.CRS.from_epsg",
-  "rasterio.crs.CRS.from_string",
-  "rasterio.errors.RasterioIOError",
-  "rasterio.features.rasterize",
-  "rasterio.open",
-  "rasterio.warp.transform",
-  "rasterio.warp.transform_bounds",
-  "shutil",
-  "shutil.copy",
-  "subprocess.PIPE",
-  "subprocess.Popen",
-  "subprocess.run",
   "sys",
   "sys.argv",
   "sys.executable",
   "sys.stdin",
   "sys.stdout.write",
-  "tempfile",
-  "tempfile.TemporaryDirectory",
-  "tilepie.tilereduce",
-  "unittest",
-  "unittest.TestCase",
-  "unittest.main",
-  "urllib.parse.parse_qs",
-  "urllib.parse.urlparse"
+  "tilepie.tilereduce"
  ],
  "deps": {
-  "PIL": [],
+  "PIL": [
+   "pillow/conda-forge/linux-64/pillow-7.2.0-py36hfc7c323_2"
+  ],
   "_create_empty_label": [],
   "_stringify": [],
-  "argparse": [],
+  "argparse": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "bc": [],
   "cerberus": [
    "cerberus/conda-forge/noarch/cerberus-1.3.2-py_0"
   ],
   "class_test": [],
-  "copy": [],
+  "copy": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "ff": [],
-  "functools": [],
+  "functools": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "geojson": [
    "geojson/conda-forge/noarch/geojson-2.5.0-py_0"
   ],
-  "gzip": [],
+  "gzip": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "image_function": [],
-  "json": [],
+  "json": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "label_maker": [],
-  "logging": [],
+  "logging": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "mapbox_vector_tile": [],
   "mercantile": [
    "mercantile/conda-forge/noarch/mercantile-1.1.6-pyh9f0ad1d_0"
   ],
-  "numpy": [],
-  "os": [],
-  "random": [],
-  "rasterio": [],
+  "numpy": [
+   "numpy/conda-forge/linux-64/numpy-1.9.3-py27_blas_openblashb06ca3d_7"
+  ],
+  "os": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "random": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "rasterio": [
+   "rasterio/conda-forge/linux-64/rasterio-1.0.28-py27h900e953_1",
+   "rasterio/conda-forge/linux-64/rasterio-1.2.5-py39hbc9cc8e_0"
+  ],
   "requests": [
    "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
    "requests/conda-forge/noarch/requests-2.23.0-pyh8c360ce_2"
@@ -131,15 +85,25 @@
   "shapely": [
    "solaris/conda-forge/noarch/solaris-0.4.0-pyhe05a262_0"
   ],
-  "shutil": [],
-  "subprocess": [],
+  "shutil": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "subprocess": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "sys": [],
-  "tempfile": [],
+  "tempfile": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "tilepie": [],
   "tqdm": [
    "tqdm/conda-forge/noarch/tqdm-4.20.0-py_0"
   ],
-  "unittest": [],
-  "urllib": []
+  "unittest": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "urllib": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ]
  }
 }

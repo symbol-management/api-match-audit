@@ -1,66 +1,20 @@
 {
  "bad": [
-  "PIL.Image",
-  "PIL.ImageTk",
-  "PIL.ImageTk.PhotoImage",
   "Pmw",
   "Pmw.Dialog",
   "Pmw.initialise",
-  "argparse",
-  "argparse.ArgumentParser",
-  "argparse.RawDescriptionHelpFormatter",
-  "calendar",
   "calendar.month_abbr.lower",
   "cls",
-  "collections.abc",
-  "copy",
-  "copy.copy",
   "cpuinfo.get_cpu_info",
-  "datetime",
-  "datetime.datetime",
-  "datetime.timedelta",
-  "distutils.util.strtobool",
   "exec.run",
-  "glob",
-  "glob.glob",
-  "grp",
-  "grp.getgrgid",
-  "importlib",
-  "importlib.import_module",
   "importlib.metadata",
-  "json",
-  "json.dump",
-  "json.dumps",
-  "json.load",
-  "json.loads",
-  "locale",
-  "locale.LC_ALL",
-  "locale.setlocale",
-  "logging",
-  "logging.DEBUG",
-  "logging.FileHandler",
-  "logging.Formatter",
-  "logging.StreamHandler",
-  "logging.basicConfig",
-  "logging.critical",
-  "logging.exception",
-  "logging.getLogger",
-  "logging.info",
-  "logging.warning",
-  "math",
-  "math.sqrt",
   "molsystem.SystemDB",
-  "numpy",
   "numpy.nan",
-  "os",
   "os.chdir",
   "os.chmod",
-  "os.environ",
   "os.getcwd",
   "os.getpid",
   "os.lstat",
-  "os.makedirs",
-  "os.path",
   "os.path.abspath",
   "os.path.basename",
   "os.path.exists",
@@ -70,21 +24,10 @@
   "os.readlink",
   "os.remove",
   "os.umask",
-  "os.walk",
-  "pandas",
-  "pandas.DataFrame",
-  "pathlib.Path",
-  "pkg_resources",
-  "platform",
-  "platform.system",
-  "pprint",
-  "pprint.pformat",
   "pwd",
   "pwd.getpwuid",
   "pyuca",
   "pyuca.Collator",
-  "re",
-  "re.fullmatch",
   "reference_handler",
   "reference_handler.Reference_Handler",
   "seamm.Flowchart.graphics",
@@ -97,19 +40,6 @@
   "seamm.flowchart_variables.get_variable",
   "seamm.flowchart_variables.set_variable",
   "seamm.flowchart_variables.value",
-  "seamm_util",
-  "seamm_util.Figure",
-  "seamm_util.JSONDecoder",
-  "seamm_util.JSONEncoder",
-  "seamm_util.Q_",
-  "seamm_util.getParser",
-  "seamm_util.printing",
-  "seamm_util.printing.FormattedText",
-  "seamm_util.printing.JOB",
-  "seamm_util.printing.NORMAL",
-  "seamm_util.printing.getPrinter",
-  "seamm_util.seamm_parser",
-  "seamm_util.ureg",
   "seamm_widgets",
   "seamm_widgets.Keywords",
   "seamm_widgets.LabeledCombobox",
@@ -120,22 +50,7 @@
   "seamm_widgets.UnitCombobox",
   "seamm_widgets.UnitEntry",
   "seamm_widgets.align_labels",
-  "shutil",
-  "shutil.copy2",
-  "shutil.rmtree",
-  "stat",
-  "stat.S_IMODE",
-  "stat.S_ISDIR",
-  "stat.S_ISLNK",
-  "stat.S_IXGRP",
-  "stat.S_IXUSR",
   "str.upper",
-  "string",
-  "string.Template",
-  "subprocess",
-  "subprocess.PIPE",
-  "subprocess.check_call",
-  "subprocess.run",
   "sys",
   "sys.argv",
   "sys.exc_info",
@@ -143,133 +58,164 @@
   "sys.platform.startswith",
   "sys.stderr",
   "sys.stdout",
-  "tempfile",
-  "tempfile.mkdtemp",
-  "textwrap",
-  "textwrap.TextWrapper",
-  "textwrap.dedent",
   "time",
   "time.gmtime",
   "time.process_time",
   "time.strftime",
   "time.time",
-  "tkinter",
   "tkinter.BOTH",
   "tkinter.END",
   "tkinter.EW",
   "tkinter.HORIZONTAL",
-  "tkinter.IntVar",
   "tkinter.LAST",
-  "tkinter.Menu",
   "tkinter.NSEW",
   "tkinter.NW",
   "tkinter.SUNKEN",
-  "tkinter.StringVar",
-  "tkinter.Text",
-  "tkinter.Tk",
-  "tkinter.Toplevel",
   "tkinter.W",
   "tkinter.YES",
-  "tkinter._default_root.tk.call",
-  "tkinter.filedialog",
-  "tkinter.filedialog.askopenfilename",
-  "tkinter.filedialog.asksaveasfilename",
-  "tkinter.font",
-  "tkinter.font.Font",
-  "tkinter.messagebox",
-  "tkinter.messagebox.showerror",
-  "tkinter.messagebox.showwarning",
-  "tkinter.ttk",
-  "tkinter.ttk.Button",
-  "tkinter.ttk.Checkbutton",
-  "tkinter.ttk.Combobox",
-  "tkinter.ttk.Entry",
-  "tkinter.ttk.Frame",
-  "tkinter.ttk.Label",
-  "tkinter.ttk.Notebook",
-  "tkinter.ttk.Progressbar",
-  "tkinter.ttk.Radiobutton",
-  "traceback",
-  "traceback.format_exc",
-  "traceback.print_exc",
-  "uuid",
-  "uuid.uuid4",
-  "weakref",
-  "weakref.WeakValueDictionary"
+  "tkinter._default_root.tk.call"
  ],
  "deps": {
-  "PIL": [],
+  "PIL": [
+   "pillow/conda-forge/linux-64/pillow-7.2.0-py36hfc7c323_2"
+  ],
   "Pmw": [],
-  "argparse": [],
+  "argparse": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "bibtexparser": [
    "bibtexparser/conda-forge/noarch/bibtexparser-1.0.1-py_1"
   ],
-  "calendar": [],
-  "cls": [],
-  "collections": [],
-  "configparser": [
-   "configparser/conda-forge/noarch/configparser-5.0.0-py_0"
+  "calendar": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
   ],
-  "copy": [],
+  "cls": [],
+  "collections": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "configparser": [
+   "configparser/conda-forge/noarch/configparser-5.0.0-py_0",
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "copy": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "cpuinfo": [
    "py-cpuinfo/conda-forge/noarch/py-cpuinfo-6.0.0-pyh9f0ad1d_0"
   ],
-  "datetime": [],
-  "distutils": [],
+  "datetime": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "distutils": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "exec": [],
   "fasteners": [
    "fasteners/conda-forge/noarch/fasteners-0.16-pyhd8ed1ab_0"
   ],
-  "glob": [],
-  "grp": [],
+  "glob": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "grp": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "humanize": [
    "humanize/conda-forge/noarch/humanize-2.4.1-py_0"
   ],
-  "importlib": [],
+  "importlib": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "importlib_metadata": [
    "importlib-metadata/conda-forge/noarch/importlib-metadata-3.0.0-pyhd8ed1ab_0"
   ],
   "jinja2": [
    "jinja2/conda-forge/noarch/jinja2-2.10-py_1"
   ],
-  "json": [],
-  "locale": [],
-  "logging": [],
-  "math": [],
+  "json": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "locale": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "logging": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "math": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "molsystem": [],
-  "numpy": [],
-  "os": [],
-  "pandas": [],
-  "pathlib": [],
-  "pkg_resources": [],
-  "platform": [],
-  "pprint": [],
+  "numpy": [
+   "numpy/conda-forge/linux-64/numpy-1.9.3-py27_blas_openblashb06ca3d_7"
+  ],
+  "os": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "pandas": [
+   "pandas/conda-forge/linux-64/pandas-0.25.0-py37hb3f55d8_0"
+  ],
+  "pathlib": [
+   "pathlib/conda-forge/noarch/pathlib-1.0.1-py_1",
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "pkg_resources": [
+   "setuptools/conda-forge/linux-64/setuptools-41.2.0-py27_0"
+  ],
+  "platform": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "pprint": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "pwd": [],
   "pyuca": [],
-  "re": [],
+  "re": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "reference_handler": [],
   "requests": [
    "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
    "requests/conda-forge/noarch/requests-2.23.0-pyh8c360ce_2"
   ],
   "seamm": [],
-  "seamm_util": [],
+  "seamm_util": [
+   "seamm-util/conda-forge/noarch/seamm-util-2021.6.2-pyhd8ed1ab_0"
+  ],
   "seamm_widgets": [],
-  "shutil": [],
-  "stat": [],
+  "shutil": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "stat": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "stevedore": [
    "stevedore/conda-forge/noarch/stevedore-1.26.0-py_0"
   ],
   "str": [],
-  "string": [],
-  "subprocess": [],
+  "string": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "subprocess": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "sys": [],
-  "tempfile": [],
-  "textwrap": [],
+  "tempfile": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "textwrap": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "time": [],
-  "tkinter": [],
-  "traceback": [],
-  "uuid": [],
-  "weakref": []
+  "tkinter": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "traceback": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "uuid": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "weakref": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ]
  }
 }

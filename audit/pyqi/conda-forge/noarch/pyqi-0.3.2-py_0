@@ -3,11 +3,7 @@
   "BaseHTTPServer.BaseHTTPRequestHandler",
   "BaseHTTPServer.HTTPServer",
   "IPython.config.configurable.LoggingConfigurable",
-  "IPython.core.profileapp.list_profiles_in",
-  "IPython.core.profiledir.ProfileDir",
-  "IPython.core.profiledir.ProfileDir.find_profile_dir_by_name",
   "IPython.parallel.apps.ipclusterapp.IPClusterStart",
-  "IPython.utils.path.get_ipython_dir",
   "IPython.utils.traitlets.CFloat",
   "IPython.utils.traitlets.Dict",
   "IPython.utils.traitlets.Instance",
@@ -63,14 +59,13 @@
   "sys.version_info.major",
   "types.ListType",
   "types.TupleType",
-  "zmq.eventloop.ioloop",
-  "zmq.eventloop.ioloop.DelayedCallback",
-  "zmq.eventloop.ioloop.IOLoop",
   "zmq.eventloop.ioloop.IOLoop.instance"
  ],
  "deps": {
   "BaseHTTPServer": [],
-  "IPython": [],
+  "IPython": [
+   "ipython/conda-forge/linux-64/ipython-7.23.0-py39hef51801_0"
+  ],
   "__future__": [
    "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
   ],
@@ -120,6 +115,8 @@
   "types": [
    "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
   ],
-  "zmq": []
+  "zmq": [
+   "pyzmq/conda-forge/linux-64/pyzmq-21.0.1-py36h81c33ee_0"
+  ]
  }
 }

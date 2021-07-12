@@ -4,7 +4,6 @@
   "_format_item",
   "_format_subdict",
   "_format_sublist",
-  "airflow.DAG",
   "airflow.contrib.kubernetes.kube_client",
   "airflow.contrib.kubernetes.kube_client.get_kube_client",
   "airflow.contrib.kubernetes.pod.Resources",
@@ -12,179 +11,115 @@
   "airflow.contrib.kubernetes.pod_generator.PodGenerator",
   "airflow.contrib.kubernetes.pod_launcher",
   "airflow.contrib.kubernetes.pod_launcher.PodLauncher",
-  "airflow.exceptions.AirflowException",
-  "airflow.exceptions.AirflowSkipException",
-  "airflow.hooks.docker_hook.DockerHook",
-  "airflow.macros",
-  "airflow.models.BaseOperator",
-  "airflow.models.TaskInstance",
   "airflow.models.baseoperator.BaseOperator",
   "airflow.models.dag.DAG",
   "airflow.models.dagbag.DagBag",
-  "airflow.operators.BaseOperator",
-  "airflow.settings.LOG_FORMAT",
-  "airflow.utils.decorators.apply_defaults",
-  "airflow.utils.file.TemporaryDirectory",
-  "airflow.utils.operator_helpers.context_to_airflow_vars",
-  "airflow.utils.state.State",
   "airflow.utils.state.State.SUCCESS",
   "airflow.utils.timezone",
   "airflow.utils.timezone.utcnow",
-  "ast",
-  "ast.literal_eval",
-  "collections.OrderedDict",
-  "collections.defaultdict",
-  "collections.namedtuple",
-  "contextlib.contextmanager",
-  "dagster.DagsterEventType",
   "dagster.DagsterEventType.STEP_SKIPPED.value",
-  "dagster.DagsterInvariantViolationError",
-  "dagster.DependencyDefinition",
   "dagster.ExecutionTargetHandle",
   "dagster.ExecutionTargetHandle.for_pipeline_module",
-  "dagster.InputDefinition",
-  "dagster.MultiDependencyDefinition",
-  "dagster.Nothing",
-  "dagster.OutputDefinition",
-  "dagster.PipelineDefinition",
-  "dagster.RepositoryDefinition",
-  "dagster.SolidDefinition",
-  "dagster.__version__",
-  "dagster.check",
-  "dagster.check.bool_param",
-  "dagster.check.dict_param",
-  "dagster.check.failed",
-  "dagster.check.inst_param",
-  "dagster.check.invariant",
-  "dagster.check.list_param",
-  "dagster.check.opt_dict_param",
-  "dagster.check.opt_inst_param",
-  "dagster.check.opt_int_param",
-  "dagster.check.opt_list_param",
-  "dagster.check.opt_str_param",
-  "dagster.check.str_param",
-  "dagster.check.subclass_param",
   "dagster.cli.load_handle.handle_for_pipeline_cli_args",
-  "dagster.core.definitions.utils.VALID_NAME_REGEX",
   "dagster.core.definitions.utils.VALID_NAME_REGEX.match",
-  "dagster.core.definitions.utils.validate_tags",
-  "dagster.core.events.DagsterEvent",
-  "dagster.core.events.EngineEventData",
-  "dagster.core.events.EngineEventData.engine_error",
-  "dagster.core.execution.api.create_execution_plan",
-  "dagster.core.instance.AIRFLOW_EXECUTION_DATE_STR",
-  "dagster.core.instance.DagsterInstance",
-  "dagster.core.instance.DagsterInstance.from_ref",
-  "dagster.core.instance.DagsterInstance.get",
-  "dagster.core.instance.IS_AIRFLOW_INGEST_PIPELINE_STR",
-  "dagster.core.instance.ref.InstanceRef",
-  "dagster.core.snap.ExecutionPlanSnapshot",
-  "dagster.core.snap.PipelineSnapshot",
-  "dagster.core.snap.snapshot_from_execution_plan",
-  "dagster.core.storage.pipeline_run.PipelineRunStatus",
   "dagster.core.storage.pipeline_run.PipelineRunStatus.MANAGED",
-  "dagster.core.utils.check_dagster_package_version",
-  "dagster.core.utils.make_new_run_id",
-  "dagster.seven",
-  "dagster.seven.get_system_temp_directory",
-  "dagster.seven.json.dumps",
-  "dagster.seven.json.loads",
-  "dagster.solid",
-  "dagster.utils.error.serializable_error_info_from_exc_info",
-  "dagster.utils.indenting_printer.IndentingStringIoPrinter",
-  "dagster.utils.load_yaml_from_glob_list",
   "dagster_airflow.__init__.__version__",
-  "datetime",
-  "datetime.datetime",
-  "datetime.datetime.now",
-  "datetime.timedelta",
-  "docker.APIClient",
-  "docker.from_env",
-  "docker.tls",
-  "docker.tls.TLSConfig",
   "factory.make_airflow_dag_containerized_for_handle",
   "factory.make_airflow_dag_for_handle",
   "factory.make_airflow_dag_for_operator",
   "factory.make_airflow_dag_kubernetized_for_handle",
   "itertools",
   "itertools.groupby",
-  "json",
-  "json.loads",
   "lazy_object_proxy",
   "lazy_object_proxy.Proxy",
-  "logging",
-  "logging.DEBUG",
-  "logging.Formatter",
-  "logging.StreamHandler",
-  "logging.getLogger",
-  "logging.info",
   "operators.docker_operator.DagsterDockerOperator",
   "operators.kubernetes_operator.DagsterKubernetesPodOperator",
-  "os",
   "os.environ.update",
-  "os.getenv",
-  "os.makedirs",
   "os.path.expanduser",
   "os.path.isdir",
   "os.path.join",
-  "pkg_resources",
-  "pkg_resources.get_distribution",
-  "pytest",
-  "pytest.fixture",
-  "re",
-  "re.sub",
   "sys",
   "sys.exc_info",
   "sys.stdout",
   "time",
   "time.sleep",
-  "vendor.python_operator.PythonOperator",
-  "warnings"
+  "vendor.python_operator.PythonOperator"
  ],
  "deps": {
   "_DummyHook": [],
   "_format_item": [],
   "_format_subdict": [],
   "_format_sublist": [],
-  "airflow": [],
-  "ast": [],
+  "airflow": [
+   "airflow/conda-forge/linux-64/airflow-1.9.0-py35_3"
+  ],
+  "ast": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "click": [
    "click/conda-forge/noarch/click-7.0-py_0"
   ],
-  "collections": [],
-  "contextlib": [],
-  "dagster": [],
+  "collections": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "contextlib": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "dagster": [
+   "dagster/conda-forge/linux-64/dagster-0.11.10-py37h89c1867_0"
+  ],
   "dagster_airflow": [],
   "dagster_graphql": [
    "dagster-graphql/conda-forge/noarch/dagster-graphql-0.8.2-pyhc8dfbb8_0"
   ],
-  "datetime": [],
+  "datetime": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "dateutil": [
    "python-dateutil/conda-forge/noarch/python-dateutil-2.7.4-py_0"
   ],
-  "docker": [],
+  "docker": [
+   "docker-py/conda-forge/linux-64/docker-py-4.4.4-py37h9c2f6ca_0"
+  ],
   "factory": [],
   "itertools": [],
-  "json": [],
+  "json": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "lazy_object_proxy": [],
-  "logging": [],
+  "logging": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "operators": [],
-  "os": [],
+  "os": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "pendulum": [
    "pendulum/conda-forge/noarch/pendulum-2.1.2-pyhd8ed1ab_1"
   ],
-  "pkg_resources": [],
-  "pytest": [],
-  "re": [],
+  "pkg_resources": [
+   "setuptools/conda-forge/linux-64/setuptools-41.2.0-py27_0"
+  ],
+  "pytest": [
+   "pytest/conda-forge/linux-64/pytest-4.6.3-py27_0",
+   "pytest/conda-forge/linux-64/pytest-6.0.2-py36hc560c46_0"
+  ],
+  "re": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "six": [
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1"
+   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
+   "six/conda-forge/linux-64/six-1.14.0-py36_0"
   ],
   "sys": [],
   "time": [],
   "vendor": [],
-  "warnings": [],
+  "warnings": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "yaml": [
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1"
+   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
+   "pyyaml/conda-forge/linux-64/pyyaml-5.4.1-py36h70b1f00_0"
   ]
  }
 }

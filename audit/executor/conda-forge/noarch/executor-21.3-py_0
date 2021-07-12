@@ -3,15 +3,6 @@
   "RemoteCommand",
   "SecureChangeRootContext",
   "callback",
-  "coloredlogs",
-  "coloredlogs.decrease_verbosity",
-  "coloredlogs.increase_verbosity",
-  "coloredlogs.install",
-  "contextlib",
-  "contextlib.contextmanager",
-  "datetime",
-  "datetime.datetime",
-  "datetime.datetime.fromtimestamp",
   "errno",
   "errno.ENOENT",
   "executor.__init__.COMMAND_NOT_FOUND_CODES",
@@ -34,36 +25,23 @@
   "function",
   "get_lock_path",
   "get_search_path",
-  "getopt",
-  "getopt.getopt",
-  "glob",
-  "glob.glob",
   "itertools",
   "itertools.count",
-  "logging",
-  "logging.getLogger",
   "mock.MagicMock",
-  "multiprocessing",
   "multiprocessing.cpu_count",
   "object.__str__",
-  "os",
   "os.F_OK",
   "os.W_OK",
   "os.X_OK",
   "os.access",
   "os.chmod",
   "os.close",
-  "os.curdir",
-  "os.defpath",
-  "os.devnull",
-  "os.environ",
   "os.environ.copy",
   "os.environ.get",
   "os.getcwd",
   "os.getpid",
   "os.getuid",
   "os.listdir",
-  "os.makedirs",
   "os.path.abspath",
   "os.path.basename",
   "os.path.dirname",
@@ -75,35 +53,16 @@
   "os.path.join",
   "os.path.samefile",
   "os.path.split",
-  "os.pathsep",
   "os.strerror",
   "os.unlink",
-  "pipes",
-  "pipes.quote",
-  "pprint",
-  "pprint.pformat",
   "pwd",
   "pwd.getpwall",
   "python_golf",
   "quote",
-  "random",
-  "random.randint",
-  "random.random",
-  "shlex",
-  "shlex.split",
-  "shutil",
-  "shutil.rmtree",
-  "signal",
   "signal.SIGTERM",
   "six.moves.StringIO",
   "six.moves.urllib.parse.quote",
-  "socket",
-  "socket.create_connection",
   "socket.gethostname",
-  "subprocess",
-  "subprocess.PIPE",
-  "subprocess.Popen",
-  "subprocess.STDOUT",
   "sys",
   "sys.argv",
   "sys.executable",
@@ -111,22 +70,23 @@
   "sys.platform.startswith",
   "sys.stdin.isatty",
   "sys.version_info",
-  "tempfile",
-  "tempfile.gettempdir",
-  "tempfile.mkstemp",
   "time",
   "time.sleep",
-  "time.time",
-  "uuid",
-  "uuid.uuid4"
+  "time.time"
  ],
  "deps": {
   "RemoteCommand": [],
   "SecureChangeRootContext": [],
   "callback": [],
-  "coloredlogs": [],
-  "contextlib": [],
-  "datetime": [],
+  "coloredlogs": [
+   "coloredlogs/conda-forge/linux-64/coloredlogs-15.0-py37h89c1867_0"
+  ],
+  "contextlib": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "datetime": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "errno": [],
   "executor": [],
   "fasteners": [
@@ -135,38 +95,69 @@
   "function": [],
   "get_lock_path": [],
   "get_search_path": [],
-  "getopt": [],
-  "glob": [],
+  "getopt": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "glob": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "humanfriendly": [
    "humanfriendly/conda-forge/noarch/humanfriendly-4.13-py_0"
   ],
   "itertools": [],
-  "logging": [],
+  "logging": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "mock": [],
-  "multiprocessing": [],
+  "multiprocessing": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "object": [],
-  "os": [],
-  "pipes": [],
-  "pprint": [],
+  "os": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "pipes": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "pprint": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "property_manager": [
    "property-manager/conda-forge/noarch/property-manager-2.3.1-py_0"
   ],
   "pwd": [],
   "python_golf": [],
   "quote": [],
-  "random": [],
-  "shlex": [],
-  "shutil": [],
-  "signal": [],
+  "random": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "shlex": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "shutil": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "signal": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "six": [
    "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
-   "privy/conda-forge/noarch/privy-6.0.0-py_0"
+   "privy/conda-forge/noarch/privy-6.0.0-py_0",
+   "six/conda-forge/linux-64/six-1.14.0-py36_0"
   ],
-  "socket": [],
-  "subprocess": [],
+  "socket": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "subprocess": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "sys": [],
-  "tempfile": [],
+  "tempfile": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "time": [],
-  "uuid": []
+  "uuid": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ]
  }
 }

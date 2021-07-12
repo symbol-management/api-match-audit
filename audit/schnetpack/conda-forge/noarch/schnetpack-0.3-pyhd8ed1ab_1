@@ -10,9 +10,6 @@
   "RemoveCOMMotion",
   "TemperatureLogger",
   "ThermostatInit",
-  "argparse",
-  "argparse.ArgumentParser",
-  "argparse.Namespace",
   "ase.units.Angstrom",
   "ase.units.Bohr",
   "ase.units.Debye",
@@ -28,92 +25,19 @@
   "ase.units.kB",
   "ase.units.kcal",
   "ase.units.mol",
-  "base64.b64decode",
-  "base64.b64encode",
   "calculator",
-  "collections.OrderedDict",
-  "csv",
-  "csv.writer",
-  "functools.partial",
   "get_data_streams",
-  "h5py",
-  "h5py.File",
-  "importlib",
-  "importlib.import_module",
-  "importlib.util",
-  "importlib.util.module_from_spec",
-  "importlib.util.spec_from_file_location",
   "input.size",
   "interaction",
-  "json",
-  "json.dump",
-  "json.dumps",
-  "json.loads",
-  "logging",
-  "logging.basicConfig",
-  "logging.error",
-  "logging.getLogger",
-  "logging.info",
-  "logging.warning",
-  "math",
-  "math.inf",
-  "matplotlib.pyplot",
-  "matplotlib.pyplot.close",
-  "matplotlib.pyplot.colorbar",
-  "matplotlib.pyplot.figure",
-  "matplotlib.pyplot.pcolor",
   "net",
-  "numpy",
-  "numpy.abs",
-  "numpy.arange",
-  "numpy.argsort",
-  "numpy.array",
-  "numpy.bool",
   "numpy.conjugate",
-  "numpy.cos",
-  "numpy.dot",
-  "numpy.eye",
-  "numpy.fft.fft",
-  "numpy.fft.ifft",
-  "numpy.flipud",
   "numpy.float32",
-  "numpy.frombuffer",
-  "numpy.fromstring",
-  "numpy.hstack",
-  "numpy.int",
-  "numpy.isscalar",
-  "numpy.lib.pad",
-  "numpy.linalg.norm",
-  "numpy.load",
-  "numpy.loadtxt",
   "numpy.log",
-  "numpy.max",
   "numpy.maximum",
-  "numpy.mean",
-  "numpy.newaxis",
-  "numpy.ones",
-  "numpy.pi",
-  "numpy.prod",
   "numpy.random.permutation",
   "numpy.random.seed",
-  "numpy.real",
-  "numpy.repeat",
-  "numpy.savez",
-  "numpy.setdiff1d",
-  "numpy.sin",
-  "numpy.sqrt",
-  "numpy.std",
-  "numpy.sum",
-  "numpy.tile",
-  "numpy.triu_indices",
-  "numpy.unique",
-  "numpy.vstack",
-  "numpy.zeros",
-  "os",
   "os.environ.get",
-  "os.linesep",
   "os.listdir",
-  "os.makedirs",
   "os.path.abspath",
   "os.path.basename",
   "os.path.dirname",
@@ -126,11 +50,7 @@
   "oyaml.dump",
   "property.reshape",
   "property.shape",
-  "pymatgen",
   "pymatgen.core.Properties",
-  "pymatgen.ext.matproj.MPRester",
-  "re",
-  "re.sub",
   "schnetpack.AtomsData",
   "schnetpack.Properties.R",
   "schnetpack.Properties.R.requires_grad_",
@@ -191,31 +111,16 @@
   "schnetpack.nn.shifted_softplus",
   "schnetpack.nn.triple_distances",
   "schnetpack.utils.__init__",
-  "scipy.linalg",
-  "scipy.linalg.expm",
-  "scipy.linalg.sqrtm",
   "sgdml.torchtools.GDMLTorchPredict",
-  "shutil",
-  "shutil.rmtree",
-  "subprocess",
-  "subprocess.PIPE",
-  "subprocess.Popen",
   "sys",
   "sys.maxsize",
-  "tarfile",
-  "tarfile.open",
-  "tempfile",
-  "tempfile.mkdtemp",
   "time",
   "time.time",
-  "torch",
   "torch.FloatTensor",
   "torch.LongTensor",
-  "torch.Tensor",
   "torch.abs",
   "torch.acos",
   "torch.arange",
-  "torch.autograd.grad",
   "torch.cartesian_prod",
   "torch.cat",
   "torch.ceil",
@@ -229,36 +134,16 @@
   "torch.eye",
   "torch.from_numpy",
   "torch.gather",
-  "torch.is_tensor",
-  "torch.isnan",
-  "torch.load",
   "torch.long",
-  "torch.manual_seed",
   "torch.matmul",
   "torch.max",
   "torch.mean",
   "torch.mm",
-  "torch.nn",
-  "torch.nn.DataParallel",
-  "torch.nn.Embedding",
-  "torch.nn.Linear",
-  "torch.nn.Module",
-  "torch.nn.functional",
-  "torch.nn.functional.softplus",
-  "torch.nn.init.constant_",
-  "torch.nn.init.xavier_uniform_",
-  "torch.no_grad",
-  "torch.norm",
   "torch.ones",
   "torch.ones_like",
-  "torch.optim.Adam",
-  "torch.optim.lr_scheduler.CosineAnnealingLR",
-  "torch.optim.lr_scheduler.ReduceLROnPlateau",
-  "torch.optim.lr_scheduler.StepLR",
   "torch.pow",
   "torch.prod",
   "torch.randn",
-  "torch.save",
   "torch.sign",
   "torch.sin",
   "torch.solve",
@@ -267,18 +152,13 @@
   "torch.sum",
   "torch.triu",
   "torch.unsqueeze",
-  "torch.utils.data.DataLoader",
-  "torch.utils.data.Dataset",
-  "torch.utils.data.sampler.RandomSampler",
   "torch.where",
   "torch.zeros",
   "torch.zeros_like",
   "urllib.error.HTTPError",
   "urllib.error.URLError",
   "urllib.request",
-  "urllib.request.urlretrieve",
-  "warnings",
-  "warnings.warn"
+  "urllib.request.urlretrieve"
  ],
  "deps": {
   "BiasPotentialInit": [],
@@ -291,51 +171,96 @@
   "RemoveCOMMotion": [],
   "TemperatureLogger": [],
   "ThermostatInit": [],
-  "argparse": [],
+  "argparse": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "ase": [
    "ase/conda-forge/noarch/ase-3.21.0-pyhd8ed1ab_0"
   ],
-  "base64": [],
+  "base64": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "calculator": [],
-  "collections": [],
-  "csv": [],
-  "functools": [],
+  "collections": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "csv": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "functools": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "get_data_streams": [],
-  "h5py": [],
-  "importlib": [],
+  "h5py": [
+   "h5py/conda-forge/linux-64/h5py-2.7.1-py36_1"
+  ],
+  "importlib": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "input": [],
   "interaction": [],
-  "json": [],
-  "logging": [],
-  "math": [],
-  "matplotlib": [],
+  "json": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "logging": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "math": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "matplotlib": [
+   "matplotlib-base/conda-forge/linux-64/matplotlib-base-3.3.3-py36h159efd9_0"
+  ],
   "net": [],
-  "numpy": [],
-  "os": [],
+  "numpy": [
+   "numpy/conda-forge/linux-64/numpy-1.9.3-py27_blas_openblashb06ca3d_7"
+  ],
+  "os": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "output_model": [],
   "oyaml": [
    "oyaml/conda-forge/noarch/oyaml-1.0-pyhd8ed1ab_0"
   ],
   "property": [],
-  "pymatgen": [],
-  "re": [],
+  "pymatgen": [
+   "pymatgen/conda-forge/linux-64/pymatgen-2020.10.9.1-py37h99015e2_0"
+  ],
+  "re": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "schnetpack": [],
-  "scipy": [],
+  "scipy": [
+   "scipy/conda-forge/linux-64/scipy-0.18.1-np111py34_blas_openblas_200"
+  ],
   "sgdml": [],
-  "shutil": [],
-  "subprocess": [],
+  "shutil": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "subprocess": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "sys": [],
-  "tarfile": [],
-  "tempfile": [],
+  "tarfile": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "tempfile": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "time": [],
-  "torch": [],
+  "torch": [
+   "pytorch-cpu/conda-forge/linux-64/pytorch-cpu-1.0.1-py27hf484d3e_0"
+  ],
   "tqdm": [
    "tqdm/conda-forge/noarch/tqdm-4.20.0-py_0"
   ],
   "urllib": [],
-  "warnings": [],
+  "warnings": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "yaml": [
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1"
+   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
+   "pyyaml/conda-forge/linux-64/pyyaml-5.4.1-py36h70b1f00_0"
   ]
  }
 }

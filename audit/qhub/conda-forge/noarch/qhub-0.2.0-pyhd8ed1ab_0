@@ -1,42 +1,20 @@
 {
  "bad": [
-  "argparse",
-  "argparse.ArgumentParser",
-  "base64",
-  "base64.b64encode",
-  "collections",
-  "collections.ChainMap",
-  "contextlib",
-  "contextlib.contextmanager",
-  "functools",
-  "functools.lru_cache",
-  "json",
-  "json.dumps",
-  "json.load",
-  "json.loads",
-  "logging",
-  "logging.INFO",
-  "logging.basicConfig",
-  "logging.getLogger",
   "nacl.encoding",
   "nacl.encoding.Base64Encoder",
   "nacl.public",
   "nacl.public.PublicKey",
   "nacl.public.SealedBox",
-  "os",
   "os.chdir",
-  "os.environ",
   "os.environ.get",
   "os.environ.split",
   "os.getcwd",
   "os.listdir",
-  "os.path",
   "os.path.abspath",
   "os.path.dirname",
   "os.path.exists",
   "os.path.join",
   "os.path.pardir",
-  "pytest",
   "pytest.mark.parametrize",
   "qhub.__file__",
   "qhub.cli.__init__.root_dir",
@@ -44,71 +22,92 @@
   "qhub.render.__init__.deep_merge",
   "qhub.render.__init__.patch_dask_gateway_extra_config",
   "qhub.render.__init__.render_template",
-  "re",
-  "re.findall",
-  "re.search",
-  "shutil.which",
-  "subprocess",
-  "subprocess.check_output",
-  "subprocess.run",
   "sys",
   "sys.argv",
   "sys.exit",
   "sys.stderr",
   "time",
-  "time.time",
-  "typing",
-  "typing.Dict",
-  "typing.List"
+  "time.time"
  ],
  "deps": {
   "CloudFlare": [
    "cloudflare/conda-forge/noarch/cloudflare-2.8.14-pyhd8ed1ab_0"
   ],
-  "argparse": [],
+  "argparse": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "auth0": [
    "auth0-python/conda-forge/noarch/auth0-python-3.16.2-pyhd8ed1ab_0"
   ],
-  "base64": [],
-  "collections": [],
-  "configparser": [
-   "configparser/conda-forge/noarch/configparser-5.0.0-py_0"
+  "base64": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
   ],
-  "contextlib": [],
+  "collections": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "configparser": [
+   "configparser/conda-forge/noarch/configparser-5.0.0-py_0",
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "contextlib": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "cookiecutter": [
    "cookiecutter/conda-forge/noarch/cookiecutter-1.7.3-pyh6c4a22f_0"
   ],
   "enum": [
-   "privy/conda-forge/noarch/privy-6.0.0-py_0"
+   "privy/conda-forge/noarch/privy-6.0.0-py_0",
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
   ],
-  "functools": [],
+  "functools": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "jinja2": [
    "jinja2/conda-forge/noarch/jinja2-2.10-py_1"
   ],
-  "json": [],
-  "logging": [],
+  "json": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "logging": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "nacl": [],
-  "os": [],
+  "os": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "pathlib": [
-   "pathlib/conda-forge/noarch/pathlib-1.0.1-py_1"
+   "pathlib/conda-forge/noarch/pathlib-1.0.1-py_1",
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
   ],
   "pydantic": [
    "pydantic/conda-forge/noarch/pydantic-0.18.1-py_1"
   ],
-  "pytest": [],
+  "pytest": [
+   "pytest/conda-forge/linux-64/pytest-4.6.3-py27_0",
+   "pytest/conda-forge/linux-64/pytest-6.0.2-py36hc560c46_0"
+  ],
   "qhub": [],
-  "re": [],
+  "re": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "requests": [
    "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
    "requests/conda-forge/noarch/requests-2.23.0-pyh8c360ce_2"
   ],
-  "shutil": [],
-  "subprocess": [],
+  "shutil": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "subprocess": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "sys": [],
   "time": [],
-  "typing": [],
+  "typing": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "yaml": [
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1"
+   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
+   "pyyaml/conda-forge/linux-64/pyyaml-5.4.1-py36h70b1f00_0"
   ]
  }
 }
