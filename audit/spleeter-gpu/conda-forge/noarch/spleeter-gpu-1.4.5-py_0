@@ -2,12 +2,8 @@
  "bad": [
   "DatasetBuilder",
   "_reduce",
-  "abc.ABC",
-  "abc.abstractmethod",
   "adapter_class",
   "apply_model",
-  "argparse.ArgumentParser",
-  "argparse.Namespace",
   "commands.evaluate.entrypoint",
   "conv2d_factory",
   "conv2d_transpose_factory",
@@ -15,41 +11,23 @@
   "create_bidirectional",
   "deconv_activation_layer",
   "ffmpeg.FFMPEGProcessAudioAdapter",
-  "functools.partial",
   "github.GithubModelProvider",
   "github.GithubModelProvider.LATEST_RELEASE",
-  "glob.glob",
-  "hashlib",
   "hashlib.sha256",
-  "importlib",
-  "importlib.import_module",
   "importlib.resources",
   "importlib_resources",
   "importlib_resources.is_resource",
   "importlib_resources.open_text",
   "itertools.product",
-  "json",
-  "json.load",
-  "logging",
   "model.provider.ModelProvider.writeProbe",
   "multiprocessing.Pool",
   "musdb",
   "musdb.DB",
   "museval",
   "museval.eval_mus_dir",
-  "numpy",
-  "numpy.abs",
-  "numpy.dtype",
   "numpy.float32",
-  "numpy.frombuffer",
-  "numpy.isnan",
   "numpy.log",
-  "numpy.median",
-  "numpy.repeat",
-  "os",
-  "os.environ",
   "os.environ.get",
-  "os.makedirs",
   "os.path.basename",
   "os.path.exists",
   "os.path.isabs",
@@ -57,11 +35,7 @@
   "os.path.sep",
   "os.path.split",
   "os.path.splitext",
-  "pandas",
-  "pandas.DataFrame",
   "pandas.MultiIndex.from_tuples",
-  "pandas.read_csv",
-  "pathlib.Path",
   "predictor",
   "spleeter.commands.__init__.OPT_ADAPTER",
   "spleeter.commands.__init__.OPT_BITRATE",
@@ -86,15 +60,9 @@
   "spleeter.model.__init__.pad_and_reshape",
   "spleeter.model.provider.__init__.ModelProvider",
   "start",
-  "subprocess",
   "sys",
   "sys.argv",
   "sys.exit",
-  "tarfile",
-  "tarfile.open",
-  "tempfile.NamedTemporaryFile",
-  "tempfile.gettempdir",
-  "tensorflow",
   "tensorflow.abs",
   "tensorflow.bool",
   "tensorflow.cast",
@@ -182,17 +150,19 @@
   "tensorflow.uint8",
   "tensorflow.zeros",
   "time",
-  "time.sleep",
-  "warnings",
-  "warnings.filterwarnings"
+  "time.sleep"
  ],
  "deps": {
   "DatasetBuilder": [],
   "_reduce": [],
-  "abc": [],
+  "abc": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "adapter_class": [],
   "apply_model": [],
-  "argparse": [],
+  "argparse": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "commands": [],
   "conv2d_factory": [],
   "conv2d_transpose_factory": [],
@@ -202,15 +172,27 @@
   "ffmpeg": [
    "ffmpeg-python/conda-forge/noarch/ffmpeg-python-0.2.0-py_0"
   ],
-  "functools": [],
+  "functools": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "github": [],
-  "glob": [],
-  "hashlib": [],
-  "importlib": [],
+  "glob": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "hashlib": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "importlib": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "importlib_resources": [],
   "itertools": [],
-  "json": [],
-  "logging": [],
+  "json": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "logging": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "model": [],
   "multiprocessing": [],
   "musdb": [],
@@ -218,10 +200,19 @@
   "norbert": [
    "norbert/conda-forge/noarch/norbert-0.2.1-py_0"
   ],
-  "numpy": [],
-  "os": [],
-  "pandas": [],
-  "pathlib": [],
+  "numpy": [
+   "numpy/conda-forge/linux-64/numpy-1.9.3-py27_blas_openblashb06ca3d_7"
+  ],
+  "os": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "pandas": [
+   "pandas/conda-forge/linux-64/pandas-0.25.0-py37hb3f55d8_0"
+  ],
+  "pathlib": [
+   "pathlib/conda-forge/noarch/pathlib-1.0.1-py_1",
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "predictor": [],
   "requests": [
    "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
@@ -229,12 +220,22 @@
   ],
   "spleeter": [],
   "start": [],
-  "subprocess": [],
+  "subprocess": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "sys": [],
-  "tarfile": [],
-  "tempfile": [],
-  "tensorflow": [],
+  "tarfile": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "tempfile": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "tensorflow": [
+   "tensorflow/conda-forge/linux-64/tensorflow-0.12.1-py27_2"
+  ],
   "time": [],
-  "warnings": []
+  "warnings": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ]
  }
 }

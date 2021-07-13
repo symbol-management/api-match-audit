@@ -7,50 +7,22 @@
   "IPython.display.display",
   "IPython.display.display_png",
   "IndexReturningReader",
-  "PIL.Image",
-  "PIL.Image.fromarray",
-  "PIL.Image.open",
   "RandomReader_2D",
-  "__future__.absolute_import",
-  "__future__.division",
-  "__future__.print_function",
-  "__future__.unicode_literals",
   "_estimate_bitrate",
   "_normalize_framerate",
   "_parse_attr",
   "_parse_des",
   "_write",
-  "abc.ABCMeta",
-  "abc.abstractmethod",
-  "abc.abstractproperty",
-  "av",
-  "base64.b64encode",
   "collections.Iterable",
   "color_channel",
-  "contextlib.contextmanager",
-  "datetime",
-  "datetime.datetime",
   "datetime.datetime.datetime.strptime",
-  "datetime.datetime.fromtimestamp",
-  "distutils.version.LooseVersion",
   "field",
   "fn",
-  "fnmatch",
-  "fnmatch.fnmatch",
-  "fractions.Fraction",
-  "functools",
-  "functools.partial",
   "get_frame",
-  "glob",
-  "glob.glob",
   "handler",
-  "hashlib",
   "hashlib.md5",
   "hashlib.sha1",
-  "imageio",
-  "imageio.__version__",
   "imread_func",
-  "io.BytesIO",
   "itertools",
   "itertools.chain",
   "itertools.count",
@@ -58,19 +30,7 @@
   "itertools.product",
   "itertools.repeat",
   "jpype",
-  "json",
-  "json.loads",
   "libtiff.TIFF",
-  "matplotlib",
-  "matplotlib.axes.Axes",
-  "matplotlib.colors.ColorConverter",
-  "matplotlib.figure.Figure",
-  "matplotlib.pyplot",
-  "matplotlib.pyplot.close",
-  "matplotlib.pyplot.figure",
-  "matplotlib.pyplot.imread",
-  "matplotlib.pyplot.rc_context",
-  "matplotlib.pyplot.switch_backend",
   "matplotlib.rcParams.update",
   "normalize",
   "nose",
@@ -80,62 +40,15 @@
   "nose.tools.assert_less",
   "nose.tools.assert_raises",
   "nose.tools.assert_true",
-  "numpy",
-  "numpy.__version__",
-  "numpy.all",
-  "numpy.append",
-  "numpy.argsort",
-  "numpy.argwhere",
-  "numpy.array",
-  "numpy.asarray",
   "numpy.byte",
-  "numpy.cumprod",
-  "numpy.delete",
-  "numpy.diff",
-  "numpy.dtype",
-  "numpy.empty",
-  "numpy.frombuffer",
-  "numpy.fromfile",
-  "numpy.fromstring",
-  "numpy.iinfo",
-  "numpy.integer",
-  "numpy.isscalar",
-  "numpy.issubdtype",
   "numpy.lib.arraypad._as_pairs",
-  "numpy.lib.arraypad._validate_lengths",
-  "numpy.linspace",
-  "numpy.load",
-  "numpy.ndarray",
   "numpy.ndarray.__array_wrap__",
   "numpy.ndarray.__reduce__",
   "numpy.ndarray.__setstate__",
-  "numpy.newaxis",
-  "numpy.number",
-  "numpy.ones",
-  "numpy.pad",
-  "numpy.pi",
-  "numpy.prod",
-  "numpy.r_",
   "numpy.random.randint",
-  "numpy.repeat",
-  "numpy.reshape",
-  "numpy.rollaxis",
-  "numpy.sin",
-  "numpy.take",
-  "numpy.testing.assert_allclose",
-  "numpy.testing.assert_almost_equal",
-  "numpy.testing.assert_array_equal",
-  "numpy.testing.assert_equal",
-  "numpy.testing.utils.assert_array_equal",
   "numpy.uint16",
-  "numpy.uint8",
-  "numpy.where",
-  "numpy.zeros",
-  "os",
   "os.W_OK",
   "os.access",
-  "os.devnull",
-  "os.environ",
   "os.listdir",
   "os.mkdir",
   "os.path.abspath",
@@ -152,8 +65,6 @@
   "os.path.splitext",
   "os.remove",
   "os.rmdir",
-  "pickle",
-  "pickle.load",
   "pims.Bioformats",
   "pims.Frame",
   "pims.FramesSequence",
@@ -179,13 +90,6 @@
   "pims.plot_to_frame",
   "pims.plots_to_frame",
   "pims_nd2.ND2_Reader",
-  "random",
-  "random.Random",
-  "re",
-  "re.escape",
-  "re.findall",
-  "re.search",
-  "re.split",
   "reader",
   "rescale",
   "six.moves.map",
@@ -195,80 +99,92 @@
   "skimage.external.tifffile",
   "skimage.io.imread",
   "sort_on_priority",
-  "struct",
   "struct.Struct",
-  "subprocess",
-  "subprocess.DEVNULL",
-  "subprocess.PIPE",
-  "subprocess.Popen",
   "sys",
   "sys.stdout.flush",
   "sys.version_info.major",
-  "tempfile",
-  "tempfile.NamedTemporaryFile",
-  "tempfile.mkdtemp",
-  "threading.Lock",
   "time",
-  "types",
-  "types.GeneratorType",
   "unicode",
-  "unittest",
-  "unittest.TestCase",
-  "uuid",
-  "uuid.uuid4",
-  "warnings",
-  "warnings.catch_warnings",
-  "warnings.simplefilter",
-  "warnings.warn",
-  "wrap_md",
-  "zipfile",
-  "zipfile.ZipFile",
-  "zipfile.is_zipfile"
+  "wrap_md"
  ],
  "deps": {
   "DemoReader": [],
   "EmptyFileError": [],
   "IPython": [],
   "IndexReturningReader": [],
-  "PIL": [],
+  "PIL": [
+   "pillow/conda-forge/linux-64/pillow-7.2.0-py36hfc7c323_2"
+  ],
   "RandomReader_2D": [],
-  "__future__": [],
+  "__future__": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "_estimate_bitrate": [],
   "_normalize_framerate": [],
   "_parse_attr": [],
   "_parse_des": [],
   "_write": [],
-  "abc": [],
-  "av": [],
-  "base64": [],
+  "abc": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "av": [
+   "av/conda-forge/linux-64/av-0.3.3-py36_1"
+  ],
+  "base64": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "collections": [],
   "color_channel": [],
-  "contextlib": [],
-  "datetime": [],
-  "distutils": [],
+  "contextlib": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "datetime": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "distutils": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "field": [],
   "fn": [],
-  "fnmatch": [],
-  "fractions": [],
-  "functools": [],
+  "fnmatch": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "fractions": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "functools": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "get_frame": [],
-  "glob": [],
+  "glob": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "handler": [],
-  "hashlib": [],
-  "imageio": [],
+  "hashlib": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "imageio": [
+   "imageio/conda-forge/noarch/imageio-2.3.0-py_1"
+  ],
   "imageio_ffmpeg": [
    "imageio-ffmpeg/conda-forge/noarch/imageio-ffmpeg-0.4.4-pyhd8ed1ab_0"
   ],
   "imread_func": [],
-  "io": [],
+  "io": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "itertools": [],
   "jinja2": [
    "jinja2/conda-forge/noarch/jinja2-2.10-py_1"
   ],
   "jpype": [],
-  "json": [],
+  "json": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "libtiff": [],
-  "matplotlib": [],
+  "matplotlib": [
+   "matplotlib-base/conda-forge/linux-64/matplotlib-base-3.3.3-py36h159efd9_0"
+  ],
   "moviepy": [
    "moviepy/conda-forge/noarch/moviepy-0.2.3.5-py_0"
   ],
@@ -277,39 +193,68 @@
   ],
   "normalize": [],
   "nose": [],
-  "numpy": [],
-  "os": [],
-  "pickle": [],
+  "numpy": [
+   "numpy/conda-forge/linux-64/numpy-1.9.3-py27_blas_openblashb06ca3d_7"
+  ],
+  "os": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "pickle": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "pims": [],
   "pims_nd2": [],
-  "random": [],
-  "re": [],
+  "random": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "re": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "reader": [],
   "rescale": [],
   "six": [
    "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
-   "privy/conda-forge/noarch/privy-6.0.0-py_0"
+   "privy/conda-forge/noarch/privy-6.0.0-py_0",
+   "six/conda-forge/linux-64/six-1.14.0-py36_0"
   ],
   "skimage": [],
   "slicerator": [
    "slicerator/conda-forge/noarch/slicerator-0.9.8-py_1"
   ],
   "sort_on_priority": [],
-  "struct": [],
-  "subprocess": [],
+  "struct": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "subprocess": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "sys": [],
-  "tempfile": [],
-  "threading": [],
+  "tempfile": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "threading": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "tifffile": [
    "tifffile/conda-forge/noarch/tifffile-2021.2.26-pyhd8ed1ab_0"
   ],
   "time": [],
-  "types": [],
+  "types": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "unicode": [],
-  "unittest": [],
-  "uuid": [],
-  "warnings": [],
+  "unittest": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "uuid": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "warnings": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "wrap_md": [],
-  "zipfile": []
+  "zipfile": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ]
  }
 }
