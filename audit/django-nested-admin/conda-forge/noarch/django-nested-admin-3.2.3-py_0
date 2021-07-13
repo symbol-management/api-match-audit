@@ -1,13 +1,9 @@
 {
  "bad": [
   "InlineFormSet",
-  "PIL.Image",
-  "PIL.ImageDraw",
   "admin.TestAdminWidgetsM2M.objects.get",
   "cls",
   "collections.Sequence",
-  "datetime.datetime",
-  "datetime.datetime.now",
   "descend_admin_inlines",
   "django.apps.apps.get_model",
   "django.apps.apps.is_installed",
@@ -97,9 +93,6 @@
   "os.path.join",
   "os.remove",
   "os.unlink",
-  "pkg_resources",
-  "pkg_resources.DistributionNotFound",
-  "pkg_resources.get_distribution",
   "polymorphic.admin.GenericPolymorphicInlineModelAdmin.Child",
   "polymorphic.admin.PolymorphicInlineModelAdmin.Child",
   "recursive_map_model_names",
@@ -132,7 +125,9 @@
  ],
  "deps": {
   "InlineFormSet": [],
-  "PIL": [],
+  "PIL": [
+   "pillow/conda-forge/linux-64/pillow-7.2.0-py36hfc7c323_2"
+  ],
   "__future__": [
    "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
   ],
@@ -144,7 +139,9 @@
   "contextlib": [
    "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
   ],
-  "datetime": [],
+  "datetime": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "descend_admin_inlines": [],
   "distutils": [
    "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
@@ -182,7 +179,9 @@
   "os": [
    "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
   ],
-  "pkg_resources": [],
+  "pkg_resources": [
+   "setuptools/conda-forge/linux-64/setuptools-41.2.0-py27_0"
+  ],
   "polymorphic": [
    "django_polymorphic/conda-forge/noarch/django_polymorphic-2.0.2-py_0"
   ],
@@ -197,7 +196,8 @@
   ],
   "six": [
    "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
-   "privy/conda-forge/noarch/privy-6.0.0-py_0"
+   "privy/conda-forge/noarch/privy-6.0.0-py_0",
+   "six/conda-forge/linux-64/six-1.14.0-py36_0"
   ],
   "storages": [
    "django-storages/conda-forge/noarch/django-storages-1.11.1-pyhd8ed1ab_0"
