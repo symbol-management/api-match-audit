@@ -2,11 +2,6 @@
  "bad": [
   "FireTraceElement",
   "GetParseFns",
-  "IPython",
-  "IPython.core.oinspect",
-  "IPython.core.oinspect.Inspector",
-  "IPython.start_ipython",
-  "Levenshtein",
   "Levenshtein.distance",
   "Point",
   "_ARCH",
@@ -28,45 +23,13 @@
   "_ParseKeywordArgs",
   "_ParseValue",
   "_SetMetadata",
-  "__future__.absolute_import",
-  "__future__.division",
-  "__future__.print_function",
-  "__future__.unicode_literals",
-  "argparse",
-  "argparse.ArgumentParser",
-  "ast",
   "ast.BinOp",
   "ast.Name",
   "ast.Str",
-  "ast.iter_fields",
-  "ast.literal_eval",
-  "ast.parse",
-  "ast.walk",
-  "asyncio",
-  "asyncio.coroutine",
-  "asyncio.get_event_loop",
-  "asyncio.iscoroutinefunction",
-  "code",
-  "code.InteractiveConsole",
-  "collections",
-  "collections.OrderedDict",
-  "collections.defaultdict",
-  "collections.namedtuple",
-  "contextlib",
-  "contextlib.contextmanager",
-  "copy",
-  "copy.copy",
-  "ctypes",
-  "ctypes.byref",
-  "ctypes.create_string_buffer",
-  "ctypes.windll",
   "ctypes.windll.kernel32",
   "ctypes.windll.kernel32.GetConsoleScreenBufferInfo",
   "ctypes.windll.kernel32.GetStdHandle",
-  "ctypes.wintypes.DWORD",
   "f",
-  "fcntl",
-  "fcntl.ioctl",
   "fire.console.platforms.OperatingSystem.WINDOWS",
   "fire.console.text.TextTypes.PT_FAILURE",
   "fire.console.text.TextTypes.PT_SUCCESS",
@@ -80,65 +43,23 @@
   "fire.test_components.py3.identity",
   "fire.test_components.py3.lru_cache_decorated",
   "fn",
-  "functools",
-  "functools.lru_cache",
-  "functools.wraps",
   "generator",
   "get_raw_key_function",
   "get_terminal_size",
-  "imp",
-  "imp.load_source",
-  "importlib",
-  "importlib.import_module",
-  "importlib.machinery.SourceFileLoader",
-  "importlib.util",
-  "importlib.util.module_from_spec",
-  "importlib.util.spec_from_file_location",
-  "inspect",
-  "inspect.FullArgSpec",
-  "inspect.Signature",
-  "inspect._KEYWORD_ONLY",
-  "inspect._POSITIONAL_ONLY",
-  "inspect._POSITIONAL_OR_KEYWORD",
-  "inspect._VAR_KEYWORD",
-  "inspect._VAR_POSITIONAL",
-  "inspect._signature_from_callable",
-  "inspect.classify_class_attrs",
-  "inspect.findsource",
-  "inspect.getargspec",
-  "inspect.getdoc",
-  "inspect.getfullargspec",
-  "inspect.getmembers",
-  "inspect.getsourcefile",
-  "inspect.isbuiltin",
-  "inspect.isclass",
-  "inspect.isfunction",
-  "inspect.isgenerator",
-  "inspect.isgeneratorfunction",
-  "inspect.ismethod",
-  "inspect.ismodule",
-  "inspect.isroutine",
-  "inspect.stack",
   "itertools",
   "itertools.chain",
-  "json",
-  "json.dumps",
   "mock",
   "mock.patch",
   "mock.patch.object",
   "msvcrt",
   "msvcrt.getch",
-  "os",
   "os.O_RDONLY",
   "os.X_OK",
   "os.access",
   "os.chdir",
   "os.close",
   "os.ctermid",
-  "os.environ",
   "os.getcwd",
-  "os.getenv",
-  "os.name",
   "os.open",
   "os.path.basename",
   "os.path.dirname",
@@ -148,40 +69,16 @@
   "os.path.normpath",
   "os.path.sep",
   "os.path.splitext",
-  "os.pathsep",
   "os.read",
   "os.remove",
   "os.setsid",
   "parse_fn",
-  "pipes",
-  "pipes.quote",
-  "platform",
-  "platform.machine",
-  "platform.release",
-  "platform.version",
-  "re",
   "re.DOTALL",
   "re.MULTILINE",
-  "re.compile",
-  "re.error",
-  "re.match",
-  "re.search",
-  "re.split",
-  "shlex",
-  "shlex.split",
-  "signal",
   "signal.SIGINT",
   "signal.SIG_DFL",
   "signal.SIG_IGN",
-  "signal.signal",
-  "struct",
   "struct.unpack",
-  "subprocess",
-  "subprocess.PIPE",
-  "subprocess.Popen",
-  "subprocess.STDOUT",
-  "subprocess.STD_OUTPUT_HANDLE",
-  "subprocess.check_output",
   "sys",
   "sys.argv",
   "sys.exit",
@@ -201,39 +98,20 @@
   "sys.version_info",
   "sys.version_info.major",
   "sys.version_info.minor",
-  "tempfile",
-  "tempfile.NamedTemporaryFile",
   "termcolor",
   "termcolor.colored",
-  "termios",
   "termios.TCSADRAIN",
-  "termios.TIOCGWINSZ",
-  "termios.tcgetattr",
-  "termios.tcsetattr",
-  "textwrap",
-  "textwrap.dedent",
-  "tty",
-  "tty.setraw",
-  "types",
-  "types.GeneratorType",
-  "types.ModuleType",
-  "typing.Tuple",
-  "unicodedata",
-  "unicodedata.category",
-  "unicodedata.combining",
-  "unicodedata.east_asian_width",
-  "unicodedata.normalize",
-  "unittest",
-  "unittest.TestCase",
-  "unittest.main",
-  "unittest.skip",
-  "unittest.skipIf"
+  "termios.TIOCGWINSZ"
  ],
  "deps": {
   "FireTraceElement": [],
   "GetParseFns": [],
-  "IPython": [],
-  "Levenshtein": [],
+  "IPython": [
+   "ipython/conda-forge/linux-64/ipython-7.23.0-py39hef51801_0"
+  ],
+  "Levenshtein": [
+   "python-levenshtein/conda-forge/linux-64/python-levenshtein-0.12.0-py36h8c4c3a4_1001"
+  ],
   "Point": [],
   "_ARCH": [],
   "_CreateAvailabilityLine": [],
@@ -254,64 +132,128 @@
   "_ParseKeywordArgs": [],
   "_ParseValue": [],
   "_SetMetadata": [],
-  "__future__": [],
-  "argparse": [],
-  "ast": [],
-  "asyncio": [],
-  "code": [],
-  "collections": [],
+  "__future__": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "argparse": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "ast": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "asyncio": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "code": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "collections": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "colorama": [
    "colorama/conda-forge/noarch/colorama-0.4.4-pyh9f0ad1d_0"
   ],
-  "contextlib": [],
-  "copy": [],
-  "ctypes": [],
+  "contextlib": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "copy": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "ctypes": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "enum": [
-   "privy/conda-forge/noarch/privy-6.0.0-py_0"
+   "privy/conda-forge/noarch/privy-6.0.0-py_0",
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
   ],
   "f": [],
-  "fcntl": [],
+  "fcntl": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "fire": [],
   "fn": [],
-  "functools": [],
+  "functools": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "generator": [],
   "get_raw_key_function": [],
   "get_terminal_size": [],
   "hypothesis": [
    "hypothesis/conda-forge/noarch/hypothesis-5.23.12-py_0"
   ],
-  "imp": [],
-  "importlib": [],
-  "inspect": [],
+  "imp": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "importlib": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "inspect": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "itertools": [],
-  "json": [],
+  "json": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "mock": [],
   "msvcrt": [],
-  "os": [],
+  "os": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "parse": [
    "parse/conda-forge/noarch/parse-1.8.4-py_1"
   ],
   "parse_fn": [],
-  "pipes": [],
-  "platform": [],
-  "re": [],
-  "shlex": [],
-  "signal": [],
+  "pipes": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "platform": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "re": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "shlex": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "signal": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "six": [
    "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
-   "privy/conda-forge/noarch/privy-6.0.0-py_0"
+   "privy/conda-forge/noarch/privy-6.0.0-py_0",
+   "six/conda-forge/linux-64/six-1.14.0-py36_0"
   ],
-  "struct": [],
-  "subprocess": [],
+  "struct": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "subprocess": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "sys": [],
-  "tempfile": [],
+  "tempfile": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "termcolor": [],
-  "termios": [],
-  "textwrap": [],
-  "tty": [],
-  "types": [],
-  "typing": [],
-  "unicodedata": [],
-  "unittest": []
+  "termios": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "textwrap": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "tty": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "types": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "typing": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "unicodedata": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "unittest": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ]
  }
 }
