@@ -92,29 +92,7 @@
   "itertools",
   "itertools.cycle",
   "itertools.islice",
-  "matplotlib",
-  "matplotlib.__version__",
-  "matplotlib.cm",
-  "matplotlib.cm.ScalarMappable",
-  "matplotlib.collections.LineCollection",
-  "matplotlib.collections.PatchCollection",
-  "matplotlib.collections.PathCollection",
-  "matplotlib.colors",
-  "matplotlib.colors.Normalize",
-  "matplotlib.colors.colorConverter",
-  "matplotlib.colors.is_color_like",
-  "matplotlib.lines.Line2D",
-  "matplotlib.patches.PathPatch",
-  "matplotlib.path.Path",
-  "matplotlib.path.Path.make_compound_path",
-  "matplotlib.pyplot",
-  "matplotlib.pyplot.axes",
-  "matplotlib.pyplot.close",
-  "matplotlib.pyplot.draw",
-  "matplotlib.pyplot.get_cmap",
   "matplotlib.pyplot.rcParams.update",
-  "matplotlib.pyplot.subplots",
-  "matplotlib.testing.decorators.check_figures_equal",
   "mock",
   "mpl_toolkits.axes_grid1.make_axes_locatable",
   "new",
@@ -146,50 +124,10 @@
   "predicate",
   "prefixed_lines",
   "pyarrow.Table.from_pandas",
-  "pygeos",
-  "pygeos.Geometry",
-  "pygeos.GeometryType",
-  "pygeos.STRtree",
-  "pygeos.__version__",
-  "pygeos.area",
-  "pygeos.boundary",
-  "pygeos.bounds",
-  "pygeos.box",
-  "pygeos.buffer",
-  "pygeos.centroid",
-  "pygeos.convex_hull",
-  "pygeos.envelope",
-  "pygeos.from_shapely",
-  "pygeos.from_wkb",
-  "pygeos.from_wkt",
-  "pygeos.geos_capi_version_string",
-  "pygeos.get_coordinates",
-  "pygeos.get_exterior_ring",
   "pygeos.get_parts",
-  "pygeos.get_type_id",
-  "pygeos.get_x",
-  "pygeos.get_y",
   "pygeos.get_z",
-  "pygeos.has_z",
-  "pygeos.is_closed",
-  "pygeos.is_empty",
-  "pygeos.is_missing",
-  "pygeos.is_ring",
-  "pygeos.is_simple",
-  "pygeos.is_valid",
-  "pygeos.length",
-  "pygeos.line_interpolate_point",
-  "pygeos.line_locate_point",
   "pygeos.normalize",
-  "pygeos.point_on_surface",
-  "pygeos.points",
-  "pygeos.set_coordinates",
-  "pygeos.set_srid",
-  "pygeos.simplify",
   "pygeos.strtree.VALID_PREDICATES",
-  "pygeos.to_wkb",
-  "pygeos.to_wkt",
-  "pygeos.union_all",
   "pyproj.CRS.from_dict",
   "pyproj.CRS.from_epsg",
   "pyproj.CRS.from_proj4",
@@ -221,8 +159,6 @@
   "shapely.geos.lgeos._lgeos.GEOSNormalize_r.argtypes",
   "shapely.geos.lgeos._lgeos.GEOSNormalize_r.restype",
   "shapely.geos.lgeos.geos_handle",
-  "sqlalchemy.engine.base.Connection",
-  "sqlalchemy.engine.base.Engine",
   "sys",
   "sys.executable",
   "sys.modules",
@@ -295,7 +231,9 @@
   "mapclassify": [
    "mapclassify/conda-forge/noarch/mapclassify-2.1.0-py_0"
   ],
-  "matplotlib": [],
+  "matplotlib": [
+   "matplotlib-base/conda-forge/linux-64/matplotlib-base-3.3.3-py36h159efd9_0"
+  ],
   "mock": [],
   "mpl_toolkits": [],
   "new": [],
@@ -328,13 +266,16 @@
    "pyarrow/conda-forge/linux-64/pyarrow-0.17.1-py36h57d41e7_33_cpu",
    "pyarrow/conda-forge/linux-64/pyarrow-1.0.1-py37he2832ee_38_cpu"
   ],
-  "pygeos": [],
+  "pygeos": [
+   "pygeos/conda-forge/linux-64/pygeos-0.6-py36h3d6ee9d_2"
+  ],
   "pyproj": [
    "pyproj/conda-forge/linux-64/pyproj-2.6.1.post1-py36he34cbb8_0"
   ],
   "pytest": [
    "pytest/conda-forge/linux-64/pytest-4.6.3-py27_0",
-   "pytest/conda-forge/linux-64/pytest-6.0.2-py36hc560c46_0"
+   "pytest/conda-forge/linux-64/pytest-6.0.2-py36hc560c46_0",
+   "pytest/conda-forge/linux-64/pytest-6.1.1-py37hc8dfbb8_0"
   ],
   "random": [
    "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
@@ -350,9 +291,12 @@
   ],
   "six": [
    "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
-   "privy/conda-forge/noarch/privy-6.0.0-py_0"
+   "privy/conda-forge/noarch/privy-6.0.0-py_0",
+   "six/conda-forge/linux-64/six-1.14.0-py36_0"
   ],
-  "sqlalchemy": [],
+  "sqlalchemy": [
+   "sqlalchemy/conda-forge/linux-64/sqlalchemy-1.3.15-py36h8c4c3a4_1"
+  ],
   "string": [
    "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
   ],
