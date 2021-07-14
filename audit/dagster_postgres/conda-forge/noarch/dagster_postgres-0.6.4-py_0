@@ -1,29 +1,11 @@
 {
  "bad": [
-  "__future__.absolute_import",
-  "__future__.division",
-  "__future__.print_function",
-  "__future__.unicode_literals",
   "_conn_string",
   "callback",
-  "collections.namedtuple",
-  "dagster.DagsterEventType",
   "dagster.DagsterEventType.PIPELINE_SUCCESS",
-  "dagster.ModeDefinition",
   "dagster.RunConfig",
-  "dagster.check",
-  "dagster.check.bool_param",
-  "dagster.check.float_param",
-  "dagster.check.inst",
-  "dagster.check.inst_param",
-  "dagster.check.int_param",
-  "dagster.check.invariant",
-  "dagster.check.list_param",
-  "dagster.check.str_param",
   "dagster.core.definitions.environment_configs.SystemNamedDict",
   "dagster.core.definitions.pipeline.ExecutionSelector",
-  "dagster.core.events.DagsterEvent",
-  "dagster.core.events.DagsterEventType",
   "dagster.core.events.DagsterEventType.ENGINE_EVENT",
   "dagster.core.events.DagsterEventType.PIPELINE_START",
   "dagster.core.events.DagsterEventType.PIPELINE_START.value",
@@ -33,113 +15,103 @@
   "dagster.core.events.DagsterEventType.STEP_START",
   "dagster.core.events.DagsterEventType.STEP_SUCCESS",
   "dagster.core.events.log.DagsterEventRecord",
-  "dagster.core.events.log.EventRecord",
-  "dagster.core.events.log.construct_event_logger",
-  "dagster.core.instance.DagsterInstance",
-  "dagster.core.instance.InstanceType",
   "dagster.core.instance.InstanceType.PERSISTENT",
   "dagster.core.serdes.ConfigurableClass",
   "dagster.core.serdes.ConfigurableClassData",
   "dagster.core.serdes.deserialize_json_to_dagster_namedtuple",
   "dagster.core.serdes.serialize_dagster_namedtuple",
   "dagster.core.storage.event_log.WatchableEventLogStorage",
-  "dagster.core.storage.local_compute_log_manager.LocalComputeLogManager",
-  "dagster.core.storage.pipeline_run.PipelineRun",
-  "dagster.core.storage.pipeline_run.PipelineRunStatus",
   "dagster.core.storage.pipeline_run.PipelineRunStatus.FAILURE",
   "dagster.core.storage.pipeline_run.PipelineRunStatus.NOT_STARTED",
   "dagster.core.storage.pipeline_run.PipelineRunStatus.STARTED",
   "dagster.core.storage.pipeline_run.PipelineRunStatus.SUCCESS",
-  "dagster.core.storage.root.LocalArtifactStorage",
   "dagster.core.storage.runs.RunStorageSQLMetadata",
   "dagster.core.storage.runs.RunStorageSQLMetadata.drop_all",
   "dagster.core.storage.runs.SQLRunStorage",
   "dagster.core.storage.runs.create_engine",
   "dagster.core.types.Field",
   "dagster.core.types.String",
-  "dagster.execute_pipeline",
-  "dagster.loggers.colored_console_logger",
-  "dagster.pipeline",
-  "dagster.seven",
   "dagster.seven.TemporaryDirectory",
-  "dagster.solid",
-  "dagster.utils.pushd",
-  "dagster.utils.script_relative_path",
-  "datetime",
-  "datetime.datetime.now",
   "easy",
   "errno",
   "errno.EINTR",
-  "fcntl",
-  "fcntl.F_GETFL",
-  "fcntl.F_SETFL",
-  "fcntl.fcntl",
   "int.from_bytes",
-  "multiprocessing",
   "multiprocessing.Manager",
   "multiprocessing.Process",
   "multiprocessing.Queue",
-  "os",
   "os.O_NONBLOCK",
   "os.environ.get",
-  "os.getenv",
   "os.pipe",
   "os.read",
-  "psycopg2",
-  "psycopg2.OperationalError",
-  "psycopg2.connect",
-  "psycopg2.extensions.ISOLATION_LEVEL_AUTOCOMMIT",
-  "pytest",
-  "pytest.fixture",
   "pytest.mark.skipif",
   "return_one",
-  "select",
-  "select.error",
-  "select.select",
-  "signal",
   "signal.Signals",
   "signal.set_wakeup_fd",
-  "signal.signal",
   "six.moves.queue.Empty",
   "solids_fn",
-  "subprocess",
-  "subprocess.check_output",
   "sys",
   "sys.byteorder",
-  "threading",
   "time",
   "time.sleep",
-  "time.time",
-  "uuid",
-  "uuid.uuid4",
-  "warnings",
-  "warnings.warn"
+  "time.time"
  ],
  "deps": {
-  "__future__": [],
+  "__future__": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "_conn_string": [],
   "callback": [],
-  "collections": [],
-  "dagster": [],
-  "datetime": [],
+  "collections": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "dagster": [
+   "dagster/conda-forge/linux-64/dagster-0.11.10-py37h89c1867_0"
+  ],
+  "datetime": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "easy": [],
   "errno": [],
-  "fcntl": [],
+  "fcntl": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "int": [],
-  "multiprocessing": [],
-  "os": [],
-  "psycopg2": [],
-  "pytest": [],
+  "multiprocessing": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "os": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "psycopg2": [
+   "psycopg2/conda-forge/linux-64/psycopg2-2.8.6-py39hba1e1b8_1"
+  ],
+  "pytest": [
+   "pytest/conda-forge/linux-64/pytest-4.6.3-py27_0",
+   "pytest/conda-forge/linux-64/pytest-6.0.2-py36hc560c46_0",
+   "pytest/conda-forge/linux-64/pytest-6.1.1-py37hc8dfbb8_0"
+  ],
   "return_one": [],
-  "select": [],
-  "signal": [],
+  "select": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "signal": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "six": [],
   "solids_fn": [],
-  "subprocess": [],
+  "subprocess": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "sys": [],
-  "threading": [],
+  "threading": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "time": [],
-  "uuid": [],
-  "warnings": []
+  "uuid": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "warnings": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ]
  }
 }
