@@ -1,11 +1,6 @@
 {
  "bad": [
   "StringIO.StringIO",
-  "bandit",
-  "bandit.core.config.BanditConfig",
-  "bandit.core.constants",
-  "bandit.core.constants.RANKING",
-  "bandit.core.manager.BanditManager",
   "py.io",
   "pytest.mark.hookwrapper",
   "pytest_bandit.controller.BanditItem.MARKER",
@@ -16,7 +11,9 @@
  ],
  "deps": {
   "StringIO": [],
-  "bandit": [],
+  "bandit": [
+   "bandit/conda-forge/noarch/bandit-1.5.1-py_1"
+  ],
   "io": [
    "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
   ],
