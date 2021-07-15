@@ -41,8 +41,6 @@
   "array.array",
   "atexit",
   "atexit.register",
-  "backports_abc.Generator",
-  "backports_abc.isawaitable",
   "bool.get",
   "builtins",
   "cStringIO.StringIO",
@@ -268,11 +266,14 @@
   "select.KQ_FILTER_READ",
   "select.KQ_FILTER_WRITE",
   "select.kevent",
+  "signal",
   "signal.SIGCHLD",
   "signal.SIGINT",
   "signal.SIGTERM",
   "signal.SIG_DFL",
   "signal.alarm",
+  "signal.getsignal",
+  "signal.signal",
   "socket.AF_INET",
   "socket.AF_INET6",
   "socket.AF_UNIX",
@@ -476,7 +477,9 @@
    "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
   ],
   "atexit": [],
-  "backports_abc": [],
+  "backports_abc": [
+   "backports_abc/conda-forge/noarch/backports_abc-0.5-py_1"
+  ],
   "base64": [
    "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
   ],
@@ -681,9 +684,7 @@
   "shutil": [
    "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
   ],
-  "signal": [
-   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
-  ],
+  "signal": [],
   "singledispatch": [
    "singledispatch/conda-forge/noarch/singledispatch-3.6.1-pyh44b312d_0"
   ],
