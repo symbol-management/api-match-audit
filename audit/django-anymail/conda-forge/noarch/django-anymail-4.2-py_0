@@ -1,68 +1,28 @@
 {
  "bad": [
-  "__future__.absolute_import",
   "attach_inline_image",
   "backends.amazon_ses._get_anymail_boto3_params",
-  "base64",
-  "base64.b64decode",
-  "base64.b64encode",
   "collections.Mapping",
   "collections.MutableMapping",
   "collections.abc.Mapping",
   "collections.abc.MutableMapping",
-  "collections.deque",
-  "datetime.date",
-  "datetime.datetime",
-  "datetime.datetime.fromtimestamp",
-  "datetime.datetime.utcfromtimestamp",
   "django.conf.settings.ANYMAIL",
   "django.conf.settings.DEFAULT_CHARSET",
   "django.core.mail.outbox.append",
   "django.core.mail.outbox.index",
-  "email.charset.Charset",
-  "email.charset.QP",
-  "email.header.Header",
-  "email.header.Header.encode",
-  "email.header.decode_header",
-  "email.message.Message",
-  "email.mime.base.MIMEBase",
   "email.mime.base.MIMEBase.__setitem__",
-  "email.mime.image.MIMEImage",
-  "email.mime.text.MIMEText",
   "email.mime.text.MIMEText.set_payload",
-  "email.parser.BytesParser",
-  "email.parser.Parser",
-  "email.parser.Parser.parse",
-  "email.policy.default",
-  "email.utils.formatdate",
-  "email.utils.getaddresses",
-  "email.utils.parsedate_to_datetime",
-  "email.utils.parsedate_tz",
-  "email.utils.quote",
-  "email.utils.unquote",
   "exc_class",
-  "hashlib",
   "hashlib.sha1",
   "hashlib.sha256",
-  "hmac",
-  "hmac.new",
   "inbound.AnymailInboundMessage.construct",
   "inbound.AnymailInboundMessage.construct_attachment",
   "inbound.AnymailInboundMessage.construct_attachment_from_uploaded_file",
   "inbound.AnymailInboundMessage.parse_raw_mime",
   "inbound.AnymailInboundMessage.parse_raw_mime_bytes",
   "inbound.AnymailInboundMessage.parse_raw_mime_file",
-  "io",
-  "io.BytesIO",
-  "json",
-  "json.dumps",
-  "json.loads",
-  "mimetypes",
-  "os",
   "os.path.basename",
-  "re",
   "re.MULTILINE",
-  "re.search",
   "signals.EventType.AUTORESPONDED",
   "signals.EventType.BOUNCED",
   "signals.EventType.CLICKED",
@@ -94,13 +54,8 @@
   "sparkpost.SparkPost",
   "sparkpost.SparkPostException",
   "time.mktime",
-  "traceback.format_exception_only",
   "utils.querydict_getfirst.__get__",
-  "uuid",
-  "uuid.uuid4",
   "validator",
-  "warnings",
-  "warnings.warn",
   "webhooks.amazon_ses.AmazonSESInboundWebhookView.as_view",
   "webhooks.amazon_ses.AmazonSESTrackingWebhookView.as_view",
   "webhooks.mailgun.MailgunInboundWebhookView.as_view",
@@ -117,31 +72,55 @@
   "webhooks.sparkpost.SparkPostTrackingWebhookView.as_view"
  ],
  "deps": {
-  "__future__": [],
+  "__future__": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "attach_inline_image": [],
   "backends": [],
-  "base64": [],
+  "base64": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "boto3": [
    "boto3/conda-forge/noarch/boto3-1.13.1-pyh9f0ad1d_0"
   ],
   "botocore": [
    "botocore/conda-forge/noarch/botocore-1.10.82-py_0"
   ],
-  "collections": [],
-  "datetime": [],
+  "collections": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "datetime": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "django": [
    "django/conda-forge/noarch/django-3.1.4-pyhd8ed1ab_0"
   ],
-  "email": [],
+  "email": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "exc_class": [],
-  "hashlib": [],
-  "hmac": [],
+  "hashlib": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "hmac": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "inbound": [],
-  "io": [],
-  "json": [],
-  "mimetypes": [],
-  "os": [],
-  "re": [],
+  "io": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "json": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "mimetypes": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "os": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
+  "re": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "requests": [
    "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
    "requests/conda-forge/noarch/requests-2.23.0-pyh8c360ce_2"
@@ -149,15 +128,22 @@
   "signals": [],
   "six": [
    "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
-   "privy/conda-forge/noarch/privy-6.0.0-py_0"
+   "privy/conda-forge/noarch/privy-6.0.0-py_0",
+   "six/conda-forge/linux-64/six-1.14.0-py36_0"
   ],
   "sparkpost": [],
   "time": [],
-  "traceback": [],
+  "traceback": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "utils": [],
-  "uuid": [],
+  "uuid": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "validator": [],
-  "warnings": [],
+  "warnings": [
+   "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
+  ],
   "webhooks": []
  }
 }
