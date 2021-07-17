@@ -1,10 +1,6 @@
 {
  "bad": [
   "dask",
-  "dask.dataframe",
-  "dask.dataframe.from_delayed",
-  "dask.dataframe.read_sql_table",
-  "dask.delayed",
   "dload",
   "ibis.mysql.connect",
   "ibis.postgres.connect",
@@ -14,7 +10,9 @@
   "make_ibis_client"
  ],
  "deps": {
-  "dask": [],
+  "dask": [
+   "dask-core/conda-forge/noarch/dask-core-0.15.3-py_0"
+  ],
   "dload": [],
   "ibis": [
    "ibis-framework/conda-forge/noarch/ibis-framework-1.0.0-py_0"
