@@ -1,6 +1,5 @@
 {
  "bad": [
-  "ROOT",
   "ROOT.TChain",
   "ROOT.TFile.Open",
   "ROOT.TFile.kOverwrite",
@@ -10,15 +9,13 @@
   "itertools.chain.from_iterable",
   "pandas.Categorical.from_codes",
   "pandas.DataFrame.from_records",
-  "pandas.DataFrame.to_root",
-  "root_numpy.array2tree",
-  "root_numpy.extern.six.string_types",
-  "root_numpy.list_branches",
-  "root_numpy.list_trees",
-  "root_numpy.root2array"
+  "pandas.DataFrame.to_root"
  ],
  "deps": {
-  "ROOT": [],
+  "ROOT": [
+   "root5/conda-forge/linux-64/root5-5.34.36-py27_2",
+   "root_base/conda-forge/linux-64/root_base-6.20.4-py37hdeb96f3_3"
+  ],
   "convert_to_dataframe": [],
   "fnmatch": [
    "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
@@ -37,7 +34,9 @@
   "re": [
    "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
   ],
-  "root_numpy": [],
+  "root_numpy": [
+   "root_numpy/conda-forge/linux-64/root_numpy-4.8.0-py37ha1201b3_12"
+  ],
   "warnings": [
    "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
   ]

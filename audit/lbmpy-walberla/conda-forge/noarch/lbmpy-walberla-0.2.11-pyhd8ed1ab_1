@@ -3,19 +3,6 @@
   "c_backend",
   "field",
   "field.center",
-  "lbmpy.boundaries.boundaryhandling.create_lattice_boltzmann_boundary_kernel",
-  "lbmpy.creationfunctions.create_lb_update_rule",
-  "lbmpy.creationfunctions.update_with_default_parameters",
-  "lbmpy.fieldaccess.CollideOnlyInplaceAccessor",
-  "lbmpy.fieldaccess.StreamPullTwoFieldsAccessor",
-  "lbmpy.relaxationrates.relaxation_rate_scaling",
-  "lbmpy.sparse.create_lb_update_rule_sparse",
-  "lbmpy.sparse.create_macroscopic_value_getter_sparse",
-  "lbmpy.sparse.create_macroscopic_value_setter_sparse",
-  "lbmpy.sparse.create_symbolic_list",
-  "lbmpy.stencils.get_stencil",
-  "lbmpy.updatekernels.create_lbm_kernel",
-  "lbmpy.updatekernels.create_stream_pull_only_kernel",
   "numpy.float32",
   "numpy.float64",
   "pystencils",
@@ -41,13 +28,7 @@
   "pystencils.stencil.have_same_entries",
   "pystencils.stencil.offset_to_direction_string",
   "pystencils.sympyextensions.get_symmetric_part",
-  "pystencils.transformations.add_types",
-  "sympy",
-  "sympy.Matrix",
-  "sympy.Symbol",
-  "sympy.expand",
-  "sympy.symbols",
-  "sympy.tensor.IndexedBase"
+  "pystencils.transformations.add_types"
  ],
  "deps": {
   "c_backend": [],
@@ -55,7 +36,9 @@
   "jinja2": [
    "jinja2/conda-forge/noarch/jinja2-2.10-py_1"
   ],
-  "lbmpy": [],
+  "lbmpy": [
+   "lbmpy/conda-forge/linux-64/lbmpy-0.3.3-py38h497a2fe_1"
+  ],
   "numpy": [
    "numpy/conda-forge/linux-64/numpy-1.9.3-py27_blas_openblashb06ca3d_7"
   ],
@@ -63,7 +46,9 @@
   "pystencils_walberla": [
    "pystencils-walberla/conda-forge/noarch/pystencils-walberla-0.2.8-pyhd8ed1ab_1"
   ],
-  "sympy": [],
+  "sympy": [
+   "sympy/conda-forge/linux-64/sympy-1.7.1-py36h5fab9bb_1"
+  ],
   "warnings": [
    "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
   ]

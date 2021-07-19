@@ -4,8 +4,6 @@
   "DruidMetric",
   "DruidMetric.datasource_id",
   "DruidMetric.metric_name.in_",
-  "MySQLdb",
-  "MySQLdb.constants.FIELD_TYPE",
   "PIL.Image.ANTIALIAS",
   "RefreshResults",
   "TCLIService.ttypes.TFetchOrientation.FETCH_NEXT",
@@ -63,7 +61,6 @@
   "errno.EEXIST",
   "event_logger_type",
   "f",
-  "fbprophet.Prophet",
   "filter.get",
   "find_cycle",
   "flask.current_app.appbuilder.app_name",
@@ -153,8 +150,6 @@
   "itertools.product",
   "key",
   "log",
-  "markupsafe.Markup",
-  "markupsafe.escape",
   "marshmallow.EXCLUDE",
   "marshmallow.fields.Tuple",
   "merge_pv",
@@ -199,21 +194,7 @@
   "re.IGNORECASE",
   "re.VERBOSE",
   "result_func",
-  "selenium.common.exceptions.TimeoutException",
-  "selenium.common.exceptions.WebDriverException",
-  "selenium.webdriver.chrome",
-  "selenium.webdriver.chrome.options.Options",
-  "selenium.webdriver.chrome.webdriver.WebDriver",
-  "selenium.webdriver.common.by.By",
   "selenium.webdriver.common.by.By.CLASS_NAME",
-  "selenium.webdriver.firefox",
-  "selenium.webdriver.firefox.options.Options",
-  "selenium.webdriver.firefox.webdriver.WebDriver",
-  "selenium.webdriver.remote.webdriver.WebDriver",
-  "selenium.webdriver.support.expected_conditions",
-  "selenium.webdriver.support.expected_conditions.presence_of_all_elements_located",
-  "selenium.webdriver.support.expected_conditions.presence_of_element_located",
-  "selenium.webdriver.support.ui.WebDriverWait",
   "session_class",
   "signal.SIGALRM",
   "signal.alarm",
@@ -790,7 +771,9 @@
  "deps": {
   "ChunkedEncodingFix": [],
   "DruidMetric": [],
-  "MySQLdb": [],
+  "MySQLdb": [
+   "mysqlclient/conda-forge/linux-64/mysqlclient-2.0.1-py36h90709c0_1"
+  ],
   "PIL": [
    "pillow/conda-forge/linux-64/pillow-7.2.0-py36hfc7c323_2"
   ],
@@ -869,6 +852,7 @@
    "croniter/conda-forge/noarch/croniter-0.3.35-pyh9f0ad1d_0"
   ],
   "cryptography": [
+   "cryptography/conda-forge/linux-64/cryptography-2.6.1-py27h9d9f1b6_0",
    "privy/conda-forge/noarch/privy-6.0.0-py_0"
   ],
   "dataclasses": [
@@ -904,7 +888,9 @@
   ],
   "event_logger_type": [],
   "f": [],
-  "fbprophet": [],
+  "fbprophet": [
+   "fbprophet/conda-forge/linux-64/fbprophet-0.1.1-np111py27_0"
+  ],
   "filter": [],
   "find_cycle": [],
   "flask": [
@@ -1007,7 +993,10 @@
   "markdown": [
    "markdown/conda-forge/noarch/markdown-3.3.1-pyh9f0ad1d_0"
   ],
-  "markupsafe": [],
+  "markupsafe": [
+   "markupsafe/conda-forge/linux-64/markupsafe-1.1.0-py27h14c3975_1000",
+   "markupsafe/conda-forge/linux-64/markupsafe-1.1.0-py36h14c3975_1000"
+  ],
   "marshmallow": [
    "marshmallow/conda-forge/noarch/marshmallow-2.13.1-py_1",
    "toastedmarshmallow/conda-forge/noarch/toastedmarshmallow-0.2.6-py_0"
@@ -1112,7 +1101,9 @@
   "retry": [
    "retry/conda-forge/noarch/retry-0.9.2-py_0"
   ],
-  "selenium": [],
+  "selenium": [
+   "selenium/conda-forge/linux-64/selenium-3.14.1-py27h14c3975_1000"
+  ],
   "session_class": [],
   "signal": [
    "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
