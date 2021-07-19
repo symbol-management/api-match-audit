@@ -4,10 +4,7 @@
   "app_instance",
   "asgi",
   "http.HTTPStatus.FORBIDDEN",
-  "httptools",
-  "httptools.HttpParserUpgrade",
   "httptools.parse_url",
-  "httptools.parser.errors.HttpParserError",
   "loop_setup",
   "multiprocessing.Process",
   "os.getpid",
@@ -32,12 +29,6 @@
   "uvicorn.config.LOG_LEVELS.keys",
   "uvicorn.config.LOOP_SETUPS.keys",
   "uvicorn.config.WS_PROTOCOLS.keys",
-  "uvloop",
-  "uvloop.EventLoopPolicy",
-  "websockets",
-  "websockets.ConnectionClosed",
-  "websockets.WebSocketServerProtocol",
-  "websockets.handshake.check_request",
   "wsproto.ConnectionType",
   "wsproto.connection.ConnectionState.REMOTE_CLOSING",
   "wsproto.events.AcceptConnection",
@@ -82,7 +73,9 @@
   "http": [
    "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
   ],
-  "httptools": [],
+  "httptools": [
+   "httptools/conda-forge/linux-64/httptools-0.1.0-py36h516909a_0"
+  ],
   "importlib": [
    "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
   ],
@@ -117,8 +110,12 @@
    "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
   ],
   "uvicorn": [],
-  "uvloop": [],
-  "websockets": [],
+  "uvloop": [
+   "uvloop/conda-forge/linux-64/uvloop-0.11.2-py37h470a237_0"
+  ],
+  "websockets": [
+   "websockets/conda-forge/linux-64/websockets-8.1-py38h497a2fe_3"
+  ],
   "wsproto": [
    "wsproto/conda-forge/noarch/wsproto-0.12.0-py_0"
   ]

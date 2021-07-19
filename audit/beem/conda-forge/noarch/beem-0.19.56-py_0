@@ -1,8 +1,6 @@
 {
  "bad": [
   "Accounts",
-  "Cryptodome.Cipher.AES",
-  "Cryptodome.Random",
   "PrivateKey",
   "Queue.Queue",
   "_thread.interrupt_main",
@@ -52,7 +50,6 @@
   "exceptions.decodeRPCErrorMsg",
   "fetchkeys",
   "func",
-  "future.utils.python_2_unicode_compatible",
   "get_blocknum",
   "get_hashtags",
   "get_urls",
@@ -76,9 +73,7 @@
   "os.stat",
   "os.urandom",
   "price.Price",
-  "pylibscrypt",
   "pylibscrypt.hash",
-  "pylibscrypt.scrypt",
   "re.M",
   "re.MULTILINE",
   "requests.packages.urllib3.util.retry.Retry",
@@ -119,9 +114,12 @@
  "deps": {
   "Accounts": [],
   "Crypto": [
+   "pycrypto/conda-forge/linux-64/pycrypto-2.6.1-py36hd7bf43e_1005",
    "pycryptodome/conda-forge/linux-64/pycryptodome-3.7.3-py37ha14ba45_0"
   ],
-  "Cryptodome": [],
+  "Cryptodome": [
+   "pycryptodomex/conda-forge/linux-64/pycryptodomex-3.6.6-py36h14c3975_1000"
+  ],
   "PrivateKey": [],
   "Queue": [],
   "__future__": [
@@ -167,6 +165,7 @@
    "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
   ],
   "cryptography": [
+   "cryptography/conda-forge/linux-64/cryptography-2.6.1-py27h9d9f1b6_0",
    "privy/conda-forge/noarch/privy-6.0.0-py_0"
   ],
   "ctypes": [
@@ -193,7 +192,9 @@
    "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
   ],
   "func": [],
-  "future": [],
+  "future": [
+   "future/conda-forge/linux-64/future-0.18.2-py37h89c1867_2"
+  ],
   "get_blocknum": [],
   "get_hashtags": [],
   "get_urls": [],
@@ -231,7 +232,9 @@
    "ptable/conda-forge/noarch/ptable-0.9.2-py_0"
   ],
   "price": [],
-  "pylibscrypt": [],
+  "pylibscrypt": [
+   "pylibscrypt/conda-forge/linux-64/pylibscrypt-1.8.0-py37h9d9f1b6_0"
+  ],
   "pytz": [
    "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
    "pytz/conda-forge/noarch/pytz-2018.4-py_0"
@@ -261,6 +264,7 @@
   ],
   "six": [
    "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
+   "lldb/conda-forge/linux-64/lldb-5.0.0-py36_0",
    "privy/conda-forge/noarch/privy-6.0.0-py_0",
    "six/conda-forge/linux-64/six-1.14.0-py36_0"
   ],

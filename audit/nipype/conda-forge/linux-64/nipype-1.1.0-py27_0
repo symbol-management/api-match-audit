@@ -43,7 +43,6 @@
   "MakeSurfaces",
   "MockSSHDataGrabber",
   "MyInterface",
-  "MySQLdb",
   "MySQLdb.connect",
   "Normalize",
   "OOPBadShell",
@@ -527,33 +526,7 @@
   "diffusion.dtiestim.output_spec",
   "diffusion.dtiprocess.input_spec",
   "diffusion.dtiprocess.output_spec",
-  "dipy",
-  "dipy.__version__",
-  "dipy.align.reslice.reslice",
-  "dipy.core.gradients.GradientTable",
-  "dipy.core.gradients.gradient_table",
-  "dipy.core.sphere.HemiSphere",
-  "dipy.core.sphere.Sphere",
-  "dipy.core.sphere.disperse_charges",
-  "dipy.data.get_sphere",
-  "dipy.denoise.nlmeans.nlmeans",
-  "dipy.io.utils.nifti1_symmat",
-  "dipy.reconst.csdeconv.ConstrainedSphericalDeconvModel",
-  "dipy.reconst.csdeconv.auto_response",
-  "dipy.reconst.csdeconv.recursive_response",
-  "dipy.reconst.dti",
-  "dipy.reconst.dti.TensorModel",
-  "dipy.reconst.dti.fractional_anisotropy",
-  "dipy.reconst.dti.mean_diffusivity",
   "dipy.reconst.peaks.peaks_from_model",
-  "dipy.reconst.shm",
-  "dipy.reconst.shm.QballModel",
-  "dipy.reconst.shm.anisotropic_power",
-  "dipy.sims.voxel.multi_tensor",
-  "dipy.tracking.eudx.EuDX",
-  "dipy.tracking.utils.affine_from_fsl_mat_file",
-  "dipy.tracking.utils.density_map",
-  "dipy.tracking.utils.move_streamlines",
   "docutils.parsers.rst.directives",
   "docutils.parsers.rst.directives.choice",
   "docutils.parsers.rst.directives.class_option",
@@ -743,10 +716,6 @@
   "fsl.model.load_template",
   "func",
   "function_handle",
-  "future.standard_library",
-  "future.standard_library.install_aliases",
-  "future.utils.bytes_to_native_str",
-  "future.utils.raise_from",
   "fvals",
   "gc",
   "gc.collect",
@@ -1206,7 +1175,6 @@
   "misc.TSNR",
   "misc.dict_diff",
   "misc.rgetcwd",
-  "mock",
   "mock.MagicMock",
   "mock.patch",
   "model.Binarize.input_spec",
@@ -1360,21 +1328,7 @@
   "nilearn.SignalExtraction",
   "nilearn.SignalExtraction.input_spec",
   "nilearn.SignalExtraction.output_spec",
-  "nipy.algorithms.registration.SpaceTimeRealign",
-  "nipy.algorithms.registration.aff2euler",
-  "nipy.algorithms.registration.affine.Affine",
-  "nipy.algorithms.registration.groupwise_registration.SpaceRealign",
-  "nipy.algorithms.registration.histogram_registration.HistogramRegistration",
-  "nipy.algorithms.registration.to_matrix44",
-  "nipy.labs.mask.compute_mask",
-  "nipy.load_image",
-  "nipy.modalities.fmri.design_matrix",
   "nipy.modalities.fmri.design_matrix.BlockParadigm",
-  "nipy.modalities.fmri.design_matrix.dmtx_light",
-  "nipy.modalities.fmri.experimental_paradigm.BlockParadigm",
-  "nipy.modalities.fmri.glm",
-  "nipy.modalities.fmri.glm.GeneralLinearModel",
-  "nipy.save_image",
   "nipype.__file__",
   "nipype.__init__.Logging",
   "nipype.__init__.NipypeConfig",
@@ -1450,15 +1404,8 @@
   "nipype.testing.__init__.basedir",
   "nipype.testing.__init__.filepath",
   "nipype.testing.__init__.funcfile",
-  "nitime",
   "nitime.algorithms.AR_est_YW",
-  "nitime.analysis",
   "nitime.analysis.CoherenceAnalyzer",
-  "nitime.timeseries",
-  "nitime.timeseries.TimeSeries",
-  "nitime.viz",
-  "nitime.viz.drawgraph_channels",
-  "nitime.viz.drawmatrix_channels",
   "nodes.MapNode",
   "numpy.NaN",
   "numpy.arccos",
@@ -1795,8 +1742,6 @@
   "prov.model.URIRef",
   "prov.model.XSD",
   "prov.model.serializers.DoNotExist",
-  "psutil",
-  "psutil.__version__",
   "pwd",
   "pwd.getpwuid",
   "pylab.clf",
@@ -1978,9 +1923,6 @@
   "simpleregiongrowingsegmentation.SimpleRegionGrowingSegmentation.output_spec",
   "simulate.SimulateMultiTensor.input_spec",
   "simulate.SimulateMultiTensor.output_spec",
-  "skimage.exposure",
-  "skimage.exposure.equalize_adapthist",
-  "skimage.img_as_int",
   "socket.gethostname",
   "soma.workflow.client.Helper",
   "soma.workflow.client.Helper.serialize",
@@ -2134,7 +2076,6 @@
   "traits_extension.traits.Str",
   "traits_extension.traits.TraitCompound",
   "traits_extension.traits.items",
-  "tvtk.api.tvtk",
   "type.replace",
   "ukftractography.UKFTractography.input_spec",
   "ukftractography.UKFTractography.output_spec",
@@ -2462,9 +2403,7 @@
   "win32file",
   "wrapped_func",
   "wrappers.Function.input_spec",
-  "wrappers.Function.output_spec",
-  "xvfbwrapper",
-  "xvfbwrapper.Xvfb"
+  "wrappers.Function.output_spec"
  ],
  "deps": {
   "AddXFormToHeader": [],
@@ -2510,7 +2449,9 @@
   "MakeSurfaces": [],
   "MockSSHDataGrabber": [],
   "MyInterface": [],
-  "MySQLdb": [],
+  "MySQLdb": [
+   "mysqlclient/conda-forge/linux-64/mysqlclient-2.0.1-py36h90709c0_1"
+  ],
   "Normalize": [],
   "OOPBadShell": [],
   "OOPCLI": [],
@@ -2647,7 +2588,9 @@
   "dicom": [],
   "dict": [],
   "diffusion": [],
-  "dipy": [],
+  "dipy": [
+   "dipy/conda-forge/linux-64/dipy-0.11.0-np110py35_0"
+  ],
   "distutils": [
    "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
   ],
@@ -2695,7 +2638,9 @@
   "functools": [
    "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
   ],
-  "future": [],
+  "future": [
+   "future/conda-forge/linux-64/future-0.18.2-py37h89c1867_2"
+  ],
   "fvals": [],
   "gc": [],
   "getFileName": [],
@@ -2785,7 +2730,9 @@
   "metrics": [],
   "minc": [],
   "misc": [],
-  "mock": [],
+  "mock": [
+   "mock/conda-forge/linux-64/mock-4.0.3-py37h9c2f6ca_1"
+  ],
   "model": [],
   "modelgen": [],
   "modify_paths": [],
@@ -2805,9 +2752,13 @@
   "nilearn": [
    "nilearn/conda-forge/noarch/nilearn-0.5.1-pyh24bf2e0_0"
   ],
-  "nipy": [],
+  "nipy": [
+   "nipy/conda-forge/linux-64/nipy-0.4.1-py37h3010b51_1001"
+  ],
   "nipype": [],
-  "nitime": [],
+  "nitime": [
+   "nitime/conda-forge/linux-64/nitime-0.9-py38h5c078b8_2"
+  ],
   "nodes": [],
   "numpy": [
    "numpy/conda-forge/linux-64/numpy-1.9.3-py27_blas_openblashb06ca3d_7"
@@ -2864,12 +2815,15 @@
   "prov": [
    "prov/conda-forge/noarch/prov-1.5.2-py_1"
   ],
-  "psutil": [],
+  "psutil": [
+   "psutil/conda-forge/linux-64/psutil-5.8.0-py37h5e8e339_1"
+  ],
   "pwd": [],
   "pylab": [
    "matplotlib-base/conda-forge/linux-64/matplotlib-base-3.3.3-py36h159efd9_0"
   ],
   "pytest": [
+   "pytest/conda-forge/linux-64/pytest-4.6.0-py37_0",
    "pytest/conda-forge/linux-64/pytest-4.6.3-py27_0",
    "pytest/conda-forge/linux-64/pytest-6.0.2-py36hc560c46_0",
    "pytest/conda-forge/linux-64/pytest-6.1.1-py37hc8dfbb8_0"
@@ -2930,7 +2884,9 @@
   ],
   "simpleregiongrowingsegmentation": [],
   "simulate": [],
-  "skimage": [],
+  "skimage": [
+   "scikit-image/conda-forge/linux-64/scikit-image-0.16.2-py36hb3f55d8_0"
+  ],
   "socket": [
    "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
   ],
@@ -2982,7 +2938,9 @@
    "traits/conda-forge/linux-64/traits-6.1.0-py36h97a6639_0"
   ],
   "traits_extension": [],
-  "tvtk": [],
+  "tvtk": [
+   "mayavi/conda-forge/linux-64/mayavi-4.5.0-py36_3"
+  ],
   "type": [],
   "ukftractography": [],
   "utilities": [],
@@ -2997,6 +2955,7 @@
   "votingbinaryholefillingimagefilter": [],
   "vtk": [
    "paraview/conda-forge/linux-64/paraview-5.9.0rc2-py37h22fb583_2",
+   "tomviz/conda-forge/linux-64/tomviz-1.9.0.post145-py37h152eb46_1",
    "vtk/conda-forge/linux-64/vtk-8.2.0-py27h06adf98_210"
   ],
   "vtkbase": [],
@@ -3010,6 +2969,8 @@
   "xml": [
    "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
   ],
-  "xvfbwrapper": []
+  "xvfbwrapper": [
+   "xvfbwrapper/conda-forge/linux-64/xvfbwrapper-0.2.9-py37hc8dfbb8_1002"
+  ]
  }
 }
