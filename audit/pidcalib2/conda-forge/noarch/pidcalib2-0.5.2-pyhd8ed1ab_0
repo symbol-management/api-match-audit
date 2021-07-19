@@ -1,6 +1,5 @@
 {
  "bad": [
-  "ROOT",
   "ROOT.TFile",
   "ROOT.TH1D",
   "ROOT.TH2D",
@@ -12,21 +11,13 @@
   "binning.get_binning",
   "binning.load_binnings",
   "binning.set_binning",
-  "boost_histogram",
-  "boost_histogram.Histogram",
-  "boost_histogram.axis.Regular",
-  "boost_histogram.axis.Variable",
-  "boost_histogram.storage.Weight",
   "dict.fromkeys",
   "itertools",
   "itertools.product",
-  "logzero",
-  "logzero.logger",
   "logzero.logger.debug",
   "logzero.logger.error",
   "logzero.logger.info",
   "logzero.logger.warning",
-  "logzero.loglevel",
   "markdown_table.MarkdownTable",
   "merge_trees.copy_tree_and_set_as_friend",
   "mplhep.set_style",
@@ -71,8 +62,12 @@
   "version.version"
  ],
  "deps": {
-  "ROOT": [],
+  "ROOT": [
+   "root5/conda-forge/linux-64/root5-5.34.36-py27_2",
+   "root_base/conda-forge/linux-64/root_base-6.20.4-py37hdeb96f3_3"
+  ],
   "argparse": [
+   "argparse/conda-forge/linux-64/argparse-1.4.0-py26_0",
    "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
   ],
   "argparse_actions": [],
@@ -80,7 +75,9 @@
    "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
   ],
   "binning": [],
-  "boost_histogram": [],
+  "boost_histogram": [
+   "boost-histogram/conda-forge/linux-64/boost-histogram-0.12.0-py37h2527ec5_0"
+  ],
   "collections": [
    "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
   ],
@@ -98,7 +95,9 @@
   "logging": [
    "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
   ],
-  "logzero": [],
+  "logzero": [
+   "logzero/conda-forge/linux-64/logzero-1.5.0-py37hc8dfbb8_1002"
+  ],
   "markdown_table": [],
   "math": [
    "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
