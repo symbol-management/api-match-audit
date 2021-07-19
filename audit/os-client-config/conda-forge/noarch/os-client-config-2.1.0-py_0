@@ -1,10 +1,5 @@
 {
  "bad": [
-  "fixtures",
-  "fixtures.EnvironmentVariable",
-  "fixtures.MonkeyPatch",
-  "fixtures.NestedTempfile",
-  "fixtures.TempDir",
   "openstack._log",
   "openstack.config.cloud_region",
   "openstack.config.cloud_region.CloudRegion",
@@ -33,8 +28,6 @@
   "shade.OpenStackCloud",
   "sys",
   "sys.argv",
-  "testtools",
-  "testtools.ExpectedException",
   "unittest.mock.patch.object"
  ],
  "deps": {
@@ -50,7 +43,9 @@
   "extras": [
    "extras/conda-forge/noarch/extras-1.0.0-py_1"
   ],
-  "fixtures": [],
+  "fixtures": [
+   "fixtures/conda-forge/noarch/fixtures-3.0.0-py_0"
+  ],
   "glanceclient": [
    "python-glanceclient/conda-forge/noarch/python-glanceclient-3.1.0-py_0"
   ],
@@ -79,7 +74,9 @@
   "tempfile": [
    "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
   ],
-  "testtools": [],
+  "testtools": [
+   "testtools/conda-forge/noarch/testtools-2.3.0-py_1"
+  ],
   "threading": [
    "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
   ],
