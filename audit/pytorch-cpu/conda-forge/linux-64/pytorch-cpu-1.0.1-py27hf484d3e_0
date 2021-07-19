@@ -440,8 +440,6 @@
   "caffe2.python.layers.tags.Tags.EXCLUDE_FROM_EVAL",
   "caffe2.python.layers.tags.Tags.EXCLUDE_FROM_PREDICTION",
   "caffe2.python.layers.tags.Tags.EXCLUDE_FROM_TRAIN",
-  "caffe2.python.mint.app",
-  "caffe2.python.mint.app.main",
   "caffe2.python.modeling.parameter_info.ParameterTags.BIAS",
   "caffe2.python.modeling.parameter_info.ParameterTags.COMPUTED_PARAM",
   "caffe2.python.modeling.parameter_info.ParameterTags.WEIGHT",
@@ -552,7 +550,6 @@
   "condition",
   "const_if_tensor",
   "constrain_internal",
-  "constructor",
   "conv",
   "conversion",
   "copy_func",
@@ -695,10 +692,6 @@
   "functional.threshold",
   "functional.triplet_margin_loss",
   "functional.unfold",
-  "future.utils.bytes_to_native_str",
-  "future.utils.viewitems",
-  "future.utils.viewkeys",
-  "future.utils.viewvalues",
   "g",
   "g.node.extend",
   "gather_map",
@@ -844,8 +837,6 @@
   "lengths_to_segment_ids",
   "library_paths",
   "lmbda",
-  "lmdb",
-  "lmdb.open",
   "load",
   "log_sigm",
   "loss_fn",
@@ -1027,7 +1018,6 @@
   "part",
   "part.event_dim",
   "part.log_abs_det_jacobian",
-  "past.builtins.basestring",
   "powt_grad",
   "powt_op",
   "prepend",
@@ -1093,7 +1083,6 @@
   "six.moves.urllib.request.urlretrieve",
   "size_from_dim",
   "size_to_dim",
-  "skimage.util",
   "smoothed_label",
   "socket.AF_INET",
   "socket.SOCK_STREAM",
@@ -1147,15 +1136,9 @@
   "tensor2list",
   "tensor_class",
   "tensor_type",
-  "tensorflow.Event",
-  "tensorflow.GraphDef",
-  "tensorflow.HistogramProto",
-  "tensorflow.NodeDef",
-  "tensorflow.Summary",
   "tensorflow.Summary.Value",
   "tensorflow.core.framework.graph_pb2.NodeDef",
   "tensorflow.core.framework.tensor_shape_pb2.TensorShapeProto.Dim",
-  "tensorflow.summary",
   "tensorflow.summary.FileWriter",
   "tensorflow.train.SummaryWriter",
   "tensorflow.train.summary_iterator",
@@ -1177,7 +1160,6 @@
   "torch.Size",
   "torch.Storage._expired",
   "torch.Tensor._make_subclass",
-  "torch._C",
   "torch._C.CudaByteStorageBase",
   "torch._C.CudaCharStorageBase",
   "torch._C.CudaDoubleStorageBase",
@@ -1476,8 +1458,6 @@
   "torch.autograd.ProfilerState.NVTX",
   "torch.autograd.Variable._execution_engine.queue_callback",
   "torch.autograd.__init__._make_grads",
-  "torch.autograd._disable_profiler",
-  "torch.autograd._enable_profiler",
   "torch.autograd._functions.Resize.apply",
   "torch.autograd._pop_range",
   "torch.autograd._push_range",
@@ -1995,7 +1975,9 @@
   "caffe": [
    "caffe/conda-forge/linux-64/caffe-1.0-py37he7c8ffd_209"
   ],
-  "caffe2": [],
+  "caffe2": [
+   "pytorch/conda-forge/linux-64/pytorch-1.7.1-cuda92py36h7ecc001_1"
+  ],
   "cal_cross_entropy": [],
   "canonical": [],
   "canonical_axis": [],
@@ -2022,7 +2004,9 @@
   "condition": [],
   "const_if_tensor": [],
   "constrain_internal": [],
-  "constructor": [],
+  "constructor": [
+   "constructor/conda-forge/linux-64/constructor-1.3.4-py35_0"
+  ],
   "contextlib": [
    "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
   ],
@@ -2102,7 +2086,9 @@
   "functools": [
    "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
   ],
-  "future": [],
+  "future": [
+   "future/conda-forge/linux-64/future-0.18.2-py37h89c1867_2"
+  ],
   "g": [],
   "gather_map": [],
   "gc": [],
@@ -2187,7 +2173,9 @@
   "lengths_to_segment_ids": [],
   "library_paths": [],
   "lmbda": [],
-  "lmdb": [],
+  "lmdb": [
+   "python-lmdb/conda-forge/linux-64/python-lmdb-0.96-py36hc4f0c31_1"
+  ],
   "load": [],
   "log_sigm": [],
   "logging": [
@@ -2279,7 +2267,9 @@
   "parse_proto": [],
   "parse_summary": [],
   "part": [],
-  "past": [],
+  "past": [
+   "future/conda-forge/linux-64/future-0.18.2-py37h89c1867_2"
+  ],
   "pathlib": [
    "pathlib/conda-forge/noarch/pathlib-1.0.1-py_1",
    "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
@@ -2392,12 +2382,15 @@
   "sinusoid_encoding": [],
   "six": [
    "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
+   "lldb/conda-forge/linux-64/lldb-5.0.0-py36_0",
    "privy/conda-forge/noarch/privy-6.0.0-py_0",
    "six/conda-forge/linux-64/six-1.14.0-py36_0"
   ],
   "size_from_dim": [],
   "size_to_dim": [],
-  "skimage": [],
+  "skimage": [
+   "scikit-image/conda-forge/linux-64/scikit-image-0.16.2-py36hb3f55d8_0"
+  ],
   "smoothed_label": [],
   "socket": [
    "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
@@ -2443,7 +2436,7 @@
   "tensor_class": [],
   "tensor_type": [],
   "tensorflow": [
-   "tensorflow/conda-forge/linux-64/tensorflow-0.12.1-py27_2"
+   "tensorflow-base/conda-forge/linux-64/tensorflow-base-1.13.1-py36h76b4ce7_8"
   ],
   "test_map_func": [],
   "textwrap": [
@@ -2455,7 +2448,9 @@
   "time": [],
   "to_str_list": [],
   "to_untyped": [],
-  "torch": [],
+  "torch": [
+   "pytorch/conda-forge/linux-64/pytorch-1.7.1-cuda92py36h7ecc001_1"
+  ],
   "tqdm": [
    "tqdm/conda-forge/noarch/tqdm-4.20.0-py_0"
   ],

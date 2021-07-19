@@ -15,15 +15,6 @@
   "numpy.random.seed",
   "numpy.stack",
   "os.remove",
-  "sklearn.base.BaseEstimator",
-  "sklearn.linear_model.LogisticRegression",
-  "sklearn.metrics.accuracy_score",
-  "sklearn.metrics.confusion_matrix",
-  "sklearn.metrics.f1_score",
-  "sklearn.model_selection.StratifiedKFold",
-  "sklearn.preprocessing.LabelBinarizer",
-  "sklearn.preprocessing.MultiLabelBinarizer",
-  "sklearn.utils.check_X_y",
   "sys",
   "sys.stdout.flush",
   "sys.version_info",
@@ -31,12 +22,6 @@
   "time.time",
   "torch.cat",
   "torch.from_numpy",
-  "torchvision.datasets",
-  "torchvision.datasets.MNIST",
-  "torchvision.transforms",
-  "torchvision.transforms.Compose",
-  "torchvision.transforms.Normalize",
-  "torchvision.transforms.ToTensor",
   "vectorized_clip"
  ],
  "deps": {
@@ -70,13 +55,18 @@
   "os": [
    "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
   ],
-  "sklearn": [],
+  "sklearn": [
+   "scikit-learn/conda-forge/linux-64/scikit-learn-0.23.1-py37h8a51577_0"
+  ],
   "sys": [],
   "time": [],
   "torch": [
-   "pytorch-cpu/conda-forge/linux-64/pytorch-cpu-1.0.1-py27hf484d3e_0"
+   "pytorch-cpu/conda-forge/linux-64/pytorch-cpu-1.0.1-py27hf484d3e_0",
+   "pytorch/conda-forge/linux-64/pytorch-1.7.1-cuda92py36h7ecc001_1"
   ],
-  "torchvision": [],
+  "torchvision": [
+   "torchvision/conda-forge/linux-64/torchvision-0.9.0-py36cuda110hb4cfe18_0_cuda"
+  ],
   "tqdm": [
    "tqdm/conda-forge/noarch/tqdm-4.20.0-py_0"
   ],

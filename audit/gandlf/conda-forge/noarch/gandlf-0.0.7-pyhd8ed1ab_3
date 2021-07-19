@@ -54,15 +54,6 @@
   "relative",
   "scaler",
   "send_model_to_device",
-  "skimage.filters.median",
-  "skimage.filters.threshold_otsu",
-  "skimage.morphology.binary_closing",
-  "skimage.morphology.binary_dilation",
-  "skimage.morphology.binary_erosion",
-  "skimage.morphology.cube",
-  "skimage.morphology.disk",
-  "skimage.transform.resize",
-  "sklearn.model_selection.KFold",
   "sys",
   "sys.exit",
   "sys.float_info.max",
@@ -74,9 +65,6 @@
   "time.time",
   "torch.cat",
   "torch.clamp",
-  "torch.cuda.amp.GradScaler",
-  "torch.cuda.amp.autocast",
-  "torch.cuda.memory_reserved",
   "torch.device",
   "torch.dot",
   "torch.finfo",
@@ -84,8 +72,6 @@
   "torch.float",
   "torch.float32",
   "torch.from_numpy",
-  "torch.jit.is_scripting",
-  "torch.jit.unused",
   "torch.log",
   "torch.mean",
   "torch.multiprocessing.freeze_support",
@@ -99,9 +85,7 @@
   "torch.where",
   "torch.zeros",
   "torchio.inference.GridAggregator",
-  "torchio.inference.GridSampler",
-  "torchvision",
-  "torchvision.models.vgg16"
+  "torchio.inference.GridSampler"
  ],
  "deps": {
   "BatchNorm": [],
@@ -197,20 +181,26 @@
   "shutil": [
    "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
   ],
-  "skimage": [],
-  "sklearn": [],
+  "skimage": [
+   "scikit-image/conda-forge/linux-64/scikit-image-0.16.2-py36hb3f55d8_0"
+  ],
+  "sklearn": [
+   "scikit-learn/conda-forge/linux-64/scikit-learn-0.23.1-py37h8a51577_0"
+  ],
   "subprocess": [
    "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
   ],
   "sys": [],
   "time": [],
   "torch": [
-   "pytorch-cpu/conda-forge/linux-64/pytorch-cpu-1.0.1-py27hf484d3e_0"
+   "pytorch/conda-forge/linux-64/pytorch-1.7.1-cuda92py36h7ecc001_1"
   ],
   "torchio": [
    "torchio/conda-forge/noarch/torchio-0.18.30-pyhd8ed1ab_0"
   ],
-  "torchvision": [],
+  "torchvision": [
+   "torchvision/conda-forge/linux-64/torchvision-0.9.0-py36cuda110hb4cfe18_0_cuda"
+  ],
   "tqdm": [
    "tqdm/conda-forge/noarch/tqdm-4.20.0-py_0"
   ],

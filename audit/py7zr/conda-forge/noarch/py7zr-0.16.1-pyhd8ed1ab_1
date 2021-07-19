@@ -1,13 +1,9 @@
 {
  "bad": [
-  "Cryptodome.Cipher.AES",
-  "Cryptodome.Random.get_random_bytes",
   "RoundBuf",
   "Worker",
   "_winapi",
   "_winapi.CreateJunction",
-  "bcj",
-  "brotli",
   "brotlicffi",
   "cli.Cli",
   "ctypes.wintypes.LPCWSTR",
@@ -107,7 +103,6 @@
   "py7zr.properties.PROPERTY.SUBSTREAMS_INFO",
   "py7zr.properties.PROPERTY.UNPACK_INFO",
   "pyppmd",
-  "pyzstd",
   "pyzstd.zstd_version_info",
   "round.to_bytes",
   "struct.pack",
@@ -133,7 +128,9 @@
   "time.tzname"
  ],
  "deps": {
-  "Cryptodome": [],
+  "Cryptodome": [
+   "pycryptodomex/conda-forge/linux-64/pycryptodomex-3.6.6-py36h14c3975_1000"
+  ],
   "RoundBuf": [],
   "Worker": [],
   "_hashlib": [
@@ -149,11 +146,15 @@
   "argparse": [
    "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
   ],
-  "bcj": [],
+  "bcj": [
+   "bcj-cffi/conda-forge/linux-64/bcj-cffi-0.5.1-py36hc4f0c31_0"
+  ],
   "binascii": [
    "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
   ],
-  "brotli": [],
+  "brotli": [
+   "brotlipy/conda-forge/linux-64/brotlipy-0.7.0-py27h470a237_0"
+  ],
   "brotlicffi": [],
   "bz2": [
    "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
@@ -221,7 +222,9 @@
   ],
   "py7zr": [],
   "pyppmd": [],
-  "pyzstd": [],
+  "pyzstd": [
+   "pyzstd/conda-forge/linux-64/pyzstd-0.14.4-py39hb1a5f9f_2"
+  ],
   "queue": [
    "python/conda-forge/linux-64/python-3.6.11-h4d41432_0_cpython"
   ],
