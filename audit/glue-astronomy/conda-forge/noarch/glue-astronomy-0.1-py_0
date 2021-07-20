@@ -5,42 +5,14 @@
   "astropy.wcs.WCSSUB_SPECTRAL",
   "astropy.wcs.WCSSUB_STOKES",
   "astropy.wcs.wcsapi.BaseLowLevelWCS",
-  "glue.config.data_factory",
   "glue.config.data_translator",
-  "glue.config.qglue_parser",
   "glue.config.subset_state_translator",
-  "glue.core.Data",
-  "glue.core.Subset",
-  "glue.core.coordinates.Coordinates",
-  "glue.core.coordinates.coordinates_from_wcs",
-  "glue.core.data_factories.fits.is_fits",
-  "glue.core.roi.AbstractMplRoi",
-  "glue.core.roi.CircularROI",
-  "glue.core.roi.PointROI",
-  "glue.core.roi.PolygonalROI",
-  "glue.core.roi.RangeROI",
-  "glue.core.roi.RectangularROI",
-  "glue.core.subset.AndState",
-  "glue.core.subset.MultiOrState",
-  "glue.core.subset.MultiRangeSubsetState",
-  "glue.core.subset.OrState",
-  "glue.core.subset.RangeSubsetState",
-  "glue.core.subset.RoiSubsetState",
-  "glue.core.subset.Subset",
-  "glue.core.subset.XorState",
-  "glue.qglue.parse_data",
-  "glue.viewers.image.pixel_selection_subset_state.PixelSubsetState",
   "numpy.nan",
   "os.path.dirname",
   "os.path.exists",
   "os.path.isdir",
   "os.path.join",
   "parse_attributes",
-  "regions.CirclePixelRegion",
-  "regions.PixCoord",
-  "regions.PointPixelRegion",
-  "regions.PolygonPixelRegion",
-  "regions.RectanglePixelRegion",
   "spectral_cube.SpectralCube.read",
   "spectral_cube.StokesSpectralCube.read",
   "spectral_cube.is_spectral_cube",
@@ -48,10 +20,16 @@
  ],
  "deps": {
   "astropy": [
+   "astropy/conda-forge/linux-64/astropy-2.0.16-py36h516909a_0",
    "astropy/conda-forge/linux-64/astropy-2.0.4-py27_0"
   ],
-  "glue": [],
+  "glue": [
+   "glue-core/conda-forge/linux-64/glue-core-0.15.3-py27_0",
+   "glue-core/conda-forge/linux-64/glue-core-0.15.6-py27_1"
+  ],
   "numpy": [
+   "numpy/conda-forge/linux-64/numpy-1.16.5-py38h18fd61f_1",
+   "numpy/conda-forge/linux-64/numpy-1.21.0-py37h038b26d_0",
    "numpy/conda-forge/linux-64/numpy-1.9.3-py27_blas_openblashb06ca3d_7"
   ],
   "os": [
@@ -59,19 +37,28 @@
   ],
   "parse_attributes": [],
   "pkg_resources": [
+   "setuptools/conda-forge/linux-64/setuptools-25.2.0-py35_0",
+   "setuptools/conda-forge/linux-64/setuptools-28.0.0-py27_0",
    "setuptools/conda-forge/linux-64/setuptools-41.2.0-py27_0"
   ],
   "pytest": [
+   "pytest/conda-forge/linux-64/pytest-3.2.0-py35_0",
+   "pytest/conda-forge/linux-64/pytest-3.7.4-py35_0",
    "pytest/conda-forge/linux-64/pytest-4.6.0-py37_0",
    "pytest/conda-forge/linux-64/pytest-4.6.3-py27_0",
    "pytest/conda-forge/linux-64/pytest-6.0.2-py36hc560c46_0",
    "pytest/conda-forge/linux-64/pytest-6.1.1-py37hc8dfbb8_0"
   ],
-  "regions": [],
+  "regions": [
+   "regions/conda-forge/linux-64/regions-0.2-py27_0",
+   "regions/conda-forge/linux-64/regions-0.4-py36ha112f06_2"
+  ],
   "spectral_cube": [
+   "spectral-cube/conda-forge/noarch/spectral-cube-0.4.5-py_0",
    "spectral-cube/conda-forge/noarch/spectral-cube-0.5.0-pyh9f0ad1d_0"
   ],
   "specutils": [
+   "specutils/conda-forge/noarch/specutils-0.5.2-py_0",
    "specutils/conda-forge/noarch/specutils-1.2-pyhd8ed1ab_0"
   ]
  }
