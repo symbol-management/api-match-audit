@@ -1,46 +1,49 @@
 {
  "bad": [
-  "base.PRConfig",
-  "get_request_attr_value",
-  "handlers.setup_handlers",
-  "hashlib.sha1",
-  "http.HTTPStatus.BAD_REQUEST",
-  "http.HTTPStatus.INTERNAL_SERVER_ERROR",
-  "manager_class",
-  "managers.MANAGERS.get",
-  "mock.AsyncMock",
-  "mock.MagicMock",
-  "mock.call",
-  "mock.patch",
-  "pytest.mark.asyncio",
-  "pytest.mark.parametrize",
-  "traitlets.config.Application.clear_instance",
-  "traitlets.config.Application.instance"
+  "exporter",
+  "input.is_dir",
+  "input.name",
+  "input.open",
+  "input.parent",
+  "input.replace",
+  "input.stem",
+  "input.unlink",
+  "nbautoexport.jupyter_config.block_regex.search",
+  "nbautoexport.jupyter_config.version_regex.search",
+  "nbautoexport.sentinel.ExportFormat.asciidoc",
+  "nbautoexport.sentinel.ExportFormat.latex",
+  "nbautoexport.sentinel.ExportFormat.markdown",
+  "nbautoexport.sentinel.ExportFormat.notebook",
+  "nbautoexport.sentinel.ExportFormat.pdf",
+  "nbautoexport.sentinel.ExportFormat.rst",
+  "nbautoexport.sentinel.ExportFormat.script",
+  "nbautoexport.sentinel.NbAutoexportConfig.parse_file",
+  "nbautoexport.sentinel.OrganizeBy.extension",
+  "nbautoexport.sentinel.OrganizeBy.notebook",
+  "nbautoexport.utils.logger.debug",
+  "nbautoexport.utils.logger.info",
+  "old_post_save",
+  "os.chdir",
+  "re.DOTALL",
+  "sys",
+  "warnings.warn"
  ],
  "deps": {
-  "_pytest": [
-   "pytest/conda-forge/linux-64/pytest-3.7.0-py27_0",
-   "pytest/conda-forge/linux-64/pytest-4.6.0-py37_0",
-   "pytest/conda-forge/linux-64/pytest-6.0.2-py37hc8dfbb8_0"
+  "click": [
+   "click/conda-forge/noarch/click-7.0-py_0",
+   "click/conda-forge/noarch/click-7.1-pyh8c360ce_0",
+   "click/conda-forge/noarch/click-7.1.1-pyh8c360ce_0"
   ],
-  "abc": [
+  "contextlib": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "asyncio": [
+  "enum": [
+   "privy/conda-forge/noarch/privy-6.0.0-py_0",
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "diff_match_patch": [
-   "diff-match-patch/conda-forge/linux-64/diff-match-patch-20121119-py27_0",
-   "diff-match-patch/conda-forge/noarch/diff-match-patch-20121119-py_1",
-   "diff-match-patch/conda-forge/noarch/diff-match-patch-20181111-py_0"
-  ],
-  "difflib": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "http": [
+  "inspect": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -48,9 +51,19 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "jupyter_core": [
+   "jupyter_core/conda-forge/linux-64/jupyter_core-4.7.0-py37h9c2f6ca_1",
+   "jupyter_core/conda-forge/noarch/jupyter_core-4.5.0-py_0"
+  ],
   "logging": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "nbconvert": [
+   "nbconvert/conda-forge/linux-64/nbconvert-5.3.0-py27_0",
+   "nbconvert/conda-forge/noarch/nbconvert-5.4.1-py_1",
+   "nbconvert/conda-forge/noarch/nbconvert-5.5.0-py_0",
+   "nbconvert/conda-forge/noarch/nbconvert-5.6.0-py_0"
   ],
   "nbformat": [
    "nbformat/conda-forge/noarch/nbformat-4.4.0-py_1",
@@ -62,6 +75,10 @@
    "notebook/conda-forge/linux-64/notebook-6.0.1-py38_0",
    "notebook/conda-forge/linux-64/notebook-6.3.0-py36hd000896_0",
    "notebook/conda-forge/noarch/notebook-6.4.0-pyha770c72_0"
+  ],
+  "os": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "packaging": [
    "packaging/conda-forge/noarch/packaging-18.0-py_0",
@@ -78,19 +95,18 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "pytest": [
-   "pytest/conda-forge/linux-64/pytest-3.7.0-py27_0",
-   "pytest/conda-forge/linux-64/pytest-4.6.0-py37_0",
-   "pytest/conda-forge/linux-64/pytest-6.0.2-py37hc8dfbb8_0"
+  "pydantic": [
+   "pydantic/conda-forge/linux-64/pydantic-0.20.1-py36_0",
+   "pydantic/conda-forge/linux-64/pydantic-1.7.2-py38h25fe258_0",
+   "pydantic/conda-forge/linux-64/pydantic-1.8-py37h6b43d8f_1",
+   "pydantic/conda-forge/noarch/pydantic-0.18.1-py_1",
+   "pydantic/conda-forge/noarch/pydantic-0.18.2-py_0"
   ],
   "re": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "tornado": [
-   "tornado/conda-forge/linux-64/tornado-6.0.4-py38h1e0a361_2"
-  ],
-  "traceback": [
+  "textwrap": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -99,11 +115,11 @@
    "traitlets/conda-forge/noarch/traitlets-5.0.4-py_1",
    "traitlets/conda-forge/noarch/traitlets-5.0.5-py_0"
   ],
-  "typing": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  "typer": [
+   "typer/conda-forge/noarch/typer-0.2.1-py_0",
+   "typer/conda-forge/noarch/typer-0.3.0-py_0"
   ],
-  "urllib": [
+  "typing": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ]
