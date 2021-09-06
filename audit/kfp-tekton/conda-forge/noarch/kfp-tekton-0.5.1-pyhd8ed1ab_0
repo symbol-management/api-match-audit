@@ -5,18 +5,59 @@
   "input.type",
   "io.BytesIO",
   "itertools",
+  "kfp",
+  "kfp.Client",
+  "kfp.compiler._default_transformers.add_pod_env",
+  "kfp.compiler._op_to_template._inputs_to_json",
+  "kfp.compiler._op_to_template._outputs_to_json",
+  "kfp.compiler._op_to_template._process_obj",
+  "kfp.compiler.compiler.Compiler",
+  "kfp.compiler.main",
+  "kfp.compiler.main.PipelineCollectorContext",
+  "kfp.compiler.main.compile_package",
+  "kfp.components.structures.InputSpec",
+  "kfp.dsl",
+  "kfp.dsl.ContainerOp",
+  "kfp.dsl.OpsGroup",
+  "kfp.dsl.Pipeline",
+  "kfp.dsl.PipelineConf",
+  "kfp.dsl.PipelineParam",
+  "kfp.dsl.ResourceOp",
+  "kfp.dsl._container_op.BaseOp",
+  "kfp.dsl._container_op._MultipleOutputsError",
+  "kfp.dsl._for_loop.LoopArgumentVariable",
   "kfp.dsl._for_loop.LoopArgumentVariable.SUBVAR_NAME_DELIMITER",
+  "kfp.dsl._for_loop.LoopArguments",
   "kfp.dsl._for_loop.LoopArguments.LOOP_ITEM_NAME_BASE",
   "kfp.dsl._for_loop.LoopArguments.NUM_CODE_CHARS",
+  "kfp.dsl._metadata._extract_pipeline_metadata",
   "mark_upstream_ios_of_input",
   "mark_upstream_ios_of_output",
   "op_to_steps_handler",
   "os.environ.get",
   "os.remove",
   "remove_empty_elements",
+  "six.integer_types",
+  "six.iteritems",
+  "six.text_type",
   "sys",
   "sys.path.insert",
+  "tempfile",
+  "tempfile.mkstemp",
   "transformer",
+  "typing.Any",
+  "typing.Callable",
+  "typing.Dict",
+  "typing.List",
+  "typing.Mapping",
+  "typing.Optional",
+  "typing.Set",
+  "typing.Text",
+  "typing.TextIO",
+  "typing.Union",
+  "typing.overload",
+  "uuid",
+  "uuid.uuid4",
   "yaml.resolver.BaseResolver.DEFAULT_MAPPING_TAG",
   "zip.writestr"
  ],
@@ -54,11 +95,6 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "kfp": [
-   "kfp/conda-forge/noarch/kfp-0.2.4-py_0",
-   "kfp/conda-forge/noarch/kfp-0.4.0-py_0",
-   "kfp/conda-forge/noarch/kfp-0.5.1-py_0"
-  ],
   "ntpath": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -71,33 +107,11 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "six": [
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0",
-   "lldb/conda-forge/linux-64/lldb-6.0.0-py35_0",
-   "privy/conda-forge/noarch/privy-6.0.0-py_0",
-   "six/conda-forge/linux-64/six-1.10.0-py34_0",
-   "six/conda-forge/linux-64/six-1.10.0-py34_1",
-   "six/conda-forge/noarch/six-1.14.0-py_1",
-   "six/conda-forge/noarch/six-1.16.0-pyh6c4a22f_0"
-  ],
   "tarfile": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "tempfile": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "textwrap": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "typing": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "uuid": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
