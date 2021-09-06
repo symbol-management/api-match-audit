@@ -47,12 +47,26 @@
   "arrau.reader",
   "arrau.reader.get_coref_infos",
   "assert_slices_coverage",
+  "bert_score",
+  "bert_score.BERTScorer",
+  "bert_score.utils.get_hash",
+  "bert_score.utils.lang2model",
+  "bert_score.utils.model2layers",
+  "bs4.BeautifulSoup",
   "builder_cls",
   "builder_cls.get_imported_module_dir",
+  "bz2",
+  "bz2.open",
+  "bz2file",
+  "bz2file.BZ2File",
   "class_type",
+  "collections",
+  "collections.Counter",
+  "collections.OrderedDict",
   "collections.abc.Iterable",
   "collections.abc.Mapping",
   "collections.defaultdict",
+  "collections.namedtuple",
   "command",
   "conll.mention",
   "conll.mention.Mention",
@@ -62,6 +76,8 @@
   "conll.util",
   "conll.util.check_gold_parse_annotation",
   "conll.util.parse_key_file",
+  "copy",
+  "copy.deepcopy",
   "counter_inc_fn",
   "coval_backend.conll.reader.get_doc_mentions",
   "coval_backend.conll.reader.get_mention_assignments",
@@ -82,6 +98,8 @@
   "dill._dill.log.info",
   "does_function_return_dict",
   "encode_example",
+  "enum",
+  "enum.Enum",
   "errno",
   "eval.evaluator",
   "eval.evaluator.b_cubed",
@@ -121,6 +139,14 @@
   "json.pop",
   "langdetect.DetectorFactory.seed",
   "line_has_too_long_word",
+  "logging",
+  "logging.DEBUG",
+  "logging.NOTSET",
+  "logging.error",
+  "logging.fatal",
+  "logging.getLogger",
+  "logging.info",
+  "logging.warning",
   "lower",
   "metric_cls",
   "mwparserfromhell",
@@ -297,37 +323,11 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "bert_score": [
-   "bert_score/conda-forge/noarch/bert_score-0.3.4-pyh9f0ad1d_0",
-   "bert_score/conda-forge/noarch/bert_score-0.3.5-pyh9f0ad1d_0",
-   "bert_score/conda-forge/noarch/bert_score-0.3.6-pyh9f0ad1d_0",
-   "bert_score/conda-forge/noarch/bert_score-0.3.9-pyh44b312d_0"
-  ],
-  "bs4": [
-   "beautifulsoup4/conda-forge/linux-64/beautifulsoup4-4.7.1-py37_1001",
-   "beautifulsoup4/conda-forge/linux-64/beautifulsoup4-4.8.2-py37_0",
-   "beautifulsoup4/conda-forge/noarch/beautifulsoup4-4.9.3-pyhb0f4dca_0"
-  ],
-  "bz2": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "bz2file": [
-   "bz2file/conda-forge/noarch/bz2file-0.98-py_0"
-  ],
   "codecs": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "collections": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "contextlib": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "copy": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -355,11 +355,6 @@
    "elasticsearch/conda-forge/noarch/elasticsearch-7.7.1-pyh9f0ad1d_0",
    "elasticsearch/conda-forge/noarch/elasticsearch-7.8.0-pyh9f0ad1d_0",
    "elasticsearch/conda-forge/noarch/elasticsearch-7.8.1-pyh9f0ad1d_0"
-  ],
-  "enum": [
-   "privy/conda-forge/noarch/privy-6.0.0-py_0",
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "faiss": [
    "faiss/conda-forge/linux-64/faiss-1.6.3-py36hd337d12_3_cpu",
@@ -421,10 +416,6 @@
    "langdetect/conda-forge/noarch/langdetect-1.0.7-py_0",
    "langdetect/conda-forge/noarch/langdetect-1.0.8-pyh9f0ad1d_0",
    "langdetect/conda-forge/noarch/langdetect-1.0.9-pyhd8ed1ab_0"
-  ],
-  "logging": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "lzma": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
