@@ -7,6 +7,7 @@
   "get_y",
   "grouper_cls",
   "itertools.chain.from_iterable",
+  "matplotlib",
   "numpy.arange",
   "numpy.inf",
   "numpy.pi",
@@ -14,13 +15,51 @@
   "p",
   "p.names",
   "p.unshare",
+  "psy_simple.base.TextBase",
+  "psy_simple.base.Title",
   "psy_simple.base.Title.dependencies",
   "psy_simple.base.Title.group",
+  "psy_simple.base.label_props",
+  "psy_simple.base.label_size",
+  "psy_simple.base.label_weight",
+  "psy_simple.plotters",
+  "psy_simple.plotters.BarPlotter",
+  "psy_simple.plotters.LineColors",
+  "psy_simple.plotters.LinePlot",
   "psy_simple.plotters.LinePlot.__doc__",
+  "psy_simple.plotters.LinePlotter",
+  "psy_simple.plugin.ValidateInStrings",
+  "psy_simple.plugin.ValidateList",
+  "psy_simple.plugin.rcParams",
   "psy_simple.plugin.rcParams.descriptions",
   "psy_simple.plugin.rcParams.update_from_defaultParams",
   "psy_simple.plugin.rcParams.validate",
+  "psy_simple.plugin.try_and_error",
+  "psy_simple.plugin.validate_bool",
+  "psy_simple.plugin.validate_color",
+  "psy_simple.plugin.validate_float",
+  "psy_simple.plugin.validate_int",
+  "psy_simple.plugin.validate_lineplot",
+  "psy_simple.plugin.validate_marker",
+  "psy_simple.plugin.validate_none",
+  "psy_simple.plugin.validate_str",
+  "psyplot",
+  "psyplot.config.rcsetup.RcParams",
+  "psyplot.data.ArrayList",
+  "psyplot.data.safe_list",
+  "psyplot.plotter.BEFOREPLOTTING",
+  "psyplot.plotter.DictFormatoption",
+  "psyplot.plotter.Formatoption",
+  "psyplot.plotter.START",
+  "psyplot.project",
+  "psyplot.project.Project",
   "psyplot.project.Project.block_signals",
+  "psyplot.project.gcp",
+  "psyplot.project.scp",
+  "psyplot.utils.DefaultOrderedDict",
+  "psyplot.utils.unique_everseen",
+  "psyplot.with_gui",
+  "psyplot_gui.common.DockMixin",
   "psyplot_gui.compat.qtcompat.QAbstractItemView",
   "psyplot_gui.compat.qtcompat.QAbstractItemView.MultiSelection",
   "psyplot_gui.compat.qtcompat.QCheckBox",
@@ -32,9 +71,20 @@
   "psyplot_gui.compat.qtcompat.Qt",
   "psyplot_gui.compat.qtcompat.Qt.Checked",
   "psyplot_gui.compat.qtcompat.Qt.RightDockWidgetArea",
+  "psyplot_gui.main.mainwindow",
   "psyplot_gui.main.mainwindow.plugins",
   "psyplot_gui.main.mainwindow.plugins.add_tree",
-  "sys"
+  "six",
+  "six.iteritems",
+  "six.string_types",
+  "sys",
+  "textwrap",
+  "textwrap.wrap",
+  "validate",
+  "weakref",
+  "xarray",
+  "xarray.Dataset",
+  "xarray.Variable"
  ],
  "deps": {
   "__future__": [
@@ -59,53 +109,6 @@
    "numpy/conda-forge/linux-64/numpy-1.17.5-py36h95a1406_0",
    "numpy/conda-forge/linux-64/numpy-1.18.4-py37h8960a57_0",
    "numpy/conda-forge/linux-64/numpy-1.19.2-py36h68c22af_1"
-  ],
-  "psy_simple": [
-   "psy-simple/conda-forge/linux-64/psy-simple-1.3.0-py38h32f6830_1",
-   "psy-simple/conda-forge/osx-64/psy-simple-1.0.0-py27_0"
-  ],
-  "psyplot": [
-   "psyplot/conda-forge/linux-64/psyplot-1.2.0-py36_1000",
-   "psyplot/conda-forge/linux-64/psyplot-1.3.0-py38h32f6830_1"
-  ],
-  "psyplot_gui": [
-   "psyplot-gui/conda-forge/linux-64/psyplot-gui-1.1.0-py35_0",
-   "psyplot-gui/conda-forge/linux-64/psyplot-gui-1.3.0-py38h32f6830_0",
-   "psyplot-gui/conda-forge/linux-64/psyplot-gui-1.3.0-py39hde42818_1"
-  ],
-  "six": [
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0",
-   "lldb/conda-forge/linux-64/lldb-6.0.0-py35_0",
-   "privy/conda-forge/noarch/privy-6.0.0-py_0",
-   "six/conda-forge/linux-64/six-1.10.0-py34_0",
-   "six/conda-forge/linux-64/six-1.10.0-py34_1",
-   "six/conda-forge/noarch/six-1.14.0-py_1",
-   "six/conda-forge/noarch/six-1.16.0-pyh6c4a22f_0"
-  ],
-  "textwrap": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "validate": [
-   "configobj/conda-forge/noarch/configobj-5.0.6-py_0"
-  ],
-  "weakref": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "xarray": [
-   "xarray/conda-forge/linux-64/xarray-0.10.2-py36_0",
-   "xarray/conda-forge/noarch/xarray-0.12.0-py_0",
-   "xarray/conda-forge/noarch/xarray-0.13.0-py_0",
-   "xarray/conda-forge/noarch/xarray-0.14.1-py_0",
-   "xarray/conda-forge/noarch/xarray-0.15.0-py_0",
-   "xarray/conda-forge/noarch/xarray-0.15.1-py_0",
-   "xarray/conda-forge/noarch/xarray-0.16.0-py_0",
-   "xarray/conda-forge/noarch/xarray-0.16.1-py_0",
-   "xarray/conda-forge/noarch/xarray-0.16.2-pyhd8ed1ab_0",
-   "xarray/conda-forge/noarch/xarray-0.18.0-pyhd8ed1ab_0",
-   "xarray/conda-forge/noarch/xarray-0.18.2-pyhd8ed1ab_0"
   ]
  }
 }

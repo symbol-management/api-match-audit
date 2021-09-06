@@ -16,6 +16,8 @@
   "_calc_derivative",
   "algebrautils.distance",
   "algebrautils.rotangle",
+  "concurrent.futures",
+  "concurrent.futures.ThreadPoolExecutor",
   "create_new_spectrum",
   "cv2",
   "cv2.CV_32F",
@@ -34,7 +36,14 @@
   "gen_imaging",
   "gen_optics",
   "guitools.file_dialog.open",
+  "h5py",
+  "h5py.Dataset",
+  "h5py.File",
+  "h5py.Group",
   "header",
+  "hyperspy.api",
+  "hyperspy.api.signals.Signal1D",
+  "hyperspy.api.signals.Signal2D",
   "image_filters.apply_filter_to_stack",
   "image_filters.bin2",
   "image_filters.bin2_simple",
@@ -48,6 +57,27 @@
   "jsontools.search_json",
   "jsontools.search_json_kv",
   "jsontools.write_to_json",
+  "logging",
+  "logging.DEBUG",
+  "logging.getLogger",
+  "math",
+  "math.sqrt",
+  "matplotlib",
+  "matplotlib.pyplot",
+  "matplotlib.pyplot.Axes",
+  "matplotlib.pyplot.axes",
+  "matplotlib.pyplot.close",
+  "matplotlib.pyplot.figure",
+  "matplotlib.pyplot.gca",
+  "matplotlib.pyplot.imshow",
+  "matplotlib.pyplot.ioff",
+  "matplotlib.pyplot.show",
+  "matplotlib.pyplot.subplots",
+  "matplotlib.pyplot.subplots_adjust",
+  "matplotlib.use",
+  "matplotlib.widgets",
+  "matplotlib.widgets.CheckButtons",
+  "matplotlib.widgets.Slider",
   "metadata.DotDict",
   "metadata.Metadata",
   "metadata.aperture",
@@ -108,9 +138,14 @@
   "numpy.uint64",
   "numpy.uint8",
   "numpy.zeros",
+  "operator",
+  "operator.getitem",
   "os.listdir",
   "os.path.exists",
   "os.path.isfile",
+  "pandas",
+  "pandas.DataFrame",
+  "pathlib.Path",
   "plotImagePeaks.plotImagePeaks",
   "plot_array",
   "plottingtools.plot_array",
@@ -127,6 +162,28 @@
   "plottingtools.plot_spectrum_map",
   "plottingtools.plot_stack",
   "processing.get_spectrum_peaks",
+  "re",
+  "re.compile",
+  "re.findall",
+  "scipy.ndimage",
+  "scipy.ndimage.convolve",
+  "scipy.ndimage.correlate",
+  "scipy.ndimage.filters.maximum_filter",
+  "scipy.ndimage.median_filter",
+  "scipy.ndimage.morphology.binary_erosion",
+  "scipy.ndimage.morphology.generate_binary_structure",
+  "scipy.ndimage.rotate",
+  "scipy.ndimage.shift",
+  "scipy.optimize.least_squares",
+  "scipy.signal.find_peaks",
+  "scipy.sparse",
+  "scipy.sparse.coo_matrix",
+  "scipy.sparse.csr_matrix",
+  "scipy.sparse.load_npz",
+  "scipy.sparse.save_npz",
+  "scipy.sparse.spmatrix",
+  "scipy.sparse.vstack",
+  "scipy.spatial.distance_matrix",
   "sys",
   "time"
  ],
@@ -136,39 +193,13 @@
    "pillow/conda-forge/linux-64/pillow-7.0.0-py36h8328e55_1",
    "pillow/conda-forge/linux-64/pillow-7.2.0-py37h718be6c_1"
   ],
-  "concurrent": [
-   "futures/conda-forge/linux-64/futures-3.2.0-py27_0",
-   "futures/conda-forge/osx-64/futures-3.3.0-py27h8c360ce_1",
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython"
-  ],
   "datetime": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "h5py": [
-   "h5py/conda-forge/linux-64/h5py-2.10.0-nompi_py37hf7afa78_105",
-   "h5py/conda-forge/linux-64/h5py-2.6.0-np111py34_4",
-   "h5py/conda-forge/linux-64/h5py-2.7.0-np113py36_1"
-  ],
-  "hyperspy": [
-   "hyperspy/conda-forge/linux-64/hyperspy-1.1.2-py34_0"
-  ],
   "json": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "logging": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "math": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "matplotlib": [
-   "matplotlib-base/conda-forge/linux-64/matplotlib-base-3.1.1-py37hfd891ef_0",
-   "matplotlib-base/conda-forge/linux-64/matplotlib-base-3.1.1-py38h250f245_2",
-   "matplotlib/conda-forge/linux-64/matplotlib-1.5.3-np111py34_0"
   ],
   "matplotlib_scalebar": [
    "matplotlib-scalebar/conda-forge/noarch/matplotlib-scalebar-0.6.1-py_0",
@@ -183,29 +214,9 @@
    "numpy/conda-forge/linux-64/numpy-1.18.4-py37h8960a57_0",
    "numpy/conda-forge/linux-64/numpy-1.19.2-py36h68c22af_1"
   ],
-  "operator": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "os": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "pandas": [
-   "pandas/conda-forge/linux-64/pandas-1.2.2-py37h40f5888_0"
-  ],
-  "pathlib": [
-   "pathlib/conda-forge/noarch/pathlib-1.0.1-py_1",
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "re": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "scipy": [
-   "scipy/conda-forge/linux-64/scipy-1.7.0-py37h29e03ee_0",
-   "scipy/conda-forge/linux-64/scipy-1.7.0-py37ha768fb6_1"
   ],
   "tkinter": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
