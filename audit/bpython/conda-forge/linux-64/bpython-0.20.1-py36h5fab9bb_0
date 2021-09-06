@@ -37,6 +37,8 @@
   "ast.USub",
   "ast.UnaryOp",
   "autocomplete.get_completer",
+  "blessings",
+  "blessings.Terminal",
   "border_color",
   "bpdb.__init__.__version__",
   "bpdb.__init__.post_mortem",
@@ -59,10 +61,19 @@
   "bpython.test.mock.patch",
   "bpython.test.mock.patch.dict",
   "bpython.test.mock.patch.object",
+  "bpython.test.unittest.TestCase",
+  "bpython.test.unittest.main",
+  "bpython.test.unittest.skip",
+  "bpython.test.unittest.skipIf",
+  "bpython.test.unittest.skipUnless",
   "bpython.translations.__init__.translator",
   "bs",
   "callback",
   "check",
+  "code",
+  "code.InteractiveInterpreter",
+  "code.InteractiveInterpreter.runsource",
+  "code.compile_command",
   "collections.defaultdict",
   "collections.defaultdict.copy",
   "collections.deque",
@@ -73,6 +84,7 @@
   "ctypes.windll",
   "ctypes.windll.kernel32.GetConsoleScreenBufferInfo",
   "ctypes.windll.kernel32.GetStdHandle",
+  "curses",
   "curses.A_BOLD",
   "curses.A_REVERSE",
   "curses.cbreak",
@@ -84,18 +96,53 @@
   "curses.error",
   "curses.flushinp",
   "curses.init_pair",
+  "curses.initscr",
   "curses.newwin",
   "curses.nocbreak",
   "curses.noecho",
   "curses.raw",
+  "curses.start_color",
   "curses.ungetch",
   "curses.use_default_colors",
+  "curtsies",
+  "curtsies.FSArray",
+  "curtsies.FmtStr",
+  "curtsies.Termmode",
+  "curtsies.__version__",
+  "curtsies.configfile_keynames.keymap",
+  "curtsies.events",
+  "curtsies.events.Event",
+  "curtsies.events.PasteEvent",
+  "curtsies.events.SigIntEvent",
+  "curtsies.fmtfuncs",
+  "curtsies.fmtfuncs.bold",
+  "curtsies.fmtfuncs.cyan",
+  "curtsies.fmtfuncs.green",
+  "curtsies.fmtfuncs.magenta",
+  "curtsies.fmtfuncs.on_magenta",
+  "curtsies.fmtfuncs.plain",
+  "curtsies.fmtfuncs.red",
+  "curtsies.fmtfuncs.yellow",
+  "curtsies.fmtstr",
+  "curtsies.formatstring.FmtStr",
+  "curtsies.formatstring.fmtstr",
+  "curtsies.formatstring.linesplit",
+  "curtsies.formatstringarray.FormatStringTest",
+  "curtsies.formatstringarray.fsarray",
+  "curtsies.fsarray",
+  "curtsies.input",
   "curtsies.main",
+  "curtsies.termformatconstants.BG_COLORS",
+  "curtsies.termformatconstants.FG_COLORS",
+  "curtsies.termformatconstants.colors",
   "curtsies.termformatconstants.colors.index",
+  "curtsies.window",
   "curtsiesfrontend.events.RefreshRequestEvent",
   "curtsiesfrontend.events.ReloadEvent",
   "curtsiesfrontend.events.RunStartupFileEvent",
   "curtsiesfrontend.events.UndoEvent",
+  "difflib",
+  "difflib.context_diff",
   "errno",
   "f",
   "f.read",
@@ -182,6 +229,8 @@
   "os.ttyname",
   "parse_trees",
   "pdb.Pdb.postloop",
+  "platform",
+  "platform.system",
   "print_padded",
   "process",
   "punctuation_color",
@@ -238,6 +287,10 @@
   "six.moves.urllib_parse.quote",
   "six.moves.urllib_parse.urljoin",
   "six.moves.urllib_parse.urlparse",
+  "string",
+  "string.Template",
+  "string.ascii_letters",
+  "string.ascii_lowercase",
   "string.ascii_lowercase.index",
   "struct.pack",
   "struct.unpack",
@@ -267,10 +320,19 @@
   "sys.version.split",
   "tabs_to_spaces",
   "te",
+  "tempfile",
+  "tempfile.NamedTemporaryFile",
+  "tempfile.TemporaryDirectory",
+  "tempfile.mkdtemp",
   "termios.TIOCGWINSZ",
   "termios.TIOCSWINSZ",
   "time",
   "token_color",
+  "traceback",
+  "traceback.extract_tb",
+  "traceback.format_exception_only",
+  "traceback.format_list",
+  "traceback.print_exc",
   "translations.init",
   "twisted.internet.reactor.callFromThread",
   "twisted.internet.reactor.callLater",
@@ -297,38 +359,11 @@
   "ast": [
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "blessings": [
-   "blessings/conda-forge/linux-64/blessings-1.7-py36hc560c46_1002"
-  ],
-  "bpython": [
-   "bpython/conda-forge/linux-64/bpython-0.18-py37_0",
-   "bpython/conda-forge/linux-64/bpython-0.20.1-py36h5fab9bb_0"
-  ],
-  "code": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "codeop": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "collections": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "contextlib": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "curses": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "curtsies": [
-   "curtsies/conda-forge/linux-64/curtsies-0.3.1-py37_0",
-   "curtsies/conda-forge/linux-64/curtsies-0.3.2-py36hc560c46_0"
-  ],
-  "difflib": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -429,10 +464,6 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "platform": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "prompt": [
    "prompt/conda-forge/win-64/prompt-0.4.1-py38h32f6830_1002"
   ],
@@ -504,19 +535,11 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "string": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "struct": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "subprocess": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "tempfile": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -529,10 +552,6 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "threading": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "traceback": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],

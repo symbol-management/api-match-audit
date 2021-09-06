@@ -15,9 +15,7 @@
   "allennlp.commands.__init__.parse_args",
   "allennlp.commands.subcommand.Subcommand.by_name",
   "allennlp.commands.subcommand.Subcommand.list_available",
-  "allennlp.common.Params.from_file",
   "allennlp.common.Registrable._registry",
-  "allennlp.common.Tqdm.tqdm",
   "allennlp.common.logging.FILE_FRIENDLY_LOGGING",
   "allennlp.common.logging.INFO",
   "allennlp.common.logging.getLogger",
@@ -28,8 +26,6 @@
   "allennlp.common.tqdm.logger.addHandler",
   "allennlp.data.DataLoader.from_params",
   "allennlp.data.DatasetReader.from_params",
-  "allennlp.data.Vocabulary.from_files",
-  "allennlp.data.Vocabulary.from_instances",
   "allennlp.data.Vocabulary.from_params",
   "allennlp.data.Vocabulary.list_available",
   "allennlp.data.Vocabulary.resolve_class_name",
@@ -56,7 +52,6 @@
   "allennlp.modules.token_embedders.TokenEmbedder.register",
   "allennlp.modules.token_embedders.token_embedder.TokenEmbedder.register",
   "allennlp.nn.regularizers.regularizer.Regularizer.register",
-  "allennlp.nn.util.ReduceOp.SUM",
   "allennlp.predictors.predictor.Predictor.register",
   "allennlp.training.Trainer.from_params",
   "allennlp.training.learning_rate_schedulers.learning_rate_scheduler.LearningRateScheduler.register",
@@ -66,13 +61,6 @@
   "atexit",
   "backward_layer",
   "block",
-  "boto3",
-  "boto3.session.Session",
-  "botocore",
-  "botocore.UNSIGNED",
-  "botocore.client.Config",
-  "botocore.exceptions.ClientError",
-  "botocore.exceptions.EndpointConnectionError",
   "bz2",
   "bz2.open",
   "call",
@@ -82,6 +70,7 @@
   "codecs.open",
   "collections.abc.MutableMapping",
   "collections.defaultdict",
+  "constructor",
   "conv",
   "conv.bias.data.copy_",
   "conv.bias.requires_grad",
@@ -92,6 +81,9 @@
   "convolution_layer",
   "convolution_layer.kernel_size",
   "create_parameter",
+  "dataclasses",
+  "dataclasses.asdict",
+  "dataclasses.dataclass",
   "dict.__setitem__",
   "dropout",
   "elmo_token_embedder",
@@ -170,13 +162,12 @@
   "os.replace",
   "os.stat",
   "os.system",
-  "pickle",
-  "pickle.dump",
   "pooler",
   "pop_replace_append",
   "predictor_class",
   "process_stack",
   "projection",
+  "pytest",
   "pytest.mark.gpu",
   "pytest.mark.parametrize",
   "pytest.mark.skipif",
@@ -204,6 +195,13 @@
   "sys.stderr.flush",
   "sys.stderr.write",
   "tags_to_spans_function",
+  "tarfile",
+  "tarfile.TarFile",
+  "tarfile.is_tarfile",
+  "tarfile.open",
+  "tempfile",
+  "tempfile.TemporaryDirectory",
+  "tempfile.mkdtemp",
   "time",
   "tiny_value_of_dtype",
   "torch.BoolTensor",
@@ -266,23 +264,108 @@
   "torch.zeros",
   "torch.zeros_like",
   "tqdm.tqdm.monitor_interval",
+  "traceback",
+  "traceback.print_exc",
+  "urllib.parse.urlparse",
   "warnings.warn",
   "with_new_type_id"
  ],
  "deps": {
+  "_pickle": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "allennlp": [
+   "allennlp/conda-forge/linux-64/allennlp-1.4.0-py37h5e8e339_0"
+  ],
   "argparse": [
    "argparse/conda-forge/osx-64/argparse-1.4.0-py26_0",
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "boto3": [
+   "boto3/conda-forge/noarch/boto3-1.10.14-py_0",
+   "boto3/conda-forge/noarch/boto3-1.10.18-py_0",
+   "boto3/conda-forge/noarch/boto3-1.12.24-pyh8c360ce_0",
+   "boto3/conda-forge/noarch/boto3-1.12.41-pyh9f0ad1d_0",
+   "boto3/conda-forge/noarch/boto3-1.12.9-py_1",
+   "boto3/conda-forge/noarch/boto3-1.13.18-pyh9f0ad1d_0",
+   "boto3/conda-forge/noarch/boto3-1.13.5-pyh9f0ad1d_0",
+   "boto3/conda-forge/noarch/boto3-1.13.8-pyh9f0ad1d_0",
+   "boto3/conda-forge/noarch/boto3-1.14.1-pyh9f0ad1d_0",
+   "boto3/conda-forge/noarch/boto3-1.14.6-pyh9f0ad1d_0",
+   "boto3/conda-forge/noarch/boto3-1.15.12-pyh9f0ad1d_0",
+   "boto3/conda-forge/noarch/boto3-1.15.6-pyh9f0ad1d_0",
+   "boto3/conda-forge/noarch/boto3-1.15.9-pyh9f0ad1d_0",
+   "boto3/conda-forge/noarch/boto3-1.16.32-pyhd8ed1ab_0",
+   "boto3/conda-forge/noarch/boto3-1.16.42-pyhd8ed1ab_0",
+   "boto3/conda-forge/noarch/boto3-1.16.43-pyhd8ed1ab_0",
+   "boto3/conda-forge/noarch/boto3-1.16.56-pyhd8ed1ab_0",
+   "boto3/conda-forge/noarch/boto3-1.16.63-pyhd8ed1ab_0",
+   "boto3/conda-forge/noarch/boto3-1.17.112-pyhd8ed1ab_0",
+   "boto3/conda-forge/noarch/boto3-1.17.36-pyhd8ed1ab_0",
+   "boto3/conda-forge/noarch/boto3-1.17.37-pyhd8ed1ab_0",
+   "boto3/conda-forge/noarch/boto3-1.17.68-pyhd8ed1ab_0",
+   "boto3/conda-forge/noarch/boto3-1.17.7-pyhd8ed1ab_0",
+   "boto3/conda-forge/noarch/boto3-1.18.0-pyhd8ed1ab_0",
+   "boto3/conda-forge/noarch/boto3-1.5.36-py_0",
+   "boto3/conda-forge/noarch/boto3-1.7.40-py_0",
+   "boto3/conda-forge/noarch/boto3-1.8.7-py_0",
+   "boto3/conda-forge/noarch/boto3-1.9.104-py_0",
+   "boto3/conda-forge/noarch/boto3-1.9.111-py_0",
+   "boto3/conda-forge/noarch/boto3-1.9.141-py_0",
+   "boto3/conda-forge/noarch/boto3-1.9.161-py_0",
+   "boto3/conda-forge/noarch/boto3-1.9.230-py_0",
+   "boto3/conda-forge/noarch/boto3-1.9.235-py_0",
+   "boto3/conda-forge/noarch/boto3-1.9.31-py_1",
+   "boto3/conda-forge/noarch/boto3-1.9.44-py_0",
+   "boto3/conda-forge/noarch/boto3-1.9.57-py_0",
+   "boto3/conda-forge/noarch/boto3-1.9.67-py_0"
+  ],
+  "botocore": [
+   "botocore/conda-forge/noarch/botocore-1.10.23-py_0",
+   "botocore/conda-forge/noarch/botocore-1.10.29-py_0",
+   "botocore/conda-forge/noarch/botocore-1.10.42-py_0",
+   "botocore/conda-forge/noarch/botocore-1.10.47-py_0",
+   "botocore/conda-forge/noarch/botocore-1.10.5-py_0",
+   "botocore/conda-forge/noarch/botocore-1.10.78-py_0",
+   "botocore/conda-forge/noarch/botocore-1.12.110-py_0",
+   "botocore/conda-forge/noarch/botocore-1.12.118-py_0",
+   "botocore/conda-forge/noarch/botocore-1.12.134-py_0",
+   "botocore/conda-forge/noarch/botocore-1.12.135-py_0",
+   "botocore/conda-forge/noarch/botocore-1.12.201-py_0",
+   "botocore/conda-forge/noarch/botocore-1.12.223-py_0",
+   "botocore/conda-forge/noarch/botocore-1.12.224-py_0",
+   "botocore/conda-forge/noarch/botocore-1.12.35-py_0",
+   "botocore/conda-forge/noarch/botocore-1.12.47-py_0",
+   "botocore/conda-forge/noarch/botocore-1.12.48-py_0",
+   "botocore/conda-forge/noarch/botocore-1.12.90-py_0",
+   "botocore/conda-forge/noarch/botocore-1.13.0-py_2",
+   "botocore/conda-forge/noarch/botocore-1.13.31-py_0",
+   "botocore/conda-forge/noarch/botocore-1.13.41-py_0",
+   "botocore/conda-forge/noarch/botocore-1.14.16-py_0",
+   "botocore/conda-forge/noarch/botocore-1.15.13-py_0",
+   "botocore/conda-forge/noarch/botocore-1.15.39-pyh9f0ad1d_0",
+   "botocore/conda-forge/noarch/botocore-1.16.19-pyh9f0ad1d_0",
+   "botocore/conda-forge/noarch/botocore-1.16.8-pyh9f0ad1d_0",
+   "botocore/conda-forge/noarch/botocore-1.17.58-pyh9f0ad1d_0",
+   "botocore/conda-forge/noarch/botocore-1.18.8-pyh9f0ad1d_0",
+   "botocore/conda-forge/noarch/botocore-1.20.108-pyhd8ed1ab_0",
+   "botocore/conda-forge/noarch/botocore-1.20.111-pyhd8ed1ab_0",
+   "botocore/conda-forge/noarch/botocore-1.20.31-pyhd8ed1ab_0",
+   "botocore/conda-forge/noarch/botocore-1.20.44-pyhd8ed1ab_0",
+   "botocore/conda-forge/noarch/botocore-1.20.55-pyhd8ed1ab_0",
+   "botocore/conda-forge/noarch/botocore-1.20.67-pyhd8ed1ab_0",
+   "botocore/conda-forge/noarch/botocore-1.20.79-pyhd8ed1ab_0",
+   "botocore/conda-forge/noarch/botocore-1.20.8-pyhd8ed1ab_0",
+   "botocore/conda-forge/noarch/botocore-1.20.93-pyhd8ed1ab_0",
+   "botocore/conda-forge/noarch/botocore-1.21.4-pyhd8ed1ab_0",
+   "botocore/conda-forge/noarch/botocore-1.8.39-py_0",
+   "botocore/conda-forge/noarch/botocore-1.9.13-py_0"
+  ],
   "collections": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "constructor": [
-   "constructor/conda-forge/linux-64/constructor-1.3.0-py35_0",
-   "constructor/conda-forge/linux-64/constructor-1.3.1-py27_1",
-   "constructor/conda-forge/linux-64/constructor-1.3.2-py35_0"
   ],
   "contextlib": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -290,14 +373,6 @@
   ],
   "copy": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "dataclasses": [
-   "dataclasses/conda-forge/noarch/dataclasses-0.5-py_0",
-   "dataclasses/conda-forge/noarch/dataclasses-0.6-py_0",
-   "dataclasses/conda-forge/noarch/dataclasses-0.8-pyh787bdff_0",
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "datetime": [
@@ -401,14 +476,13 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "pkgutil": [
+  "pickle": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "pytest": [
-   "pytest/conda-forge/linux-64/pytest-3.7.0-py27_0",
-   "pytest/conda-forge/linux-64/pytest-4.6.0-py37_0",
-   "pytest/conda-forge/linux-64/pytest-6.0.2-py37hc8dfbb8_0"
+  "pkgutil": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "re": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -447,14 +521,6 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "tarfile": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "tempfile": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "tensorboardX": [
    "tensorboardx/conda-forge/noarch/tensorboardx-0.9-py_0",
    "tensorboardx/conda-forge/noarch/tensorboardx-1.0-py_1",
@@ -483,16 +549,8 @@
    "tqdm/conda-forge/noarch/tqdm-4.56.1-pyhd8ed1ab_0",
    "tqdm/conda-forge/noarch/tqdm-4.60.0-pyhd8ed1ab_0"
   ],
-  "traceback": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "transformers": [],
   "typing": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "urllib": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],

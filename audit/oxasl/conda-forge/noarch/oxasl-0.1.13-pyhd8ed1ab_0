@@ -36,20 +36,44 @@
   "oxasl.gui.__init__.AslGui",
   "oxasl.gui.__init__.main",
   "oxasl_deblur",
+  "oxasl_enable",
   "oxasl_mp",
   "oxasl_multite",
   "oxasl_surfpvc",
+  "oxasl_ve",
+  "pandas",
+  "pandas.DataFrame",
+  "pytest",
+  "pytest.approx",
+  "pytest.raises",
+  "pytest.skip",
   "reg_flirt",
+  "six",
+  "six.PY2",
   "six.StringIO",
+  "six.string_types",
+  "sphinx",
+  "sphinx.cmd.build",
+  "sphinx.cmd.build.main",
+  "sphinx.main",
   "sys",
   "sys.platform.startswith",
   "sys.stderr.write",
+  "tempfile",
+  "tempfile.NamedTemporaryFile",
+  "tempfile.mkdtemp",
+  "tempfile.mktemp",
+  "threading.Thread",
   "tissue_defaults",
+  "traceback",
+  "traceback.format_exc",
+  "traceback.print_exc",
   "transform",
   "unicode",
   "warnings.warn",
   "wrappers.fabber",
   "wrappers.mvntool",
+  "wx",
   "wx.ALIGN_CENTRE_VERTICAL",
   "wx.ALIGN_LEFT",
   "wx.ALIGN_RIGHT",
@@ -86,9 +110,12 @@
   "wx.StaticText",
   "wx.TRANSPARENT_BRUSH",
   "wx.TRANSPARENT_PEN",
+  "wx.grid",
   "wx.grid.Grid",
   "wx.lib.pubsub.pub",
-  "wx.lib.pubsub.pub.sendMessage"
+  "wx.lib.pubsub.pub.sendMessage",
+  "yaml",
+  "yaml.dump"
  ],
  "deps": {
   "__future__": [
@@ -98,11 +125,6 @@
   "_csv": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "_pytest": [
-   "pytest/conda-forge/linux-64/pytest-3.7.0-py27_0",
-   "pytest/conda-forge/linux-64/pytest-4.6.0-py37_0",
-   "pytest/conda-forge/linux-64/pytest-6.0.2-py37hc8dfbb8_0"
   ],
   "_version": [
    "configobj/conda-forge/noarch/configobj-5.0.6-py_0"
@@ -196,20 +218,6 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "oxasl_enable": [
-   "oxasl_enable/conda-forge/noarch/oxasl_enable-0.0.2.post2-pyhd8ed1ab_0"
-  ],
-  "oxasl_ve": [
-   "oxasl_ve/conda-forge/noarch/oxasl_ve-0.1.1.post2-pyhd8ed1ab_0"
-  ],
-  "pandas": [
-   "pandas/conda-forge/linux-64/pandas-1.2.2-py37h40f5888_0"
-  ],
-  "pytest": [
-   "pytest/conda-forge/linux-64/pytest-3.7.0-py27_0",
-   "pytest/conda-forge/linux-64/pytest-4.6.0-py37_0",
-   "pytest/conda-forge/linux-64/pytest-6.0.2-py37hc8dfbb8_0"
-  ],
   "scipy": [
    "scipy/conda-forge/linux-64/scipy-0.17.1-np110py27_blas_openblas_202",
    "scipy/conda-forge/linux-64/scipy-1.7.0-py37h29e03ee_0",
@@ -219,48 +227,13 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "six": [
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0",
-   "lldb/conda-forge/linux-64/lldb-6.0.0-py35_0",
-   "privy/conda-forge/noarch/privy-6.0.0-py_0",
-   "six/conda-forge/linux-64/six-1.10.0-py34_0",
-   "six/conda-forge/linux-64/six-1.10.0-py34_1",
-   "six/conda-forge/noarch/six-1.14.0-py_1",
-   "six/conda-forge/noarch/six-1.16.0-pyh6c4a22f_0"
-  ],
-  "sphinx": [
-   "sphinx/conda-forge/linux-64/sphinx-1.8.3-py36_1000"
-  ],
   "subprocess": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "tempfile": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "threading": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "traceback": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "warnings": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "wx": [
-   "wxpython/conda-forge/linux-64/wxpython-4.0.3-py35h15c1503_0",
-   "wxpython/conda-forge/linux-64/wxpython-4.0.3-py36h15c1503_0"
-  ],
-  "yaml": [
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0",
-   "pyyaml/conda-forge/linux-64/pyyaml-3.11-py35_0",
-   "pyyaml/conda-forge/win-64/pyyaml-5.2-py36hfa6e2cd_0"
   ]
  }
 }
