@@ -29,8 +29,10 @@
   "astropy.log.debug",
   "astropy.log.info",
   "astropy.log.warning",
+  "astropy.tests.helper.pytest.fixture",
   "astropy.tests.helper.pytest.mark.parametrize",
   "astropy.tests.helper.pytest.mark.skipif",
+  "astropy.tests.helper.pytest.raises",
   "astropy.tests.runner.TestRunner.make_test_runner_in",
   "astropy.units.G",
   "astropy.units.G.to",
@@ -49,7 +51,15 @@
   "astropy.units.m",
   "astropy.units.sr.to",
   "astropy.units.uG",
+  "corner.corner",
   "dt_sed_conversion",
+  "emcee",
+  "emcee.EnsembleSampler",
+  "emcee.autocorr",
+  "emcee.autocorr.AutocorrError",
+  "emcee.autocorr.integrated_time",
+  "emcee.interruptible_pool.InterruptiblePool",
+  "emcee.utils.sample_ball",
   "extern.minimize.minimize",
   "fixtures.sampler.data",
   "fixtures.sampler.run_info",
@@ -72,6 +82,9 @@
   "func.__name__",
   "function",
   "functools.partial",
+  "glob.glob",
+  "h5py",
+  "h5py.File",
   "hashlib.sha256",
   "heaviside",
   "kde",
@@ -149,11 +162,6 @@
   "warnings.warn"
  ],
  "deps": {
-  "_pytest": [
-   "pytest/conda-forge/linux-64/pytest-3.7.0-py27_0",
-   "pytest/conda-forge/linux-64/pytest-4.6.0-py37_0",
-   "pytest/conda-forge/linux-64/pytest-6.0.2-py37hc8dfbb8_0"
-  ],
   "ast": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -168,36 +176,13 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "corner": [
-   "corner/conda-forge/noarch/corner-2.0.1-py_1002",
-   "corner/conda-forge/noarch/corner-2.0.1-py_1003",
-   "corner/conda-forge/noarch/corner-2.1.0-pyh9f0ad1d_0",
-   "corner/conda-forge/noarch/corner-2.1.0-pyhd3deb0d_1",
-   "corner/conda-forge/noarch/corner-2.2.0-pyhd8ed1ab_0",
-   "corner/conda-forge/noarch/corner-2.2.1-pyhd8ed1ab_0"
-  ],
   "distutils": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "emcee": [
-   "emcee/conda-forge/linux-64/emcee-2.2.1-py35_1",
-   "emcee/conda-forge/noarch/emcee-2.2.1-pyh24bf2e0_4",
-   "emcee/conda-forge/noarch/emcee-3.0.0-pyh5ca1d4c_0",
-   "emcee/conda-forge/noarch/emcee-3.1.0-pyh8a188c0_0"
-  ],
   "functools": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "glob": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "h5py": [
-   "h5py/conda-forge/linux-64/h5py-2.10.0-nompi_py37hf7afa78_105",
-   "h5py/conda-forge/linux-64/h5py-2.6.0-np111py34_4",
-   "h5py/conda-forge/linux-64/h5py-2.7.0-np113py36_1"
   ],
   "hashlib": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",

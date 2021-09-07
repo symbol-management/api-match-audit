@@ -8,8 +8,18 @@
   "collections.abc.Sequence",
   "collections.defaultdict",
   "get_sample",
+  "hyperopt.hp",
+  "hyperopt.hp.choice",
+  "hyperopt.hp.loguniform",
+  "hyperopt.hp.uniform",
+  "hyperopt.pyll",
+  "lightgbm",
   "lightgbm.__version__.split",
+  "lightgbm.sklearn.LGBMModel",
+  "multiprocessing",
   "multiprocessing.cpu_count",
+  "numbers",
+  "numbers.Integral",
   "numpy.ceil",
   "numpy.empty",
   "numpy.float64",
@@ -17,21 +27,74 @@
   "numpy.log",
   "numpy.random.seed",
   "numpy.sqrt",
+  "optuna",
+  "optuna.distributions",
+  "optuna.samplers.TPESampler",
+  "pandas",
+  "pandas.DataFrame",
+  "pickle.PicklingError",
+  "random",
+  "random.randint",
+  "random.seed",
+  "ray",
+  "ray.cloudpickle",
   "ray.cloudpickle.dump",
   "ray.cloudpickle.load",
+  "ray.cluster_resources",
+  "ray.get",
+  "ray.init",
+  "ray.is_initialized",
+  "ray.put",
+  "ray.shutdown",
+  "ray.tune",
+  "ray.tune.Trainable",
+  "ray.tune.grid_search",
+  "ray.tune.logger.CSVLogger",
+  "ray.tune.logger.JsonLogger",
+  "ray.tune.logger.Logger",
+  "ray.tune.logger.MLFLowLogger",
+  "ray.tune.logger.TBXLogger",
+  "ray.tune.run",
+  "ray.tune.sample.Domain",
+  "ray.tune.sample_from",
+  "ray.tune.schedulers.ASHAScheduler",
+  "ray.tune.schedulers.AsyncHyperBandScheduler",
+  "ray.tune.schedulers.HyperBandForBOHB",
+  "ray.tune.schedulers.HyperBandScheduler",
+  "ray.tune.schedulers.MedianStoppingRule",
+  "ray.tune.schedulers.PopulationBasedTraining",
+  "ray.tune.schedulers.TrialScheduler",
+  "ray.tune.stopper.CombinedStopper",
   "ray.tune.stopper.MaximumIterationStopper",
+  "ray.tune.stopper.Stopper",
+  "ray.tune.suggest.BasicVariantGenerator",
+  "ray.tune.suggest.ConcurrencyLimiter",
+  "ray.tune.suggest.bohb.TuneBOHB",
+  "ray.tune.suggest.hyperopt.HyperOptSearch",
+  "ray.tune.suggest.optuna.OptunaSearch",
+  "ray.tune.suggest.optuna.param",
   "ray.tune.suggest.optuna.param.suggest_categorical",
   "ray.tune.suggest.optuna.param.suggest_loguniform",
   "ray.tune.suggest.optuna.param.suggest_uniform",
+  "ray.tune.suggest.skopt.SkOptSearch",
+  "ray.tune.suggest.suggestion.Searcher",
+  "ray.tune.trial.Trial",
   "ray.tune.trial.Trial.TERMINATED",
+  "scipy.stats.rankdata",
   "score",
+  "sklearn.base.BaseEstimator",
+  "sklearn.base.clone",
+  "sklearn.base.is_classifier",
+  "sklearn.ensemble.BaseEnsemble",
   "sklearn.exceptions.NotFittedError",
   "sklearn.metrics.check_scoring",
   "sklearn.model_selection.ParameterGrid",
   "sklearn.model_selection.check_cv",
   "sklearn.model_selection.cross_validate",
+  "sklearn.pipeline.Pipeline",
   "sklearn.tree.BaseDecisionTree",
   "sklearn.utils.metaestimators._safe_split",
+  "sklearn.utils.validation.check_is_fitted",
   "time",
   "tune_sklearn.utils.EarlyStopping.CATBOOST",
   "tune_sklearn.utils.EarlyStopping.LGBM",
@@ -46,10 +109,6 @@
   "ConfigSpace": [
    "configspace/conda-forge/linux-64/configspace-0.4.17-py37ha757849_1"
   ],
-  "_pickle": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "catboost": [
    "catboost/conda-forge/linux-64/catboost-0.14.1-py36_0",
    "catboost/conda-forge/linux-64/catboost-0.17.5-py37_0"
@@ -58,32 +117,15 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "hyperopt": [
-   "hyperopt/conda-forge/noarch/hyperopt-0.2.2-py_0",
-   "hyperopt/conda-forge/noarch/hyperopt-0.2.3-pyh9f0ad1d_0",
-   "hyperopt/conda-forge/noarch/hyperopt-0.2.4-pyh9f0ad1d_0",
-   "hyperopt/conda-forge/noarch/hyperopt-0.2.5-pyh9f0ad1d_0"
-  ],
   "inspect": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "lightgbm": [
-   "lightgbm/conda-forge/linux-64/lightgbm-2.1.2-py36hfc679d8_0"
   ],
   "logging": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "multiprocessing": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "ntpath": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "numbers": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -92,34 +134,9 @@
    "numpy/conda-forge/linux-64/numpy-1.18.4-py37h8960a57_0",
    "numpy/conda-forge/linux-64/numpy-1.19.2-py36h68c22af_1"
   ],
-  "optuna": [],
   "os": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "pandas": [
-   "pandas/conda-forge/linux-64/pandas-1.2.2-py37h40f5888_0"
-  ],
-  "pickle": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "random": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "ray": [
-   "ray-core/conda-forge/linux-64/ray-core-1.0.1-py37hf931bba_1"
-  ],
-  "scipy": [
-   "scipy/conda-forge/linux-64/scipy-0.17.1-np110py27_blas_openblas_202",
-   "scipy/conda-forge/linux-64/scipy-1.7.0-py37h29e03ee_0",
-   "scipy/conda-forge/linux-64/scipy-1.7.0-py37ha768fb6_1"
-  ],
-  "sklearn": [
-   "scikit-learn/conda-forge/linux-64/scikit-learn-0.17.1-np110py27_blas_openblas_200",
-   "scikit-learn/conda-forge/linux-64/scikit-learn-0.17.1-np110py35_blas_openblas_202",
-   "scikit-learn/conda-forge/linux-64/scikit-learn-0.17.1-np111py35_blas_openblas_202"
   ],
   "skopt": [
    "scikit-optimize/conda-forge/linux-64/scikit-optimize-0.3-py35_0",
