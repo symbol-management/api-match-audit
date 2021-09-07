@@ -108,13 +108,31 @@
   "dask.distributed.get_client",
   "dask.distributed.rejoin",
   "dask.distributed.secede",
+  "dask.sizeof.sizeof",
+  "dask.utils.funcname",
+  "dask.utils.itemgetter",
+  "decimal",
+  "decimal.Decimal",
   "dict.fromkeys",
+  "dis",
   "dis.EXTENDED_ARG",
   "dis.HAVE_ARGUMENT",
+  "dis.get_instructions",
+  "distributed",
+  "distributed.Client",
+  "distributed.LocalCluster",
+  "distributed.get_client",
+  "distributed.get_worker",
+  "distributed.metrics.time",
+  "distributed.utils.TimeoutError",
+  "distributed.utils.thread_state",
+  "distributed.utils_test.cluster",
   "distributed.utils_test.cluster.adapt",
   "distributed.utils_test.cluster.close",
   "distributed.utils_test.cluster.scale",
+  "distributed.utils_test.inc",
   "dummy_threading.RLock",
+  "enum.Enum",
   "errno",
   "exception_type",
   "externals.loky.backend.resource_tracker._CLEANUP_FUNCS",
@@ -135,7 +153,9 @@
   "func_cached",
   "func_cached.call_and_shelve",
   "func_cached.store_backend",
+  "functools",
   "functools.partial",
+  "functools.wraps",
   "g",
   "g._check_previous_func_code",
   "g._get_output_identifiers",
@@ -151,15 +171,39 @@
   "get_set_get_collect",
   "gg",
   "gp",
+  "gzip",
+  "gzip.GzipFile",
   "h",
   "h._get_output_identifiers",
   "h.store_backend.load_item",
   "h.store_backend.location",
   "hashing.hash",
+  "hashlib",
   "hashlib.md5",
+  "helper",
+  "imp",
+  "imp.load_source",
+  "inspect",
   "inspect.CO_NESTED",
+  "inspect.currentframe",
+  "inspect.formatargspec",
+  "inspect.formatargvalues",
+  "inspect.getargvalues",
+  "inspect.getblock",
+  "inspect.getfullargspec",
+  "inspect.getinnerframes",
+  "inspect.getmodule",
+  "inspect.getouterframes",
+  "inspect.getsourcefile",
+  "inspect.getsourcelines",
+  "inspect.isclass",
+  "inspect.isfunction",
+  "inspect.ismethod",
+  "inspect.signature",
   "int.__add__",
+  "io",
   "io.BlockingIOError",
+  "io.BufferedIOBase",
   "io.BufferedIOBase.readinto",
   "io.BufferedReader",
   "io.BufferedWriter",
@@ -213,6 +257,9 @@
   "joblib.test.common.with_lz4.args",
   "joblib.test.data.__file__",
   "joblib.test.test_func_inspect_special_encoding.big5_f",
+  "json",
+  "json.dumps",
+  "json.loads",
   "list.append",
   "locals.keys",
   "managers.LokyManager",
@@ -460,7 +507,9 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "asyncio": [],
+  "asyncio": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython"
+  ],
   "builtins": [
    "pies2overrides/conda-forge/osx-64/pies2overrides-2.6.7-py27_1000"
   ],
@@ -491,83 +540,15 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "dask": [
-   "dask-core/conda-forge/noarch/dask-core-0.17.5-py_0",
-   "dask-core/conda-forge/noarch/dask-core-0.18.0-py_0",
-   "dask-core/conda-forge/noarch/dask-core-0.20.1-py_0",
-   "dask-core/conda-forge/noarch/dask-core-1.1.1-py_0",
-   "dask-core/conda-forge/noarch/dask-core-1.1.2-py_0",
-   "dask-core/conda-forge/noarch/dask-core-1.1.4-py_0",
-   "dask-core/conda-forge/noarch/dask-core-2.10.1-py_0",
-   "dask-core/conda-forge/noarch/dask-core-2.13.0-py_0",
-   "dask-core/conda-forge/noarch/dask-core-2.17.2-py_0",
-   "dask-core/conda-forge/noarch/dask-core-2.18.0-py_0",
-   "dask-core/conda-forge/noarch/dask-core-2.22.0-py_0",
-   "dask-core/conda-forge/noarch/dask-core-2.25.0-py_0",
-   "dask-core/conda-forge/noarch/dask-core-2.27.0-py_0",
-   "dask-core/conda-forge/noarch/dask-core-2.6.0-py_0",
-   "dask-core/conda-forge/noarch/dask-core-2.8.1-py_0",
-   "dask-core/conda-forge/noarch/dask-core-2020.12.0-pyhd8ed1ab_0",
-   "dask-core/conda-forge/noarch/dask-core-2021.3.1-pyhd8ed1ab_0",
-   "dask-core/conda-forge/noarch/dask-core-2021.4.0-pyhd8ed1ab_0",
-   "dask-core/conda-forge/noarch/dask-core-2021.4.1-pyhd8ed1ab_0",
-   "dask-core/conda-forge/noarch/dask-core-2021.5.1-pyhd8ed1ab_0"
-  ],
   "datetime": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "decimal": [
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "dis": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "distributed": [
-   "distributed/conda-forge/linux-64/distributed-2021.5.0-py39hf3d152e_0",
-   "distributed/conda-forge/noarch/distributed-2.10.0-py_0",
-   "distributed/conda-forge/noarch/distributed-2.10.0-py_1"
   ],
   "distutils": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "enum": [
-   "privy/conda-forge/noarch/privy-6.0.0-py_0",
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "functools": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "gzip": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "hashlib": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "helper": [
-   "helper/conda-forge/linux-64/helper-2.4.1-py34_0",
-   "helper/conda-forge/noarch/helper-2.4.2-py_1",
-   "helper/conda-forge/noarch/helper-2.5.0-pyh44b312d_0"
-  ],
-  "imp": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "importlib": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "inspect": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "io": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -579,10 +560,6 @@
    "joblib/conda-forge/noarch/joblib-0.13.2-py_0",
    "joblib/conda-forge/noarch/joblib-0.14.0-py_0",
    "joblib/conda-forge/noarch/joblib-0.14.1-py_0"
-  ],
-  "json": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "keyword": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
