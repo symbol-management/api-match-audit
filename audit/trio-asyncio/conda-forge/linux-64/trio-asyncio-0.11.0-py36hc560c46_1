@@ -88,11 +88,20 @@
   "sniffio.current_async_library_cvar.reset",
   "sniffio.current_async_library_cvar.set",
   "sys",
+  "test",
+  "test.support.threading_cleanup",
   "test.support.threading_cleanup.__code__",
   "test.test_asyncio",
   "test.test_asyncio.__file__",
   "test.test_asyncio.__path__",
+  "threading.local",
   "time",
+  "trio",
+  "trio.CancelScope",
+  "trio.Cancelled",
+  "trio.Event",
+  "trio.TASK_STATUS_IGNORED",
+  "trio.WouldBlock",
   "trio.hazmat.Abort.FAILED",
   "trio.hazmat.Abort.SUCCEEDED",
   "trio.hazmat.checkpoint",
@@ -105,6 +114,9 @@
   "trio.hazmat.wait_socket_writable",
   "trio.hazmat.wait_task_rescheduled",
   "trio.hazmat.wait_writable",
+  "trio.move_on_after",
+  "trio.open_nursery",
+  "trio.run",
   "trio.sleep",
   "trio.sleep_forever",
   "trio.to_thread.run_sync",
@@ -115,9 +127,14 @@
   "trio_asyncio._util.run_aio_future",
   "trio_asyncio._util.run_aio_generator",
   "trio_asyncio._util.run_trio_generator",
+  "types",
+  "types.ModuleType",
+  "types.coroutine",
   "utils.deprecate",
   "utils.disable_logger",
   "warnings.warn",
+  "weakref",
+  "weakref.WeakValueDictionary",
   "xfail"
  ],
  "deps": {
@@ -135,10 +152,6 @@
    "pytest/conda-forge/linux-64/pytest-3.7.0-py27_0",
    "pytest/conda-forge/linux-64/pytest-4.6.0-py37_0",
    "pytest/conda-forge/linux-64/pytest-6.0.2-py37hc8dfbb8_0"
-  ],
-  "_threading_local": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "async_generator": [
    "async_generator/conda-forge/noarch/async_generator-1.10-py_0",
@@ -257,18 +270,7 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "test": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "threading": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "trio": [
-   "trio/conda-forge/linux-64/trio-0.18.0-py38h578d9bd_0"
-  ],
-  "types": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -277,10 +279,6 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "warnings": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "weakref": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ]

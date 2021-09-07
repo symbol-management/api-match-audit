@@ -141,6 +141,8 @@
   "os.strerror",
   "os_path_isabs",
   "pattern_transform_func",
+  "pkgutil",
+  "pkgutil.get_loader",
   "re.MULTILINE",
   "register_plugins",
   "response_class",
@@ -316,10 +318,20 @@
   "robocorp_ls_core.workspace.Workspace",
   "robocorp_ls_core.workspace.Workspace.add_folder",
   "robocorp_ls_core.workspace.Workspace.remove_folder",
+  "robot",
+  "robot.api.Token",
   "robot.api.Token.ASSIGN",
   "robot.api.Token.KEYWORD",
   "robot.api.Token.NAME",
   "robot.api.Token.VARIABLE",
+  "robot.api.get_init_model",
+  "robot.api.get_model",
+  "robot.api.get_resource_model",
+  "robot.get_version",
+  "robot.libraries.BuiltIn.BuiltIn",
+  "robot.run_cli",
+  "robot.running.steprunner.StepRunner",
+  "robot.tidy.Tidy",
   "robotframework_debug_adapter.constants.LOG_FILENAME",
   "robotframework_debug_adapter.constants.ReasonEnum.REASON_BREAKPOINT",
   "robotframework_debug_adapter.constants.ReasonEnum.REASON_NOT_STOPPED",
@@ -352,6 +364,7 @@
   "robotframework_ls.vendored.robocorp_ls_core.libs.watchdog_lib.watchdog.utils.__init__.has_attribute",
   "robotframework_ls.vendored.robocorp_ls_core.libs.watchdog_lib.watchdog.utils.__init__.load_module",
   "safe_repr",
+  "select",
   "select.KQ_EV_ADD",
   "select.KQ_EV_CLEAR",
   "select.KQ_EV_ENABLE",
@@ -374,7 +387,15 @@
   "socket.TCP_KEEPIDLE",
   "socket.TCP_KEEPINTVL",
   "socket.makefile",
+  "socketserver",
+  "socketserver.StreamRequestHandler",
+  "socketserver.TCPServer",
   "start_handler",
+  "stat",
+  "stat.S_IFDIR",
+  "stat.S_IFREG",
+  "stat.S_ISDIR",
+  "string.Template",
   "struct.unpack_from",
   "subprocess._active.remove",
   "sys",
@@ -391,12 +412,37 @@
   "sys.stdout.write",
   "time",
   "to_json",
+  "traceback",
+  "traceback.extract_stack",
+  "traceback.format_exception_only",
+  "traceback.format_tb",
+  "traceback.print_exc",
+  "typing",
+  "typing.Any",
+  "typing.Callable",
+  "typing.Dict",
+  "typing.FrozenSet",
+  "typing.Generic",
+  "typing.Iterable",
+  "typing.Iterator",
+  "typing.List",
+  "typing.Mapping",
+  "typing.Optional",
+  "typing.Protocol",
+  "typing.Sequence",
+  "typing.Tuple",
+  "typing.Type",
+  "typing.TypeVar",
+  "typing.Union",
+  "uuid",
   "walk_func",
   "warnings.warn",
   "watchdog.observers.read_directory_changes_async.WindowsApiAsyncObserver",
   "watchdog.utils.compat.queue",
   "watchdog.utils.compat.queue.Empty",
   "weak_debug_adapter_comm",
+  "weakref",
+  "weakref.WeakValueDictionary",
   "weakref.ref",
   "win32stat",
   "win32stat.stat",
@@ -526,10 +572,6 @@
    "pathtools/conda-forge/win-64/pathtools-0.1.2-py27_0",
    "pathtools/conda-forge/win-64/pathtools-0.1.2-py36_0"
   ],
-  "pkgutil": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "pytest": [
    "pytest/conda-forge/linux-64/pytest-3.7.0-py27_0",
    "pytest/conda-forge/linux-64/pytest-4.6.0-py37_0",
@@ -553,14 +595,6 @@
    "requests/conda-forge/noarch/requests-2.25.1-pyhd3deb0d_0",
    "requests/conda-forge/noarch/requests-2.26.0-pyhd8ed1ab_0"
   ],
-  "robot": [
-   "robotframework/conda-forge/noarch/robotframework-3.2-pyh9f0ad1d_0",
-   "robotframework/conda-forge/noarch/robotframework-3.2.1-pyh9f0ad1d_0"
-  ],
-  "select": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "shutil": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -570,18 +604,6 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "socket": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "socketserver": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "stat": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "string": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -613,22 +635,11 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "traceback": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "typing": [
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "unicodedata": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "urllib": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "uuid": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -640,10 +651,6 @@
    "watchdog/conda-forge/linux-64/watchdog-0.10.4-py36h5fab9bb_0",
    "watchdog/conda-forge/linux-64/watchdog-0.9.0-py36_1",
    "watchdog/conda-forge/noarch/watchdog-0.8.3-py_2"
-  ],
-  "weakref": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "xml": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
