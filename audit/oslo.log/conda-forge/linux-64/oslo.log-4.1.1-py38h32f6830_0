@@ -9,11 +9,21 @@
   "UnrelatedException",
   "_static_method",
   "collections.defaultdict",
+  "configparser",
+  "configparser.Error",
+  "dateutil.tz",
+  "dateutil.tz.tzlocal",
+  "dateutil.tz.tzutc",
+  "debtcollector",
+  "debtcollector.deprecate",
   "dict.get",
   "do_outdated_stuff",
   "errno",
   "excepthook",
   "file_handler",
+  "fixtures",
+  "fixtures.Fixture",
+  "fixtures.MonkeyPatch",
   "func_or_cls",
   "func_or_cls.__init__",
   "func_or_cls.__meta__",
@@ -21,19 +31,61 @@
   "functools.reduce",
   "getLogger",
   "ignore",
+  "inspect",
+  "inspect.isclass",
+  "inspect.isfunction",
+  "inspect.ismethod",
+  "inspect.stack",
   "io.StringIO",
   "itertools",
+  "logging",
+  "logging.CRITICAL",
+  "logging.DEBUG",
+  "logging.ERROR",
+  "logging.FATAL",
+  "logging.Filter",
+  "logging.Formatter",
+  "logging.Formatter.format",
+  "logging.Formatter.formatException",
+  "logging.Handler",
+  "logging.INFO",
+  "logging.LogRecord",
   "logging.Logger.manager",
+  "logging.LoggerAdapter",
+  "logging.LoggerAdapter.warning",
+  "logging.NOTSET",
+  "logging.NullHandler",
+  "logging.PercentStyle",
+  "logging.PlaceHolder",
+  "logging.StreamHandler",
   "logging.StreamHandler.format",
+  "logging.WARN",
+  "logging.WARNING",
+  "logging.addLevelName",
+  "logging.config",
+  "logging.config.fileConfig",
+  "logging.getLogger",
+  "logging.getLoggerClass",
+  "logging.handlers",
+  "logging.handlers.NTEventLogHandler",
+  "logging.handlers.RotatingFileHandler",
+  "logging.handlers.SysLogHandler",
   "logging.handlers.SysLogHandler.LOG_USER",
+  "logging.handlers.TimedRotatingFileHandler",
+  "logging.handlers.WatchedFileHandler",
+  "logging.setLoggerClass",
   "method",
   "orig_init",
   "os.chmod",
   "os.error",
+  "os.path.basename",
+  "os.path.dirname",
   "os.path.exists",
   "os.path.getmtime",
+  "os.path.join",
   "os.remove",
   "os.rename",
+  "os.sep",
   "os.stat",
   "os.utime",
   "oslo_context.context.get_logging_values",
@@ -56,14 +108,25 @@
   "oslotest.base.BaseTestCase",
   "pyinotify.IN_DELETE",
   "pyinotify.IN_MOVED_FROM",
+  "re",
+  "re.compile",
   "report_deprecated",
   "sys",
   "sys.stderr.getvalue",
   "systemd.journal",
   "systemd.journal.send",
+  "tempfile",
+  "tempfile.mkdtemp",
+  "tempfile.mkstemp",
   "test_class",
   "test_class.test_staticmethod",
   "time",
+  "unittest.mock",
+  "unittest.mock.ANY",
+  "unittest.mock.MagicMock",
+  "unittest.mock.Mock",
+  "unittest.mock.call",
+  "unittest.mock.patch",
   "unittest.mock.patch.object",
   "unittest.mock.sentinel.sentinel_log"
  ],
@@ -77,17 +140,7 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "backports": [
-   "configparser/conda-forge/noarch/configparser-5.0.0-py_0"
-  ],
   "collections": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "configparser": [
-   "configparser/conda-forge/linux-64/configparser-3.7.1-py27_1",
-   "configparser/conda-forge/noarch/configparser-5.0.0-py_0",
-   "configparser/conda-forge/noarch/configparser-5.0.1-py_0",
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -103,28 +156,7 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "dateutil": [
-   "python-dateutil/conda-forge/noarch/python-dateutil-2.7.2-py_0",
-   "python-dateutil/conda-forge/noarch/python-dateutil-2.7.4-py_0",
-   "python-dateutil/conda-forge/noarch/python-dateutil-2.7.5-py_0",
-   "python-dateutil/conda-forge/noarch/python-dateutil-2.8.1-py_0",
-   "python-dateutil/conda-forge/noarch/python-dateutil-2.8.2-pyhd8ed1ab_0"
-  ],
-  "debtcollector": [
-   "debtcollector/conda-forge/linux-64/debtcollector-1.20.0-py27_0",
-   "debtcollector/conda-forge/linux-64/debtcollector-1.20.0-py27_1000",
-   "debtcollector/conda-forge/noarch/debtcollector-1.19.0-py_0",
-   "debtcollector/conda-forge/noarch/debtcollector-1.21.0-py_0"
-  ],
-  "fixtures": [
-   "fixtures/conda-forge/linux-64/fixtures-3.0.0-py35_0",
-   "fixtures/conda-forge/noarch/fixtures-3.0.0-py_0"
-  ],
   "functools": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "inspect": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -132,18 +164,10 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "logging": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "monotonic": [
    "monotonic/conda-forge/linux-64/monotonic-1.1-py34_0",
    "monotonic/conda-forge/linux-64/monotonic-1.2-py27_0",
    "monotonic/conda-forge/noarch/monotonic-1.5-py_0"
-  ],
-  "ntpath": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "os": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -212,10 +236,6 @@
   "pyinotify": [
    "pyinotify/conda-forge/linux-64/pyinotify-0.9.6-py37hc8dfbb8_1001"
   ],
-  "re": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "shutil": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -232,19 +252,11 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "tempfile": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "testtools": [
    "testtools/conda-forge/noarch/testtools-2.3.0-py_1",
    "testtools/conda-forge/osx-64/testtools-2.2.0-py27_0"
   ],
   "traceback": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "unittest": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ]
