@@ -1,5 +1,10 @@
 {
  "bad": [
+  "jinja2",
+  "keyword",
+  "keyword.kwlist",
+  "mdformat",
+  "mdformat.text",
   "mypy_boto3_builder.constants.BOTO3_STUBS_STATIC_PATH.glob",
   "mypy_boto3_builder.constants.BOTOCORE_STUBS_STATIC_PATH.glob",
   "mypy_boto3_builder.constants.TEMPLATES_PATH.as_posix",
@@ -82,8 +87,52 @@
   "mypy_boto3_builder.type_annotations.type.Type.overload",
   "mypy_boto3_builder.type_annotations.type.Type.str",
   "mypy_boto3_builder.type_maps.syntax_type_map.SYNTAX_TYPE_MAP",
+  "mypy_boto3_builder.type_maps.typed_dicts.ec2_tag_type",
+  "mypy_boto3_builder.type_maps.typed_dicts.paginator_config_type",
+  "mypy_boto3_builder.type_maps.typed_dicts.s3_copy_source_type",
+  "mypy_boto3_builder.type_maps.typed_dicts.waiter_config_type",
+  "pathlib.Path",
+  "pyparsing.Combine",
+  "pyparsing.Forward",
+  "pyparsing.Group",
+  "pyparsing.LineEnd",
+  "pyparsing.LineStart",
+  "pyparsing.Literal",
+  "pyparsing.Optional",
+  "pyparsing.ParseException",
+  "pyparsing.ParserElement",
+  "pyparsing.ParserElement.enablePackrat",
+  "pyparsing.SkipTo",
+  "pyparsing.White",
+  "pyparsing.Word",
+  "pyparsing.alphanums",
+  "pyparsing.alphas",
+  "pyparsing.delimitedList",
+  "pyparsing.indentedBlock",
   "resource_class",
-  "sys"
+  "sys",
+  "types.MethodType",
+  "typing",
+  "typing.Any",
+  "typing.Callable",
+  "typing.Dict",
+  "typing.Generator",
+  "typing.IO",
+  "typing.Iterable",
+  "typing.Iterator",
+  "typing.List",
+  "typing.Literal",
+  "typing.Mapping",
+  "typing.Optional",
+  "typing.Pattern",
+  "typing.Sequence",
+  "typing.Set",
+  "typing.Tuple",
+  "typing.Type",
+  "typing.TypeVar",
+  "typing.Union",
+  "typing.overload",
+  "unittest.mock.MagicMock"
  ],
  "deps": {
   "abc": [
@@ -218,30 +267,7 @@
    "jinja2/conda-forge/noarch/jinja2-3.0.0-pyhd8ed1ab_0",
    "jinja2/conda-forge/noarch/jinja2-3.0.1-pyhd8ed1ab_0"
   ],
-  "keyword": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "logging": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "mdformat": [
-   "mdformat/conda-forge/noarch/mdformat-0.7.6-pyhd8ed1ab_1",
-   "mdformat/conda-forge/noarch/mdformat-0.7.7-pyhd8ed1ab_0",
-   "mdformat/conda-forge/noarch/mdformat-0.7.9-pyhd8ed1ab_0"
-  ],
-  "mypy_boto3_builder": [
-   "mypy_boto3_builder/conda-forge/noarch/mypy_boto3_builder-4.13.1-pyhd8ed1ab_1",
-   "mypy_boto3_builder/conda-forge/noarch/mypy_boto3_builder-4.14.0-pyhd8ed1ab_1",
-   "mypy_boto3_builder/conda-forge/noarch/mypy_boto3_builder-4.14.1-pyhd8ed1ab_0",
-   "mypy_boto3_builder/conda-forge/noarch/mypy_boto3_builder-4.17.0-pyhd8ed1ab_0",
-   "mypy_boto3_builder/conda-forge/noarch/mypy_boto3_builder-4.18.0-pyhd8ed1ab_0",
-   "mypy_boto3_builder/conda-forge/noarch/mypy_boto3_builder-4.18.3-pyhd8ed1ab_0",
-   "mypy_boto3_builder/conda-forge/noarch/mypy_boto3_builder-4.19.0-pyhd8ed1ab_0"
-  ],
-  "pathlib": [
-   "pathlib/conda-forge/noarch/pathlib-1.0.1-py_1",
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -250,31 +276,11 @@
    "setuptools/conda-forge/linux-64/setuptools-46.3.0-py38h32f6830_0",
    "setuptools/conda-forge/linux-64/setuptools-49.1.2-py38h32f6830_0"
   ],
-  "pyparsing": [
-   "pyparsing/conda-forge/noarch/pyparsing-2.2.1-py_0",
-   "pyparsing/conda-forge/noarch/pyparsing-2.2.2-py_0",
-   "pyparsing/conda-forge/noarch/pyparsing-2.3.0-py_0",
-   "pyparsing/conda-forge/noarch/pyparsing-2.3.1-py_0",
-   "pyparsing/conda-forge/noarch/pyparsing-2.4.1.1-py_0",
-   "pyparsing/conda-forge/noarch/pyparsing-2.4.4-py_0",
-   "pyparsing/conda-forge/noarch/pyparsing-2.4.6-py_0"
-  ],
   "re": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "textwrap": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "types": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "typing": [
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "unittest": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ]

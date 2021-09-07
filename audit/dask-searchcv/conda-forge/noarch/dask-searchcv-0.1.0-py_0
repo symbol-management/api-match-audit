@@ -12,6 +12,9 @@
   "dask.multiprocessing.get.get",
   "dask_searchcv.utils_test.FailingClassifier.FAILING_PARAMETER",
   "dict.fromkeys",
+  "distributed.Client",
+  "distributed.utils_test.cluster",
+  "distributed.utils_test.loop",
   "f",
   "get_cand_scores",
   "multiprocessing.cpu_count",
@@ -33,11 +36,35 @@
   "os.path.exists",
   "out_append",
   "out_ests_append",
+  "pickle",
+  "pickle.dumps",
+  "pickle.loads",
+  "pytest.fixture",
+  "pytest.importorskip",
   "pytest.mark.parametrize",
   "pytest.mark.skipif",
+  "pytest.raises",
+  "pytest.warns",
   "scores_append",
+  "sklearn.base.BaseEstimator",
+  "sklearn.base.ClassifierMixin",
+  "sklearn.base.MetaEstimatorMixin",
+  "sklearn.base.clone",
+  "sklearn.base.is_classifier",
+  "sklearn.cluster.KMeans",
+  "sklearn.datasets.load_iris",
+  "sklearn.datasets.make_blobs",
+  "sklearn.datasets.make_classification",
+  "sklearn.datasets.make_multilabel_classification",
+  "sklearn.decomposition.PCA",
   "sklearn.exceptions.FitFailedWarning",
   "sklearn.exceptions.NotFittedError",
+  "sklearn.feature_selection.SelectKBest",
+  "sklearn.linear_model.Ridge",
+  "sklearn.metrics.f1_score",
+  "sklearn.metrics.make_scorer",
+  "sklearn.metrics.roc_auc_score",
+  "sklearn.metrics.scorer.check_scoring",
   "sklearn.model_selection",
   "sklearn.model_selection.GridSearchCV",
   "sklearn.model_selection.GroupKFold",
@@ -67,21 +94,32 @@
   "sklearn.model_selection._split._BaseKFold",
   "sklearn.model_selection._split._CVIterableWrapper",
   "sklearn.model_selection.check_cv",
+  "sklearn.neighbors.KernelDensity",
+  "sklearn.pipeline.FeatureUnion",
+  "sklearn.pipeline.Pipeline",
+  "sklearn.preprocessing.Imputer",
+  "sklearn.svm.LinearSVC",
+  "sklearn.svm.SVC",
+  "sklearn.tree.DecisionTreeClassifier",
+  "sklearn.tree.DecisionTreeRegressor",
+  "sklearn.utils.metaestimators.if_delegate_has_method",
+  "sklearn.utils.multiclass.type_of_target",
+  "sklearn.utils.safe_indexing",
+  "sklearn.utils.validation._is_arraylike",
+  "sklearn.utils.validation._num_samples",
+  "sklearn.utils.validation.check_array",
+  "sklearn.utils.validation.check_consistent_length",
+  "sklearn.utils.validation.check_is_fitted",
+  "sklearn.utils.validation.indexable",
+  "timeit.default_timer",
+  "toolz.get",
+  "toolz.pluck",
   "warnings.warn"
  ],
  "deps": {
   "__future__": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "_pickle": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "_pytest": [
-   "pytest/conda-forge/linux-64/pytest-3.7.0-py27_0",
-   "pytest/conda-forge/linux-64/pytest-4.6.0-py37_0",
-   "pytest/conda-forge/linux-64/pytest-6.0.2-py37hc8dfbb8_0"
   ],
   "copy": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -108,19 +146,6 @@
    "dask-core/conda-forge/noarch/dask-core-2021.4.0-pyhd8ed1ab_0",
    "dask-core/conda-forge/noarch/dask-core-2021.4.1-pyhd8ed1ab_0",
    "dask-core/conda-forge/noarch/dask-core-2021.5.1-pyhd8ed1ab_0"
-  ],
-  "distributed": [
-   "distributed/conda-forge/linux-64/distributed-2021.5.0-py39hf3d152e_0",
-   "distributed/conda-forge/noarch/distributed-2.0.1-py_0",
-   "distributed/conda-forge/noarch/distributed-2.10.0-py_0",
-   "distributed/conda-forge/noarch/distributed-2.10.0-py_1",
-   "distributed/conda-forge/noarch/distributed-2.2.0-py_1",
-   "distributed/conda-forge/noarch/distributed-2.3.0-py_0",
-   "distributed/conda-forge/noarch/distributed-2.6.0-py_0",
-   "distributed/conda-forge/noarch/distributed-2.8.0-py_1",
-   "distributed/conda-forge/noarch/distributed-2.8.1-py_0",
-   "distributed/conda-forge/noarch/distributed-2.9.2-py_0",
-   "distributed/conda-forge/noarch/distributed-2.9.3-py_0"
   ],
   "distutils": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -158,10 +183,6 @@
   "pandas": [
    "pandas/conda-forge/linux-64/pandas-1.2.2-py37h40f5888_0"
   ],
-  "pickle": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "pytest": [
    "pytest/conda-forge/linux-64/pytest-3.7.0-py27_0",
    "pytest/conda-forge/linux-64/pytest-4.6.0-py37_0",
@@ -172,23 +193,9 @@
    "scipy/conda-forge/linux-64/scipy-1.7.0-py37h29e03ee_0",
    "scipy/conda-forge/linux-64/scipy-1.7.0-py37ha768fb6_1"
   ],
-  "sklearn": [
-   "scikit-learn/conda-forge/linux-64/scikit-learn-0.17.1-np110py27_blas_openblas_200",
-   "scikit-learn/conda-forge/linux-64/scikit-learn-0.17.1-np110py35_blas_openblas_202",
-   "scikit-learn/conda-forge/linux-64/scikit-learn-0.17.1-np111py35_blas_openblas_202"
-  ],
   "threading": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "timeit": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "toolz": [
-   "toolz/conda-forge/noarch/toolz-0.10.0-py_0",
-   "toolz/conda-forge/noarch/toolz-0.8.2-py_2",
-   "toolz/conda-forge/noarch/toolz-0.9.0-py_1"
   ],
   "warnings": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
