@@ -23,25 +23,64 @@
   "compare_rst_files",
   "compare_tex_files",
   "convert",
+  "difflib.context_diff",
+  "distutils.spawn.find_executable",
+  "distutils.version.LooseVersion",
   "expand",
+  "fnmatch",
+  "fnmatch.fnmatch",
   "func",
   "input.replace",
   "input.split",
+  "inspect",
+  "inspect.getfile",
+  "inspect.getmodule",
   "io.BytesIO",
   "io.StringIO",
   "io.open",
   "ipypublish.filters_pandoc.__init__.builtin2meta",
   "ipypublish.filters_pandoc.definitions.IPUB_META_ROUTE.split",
+  "ipypublish.utils.pathlib.Path",
   "itertools",
+  "jinja2.DictLoader",
+  "json",
+  "json.dump",
+  "json.dumps",
+  "json.load",
+  "json.loads",
+  "jsonextended.edict",
+  "jsonextended.edict.diff",
+  "jsonextended.edict.unflatten",
+  "jsonextended.ejson",
+  "jsonextended.plugins",
+  "jsonschema",
+  "jsonschema.ValidationError",
+  "jsonschema.validate",
+  "jupytext",
+  "jupytext.readf",
   "log_latexmk_output",
   "log_process_output",
   "matplotlib.rcsetup.defaultParams.items",
+  "mimetypes.guess_extension",
+  "mimetypes.guess_type",
+  "nbconvert",
+  "nbconvert.filters.latex.escape_latex",
+  "nbconvert.filters.posix_path",
+  "nbconvert.preprocessors.Preprocessor",
+  "nbconvert.utils.pandoc.get_pandoc_version",
+  "nbformat",
+  "nbformat.notebooknode.NotebookNode",
+  "nbformat.read",
+  "nbformat.reads",
+  "nbformat.writes",
   "os.chdir",
   "os.getcwd",
   "os.path.exists",
   "os.path.isdir",
   "os.path.isfile",
+  "pandas.set_option",
   "panflute.elements.RAW_FORMATS.add",
+  "pathlib",
   "proc_class",
   "process_attributes",
   "pytest.mark.parametrize",
@@ -58,6 +97,9 @@
   "ruamel.yaml.dump",
   "ruamel.yaml.safe_load",
   "signal.SIGTSTP",
+  "subprocess.PIPE",
+  "subprocess.Popen",
+  "subprocess.STDOUT",
   "sys",
   "sys.stderr.get",
   "sys.stderr.write",
@@ -114,20 +156,8 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "difflib": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "distutils": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "docutils": [
    "docutils/conda-forge/linux-64/docutils-0.16-py27h8c360ce_1"
-  ],
-  "fnmatch": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "glob": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -138,44 +168,9 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "inspect": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "io": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "ipypublish": [
-   "ipypublish/conda-forge/linux-64/ipypublish-0.10.10-py36hc560c46_1",
-   "ipypublish/conda-forge/linux-64/ipypublish-0.10.3-py36_0",
-   "ipypublish/conda-forge/noarch/ipypublish-0.10.1-py_0",
-   "ipypublish/conda-forge/noarch/ipypublish-0.9.3-py_0",
-   "ipypublish/conda-forge/noarch/ipypublish-0.9.3-py_1",
-   "ipypublish/conda-forge/noarch/ipypublish-0.9.4-py_0"
-  ],
-  "jinja2": [
-   "jinja2/conda-forge/noarch/jinja2-2.10-py_1",
-   "jinja2/conda-forge/noarch/jinja2-2.11.3-pyh44b312d_0",
-   "jinja2/conda-forge/noarch/jinja2-3.0.0-pyhd8ed1ab_0",
-   "jinja2/conda-forge/noarch/jinja2-3.0.1-pyhd8ed1ab_0"
-  ],
-  "json": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "jsonextended": [
-   "jsonextended/conda-forge/noarch/jsonextended-0.7.11-py_0",
-   "jsonextended/conda-forge/noarch/jsonextended-0.7.9-py_0"
-  ],
-  "jsonschema": [
-   "jsonschema/conda-forge/noarch/jsonschema-3.2.0-pyhd8ed1ab_3"
-  ],
-  "jupytext": [
-   "jupytext/conda-forge/noarch/jupytext-0.8.3-py_0",
-   "jupytext/conda-forge/noarch/jupytext-1.4.2-pyh9f0ad1d_0",
-   "jupytext/conda-forge/noarch/jupytext-1.5.0-pyh9f0ad1d_0",
-   "jupytext/conda-forge/noarch/jupytext-1.6.0-pyh9f0ad1d_0"
   ],
   "logging": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -185,22 +180,6 @@
    "matplotlib-base/conda-forge/linux-64/matplotlib-base-3.1.1-py37hfd891ef_0",
    "matplotlib-base/conda-forge/linux-64/matplotlib-base-3.1.1-py38h250f245_2",
    "matplotlib/conda-forge/linux-64/matplotlib-1.5.3-np111py34_0"
-  ],
-  "mimetypes": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "nbconvert": [
-   "nbconvert/conda-forge/linux-64/nbconvert-5.3.0-py27_0",
-   "nbconvert/conda-forge/noarch/nbconvert-5.4.1-py_1",
-   "nbconvert/conda-forge/noarch/nbconvert-5.5.0-py_0",
-   "nbconvert/conda-forge/noarch/nbconvert-5.6.0-py_0"
-  ],
-  "nbformat": [
-   "nbformat/conda-forge/noarch/nbformat-4.4.0-py_1",
-   "nbformat/conda-forge/noarch/nbformat-5.0.3-py_0",
-   "nbformat/conda-forge/noarch/nbformat-5.0.8-py_0",
-   "nbformat/conda-forge/noarch/nbformat-5.1.2-pyhd8ed1ab_1"
   ],
   "ntpath": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -216,17 +195,14 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "pandas": [
+   "pandas/conda-forge/linux-64/pandas-0.17.0-np111py35_0",
+   "pandas/conda-forge/linux-64/pandas-0.22.0-py35_0",
    "pandas/conda-forge/linux-64/pandas-1.2.2-py37h40f5888_0"
   ],
   "panflute": [
    "panflute/conda-forge/noarch/panflute-2.0.5-pyhd8ed1ab_0",
    "panflute/conda-forge/noarch/panflute-2.1.0-pyhd8ed1ab_0",
    "panflute/conda-forge/noarch/panflute-2.1.0-pyhd8ed1ab_1"
-  ],
-  "pathlib": [
-   "pathlib/conda-forge/noarch/pathlib-1.0.1-py_1",
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "pathlib2": [
    "pathlib2/conda-forge/linux-64/pathlib2-2.3.3-py36_1000"
@@ -292,10 +268,6 @@
    "sphinx/conda-forge/noarch/sphinx-4.1.1-pyh6c4a22f_0"
   ],
   "string": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "subprocess": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],

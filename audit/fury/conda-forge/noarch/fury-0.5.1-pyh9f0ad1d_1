@@ -16,11 +16,27 @@
   "callback",
   "cmap",
   "collections.defaultdict",
+  "colormap",
   "counter",
   "dec",
+  "dipy.align.reslice.reslice",
+  "dipy.align.tests.test_streamlinear.fornix_streamlines",
+  "dipy.data.default_sphere",
+  "dipy.data.get_sphere",
+  "dipy.data.read_stanford_labels",
+  "dipy.direction.peaks_from_model",
+  "dipy.reconst.dti.color_fa",
+  "dipy.reconst.dti.fractional_anisotropy",
+  "dipy.reconst.shm.CsaOdfModel",
   "dipy.tracking.local.LocalTracking",
   "dipy.tracking.local.ThresholdTissueClassifier",
+  "dipy.tracking.local_tracking.LocalTracking",
   "dipy.tracking.stopping_criterion.ThresholdStoppingCriterion",
+  "dipy.tracking.streamline.center_streamlines",
+  "dipy.tracking.streamline.transform_streamlines",
+  "dipy.tracking.utils",
+  "dipy.tracking.utils.seeds_from_mask",
+  "distutils.version.LooseVersion",
   "enable_stereo",
   "error_class",
   "foo",
@@ -34,6 +50,7 @@
   "fury.shaders.__init__.SHADERS_DIR",
   "fury.transform._AXES2TUPLE.keys",
   "fury.transform._TUPLE2AXES.keys",
+  "fury.utils.numpy_support.vtk_to_numpy",
   "fury.utils.vtk.vtkActor2D",
   "fury.utils.vtk.vtkCellArray",
   "fury.utils.vtk.vtkPoints",
@@ -44,9 +61,15 @@
   "get_colormap",
   "hashlib.sha256",
   "have_2_dimensions",
+  "importlib",
+  "importlib.import_module",
   "io.StringIO",
   "is_bad_version",
   "itertools",
+  "json",
+  "json.dump",
+  "json.load",
+  "json.loads",
   "normalize_input",
   "numpy.abs",
   "numpy.arange",
@@ -85,6 +108,13 @@
   "numpy.uint16",
   "numpy.uint8",
   "numpy.zeros",
+  "operator",
+  "operator.eq",
+  "operator.ge",
+  "operator.gt",
+  "operator.le",
+  "operator.lt",
+  "operator.ne",
   "os.R_OK",
   "os.access",
   "os.chdir",
@@ -96,6 +126,8 @@
   "os.remove",
   "os.rmdir",
   "os.stat",
+  "platform",
+  "platform.system",
   "pytest.mark.skip",
   "pytest.mark.skipif",
   "scipy.spatial.ConvexHull",
@@ -202,7 +234,9 @@
   "vtk.vtkWindowToImageFilter",
   "vtk.vtkXMLPolyDataReader",
   "vtk.vtkXMLPolyDataWriter",
-  "warnings.warn"
+  "warnings.warn",
+  "zipfile",
+  "zipfile.ZipFile"
  ],
  "deps": {
   "PIL": [
@@ -218,18 +252,7 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "colormap": [
-   "colormap/conda-forge/noarch/colormap-1.0.1-py_2"
-  ],
   "contextlib": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "dipy": [
-   "dipy/conda-forge/win-64/dipy-1.2.0-py36h3e76320_1",
-   "dipy/conda-forge/win-64/dipy-1.4.1-py39hb0a1f21_0"
-  ],
-  "distutils": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -237,28 +260,11 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "fury": [
-   "fury/conda-forge/noarch/fury-0.3.0-py_0",
-   "fury/conda-forge/noarch/fury-0.5.0-pyh9f0ad1d_0",
-   "fury/conda-forge/noarch/fury-0.5.1-pyh9f0ad1d_0",
-   "fury/conda-forge/noarch/fury-0.5.1-pyh9f0ad1d_1",
-   "fury/conda-forge/noarch/fury-0.6.0-pyh9f0ad1d_0",
-   "fury/conda-forge/noarch/fury-0.6.1-pyh9f0ad1d_0"
-  ],
   "gzip": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "importlib": [
-   "importlib/conda-forge/linux-64/importlib-1.0.4-py26_0",
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "io": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "json": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -280,15 +286,7 @@
    "numpy/conda-forge/linux-64/numpy-1.18.4-py37h8960a57_0",
    "numpy/conda-forge/linux-64/numpy-1.19.2-py36h68c22af_1"
   ],
-  "operator": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "os": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "platform": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -334,10 +332,6 @@
    "vtk/conda-forge/linux-64/vtk-7.1.1-py35_202"
   ],
   "warnings": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "zipfile": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ]

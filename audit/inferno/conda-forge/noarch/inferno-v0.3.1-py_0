@@ -12,6 +12,7 @@
   "criterion_class",
   "data_utils.defines_base_sequence",
   "data_utils.implements_sync_primitives",
+  "dill",
   "dimension_window",
   "f",
   "flatten_and_preserve_channels",
@@ -29,10 +30,15 @@
   "input.size",
   "input.sum",
   "input.view",
+  "inspect",
+  "inspect.isclass",
+  "inspect.isfunction",
+  "inspect.signature",
   "io.BytesIO",
   "itertools",
   "max_allowed_ds_steps_impl",
   "module",
+  "networkx",
   "networkx.DiGraph",
   "networkx.is_directed_acyclic_graph",
   "networkx.topological_sort",
@@ -51,16 +57,27 @@
   "numpy.sqrt",
   "numpy.uint64",
   "numpy.zeros",
+  "operator.mul",
   "optimizer_class",
   "os.mkdir",
   "os.path.exists",
   "os.path.isdir",
   "os.remove",
   "os.symlink",
+  "pdb",
+  "pdb.set_trace",
+  "pickle",
   "resize_function",
+  "shutil",
+  "shutil.copyfile",
+  "signal",
   "signal.SIGINT",
+  "signal.getsignal",
+  "signal.signal",
   "str.replace",
   "sys",
+  "threading",
+  "threading.get_ident",
   "torch.ByteStorage.from_buffer",
   "torch.ByteTensor",
   "torch.HalfTensor",
@@ -73,6 +90,8 @@
   "torch.stack",
   "torch.torch.device",
   "torch.zeros",
+  "tqdm.tqdm",
+  "tqdm.tqdm.write",
   "transform",
   "utils.python_utils.as_tuple_of_len",
   "utils.python_utils.delayed_keyboard_interrupt",
@@ -95,7 +114,9 @@
   "utils.train_utils.Duration.build_from",
   "utils.train_utils.Frequency.build_from",
   "volumetric_utils.slidingwindowslices",
-  "warnings.warn"
+  "warnings.warn",
+  "zipfile",
+  "zipfile.ZipFile"
  ],
  "deps": {
   "PIL": [
@@ -119,12 +140,6 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "dill": [
-   "dill/conda-forge/linux-64/dill-0.2.5-py35_1",
-   "dill/conda-forge/noarch/dill-0.3.2-pyh9f0ad1d_0",
-   "dill/conda-forge/noarch/dill-0.3.3-pyhd8ed1ab_0",
-   "dill/conda-forge/noarch/dill-0.3.4-pyhd8ed1ab_0"
-  ],
   "functools": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -133,10 +148,6 @@
    "h5py/conda-forge/linux-64/h5py-2.10.0-nompi_py37hf7afa78_105",
    "h5py/conda-forge/linux-64/h5py-2.6.0-np111py34_4",
    "h5py/conda-forge/linux-64/h5py-2.7.0-np113py36_1"
-  ],
-  "inspect": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "io": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -154,14 +165,6 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "networkx": [
-   "networkx/conda-forge/noarch/networkx-2.1-py_1",
-   "networkx/conda-forge/noarch/networkx-2.2-py_1",
-   "networkx/conda-forge/noarch/networkx-2.4-py_1",
-   "networkx/conda-forge/noarch/networkx-2.5-py_0",
-   "networkx/conda-forge/noarch/networkx-2.6.1-pyhd8ed1ab_0",
-   "networkx/conda-forge/noarch/networkx-2.6.1-pyhd8ed1ab_1"
-  ],
   "ntpath": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -170,25 +173,7 @@
    "numpy/conda-forge/linux-64/numpy-1.17.5-py36h95a1406_0",
    "numpy/conda-forge/linux-64/numpy-1.18.4-py37h8960a57_0"
   ],
-  "operator": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "os": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "pdb": [
-   "pdbpp/conda-forge/noarch/pdbpp-0.9.12-py_0",
-   "pdbpp/conda-forge/noarch/pdbpp-0.9.14-py_0",
-   "pdbpp/conda-forge/noarch/pdbpp-0.9.15-py_0",
-   "pdbpp/conda-forge/noarch/pdbpp-0.9.5-py_1",
-   "pdbpp/conda-forge/noarch/pdbpp-0.9.6-py_0",
-   "pdbpp/conda-forge/noarch/pdbpp-0.9.8-py_0",
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "pickle": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -198,14 +183,6 @@
   ],
   "scipy": [
    "scipy/conda-forge/linux-64/scipy-0.17.1-np110py27_blas_openblas_202"
-  ],
-  "shutil": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "signal": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "skimage": [
    "scikit-image/conda-forge/linux-64/scikit-image-0.12.3-np112py27_1",
@@ -222,10 +199,6 @@
    "tensorboardx/conda-forge/noarch/tensorboardx-2.0-py_0",
    "tensorboardx/conda-forge/noarch/tensorboardx-2.1-py_0"
   ],
-  "threading": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "torch": [
    "pytorch-cpu/conda-forge/linux-64/pytorch-cpu-1.1.0-py37he1b5a44_0",
    "pytorch-cpu/conda-forge/win-64/pytorch-cpu-1.0.1-py36ha925a31_0",
@@ -235,7 +208,6 @@
   "torchvision": [
    "torchvision/conda-forge/linux-64/torchvision-0.9.1-py38cuda110hd0a72be_1_cuda"
   ],
-  "tqdm": [],
   "warnings": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -250,10 +222,6 @@
    "z5py/conda-forge/linux-64/z5py-1.0.0-py27hf823e65_0",
    "z5py/conda-forge/linux-64/z5py-2.0.6-py39h3f3ea7e_0",
    "z5py/conda-forge/linux-64/z5py-2.0.6-py39h3f3ea7e_1"
-  ],
-  "zipfile": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ]
  }
 }
