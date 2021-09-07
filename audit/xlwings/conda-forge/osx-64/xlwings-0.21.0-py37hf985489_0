@@ -8,6 +8,9 @@
   "Name",
   "Names",
   "OutputParameter",
+  "PIL",
+  "PIL.Image",
+  "PIL.Image.open",
   "Range",
   "Sheet",
   "ToVariant",
@@ -193,6 +196,8 @@
   "appscript.mactypes.convertpathtourl",
   "appscript.mactypes.converturltopath",
   "appscript.reference.CommandError",
+  "argparse",
+  "argparse.ArgumentParser",
   "async_thread",
   "atexit",
   "constants.ColorIndex.xlColorIndexNone",
@@ -223,30 +228,61 @@
   "func",
   "functools.partial",
   "inner",
+  "inspect",
   "inspect.Parameter.POSITIONAL_OR_KEYWORD",
   "inspect.Parameter.VAR_POSITIONAL",
   "inspect.Signature.empty",
+  "inspect.iscoroutinefunction",
+  "inspect.signature",
+  "logging",
+  "logging.getLogger",
   "main.Book.caller",
+  "numpy",
+  "numpy.array",
   "numpy.datetime64",
   "numpy.floating",
   "numpy.isnan",
   "numpy.nan",
+  "numpy.ndarray",
   "numpy.newaxis.tolist",
   "numpy.number",
   "numpy.timedelta64",
   "origin",
   "origin.end",
   "origin.has_array",
+  "os",
+  "os.PathLike",
   "os.chdir",
+  "os.environ",
+  "os.fspath",
   "os.getcwd",
+  "os.getenv",
+  "os.makedirs",
+  "os.path",
+  "os.path.basename",
+  "os.path.dirname",
   "os.path.exists",
+  "os.path.expanduser",
   "os.path.getmtime",
   "os.path.isfile",
+  "os.path.join",
+  "os.path.normcase",
+  "os.path.realpath",
   "os.path.samefile",
+  "os.path.sep",
   "os.path.sep.join",
+  "os.path.split",
+  "os.path.splitext",
   "os.remove",
   "os.unlink",
+  "pandas",
+  "pandas.DataFrame",
+  "pandas.Index",
+  "pandas.MultiIndex",
+  "pandas.MultiIndex.from_arrays",
   "pandas.NaT",
+  "pandas.Series",
+  "pandas.Timestamp",
   "pipeline",
   "posix_to_hfs_path",
   "pro.LicenseHandler.create_deploy_key",
@@ -273,12 +309,28 @@
   "pywintypes.TimeType",
   "pywintypes.com_error",
   "pywintypes.error",
+  "random.random",
+  "re",
+  "re.compile",
+  "re.search",
+  "re.split",
   "server.loop",
   "sqlite3.connect",
   "stage",
   "struct.unpack",
+  "subprocess",
+  "subprocess.check_call",
+  "subprocess.check_output",
   "sys",
   "sys.platform.startswith",
+  "tempfile",
+  "tempfile.NamedTemporaryFile",
+  "tempfile.TemporaryDirectory",
+  "tempfile.gettempdir",
+  "threading",
+  "threading.Thread",
+  "threading.get_ident",
+  "threading.local",
   "time",
   "utils.LicenseHandler.validate_license",
   "utils.fspath",
@@ -316,24 +368,10 @@
   "xlwings.books.active"
  ],
  "deps": {
-  "PIL": [
-   "pillow/conda-forge/linux-64/pillow-6.2.1-py36hd70f55b_1",
-   "pillow/conda-forge/linux-64/pillow-7.0.0-py36h8328e55_1",
-   "pillow/conda-forge/linux-64/pillow-7.2.0-py37h718be6c_1"
-  ],
   "_asyncio": [
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "_ctypes": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "_threading_local": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "argparse": [
-   "argparse/conda-forge/osx-64/argparse-1.4.0-py26_0",
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -390,10 +428,6 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "inspect": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "jinja2": [
    "jinja2/conda-forge/noarch/jinja2-2.10-py_1",
    "jinja2/conda-forge/noarch/jinja2-2.11.3-pyh44b312d_0",
@@ -404,31 +438,13 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "logging": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "matplotlib": [
    "matplotlib/conda-forge/linux-64/matplotlib-1.5.3-np111py34_0"
-  ],
-  "ntpath": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "numbers": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "numpy": [
-   "numpy/conda-forge/linux-64/numpy-1.17.5-py36h95a1406_0",
-   "numpy/conda-forge/linux-64/numpy-1.18.4-py37h8960a57_0",
-   "numpy/conda-forge/linux-64/numpy-1.19.2-py36h68c22af_1"
-  ],
-  "os": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "pandas": [],
   "pathlib": [
    "pathlib/conda-forge/noarch/pathlib-1.0.1-py_1",
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -446,14 +462,6 @@
    "pywin32/conda-forge/win-64/pywin32-224-py37hfa6e2cd_1000",
    "pywin32/conda-forge/win-64/pywin32-228-py37h4ab8f01_0"
   ],
-  "random": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "re": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "shutil": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -463,18 +471,6 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "struct": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "subprocess": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "tempfile": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "threading": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],

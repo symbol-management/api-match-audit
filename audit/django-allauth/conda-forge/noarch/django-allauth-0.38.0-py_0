@@ -12,6 +12,8 @@
   "User.objects.create",
   "User.objects.get",
   "UserDict.UserDict",
+  "__future__.absolute_import",
+  "__future__.unicode_literals",
   "abs_uri",
   "account.adapter.get_adapter",
   "account.app_settings.ADAPTER",
@@ -131,6 +133,12 @@
   "base.AuthError.CANCELLED",
   "base.AuthError.DENIED",
   "base.AuthError.UNKNOWN",
+  "base64",
+  "base64.b64decode",
+  "base64.b64encode",
+  "base64.decodestring",
+  "base64.encodebytes",
+  "base64.encodestring",
   "cls",
   "deserialize_instance",
   "django.conf.settings.AUTH_PASSWORD_VALIDATORS",
@@ -190,9 +198,12 @@
   "extract_from_dict",
   "f",
   "getter",
+  "hashlib",
   "hashlib.md5",
   "hashlib.sha256",
   "helpers.complete_social_signup",
+  "logging",
+  "logging.getLogger",
   "mock.Mock",
   "mock.patch",
   "mockable_request",
@@ -220,6 +231,10 @@
   "models.SocialAccount.objects.none",
   "models.SocialApp.objects.create",
   "models.SocialLogin.deserialize",
+  "os",
+  "os.path.dirname",
+  "os.path.join",
+  "os.path.realpath",
   "provider.AgaveProvider.id",
   "provider.AmazonProvider.id",
   "provider.AngelListProvider.id",
@@ -310,6 +325,12 @@
   "providers.registry.as_choices",
   "providers.registry.by_id",
   "providers.registry.get_list",
+  "random",
+  "random.choice",
+  "random.randrange",
+  "re",
+  "re.match",
+  "re.sub",
   "serialize_instance",
   "signals.email_added.send",
   "signals.email_changed.send",
@@ -331,7 +352,13 @@
   "signals.user_signed_up.send",
   "socialaccount.models.SocialApp.objects.create",
   "sys",
+  "threading.local",
   "time",
+  "unittest.mock",
+  "unittest.mock.ANY",
+  "unittest.mock.Mock",
+  "unittest.mock.call",
+  "unittest.mock.patch",
   "urlparse.parse_qs",
   "urlparse.parse_qsl",
   "urlparse.urljoin",
@@ -378,23 +405,12 @@
   "views.persona_login",
   "views.signup",
   "views.telegram_login",
+  "warnings",
   "warnings.warn",
   "xml.parsers.expat.ExpatError"
  ],
  "deps": {
-  "__future__": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "_pickle": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "_threading_local": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "base64": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -420,10 +436,6 @@
    "decorator/conda-forge/noarch/decorator-5.0.9-pyhd8ed1ab_0"
   ],
   "django": [],
-  "hashlib": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "hmac": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -437,34 +449,14 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "logging": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "mock": [
    "mock/conda-forge/linux-64/mock-2.0.0-py27_1000",
    "mock/conda-forge/linux-64/mock-3.0.3-py37_0"
   ],
-  "ntpath": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "openid": [
    "python3-openid/conda-forge/noarch/python3-openid-3.2.0-pyhd8ed1ab_0"
   ],
-  "os": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "pickle": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "random": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "re": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -489,15 +481,7 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "threading": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "unicodedata": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "unittest": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -506,10 +490,6 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "uuid": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "warnings": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],

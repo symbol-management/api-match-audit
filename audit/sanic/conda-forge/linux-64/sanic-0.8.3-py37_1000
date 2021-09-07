@@ -1,19 +1,55 @@
 {
  "bad": [
+  "aiohttp",
+  "aiohttp.ClientResponseError",
+  "aiohttp.ClientSession",
+  "aiohttp.TCPConnector",
+  "argparse.ArgumentParser",
+  "asyncio",
+  "asyncio.CancelledError",
+  "asyncio.Protocol",
+  "asyncio.Queue",
+  "asyncio.ensure_future",
+  "asyncio.gather",
+  "asyncio.get_event_loop",
+  "asyncio.new_event_loop",
+  "asyncio.set_event_loop",
+  "asyncio.set_event_loop_policy",
+  "asyncio.sleep",
+  "cgi.parse_header",
   "chain",
   "collections.abc.Iterable",
   "collections.defaultdict",
   "collections.deque",
+  "decorator",
   "event",
+  "functools.lru_cache",
   "functools.partial",
+  "gunicorn.workers.base",
+  "gunicorn.workers.base.Worker",
   "handler",
   "handler.__name__",
   "handler.is_stream",
+  "http.cookies.SimpleCookie",
+  "httptools.HttpParserUpgrade",
   "httptools.HttpRequestParser",
   "httptools.parse_url",
+  "httptools.parser.errors.HttpParserError",
+  "importlib.import_module",
+  "inspect.getmodulename",
+  "inspect.isawaitable",
+  "inspect.signature",
+  "inspect.stack",
+  "logging",
+  "logging.DEBUG",
+  "logging.config",
+  "logging.getLogger",
   "merge_route",
   "middleware",
+  "mimetypes.guess_type",
+  "multidict.CIMultiDict",
   "multiprocessing.Process",
+  "os",
   "os._exit",
   "os.environ.copy",
   "os.environ.get",
@@ -21,8 +57,21 @@
   "os.getpid",
   "os.getppid",
   "os.kill",
+  "os.name",
+  "os.path",
+  "os.path.abspath",
+  "os.path.dirname",
   "os.path.isfile",
+  "os.path.join",
+  "os.path.split",
   "os.stat",
+  "re",
+  "re.compile",
+  "re.escape",
+  "re.findall",
+  "re.match",
+  "re.search",
+  "re.sub",
   "register_middleware",
   "sanic.exceptions.TRACEBACK_BORDER.join",
   "sanic.exceptions.TRACEBACK_LINE_HTML.format",
@@ -42,6 +91,7 @@
   "sanic_exception",
   "set_header",
   "sig_handler",
+  "signal",
   "signal.SIGABRT",
   "signal.SIGINT",
   "signal.SIGQUIT",
@@ -51,6 +101,7 @@
   "signal.SIG_IGN",
   "signal.Signals",
   "signal.siginterrupt",
+  "signal.signal",
   "signal.signal.stopped",
   "socket.AF_INET",
   "socket.AF_INET6",
@@ -59,19 +110,35 @@
   "ssl.Purpose.CLIENT_AUTH",
   "str.translate",
   "stream_callback",
+  "string",
+  "string.ascii_letters",
+  "string.digits",
+  "subprocess",
+  "subprocess.call",
+  "subprocess.run",
   "sys",
   "sys.modules.values",
   "task",
   "task.cancel",
+  "traceback",
+  "traceback.extract_tb",
+  "traceback.format_exc",
+  "traceback.print_exc",
   "ujson.dumps",
   "ujson.loads",
+  "urllib.parse.parse_qs",
+  "urllib.parse.quote_plus",
+  "urllib.parse.unquote",
+  "urllib.parse.urlencode",
+  "urllib.parse.urlunparse",
+  "uuid",
+  "uuid.UUID",
+  "warnings",
+  "warnings.simplefilter",
   "warnings.warn",
   "write_callback"
  ],
  "deps": {
-  "_asyncio": [
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "aiofiles": [
    "aiofiles/conda-forge/linux-64/aiofiles-0.3.2-py35_0",
    "aiofiles/conda-forge/noarch/aiofiles-0.4.0-py_1001",
@@ -79,92 +146,11 @@
    "aiofiles/conda-forge/noarch/aiofiles-0.6.0-pyhd8ed1ab_0",
    "aiofiles/conda-forge/noarch/aiofiles-0.7.0-pyhd8ed1ab_0"
   ],
-  "aiohttp": [
-   "aiohttp/conda-forge/linux-64/aiohttp-3.6.3-py36h97a6639_2",
-   "aiohttp/conda-forge/linux-64/aiohttp-3.7.1-py37h8f50634_0",
-   "aiohttp/conda-forge/linux-64/aiohttp-3.7.2-py37h8f50634_0"
-  ],
-  "argparse": [
-   "argparse/conda-forge/osx-64/argparse-1.4.0-py26_0",
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "asyncio": [],
-  "cgi": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "collections": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "decorator": [
-   "decorator/conda-forge/noarch/decorator-4.3.0-py_0",
-   "decorator/conda-forge/noarch/decorator-4.3.2-py_0",
-   "decorator/conda-forge/noarch/decorator-4.4.0-py_0",
-   "decorator/conda-forge/noarch/decorator-4.4.1-py_0",
-   "decorator/conda-forge/noarch/decorator-4.4.2-py_0",
-   "decorator/conda-forge/noarch/decorator-5.0.2-pyhd8ed1ab_0",
-   "decorator/conda-forge/noarch/decorator-5.0.3-pyhd8ed1ab_0",
-   "decorator/conda-forge/noarch/decorator-5.0.4-pyhd8ed1ab_0",
-   "decorator/conda-forge/noarch/decorator-5.0.5-pyhd8ed1ab_0",
-   "decorator/conda-forge/noarch/decorator-5.0.6-pyhd8ed1ab_0",
-   "decorator/conda-forge/noarch/decorator-5.0.9-pyhd8ed1ab_0"
-  ],
-  "functools": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "gunicorn": [
-   "gunicorn/conda-forge/linux-64/gunicorn-19.8.0-py38_0"
-  ],
-  "http": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "httptools": [
-   "httptools/conda-forge/linux-64/httptools-0.1.0-py36h516909a_0",
-   "httptools/conda-forge/linux-64/httptools-0.1.1-py38h1e0a361_1",
-   "httptools/conda-forge/linux-64/httptools-0.1.1-py38h497a2fe_2"
-  ],
-  "importlib": [
-   "importlib/conda-forge/linux-64/importlib-1.0.4-py26_0",
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "inspect": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "json": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "logging": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "mimetypes": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "multidict": [
-   "multidict/conda-forge/linux-64/multidict-4.5.0-py37h14c3975_1000",
-   "multidict/conda-forge/osx-64/multidict-4.7.5-py36h37b9a7d_1"
-  ],
-  "ntpath": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "os": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "re": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "signal": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -176,36 +162,12 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "string": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "subprocess": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "traceback": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "types": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "urllib": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "uuid": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "uvloop": [
    "uvloop/conda-forge/linux-64/uvloop-0.14.0-py36h8f6f2f9_2"
-  ],
-  "warnings": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "websockets": [
    "websockets/conda-forge/linux-64/websockets-3.2-py34_0"
