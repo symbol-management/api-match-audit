@@ -21,6 +21,29 @@
   "func",
   "io.sort_files",
   "load_model",
+  "matplotlib",
+  "matplotlib.gridspec.GridSpec",
+  "matplotlib.pyplot",
+  "matplotlib.pyplot.axhline",
+  "matplotlib.pyplot.axvline",
+  "matplotlib.pyplot.close",
+  "matplotlib.pyplot.colorbar",
+  "matplotlib.pyplot.draw",
+  "matplotlib.pyplot.errorbar",
+  "matplotlib.pyplot.figure",
+  "matplotlib.pyplot.gca",
+  "matplotlib.pyplot.legend",
+  "matplotlib.pyplot.pcolormesh",
+  "matplotlib.pyplot.plot",
+  "matplotlib.pyplot.savefig",
+  "matplotlib.pyplot.scatter",
+  "matplotlib.pyplot.show",
+  "matplotlib.pyplot.subplot",
+  "matplotlib.pyplot.xlabel",
+  "matplotlib.pyplot.ylabel",
+  "matplotlib.use",
+  "matplotlib.widgets.Button",
+  "matplotlib.widgets.Slider",
   "multiprocessing.Pool",
   "netCDF4.Dataset",
   "numpy.abs",
@@ -58,20 +81,42 @@
   "os.path.isfile",
   "os.remove",
   "os.unlink",
+  "pandas",
+  "pandas.DataFrame",
+  "pandas.read_csv",
+  "pytest",
   "pytest.mark.parametrize",
   "pytest.mark.skipif",
+  "pytest.raises",
+  "pytest.warns",
   "run_git",
   "save_model",
+  "scipy.interpolate.interp1d",
+  "scipy.optimize",
+  "scipy.optimize.basinhopping",
+  "scipy.optimize.curve_fit",
+  "scipy.optimize.leastsq",
+  "scipy.optimize.minimize",
+  "scipy.signal.savgol_filter",
+  "scipy.stats",
   "scipy.stats.chi2.isf",
   "scipy.stats.chi2.sf",
+  "shutil",
+  "shutil.rmtree",
+  "six",
+  "six.add_metaclass",
   "stingray.modeling.fit_powerspectrum",
   "stingray.varenergyspectrum.CovarianceEnergySpectrum",
   "struct.pack",
   "sys",
   "sys.path.append",
   "time",
+  "unittest",
+  "unittest.TestCase",
+  "unittest.main",
   "version.githash",
   "version.version",
+  "warnings",
   "warnings.warn",
   "wrap_fun"
  ],
@@ -79,11 +124,6 @@
   "__future__": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "_pytest": [
-   "pytest/conda-forge/linux-64/pytest-3.7.0-py27_0",
-   "pytest/conda-forge/linux-64/pytest-4.6.0-py37_0",
-   "pytest/conda-forge/linux-64/pytest-6.0.2-py37hc8dfbb8_0"
   ],
   "abc": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -130,11 +170,6 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "matplotlib": [
-   "matplotlib-base/conda-forge/linux-64/matplotlib-base-3.1.1-py37hfd891ef_0",
-   "matplotlib-base/conda-forge/linux-64/matplotlib-base-3.1.1-py38h250f245_2",
-   "matplotlib/conda-forge/linux-64/matplotlib-1.5.3-np111py34_0"
-  ],
   "netCDF4": [
    "netcdf4/conda-forge/linux-64/netcdf4-1.2.4-np111py35_1",
    "netcdf4/conda-forge/linux-64/netcdf4-1.5.1.2-py27had58050_0",
@@ -157,9 +192,6 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "pandas": [
-   "pandas/conda-forge/linux-64/pandas-1.2.2-py37h40f5888_0"
-  ],
   "pickle": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -167,30 +199,6 @@
   "pint": [
    "pint-pulsar/conda-forge/linux-64/pint-pulsar-0.7-py38h32f6830_0",
    "pint-pulsar/conda-forge/linux-64/pint-pulsar-0.8-py37h89c1867_1"
-  ],
-  "pytest": [
-   "pytest/conda-forge/linux-64/pytest-3.7.0-py27_0",
-   "pytest/conda-forge/linux-64/pytest-4.6.0-py37_0",
-   "pytest/conda-forge/linux-64/pytest-6.0.2-py37hc8dfbb8_0"
-  ],
-  "scipy": [
-   "scipy/conda-forge/linux-64/scipy-0.17.1-np110py27_blas_openblas_202",
-   "scipy/conda-forge/linux-64/scipy-1.7.0-py37h29e03ee_0",
-   "scipy/conda-forge/linux-64/scipy-1.7.0-py37ha768fb6_1"
-  ],
-  "shutil": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "six": [
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0",
-   "lldb/conda-forge/linux-64/lldb-6.0.0-py35_0",
-   "privy/conda-forge/noarch/privy-6.0.0-py_0",
-   "six/conda-forge/linux-64/six-1.10.0-py34_0",
-   "six/conda-forge/linux-64/six-1.10.0-py34_1",
-   "six/conda-forge/noarch/six-1.14.0-py_1",
-   "six/conda-forge/noarch/six-1.16.0-pyh6c4a22f_0"
   ],
   "stingray": [
    "stingray/conda-forge/linux-64/stingray-0.1-py37h5ca1d4c_0",
@@ -215,14 +223,6 @@
    "tqdm/conda-forge/noarch/tqdm-4.56.0-pyhd8ed1ab_0",
    "tqdm/conda-forge/noarch/tqdm-4.56.1-pyhd8ed1ab_0",
    "tqdm/conda-forge/noarch/tqdm-4.60.0-pyhd8ed1ab_0"
-  ],
-  "unittest": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "warnings": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ]
  }
 }

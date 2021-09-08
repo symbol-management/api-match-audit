@@ -336,6 +336,7 @@
   "DIRAC.gLogger.verbose",
   "DIRAC.gLogger.warn",
   "DefinitionsPool",
+  "GSI",
   "GSI.SSL",
   "GSI.SSL.Connection",
   "GSI.SSL.Context",
@@ -373,18 +374,52 @@
   "GSI.crypto.load_certificate_request",
   "GSI.crypto.load_crl",
   "GSI.crypto.load_privatekey",
+  "GSI.version.__version__",
   "InstancesPool",
+  "M2Crypto",
+  "M2Crypto.ASN1.ASN1_UTCTIME",
+  "M2Crypto.ASN1.MBSTRING_ASC",
+  "M2Crypto.EVP.PKey",
+  "M2Crypto.EVP.load_key_string",
+  "M2Crypto.RSA.gen_key",
+  "M2Crypto.SSL",
+  "M2Crypto.SSL.Checker.SSLVerificationError",
+  "M2Crypto.SSL.Connection",
+  "M2Crypto.SSL.Context",
+  "M2Crypto.SSL.SSLError",
   "M2Crypto.SSL.verify_allow_proxy_certs",
+  "M2Crypto.SSL.verify_fail_if_no_peer_cert",
+  "M2Crypto.SSL.verify_none",
+  "M2Crypto.SSL.verify_peer",
+  "M2Crypto.X509.FORMAT_PEM",
+  "M2Crypto.X509.Request",
+  "M2Crypto.X509.X509",
+  "M2Crypto.X509.X509_Extension_Stack",
+  "M2Crypto.X509.X509_Name",
+  "M2Crypto.X509.load_cert_string",
+  "M2Crypto.X509.load_crl",
+  "M2Crypto.X509.load_request_string",
+  "M2Crypto.X509.new_extension",
+  "M2Crypto.m2",
   "M2Crypto.m2.SSL_OP_NO_SSLv2",
   "M2Crypto.m2.SSL_OP_NO_SSLv3",
   "M2Crypto.m2.SSL_OP_NO_TLSv1",
+  "M2Crypto.threading",
+  "M2Crypto.threading.init",
+  "M2Crypto.util.no_passphrase_callback",
+  "M2Crypto.util.quiet_genparam_callback",
   "ModuleDefinition",
   "ModuleInstance",
+  "MySQLdb",
   "MySQLdb.Error",
   "MySQLdb.MySQLError",
   "MySQLdb.ProgrammingError",
   "MySQLdb.connect",
   "MySQLdb.server_init",
+  "PIL.Image",
+  "PIL.Image.open",
+  "PIL.ImageEnhance",
+  "PIL.ImageEnhance.Contrast",
   "Parameter",
   "ParameterCollection",
   "PilotsLogging",
@@ -469,7 +504,6 @@
   "datetime.datetime.max",
   "datetime.datetime.min",
   "datetime.datetime.today",
-  "dateutil.relativedelta.relativedelta",
   "dbClass",
   "decFunc",
   "deco",
@@ -740,22 +774,6 @@
  ],
  "deps": {
   "DIRAC": [],
-  "GSI": [
-   "pygsi/conda-forge/osx-64/pygsi-0.6.5-py27h01d97ff_0"
-  ],
-  "M2Crypto": [
-   "m2crypto/conda-forge/linux-64/m2crypto-0.24.0-py27_1"
-  ],
-  "MySQLdb": [
-   "mysql-python/conda-forge/linux-64/mysql-python-1.2.5-py27h7f98852_0",
-   "mysqlclient/conda-forge/linux-64/mysqlclient-1.3.13-py27_1000",
-   "mysqlclient/conda-forge/linux-64/mysqlclient-1.4.6-py27haf22ab1_1"
-  ],
-  "PIL": [
-   "pillow/conda-forge/linux-64/pillow-6.2.1-py36hd70f55b_1",
-   "pillow/conda-forge/linux-64/pillow-7.0.0-py36h8328e55_1",
-   "pillow/conda-forge/linux-64/pillow-7.2.0-py37h718be6c_1"
-  ],
   "__future__": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -911,6 +929,13 @@
   "datetime": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "dateutil": [
+   "python-dateutil/conda-forge/noarch/python-dateutil-2.7.2-py_0",
+   "python-dateutil/conda-forge/noarch/python-dateutil-2.7.4-py_0",
+   "python-dateutil/conda-forge/noarch/python-dateutil-2.7.5-py_0",
+   "python-dateutil/conda-forge/noarch/python-dateutil-2.8.1-py_0",
+   "python-dateutil/conda-forge/noarch/python-dateutil-2.8.2-pyhd8ed1ab_0"
   ],
   "difflib": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
