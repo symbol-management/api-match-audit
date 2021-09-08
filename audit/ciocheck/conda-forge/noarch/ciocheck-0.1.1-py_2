@@ -3,8 +3,6 @@
   "await_all_processes",
   "await_one_process",
   "ciocheck.__init__.VERSION_INFO",
-  "codecs",
-  "codecs.open",
   "diff_tool",
   "diff_tool.commited_file_lines",
   "diff_tool.commited_files",
@@ -12,14 +10,9 @@
   "diff_tool.staged_files",
   "diff_tool.unstaged_file_lines",
   "diff_tool.unstaged_files",
-  "difflib",
-  "difflib.unified_diff",
   "errno",
   "formater",
-  "isort",
-  "isort.SortImports",
   "linter",
-  "multiprocessing",
   "multiprocessing.cpu_count",
   "os.environ.copy",
   "os.environ.get",
@@ -29,32 +22,23 @@
   "os.path.isfile",
   "os.remove",
   "os.rename",
-  "platform",
-  "platform.system",
-  "pstats",
-  "pstats.Stats",
-  "pytest.main",
-  "pytest_cov.plugin.CoverageError",
-  "re",
   "re.VERBOSE",
-  "re.compile",
-  "six.PY2",
   "six.moves.cStringIO",
   "six.moves.configparser",
   "six.moves.configparser.ConfigParser",
-  "subprocess",
-  "subprocess.PIPE",
-  "subprocess.Popen",
   "sys",
   "take_n",
-  "tester",
-  "uuid",
-  "uuid.uuid4"
+  "tester"
  ],
  "deps": {
   "__future__": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "_pytest": [
+   "pytest/conda-forge/linux-64/pytest-3.7.0-py27_0",
+   "pytest/conda-forge/linux-64/pytest-4.6.0-py37_0",
+   "pytest/conda-forge/linux-64/pytest-6.0.2-py37hc8dfbb8_0"
   ],
   "argparse": [
    "argparse/conda-forge/osx-64/argparse-1.4.0-py26_0",
@@ -78,6 +62,10 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "codecs": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "collections": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -86,7 +74,19 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "difflib": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "isort": [
+   "isort/conda-forge/linux-64/isort-4.3.10-py27_0",
+   "isort/conda-forge/linux-64/isort-4.3.7-py36_0"
+  ],
   "json": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "multiprocessing": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -98,12 +98,55 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "platform": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "pstats": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "pytest": [
    "pytest/conda-forge/linux-64/pytest-3.7.0-py27_0",
    "pytest/conda-forge/linux-64/pytest-4.6.0-py37_0",
    "pytest/conda-forge/linux-64/pytest-6.0.2-py37hc8dfbb8_0"
   ],
+  "pytest_cov": [
+   "pytest-cov/conda-forge/noarch/pytest-cov-2.10.0-pyh9f0ad1d_0",
+   "pytest-cov/conda-forge/noarch/pytest-cov-2.10.1-pyh9f0ad1d_0",
+   "pytest-cov/conda-forge/noarch/pytest-cov-2.11.0-pyh44b312d_0",
+   "pytest-cov/conda-forge/noarch/pytest-cov-2.11.1-pyh44b312d_0",
+   "pytest-cov/conda-forge/noarch/pytest-cov-2.12.0-pyhd8ed1ab_0",
+   "pytest-cov/conda-forge/noarch/pytest-cov-2.12.1-pyhd8ed1ab_0",
+   "pytest-cov/conda-forge/noarch/pytest-cov-2.5.1-py_1",
+   "pytest-cov/conda-forge/noarch/pytest-cov-2.6.0-py_0",
+   "pytest-cov/conda-forge/noarch/pytest-cov-2.7.1-py_0",
+   "pytest-cov/conda-forge/noarch/pytest-cov-2.8.1-py_0",
+   "pytest-cov/conda-forge/noarch/pytest-cov-2.9.0-pyh9f0ad1d_0"
+  ],
+  "re": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "shutil": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "six": [
+   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
+   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0",
+   "lldb/conda-forge/linux-64/lldb-6.0.0-py35_0",
+   "privy/conda-forge/noarch/privy-6.0.0-py_0",
+   "six/conda-forge/linux-64/six-1.10.0-py34_0",
+   "six/conda-forge/linux-64/six-1.10.0-py34_1",
+   "six/conda-forge/noarch/six-1.14.0-py_1",
+   "six/conda-forge/noarch/six-1.16.0-pyh6c4a22f_0"
+  ],
+  "subprocess": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "uuid": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
