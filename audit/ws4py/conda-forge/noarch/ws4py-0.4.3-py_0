@@ -10,23 +10,57 @@
   "cherrypy.tools.websocket",
   "data_provider",
   "errno",
+  "gevent",
+  "gevent.Greenlet",
+  "gevent.pool.Pool",
+  "gevent.pywsgi.WSGIHandler",
+  "gevent.pywsgi.WSGIHandler.run_application",
+  "gevent.pywsgi.WSGIServer",
   "gevent.pywsgi.WSGIServer.stop",
+  "gevent.queue.Queue",
   "hashlib.sha1",
   "itertools",
   "message_sender",
+  "operator",
   "os.urandom",
+  "random",
+  "random.randint",
+  "select",
+  "select.EPOLLIN",
+  "select.EPOLLPRI",
+  "select.select",
+  "socket",
   "socket.SHUT_RDWR",
   "socket.error",
+  "ssl",
+  "ssl.wrap_socket",
+  "struct",
   "struct.error",
   "struct.pack",
   "struct.unpack",
   "sys",
+  "threading",
+  "threading.Thread",
   "time",
+  "tornado.escape",
+  "tornado.escape.utf8",
+  "tornado.ioloop",
+  "tornado.ioloop.IOLoop.instance",
+  "tornado.iostream",
+  "types",
+  "types.GeneratorType",
+  "urllib.parse.urlsplit",
   "urlparse.urlsplit",
   "ws4py.client.WebSocketBaseClient.__init__",
+  "wsgiref.handlers.SimpleHandler",
   "wsgiref.handlers.SimpleHandler.finish_response",
   "wsgiref.handlers.SimpleHandler.setup_environ",
-  "wsgiref.simple_server.WSGIServer.server_close"
+  "wsgiref.simple_server.WSGIRequestHandler",
+  "wsgiref.simple_server.WSGIServer",
+  "wsgiref.simple_server.WSGIServer.server_close",
+  "wsgiref.simple_server.make_server",
+  "wsgiref.util",
+  "wsgiref.util._hoppish"
  ],
  "deps": {
   "OpenSSL": [
@@ -54,9 +88,6 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "gevent": [
-   "gevent/conda-forge/linux-64/gevent-21.1.2-py38h497a2fe_0"
-  ],
   "inspect": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -65,51 +96,7 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "operator": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "os": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "random": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "select": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "socket": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "ssl": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "struct": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "threading": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "tornado": [
-   "tornado/conda-forge/linux-64/tornado-4.4.3-py35_0",
-   "tornado/conda-forge/linux-64/tornado-6.0.4-py38h1e0a361_2"
-  ],
-  "types": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "urllib": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "wsgiref": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ]

@@ -42,21 +42,84 @@
   "cartopy.feature.OCEAN._kwargs",
   "functools.partial",
   "itertools.chain.from_iterable",
+  "matplotlib",
+  "matplotlib.animation.FuncAnimation",
+  "matplotlib.backend_bases.MouseEvent",
+  "matplotlib.backends.backend_qt5agg.FigureCanvasQTAgg",
+  "matplotlib.cm.ScalarMappable",
+  "matplotlib.colors",
   "matplotlib.colors.Colormap.connect",
+  "matplotlib.figure.Figure",
+  "matplotlib.rcParams",
   "numpy.abs",
   "numpy.arange",
   "numpy.deg2rad",
   "os.getcwd",
   "os.path.exists",
+  "psy_simple.widgets.colors",
+  "psy_simple.widgets.colors.CmapButton",
   "psy_view.__init__.__version__",
   "psy_view.__init__.get_parser",
   "psy_view.__init__.main",
   "psy_view.__init__.start_app",
+  "psyplot.config.rcsetup.get_configdir",
+  "psyplot.config.rcsetup.validate_dict",
+  "psyplot.data",
+  "psyplot.data.InteractiveList",
+  "psyplot.data.get_filename_ds",
+  "psyplot.data.open_dataset",
+  "psyplot.plotter.Formatoption",
+  "psyplot.plotter.Plotter",
+  "psyplot.project",
+  "psyplot.project.PlotterInterface",
+  "psyplot.project.Project",
+  "psyplot.project.Project.extract_fmts_from_preset",
+  "psyplot.project.open_dataset",
+  "psyplot.project.plot",
+  "psyplot.utils.unique_everseen",
+  "psyplot_gui.common.DockMixin",
+  "psyplot_gui.common.PyErrorMessage",
+  "psyplot_gui.common.get_icon",
+  "psyplot_gui.config.rcsetup.RcParams",
   "psyplot_gui.config.rcsetup.RcParams.HEADER.replace",
+  "psyplot_gui.config.rcsetup.psyplot_fname",
+  "psyplot_gui.config.rcsetup.validate_stringlist",
+  "psyplot_gui.content_widget.DatasetTree",
+  "psyplot_gui.content_widget.DatasetTree.is_coord",
+  "psyplot_gui.content_widget.DatasetTree.is_variable",
+  "psyplot_gui.content_widget.DatasetTreeItem",
+  "psyplot_gui.content_widget.escape_html",
+  "psyplot_gui.main.MainWindow",
+  "psyplot_gui.main.mainwindow",
   "psyplot_gui.main.mainwindow.figures",
+  "psyplot_gui.rcParams",
   "ret",
   "ret.update",
-  "sys"
+  "sys",
+  "textwrap",
+  "textwrap.dedent",
+  "textwrap.shorten",
+  "typing.Any",
+  "typing.Callable",
+  "typing.ClassVar",
+  "typing.Dict",
+  "typing.Hashable",
+  "typing.Iterator",
+  "typing.List",
+  "typing.Optional",
+  "typing.TYPE_CHECKING",
+  "typing.Tuple",
+  "typing.Type",
+  "typing.Union",
+  "typing.cast",
+  "xarray",
+  "xarray.DataArray",
+  "xarray.Dataset",
+  "xarray.Variable",
+  "yaml",
+  "yaml.Loader",
+  "yaml.dump",
+  "yaml.load"
  ],
  "deps": {
   "__future__": [
@@ -80,11 +143,6 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "matplotlib": [
-   "matplotlib-base/conda-forge/linux-64/matplotlib-base-3.1.1-py37hfd891ef_0",
-   "matplotlib-base/conda-forge/linux-64/matplotlib-base-3.1.1-py38h250f245_2",
-   "matplotlib/conda-forge/linux-64/matplotlib-1.5.3-np111py34_0"
-  ],
   "ntpath": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -97,43 +155,6 @@
   "os": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "psy_simple": [
-   "psy-simple/conda-forge/linux-64/psy-simple-1.3.0-py38h32f6830_1"
-  ],
-  "psyplot": [
-   "psyplot/conda-forge/linux-64/psyplot-1.3.0-py38h32f6830_1"
-  ],
-  "psyplot_gui": [
-   "psyplot-gui/conda-forge/linux-64/psyplot-gui-1.3.0-py38h32f6830_0",
-   "psyplot-gui/conda-forge/linux-64/psyplot-gui-1.3.0-py39hde42818_1"
-  ],
-  "textwrap": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "typing": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "xarray": [
-   "xarray/conda-forge/linux-64/xarray-0.10.2-py36_0",
-   "xarray/conda-forge/noarch/xarray-0.12.0-py_0",
-   "xarray/conda-forge/noarch/xarray-0.13.0-py_0",
-   "xarray/conda-forge/noarch/xarray-0.14.1-py_0",
-   "xarray/conda-forge/noarch/xarray-0.15.0-py_0",
-   "xarray/conda-forge/noarch/xarray-0.15.1-py_0",
-   "xarray/conda-forge/noarch/xarray-0.16.0-py_0",
-   "xarray/conda-forge/noarch/xarray-0.16.1-py_0",
-   "xarray/conda-forge/noarch/xarray-0.16.2-pyhd8ed1ab_0",
-   "xarray/conda-forge/noarch/xarray-0.18.0-pyhd8ed1ab_0",
-   "xarray/conda-forge/noarch/xarray-0.18.2-pyhd8ed1ab_0"
-  ],
-  "yaml": [
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0",
-   "pyyaml/conda-forge/linux-64/pyyaml-3.11-py35_0",
-   "pyyaml/conda-forge/win-64/pyyaml-5.2-py36hfa6e2cd_0"
   ]
  }
 }

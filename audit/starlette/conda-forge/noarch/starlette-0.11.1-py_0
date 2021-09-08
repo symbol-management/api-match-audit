@@ -9,27 +9,72 @@
   "collections.abc.MutableMapping",
   "collections.abc.Sequence",
   "connection",
+  "contextvars",
   "coro",
+  "email.utils.formatdate",
+  "email.utils.parsedate",
   "func",
   "functools.partial",
+  "graphene",
+  "graphql.error.GraphQLError",
+  "graphql.error.format_error",
+  "graphql.execution.executors.asyncio.AsyncioExecutor",
+  "gzip",
   "handler",
+  "hashlib",
   "hashlib.md5",
   "inner",
   "instance",
   "io.BytesIO",
+  "itsdangerous",
+  "itsdangerous.exc.BadTimeSignature",
+  "itsdangerous.exc.SignatureExpired",
+  "jinja2",
+  "mimetypes.guess_type",
+  "multipart",
+  "multipart.multipart.parse_options_header",
   "os.stat_result",
   "partial",
+  "re",
+  "re.compile",
   "receive",
+  "requests",
+  "requests.PreparedRequest",
+  "requests.Request",
+  "requests.Response",
+  "requests.Session",
+  "requests.adapters.HTTPAdapter",
+  "requests.auth.AuthBase",
+  "requests.cookies.RequestsCookieJar",
+  "requests.packages.urllib3.HTTPResponse",
+  "requests.packages.urllib3._collections.HTTPHeaderDict",
   "response",
   "response.raw_headers",
   "route",
   "route.matches",
   "send",
+  "shlex.shlex",
   "starlette.concurrency.run_in_threadpool",
+  "stat",
   "str.__new__",
   "sys",
   "task",
-  "ujson"
+  "tempfile",
+  "threading",
+  "traceback",
+  "traceback.FrameSummary",
+  "traceback.TracebackException.from_exception",
+  "traceback.format_tb",
+  "ujson",
+  "urllib.parse.SplitResult",
+  "urllib.parse.parse_qsl",
+  "urllib.parse.quote_plus",
+  "urllib.parse.unquote",
+  "urllib.parse.unquote_plus",
+  "urllib.parse.urlencode",
+  "urllib.parse.urljoin",
+  "urllib.parse.urlsplit",
+  "yaml"
  ],
  "deps": {
   "_asyncio": [
@@ -51,39 +96,12 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "contextvars": [
-   "contextvars/conda-forge/noarch/contextvars-2.1-py_0",
-   "contextvars/conda-forge/noarch/contextvars-2.2-py_0",
-   "contextvars/conda-forge/noarch/contextvars-2.3-py_0",
-   "contextvars/conda-forge/noarch/contextvars-2.4-py_0",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "email": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "enum": [
    "privy/conda-forge/noarch/privy-6.0.0-py_0",
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "functools": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "graphene": [
-   "graphene/conda-forge/noarch/graphene-1.4-py_0",
-   "graphene/conda-forge/noarch/graphene-2.1.3-py_0",
-   "graphene/conda-forge/noarch/graphene-2.1.6-py_0",
-   "graphene/conda-forge/noarch/graphene-2.1.8-py_0",
-   "graphene/conda-forge/noarch/graphene-2.1.9-pyhd8ed1ab_0"
-  ],
-  "graphql": [],
-  "gzip": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "hashlib": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -99,15 +117,6 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "itsdangerous": [
-   "itsdangerous/conda-forge/noarch/itsdangerous-2.0.1-pyhd8ed1ab_0"
-  ],
-  "jinja2": [
-   "jinja2/conda-forge/noarch/jinja2-2.10-py_1",
-   "jinja2/conda-forge/noarch/jinja2-2.11.3-pyh44b312d_0",
-   "jinja2/conda-forge/noarch/jinja2-3.0.0-pyhd8ed1ab_0",
-   "jinja2/conda-forge/noarch/jinja2-3.0.1-pyhd8ed1ab_0"
-  ],
   "json": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -115,13 +124,6 @@
   "math": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "mimetypes": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "multipart": [
-   "python-multipart/conda-forge/noarch/python-multipart-0.0.5-py_0"
   ],
   "ntpath": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -136,33 +138,6 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "re": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "requests": [
-   "requests/conda-forge/linux-64/requests-2.12.0-py35_0"
-  ],
-  "shlex": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "stat": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "tempfile": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "threading": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "traceback": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "types": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -170,16 +145,6 @@
   "typing": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "urllib": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "yaml": [
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0",
-   "pyyaml/conda-forge/linux-64/pyyaml-3.11-py35_0",
-   "pyyaml/conda-forge/win-64/pyyaml-5.2-py36hfa6e2cd_0"
   ]
  }
 }

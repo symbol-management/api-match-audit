@@ -11,8 +11,9 @@
   "collections.defaultdict",
   "configparser",
   "configparser.Error",
-  "debtcollector",
-  "debtcollector.deprecate",
+  "dateutil.tz",
+  "dateutil.tz.tzlocal",
+  "dateutil.tz.tzutc",
   "dict.get",
   "do_outdated_stuff",
   "errno",
@@ -60,22 +61,26 @@
   "oslotest.base.BaseTestCase",
   "pyinotify.IN_DELETE",
   "pyinotify.IN_MOVED_FROM",
+  "re",
+  "re.compile",
   "report_deprecated",
-  "shutil",
-  "shutil.copy",
+  "stat",
+  "stat.ST_DEV",
+  "stat.ST_INO",
   "sys",
   "sys.stderr.getvalue",
   "systemd.journal",
   "systemd.journal.send",
+  "tempfile",
+  "tempfile.mkdtemp",
+  "tempfile.mkstemp",
   "test_class",
   "test_class.test_staticmethod",
   "time",
-  "unittest.mock",
-  "unittest.mock.ANY",
-  "unittest.mock.MagicMock",
-  "unittest.mock.Mock",
-  "unittest.mock.call",
-  "unittest.mock.patch",
+  "traceback",
+  "traceback.format_exception",
+  "traceback.format_exception_only",
+  "traceback.print_exception",
   "unittest.mock.patch.object",
   "unittest.mock.sentinel.sentinel_log"
  ],
@@ -105,12 +110,11 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "dateutil": [
-   "python-dateutil/conda-forge/noarch/python-dateutil-2.7.2-py_0",
-   "python-dateutil/conda-forge/noarch/python-dateutil-2.7.4-py_0",
-   "python-dateutil/conda-forge/noarch/python-dateutil-2.7.5-py_0",
-   "python-dateutil/conda-forge/noarch/python-dateutil-2.8.1-py_0",
-   "python-dateutil/conda-forge/noarch/python-dateutil-2.8.2-pyhd8ed1ab_0"
+  "debtcollector": [
+   "debtcollector/conda-forge/linux-64/debtcollector-1.20.0-py27_0",
+   "debtcollector/conda-forge/linux-64/debtcollector-1.20.0-py27_1000",
+   "debtcollector/conda-forge/noarch/debtcollector-1.19.0-py_0",
+   "debtcollector/conda-forge/noarch/debtcollector-1.21.0-py_0"
   ],
   "fixtures": [
    "fixtures/conda-forge/linux-64/fixtures-3.0.0-py35_0",
@@ -208,7 +212,7 @@
   "pyinotify": [
    "pyinotify/conda-forge/linux-64/pyinotify-0.9.6-py37hc8dfbb8_1001"
   ],
-  "re": [
+  "shutil": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -216,15 +220,7 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "stat": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "syslog": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "tempfile": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -232,7 +228,7 @@
    "testtools/conda-forge/noarch/testtools-2.3.0-py_1",
    "testtools/conda-forge/osx-64/testtools-2.2.0-py27_0"
   ],
-  "traceback": [
+  "unittest": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ]

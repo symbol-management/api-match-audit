@@ -16,6 +16,7 @@
   "RightShift",
   "Sum",
   "algorithm.extended_euclidean",
+  "ast",
   "ast.Add",
   "ast.BitAnd",
   "ast.BitOr",
@@ -39,6 +40,8 @@
   "ast.USub",
   "base",
   "bpw",
+  "cmath",
+  "cmath.exp",
   "coeff_coll",
   "cse_mapper",
   "dep_map",
@@ -66,6 +69,7 @@
   "match_plain_var_candidates",
   "method",
   "none_or_rec",
+  "numbers.Integral",
   "numpy.bool_",
   "numpy.complex128",
   "numpy.complexfloating",
@@ -76,7 +80,14 @@
   "numpy.number",
   "numpy.zeros",
   "op_constructor",
+  "operator",
+  "operator.add",
+  "operator.and_",
   "operator.div",
+  "operator.mul",
+  "operator.or_",
+  "operator.truediv",
+  "operator.xor",
   "partitions",
   "pymbolic.geometric_algebra.__init__.MultiVector",
   "pymbolic.geometric_algebra.__init__.Space",
@@ -105,6 +116,8 @@
   "pymbolic.mapper.stringifier.StringifyMapper.map_foreign",
   "pymbolic.parser.Parser.lex_table",
   "quotient",
+  "re",
+  "re.compile",
   "rec",
   "rep2term",
   "statement_stringifier",
@@ -114,31 +127,22 @@
   "strify_child",
   "stringify_exp",
   "stringify_leading_dimension",
+  "subprocess.check_call",
   "subsets",
   "sum.children",
   "symengine.E",
   "symengine.Function",
   "symengine.lib.symengine_wrapper.PyFunction",
   "symengine.sympify",
-  "sympy",
-  "sympy.Function",
   "sys",
+  "tempfile.mkdtemp",
   "ucm",
   "ucm.subexpr_counts.items",
   "vng",
   "warnings.warn",
-  "webbrowser.open",
   "wrap_intermediate"
  ],
  "deps": {
-  "ast": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "cmath": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "factory": [
    "factory_boy/conda-forge/noarch/factory_boy-2.10.0-py_0",
    "factory_boy/conda-forge/noarch/factory_boy-2.11.0-py_0",
@@ -159,17 +163,9 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "numbers": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "numpy": [
    "numpy/conda-forge/linux-64/numpy-1.17.5-py36h95a1406_0",
    "numpy/conda-forge/linux-64/numpy-1.18.4-py37h8960a57_0"
-  ],
-  "operator": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "os": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -187,19 +183,15 @@
    "pytools/conda-forge/noarch/pytools-2021.2.4-pyhd8ed1ab_0",
    "pytools/conda-forge/noarch/pytools-2021.2.5-pyhd8ed1ab_0"
   ],
-  "re": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "subprocess": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "symengine": [
    "python-symengine/conda-forge/linux-64/python-symengine-0.5.1-py36h9603a25_0",
    "python-symengine/conda-forge/linux-64/python-symengine-0.6.1-py37hd42a662_1"
   ],
-  "tempfile": [
+  "sympy": [
+   "sympy/conda-forge/linux-64/sympy-1.5.1-py27h8c360ce_2",
+   "sympy/conda-forge/linux-64/sympy-1.5.1-py36_0"
+  ],
+  "webbrowser": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ]

@@ -34,15 +34,13 @@
   "folder.walk_cached_folder_tree",
   "functools.partial",
   "get_folder",
-  "http.server",
-  "http.server.HTTPServer",
-  "http.server.ThreadingHTTPServer",
+  "glob",
+  "glob.glob",
+  "glob.has_magic",
   "imageset.ImageSet",
   "imageset.ImageSet.from_text",
   "impl",
   "io.BytesIO",
-  "json",
-  "json.loads",
   "layers.LayerContainerReader.from_file",
   "mock.Mock",
   "mywarn",
@@ -50,9 +48,10 @@
   "place.Place",
   "place.Place.from_text",
   "process_html",
-  "pytest",
   "pytest.fixture",
   "pytest.raises",
+  "re",
+  "re.sub",
   "requests",
   "requests.ConnectionError",
   "requests.Session",
@@ -62,12 +61,29 @@
   "server.WWTRequestHandler",
   "server.preview_wtml",
   "server.run_server",
-  "shutil",
-  "shutil.rmtree",
   "sys",
+  "tempfile",
+  "tempfile.mkdtemp",
+  "textwrap",
+  "textwrap.wrap",
   "threading.Thread",
+  "traitlets.Bool",
+  "traitlets.Float",
+  "traitlets.HasTraits",
+  "traitlets.Instance",
+  "traitlets.Int",
+  "traitlets.List",
+  "traitlets.MetaHasTraits",
+  "traitlets.TraitType",
+  "traitlets.Unicode",
+  "traitlets.Union",
+  "traitlets.UseEnum",
   "update_imageset",
   "update_place",
+  "urllib.parse.quote",
+  "urllib.parse.unquote",
+  "urllib.parse.urljoin",
+  "urllib.parse.urlsplit",
   "value",
   "walk",
   "wwt_data_formats.__init__.LockedDownTraits",
@@ -79,7 +95,12 @@
   "wwt_data_formats.__init__.stringify_xml_doc",
   "wwt_data_formats.__init__.write_xml_doc",
   "wwt_data_formats.tests.__init__.TESTS_DIR",
-  "wwt_data_formats.tests.__init__._assert_xml_trees_equal"
+  "wwt_data_formats.tests.__init__._assert_xml_trees_equal",
+  "xml.etree.ElementTree",
+  "xml.etree.ElementTree.Element",
+  "xml.etree.ElementTree.ElementTree",
+  "xml.etree.ElementTree.SubElement",
+  "xml.etree.ElementTree.fromstring"
  ],
  "deps": {
   "__future__": [
@@ -117,7 +138,10 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "glob": [
+  "http": [
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "json": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -138,33 +162,16 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "re": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  "pytest": [
+   "pytest/conda-forge/linux-64/pytest-3.7.0-py27_0",
+   "pytest/conda-forge/linux-64/pytest-4.6.0-py37_0",
+   "pytest/conda-forge/linux-64/pytest-6.0.2-py37hc8dfbb8_0"
   ],
-  "tempfile": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "textwrap": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "traitlets": [
-   "traitlets/conda-forge/noarch/traitlets-5.0.4-py_0",
-   "traitlets/conda-forge/noarch/traitlets-5.0.4-py_1",
-   "traitlets/conda-forge/noarch/traitlets-5.0.5-py_0",
-   "traitlets/conda-forge/noarch/traitlets-5.1.0-pyhd8ed1ab_0"
-  ],
-  "urllib": [
+  "shutil": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "webbrowser": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "xml": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ]
