@@ -43,6 +43,10 @@
   "_records.Records_update_row_count",
   "_records.Records_write_header_and_update_offset",
   "_records.delete_Records",
+  "astropy.io.fits",
+  "astropy.io.fits.getdata",
+  "astropy.io.fits.getheader",
+  "astropy.io.fits.writeto",
   "biggles",
   "biggles.Curve",
   "biggles.ErrorBarsX",
@@ -67,6 +71,8 @@
   "coords.eq2sdss",
   "coords.sdss2eq",
   "cosmology_purepy.Cosmo",
+  "csv",
+  "csv.DictWriter",
   "cx_Oracle",
   "cx_Oracle.NATIVE_FLOAT",
   "cx_Oracle.NUMBER",
@@ -76,6 +82,10 @@
   "errno",
   "esutil.__init__.__version__",
   "exec_command",
+  "fitsio",
+  "fitsio.read",
+  "fitsio.read_header",
+  "fitsio.write",
   "gauleg",
   "get_log_plot_range",
   "grid",
@@ -87,16 +97,18 @@
   "htmc.Matcher",
   "integrate.gauleg",
   "isstring",
+  "json",
+  "json.dump",
+  "json.load",
   "json_util.read",
   "json_util.write",
+  "locale",
+  "locale.LC_ALL",
+  "locale.format",
+  "locale.setlocale",
   "make_xy_grid",
-  "matplotlib",
-  "matplotlib.pyplot",
   "matplotlib.pyplot.add",
-  "matplotlib.pyplot.plot",
   "matplotlib.pyplot.rcParams.update",
-  "matplotlib.ticker.MultipleLocator",
-  "matplotlib.use",
   "metaclass",
   "method",
   "misc.center_text",
@@ -164,6 +176,9 @@
   "recfile.Open",
   "recfile.Recfile",
   "records.Records",
+  "scipy.integrate",
+  "scipy.optimize",
+  "scipy.optimize.leastsq",
   "sfile.read",
   "sfile.read_header",
   "sfile.write",
@@ -202,17 +217,16 @@
   "xml.etree.cElementTree.ElementTree",
   "xml.etree.cElementTree.parse",
   "xmltools.dict2xml",
-  "xmltools.xml2dict"
+  "xmltools.xml2dict",
+  "yaml",
+  "yaml.Loader",
+  "yaml.dump",
+  "yaml.load"
  ],
  "deps": {
   "__future__": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "astropy": [
-   "astropy/conda-forge/linux-64/astropy-2.0-np111py36_0",
-   "astropy/conda-forge/linux-64/astropy-2.0.2-np111py27_0",
-   "astropy/conda-forge/linux-64/astropy-4.2-py37h5e8e339_1"
   ],
   "builtins": [
    "pies2overrides/conda-forge/osx-64/pies2overrides-2.6.7-py27_1000"
@@ -221,26 +235,14 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "csv": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "fitsio": [
-   "fitsio/conda-forge/linux-64/fitsio-1.0.5-py27h0c87ef4_0",
-   "fitsio/conda-forge/linux-64/fitsio-1.0.5-py37h0c87ef4_0",
-   "fitsio/conda-forge/linux-64/fitsio-1.1.2-py38hff5d36a_0"
-  ],
-  "json": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "locale": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "math": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "matplotlib": [
+   "matplotlib-base/conda-forge/linux-64/matplotlib-base-3.1.1-py37hfd891ef_0",
+   "matplotlib-base/conda-forge/linux-64/matplotlib-base-3.1.1-py38h250f245_2",
+   "matplotlib/conda-forge/linux-64/matplotlib-1.5.3-np111py34_0"
   ],
   "ntpath": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -271,11 +273,6 @@
   "re": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "scipy": [
-   "scipy/conda-forge/linux-64/scipy-0.17.1-np110py27_blas_openblas_202",
-   "scipy/conda-forge/linux-64/scipy-1.7.0-py37h29e03ee_0",
-   "scipy/conda-forge/linux-64/scipy-1.7.0-py37ha768fb6_1"
   ],
   "shutil": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -315,12 +312,6 @@
   "xml": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "yaml": [
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0",
-   "pyyaml/conda-forge/linux-64/pyyaml-3.11-py35_0",
-   "pyyaml/conda-forge/win-64/pyyaml-5.2-py36hfa6e2cd_0"
   ]
  }
 }

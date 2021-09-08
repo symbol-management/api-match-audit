@@ -5,6 +5,8 @@
   "StringIO.StringIO",
   "_read_neuroml2",
   "config.variables",
+  "csv",
+  "csv.writer",
   "generatedsnamespaces.GenerateDSNamespaceDefs",
   "generatedsnamespaces.GenerateDSNamespaceDefs.get",
   "generatedssuper.GeneratedsSuper",
@@ -20,38 +22,57 @@
   "input.id",
   "input.segment_id",
   "io.StringIO",
+  "jsonpickle.decode",
+  "jsonpickle.encode",
+  "jsonpickle.ext.numpy",
+  "jsonpickle.ext.numpy.register_handlers",
+  "keyword",
+  "keyword.kwlist",
   "loader_method",
+  "lxml",
+  "lxml.etree",
   "lxml.etree.XMLSchema",
   "lxml.etree.parse",
+  "lxml.objectify",
   "lxml.objectify.parse",
   "neuroml.__file__",
   "neuroml.__name__",
   "numpy.float32",
   "numpy.zeros",
+  "operator.attrgetter",
   "os.path.isfile",
   "process_includes",
   "process_includes.process_include_files",
+  "pymongo.MongoClient",
   "raise_parse_error",
   "re.DOTALL",
+  "simplejson",
+  "simplejson.dumps",
   "subclass",
   "sys",
   "sys.path.append",
+  "tables",
+  "tables.Filters",
+  "tables.open_file",
   "test_class",
+  "unittest2",
+  "unittest2.TestCase",
+  "urllib.request.urlopen",
   "urllib2.urlopen",
+  "warnings",
+  "warnings.resetwarnings",
+  "warnings.simplefilter",
   "warnings.warn",
   "writer_method",
-  "xml.etree.ElementTree.ETCompatXMLParser"
+  "xml.etree.ElementTree",
+  "xml.etree.ElementTree.ETCompatXMLParser",
+  "xml.etree.ElementTree.SubElement",
+  "xml.etree.ElementTree.XMLParser",
+  "xml.etree.ElementTree.fromstring",
+  "xml.etree.ElementTree.parse"
  ],
  "deps": {
-  "_csv": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "base64": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "csv": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -71,22 +92,9 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "jsonpickle": [
-   "jsonpickle/conda-forge/noarch/jsonpickle-1.2-py_0",
-   "jsonpickle/conda-forge/noarch/jsonpickle-1.4.1-pyh9f0ad1d_0",
-   "jsonpickle/conda-forge/noarch/jsonpickle-1.5.1-pyhd8ed1ab_0",
-   "jsonpickle/conda-forge/noarch/jsonpickle-2.0.0-pyhd8ed1ab_0"
-  ],
-  "keyword": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "logging": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "lxml": [
-   "lxml/conda-forge/linux-64/lxml-4.2.6-py37h23eabaa_1000"
   ],
   "math": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -101,52 +109,19 @@
    "numpy/conda-forge/linux-64/numpy-1.18.4-py37h8960a57_0",
    "numpy/conda-forge/linux-64/numpy-1.19.2-py36h68c22af_1"
   ],
-  "operator": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "os": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "pymongo": [
-   "pymongo/conda-forge/linux-64/pymongo-3.11.4-py39he80948d_0",
-   "pymongo/conda-forge/win-64/pymongo-3.11.4-py39h415ef7b_0"
-  ],
   "re": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "simplejson": [
-   "simplejson/conda-forge/linux-64/simplejson-3.16.0-py27h470a237_2",
-   "simplejson/conda-forge/linux-64/simplejson-3.16.0-py35h470a237_2",
-   "simplejson/conda-forge/linux-64/simplejson-3.17.0-py38h516909a_0"
-  ],
-  "tables": [
-   "pytables/conda-forge/linux-64/pytables-3.4.2-py27_5",
-   "pytables/conda-forge/linux-64/pytables-3.4.2-py27_7",
-   "pytables/conda-forge/linux-64/pytables-3.6.1-py38h1b207d3_2"
   ],
   "tempfile": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "unittest": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "unittest2": [
-   "unittest2/conda-forge/noarch/unittest2-1.1.0-py_0"
-  ],
-  "urllib": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "warnings": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "xml": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ]

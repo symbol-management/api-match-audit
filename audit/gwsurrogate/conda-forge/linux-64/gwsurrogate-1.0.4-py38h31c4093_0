@@ -6,10 +6,39 @@
   "check_cases",
   "collections.Callable",
   "ctypes.POINTER",
+  "ctypes.RTLD_GLOBAL",
   "dict.keys",
   "func",
   "functools.reduce",
+  "glob.glob",
   "gwsurrogate.__file__",
+  "gwtools",
+  "gwtools.gwtools",
+  "gwtools.gwtools.G",
+  "gwtools.gwtools.MSUN_SI",
+  "gwtools.gwtools.Msuninsec",
+  "gwtools.gwtools.PC_SI",
+  "gwtools.gwtools.amp_phase",
+  "gwtools.gwtools.c",
+  "gwtools.gwtools.coordinate_time_shift",
+  "gwtools.gwtools.euclidean_norm_sqrd",
+  "gwtools.gwtools.find_instant_freq",
+  "gwtools.gwtools.generate_parameterize_waveform",
+  "gwtools.gwtools.h_sphere_builder",
+  "gwtools.gwtools.minimize_waveform_match",
+  "gwtools.gwtools.modify_phase",
+  "gwtools.gwtools.phase",
+  "gwtools.gwtools.q_to_nu",
+  "gwtools.gwtools.setup_minimization_from_discrete_waveforms",
+  "gwtools.gwutils",
+  "gwtools.gwutils.windowWaveform",
+  "gwtools.harmonics.sYlm",
+  "gwtools.plot_pretty",
+  "gwtools.q_to_nu",
+  "h5py",
+  "h5py.File",
+  "h5py._hl.dataset.Dataset",
+  "h5py._hl.files.File",
   "h_sphere",
   "hashlib.md5",
   "itertools",
@@ -37,6 +66,7 @@
   "numpy.sqrt",
   "numpy.string_",
   "numpy.zeros",
+  "operator.itemgetter",
   "os.chdir",
   "os.listdir",
   "os.path.exists",
@@ -44,15 +74,23 @@
   "os.path.isfile",
   "os.remove",
   "os.system",
+  "random.sample",
+  "scipy.interpolate.InterpolatedUnivariateSpline",
+  "scipy.interpolate.splev",
+  "scipy.interpolate.splrep",
   "scipy.special.fresnel",
   "self",
   "self.minX",
   "self.width",
+  "setuptools.Extension",
+  "setuptools.setup",
   "sfs_nc",
   "sfs_nc.ei_basis",
   "sfs_nc.save",
+  "sklearn.gaussian_process",
   "sklearn.gaussian_process.GaussianProcessRegressor",
   "sklearn.gaussian_process.kernels",
+  "sklearn.linear_model",
   "sur",
   "surrogate.__author__",
   "surrogate.__copyright__",
@@ -61,14 +99,13 @@
   "surrogate.__license__",
   "surrogate.__version__",
   "time",
+  "warnings",
+  "warnings.catch_warnings",
+  "warnings.filterwarnings",
   "warnings.warn"
  ],
  "deps": {
   "__future__": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "_ctypes": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -83,21 +120,6 @@
   "distutils": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "glob": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "gwtools": [
-   "gwtools/conda-forge/noarch/gwtools-1.0.2-py_0",
-   "gwtools/conda-forge/noarch/gwtools-1.0.3-py_0",
-   "gwtools/conda-forge/noarch/gwtools-1.0.4-py_0",
-   "gwtools/conda-forge/noarch/gwtools-1.0.5-py_0"
-  ],
-  "h5py": [
-   "h5py/conda-forge/linux-64/h5py-2.10.0-nompi_py37hf7afa78_105",
-   "h5py/conda-forge/linux-64/h5py-2.6.0-np111py34_4",
-   "h5py/conda-forge/linux-64/h5py-2.7.0-np113py36_1"
   ],
   "hashlib": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -120,38 +142,11 @@
    "numpy/conda-forge/linux-64/numpy-1.17.5-py36h95a1406_0",
    "numpy/conda-forge/linux-64/numpy-1.18.4-py37h8960a57_0"
   ],
-  "operator": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "os": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "random": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "scipy": [
-   "scipy/conda-forge/linux-64/scipy-0.17.1-np110py27_blas_openblas_202",
-   "scipy/conda-forge/linux-64/scipy-1.7.0-py37h29e03ee_0",
-   "scipy/conda-forge/linux-64/scipy-1.7.0-py37ha768fb6_1"
-  ],
-  "setuptools": [
-   "setuptools/conda-forge/linux-64/setuptools-40.6.1-py36_0",
-   "setuptools/conda-forge/linux-64/setuptools-46.3.0-py38h32f6830_0",
-   "setuptools/conda-forge/linux-64/setuptools-49.1.2-py38h32f6830_0"
-  ],
-  "sklearn": [
-   "scikit-learn/conda-forge/linux-64/scikit-learn-0.17.1-np110py27_blas_openblas_200",
-   "scikit-learn/conda-forge/linux-64/scikit-learn-0.17.1-np110py35_blas_openblas_202",
-   "scikit-learn/conda-forge/linux-64/scikit-learn-0.17.1-np111py35_blas_openblas_202"
-  ],
   "unittest": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "warnings": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ]

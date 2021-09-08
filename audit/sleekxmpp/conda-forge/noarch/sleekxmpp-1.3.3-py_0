@@ -28,27 +28,55 @@
   "__builtin__",
   "__builtin__.bytes",
   "__builtin__.unicode",
+  "__future__.absolute_import",
+  "__future__.unicode_literals",
+  "__future__.with_statement",
   "_close",
   "_py2xml",
   "_xml2py",
   "base.base_plugin",
+  "base64",
+  "base64.b64decode",
+  "base64.b64encode",
   "cStringIO.StringIO",
   "callback",
   "check",
   "check_unassigned",
+  "codecs",
+  "codecs.getreader",
+  "codecs.getwriter",
+  "collections",
   "collections.MutableSet",
+  "collections.OrderedDict",
   "collections.deque",
+  "datetime",
+  "datetime.date",
+  "datetime.datetime",
+  "datetime.datetime.now",
+  "datetime.datetime.strptime",
+  "datetime.datetime.utcnow",
+  "datetime.time",
+  "datetime.timedelta",
+  "datetime.tzinfo",
+  "dateutil.parser.parse",
+  "dateutil.tz.tzoffset",
+  "dateutil.tz.tzutc",
   "del_multi",
   "dict.__delitem__",
   "dict.__eq__",
   "dict.__setitem__",
   "dict.clear",
+  "dns.resolver",
   "errno",
   "func",
   "gc",
   "handler",
+  "hashlib",
   "hashlib.md5",
   "hashlib.sha1",
+  "hmac",
+  "hmac.HMAC",
+  "hmac.new",
   "io.BytesIO",
   "io.StringIO",
   "itertools",
@@ -61,6 +89,14 @@
   "kerberos.authGSSClientStep",
   "kerberos.authGSSClientUnwrap",
   "kerberos.authGSSClientWrap",
+  "locale",
+  "logging",
+  "logging.Handler",
+  "logging.NullHandler",
+  "logging.debug",
+  "logging.exception",
+  "logging.getLogger",
+  "logging.warning",
   "mapping",
   "mech_class",
   "object.__getattribute__",
@@ -75,6 +111,10 @@
   "plugin_class",
   "plugin_class.plugin_multi_attrib",
   "plugin_filter",
+  "random",
+  "random.normalvariate",
+  "random.randint",
+  "random.random",
   "re.X",
   "restart",
   "sleekxmpp.__init__.NullHandler",
@@ -200,49 +240,16 @@
   "xml.parsers.expat.ExpatError"
  ],
  "deps": {
-  "__future__": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "_ssl": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "base64": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "builtins": [
    "pies2overrides/conda-forge/osx-64/pies2overrides-2.6.7-py27_1000"
   ],
-  "codecs": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "collections": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "copy": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "datetime": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "dateutil": [
-   "python-dateutil/conda-forge/noarch/python-dateutil-2.7.2-py_0",
-   "python-dateutil/conda-forge/noarch/python-dateutil-2.7.4-py_0",
-   "python-dateutil/conda-forge/noarch/python-dateutil-2.7.5-py_0",
-   "python-dateutil/conda-forge/noarch/python-dateutil-2.8.1-py_0",
-   "python-dateutil/conda-forge/noarch/python-dateutil-2.8.2-pyhd8ed1ab_0"
-  ],
-  "dns": [
-   "dnspython/conda-forge/noarch/dnspython-1.15.0-py_0",
-   "dnspython/conda-forge/noarch/dnspython-1.16.0-py_1",
-   "dnspython/conda-forge/noarch/dnspython-2.0.0-py_0",
-   "dnspython/conda-forge/noarch/dnspython-2.1.0-pyhd8ed1ab_0"
   ],
   "encodings": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -253,22 +260,6 @@
   ],
   "gnupg": [
    "gnupg-py/conda-forge/noarch/gnupg-py-2.3.1-py_0"
-  ],
-  "hashlib": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "hmac": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "locale": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "logging": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "math": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -300,10 +291,6 @@
   ],
   "queue": [
    "pies2overrides/conda-forge/osx-64/pies2overrides-2.6.7-py27_1000",
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "random": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
