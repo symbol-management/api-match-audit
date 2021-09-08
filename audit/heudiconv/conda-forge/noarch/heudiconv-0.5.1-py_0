@@ -4,26 +4,13 @@
   "cleaner",
   "collections.defaultdict",
   "collections.deque",
-  "csv",
-  "csv.reader",
-  "csv.writer",
-  "datalad.api.Dataset",
   "datalad.api.create",
-  "datalad.support.annexrepo.AnnexRepo",
-  "datalad.support.external_versions.external_versions",
-  "dcmstack",
-  "dcmstack.NiftiWrapper",
-  "dcmstack.parse_and_stack",
-  "dicom",
   "dicom.read_file",
   "external.dlad.add_to_datalad",
   "external.dlad.prepare_datalad",
   "get_unique",
-  "glob.glob",
-  "hashlib",
   "hashlib.md5",
   "heudiconv.__init__.lgr",
-  "heudiconv.external.dcmstack.ds.wrapper_from_data",
   "heudiconv.external.pydicom.dcm.read_file",
   "heudiconv.lgr.warning",
   "heuristic_ls",
@@ -31,28 +18,8 @@
   "inotify.constants.IN_CREATE",
   "inotify.constants.IN_ISDIR",
   "inotify.constants.IN_MODIFY",
-  "inspect",
-  "inspect.currentframe",
-  "inspect.getfile",
-  "inspect.isgenerator",
-  "logging",
-  "logging.DEBUG",
-  "logging.Formatter",
-  "logging.StreamHandler",
-  "logging.basicConfig",
-  "logging.getLogger",
-  "nibabel",
-  "nibabel.load",
-  "nibabel.orientations.io_orientation",
-  "nibabel.orientations.ornt2axcodes",
-  "nipype",
-  "nipype.Function",
-  "nipype.Node",
   "nipype.__version__.split",
-  "nipype.config",
   "nipype.config.enable_provenance",
-  "nipype.interfaces.base.isdefined",
-  "nipype.interfaces.dcm2nii.Dcm2niix",
   "numpy.random.seed",
   "os.chdir",
   "os.chmod",
@@ -60,43 +27,17 @@
   "os.getcwd",
   "os.lstat",
   "os.mkdir",
-  "os.path",
-  "os.path.abspath",
-  "os.path.basename",
   "os.path.commonprefix",
-  "os.path.curdir",
-  "os.path.dirname",
   "os.path.exists",
   "os.path.isdir",
-  "os.path.islink",
-  "os.path.join",
-  "os.path.lexists",
-  "os.path.pardir",
-  "os.path.realpath",
-  "os.path.relpath",
-  "os.path.sep",
-  "os.path.split",
-  "os.path.splitext",
   "os.stat",
   "os.symlink",
   "os.system",
   "os.unlink",
   "parse_series_spec",
-  "pathlib.Path",
-  "pdb",
-  "pdb.post_mortem",
   "pdpn",
   "py.path.local",
-  "random",
-  "random.sample",
-  "random.seed",
-  "re",
   "re.MULTILINE",
-  "re.compile",
-  "re.match",
-  "re.search",
-  "re.split",
-  "re.sub",
   "split2",
   "str.maketrans",
   "sys",
@@ -106,9 +47,6 @@
   "sys.stdout.isatty",
   "tempdirs",
   "tempdirs.rmtree",
-  "tempfile",
-  "tempfile.gettempdir",
-  "tempfile.mkdtemp",
   "time",
   "utils.get_heuristic_description",
   "utils.get_known_heuristic_names",
@@ -116,6 +54,10 @@
  ],
  "deps": {
   "__future__": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "_csv": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -136,16 +78,80 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "csv": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "datalad": [
+   "datalad/conda-forge/noarch/datalad-0.9.3-py_0"
+  ],
   "datetime": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "dcmstack": [
+   "dcmstack/conda-forge/osx-64/dcmstack-0.7-py27_0"
+  ],
+  "dicom": [
+   "pydicom/conda-forge/noarch/pydicom-1.1.0-py_0",
+   "pydicom/conda-forge/noarch/pydicom-1.2.0-py_0",
+   "pydicom/conda-forge/noarch/pydicom-1.2.1-py_0",
+   "pydicom/conda-forge/noarch/pydicom-1.4.1-py_0",
+   "pydicom/conda-forge/noarch/pydicom-2.1.0-pyhd3deb0d_0",
+   "pydicom/conda-forge/noarch/pydicom-2.2.1-pyh6c4a22f_0"
+  ],
+  "glob": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "hashlib": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "heudiconv": [
+   "heudiconv/conda-forge/noarch/heudiconv-0.5.1-py_0",
+   "heudiconv/conda-forge/noarch/heudiconv-0.5.2-py_0",
+   "heudiconv/conda-forge/noarch/heudiconv-0.5.3-py_0",
+   "heudiconv/conda-forge/noarch/heudiconv-0.5.4-py_0",
+   "heudiconv/conda-forge/noarch/heudiconv-0.6.0-py_0",
+   "heudiconv/conda-forge/noarch/heudiconv-0.9.0-pyhd3deb0d_0"
   ],
   "importlib": [
    "importlib/conda-forge/linux-64/importlib-1.0.4-py26_0",
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "inspect": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "json": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "logging": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "nibabel": [
+   "nibabel/conda-forge/noarch/nibabel-2.3.0-pyh24bf2e0_1",
+   "nibabel/conda-forge/noarch/nibabel-2.3.1-pyh24bf2e0_0",
+   "nibabel/conda-forge/noarch/nibabel-2.3.2-py_1",
+   "nibabel/conda-forge/noarch/nibabel-2.3.2-pyh24bf2e0_0",
+   "nibabel/conda-forge/noarch/nibabel-2.3.3-py_0",
+   "nibabel/conda-forge/noarch/nibabel-2.3.3-py_1",
+   "nibabel/conda-forge/noarch/nibabel-2.4.0-py_0",
+   "nibabel/conda-forge/noarch/nibabel-2.5.1-py_0",
+   "nibabel/conda-forge/noarch/nibabel-3.0.0-py_0",
+   "nibabel/conda-forge/noarch/nibabel-3.1.1-py_0",
+   "nibabel/conda-forge/noarch/nibabel-3.2.0-py_0"
+  ],
+  "nipype": [
+   "nipype/conda-forge/linux-64/nipype-1.1.4-py35_0",
+   "nipype/conda-forge/linux-64/nipype-1.3.0-py38_0",
+   "nipype/conda-forge/linux-64/nipype-1.6.0-py36h5fab9bb_0"
+  ],
+  "ntpath": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -155,6 +161,21 @@
    "numpy/conda-forge/linux-64/numpy-1.19.2-py36h68c22af_1"
   ],
   "os": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "pathlib": [
+   "pathlib/conda-forge/noarch/pathlib-1.0.1-py_1",
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "pdb": [
+   "pdbpp/conda-forge/noarch/pdbpp-0.9.12-py_0",
+   "pdbpp/conda-forge/noarch/pdbpp-0.9.14-py_0",
+   "pdbpp/conda-forge/noarch/pdbpp-0.9.15-py_0",
+   "pdbpp/conda-forge/noarch/pdbpp-0.9.5-py_1",
+   "pdbpp/conda-forge/noarch/pdbpp-0.9.6-py_0",
+   "pdbpp/conda-forge/noarch/pdbpp-0.9.8-py_0",
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -170,6 +191,14 @@
    "pydicom/conda-forge/noarch/pydicom-2.1.0-pyhd3deb0d_0",
    "pydicom/conda-forge/noarch/pydicom-2.2.1-pyh6c4a22f_0"
   ],
+  "random": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "re": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "shutil": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -183,6 +212,10 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "tarfile": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "tempfile": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
