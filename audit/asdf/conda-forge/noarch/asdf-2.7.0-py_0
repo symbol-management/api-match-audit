@@ -57,6 +57,9 @@
   "_test_version_map_support",
   "_walk_tree_breadth_first",
   "ascii_to_unicode",
+  "asdf.AsdfFile._open_asdf",
+  "asdf.AsdfFile._open_impl",
+  "asdf.AsdfFile.open",
   "asdf.blocks",
   "asdf.blocks.internal_blocks",
   "asdf.commands.__init__.__all__",
@@ -70,11 +73,33 @@
   "asdf.tests.helpers.__file__",
   "asdf.tree",
   "asdf.tree.all",
+  "astropy",
+  "astropy.coordinates.ICRS",
+  "astropy.coordinates.representation.CartesianDifferential",
+  "astropy.coordinates.representation.CartesianRepresentation",
+  "astropy.io.fits",
+  "astropy.io.fits.BinTableHDU",
   "astropy.io.fits.BinTableHDU.from_columns",
+  "astropy.io.fits.Column",
+  "astropy.io.fits.HDUList",
+  "astropy.io.fits.ImageHDU",
+  "astropy.io.fits.hdu.hdulist.HDUList",
+  "astropy.io.fits.open",
+  "astropy.modeling.models",
+  "astropy.modeling.models.AffineTransformation2D",
+  "astropy.table.Table",
+  "astropy.tests.helper.TestRunner",
+  "astropy.units",
+  "astropy.units.UnitBase",
   "astropy.units.m",
+  "astropy.version.version",
+  "bisect",
+  "bisect.bisect_left",
   "block.BlockManager",
   "block._hdu",
   "block.calculate_updated_layout",
+  "bz2.BZ2Compressor",
+  "bz2.BZ2Decompressor",
   "callback",
   "chain",
   "cls",
@@ -100,6 +125,7 @@
   "constants.YAML_END_MARKER_REGEX",
   "constants.YAML_TAG_PREFIX",
   "convert_to_tuples",
+  "ctypes",
   "ctypes.windll.kernel32.CloseHandle",
   "ctypes.windll.kernel32.MoveFileExW",
   "ctypes.windll.kernel32.MoveFileTransactedW",
@@ -211,6 +237,8 @@
   "os.remove",
   "os.rename",
   "os.stat",
+  "platform",
+  "platform.mac_ver",
   "pytest.mark.filterwarnings",
   "pytest.mark.parametrize",
   "pytest.mark.remote_data",
@@ -259,6 +287,9 @@
   "treeutil.iter_tree",
   "treeutil.walk_and_modify",
   "type.search",
+  "types",
+  "types.GeneratorType",
+  "types.ModuleType",
   "types._all_asdftypes",
   "unfix_block",
   "util.BinaryStruct",
@@ -290,10 +321,6 @@
   "yamlutil.tagged_tree_to_custom_tree"
  ],
  "deps": {
-  "_bz2": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "_pytest": [
    "pytest/conda-forge/linux-64/pytest-3.7.0-py27_0",
    "pytest/conda-forge/linux-64/pytest-4.6.0-py37_0",
@@ -305,24 +332,6 @@
   ],
   "argparse": [
    "argparse/conda-forge/osx-64/argparse-1.4.0-py26_0",
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "asdf": [
-   "asdf/conda-forge/noarch/asdf-1.3.3-py_0",
-   "asdf/conda-forge/noarch/asdf-2.0.2-py_0",
-   "asdf/conda-forge/noarch/asdf-2.2.1-py_0",
-   "asdf/conda-forge/noarch/asdf-2.5.0-py_0",
-   "asdf/conda-forge/noarch/asdf-2.7.0-py_0",
-   "asdf/conda-forge/noarch/asdf-2.7.1-py_0",
-   "asdf/conda-forge/noarch/asdf-2.7.2-pyhd8ed1ab_0",
-   "asdf/conda-forge/noarch/asdf-2.7.3-pyhd8ed1ab_0",
-   "asdf/conda-forge/noarch/asdf-2.8.1-pyhd8ed1ab_0"
-  ],
-  "astropy": [
-   "astropy/conda-forge/linux-64/astropy-4.2-py37h5e8e339_1"
-  ],
-  "bisect": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -348,10 +357,6 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "copy": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "ctypes": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -454,10 +459,6 @@
    "setuptools/conda-forge/linux-64/setuptools-46.3.0-py38h32f6830_0",
    "setuptools/conda-forge/linux-64/setuptools-49.1.2-py38h32f6830_0"
   ],
-  "platform": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "posixpath": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -511,10 +512,6 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "threading": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "types": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
