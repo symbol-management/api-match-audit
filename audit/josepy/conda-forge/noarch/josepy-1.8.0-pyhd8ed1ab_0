@@ -6,74 +6,11 @@
   "MockJSONObjectWithFields",
   "MockSig",
   "MockTypedJSONObjectWithFields",
-  "OpenSSL",
-  "OpenSSL.crypto.Error",
-  "OpenSSL.crypto.FILETYPE_ASN1",
-  "OpenSSL.crypto.FILETYPE_PEM",
-  "OpenSSL.crypto.X509",
-  "OpenSSL.crypto.dump_certificate",
-  "OpenSSL.crypto.dump_certificate_request",
-  "OpenSSL.crypto.load_certificate",
-  "OpenSSL.crypto.load_certificate_request",
-  "OpenSSL.crypto.load_privatekey",
   "Sequence",
   "_serialize",
-  "abc",
-  "abc.ABCMeta",
-  "abc.ABCMeta.__new__",
-  "abc.abstractmethod",
-  "base64",
-  "base64.b64decode",
-  "base64.b64encode",
-  "base64.urlsafe_b64decode",
-  "base64.urlsafe_b64encode",
-  "binascii",
-  "binascii.Error",
-  "binascii.hexlify",
-  "binascii.unhexlify",
   "collections.abc.Hashable",
   "collections.abc.Mapping",
   "collections.abc.Sequence",
-  "cryptography.exceptions",
-  "cryptography.hazmat.backends.default_backend",
-  "cryptography.hazmat.primitives.asymmetric.ec",
-  "cryptography.hazmat.primitives.asymmetric.ec.ECDSA",
-  "cryptography.hazmat.primitives.asymmetric.ec.EllipticCurvePrivateKey",
-  "cryptography.hazmat.primitives.asymmetric.ec.EllipticCurvePrivateKeyWithSerialization",
-  "cryptography.hazmat.primitives.asymmetric.ec.EllipticCurvePrivateNumbers",
-  "cryptography.hazmat.primitives.asymmetric.ec.EllipticCurvePublicKey",
-  "cryptography.hazmat.primitives.asymmetric.ec.EllipticCurvePublicKeyWithSerialization",
-  "cryptography.hazmat.primitives.asymmetric.ec.EllipticCurvePublicNumbers",
-  "cryptography.hazmat.primitives.asymmetric.ec.SECP256R1",
-  "cryptography.hazmat.primitives.asymmetric.ec.SECP384R1",
-  "cryptography.hazmat.primitives.asymmetric.ec.SECP521R1",
-  "cryptography.hazmat.primitives.asymmetric.ec.generate_private_key",
-  "cryptography.hazmat.primitives.asymmetric.padding",
-  "cryptography.hazmat.primitives.asymmetric.rsa",
-  "cryptography.hazmat.primitives.asymmetric.rsa.RSAPrivateKey",
-  "cryptography.hazmat.primitives.asymmetric.rsa.RSAPrivateKeyWithSerialization",
-  "cryptography.hazmat.primitives.asymmetric.rsa.RSAPrivateNumbers",
-  "cryptography.hazmat.primitives.asymmetric.rsa.RSAPublicKey",
-  "cryptography.hazmat.primitives.asymmetric.rsa.RSAPublicKeyWithSerialization",
-  "cryptography.hazmat.primitives.asymmetric.rsa.RSAPublicNumbers",
-  "cryptography.hazmat.primitives.asymmetric.rsa.rsa_crt_dmp1",
-  "cryptography.hazmat.primitives.asymmetric.rsa.rsa_crt_dmq1",
-  "cryptography.hazmat.primitives.asymmetric.rsa.rsa_crt_iqmp",
-  "cryptography.hazmat.primitives.asymmetric.rsa.rsa_recover_prime_factors",
-  "cryptography.hazmat.primitives.asymmetric.utils.decode_dss_signature",
-  "cryptography.hazmat.primitives.asymmetric.utils.encode_dss_signature",
-  "cryptography.hazmat.primitives.hashes",
-  "cryptography.hazmat.primitives.hashes.Hash",
-  "cryptography.hazmat.primitives.hashes.SHA256",
-  "cryptography.hazmat.primitives.hashes.SHA384",
-  "cryptography.hazmat.primitives.hashes.SHA512",
-  "cryptography.hazmat.primitives.hmac",
-  "cryptography.hazmat.primitives.hmac.HMAC",
-  "cryptography.hazmat.primitives.serialization",
-  "cryptography.hazmat.primitives.serialization.load_der_private_key",
-  "cryptography.hazmat.primitives.serialization.load_der_public_key",
-  "cryptography.hazmat.primitives.serialization.load_pem_private_key",
-  "cryptography.hazmat.primitives.serialization.load_pem_public_key",
   "func",
   "functools.partial",
   "header_cls",
@@ -103,37 +40,37 @@
   "josepy.magic_typing.Text",
   "jwk_cls",
   "loader",
-  "logging",
-  "logging.getLogger",
-  "math",
-  "math.ceil",
-  "os.path.join",
-  "os.path.splitext",
-  "pkg_resources",
-  "pkg_resources.resource_filename",
-  "pkg_resources.resource_string",
   "sys",
   "sys.stdin.read",
   "sys.stdout.write",
   "type_cls",
   "type_cls.fields_from_json",
-  "typing",
-  "unittest",
-  "unittest.TestCase",
-  "unittest.main",
-  "unittest.mock",
-  "unittest.mock.MagicMock",
-  "unittest.mock.patch",
-  "warnings",
-  "warnings.catch_warnings",
-  "warnings.filterwarnings",
   "warnings.warn"
  ],
  "deps": {
+  "OpenSSL": [
+   "pyopenssl/conda-forge/noarch/pyopenssl-20.0.1-pyhd8ed1ab_0"
+  ],
+  "abc": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "argparse": [
    "argparse/conda-forge/osx-64/argparse-1.4.0-py26_0",
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "base64": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "binascii": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython"
+  ],
+  "cryptography": [
+   "cryptography/conda-forge/linux-64/cryptography-3.2.1-py37hc72a4ac_0",
+   "cryptography/conda-forge/linux-64/cryptography-3.3-py36h0a59100_0",
+   "cryptography/conda-forge/linux-64/cryptography-3.4.6-py38ha5dfef3_0"
   ],
   "functools": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -143,7 +80,36 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "logging": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "math": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "ntpath": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "os": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "pkg_resources": [
+   "setuptools/conda-forge/linux-64/setuptools-40.6.1-py36_0",
+   "setuptools/conda-forge/linux-64/setuptools-46.3.0-py38h32f6830_0",
+   "setuptools/conda-forge/linux-64/setuptools-49.1.2-py38h32f6830_0"
+  ],
+  "typing": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "unittest": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "warnings": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ]
