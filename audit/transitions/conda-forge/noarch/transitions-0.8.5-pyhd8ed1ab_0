@@ -9,18 +9,34 @@
   "collections.defaultdict",
   "collections.deque",
   "contextlib.nested",
+  "contextvars",
+  "contextvars.ContextVar",
   "core.Machine.initial.setter",
   "diagrams_graphviz.Graph",
   "diagrams_pygraphviz.Graph",
   "dict.get",
+  "enum.Enum",
+  "enum.EnumMeta",
   "func",
   "functools.partial",
   "functools.reduce",
   "get_attr",
+  "graphviz",
+  "graphviz.Digraph",
+  "importlib",
+  "importlib.import_module",
+  "inspect",
+  "inspect.getmro",
+  "inspect.isawaitable",
+  "inspect.ismethod",
   "itertools",
   "itertools.chain.from_iterable",
   "nesting.NestedState.separator",
+  "numbers",
+  "numbers.Number",
   "predicate",
+  "pygraphviz",
+  "pygraphviz.AGraph",
   "rep",
   "self",
   "self._build_state_tree",
@@ -38,16 +54,18 @@
   "self.runner.get",
   "self.state_cls.separator",
   "self.timeout",
+  "six.iteritems",
+  "six.string_types",
   "thread.get_ident",
   "trigger",
+  "warnings",
+  "warnings.filterwarnings",
+  "warnings.simplefilter",
   "warnings.warn"
  ],
  "deps": {
   "__future__": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "_contextvars": [
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "asyncio": [],
@@ -59,39 +77,7 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "contextvars": [
-   "contextvars/conda-forge/noarch/contextvars-2.1-py_0",
-   "contextvars/conda-forge/noarch/contextvars-2.2-py_0",
-   "contextvars/conda-forge/noarch/contextvars-2.3-py_0",
-   "contextvars/conda-forge/noarch/contextvars-2.4-py_0",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "copy": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "enum": [
-   "privy/conda-forge/noarch/privy-6.0.0-py_0",
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "graphviz": [
-   "python-graphviz/conda-forge/noarch/python-graphviz-0.11.1-py_1",
-   "python-graphviz/conda-forge/noarch/python-graphviz-0.12-py_0",
-   "python-graphviz/conda-forge/noarch/python-graphviz-0.13-py_0",
-   "python-graphviz/conda-forge/noarch/python-graphviz-0.13.2-py_0",
-   "python-graphviz/conda-forge/noarch/python-graphviz-0.15-pyhd3deb0d_0",
-   "python-graphviz/conda-forge/noarch/python-graphviz-0.16-pyh243d235_2",
-   "python-graphviz/conda-forge/noarch/python-graphviz-0.16-pyhd3deb0d_0",
-   "python-graphviz/conda-forge/noarch/python-graphviz-0.16-pyhd3deb0d_1",
-   "python-graphviz/conda-forge/noarch/python-graphviz-0.8.4-py_1003"
-  ],
-  "importlib": [
-   "importlib/conda-forge/linux-64/importlib-1.0.4-py26_0",
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "inspect": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -103,33 +89,11 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "numbers": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "os": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "pygraphviz": [
-   "pygraphviz/conda-forge/linux-64/pygraphviz-1.4rc1-py27_0",
-   "pygraphviz/conda-forge/linux-64/pygraphviz-1.5-py27h516909a_1001"
-  ],
-  "six": [
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0",
-   "lldb/conda-forge/linux-64/lldb-6.0.0-py35_0",
-   "privy/conda-forge/noarch/privy-6.0.0-py_0",
-   "six/conda-forge/linux-64/six-1.10.0-py34_0",
-   "six/conda-forge/linux-64/six-1.10.0-py34_1",
-   "six/conda-forge/noarch/six-1.14.0-py_1",
-   "six/conda-forge/noarch/six-1.16.0-pyh6c4a22f_0"
-  ],
   "threading": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "warnings": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ]

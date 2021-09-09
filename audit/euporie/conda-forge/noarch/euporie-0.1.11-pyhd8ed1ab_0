@@ -4,6 +4,7 @@
   "Renderer",
   "app.App.launch",
   "array.array",
+  "cairosvg",
   "cairosvg.surface.PNGSurface.convert",
   "cb",
   "create_cb",
@@ -25,15 +26,25 @@
   "euporie.config.config.pygments_style",
   "euporie.config.config.toggle",
   "euporie.keys.KeyBindingsInfo.details.items",
+  "euporie.libs.commonmark_extensions.tables.ParserWithTables",
   "exit_edit_mode",
+  "fcntl",
+  "fcntl.ioctl",
   "fill",
   "functools.partial",
   "handler",
+  "html.parser.HTMLParser",
   "img2unicode.FastQuadDualOptimizer",
   "img2unicode.Renderer",
+  "importlib.import_module",
   "input.setter",
   "io.BytesIO",
   "io.StringIO",
+  "jsonschema",
+  "jsonschema.ValidationError",
+  "jsonschema.validate",
+  "jupyter_client.KernelManager",
+  "jupyter_client.kernelspec.KernelSpecManager",
   "make_handler",
   "mtable.MarkupTable",
   "mtable.MarkupTable.from_html",
@@ -54,6 +65,8 @@
   "run_or_render",
   "scrollbar_mouse_click",
   "stdin_hook",
+  "subprocess",
+  "subprocess.check_output",
   "sys",
   "sys.platform.startswith",
   "sys.stdin.fileno",
@@ -66,6 +79,14 @@
   "timg",
   "timg.Ansi24HblockMethod",
   "timg.SixelMethod",
+  "typing.Any",
+  "typing.Callable",
+  "typing.Dict",
+  "typing.Generator",
+  "typing.List",
+  "typing.Optional",
+  "typing.Sequence",
+  "typing.Union",
   "wrap_mouse_handler"
  ],
  "deps": {
@@ -85,11 +106,6 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "cairosvg": [
-   "cairosvg/conda-forge/noarch/cairosvg-2.3.1-py_0",
-   "cairosvg/conda-forge/noarch/cairosvg-2.4.2-py_0",
-   "cairosvg/conda-forge/noarch/cairosvg-2.5.1-pyhd8ed1ab_0"
-  ],
   "collections": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -98,26 +114,7 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "euporie": [
-   "euporie/conda-forge/noarch/euporie-0.1.13-pyhd8ed1ab_0",
-   "euporie/conda-forge/noarch/euporie-0.1.14-pyhd8ed1ab_0",
-   "euporie/conda-forge/noarch/euporie-0.1.15-pyhd8ed1ab_0",
-   "euporie/conda-forge/noarch/euporie-0.1.16-pyhd8ed1ab_0"
-  ],
-  "fcntl": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "functools": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "html": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "importlib": [
-   "importlib/conda-forge/linux-64/importlib-1.0.4-py26_0",
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -128,18 +125,6 @@
   "json": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "jsonschema": [
-   "jsonschema/conda-forge/noarch/jsonschema-3.2.0-pyhd8ed1ab_3"
-  ],
-  "jupyter_client": [
-   "jupyter_client/conda-forge/linux-64/jupyter_client-5.2.1-py35_0",
-   "jupyter_client/conda-forge/noarch/jupyter_client-5.2.3-py_1",
-   "jupyter_client/conda-forge/noarch/jupyter_client-5.3.0-py_0",
-   "jupyter_client/conda-forge/noarch/jupyter_client-5.3.3-py_0",
-   "jupyter_client/conda-forge/noarch/jupyter_client-6.1.1-py_0",
-   "jupyter_client/conda-forge/noarch/jupyter_client-6.1.2-py_0",
-   "jupyter_client/conda-forge/noarch/jupyter_client-6.1.5-py_0"
   ],
   "logging": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -199,10 +184,6 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "subprocess": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "tempfile": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -216,10 +197,6 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "tty": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "typing": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
