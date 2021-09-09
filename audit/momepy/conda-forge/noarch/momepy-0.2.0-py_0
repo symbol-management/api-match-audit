@@ -6,18 +6,9 @@
   "extend_line",
   "extend_line_edge",
   "functools.partial",
-  "geopandas",
   "getExtrapoledLine",
-  "libpysal",
-  "libpysal.weights.Queen.from_dataframe",
-  "libpysal.weights.Rook.from_dataframe",
-  "libpysal.weights.W.from_networkx",
-  "libpysal.weights.contiguity.Rook.from_dataframe",
-  "libpysal.weights.higher_order",
-  "libpysal.weights.w_union",
   "momepy.datasets.__init__._module_path",
   "momepy.datasets.__init__.available",
-  "networkx",
   "networkx.Graph",
   "networkx.MultiGraph",
   "networkx.betweenness_centrality",
@@ -35,34 +26,9 @@
   "numpy.degrees",
   "numpy.isnan",
   "numpy.nan",
-  "operator",
-  "operator.itemgetter",
-  "osgeo.ogr",
-  "osgeo.ogr.CreateGeometryFromWkt",
   "p",
-  "pandas",
-  "pandas.DataFrame",
-  "pandas.Series",
   "path_length",
-  "random",
-  "random.shuffle",
-  "scipy",
   "scipy.spatial.Voronoi",
-  "shapely",
-  "shapely.geometry.LineString",
-  "shapely.geometry.MultiPoint",
-  "shapely.geometry.MultiPolygon",
-  "shapely.geometry.Point",
-  "shapely.geometry.Polygon",
-  "shapely.ops.linemerge",
-  "shapely.ops.polygonize",
-  "shapely.ops.snap",
-  "shapely.ops.split",
-  "shapely.ops.unary_union",
-  "shapely.wkt.loads",
-  "statistics",
-  "tqdm.tqdm",
-  "warnings",
   "warnings.warn"
  ],
  "deps": {
@@ -88,9 +54,23 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "libpysal": [
+   "libpysal/conda-forge/noarch/libpysal-4.0.0-py_0",
+   "libpysal/conda-forge/noarch/libpysal-4.0.1-py_0",
+   "libpysal/conda-forge/noarch/libpysal-4.2.1-py_0",
+   "libpysal/conda-forge/noarch/libpysal-4.5.0-pyhd8ed1ab_0"
+  ],
   "math": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "networkx": [
+   "networkx/conda-forge/noarch/networkx-2.1-py_1",
+   "networkx/conda-forge/noarch/networkx-2.2-py_1",
+   "networkx/conda-forge/noarch/networkx-2.4-py_1",
+   "networkx/conda-forge/noarch/networkx-2.5-py_0",
+   "networkx/conda-forge/noarch/networkx-2.6.1-pyhd8ed1ab_0",
+   "networkx/conda-forge/noarch/networkx-2.6.1-pyhd8ed1ab_1"
   ],
   "ntpath": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -101,7 +81,53 @@
    "numpy/conda-forge/linux-64/numpy-1.18.4-py37h8960a57_0",
    "numpy/conda-forge/linux-64/numpy-1.19.2-py36h68c22af_1"
   ],
+  "operator": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "os": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "osgeo": [
+   "gdal/conda-forge/linux-64/gdal-3.0.3-py38hbb6b9fb_0",
+   "gdal/conda-forge/linux-64/gdal-3.0.4-py36hd60729c_6",
+   "gdal/conda-forge/linux-64/gdal-3.1.2-py36hcf62b00_2"
+  ],
+  "pandas": [
+   "pandas/conda-forge/linux-64/pandas-1.2.2-py37h40f5888_0"
+  ],
+  "random": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "scipy": [
+   "scipy/conda-forge/linux-64/scipy-0.17.1-np110py27_blas_openblas_202",
+   "scipy/conda-forge/linux-64/scipy-1.7.0-py37h29e03ee_0",
+   "scipy/conda-forge/linux-64/scipy-1.7.0-py37ha768fb6_1"
+  ],
+  "shapely": [
+   "shapely/conda-forge/linux-64/shapely-1.7.1-py37hba0730f_1",
+   "solaris/conda-forge/noarch/solaris-0.4.0-pyhe05a262_0"
+  ],
+  "statistics": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "statistics/conda-forge/linux-64/statistics-1.0.3.5-py27_1001"
+  ],
+  "tqdm": [
+   "tqdm/conda-forge/noarch/tqdm-4.38.0-py_2",
+   "tqdm/conda-forge/noarch/tqdm-4.40.2-py_0",
+   "tqdm/conda-forge/noarch/tqdm-4.42.1-py_0",
+   "tqdm/conda-forge/noarch/tqdm-4.45.0-pyh9f0ad1d_0",
+   "tqdm/conda-forge/noarch/tqdm-4.51.0-pyh9f0ad1d_0",
+   "tqdm/conda-forge/noarch/tqdm-4.52.0-pyhd3deb0d_0",
+   "tqdm/conda-forge/noarch/tqdm-4.55.0-pyhd8ed1ab_0",
+   "tqdm/conda-forge/noarch/tqdm-4.56.0-pyhd8ed1ab_0",
+   "tqdm/conda-forge/noarch/tqdm-4.56.1-pyhd8ed1ab_0",
+   "tqdm/conda-forge/noarch/tqdm-4.60.0-pyhd8ed1ab_0"
+  ],
+  "warnings": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ]
