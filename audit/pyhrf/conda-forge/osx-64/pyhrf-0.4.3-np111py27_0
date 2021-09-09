@@ -65,6 +65,7 @@
   "analysertest",
   "ar.NRLARSampler",
   "arange",
+  "array",
   "axis",
   "beta_estim_obs_field",
   "bigaussian.BiGaussMixtureParamsSampler",
@@ -74,7 +75,10 @@
   "bitwise_not",
   "boldsynthTest",
   "breadth_first_search",
+  "collections.OrderedDict",
   "commandTest",
+  "copy",
+  "copy.deepcopy",
   "core_test",
   "count_homo_cliques",
   "deepcopy",
@@ -98,6 +102,8 @@
   "genPepperSaltField",
   "getInit",
   "glm_parcellation",
+  "glob",
+  "glob.glob",
   "graphFromMesh",
   "graph_from_lattice",
   "graph_from_mesh",
@@ -165,12 +171,23 @@
   "numpy.square",
   "numpy.zeros",
   "ones",
+  "os",
+  "os.environ",
+  "os.getenv",
   "os.listdir",
+  "os.makedirs",
+  "os.path",
+  "os.path.dirname",
   "os.path.exists",
+  "os.path.join",
+  "os.path.splitext",
   "os.remove",
   "os.sysconf",
   "os.system",
   "parcels_to_graphs",
+  "pickle",
+  "pickle.dumps",
+  "pickle.loads",
   "plot",
   "putmask",
   "pyhrf",
@@ -347,6 +364,7 @@
   "pyhrf.xmlio.from_xml",
   "pyhrf.xmlio.read_xml",
   "pyhrf.xmlio.to_xml",
+  "random",
   "re.DOTALL",
   "repeat",
   "repmat",
@@ -361,6 +379,8 @@
   "scipy.special.erfc",
   "scipy.stats.truncnorm.mean",
   "scipy.stats.truncnorm.var",
+  "shutil",
+  "shutil.rmtree",
   "simulate_sessions",
   "split_mask_into_cc_iter",
   "sqrt",
@@ -368,6 +388,8 @@
   "string.join",
   "sub_graph",
   "sys",
+  "tempfile",
+  "tempfile.mkdtemp",
   "test_glm",
   "test_jde_multi_subj",
   "test_jde_vem_bold",
@@ -405,26 +427,6 @@
   "zeros"
  ],
  "deps": {
-  "_pickle": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "array": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "collections": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "copy": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "glob": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "gzip": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -466,21 +468,9 @@
   "nipy": [
    "nipy/conda-forge/linux-64/nipy-0.4.1-np112py36_0"
   ],
-  "ntpath": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "numpy": [
    "numpy/conda-forge/linux-64/numpy-1.17.5-py36h95a1406_0",
    "numpy/conda-forge/linux-64/numpy-1.18.4-py37h8960a57_0"
-  ],
-  "os": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "pickle": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "pkg_resources": [
    "setuptools/conda-forge/linux-64/setuptools-40.6.1-py36_0",
@@ -489,10 +479,6 @@
   ],
   "psutil": [
    "psutil/conda-forge/linux-64/psutil-5.7.3-py39h38d8fee_0"
-  ],
-  "random": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "re": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -503,19 +489,11 @@
    "scipy/conda-forge/linux-64/scipy-1.7.0-py37h29e03ee_0",
    "scipy/conda-forge/linux-64/scipy-1.7.0-py37ha768fb6_1"
   ],
-  "shutil": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "string": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "subprocess": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "tempfile": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],

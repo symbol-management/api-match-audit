@@ -37,6 +37,7 @@
   "gather_map",
   "gc",
   "get_experiment",
+  "gym",
   "hook_fx",
   "horovod.torch",
   "horovod.torch.DistributedOptimizer",
@@ -48,46 +49,96 @@
   "horovod.torch.local_rank",
   "horovod.torch.rank",
   "horovod.torch.size",
+  "hydra.core.hydra_config.HydraConfig",
+  "hydra.core.hydra_config.HydraConfig.initialized",
+  "hydra.utils.get_original_cwd",
+  "hydra.utils.to_absolute_path",
+  "importlib",
+  "importlib.util.find_spec",
   "input.items",
+  "inspect",
+  "inspect._empty",
+  "inspect.cleandoc",
+  "inspect.currentframe",
+  "inspect.getargvalues",
+  "inspect.getfullargspec",
+  "inspect.getsource",
+  "inspect.signature",
+  "io",
   "io.BytesIO",
   "io.StringIO",
   "io.open",
   "itertools",
   "layer",
   "log_row",
+  "math",
+  "math.inf",
+  "matplotlib.pyplot",
+  "matplotlib.pyplot.show",
+  "matplotlib.pyplot.subplots",
+  "mlflow",
+  "mlflow.tracking.MlflowClient",
   "model",
   "model.train",
   "model_func",
   "monitor_op",
+  "multiprocessing",
   "multiprocessing.Process",
   "multiprocessing.Queue",
   "multiprocessing.cpu_count",
+  "numpy",
   "numpy.Inf",
+  "numpy.argmax",
+  "numpy.array",
   "numpy.bool",
   "numpy.ceil",
+  "numpy.cumsum",
+  "numpy.finfo",
   "numpy.float16",
   "numpy.float32",
   "numpy.float64",
   "numpy.floor",
+  "numpy.gradient",
+  "numpy.iinfo",
   "numpy.isfinite",
   "numpy.log10",
+  "numpy.mean",
+  "numpy.prod",
   "numpy.random.choice",
   "numpy.random.random",
   "numpy.random.seed",
   "numpy.random.uniform",
+  "numpy.sum",
   "numpy.uint32",
   "original_class",
+  "os",
+  "os.environ",
   "os.environ.copy",
   "os.environ.get",
   "os.environ.pop",
   "os.environ.split",
   "os.getcwd",
+  "os.getenv",
+  "os.linesep",
   "os.listdir",
+  "os.makedirs",
+  "os.path.abspath",
+  "os.path.basename",
+  "os.path.dirname",
   "os.path.isdir",
   "os.path.isfile",
+  "os.path.join",
+  "os.path.normpath",
+  "os.path.realpath",
+  "os.path.split",
+  "os.path.splitext",
   "os.remove",
   "parallel_apply",
   "path_lib",
+  "pickle",
+  "pickle.PicklingError",
+  "pickle.dumps",
+  "pytest",
   "pytest.mark.parametrize",
   "pytorch_lightning.__init__.__LIGHTNING_SETUP__",
   "pytorch_lightning.__init__.__author__",
@@ -111,20 +162,33 @@
   "pytorch_lightning.utilities.device_dtype_mixin.DeviceDtypeModuleMixin.__jit_unused_properties__",
   "pytorch_lightning.utilities.distributed.rank_zero_only.rank",
   "pytorch_lightning.utilities.rank_zero_only.rank",
+  "random",
+  "random.randint",
+  "random.seed",
   "re.UNICODE",
   "recursive_gather",
   "recursive_stack",
   "reduction_fn",
+  "shutil",
+  "shutil.copyfile",
+  "shutil.which",
+  "signal",
   "signal.SIGTERM",
   "signal.SIGUSR1",
+  "signal.signal",
   "socket.AF_INET",
   "socket.SOCK_STREAM",
   "substitute_val_keys",
   "sys",
   "sys.stdout.write",
   "tbptt_reduce_fx",
+  "tempfile",
+  "tempfile.TemporaryDirectory",
   "test_tube.Experiment",
   "tests.base.datasets.MNIST",
+  "threading",
+  "threading.Lock",
+  "threading.Thread",
   "time",
   "torch.ByteTensor",
   "torch.ScriptModule",
@@ -211,10 +275,6 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "_pickle": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "abc": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -283,51 +343,7 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "gym": [
-   "gym/conda-forge/linux-64/gym-0.17.2-py37hc8dfbb8_1"
-  ],
-  "hydra": [
-   "hydra-core/conda-forge/noarch/hydra-core-1.0.3-pyhd8ed1ab_0",
-   "hydra-core/conda-forge/noarch/hydra-core-1.0.4-pyhd8ed1ab_0",
-   "hydra-core/conda-forge/noarch/hydra-core-1.0.5-pyhd8ed1ab_0",
-   "hydra-core/conda-forge/noarch/hydra-core-1.0.6-pyhd8ed1ab_0",
-   "hydra-core/conda-forge/noarch/hydra-core-1.0.6-pyhd8ed1ab_1"
-  ],
-  "importlib": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "inspect": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "io": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "logging": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "math": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "matplotlib": [
-   "matplotlib-base/conda-forge/linux-64/matplotlib-base-3.1.1-py37hfd891ef_0",
-   "matplotlib-base/conda-forge/linux-64/matplotlib-base-3.1.1-py38h250f245_2",
-   "matplotlib/conda-forge/linux-64/matplotlib-1.5.3-np111py34_0"
-  ],
-  "mlflow": [
-   "mlflow-skinny/conda-forge/linux-64/mlflow-skinny-1.16.0-py36hef5108c_0",
-   "mlflow-skinny/conda-forge/osx-64/mlflow-skinny-1.15.0-py38h365692c_0",
-   "mlflow/conda-forge/linux-64/mlflow-1.12.0-py36h5fab9bb_0",
-   "mlflow/conda-forge/linux-64/mlflow-1.6.0-py38_0",
-   "mlflow/conda-forge/noarch/mlflow-0.9.1-py_0",
-   "mlflow/conda-forge/noarch/mlflow-1.0.0-py_2",
-   "mlflow/conda-forge/noarch/mlflow-1.2.0-py_1"
-  ],
-  "multiprocessing": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -352,18 +368,9 @@
    "neptune-client/conda-forge/noarch/neptune-client-0.9.4-pyhd8ed1ab_0",
    "neptune-client/conda-forge/noarch/neptune-client-0.9.8-pyhd8ed1ab_0"
   ],
-  "ntpath": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "numbers": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "numpy": [
-   "numpy/conda-forge/linux-64/numpy-1.17.5-py36h95a1406_0",
-   "numpy/conda-forge/linux-64/numpy-1.18.4-py37h8960a57_0",
-   "numpy/conda-forge/linux-64/numpy-1.19.2-py36h68c22af_1"
   ],
   "omegaconf": [
    "omegaconf/conda-forge/linux-64/omegaconf-2.0.3-py36h9f0ad1d_0"
@@ -372,16 +379,8 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "os": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "pathlib": [
    "pathlib/conda-forge/noarch/pathlib-1.0.1-py_1",
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "pickle": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -397,11 +396,6 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "pytest": [
-   "pytest/conda-forge/linux-64/pytest-3.7.0-py27_0",
-   "pytest/conda-forge/linux-64/pytest-4.6.0-py37_0",
-   "pytest/conda-forge/linux-64/pytest-6.0.2-py37hc8dfbb8_0"
-  ],
   "pytorch_lightning": [
    "pytorch-lightning/conda-forge/noarch/pytorch-lightning-0.8.0-py_0",
    "pytorch-lightning/conda-forge/noarch/pytorch-lightning-0.8.3-py_0",
@@ -409,19 +403,7 @@
    "pytorch-lightning/conda-forge/noarch/pytorch-lightning-0.8.5-py_0",
    "pytorch-lightning/conda-forge/noarch/pytorch-lightning-0.9.0-py_0"
   ],
-  "random": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "re": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "shutil": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "signal": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -430,14 +412,6 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "subprocess": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "tempfile": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "threading": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
