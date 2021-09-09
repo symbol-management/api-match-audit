@@ -3,10 +3,20 @@
   "_als.calculate_loss",
   "_als.least_squares",
   "_als.least_squares_cg",
+  "annoy",
   "annoy.AnnoyIndex",
+  "faiss",
   "faiss.GpuIndexIVFFlat",
+  "faiss.IndexFlat",
+  "faiss.IndexIVFFlat",
+  "faiss.METRIC_INNER_PRODUCT",
   "faiss.StandardGpuResources",
+  "functools",
   "functools.partial",
+  "heapq",
+  "heapq.heappop",
+  "heapq.heappush",
+  "heapq.heappushpop",
   "implicit.__init__.__version__",
   "implicit.__init__.als",
   "implicit.__init__.approximate_als",
@@ -16,26 +26,59 @@
   "implicit.recommender_base.MatrixFactorizationBase",
   "implicit.recommender_base.RecommenderBase",
   "itertools",
+  "logging",
+  "logging.WARNING",
+  "logging.getLogger",
+  "logging.warning",
   "nmslib",
   "nmslib.init",
   "normalize",
+  "numpy",
+  "numpy.__config__.get_info",
+  "numpy.append",
   "numpy.arange",
+  "numpy.array",
+  "numpy.bincount",
+  "numpy.delete",
   "numpy.empty",
+  "numpy.eye",
   "numpy.float32",
   "numpy.float64",
+  "numpy.linalg.norm",
+  "numpy.linalg.solve",
+  "numpy.load",
   "numpy.log",
   "numpy.log1p",
   "numpy.object",
+  "numpy.ones",
+  "numpy.outer",
   "numpy.random.RandomState",
+  "numpy.ravel",
+  "numpy.savez",
   "numpy.sqrt",
   "numpy.zeros",
   "os.environ.get",
+  "os.path.abspath",
+  "os.path.dirname",
+  "os.path.expanduser",
   "os.path.isdir",
   "os.path.isfile",
+  "os.path.join",
+  "pandas",
+  "pandas.read_csv",
+  "pandas.read_table",
+  "scipy",
+  "scipy.linalg.cho_factor",
+  "scipy.linalg.cho_solve",
+  "scipy.sparse",
+  "scipy.sparse.coo_matrix",
+  "scipy.sparse.csr_matrix",
   "solver",
   "solver.calculate_loss",
   "solver.least_squares",
   "time",
+  "tqdm.auto.tqdm",
+  "urllib.request.urlretrieve",
   "urllib.urlretrieve",
   "user_factor"
  ],
@@ -44,65 +87,11 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "annoy": [
-   "python-annoy/conda-forge/linux-64/python-annoy-1.15.1-py37hf484d3e_0",
-   "python-annoy/conda-forge/linux-64/python-annoy-1.17.0-py39he80948d_2"
-  ],
-  "faiss": [
-   "faiss/conda-forge/linux-64/faiss-1.6.3-py36hd337d12_3_cpu",
-   "faiss/conda-forge/linux-64/faiss-1.7.0-py36hf5b3792_5_cpu",
-   "faiss/conda-forge/linux-64/faiss-1.7.0-py39h331a856_5_cpu"
-  ],
-  "functools": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "h5py": [
    "h5py/conda-forge/linux-64/h5py-2.6.0-np111py34_4",
    "h5py/conda-forge/linux-64/h5py-2.7.0-np113py36_1"
   ],
-  "heapq": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "logging": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "ntpath": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "numpy": [
-   "numpy/conda-forge/linux-64/numpy-1.17.5-py36h95a1406_0",
-   "numpy/conda-forge/linux-64/numpy-1.18.4-py37h8960a57_0",
-   "numpy/conda-forge/linux-64/numpy-1.19.2-py36h68c22af_1"
-  ],
   "os": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "pandas": [
-   "pandas/conda-forge/linux-64/pandas-1.2.2-py37h40f5888_0"
-  ],
-  "scipy": [
-   "scipy/conda-forge/linux-64/scipy-0.17.1-np110py27_blas_openblas_202",
-   "scipy/conda-forge/linux-64/scipy-1.7.0-py37h29e03ee_0",
-   "scipy/conda-forge/linux-64/scipy-1.7.0-py37ha768fb6_1"
-  ],
-  "tqdm": [
-   "tqdm/conda-forge/noarch/tqdm-4.38.0-py_2",
-   "tqdm/conda-forge/noarch/tqdm-4.40.2-py_0",
-   "tqdm/conda-forge/noarch/tqdm-4.42.1-py_0",
-   "tqdm/conda-forge/noarch/tqdm-4.45.0-pyh9f0ad1d_0",
-   "tqdm/conda-forge/noarch/tqdm-4.51.0-pyh9f0ad1d_0",
-   "tqdm/conda-forge/noarch/tqdm-4.52.0-pyhd3deb0d_0",
-   "tqdm/conda-forge/noarch/tqdm-4.55.0-pyhd8ed1ab_0",
-   "tqdm/conda-forge/noarch/tqdm-4.56.0-pyhd8ed1ab_0",
-   "tqdm/conda-forge/noarch/tqdm-4.56.1-pyhd8ed1ab_0",
-   "tqdm/conda-forge/noarch/tqdm-4.60.0-pyhd8ed1ab_0"
-  ],
-  "urllib": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ]
