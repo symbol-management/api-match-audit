@@ -41,12 +41,45 @@
   "oslotest.base",
   "oslotest.base.BaseTestCase",
   "outer_lock",
+  "pbr.version",
+  "resource",
+  "resource.RLIMIT_AS",
+  "resource.RLIMIT_CORE",
+  "resource.RLIMIT_CPU",
+  "resource.RLIMIT_DATA",
+  "resource.RLIMIT_FSIZE",
+  "resource.RLIMIT_MEMLOCK",
+  "resource.RLIMIT_NOFILE",
+  "resource.RLIMIT_NPROC",
+  "resource.RLIMIT_RSS",
+  "resource.RLIMIT_STACK",
+  "resource.getrlimit",
+  "resource.setrlimit",
+  "shlex",
+  "shlex.split",
+  "shutil",
+  "shutil.rmtree",
+  "shutil.which",
+  "signal",
   "signal.SIGKILL",
   "signal.SIGPIPE",
   "signal.SIG_DFL",
+  "signal.signal",
   "socket.timeout",
+  "stat",
+  "stat.S_IRGRP",
+  "stat.S_IROTH",
+  "stat.S_IRWXU",
+  "stat.S_IXGRP",
+  "stat.S_IXOTH",
+  "subprocess",
+  "subprocess.Popen",
+  "subprocess.call",
   "sys",
   "sys.platform.startswith",
+  "tempfile",
+  "tempfile.mkdtemp",
+  "tempfile.mkstemp",
   "test_without_hypen",
   "test_without_prefix",
   "time",
@@ -54,7 +87,8 @@
   "unittest.mock.patch.object",
   "unittest.mock.sentinel.lock_path",
   "unittest.mock.sentinel.name",
-  "unittest.mock.sentinel.prefix"
+  "unittest.mock.sentinel.prefix",
+  "weakref"
  ],
  "deps": {
   "_pickle": [
@@ -161,20 +195,6 @@
    "oslo.utils/conda-forge/noarch/oslo.utils-4.8.0-pyhd8ed1ab_0",
    "oslo.utils/conda-forge/noarch/oslo.utils-4.9.2-pyhd8ed1ab_0"
   ],
-  "pbr": [
-   "pbr/conda-forge/noarch/pbr-4.0.4-py_0",
-   "pbr/conda-forge/noarch/pbr-4.1.0-py_0",
-   "pbr/conda-forge/noarch/pbr-4.2.0-py_0",
-   "pbr/conda-forge/noarch/pbr-5.1.2-py_0",
-   "pbr/conda-forge/noarch/pbr-5.1.3-py_0",
-   "pbr/conda-forge/noarch/pbr-5.2.0-py_0",
-   "pbr/conda-forge/noarch/pbr-5.2.1-py_0",
-   "pbr/conda-forge/noarch/pbr-5.4.2-py_0",
-   "pbr/conda-forge/noarch/pbr-5.4.5-pyh9f0ad1d_0",
-   "pbr/conda-forge/noarch/pbr-5.5.0-pyh9f0ad1d_0",
-   "pbr/conda-forge/noarch/pbr-5.5.1-pyh9f0ad1d_0",
-   "pbr/conda-forge/noarch/pbr-5.6.0-pyhd8ed1ab_0"
-  ],
   "pickle": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -183,35 +203,7 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "resource": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "shlex": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "shutil": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "signal": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "socket": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "stat": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "subprocess": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "tempfile": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -220,10 +212,6 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "unittest": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "weakref": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ]

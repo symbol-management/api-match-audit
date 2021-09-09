@@ -125,7 +125,6 @@
   "PyQt5.QtWidgets.QWidget.disconnect",
   "TreeItem",
   "array.array",
-  "configobj.ConfigObj",
   "conflict.Conflict.DRIVER_AUTOSOLVE_EXPERT",
   "conflict.Conflict.DRIVER_CHANGED",
   "conflict.Conflict.DRIVER_NOT_PRESENT",
@@ -141,13 +140,10 @@
   "gui.messagedialogs.MessageDialogs.showInformationMessage",
   "gui.messagedialogs.MessageDialogs.showWarningMessage",
   "gui.messagedialogs.MessageDialogs.showYesNoMessage",
-  "icepap.IcePAPController",
   "icepap.IcePAPController.ALL_AXES_VALID",
-  "icepap.Mode",
   "icepap.Mode.CONFIG",
   "icepap.Mode.OPER",
   "icepap.Mode.PROG",
-  "icepap.State",
   "icepap_treemodel.IcepapTreeModel.CRATE",
   "icepap_treemodel.IcepapTreeModel.DRIVER",
   "icepap_treemodel.IcepapTreeModel.DRIVER_CFG",
@@ -160,11 +156,6 @@
   "icepap_treemodel.IcepapTreeModel.SYSTEM_WARNING",
   "icepapdriver.IcepapDriver",
   "icepapdriver.IcepapDriver.addr",
-  "inspect",
-  "inspect.signature",
-  "ldap3",
-  "ldap3.Connection",
-  "ldap3.Server",
   "lib.Conflict.DRIVER_AUTOSOLVE",
   "lib.Conflict.DRIVER_AUTOSOLVE_EXPERT",
   "lib.Conflict.DRIVER_CHANGED",
@@ -180,15 +171,12 @@
   "object.__new__",
   "os.mkdir",
   "os.path.exists",
-  "psycopg2",
-  "psycopg2.extensions",
   "pysqlite2.dbapi2",
   "queue",
   "queue.Empty",
   "queue.Queue",
   "re.M",
   "six",
-  "socket",
   "socket.gethostbyname",
   "socket.gethostname",
   "sqlite3.dbapi2",
@@ -226,15 +214,15 @@
   "sys",
   "tempfile",
   "tempfile.TemporaryFile",
-  "threading",
-  "threading.Thread",
-  "threading.Thread.start",
   "time",
+  "validate.Validator",
   "webbrowser",
   "webbrowser.open",
+  "xml.dom.Node",
   "xml.dom.Node.ELEMENT_NODE",
-  "yaml",
-  "yaml.safe_dump"
+  "xml.dom.minidom",
+  "xml.dom.minidom.getDOMImplementation",
+  "xml.dom.minidom.parse"
  ],
  "deps": {
   "IPy": [
@@ -260,9 +248,30 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "configobj": [
+   "configobj-dev/conda-forge/noarch/configobj-dev-2019.9.1-py_0",
+   "configobj/conda-forge/noarch/configobj-5.0.6-py_0"
+  ],
   "datetime": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "icepap": [
+   "icepap/conda-forge/noarch/icepap-3.6.1-pyhd8ed1ab_0",
+   "icepap/conda-forge/noarch/icepap-3.6.2-pyhd8ed1ab_0"
+  ],
+  "inspect": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "ldap3": [
+   "ldap3/conda-forge/noarch/ldap3-2.5-py_1",
+   "ldap3/conda-forge/noarch/ldap3-2.5.1-py_0",
+   "ldap3/conda-forge/noarch/ldap3-2.6.1-py_0",
+   "ldap3/conda-forge/noarch/ldap3-2.7-py_0",
+   "ldap3/conda-forge/noarch/ldap3-2.8-pyh9f0ad1d_0",
+   "ldap3/conda-forge/noarch/ldap3-2.8.1-pyh9f0ad1d_0",
+   "ldap3/conda-forge/noarch/ldap3-2.9.1-pyhd8ed1ab_0"
   ],
   "logging": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -281,16 +290,27 @@
    "setuptools/conda-forge/linux-64/setuptools-46.3.0-py38h32f6830_0",
    "setuptools/conda-forge/linux-64/setuptools-49.1.2-py38h32f6830_0"
   ],
+  "psycopg2": [
+   "psycopg2/conda-forge/linux-64/psycopg2-2.8.4-py36h72c5cf5_0",
+   "psycopg2/conda-forge/linux-64/psycopg2-2.9.1-py38h497a2fe_0"
+  ],
   "re": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "validate": [
-   "configobj/conda-forge/noarch/configobj-5.0.6-py_0"
-  ],
-  "xml": [
+  "socket": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "threading": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "yaml": [
+   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
+   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0",
+   "pyyaml/conda-forge/linux-64/pyyaml-3.11-py35_0",
+   "pyyaml/conda-forge/win-64/pyyaml-5.2-py36hfa6e2cd_0"
   ]
  }
 }
