@@ -16,23 +16,35 @@
   "LHCbRPMReleaseConsistencyClient",
   "LHCbRPMReleaseConsistencyException",
   "LHCbRPMSpecBuilder.RpmDirConfig",
+  "LbCommon.Log",
+  "LbCommon.Script.PlainScript",
+  "LbCommon.Temporary.TempDir",
   "LbConfiguration.Project.project_names",
   "LbConfiguration.Project.project_names.get",
   "LbConfiguration.SP2.lookup.MissingProjectError",
   "LbConfiguration.SP2.lookup.findProject",
+  "LbDevTools.DATA_DIR",
+  "LbDevTools.initProject",
+  "LbEnv.ProjectEnv.lookup.MissingProjectError",
+  "LbEnv.ProjectEnv.lookup.findProject",
+  "LbEnv.fixProjectCase",
+  "LbEnv.which",
   "LbNightlyTools.BuildLogScanner.Issue.SEVERITIES",
   "LbNightlyTools.CheckoutMethods.special_test",
   "LbNightlyTools.Configuration.Slot.__doc__.strip",
   "LbNightlyTools.Configuration.__log__.addHandler",
   "LbNightlyTools.Configuration.slots.clear",
+  "LbNightlyTools.Dashboard.dbName",
   "LbNightlyTools.Scripts.Checkout.__log__.addHandler",
   "LbNightlyTools.Scripts.Release.Poll.PARAM_PREFIX",
   "LbNightlyTools.Scripts.Release.Poll.PARAM_SUFFIX",
   "LbNightlyTools.Utils.Dashboard.SERVER_URL",
   "LbNightlyTools.__init__.logger_getChild",
+  "LbPlatformUtils.requires",
   "LbScriptsUtils.updateInstallProject",
   "LbScriptsUtils.updateLbConfigurationRequirements",
   "LbScriptsUtils.updateVersionCmt",
+  "LbSoftConfDb2Clients.GenericClient.LbSoftConfDbBase",
   "LbUtils.Log",
   "LbUtils.Log._default_log_format",
   "LbUtils.Script.PlainScript",
@@ -101,6 +113,7 @@
   "gitlab.GitlabError",
   "gitlab.GitlabGetError",
   "hashlib.sha1",
+  "http.server",
   "ignore_package_versions",
   "info",
   "io.BytesIO",
@@ -163,16 +176,37 @@
   "re.MULTILINE",
   "reclog",
   "recurse",
+  "requests",
+  "requests.compat.urljoin",
+  "requests.compat.urlparse",
+  "requests.get",
+  "requests.head",
+  "requests.put",
   "rf",
   "sanitize",
   "scanner",
   "should_extract",
+  "shutil",
+  "shutil.copy",
+  "shutil.copy2",
+  "shutil.copyfile",
+  "shutil.copyfileobj",
+  "shutil.copytree",
+  "shutil.rmtree",
+  "socket",
   "socket.gethostname",
   "ssl.PROTOCOL_SSLv23",
   "str.isdigit",
   "str.lower",
   "str.strip",
   "strip",
+  "subprocess",
+  "subprocess.CalledProcessError",
+  "subprocess.PIPE",
+  "subprocess.Popen",
+  "subprocess.STDOUT",
+  "subprocess.call",
+  "subprocess.check_output",
   "sys",
   "sys.argv.index",
   "sys.path.insert",
@@ -180,61 +214,25 @@
   "sys.stdout.write",
   "tag_name",
   "test_id",
+  "threading.Thread",
+  "threading.Timer",
   "time",
   "timelog",
   "to_build",
   "to_date",
+  "traceback",
+  "traceback.print_exc",
   "type.__call__",
   "type.__new__",
   "unique",
+  "unittest",
+  "unittest.TestCase",
+  "unittest.main",
   "which",
   "wip_condition",
   "write_to_log"
  ],
  "deps": {
-  "LbCommon": [
-   "lbcommon/conda-forge/noarch/lbcommon-0.0.9-pyh9f0ad1d_0"
-  ],
-  "LbDevTools": [
-   "lbdevtools/conda-forge/noarch/lbdevtools-2.0.10-py_0",
-   "lbdevtools/conda-forge/noarch/lbdevtools-2.0.11-py_0",
-   "lbdevtools/conda-forge/noarch/lbdevtools-2.0.18-pyhd8ed1ab_0",
-   "lbdevtools/conda-forge/noarch/lbdevtools-2.0.21-pyhd8ed1ab_0",
-   "lbdevtools/conda-forge/noarch/lbdevtools-2.0.22-pyhd8ed1ab_0",
-   "lbdevtools/conda-forge/noarch/lbdevtools-2.0.23-pyhd8ed1ab_0",
-   "lbdevtools/conda-forge/noarch/lbdevtools-2.0.26-pyhd8ed1ab_0",
-   "lbdevtools/conda-forge/noarch/lbdevtools-2.0.27-pyhd8ed1ab_0",
-   "lbdevtools/conda-forge/noarch/lbdevtools-2.0.28-pyhd8ed1ab_0",
-   "lbdevtools/conda-forge/noarch/lbdevtools-2.0.31-pyhd8ed1ab_0"
-  ],
-  "LbEnv": [
-   "lbenv/conda-forge/linux-64/lbenv-2.1.3-py39hf3d152e_0",
-   "lbenv/conda-forge/noarch/lbenv-1.1.3-py_0"
-  ],
-  "LbNightlyTools": [
-   "lbnightlytools/conda-forge/noarch/lbnightlytools-3.0.16-pyh9f0ad1d_0",
-   "lbnightlytools/conda-forge/noarch/lbnightlytools-3.0.19-pyh9f0ad1d_0",
-   "lbnightlytools/conda-forge/noarch/lbnightlytools-3.0.22-pyhd3deb0d_0",
-   "lbnightlytools/conda-forge/noarch/lbnightlytools-3.0.26-pyhd8ed1ab_0",
-   "lbnightlytools/conda-forge/noarch/lbnightlytools-3.0.28-pyhd8ed1ab_0",
-   "lbnightlytools/conda-forge/noarch/lbnightlytools-3.0.31-pyhd8ed1ab_0",
-   "lbnightlytools/conda-forge/noarch/lbnightlytools-3.0.32-pyhd8ed1ab_0",
-   "lbnightlytools/conda-forge/noarch/lbnightlytools-3.0.33-pyhd8ed1ab_0",
-   "lbnightlytools/conda-forge/noarch/lbnightlytools-3.0.34-pyhd8ed1ab_0",
-   "lbnightlytools/conda-forge/noarch/lbnightlytools-3.0.36-pyhd8ed1ab_0"
-  ],
-  "LbPlatformUtils": [
-   "lbplatformutils/conda-forge/noarch/lbplatformutils-4.2.5-py_0",
-   "lbplatformutils/conda-forge/noarch/lbplatformutils-4.3.0-py_0",
-   "lbplatformutils/conda-forge/noarch/lbplatformutils-4.3.1-py_0",
-   "lbplatformutils/conda-forge/noarch/lbplatformutils-4.3.2-py_0",
-   "lbplatformutils/conda-forge/noarch/lbplatformutils-4.3.3-py_0",
-   "lbplatformutils/conda-forge/noarch/lbplatformutils-4.3.6-pyhd8ed1ab_0"
-  ],
-  "LbSoftConfDb2Clients": [
-   "lbsoftconfdb2clients/conda-forge/noarch/lbsoftconfdb2clients-1.1.7-pyh9f0ad1d_0",
-   "lbsoftconfdb2clients/conda-forge/noarch/lbsoftconfdb2clients-2.0.0-pyh9f0ad1d_0"
-  ],
   "_pickle": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -338,11 +336,6 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "http": [
-   "pies2overrides/conda-forge/osx-64/pies2overrides-2.6.7-py27_1000",
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "importlib": [
    "importlib/conda-forge/linux-64/importlib-1.0.4-py26_0",
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -432,29 +425,11 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "requests": [
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0",
-   "requests/conda-forge/linux-64/requests-2.12.0-py35_0",
-   "requests/conda-forge/noarch/requests-2.23.0-pyh8c360ce_2",
-   "requests/conda-forge/noarch/requests-2.24.0-pyh9f0ad1d_0",
-   "requests/conda-forge/noarch/requests-2.25.0-pyhd3deb0d_0",
-   "requests/conda-forge/noarch/requests-2.25.1-pyhd3deb0d_0",
-   "requests/conda-forge/noarch/requests-2.26.0-pyhd8ed1ab_0"
-  ],
   "select": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "shlex": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "shutil": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "socket": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -467,10 +442,6 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "string": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "subprocess": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -488,18 +459,6 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "textwrap": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "threading": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "traceback": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "unittest": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],

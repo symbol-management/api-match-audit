@@ -29,16 +29,25 @@
   "__main__.H",
   "__main__.K",
   "__name__.encode",
+  "_compat_pickle",
+  "_compat_pickle.IMPORT_MAPPING",
   "_compat_pickle.IMPORT_MAPPING.get",
   "_compat_pickle.IMPORT_MAPPING.items",
   "_compat_pickle.IMPORT_MAPPING.values",
+  "_compat_pickle.NAME_MAPPING",
   "_compat_pickle.NAME_MAPPING.items",
   "_compat_pickle.NAME_MAPPING.values",
+  "_compat_pickle.REVERSE_IMPORT_MAPPING",
   "_compat_pickle.REVERSE_IMPORT_MAPPING.get",
   "_compat_pickle.REVERSE_IMPORT_MAPPING.items",
+  "_compat_pickle.REVERSE_NAME_MAPPING",
   "_compat_pickle.REVERSE_NAME_MAPPING.items",
+  "_testbuffer",
   "add",
   "append",
+  "argparse",
+  "argparse.ArgumentParser",
+  "argparse.FileType",
   "bytearray.maketrans",
   "bytes_type",
   "check",
@@ -65,6 +74,7 @@
   "functools.reduce",
   "gc",
   "getpos",
+  "http.cookies.SimpleCookie",
   "int.from_bytes",
   "io.BufferedRandom",
   "io.BytesIO",
@@ -95,7 +105,10 @@
   "save",
   "set.__contains__",
   "setstate",
+  "shutil",
+  "shutil.rmtree",
   "str.index",
+  "struct",
   "struct.calcsize",
   "struct.error",
   "struct.pack",
@@ -104,7 +117,16 @@
   "sys.modules.items",
   "sys.path.insert",
   "sys.path.remove",
+  "threading",
+  "threading.Barrier",
+  "threading.Thread",
   "time",
+  "types.FunctionType",
+  "unittest",
+  "unittest.TestCase",
+  "unittest.main",
+  "unittest.skipIf",
+  "unittest.skipUnless",
   "unpickled",
   "unpickler",
   "weakref.proxy",
@@ -113,19 +135,6 @@
   "write"
  ],
  "deps": {
-  "_compat_pickle": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "_testbuffer": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "argparse": [
-   "argparse/conda-forge/osx-64/argparse-1.4.0-py26_0",
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "builtins": [
    "pies2overrides/conda-forge/osx-64/pies2overrides-2.6.7-py27_1000"
   ],
@@ -150,10 +159,6 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "functools": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "http": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -195,31 +200,11 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "shutil": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "struct": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "test": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "textwrap": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "threading": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "types": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "unittest": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],

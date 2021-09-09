@@ -1,6 +1,7 @@
 {
  "bad": [
   "_get_compare_func",
+  "django",
   "django.apps.apps.get_app_config",
   "django.conf.settings.ADD_REVERSION_ADMIN",
   "django.conf.settings.DEBUG",
@@ -32,6 +33,8 @@
   "django.forms.IntegerField",
   "django_tools",
   "django_tools.unittest_utils.BrowserDebug.debug_response",
+  "doctest",
+  "doctest.testmod",
   "func",
   "internal_type",
   "models.Car.objects.all",
@@ -45,11 +48,22 @@
   "os.chdir",
   "os.environ.get",
   "os.getcwd",
+  "reversion.admin.VersionAdmin",
+  "reversion.create_revision",
+  "reversion.get_registered_models",
+  "reversion.is_registered",
+  "reversion.models.Revision",
   "reversion.models.Revision.objects.all",
+  "reversion.models.Version",
   "reversion.models.Version.objects.all",
   "reversion.models.Version.objects.filter",
   "reversion.models.Version.objects.get_for_object",
   "reversion.models.Version.objects.get_for_object_reference",
+  "reversion.revisions",
+  "reversion.revisions._get_options",
+  "reversion.revisions.register",
+  "reversion.set_comment",
+  "reversion.unregister",
   "reversion_compare_tests.models.Car.objects.create",
   "reversion_compare_tests.models.CustomModel._meta.app_label",
   "reversion_compare_tests.models.CustomModel._meta.model_name",
@@ -64,7 +78,13 @@
   "reversion_compare_tests.models.TemplateField.objects.create",
   "reversion_compare_tests.models.VariantModel.objects.create",
   "reversion_compare_tests.views.SimpleModelHistoryCompareView.as_view",
-  "sys"
+  "shutil",
+  "shutil.rmtree",
+  "sys",
+  "tempfile",
+  "tempfile.mkdtemp",
+  "unittest",
+  "unittest.skipIf"
  ],
  "deps": {
   "__future__": [
@@ -88,10 +108,6 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "django": [],
-  "doctest": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "logging": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -105,25 +121,6 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "re": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "reversion": [
-   "django-reversion/conda-forge/noarch/django-reversion-2.0.13-py_0",
-   "django-reversion/conda-forge/noarch/django-reversion-3.0.0-py_0",
-   "django-reversion/conda-forge/noarch/django-reversion-3.0.1-py_0",
-   "django-reversion/conda-forge/noarch/django-reversion-3.0.2-py_0",
-   "django-reversion/conda-forge/noarch/django-reversion-3.0.4-py_0"
-  ],
-  "shutil": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "tempfile": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "unittest": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ]
