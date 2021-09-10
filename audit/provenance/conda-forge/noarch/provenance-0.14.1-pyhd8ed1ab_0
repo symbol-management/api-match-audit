@@ -24,18 +24,11 @@
   "artifact_hasher.artifact_hasher",
   "atomic_from_config",
   "blobstores.RemoteStore",
-  "boltons.funcutils",
-  "boltons.funcutils.FunctionBuilder.from_func",
-  "boltons.funcutils.wraps",
   "ca",
-  "cloudpickle",
-  "cloudpickle.CloudPickler",
-  "cloudpickle.dump",
   "cloudpickle.load",
   "cls",
   "collections.Sequence",
   "create_chained",
-  "decimal",
   "extract_args",
   "extract_kargs",
   "f",
@@ -44,13 +37,9 @@
   "f.args",
   "f.func",
   "f.keywords.keys",
-  "fastparquet",
-  "frozendict.frozendict",
   "func",
   "google.cloud.storage",
   "google.cloud.storage.Client",
-  "graphviz",
-  "graphviz.Digraph",
   "hashing.Hasher",
   "hashing.Hasher.hash",
   "hashing.Hasher.save",
@@ -58,15 +47,9 @@
   "hashing.NumpyHasher.hash",
   "hashing.NumpyHasher.save",
   "hashing.value_repr.register",
-  "hashlib",
   "hashlib.md5",
   "hashlib.sha1",
   "input_process_fn",
-  "joblib",
-  "joblib.disk.mkdirp",
-  "joblib.dump",
-  "joblib.load",
-  "memoized_property.memoized_property",
   "method",
   "models.Artifact",
   "models.Artifact.id",
@@ -91,13 +74,6 @@
   "os.path.exists",
   "os.path.isfile",
   "os.remove",
-  "pandas",
-  "pandas.DataFrame",
-  "pandas.Series",
-  "pandas.read_parquet",
-  "pickle",
-  "pickle.PicklingError",
-  "pickle.dump",
   "provenance.models.Base.metadata",
   "repos.Artifact",
   "repos.Config.current",
@@ -141,6 +117,10 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "_pickle": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "alembic": [
    "alembic/conda-forge/noarch/alembic-0.8.10-py_2",
    "alembic/conda-forge/noarch/alembic-0.9.9-py_0",
@@ -158,6 +138,21 @@
    "alembic/conda-forge/noarch/alembic-1.6.2-pyhd8ed1ab_0",
    "alembic/conda-forge/noarch/alembic-1.6.5-pyhd8ed1ab_0"
   ],
+  "boltons": [
+   "boltons/conda-forge/noarch/boltons-19.0.0-py_0",
+   "boltons/conda-forge/noarch/boltons-19.1.0-py_0",
+   "boltons/conda-forge/noarch/boltons-19.2.0-py_0",
+   "boltons/conda-forge/noarch/boltons-20.1.0-pyh9f0ad1d_0",
+   "boltons/conda-forge/noarch/boltons-20.2.0-pyh9f0ad1d_0",
+   "boltons/conda-forge/noarch/boltons-20.2.1-pyh9f0ad1d_0"
+  ],
+  "cloudpickle": [
+   "cloudpickle/conda-forge/noarch/cloudpickle-1.2.0-py_0",
+   "cloudpickle/conda-forge/noarch/cloudpickle-1.2.1-py_0",
+   "cloudpickle/conda-forge/noarch/cloudpickle-1.2.2-py_0",
+   "cloudpickle/conda-forge/noarch/cloudpickle-1.2.2-py_1",
+   "cloudpickle/conda-forge/noarch/cloudpickle-1.3.0-py_0"
+  ],
   "collections": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -174,7 +169,34 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "decimal": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "fastparquet": [
+   "fastparquet/conda-forge/linux-64/fastparquet-0.2.1-py27h7eb728f_0",
+   "fastparquet/conda-forge/linux-64/fastparquet-0.6.0-py39hce5d2b2_0",
+   "fastparquet/conda-forge/linux-64/fastparquet-0.7.0-py37h6f94858_1"
+  ],
+  "frozendict": [
+   "frozendict/conda-forge/noarch/frozendict-2.0.3-pyhd8ed1ab_0"
+  ],
   "functools": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "graphviz": [
+   "python-graphviz/conda-forge/noarch/python-graphviz-0.11.1-py_1",
+   "python-graphviz/conda-forge/noarch/python-graphviz-0.12-py_0",
+   "python-graphviz/conda-forge/noarch/python-graphviz-0.13-py_0",
+   "python-graphviz/conda-forge/noarch/python-graphviz-0.13.2-py_0",
+   "python-graphviz/conda-forge/noarch/python-graphviz-0.15-pyhd3deb0d_0",
+   "python-graphviz/conda-forge/noarch/python-graphviz-0.16-pyh243d235_2",
+   "python-graphviz/conda-forge/noarch/python-graphviz-0.16-pyhd3deb0d_0",
+   "python-graphviz/conda-forge/noarch/python-graphviz-0.16-pyhd3deb0d_1",
+   "python-graphviz/conda-forge/noarch/python-graphviz-0.8.4-py_1003"
+  ],
+  "hashlib": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -186,6 +208,18 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "joblib": [
+   "joblib/conda-forge/noarch/joblib-0.12.1-py_0",
+   "joblib/conda-forge/noarch/joblib-0.12.2-py_0",
+   "joblib/conda-forge/noarch/joblib-0.12.4-py_0",
+   "joblib/conda-forge/noarch/joblib-0.13.1-py_0",
+   "joblib/conda-forge/noarch/joblib-0.13.2-py_0",
+   "joblib/conda-forge/noarch/joblib-0.14.0-py_0",
+   "joblib/conda-forge/noarch/joblib-0.14.1-py_0",
+   "joblib/conda-forge/noarch/joblib-0.17.0-py_0",
+   "joblib/conda-forge/noarch/joblib-1.0.0-pyhd8ed1ab_0",
+   "joblib/conda-forge/noarch/joblib-1.0.1-pyhd8ed1ab_0"
+  ],
   "json": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -193,6 +227,9 @@
   "logging": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "memoized_property": [
+   "memoized-property/conda-forge/noarch/memoized-property-1.0.3-py_0"
   ],
   "multiprocessing": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -215,12 +252,19 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "pandas": [
+   "pandas/conda-forge/linux-64/pandas-1.2.2-py37h40f5888_0"
+  ],
   "paramiko": [
    "paramiko/conda-forge/linux-64/paramiko-2.1.2-py35_0",
    "paramiko/conda-forge/linux-64/paramiko-2.4.0-py27_0",
    "paramiko/conda-forge/linux-64/paramiko-2.4.1-py27_1000",
    "paramiko/conda-forge/noarch/paramiko-2.3.1-py_0",
    "paramiko/conda-forge/noarch/paramiko-2.7.1-pyh9f0ad1d_1"
+  ],
+  "pickle": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "platform": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
