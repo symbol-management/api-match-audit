@@ -43,10 +43,18 @@
   "c_21cmfast.lib.global_params",
   "c_21cmfast.lib.photon_cons_allocated",
   "cache_tools.query_cache",
+  "cached_property.cached_property",
   "calibrate_photon_cons",
+  "cffi.FFI",
   "cls",
   "cls.__class__.__name__",
+  "contextlib",
+  "contextlib.contextmanager",
   "get_all_subclasses",
+  "glob",
+  "glob.glob",
+  "h5py",
+  "h5py.File",
   "hashlib.md5",
   "input_class",
   "inputs.global_params.DELTA_R_HII_FACTOR",
@@ -56,6 +64,7 @@
   "inputs.global_params.Z_HEAT_MAX",
   "inputs.global_params.items",
   "inputs.global_params.use",
+  "inspect",
   "kls",
   "multiprocessing.current_process",
   "numpy.abs",
@@ -80,13 +89,19 @@
   "os.remove",
   "outputs._OutputStruct",
   "outputs._OutputStructZ._implementations",
+  "pathlib.Path",
   "plotting.lightcone_sliceplot",
   "powerbox",
   "powerbox.get_power",
   "py21cmfast.c_21cmfast.ffi",
   "py21cmfast.c_21cmfast.lib",
+  "re",
+  "re.match",
   "rms",
+  "scipy.interpolate.interp1d",
   "sys",
+  "typing.List",
+  "typing.Optional",
   "warnings.warn",
   "wrapper.AstroParams",
   "wrapper.CosmoParams",
@@ -97,7 +112,11 @@
   "wrapper.perturb_field",
   "wrapper.run_coeval",
   "wrapper.run_lightcone",
-  "wrapper.spin_temperature"
+  "wrapper.spin_temperature",
+  "yaml",
+  "yaml.FullLoader",
+  "yaml.dump",
+  "yaml.load"
  ],
  "deps": {
   "astropy": [
@@ -108,16 +127,6 @@
   "builtins": [
    "pies2overrides/conda-forge/osx-64/pies2overrides-2.6.7-py27_1000"
   ],
-  "cached_property": [
-   "cached-property/conda-forge/noarch/cached-property-1.4.3-py_1",
-   "cached-property/conda-forge/noarch/cached-property-1.5.1-py_0",
-   "cached_property/conda-forge/noarch/cached_property-1.5.2-pyha770c72_1",
-   "cached_property/conda-forge/noarch/cached_property-1.5.2-pyhd8ed1ab_0"
-  ],
-  "cffi": [
-   "cffi/conda-forge/linux-64/cffi-1.12.3-py37h8022711_0",
-   "privy/conda-forge/noarch/privy-6.0.0-py_0"
-  ],
   "click": [
    "click/conda-forge/noarch/click-5.1-py_0",
    "click/conda-forge/noarch/click-6.7-py_1",
@@ -125,24 +134,7 @@
    "click/conda-forge/noarch/click-7.1-pyh8c360ce_0",
    "click/conda-forge/noarch/click-7.1.1-pyh8c360ce_0"
   ],
-  "contextlib": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "copy": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "glob": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "h5py": [
-   "h5py/conda-forge/linux-64/h5py-2.10.0-nompi_py37hf7afa78_105",
-   "h5py/conda-forge/linux-64/h5py-2.6.0-np111py34_4",
-   "h5py/conda-forge/linux-64/h5py-2.7.0-np113py36_1"
-  ],
-  "inspect": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -168,32 +160,9 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "pathlib": [
-   "pathlib/conda-forge/noarch/pathlib-1.0.1-py_1",
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "re": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "scipy": [
-   "scipy/conda-forge/linux-64/scipy-0.17.1-np110py27_blas_openblas_202",
-   "scipy/conda-forge/linux-64/scipy-1.7.0-py37h29e03ee_0",
-   "scipy/conda-forge/linux-64/scipy-1.7.0-py37ha768fb6_1"
-  ],
-  "typing": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "warnings": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "yaml": [
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0",
-   "pyyaml/conda-forge/win-64/pyyaml-5.2-py36hfa6e2cd_0"
   ]
  }
 }

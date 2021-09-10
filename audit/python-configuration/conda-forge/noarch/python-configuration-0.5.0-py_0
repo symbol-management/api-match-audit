@@ -3,6 +3,7 @@
   "azure.core.exceptions.ResourceNotFoundError",
   "azure.identity.ClientSecretCredential",
   "azure.keyvault.secrets.SecretClient",
+  "botocore.exceptions.ClientError",
   "config.__init__.Configuration",
   "config.__init__.ConfigurationSet",
   "config.__init__.FALSE_TEXT",
@@ -20,15 +21,30 @@
   "config.__init__.config_from_yaml",
   "config.__init__.toml",
   "config.__init__.yaml",
+  "configparser",
+  "configparser.RawConfigParser",
   "os.environ.items",
   "os.path.exists",
   "os.path.isdir",
-  "time"
+  "time",
+  "toml",
+  "types.ModuleType",
+  "typing.Any",
+  "typing.Dict",
+  "typing.IO",
+  "typing.ItemsView",
+  "typing.Iterable",
+  "typing.KeysView",
+  "typing.List",
+  "typing.Mapping",
+  "typing.Optional",
+  "typing.Union",
+  "typing.ValuesView",
+  "typing.cast",
+  "urllib.parse.urlparse",
+  "yaml"
  ],
  "deps": {
-  "backports": [
-   "configparser/conda-forge/noarch/configparser-5.0.0-py_0"
-  ],
   "base64": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -72,54 +88,6 @@
    "boto3/conda-forge/noarch/boto3-1.9.57-py_0",
    "boto3/conda-forge/noarch/boto3-1.9.67-py_0"
   ],
-  "botocore": [
-   "botocore/conda-forge/noarch/botocore-1.10.23-py_0",
-   "botocore/conda-forge/noarch/botocore-1.10.29-py_0",
-   "botocore/conda-forge/noarch/botocore-1.10.42-py_0",
-   "botocore/conda-forge/noarch/botocore-1.10.47-py_0",
-   "botocore/conda-forge/noarch/botocore-1.10.5-py_0",
-   "botocore/conda-forge/noarch/botocore-1.10.78-py_0",
-   "botocore/conda-forge/noarch/botocore-1.12.110-py_0",
-   "botocore/conda-forge/noarch/botocore-1.12.118-py_0",
-   "botocore/conda-forge/noarch/botocore-1.12.134-py_0",
-   "botocore/conda-forge/noarch/botocore-1.12.135-py_0",
-   "botocore/conda-forge/noarch/botocore-1.12.201-py_0",
-   "botocore/conda-forge/noarch/botocore-1.12.223-py_0",
-   "botocore/conda-forge/noarch/botocore-1.12.224-py_0",
-   "botocore/conda-forge/noarch/botocore-1.12.35-py_0",
-   "botocore/conda-forge/noarch/botocore-1.12.47-py_0",
-   "botocore/conda-forge/noarch/botocore-1.12.48-py_0",
-   "botocore/conda-forge/noarch/botocore-1.12.90-py_0",
-   "botocore/conda-forge/noarch/botocore-1.13.0-py_2",
-   "botocore/conda-forge/noarch/botocore-1.13.31-py_0",
-   "botocore/conda-forge/noarch/botocore-1.13.41-py_0",
-   "botocore/conda-forge/noarch/botocore-1.14.16-py_0",
-   "botocore/conda-forge/noarch/botocore-1.15.13-py_0",
-   "botocore/conda-forge/noarch/botocore-1.15.39-pyh9f0ad1d_0",
-   "botocore/conda-forge/noarch/botocore-1.16.19-pyh9f0ad1d_0",
-   "botocore/conda-forge/noarch/botocore-1.16.8-pyh9f0ad1d_0",
-   "botocore/conda-forge/noarch/botocore-1.17.58-pyh9f0ad1d_0",
-   "botocore/conda-forge/noarch/botocore-1.18.8-pyh9f0ad1d_0",
-   "botocore/conda-forge/noarch/botocore-1.20.108-pyhd8ed1ab_0",
-   "botocore/conda-forge/noarch/botocore-1.20.111-pyhd8ed1ab_0",
-   "botocore/conda-forge/noarch/botocore-1.20.31-pyhd8ed1ab_0",
-   "botocore/conda-forge/noarch/botocore-1.20.44-pyhd8ed1ab_0",
-   "botocore/conda-forge/noarch/botocore-1.20.55-pyhd8ed1ab_0",
-   "botocore/conda-forge/noarch/botocore-1.20.67-pyhd8ed1ab_0",
-   "botocore/conda-forge/noarch/botocore-1.20.79-pyhd8ed1ab_0",
-   "botocore/conda-forge/noarch/botocore-1.20.8-pyhd8ed1ab_0",
-   "botocore/conda-forge/noarch/botocore-1.20.93-pyhd8ed1ab_0",
-   "botocore/conda-forge/noarch/botocore-1.21.4-pyhd8ed1ab_0",
-   "botocore/conda-forge/noarch/botocore-1.8.39-py_0",
-   "botocore/conda-forge/noarch/botocore-1.9.13-py_0"
-  ],
-  "configparser": [
-   "configparser/conda-forge/linux-64/configparser-3.7.1-py27_1",
-   "configparser/conda-forge/noarch/configparser-5.0.0-py_0",
-   "configparser/conda-forge/noarch/configparser-5.0.1-py_0",
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "importlib": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -135,32 +103,6 @@
   "os": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "toml": [
-   "toml/conda-forge/noarch/toml-0.10.0-py_0",
-   "toml/conda-forge/noarch/toml-0.10.1-pyh9f0ad1d_0",
-   "toml/conda-forge/noarch/toml-0.9.2-py_1",
-   "toml/conda-forge/noarch/toml-0.9.3.1-py_1",
-   "toml/conda-forge/noarch/toml-0.9.3.1-py_2",
-   "toml/conda-forge/noarch/toml-0.9.4-py_0"
-  ],
-  "types": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "typing": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "urllib": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "yaml": [
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0",
-   "pyyaml/conda-forge/linux-64/pyyaml-3.11-py35_0",
-   "pyyaml/conda-forge/win-64/pyyaml-5.2-py36hfa6e2cd_0"
   ]
  }
 }

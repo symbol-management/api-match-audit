@@ -29,10 +29,24 @@
   "dolo.compiler.language.functions.keys",
   "f",
   "fun",
+  "functools",
   "functools.reduce",
   "generator_visit",
   "io.StringIO",
+  "lark",
+  "lark.Lark",
+  "lark.exceptions.LarkError",
+  "lark.exceptions.UnexpectedCharacters",
+  "lark.exceptions.UnexpectedInput",
+  "lark.lark.Lark",
+  "lark.lexer.Token",
+  "lark.tree.Tree",
+  "lark.visitors.Interpreter",
+  "lark.visitors.Transformer",
+  "lark.visitors.Visitor",
   "matfun",
+  "numba.guvectorize",
+  "numba.jit",
   "numpy.abs",
   "numpy.arctan",
   "numpy.arctanh",
@@ -48,7 +62,12 @@
   "numpy.zeros",
   "objclass",
   "objclass.__name__",
+  "operator",
+  "operator.concat",
   "paren_or_comma",
+  "re",
+  "re.compile",
+  "re.match",
   "sequence_visit",
   "str.join",
   "str.split",
@@ -56,10 +75,19 @@
   "symbolic.NameSubstituter",
   "symbolic.list_symbols",
   "symbolic.parse_string",
+  "sympy",
+  "sympy.sympify",
   "sys",
+  "typing.Dict",
+  "typing.List",
+  "typing.Set",
+  "typing.Tuple",
+  "typing.Union",
   "vectfun",
   "warnings.warn",
   "write_comma",
+  "yaml",
+  "yaml.MappingNode",
   "yaml.MappingNode.__contains__",
   "yaml.MappingNode.__getitem__",
   "yaml.MappingNode.__iter__",
@@ -70,9 +98,14 @@
   "yaml.MappingNode.keys",
   "yaml.MappingNode.update",
   "yaml.MappingNode.values",
+  "yaml.ScalarNode",
+  "yaml.SequenceNode",
   "yaml.SequenceNode.__getitem__",
   "yaml.SequenceNode.__iter__",
-  "yaml.SequenceNode.__len__"
+  "yaml.SequenceNode.__len__",
+  "yaml.compose",
+  "yaml.dump",
+  "yaml.safe_load"
  ],
  "deps": {
   "ast": [
@@ -109,15 +142,6 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "lark": [
-   "lark-parser/conda-forge/noarch/lark-parser-0.11.3-pyhd8ed1ab_0",
-   "lark-parser/conda-forge/noarch/lark-parser-0.7.1-py_0",
-   "lark-parser/conda-forge/noarch/lark-parser-0.7.5-py_0",
-   "lark-parser/conda-forge/noarch/lark-parser-0.8.1-py_0",
-   "lark-parser/conda-forge/noarch/lark-parser-0.8.3-pyh9f0ad1d_0",
-   "lark-parser/conda-forge/noarch/lark-parser-0.8.6-pyh9f0ad1d_0",
-   "lark-parser/conda-forge/noarch/lark-parser-0.8.7-pyh9f0ad1d_0"
-  ],
   "math": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -126,45 +150,18 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "numba": [
-   "numba/conda-forge/linux-64/numba-0.38.1-py36_0",
-   "numba/conda-forge/linux-64/numba-0.40.0-py35hf8a1672_0",
-   "numba/conda-forge/linux-64/numba-0.41.0-py27h637b7d7_1000"
-  ],
   "numpy": [
    "numpy/conda-forge/linux-64/numpy-1.17.5-py36h95a1406_0",
    "numpy/conda-forge/linux-64/numpy-1.18.4-py37h8960a57_0",
    "numpy/conda-forge/linux-64/numpy-1.19.2-py36h68c22af_1"
   ],
-  "operator": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "os": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "re": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "sympy": [
-   "sympy/conda-forge/linux-64/sympy-1.5.1-py27h8c360ce_2",
-   "sympy/conda-forge/linux-64/sympy-1.5.1-py36_0"
-  ],
-  "typing": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "warnings": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "yaml": [
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0",
-   "pyyaml/conda-forge/linux-64/pyyaml-3.11-py35_0",
-   "pyyaml/conda-forge/win-64/pyyaml-5.2-py36hfa6e2cd_0"
   ]
  }
 }

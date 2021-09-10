@@ -14,6 +14,8 @@
   "_Client",
   "_Process32n",
   "__builtin__",
+  "__future__.absolute_import",
+  "__future__.print_function",
   "_billiard",
   "_billiard.SemLock",
   "_exit",
@@ -26,7 +28,12 @@
   "_ext._billiard.send",
   "_ext.ensure_multiprocessing",
   "_ext.supports_exec",
+  "_multiprocessing",
+  "_multiprocessing.SemLock",
+  "_multiprocessing.sem_unlink",
   "_multiprocessing.win32",
+  "_posixsubprocess",
+  "_posixsubprocess.fork_exec",
   "_receive",
   "_subprocess.CreateProcess",
   "_timed_out",
@@ -276,6 +283,7 @@
   "struct.Struct",
   "struct.pack",
   "struct.unpack",
+  "subprocess._args_from_interpreter_flags",
   "synchronize.Barrier",
   "synchronize.BoundedSemaphore",
   "synchronize.Condition",
@@ -294,6 +302,9 @@
   "sys.stderr.flush",
   "sys.stderr.write",
   "sys.stdin.close",
+  "tempfile",
+  "tempfile._RandomNameSequence",
+  "tempfile.mktemp",
   "threading._Condition",
   "threading._Semaphore",
   "time",
@@ -326,23 +337,11 @@
   "wrelease"
  ],
  "deps": {
-  "__future__": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "_ctypes": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "_multiprocessing": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "_pickle": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "_posixsubprocess": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -466,14 +465,6 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "struct": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "subprocess": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "tempfile": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],

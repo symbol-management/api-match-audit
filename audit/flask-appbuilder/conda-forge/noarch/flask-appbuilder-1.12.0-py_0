@@ -7,6 +7,8 @@
   "addon_class.post_process",
   "addon_class.pre_process",
   "addon_class.register_views",
+  "calendar",
+  "calendar.month_name",
   "const.AUTH_DB",
   "const.AUTH_LDAP",
   "const.AUTH_OAUTH",
@@ -65,10 +67,24 @@
   "filters.__all__",
   "filters.apply_all",
   "filters.copy",
+  "flask.Blueprint",
+  "flask.Flask",
+  "flask._app_ctx_stack",
+  "flask.abort",
+  "flask.current_app",
+  "flask.flash",
+  "flask.g",
   "flask.g.user",
   "flask.g.user.id",
   "flask.g.user.is_authenticated",
+  "flask.globals._request_ctx_stack",
   "flask.globals._request_ctx_stack.top",
+  "flask.has_request_context",
+  "flask.jsonify",
+  "flask.make_response",
+  "flask.redirect",
+  "flask.render_template",
+  "flask.request",
   "flask.request.args",
   "flask.request.args.copy",
   "flask.request.args.get",
@@ -79,8 +95,11 @@
   "flask.request.path",
   "flask.request.referrer",
   "flask.request.view_args.copy",
+  "flask.send_file",
+  "flask.session",
   "flask.session.get",
   "flask.session.pop",
+  "flask.url_for",
   "flask_appbuilder.models.generic.__init__.GenericColumn",
   "flask_appbuilder.models.generic.__init__.GenericModel",
   "flask_appbuilder.models.generic.__init__.GenericSession",
@@ -91,8 +110,24 @@
   "flask_appbuilder.models.sqla.__init__.Model",
   "flask_appbuilder.models.sqla.__init__.ModelDeclarativeMeta",
   "flask_appbuilder.security.mongoengine.models.User.objects.filter",
+  "flask_babel.Babel",
+  "flask_babel.gettext",
+  "flask_babel.lazy_gettext",
+  "flask_babel.refresh",
+  "flask_login.LoginManager",
+  "flask_login.current_user",
   "flask_login.current_user.is_authenticated",
+  "flask_login.login_user",
+  "flask_login.logout_user",
+  "flask_mail.Mail",
+  "flask_mail.Message",
   "flask_mongoengine.MongoEngine",
+  "flask_openid.OpenID",
+  "flask_openid.OpenIDResponse",
+  "flask_openid.SessionWrapper",
+  "flask_sqlalchemy.SQLAlchemy",
+  "flask_sqlalchemy._BoundDeclarativeMeta",
+  "flask_sqlalchemy._QueryProperty",
   "func",
   "functools.reduce",
   "get_filter_args",
@@ -125,22 +160,38 @@
   "nose.tools.ok_",
   "nose.tools.raises",
   "objs",
+  "operator",
+  "operator.attrgetter",
   "os.getcwd",
   "os.path.exists",
   "os.path.isdir",
   "os.remove",
   "os.rename",
+  "re",
+  "re.compile",
+  "re.findall",
+  "re.search",
   "reduce",
+  "shutil",
+  "shutil.copytree",
   "sqlalchemy.func.count",
   "sqlalchemy.func.lower",
+  "string",
+  "string.ascii_letters",
   "sys",
   "sys.path.append",
   "type.__call__",
   "type.__init__",
   "type.__new__",
   "unicode",
+  "unittest",
+  "unittest.TestCase",
+  "urllib.parse.quote",
   "urllib.quote",
+  "urllib.request.urlopen",
   "urllib2.urlopen",
+  "uuid",
+  "uuid.uuid1",
   "werkzeug.secure_filename",
   "widget",
   "wtforms.BooleanField",
@@ -177,10 +228,6 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "calendar": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "click": [
    "click/conda-forge/noarch/click-5.1-py_0",
    "click/conda-forge/noarch/click-6.7-py_1",
@@ -207,38 +254,6 @@
    "privy/conda-forge/noarch/privy-6.0.0-py_0",
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "flask": [
-   "flask/conda-forge/linux-64/flask-0.12-py36_0",
-   "flask/conda-forge/noarch/flask-0.11.1-py_1",
-   "flask/conda-forge/noarch/flask-1.0.2-py_1",
-   "flask/conda-forge/noarch/flask-1.0.3-py_0",
-   "flask/conda-forge/noarch/flask-1.1.0-py_0"
-  ],
-  "flask_babel": [
-   "flask-babel/conda-forge/noarch/flask-babel-0.11.1-py_0",
-   "flask-babel/conda-forge/noarch/flask-babel-0.12.2-py_0",
-   "flask-babel/conda-forge/noarch/flask-babel-0.9-py_0",
-   "flask-babel/conda-forge/noarch/flask-babel-1.0.0-py_0"
-  ],
-  "flask_login": [
-   "flask-login/conda-forge/linux-64/flask-login-0.4.0-py27_0",
-   "flask-login/conda-forge/noarch/flask-login-0.4.1-py_0",
-   "flask-login/conda-forge/noarch/flask-login-0.5.0-pyh9f0ad1d_0"
-  ],
-  "flask_mail": [
-   "flask-mail/conda-forge/linux-64/flask-mail-0.9.1-py34_0"
-  ],
-  "flask_openid": [
-   "flask-openid/conda-forge/linux-64/flask-openid-1.2.5-py36_1003",
-   "flask-openid/conda-forge/noarch/flask-openid-1.2.5-py_2"
-  ],
-  "flask_sqlalchemy": [
-   "flask-sqlalchemy/conda-forge/noarch/flask-sqlalchemy-2.3.0-py_0",
-   "flask-sqlalchemy/conda-forge/noarch/flask-sqlalchemy-2.3.2-py_0",
-   "flask-sqlalchemy/conda-forge/noarch/flask-sqlalchemy-2.4.1-pyh9f0ad1d_0",
-   "flask-sqlalchemy/conda-forge/noarch/flask-sqlalchemy-2.4.2-pyh9f0ad1d_0",
-   "flask-sqlalchemy/conda-forge/noarch/flask-sqlalchemy-2.4.4-pyh9f0ad1d_0"
   ],
   "flask_wtf": [
    "flask-wtf/conda-forge/noarch/flask-wtf-0.14.2-py_1",
@@ -275,10 +290,6 @@
   "openid": [
    "python3-openid/conda-forge/noarch/python3-openid-3.2.0-pyhd8ed1ab_0"
   ],
-  "operator": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "os": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -287,31 +298,7 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "re": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "shutil": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "sqlalchemy": [],
-  "string": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "unittest": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "urllib": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "uuid": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "werkzeug": [
    "werkzeug/conda-forge/noarch/werkzeug-0.12.2-py_1",
    "werkzeug/conda-forge/noarch/werkzeug-0.15.3-py_0",
