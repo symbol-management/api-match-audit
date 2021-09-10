@@ -5,7 +5,6 @@
   "_is_property_class",
   "_recurse_ns",
   "_render_children",
-  "astroid",
   "astroid.AsyncFunctionDef",
   "astroid.Const",
   "astroid.Ellipsis",
@@ -14,23 +13,6 @@
   "astroid.MANAGER.ast_from_file",
   "astroid.Name",
   "astroid.Tuple",
-  "astroid.Uninferable",
-  "astroid.nodes",
-  "astroid.nodes.AnnAssign",
-  "astroid.nodes.Assign",
-  "astroid.nodes.AssignAttr",
-  "astroid.nodes.AssignName",
-  "astroid.nodes.Attribute",
-  "astroid.nodes.Call",
-  "astroid.nodes.ClassDef",
-  "astroid.nodes.Const",
-  "astroid.nodes.Expr",
-  "astroid.nodes.FunctionDef",
-  "astroid.nodes.Import",
-  "astroid.nodes.ImportFrom",
-  "astroid.nodes.List",
-  "astroid.nodes.Module",
-  "astroid.nodes.Tuple",
   "astroid_utils.format_args",
   "astroid_utils.get_assign_annotation",
   "astroid_utils.get_assign_value",
@@ -44,13 +26,10 @@
   "astroid_utils.is_local_import_from",
   "backends.DEFAULT_FILE_PATTERNS.get",
   "backends.DEFAULT_IGNORE_PATTERNS.get",
-  "builtins",
   "cls",
   "cls.type",
   "collections.defaultdict",
   "collections.deque",
-  "copy",
-  "copy.deepcopy",
   "documenters.AutoapiAttributeDocumenter",
   "documenters.AutoapiClassDocumenter",
   "documenters.AutoapiDataDocumenter",
@@ -59,60 +38,14 @@
   "documenters.AutoapiFunctionDocumenter",
   "documenters.AutoapiMethodDocumenter",
   "documenters.AutoapiModuleDocumenter",
-  "docutils.nodes",
-  "docutils.nodes.Text",
-  "docutils.nodes.bullet_list",
-  "docutils.nodes.colspec",
-  "docutils.nodes.document",
-  "docutils.nodes.entry",
-  "docutils.nodes.list_item",
-  "docutils.nodes.paragraph",
-  "docutils.nodes.reference",
-  "docutils.nodes.row",
-  "docutils.nodes.section",
-  "docutils.nodes.table",
-  "docutils.nodes.tbody",
-  "docutils.nodes.tgroup",
-  "docutils.nodes.title",
-  "docutils.parsers.rst.Directive",
-  "docutils.parsers.rst.directives",
-  "docutils.parsers.rst.directives.flag",
-  "docutils.parsers.rst.directives.register_directive",
-  "docutils.parsers.rst.directives.unchanged",
-  "docutils.statemachine.ViewList",
-  "fnmatch",
-  "fnmatch.filter",
-  "fnmatch.fnmatch",
   "func",
-  "io",
   "io.open",
   "itertools",
   "itertools.izip_longest",
-  "jinja2.Environment",
-  "jinja2.FileSystemLoader",
-  "jinja2.TemplateNotFound",
-  "os.pardir",
-  "os.path.abspath",
-  "os.path.dirname",
   "os.path.exists",
-  "os.path.isabs",
   "os.path.isfile",
-  "os.path.join",
-  "os.path.normpath",
-  "os.path.realpath",
-  "os.path.relpath",
-  "os.path.sep",
-  "os.path.split",
-  "os.path.splitext",
   "parse_func",
-  "re",
   "re.X",
-  "re.compile",
-  "re.match",
-  "re.search",
-  "re.sub",
-  "shutil",
-  "shutil.rmtree",
   "sphinx.ext.autodoc.AttributeDocumenter.priority",
   "sphinx.ext.autodoc.ClassDocumenter.priority",
   "sphinx.ext.autodoc.ClassLevelDocumenter.add_directive_header",
@@ -127,24 +60,47 @@
   "sphinx.util.console.darkgreen",
   "sphinx_mapper",
   "sphinx_mapper.build_finished",
-  "subprocess",
-  "subprocess.CalledProcessError",
-  "subprocess.PIPE",
-  "subprocess.Popen",
-  "subprocess.check_output",
   "sys",
-  "traceback",
-  "typing.Optional",
-  "unicode",
-  "yaml",
-  "yaml.safe_load"
+  "unicode"
  ],
  "deps": {
+  "astroid": [
+   "astroid/conda-forge/linux-64/astroid-2.3.3-py38h32f6830_3",
+   "astroid/conda-forge/linux-64/astroid-2.4.2-py36h9f0ad1d_0"
+  ],
+  "builtins": [
+   "pies2overrides/conda-forge/osx-64/pies2overrides-2.6.7-py27_1000"
+  ],
   "collections": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "copy": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "docutils": [
+   "docutils/conda-forge/linux-64/docutils-0.16-py27h8c360ce_1"
+  ],
+  "fnmatch": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "io": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "jinja2": [
+   "jinja2/conda-forge/noarch/jinja2-2.10-py_1",
+   "jinja2/conda-forge/noarch/jinja2-2.11.3-pyh44b312d_0",
+   "jinja2/conda-forge/noarch/jinja2-3.0.0-pyhd8ed1ab_0",
+   "jinja2/conda-forge/noarch/jinja2-3.0.1-pyhd8ed1ab_0"
+  ],
   "json": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "ntpath": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -156,7 +112,27 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "re": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "shutil": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "sphinx": [],
+  "subprocess": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "traceback": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "typing": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "unidecode": [
    "unidecode/conda-forge/linux-64/unidecode-0.04.21-py27_0",
    "unidecode/conda-forge/noarch/unidecode-1.0.22-py_1",
@@ -165,6 +141,12 @@
    "unidecode/conda-forge/noarch/unidecode-1.1.1-py_0",
    "unidecode/conda-forge/noarch/unidecode-1.1.2-pyhd8ed1ab_0",
    "unidecode/conda-forge/noarch/unidecode-1.2.0-pyhd8ed1ab_0"
+  ],
+  "yaml": [
+   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
+   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0",
+   "pyyaml/conda-forge/linux-64/pyyaml-3.11-py35_0",
+   "pyyaml/conda-forge/win-64/pyyaml-5.2-py36hfa6e2cd_0"
   ]
  }
 }
