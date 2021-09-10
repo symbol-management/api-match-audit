@@ -55,8 +55,6 @@
   "all.get",
   "backports.ssl_match_hostname.CertificateError",
   "backports.ssl_match_hostname.match_hostname",
-  "binascii.hexlify",
-  "binascii.unhexlify",
   "body_seek",
   "callback",
   "category",
@@ -70,40 +68,15 @@
   "connection.port_by_scheme.get",
   "connectionpool.port_by_scheme.get",
   "conversationhandler.ConversationHandler",
-  "cryptography.hazmat.backends.default_backend",
-  "cryptography.hazmat.backends.openssl.backend",
-  "cryptography.hazmat.backends.openssl.x509._Certificate",
-  "cryptography.hazmat.primitives.asymmetric.padding.MGF1",
-  "cryptography.hazmat.primitives.asymmetric.padding.OAEP",
-  "cryptography.hazmat.primitives.ciphers.Cipher",
-  "cryptography.hazmat.primitives.ciphers.algorithms.AES",
-  "cryptography.hazmat.primitives.ciphers.modes.CBC",
-  "cryptography.hazmat.primitives.hashes.Hash",
-  "cryptography.hazmat.primitives.hashes.SHA1",
-  "cryptography.hazmat.primitives.hashes.SHA256",
-  "cryptography.hazmat.primitives.hashes.SHA512",
-  "cryptography.hazmat.primitives.serialization",
-  "cryptography.x509",
-  "cryptography.x509.DNSName",
-  "cryptography.x509.DuplicateExtension",
-  "cryptography.x509.ExtensionNotFound",
-  "cryptography.x509.IPAddress",
-  "cryptography.x509.SubjectAlternativeName",
   "cryptography.x509.UnsupportedExtension",
-  "cryptography.x509.UnsupportedGeneralNameType",
-  "cryptography.x509.extensions.Extensions",
   "cryptography.x509.get_subject",
   "datetime.timezone.utc",
-  "decorator.decorate",
   "dict.__delitem__",
   "dict.__eq__",
   "dict.__setitem__",
   "dict.clear",
   "dict.pop",
   "dummy_thread.get_ident",
-  "email",
-  "email.utils",
-  "email.utils.parsedate",
   "errno",
   "errno.WSAEINTR",
   "exceptions.HTTPWarning",
@@ -118,17 +91,6 @@
   "func.__module__",
   "func.__name__",
   "functools.partial",
-  "future",
-  "future.__version__",
-  "future.backports.urllib.parse",
-  "future.backports.urllib.parse.SplitResult",
-  "future.backports.urllib.parse.quote",
-  "future.backports.urllib.parse.urlsplit",
-  "future.backports.urllib.parse.urlunsplit",
-  "future.builtins.range",
-  "future.utils.bord",
-  "future.utils.bytes_to_native_str",
-  "future.utils.string_types",
   "get_payload",
   "google.appengine.api.urlfetch",
   "google.appengine.api.urlfetch.DeadlineExceededError",
@@ -142,7 +104,6 @@
   "hashlib.md5",
   "hashlib.sha1",
   "hashlib.sha256",
-  "html.escape",
   "idna_encode",
   "io.BufferedRWPair",
   "io.BufferedReader",
@@ -246,13 +207,6 @@
   "telegram.vendor.ptb_urllib3.urllib3.packages.six.moves.urllib.parse.urlencode",
   "telegram.vendor.ptb_urllib3.urllib3.packages.six.moves.urllib.parse.urljoin",
   "thread.get_ident",
-  "threading",
-  "threading.BoundedSemaphore",
-  "threading.Event",
-  "threading.Lock",
-  "threading.RLock",
-  "threading.Thread",
-  "threading.current_thread",
   "time",
   "time.clock",
   "time.tzinfo",
@@ -301,6 +255,10 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "binascii": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "certifi": [
    "certifi/conda-forge/linux-64/certifi-2016.9.26-py27_0",
    "certifi/conda-forge/linux-64/certifi-2020.12.5-py36hd000896_1"
@@ -321,7 +279,30 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "cryptography": [
+   "cryptography/conda-forge/linux-64/cryptography-3.2.1-py37hc72a4ac_0",
+   "cryptography/conda-forge/linux-64/cryptography-3.3-py36h0a59100_0",
+   "cryptography/conda-forge/linux-64/cryptography-3.4.6-py38ha5dfef3_0",
+   "privy/conda-forge/noarch/privy-6.0.0-py_0"
+  ],
   "datetime": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "decorator": [
+   "decorator/conda-forge/noarch/decorator-4.3.0-py_0",
+   "decorator/conda-forge/noarch/decorator-4.3.2-py_0",
+   "decorator/conda-forge/noarch/decorator-4.4.0-py_0",
+   "decorator/conda-forge/noarch/decorator-4.4.1-py_0",
+   "decorator/conda-forge/noarch/decorator-4.4.2-py_0",
+   "decorator/conda-forge/noarch/decorator-5.0.2-pyhd8ed1ab_0",
+   "decorator/conda-forge/noarch/decorator-5.0.3-pyhd8ed1ab_0",
+   "decorator/conda-forge/noarch/decorator-5.0.4-pyhd8ed1ab_0",
+   "decorator/conda-forge/noarch/decorator-5.0.5-pyhd8ed1ab_0",
+   "decorator/conda-forge/noarch/decorator-5.0.6-pyhd8ed1ab_0",
+   "decorator/conda-forge/noarch/decorator-5.0.9-pyhd8ed1ab_0"
+  ],
+  "email": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -329,7 +310,14 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "future": [
+   "future/conda-forge/linux-64/future-0.16.0-py34_0"
+  ],
   "hmac": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "html": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -443,6 +431,10 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "telegram": [],
+  "threading": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "tornado": [
    "tornado/conda-forge/linux-64/tornado-4.4.3-py35_0",
    "tornado/conda-forge/linux-64/tornado-6.0.4-py38h1e0a361_2"
