@@ -6,6 +6,7 @@
   "matcher",
   "mpi4py.MPI.COMM_WORLD",
   "mpi4py.MPI.COMM_WORLD.rank",
+  "multiprocessing",
   "multiprocessing.Process",
   "multiprocessing.Queue",
   "multiprocessing.cpu_count",
@@ -19,8 +20,14 @@
   "os.remove",
   "os.system",
   "p",
+  "psutil",
+  "psutil.Process",
+  "resource",
+  "resource.RUSAGE_SELF",
+  "resource.getrusage",
   "six.moves.cStringIO",
   "six.moves.configparser.ConfigParser",
+  "socket",
   "socket.gethostname",
   "sys",
   "sys.path.append",
@@ -30,8 +37,12 @@
   "sys.stdout.flush",
   "testcase",
   "time",
+  "traceback",
+  "traceback.format_exc",
   "unittest.case._ExpectedFailure",
   "warnings.warn",
+  "webbrowser",
+  "webbrowser.get",
   "write"
  ],
  "deps": {
@@ -76,13 +87,6 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "psutil": [
-   "psutil/conda-forge/linux-64/psutil-5.7.3-py39h38d8fee_0"
-  ],
-  "resource": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "six": [
    "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
    "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0",
@@ -93,19 +97,11 @@
    "six/conda-forge/noarch/six-1.14.0-py_1",
    "six/conda-forge/noarch/six-1.16.0-pyh6c4a22f_0"
   ],
-  "socket": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "subprocess": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "tempfile": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "traceback": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -118,10 +114,6 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "warnings": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "webbrowser": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ]

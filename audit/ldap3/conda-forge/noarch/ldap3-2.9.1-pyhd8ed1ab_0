@@ -21,6 +21,7 @@
   "base.BaseStrategy.decode_request",
   "ber_decoder",
   "bytes.fromhex",
+  "calendar.timegm",
   "collections.Mapping",
   "collections.MutableMapping",
   "collections.abc.Mapping",
@@ -32,23 +33,42 @@
   "core.rdns.ReverseDnsSetting.REQUIRE_RESOLVE_ALL_ADDRESSES",
   "core.rdns.ReverseDnsSetting.REQUIRE_RESOLVE_IP_ADDRESSES_ONLY",
   "core.rdns.ReverseDnsSetting.SUPPORTED_VALUES",
+  "cryptography.hazmat.backends.default_backend",
+  "cryptography.hazmat.primitives.hashes",
+  "cryptography.hazmat.primitives.hashes.Hash",
+  "cryptography.hazmat.primitives.hashes.SHA256",
+  "cryptography.x509",
+  "cryptography.x509.load_der_x509_certificate",
+  "ctypes",
+  "ctypes.c_long",
   "cursor.Writer",
   "datetime.datetime.max.replace",
   "datetime.timedelta.max",
+  "decimal.Decimal",
   "decimal.InvalidOperation",
   "dict.__delitem__",
   "dict.__eq__",
   "dict.__setitem__",
   "dict.clear",
+  "formatter",
   "functools.reduce",
+  "future.types.newstr.newstr",
   "get_byte",
   "get_bytes",
+  "gssapi",
+  "gssapi.Credentials",
   "gssapi.MechType.kerberos",
+  "gssapi.Name",
   "gssapi.NameType.hostbased_service",
+  "gssapi.SecurityContext",
   "gssapi.exceptions.GSSError",
   "gssapi.exceptions.MissingContextError",
   "gssapi.raw.ChannelBindings",
+  "hashlib",
   "hashlib.md5",
+  "hashlib.new",
+  "hmac",
+  "hmac.new",
   "int.from_bytes",
   "io.StringIO",
   "ldap3.GSSAPI",
@@ -64,6 +84,7 @@
   "ldap3.abstract.__init__.STATUS_VIRTUAL",
   "ldap3.abstract.__init__.STATUS_WRITABLE",
   "ldap3.extend.__init__.ExtendedOperationContainer",
+  "locale.getpreferredencoding",
   "object.__getattr__",
   "object.__new__",
   "object.__repr__",
@@ -106,6 +127,7 @@
   "re.IGNORECASE",
   "re.UNICODE",
   "re.VERBOSE",
+  "socket",
   "socket.AF_INET",
   "socket.AF_INET6",
   "socket.AF_UNIX",
@@ -119,9 +141,11 @@
   "socket.SO_RCVTIMEO",
   "socket.error",
   "socket.gaierror",
+  "socket.getaddrinfo",
   "socket.gethostbyaddr",
   "socket.gethostname",
   "socket.inet_pton",
+  "socket.socket",
   "ssl.CERT_NONE",
   "ssl.CERT_OPTIONAL",
   "ssl.CERT_REQUIRED",
@@ -145,6 +169,7 @@
   "sys.stdout.encoding",
   "unicode",
   "unicodedata.ucd_3_2_0.normalize",
+  "urllib.parse.unquote",
   "urllib.unquote",
   "utils.asn1.decoder.decode",
   "utils.ntlm.NtlmClient",
@@ -181,10 +206,6 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "calendar": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "collections": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -193,48 +214,11 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "cryptography": [
-   "cryptography/conda-forge/linux-64/cryptography-3.2.1-py37hc72a4ac_0",
-   "cryptography/conda-forge/linux-64/cryptography-3.3-py36h0a59100_0",
-   "cryptography/conda-forge/linux-64/cryptography-3.4.6-py38ha5dfef3_0",
-   "privy/conda-forge/noarch/privy-6.0.0-py_0"
-  ],
-  "ctypes": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "datetime": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "decimal": [
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "formatter": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "future": [
-   "future/conda-forge/linux-64/future-0.16.0-py34_0"
-  ],
-  "gssapi": [
-   "python-gssapi/conda-forge/linux-64/python-gssapi-1.6.11-py36h270a780_0",
-   "python-gssapi/conda-forge/linux-64/python-gssapi-1.6.11-py39h24a2b69_0",
-   "python-gssapi/conda-forge/linux-64/python-gssapi-1.6.9-py37h74a8448_1"
-  ],
-  "hashlib": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "hmac": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "json": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "locale": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -280,10 +264,6 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "socket": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "ssl": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -305,10 +285,6 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "unicodedata": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "urllib": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],

@@ -37,10 +37,13 @@
   "colors.ColorChoice.srgbClr",
   "colors.ColorChoice.sysClr",
   "datetime.datetime.strftime",
+  "decimal.Decimal",
+  "defusedxml",
   "defusedxml.ElementTree.fromstring",
   "defusedxml.ElementTree.iterparse",
   "dict.fromkeys",
   "dimensions.SheetDimension.from_tree",
+  "et_xmlfile.xmlfile",
   "func1",
   "functools.partial",
   "geometry.Point2D.x",
@@ -55,8 +58,13 @@
   "geometry.Transform2D.off",
   "geometry.Transform2D.rot",
   "get_rel",
+  "hashlib",
   "io.BytesIO",
   "itertools.chain.from_iterable",
+  "jdcal.MJD_0",
+  "jdcal.gcal2jd",
+  "jdcal.jd2gcal",
+  "keyword.kwlist",
   "list.append",
   "lxml.etree.Element",
   "lxml.etree.LXML_VERSION",
@@ -67,6 +75,11 @@
   "lxml.etree.register_namespace",
   "lxml.etree.tostring",
   "lxml.etree.xmlfile",
+  "math",
+  "math.ceil",
+  "math.isinf",
+  "math.isnan",
+  "mimetypes.MimeTypes",
   "named_styles.NamedStyle.from_tree",
   "numbers.BUILTIN_FORMATS.get",
   "numbers.NumberFormat",
@@ -151,6 +164,8 @@
   "os.remove",
   "pagebreak.ColBreak.from_tree",
   "pagebreak.RowBreak.from_tree",
+  "pandas",
+  "pandas.Timestamp",
   "protection.SheetProtection.from_tree",
   "re.DOTALL",
   "re.I",
@@ -166,6 +181,8 @@
   "tokenizer.Token.LITERAL",
   "tokenizer.Token.OPERAND",
   "tokenizer.Token.RANGE",
+  "traceback",
+  "traceback.format_exc",
   "type.__new__",
   "warnings.warn",
   "weakref.ref",
@@ -190,6 +207,13 @@
   "worksheet.Worksheet.rows",
   "worksheet.Worksheet.sheet_view",
   "worksheet.Worksheet.values",
+  "xml.etree.ElementTree.Element",
+  "xml.etree.ElementTree.QName",
+  "xml.etree.ElementTree.SubElement",
+  "xml.etree.ElementTree.fromstring",
+  "xml.etree.ElementTree.iterparse",
+  "xml.etree.ElementTree.register_namespace",
+  "xml.etree.ElementTree.tostring",
   "zipfile.BadZipfile"
  ],
  "deps": {
@@ -218,45 +242,11 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "decimal": [
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "defusedxml": [
-   "defusedxml/conda-forge/noarch/defusedxml-0.5.0-py_1",
-   "defusedxml/conda-forge/noarch/defusedxml-0.6.0-py_0",
-   "defusedxml/conda-forge/noarch/defusedxml-0.7.0-pyhd8ed1ab_0",
-   "defusedxml/conda-forge/noarch/defusedxml-0.7.1-pyhd8ed1ab_0"
-  ],
-  "et_xmlfile": [
-   "et-xmlfile/conda-forge/noarch/et-xmlfile-1.0.1-py_0",
-   "et_xmlfile/conda-forge/noarch/et_xmlfile-1.0.1-py_1001"
-  ],
   "functools": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "hashlib": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "inspect": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "jdcal": [
-   "jdcal/conda-forge/linux-64/jdcal-1.4-py36_0",
-   "jdcal/conda-forge/noarch/jdcal-1.4-py_1",
-   "jdcal/conda-forge/noarch/jdcal-1.4.1-py_0"
-  ],
-  "keyword": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "math": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "mimetypes": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -277,7 +267,6 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "pandas": [],
   "posixpath": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -290,19 +279,11 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "traceback": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "warnings": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "weakref": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "xml": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
