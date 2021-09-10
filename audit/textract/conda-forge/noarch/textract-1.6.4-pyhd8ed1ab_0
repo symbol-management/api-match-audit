@@ -1,28 +1,67 @@
 {
  "bad": [
+  "bs4.BeautifulSoup",
+  "chardet",
+  "chardet.detect",
+  "csv",
+  "csv.reader",
+  "docx2txt",
+  "docx2txt.process",
+  "ebooklib.ITEM_DOCUMENT",
+  "ebooklib.epub",
+  "ebooklib.epub.read_epub",
+  "email.parser.Parser",
+  "encodings",
   "encodings.__file__",
   "encodings.aliases.aliases.values",
   "errno",
   "exceptions.ExtensionNotSupported",
   "exceptions.MissingFileError",
   "exceptions.ShellError",
+  "extract_msg",
+  "extract_msg.Message",
+  "glob",
+  "glob.glob",
   "os.close",
   "os.listdir",
   "os.path.exists",
   "os.remove",
+  "pkgutil",
+  "pkgutil.walk_packages",
+  "pptx",
+  "pptx.Presentation",
+  "re",
+  "re.compile",
+  "re.match",
+  "re.sub",
+  "shutil",
+  "shutil.rmtree",
+  "six",
+  "six.PY3",
+  "six.b",
   "six.moves.xrange",
+  "six.string_types",
+  "six.text_type",
+  "speech_recognition",
+  "speech_recognition.Recognizer",
+  "speech_recognition.UnknownValueError",
+  "speech_recognition.WavFile",
+  "subprocess",
+  "subprocess.PIPE",
+  "subprocess.Popen",
   "sys",
   "sys.stdin.fileno",
   "sys.stdout.fileno",
+  "tempfile",
+  "tempfile.mkdtemp",
+  "tempfile.mkstemp",
   "textract.parsers.__init__.DEFAULT_OUTPUT_ENCODING",
   "textract.parsers.__init__.EXTENSION_SYNONYMS",
-  "textract.parsers.__init__._FILENAME_SUFFIX"
+  "textract.parsers.__init__._FILENAME_SUFFIX",
+  "zipfile",
+  "zipfile.ZipFile"
  ],
  "deps": {
-  "_csv": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "argcomplete": [
    "argcomplete/conda-forge/noarch/argcomplete-1.10.0-py_0",
    "argcomplete/conda-forge/noarch/argcomplete-1.10.1-py_0",
@@ -38,53 +77,7 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "bs4": [
-   "beautifulsoup4/conda-forge/linux-64/beautifulsoup4-4.7.1-py37_1001",
-   "beautifulsoup4/conda-forge/linux-64/beautifulsoup4-4.8.2-py37_0",
-   "beautifulsoup4/conda-forge/noarch/beautifulsoup4-4.9.3-pyhb0f4dca_0"
-  ],
-  "chardet": [
-   "chardet/conda-forge/linux-64/chardet-3.0.2-py35_1",
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0"
-  ],
-  "csv": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "distutils": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "docx2txt": [
-   "docx2txt/conda-forge/noarch/docx2txt-0.7-py_1",
-   "docx2txt/conda-forge/noarch/docx2txt-0.8-py_0"
-  ],
-  "ebooklib": [
-   "ebooklib/conda-forge/noarch/ebooklib-0.16-py_0",
-   "ebooklib/conda-forge/noarch/ebooklib-0.17-py_0"
-  ],
-  "email": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "encodings": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "extract_msg": [
-   "msg-extractor/conda-forge/noarch/msg-extractor-0.23.2-py_0",
-   "msg-extractor/conda-forge/noarch/msg-extractor-0.23.3-pyh8c360ce_0",
-   "msg-extractor/conda-forge/noarch/msg-extractor-0.24.4-pyh9f0ad1d_0",
-   "msg-extractor/conda-forge/noarch/msg-extractor-0.25.3-pyh9f0ad1d_0",
-   "msg-extractor/conda-forge/noarch/msg-extractor-0.26.2-pyh9f0ad1d_0",
-   "msg-extractor/conda-forge/noarch/msg-extractor-0.27.13-pyhd3deb0d_0",
-   "msg-extractor/conda-forge/noarch/msg-extractor-0.27.14-pyhd3deb0d_0",
-   "msg-extractor/conda-forge/noarch/msg-extractor-0.27.5-pyh9f0ad1d_0",
-   "msg-extractor/conda-forge/noarch/msg-extractor-0.27.7-pyh9f0ad1d_0",
-   "msg-extractor/conda-forge/noarch/msg-extractor-0.28.0-pyhd3deb0d_1"
-  ],
-  "glob": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -105,49 +98,6 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "pkgutil": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "pptx": [
-   "python-pptx/conda-forge/linux-64/python-pptx-0.6.5-py27_1",
-   "python-pptx/conda-forge/noarch/python-pptx-0.6.10-py_0",
-   "python-pptx/conda-forge/noarch/python-pptx-0.6.10-py_1",
-   "python-pptx/conda-forge/noarch/python-pptx-0.6.11-py_0",
-   "python-pptx/conda-forge/noarch/python-pptx-0.6.18-py_0",
-   "python-pptx/conda-forge/noarch/python-pptx-0.6.8-py_0",
-   "python-pptx/conda-forge/noarch/python-pptx-0.6.9-py_0"
-  ],
-  "re": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "shutil": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "six": [
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0",
-   "lldb/conda-forge/linux-64/lldb-6.0.0-py35_0",
-   "privy/conda-forge/noarch/privy-6.0.0-py_0",
-   "six/conda-forge/linux-64/six-1.10.0-py34_0",
-   "six/conda-forge/linux-64/six-1.10.0-py34_1",
-   "six/conda-forge/noarch/six-1.14.0-py_1",
-   "six/conda-forge/noarch/six-1.16.0-pyh6c4a22f_0"
-  ],
-  "speech_recognition": [
-   "speechrecognition/conda-forge/linux-64/speechrecognition-3.6.3-py36_0",
-   "speechrecognition/conda-forge/linux-64/speechrecognition-3.6.3-py36_1000"
-  ],
-  "subprocess": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "tempfile": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "xlrd": [
    "xlrd/conda-forge/noarch/xlrd-1.1.0-py_2",
    "xlrd/conda-forge/noarch/xlrd-1.2.0-py_0",
@@ -155,10 +105,6 @@
    "xlrd/conda-forge/noarch/xlrd-2.0.1-pyhd8ed1ab_3"
   ],
   "xml": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "zipfile": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ]

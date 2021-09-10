@@ -2,6 +2,8 @@
  "bad": [
   "arcsin",
   "arctan2",
+  "cProfile",
+  "cProfile.runctx",
   "common.eps",
   "common.expand_all_paths",
   "common.load_spectrum",
@@ -12,12 +14,22 @@
   "deg2rad",
   "fileio.IO",
   "forward.ForwardModel",
+  "glob.glob",
   "hashlib.md5",
   "initialize",
   "inverse.Inversion",
   "inverse.Inversion.invert",
+  "logging",
+  "logging.basicConfig",
+  "logging.debug",
+  "logging.error",
+  "logging.info",
+  "logging.warning",
+  "main",
+  "multiprocessing",
   "multiprocessing.Pool",
   "multiprocessing.cpu_count",
+  "numba.jit",
   "numpy.arccos",
   "numpy.arcsin",
   "numpy.arctan",
@@ -48,9 +60,12 @@
   "pylab.ylabel",
   "pylab.ylim",
   "rad2deg",
+  "re",
+  "re.findall",
   "recursive_expand",
   "rt_libradtran.LibRadTranRT",
   "rt_lut.TabularRT.build_lut",
+  "scipy",
   "scipy.Inf",
   "scipy.all",
   "scipy.arange",
@@ -75,8 +90,22 @@
   "scipy.int32",
   "scipy.int64",
   "scipy.interp",
+  "scipy.interpolate.RegularGridInterpolator",
+  "scipy.interpolate.interp1d",
+  "scipy.io.loadmat",
+  "scipy.io.savemat",
   "scipy.isfinite",
   "scipy.isnan",
+  "scipy.linalg.LinAlgError",
+  "scipy.linalg.block_diag",
+  "scipy.linalg.cholesky",
+  "scipy.linalg.det",
+  "scipy.linalg.inv",
+  "scipy.linalg.norm",
+  "scipy.linalg.pinv",
+  "scipy.linalg.qr",
+  "scipy.linalg.sqrtm",
+  "scipy.linalg.svd",
   "scipy.linspace",
   "scipy.loadtxt",
   "scipy.log",
@@ -91,12 +120,22 @@
   "scipy.nan",
   "scipy.newaxis",
   "scipy.ones",
+  "scipy.optimize",
+  "scipy.optimize.least_squares",
+  "scipy.optimize.minimize",
+  "scipy.optimize.minimize_scalar",
   "scipy.pi",
   "scipy.prod",
+  "scipy.rand",
   "scipy.real",
   "scipy.savetxt",
+  "scipy.signal.convolve",
+  "scipy.signal.gaussian",
+  "scipy.signal.medfilt",
   "scipy.sqrt",
   "scipy.squeeze",
+  "scipy.stats.multivariate_normal",
+  "scipy.stats.norm",
   "scipy.stats.norm.pdf",
   "scipy.sum",
   "scipy.uint16",
@@ -107,6 +146,7 @@
   "scipy.zeros",
   "sin",
   "sqrt",
+  "subprocess",
   "surf_multicomp.MultiComponentSurface.Sa",
   "surf_multicomp.MultiComponentSurface.calc_lamb",
   "surf_multicomp.MultiComponentSurface.dLs_dsurface",
@@ -117,15 +157,13 @@
   "surf_multicomp.MultiComponentSurface.xa",
   "sys",
   "sys.path.append",
-  "time"
+  "time",
+  "warnings",
+  "warnings.filterwarnings"
  ],
  "deps": {
   "argparse": [
    "argparse/conda-forge/osx-64/argparse-1.4.0-py26_0",
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "cProfile": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -141,10 +179,6 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "glob": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "importlib": [
    "importlib/conda-forge/linux-64/importlib-1.0.4-py26_0",
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -154,26 +188,9 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "logging": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "main": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "multiprocessing": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "ntpath": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "numba": [
-   "numba/conda-forge/linux-64/numba-0.38.1-py36_0",
-   "numba/conda-forge/linux-64/numba-0.40.0-py35hf8a1672_0",
-   "numba/conda-forge/linux-64/numba-0.41.0-py27h637b7d7_1000"
   ],
   "numpy": [
    "numpy/conda-forge/linux-64/numpy-1.17.5-py36h95a1406_0",
@@ -192,25 +209,12 @@
    "matplotlib-base/conda-forge/linux-64/matplotlib-base-3.1.1-py38h250f245_2",
    "matplotlib/conda-forge/linux-64/matplotlib-1.5.3-np111py34_0"
   ],
-  "re": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "scipy": [],
   "spectral": [
    "spectral/conda-forge/noarch/spectral-0.20-py_0",
    "spectral/conda-forge/noarch/spectral-0.20-pyh9f0ad1d_1",
    "spectral/conda-forge/noarch/spectral-0.21-pyh9f0ad1d_0",
    "spectral/conda-forge/noarch/spectral-0.21-pyh9f0ad1d_1",
    "spectral/conda-forge/noarch/spectral-0.22.2-pyh44b312d_0"
-  ],
-  "subprocess": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "warnings": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "xxhash": [
    "python-xxhash/conda-forge/linux-64/python-xxhash-1.4.1-py38h516909a_0",

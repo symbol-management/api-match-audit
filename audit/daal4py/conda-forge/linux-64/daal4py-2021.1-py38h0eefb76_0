@@ -71,8 +71,19 @@
   "daal_extra_args_func",
   "functools.partial",
   "is_string",
+  "joblib.effective_n_jobs",
+  "logging",
+  "logging.basicConfig",
+  "logging.info",
   "make_ncg_funcs",
+  "math.ceil",
+  "math.sqrt",
+  "mkl_random",
   "mkl_random.RandomState",
+  "numbers",
+  "numbers.Integral",
+  "numbers.Number",
+  "numbers.Real",
   "numpy.arange",
   "numpy.double",
   "numpy.dtype",
@@ -103,11 +114,44 @@
   "numpy.square",
   "numpy.zeros",
   "os.environ.get",
+  "pandas",
+  "pandas.DataFrame",
+  "pandas.Int16Dtype",
+  "pandas.Int32Dtype",
+  "pandas.Int64Dtype",
+  "pandas.Int8Dtype",
+  "pandas.Series",
+  "pandas.UInt16Dtype",
+  "pandas.UInt32Dtype",
+  "pandas.UInt64Dtype",
+  "pandas.UInt8Dtype",
   "pandas.api.types.is_sparse",
+  "pandas.core.dtypes.cast.find_common_type",
+  "pandas.core.frame.DataFrame",
+  "pandas.core.series.Series",
+  "pandas.unique",
+  "platform",
+  "platform.system",
   "predict_alg",
   "predict_alg.compute",
   "predict_func",
   "runf",
+  "scipy.linalg",
+  "scipy.linalg.lstsq",
+  "scipy.optimize",
+  "scipy.optimize.fmin_l_bfgs_b",
+  "scipy.optimize.minimize",
+  "scipy.sparse",
+  "scipy.sparse.base.spmatrix",
+  "scipy.sparse.csr_matrix",
+  "scipy.sparse.issparse",
+  "scipy.sparse.isspmatrix",
+  "scipy.sparse.isspmatrix_csr",
+  "scipy.sparse.linalg.LinearOperator",
+  "scipy.spatial.distance",
+  "scipy.spatial.distance.cdist",
+  "scipy.spatial.distance.pdist",
+  "scipy.spatial.distance.squareform",
   "sklearn.cluster.KMeans.__doc__",
   "sklearn.cluster._k_means._labels_inertia",
   "sklearn.cluster._k_means._validate_center_shape",
@@ -200,6 +244,7 @@
   "sklearn.utils.extmath._safe_accumulator_op",
   "sklearn.utils.extmath.stable_cumsum",
   "sklearn.utils.fixes._object_dtype_isnan",
+  "sklearn.utils.fixes.sparse_lsqr",
   "sklearn.utils.multiclass._ovr_decision_function",
   "sklearn.utils.optimize._check_optimize_result",
   "sklearn.utils.optimize._newton_cg",
@@ -211,6 +256,9 @@
   "sys.stderr.write",
   "train_alg",
   "train_alg.compute",
+  "warnings",
+  "warnings.catch_warnings",
+  "warnings.simplefilter",
   "warnings.wanr",
   "warnings.warn"
  ],
@@ -236,33 +284,6 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "joblib": [
-   "joblib/conda-forge/noarch/joblib-0.12.1-py_0",
-   "joblib/conda-forge/noarch/joblib-0.12.2-py_0",
-   "joblib/conda-forge/noarch/joblib-0.12.4-py_0",
-   "joblib/conda-forge/noarch/joblib-0.13.1-py_0",
-   "joblib/conda-forge/noarch/joblib-0.13.2-py_0",
-   "joblib/conda-forge/noarch/joblib-0.14.0-py_0",
-   "joblib/conda-forge/noarch/joblib-0.14.1-py_0",
-   "joblib/conda-forge/noarch/joblib-0.17.0-py_0",
-   "joblib/conda-forge/noarch/joblib-1.0.0-pyhd8ed1ab_0",
-   "joblib/conda-forge/noarch/joblib-1.0.1-pyhd8ed1ab_0"
-  ],
-  "logging": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "math": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "mkl_random": [
-   "mkl_random/conda-forge/linux-64/mkl_random-1.1.0-py37hb3f55d8_0"
-  ],
-  "numbers": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "numpy": [
    "numpy/conda-forge/linux-64/numpy-1.17.5-py36h95a1406_0",
    "numpy/conda-forge/linux-64/numpy-1.18.4-py37h8960a57_0",
@@ -272,19 +293,9 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "pandas": [
-   "pandas/conda-forge/linux-64/pandas-1.2.2-py37h40f5888_0"
-  ],
-  "platform": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "runpy": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "scipy": [
-   "scipy/conda-forge/linux-64/scipy-0.17.1-np110py27_blas_openblas_202"
   ],
   "sklearn": [
    "scikit-learn/conda-forge/linux-64/scikit-learn-0.17.1-np110py27_blas_openblas_200",
@@ -292,10 +303,6 @@
    "scikit-learn/conda-forge/linux-64/scikit-learn-0.17.1-np111py35_blas_openblas_202"
   ],
   "timeit": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "warnings": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ]

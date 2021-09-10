@@ -16,9 +16,6 @@
   "_extract_properties",
   "_file_exists",
   "_nonefree",
-  "abc",
-  "abc.ABCMeta",
-  "abc.abstractmethod",
   "collections.defaultdict",
   "cut_attr_level",
   "datarobot.enums.CV_METHOD.DATETIME",
@@ -46,7 +43,6 @@
   "datarobot.enums.TREAT_AS_EXPONENTIAL.AUTO",
   "datarobot.enums.TREAT_AS_EXPONENTIAL.NEVER",
   "datarobot.ext.__init__.setup",
-  "datarobot.models.Project.get",
   "datarobot.models.blueprint.BlueprintTaskDocument.from_server_data",
   "datarobot.models.confusion_chart.ConfusionChart.from_server_data",
   "datarobot.models.lift_chart.LiftChart.from_server_data",
@@ -69,11 +65,6 @@
   "datarobot.utils.__init__.remove_empty_keys",
   "datarobot.utils.__init__.underscoreToCamel",
   "datarobot.utils.__init__.underscorize",
-  "dateutil.parser",
-  "dateutil.parser.parse",
-  "dateutil.tz",
-  "dateutil.tz.tzutc",
-  "distutils.version.LooseVersion",
   "enums.AUTOPILOT_MODE.FULL_AUTO",
   "enums.AUTOPILOT_MODE.MANUAL",
   "enums.AUTOPILOT_MODE.QUICK",
@@ -153,12 +144,6 @@
   "os.environ.get",
   "os.path.exists",
   "os.path.isfile",
-  "pandas",
-  "pandas.DataFrame",
-  "pandas.DataFrame.from_dict",
-  "pandas.DataFrame.from_records",
-  "pandas.concat",
-  "pprint.pformat",
   "predict_job.PredictJob.from_id",
   "prediction_dataset.PredictionDataset.from_server_data",
   "prediction_explanations.PredictionExplanations.from_location",
@@ -169,18 +154,20 @@
   "re.compile",
   "reason_codes.ReasonCodes.from_location",
   "reason_codes.ReasonCodesInitialization.from_server_data",
-  "requests",
-  "requests.Session",
-  "requests.adapters.HTTPAdapter",
-  "requests.adapters.Retry",
   "rest.DataRobotClientConfig.from_data",
   "rest.RESTClientObject.from_config",
   "ruleset.Ruleset.from_server_data",
+  "six",
+  "six.PY2",
   "six.StringIO",
+  "six.binary_type",
+  "six.iteritems",
   "six.moves.urllib.parse.quote",
   "six.moves.urllib_parse.parse_qs",
   "six.moves.urllib_parse.urlencode",
   "six.moves.urllib_parse.urlparse",
+  "six.reraise",
+  "six.string_types",
   "sys",
   "sys.modules.pop",
   "time",
@@ -189,16 +176,40 @@
   "utils.logger.get_logger",
   "utils.logger.info",
   "utils.retry.wait",
-  "warnings",
-  "warnings.filterwarnings",
   "warnings.warn"
  ],
  "deps": {
+  "abc": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "collections": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "datarobot": [
+   "datarobot/conda-forge/noarch/datarobot-2.12.2-py_0",
+   "datarobot/conda-forge/noarch/datarobot-2.13.0-py_0",
+   "datarobot/conda-forge/noarch/datarobot-2.14.0-py_0",
+   "datarobot/conda-forge/noarch/datarobot-2.14.1-py_0",
+   "datarobot/conda-forge/noarch/datarobot-2.18.0-py_0",
+   "datarobot/conda-forge/noarch/datarobot-2.20.2-pyh9f0ad1d_0",
+   "datarobot/conda-forge/noarch/datarobot-2.21.2-pyh9f0ad1d_0",
+   "datarobot/conda-forge/noarch/datarobot-2.21.5-pyh9f0ad1d_0",
+   "datarobot/conda-forge/noarch/datarobot-2.23.0-pyhd3deb0d_0"
+  ],
   "datetime": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "dateutil": [
+   "python-dateutil/conda-forge/noarch/python-dateutil-2.7.2-py_0",
+   "python-dateutil/conda-forge/noarch/python-dateutil-2.7.4-py_0",
+   "python-dateutil/conda-forge/noarch/python-dateutil-2.7.5-py_0",
+   "python-dateutil/conda-forge/noarch/python-dateutil-2.8.1-py_0",
+   "python-dateutil/conda-forge/noarch/python-dateutil-2.8.2-pyhd8ed1ab_0"
+  ],
+  "distutils": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -223,24 +234,22 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "pandas": [],
   "platform": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "pprint": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "requests": [
+   "requests/conda-forge/linux-64/requests-2.12.0-py35_0"
   ],
   "requests_toolbelt": [
    "requests-toolbelt/conda-forge/noarch/requests-toolbelt-0.8.0-py_1",
    "requests-toolbelt/conda-forge/noarch/requests-toolbelt-0.9.0-py_0",
    "requests-toolbelt/conda-forge/noarch/requests-toolbelt-0.9.1-py_0"
-  ],
-  "six": [
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0",
-   "lldb/conda-forge/linux-64/lldb-6.0.0-py35_0",
-   "privy/conda-forge/noarch/privy-6.0.0-py_0",
-   "six/conda-forge/linux-64/six-1.10.0-py34_0",
-   "six/conda-forge/linux-64/six-1.10.0-py34_1",
-   "six/conda-forge/noarch/six-1.14.0-py_1",
-   "six/conda-forge/noarch/six-1.16.0-pyh6c4a22f_0"
   ],
   "textwrap": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -248,6 +257,23 @@
   ],
   "trafaret": [
    "trafaret/conda-forge/noarch/trafaret-1.2.0-py_0"
+  ],
+  "urllib3": [
+   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
+   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0",
+   "urllib3/conda-forge/linux-64/urllib3-1.24.1-py37_1000",
+   "urllib3/conda-forge/linux-64/urllib3-1.25.7-py36_0",
+   "urllib3/conda-forge/linux-64/urllib3-1.25.8-py37hc8dfbb8_1",
+   "urllib3/conda-forge/noarch/urllib3-1.25.11-py_0",
+   "urllib3/conda-forge/noarch/urllib3-1.26.0-pyhd8ed1ab_0",
+   "urllib3/conda-forge/noarch/urllib3-1.26.2-pyhd8ed1ab_0",
+   "urllib3/conda-forge/noarch/urllib3-1.26.3-pyhd8ed1ab_0",
+   "urllib3/conda-forge/noarch/urllib3-1.26.5-pyhd8ed1ab_0",
+   "urllib3/conda-forge/noarch/urllib3-1.26.6-pyhd8ed1ab_0"
+  ],
+  "warnings": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "webbrowser": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",

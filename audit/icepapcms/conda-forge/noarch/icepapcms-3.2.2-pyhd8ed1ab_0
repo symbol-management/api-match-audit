@@ -6,6 +6,8 @@
   "Led.Led.ORANGE",
   "Led.Led.RED",
   "Led.Led.YELLOW",
+  "MySQLdb",
+  "MySQLdb.converters",
   "PyQt5.Qt",
   "PyQt5.Qt.QHeaderView.Custom",
   "PyQt5.Qt.QImage",
@@ -125,6 +127,7 @@
   "PyQt5.QtWidgets.QWidget.disconnect",
   "TreeItem",
   "array.array",
+  "configobj.ConfigObj",
   "conflict.Conflict.DRIVER_AUTOSOLVE_EXPERT",
   "conflict.Conflict.DRIVER_CHANGED",
   "conflict.Conflict.DRIVER_NOT_PRESENT",
@@ -140,10 +143,13 @@
   "gui.messagedialogs.MessageDialogs.showInformationMessage",
   "gui.messagedialogs.MessageDialogs.showWarningMessage",
   "gui.messagedialogs.MessageDialogs.showYesNoMessage",
+  "icepap.IcePAPController",
   "icepap.IcePAPController.ALL_AXES_VALID",
+  "icepap.Mode",
   "icepap.Mode.CONFIG",
   "icepap.Mode.OPER",
   "icepap.Mode.PROG",
+  "icepap.State",
   "icepap_treemodel.IcepapTreeModel.CRATE",
   "icepap_treemodel.IcepapTreeModel.DRIVER",
   "icepap_treemodel.IcepapTreeModel.DRIVER_CFG",
@@ -156,6 +162,8 @@
   "icepap_treemodel.IcepapTreeModel.SYSTEM_WARNING",
   "icepapdriver.IcepapDriver",
   "icepapdriver.IcepapDriver.addr",
+  "inspect",
+  "inspect.signature",
   "lib.Conflict.DRIVER_AUTOSOLVE",
   "lib.Conflict.DRIVER_AUTOSOLVE_EXPERT",
   "lib.Conflict.DRIVER_CHANGED",
@@ -164,6 +172,21 @@
   "lib.Conflict.NEW_DRIVER",
   "lib.Conflict.NO_CONFLICT",
   "lib.Conflict.NO_CONNECTION",
+  "logging",
+  "logging.CRITICAL",
+  "logging.DEBUG",
+  "logging.ERROR",
+  "logging.Filter",
+  "logging.Formatter",
+  "logging.INFO",
+  "logging.StreamHandler",
+  "logging.WARNING",
+  "logging.basicConfig",
+  "logging.getLogger",
+  "logging.handlers",
+  "logging.handlers.QueueHandler",
+  "logging.handlers.QueueListener",
+  "logging.handlers.RotatingFileHandler",
   "messagedialogs.MessageDialogs.showErrorMessage",
   "messagedialogs.MessageDialogs.showInformationMessage",
   "messagedialogs.MessageDialogs.showWarningMessage",
@@ -171,67 +194,37 @@
   "object.__new__",
   "os.mkdir",
   "os.path.exists",
+  "pkg_resources.DistributionNotFound",
+  "pkg_resources.get_distribution",
+  "pkg_resources.resource_filename",
   "pysqlite2.dbapi2",
-  "queue",
-  "queue.Empty",
-  "queue.Queue",
+  "re",
   "re.M",
+  "re.compile",
+  "re.match",
+  "re.sub",
   "six",
+  "socket",
   "socket.gethostbyname",
   "socket.gethostname",
-  "sqlite3.dbapi2",
-  "storm.database.Connection",
-  "storm.database.Connection.execute",
-  "storm.database.Database",
-  "storm.database.Result",
-  "storm.databases.dummy",
-  "storm.exceptions.DatabaseModuleError",
-  "storm.exceptions.OperationalError",
-  "storm.exceptions.wrap_exceptions",
-  "storm.expr.Insert",
-  "storm.expr.SQLToken",
-  "storm.expr.Select",
-  "storm.expr.Undef",
-  "storm.expr.compile",
   "storm.expr.compile.add_reserved_words",
   "storm.expr.compile.create_child",
   "storm.expr.compile.is_reserved_word",
   "storm.expr.compile.when",
-  "storm.expr.compile_select",
-  "storm.expr.is_safe_token",
-  "storm.locals.DateTime",
-  "storm.locals.Int",
-  "storm.locals.Reference",
-  "storm.locals.ReferenceSet",
-  "storm.locals.Store",
-  "storm.locals.Storm",
-  "storm.locals.Unicode",
-  "storm.locals.create_database",
-  "storm.uri.URI",
-  "storm.variables.Variable",
   "subprocess",
   "subprocess.Popen",
   "sys",
   "tempfile",
   "tempfile.TemporaryFile",
+  "threading",
+  "threading.Thread",
+  "threading.Thread.start",
   "time",
-  "validate.Validator",
-  "webbrowser",
-  "webbrowser.open",
-  "xml.dom.Node",
-  "xml.dom.Node.ELEMENT_NODE",
-  "xml.dom.minidom",
-  "xml.dom.minidom.getDOMImplementation",
-  "xml.dom.minidom.parse"
+  "xml.dom.Node.ELEMENT_NODE"
  ],
  "deps": {
   "IPy": [
    "ipy/conda-forge/noarch/ipy-1.01-pyhd8ed1ab_0"
-  ],
-  "MySQLdb": [
-   "mysql-python/conda-forge/linux-64/mysql-python-1.2.5-py27h7f98852_0",
-   "mysqlclient/conda-forge/linux-64/mysqlclient-1.3.13-py27_1000",
-   "mysqlclient/conda-forge/linux-64/mysqlclient-1.4.6-py27haf22ab1_1"
   ],
   "PyQt5": [
    "pyqt-impl/conda-forge/osx-64/pyqt-impl-5.12.3-py37h5ae2165_5",
@@ -248,19 +241,7 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "configobj": [
-   "configobj-dev/conda-forge/noarch/configobj-dev-2019.9.1-py_0",
-   "configobj/conda-forge/noarch/configobj-5.0.6-py_0"
-  ],
   "datetime": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "icepap": [
-   "icepap/conda-forge/noarch/icepap-3.6.1-pyhd8ed1ab_0",
-   "icepap/conda-forge/noarch/icepap-3.6.2-pyhd8ed1ab_0"
-  ],
-  "inspect": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -273,10 +254,6 @@
    "ldap3/conda-forge/noarch/ldap3-2.8.1-pyh9f0ad1d_0",
    "ldap3/conda-forge/noarch/ldap3-2.9.1-pyhd8ed1ab_0"
   ],
-  "logging": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "ntpath": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -285,24 +262,29 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "pkg_resources": [
-   "setuptools/conda-forge/linux-64/setuptools-40.6.1-py36_0",
-   "setuptools/conda-forge/linux-64/setuptools-46.3.0-py38h32f6830_0",
-   "setuptools/conda-forge/linux-64/setuptools-49.1.2-py38h32f6830_0"
-  ],
   "psycopg2": [
    "psycopg2/conda-forge/linux-64/psycopg2-2.8.4-py36h72c5cf5_0",
    "psycopg2/conda-forge/linux-64/psycopg2-2.9.1-py38h497a2fe_0"
   ],
-  "re": [
+  "queue": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "socket": [
+  "sqlite3": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "threading": [
+  "storm": [
+   "storm/conda-forge/win-64/storm-0.25-py36h68aa20f_0"
+  ],
+  "validate": [
+   "configobj/conda-forge/noarch/configobj-5.0.6-py_0"
+  ],
+  "webbrowser": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "xml": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],

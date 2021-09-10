@@ -3,6 +3,8 @@
   "QRW",
   "ResultWrapper",
   "_get_pk",
+  "aiomysql",
+  "aiomysql.create_pool",
   "aiopeewee.utils.alist",
   "cls",
   "cls.DoesNotExist",
@@ -23,17 +25,36 @@
   "cls.table_exists",
   "create_model_tables",
   "drop_model_tables",
+  "inspect.isawaitable",
   "model_to_dict",
+  "operator",
+  "operator.itemgetter",
   "peewee.AggregateQueryResultWrapper",
   "peewee.Clause",
+  "peewee.ColumnMetadata",
   "peewee.CompoundSelect",
+  "peewee.Database",
   "peewee.DeleteQuery",
   "peewee.DictQueryResultWrapper",
+  "peewee.ExceptionWrapper",
   "peewee.ExtQueryResultWrapper",
+  "peewee.Field",
+  "peewee.ForeignKeyField",
+  "peewee.ForeignKeyMetadata",
+  "peewee.ImproperlyConfigured",
+  "peewee.IndexMetadata",
   "peewee.InsertQuery",
+  "peewee.IntegrityError",
+  "peewee.Model",
+  "peewee.ModelAlias",
   "peewee.ModelQueryResultWrapper",
+  "peewee.MySQLDatabase",
   "peewee.NaiveQueryResultWrapper",
+  "peewee.Node",
   "peewee.NoopSelectQuery",
+  "peewee.OperationalError",
+  "peewee.Proxy",
+  "peewee.Query",
   "peewee.QueryResultWrapper",
   "peewee.R",
   "peewee.RESULTS_AGGREGATE_MODELS",
@@ -41,24 +62,34 @@
   "peewee.RESULTS_MODELS",
   "peewee.RESULTS_NAIVE",
   "peewee.RESULTS_TUPLES",
+  "peewee.RawQuery",
+  "peewee.SQL",
+  "peewee.SelectQuery",
   "peewee.TuplesQueryResultWrapper",
   "peewee.UpdateQuery",
+  "peewee._WriteQuery",
+  "peewee.basestring",
   "peewee.binary_construct",
+  "peewee.fn",
   "peewee.fn.DATE_TRUNC",
   "peewee.fn.EXTRACT",
+  "peewee.logger",
   "peewee.logger.debug",
+  "peewee.merge_dict",
+  "peewee.mysql",
   "peewee.mysql.Binary",
   "peewee.sort_models_topologically",
   "playhouse.fields.DeferredThroughModel",
   "playhouse.fields.ManyToManyField",
   "playhouse.fields.ManyToManyFieldDescriptor",
-  "playhouse.fields.ManyToManyQuery"
+  "playhouse.fields.ManyToManyQuery",
+  "playhouse.shortcuts._clone_set",
+  "re",
+  "re.sub",
+  "threading",
+  "uuid"
  ],
  "deps": {
-  "aiomysql": [
-   "aiomysql/conda-forge/noarch/aiomysql-0.0.20-py_1000",
-   "aiomysql/conda-forge/noarch/aiomysql-0.0.21-pyhd8ed1ab_0"
-  ],
   "asyncio": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -71,33 +102,7 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "inspect": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "json": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "operator": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "peewee": [
-   "peewee/conda-forge/linux-64/peewee-3.13.3-py38h48d9fe1_2"
-  ],
-  "playhouse": [
-   "peewee/conda-forge/linux-64/peewee-3.13.3-py38h48d9fe1_2"
-  ],
-  "re": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "threading": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "uuid": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ]

@@ -2,6 +2,8 @@
  "bad": [
   "all_whitespace",
   "any_types",
+  "chardet",
+  "chardet.detect",
   "checker_func",
   "collections.defaultdict",
   "collections.deque",
@@ -12,6 +14,19 @@
   "doc8.parser.parse_args",
   "doc8.parser.read",
   "doc8.parser.readfp",
+  "docutils.frontend",
+  "docutils.frontend.OptionParser",
+  "docutils.nodes",
+  "docutils.nodes.literal_block",
+  "docutils.nodes.section",
+  "docutils.nodes.subtitle",
+  "docutils.nodes.system_message",
+  "docutils.nodes.target",
+  "docutils.nodes.title",
+  "docutils.parsers",
+  "docutils.parsers.get_parser_class",
+  "docutils.utils",
+  "docutils.utils.new_document",
   "errno",
   "extension_matches",
   "extract_lines",
@@ -19,6 +34,12 @@
   "find_directive_end",
   "find_line",
   "gather_lines",
+  "glob",
+  "glob.iglob",
+  "logging",
+  "logging.DEBUG",
+  "logging.ERROR",
+  "logging.basicConfig",
   "mock.MagicMock",
   "mock.patch",
   "os.getcwd",
@@ -28,15 +49,31 @@
   "os.path.isfile",
   "parser_cls",
   "path_ignorable",
+  "pkg_resources",
+  "pkg_resources.get_distribution",
+  "re",
   "re.I",
   "re.MULTILINE",
+  "re.compile",
+  "re.match",
+  "re.search",
+  "shutil",
+  "shutil.rmtree",
+  "six",
   "six.StringIO",
+  "six.add_metaclass",
+  "six.iteritems",
+  "six.iterkeys",
   "six.moves.configparser",
   "six.moves.configparser.NoOptionError",
   "six.moves.configparser.NoSectionError",
   "six.moves.configparser.RawConfigParser",
+  "six.text_type",
   "starting_whitespace",
-  "sys"
+  "sys",
+  "tempfile",
+  "tempfile.NamedTemporaryFile",
+  "threading"
  ],
  "deps": {
   "abc": [
@@ -48,23 +85,7 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "chardet": [
-   "chardet/conda-forge/linux-64/chardet-3.0.2-py35_1",
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0"
-  ],
   "collections": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "docutils": [
-   "docutils/conda-forge/linux-64/docutils-0.16-py27h8c360ce_1"
-  ],
-  "glob": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "logging": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -90,35 +111,12 @@
    "pbr/conda-forge/noarch/pbr-5.5.1-pyh9f0ad1d_0",
    "pbr/conda-forge/noarch/pbr-5.6.0-pyhd8ed1ab_0"
   ],
-  "pkg_resources": [
-   "setuptools/conda-forge/linux-64/setuptools-40.6.1-py36_0",
-   "setuptools/conda-forge/linux-64/setuptools-46.3.0-py38h32f6830_0",
-   "setuptools/conda-forge/linux-64/setuptools-49.1.2-py38h32f6830_0"
-  ],
-  "re": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "restructuredtext_lint": [
    "restructuredtext_lint/conda-forge/noarch/restructuredtext_lint-1.1.3-py_0",
    "restructuredtext_lint/conda-forge/noarch/restructuredtext_lint-1.2.1-py_0",
    "restructuredtext_lint/conda-forge/noarch/restructuredtext_lint-1.2.2-py_0",
    "restructuredtext_lint/conda-forge/noarch/restructuredtext_lint-1.3.1-pyh9f0ad1d_0",
    "restructuredtext_lint/conda-forge/noarch/restructuredtext_lint-1.3.2-pyhd3deb0d_0"
-  ],
-  "shutil": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "six": [
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0",
-   "lldb/conda-forge/linux-64/lldb-6.0.0-py35_0",
-   "privy/conda-forge/noarch/privy-6.0.0-py_0",
-   "six/conda-forge/linux-64/six-1.10.0-py34_0",
-   "six/conda-forge/linux-64/six-1.10.0-py34_1",
-   "six/conda-forge/noarch/six-1.14.0-py_1",
-   "six/conda-forge/noarch/six-1.16.0-pyh6c4a22f_0"
   ],
   "stevedore": [
    "stevedore/conda-forge/noarch/stevedore-1.26.0-py_0",
@@ -128,17 +126,9 @@
    "stevedore/conda-forge/noarch/stevedore-1.29.0-py_0",
    "stevedore/conda-forge/noarch/stevedore-1.30.1-py_0"
   ],
-  "tempfile": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "testtools": [
    "testtools/conda-forge/noarch/testtools-2.3.0-py_1",
    "testtools/conda-forge/osx-64/testtools-2.2.0-py27_0"
-  ],
-  "threading": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ]
  }
 }

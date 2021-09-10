@@ -6,11 +6,27 @@
   "append.append.funcs",
   "append.append.register",
   "append.register",
+  "bcolz",
   "bcolz.carray",
+  "bcolz.ctable",
+  "bokeh.models.ColumnDataSource",
+  "bokeh.models.ColumnDataSource.from_df",
+  "boto",
+  "boto.Config",
+  "boto.connect_s3",
+  "boto.exception.S3ResponseError",
+  "bson.objectid.ObjectId",
   "bytes.strip",
+  "bz2",
+  "bz2.BZ2File",
   "chunks",
+  "codecs",
+  "codecs.iterdecode",
+  "codecs.open",
   "collections.Iterable",
   "collections.Iterator",
+  "contextlib.closing",
+  "contextlib.contextmanager",
   "convert.convert.graph.edge",
   "convert.convert.graph.edges",
   "convert.convert.graph.nodes",
@@ -50,6 +66,8 @@
   "func",
   "functools.partial",
   "gc",
+  "glob",
+  "glob.glob",
   "io.BytesIO",
   "io.StringIO",
   "iterate",
@@ -111,6 +129,11 @@
   "pytest.mark.skipif",
   "pytest.mark.xfail",
   "r",
+  "re",
+  "re.compile",
+  "re.match",
+  "re.search",
+  "re.sub",
   "reader",
   "redshift_sqlalchemy.dialect.CopyCommand",
   "resource.register",
@@ -118,6 +141,7 @@
   "rowterator",
   "s",
   "s3_bucket",
+  "six.string_types",
   "socket.error",
   "sqlalchemy.dialects.registry.load",
   "sqlalchemy.func.sum",
@@ -151,37 +175,7 @@
    "pytest/conda-forge/linux-64/pytest-4.6.0-py37_0",
    "pytest/conda-forge/linux-64/pytest-6.0.2-py37hc8dfbb8_0"
   ],
-  "bcolz": [
-   "bcolz/conda-forge/win-64/bcolz-1.2.1-py35h830ac7b_1"
-  ],
-  "bokeh": [
-   "bokeh/conda-forge/linux-64/bokeh-0.12.5-py36_2",
-   "bokeh/conda-forge/linux-64/bokeh-1.3.1-py27_0"
-  ],
-  "boto": [
-   "boto/conda-forge/noarch/boto-2.49.0-py_0"
-  ],
-  "bson": [
-   "bson/conda-forge/noarch/bson-0.5.4-py_1",
-   "bson/conda-forge/noarch/bson-0.5.7-py_0",
-   "bson/conda-forge/noarch/bson-0.5.8-py_0",
-   "bson/conda-forge/noarch/bson-0.5.9-py_0",
-   "pymongo/conda-forge/linux-64/pymongo-3.11.4-py39he80948d_0",
-   "pymongo/conda-forge/win-64/pymongo-3.11.4-py39h415ef7b_0"
-  ],
-  "bz2": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "codecs": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "collections": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "contextlib": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -225,10 +219,6 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "getpass": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "glob": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -343,26 +333,12 @@
    "pywebhdfs/conda-forge/linux-64/pywebhdfs-0.4.1-py35_0",
    "pywebhdfs/conda-forge/noarch/pywebhdfs-0.4.1-pyh9f0ad1d_2"
   ],
-  "re": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "sas7bdat": [
    "sas7bdat/conda-forge/noarch/sas7bdat-2.2.3-pyhd8ed1ab_0"
   ],
   "shutil": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "six": [
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0",
-   "lldb/conda-forge/linux-64/lldb-6.0.0-py35_0",
-   "privy/conda-forge/noarch/privy-6.0.0-py_0",
-   "six/conda-forge/linux-64/six-1.10.0-py34_0",
-   "six/conda-forge/linux-64/six-1.10.0-py34_1",
-   "six/conda-forge/noarch/six-1.14.0-py_1",
-   "six/conda-forge/noarch/six-1.16.0-pyh6c4a22f_0"
   ],
   "socket": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
