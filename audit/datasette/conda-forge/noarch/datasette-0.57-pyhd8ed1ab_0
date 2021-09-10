@@ -9,8 +9,16 @@
   "asgi_send_file",
   "asgi_send_html",
   "asgi_start",
+  "asyncio",
+  "asyncio.Task",
+  "asyncio.all_tasks",
+  "asyncio.get_event_loop",
+  "asyncio.iscoroutine",
+  "baseconv",
   "baseconv.base62.decode",
   "check_databases",
+  "click_default_group.DefaultGroup",
+  "concurrent.futures",
   "datasette.plugins.pm.hook.database_actions",
   "datasette.plugins.pm.hook.register_facet_classes",
   "datasette.plugins.pm.hook.render_cell",
@@ -71,6 +79,9 @@
   "datasette.utils.resolve_table_and_format",
   "datasette.utils.sqlite3.DatabaseError",
   "datasette.utils.sqlite3.OperationalError",
+  "datetime",
+  "datetime.datetime.utcnow",
+  "decorator",
   "dict.fromkeys",
   "extra_template_data",
   "filter.display",
@@ -79,15 +90,28 @@
   "filter.no_argument",
   "filter.where_clause",
   "fn",
+  "glob",
   "handler",
   "hashlib.md5",
   "hashlib.sha1",
   "hashlib.sha256",
   "http.cookies.Morsel._reserved",
+  "importlib",
+  "importlib.import_module",
   "inspect_",
   "itertools",
   "itertools.chain.from_iterable",
+  "json",
+  "json.JSONDecodeError",
+  "json.JSONEncoder",
+  "json.JSONEncoder.default",
+  "json.decoder.JSONDecodeError",
+  "json.dumps",
+  "json.load",
+  "json.loads",
   "klass",
+  "numbers",
+  "numbers.Number",
   "os.chdir",
   "os.getcwd",
   "os.link",
@@ -99,6 +123,10 @@
   "os.scandir",
   "os.symlink",
   "os.urandom",
+  "pathlib",
+  "pathlib.Path",
+  "pdb",
+  "pdb.post_mortem",
   "plugins.pm.hook",
   "plugins.pm.hook.actor_from_request",
   "plugins.pm.hook.asgi_wrapper",
@@ -117,10 +145,20 @@
   "receive",
   "send",
   "should_remove",
+  "shutil",
+  "shutil.Error",
+  "shutil.copy",
+  "shutil.copy2",
+  "shutil.copyfile",
+  "shutil.copystat",
+  "shutil.which",
   "sqlite.sqlite3.Cursor",
   "sqlite.sqlite3.OperationalError",
   "sqlite.sqlite3.Row",
   "sqlite.sqlite3.connect",
+  "subprocess.call",
+  "subprocess.check_call",
+  "subprocess.check_output",
   "sys",
   "sys.stderr.flush",
   "sys.stderr.write",
@@ -135,9 +173,6 @@
   "utils.sqlite3.DatabaseError",
   "utils.sqlite3.OperationalError",
   "utils.sqlite3.connect",
-  "uuid",
-  "uuid.NAMESPACE_DNS",
-  "uuid.uuid5",
   "view",
   "views.base.ureg.define",
   "views.database.DatabaseDownload.as_view",
@@ -155,9 +190,6 @@
   "wrapper"
  ],
  "deps": {
-  "_asyncio": [
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "_csv": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -188,15 +220,9 @@
    "asgiref/conda-forge/noarch/asgiref-3.2.8-py_0",
    "asgiref/conda-forge/noarch/asgiref-3.3.4-pyhd8ed1ab_0"
   ],
-  "asyncio": [
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "base64": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "baseconv": [
-   "python-baseconv/conda-forge/noarch/python-baseconv-1.2.2-pyhd8ed1ab_0"
   ],
   "click": [
    "click/conda-forge/noarch/click-5.1-py_0",
@@ -205,18 +231,7 @@
    "click/conda-forge/noarch/click-7.1-pyh8c360ce_0",
    "click/conda-forge/noarch/click-7.1.1-pyh8c360ce_0"
   ],
-  "click_default_group": [
-   "click-default-group/conda-forge/noarch/click-default-group-1.2-py_0",
-   "click-default-group/conda-forge/noarch/click-default-group-1.2.1-py_0",
-   "click-default-group/conda-forge/noarch/click-default-group-1.2.2-pyhd8ed1ab_1"
-  ],
   "collections": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "concurrent": [
-   "futures/conda-forge/linux-64/futures-3.2.0-py27_0",
-   "futures/conda-forge/osx-64/futures-3.3.0-py27h8c360ce_1",
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -225,27 +240,6 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "csv": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "datetime": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "decorator": [
-   "decorator/conda-forge/noarch/decorator-4.3.0-py_0",
-   "decorator/conda-forge/noarch/decorator-4.3.2-py_0",
-   "decorator/conda-forge/noarch/decorator-4.4.0-py_0",
-   "decorator/conda-forge/noarch/decorator-4.4.1-py_0",
-   "decorator/conda-forge/noarch/decorator-4.4.2-py_0",
-   "decorator/conda-forge/noarch/decorator-5.0.2-pyhd8ed1ab_0",
-   "decorator/conda-forge/noarch/decorator-5.0.3-pyhd8ed1ab_0",
-   "decorator/conda-forge/noarch/decorator-5.0.4-pyhd8ed1ab_0",
-   "decorator/conda-forge/noarch/decorator-5.0.5-pyhd8ed1ab_0",
-   "decorator/conda-forge/noarch/decorator-5.0.6-pyhd8ed1ab_0",
-   "decorator/conda-forge/noarch/decorator-5.0.9-pyhd8ed1ab_0"
-  ],
-  "glob": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -270,11 +264,6 @@
    "hupper/conda-forge/noarch/hupper-1.6.1-py_0",
    "hupper/conda-forge/noarch/hupper-1.8.1-py_0"
   ],
-  "importlib": [
-   "importlib/conda-forge/linux-64/importlib-1.0.4-py26_0",
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "inspect": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -291,10 +280,6 @@
    "jinja2/conda-forge/noarch/jinja2-2.11.3-pyh44b312d_0",
    "jinja2/conda-forge/noarch/jinja2-3.0.0-pyhd8ed1ab_0",
    "jinja2/conda-forge/noarch/jinja2-3.0.1-pyhd8ed1ab_0"
-  ],
-  "json": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "markupsafe": [
    "markupsafe/conda-forge/linux-64/markupsafe-2.0.0-py36h70b1f00_0"
@@ -313,26 +298,7 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "numbers": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "os": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "pathlib": [
-   "pathlib/conda-forge/noarch/pathlib-1.0.1-py_1",
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "pdb": [
-   "pdbpp/conda-forge/noarch/pdbpp-0.9.12-py_0",
-   "pdbpp/conda-forge/noarch/pdbpp-0.9.14-py_0",
-   "pdbpp/conda-forge/noarch/pdbpp-0.9.15-py_0",
-   "pdbpp/conda-forge/noarch/pdbpp-0.9.5-py_1",
-   "pdbpp/conda-forge/noarch/pdbpp-0.9.6-py_0",
-   "pdbpp/conda-forge/noarch/pdbpp-0.9.8-py_0",
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -379,15 +345,7 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "shutil": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "sqlite3": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "subprocess": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -412,6 +370,10 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "urllib": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "uuid": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],

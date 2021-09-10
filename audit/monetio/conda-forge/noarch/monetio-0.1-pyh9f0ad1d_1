@@ -33,16 +33,33 @@
   "cems_mod.CEMS",
   "checkmodc",
   "combine_cdump",
+  "datetime",
+  "datetime.datetime",
+  "datetime.datetime.now",
   "datetime.datetime.strftime",
+  "datetime.datetime.strptime",
+  "datetime.timedelta",
   "epa_util.read_monitor_file",
   "find_stackht",
   "findquarter",
   "fv3grid",
   "fv3grid.get_fv3_grid",
   "getmass",
+  "glob.glob",
   "hysp_thresh",
   "improve_mod.IMPROVE",
+  "json",
+  "json.loads",
   "lme_getmass",
+  "matplotlib.colors.ListedColormap",
+  "matplotlib.pyplot",
+  "matplotlib.pyplot.gca",
+  "matplotlib.pyplot.plot",
+  "matplotlib.pyplot.show",
+  "matplotlib.pyplot.subplots",
+  "matplotlib.pyplot.tight_layout",
+  "matplotlib.pyplot.xlabel",
+  "matplotlib.pyplot.ylabel",
   "models.camx",
   "models.cmaq",
   "models.fv3chem",
@@ -91,36 +108,21 @@
   "process_unit_time",
   "profile.icartt",
   "profile.tolnet",
-  "requests",
-  "requests.Session",
-  "requests.exceptions.HTTPError",
-  "requests.get",
-  "requests.head",
-  "requests.utils.urlparse",
+  "shutil",
+  "shutil.copyfileobj",
   "sinu",
   "str.join",
+  "subprocess",
+  "subprocess.Popen",
+  "subprocess.run",
   "sys",
   "sys.stderr.flush",
   "time",
   "timefilter",
   "tostr",
   "unpack_response",
-  "urllib.parse.quote",
   "utc",
-  "util.long_to_wide",
-  "wget",
-  "wget.download",
-  "xarray",
-  "xarray.DataArray",
-  "xarray.Dataset",
-  "xarray.Dataset.from_dataframe",
-  "xarray.align",
-  "xarray.auto_combine",
-  "xarray.concat",
-  "xarray.core.dataset.Dataset",
-  "xarray.merge",
-  "xarray.open_dataset",
-  "xarray.open_mfdataset"
+  "util.long_to_wide"
  ],
  "deps": {
   "__future__": [
@@ -174,10 +176,6 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "glob": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "gzip": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -190,15 +188,6 @@
   "inspect": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "json": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "matplotlib": [
-   "matplotlib-base/conda-forge/linux-64/matplotlib-base-3.1.1-py37hfd891ef_0",
-   "matplotlib-base/conda-forge/linux-64/matplotlib-base-3.1.1-py38h250f245_2",
-   "matplotlib/conda-forge/linux-64/matplotlib-1.5.3-np111py34_0"
   ],
   "netrc": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -237,6 +226,16 @@
    "pyresample/conda-forge/linux-64/pyresample-1.5.0-np113py36_0",
    "pyresample/conda-forge/linux-64/pyresample-1.9.1-py36_0"
   ],
+  "requests": [
+   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
+   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0",
+   "requests/conda-forge/linux-64/requests-2.12.0-py35_0",
+   "requests/conda-forge/noarch/requests-2.23.0-pyh8c360ce_2",
+   "requests/conda-forge/noarch/requests-2.24.0-pyh9f0ad1d_0",
+   "requests/conda-forge/noarch/requests-2.25.0-pyhd3deb0d_0",
+   "requests/conda-forge/noarch/requests-2.25.1-pyhd3deb0d_0",
+   "requests/conda-forge/noarch/requests-2.26.0-pyhd8ed1ab_0"
+  ],
   "scipy": [
    "scipy/conda-forge/linux-64/scipy-0.17.1-np110py27_blas_openblas_202",
    "scipy/conda-forge/linux-64/scipy-1.7.0-py37h29e03ee_0",
@@ -249,10 +248,6 @@
    "seaborn/conda-forge/noarch/seaborn-0.10.0-py_1",
    "seaborn/conda-forge/noarch/seaborn-0.10.1-py_0",
    "seaborn/conda-forge/noarch/seaborn-0.9.0-py_0"
-  ],
-  "shutil": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "six": [
    "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
@@ -268,10 +263,6 @@
    "statsmodels/conda-forge/linux-64/statsmodels-0.9.0-py27h7eb728f_0",
    "statsmodels/conda-forge/linux-64/statsmodels-0.9.0-py36h7eb728f_0"
   ],
-  "subprocess": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "suds": [
    "suds-community/conda-forge/noarch/suds-community-0.8.4-pyh9f0ad1d_0",
    "suds-community/conda-forge/noarch/suds-community-0.8.5-pyhd8ed1ab_0",
@@ -282,6 +273,19 @@
    "suds-py3/conda-forge/noarch/suds-py3-1.4.1.0-pyhd8ed1ab_0",
    "suds-py3/conda-forge/noarch/suds-py3-1.4.2.0-pyhd8ed1ab_0",
    "suds-py3/conda-forge/noarch/suds-py3-1.4.3.0-pyhd8ed1ab_0"
+  ],
+  "urllib": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "wget": [
+   "python-wget/conda-forge/noarch/python-wget-3.2-py_0"
+  ],
+  "xarray": [
+   "xarray/conda-forge/noarch/xarray-0.13.0-py_0",
+   "xarray/conda-forge/noarch/xarray-0.14.1-py_0",
+   "xarray/conda-forge/noarch/xarray-0.15.0-py_0",
+   "xarray/conda-forge/noarch/xarray-0.15.1-py_0"
   ]
  }
 }

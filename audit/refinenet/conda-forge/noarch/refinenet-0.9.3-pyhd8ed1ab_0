@@ -23,6 +23,11 @@
   "numpy.zeros",
   "opt_fn",
   "os.path.exists",
+  "pickle.dump",
+  "pycocotools.coco",
+  "pycocotools.mask",
+  "pycocotools.mask.decode",
+  "pycocotools.mask.frPyObjects",
   "pycocotools.mask.sum",
   "refinenet.RefineNet.COLORMAP_PRESETS",
   "refinenet.RefineNet.MODEL_TYPES",
@@ -33,30 +38,55 @@
   "six.moves.urllib.request.urlretrieve",
   "sys",
   "sys.stderr.write",
+  "torch",
   "torch.LongTensor",
+  "torch.Tensor",
+  "torch.argmax",
   "torch.cat",
+  "torch.cuda.is_available",
   "torch.device",
   "torch.float",
   "torch.float32",
   "torch.from_numpy",
   "torch.int64",
+  "torch.is_tensor",
+  "torch.load",
   "torch.log",
   "torch.logical_and",
   "torch.mean",
+  "torch.nn",
+  "torch.nn.BatchNorm2d",
+  "torch.nn.Conv2d",
+  "torch.nn.Module",
+  "torch.nn.NLLLoss",
+  "torch.nn.functional",
+  "torch.nn.functional.interpolate",
+  "torch.nn.functional.relu",
+  "torch.nn.functional.softmax",
+  "torch.no_grad",
   "torch.ones_like",
+  "torch.optim.Adam",
+  "torch.optim.SGD",
+  "torch.optim.lr_scheduler.StepLR",
+  "torch.save",
   "torch.squeeze",
   "torch.unsqueeze",
-  "torch.zeros"
+  "torch.utils.data.DataLoader",
+  "torch.utils.data.Dataset",
+  "torch.utils.data.dataset.Dataset",
+  "torch.zeros",
+  "torchvision.transforms",
+  "torchvision.transforms.Compose",
+  "torchvision.transforms.Normalize",
+  "torchvision.transforms.RandomHorizontalFlip",
+  "torchvision.transforms.RandomResizedCrop",
+  "torchvision.transforms.ToTensor"
  ],
  "deps": {
   "PIL": [
    "pillow/conda-forge/linux-64/pillow-6.2.1-py36hd70f55b_1",
    "pillow/conda-forge/linux-64/pillow-7.0.0-py36h8328e55_1",
    "pillow/conda-forge/linux-64/pillow-7.2.0-py37h718be6c_1"
-  ],
-  "_pickle": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "acrv_datasets": [
    "acrv_datasets/conda-forge/noarch/acrv_datasets-0.9.2-pyhd8ed1ab_0",
@@ -89,10 +119,6 @@
    "setuptools/conda-forge/linux-64/setuptools-46.3.0-py38h32f6830_0",
    "setuptools/conda-forge/linux-64/setuptools-49.1.2-py38h32f6830_0"
   ],
-  "pycocotools": [
-   "pycocotools/conda-forge/linux-64/pycocotools-2.0.0-py36h516909a_1001",
-   "pycocotools/conda-forge/linux-64/pycocotools-2.0.1-py36h8c4c3a4_1"
-  ],
   "random": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -113,12 +139,6 @@
   "timeit": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "torch": [
-   "pytorch-cpu/conda-forge/win-64/pytorch-cpu-1.0.1-py36ha925a31_0"
-  ],
-  "torchvision": [
-   "torchvision/conda-forge/linux-64/torchvision-0.9.1-py38cuda110hd0a72be_1_cuda"
   ],
   "tqdm": [
    "tqdm/conda-forge/noarch/tqdm-4.38.0-py_2",
