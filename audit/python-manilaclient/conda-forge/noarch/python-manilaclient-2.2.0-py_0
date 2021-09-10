@@ -27,7 +27,16 @@
   "is_table_border",
   "isbound",
   "itertools",
+  "keystoneauth1.adapter",
+  "keystoneauth1.fixture",
   "keystoneauth1.fixture.DiscoveryList",
+  "keystoneauth1.fixture.V2Token",
+  "keystoneauth1.fixture.V3Token",
+  "keystoneauth1.session",
+  "keystoneauth1.session.Session",
+  "keystoneauth1.session.discover.Discover",
+  "keystoneclient.client",
+  "keystoneclient.client.Client",
   "manilaclient.API_MAX_VERSION.get_string",
   "manilaclient.API_MIN_VERSION.get_string",
   "manilaclient.__init__.version_info",
@@ -100,7 +109,10 @@
   "manilaclient.v2.client.ks_client.Client.called",
   "manilaclient.v2.client.ks_client.Client.return_value",
   "manilaclient.v2.client.ks_client.Client.return_value.auth_token.return_value",
+  "manilaclient.v2.client.session.Session",
   "manilaclient.v2.client.session.Session.called",
+  "manilaclient.v2.client.session.discover",
+  "manilaclient.v2.client.session.discover.Discover",
   "manilaclient.v2.client.session.discover.Discover.called",
   "manilaclient.v2.client.session.discover.Discover.return_value.url_for.side_effect",
   "manilaclient.v2.shell.OpenStackManilaShell",
@@ -135,8 +147,41 @@
   "mock.patch",
   "mock.patch.object",
   "next_request",
+  "openstackclient.identity.common",
+  "openstackclient.identity.common.add_project_domain_option_to_parser",
+  "openstackclient.identity.common.add_user_domain_option_to_parser",
+  "openstackclient.identity.common.find_project",
+  "openstackclient.identity.common.find_user",
+  "openstackclient.tests.unit.fakes",
+  "openstackclient.tests.unit.fakes.FakeApp",
+  "openstackclient.tests.unit.fakes.FakeClientManager",
+  "openstackclient.tests.unit.fakes.FakeLog",
+  "openstackclient.tests.unit.fakes.FakeOptions",
+  "openstackclient.tests.unit.fakes.FakeStdout",
+  "openstackclient.tests.unit.identity.v3.fakes",
+  "openstackclient.tests.unit.identity.v3.fakes.FakeIdentityv3Client",
+  "openstackclient.tests.unit.identity.v3.fakes.FakeProject.create_one_project",
+  "openstackclient.tests.unit.identity.v3.fakes.FakeUser.create_one_user",
   "os.environ.get",
   "os.path.isfile",
+  "osc_lib.cli.format_columns",
+  "osc_lib.cli.format_columns.DictColumn",
+  "osc_lib.cli.parseractions",
+  "osc_lib.cli.parseractions.KeyValueAction",
+  "osc_lib.cli.parseractions.NonNegativeAction",
+  "osc_lib.command.command",
+  "osc_lib.command.command.Command",
+  "osc_lib.command.command.Lister",
+  "osc_lib.command.command.ShowOne",
+  "osc_lib.exceptions",
+  "osc_lib.exceptions.CommandError",
+  "osc_lib.utils",
+  "osc_lib.utils.env",
+  "osc_lib.utils.format_dict",
+  "osc_lib.utils.get_client_class",
+  "osc_lib.utils.get_dict_properties",
+  "osc_lib.utils.get_item_properties",
+  "osc_lib.utils.sort_items",
   "print_progress",
   "re.DOTALL",
   "re.MULTILINE",
@@ -175,6 +220,8 @@
   "test_get_call",
   "test_post_call",
   "time",
+  "uuid",
+  "uuid.uuid4",
   "warnings.warn"
  ],
  "deps": {
@@ -266,32 +313,9 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "keystoneauth1": [
-   "keystoneauth1/conda-forge/noarch/keystoneauth1-3.10.0-py_0",
-   "keystoneauth1/conda-forge/noarch/keystoneauth1-3.13.1-py_0",
-   "keystoneauth1/conda-forge/noarch/keystoneauth1-3.14.0-py_0",
-   "keystoneauth1/conda-forge/noarch/keystoneauth1-3.4.0-py_0",
-   "keystoneauth1/conda-forge/noarch/keystoneauth1-3.5.0-py_0",
-   "keystoneauth1/conda-forge/noarch/keystoneauth1-3.6.2-py_0",
-   "keystoneauth1/conda-forge/noarch/keystoneauth1-3.7.0-py_0",
-   "keystoneauth1/conda-forge/noarch/keystoneauth1-4.0.0-py_0",
-   "keystoneauth1/conda-forge/noarch/keystoneauth1-4.1.0-py_0",
-   "keystoneauth1/conda-forge/noarch/keystoneauth1-4.3.1-pyhd8ed1ab_0"
-  ],
-  "keystoneclient": [
-   "python-keystoneclient/conda-forge/noarch/python-keystoneclient-4.0.0-py_0",
-   "python-keystoneclient/conda-forge/noarch/python-keystoneclient-4.1.0-py_0",
-   "python-keystoneclient/conda-forge/noarch/python-keystoneclient-4.1.1-py_0"
-  ],
   "logging": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "manilaclient": [
-   "python-manilaclient/conda-forge/noarch/python-manilaclient-2.2.0-py_0",
-   "python-manilaclient/conda-forge/noarch/python-manilaclient-2.4.0-pyhd8ed1ab_0",
-   "python-manilaclient/conda-forge/noarch/python-manilaclient-2.5.0-pyhd8ed1ab_0",
-   "python-manilaclient/conda-forge/noarch/python-manilaclient-2.6.0-pyhd8ed1ab_0"
   ],
   "mock": [
    "mock/conda-forge/linux-64/mock-2.0.0-py27_1000",
@@ -301,14 +325,6 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "openstackclient": [
-   "python-openstackclient/conda-forge/noarch/python-openstackclient-4.0.0-py_0",
-   "python-openstackclient/conda-forge/noarch/python-openstackclient-5.0.0-py_0",
-   "python-openstackclient/conda-forge/noarch/python-openstackclient-5.1.0-py_0",
-   "python-openstackclient/conda-forge/noarch/python-openstackclient-5.2.1-py_0",
-   "python-openstackclient/conda-forge/noarch/python-openstackclient-5.4.0-py_0",
-   "python-openstackclient/conda-forge/noarch/python-openstackclient-5.6.0-pyhd8ed1ab_0"
-  ],
   "operator": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -316,13 +332,6 @@
   "os": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "osc_lib": [
-   "osc-lib/conda-forge/noarch/osc-lib-1.15.0-py_0",
-   "osc-lib/conda-forge/noarch/osc-lib-2.0.0-py_0",
-   "osc-lib/conda-forge/noarch/osc-lib-2.3.0-pyhd8ed1ab_0",
-   "osc-lib/conda-forge/noarch/osc-lib-2.4.1-pyhd8ed1ab_0",
-   "osc-lib/conda-forge/noarch/osc-lib-2.4.2-pyhd8ed1ab_0"
   ],
   "oslo_config": [
    "oslo.config/conda-forge/linux-64/oslo.config-8.7.0-py36h5fab9bb_0",
@@ -424,10 +433,6 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "traceback": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "uuid": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
