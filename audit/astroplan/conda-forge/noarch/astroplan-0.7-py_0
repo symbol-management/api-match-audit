@@ -6,49 +6,9 @@
   "__builtin__",
   "__builtin__._ASTROPY_SETUP_",
   "_compiler.compiler",
-  "abc.ABCMeta",
-  "abc.abstractmethod",
   "ac",
   "as_strided",
-  "astroplan.FixedTarget.from_name",
-  "astroplan.Observer.at_site",
-  "astropy.config",
-  "astropy.config.configuration.ConfigurationDefaultMissingError",
-  "astropy.config.configuration.ConfigurationDefaultMissingWarning",
-  "astropy.config.configuration.update_default_config",
-  "astropy.coordinates",
-  "astropy.coordinates.AltAz",
-  "astropy.coordinates.Angle",
-  "astropy.coordinates.EarthLocation",
   "astropy.coordinates.EarthLocation._real_of_site",
-  "astropy.coordinates.EarthLocation.from_geodetic",
-  "astropy.coordinates.EarthLocation.of_site",
-  "astropy.coordinates.GCRS",
-  "astropy.coordinates.Galactic",
-  "astropy.coordinates.ICRS",
-  "astropy.coordinates.Latitude",
-  "astropy.coordinates.Longitude",
-  "astropy.coordinates.SkyCoord",
-  "astropy.coordinates.SkyCoord.from_name",
-  "astropy.coordinates.UnitSphericalRepresentation",
-  "astropy.coordinates.get_body",
-  "astropy.coordinates.get_moon",
-  "astropy.coordinates.get_sun",
-  "astropy.io.ascii",
-  "astropy.io.ascii.read",
-  "astropy.table",
-  "astropy.table.Table",
-  "astropy.tests.helper.TestRunner",
-  "astropy.tests.helper.assert_quantity_allclose",
-  "astropy.tests.helper.enable_deprecations_as_exceptions",
-  "astropy.tests.plugins.display.PYTEST_HEADER_MODULES",
-  "astropy.tests.plugins.display.TESTED_VERSIONS",
-  "astropy.tests.pytest_plugins.pytest_report_header",
-  "astropy.time.Time",
-  "astropy.time.Time._get_delta_ut1_utc",
-  "astropy.time.Time.now",
-  "astropy.units",
-  "astropy.units.Quantity",
   "astropy.units.arcmin",
   "astropy.units.arcsec",
   "astropy.units.arcsec.to",
@@ -57,7 +17,6 @@
   "astropy.units.day",
   "astropy.units.deg",
   "astropy.units.deg.to",
-  "astropy.units.deg_C",
   "astropy.units.degree",
   "astropy.units.hour",
   "astropy.units.hour.jd",
@@ -66,50 +25,23 @@
   "astropy.units.m",
   "astropy.units.min",
   "astropy.units.minute",
-  "astropy.units.quantity_input",
-  "astropy.units.rad",
   "astropy.units.rad.to",
-  "astropy.units.s",
   "astropy.units.second",
-  "astropy.utils.exceptions.AstropyDeprecationWarning",
-  "astropy.utils.exceptions.AstropyWarning",
-  "astropy.utils.iers.IERS_Auto",
-  "astropy.utils.iers.IERS_Auto.open",
-  "astropy.utils.minversion",
-  "astropy.visualization.astropy_mpl_style",
-  "astropy.wcs.WCS",
-  "astroquery.skyview.SkyView",
   "astroquery.skyview.SkyView.get_images",
   "collections.Sequence",
   "consmax",
   "consminmax",
-  "constraint",
   "constraint2",
   "constraints.AtNightConstraint.twilight_astronomical",
   "constraints.MoonIlluminationConstraint.bright",
   "constraints.MoonIlluminationConstraint.dark",
   "constraints.MoonIlluminationConstraint.grey",
   "constraints._get_altaz",
-  "contextlib",
-  "contextlib.closing",
-  "cycler.cycler",
   "cython_version.cython_version",
-  "datetime",
-  "datetime.datetime",
-  "datetime.datetime.now",
-  "datetime.time",
-  "datetime.timedelta",
   "download_IERS_A",
-  "ephem",
-  "ephem.FixedBody",
-  "ephem.Moon",
-  "ephem.Observer",
   "ephem.Sun",
-  "ephem.degrees",
   "event_function",
   "function",
-  "locale",
-  "locale.getdefaultlocale",
   "matplotlib.pyplot.cm.cool",
   "matplotlib.rcParams.update",
   "numpy.abs",
@@ -140,8 +72,6 @@
   "numpy.zeros",
   "object.__repr__",
   "observer.Observer.at_site",
-  "operator",
-  "operator.itemgetter",
   "os.environ.get",
   "os.getcwd",
   "os.path.exists",
@@ -152,8 +82,6 @@
   "pytest.mark.mpl_image_compare",
   "pytest.mark.parametrize",
   "pytest.mark.skipif",
-  "pytz",
-  "pytz.timezone",
   "pytz.utc",
   "pytz.utc.localize",
   "run_git",
@@ -175,9 +103,6 @@
   "utils._mock_remote_data",
   "version.githash",
   "version.version",
-  "warnings",
-  "warnings.catch_warnings",
-  "warnings.simplefilter",
   "warnings.warn"
  ],
  "deps": {
@@ -190,10 +115,55 @@
    "pytest/conda-forge/linux-64/pytest-4.6.0-py37_0",
    "pytest/conda-forge/linux-64/pytest-6.0.2-py37hc8dfbb8_0"
   ],
+  "abc": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "astroplan": [
+   "astroplan/conda-forge/linux-64/astroplan-0.2.1-py27_0",
+   "astroplan/conda-forge/noarch/astroplan-0.6-py_0",
+   "astroplan/conda-forge/noarch/astroplan-0.6-py_1",
+   "astroplan/conda-forge/noarch/astroplan-0.7-py_0"
+  ],
+  "astropy": [],
+  "astroquery": [
+   "astroquery/conda-forge/linux-64/astroquery-0.3.8-py35_0",
+   "astroquery/conda-forge/noarch/astroquery-0.3.10-py_0",
+   "astroquery/conda-forge/noarch/astroquery-0.3.8-py_1000",
+   "astroquery/conda-forge/noarch/astroquery-0.4-py_0",
+   "astroquery/conda-forge/noarch/astroquery-0.4.1-pyh9f0ad1d_0",
+   "astroquery/conda-forge/noarch/astroquery-0.4.3-pyhd8ed1ab_0"
+  ],
   "builtins": [
    "pies2overrides/conda-forge/osx-64/pies2overrides-2.6.7-py27_1000"
   ],
+  "constraint": [
+   "python-constraint/conda-forge/noarch/python-constraint-1.3.1-py_1",
+   "python-constraint/conda-forge/noarch/python-constraint-1.4.0-py_0"
+  ],
+  "contextlib": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "copy": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "cycler": [
+   "cycler/conda-forge/noarch/cycler-0.10.0-py_1",
+   "cycler/conda-forge/noarch/cycler-0.10.0-py_2"
+  ],
+  "datetime": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "ephem": [
+   "ephem/conda-forge/linux-64/ephem-3.7.6.0-py37h470a237_1",
+   "ephem/conda-forge/linux-64/ephem-3.7.7.0-py37h516909a_0",
+   "pyephem/conda-forge/linux-64/pyephem-3.7.6.0-py35h14c3975_1000",
+   "pyephem/conda-forge/linux-64/pyephem-3.7.6.0-py36h470a237_0"
+  ],
+  "locale": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -211,6 +181,10 @@
    "numpy/conda-forge/linux-64/numpy-1.18.4-py37h8960a57_0",
    "numpy/conda-forge/linux-64/numpy-1.19.2-py36h68c22af_1"
   ],
+  "operator": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "os": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -219,6 +193,19 @@
    "pytest/conda-forge/linux-64/pytest-3.7.0-py27_0",
    "pytest/conda-forge/linux-64/pytest-4.6.0-py37_0",
    "pytest/conda-forge/linux-64/pytest-6.0.2-py37hc8dfbb8_0"
+  ],
+  "pytz": [
+   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
+   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0",
+   "pytz/conda-forge/noarch/pytz-2017.3-py_1",
+   "pytz/conda-forge/noarch/pytz-2017.3-py_2",
+   "pytz/conda-forge/noarch/pytz-2018.4-py_0",
+   "pytz/conda-forge/noarch/pytz-2018.5-py_0",
+   "pytz/conda-forge/noarch/pytz-2018.6-py_0",
+   "pytz/conda-forge/noarch/pytz-2019.1-py_0",
+   "pytz/conda-forge/noarch/pytz-2019.2-py_0",
+   "pytz/conda-forge/noarch/pytz-2020.1-pyh9f0ad1d_0",
+   "pytz/conda-forge/noarch/pytz-2020.4-pyhd8ed1ab_0"
   ],
   "shelve": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -235,6 +222,10 @@
    "six/conda-forge/noarch/six-1.16.0-pyh6c4a22f_0"
   ],
   "subprocess": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "warnings": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ]
