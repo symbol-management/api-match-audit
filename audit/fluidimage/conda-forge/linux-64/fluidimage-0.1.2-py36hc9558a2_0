@@ -46,10 +46,42 @@
   "cv2.calcOpticalFlowPyrLK",
   "cv2.goodFeaturesToTrack",
   "cv2.projectPoints",
+  "dask.array",
+  "dask.array.core.Array",
+  "dask.array.from_array",
+  "dask.array.map_blocks",
+  "dask.array.store",
+  "dask.diagnostics.ProgressBar",
+  "decorator.decorator",
   "exec_class",
   "f",
   "fix.WorkFIX._complete_params_with_default",
+  "fluiddyn.io.image.imread",
+  "fluiddyn.io.image.imsave",
   "fluiddyn.io.image.imsave.__doc__",
+  "fluiddyn.io.image.imsave_h5",
+  "fluiddyn.io.query.query",
+  "fluiddyn.io.stdout_redirected",
+  "fluiddyn.io.tee.MultiFile",
+  "fluiddyn.time_as_str",
+  "fluiddyn.util.config_logging",
+  "fluiddyn.util.create_object_from_file",
+  "fluiddyn.util.get_memory_usage",
+  "fluiddyn.util.import_class",
+  "fluiddyn.util.is_run_from_ipython",
+  "fluiddyn.util.paramcontainer.ParamContainer",
+  "fluiddyn.util.paramcontainer.tidy_container",
+  "fluiddyn.util.paramcontainer_gui.QtParamContainer",
+  "fluiddyn.util.serieofarrays.SerieOfArraysFromFiles",
+  "fluiddyn.util.serieofarrays.SeriesOfArrays",
+  "fluiddyn.util.terminal_colors",
+  "fluiddyn.util.terminal_colors.ENDC",
+  "fluiddyn.util.terminal_colors.FAIL",
+  "fluiddyn.util.terminal_colors.HEADER",
+  "fluiddyn.util.terminal_colors.OKBLUE",
+  "fluiddyn.util.terminal_colors.OKGREEN",
+  "fluiddyn.util.terminal_colors.WARNING",
+  "fluiddyn.util.time_as_str",
   "fluidimage._opencv.cv2.CALIB_FIX_K4",
   "fluidimage._opencv.cv2.CALIB_FIX_K5",
   "fluidimage._opencv.cv2.CALIB_USE_INTRINSIC_GUESS",
@@ -70,9 +102,20 @@
   "fys",
   "im2im_func",
   "image2image.complete_im2im_params_with_default",
+  "inspect",
+  "inspect.getargspec",
+  "inspect.getcallargs",
+  "inspect.getfullargspec",
   "log",
   "log.log_memory_usage",
   "logger.info",
+  "math",
+  "math.ceil",
+  "math.cos",
+  "math.floor",
+  "math.pi",
+  "math.sin",
+  "math.sqrt",
   "matplotlib.backends.qt_compat.QtWidgets.QApplication",
   "matplotlib.backends.qt_compat.QtWidgets.QFileDialog.getOpenFileName",
   "matplotlib.backends.qt_compat.QtWidgets.QMainWindow",
@@ -120,11 +163,14 @@
   "os.listdir",
   "os.path.exists",
   "os.remove",
+  "pathlib.Path",
   "postproc.PIV_PostProc_serie",
   "postproc.PIV_Postproc",
   "postproc.piv.get_grid_pixel",
   "preproc",
   "preproc.display",
+  "psutil",
+  "psutil.virtual_memory",
   "put_to_nan",
   "pycuda._driver",
   "pylab.colorbar",
@@ -143,9 +189,15 @@
   "pyqtgraph.QtGui.QApplication",
   "pyqtgraph.QtGui.QApplication.instance",
   "pyqtgraph.QtGui.QMainWindow",
+  "re",
+  "re.findall",
+  "re.search",
   "reduction_cuda",
   "scipy.gradient",
   "scipy.interpolate.LinearNDInterpolator",
+  "shutil",
+  "shutil.copyfile",
+  "shutil.rmtree",
   "singlepass.FirstWorkPIV._complete_params_with_default",
   "skcuda",
   "skcuda.fft",
@@ -201,45 +253,6 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "dask": [
-   "dask-core/conda-forge/noarch/dask-core-0.17.5-py_0",
-   "dask-core/conda-forge/noarch/dask-core-0.18.0-py_0",
-   "dask-core/conda-forge/noarch/dask-core-0.20.1-py_0",
-   "dask-core/conda-forge/noarch/dask-core-1.1.1-py_0",
-   "dask-core/conda-forge/noarch/dask-core-1.1.2-py_0",
-   "dask-core/conda-forge/noarch/dask-core-1.1.4-py_0",
-   "dask-core/conda-forge/noarch/dask-core-2.10.1-py_0",
-   "dask-core/conda-forge/noarch/dask-core-2.13.0-py_0",
-   "dask-core/conda-forge/noarch/dask-core-2.17.2-py_0",
-   "dask-core/conda-forge/noarch/dask-core-2.18.0-py_0",
-   "dask-core/conda-forge/noarch/dask-core-2.22.0-py_0",
-   "dask-core/conda-forge/noarch/dask-core-2.25.0-py_0",
-   "dask-core/conda-forge/noarch/dask-core-2.27.0-py_0",
-   "dask-core/conda-forge/noarch/dask-core-2.6.0-py_0",
-   "dask-core/conda-forge/noarch/dask-core-2.8.1-py_0",
-   "dask-core/conda-forge/noarch/dask-core-2020.12.0-pyhd8ed1ab_0",
-   "dask-core/conda-forge/noarch/dask-core-2021.3.1-pyhd8ed1ab_0",
-   "dask-core/conda-forge/noarch/dask-core-2021.4.0-pyhd8ed1ab_0",
-   "dask-core/conda-forge/noarch/dask-core-2021.4.1-pyhd8ed1ab_0",
-   "dask-core/conda-forge/noarch/dask-core-2021.5.1-pyhd8ed1ab_0"
-  ],
-  "decorator": [
-   "decorator/conda-forge/noarch/decorator-4.3.0-py_0",
-   "decorator/conda-forge/noarch/decorator-4.3.2-py_0",
-   "decorator/conda-forge/noarch/decorator-4.4.0-py_0",
-   "decorator/conda-forge/noarch/decorator-4.4.1-py_0",
-   "decorator/conda-forge/noarch/decorator-4.4.2-py_0",
-   "decorator/conda-forge/noarch/decorator-5.0.2-pyhd8ed1ab_0",
-   "decorator/conda-forge/noarch/decorator-5.0.3-pyhd8ed1ab_0",
-   "decorator/conda-forge/noarch/decorator-5.0.4-pyhd8ed1ab_0",
-   "decorator/conda-forge/noarch/decorator-5.0.5-pyhd8ed1ab_0",
-   "decorator/conda-forge/noarch/decorator-5.0.6-pyhd8ed1ab_0",
-   "decorator/conda-forge/noarch/decorator-5.0.9-pyhd8ed1ab_0"
-  ],
-  "fluiddyn": [
-   "fluiddyn/conda-forge/noarch/fluiddyn-0.3.1-py_0",
-   "fluiddyn/conda-forge/noarch/fluiddyn-0.3.1-py_1"
-  ],
   "fluidimage": [
    "fluidimage/conda-forge/linux-64/fluidimage-0.1.2-py36hc9558a2_0"
   ],
@@ -265,10 +278,6 @@
    "h5py/conda-forge/linux-64/h5py-2.6.0-np111py34_4",
    "h5py/conda-forge/linux-64/h5py-2.7.0-np113py36_1"
   ],
-  "inspect": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "ipyvolume": [
    "ipyvolume/conda-forge/noarch/ipyvolume-0.5.2-pyh9f0ad1d_1",
    "ipyvolume/conda-forge/noarch/ipyvolume-0.6.0a4-pyh9f0ad1d_0",
@@ -279,10 +288,6 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "logging": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "math": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -306,14 +311,6 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "pathlib": [
-   "pathlib/conda-forge/noarch/pathlib-1.0.1-py_1",
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "psutil": [
-   "psutil/conda-forge/linux-64/psutil-5.7.3-py39h38d8fee_0"
-  ],
   "pycuda": [
    "pycuda/conda-forge/linux-64/pycuda-2020.1-py36he810dc6_5",
    "pycuda/conda-forge/linux-64/pycuda-2020.1-py37h22c3c0a_5"
@@ -336,10 +333,6 @@
    "pytest/conda-forge/linux-64/pytest-4.6.0-py37_0",
    "pytest/conda-forge/linux-64/pytest-6.0.2-py37hc8dfbb8_0"
   ],
-  "re": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "reikna": [
    "reikna/conda-forge/noarch/reikna-0.7.3-py_0",
    "reikna/conda-forge/noarch/reikna-0.7.5-pyh44b312d_1",
@@ -351,10 +344,6 @@
   ],
   "scipy": [
    "scipy/conda-forge/linux-64/scipy-0.17.1-np110py27_blas_openblas_202"
-  ],
-  "shutil": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "signal": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",

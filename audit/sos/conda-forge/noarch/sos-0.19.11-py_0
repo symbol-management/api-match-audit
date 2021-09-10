@@ -32,6 +32,10 @@
   "file_target",
   "func",
   "func.__name__",
+  "graphviz",
+  "graphviz.Source",
+  "gzip",
+  "gzip.open",
   "has_job",
   "hashlib.md5",
   "hashlib.md5.hexdigest",
@@ -47,12 +51,20 @@
   "hosts.status_of_queues",
   "hosts.test_queues",
   "id.update",
+  "imageio",
   "interpolate_value",
   "io.BytesIO",
   "io.FileIO",
   "io.FileIO.read",
   "io.StringIO",
   "itertools",
+  "keyword",
+  "keyword.kwlist",
+  "math",
+  "math.ceil",
+  "math.floor",
+  "math.log",
+  "math.log10",
   "merge_dict",
   "monitor.summarizeExecution",
   "multiprocessing.Pool",
@@ -95,21 +107,48 @@
   "os.unlink",
   "os.utime",
   "parser.SoS_Script",
+  "pathlib.Path",
+  "pathlib.PosixPath",
+  "pathlib.WindowsPath",
+  "pickle",
+  "pickle.dump",
+  "pickle.dumps",
+  "pickle.load",
+  "pickle.loads",
   "preview.get_previewers",
   "previewer_func",
   "process_based_on",
+  "psutil",
+  "psutil.Process",
+  "psutil.disk_usage",
+  "psutil.virtual_memory",
+  "psutil.wait_procs",
   "pygments.lexers.PythonLexer",
   "pygments.lexers.PythonLexer.get_tokens_unprocessed",
   "pygments.lexers.PythonLexer.tokens.insert",
   "pygments.token.Keyword.Namespace",
   "pygments.token.Keyword.Pseudo",
+  "re",
   "re.VERBOSE",
+  "re.compile",
+  "re.error",
+  "re.escape",
+  "re.match",
+  "re.search",
+  "re.split",
+  "re.sub",
   "read_f",
   "ret_type",
   "row",
   "send_output",
   "set.union",
   "show_file",
+  "shutil",
+  "shutil.copy",
+  "shutil.copyfile",
+  "shutil.get_terminal_size",
+  "shutil.rmtree",
+  "shutil.which",
   "signal.SIGTERM",
   "signal.SIG_DFL",
   "signatures.StepSignatures",
@@ -291,10 +330,6 @@
    "pillow/conda-forge/linux-64/pillow-7.0.0-py36h8328e55_1",
    "pillow/conda-forge/linux-64/pillow-7.2.0-py37h718be6c_1"
   ],
-  "_pickle": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "_version": [
    "configobj/conda-forge/noarch/configobj-5.0.6-py_0"
   ],
@@ -359,28 +394,9 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "graphviz": [
-   "python-graphviz/conda-forge/noarch/python-graphviz-0.11.1-py_1",
-   "python-graphviz/conda-forge/noarch/python-graphviz-0.12-py_0",
-   "python-graphviz/conda-forge/noarch/python-graphviz-0.13-py_0",
-   "python-graphviz/conda-forge/noarch/python-graphviz-0.13.2-py_0",
-   "python-graphviz/conda-forge/noarch/python-graphviz-0.15-pyhd3deb0d_0",
-   "python-graphviz/conda-forge/noarch/python-graphviz-0.16-pyh243d235_2",
-   "python-graphviz/conda-forge/noarch/python-graphviz-0.16-pyhd3deb0d_0",
-   "python-graphviz/conda-forge/noarch/python-graphviz-0.16-pyhd3deb0d_1",
-   "python-graphviz/conda-forge/noarch/python-graphviz-0.8.4-py_1003"
-  ],
-  "gzip": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "html": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "imageio": [
-   "imageio/conda-forge/osx-64/imageio-2.4.1-py37_0",
-   "imageio/conda-forge/win-64/imageio-2.6.0-py27_0"
   ],
   "imghdr": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -404,10 +420,6 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "keyword": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "logging": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -423,10 +435,6 @@
    "markdown/conda-forge/noarch/markdown-3.3.1-pyh9f0ad1d_0",
    "markdown/conda-forge/noarch/markdown-3.3.2-pyh9f0ad1d_0",
    "markdown/conda-forge/noarch/markdown-3.3.3-pyh9f0ad1d_0"
-  ],
-  "math": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "multiprocessing": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -466,17 +474,8 @@
   "pandas": [
    "pandas/conda-forge/linux-64/pandas-1.2.2-py37h40f5888_0"
   ],
-  "pathlib": [
-   "pathlib/conda-forge/noarch/pathlib-1.0.1-py_1",
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "pexpect": [
    "pexpect/conda-forge/linux-64/pexpect-4.2.1-py36_0"
-  ],
-  "pickle": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "pkg_resources": [
    "setuptools/conda-forge/linux-64/setuptools-40.6.1-py36_0",
@@ -490,9 +489,6 @@
   "pprint": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "psutil": [
-   "psutil/conda-forge/linux-64/psutil-5.7.3-py39h38d8fee_0"
   ],
   "pygments": [
    "pygments/conda-forge/noarch/pygments-2.2.0-py_1",
@@ -510,15 +506,7 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "re": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "shlex": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "shutil": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],

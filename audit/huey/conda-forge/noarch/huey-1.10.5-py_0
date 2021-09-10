@@ -17,17 +17,31 @@
   "call_task",
   "callback",
   "d",
+  "django.conf.settings",
   "django.conf.settings.DATABASES",
   "django.conf.settings.DATABASE_NAME",
   "django.conf.settings.DEBUG",
   "django.conf.settings.HUEY",
   "django.conf.settings.HUEY.get",
+  "django.core.management.base.BaseCommand",
+  "django.db.close_old_connections",
+  "django.utils.module_loading.autodiscover_modules",
   "edge",
   "fn",
   "func",
   "func.__doc__",
   "func.__module__",
   "func.__name__",
+  "gevent",
+  "gevent.Greenlet",
+  "gevent.event.AsyncResult",
+  "gevent.event.Event",
+  "gevent.pool.Pool",
+  "gevent.sleep",
+  "gevent.spawn",
+  "heapq",
+  "heapq.heappop",
+  "heapq.heappush",
   "huey.contrib.djhuey.__init__.HUEY",
   "huey.contrib.djhuey.__init__.RedisHuey",
   "huey.contrib.djhuey.__init__.backend_cls",
@@ -53,6 +67,7 @@
   "huey.tests.base.test_huey.result_count",
   "huey.tests.base.test_huey.scheduled_count",
   "huey.tests.base.test_huey.task",
+  "inspect.isclass",
   "itertools",
   "klass",
   "loop_periodic",
@@ -63,9 +78,16 @@
   "multiprocessing.Process",
   "os.getcwd",
   "os.getpid",
+  "pickle",
+  "pickle.HIGHEST_PROTOCOL",
+  "pickle.dumps",
+  "pickle.loads",
   "post_task",
   "pre_task",
   "raise_keyerror",
+  "re",
+  "re.compile",
+  "re.sub",
   "res",
   "res._result",
   "res.get",
@@ -97,10 +119,6 @@
   "validate_m"
  ],
  "deps": {
-  "_pickle": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "collections": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -113,36 +131,12 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "django": [
-   "django/conda-forge/linux-64/django-1.8.14-py34_0",
-   "django/conda-forge/linux-64/django-1.9.12-py27_0",
-   "django/conda-forge/noarch/django-1.8.19-py_0",
-   "django/conda-forge/noarch/django-3.0.6-py_0",
-   "django/conda-forge/noarch/django-3.0.7-py_0",
-   "django/conda-forge/noarch/django-3.1.3-pyhd8ed1ab_0",
-   "django/conda-forge/noarch/django-3.1.4-pyhd8ed1ab_0",
-   "django/conda-forge/noarch/django-3.1.7-pyhd8ed1ab_0",
-   "django/conda-forge/noarch/django-3.2.2-pyhd8ed1ab_0",
-   "django/conda-forge/noarch/django-3.2.3-pyhd8ed1ab_0",
-   "django/conda-forge/noarch/django-3.2.5-pyhd8ed1ab_0"
-  ],
   "functools": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "gevent": [
-   "gevent/conda-forge/linux-64/gevent-21.1.2-py38h497a2fe_0"
-  ],
-  "heapq": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "importlib": [
    "importlib/conda-forge/linux-64/importlib-1.0.4-py26_0",
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "inspect": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -168,14 +162,6 @@
   ],
   "peewee": [
    "peewee/conda-forge/linux-64/peewee-3.13.3-py38h48d9fe1_2"
-  ],
-  "pickle": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "re": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "redis": [
    "redis-py/conda-forge/noarch/redis-py-3.0.0-py_0",

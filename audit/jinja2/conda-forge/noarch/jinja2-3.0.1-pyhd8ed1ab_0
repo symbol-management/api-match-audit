@@ -27,6 +27,8 @@
   "compiler.has_safe_repr",
   "const",
   "constants.LOREM_IPSUM_WORDS.split",
+  "ctypes",
+  "ctypes.Structure",
   "ctypes.pythonapi.Py_DecRef",
   "ctypes.pythonapi.Py_IncRef",
   "debug.rewrite_traceback_stack",
@@ -65,6 +67,9 @@
   "hash.update",
   "hashlib.sha1",
   "inner_visit",
+  "inspect",
+  "inspect.isawaitable",
+  "inspect.iscoroutinefunction",
   "io.BytesIO",
   "io.StringIO",
   "is_async",
@@ -76,6 +81,7 @@
   "locals.items",
   "locals.pop",
   "marshal",
+  "math",
   "nodes.Add",
   "nodes.And",
   "nodes.Assign",
@@ -158,13 +164,23 @@
   "os.path.isfile",
   "os.remove",
   "parse_context",
+  "pickle",
+  "pickle.dump",
+  "pickle.dumps",
+  "pickle.load",
   "postprocess",
   "prepare_map",
   "push",
+  "re",
   "re.IGNORECASE",
   "re.M",
   "re.S",
   "re.VERBOSE",
+  "re.compile",
+  "re.escape",
+  "re.match",
+  "re.search",
+  "re.split",
   "runtime.Undefined",
   "runtime.async_exported",
   "runtime.exported",
@@ -201,14 +217,6 @@
  ],
  "deps": {
   "_asyncio": [
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "_ctypes": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "_pickle": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "ast": [
@@ -250,10 +258,6 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "inspect": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "jinja2": [
    "jinja2/conda-forge/noarch/jinja2-2.10-py_1",
    "jinja2/conda-forge/noarch/jinja2-2.11.3-pyh44b312d_0"
@@ -272,10 +276,6 @@
   ],
   "markupsafe": [
    "markupsafe/conda-forge/linux-64/markupsafe-2.0.0-py36h70b1f00_0"
-  ],
-  "math": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "ntpath": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -302,10 +302,6 @@
    "parse/conda-forge/noarch/parse-1.19.0-pyh44b312d_0",
    "parse/conda-forge/noarch/parse-1.9.0-py_0"
   ],
-  "pickle": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "platform": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -315,10 +311,6 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "random": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "re": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
