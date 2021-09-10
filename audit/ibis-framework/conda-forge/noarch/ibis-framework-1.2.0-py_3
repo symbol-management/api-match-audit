@@ -50,6 +50,10 @@
   "_walk",
   "_windowize",
   "_wrap_summary_metrics",
+  "abc",
+  "abc.ABC",
+  "abc.ABCMeta",
+  "abc.abstractmethod",
   "add_one",
   "agg",
   "arg",
@@ -71,6 +75,7 @@
   "ast.arguments",
   "bar",
   "bazel",
+  "builtins",
   "by",
   "by.get_name",
   "by.name",
@@ -82,9 +87,6 @@
   "client_class",
   "cls",
   "cmp",
-  "collections",
-  "collections.ChainMap",
-  "collections.OrderedDict",
   "collections.abc.Iterable",
   "collections.abc.Mapping",
   "collections.abc.Sequence",
@@ -92,7 +94,6 @@
   "collections.abc.Sized",
   "collections.defaultdict",
   "collections.deque",
-  "collections.namedtuple",
   "concurrent.futures",
   "concurrent.futures.as_completed",
   "contextlib",
@@ -107,9 +108,22 @@
   "cytoolz.curry",
   "cytoolz.identity",
   "cytoolz.unique",
+  "datetime",
+  "datetime.date",
+  "datetime.date.today",
+  "datetime.datetime",
+  "datetime.datetime.now",
+  "datetime.datetime.strptime",
   "datetime.datetime.today",
+  "datetime.datetime.utcnow",
+  "datetime.time",
+  "datetime.timedelta",
+  "decimal",
+  "decimal.Context",
+  "decimal.Decimal",
   "decimal.InvalidOperation",
   "df_f",
+  "distutils.version.LooseVersion",
   "dtype",
   "dtype_type",
   "execute",
@@ -318,7 +332,6 @@
   "kudu.connect",
   "l_cmp",
   "lam_sig",
-  "locale",
   "locale.D_FMT",
   "locale.D_T_FMT",
   "locale.T_FMT",
@@ -334,9 +347,6 @@
   "my_mean",
   "my_str_len",
   "my_struct_thing",
-  "numbers",
-  "numbers.Integral",
-  "numbers.Real",
   "numpy.NaN",
   "numpy.abs",
   "numpy.arange",
@@ -408,56 +418,14 @@
   "os.remove",
   "out_type",
   "output_type_method",
-  "packaging.version.parse",
-  "pandas",
-  "pandas.DataFrame",
-  "pandas.DataFrame.from_dict",
-  "pandas.DataFrame.from_records",
-  "pandas.DatetimeIndex",
-  "pandas.HDFStore",
-  "pandas.Index",
-  "pandas.MultiIndex.from_arrays",
-  "pandas.RangeIndex",
-  "pandas.Series",
   "pandas.Series.nunique",
-  "pandas.Timedelta",
-  "pandas.Timestamp",
-  "pandas.Timestamp.utcfromtimestamp",
-  "pandas.__version__",
-  "pandas.api.types.CategoricalDtype",
-  "pandas.api.types.DatetimeTZDtype",
   "pandas.api.types.infer_dtype",
-  "pandas.concat",
-  "pandas.core.groupby.DataFrameGroupBy",
-  "pandas.core.groupby.SeriesGroupBy",
-  "pandas.core.tools.datetimes.to_datetime",
-  "pandas.core.tools.datetimes.to_time",
-  "pandas.cut",
-  "pandas.date_range",
   "pandas.errors.OutOfBoundsDatetime",
-  "pandas.errors.PerformanceWarning",
-  "pandas.isnull",
-  "pandas.lib.infer_dtype",
-  "pandas.merge",
-  "pandas.merge_asof",
-  "pandas.offsets.DateOffset",
-  "pandas.read_csv",
-  "pandas.read_hdf",
-  "pandas.timedelta_range",
-  "pandas.to_datetime",
-  "pandas.tseries.frequencies.to_offset",
-  "pandas.tseries.tools.to_datetime",
   "pandas.tseries.tools.to_time",
   "pandas.types.dtypes.CategoricalDtype",
   "pandas.types.dtypes.DatetimeTZDtype",
   "pandas.types.dtypes.infer_dtype",
-  "pandas.util.testing",
-  "pandas.util.testing.assert_frame_equal",
-  "pandas.util.testing.assert_numpy_array_equal",
-  "pandas.util.testing.assert_series_equal",
-  "pandas.util.testing.makeDataFrame",
   "pandas_method",
-  "pathlib.Path",
   "pkg_resources.extern.packaging.version.Version",
   "post_process",
   "pred",
@@ -661,17 +629,9 @@
   "type.timezone",
   "type.value_type",
   "typeclass",
-  "types",
-  "types.BuiltinFunctionType",
-  "types.BuiltinMethodType",
-  "types.FunctionType",
-  "types.LambdaType",
-  "types.MethodType",
   "udf_creation_to_op",
   "udf_node",
   "unittest.mock.patch.object",
-  "uuid",
-  "uuid.uuid4",
   "valid_filename",
   "validator",
   "verify_partitioned_table",
@@ -692,18 +652,11 @@
    "pytest/conda-forge/linux-64/pytest-4.6.0-py37_0",
    "pytest/conda-forge/linux-64/pytest-6.0.2-py37hc8dfbb8_0"
   ],
-  "abc": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "ast": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "builtins": [
-   "pies2overrides/conda-forge/osx-64/pies2overrides-2.6.7-py27_1000"
-  ],
-  "datetime": [
+  "collections": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -713,13 +666,6 @@
    "python-dateutil/conda-forge/noarch/python-dateutil-2.7.5-py_0",
    "python-dateutil/conda-forge/noarch/python-dateutil-2.8.1-py_0",
    "python-dateutil/conda-forge/noarch/python-dateutil-2.8.2-pyhd8ed1ab_0"
-  ],
-  "decimal": [
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "distutils": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "enum": [
    "privy/conda-forge/noarch/privy-6.0.0-py_0",
@@ -794,6 +740,10 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "locale": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "logging": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -814,6 +764,10 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "numbers": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "numpy": [
    "numpy/conda-forge/linux-64/numpy-1.17.5-py36h95a1406_0",
    "numpy/conda-forge/linux-64/numpy-1.18.4-py37h8960a57_0",
@@ -824,6 +778,22 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "os": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "packaging": [
+   "packaging/conda-forge/noarch/packaging-18.0-py_0",
+   "packaging/conda-forge/noarch/packaging-19.0-py_0",
+   "packaging/conda-forge/noarch/packaging-19.2-py_0",
+   "packaging/conda-forge/noarch/packaging-20.0-py_0",
+   "packaging/conda-forge/noarch/packaging-20.1-py_0",
+   "packaging/conda-forge/noarch/packaging-20.7-pyhd3deb0d_0",
+   "packaging/conda-forge/noarch/packaging-20.8-pyhd3deb0d_0",
+   "packaging/conda-forge/noarch/packaging-21.0-pyhd8ed1ab_0"
+  ],
+  "pandas": [],
+  "pathlib": [
+   "pathlib/conda-forge/noarch/pathlib-1.0.1-py_1",
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -978,11 +948,19 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "types": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "typing": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "unittest": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "uuid": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
