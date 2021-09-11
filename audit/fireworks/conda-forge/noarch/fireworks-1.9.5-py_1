@@ -53,11 +53,13 @@
   "igraph.Graph.Ring",
   "io.BytesIO",
   "itertools.chain.from_iterable",
+  "multiprocessing",
   "multiprocessing.Manager",
   "multiprocessing.Pool",
   "multiprocessing.Process",
   "multiprocessing.cpu_count",
   "multiprocessing.current_process",
+  "multiprocessing.managers.BaseManager",
   "nested_class",
   "os.chdir",
   "os.chmod",
@@ -81,12 +83,34 @@
   "ruamel.yaml.safe_dump",
   "ruamel.yaml.safe_load",
   "set_binding",
+  "shutil",
+  "shutil.copy",
+  "shutil.copy2",
+  "shutil.copyfile",
+  "shutil.copyfileobj",
+  "shutil.copytree",
+  "shutil.make_archive",
+  "shutil.move",
+  "shutil.rmtree",
   "signal.SIGINT",
+  "six",
+  "six.add_metaclass",
   "six.moves.builtins",
   "six.moves.input",
   "six.moves.zip",
+  "six.string_types",
+  "six.text_type",
+  "socket",
   "socket.gethostbyname",
   "socket.gethostname",
+  "string",
+  "string.Formatter",
+  "string.Template",
+  "string.ascii_letters",
+  "string.digits",
+  "subprocess",
+  "subprocess.PIPE",
+  "subprocess.Popen",
   "sys",
   "sys.stderr.fileno",
   "sys.stderr.write",
@@ -94,6 +118,9 @@
   "task_input",
   "time",
   "time_ok",
+  "traceback",
+  "traceback.format_exc",
+  "traceback.print_exc",
   "warnings.warn"
  ],
  "deps": {
@@ -249,10 +276,6 @@
    "monty/conda-forge/noarch/monty-4.0.1-pyh9f0ad1d_0",
    "monty/conda-forge/noarch/monty-4.0.2-pyh9f0ad1d_0"
   ],
-  "multiprocessing": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "ntpath": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -334,37 +357,11 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "shutil": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "signal": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "six": [
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0",
-   "lldb/conda-forge/linux-64/lldb-6.0.0-py35_0",
-   "privy/conda-forge/noarch/privy-6.0.0-py_0",
-   "six/conda-forge/linux-64/six-1.10.0-py34_0",
-   "six/conda-forge/linux-64/six-1.10.0-py34_1",
-   "six/conda-forge/noarch/six-1.14.0-py_1",
-   "six/conda-forge/noarch/six-1.16.0-pyh6c4a22f_0"
-  ],
-  "socket": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "stat": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "string": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "subprocess": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -392,10 +389,6 @@
    "tqdm/conda-forge/noarch/tqdm-4.56.0-pyhd8ed1ab_0",
    "tqdm/conda-forge/noarch/tqdm-4.56.1-pyhd8ed1ab_0",
    "tqdm/conda-forge/noarch/tqdm-4.60.0-pyhd8ed1ab_0"
-  ],
-  "traceback": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "unittest": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",

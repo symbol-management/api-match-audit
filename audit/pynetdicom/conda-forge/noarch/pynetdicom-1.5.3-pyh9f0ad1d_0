@@ -18,19 +18,19 @@
   "SocketServer.TCPServer",
   "SocketServer.ThreadingMixIn",
   "TransferSyntaxSubItem",
-  "__future__.division",
   "_add_failed_instance",
   "_search_universal",
-  "argparse",
-  "argparse.ArgumentParser",
   "atexit",
   "c2c",
   "clear",
+  "codecs",
   "codecs.encode",
   "collections.MutableSequence",
   "collections.abc.MutableSequence",
+  "configparser.ConfigParser",
   "create_engine",
   "datetime.datetime.strftime",
+  "enum.IntEnum",
   "f",
   "f.__doc__",
   "f.__name__",
@@ -38,11 +38,10 @@
   "func",
   "func.__name__",
   "get_handler",
-  "inspect",
-  "inspect.getmembers",
   "io.BytesIO",
   "is_exe",
   "message",
+  "multiprocessing",
   "orig",
   "orig_method",
   "os.X_OK",
@@ -226,16 +225,14 @@
   "pytest.mark.parametrize",
   "pytest.mark.skip",
   "pytest.mark.skipif",
-  "re",
   "re.IGNORECASE",
   "re.VERBOSE",
-  "re.compile",
-  "re.match",
   "reload",
   "sessionmaker",
   "shutil",
   "shutil.rmtree",
   "signal.SIGINT",
+  "socket",
   "socket.AF_INET",
   "socket.SHUT_RDWR",
   "socket.SOCK_DGRAM",
@@ -244,6 +241,7 @@
   "socket.SO_RCVTIMEO",
   "socket.SO_REUSEADDR",
   "socket.error",
+  "socket.socket",
   "socket.timeout",
   "socketserver.TCPServer.process_request",
   "socketserver.TCPServer.shutdown",
@@ -263,15 +261,9 @@
   "sys.meta_path.insert",
   "sys.meta_path.remove",
   "sys.modules.update",
-  "tempfile",
-  "tempfile.NamedTemporaryFile",
-  "tempfile.TemporaryDirectory",
-  "tempfile.TemporaryFile",
-  "threading",
-  "threading.Lock",
-  "threading.Thread",
-  "threading.enumerate",
   "time",
+  "traceback",
+  "traceback.format_tb",
   "unicode",
   "warnings.warn",
   "yappi",
@@ -282,6 +274,10 @@
   "yappi.stop"
  ],
  "deps": {
+  "__future__": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "_pytest": [
    "pytest/conda-forge/linux-64/pytest-3.7.0-py27_0",
    "pytest/conda-forge/linux-64/pytest-4.6.0-py37_0",
@@ -291,21 +287,12 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "backports": [
-   "configparser/conda-forge/noarch/configparser-5.0.0-py_0"
-  ],
-  "codecs": [
+  "argparse": [
+   "argparse/conda-forge/osx-64/argparse-1.4.0-py26_0",
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "collections": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "configparser": [
-   "configparser/conda-forge/linux-64/configparser-3.7.1-py27_1",
-   "configparser/conda-forge/noarch/configparser-5.0.0-py_0",
-   "configparser/conda-forge/noarch/configparser-5.0.1-py_0",
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -317,12 +304,11 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "enum": [
-   "privy/conda-forge/noarch/privy-6.0.0-py_0",
+  "importlib": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "importlib": [
+  "inspect": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -331,10 +317,6 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "math": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "multiprocessing": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -380,15 +362,15 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "re": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "select": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "signal": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "socket": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -402,6 +384,10 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "struct": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "tempfile": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -557,7 +543,7 @@
    "wsproto/conda-forge/noarch/wsproto-0.13.0-py_0",
    "wsproto/conda-forge/noarch/wsproto-0.14.0-py_0"
   ],
-  "traceback": [
+  "threading": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
