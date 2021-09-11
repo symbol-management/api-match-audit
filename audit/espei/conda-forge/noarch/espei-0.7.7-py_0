@@ -34,20 +34,83 @@
   "os.path.exists",
   "os.path.isdir",
   "permute",
+  "pycalphad",
+  "pycalphad.Database",
+  "pycalphad.Model",
+  "pycalphad.ReferenceState",
+  "pycalphad.__version__",
+  "pycalphad.calculate",
+  "pycalphad.codegen.callables.build_callables",
+  "pycalphad.codegen.callables.build_phase_records",
+  "pycalphad.core.calculate._compute_phase_values",
+  "pycalphad.core.calculate._sample_phase_constitution",
   "pycalphad.core.eqsolver._solve_eq_at_conditions",
+  "pycalphad.core.equilibrium._adjust_conditions",
+  "pycalphad.core.equilibrium._eqcalculate",
+  "pycalphad.core.light_dataset.LightDataset",
   "pycalphad.core.phase_rec.PhaseRecord",
+  "pycalphad.core.starting_point.starting_point",
+  "pycalphad.core.utils.extract_parameters",
+  "pycalphad.core.utils.filter_phases",
+  "pycalphad.core.utils.generate_dof",
+  "pycalphad.core.utils.get_pure_elements",
+  "pycalphad.core.utils.get_state_variables",
+  "pycalphad.core.utils.instantiate_models",
+  "pycalphad.core.utils.point_sample",
+  "pycalphad.core.utils.unpack_components",
+  "pycalphad.core.utils.unpack_condition",
+  "pycalphad.core.utils.unpack_kwarg",
+  "pycalphad.equilibrium",
+  "pycalphad.io.database.Species",
+  "pycalphad.plot.eqplot._map_coord_to_variable",
+  "pycalphad.plot.eqplot.eqplot",
+  "pycalphad.plot.eqplot.unpack_condition",
+  "pycalphad.plot.utils.phase_legend",
+  "pycalphad.variables",
   "pycalphad.variables.N",
   "pycalphad.variables.P",
   "pycalphad.variables.R",
+  "pycalphad.variables.SiteFraction",
+  "pycalphad.variables.Species",
+  "pycalphad.variables.StateVariable",
   "pycalphad.variables.T",
+  "pycalphad.variables.X",
   "recursive_zip",
+  "scipy.optimize.minimize",
+  "scipy.stats.norm",
   "scipy.stats.norm.logpdf",
+  "scipy.stats.triang",
+  "scipy.stats.uniform",
+  "sklearn.linear_model.LinearRegression",
+  "sklearn.linear_model.Ridge",
+  "symengine",
+  "symengine.__version__",
+  "sympy",
+  "sympy.Add",
+  "sympy.And",
   "sympy.Matrix",
+  "sympy.Piecewise",
+  "sympy.S",
   "sympy.S.One",
   "sympy.S.Zero",
+  "sympy.Symbol",
+  "sympy.__version__",
+  "sympy.diff",
+  "sympy.exp",
+  "sympy.log",
   "sys",
   "time",
-  "warnings.warn"
+  "tinydb",
+  "tinydb.Query",
+  "tinydb.TinyDB",
+  "tinydb.database.Document",
+  "tinydb.storages.MemoryStorage",
+  "tinydb.where",
+  "warnings.warn",
+  "yaml",
+  "yaml.FullLoader",
+  "yaml.load",
+  "yaml.safe_load"
  ],
  "deps": {
   "__future__": [
@@ -157,35 +220,9 @@
    "setuptools/conda-forge/linux-64/setuptools-46.3.0-py38h32f6830_0",
    "setuptools/conda-forge/linux-64/setuptools-49.1.2-py38h32f6830_0"
   ],
-  "pycalphad": [
-   "pycalphad/conda-forge/linux-64/pycalphad-0.8.4-py38hadf7658_0"
-  ],
   "re": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "scipy": [
-   "scipy/conda-forge/linux-64/scipy-0.17.1-np110py27_blas_openblas_202",
-   "scipy/conda-forge/linux-64/scipy-1.7.0-py37h29e03ee_0",
-   "scipy/conda-forge/linux-64/scipy-1.7.0-py37ha768fb6_1"
-  ],
-  "sklearn": [
-   "scikit-learn/conda-forge/linux-64/scikit-learn-0.17.1-np110py27_blas_openblas_200",
-   "scikit-learn/conda-forge/linux-64/scikit-learn-0.17.1-np110py35_blas_openblas_202",
-   "scikit-learn/conda-forge/linux-64/scikit-learn-0.17.1-np111py35_blas_openblas_202"
-  ],
-  "symengine": [
-   "python-symengine/conda-forge/linux-64/python-symengine-0.5.1-py36h9603a25_0",
-   "python-symengine/conda-forge/linux-64/python-symengine-0.6.1-py37hd42a662_1"
-  ],
-  "sympy": [
-   "sympy/conda-forge/linux-64/sympy-1.5.1-py27h8c360ce_2",
-   "sympy/conda-forge/linux-64/sympy-1.5.1-py36_0"
-  ],
-  "tinydb": [
-   "tinydb/conda-forge/noarch/tinydb-4.2.0-pyh9f0ad1d_0",
-   "tinydb/conda-forge/noarch/tinydb-4.3.0-pyhd3deb0d_0",
-   "tinydb/conda-forge/noarch/tinydb-4.4.0-pyh44b312d_0"
   ],
   "typing": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -194,11 +231,6 @@
   "warnings": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "yaml": [
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0",
-   "pyyaml/conda-forge/win-64/pyyaml-5.2-py36hfa6e2cd_0"
   ]
  }
 }
