@@ -67,7 +67,6 @@
   "poppy.ThinLens",
   "poppy.Wavefront",
   "poppy.ZernikeWFE",
-  "pygmo",
   "pygmo.fully_connected",
   "pygmo.island",
   "pygmo.nlopt",
@@ -76,11 +75,9 @@
   "pygmo.set_global_rng_seed",
   "pygmo.sga",
   "pygmo.unconnected",
-  "pympler.asizeof.asizeof",
   "pyxel.__file__",
   "pyxel.__init__.WITH_ATTR",
   "pyxel.__init__.__all__",
-  "pyxel.calibration.CalibrationMode.Pipeline",
   "pyxel.calibration.ResultType.Image",
   "pyxel.calibration.ResultType.Pixel",
   "pyxel.calibration.ResultType.Signal",
@@ -89,58 +86,12 @@
   "pyxel.parametric.ParametricMode.Sequential",
   "pyxel.parametric.parameter_values.ParameterType.Multi",
   "pyxel.parametric.parameter_values.ParameterType.Simple",
-  "shutil",
-  "shutil.Error",
-  "shutil.copy",
-  "shutil.copy2",
-  "shutil.move",
-  "shutil.rmtree",
-  "skimage.transform",
-  "skimage.transform.rotate",
   "spectrum_function",
-  "struct",
   "struct.calcsize",
-  "subprocess",
-  "subprocess.DEVNULL",
-  "subprocess.PIPE",
-  "subprocess.call",
   "sys",
   "time",
-  "timeit.default_timer",
-  "tqdm.auto.tqdm",
-  "tqdm.notebook.tqdm",
-  "tqdm.tqdm",
   "type.setter",
-  "typing",
-  "typing.Any",
-  "typing.Callable",
-  "typing.Dict",
-  "typing.Generator",
-  "typing.IO",
-  "typing.Iterable",
-  "typing.Iterator",
-  "typing.List",
-  "typing.Mapping",
-  "typing.MutableMapping",
-  "typing.NamedTuple",
-  "typing.Optional",
-  "typing.Protocol",
-  "typing.Sequence",
-  "typing.TYPE_CHECKING",
-  "typing.Tuple",
-  "typing.Type",
-  "typing.TypeVar",
-  "typing.Union",
-  "typing_extensions.Literal",
-  "typing_extensions.Protocol",
-  "warnings.warn",
-  "xarray",
-  "xarray.DataArray",
-  "xarray.Dataset",
-  "xarray.combine_by_coords",
-  "xarray.concat",
-  "xarray.merge",
-  "zipfile.ZipFile"
+  "warnings.warn"
  ],
  "deps": {
   "IPython": [
@@ -342,6 +293,20 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "pygmo": [
+   "pygmo/conda-forge/linux-64/pygmo-2.10-py36h7bceaee_1001",
+   "pygmo/conda-forge/linux-64/pygmo-2.11.4-py38h7aeab5a_3",
+   "pygmo/conda-forge/linux-64/pygmo-2.9-py35h5c5fb89_0"
+  ],
+  "pympler": [
+   "pympler/conda-forge/noarch/pympler-0.7-py_0",
+   "pympler/conda-forge/noarch/pympler-0.8-py_0"
+  ],
+  "pyxel": [
+   "pyxel-sim/conda-forge/noarch/pyxel-sim-0.10-pyhd8ed1ab_0",
+   "pyxel-sim/conda-forge/noarch/pyxel-sim-0.10.1-pyhd8ed1ab_0",
+   "pyxel-sim/conda-forge/noarch/pyxel-sim-0.9.1-pyhd8ed1ab_0"
+  ],
   "random": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -361,15 +326,72 @@
    "scipy/conda-forge/linux-64/scipy-1.7.0-py37h29e03ee_0",
    "scipy/conda-forge/linux-64/scipy-1.7.0-py37ha768fb6_1"
   ],
+  "shutil": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "skimage": [
+   "scikit-image/conda-forge/linux-64/scikit-image-0.12.3-np112py27_1",
+   "scikit-image/conda-forge/win-64/scikit-image-0.13.0-np113py36_0"
+  ],
+  "struct": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "subprocess": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "timeit": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "tqdm": [
+   "tqdm/conda-forge/noarch/tqdm-4.38.0-py_2",
+   "tqdm/conda-forge/noarch/tqdm-4.40.2-py_0",
+   "tqdm/conda-forge/noarch/tqdm-4.42.1-py_0",
+   "tqdm/conda-forge/noarch/tqdm-4.45.0-pyh9f0ad1d_0",
+   "tqdm/conda-forge/noarch/tqdm-4.51.0-pyh9f0ad1d_0",
+   "tqdm/conda-forge/noarch/tqdm-4.52.0-pyhd3deb0d_0",
+   "tqdm/conda-forge/noarch/tqdm-4.55.0-pyhd8ed1ab_0",
+   "tqdm/conda-forge/noarch/tqdm-4.56.0-pyhd8ed1ab_0",
+   "tqdm/conda-forge/noarch/tqdm-4.56.1-pyhd8ed1ab_0",
+   "tqdm/conda-forge/noarch/tqdm-4.60.0-pyhd8ed1ab_0"
+  ],
+  "typing": [
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "typing_extensions": [
+   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
+   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0",
+   "typing_extensions/conda-forge/noarch/typing_extensions-3.10.0.0-pyha770c72_0",
+   "typing_extensions/conda-forge/noarch/typing_extensions-3.7.4.2-py_0",
+   "typing_extensions/conda-forge/noarch/typing_extensions-3.7.4.3-py_0"
+  ],
   "warnings": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "xarray": [
+   "xarray/conda-forge/noarch/xarray-0.13.0-py_0",
+   "xarray/conda-forge/noarch/xarray-0.14.1-py_0",
+   "xarray/conda-forge/noarch/xarray-0.15.0-py_0",
+   "xarray/conda-forge/noarch/xarray-0.15.1-py_0",
+   "xarray/conda-forge/noarch/xarray-0.16.0-py_0",
+   "xarray/conda-forge/noarch/xarray-0.16.1-py_0",
+   "xarray/conda-forge/noarch/xarray-0.16.2-pyhd8ed1ab_0",
+   "xarray/conda-forge/noarch/xarray-0.18.0-pyhd8ed1ab_0",
+   "xarray/conda-forge/noarch/xarray-0.18.2-pyhd8ed1ab_0"
   ],
   "yaml": [
    "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
    "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0",
    "pyyaml/conda-forge/linux-64/pyyaml-3.11-py35_0",
    "pyyaml/conda-forge/win-64/pyyaml-5.2-py36hfa6e2cd_0"
+  ],
+  "zipfile": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ]
  }
 }
