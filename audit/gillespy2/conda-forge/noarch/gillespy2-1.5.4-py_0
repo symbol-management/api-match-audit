@@ -14,23 +14,13 @@
   "StochMLImportError",
   "ToString",
   "ValidationError",
-  "ast",
   "ast.BitXor",
   "ast.Call",
-  "ast.NodeTransformer",
-  "ast.NodeVisitor",
-  "ast.Num",
   "ast.Pow",
-  "ast.copy_location",
-  "ast.parse",
   "cmp",
   "collections.Iterable",
   "collections.UserList.__getattribute__",
-  "csv",
   "csv.writer",
-  "datetime.datetime",
-  "datetime.datetime.now",
-  "datetime.datetime.timestamp",
   "decorate",
   "functools.partial",
   "functools.reduce",
@@ -63,30 +53,14 @@
   "heapq",
   "heapq.heappop",
   "heapq.heappush",
-  "inspect",
-  "inspect.getfile",
   "libsbml",
   "libsbml.ASTNode",
   "libsbml.formulaToL3String",
   "libsbml.formulaToString",
   "libsbml.readSBML",
+  "lxml.etree",
   "math.__dict__",
   "math.__dict__.copy",
-  "matplotlib.pyplot",
-  "matplotlib.pyplot.figure",
-  "matplotlib.pyplot.fill_between",
-  "matplotlib.pyplot.legend",
-  "matplotlib.pyplot.plot",
-  "matplotlib.pyplot.savefig",
-  "matplotlib.pyplot.show",
-  "matplotlib.pyplot.style.available",
-  "matplotlib.pyplot.style.use",
-  "matplotlib.pyplot.title",
-  "matplotlib.pyplot.xlabel",
-  "matplotlib.pyplot.xlim",
-  "matplotlib.pyplot.xscale",
-  "matplotlib.pyplot.ylabel",
-  "matplotlib.pyplot.yscale",
   "numpy.arange",
   "numpy.e",
   "numpy.empty",
@@ -112,14 +86,15 @@
   "pyximport",
   "pyximport.install",
   "re.DOTALL",
+  "scipy.integrate.ode",
+  "scipy.integrate.solve_ivp",
+  "signal",
   "signal.SIGINT",
   "str.join",
   "sys",
-  "threading",
-  "threading.Event",
-  "threading.Thread",
-  "threading.Timer",
   "time",
+  "uuid",
+  "uuid.uuid4",
   "warnings.warn",
   "xml.dom.minidom",
   "xml.etree.ElementTree",
@@ -129,7 +104,22 @@
   "xml.etree.ElementTree.tostring"
  ],
  "deps": {
+  "ast": [
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "collections": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "csv": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "datetime": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "inspect": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -137,12 +127,14 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "lxml": [
-   "lxml/conda-forge/linux-64/lxml-4.2.6-py37h23eabaa_1000"
-  ],
   "math": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "matplotlib": [
+   "matplotlib-base/conda-forge/linux-64/matplotlib-base-3.1.1-py37hfd891ef_0",
+   "matplotlib-base/conda-forge/linux-64/matplotlib-base-3.1.1-py38h250f245_2",
+   "matplotlib/conda-forge/linux-64/matplotlib-1.5.3-np111py34_0"
   ],
   "ntpath": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -165,15 +157,7 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "scipy": [
-   "scipy/conda-forge/linux-64/scipy-1.7.0-py37h29e03ee_0",
-   "scipy/conda-forge/linux-64/scipy-1.7.0-py37ha768fb6_1"
-  ],
   "shutil": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "signal": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -185,7 +169,7 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "uuid": [
+  "threading": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],

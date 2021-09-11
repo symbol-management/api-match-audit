@@ -16,13 +16,28 @@
   "_base_lal_cbc_fd_waveform",
   "_base_roq_waveform",
   "_check_legal_sampling_frequency_and_duration",
+  "argparse",
+  "argparse.ArgumentParser",
+  "astropy.cosmology",
+  "astropy.cosmology.FLRW",
+  "astropy.cosmology.FlatLambdaCDM",
+  "astropy.cosmology.LambdaCDM",
   "astropy.cosmology.Planck15",
   "astropy.cosmology.__dict__",
   "astropy.cosmology.comoving_distance",
+  "astropy.cosmology.core.Cosmology",
   "astropy.cosmology.keys",
   "astropy.cosmology.luminosity_distance",
   "astropy.cosmology.name",
+  "astropy.cosmology.wCDM",
+  "astropy.cosmology.z_at_value",
+  "astropy.time.Time",
+  "astropy.time.Time.now",
+  "astropy.units",
   "astropy.units.Mpc",
+  "astropy.units.PrefixUnit",
+  "astropy.units.Quantity",
+  "astropy.units.Unit",
   "base_sampler.NestedSampler._verify_kwargs_against_default_kwargs",
   "base_sampler.Sampler._verify_kwargs_against_default_kwargs",
   "bilby.core.sampler.__init__.IMPLEMENTED_SAMPLERS",
@@ -53,34 +68,24 @@
   "core.utils.nfft",
   "core.utils.parsec",
   "core.utils.solar_mass",
+  "corner",
+  "corner.corner",
   "cosmo_cls",
   "cpnest.parameter.LivePoint",
+  "distutils.spawn.find_executable",
+  "distutils.version.LooseVersion",
   "func",
   "function",
   "gc",
   "get_empty_interferometer",
+  "glob",
+  "glob.glob",
   "gw.prior.HealPixMapPriorDist",
-  "gwpy",
-  "gwpy.frequencyseries.FrequencySeries",
-  "gwpy.signal",
-  "gwpy.signal.filter_design.bandpass",
-  "gwpy.signal.filter_design.concatenate_zpks",
-  "gwpy.signal.filter_design.lowpass",
-  "gwpy.signal.filter_design.notch",
-  "gwpy.timeseries.TimeSeries",
   "gwpy.timeseries.TimeSeries.fetch_open_data",
   "gwpy.timeseries.TimeSeries.get",
   "gwpy.timeseries.TimeSeries.read",
-  "healpy",
-  "healpy.npix2nside",
-  "healpy.nside2pixarea",
   "importlib.import_module",
   "infer_args_from_function_except_n_args",
-  "inspect",
-  "inspect.getargspec",
-  "inspect.getfullargspec",
-  "inspect.isclass",
-  "inspect.isfunction",
   "interp",
   "io.open",
   "lal.CreateCOMPLEX16FrequencySeries",
@@ -195,8 +200,6 @@
   "pypolychord",
   "pypolychord.run_polychord",
   "pypolychord.settings.PolyChordSettings",
-  "re",
-  "re.sub",
   "scipy.special.i0e",
   "sys",
   "tfunc",
@@ -252,14 +255,6 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "argparse": [
-   "argparse/conda-forge/osx-64/argparse-1.4.0-py26_0",
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "astropy": [
-   "astropy/conda-forge/linux-64/astropy-4.2-py37h5e8e339_1"
-  ],
   "collections": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -267,14 +262,6 @@
   "copy": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "corner": [
-   "corner/conda-forge/noarch/corner-2.0.1-py_1002",
-   "corner/conda-forge/noarch/corner-2.0.1-py_1003",
-   "corner/conda-forge/noarch/corner-2.1.0-pyh9f0ad1d_0",
-   "corner/conda-forge/noarch/corner-2.1.0-pyhd3deb0d_1",
-   "corner/conda-forge/noarch/corner-2.2.0-pyhd8ed1ab_0",
-   "corner/conda-forge/noarch/corner-2.2.1-pyhd8ed1ab_0"
   ],
   "cpnest": [
    "cpnest/conda-forge/linux-64/cpnest-0.9.7-py36hc1659b7_0"
@@ -289,10 +276,6 @@
    "deepdish/conda-forge/noarch/deepdish-0.3.6-pyh9f0ad1d_0"
   ],
   "dill": [],
-  "distutils": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "dynesty": [
    "dynesty/conda-forge/noarch/dynesty-0.9.7-py_0",
    "dynesty/conda-forge/noarch/dynesty-1.0.1-py_0",
@@ -309,11 +292,22 @@
   "future": [
    "future/conda-forge/linux-64/future-0.16.0-py34_0"
   ],
-  "glob": [
+  "gwpy": [
+   "gwpy/conda-forge/noarch/gwpy-2.0.0-pyh9f0ad1d_0",
+   "gwpy/conda-forge/noarch/gwpy-2.0.1-pyh9f0ad1d_0",
+   "gwpy/conda-forge/noarch/gwpy-2.0.2-pyhd8ed1ab_0",
+   "gwpy/conda-forge/noarch/gwpy-2.0.4-pyhd8ed1ab_1"
+  ],
+  "gzip": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "gzip": [
+  "healpy": [
+   "healpy/conda-forge/linux-64/healpy-1.11.0-np112py35_0",
+   "healpy/conda-forge/linux-64/healpy-1.12.8-py27h80923ca_1000",
+   "healpy/conda-forge/linux-64/healpy-1.9.1-np110py35_0"
+  ],
+  "inspect": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -397,6 +391,10 @@
    "pymultinest/conda-forge/linux-64/pymultinest-2.11-py36hd000896_0"
   ],
   "random": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "re": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],

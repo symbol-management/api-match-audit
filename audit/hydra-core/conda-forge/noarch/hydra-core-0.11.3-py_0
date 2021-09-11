@@ -18,23 +18,49 @@
   "get_key",
   "hydra.Hydra.create_main_hydra2",
   "hydra_plugins",
+  "importlib",
+  "importlib.import_module",
   "is_hydra",
   "itertools",
   "merge_defaults",
+  "omegaconf.Config",
+  "omegaconf.DictConfig",
+  "omegaconf.ListConfig",
+  "omegaconf.MissingMandatoryValue",
+  "omegaconf.OmegaConf",
+  "omegaconf.OmegaConf.copy_cache",
+  "omegaconf.OmegaConf.create",
+  "omegaconf.OmegaConf.from_dotlist",
+  "omegaconf.OmegaConf.load",
+  "omegaconf.OmegaConf.merge",
+  "omegaconf.OmegaConf.register_resolver",
+  "omegaconf.OmegaConf.save",
+  "omegaconf.OmegaConf.set_readonly",
+  "omegaconf.OmegaConf.set_struct",
+  "omegaconf.OmegaConf.to_container",
+  "omegaconf.open_dict",
   "os.chdir",
   "os.environ.copy",
   "os.getcwd",
   "os.listdir",
   "os.path.exists",
   "os.path.isdir",
+  "pathlib2.Path",
+  "pkg_resources",
+  "pkg_resources.resource_exists",
+  "pkg_resources.resource_isdir",
+  "pkg_resources.resource_listdir",
+  "pkg_resources.resource_stream",
   "pkgutil",
   "pkgutil.walk_packages",
   "plugins.Plugins.discover",
   "plugins.Plugins.instantiate_sweeper",
+  "pytest",
+  "pytest.fixture",
   "pytest.mark.parametrize",
   "pytest.mark.skipif",
-  "shutil",
-  "shutil.rmtree",
+  "pytest.raises",
+  "pytest.skip",
   "six",
   "six.PY2",
   "six.add_metaclass",
@@ -49,16 +75,9 @@
   "sys",
   "sys.argv.endswith",
   "sys.platform.startswith",
-  "tempfile",
-  "tempfile.mkdtemp",
   "utils.instantiate"
  ],
  "deps": {
-  "_pytest": [
-   "pytest/conda-forge/linux-64/pytest-3.7.0-py27_0",
-   "pytest/conda-forge/linux-64/pytest-4.6.0-py37_0",
-   "pytest/conda-forge/linux-64/pytest-6.0.2-py37hc8dfbb8_0"
-  ],
   "abc": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -87,11 +106,6 @@
   "hydra": [
    "hydra-core/conda-forge/noarch/hydra-core-0.11.3-py_0"
   ],
-  "importlib": [
-   "importlib/conda-forge/linux-64/importlib-1.0.4-py26_0",
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "inspect": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -104,10 +118,6 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "omegaconf": [
-   "omegaconf/conda-forge/noarch/omegaconf-1.4.1-py_0",
-   "omegaconf/conda-forge/noarch/omegaconf-1.4.1-py_1"
-  ],
   "os": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -117,24 +127,19 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "pathlib2": [
-   "pathlib2/conda-forge/linux-64/pathlib2-2.3.3-py36_1000"
-  ],
-  "pkg_resources": [
-   "setuptools/conda-forge/linux-64/setuptools-40.6.1-py36_0",
-   "setuptools/conda-forge/linux-64/setuptools-46.3.0-py38h32f6830_0",
-   "setuptools/conda-forge/linux-64/setuptools-49.1.2-py38h32f6830_0"
-  ],
-  "pytest": [
-   "pytest/conda-forge/linux-64/pytest-3.7.0-py27_0",
-   "pytest/conda-forge/linux-64/pytest-4.6.0-py37_0",
-   "pytest/conda-forge/linux-64/pytest-6.0.2-py37hc8dfbb8_0"
-  ],
   "re": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "shutil": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "subprocess": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "tempfile": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ]

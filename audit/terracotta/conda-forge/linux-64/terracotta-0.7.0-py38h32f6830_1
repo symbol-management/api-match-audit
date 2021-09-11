@@ -35,21 +35,69 @@
   "aws_xray_sdk.core.xray_recorder.begin_subsegment",
   "aws_xray_sdk.core.xray_recorder.end_subsegment",
   "cache_callback",
+  "cachetools",
+  "cachetools.LFUCache",
+  "cachetools.TTLCache",
+  "cachetools.cachedmethod",
+  "cachetools.keys.hashkey",
   "cmap_fun",
   "collections.Mapping",
+  "colorlog",
+  "colorlog.ColoredFormatter",
+  "concurrent.futures",
+  "concurrent.futures.Executor",
+  "concurrent.futures.Future",
+  "concurrent.futures.ProcessPoolExecutor",
+  "concurrent.futures.ThreadPoolExecutor",
   "crick.SummaryStats",
   "crick.TDigest",
+  "flask.Blueprint",
+  "flask.Flask",
+  "flask.current_app",
   "flask.current_app.config",
   "flask.current_app.debug",
+  "flask.jsonify",
+  "flask.render_template",
+  "flask.request",
   "flask.request.args",
+  "flask.send_file",
+  "flask_cors.CORS",
   "fun",
   "func",
   "functools.partial",
   "get_band_future",
+  "glob",
+  "glob.glob",
   "io.BytesIO",
   "itertools",
   "itertools.chain.from_iterable",
   "keytuple",
+  "marshmallow",
+  "marshmallow.EXCLUDE",
+  "marshmallow.INCLUDE",
+  "marshmallow.Schema",
+  "marshmallow.ValidationError",
+  "marshmallow.fields",
+  "marshmallow.fields.Boolean",
+  "marshmallow.fields.Dict",
+  "marshmallow.fields.Int",
+  "marshmallow.fields.Integer",
+  "marshmallow.fields.List",
+  "marshmallow.fields.Nested",
+  "marshmallow.fields.Number",
+  "marshmallow.fields.Raw",
+  "marshmallow.fields.String",
+  "marshmallow.post_load",
+  "marshmallow.pre_load",
+  "marshmallow.validate",
+  "marshmallow.validate.Length",
+  "marshmallow.validate.OneOf",
+  "marshmallow.validate.Range",
+  "marshmallow.validates_schema",
+  "mercantile",
+  "mercantile.Tile",
+  "mercantile.tile",
+  "mercantile.xy_bounds",
   "numpy.abs",
   "numpy.arange",
   "numpy.arccos",
@@ -78,6 +126,24 @@
   "numpy.uint8",
   "numpy.zeros",
   "op_callable",
+  "operator",
+  "operator.add",
+  "operator.and_",
+  "operator.attrgetter",
+  "operator.eq",
+  "operator.ge",
+  "operator.gt",
+  "operator.invert",
+  "operator.le",
+  "operator.lt",
+  "operator.mod",
+  "operator.mul",
+  "operator.ne",
+  "operator.neg",
+  "operator.or_",
+  "operator.pow",
+  "operator.sub",
+  "operator.truediv",
   "os.W_OK",
   "os.access",
   "os.environ.get",
@@ -85,6 +151,10 @@
   "os.listdir",
   "os.path.isdir",
   "os.remove",
+  "pkg_resources.DistributionNotFound",
+  "pkg_resources.Requirement",
+  "pkg_resources.Requirement.parse",
+  "pkg_resources.resource_filename",
   "push_to_last",
   "pymysql.connect",
   "rasterio.enums.ColorInterp.alpha",
@@ -94,6 +164,11 @@
   "rasterio.enums.Resampling.cubic",
   "rasterio.enums.Resampling.nearest",
   "rasterio.shutil.copy",
+  "shapely.geometry",
+  "shapely.geometry.MultiPolygon",
+  "shapely.geometry.Polygon",
+  "shapely.geometry.mapping",
+  "shapely.geometry.shape",
   "socket.AF_INET",
   "socket.SOCK_STREAM",
   "socket.error",
@@ -102,6 +177,8 @@
   "sqlite3.OperationalError",
   "sqlite3.Row",
   "sqlite3.connect",
+  "string",
+  "string.Formatter",
   "sys",
   "terracotta.drivers.__init__.URLOrPathType",
   "terracotta.drivers.__init__.auto_detect_provider",
@@ -111,6 +188,22 @@
   "terracotta.server.flask_api.SPEC.to_dict",
   "terracotta.server.flask_api.SPEC_API.route",
   "terracotta.server.flask_api.TILE_API.route",
+  "typing.Any",
+  "typing.Callable",
+  "typing.Dict",
+  "typing.Iterator",
+  "typing.List",
+  "typing.Mapping",
+  "typing.NamedTuple",
+  "typing.Optional",
+  "typing.Sequence",
+  "typing.Set",
+  "typing.TYPE_CHECKING",
+  "typing.Tuple",
+  "typing.Type",
+  "typing.TypeVar",
+  "typing.Union",
+  "typing.cast",
   "typing.io.BinaryIO",
   "versiontuple",
   "warnings.warn"
@@ -239,13 +332,6 @@
    "botocore/conda-forge/noarch/botocore-1.8.39-py_0",
    "botocore/conda-forge/noarch/botocore-1.9.13-py_0"
   ],
-  "cachetools": [
-   "cachetools/conda-forge/noarch/cachetools-4.1.0-py_1",
-   "cachetools/conda-forge/noarch/cachetools-4.2.1-pyhd8ed1ab_0",
-   "cachetools/conda-forge/noarch/cachetools-4.2.2-pyhd8ed1ab_0",
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0"
-  ],
   "click": [
    "click/conda-forge/noarch/click-5.1-py_0",
    "click/conda-forge/noarch/click-6.7-py_1",
@@ -257,13 +343,6 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "colorlog": [
-   "colorlog/conda-forge/linux-64/colorlog-2.6.3-py34_0",
-   "colorlog/conda-forge/linux-64/colorlog-4.6.2-py36h5fab9bb_0"
-  ],
-  "concurrent": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython"
-  ],
   "contextlib": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -272,26 +351,7 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "flask": [
-   "flask/conda-forge/linux-64/flask-0.12-py36_0",
-   "flask/conda-forge/noarch/flask-0.11.1-py_1",
-   "flask/conda-forge/noarch/flask-1.0.2-py_1",
-   "flask/conda-forge/noarch/flask-1.0.3-py_0",
-   "flask/conda-forge/noarch/flask-1.1.0-py_0"
-  ],
-  "flask_cors": [
-   "flask-cors/conda-forge/noarch/flask-cors-3.0.10-pyhd8ed1ab_0",
-   "flask-cors/conda-forge/noarch/flask-cors-3.0.6-py_0",
-   "flask-cors/conda-forge/noarch/flask-cors-3.0.7-py_0",
-   "flask_cors/conda-forge/noarch/flask_cors-3.0.10-pyhd3deb0d_0",
-   "flask_cors/conda-forge/noarch/flask_cors-3.0.8-py_0",
-   "flask_cors/conda-forge/noarch/flask_cors-3.0.9-pyh9f0ad1d_0"
-  ],
   "functools": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "glob": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -303,17 +363,6 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "marshmallow": [
-   "marshmallow/conda-forge/noarch/marshmallow-3.0.1-py_0",
-   "marshmallow/conda-forge/noarch/marshmallow-3.0.2-py_0",
-   "marshmallow/conda-forge/noarch/marshmallow-3.0.4-py_0",
-   "marshmallow/conda-forge/noarch/marshmallow-3.0.5-py_0",
-   "marshmallow/conda-forge/noarch/marshmallow-3.11.1-pyhd8ed1ab_0",
-   "marshmallow/conda-forge/noarch/marshmallow-3.12.1-pyhd8ed1ab_0",
-   "marshmallow/conda-forge/noarch/marshmallow-3.12.2-pyhd8ed1ab_0",
-   "marshmallow/conda-forge/noarch/marshmallow-3.5.2-py_0",
-   "marshmallow/conda-forge/noarch/marshmallow-3.8.0-py_0"
-  ],
   "math": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -322,17 +371,6 @@
    "matplotlib-base/conda-forge/linux-64/matplotlib-base-3.1.1-py37hfd891ef_0",
    "matplotlib-base/conda-forge/linux-64/matplotlib-base-3.1.1-py38h250f245_2",
    "matplotlib/conda-forge/linux-64/matplotlib-1.5.3-np111py34_0"
-  ],
-  "mercantile": [
-   "mercantile/conda-forge/noarch/mercantile-1.0.3-py_0",
-   "mercantile/conda-forge/noarch/mercantile-1.0.4-py_0",
-   "mercantile/conda-forge/noarch/mercantile-1.1.0-py_0",
-   "mercantile/conda-forge/noarch/mercantile-1.1.1-py_0",
-   "mercantile/conda-forge/noarch/mercantile-1.1.2-py_0",
-   "mercantile/conda-forge/noarch/mercantile-1.1.3-pyh9f0ad1d_0",
-   "mercantile/conda-forge/noarch/mercantile-1.1.4-pyh9f0ad1d_0",
-   "mercantile/conda-forge/noarch/mercantile-1.1.5-pyh9f0ad1d_0",
-   "mercantile/conda-forge/noarch/mercantile-1.1.6-pyh9f0ad1d_0"
   ],
   "ntpath": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -343,10 +381,6 @@
    "numpy/conda-forge/linux-64/numpy-1.18.4-py37h8960a57_0",
    "numpy/conda-forge/linux-64/numpy-1.19.2-py36h68c22af_1"
   ],
-  "operator": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "os": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -355,11 +389,6 @@
    "pathlib/conda-forge/noarch/pathlib-1.0.1-py_1",
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "pkg_resources": [
-   "setuptools/conda-forge/linux-64/setuptools-40.6.1-py36_0",
-   "setuptools/conda-forge/linux-64/setuptools-46.3.0-py38h32f6830_0",
-   "setuptools/conda-forge/linux-64/setuptools-49.1.2-py38h32f6830_0"
   ],
   "pymysql": [
    "pymysql/conda-forge/noarch/pymysql-0.10.0-pyh9f0ad1d_0",
@@ -379,11 +408,6 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "shapely": [
-   "shapely/conda-forge/linux-64/shapely-1.5.15-np19py35_0",
-   "shapely/conda-forge/linux-64/shapely-1.7.1-py37hba0730f_1",
-   "solaris/conda-forge/noarch/solaris-0.4.0-pyhe05a262_0"
-  ],
   "shutil": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -393,10 +417,6 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "sqlite3": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "string": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -429,10 +449,6 @@
    "tqdm/conda-forge/noarch/tqdm-4.60.0-pyhd8ed1ab_0"
   ],
   "traceback": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "typing": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
