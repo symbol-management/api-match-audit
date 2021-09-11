@@ -9,11 +9,9 @@
   "__spec__.submodule_search_locations",
   "_compiler.compiler",
   "astropy.io.fits.new_table",
-  "bs4.BeautifulSoup",
   "collections.defaultdict",
   "condition",
   "cython_version.cython_version",
-  "distutils.version.LooseVersion",
   "f",
   "f.add",
   "fmt_coord",
@@ -21,30 +19,10 @@
   "fun.__name__",
   "functools.partial",
   "get_and_create_download_dir",
-  "glob",
-  "glob.glob",
-  "inspect",
-  "inspect.formatargspec",
-  "inspect.getargspec",
-  "inspect.getfullargspec",
-  "inspect.ismethod",
   "io.BytesIO",
   "io.StringIO",
   "itertools",
   "itertools.imap",
-  "locale",
-  "locale.getdefaultlocale",
-  "math.floor",
-  "matplotlib.colorbar.Colorbar",
-  "matplotlib.figure.Figure",
-  "matplotlib.pyplot",
-  "matplotlib.pyplot.figure",
-  "matplotlib.pyplot.gca",
-  "matplotlib.pyplot.gcf",
-  "matplotlib.pyplot.show",
-  "matplotlib.ticker.FuncFormatter",
-  "matplotlib.ticker.IndexLocator",
-  "matplotlib.ticker.MaxNLocator",
   "meta",
   "meta.__prepare__",
   "metaclass",
@@ -60,28 +38,14 @@
   "numpy.uint16",
   "numpy.uint8",
   "numpy.zeros",
-  "operator",
-  "operator.attrgetter",
-  "operator.getitem",
-  "operator.itemgetter",
-  "operator.methodcaller",
   "os.getcwd",
   "os.listdir",
-  "os.path.abspath",
-  "os.path.dirname",
   "os.path.exists",
-  "os.path.expanduser",
   "os.path.isdir",
   "os.path.isfile",
-  "os.path.join",
-  "os.path.split",
   "overlay",
-  "parser",
-  "pytest",
-  "pytest.fixture",
   "pytest.mark.online",
   "pytest.mark.xfail",
-  "pytest.raises",
   "radiospectra.__init__.UnsupportedPythonError",
   "radiospectra.__init__.__minimum_python_version__",
   "radiospectra.extern.six.moves.range",
@@ -91,30 +55,22 @@
   "radiospectra.spectrogram.LinearTimeSpectrogram.COPY_PROPERTIES",
   "radiospectra.spectrogram.LinearTimeSpectrogram._create",
   "radiospectra.util.Parent._create",
-  "random.randint",
   "run_git",
-  "scipy.ndimage",
-  "scipy.ndimage.gaussian_filter1d",
-  "scipy.ndimage.zoom",
-  "scipy.optimize.leastsq",
   "sources.callisto.CallistoSpectrogram.create",
   "sources.callisto.CallistoSpectrogram.read",
   "spectrogram.LinearTimeSpectrogram.combine_frequencies",
   "spectrogram.LinearTimeSpectrogram.intersect_time",
   "spectrogram.LinearTimeSpectrogram.join_many",
-  "struct",
   "struct.Struct",
   "sunpy.time.parse_time",
   "sys",
   "sys.meta_path.append",
   "sys.platform.startswith",
-  "tempfile.mkdtemp",
   "type.__new__",
   "types.ClassType",
   "unicode",
   "version.githash",
   "version.version",
-  "warnings",
   "warnings.warn"
  ],
  "deps": {
@@ -122,10 +78,20 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "_pytest": [
+   "pytest/conda-forge/linux-64/pytest-3.7.0-py27_0",
+   "pytest/conda-forge/linux-64/pytest-4.6.0-py37_0",
+   "pytest/conda-forge/linux-64/pytest-6.0.2-py37hc8dfbb8_0"
+  ],
   "astropy": [
    "astropy/conda-forge/linux-64/astropy-2.0-np111py36_0",
    "astropy/conda-forge/linux-64/astropy-2.0.2-np111py27_0",
    "astropy/conda-forge/linux-64/astropy-4.2-py37h5e8e339_1"
+  ],
+  "bs4": [
+   "beautifulsoup4/conda-forge/linux-64/beautifulsoup4-4.7.1-py37_1001",
+   "beautifulsoup4/conda-forge/linux-64/beautifulsoup4-4.8.2-py37_0",
+   "beautifulsoup4/conda-forge/noarch/beautifulsoup4-4.9.3-pyhb0f4dca_0"
   ],
   "builtins": [
    "pies2overrides/conda-forge/osx-64/pies2overrides-2.6.7-py27_1000"
@@ -138,11 +104,40 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "distutils": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "functools": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "glob": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "inspect": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "io": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "locale": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "math": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "matplotlib": [
+   "matplotlib-base/conda-forge/linux-64/matplotlib-base-3.1.1-py37hfd891ef_0",
+   "matplotlib-base/conda-forge/linux-64/matplotlib-base-3.1.1-py38h250f245_2",
+   "matplotlib/conda-forge/linux-64/matplotlib-1.5.3-np111py34_0"
+  ],
+  "ntpath": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -151,11 +146,37 @@
    "numpy/conda-forge/linux-64/numpy-1.18.4-py37h8960a57_0",
    "numpy/conda-forge/linux-64/numpy-1.19.2-py36h68c22af_1"
   ],
+  "operator": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "os": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "parser": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "pytest": [
+   "pytest/conda-forge/linux-64/pytest-3.7.0-py27_0",
+   "pytest/conda-forge/linux-64/pytest-4.6.0-py37_0",
+   "pytest/conda-forge/linux-64/pytest-6.0.2-py37hc8dfbb8_0"
+  ],
+  "random": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "scipy": [
+   "scipy/conda-forge/linux-64/scipy-0.17.1-np110py27_blas_openblas_202",
+   "scipy/conda-forge/linux-64/scipy-1.7.0-py37h29e03ee_0",
+   "scipy/conda-forge/linux-64/scipy-1.7.0-py37ha768fb6_1"
+  ],
   "shutil": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "struct": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -167,7 +188,15 @@
    "sunpy/conda-forge/linux-64/sunpy-0.9.0-py35_0",
    "sunpy/conda-forge/linux-64/sunpy-1.0.8-py36hc1659b7_0"
   ],
+  "tempfile": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "types": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "warnings": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ]
