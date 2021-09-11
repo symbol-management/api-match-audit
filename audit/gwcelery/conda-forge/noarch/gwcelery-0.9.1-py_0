@@ -6,7 +6,6 @@
   "_python_process_context",
   "_python_process_wait",
   "_read_until_magic_words",
-  "_version.get_versions",
   "app.conf",
   "app.conf.format",
   "app.conf.get",
@@ -16,63 +15,17 @@
   "app.conf.update",
   "app.start",
   "app.task",
-  "astropy.coordinates.ICRS",
-  "astropy.coordinates.SkyCoord",
-  "astropy.io.fits",
-  "astropy.io.fits.getval",
-  "astropy.io.fits.open",
-  "astropy.table",
-  "astropy.table.Table",
-  "astropy.table.Table.read",
-  "astropy.time.Time",
-  "astropy.units",
   "astropy.units.deg",
-  "astropy.units.dimensionless_unscaled",
-  "astropy_healpix.HEALPix",
-  "astropy_healpix.pixel_resolution_to_nside",
-  "asyncio",
-  "asyncio.FIRST_COMPLETED",
-  "asyncio.StreamReader",
-  "asyncio.get_event_loop",
-  "asyncio.streams.StreamReaderProtocol",
-  "asyncio.streams._DEFAULT_LIMIT",
-  "asyncio.subprocess.PIPE",
-  "asyncio.subprocess.Process",
-  "asyncio.subprocess.SubprocessStreamProtocol",
-  "asyncio.wait",
   "bayestar.localize.s",
-  "celery.Celery",
-  "celery.bin.base.Command",
-  "celery.bootsteps",
-  "celery.bootsteps.ConsumerStep",
-  "celery.concurrency.solo",
-  "celery.concurrency.solo.TaskPool",
-  "celery.exceptions",
-  "celery.exceptions.Ignore",
-  "celery.exceptions.Retry",
-  "celery.group",
-  "celery.local.PromiseProxy",
-  "celery.signals.after_setup_logger",
   "celery.signals.after_setup_logger.connect",
-  "celery.task.PeriodicTask",
-  "celery.utils.dispatch.Signal",
-  "celery.utils.log.get_logger",
-  "celery.utils.log.get_task_logger",
   "circulars.create_emcoinc_circular.si",
   "circulars.create_initial_circular.si",
   "circulars.create_retraction_circular.si",
-  "click",
-  "click.group",
-  "click.testing",
-  "click.testing.CliRunner",
   "client.LVAlertClient",
   "comet.utility.WhitelistingFactory",
   "condor.JobAborted",
   "condor.JobFailed",
   "condor.submit.s",
-  "contextlib",
-  "contextlib.ExitStack",
-  "contextlib.contextmanager",
   "core.identity.s",
   "detchar.check_vectors",
   "detchar.check_vectors.s",
@@ -104,9 +57,6 @@
   "gcn.handler",
   "gcn.send.s",
   "get_event",
-  "glob",
-  "glob.glob",
-  "glob.iglob",
   "glue.ligolw.lsctables.CoincInspiralTable.get_table",
   "glue.ligolw.lsctables.CoincMapTable.get_table",
   "glue.ligolw.lsctables.CoincTable.get_table",
@@ -203,12 +153,6 @@
   "ligo.skymap.tool.ligo_skymap_plot.main",
   "ligo.skymap.tool.ligo_skymap_plot_volume",
   "ligo.skymap.tool.ligo_skymap_plot_volume.main",
-  "logging",
-  "logging.ERROR",
-  "logging.INFO",
-  "logging.WARNING",
-  "logging.basicConfig",
-  "logging.getLogger",
   "logging.log.info",
   "logs",
   "lvalert.handler",
@@ -240,12 +184,7 @@
   "pytest.mark.parametrize",
   "pytest.mark.xfail",
   "raven.coincidence_search",
-  "re",
   "re.IGNORECASE",
-  "re.compile",
-  "re.escape",
-  "re.findall",
-  "re.sub",
   "sentry.DSN",
   "sentry.before_send",
   "sentry.configure",
@@ -383,21 +322,59 @@
   "util.handling_system_exit",
   "voevent.install",
   "voevent.signals.voevent_received.connect",
+  "werkzeug.http.HTTP_STATUS_CODES",
+  "werkzeug.middleware.proxy_fix.ProxyFix",
+  "xml.sax.SAXParseException",
   "zope.interface.implementer"
  ],
  "deps": {
+  "_asyncio": [
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "_pytest": [
    "pytest/conda-forge/linux-64/pytest-3.7.0-py27_0",
    "pytest/conda-forge/linux-64/pytest-4.6.0-py37_0",
    "pytest/conda-forge/linux-64/pytest-6.0.2-py37hc8dfbb8_0"
+  ],
+  "_version": [
+   "diffusioncma/conda-forge/linux-64/diffusioncma-0.5.8-py37h0da4684_0"
   ],
   "argparse": [
    "argparse/conda-forge/osx-64/argparse-1.4.0-py26_0",
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "astropy": [],
+  "astropy_healpix": [
+   "astropy-healpix/conda-forge/linux-64/astropy-healpix-0.4-py36h7eb728f_0"
+  ],
+  "asyncio": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython"
+  ],
+  "celery": [
+   "celery/conda-forge/linux-64/celery-4.0.1-py35_0",
+   "celery/conda-forge/noarch/celery-4.1.1-py_0",
+   "celery/conda-forge/noarch/celery-4.2.2-py_0",
+   "celery/conda-forge/noarch/celery-4.4.0-py_0",
+   "celery/conda-forge/noarch/celery-4.4.0-py_1",
+   "celery/conda-forge/noarch/celery-4.4.1-py_0",
+   "celery/conda-forge/noarch/celery-4.4.2-pyh8c360ce_0",
+   "celery/conda-forge/noarch/celery-4.4.4-pyh9f0ad1d_0",
+   "celery/conda-forge/noarch/celery-4.4.6-pyh9f0ad1d_0"
+  ],
+  "click": [
+   "click/conda-forge/noarch/click-5.1-py_0",
+   "click/conda-forge/noarch/click-6.7-py_1",
+   "click/conda-forge/noarch/click-7.0-py_0",
+   "click/conda-forge/noarch/click-7.1-pyh8c360ce_0",
+   "click/conda-forge/noarch/click-7.1.1-pyh8c360ce_0"
+  ],
   "comet": [
    "comet/conda-forge/noarch/comet-3.1.0-py_0"
+  ],
+  "contextlib": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "datetime": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -441,6 +418,10 @@
    "pygcn/conda-forge/noarch/pygcn-1.1.0-pyh44b312d_0"
   ],
   "getpass": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "glob": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -518,6 +499,10 @@
    "python-lal/conda-forge/linux-64/python-lal-7.1.0-fftw_py36h75dcf95_100"
   ],
   "ligo": [],
+  "logging": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "lxml": [
    "lxml/conda-forge/linux-64/lxml-4.2.6-py37h23eabaa_1000"
   ],
@@ -570,6 +555,10 @@
    "pytest-socket/conda-forge/noarch/pytest-socket-0.3.5-pyh9f0ad1d_0"
   ],
   "random": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "re": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -647,14 +636,11 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "werkzeug": [
+   "werkzeug/conda-forge/noarch/werkzeug-0.12.2-py_1",
    "werkzeug/conda-forge/noarch/werkzeug-0.15.3-py_0",
    "werkzeug/conda-forge/noarch/werkzeug-0.16.0-py_0",
    "werkzeug/conda-forge/noarch/werkzeug-1.0.0-py_0",
    "werkzeug/conda-forge/noarch/werkzeug-1.0.1-pyh9f0ad1d_0"
-  ],
-  "xml": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ]
  }
 }
