@@ -10,16 +10,24 @@
   "format_class",
   "func",
   "functools.reduce",
+  "gzip",
+  "gzip.open",
+  "h5py",
+  "h5py.Dataset",
   "h5py.Dataset.__doc__",
+  "h5py.File",
   "h5py.File.__init__.__doc__",
+  "h5py.Group",
   "h5py.Group.create_dataset.__doc__",
   "h5py.SparseDataset",
   "h5py._load_h5_dataset_as_sparse",
+  "h5py.special_dtype",
   "is_deprecated",
   "is_float",
   "logging.anndata_logger.info",
   "logging.anndata_logger.warning",
   "name_idx",
+  "natsort.natsorted",
   "numpy.arange",
   "numpy.dtype",
   "numpy.empty",
@@ -35,8 +43,19 @@
   "object.read_direct",
   "object.shape",
   "os.getpid",
+  "pandas",
+  "pandas.Categorical",
+  "pandas.Categorical.from_codes",
+  "pandas.DataFrame",
+  "pandas.DataFrame.from_dict",
+  "pandas.DataFrame.from_records",
+  "pandas.Index",
+  "pandas.Series",
   "pandas.api.types.is_categorical",
   "pandas.api.types.is_string_dtype",
+  "pandas.concat",
+  "pandas.core.index.RangeIndex",
+  "pandas.read_excel",
   "postprocess_reading",
   "preprocess_writing",
   "readwrite.read._read_args_from_h5ad",
@@ -44,16 +63,44 @@
   "readwrite.write.write_csvs",
   "readwrite.write.write_loom",
   "readwrite.write.write_zarr",
+  "scipy.io.mmread",
+  "scipy.sparse",
+  "scipy.sparse._sparsetools",
+  "scipy.sparse._sparsetools.csr_sample_offsets",
+  "scipy.sparse.csc_matrix",
+  "scipy.sparse.csr.csr_matrix",
+  "scipy.sparse.csr_matrix",
+  "scipy.sparse.issparse",
+  "scipy.sparse.isspmatrix_csr",
+  "scipy.sparse.lil_matrix",
+  "scipy.sparse.spmatrix",
+  "scipy.sparse.vstack",
   "set.intersection",
   "set.union",
   "sparse_class",
   "type.__dir__",
+  "typing.Any",
+  "typing.Generator",
+  "typing.Iterable",
+  "typing.Iterator",
+  "typing.KeysView",
+  "typing.List",
+  "typing.Mapping",
+  "typing.MutableMapping",
+  "typing.NamedTuple",
+  "typing.Optional",
+  "typing.Sequence",
+  "typing.Sized",
+  "typing.Tuple",
+  "typing.Union",
   "utils.DeprecationMixinMeta",
   "utils.deprecated",
   "utils.make_index_unique",
   "utils.make_index_unique.__doc__",
   "utils.warn_names_duplicates",
   "utils.warn_no_string_index",
+  "warnings",
+  "warnings.simplefilter",
   "warnings.warn"
  ],
  "deps": {
@@ -82,14 +129,6 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "gzip": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "h5py": [
-   "h5py/conda-forge/linux-64/h5py-2.6.0-np111py34_4",
-   "h5py/conda-forge/linux-64/h5py-2.7.0-np113py36_1"
-  ],
   "json": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -106,16 +145,6 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "natsort": [
-   "natsort/conda-forge/noarch/natsort-5.1.1-py_0",
-   "natsort/conda-forge/noarch/natsort-5.3.1-py_0",
-   "natsort/conda-forge/noarch/natsort-5.3.2-py_0",
-   "natsort/conda-forge/noarch/natsort-5.3.3-py_1",
-   "natsort/conda-forge/noarch/natsort-5.5.0-py_0",
-   "natsort/conda-forge/noarch/natsort-6.0.0-py_0",
-   "natsort/conda-forge/noarch/natsort-6.2.0-py_0",
-   "natsort/conda-forge/noarch/natsort-7.1.1-pyhd8ed1ab_0"
-  ],
   "numcodecs": [
    "numcodecs/conda-forge/linux-64/numcodecs-0.5.2-py35_0",
    "numcodecs/conda-forge/linux-64/numcodecs-0.6.4-py27he1b5a44_0"
@@ -129,7 +158,6 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "pandas": [],
   "pathlib": [
    "pathlib/conda-forge/noarch/pathlib-1.0.1-py_1",
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -138,18 +166,7 @@
   "psutil": [
    "psutil/conda-forge/linux-64/psutil-5.7.3-py39h38d8fee_0"
   ],
-  "scipy": [
-   "scipy/conda-forge/linux-64/scipy-1.7.0-py37h29e03ee_0"
-  ],
   "shutil": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "typing": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "warnings": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
