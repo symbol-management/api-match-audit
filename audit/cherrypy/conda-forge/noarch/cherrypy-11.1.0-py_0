@@ -49,6 +49,7 @@
   "Static",
   "SubRoot",
   "SubSubRoot",
+  "Test",
   "TestType",
   "UnCached",
   "User",
@@ -57,6 +58,7 @@
   "VHost",
   "VaryHeaderCachingServer",
   "XmlRpc",
+  "__future__.unicode_literals",
   "_cpchecker.Checker",
   "_cpconfig.Config",
   "_cplogging.LogManager",
@@ -75,6 +77,7 @@
   "assert_native",
   "ast.Starred",
   "atexit",
+  "builtins",
   "callee",
   "checker",
   "cherrypy.__init__._GlobalLogManager",
@@ -100,6 +103,7 @@
   "cherrypy._cache.put",
   "cherrypy._cache.store.clear",
   "cherrypy._cache.tot_non_modified",
+  "cherrypy._cpcompat.json.dumps",
   "cherrypy._cpengine.STARTING",
   "cherrypy._cpengine.STOPPED",
   "cherrypy._cptools.default_toolbox",
@@ -345,6 +349,14 @@
   "esc",
   "expose_",
   "f",
+  "fcntl",
+  "fcntl.FD_CLOEXEC",
+  "fcntl.F_GETFD",
+  "fcntl.F_SETFD",
+  "fcntl.LOCK_EX",
+  "fcntl.LOCK_NB",
+  "fcntl.fcntl",
+  "fcntl.flock",
   "fetch_users",
   "file_ranges",
   "flattener",
@@ -370,6 +382,8 @@
   "io.open",
   "iter_close",
   "itertools",
+  "json",
+  "json.loads",
   "listener",
   "logging.Logger.manager.emittedNoHandlerWarning",
   "logging.statistics",
@@ -407,6 +421,12 @@
   "obj",
   "object.__setattr__",
   "op",
+  "operator",
+  "operator.add",
+  "operator.attrgetter",
+  "operator.itemgetter",
+  "operator.mul",
+  "operator.neg",
   "os.R_OK",
   "os._exit",
   "os.access",
@@ -444,6 +464,10 @@
   "os.utime",
   "os.wait",
   "os.waitpid",
+  "pkg_resources",
+  "pkg_resources.require",
+  "platform",
+  "platform.system",
   "proc",
   "process.bus",
   "process.plugins.Autoreloader",
@@ -575,16 +599,14 @@
   "win32serviceutil.HandleCommandLine",
   "win32serviceutil.RestartService",
   "win32serviceutil.ServiceFramework",
-  "win32serviceutil.StopService"
+  "win32serviceutil.StopService",
+  "xml.etree.ElementTree",
+  "xml.etree.ElementTree.ParseError",
+  "xml.etree.ElementTree.fromstring",
+  "xml.sax.saxutils",
+  "xml.sax.saxutils.quoteattr"
  ],
  "deps": {
-  "Test": [
-   "netket/conda-forge/noarch/netket-3.0b2-pyhd8ed1ab_0"
-  ],
-  "__future__": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "_pytest": [
    "pytest/conda-forge/linux-64/pytest-3.7.0-py27_0",
    "pytest/conda-forge/linux-64/pytest-4.6.0-py37_0",
@@ -608,9 +630,6 @@
   "binascii": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython"
   ],
-  "builtins": [
-   "pies2overrides/conda-forge/osx-64/pies2overrides-2.6.7-py27_1000"
-  ],
   "calendar": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -630,6 +649,7 @@
    "cheroot/conda-forge/noarch/cheroot-8.5.2-pyhd8ed1ab_0"
   ],
   "cherrypy": [
+   "cherrypy/conda-forge/noarch/cherrypy-11.0.0-py_0",
    "cherrypy/conda-forge/noarch/cherrypy-11.1.0-py_0"
   ],
   "configparser": [
@@ -657,10 +677,6 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "email": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "fcntl": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -710,10 +726,6 @@
    "jaraco.classes/conda-forge/noarch/jaraco.classes-2.0-py_1",
    "jaraco.classes/conda-forge/noarch/jaraco.classes-3.1.0-py_0"
   ],
-  "json": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "logging": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -731,10 +743,6 @@
   ],
   "objgraph": [
    "objgraph/conda-forge/noarch/objgraph-3.4.1-pyh9f0ad1d_0"
-  ],
-  "operator": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "optparse": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -757,15 +765,6 @@
    "path.py/conda-forge/noarch/path.py-12.0.2-py_0",
    "path/conda-forge/linux-64/path-15.1.0-py37h89c1867_0",
    "path/conda-forge/linux-64/path-15.1.2-py36h5fab9bb_0"
-  ],
-  "pkg_resources": [
-   "setuptools/conda-forge/linux-64/setuptools-40.6.1-py36_0",
-   "setuptools/conda-forge/linux-64/setuptools-46.3.0-py38h32f6830_0",
-   "setuptools/conda-forge/linux-64/setuptools-49.1.2-py38h32f6830_0"
-  ],
-  "platform": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "portend": [
    "portend/conda-forge/linux-64/portend-1.8-py27_0",
@@ -892,10 +891,6 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
    "wsgiref/conda-forge/win-64/wsgiref-0.1.2-py27_0"
-  ],
-  "xml": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "zlib": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",

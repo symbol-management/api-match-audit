@@ -121,19 +121,39 @@
   "is_complete",
   "itertools",
   "jinja.env.get_template",
+  "jinja2.Environment",
+  "jinja2.PackageLoader",
+  "jinja2.select_autoescape",
+  "json",
+  "json.dump",
+  "json.dumps",
+  "json.load",
+  "json.loads",
+  "kombu.exceptions",
+  "lal",
   "lal.GPSTimeNow",
   "lal.GreenwichMeanSiderealTime",
   "lal.GreenwichMeanSiderealTimeToGPS",
   "lal.LIGOTimeGPS",
+  "ligo.computeDiskMass",
+  "ligo.computeDiskMass.computeDiskMass",
+  "ligo.em_bright",
+  "ligo.em_bright.source_classification",
+  "ligo.em_bright.source_classification_pe",
   "ligo.followup_advocate",
   "ligo.gracedb.exceptions.HTTPError",
   "ligo.gracedb.rest",
   "ligo.gracedb.rest.GraceDb",
   "ligo.gracedb.rest.HTTPError",
+  "ligo.p_astro_computation",
+  "ligo.p_astro_computation.choose_snr",
+  "ligo.p_astro_computation.evaluate_p_astro_from_bayesfac",
   "ligo.raven.gracedb_events",
   "ligo.raven.gracedb_events.ExtTrig",
   "ligo.raven.gracedb_events.SE",
   "ligo.raven.search",
+  "ligo.segments.segment",
+  "ligo.segments.segmentlist",
   "ligo.skymap.bayestar",
   "ligo.skymap.bayestar.localize",
   "ligo.skymap.io.events",
@@ -158,8 +178,11 @@
   "lvalert.handler",
   "lvalert.install",
   "lvalert.signals.lvalert_received.connect",
+  "lxml",
+  "lxml.etree",
   "lxml.etree.fromstring",
   "lxml.etree.parse",
+  "multiprocessing",
   "multiprocessing.Pipe",
   "multiprocessing.Process",
   "numpy.arange",
@@ -172,6 +195,7 @@
   "numpy.square",
   "numpy.uint32",
   "numpy.zeros",
+  "operator.itemgetter",
   "os.chmod",
   "os.dup2",
   "os.environ.get",
@@ -181,14 +205,36 @@
   "os.remove",
   "os.urandom",
   "p_astro.compute_p_astro.s",
+  "pkg_resources",
+  "pkg_resources.resource_filename",
+  "pkg_resources.resource_stream",
+  "pkg_resources.resource_string",
+  "pkg_resources.working_set",
+  "pkgutil",
+  "pkgutil.iter_modules",
   "pytest.mark.parametrize",
   "pytest.mark.xfail",
+  "pytest_socket.disable_socket",
   "raven.coincidence_search",
   "re.IGNORECASE",
+  "safe_netrc.NetrcParseError",
+  "safe_netrc.netrc",
   "sentry.DSN",
   "sentry.before_send",
   "sentry.configure",
+  "sentry_sdk",
   "sentry_sdk.configure_scope",
+  "sentry_sdk.init",
+  "sentry_sdk.integrations.celery",
+  "sentry_sdk.integrations.celery.CeleryIntegration",
+  "sentry_sdk.integrations.flask",
+  "sentry_sdk.integrations.flask.FlaskIntegration",
+  "sentry_sdk.integrations.redis",
+  "sentry_sdk.integrations.redis.RedisIntegration",
+  "sentry_sdk.integrations.tornado",
+  "sentry_sdk.integrations.tornado.TornadoIntegration",
+  "shlex",
+  "shlex.quote",
   "signals.email_received.send",
   "signals.lvalert_received.send",
   "signals.voevent_received.send",
@@ -322,8 +368,6 @@
   "util.handling_system_exit",
   "voevent.install",
   "voevent.signals.voevent_received.connect",
-  "werkzeug.http.HTTP_STATUS_CODES",
-  "werkzeug.middleware.proxy_fix.ProxyFix",
   "xml.sax.SAXParseException",
   "zope.interface.implementer"
  ],
@@ -476,48 +520,14 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "jinja2": [
-   "jinja2/conda-forge/noarch/jinja2-2.10-py_1",
-   "jinja2/conda-forge/noarch/jinja2-2.11.3-pyh44b312d_0",
-   "jinja2/conda-forge/noarch/jinja2-3.0.0-pyhd8ed1ab_0",
-   "jinja2/conda-forge/noarch/jinja2-3.0.1-pyhd8ed1ab_0"
-  ],
-  "json": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "kombu": [
-   "kombu/conda-forge/linux-64/kombu-4.6.10-py37hc8dfbb8_1",
-   "kombu/conda-forge/linux-64/kombu-4.6.11-py36h9f0ad1d_0",
-   "kombu/conda-forge/noarch/kombu-4.2.1-py_0",
-   "kombu/conda-forge/noarch/kombu-4.4.0-py_0",
-   "kombu/conda-forge/noarch/kombu-4.6.3-py_0"
-  ],
-  "lal": [
-   "python-lal/conda-forge/linux-64/python-lal-6.19.0-py35h7eb728f_1",
-   "python-lal/conda-forge/linux-64/python-lal-6.22.0-mkl_py36h32b98d5_0",
-   "python-lal/conda-forge/linux-64/python-lal-7.1.0-fftw_py36h75dcf95_100"
-  ],
-  "ligo": [],
   "logging": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "lxml": [
-   "lxml/conda-forge/linux-64/lxml-4.2.6-py37h23eabaa_1000"
   ],
   "matplotlib": [
    "matplotlib-base/conda-forge/linux-64/matplotlib-base-3.1.1-py37hfd891ef_0",
    "matplotlib-base/conda-forge/linux-64/matplotlib-base-3.1.1-py38h250f245_2",
    "matplotlib/conda-forge/linux-64/matplotlib-1.5.3-np111py34_0"
-  ],
-  "multiprocessing": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "netrc": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "ntpath": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -527,20 +537,7 @@
    "numpy/conda-forge/linux-64/numpy-1.17.5-py36h95a1406_0",
    "numpy/conda-forge/linux-64/numpy-1.18.4-py37h8960a57_0"
   ],
-  "operator": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "os": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "pkg_resources": [
-   "setuptools/conda-forge/linux-64/setuptools-40.6.1-py36_0",
-   "setuptools/conda-forge/linux-64/setuptools-46.3.0-py38h32f6830_0",
-   "setuptools/conda-forge/linux-64/setuptools-49.1.2-py38h32f6830_0"
-  ],
-  "pkgutil": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -549,40 +546,11 @@
    "pytest/conda-forge/linux-64/pytest-4.6.0-py37_0",
    "pytest/conda-forge/linux-64/pytest-6.0.2-py37hc8dfbb8_0"
   ],
-  "pytest_socket": [
-   "pytest-socket/conda-forge/noarch/pytest-socket-0.3.2-py_0",
-   "pytest-socket/conda-forge/noarch/pytest-socket-0.3.3-py_0",
-   "pytest-socket/conda-forge/noarch/pytest-socket-0.3.5-pyh9f0ad1d_0"
-  ],
   "random": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "re": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "safe_netrc": [
-   "safe-netrc/conda-forge/noarch/safe-netrc-0.0.1-py_1001",
-   "safe-netrc/conda-forge/noarch/safe-netrc-1.0.0-py_0"
-  ],
-  "sentry_sdk": [
-   "sentry-sdk/conda-forge/noarch/sentry-sdk-0.15.0-pyh9f0ad1d_0",
-   "sentry-sdk/conda-forge/noarch/sentry-sdk-0.16.2-pyh9f0ad1d_0",
-   "sentry-sdk/conda-forge/noarch/sentry-sdk-0.17.0-pyh9f0ad1d_0",
-   "sentry-sdk/conda-forge/noarch/sentry-sdk-0.17.4-pyh9f0ad1d_0",
-   "sentry-sdk/conda-forge/noarch/sentry-sdk-0.17.5-pyh9f0ad1d_0",
-   "sentry-sdk/conda-forge/noarch/sentry-sdk-0.17.6-pyh9f0ad1d_0",
-   "sentry-sdk/conda-forge/noarch/sentry-sdk-0.18.0-pyh9f0ad1d_0",
-   "sentry-sdk/conda-forge/noarch/sentry-sdk-0.19.0-pyh9f0ad1d_0",
-   "sentry-sdk/conda-forge/noarch/sentry-sdk-0.19.3-pyhd3deb0d_0",
-   "sentry-sdk/conda-forge/noarch/sentry-sdk-0.19.4-pyhd3deb0d_0",
-   "sentry-sdk/conda-forge/noarch/sentry-sdk-0.20.0-pyh44b312d_0",
-   "sentry-sdk/conda-forge/noarch/sentry-sdk-0.20.2-pyh44b312d_0",
-   "sentry-sdk/conda-forge/noarch/sentry-sdk-0.20.3-pyh44b312d_0",
-   "sentry-sdk/conda-forge/noarch/sentry-sdk-1.2.0-pyhd8ed1ab_0"
-  ],
-  "shlex": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -636,7 +604,6 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "werkzeug": [
-   "werkzeug/conda-forge/noarch/werkzeug-0.12.2-py_1",
    "werkzeug/conda-forge/noarch/werkzeug-0.15.3-py_0",
    "werkzeug/conda-forge/noarch/werkzeug-0.16.0-py_0",
    "werkzeug/conda-forge/noarch/werkzeug-1.0.0-py_0",
