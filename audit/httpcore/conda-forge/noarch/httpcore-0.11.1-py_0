@@ -13,94 +13,33 @@
   "base.ConnectionState.IDLE",
   "base.ConnectionState.PENDING",
   "base.ConnectionState.READY",
-  "curio",
   "curio.CurioBackend",
-  "curio.CurioError",
-  "curio.Semaphore",
-  "curio.TaskTimeout",
   "curio.clock",
-  "curio.io",
-  "curio.io.Socket",
   "curio.open_connection",
   "curio.open_unix_connection",
-  "curio.timeout_after",
-  "h11",
-  "h11.ConnectionClosed",
-  "h11.DONE",
-  "h11.Data",
-  "h11.EndOfMessage",
-  "h11.InformationalResponse",
-  "h11.LocalProtocolError",
-  "h11.MUST_CLOSE",
-  "h11.NEED_DATA",
-  "h11.PAUSED",
-  "h11.RemoteProtocolError",
-  "h11.Request",
-  "h11.Response",
-  "h2.config.H2Configuration",
-  "h2.connection",
-  "h2.events",
-  "h2.exceptions.NoAvailableStreamIDError",
-  "h2.settings.SettingCodes",
   "h2.settings.SettingCodes.ENABLE_PUSH",
   "h2.settings.SettingCodes.MAX_CONCURRENT_STREAMS",
   "h2.settings.SettingCodes.MAX_HEADER_LIST_SIZE",
-  "h2.settings.Settings",
-  "http.HTTPStatus",
   "http11.AsyncHTTP11Connection",
   "http11.SyncHTTP11Connection",
   "http2.AsyncHTTP2Connection",
   "http2.SyncHTTP2Connection",
   "httpcore.__init__.__all__",
   "httpcore.__init__.__locals",
-  "logging",
-  "logging.DEBUG",
-  "logging.Formatter",
-  "logging.Logger",
-  "logging.StreamHandler",
-  "logging.addLevelName",
-  "logging.getLogger",
   "loop_start_tls",
   "map.items",
   "os.environ.get",
-  "select",
-  "select.select",
   "selected_alpn_protocol",
-  "sniffio",
-  "sniffio.current_async_library",
-  "socket",
   "socket.AF_UNIX",
   "socket.SOCK_STREAM",
-  "socket.create_connection",
   "socket.error",
-  "socket.socket",
   "socket.timeout",
-  "ssl.SSLContext",
-  "ssl.SSLSocket",
   "sys",
-  "threading",
   "time",
   "to_exc",
   "trio.TrioBackend",
   "trio.open_tcp_stream",
-  "trio.open_unix_socket",
-  "typing",
-  "typing.Any",
-  "typing.AsyncIterator",
-  "typing.Callable",
-  "typing.Dict",
-  "typing.Iterator",
-  "typing.List",
-  "typing.Mapping",
-  "typing.Optional",
-  "typing.Set",
-  "typing.TYPE_CHECKING",
-  "typing.Tuple",
-  "typing.Type",
-  "typing.TypeVar",
-  "typing.Union",
-  "typing.cast",
-  "warnings"
+  "trio.open_unix_socket"
  ],
  "deps": {
   "_asyncio": [
@@ -112,8 +51,27 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "curio": [],
   "enum": [
    "privy/conda-forge/noarch/privy-6.0.0-py_0",
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "h11": [
+   "h11/conda-forge/noarch/h11-0.10.0-pyh9f0ad1d_0",
+   "h11/conda-forge/noarch/h11-0.11.0-pyh9f0ad1d_0",
+   "h11/conda-forge/noarch/h11-0.12.0-pyhd8ed1ab_0",
+   "h11/conda-forge/noarch/h11-0.9.0-py_0"
+  ],
+  "h2": [
+   "h2/conda-forge/linux-64/h2-4.0.0-py37hc8dfbb8_2",
+   "h2/conda-forge/linux-64/h2-4.0.0-py38h32f6830_0"
+  ],
+  "http": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "logging": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -121,10 +79,37 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "select": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "sniffio": [
+   "sniffio/conda-forge/linux-64/sniffio-1.2.0-py39hf3d152e_1"
+  ],
+  "socket": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "ssl": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "threading": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "trio": [
    "trio/conda-forge/linux-64/trio-0.18.0-py38h578d9bd_0"
   ],
   "types": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "typing": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "warnings": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ]
