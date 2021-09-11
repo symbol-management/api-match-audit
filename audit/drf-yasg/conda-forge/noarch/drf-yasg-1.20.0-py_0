@@ -49,6 +49,12 @@
   "collections.abc.Iterator",
   "collections.abc.Mapping",
   "collections.defaultdict",
+  "coreschema",
+  "coreschema.Boolean",
+  "coreschema.Integer",
+  "coreschema.Number",
+  "coreschema.String",
+  "decimal.Decimal",
   "default",
   "django.db.models.AutoField",
   "django.db.models.BinaryField",
@@ -71,9 +77,18 @@
   "djangorestframework_camel_case.render.CamelCaseJSONRenderer",
   "djangorestframework_camel_case.render.camelize",
   "filter_backend",
+  "flex.core.parse",
+  "flex.exceptions.ValidationError",
   "generator_class",
   "improves",
+  "inflection.camelize",
   "info",
+  "inspect",
+  "inspect._empty",
+  "inspect.getattr_static",
+  "inspect.isclass",
+  "inspect.ismethod",
+  "inspect.signature",
   "inspector",
   "inspector.process_result",
   "make_schema_definition",
@@ -115,6 +130,71 @@
   "openapi.TYPE_OBJECT",
   "openapi.TYPE_STRING",
   "openapi.resolve_ref",
+  "operator",
+  "operator.__gt__",
+  "operator.__lt__",
+  "pkg_resources.DistributionNotFound",
+  "pkg_resources.get_distribution",
+  "re",
+  "re.compile",
+  "re.sub",
+  "rest_framework.exceptions",
+  "rest_framework.exceptions.PermissionDenied",
+  "rest_framework.mixins.DestroyModelMixin",
+  "rest_framework.mixins.ListModelMixin",
+  "rest_framework.mixins.RetrieveModelMixin",
+  "rest_framework.mixins.UpdateModelMixin",
+  "rest_framework.pagination.CursorPagination",
+  "rest_framework.pagination.LimitOffsetPagination",
+  "rest_framework.pagination.PageNumberPagination",
+  "rest_framework.parsers.FileUploadParser",
+  "rest_framework.renderers.BaseRenderer",
+  "rest_framework.renderers.JSONRenderer",
+  "rest_framework.renderers.TemplateHTMLRenderer",
+  "rest_framework.request.is_form_media_type",
+  "rest_framework.response.Response",
+  "rest_framework.schemas.AutoSchema",
+  "rest_framework.schemas.SchemaGenerator",
+  "rest_framework.schemas.generators.EndpointEnumerator",
+  "rest_framework.schemas.generators.endpoint_ordering",
+  "rest_framework.schemas.generators.get_pk_name",
+  "rest_framework.schemas.utils.get_pk_description",
+  "rest_framework.serializers",
+  "rest_framework.serializers.BaseSerializer",
+  "rest_framework.serializers.BooleanField",
+  "rest_framework.serializers.CharField",
+  "rest_framework.serializers.ChoiceField",
+  "rest_framework.serializers.DateField",
+  "rest_framework.serializers.DateTimeField",
+  "rest_framework.serializers.DecimalField",
+  "rest_framework.serializers.DictField",
+  "rest_framework.serializers.DurationField",
+  "rest_framework.serializers.EmailField",
+  "rest_framework.serializers.FileField",
+  "rest_framework.serializers.FloatField",
+  "rest_framework.serializers.HiddenField",
+  "rest_framework.serializers.HyperlinkedRelatedField",
+  "rest_framework.serializers.IPAddressField",
+  "rest_framework.serializers.IntegerField",
+  "rest_framework.serializers.JSONField",
+  "rest_framework.serializers.ListField",
+  "rest_framework.serializers.ListSerializer",
+  "rest_framework.serializers.ManyRelatedField",
+  "rest_framework.serializers.ModelField",
+  "rest_framework.serializers.ModelSerializer",
+  "rest_framework.serializers.MultipleChoiceField",
+  "rest_framework.serializers.NullBooleanField",
+  "rest_framework.serializers.PrimaryKeyRelatedField",
+  "rest_framework.serializers.RegexField",
+  "rest_framework.serializers.RelatedField",
+  "rest_framework.serializers.Serializer",
+  "rest_framework.serializers.SerializerMethodField",
+  "rest_framework.serializers.SlugField",
+  "rest_framework.serializers.SlugRelatedField",
+  "rest_framework.serializers.URLField",
+  "rest_framework.serializers.UUIDField",
+  "rest_framework.serializers.empty",
+  "rest_framework.settings.api_settings",
   "rest_framework.settings.api_settings.COERCE_DECIMAL_TO_STRING",
   "rest_framework.settings.api_settings.DEFAULT_AUTHENTICATION_CLASSES",
   "rest_framework.settings.api_settings.DEFAULT_PARSER_CLASSES",
@@ -122,6 +202,23 @@
   "rest_framework.settings.api_settings.DEFAULT_RENDERER_CLASSES",
   "rest_framework.settings.api_settings.DEFAULT_VERSION",
   "rest_framework.settings.api_settings.UPLOADED_FILES_USE_URL",
+  "rest_framework.settings.perform_import",
+  "rest_framework.status",
+  "rest_framework.status.HTTP_200_OK",
+  "rest_framework.status.HTTP_201_CREATED",
+  "rest_framework.status.HTTP_204_NO_CONTENT",
+  "rest_framework.status.is_success",
+  "rest_framework.test.APIRequestFactory",
+  "rest_framework.test.force_authenticate",
+  "rest_framework.utils.encoders",
+  "rest_framework.utils.encoders.JSONEncoder",
+  "rest_framework.utils.json",
+  "rest_framework.utils.json.dumps",
+  "rest_framework.utils.json.loads",
+  "rest_framework.versioning",
+  "rest_framework.versioning.NamespaceVersioning",
+  "rest_framework.versioning.URLPathVersioning",
+  "rest_framework.views.APIView",
   "rest_framework.views.APIView.http_method_names",
   "rest_framework_recursive.fields.RecursiveField",
   "ruamel.yaml",
@@ -134,9 +231,17 @@
   "swagger_object_type",
   "swagger_type",
   "sys",
+  "typing",
+  "typing.AbstractSet",
+  "typing.Sequence",
+  "typing.Union",
+  "typing.get_args",
+  "uuid",
+  "uuid.UUID",
   "view_func",
   "view_inspector_cls",
   "view_method",
+  "warnings",
   "warnings.warn"
  ],
  "deps": {
@@ -149,18 +254,10 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "coreapi": [
-   "coreapi/conda-forge/noarch/coreapi-2.3.3-pyh9f0ad1d_0",
-   "python-coreapi/conda-forge/noarch/python-coreapi-2.3.3-py_0"
-  ],
-  "coreschema": [
-   "coreschema/conda-forge/noarch/coreschema-0.0.4-pyh9f0ad1d_0",
-   "python-coreschema/conda-forge/noarch/python-coreschema-0.0.4-py_0"
+   "coreapi/conda-forge/noarch/coreapi-2.3.3-pyh9f0ad1d_0"
   ],
   "datetime": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "decimal": [
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "django": [
@@ -173,20 +270,7 @@
    "django/conda-forge/noarch/django-3.2.3-pyhd8ed1ab_0",
    "django/conda-forge/noarch/django-3.2.5-pyhd8ed1ab_0"
   ],
-  "flex": [
-   "flex-swagger/conda-forge/noarch/flex-swagger-6.13.2-py_1"
-  ],
   "functools": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "inflection": [
-   "inflection/conda-forge/noarch/inflection-0.3.1-py_1",
-   "inflection/conda-forge/noarch/inflection-0.4.0-pyh9f0ad1d_0",
-   "inflection/conda-forge/noarch/inflection-0.5.0-pyh9f0ad1d_0",
-   "inflection/conda-forge/noarch/inflection-0.5.1-pyh9f0ad1d_0"
-  ],
-  "inspect": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -202,24 +286,10 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "operator": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "os": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "pkg_resources": [
-   "setuptools/conda-forge/linux-64/setuptools-40.6.1-py36_0",
-   "setuptools/conda-forge/linux-64/setuptools-46.3.0-py38h32f6830_0",
-   "setuptools/conda-forge/linux-64/setuptools-49.1.2-py38h32f6830_0"
-  ],
-  "re": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "rest_framework": [],
   "swagger_spec_validator": [
    "swagger-spec-validator/conda-forge/noarch/swagger-spec-validator-2.3.1-py_1",
    "swagger-spec-validator/conda-forge/noarch/swagger-spec-validator-2.4.2-py_0",
@@ -232,23 +302,12 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "typing": [
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "uritemplate": [
    "uritemplate.py/conda-forge/noarch/uritemplate.py-3.0.2-py_1",
    "uritemplate/conda-forge/noarch/uritemplate-3.0.0-py_1",
    "uritemplate/conda-forge/noarch/uritemplate-3.0.1-py_0"
   ],
   "urllib": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "uuid": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "warnings": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ]

@@ -4,6 +4,8 @@
   "get_request_attr_value",
   "handlers.setup_handlers",
   "hashlib.sha1",
+  "http",
+  "http.HTTPStatus",
   "http.HTTPStatus.BAD_REQUEST",
   "http.HTTPStatus.INTERNAL_SERVER_ERROR",
   "manager_class",
@@ -12,17 +14,47 @@
   "mock.MagicMock",
   "mock.call",
   "mock.patch",
+  "nbformat",
+  "notebook.base.handlers.APIHandler",
+  "notebook.utils.url_path_join",
+  "packaging.version.parse",
+  "pathlib",
+  "pathlib.Path",
+  "pytest",
   "pytest.mark.asyncio",
   "pytest.mark.parametrize",
+  "pytest.raises",
+  "re",
+  "re.compile",
+  "tornado",
+  "tornado.escape",
+  "tornado.escape.json_decode",
+  "tornado.escape.json_encode",
+  "tornado.httpclient.HTTPClientError",
+  "tornado.httpclient.HTTPRequest",
+  "tornado.httputil.url_concat",
+  "tornado.testing.AsyncHTTPTestCase",
+  "tornado.web",
+  "tornado.web.HTTPError",
+  "tornado.web.MissingArgumentError",
+  "tornado.web.authenticated",
+  "traceback",
+  "traceback.format_exception",
+  "traitlets.Enum",
+  "traitlets.Unicode",
+  "traitlets.config.Application",
   "traitlets.config.Application.clear_instance",
-  "traitlets.config.Application.instance"
+  "traitlets.config.Application.instance",
+  "traitlets.config.Configurable",
+  "traitlets.default",
+  "typing.Dict",
+  "typing.List",
+  "typing.NamedTuple",
+  "typing.Optional",
+  "typing.Tuple",
+  "typing.Union"
  ],
  "deps": {
-  "_pytest": [
-   "pytest/conda-forge/linux-64/pytest-3.7.0-py27_0",
-   "pytest/conda-forge/linux-64/pytest-4.6.0-py37_0",
-   "pytest/conda-forge/linux-64/pytest-6.0.2-py37hc8dfbb8_0"
-  ],
   "abc": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -40,67 +72,11 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "http": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "json": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "logging": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "nbformat": [
-   "nbformat/conda-forge/noarch/nbformat-4.4.0-py_1",
-   "nbformat/conda-forge/noarch/nbformat-5.0.3-py_0",
-   "nbformat/conda-forge/noarch/nbformat-5.0.8-py_0",
-   "nbformat/conda-forge/noarch/nbformat-5.1.2-pyhd8ed1ab_1"
-  ],
-  "notebook": [
-   "notebook/conda-forge/linux-64/notebook-6.0.1-py38_0",
-   "notebook/conda-forge/linux-64/notebook-6.3.0-py36hd000896_0",
-   "notebook/conda-forge/noarch/notebook-6.4.0-pyha770c72_0"
-  ],
-  "packaging": [
-   "packaging/conda-forge/noarch/packaging-18.0-py_0",
-   "packaging/conda-forge/noarch/packaging-19.0-py_0",
-   "packaging/conda-forge/noarch/packaging-19.2-py_0",
-   "packaging/conda-forge/noarch/packaging-20.0-py_0",
-   "packaging/conda-forge/noarch/packaging-20.1-py_0",
-   "packaging/conda-forge/noarch/packaging-20.7-pyhd3deb0d_0",
-   "packaging/conda-forge/noarch/packaging-20.8-pyhd3deb0d_0",
-   "packaging/conda-forge/noarch/packaging-21.0-pyhd8ed1ab_0"
-  ],
-  "pathlib": [
-   "pathlib/conda-forge/noarch/pathlib-1.0.1-py_1",
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "pytest": [
-   "pytest/conda-forge/linux-64/pytest-3.7.0-py27_0",
-   "pytest/conda-forge/linux-64/pytest-4.6.0-py37_0",
-   "pytest/conda-forge/linux-64/pytest-6.0.2-py37hc8dfbb8_0"
-  ],
-  "re": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "tornado": [
-   "tornado/conda-forge/linux-64/tornado-6.0.4-py38h1e0a361_2"
-  ],
-  "traceback": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "traitlets": [
-   "traitlets/conda-forge/noarch/traitlets-5.0.4-py_0",
-   "traitlets/conda-forge/noarch/traitlets-5.0.4-py_1",
-   "traitlets/conda-forge/noarch/traitlets-5.0.5-py_0",
-   "traitlets/conda-forge/noarch/traitlets-5.1.0-pyhd8ed1ab_0"
-  ],
-  "typing": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],

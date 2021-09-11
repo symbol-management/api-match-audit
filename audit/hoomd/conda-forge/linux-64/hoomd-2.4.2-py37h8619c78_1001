@@ -14,6 +14,7 @@
   "collections.Mapping",
   "collections.defaultdict",
   "collections.deque",
+  "colorsys",
   "constraint_data_proxy",
   "data.system",
   "default_handler",
@@ -22,10 +23,115 @@
   "enlist",
   "f",
   "gc",
+  "getpass",
+  "getpass.getuser",
+  "h5py",
+  "h5py.File",
   "hoomd.__init__._default_excepthook",
   "hoomd.__init__._hoomd_sys_excepthook",
   "hoomd.__init__.flags",
   "hoomd.__init__.run",
+  "hoomd._hoomd.Angle",
+  "hoomd._hoomd.Bond",
+  "hoomd._hoomd.BoxDim",
+  "hoomd._hoomd.Communicator",
+  "hoomd._hoomd.CommunicatorGPU",
+  "hoomd._hoomd.Constraint",
+  "hoomd._hoomd.Dihedral",
+  "hoomd._hoomd.DomainDecomposition",
+  "hoomd._hoomd.ExecutionConfiguration",
+  "hoomd._hoomd.ExecutionConfiguration._make_exec_conf_mpi_comm",
+  "hoomd._hoomd.ExecutionConfiguration.executionMode.AUTO",
+  "hoomd._hoomd.ExecutionConfiguration.executionMode.CPU",
+  "hoomd._hoomd.ExecutionConfiguration.executionMode.GPU",
+  "hoomd._hoomd.ExecutionConfiguration.getNRanksGlobal",
+  "hoomd._hoomd.GSDReader",
+  "hoomd._hoomd.GetarCompression",
+  "hoomd._hoomd.GetarCompression.FastCompress",
+  "hoomd._hoomd.GetarDumpMode.Append",
+  "hoomd._hoomd.GetarDumpMode.OneShot",
+  "hoomd._hoomd.GetarDumpMode.Overwrite",
+  "hoomd._hoomd.GetarInitializer",
+  "hoomd._hoomd.GetarProperty.AngleNames",
+  "hoomd._hoomd.GetarProperty.AngleTags",
+  "hoomd._hoomd.GetarProperty.AngleTypes",
+  "hoomd._hoomd.GetarProperty.AngularMomentum",
+  "hoomd._hoomd.GetarProperty.Body",
+  "hoomd._hoomd.GetarProperty.BondNames",
+  "hoomd._hoomd.GetarProperty.BondTags",
+  "hoomd._hoomd.GetarProperty.BondTypes",
+  "hoomd._hoomd.GetarProperty.Box",
+  "hoomd._hoomd.GetarProperty.Charge",
+  "hoomd._hoomd.GetarProperty.Diameter",
+  "hoomd._hoomd.GetarProperty.DihedralNames",
+  "hoomd._hoomd.GetarProperty.DihedralTags",
+  "hoomd._hoomd.GetarProperty.DihedralTypes",
+  "hoomd._hoomd.GetarProperty.Dimensions",
+  "hoomd._hoomd.GetarProperty.Image",
+  "hoomd._hoomd.GetarProperty.ImproperNames",
+  "hoomd._hoomd.GetarProperty.ImproperTags",
+  "hoomd._hoomd.GetarProperty.ImproperTypes",
+  "hoomd._hoomd.GetarProperty.Mass",
+  "hoomd._hoomd.GetarProperty.MomentInertia",
+  "hoomd._hoomd.GetarProperty.Orientation",
+  "hoomd._hoomd.GetarProperty.Position",
+  "hoomd._hoomd.GetarProperty.PotentialEnergy",
+  "hoomd._hoomd.GetarProperty.Type",
+  "hoomd._hoomd.GetarProperty.TypeNames",
+  "hoomd._hoomd.GetarProperty.Velocity",
+  "hoomd._hoomd.GetarProperty.Virial",
+  "hoomd._hoomd.GetarResolution.Individual",
+  "hoomd._hoomd.GetarResolution.Text",
+  "hoomd._hoomd.GetarResolution.Uniform",
+  "hoomd._hoomd.Messenger",
+  "hoomd._hoomd.ParticleGroup",
+  "hoomd._hoomd.ParticleGroup.groupDifference",
+  "hoomd._hoomd.ParticleGroup.groupIntersection",
+  "hoomd._hoomd.ParticleGroup.groupUnion",
+  "hoomd._hoomd.ParticleSelectorAll",
+  "hoomd._hoomd.ParticleSelectorCuboid",
+  "hoomd._hoomd.ParticleSelectorRigid",
+  "hoomd._hoomd.ParticleSelectorRigidCenter",
+  "hoomd._hoomd.ParticleSelectorTag",
+  "hoomd._hoomd.ParticleSelectorType",
+  "hoomd._hoomd.Scalar3",
+  "hoomd._hoomd.Scalar4",
+  "hoomd._hoomd.SnapshotSystemData_double",
+  "hoomd._hoomd.SnapshotSystemData_double.box",
+  "hoomd._hoomd.SnapshotSystemData_double.broadcast",
+  "hoomd._hoomd.SnapshotSystemData_double.broadcast_all",
+  "hoomd._hoomd.SnapshotSystemData_float",
+  "hoomd._hoomd.SnapshotSystemData_float.box",
+  "hoomd._hoomd.SnapshotSystemData_float.broadcast",
+  "hoomd._hoomd.SnapshotSystemData_float.broadcast_all",
+  "hoomd._hoomd.System",
+  "hoomd._hoomd.SystemDefinition",
+  "hoomd._hoomd.WalltimeLimitReached",
+  "hoomd._hoomd.__compiler_version__",
+  "hoomd._hoomd.__cuda_version__",
+  "hoomd._hoomd.__git_refspec__",
+  "hoomd._hoomd.__git_sha1__",
+  "hoomd._hoomd.__version__",
+  "hoomd._hoomd.abort_mpi",
+  "hoomd._hoomd.hoomd_compile_flags",
+  "hoomd._hoomd.int3",
+  "hoomd._hoomd.int_as_scalar",
+  "hoomd._hoomd.is_MPI_available",
+  "hoomd._hoomd.is_TBB_available",
+  "hoomd._hoomd.make_char3",
+  "hoomd._hoomd.make_int3",
+  "hoomd._hoomd.make_scalar2",
+  "hoomd._hoomd.make_scalar3",
+  "hoomd._hoomd.make_scalar4",
+  "hoomd._hoomd.mpi_barrier_world",
+  "hoomd._hoomd.mpi_bcast_str",
+  "hoomd._hoomd.output_version_info",
+  "hoomd._hoomd.std_vector_int",
+  "hoomd._hoomd.std_vector_scalar",
+  "hoomd._hoomd.std_vector_scalar3",
+  "hoomd._hoomd.std_vector_scalar4",
+  "hoomd._hoomd.std_vector_string",
+  "hoomd._hoomd.std_vector_uint",
   "hoomd.cgcmm._cgcmm",
   "hoomd.cite._extra_default_entries.append",
   "hoomd.contex.msg.warning",
@@ -184,8 +290,12 @@
   "hoomd.mpcd.collide.period",
   "hoomd.mpcd.stream._cpp",
   "hoomd.mpcd.stream.period",
+  "linecache",
+  "linecache.clearcache",
+  "linecache.getline",
   "makePvariant",
   "member_fn",
+  "mpi4py",
   "mpi4py.MPI.Comm",
   "mpi4py.MPI._addressof",
   "numpy.abs",
@@ -200,10 +310,15 @@
   "numpy.sqrt",
   "numpy.uint32",
   "numpy.zeros",
+  "optparse.OptionParser",
   "os.path.exists",
   "os.path.isfile",
   "particle_data_proxy",
+  "platform",
   "rcut",
+  "re",
+  "re.match",
+  "re.sub",
   "scipy.sparse.csgraph.connected_components",
   "scipy.spatial.ConvexHull",
   "scipy.spatial.cKDTree",
@@ -214,9 +329,13 @@
   "sys.stderr.flush",
   "time",
   "time.clock",
+  "traceback",
+  "traceback.extract_stack",
   "type.is_set",
   "type.keys",
-  "type.setter"
+  "type.setter",
+  "types",
+  "types.MethodType"
  ],
  "deps": {
   "__future__": [
@@ -228,10 +347,6 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "collections": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "colorsys": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -247,36 +362,13 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "getpass": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "h5py": [
-   "h5py/conda-forge/linux-64/h5py-2.10.0-nompi_py37hf7afa78_105",
-   "h5py/conda-forge/linux-64/h5py-2.6.0-np111py34_4",
-   "h5py/conda-forge/linux-64/h5py-2.7.0-np113py36_1"
-  ],
-  "hoomd": [
-   "hoomd/conda-forge/linux-64/hoomd-2.4.2-py37h8619c78_1001",
-   "hoomd/conda-forge/linux-64/hoomd-2.9.3-gpu_py37ha1112dd_1",
-   "hoomd/conda-forge/linux-64/hoomd-2.9.6-gpu_py36h10fda6e_1"
-  ],
   "json": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "linecache": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "math": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "mpi4py": [
-   "mpi4py/conda-forge/linux-64/mpi4py-2.0.0-py35_2",
-   "mpi4py/conda-forge/linux-64/mpi4py-3.0.3-py36hbfda36e_2",
-   "mpi4py/conda-forge/linux-64/mpi4py-3.0.3-py37h029bd4c_2"
   ],
   "ntpath": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -287,19 +379,7 @@
    "numpy/conda-forge/linux-64/numpy-1.18.4-py37h8960a57_0",
    "numpy/conda-forge/linux-64/numpy-1.19.2-py36h68c22af_1"
   ],
-  "optparse": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "os": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "platform": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "re": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -312,14 +392,6 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "textwrap": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "traceback": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "types": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ]

@@ -2,6 +2,7 @@
  "bad": [
   "diffpy.pdfgetx.PDFGetter",
   "numba.boolean",
+  "numba.jit",
   "numpy.abs",
   "numpy.arange",
   "numpy.bool",
@@ -13,13 +14,34 @@
   "numpy.rad2deg",
   "numpy.sin",
   "numpy.zeros",
+  "operator",
+  "operator.sub",
+  "operator.truediv",
   "os.listdir",
   "pg",
   "pg.config",
   "pg.fq",
   "pg.sq",
   "pg.transformations.pop",
+  "pyFAI",
+  "pyFAI.azimuthalIntegrator.AzimuthalIntegrator",
+  "pyFAI.calibration.Calibrant",
+  "pyFAI.calibration.Calibration",
+  "pyFAI.calibration.PeakPicker",
+  "pyFAI.gui.utils.update_fig",
+  "pyFAI.load",
   "rbinned",
+  "skbeam.core.accumulators.binned_statistic.BinnedStatistic1D",
+  "skbeam.core.mask.margin",
+  "skbeam.core.utils.q_to_twotheta",
+  "skbeam.io.fit2d.fit2d_save",
+  "skbeam.io.fit2d.read_fit2d_msk",
+  "skbeam.io.save_powder_output.save_output",
+  "streamz_ext.Stream",
+  "tempfile.TemporaryDirectory",
+  "tifffile",
+  "tifffile.imread",
+  "tifffile.imsave",
   "time",
   "xpdtools.pipelines.raw_pipeline.dark_corrected_background.emit",
   "xpdtools.pipelines.raw_pipeline.dark_corrected_foreground.emit",
@@ -31,7 +53,9 @@
   "xpdtools.pipelines.raw_pipeline.median.zip",
   "xpdtools.pipelines.raw_pipeline.polarization_array.args",
   "xpdtools.pipelines.raw_pipeline.std.zip",
-  "xpdtools.pipelines.raw_pipeline.z_score.combine_latest"
+  "xpdtools.pipelines.raw_pipeline.z_score.combine_latest",
+  "yaml",
+  "yaml.dump"
  ],
  "deps": {
   "datetime": [
@@ -54,59 +78,15 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "numba": [
-   "numba/conda-forge/linux-64/numba-0.38.1-py36_0",
-   "numba/conda-forge/linux-64/numba-0.40.0-py35hf8a1672_0",
-   "numba/conda-forge/linux-64/numba-0.41.0-py27h637b7d7_1000"
-  ],
   "numpy": [
    "numpy/conda-forge/linux-64/numpy-1.17.5-py36h95a1406_0",
    "numpy/conda-forge/linux-64/numpy-1.18.4-py37h8960a57_0",
    "numpy/conda-forge/linux-64/numpy-1.19.2-py36h68c22af_1"
   ],
-  "operator": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "os": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "pyFAI": [
-   "pyfai/conda-forge/linux-64/pyfai-0.13.1-np111py35_0"
-  ],
-  "scipy": [],
-  "skbeam": [
-   "scikit-beam/conda-forge/linux-64/scikit-beam-0.0.14-py35h7eb728f_0",
-   "scikit-beam/conda-forge/linux-64/scikit-beam-0.0.23-py36ha112f06_2",
-   "scikit-beam/conda-forge/linux-64/scikit-beam-0.0.24-py37h902c9e0_0"
-  ],
-  "streamz_ext": [
-   "streamz_ext/conda-forge/noarch/streamz_ext-0.0.2-py_0"
-  ],
-  "tempfile": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "tifffile": [
-   "tifffile/conda-forge/linux-64/tifffile-0.14.0-py35_1",
-   "tifffile/conda-forge/noarch/tifffile-2020.11.18-pyhd8ed1ab_0",
-   "tifffile/conda-forge/noarch/tifffile-2020.2.16-py_0",
-   "tifffile/conda-forge/noarch/tifffile-2020.5.11-py_0",
-   "tifffile/conda-forge/noarch/tifffile-2020.5.5-py_0",
-   "tifffile/conda-forge/noarch/tifffile-2020.8.13-py_0",
-   "tifffile/conda-forge/noarch/tifffile-2020.9.22-py_0",
-   "tifffile/conda-forge/noarch/tifffile-2020.9.29-py_0",
-   "tifffile/conda-forge/noarch/tifffile-2021.1.8-pyhd8ed1ab_0",
-   "tifffile/conda-forge/noarch/tifffile-2021.3.31-pyhd8ed1ab_0",
-   "tifffile/conda-forge/noarch/tifffile-2021.4.8-pyhd8ed1ab_0",
-   "tifffile/conda-forge/noarch/tifffile-2021.7.2-pyhd8ed1ab_0"
-  ],
-  "yaml": [
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0",
-   "pyyaml/conda-forge/linux-64/pyyaml-3.11-py35_0",
-   "pyyaml/conda-forge/win-64/pyyaml-5.2-py36hfa6e2cd_0"
-  ]
+  "scipy": []
  }
 }

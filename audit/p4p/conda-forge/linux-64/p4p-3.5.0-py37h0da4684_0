@@ -30,20 +30,52 @@
   "_p4p.ValueBase.has",
   "_p4p.ValueBase.tostr",
   "action",
+  "asyncio",
+  "asyncio.Event",
+  "asyncio.Future",
+  "asyncio.Queue",
+  "asyncio.TimeoutError",
+  "asyncio.coroutine",
+  "asyncio.gather",
+  "asyncio.get_event_loop",
+  "asyncio.iscoroutine",
+  "asyncio.iscoroutinefunction",
+  "asyncio.new_event_loop",
+  "asyncio.sleep",
+  "asyncio.wait_for",
   "atexit",
   "cb",
   "client.raw.Context.makeRequest",
   "client.raw.Context.providers",
   "client.raw._cleanup_contexts",
   "collections.defaultdict",
+  "cothread",
+  "cothread.Callback",
+  "cothread.Event",
+  "cothread.Spawn",
+  "cothread.Timedout",
+  "cothread.WaitForAll",
+  "cothread.Yield",
   "d",
+  "epicscorelibs.path",
   "fn",
+  "fnmatch",
+  "fnmatch.filter",
+  "functools",
   "functools.partial",
   "functools.reduce",
+  "functools.wraps",
   "gc",
+  "glob.fnmatch",
   "gw",
   "h",
   "handler",
+  "inspect",
+  "inspect.currentframe",
+  "inspect.getargspec",
+  "inspect.getfullargspec",
+  "inspect.getmembers",
+  "inspect.isframe",
   "int.__new__",
   "int.__str__",
   "itertools.izip",
@@ -68,6 +100,7 @@
   "numpy.arange",
   "numpy.uint8",
   "numpy.zeros",
+  "operator.itemgetter",
   "orig",
   "os.environ.get",
   "os.path.exists",
@@ -103,6 +136,10 @@
   "p4p.nt.__init__._log",
   "p4p.server.__init__._all_servers",
   "p4p.server.__init__._log",
+  "platform",
+  "platform.system",
+  "pprint",
+  "pprint.pprint",
   "proc",
   "qtpy.QtCore.QCoreApplication",
   "qtpy.QtCore.QCoreApplication.postEvent",
@@ -113,11 +150,17 @@
   "qtpy.QtCore.QTimer",
   "qtpy.QtCore.Signal",
   "r",
+  "random",
+  "random.randint",
   "raw.Context",
   "raw.SharedPV.close",
   "raw_get",
   "raw_put",
+  "re",
   "re.DOTALL",
+  "re.compile",
+  "re.findall",
+  "re.sub",
   "scalar.ntwrappercommon._store",
   "server._cleanup_servers",
   "server.clearProviders",
@@ -134,12 +177,19 @@
   "sys",
   "sys.get_referrers",
   "sys.stderr.write",
+  "tempfile",
   "thread.Context",
+  "threading",
+  "threading.Event",
+  "threading.Lock",
+  "threading.Thread",
   "time",
   "types.InstanceType",
   "util._defaultWorkQueue.stop",
+  "uuid",
   "value",
   "value.items",
+  "warnings",
   "warnings.warn",
   "weakref.ref",
   "wrap"
@@ -147,9 +197,6 @@
  "deps": {
   "__future__": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "_asyncio": [
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "_weakrefset": [
@@ -161,30 +208,7 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "asyncio": [],
   "collections": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "cothread": [
-   "cothread/conda-forge/linux-64/cothread-2.16-py36hc1659b7_0"
-  ],
-  "epicscorelibs": [
-   "epicscorelibs/conda-forge/linux-64/epicscorelibs-7.0.6.99.1.0-py38he14073d_0"
-  ],
-  "fnmatch": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "functools": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "glob": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "inspect": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -205,34 +229,14 @@
    "numpy/conda-forge/linux-64/numpy-1.18.4-py37h8960a57_0",
    "numpy/conda-forge/linux-64/numpy-1.19.2-py36h68c22af_1"
   ],
-  "operator": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "os": [
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "platform": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "ply": [
    "ply/conda-forge/linux-64/ply-3.10-py35_0",
    "ply/conda-forge/noarch/ply-3.11-py_1"
   ],
-  "pprint": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "queue": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "random": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "re": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -248,23 +252,7 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "tempfile": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "threading": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "unittest": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "uuid": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "warnings": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
