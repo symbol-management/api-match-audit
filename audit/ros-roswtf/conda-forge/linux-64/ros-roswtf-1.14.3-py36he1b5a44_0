@@ -5,8 +5,6 @@
   "_load_stack",
   "isstring",
   "itertools",
-  "optparse",
-  "optparse.OptionParser",
   "os.W_OK",
   "os.access",
   "os.listdir",
@@ -15,91 +13,17 @@
   "os.path.isfile",
   "os.stat",
   "p",
-  "paramiko",
-  "paramiko.AuthenticationException",
-  "paramiko.BadHostKeyException",
-  "paramiko.SSHClient",
-  "paramiko.SSHException",
-  "rosgraph",
-  "rosgraph.Master",
-  "rosgraph.MasterException",
-  "rosgraph.ROS_HOSTNAME",
-  "rosgraph.ROS_IP",
-  "rosgraph.ROS_MASTER_URI",
-  "rosgraph.names",
-  "rosgraph.network",
-  "rosgraph.network.ROSHandshakeException",
-  "rosgraph.network.get_local_addresses",
-  "rosgraph.rosenv",
-  "rosgraph.rosenv.get_master_uri",
-  "rosgraph_msgs.msg",
-  "roslaunch",
-  "roslaunch.RLException",
-  "roslaunch.ROSLaunchConfig",
-  "roslaunch.XmlLoader",
-  "roslaunch.core",
-  "roslaunch.core.is_machine_local",
-  "roslaunch.depends",
-  "roslaunch.netapi",
-  "roslaunch.netapi.get_roslaunch_uris",
-  "roslaunch.remoteprocess",
-  "roslaunch.remoteprocess.ssh_check_known_hosts",
-  "roslaunch.substitution_args",
-  "roslib",
-  "roslib.load_manifest",
-  "roslib.msgs",
-  "roslib.packages",
-  "roslib.packages.InvalidROSPkgException",
-  "roslib.packages.PACKAGE_FILE",
-  "roslib.packages.get_pkg_dir",
-  "roslib.srvs",
-  "rosnode",
-  "rosnode.get_api_uri",
-  "rosnode.rosnode_ping_all",
-  "rospkg",
-  "rospkg.InvalidManifest",
-  "rospkg.ResourceNotFound",
-  "rospkg.RosPack",
-  "rospkg.RosStack",
-  "rospkg.environment",
-  "rospkg.environment.ROS_PACKAGE_PATH",
-  "rospkg.environment.ROS_ROOT",
-  "rospkg.get_package_name",
-  "rospkg.get_ros_paths",
-  "rospkg.os_detect",
-  "rospy",
-  "rospy.init_node",
-  "rosservice",
-  "rosservice.get_service_headers",
   "roswtf.__init__._roswtf_main",
   "roswtf.__init__.print_results",
-  "socket",
   "socket.SOL_TCP",
   "socket.error",
   "socket.gaierror",
-  "socket.getaddrinfo",
   "socket.gethostname",
   "socket.setdefaulttimeout",
-  "stat",
-  "stat.ST_MODE",
-  "stat.S_IXGRP",
-  "stat.S_IXOTH",
-  "stat.S_IXUSR",
-  "std_msgs.msg",
-  "string",
   "sys",
-  "threading",
-  "threading.Lock",
-  "threading.Thread",
   "time",
-  "traceback",
-  "traceback.print_exc",
-  "urllib.parse.urlparse",
   "urlparse.urlparse",
-  "xmlrpc.client.ServerProxy",
-  "xmlrpclib.ServerProxy",
-  "yaml",
-  "yaml.dump"
+  "xmlrpclib.ServerProxy"
  ],
  "deps": {
   "Crypto": [
@@ -120,13 +44,91 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "optparse": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "os": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "paramiko": [
+   "paramiko/conda-forge/linux-64/paramiko-2.1.2-py35_0",
+   "paramiko/conda-forge/linux-64/paramiko-2.4.0-py27_0",
+   "paramiko/conda-forge/linux-64/paramiko-2.4.1-py27_1000",
+   "paramiko/conda-forge/noarch/paramiko-2.3.1-py_0",
+   "paramiko/conda-forge/noarch/paramiko-2.7.1-pyh9f0ad1d_1"
+  ],
+  "rosgraph": [
+   "ros-rosgraph/conda-forge/linux-64/ros-rosgraph-1.14.3-py27he1b5a44_0"
+  ],
+  "rosgraph_msgs": [
+   "ros-rosgraph-msgs/conda-forge/osx-64/ros-rosgraph-msgs-1.11.2-py37hdadc0f0_1"
+  ],
+  "roslaunch": [
+   "ros-roslaunch/conda-forge/linux-64/ros-roslaunch-1.14.3-py36he1b5a44_0"
+  ],
+  "roslib": [
+   "ros-roslib/conda-forge/linux-64/ros-roslib-1.14.6-py38h794f011_3"
+  ],
+  "rosnode": [
+   "ros-rosnode/conda-forge/osx-64/ros-rosnode-1.14.3-py38h4a8c4bd_0"
+  ],
+  "rospkg": [
+   "rospkg/conda-forge/noarch/rospkg-1.2.0-py_0",
+   "rospkg/conda-forge/noarch/rospkg-1.2.1-py_0",
+   "rospkg/conda-forge/noarch/rospkg-1.2.2-py_0",
+   "rospkg/conda-forge/noarch/rospkg-1.2.3-py_1",
+   "rospkg/conda-forge/noarch/rospkg-1.2.6-pyh9f0ad1d_0",
+   "rospkg/conda-forge/noarch/rospkg-1.3.0-pyhd8ed1ab_0"
+  ],
+  "rospy": [
+   "ros-rospy/conda-forge/linux-64/ros-rospy-1.14.3-py39hf149a3a_1"
+  ],
+  "rosservice": [
+   "ros-rosservice/conda-forge/osx-64/ros-rosservice-1.14.3-py37h4a8c4bd_0"
+  ],
+  "socket": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "stat": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "std_msgs": [
+   "ros-std-msgs/conda-forge/linux-64/ros-std-msgs-0.5.12-py36he1b5a44_0",
+   "ros-std-msgs/conda-forge/linux-64/ros-std-msgs-0.5.12-py38he1b5a44_0"
+  ],
+  "string": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "subprocess": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "threading": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "traceback": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "urllib": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "xmlrpc": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "yaml": [
+   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
+   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0",
+   "pyyaml/conda-forge/linux-64/pyyaml-3.11-py35_0",
+   "pyyaml/conda-forge/win-64/pyyaml-5.2-py36hfa6e2cd_0"
   ]
  }
 }
