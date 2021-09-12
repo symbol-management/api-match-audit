@@ -25,6 +25,14 @@
   "_strip",
   "_strip_if_str",
   "_transpose_and_strip_dicts",
+  "abc",
+  "abc.ABC",
+  "abc.ABCMeta",
+  "abc.abstractmethod",
+  "absl",
+  "absl.logging",
+  "absl.logging.info",
+  "apache_beam",
   "apache_beam.CoGroupByKey",
   "apache_beam.Create",
   "apache_beam.Filter",
@@ -37,22 +45,52 @@
   "apache_beam.io.ReadAllFromText",
   "apache_beam.io.ReadFromTFRecord",
   "apache_beam.io.ReadFromText",
+  "apache_beam.io.filebasedsink",
+  "apache_beam.io.filebasedsink.FileBasedSink",
+  "apache_beam.io.filesystem.CompressionTypes",
+  "apache_beam.io.filesystems.FileSystems",
+  "apache_beam.io.filesystems.FileSystems.create",
+  "apache_beam.io.filesystems.FileSystems.match",
+  "apache_beam.io.filesystems.FileSystems.open",
+  "apache_beam.io.iobase.Write",
+  "apache_beam.io.parquetio.WriteToParquet",
   "apache_beam.io.textio.CompressionTypes.GZIP",
+  "apache_beam.metrics.Metrics.counter",
+  "apache_beam.metrics.MetricsFilter",
+  "apache_beam.options.pipeline_options.PipelineOptions",
+  "apache_beam.options.pipeline_options.TypeOptions",
+  "apache_beam.pipeline.Pipeline",
   "apache_beam.ptransform_fn",
   "apache_beam.transforms.PTransform",
   "apache_beam.transforms.Reshuffle",
   "apply_function_on_filtered_inputs",
+  "argparse",
+  "argparse.ArgumentParser",
+  "argparse.Namespace",
   "arrau.markable",
   "arrau.markable.Markable",
   "arrau.reader",
   "arrau.reader.get_coref_infos",
   "assert_slices_coverage",
+  "ast",
+  "ast.literal_eval",
+  "bert_score",
+  "bert_score.BERTScorer",
+  "bert_score.utils.get_hash",
+  "bert_score.utils.lang2model",
+  "bert_score.utils.model2layers",
   "builder_cls",
   "builder_cls.get_imported_module_dir",
   "class_type",
+  "codecs",
+  "codecs.getreader",
+  "collections",
+  "collections.Counter",
+  "collections.OrderedDict",
   "collections.abc.Iterable",
   "collections.abc.Mapping",
   "collections.defaultdict",
+  "collections.namedtuple",
   "command",
   "conll.mention",
   "conll.mention.Mention",
@@ -82,6 +120,8 @@
   "dill._dill.log.info",
   "does_function_return_dict",
   "encode_example",
+  "enum",
+  "enum.Enum",
   "errno",
   "eval.evaluator",
   "eval.evaluator.b_cubed",
@@ -107,6 +147,8 @@
   "functools.partial",
   "get_downloaded_files_pcollection",
   "get_filename",
+  "glob",
+  "glob.glob",
   "hashlib.md5",
   "hashlib.sha1",
   "hashlib.sha256",
@@ -140,6 +182,7 @@
   "numpy.random.seed",
   "numpy.random.set_state",
   "numpy.zeros",
+  "operator.itemgetter",
   "os.DirEntry",
   "os.environ.get",
   "os.getcwd",
@@ -270,39 +313,6 @@
    "pytest/conda-forge/linux-64/pytest-4.6.0-py37_0",
    "pytest/conda-forge/linux-64/pytest-6.0.2-py37hc8dfbb8_0"
   ],
-  "abc": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "absl": [
-   "absl-py/conda-forge/linux-64/absl-py-0.8.1-py27_0",
-   "absl-py/conda-forge/noarch/absl-py-0.1.10-py_0",
-   "absl-py/conda-forge/noarch/absl-py-0.10.0-pyhd8ed1ab_1",
-   "absl-py/conda-forge/noarch/absl-py-0.11.0-pyhd8ed1ab_0",
-   "absl-py/conda-forge/noarch/absl-py-0.12.0-pyhd8ed1ab_0",
-   "absl-py/conda-forge/noarch/absl-py-0.13.0-pyhd8ed1ab_0",
-   "absl-py/conda-forge/noarch/absl-py-0.3.0-py_0",
-   "absl-py/conda-forge/noarch/absl-py-0.4.1-py_0",
-   "absl-py/conda-forge/noarch/absl-py-0.5.0-py_0"
-  ],
-  "apache_beam": [
-   "apache-beam/conda-forge/linux-64/apache-beam-2.22.0-py37h5e8e339_0"
-  ],
-  "argparse": [
-   "argparse/conda-forge/osx-64/argparse-1.4.0-py26_0",
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "ast": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "bert_score": [
-   "bert_score/conda-forge/noarch/bert_score-0.3.4-pyh9f0ad1d_0",
-   "bert_score/conda-forge/noarch/bert_score-0.3.5-pyh9f0ad1d_0",
-   "bert_score/conda-forge/noarch/bert_score-0.3.6-pyh9f0ad1d_0",
-   "bert_score/conda-forge/noarch/bert_score-0.3.9-pyh44b312d_0"
-  ],
   "bs4": [
    "beautifulsoup4/conda-forge/linux-64/beautifulsoup4-4.7.1-py37_1001",
    "beautifulsoup4/conda-forge/linux-64/beautifulsoup4-4.8.2-py37_0",
@@ -314,14 +324,6 @@
   ],
   "bz2file": [
    "bz2file/conda-forge/noarch/bz2file-0.98-py_0"
-  ],
-  "codecs": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "collections": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "contextlib": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -356,11 +358,6 @@
    "elasticsearch/conda-forge/noarch/elasticsearch-7.8.0-pyh9f0ad1d_0",
    "elasticsearch/conda-forge/noarch/elasticsearch-7.8.1-pyh9f0ad1d_0"
   ],
-  "enum": [
-   "privy/conda-forge/noarch/privy-6.0.0-py_0",
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "faiss": [
    "faiss/conda-forge/linux-64/faiss-1.6.3-py36hd337d12_3_cpu",
    "faiss/conda-forge/linux-64/faiss-1.7.0-py36hf5b3792_5_cpu",
@@ -382,10 +379,6 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "getpass": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "glob": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -454,10 +447,6 @@
    "numpy/conda-forge/linux-64/numpy-1.17.5-py36h95a1406_0",
    "numpy/conda-forge/linux-64/numpy-1.18.4-py37h8960a57_0",
    "numpy/conda-forge/linux-64/numpy-1.19.2-py36h68c22af_1"
-  ],
-  "operator": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "os": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",

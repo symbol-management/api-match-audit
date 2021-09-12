@@ -28,6 +28,7 @@
   "networkx.chordal_graph_cliques",
   "networkx.is_chordal",
   "networkx.minimum_spanning_tree",
+  "nlp",
   "numpy.abs",
   "numpy.ceil",
   "numpy.dtype",
@@ -51,22 +52,43 @@
   "os.path.exists",
   "os.remove",
   "preprocessor",
+  "pyspark.RDD",
+  "pyspark.SparkContext",
+  "pyspark.SparkContext.getOrCreate",
+  "pyspark.sql.Row",
+  "pyspark.sql.SQLContext",
   "pytest.mark.complex",
   "pytest.mark.spark",
   "scheduler_class",
   "schedulers.batch_schedulers.get",
+  "sklearn.metrics",
+  "sklearn.metrics.accuracy_score",
+  "sklearn.metrics.confusion_matrix",
+  "sklearn.metrics.f1_score",
+  "sklearn.metrics.fbeta_score",
+  "sklearn.metrics.matthews_corrcoef",
+  "sklearn.metrics.precision_score",
+  "sklearn.metrics.recall_score",
+  "sklearn.metrics.roc_auc_score",
+  "snorkel.classification.DictDataset.from_tensors",
+  "spacy",
+  "spacy.load",
   "split_words",
   "split_words_spark",
   "square_hit_tracker",
   "square_hit_tracker.n_hits",
+  "tensorboardX.SummaryWriter",
   "tf",
+  "torch",
   "torch.FloatTensor",
   "torch.LongTensor",
+  "torch.Tensor",
   "torch.all",
   "torch.allclose",
   "torch.any",
   "torch.cat",
   "torch.clamp",
+  "torch.cuda.is_available",
   "torch.device",
   "torch.diag",
   "torch.eq",
@@ -76,12 +98,49 @@
   "torch.from_numpy",
   "torch.full_like",
   "torch.isclose",
+  "torch.isnan",
+  "torch.load",
   "torch.long",
+  "torch.manual_seed",
+  "torch.nn",
+  "torch.nn.DataParallel",
+  "torch.nn.Identity",
+  "torch.nn.Linear",
+  "torch.nn.Module",
+  "torch.nn.ModuleDict",
+  "torch.nn.Parameter",
+  "torch.nn.ReLU",
+  "torch.nn.Sequential",
+  "torch.nn.functional",
+  "torch.nn.functional.cross_entropy",
+  "torch.nn.functional.softmax",
+  "torch.nn.utils.clip_grad_norm_",
+  "torch.no_grad",
+  "torch.norm",
   "torch.ones",
+  "torch.optim",
+  "torch.optim.Adam",
+  "torch.optim.Adamax",
+  "torch.optim.Optimizer",
+  "torch.optim.SGD",
+  "torch.optim.lr_scheduler.ExponentialLR",
+  "torch.optim.lr_scheduler.LambdaLR",
+  "torch.optim.lr_scheduler.StepLR",
+  "torch.optim.lr_scheduler._LRScheduler",
   "torch.rand_like",
+  "torch.save",
   "torch.stack",
   "torch.sum",
-  "torch.zeros"
+  "torch.tensor",
+  "torch.utils.data.DataLoader",
+  "torch.utils.data.Dataset",
+  "torch.zeros",
+  "tqdm.tqdm",
+  "tqdm.tqdm.pandas",
+  "types.SimpleNamespace",
+  "unittest",
+  "unittest.TestCase",
+  "unittest.main"
  ],
  "deps": {
   "_pickle": [
@@ -150,9 +209,6 @@
    "networkx/conda-forge/noarch/networkx-2.6.1-pyhd8ed1ab_0",
    "networkx/conda-forge/noarch/networkx-2.6.1-pyhd8ed1ab_1"
   ],
-  "nlp": [
-   "nlp/conda-forge/noarch/nlp-0.4.0-pyh9f0ad1d_0"
-  ],
   "ntpath": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -170,14 +226,6 @@
   "pickle": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "pyspark": [
-   "pyspark/conda-forge/noarch/pyspark-2.4.1-py_0",
-   "pyspark/conda-forge/noarch/pyspark-2.4.2-py_0",
-   "pyspark/conda-forge/noarch/pyspark-2.4.3-py_0",
-   "pyspark/conda-forge/noarch/pyspark-2.4.5-py_0",
-   "pyspark/conda-forge/noarch/pyspark-2.4.6-py_0",
-   "pyspark/conda-forge/noarch/pyspark-3.0.2-pyh44b312d_0"
   ],
   "pytest": [
    "pytest/conda-forge/linux-64/pytest-3.7.0-py27_0",
@@ -197,48 +245,11 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "sklearn": [
-   "scikit-learn/conda-forge/linux-64/scikit-learn-0.17.1-np110py27_blas_openblas_200",
-   "scikit-learn/conda-forge/linux-64/scikit-learn-0.17.1-np110py35_blas_openblas_202",
-   "scikit-learn/conda-forge/linux-64/scikit-learn-0.17.1-np111py35_blas_openblas_202"
-  ],
-  "snorkel": [
-   "snorkel/conda-forge/noarch/snorkel-0.9.1-py_0",
-   "snorkel/conda-forge/noarch/snorkel-0.9.3-py_1",
-   "snorkel/conda-forge/noarch/snorkel-0.9.3-py_2",
-   "snorkel/conda-forge/noarch/snorkel-0.9.7-pyhd8ed1ab_0",
-   "snorkel/conda-forge/noarch/snorkel-0.9.7-pyhd8ed1ab_1"
-  ],
-  "spacy": [
-   "spacy/conda-forge/linux-64/spacy-1.8.1-np112py35_0",
-   "spacy/conda-forge/linux-64/spacy-2.3.2-py36h51d7077_1"
-  ],
   "tempfile": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "tensorboardX": [
-   "tensorboardx/conda-forge/noarch/tensorboardx-0.9-py_0",
-   "tensorboardx/conda-forge/noarch/tensorboardx-1.0-py_1",
-   "tensorboardx/conda-forge/noarch/tensorboardx-1.2-py_0",
-   "tensorboardx/conda-forge/noarch/tensorboardx-1.4-py_0",
-   "tensorboardx/conda-forge/noarch/tensorboardx-1.6-py_0",
-   "tensorboardx/conda-forge/noarch/tensorboardx-1.7-py_0",
-   "tensorboardx/conda-forge/noarch/tensorboardx-1.9-py_0",
-   "tensorboardx/conda-forge/noarch/tensorboardx-2.0-py_0",
-   "tensorboardx/conda-forge/noarch/tensorboardx-2.1-py_0"
-  ],
-  "torch": [],
-  "tqdm": [],
-  "types": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "typing": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "unittest": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ]
