@@ -23,14 +23,11 @@
   "atexit",
   "c2c",
   "clear",
-  "codecs",
   "codecs.encode",
   "collections.MutableSequence",
   "collections.abc.MutableSequence",
-  "configparser.ConfigParser",
   "create_engine",
   "datetime.datetime.strftime",
-  "enum.IntEnum",
   "f",
   "f.__doc__",
   "f.__name__",
@@ -41,7 +38,6 @@
   "io.BytesIO",
   "is_exe",
   "message",
-  "multiprocessing",
   "orig",
   "orig_method",
   "os.X_OK",
@@ -229,10 +225,7 @@
   "re.VERBOSE",
   "reload",
   "sessionmaker",
-  "shutil",
-  "shutil.rmtree",
   "signal.SIGINT",
-  "socket",
   "socket.AF_INET",
   "socket.SHUT_RDWR",
   "socket.SOCK_DGRAM",
@@ -241,7 +234,6 @@
   "socket.SO_RCVTIMEO",
   "socket.SO_REUSEADDR",
   "socket.error",
-  "socket.socket",
   "socket.timeout",
   "socketserver.TCPServer.process_request",
   "socketserver.TCPServer.shutdown",
@@ -253,17 +245,11 @@
   "struct.error",
   "struct.pack",
   "struct.unpack",
-  "subprocess",
-  "subprocess.PIPE",
-  "subprocess.Popen",
-  "subprocess.check_output",
   "sys",
   "sys.meta_path.insert",
   "sys.meta_path.remove",
   "sys.modules.update",
   "time",
-  "traceback",
-  "traceback.format_tb",
   "unicode",
   "warnings.warn",
   "yappi",
@@ -292,7 +278,21 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "backports": [
+   "configparser/conda-forge/noarch/configparser-5.0.0-py_0"
+  ],
+  "codecs": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "collections": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "configparser": [
+   "configparser/conda-forge/linux-64/configparser-3.7.1-py27_1",
+   "configparser/conda-forge/noarch/configparser-5.0.0-py_0",
+   "configparser/conda-forge/noarch/configparser-5.0.1-py_0",
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -301,6 +301,11 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "datetime": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "enum": [
+   "privy/conda-forge/noarch/privy-6.0.0-py_0",
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -317,6 +322,10 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "math": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "multiprocessing": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -370,7 +379,15 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "shutil": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "signal": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "socket": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -384,6 +401,10 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "struct": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "subprocess": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -544,6 +565,10 @@
    "wsproto/conda-forge/noarch/wsproto-0.14.0-py_0"
   ],
   "threading": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "traceback": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
