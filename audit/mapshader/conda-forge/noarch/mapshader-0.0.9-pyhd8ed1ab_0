@@ -4,10 +4,37 @@
   "bokeh.palettes.all_palettes.items",
   "bokeh.resources.INLINE.render",
   "bokeh.tile_providers.get_provider",
+  "dask.array",
+  "datashader",
+  "datashader.Canvas",
+  "datashader.colors.Elevation",
+  "datashader.colors.Greys9",
+  "datashader.colors.Hot",
+  "datashader.colors.Set1",
+  "datashader.colors.Set2",
+  "datashader.colors.Set3",
+  "datashader.colors.Sets1to3",
+  "datashader.colors.hex_to_rgb",
+  "datashader.colors.inferno",
+  "datashader.colors.rgb",
+  "datashader.colors.viridis",
+  "datashader.reductions",
+  "datashader.reductions.max",
+  "datashader.transfer_functions",
+  "datashader.transfer_functions.Image",
+  "datashader.transfer_functions.dynspread",
+  "datashader.transfer_functions.shade",
+  "datashader.utils.orient_array",
   "flask.request.args.get",
+  "flask_cors.CORS",
   "func",
   "functools.partial",
+  "geopandas",
+  "geopandas.GeoDataFrame",
+  "geopandas.datasets.get_path",
+  "geopandas.read_file",
   "io.BytesIO",
+  "jinja2.Template",
   "mapshader.__init__.__version__",
   "mapshader.commands.__init__.main",
   "numpy.integer",
@@ -20,7 +47,17 @@
   "numpy.zeros",
   "os.chdir",
   "os.getcwd",
+  "param",
+  "param.version.Version",
+  "psutil",
+  "psutil.cpu_count",
+  "psutil.cpu_percent",
+  "psutil.cpu_times",
+  "psutil.disk_usage",
+  "psutil.virtual_memory",
+  "pyct.cmd",
   "pytest.mark.parametrize",
+  "rioxarray",
   "spatialpandas",
   "spatialpandas.GeoDataFrame",
   "sys",
@@ -32,7 +69,9 @@
   "xarray.open_rasterio",
   "xrspatial.classify.quantile",
   "xrspatial.hillshade",
-  "xrspatial.utils.height_implied_by_aspect_ratio"
+  "xrspatial.utils.height_implied_by_aspect_ratio",
+  "yaml",
+  "yaml.load"
  ],
  "deps": {
   "PIL": [
@@ -82,16 +121,6 @@
    "dask-core/conda-forge/noarch/dask-core-2021.4.1-pyhd8ed1ab_0",
    "dask-core/conda-forge/noarch/dask-core-2021.5.1-pyhd8ed1ab_0"
   ],
-  "datashader": [
-   "datashader/conda-forge/noarch/datashader-0.10.0-py_0",
-   "datashader/conda-forge/noarch/datashader-0.11.0-pyh9f0ad1d_0",
-   "datashader/conda-forge/noarch/datashader-0.12.0-pyhd3deb0d_0",
-   "datashader/conda-forge/noarch/datashader-0.12.1-pyh44b312d_0",
-   "datashader/conda-forge/noarch/datashader-0.6.2-py_0",
-   "datashader/conda-forge/noarch/datashader-0.6.5-py_0",
-   "datashader/conda-forge/noarch/datashader-0.6.6-0",
-   "datashader/conda-forge/noarch/datashader-0.7.0-py_1"
-  ],
   "flask": [
    "flask/conda-forge/linux-64/flask-0.12-py36_0",
    "flask/conda-forge/noarch/flask-0.11.1-py_1",
@@ -99,29 +128,9 @@
    "flask/conda-forge/noarch/flask-1.0.3-py_0",
    "flask/conda-forge/noarch/flask-1.1.0-py_0"
   ],
-  "flask_cors": [
-   "flask-cors/conda-forge/noarch/flask-cors-3.0.10-pyhd8ed1ab_0",
-   "flask-cors/conda-forge/noarch/flask-cors-3.0.6-py_0",
-   "flask-cors/conda-forge/noarch/flask-cors-3.0.7-py_0",
-   "flask_cors/conda-forge/noarch/flask_cors-3.0.10-pyhd3deb0d_0",
-   "flask_cors/conda-forge/noarch/flask_cors-3.0.8-py_0",
-   "flask_cors/conda-forge/noarch/flask_cors-3.0.9-pyh9f0ad1d_0"
-  ],
   "functools": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "geopandas": [
-   "geopandas-base/conda-forge/noarch/geopandas-base-0.9.0-pyhd8ed1ab_1",
-   "geopandas/conda-forge/noarch/geopandas-0.8.0-py_1",
-   "geopandas/conda-forge/noarch/geopandas-0.8.2-pyhd8ed1ab_0",
-   "geopandas/conda-forge/noarch/geopandas-0.9.0-pyhd8ed1ab_0"
-  ],
-  "jinja2": [
-   "jinja2/conda-forge/noarch/jinja2-2.10-py_1",
-   "jinja2/conda-forge/noarch/jinja2-2.11.3-pyh44b312d_0",
-   "jinja2/conda-forge/noarch/jinja2-3.0.0-pyhd8ed1ab_0",
-   "jinja2/conda-forge/noarch/jinja2-3.0.1-pyhd8ed1ab_0"
   ],
   "json": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -144,54 +153,15 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "param": [
-   "param/conda-forge/noarch/param-1.11.0-pyh6c4a22f_0",
-   "param/conda-forge/noarch/param-1.6.0-1",
-   "param/conda-forge/noarch/param-1.6.0-2",
-   "param/conda-forge/noarch/param-1.7.0-py_0",
-   "param/conda-forge/noarch/param-1.8.1-py_0",
-   "param/conda-forge/noarch/param-1.9.0-py_0",
-   "param/conda-forge/noarch/param-1.9.1-py_0",
-   "param/conda-forge/noarch/param-1.9.3-py_0"
-  ],
   "pkg_resources": [
    "setuptools/conda-forge/linux-64/setuptools-40.6.1-py36_0",
    "setuptools/conda-forge/linux-64/setuptools-46.3.0-py38h32f6830_0",
    "setuptools/conda-forge/linux-64/setuptools-49.1.2-py38h32f6830_0"
   ],
-  "psutil": [
-   "psutil/conda-forge/linux-64/psutil-5.7.3-py39h38d8fee_0"
-  ],
-  "pyct": [
-   "pyct-core/conda-forge/noarch/pyct-core-0.4.5-py_0",
-   "pyct-core/conda-forge/noarch/pyct-core-0.4.6-py_0",
-   "pyct/conda-forge/noarch/pyct-0.4.3-py_0"
-  ],
   "pytest": [
    "pytest/conda-forge/linux-64/pytest-3.7.0-py27_0",
    "pytest/conda-forge/linux-64/pytest-4.6.0-py37_0",
    "pytest/conda-forge/linux-64/pytest-6.0.2-py37hc8dfbb8_0"
-  ],
-  "rioxarray": [
-   "rioxarray/conda-forge/noarch/rioxarray-0.0.11-py_0",
-   "rioxarray/conda-forge/noarch/rioxarray-0.0.13-py_0",
-   "rioxarray/conda-forge/noarch/rioxarray-0.0.14-py_0",
-   "rioxarray/conda-forge/noarch/rioxarray-0.0.21-py_0",
-   "rioxarray/conda-forge/noarch/rioxarray-0.0.24-py_0",
-   "rioxarray/conda-forge/noarch/rioxarray-0.0.28-py_0",
-   "rioxarray/conda-forge/noarch/rioxarray-0.0.29-py_0",
-   "rioxarray/conda-forge/noarch/rioxarray-0.0.5-py_0",
-   "rioxarray/conda-forge/noarch/rioxarray-0.0.7-py_0",
-   "rioxarray/conda-forge/noarch/rioxarray-0.0.8-py_0",
-   "rioxarray/conda-forge/noarch/rioxarray-0.1.1-pyhd8ed1ab_0",
-   "rioxarray/conda-forge/noarch/rioxarray-0.3.1-pyhd8ed1ab_0",
-   "rioxarray/conda-forge/noarch/rioxarray-0.4.2-pyhd8ed1ab_0"
-  ],
-  "yaml": [
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0",
-   "pyyaml/conda-forge/linux-64/pyyaml-3.11-py35_0",
-   "pyyaml/conda-forge/win-64/pyyaml-5.2-py36hfa6e2cd_0"
   ]
  }
 }
