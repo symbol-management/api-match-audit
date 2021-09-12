@@ -8,26 +8,20 @@
   "causalml",
   "create_dot_graph",
   "create_gml_graph",
-  "datetime.datetime",
-  "datetime.datetime.now",
   "do_sampler_class",
   "dowhy.__init__.here",
   "dowhy.causal_identifier.CausalIdentifier.NONPARAMETRIC_NDE",
   "dowhy.causal_identifier.CausalIdentifier.NONPARAMETRIC_NIE",
   "dowhy.do_samplers.__init__.PACKAGE_NAME",
-  "econml",
   "estimator",
   "estimator.fit",
   "estimator.predict",
   "estimator_class",
-  "importlib.import_module",
-  "inspect",
-  "inspect.getfullargspec",
-  "inspect.unwrap",
   "interpreter",
   "inv_cdf",
   "itertools",
-  "logging",
+  "math",
+  "math.exp",
   "multiprocessing.Pool",
   "networkx",
   "networkx.DiGraph",
@@ -60,18 +54,8 @@
   "numpy.random.random",
   "numpy.random.uniform",
   "numpy.zeros",
-  "pandas",
-  "pandas.DataFrame",
-  "pandas.Series",
-  "pandas.api.extensions.register_dataframe_accessor",
   "pandas.api.types.is_bool_dtype",
   "pandas.api.types.is_numeric_dtype",
-  "pandas.concat",
-  "pandas.cut",
-  "pandas.get_dummies",
-  "pandas.merge",
-  "pandas.qcut",
-  "pandas.wide_to_long",
   "pdb",
   "pygraphviz",
   "pymc3",
@@ -87,8 +71,6 @@
   "random.shuffle",
   "refuter_class",
   "scipy.interpolate.LinearNDInterpolator",
-  "scipy.interpolate.interp1d",
-  "scipy.stats",
   "scipy.stats.norm.cdf",
   "sklearn.decomposition.PCA",
   "sklearn.ensemble.GradientBoostingClassifier",
@@ -112,7 +94,16 @@
   "statsmodels.nonparametric.kernel_density.KDEMultivariateConditional",
   "statsmodels.sandbox.regression.gmm.IV2SLS",
   "string",
-  "string.capwords"
+  "string.capwords",
+  "sympy",
+  "sympy.Array",
+  "sympy.Derivative",
+  "sympy.Symbol",
+  "sympy.init_printing",
+  "sympy.pretty",
+  "sympy.stats",
+  "sympy.stats.Expectation",
+  "sympy.stats.Normal"
  ],
  "deps": {
   "collections": [
@@ -123,7 +114,24 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "math": [
+  "datetime": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "econml": [
+   "econml/conda-forge/linux-64/econml-0.11.0-py37h219a48f_0",
+   "econml/conda-forge/win-64/econml-0.9.0-py37h90003fb_0"
+  ],
+  "importlib": [
+   "importlib/conda-forge/linux-64/importlib-1.0.4-py26_0",
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "inspect": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "logging": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -145,13 +153,15 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "pandas": [],
   "re": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "sympy": [
-   "sympy/conda-forge/linux-64/sympy-1.5.1-py27h8c360ce_2",
-   "sympy/conda-forge/linux-64/sympy-1.5.1-py36_0"
+  "scipy": [
+   "scipy/conda-forge/linux-64/scipy-0.17.1-np110py27_blas_openblas_202",
+   "scipy/conda-forge/linux-64/scipy-1.7.0-py37h29e03ee_0",
+   "scipy/conda-forge/linux-64/scipy-1.7.0-py37ha768fb6_1"
   ]
  }
 }

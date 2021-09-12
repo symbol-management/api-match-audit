@@ -32,8 +32,6 @@
   "QTreeWidgetItemIterator",
   "RangeEditor",
   "TextBlock",
-  "__future__.division",
-  "__future__.print_function",
   "_unpack_stuct",
   "asammdf.__init__.NullHandler",
   "asammdf.__init__.logger",
@@ -67,11 +65,24 @@
   "getpass.getuser",
   "gui.utils.COLORS",
   "gui.widgets.plot_standalone.StandalonePlot",
+  "h5py.File",
   "hashlib.md5",
+  "hdf5storage.savemat",
   "header",
   "header.start_time",
   "io.StringIO",
   "math.ceil",
+  "matplotlib.pyplot",
+  "matplotlib.pyplot.axes",
+  "matplotlib.pyplot.close",
+  "matplotlib.pyplot.figure",
+  "matplotlib.pyplot.grid",
+  "matplotlib.pyplot.plot",
+  "matplotlib.pyplot.show",
+  "matplotlib.pyplot.title",
+  "matplotlib.pyplot.xlabel",
+  "matplotlib.pyplot.ylabel",
+  "matplotlib.widgets.Slider",
   "mdf.MDF._terminate",
   "mdf.MDF.concatenate",
   "mdf.MDF.stack",
@@ -108,20 +119,13 @@
   "partial",
   "pyqtSignal",
   "read",
-  "scipy.io.savemat",
   "seek",
-  "shutil",
-  "shutil.copy",
-  "shutil.copytree",
-  "struct",
   "struct.Struct",
   "struct.pack",
   "struct.unpack",
   "struct.unpack_from",
   "sys",
   "tell",
-  "tempfile.TemporaryFile",
-  "threading.Thread",
   "time",
   "traceback",
   "traceback.print_tb",
@@ -358,9 +362,7 @@
   "v4_constants.SYNC_TYPE_TIME",
   "v4_constants.VIRTUAL_TYPES",
   "warnings.warn",
-  "write",
-  "zlib.compress",
-  "zlib.decompress"
+  "write"
  ],
  "deps": {
   "PyQt4": [
@@ -372,6 +374,10 @@
    "pyqt/conda-forge/linux-64/pyqt-5.12.3-py38hcca6a23_0",
    "pyqt/conda-forge/linux-64/pyqt-5.9.2-py37hcca6a23_1"
   ],
+  "__future__": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "collections": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -380,24 +386,9 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "h5py": [
-   "h5py/conda-forge/linux-64/h5py-2.10.0-nompi_py37hf7afa78_105",
-   "h5py/conda-forge/linux-64/h5py-2.6.0-np111py34_4",
-   "h5py/conda-forge/linux-64/h5py-2.7.0-np113py36_1"
-  ],
-  "hdf5storage": [
-   "hdf5storage/conda-forge/noarch/hdf5storage-0.1.15-py_0",
-   "hdf5storage/conda-forge/noarch/hdf5storage-0.1.15-py_1",
-   "hdf5storage/conda-forge/noarch/hdf5storage-0.1.16-pyh44b312d_0"
-  ],
   "logging": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "matplotlib": [
-   "matplotlib-base/conda-forge/linux-64/matplotlib-base-3.1.1-py37hfd891ef_0",
-   "matplotlib-base/conda-forge/linux-64/matplotlib-base-3.1.1-py38h250f245_2",
-   "matplotlib/conda-forge/linux-64/matplotlib-1.5.3-np111py34_0"
   ],
   "ntpath": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -437,11 +428,32 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "scipy": [
+   "scipy/conda-forge/linux-64/scipy-0.17.1-np110py27_blas_openblas_202",
+   "scipy/conda-forge/linux-64/scipy-1.7.0-py37h29e03ee_0",
+   "scipy/conda-forge/linux-64/scipy-1.7.0-py37ha768fb6_1"
+  ],
+  "shutil": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "string": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "struct": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "tempfile": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "textwrap": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "threading": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -466,6 +478,10 @@
    "xlsxwriter/conda-forge/noarch/xlsxwriter-1.4.4-pyhd8ed1ab_0"
   ],
   "xml": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "zlib": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ]
