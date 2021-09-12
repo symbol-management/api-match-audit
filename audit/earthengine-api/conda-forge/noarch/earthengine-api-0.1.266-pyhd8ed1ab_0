@@ -104,6 +104,12 @@
   "data.newTaskId",
   "data.profiling",
   "data.reset",
+  "datetime",
+  "datetime.datetime",
+  "datetime.datetime.fromtimestamp",
+  "datetime.datetime.now",
+  "datetime.datetime.strptime",
+  "datetime.datetime.utcfromtimestamp",
   "decodeCloudApi",
   "decode_function_definition",
   "decode_function_invocation",
@@ -119,17 +125,47 @@
   "ee.Algorithms.Foo.bar",
   "ee.Algorithms.last",
   "ee.ApiFunction._api",
+  "ee.ApiFunction.apply_",
+  "ee.ApiFunction.call_",
+  "ee.ApiFunction.clearApi",
+  "ee.ApiFunction.importApi",
+  "ee.ApiFunction.lookup",
   "ee.Array",
   "ee.Bar",
+  "ee.CustomFunction.variable",
   "ee.ErrorMargin",
+  "ee.Filter.And",
+  "ee.Filter.Or",
+  "ee.Filter.date",
+  "ee.Filter.eq",
+  "ee.Filter.geometry",
+  "ee.Filter.gt",
+  "ee.Filter.gte",
+  "ee.Filter.inList",
   "ee.Filter.listContains",
+  "ee.Filter.lt",
+  "ee.Filter.lte",
+  "ee.Filter.metadata_",
+  "ee.Filter.neq",
   "ee.Foo",
   "ee.Function._promoter",
+  "ee.Function._registerPromoter",
+  "ee.Geometry.BBox",
+  "ee.Geometry.LineString",
+  "ee.Geometry.LinearRing",
+  "ee.Geometry.MultiLineString",
+  "ee.Geometry.MultiPoint",
+  "ee.Geometry.MultiPolygon",
+  "ee.Geometry.Point",
+  "ee.Geometry.Polygon",
+  "ee.Geometry.Rectangle",
+  "ee.Geometry._isValidCoordinates",
   "ee.Image._initialized",
   "ee.Image.bar",
   "ee.Image.bar.__doc__",
   "ee.Image.baz",
   "ee.Image.baz.__doc__",
+  "ee.Image.combine_",
   "ee.Image.newBaz.__doc__",
   "ee.Image.oldBar.__doc__",
   "ee.Kernel",
@@ -187,7 +223,9 @@
   "func",
   "function.Function",
   "function.Function._registerPromoter",
+  "functools",
   "functools.partial",
+  "functools.wraps",
   "geometry.Geometry",
   "geometry.Geometry.LineString",
   "geometry.Geometry.Polygon",
@@ -214,12 +252,15 @@
   "image.Image.reset",
   "imagecollection.ImageCollection.initialize",
   "imagecollection.ImageCollection.reset",
+  "ipykernel.zmqshell",
   "is_tf_record",
   "lookup",
   "mock.MagicMock",
   "mock.patch",
   "mock.patch.object",
   "mock_credentials_path",
+  "numbers",
+  "numbers.Number",
   "oauth.CLIENT_ID",
   "oauth.CLIENT_SECRET",
   "oauth.SCOPES",
@@ -268,6 +309,7 @@
   "tensorflow.compat.v1.identity",
   "tensorflow.compat.v1.io.decode_base64",
   "tensorflow.compat.v1.io.encode_base64",
+  "tensorflow.compat.v1.logging.ERROR",
   "tensorflow.compat.v1.map_fn",
   "tensorflow.compat.v1.parse_tensor",
   "tensorflow.compat.v1.placeholder",
@@ -279,8 +321,16 @@
   "terrain.Terrain.reset",
   "time",
   "type.__call__",
+  "types",
+  "types.FunctionType",
+  "types.MethodType",
+  "unittest",
+  "unittest.TestCase",
+  "unittest.main",
   "warnings.warn",
-  "warnings.warn_explicit"
+  "warnings.warn_explicit",
+  "webbrowser",
+  "webbrowser.open_new"
  ],
  "deps": {
   "IPython": [
@@ -336,25 +386,6 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "datetime": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "ee": [
-   "earthengine-api/conda-forge/noarch/earthengine-api-0.1.232-pyh9f0ad1d_0",
-   "earthengine-api/conda-forge/noarch/earthengine-api-0.1.235-pyh9f0ad1d_0",
-   "earthengine-api/conda-forge/noarch/earthengine-api-0.1.238-pyh9f0ad1d_0",
-   "earthengine-api/conda-forge/noarch/earthengine-api-0.1.240-pyhd3deb0d_0",
-   "earthengine-api/conda-forge/noarch/earthengine-api-0.1.247-pyh44b312d_0",
-   "earthengine-api/conda-forge/noarch/earthengine-api-0.1.255-pyhd8ed1ab_0",
-   "earthengine-api/conda-forge/noarch/earthengine-api-0.1.260-pyhd8ed1ab_0",
-   "earthengine-api/conda-forge/noarch/earthengine-api-0.1.266-pyhd8ed1ab_0",
-   "earthengine-api/conda-forge/noarch/earthengine-api-0.1.271-pyhd8ed1ab_0"
-  ],
-  "functools": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "google_auth_httplib2": [
    "google-auth-httplib2/conda-forge/noarch/google-auth-httplib2-0.0.3-py_2",
    "google-auth-httplib2/conda-forge/noarch/google-auth-httplib2-0.0.3-py_3",
@@ -394,20 +425,11 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "ipykernel": [
-   "ipykernel/conda-forge/linux-64/ipykernel-4.10.0-py27_1",
-   "ipykernel/conda-forge/linux-64/ipykernel-5.3.1-py37h43977f1_0",
-   "ipykernel/conda-forge/linux-64/ipykernel-5.3.3-py37h43977f1_0"
-  ],
   "json": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "keyword": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "logging": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -420,10 +442,6 @@
    "mock/conda-forge/linux-64/mock-3.0.3-py37_0"
   ],
   "ntpath": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "numbers": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -464,23 +482,11 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "types": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "unittest": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "uuid": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "warnings": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "webbrowser": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ]

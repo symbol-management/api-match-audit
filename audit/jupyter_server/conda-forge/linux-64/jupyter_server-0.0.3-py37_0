@@ -100,6 +100,9 @@
   "re.IGNORECASE",
   "re.VERBOSE",
   "rm",
+  "select",
+  "select.select",
+  "send2trash.send2trash",
   "signal.SIGINFO",
   "signal.SIGINT",
   "signal.SIGKILL",
@@ -108,8 +111,15 @@
   "socket.SOCK_STREAM",
   "socket.error",
   "socket.gethostname",
+  "sqlite3",
   "ssl.CERT_REQUIRED",
   "ssl.PROTOCOL_TLSv1",
+  "stat",
+  "stat.S_IMODE",
+  "stat.S_ISDIR",
+  "stat.S_ISLNK",
+  "stat.S_ISREG",
+  "struct",
   "struct.pack",
   "struct.unpack",
   "sys",
@@ -119,25 +129,113 @@
   "sys.stdin.readline",
   "sys.stdout.flush",
   "sys.stdout.write",
+  "tarfile",
+  "tarfile.TarInfo",
+  "tarfile.open",
+  "terminado",
+  "terminado.NamedTermManager",
+  "terminado.TermSocket",
+  "terminado.__version__",
   "terminal.initialize",
   "time",
   "tmp",
   "toggle",
+  "tornado",
+  "tornado.concurrent.Future",
+  "tornado.escape",
+  "tornado.escape.native_str",
+  "tornado.escape.url_escape",
+  "tornado.gen",
+  "tornado.gen.Return",
+  "tornado.gen.TimeoutError",
+  "tornado.gen.coroutine",
+  "tornado.gen.maybe_future",
+  "tornado.httpclient.HTTPClient",
+  "tornado.httpclient.HTTPRequest",
+  "tornado.httpserver",
+  "tornado.httpserver.HTTPServer",
+  "tornado.httputil",
+  "tornado.httputil.format_timestamp",
+  "tornado.httputil.url_concat",
+  "tornado.ioloop",
+  "tornado.ioloop.IOLoop",
+  "tornado.ioloop.IOLoop.current",
+  "tornado.ioloop.PeriodicCallback",
+  "tornado.log.LogFormatter",
+  "tornado.log.access_log",
   "tornado.log.access_log.debug",
   "tornado.log.access_log.error",
   "tornado.log.access_log.info",
   "tornado.log.access_log.warning",
+  "tornado.log.app_log",
   "tornado.log.app_log.exception",
+  "tornado.log.gen_log",
+  "tornado.version",
+  "tornado.version_info",
+  "tornado.web",
+  "tornado.web.Application",
+  "tornado.web.HTTPError",
+  "tornado.web.RequestHandler",
+  "tornado.web.StaticFileHandler",
+  "tornado.web.StaticFileHandler.get",
+  "tornado.web.StaticFileHandler.initialize",
+  "tornado.web.authenticated",
+  "tornado.websocket.WebSocketHandler",
+  "tornado.websocket.websocket_connect",
+  "traceback",
+  "traceback.format_exc",
+  "traceback.format_exception",
+  "traitlets.Any",
+  "traitlets.Bool",
+  "traitlets.Bytes",
+  "traitlets.Dict",
+  "traitlets.Float",
+  "traitlets.Instance",
+  "traitlets.Integer",
+  "traitlets.List",
+  "traitlets.TraitError",
+  "traitlets.Type",
+  "traitlets.Unicode",
+  "traitlets.config.Application",
   "traitlets.config.Application.initialized",
   "traitlets.config.Application.instance",
+  "traitlets.config.Config",
+  "traitlets.config.ConfigFileNotFound",
+  "traitlets.config.Configurable",
+  "traitlets.config.JSONFileConfigLoader",
+  "traitlets.config.LoggingConfigurable",
+  "traitlets.config.application.boolean_flag",
+  "traitlets.config.application.catch_config_error",
+  "traitlets.config.configurable.LoggingConfigurable",
+  "traitlets.default",
+  "traitlets.observe",
+  "traitlets.tests.utils.check_help_all_output",
+  "traitlets.traitlets.Bool",
+  "traitlets.traitlets.Unicode",
+  "traitlets.utils.importstring.import_item",
+  "traitlets.validate",
+  "types",
+  "types.MethodType",
+  "types.SimpleNamespace",
   "unaware",
+  "unicodedata.normalize",
+  "unittest",
+  "unittest.TestCase",
+  "unittest.mock.patch",
   "urllib.quote",
   "urllib.unquote",
   "urlparse.urlparse",
   "warnings.warn",
+  "webbrowser",
+  "webbrowser.Error",
+  "webbrowser.get",
   "write_stderr",
+  "zmq",
   "zmq.Context.instance",
-  "zmq.eventloop.ioloop.IOLoop.current"
+  "zmq.eventloop.ioloop",
+  "zmq.eventloop.ioloop.IOLoop.current",
+  "zmq.eventloop.ioloop.PeriodicCallback",
+  "zmq.eventloop.ioloop.install"
  ],
  "deps": {
   "__future__": [
@@ -331,15 +429,6 @@
    "requests/conda-forge/noarch/requests-2.25.1-pyhd3deb0d_0",
    "requests/conda-forge/noarch/requests-2.26.0-pyhd8ed1ab_0"
   ],
-  "select": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "send2trash": [
-   "send2trash/conda-forge/noarch/send2trash-1.4.2-py_0",
-   "send2trash/conda-forge/noarch/send2trash-1.5.0-py_0",
-   "send2trash/conda-forge/noarch/send2trash-1.7.1-pyhd8ed1ab_0"
-  ],
   "shutil": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -362,19 +451,7 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "sqlite3": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "ssl": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "stat": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "struct": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -382,47 +459,15 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "tarfile": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "tempfile": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "terminado": [
-   "terminado/conda-forge/linux-64/terminado-0.10.1-py36hd000896_0",
-   "terminado/conda-forge/linux-64/terminado-0.8.1-py27_1001",
-   "terminado/conda-forge/linux-64/terminado-0.9.1-py39hf3d152e_1"
   ],
   "textwrap": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "threading": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "tornado": [],
-  "traceback": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "traitlets": [
-   "traitlets/conda-forge/noarch/traitlets-5.0.4-py_0",
-   "traitlets/conda-forge/noarch/traitlets-5.0.4-py_1",
-   "traitlets/conda-forge/noarch/traitlets-5.0.5-py_0",
-   "traitlets/conda-forge/noarch/traitlets-5.1.0-pyhd8ed1ab_0"
-  ],
-  "types": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "unicodedata": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "unittest": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -438,17 +483,9 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "webbrowser": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "zipfile": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "zmq": [
-   "pyzmq/conda-forge/linux-64/pyzmq-18.0.1-py37hc4ba49a_1",
-   "pyzmq/conda-forge/linux-64/pyzmq-19.0.0-py27h1768529_0"
   ]
  }
 }

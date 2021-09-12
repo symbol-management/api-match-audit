@@ -85,23 +85,58 @@
   "components.dims_constants.DimsMode.POINT",
   "cond",
   "create_box",
+  "csv.QUOTE_MINIMAL",
+  "csv.reader",
+  "csv.writer",
+  "dask",
+  "dask.__version__",
   "dask.__version__.split",
+  "dask.array",
+  "dask.array.Array",
+  "dask.array.from_array",
+  "dask.array.from_delayed",
+  "dask.array.from_zarr",
+  "dask.array.ones",
+  "dask.array.random.randint",
+  "dask.array.random.random",
+  "dask.array.random.seed",
+  "dask.array.stack",
+  "dask.cache.Cache",
+  "dask.config.get",
+  "dask.delayed",
   "dat",
   "dims_constants.DimsMode.POINT",
+  "distutils.version.StrictVersion",
+  "enum.Enum",
+  "enum.EnumMeta",
+  "enum.auto",
+  "factory",
   "foo",
   "format_exc_info",
   "fu",
   "func",
   "func.__name__",
+  "functools",
+  "functools.lru_cache",
   "functools.partial",
   "functools.reduce",
+  "functools.wraps",
   "fv",
   "get_array",
+  "glob.glob",
   "help.setter",
   "hook_caller",
   "hook_caller.call_with_result_obj",
   "hook_caller.get_hookimpls",
+  "imageio",
+  "imageio.imread",
+  "imageio.imsave",
+  "imageio.imwrite",
+  "importlib_metadata",
   "io.BytesIO",
+  "ipykernel.connect.get_connection_file",
+  "ipykernel.inprocess.ipkernel.InProcessInteractiveShell",
+  "ipykernel.zmqshell.ZMQInteractiveShell",
   "itertools",
   "labels.Labels.bind_key",
   "layers.Image",
@@ -135,6 +170,13 @@
   "layers.vectors._vectors_constants.ColorMode.COLORMAP",
   "layers.vectors._vectors_constants.ColorMode.CYCLE",
   "layers.vectors._vectors_constants.ColorMode.DIRECT",
+  "logging",
+  "logging.DEBUG",
+  "logging.INFO",
+  "logging.WARNING",
+  "logging.basicConfig",
+  "logging.getLogger",
+  "magicgui.register_type",
   "mname",
   "model",
   "mouse_drag_func",
@@ -245,6 +287,9 @@
   "os.pathsep.join",
   "os.remove",
   "os.unlink",
+  "pandas",
+  "pandas.DataFrame",
+  "pathlib.Path",
   "plugin_manager",
   "plugin_manager.hook",
   "plugin_manager.hook.napari_get_reader",
@@ -420,6 +465,9 @@
   "test_ndisplay_change",
   "thread_func",
   "time",
+  "traceback",
+  "traceback.format_exception",
+  "traceback.print_stack",
   "transform",
   "transform.inverse",
   "transform.name",
@@ -441,6 +489,14 @@
   "transform_chain_expandded",
   "transform_chain_inverse",
   "transform_chain_sliced",
+  "types",
+  "types.GeneratorType",
+  "types.MethodType",
+  "types.TracebackType",
+  "unittest.mock",
+  "unittest.mock.MagicMock",
+  "unittest.mock.Mock",
+  "unittest.mock.patch",
   "unittest.mock.patch.object",
   "update_method",
   "utils._magicgui.register_types_with_magicgui",
@@ -464,6 +520,8 @@
   "vispy.util.logs.logger.warning",
   "warnings.warn",
   "weakref.ref",
+  "webbrowser",
+  "webbrowser.open",
   "writer",
   "writer_function"
  ],
@@ -482,10 +540,6 @@
    "pyside2/conda-forge/win-64/pyside2-5.13.2-py36hfa7ce6d_0"
   ],
   "__future__": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "_csv": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -530,79 +584,13 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "dask": [
-   "dask-core/conda-forge/noarch/dask-core-0.18.0-py_0",
-   "dask-core/conda-forge/noarch/dask-core-0.20.1-py_0",
-   "dask-core/conda-forge/noarch/dask-core-1.1.1-py_0",
-   "dask-core/conda-forge/noarch/dask-core-1.1.2-py_0",
-   "dask-core/conda-forge/noarch/dask-core-1.1.4-py_0",
-   "dask-core/conda-forge/noarch/dask-core-2.10.1-py_0",
-   "dask-core/conda-forge/noarch/dask-core-2.13.0-py_0",
-   "dask-core/conda-forge/noarch/dask-core-2.17.2-py_0",
-   "dask-core/conda-forge/noarch/dask-core-2.18.0-py_0",
-   "dask-core/conda-forge/noarch/dask-core-2.22.0-py_0",
-   "dask-core/conda-forge/noarch/dask-core-2.25.0-py_0",
-   "dask-core/conda-forge/noarch/dask-core-2.27.0-py_0",
-   "dask-core/conda-forge/noarch/dask-core-2.6.0-py_0",
-   "dask-core/conda-forge/noarch/dask-core-2.8.1-py_0",
-   "dask-core/conda-forge/noarch/dask-core-2020.12.0-pyhd8ed1ab_0",
-   "dask-core/conda-forge/noarch/dask-core-2021.3.1-pyhd8ed1ab_0",
-   "dask-core/conda-forge/noarch/dask-core-2021.4.0-pyhd8ed1ab_0",
-   "dask-core/conda-forge/noarch/dask-core-2021.4.1-pyhd8ed1ab_0",
-   "dask-core/conda-forge/noarch/dask-core-2021.5.1-pyhd8ed1ab_0"
-  ],
-  "distutils": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "enum": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "factory": [
-   "factory_boy/conda-forge/noarch/factory_boy-2.10.0-py_0",
-   "factory_boy/conda-forge/noarch/factory_boy-2.11.0-py_0",
-   "factory_boy/conda-forge/noarch/factory_boy-2.11.1-py_0",
-   "factory_boy/conda-forge/noarch/factory_boy-2.11.1-pyh9f0ad1d_1",
-   "factory_boy/conda-forge/noarch/factory_boy-3.0.1-pyh9f0ad1d_1",
-   "factory_boy/conda-forge/noarch/factory_boy-3.1.0-pyh9f0ad1d_0"
-  ],
-  "functools": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "glob": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "imageio": [
-   "imageio/conda-forge/osx-64/imageio-2.4.1-py37_0",
-   "imageio/conda-forge/win-64/imageio-2.6.0-py27_0"
-  ],
   "importlib": [
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "importlib_metadata": [
-   "importlib-metadata/conda-forge/linux-64/importlib-metadata-3.9.0-py38h578d9bd_0",
-   "importlib-metadata/conda-forge/noarch/importlib-metadata-1.7.0-pyhd8ed1ab_1",
-   "importlib-metadata/conda-forge/noarch/importlib-metadata-3.0.0-pyhd8ed1ab_0",
-   "importlib_metadata/conda-forge/linux-64/importlib_metadata-1.1.1-py37_0",
-   "importlib_metadata/conda-forge/noarch/importlib_metadata-0.5-py_0"
   ],
   "inspect": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "ipykernel": [
-   "ipykernel/conda-forge/linux-64/ipykernel-4.10.0-py27_1",
-   "ipykernel/conda-forge/linux-64/ipykernel-5.3.1-py37h43977f1_0",
-   "ipykernel/conda-forge/linux-64/ipykernel-5.3.3-py37h43977f1_0"
-  ],
-  "logging": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "magicgui": [],
   "math": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -634,14 +622,6 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "os": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "pandas": [
-   "pandas/conda-forge/linux-64/pandas-1.2.2-py37h40f5888_0"
-  ],
-  "pathlib": [
-   "pathlib/conda-forge/noarch/pathlib-1.0.1-py_1",
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -718,25 +698,14 @@
    "tifffile/conda-forge/noarch/tifffile-2021.1.8-pyhd8ed1ab_0",
    "tifffile/conda-forge/noarch/tifffile-2021.3.31-pyhd8ed1ab_0",
    "tifffile/conda-forge/noarch/tifffile-2021.4.8-pyhd8ed1ab_0",
-   "tifffile/conda-forge/noarch/tifffile-2021.7.2-pyhd8ed1ab_0"
+   "tifffile/conda-forge/noarch/tifffile-2021.7.2-pyhd8ed1ab_0",
+   "tifffile/conda-forge/noarch/tifffile-2021.8.30-pyhd8ed1ab_0"
   ],
   "toolz": [
    "toolz/conda-forge/noarch/toolz-0.10.0-py_0",
    "toolz/conda-forge/noarch/toolz-0.9.0-py_1"
   ],
-  "traceback": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "types": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "typing": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "unittest": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -757,10 +726,6 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "weakref": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "webbrowser": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
