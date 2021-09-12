@@ -16,6 +16,9 @@
   "db",
   "errno",
   "ex",
+  "future.utils.isbytes",
+  "future.utils.istext",
+  "future.utils.with_metaclass",
   "init.auto_init",
   "io.open",
   "mkfn",
@@ -28,43 +31,19 @@
   "pprint.pformat",
   "pyclibrary.backends.__init__.lib_path",
   "pyclibrary.backends.__init__.lib_types",
-  "pyparsing.Forward",
-  "pyparsing.Group",
-  "pyparsing.Keyword",
-  "pyparsing.LineEnd",
-  "pyparsing.Literal",
-  "pyparsing.OneOrMore",
-  "pyparsing.Optional",
-  "pyparsing.ParseResults",
-  "pyparsing.ParserElement",
-  "pyparsing.ParserElement.enablePackrat",
-  "pyparsing.Regex",
-  "pyparsing.SkipTo",
-  "pyparsing.Suppress",
-  "pyparsing.Word",
-  "pyparsing.WordEnd",
-  "pyparsing.WordStart",
-  "pyparsing.ZeroOrMore",
-  "pyparsing.alphanums",
-  "pyparsing.alphas",
-  "pyparsing.cStyleComment",
   "pyparsing.cStyleComment.suppress",
-  "pyparsing.delimitedList",
-  "pyparsing.hexnums",
-  "pyparsing.lineno",
-  "pyparsing.nestedExpr",
-  "pyparsing.oneOf",
-  "pyparsing.quotedString",
   "pyparsing.quotedString.transformString",
-  "pyparsing.restOfLine",
   "str_cls",
   "struct.unpack",
   "struct_kw",
+  "subprocess",
+  "subprocess.CalledProcessError",
+  "subprocess.PIPE",
+  "subprocess.Popen",
+  "subprocess.STDOUT",
   "sys",
   "sys.platform.startswith",
-  "traceback.format_exc",
-  "type_",
-  "weakref.WeakValueDictionary"
+  "type_"
  ],
  "deps": {
   "__future__": [
@@ -86,9 +65,6 @@
   "ctypes": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "future": [
-   "future/conda-forge/linux-64/future-0.16.0-py34_0"
   ],
   "inspect": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -114,6 +90,15 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "pyparsing": [
+   "pyparsing/conda-forge/noarch/pyparsing-2.2.1-py_0",
+   "pyparsing/conda-forge/noarch/pyparsing-2.2.2-py_0",
+   "pyparsing/conda-forge/noarch/pyparsing-2.3.0-py_0",
+   "pyparsing/conda-forge/noarch/pyparsing-2.3.1-py_0",
+   "pyparsing/conda-forge/noarch/pyparsing-2.4.1.1-py_0",
+   "pyparsing/conda-forge/noarch/pyparsing-2.4.4-py_0",
+   "pyparsing/conda-forge/noarch/pyparsing-2.4.6-py_0"
+  ],
   "re": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -122,15 +107,19 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "subprocess": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "tempfile": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "threading": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "traceback": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "weakref": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ]
