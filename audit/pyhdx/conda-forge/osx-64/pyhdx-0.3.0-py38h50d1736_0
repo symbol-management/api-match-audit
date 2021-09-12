@@ -14,7 +14,9 @@
   "functools.partial",
   "functools.reduce",
   "glyph_func",
+  "hdxrate.k_int_from_sequence",
   "hex.replace",
+  "importlib.metadata",
   "inc",
   "io.StringIO",
   "itertools",
@@ -53,13 +55,74 @@
   "numpy.random.seed",
   "numpy.random.set_state",
   "numpy.zeros",
+  "numpydoc.numpydoc.DEDUPLICATION_TAG",
   "op",
+  "operator",
+  "operator.add",
+  "operator.sub",
+  "operator.truediv",
   "os.chdir",
   "os.path.exists",
+  "pandas",
+  "pandas.Series",
+  "pandas.concat",
+  "panel",
+  "panel.Card",
+  "panel.Column",
+  "panel.Param",
   "panel.Param.get_widget",
   "panel.config.js_files.update",
+  "panel.depends",
+  "panel.io.unlocked",
+  "panel.pane.Bokeh",
+  "panel.pane.HTML",
   "panel.pane.HTML._rename",
+  "panel.pane.Markdown",
+  "panel.serve",
   "panel.state.curdoc",
+  "panel.template.GoldenTemplate",
+  "panel.template.golden.GoldenDarkTheme",
+  "panel.template.golden.GoldenDefaultTheme",
+  "panel.util.as_unicode",
+  "panel.util.url_path",
+  "panel.widgets.ColorPicker",
+  "panel.widgets.FileInput",
+  "panel.widgets.FloatInput",
+  "panel.widgets.IntInput",
+  "panel.widgets.IntSlider",
+  "panel.widgets.LiteralInput",
+  "panel.widgets.Progress",
+  "panel.widgets.RadioButtonGroup",
+  "panel.widgets.Spinner",
+  "panel.widgets.input.StaticText",
+  "panel.widgets.input.Widget",
+  "panel.widgets.input._BkTextInput",
+  "param",
+  "param.Action",
+  "param.Boolean",
+  "param.ClassSelector",
+  "param.Color",
+  "param.Dict",
+  "param.Filename",
+  "param.Integer",
+  "param.List",
+  "param.ListSelector",
+  "param.Number",
+  "param.Parameter",
+  "param.Parameterized",
+  "param.Selector",
+  "param.String",
+  "param.depends",
+  "param.parameterized.ParameterizedMetaclass",
+  "param.parameterized.docstring_describe_params",
+  "param.parameterized.docstring_signature",
+  "param.parameterized.label_formatter",
+  "pbr.git",
+  "pbr.git._run_git_command",
+  "pbr.git.get_git_short_sha",
+  "pbr.version",
+  "pbr.version.SemanticVersion.from_pip_string",
+  "pbr.version.VersionInfo",
   "pyhdx.__init__.VERSION_STRING",
   "pyhdx.__init__.VERSION_STRING_SHORT",
   "pyhdx.__init__.__git_sha__",
@@ -71,11 +134,25 @@
   "pyhdx.__init__.package_name",
   "pyhdx.__init__.semantic_version",
   "pyhdx.__init__.tagged",
+  "pyhdx.fitting_torch.nn.Parameter",
+  "pyhdx.fitting_torch.t.Tensor",
   "pyhdx.fitting_torch.t.abs",
   "pyhdx.fitting_torch.t.float32",
   "pyhdx.fitting_torch.t.mean",
+  "pyhdx.fitting_torch.t.nn.MSELoss",
+  "pyhdx.fitting_torch.t.tensor",
+  "pylatex",
+  "pylatex.Command",
+  "pylatex.Document",
+  "pylatex.Figure",
+  "pylatex.NewPage",
+  "pylatex.NoEscape",
+  "pylatex.Package",
+  "pylatex.SubFigure",
   "scipy.constants.R",
   "set.intersection",
+  "shutil",
+  "shutil.rmtree",
   "skimage.filters.threshold_multiotsu",
   "str.ljust",
   "str.rjust",
@@ -86,6 +163,8 @@
   "symfit.Variable",
   "symfit.exp",
   "sys",
+  "tempfile",
+  "tempfile.gettempdir",
   "tensorflow.boolean_mask",
   "tensorflow.clip_by_value",
   "tensorflow.convert_to_tensor",
@@ -102,6 +181,7 @@
   "time",
   "torch.exp",
   "torch.matmul",
+  "warnings",
   "warnings.warn"
  ],
  "deps": {
@@ -128,14 +208,6 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "hdxrate": [
-   "hdxrate/conda-forge/noarch/hdxrate-0.1.1-pyhd8ed1ab_0",
-   "hdxrate/conda-forge/noarch/hdxrate-0.1.2-pyhd8ed1ab_0",
-   "hdxrate/conda-forge/noarch/hdxrate-0.2.0-pyhd8ed1ab_0"
-  ],
-  "importlib": [
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "inspect": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -156,62 +228,14 @@
    "numpy/conda-forge/linux-64/numpy-1.17.5-py36h95a1406_0",
    "numpy/conda-forge/linux-64/numpy-1.18.4-py37h8960a57_0"
   ],
-  "numpydoc": [
-   "numpydoc/conda-forge/noarch/numpydoc-0.8.0-py_1",
-   "numpydoc/conda-forge/noarch/numpydoc-0.9.0-py_0",
-   "numpydoc/conda-forge/noarch/numpydoc-0.9.2-py_0",
-   "numpydoc/conda-forge/noarch/numpydoc-1.1.0-py_1",
-   "numpydoc/conda-forge/noarch/numpydoc-1.1.0-pyh9f0ad1d_0"
-  ],
-  "operator": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "os": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "pandas": [],
-  "panel": [
-   "panel/conda-forge/noarch/panel-0.10.0-py_0",
-   "panel/conda-forge/noarch/panel-0.10.1-pyhd8ed1ab_0",
-   "panel/conda-forge/noarch/panel-0.10.1-pyhd8ed1ab_1",
-   "panel/conda-forge/noarch/panel-0.10.2-pyhd8ed1ab_0",
-   "panel/conda-forge/noarch/panel-0.11.2-pyhd8ed1ab_0",
-   "panel/conda-forge/noarch/panel-0.12.0-pyhd8ed1ab_0"
-  ],
-  "param": [
-   "param/conda-forge/noarch/param-1.11.0-pyh6c4a22f_0",
-   "param/conda-forge/noarch/param-1.9.0-py_0",
-   "param/conda-forge/noarch/param-1.9.1-py_0",
-   "param/conda-forge/noarch/param-1.9.3-py_0"
   ],
   "pathlib": [
    "pathlib/conda-forge/noarch/pathlib-1.0.1-py_1",
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "pbr": [
-   "pbr/conda-forge/noarch/pbr-4.0.4-py_0",
-   "pbr/conda-forge/noarch/pbr-4.1.0-py_0",
-   "pbr/conda-forge/noarch/pbr-4.2.0-py_0",
-   "pbr/conda-forge/noarch/pbr-5.1.2-py_0",
-   "pbr/conda-forge/noarch/pbr-5.1.3-py_0",
-   "pbr/conda-forge/noarch/pbr-5.2.0-py_0",
-   "pbr/conda-forge/noarch/pbr-5.2.1-py_0",
-   "pbr/conda-forge/noarch/pbr-5.4.2-py_0",
-   "pbr/conda-forge/noarch/pbr-5.4.5-pyh9f0ad1d_0",
-   "pbr/conda-forge/noarch/pbr-5.5.0-pyh9f0ad1d_0",
-   "pbr/conda-forge/noarch/pbr-5.5.1-pyh9f0ad1d_0",
-   "pbr/conda-forge/noarch/pbr-5.6.0-pyhd8ed1ab_0"
-  ],
-  "pyhdx": [
-   "pyhdx/conda-forge/osx-64/pyhdx-0.3.0-py38h50d1736_0"
-  ],
-  "pylatex": [
-   "pylatex/conda-forge/noarch/pylatex-1.3.3-pyh9f0ad1d_0",
-   "pylatex/conda-forge/noarch/pylatex-1.3.4-pyh9f0ad1d_0",
-   "pylatex/conda-forge/noarch/pylatex-1.4.1-pyh9f0ad1d_0"
   ],
   "re": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -227,10 +251,6 @@
    "setuptools/conda-forge/linux-64/setuptools-46.3.0-py38h32f6830_0",
    "setuptools/conda-forge/linux-64/setuptools-49.1.2-py38h32f6830_0"
   ],
-  "shutil": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "string": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -238,10 +258,6 @@
   "symfit": [
    "symfit/conda-forge/osx-64/symfit-0.5.3-py37hc8dfbb8_0",
    "symfit/conda-forge/win-64/symfit-0.5.3-py36h9f0ad1d_0"
-  ],
-  "tempfile": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "tensorflow": [],
   "torch": [
@@ -267,10 +283,6 @@
    "tqdm/conda-forge/noarch/tqdm-4.60.0-pyhd8ed1ab_0"
   ],
   "uuid": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "warnings": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ]

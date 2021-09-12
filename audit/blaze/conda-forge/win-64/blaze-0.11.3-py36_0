@@ -19,19 +19,30 @@
   "a",
   "append",
   "applier",
+  "argparse",
+  "argparse.ArgumentDefaultsHelpFormatter",
+  "argparse.ArgumentParser",
+  "argparse.FileType",
   "assemble",
   "b",
+  "base64.b64encode",
+  "bcolz",
   "bcolz.carray",
+  "bcolz.ctable",
   "binop",
   "blaze.__file__",
   "blaze.compatibility.builtins.__name__",
   "blaze.compatibility.builtins.all",
   "blaze.compatibility.builtins.any",
   "blaze.compatibility.builtins.sum",
+  "blaze.compatibility.pickle.HIGHEST_PROTOCOL",
+  "blaze.compatibility.pickle.dumps",
+  "blaze.compatibility.pickle.loads",
   "blaze.compute.compute_up.funcs.items",
   "blaze.compute.compute_up.register",
   "blaze.compute.core.compute_up.register",
   "blaze.compute.core.optimize.register",
+  "blaze.compute.pyfunc.math.cos",
   "blaze.data._data.blocks",
   "blaze.discover.register",
   "blaze.expr.Expr._arguments",
@@ -67,25 +78,29 @@
   "blaze.server.server.RC.UNPROCESSABLE_ENTITY",
   "blaze_expr",
   "broadcast",
+  "builtins",
   "c",
   "cPickle",
   "cls",
   "coerce_",
+  "collections",
   "collections.Callable",
   "collections.Iterable",
   "collections.Iterator",
   "collections.Mapping",
   "collections.MutableMapping",
+  "collections.OrderedDict",
   "collections.defaultdict",
+  "collections.namedtuple",
   "compatibility.builtins.all",
   "compatibility.builtins.max",
   "compatibility.builtins.min",
   "compatibility.builtins.slice",
   "compatibility.builtins.sum",
   "cons",
-  "contextlib.ExitStack",
-  "contextlib.contextmanager",
   "convert",
+  "copy.copy",
+  "copy.deepcopy",
   "core.compute.register",
   "core.compute_up",
   "core.compute_up.register",
@@ -93,6 +108,11 @@
   "core.optimize.register",
   "core.subs.get",
   "create_call",
+  "ctypes",
+  "ctypes.c_int32",
+  "ctypes.c_int64",
+  "ctypes.c_ssize_t",
+  "ctypes.c_void_p",
   "ctypes.sizeof",
   "cytoolz.concat",
   "cytoolz.curry",
@@ -112,6 +132,17 @@
   "datashape.floating.types",
   "datashape.integral.types",
   "datashape.object_",
+  "datetime",
+  "datetime.date",
+  "datetime.date.fromordinal",
+  "datetime.datetime",
+  "datetime.datetime.fromtimestamp",
+  "datetime.datetime.now",
+  "datetime.datetime.utcfromtimestamp",
+  "datetime.datetime.utcnow",
+  "datetime.time",
+  "datetime.timedelta",
+  "datetime.timedelta.total_seconds",
   "dict.keys",
   "discover",
   "dshape_methods",
@@ -158,6 +189,8 @@
   "functools.partial",
   "functools.reduce",
   "hashlib.md5",
+  "io",
+  "io.SEEK_END",
   "io.StringIO",
   "itertools",
   "itertools.izip_longest",
@@ -208,6 +241,27 @@
   "odo.convert.register",
   "odo.resource.register",
   "op",
+  "operator",
+  "operator.add",
+  "operator.and_",
+  "operator.attrgetter",
+  "operator.eq",
+  "operator.floordiv",
+  "operator.ge",
+  "operator.getitem",
+  "operator.gt",
+  "operator.invert",
+  "operator.le",
+  "operator.lt",
+  "operator.methodcaller",
+  "operator.mod",
+  "operator.mul",
+  "operator.ne",
+  "operator.neg",
+  "operator.or_",
+  "operator.pow",
+  "operator.sub",
+  "operator.truediv",
   "optimize_",
   "option",
   "os.chdir",
@@ -270,6 +324,9 @@
   "urllib2.HTTPError",
   "urllib2.URLError",
   "urllib2.urlopen",
+  "warnings",
+  "warnings.catch_warnings",
+  "warnings.simplefilter",
   "warnings.warn"
  ],
  "deps": {
@@ -286,33 +343,14 @@
    "pytest/conda-forge/linux-64/pytest-4.6.0-py37_0",
    "pytest/conda-forge/linux-64/pytest-6.0.2-py37hc8dfbb8_0"
   ],
-  "argparse": [
-   "argparse/conda-forge/osx-64/argparse-1.4.0-py26_0",
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "base64": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "bcolz": [
-   "bcolz/conda-forge/win-64/bcolz-1.2.1-py35h830ac7b_1"
-  ],
-  "blaze": [
-   "blaze/conda-forge/osx-64/blaze-0.11.3-py35_0",
-   "blaze/conda-forge/win-64/blaze-0.11.3-py36_0"
-  ],
   "blosc": [
    "python-blosc/conda-forge/linux-64/python-blosc-1.10.1-py39hde0f152_0"
-  ],
-  "builtins": [
-   "pies2overrides/conda-forge/osx-64/pies2overrides-2.6.7-py27_1000"
   ],
   "cProfile": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "collections": [
+  "contextlib": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -320,14 +358,6 @@
    "contextlib2/conda-forge/noarch/contextlib2-0.5.5-py_2",
    "contextlib2/conda-forge/noarch/contextlib2-0.6.0-py_0",
    "contextlib2/conda-forge/noarch/contextlib2-0.6.0.post1-py_0"
-  ],
-  "copy": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "ctypes": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "dask": [
    "dask-core/conda-forge/noarch/dask-core-0.20.1-py_0"
@@ -338,10 +368,6 @@
   "datashape": [
    "datashape/conda-forge/noarch/datashape-0.5.4-py_1",
    "datashape/conda-forge/win-64/datashape-0.5.4-py27_0"
-  ],
-  "datetime": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "dateutil": [
    "python-dateutil/conda-forge/noarch/python-dateutil-2.7.2-py_0",
@@ -405,10 +431,6 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "io": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "json": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -457,10 +479,6 @@
   ],
   "odo": [
    "odo/conda-forge/noarch/odo-0.5.1-py_1"
-  ],
-  "operator": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "os": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -584,10 +602,6 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "urllib": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "warnings": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],

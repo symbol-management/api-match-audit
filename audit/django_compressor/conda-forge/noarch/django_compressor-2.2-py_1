@@ -67,19 +67,75 @@
   "compressor.storage.default_storage.save",
   "compressor.utils.__init__.get_mod_func",
   "compressor.utils.staticfiles.finders.BaseStorageFinder",
+  "django",
+  "django.VERSION",
+  "django.apps.apps",
   "django.apps.apps.is_installed",
+  "django.conf.settings",
   "django.conf.settings.COMPRESS_TEMPLATE_FILTER_CONTEXT",
   "django.conf.settings.DEBUG",
   "django.conf.settings.INSTALLED_APPS",
   "django.conf.settings.STATIC_ROOT",
   "django.conf.settings.STATIC_URL",
+  "django.contrib.staticfiles.finders",
+  "django.contrib.staticfiles.templatetags.staticfiles",
+  "django.contrib.staticfiles.templatetags.staticfiles.static",
+  "django.core.cache.backends.locmem",
+  "django.core.cache.backends.locmem.LocMemCache",
+  "django.core.cache.caches",
+  "django.core.exceptions.ImproperlyConfigured",
+  "django.core.files.base.ContentFile",
+  "django.core.files.storage.FileSystemStorage",
+  "django.core.files.storage.get_storage_class",
+  "django.core.files.temp.NamedTemporaryFile",
+  "django.core.management.base.BaseCommand",
+  "django.core.management.base.CommandError",
+  "django.core.management.call_command",
+  "django.dispatch",
+  "django.template",
+  "django.template.Context",
+  "django.template.Library",
+  "django.template.Node",
+  "django.template.Template",
+  "django.template.TemplateDoesNotExist",
+  "django.template.TemplateSyntaxError",
+  "django.template.base.Node",
+  "django.template.base.NodeList",
+  "django.template.base.TextNode",
+  "django.template.base.VariableNode",
+  "django.template.defaulttags.IfNode",
+  "django.template.engines",
   "django.template.engines.all",
   "django.template.engines.env",
+  "django.template.loader.get_template",
+  "django.template.loader.render_to_string",
+  "django.template.loader_tags.BLOCK_CONTEXT_KEY",
+  "django.template.loader_tags.BlockContext",
+  "django.template.loader_tags.BlockNode",
+  "django.template.loader_tags.ExtendsNode",
+  "django.template.loaders.app_directories.Loader",
+  "django.template.loaders.filesystem.Loader",
+  "django.template.utils.InvalidTemplateEngineError",
+  "django.test.SimpleTestCase",
+  "django.test.TestCase",
+  "django.test.utils.override_settings",
   "django.test.utils.override_settings.update",
+  "django.utils.encoding.force_text",
+  "django.utils.encoding.smart_bytes",
+  "django.utils.encoding.smart_text",
+  "django.utils.functional.LazyObject",
+  "django.utils.functional.SimpleLazyObject",
+  "django.utils.functional.cached_property",
+  "django.utils.html.strip_spaces_between_tags",
+  "django.utils.safestring.mark_safe",
+  "django.utils.six",
+  "django.utils.six.PY3",
   "django.utils.six.StringIO",
   "django.utils.six.moves.html_parser.HTMLParser",
   "django.utils.six.moves.html_parser.__name__",
   "django.utils.six.moves.urllib.request.url2pathname",
+  "django.utils.six.string_types",
+  "django.utils.six.text_type",
   "errno",
   "extract_attr",
   "filter.command",
@@ -88,12 +144,44 @@
   "filter.options",
   "filter_cls",
   "filter_func",
+  "fnmatch",
+  "fnmatch.fnmatch",
+  "fnmatch.fnmatchcase",
   "get_template_sources",
+  "gzip",
+  "gzip.GzipFile",
+  "hashlib",
   "hashlib.sha1",
   "hashlib.sha256",
+  "html5lib",
+  "imp.reload",
+  "importlib.import_module",
+  "io",
   "io.StringIO",
   "io.open",
+  "jinja2",
+  "jinja2.Environment",
+  "jinja2.FileSystemLoader",
+  "jinja2.Template.from_code",
+  "jinja2.TemplateNotFound",
+  "jinja2.TemplateSyntaxError",
+  "jinja2.exceptions.TemplateSyntaxError",
+  "jinja2.ext",
+  "jinja2.ext.Extension",
+  "jinja2.ext.do",
+  "jinja2.ext.with_",
+  "jinja2.nodes",
+  "jinja2.nodes.Call",
+  "jinja2.nodes.CallBlock",
+  "jinja2.nodes.Const",
+  "jinja2.nodes.ExtensionAttribute",
+  "jinja2.nodes.If",
+  "jinja2.nodes.Name",
+  "jinja2.nodes.Template",
+  "lxml",
   "mangle",
+  "mimetypes",
+  "mimetypes.guess_type",
   "mock.Mock",
   "mock.patch",
   "mock.patch.object",
@@ -112,10 +200,16 @@
   "re.VERBOSE",
   "script",
   "sekizai.context.SekizaiContext",
+  "shutil.copytree",
+  "shutil.rmtree",
   "socket.gethostname",
   "sys",
   "sys.stdin.read",
-  "time"
+  "tempfile.mkdtemp",
+  "time",
+  "unittest",
+  "unittest.SkipTest",
+  "unittest.skipIf"
  ],
  "deps": {
   "__future__": [
@@ -151,57 +245,11 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "django": [],
-  "fnmatch": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "gzip": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "hashlib": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "html5lib": [
-   "html5lib/conda-forge/noarch/html5lib-0.999999999-py_1",
-   "html5lib/conda-forge/noarch/html5lib-1.0.1-py_0"
-  ],
-  "imp": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "importlib": [
-   "importlib/conda-forge/linux-64/importlib-1.0.4-py26_0",
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "io": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "jinja2": [
-   "jinja2/conda-forge/noarch/jinja2-2.10-py_1",
-   "jinja2/conda-forge/noarch/jinja2-2.11.3-pyh44b312d_0",
-   "jinja2/conda-forge/noarch/jinja2-3.0.0-pyhd8ed1ab_0",
-   "jinja2/conda-forge/noarch/jinja2-3.0.1-pyhd8ed1ab_0"
-  ],
   "json": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "logging": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "lxml": [
-   "lxml/conda-forge/linux-64/lxml-3.7.3-py27_0",
-   "lxml/conda-forge/linux-64/lxml-4.2.6-py27hc9114bc_0",
-   "lxml/conda-forge/linux-64/lxml-4.2.6-py37h23eabaa_1000",
-   "pyexcel-ods3/conda-forge/noarch/pyexcel-ods3-0.5.3-py_0"
-  ],
-  "mimetypes": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -245,23 +293,11 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "shutil": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "socket": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "subprocess": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "tempfile": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "unittest": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ]

@@ -156,18 +156,54 @@
   "binaryop.current_accum.get",
   "binaryop.current_binop.get",
   "collections.defaultdict",
+  "contextvars",
+  "contextvars.ContextVar",
+  "csv",
+  "csv.reader",
   "descriptor.current_desc.get",
   "f",
   "functools.partial",
   "get",
+  "graphviz.Digraph",
+  "graphviz.Source",
   "jitfunc",
   "monoid.LOR_MONOID",
   "monoid.PLUS_MONOID",
   "monoid.current_monoid.get",
+  "numba",
   "numba.boolean",
+  "numba.carray",
+  "numba.cfunc",
+  "numba.complex128",
+  "numba.complex64",
   "numba.core.typing.cffi_utils",
   "numba.core.typing.cffi_utils.map_type",
+  "numba.float32",
+  "numba.float64",
+  "numba.int16",
+  "numba.int32",
+  "numba.int64",
+  "numba.int8",
+  "numba.jit",
+  "numba.njit",
+  "numba.types.CPointer",
+  "numba.uint16",
+  "numba.uint32",
+  "numba.uint64",
   "numba.uint8",
+  "numba.void",
+  "operator",
+  "operator.attrgetter",
+  "operator.eq",
+  "operator.ge",
+  "operator.gt",
+  "operator.itemgetter",
+  "operator.le",
+  "operator.lt",
+  "operator.methodcaller",
+  "operator.ne",
+  "pygraphblas.Matrix.from_lists",
+  "pygraphblas.Vector.dup",
   "pygraphblas.Vector.from_type",
   "pygraphblas.binaryop.max_fp64",
   "pygraphblas.descriptor.Default",
@@ -175,13 +211,34 @@
   "pygraphblas.descriptor.TransposeB",
   "pygraphblas.ffi.NULL",
   "pygraphblas.ffi.new",
+  "pygraphblas.lib.GrB_BOOL",
+  "pygraphblas.lib.GrB_FP32",
+  "pygraphblas.lib.GrB_FP64",
+  "pygraphblas.lib.GrB_INT16",
+  "pygraphblas.lib.GrB_INT32",
+  "pygraphblas.lib.GrB_INT64",
+  "pygraphblas.lib.GrB_INT8",
+  "pygraphblas.lib.GrB_Semiring_new",
+  "pygraphblas.lib.GrB_Type_new",
+  "pygraphblas.lib.GrB_UINT16",
+  "pygraphblas.lib.GrB_UINT32",
+  "pygraphblas.lib.GrB_UINT64",
+  "pygraphblas.lib.GrB_UINT8",
+  "pygraphblas.lib.GxB_BinaryOp_ztype",
+  "pygraphblas.lib.GxB_FC32",
+  "pygraphblas.lib.GxB_FC64",
+  "pygraphblas.lib.GxB_Monoid_operator",
+  "pygraphblas.lib.GxB_Semiring_add",
   "pygraphblas.semiring.max_times_fp64",
+  "random.randint",
+  "rdflib.store.Store",
   "scalar.Scalar.from_value",
   "semiring.AutoSemiring",
   "semiring.Semiring",
   "semiring.current_semiring.get",
   "semiring.get_semiring",
   "sys",
+  "textwrap.dedent",
   "types.BOOL",
   "types.BOOL.LOR_MONOID",
   "types.BOOL.ONE",
@@ -197,47 +254,9 @@
   "vector.Vector.sparse"
  ],
  "deps": {
-  "_contextvars": [
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "_csv": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "cffi": [
    "cffi/conda-forge/linux-64/cffi-1.12.3-py37h8022711_0",
    "privy/conda-forge/noarch/privy-6.0.0-py_0"
-  ],
-  "contextvars": [
-   "contextvars/conda-forge/noarch/contextvars-2.1-py_0",
-   "contextvars/conda-forge/noarch/contextvars-2.2-py_0",
-   "contextvars/conda-forge/noarch/contextvars-2.3-py_0",
-   "contextvars/conda-forge/noarch/contextvars-2.4-py_0",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "csv": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "graphviz": [
-   "python-graphviz/conda-forge/noarch/python-graphviz-0.11.1-py_1",
-   "python-graphviz/conda-forge/noarch/python-graphviz-0.12-py_0",
-   "python-graphviz/conda-forge/noarch/python-graphviz-0.13-py_0",
-   "python-graphviz/conda-forge/noarch/python-graphviz-0.13.2-py_0",
-   "python-graphviz/conda-forge/noarch/python-graphviz-0.15-pyhd3deb0d_0",
-   "python-graphviz/conda-forge/noarch/python-graphviz-0.16-pyh243d235_2",
-   "python-graphviz/conda-forge/noarch/python-graphviz-0.16-pyhd3deb0d_0",
-   "python-graphviz/conda-forge/noarch/python-graphviz-0.16-pyhd3deb0d_1",
-   "python-graphviz/conda-forge/noarch/python-graphviz-0.8.4-py_1003"
-  ],
-  "numba": [
-   "numba/conda-forge/linux-64/numba-0.38.1-py36_0",
-   "numba/conda-forge/linux-64/numba-0.40.0-py35hf8a1672_0",
-   "numba/conda-forge/linux-64/numba-0.41.0-py27h637b7d7_1000"
-  ],
-  "operator": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "os": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -248,23 +267,7 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "pygraphblas": [
-   "pygraphblas/conda-forge/osx-64/pygraphblas-3.4.0-py38h4d0b108_0"
-  ],
-  "random": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "rdflib": [
-   "neurdflib/conda-forge/noarch/neurdflib-5.0.0.post1-py_0",
-   "rdflib/conda-forge/win-64/rdflib-5.0.0-py36h9f0ad1d_1",
-   "rdflib/conda-forge/win-64/rdflib-5.0.0-py36ha15d459_3"
-  ],
   "re": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "textwrap": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],

@@ -10,7 +10,6 @@
   "archive.write_fieldmap_h5",
   "archive.write_input_h5",
   "archive.write_output_h5",
-  "astra.Astra.from_yaml",
   "astra_distgen.run_astra_with_distgen",
   "datetime.timezone.utc",
   "distgen.Generator",
@@ -21,15 +20,6 @@
   "h5py",
   "h5py.File",
   "hashlib.blake2b",
-  "inspect.getfullargspec",
-  "math",
-  "math.cos",
-  "math.isnan",
-  "math.pi",
-  "math.sin",
-  "math.sqrt",
-  "matplotlib.pyplot",
-  "matplotlib.pyplot.subplots",
   "numbers.Number",
   "numpy.NAN",
   "numpy.abs",
@@ -62,8 +52,6 @@
   "parsers.parse_astra_input_file",
   "parsers.parse_astra_output_file",
   "parsers.parse_astra_phase_file",
-  "platform",
-  "platform.system",
   "pmd_beamphysics.ParticleGroup",
   "pmd_beamphysics.pmd_init",
   "pmd_beamphysics.units.nice_array",
@@ -71,9 +59,6 @@
   "pmd_beamphysics.units.read_dataset_and_unit_h5",
   "pmd_beamphysics.units.unit",
   "pmd_beamphysics.units.write_dataset_and_unit_h5",
-  "re",
-  "re.match",
-  "re.search",
   "run_astra",
   "shutil",
   "subprocess",
@@ -95,11 +80,16 @@
   "traceback.format_exc",
   "urllib.request",
   "writers.write_namelists",
+  "yaml",
   "yaml.safe_load"
  ],
  "deps": {
   "_version": [
    "diffusioncma/conda-forge/linux-64/diffusioncma-0.5.8-py37h0da4684_0"
+  ],
+  "astra": [
+   "lume-astra/conda-forge/noarch/lume-astra-0.4.2-pyhd8ed1ab_0",
+   "lume-astra/conda-forge/noarch/lume-astra-0.4.4-pyhd8ed1ab_0"
   ],
   "copy": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -109,9 +99,22 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "inspect": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "json": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "math": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "matplotlib": [
+   "matplotlib-base/conda-forge/linux-64/matplotlib-base-3.1.1-py37hfd891ef_0",
+   "matplotlib-base/conda-forge/linux-64/matplotlib-base-3.1.1-py38h250f245_2",
+   "matplotlib/conda-forge/linux-64/matplotlib-1.5.3-np111py34_0"
   ],
   "ntpath": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -126,11 +129,13 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "yaml": [
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0",
-   "pyyaml/conda-forge/linux-64/pyyaml-3.11-py35_0",
-   "pyyaml/conda-forge/win-64/pyyaml-5.2-py36hfa6e2cd_0"
+  "platform": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "re": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ]
  }
 }
