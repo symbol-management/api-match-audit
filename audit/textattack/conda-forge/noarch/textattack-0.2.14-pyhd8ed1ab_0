@@ -46,9 +46,15 @@
   "strip",
   "sys",
   "sys.stderr.write",
+  "tensorflow",
   "tensorflow.config.experimental.list_physical_devices",
   "tensorflow.config.experimental.set_memory_growth",
   "tensorflow.config.experimental.set_visible_devices",
+  "tensorflow.get_logger",
+  "terminaltables",
+  "terminaltables.AsciiTable",
+  "textattack.commands.attack.AttackCommand.register_subcommand",
+  "textattack.commands.attack.AttackResumeCommand.register_subcommand",
   "textattack.commands.attack.attack_args.ATTACK_RECIPE_NAMES.keys",
   "textattack.commands.attack.attack_args.BLACK_BOX_TRANSFORMATION_CLASS_NAMES.keys",
   "textattack.commands.attack.attack_args.CONSTRAINT_CLASS_NAMES.keys",
@@ -57,6 +63,8 @@
   "textattack.commands.attack.attack_args.SEARCH_METHOD_CLASS_NAMES.keys",
   "textattack.commands.attack.attack_args.TEXTATTACK_DATASET_BY_MODEL.keys",
   "textattack.commands.attack.attack_args.WHITE_BOX_TRANSFORMATION_CLASS_NAMES.keys",
+  "textattack.commands.eval_model.EvalModelCommand.register_subcommand",
+  "textattack.commands.train_model.TrainModelCommand.register_subcommand",
   "textattack.goal_function_results.GoalFunctionResultStatus.MAXIMIZING",
   "textattack.goal_function_results.GoalFunctionResultStatus.SEARCHING",
   "textattack.goal_function_results.GoalFunctionResultStatus.SKIPPED",
@@ -66,6 +74,7 @@
   "textattack.goal_function_results.goal_function_result.GoalFunctionResultStatus.SKIPPED",
   "textattack.goal_function_results.goal_function_result.GoalFunctionResultStatus.SUCCEEDED",
   "textattack.shared.AttackedText.SPLIT_TOKEN",
+  "textattack.shared.Checkpoint.load",
   "textattack.shared.data.EXTENSION_MAP.items",
   "textattack.shared.logger.info",
   "textattack.shared.logger.warn",
@@ -92,12 +101,14 @@
   "torch.transpose",
   "torch.unsqueeze",
   "torch.zeros",
+  "tqdm",
+  "tqdm.tqdm",
+  "tqdm.trange",
   "transformation",
-  "types",
-  "types.ModuleType",
   "warnings.warn",
-  "word2number.w2n",
-  "word2number.w2n.word_to_num"
+  "zipfile",
+  "zipfile.ZipFile",
+  "zipfile.is_zipfile"
  ],
  "deps": {
   "_csv": [
@@ -284,17 +295,6 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "tensorflow": [
-   "tensorflow-base/conda-forge/linux-64/tensorflow-base-1.13.1-py27h58012e3_6"
-  ],
-  "terminaltables": [
-   "terminaltables/conda-forge/noarch/terminaltables-3.1.0-py_0"
-  ],
-  "textattack": [
-   "textattack/conda-forge/noarch/textattack-0.2.0-pyh9f0ad1d_1",
-   "textattack/conda-forge/noarch/textattack-0.2.14-pyhd8ed1ab_0",
-   "textattack/conda-forge/noarch/textattack-0.2.15-pyhd8ed1ab_0"
-  ],
   "tokenizers": [
    "tokenizers/conda-forge/linux-64/tokenizers-0.9.4-py39h289741d_1"
   ],
@@ -303,26 +303,17 @@
    "pytorch/conda-forge/linux-64/pytorch-1.6.0-cuda92py37hc3ec645_1",
    "pytorch/conda-forge/linux-64/pytorch-1.6.0-cuda92py38hb6ed0dd_1"
   ],
-  "tqdm": [
-   "tqdm/conda-forge/noarch/tqdm-4.38.0-py_2",
-   "tqdm/conda-forge/noarch/tqdm-4.40.2-py_0",
-   "tqdm/conda-forge/noarch/tqdm-4.42.1-py_0",
-   "tqdm/conda-forge/noarch/tqdm-4.45.0-pyh9f0ad1d_0",
-   "tqdm/conda-forge/noarch/tqdm-4.51.0-pyh9f0ad1d_0",
-   "tqdm/conda-forge/noarch/tqdm-4.52.0-pyhd3deb0d_0",
-   "tqdm/conda-forge/noarch/tqdm-4.55.0-pyhd8ed1ab_0",
-   "tqdm/conda-forge/noarch/tqdm-4.56.0-pyhd8ed1ab_0",
-   "tqdm/conda-forge/noarch/tqdm-4.56.1-pyhd8ed1ab_0",
-   "tqdm/conda-forge/noarch/tqdm-4.60.0-pyhd8ed1ab_0"
-  ],
   "transformers": [],
+  "types": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "warnings": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "zipfile": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  "word2number": [
+   "word2number/conda-forge/noarch/word2number-1.1-py_0"
   ]
  }
 }

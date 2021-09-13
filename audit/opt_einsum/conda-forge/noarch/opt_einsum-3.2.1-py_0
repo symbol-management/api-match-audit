@@ -14,13 +14,8 @@
   "blas.can_blas",
   "collections.defaultdict",
   "collections.deque",
-  "cupy",
-  "cupy.asarray",
-  "cupy.asnumpy",
   "cupy.build_expression",
   "cupy.evaluate_constants",
-  "cupy.ndarray",
-  "decimal.Decimal",
   "einsum",
   "expr",
   "expr.__repr__",
@@ -35,27 +30,15 @@
   "gen",
   "grad_expr",
   "graph",
-  "heapq",
-  "heapq.heapify",
-  "heapq.heappop",
-  "heapq.heappush",
-  "heapq.heappushpop",
   "helpers.compute_size_by_dict",
   "helpers.find_contraction",
   "helpers.flop_count",
-  "importlib",
-  "importlib.import_module",
   "itertools",
   "itertools.chain.from_iterable",
-  "jax",
   "jax.build_expression",
   "jax.evaluate_constants",
-  "jax.grad",
-  "jax.jit",
   "jax_expr",
   "jit_expr",
-  "json",
-  "json.loads",
   "method1",
   "method2",
   "numpy.arange",
@@ -97,6 +80,7 @@
   "sharing.transpose_cache_wrap",
   "sys",
   "tensordot",
+  "tensorflow",
   "tensorflow.ConfigProto",
   "tensorflow.Session",
   "tensorflow.Tensor",
@@ -105,11 +89,17 @@
   "tensorflow.convert_to_tensor",
   "tensorflow.device",
   "tensorflow.evaluate_constants",
+  "tensorflow.executing_eagerly",
   "tensorflow.get_default_session",
   "tensorflow.placeholder",
+  "tensorflow.test.gpu_device_name",
+  "theano",
   "theano.build_expression",
   "theano.evaluate_constants",
+  "theano.function",
+  "theano.tensor.TensorConstant",
   "theano.tensor.TensorType",
+  "theano.tensor.TensorVariable",
   "theano.tensor.constant",
   "time",
   "to_backend",
@@ -119,7 +109,9 @@
   "torch.evaluate_constants",
   "torch.from_numpy",
   "transpose",
-  "trial_fn"
+  "trial_fn",
+  "weakref",
+  "weakref.WeakValueDictionary"
  ],
  "deps": {
   "_pytest": [
@@ -144,7 +136,30 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "cupy": [
+   "cupy/conda-forge/linux-64/cupy-8.3.0-py36h771fb84_2"
+  ],
+  "decimal": [
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "functools": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "heapq": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "importlib": [
+   "importlib/conda-forge/linux-64/importlib-1.0.4-py26_0",
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "jax": [
+   "jax/conda-forge/noarch/jax-0.2.13-pyhd8ed1ab_0",
+   "jax/conda-forge/noarch/jax-0.2.17-pyhd8ed1ab_0"
+  ],
+  "json": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -177,15 +192,6 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "tensorflow": [
-   "tensorflow-base/conda-forge/linux-64/tensorflow-base-1.13.1-py27h58012e3_6"
-  ],
-  "theano": [
-   "theano-pymc/conda-forge/linux-64/theano-pymc-1.0.5-py36h90709c0_2",
-   "theano-pymc/conda-forge/linux-64/theano-pymc-1.1.0-py36ha03b18c_1",
-   "theano/conda-forge/linux-64/theano-1.0.3-py37hfc679d8_1",
-   "theano/conda-forge/linux-64/theano-1.0.5-py36hc4f0c31_1"
-  ],
   "threading": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -195,10 +201,6 @@
    "pytorch-cpu/conda-forge/win-64/pytorch-cpu-1.0.1-py36ha925a31_0",
    "pytorch/conda-forge/linux-64/pytorch-1.6.0-cuda92py37hc3ec645_1",
    "pytorch/conda-forge/linux-64/pytorch-1.6.0-cuda92py38hb6ed0dd_1"
-  ],
-  "weakref": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ]
  }
 }
