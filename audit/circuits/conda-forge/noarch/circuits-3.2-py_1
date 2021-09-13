@@ -54,6 +54,8 @@
   "hashlib.sha1.new",
   "header",
   "headers.HeaderElement.from_str",
+  "heapq.heappop",
+  "heapq.heappush",
   "helpers.FallBackExceptionHandler",
   "helpers.FallBackGenerator",
   "helpers.FallBackSignalHandler",
@@ -61,22 +63,29 @@
   "hotshot.Profile",
   "hotshot.stats",
   "hotshot.stats.load",
+  "html.escape",
   "id.errors",
   "id.remote_finish",
   "id.value",
   "id.value.setValue",
+  "imp.reload",
   "input.close",
   "input.read",
   "io.BytesIO",
   "io.StringIO",
   "io.TextIOWrapper",
   "m",
+  "mimetypes",
+  "mimetypes.add_type",
+  "mimetypes.init",
   "mimetypes.types_map.get",
   "multiprocessing.Pool",
   "multiprocessing.Process",
   "multiprocessing.cpu_count",
   "multiprocessing.current_process",
+  "multiprocessing.pool.ThreadPool",
   "on_done",
+  "optparse.OptionParser",
   "os.O_NONBLOCK",
   "os._exit",
   "os.chdir",
@@ -105,6 +114,9 @@
   "os.write",
   "overridden",
   "parse_ipv4_parameter",
+  "pkgutil.extend_path",
+  "platform",
+  "platform.system",
   "pyinotify.IN_ACCESS",
   "pyinotify.IN_ATTRIB",
   "pyinotify.IN_CLOSE_NOWRITE",
@@ -118,6 +130,8 @@
   "pyinotify.IN_MOVE_SELF",
   "pyinotify.IN_OPEN",
   "pyinotify.IN_UNMOUNT",
+  "random",
+  "random.randint",
   "read",
   "rebuild_path",
   "rfc822.formatdate",
@@ -131,6 +145,7 @@
   "signal.SIGINT",
   "signal.SIGKILL",
   "signal.SIGTERM",
+  "signal.signal",
   "socket.AF_INET",
   "socket.AF_INET6",
   "socket.AF_UNIX",
@@ -163,8 +178,17 @@
   "tools.expires",
   "tools.serve_download",
   "tools.serve_file",
+  "traceback",
+  "traceback.extract_tb",
+  "traceback.format_exc",
+  "traceback.format_exception_only",
+  "traceback.format_tb",
   "type.__new__",
+  "types",
   "types.ClassType",
+  "types.GeneratorType",
+  "types.MethodType",
+  "types.ModuleType",
   "unicode",
   "update",
   "urllib.quote",
@@ -179,6 +203,7 @@
   "urlparse.urlunparse",
   "v",
   "version.version",
+  "warnings",
   "warnings.warn",
   "warnings.warn_explicit",
   "wrappers.Request",
@@ -242,19 +267,7 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "heapq": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "html": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "http": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "imp": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -274,23 +287,11 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "mimetypes": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "multiprocessing": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "ntpath": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "operator": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "optparse": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -306,20 +307,8 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "pkgutil": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "platform": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "pyinotify": [
    "pyinotify/conda-forge/linux-64/pyinotify-0.9.6-py37hc8dfbb8_1001"
-  ],
-  "random": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "re": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -330,10 +319,6 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "select": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "signal": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -369,23 +354,11 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "traceback": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "types": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "urllib": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "uuid": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "warnings": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],

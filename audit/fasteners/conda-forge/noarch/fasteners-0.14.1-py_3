@@ -3,29 +3,15 @@
   "acquire_check",
   "attempt_acquire",
   "collections.deque",
-  "concurrent.futures",
-  "concurrent.futures.ThreadPoolExecutor",
-  "decorator",
   "errno",
-  "eventlet",
-  "eventlet.patcher",
-  "eventlet.patcher.is_monkey_patched",
   "f",
   "fasteners.ReaderWriterLock.READER",
   "fasteners.ReaderWriterLock.WRITER",
-  "fcntl",
-  "fcntl.LOCK_EX",
-  "fcntl.LOCK_NB",
-  "fcntl.LOCK_UN",
-  "fcntl.flock",
   "foo",
   "inner_lock",
   "lock_files",
   "lock_func",
-  "logging",
-  "logging.getLogger",
   "msvcrt",
-  "multiprocessing",
   "multiprocessing.Process",
   "os._exit",
   "os.fork",
@@ -37,24 +23,8 @@
   "outer_lock",
   "r",
   "r.attempts",
-  "random",
-  "random.choice",
-  "random.random",
   "reader_func",
-  "shutil",
-  "shutil.rmtree",
-  "signal",
   "signal.SIGKILL",
-  "six",
-  "six.wraps",
-  "tempfile",
-  "tempfile.mkdtemp",
-  "threading",
-  "threading.Event",
-  "threading.Lock",
-  "threading.Thread",
-  "threading.ThreadError",
-  "threading.current_thread",
   "time"
  ],
  "deps": {
@@ -66,7 +36,42 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "concurrent": [
+   "futures/conda-forge/linux-64/futures-3.2.0-py27_0",
+   "futures/conda-forge/osx-64/futures-3.3.0-py27h8c360ce_1",
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython"
+  ],
   "contextlib": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "decorator": [
+   "decorator/conda-forge/noarch/decorator-4.3.0-py_0",
+   "decorator/conda-forge/noarch/decorator-4.3.2-py_0",
+   "decorator/conda-forge/noarch/decorator-4.4.0-py_0",
+   "decorator/conda-forge/noarch/decorator-4.4.1-py_0",
+   "decorator/conda-forge/noarch/decorator-4.4.2-py_0",
+   "decorator/conda-forge/noarch/decorator-5.0.2-pyhd8ed1ab_0",
+   "decorator/conda-forge/noarch/decorator-5.0.3-pyhd8ed1ab_0",
+   "decorator/conda-forge/noarch/decorator-5.0.4-pyhd8ed1ab_0",
+   "decorator/conda-forge/noarch/decorator-5.0.5-pyhd8ed1ab_0",
+   "decorator/conda-forge/noarch/decorator-5.0.6-pyhd8ed1ab_0",
+   "decorator/conda-forge/noarch/decorator-5.0.9-pyhd8ed1ab_0"
+  ],
+  "eventlet": [
+   "eventlet/conda-forge/noarch/eventlet-0.22.0-py_0",
+   "eventlet/conda-forge/noarch/eventlet-0.28.0-py_0",
+   "eventlet/conda-forge/noarch/eventlet-0.29.1-py_0",
+   "eventlet/conda-forge/noarch/eventlet-0.30.0-pyhd8ed1ab_0",
+   "eventlet/conda-forge/noarch/eventlet-0.30.2-pyhd8ed1ab_0",
+   "eventlet/conda-forge/noarch/eventlet-0.30.3-pyhd8ed1ab_0",
+   "eventlet/conda-forge/noarch/eventlet-0.32.0-pyhd8ed1ab_0"
+  ],
+  "fcntl": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "logging": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -74,6 +79,10 @@
    "monotonic/conda-forge/linux-64/monotonic-1.1-py34_0",
    "monotonic/conda-forge/linux-64/monotonic-1.2-py27_0",
    "monotonic/conda-forge/noarch/monotonic-1.5-py_0"
+  ],
+  "multiprocessing": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "ntpath": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -83,9 +92,39 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "random": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "shutil": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "signal": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "six": [
+   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
+   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0",
+   "lldb/conda-forge/linux-64/lldb-6.0.0-py35_0",
+   "privy/conda-forge/noarch/privy-6.0.0-py_0",
+   "six/conda-forge/linux-64/six-1.10.0-py34_0",
+   "six/conda-forge/linux-64/six-1.10.0-py34_1",
+   "six/conda-forge/noarch/six-1.14.0-py_1",
+   "six/conda-forge/noarch/six-1.16.0-pyh6c4a22f_0"
+  ],
+  "tempfile": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "testtools": [
    "testtools/conda-forge/noarch/testtools-2.3.0-py_1",
    "testtools/conda-forge/osx-64/testtools-2.2.0-py27_0"
+  ],
+  "threading": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ]
  }
 }
