@@ -9,36 +9,81 @@
   "_propagate_removed_down",
   "_random_run",
   "_saver",
+  "adaptive.SequenceLearner.done",
   "adaptive.__init__.__all__",
   "adaptive.learner.__init__.__all__",
   "adaptive.learner.integrator_coeffs.T_left",
   "adaptive.learner.integrator_coeffs.T_right",
   "assert_equal_dicts",
+  "asyncio",
+  "asyncio.CancelledError",
+  "asyncio.FIRST_COMPLETED",
+  "asyncio.InvalidStateError",
+  "asyncio.Task.current_task",
+  "asyncio.get_event_loop",
+  "asyncio.set_event_loop_policy",
+  "asyncio.sleep",
+  "asyncio.wait",
+  "atomicwrites.AtomicWriter",
   "check",
   "clip",
+  "cloudpickle",
+  "cloudpickle.dumps",
   "cloudpickle.loads",
   "collections.abc.Iterable",
   "collections.abc.Sized",
   "collections.defaultdict",
+  "contextlib.contextmanager",
+  "contextlib.suppress",
   "deviation",
+  "dill",
+  "distributed",
+  "distributed.Client",
+  "distributed.cfexecutor.ClientExecutor",
   "event",
   "f",
   "f.__name__",
   "f.write",
   "find_opposing_vertex",
   "finite_loss",
+  "flaky",
+  "flaky.flaky",
+  "fractions.Fraction",
   "functools.partial",
   "g",
   "generate_random_sphere_points",
   "get_ipython",
   "get_neighbors",
+  "gzip",
+  "gzip.compress",
+  "gzip.open",
+  "holoviews",
+  "holoviews.DynamicMap",
+  "holoviews.Element",
+  "holoviews.notebook_extension",
+  "holoviews.streams.Stream.define",
+  "holoviews.streams.Stream.trigger",
+  "importlib",
+  "importlib.import_module",
   "integrator_coeffs.b_def.copy",
   "ip",
   "ip.tri.points",
   "ip.tri.vertices",
+  "ipykernel.iostream",
+  "ipyparallel",
+  "ipyparallel.Client",
+  "ipyparallel.client.view.ViewExecutor",
   "itertools",
   "itertools.chain.from_iterable",
   "loss_manager",
+  "math",
+  "math.exp",
+  "math.factorial",
+  "math.isclose",
+  "math.isinf",
+  "math.isnan",
+  "math.sqrt",
+  "mpi4py.futures",
   "numpy.NaN",
   "numpy.abs",
   "numpy.arange",
@@ -53,6 +98,7 @@
   "numpy.isfinite",
   "numpy.log",
   "numpy.logical_and",
+  "numpy.math.factorial",
   "numpy.multiply",
   "numpy.nan",
   "numpy.pi",
@@ -71,9 +117,16 @@
   "numpy.subtract",
   "numpy.tanh",
   "numpy.zeros",
+  "operator",
+  "operator.attrgetter",
+  "operator.itemgetter",
   "os.close",
   "os.path.samefile",
   "os.remove",
+  "pickle",
+  "pickle.HIGHEST_PROTOCOL",
+  "pickle.dumps",
+  "pickle.load",
   "plot_generator",
   "plotter",
   "pytest.mark.parametrize",
@@ -98,13 +151,6 @@
   "zmq.PUB"
  ],
  "deps": {
-  "_asyncio": [
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "_pickle": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "_pytest": [
    "pytest/conda-forge/linux-64/pytest-3.7.0-py27_0",
    "pytest/conda-forge/linux-64/pytest-4.6.0-py37_0",
@@ -114,32 +160,12 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "adaptive": [
-   "adaptive/conda-forge/linux-64/adaptive-0.11.3-py36h5fab9bb_0"
-  ],
-  "asyncio": [],
-  "atomicwrites": [
-   "atomicwrites/conda-forge/noarch/atomicwrites-1.2.1-py_0",
-   "atomicwrites/conda-forge/noarch/atomicwrites-1.3.0-py_0",
-   "atomicwrites/conda-forge/noarch/atomicwrites-1.4.0-pyh9f0ad1d_0"
-  ],
-  "cloudpickle": [
-   "cloudpickle/conda-forge/noarch/cloudpickle-1.2.0-py_0",
-   "cloudpickle/conda-forge/noarch/cloudpickle-1.2.1-py_0",
-   "cloudpickle/conda-forge/noarch/cloudpickle-1.2.2-py_0",
-   "cloudpickle/conda-forge/noarch/cloudpickle-1.2.2-py_1",
-   "cloudpickle/conda-forge/noarch/cloudpickle-1.3.0-py_0"
-  ],
   "collections": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "concurrent": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython"
-  ],
-  "contextlib": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "copy": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -149,81 +175,13 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "dill": [
-   "dill/conda-forge/linux-64/dill-0.2.5-py35_1",
-   "dill/conda-forge/noarch/dill-0.3.2-pyh9f0ad1d_0",
-   "dill/conda-forge/noarch/dill-0.3.3-pyhd8ed1ab_0",
-   "dill/conda-forge/noarch/dill-0.3.4-pyhd8ed1ab_0"
-  ],
-  "distributed": [
-   "distributed/conda-forge/linux-64/distributed-2021.5.0-py39hf3d152e_0",
-   "distributed/conda-forge/noarch/distributed-2.0.1-py_0",
-   "distributed/conda-forge/noarch/distributed-2.10.0-py_0",
-   "distributed/conda-forge/noarch/distributed-2.10.0-py_1",
-   "distributed/conda-forge/noarch/distributed-2.2.0-py_1",
-   "distributed/conda-forge/noarch/distributed-2.3.0-py_0",
-   "distributed/conda-forge/noarch/distributed-2.6.0-py_0",
-   "distributed/conda-forge/noarch/distributed-2.8.0-py_1",
-   "distributed/conda-forge/noarch/distributed-2.8.1-py_0",
-   "distributed/conda-forge/noarch/distributed-2.9.2-py_0",
-   "distributed/conda-forge/noarch/distributed-2.9.3-py_0"
-  ],
-  "flaky": [
-   "flaky/conda-forge/noarch/flaky-3.4.0-py_0",
-   "flaky/conda-forge/noarch/flaky-3.5.0-py_0",
-   "flaky/conda-forge/noarch/flaky-3.5.1-py_0",
-   "flaky/conda-forge/noarch/flaky-3.5.2-py_0",
-   "flaky/conda-forge/noarch/flaky-3.5.3-py_0",
-   "flaky/conda-forge/noarch/flaky-3.6.0-py_0",
-   "flaky/conda-forge/noarch/flaky-3.7.0-pyh9f0ad1d_0"
-  ],
-  "fractions": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "functools": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "gzip": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "holoviews": [
-   "holoviews/conda-forge/noarch/holoviews-1.10.3-py_0",
-   "holoviews/conda-forge/noarch/holoviews-1.10.4-py_0",
-   "holoviews/conda-forge/noarch/holoviews-1.10.6-py_0",
-   "holoviews/conda-forge/noarch/holoviews-1.10.9-py_0",
-   "holoviews/conda-forge/noarch/holoviews-1.11.0-py_0",
-   "holoviews/conda-forge/noarch/holoviews-1.11.2-py_0",
-   "holoviews/conda-forge/noarch/holoviews-1.12.1-py_0",
-   "holoviews/conda-forge/noarch/holoviews-1.12.1-py_2",
-   "holoviews/conda-forge/noarch/holoviews-1.12.2-py_0",
-   "holoviews/conda-forge/noarch/holoviews-1.12.4-py_0",
-   "holoviews/conda-forge/noarch/holoviews-1.12.5-py_0",
-   "holoviews/conda-forge/noarch/holoviews-1.12.6-py_0",
-   "holoviews/conda-forge/noarch/holoviews-1.12.7-py_0",
-   "holoviews/conda-forge/noarch/holoviews-1.13.1-pyh9f0ad1d_0",
-   "holoviews/conda-forge/noarch/holoviews-1.14.4-pyhd8ed1ab_0",
-   "holoviews/conda-forge/noarch/holoviews-1.14.5-pyhd8ed1ab_0"
-  ],
-  "importlib": [
-   "importlib/conda-forge/linux-64/importlib-1.0.4-py26_0",
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "inspect": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "ipykernel": [
-   "ipykernel/conda-forge/linux-64/ipykernel-4.10.0-py27_1",
-   "ipykernel/conda-forge/linux-64/ipykernel-5.3.1-py37h43977f1_0",
-   "ipykernel/conda-forge/linux-64/ipykernel-5.3.3-py37h43977f1_0"
-  ],
-  "ipyparallel": [
-   "ipyparallel/conda-forge/linux-64/ipyparallel-6.3.0-py36h9f0ad1d_1",
-   "ipyparallel/conda-forge/linux-64/ipyparallel-6.3.0-py38h578d9bd_2"
   ],
   "ipywidgets": [
    "ipywidgets/conda-forge/noarch/ipywidgets-7.4.1-py_0",
@@ -244,14 +202,6 @@
    "loky/conda-forge/noarch/loky-2.8.0-pyh9f0ad1d_0",
    "loky/conda-forge/noarch/loky-2.9.0-pyh9f0ad1d_0"
   ],
-  "math": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "mpi4py": [
-   "mpi4py/conda-forge/linux-64/mpi4py-3.0.3-py36hbfda36e_2",
-   "mpi4py/conda-forge/linux-64/mpi4py-3.0.3-py37h029bd4c_2"
-  ],
   "ntpath": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -260,20 +210,12 @@
    "numpy/conda-forge/linux-64/numpy-1.17.5-py36h95a1406_0",
    "numpy/conda-forge/linux-64/numpy-1.18.4-py37h8960a57_0"
   ],
-  "operator": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "os": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "pexpect": [
    "pexpect/conda-forge/linux-64/pexpect-4.2.1-py36_0"
-  ],
-  "pickle": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "platform": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",

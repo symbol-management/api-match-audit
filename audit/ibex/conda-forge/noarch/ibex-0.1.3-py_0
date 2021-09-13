@@ -33,8 +33,6 @@
   "_regression_coef_intercept.get_intercept_doc",
   "_regression_coef_intercept.intercept_",
   "cls",
-  "functools",
-  "functools.update_wrapper",
   "get_set_params",
   "ibex.__init__.__all__",
   "ibex.sklearn.__init__._ModuleFinder",
@@ -51,46 +49,48 @@
   "ibex.tensorflow.contrib.keras.wrappers.scikit_learn.__init__.KerasClassifier",
   "ibex.tensorflow.contrib.keras.wrappers.scikit_learn.__init__.KerasEstimator",
   "ibex.tensorflow.contrib.keras.wrappers.scikit_learn.__init__.KerasRegressor",
-  "inspect",
-  "inspect.getargspec",
-  "inspect.isclass",
-  "inspect.signature",
+  "imp",
+  "imp.new_module",
   "itertools",
   "itertools.chain.from_iterable",
-  "numpy",
-  "numpy.c_",
-  "numpy.ndarray",
-  "operator",
-  "operator.add",
-  "operator.or_",
-  "pandas",
-  "pandas.DataFrame",
-  "pandas.MultiIndex.from_tuples",
-  "pandas.Series",
-  "pandas.concat",
-  "pandas.get_dummies",
   "pow_str",
-  "re",
-  "re.compile",
-  "six",
-  "six.PY3",
-  "six.callable",
-  "six.exec_",
   "six.moves.reduce",
-  "six.string_types",
+  "sklearn",
+  "sklearn.__all__",
   "sklearn.__version__.split",
+  "sklearn.base",
+  "sklearn.base.BaseEstimator",
+  "sklearn.base.ClassifierMixin",
+  "sklearn.base.ClusterMixin",
+  "sklearn.base.RegressorMixin",
+  "sklearn.base.TransformerMixin",
+  "sklearn.cross_validation.cross_val_predict",
+  "sklearn.decomposition",
   "sklearn.exceptions.NotFittedError",
+  "sklearn.externals.joblib",
+  "sklearn.externals.joblib.Parallel",
+  "sklearn.externals.joblib.delayed",
+  "sklearn.feature_selection",
   "sklearn.model_selection.cross_val_predict",
+  "sklearn.pipeline",
+  "sklearn.pipeline.FeatureUnion",
+  "sklearn.pipeline.Pipeline",
+  "sklearn.utils.validation.NotFittedError",
+  "string",
+  "string.Template",
   "sys",
   "sys.modules.setdefault",
+  "tensorflow.contrib.keras",
   "tensorflow.contrib.keras.wrappers.scikit_learn.KerasClassifier",
   "tensorflow.contrib.keras.wrappers.scikit_learn.KerasRegressor",
   "textwrap",
   "textwrap.dedent",
+  "threading",
   "traceback",
-  "types",
-  "types.GeneratorType",
-  "value_form"
+  "value_form",
+  "xgboost",
+  "xgboost.XGBClassifier",
+  "xgboost.XGBRegressor"
  ],
  "deps": {
   "__future__": [
@@ -101,7 +101,20 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "imp": [
+  "functools": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "inspect": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "numpy": [
+   "numpy/conda-forge/linux-64/numpy-1.17.5-py36h95a1406_0",
+   "numpy/conda-forge/linux-64/numpy-1.18.4-py37h8960a57_0",
+   "numpy/conda-forge/linux-64/numpy-1.19.2-py36h68c22af_1"
+  ],
+  "operator": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -109,29 +122,24 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "sklearn": [
-   "scikit-learn/conda-forge/linux-64/scikit-learn-0.17.1-np110py27_blas_openblas_200",
-   "scikit-learn/conda-forge/linux-64/scikit-learn-0.17.1-np110py35_blas_openblas_202",
-   "scikit-learn/conda-forge/linux-64/scikit-learn-0.17.1-np111py35_blas_openblas_202"
-  ],
-  "string": [
+  "pandas": [],
+  "re": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "tensorflow": [
-   "tensorflow-base/conda-forge/linux-64/tensorflow-base-1.13.1-py27h58012e3_6",
-   "tensorflow/conda-forge/linux-64/tensorflow-1.1.0-py36_0",
-   "tensorflow/conda-forge/linux-64/tensorflow-1.5.1-py36_0"
+  "six": [
+   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
+   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0",
+   "lldb/conda-forge/linux-64/lldb-6.0.0-py35_0",
+   "privy/conda-forge/noarch/privy-6.0.0-py_0",
+   "six/conda-forge/linux-64/six-1.10.0-py34_0",
+   "six/conda-forge/linux-64/six-1.10.0-py34_1",
+   "six/conda-forge/noarch/six-1.14.0-py_1",
+   "six/conda-forge/noarch/six-1.16.0-pyh6c4a22f_0"
   ],
-  "threading": [
+  "types": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "xgboost": [
-   "py-xgboost/conda-forge/linux-64/py-xgboost-1.3.0-py36h5fab9bb_0",
-   "py-xgboost/conda-forge/linux-64/py-xgboost-1.3.3-py36hd000896_0",
-   "py-xgboost/conda-forge/linux-64/py-xgboost-1.3.3-py37h9c2f6ca_2",
-   "xgboost/conda-forge/linux-64/xgboost-0.7.post3-py36_0"
   ]
  }
 }

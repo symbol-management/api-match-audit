@@ -15,6 +15,19 @@
   "functools.partial",
   "intrp",
   "itertools",
+  "npstreams",
+  "npstreams.array_stream",
+  "npstreams.average",
+  "npstreams.imean",
+  "npstreams.istd",
+  "npstreams.itercopy",
+  "npstreams.last",
+  "npstreams.linspace",
+  "npstreams.multilinspace",
+  "npstreams.nan_to_num",
+  "npstreams.peek",
+  "npstreams.primed",
+  "npstreams.prod",
   "numpy.abs",
   "numpy.absolute",
   "numpy.add.at",
@@ -60,22 +73,53 @@
   "numpy.zeros",
   "os.cpu_count",
   "os.remove",
+  "pyqtgraph",
   "pyqtgraph.QtGui.QApplication",
   "pyqtgraph.QtGui.QWidget",
+  "pyqtgraph.getConfigOption",
+  "pyqtgraph.setConfigOptions",
   "pytest.mark.parametrize",
+  "pywt",
   "pywt.Wavelet",
+  "pywt.dwt",
+  "pywt.dwt2",
+  "pywt.dwt_max_level",
+  "pywt.idwt",
+  "pywt.idwt2",
+  "pywt.wavedec",
+  "pywt.wavedec2",
   "pywt.wavelist",
+  "pywt.waverec",
+  "pywt.waverec2",
   "refl",
   "scipy.constants.Planck",
   "scipy.constants.electron_mass",
   "scipy.constants.elementary_charge",
   "scipy.constants.speed_of_light",
   "scipy.special.k0",
+  "skimage.data",
+  "skimage.data.camera",
+  "skimage.draw.ellipse",
+  "skimage.feature.register_translation",
+  "skimage.filters",
+  "skimage.filters.gaussian",
+  "skimage.filters.threshold_triangle",
+  "skimage.io",
+  "skimage.io.imsave",
+  "skimage.measure.label",
+  "skimage.measure.regionprops",
+  "skimage.morphology.binary_erosion",
+  "skimage.morphology.disk",
   "skimage.registration._masked_phase_cross_correlation.cross_correlate_masked",
   "skimage.registration.phase_cross_correlation",
+  "skimage.transform.rotate",
+  "struct",
   "struct.unpack",
   "sys",
-  "warnings.warn"
+  "warnings.warn",
+  "yaml.CLoader",
+  "yaml.Loader",
+  "yaml.load"
  ],
  "deps": {
   "_pytest": [
@@ -132,13 +176,6 @@
    "matplotlib-base/conda-forge/linux-64/matplotlib-base-3.1.1-py38h250f245_2",
    "matplotlib/conda-forge/linux-64/matplotlib-1.5.3-np111py34_0"
   ],
-  "npstreams": [
-   "npstreams/conda-forge/noarch/npstreams-1.5.2-py_0",
-   "npstreams/conda-forge/noarch/npstreams-1.6-py_0",
-   "npstreams/conda-forge/noarch/npstreams-1.6.4-pyhd8ed1ab_0",
-   "npstreams/conda-forge/noarch/npstreams-1.6.5-pyhd8ed1ab_0",
-   "npstreams/conda-forge/noarch/npstreams-1.6.6-pyhd8ed1ab_0"
-  ],
   "ntpath": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -156,25 +193,10 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "pyqtgraph": [
-   "pyqtgraph/conda-forge/linux-64/pyqtgraph-0.10.0-py36_1",
-   "pyqtgraph/conda-forge/noarch/pyqtgraph-0.10.0-py_4",
-   "pyqtgraph/conda-forge/noarch/pyqtgraph-0.10.0-py_5",
-   "pyqtgraph/conda-forge/noarch/pyqtgraph-0.11.0-pyh9f0ad1d_0",
-   "pyqtgraph/conda-forge/noarch/pyqtgraph-0.11.0-pyh9f0ad1d_1",
-   "pyqtgraph/conda-forge/noarch/pyqtgraph-0.11.0rc0-py_0",
-   "pyqtgraph/conda-forge/noarch/pyqtgraph-0.12.0-pyhd8ed1ab_0",
-   "pyqtgraph/conda-forge/noarch/pyqtgraph-0.12.1-pyhd8ed1ab_0",
-   "pyqtgraph/conda-forge/noarch/pyqtgraph-0.12.2-pyhd8ed1ab_0"
-  ],
   "pytest": [
    "pytest/conda-forge/linux-64/pytest-3.7.0-py27_0",
    "pytest/conda-forge/linux-64/pytest-4.6.0-py37_0",
    "pytest/conda-forge/linux-64/pytest-6.0.2-py37hc8dfbb8_0"
-  ],
-  "pywt": [
-   "pywavelets/conda-forge/linux-64/pywavelets-0.5.1-np112py27_0",
-   "pywavelets/conda-forge/linux-64/pywavelets-1.1.1-py37h902c9e0_3"
   ],
   "random": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -184,13 +206,6 @@
    "scipy/conda-forge/linux-64/scipy-1.7.0-py37h29e03ee_0",
    "scipy/conda-forge/linux-64/scipy-1.7.0-py37ha768fb6_1"
   ],
-  "skimage": [
-   "scikit-image/conda-forge/win-64/scikit-image-0.13.0-np113py36_0"
-  ],
-  "struct": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "tempfile": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -198,12 +213,6 @@
   "warnings": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "yaml": [
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0",
-   "pyyaml/conda-forge/linux-64/pyyaml-3.11-py35_0",
-   "pyyaml/conda-forge/win-64/pyyaml-5.2-py36hfa6e2cd_0"
   ]
  }
 }

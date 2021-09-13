@@ -35,6 +35,7 @@
   "func",
   "func.__qualname__",
   "functools.partial",
+  "mpl_toolkits.mplot3d.Axes3D",
   "mpl_toolkits.mplot3d.Axes3D.name",
   "multiprocessing.Process",
   "multiprocessing.Queue",
@@ -76,17 +77,32 @@
   "os.remove",
   "os.rename",
   "os.system",
+  "qcelemental",
+  "qcelemental.models.AtomicInput",
+  "qcelemental.models.Molecule.from_data",
+  "qcengine",
+  "qcengine.compute",
+  "qcengine.compute_procedure",
+  "qdarkstyle",
+  "qdarkstyle.load_stylesheet_pyqt5",
+  "queue",
+  "queue.Empty",
+  "rdkit.Chem",
+  "rdkit.Chem.AllChem",
   "rdkit.Chem.AllChem.AddHs",
   "rdkit.Chem.AllChem.ETKDG",
   "rdkit.Chem.AllChem.EmbedMolecule",
   "rdkit.Chem.AllChem.EmbedMultipleConfs",
+  "rdkit.Chem.AllChem.GetConformerRMS",
   "rdkit.Chem.AllChem.MolFromSmiles",
   "rdkit.Chem.AllChem.MolToPDBFile",
   "rdkit.Chem.AllChem.SanitizeMol",
   "rdkit.Chem.AssignStereochemistry",
   "rdkit.Chem.Conformer",
+  "rdkit.Chem.Descriptors",
   "rdkit.Chem.Descriptors.HeavyAtomCount",
   "rdkit.Chem.Descriptors.MolLogP",
+  "rdkit.Chem.Descriptors.MolWt",
   "rdkit.Chem.Descriptors.NumHAcceptors",
   "rdkit.Chem.Descriptors.NumHDonors",
   "rdkit.Chem.MolFromMol2File",
@@ -97,19 +113,50 @@
   "rdkit.Chem.MolToSmiles",
   "rdkit.Chem.rdForceFieldHelpers.MMFFOptimizeMolecule",
   "rdkit.Chem.rdForceFieldHelpers.UFFOptimizeMolecule",
+  "rdkit.Chem.rdchem.GetPeriodicTable",
   "rdkit.Geometry.rdGeometry.Point3D",
+  "shutil",
+  "shutil.copy",
+  "shutil.move",
+  "shutil.rmtree",
+  "simtk.openmm",
   "simtk.openmm.CustomNonbondedForce",
   "simtk.openmm.CustomNonbondedForce.CutoffPeriodic",
   "simtk.openmm.Platform.getPlatformByName",
   "simtk.openmm.VerletIntegrator",
   "simtk.openmm.XmlSerializer",
   "simtk.openmm.XmlSerializer.serializeSystem",
+  "simtk.openmm.app",
+  "simtk.openmm.app.AmberPrmtopFile",
+  "simtk.openmm.app.ForceField",
+  "simtk.openmm.app.Modeller",
+  "simtk.openmm.app.NoCutoff",
+  "simtk.openmm.app.PDBFile",
+  "simtk.openmm.app.Simulation",
+  "simtk.unit",
   "simtk.unit.angstroms",
   "simtk.unit.femtoseconds",
   "simtk.unit.kilocalories_per_mole",
   "str.upper",
   "sys",
-  "sys.argv.append"
+  "sys.argv.append",
+  "torsiondrive.td_api",
+  "torsiondrive.td_api.collect_lowest_energies",
+  "torsiondrive.td_api.create_initial_state",
+  "torsiondrive.td_api.grid_id_from_string",
+  "torsiondrive.td_api.next_jobs_from_state",
+  "torsiondrive.td_api.update_state",
+  "unittest",
+  "unittest.TestCase",
+  "unittest.main",
+  "xml.dom.minidom.parseString",
+  "xml.etree.ElementTree",
+  "xml.etree.ElementTree.Element",
+  "xml.etree.ElementTree.ElementTree",
+  "xml.etree.ElementTree.SubElement",
+  "xml.etree.ElementTree.fromstring",
+  "xml.etree.ElementTree.parse",
+  "xml.etree.ElementTree.tostring"
  ],
  "deps": {
   "_csv": [
@@ -203,9 +250,6 @@
    "matplotlib-base/conda-forge/linux-64/matplotlib-base-3.1.1-py38h250f245_2",
    "matplotlib/conda-forge/linux-64/matplotlib-1.5.3-np111py34_0"
   ],
-  "mpl_toolkits": [
-   "matplotlib/conda-forge/linux-64/matplotlib-1.5.3-np111py34_0"
-  ],
   "networkx": [
    "networkx/conda-forge/noarch/networkx-2.1-py_1",
    "networkx/conda-forge/noarch/networkx-2.2-py_1",
@@ -240,53 +284,6 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "qcelemental": [
-   "qcelemental/conda-forge/noarch/qcelemental-0.12.0-py_0",
-   "qcelemental/conda-forge/noarch/qcelemental-0.15.1-py_0",
-   "qcelemental/conda-forge/noarch/qcelemental-0.16.0-py_0",
-   "qcelemental/conda-forge/noarch/qcelemental-0.18.0-pyhd8ed1ab_0",
-   "qcelemental/conda-forge/noarch/qcelemental-0.19.0-pyhd8ed1ab_0",
-   "qcelemental/conda-forge/noarch/qcelemental-0.21.0-pyhd8ed1ab_0"
-  ],
-  "qcengine": [
-   "qcengine/conda-forge/noarch/qcengine-0.10.0-py_0",
-   "qcengine/conda-forge/noarch/qcengine-0.11.0-py_0",
-   "qcengine/conda-forge/noarch/qcengine-0.15.0-py_0",
-   "qcengine/conda-forge/noarch/qcengine-0.18.0-pyhd8ed1ab_0",
-   "qcengine/conda-forge/noarch/qcengine-0.3.0-py_0",
-   "qcengine/conda-forge/noarch/qcengine-0.5.0-py_0",
-   "qcengine/conda-forge/noarch/qcengine-0.5.1-py_1",
-   "qcengine/conda-forge/noarch/qcengine-0.6.0-py_0",
-   "qcengine/conda-forge/noarch/qcengine-0.6.3-py_0",
-   "qcengine/conda-forge/noarch/qcengine-0.7.0-py_0",
-   "qcengine/conda-forge/noarch/qcengine-0.7.1-py_0",
-   "qcengine/conda-forge/noarch/qcengine-0.8.0-py_0",
-   "qcengine/conda-forge/noarch/qcengine-0.8.1-py_0",
-   "qcengine/conda-forge/noarch/qcengine-0.8.2-py_0",
-   "qcengine/conda-forge/noarch/qcengine-0.9.0-py_0"
-  ],
-  "qdarkstyle": [
-   "qdarkstyle/conda-forge/noarch/qdarkstyle-2.5.4-py_0",
-   "qdarkstyle/conda-forge/noarch/qdarkstyle-2.6-py_0",
-   "qdarkstyle/conda-forge/noarch/qdarkstyle-2.6.1-py_0",
-   "qdarkstyle/conda-forge/noarch/qdarkstyle-2.6.3-py_0",
-   "qdarkstyle/conda-forge/noarch/qdarkstyle-2.6.4-py_0",
-   "qdarkstyle/conda-forge/noarch/qdarkstyle-2.6.5-py_0",
-   "qdarkstyle/conda-forge/noarch/qdarkstyle-2.6.6-py_0",
-   "qdarkstyle/conda-forge/noarch/qdarkstyle-2.6.8-py_0",
-   "qdarkstyle/conda-forge/noarch/qdarkstyle-2.7-py_0",
-   "qdarkstyle/conda-forge/noarch/qdarkstyle-2.8.1-pyhd8ed1ab_2",
-   "qdarkstyle/conda-forge/noarch/qdarkstyle-3.0.2-pyhd8ed1ab_0"
-  ],
-  "queue": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "rdkit": [
-   "rdkit/conda-forge/linux-64/rdkit-2018.09.3-py27h9c20d5c_0",
-   "rdkit/conda-forge/linux-64/rdkit-2019.03.4-py37hb31dc5d_1",
-   "rdkit/conda-forge/linux-64/rdkit-2020.09.4-py39hccf6a74_0"
-  ],
   "re": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -296,14 +293,6 @@
    "scipy/conda-forge/linux-64/scipy-1.7.0-py37h29e03ee_0",
    "scipy/conda-forge/linux-64/scipy-1.7.0-py37ha768fb6_1"
   ],
-  "shutil": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "simtk": [
-   "openmm/conda-forge/linux-64/openmm-7.5.0-py38hc16d3cc_6",
-   "openmm/conda-forge/linux-64/openmm-7.5.1-py36heb70152_1"
-  ],
   "subprocess": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -312,22 +301,7 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "torsiondrive": [
-   "torsiondrive/conda-forge/noarch/torsiondrive-0.9.3-py_0",
-   "torsiondrive/conda-forge/noarch/torsiondrive-0.9.5-py_0",
-   "torsiondrive/conda-forge/noarch/torsiondrive-0.9.6-py_0",
-   "torsiondrive/conda-forge/noarch/torsiondrive-0.9.8-py_0",
-   "torsiondrive/conda-forge/noarch/torsiondrive-0.9.8.1-py_0"
-  ],
   "types": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "unittest": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "xml": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ]

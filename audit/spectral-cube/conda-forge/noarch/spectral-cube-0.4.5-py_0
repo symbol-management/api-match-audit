@@ -14,11 +14,6 @@
   "_moments.moment_raywise",
   "_moments.moment_slicewise",
   "_read_string",
-  "abc",
-  "abc.ABCMeta",
-  "abc.abstractmethod",
-  "aplpy",
-  "aplpy.FITSFigure",
   "append_to_posn",
   "astropy",
   "astropy.__version__",
@@ -139,8 +134,6 @@
   "astroquery.splatalogue.Splatalogue",
   "astroquery.splatalogue.Splatalogue.query_lines",
   "base_class.SpatialCoordMixinClass.world_extrema.fget.wrapped_function",
-  "bottleneck.nanmedian",
-  "builtins",
   "casa_image.is_casa_image",
   "casa_image.load_casa_image",
   "casatools",
@@ -149,6 +142,8 @@
   "cb.as_kernel",
   "class_lmv.is_lmv",
   "class_lmv.load_lmv_cube",
+  "contextlib",
+  "contextlib.contextmanager",
   "convolve",
   "ctype_from_vconv",
   "cube_utils.MEMORY_THRESHOLD",
@@ -163,12 +158,19 @@
   "cython_version.cython_version",
   "datetime.datetime.strftime",
   "determine_format",
+  "distutils.version.LooseVersion",
   "ds9",
   "fits.is_fits",
   "fits.load_fits_cube",
   "fits.write_fits_cube",
   "func",
   "function",
+  "glue.app.qt.GlueApplication",
+  "glue.core.Data",
+  "glue.core.DataCollection",
+  "glue.core.coordinates.coordinates_from_header",
+  "glue.viewers.image.qt.data_viewer.ImageViewer",
+  "glue.viewers.image.qt.viewer_widget.ImageWidget",
   "in_vcequiv",
   "input.endswith",
   "input.index_of",
@@ -176,12 +178,31 @@
   "io.core.read",
   "io.core.write",
   "itertools",
+  "joblib",
+  "joblib.Parallel",
+  "joblib._parallel_backends.MultiprocessingBackend",
+  "joblib.delayed",
+  "joblib.parallel_backend",
   "joblib.pool.has_shareable_memory",
+  "joblib.register_parallel_backend",
+  "locale",
+  "locale.getdefaultlocale",
   "lower_dimensional_structures.LowerDimensionalObject",
   "lower_dimensional_structures.OneDSpectrum.from_hdu",
   "lower_dimensional_structures.Projection.from_hdu",
   "makeslice",
   "makeslice_local",
+  "matplotlib.gridspec.GridSpec",
+  "matplotlib.pyplot",
+  "matplotlib.pyplot.cm",
+  "matplotlib.pyplot.figure",
+  "matplotlib.pyplot.gca",
+  "matplotlib.pyplot.gcf",
+  "matplotlib.pyplot.imshow",
+  "matplotlib.pyplot.subplot",
+  "matplotlib.pyplot.tight_layout",
+  "mmap",
+  "mmap.mmap",
   "np_compat.allbadtonan",
   "numpy.NaN",
   "numpy.abs",
@@ -214,7 +235,20 @@
   "numpy.sqrt",
   "numpy.uint8",
   "numpy.zeros",
+  "operator",
+  "operator.add",
   "operator.div",
+  "operator.eq",
+  "operator.floordiv",
+  "operator.ge",
+  "operator.gt",
+  "operator.le",
+  "operator.lt",
+  "operator.mul",
+  "operator.ne",
+  "operator.pow",
+  "operator.sub",
+  "operator.truediv",
   "os.environ.get",
   "os.getcwd",
   "os.link",
@@ -299,11 +333,24 @@
    "pytest/conda-forge/linux-64/pytest-4.6.0-py37_0",
    "pytest/conda-forge/linux-64/pytest-6.0.2-py37hc8dfbb8_0"
   ],
-  "collections": [
+  "abc": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "contextlib": [
+  "aplpy": [
+   "aplpy/conda-forge/noarch/aplpy-2.0-py_0",
+   "aplpy/conda-forge/noarch/aplpy-2.0.1-py_0",
+   "aplpy/conda-forge/noarch/aplpy-2.0.2-py_0",
+   "aplpy/conda-forge/noarch/aplpy-2.0.3-py_0"
+  ],
+  "bottleneck": [
+   "bottleneck/conda-forge/linux-64/bottleneck-1.2.0-np111py34_0",
+   "bottleneck/conda-forge/linux-64/bottleneck-1.3.2-py36h92226af_2"
+  ],
+  "builtins": [
+   "pies2overrides/conda-forge/osx-64/pies2overrides-2.6.7-py27_1000"
+  ],
+  "collections": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -315,37 +362,7 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "distutils": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "functools": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "glue": [],
-  "joblib": [
-   "joblib/conda-forge/noarch/joblib-0.12.1-py_0",
-   "joblib/conda-forge/noarch/joblib-0.12.2-py_0",
-   "joblib/conda-forge/noarch/joblib-0.12.4-py_0",
-   "joblib/conda-forge/noarch/joblib-0.13.1-py_0",
-   "joblib/conda-forge/noarch/joblib-0.13.2-py_0",
-   "joblib/conda-forge/noarch/joblib-0.14.0-py_0",
-   "joblib/conda-forge/noarch/joblib-0.14.1-py_0",
-   "joblib/conda-forge/noarch/joblib-0.17.0-py_0",
-   "joblib/conda-forge/noarch/joblib-1.0.0-pyhd8ed1ab_0",
-   "joblib/conda-forge/noarch/joblib-1.0.1-pyhd8ed1ab_0"
-  ],
-  "locale": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "matplotlib": [
-   "matplotlib-base/conda-forge/linux-64/matplotlib-base-3.1.1-py37hfd891ef_0",
-   "matplotlib-base/conda-forge/linux-64/matplotlib-base-3.1.1-py38h250f245_2",
-   "matplotlib/conda-forge/linux-64/matplotlib-1.5.3-np111py34_0"
-  ],
-  "mmap": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -357,10 +374,6 @@
    "numpy/conda-forge/linux-64/numpy-1.17.5-py36h95a1406_0",
    "numpy/conda-forge/linux-64/numpy-1.18.4-py37h8960a57_0",
    "numpy/conda-forge/linux-64/numpy-1.19.2-py36h68c22af_1"
-  ],
-  "operator": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "os": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
