@@ -48,13 +48,67 @@
   "pygeoapi.util.JobStatus.failed",
   "pygeoapi.util.JobStatus.running",
   "pygeoapi.util.JobStatus.successful",
+  "pygeometa.core.MCFReadError",
+  "pygeometa.core.read_mcf",
+  "pygeometa.schemas.stac.STACItemOutputSchema",
+  "pygeometa.schemas.stac.STACItemOutputSchema.write",
+  "pymongo.ASCENDING",
+  "pymongo.DESCENDING",
+  "pymongo.GEOSPHERE",
+  "pymongo.MongoClient",
+  "pymongo.collection.ObjectId",
+  "pyproj.CRS",
+  "pyproj.CRS.from_epsg",
+  "pyproj.CRS.from_string",
+  "pyproj.Transformer",
+  "pyproj.Transformer.from_crs",
+  "pytz",
+  "pytz.UTC",
+  "rasterio",
+  "rasterio.crs.CRS",
+  "rasterio.crs.CRS.from_epsg",
+  "rasterio.errors.RasterioIOError",
+  "rasterio.io.MemoryFile",
+  "rasterio.mask",
+  "rasterio.mask.mask",
+  "rasterio.open",
+  "rasterio.warp.transform_bounds",
+  "requests",
+  "requests.Session",
+  "shapely.errors.WKTReadingError",
+  "shapely.wkt.loads",
+  "sqlite3",
   "sqlite3.OperationalError",
   "sqlite3.Row",
   "sqlite3.connect",
+  "starlette.applications.Starlette",
+  "starlette.middleware.cors.CORSMiddleware",
+  "starlette.requests.Request",
+  "starlette.responses.Response",
+  "starlette.staticfiles.StaticFiles",
   "sys",
+  "tinydb",
+  "tinydb.Query",
+  "tinydb.TinyDB",
+  "tinydb.where",
+  "unicodecsv",
   "unicodecsv.DictWriter",
+  "urllib.parse",
+  "urllib.parse.urljoin",
+  "urllib.parse.urlparse",
+  "urllib.request.urlopen",
+  "uuid",
+  "uuid.uuid1",
+  "uuid.uuid4",
   "validate_bbox",
-  "validate_datetime"
+  "validate_datetime",
+  "yaml",
+  "yaml.SafeLoader",
+  "yaml.load",
+  "yaml.safe_dump",
+  "zipfile",
+  "zipfile.ZIP_DEFLATED",
+  "zipfile.ZipFile"
  ],
  "deps": {
   "base64": [
@@ -197,100 +251,15 @@
    "psycopg2/conda-forge/linux-64/psycopg2-2.8.4-py36h72c5cf5_0",
    "psycopg2/conda-forge/linux-64/psycopg2-2.9.1-py38h497a2fe_0"
   ],
-  "pygeometa": [
-   "pygeometa/conda-forge/noarch/pygeometa-0.6.0-pyhd8ed1ab_0"
-  ],
-  "pymongo": [
-   "pymongo/conda-forge/linux-64/pymongo-3.11.4-py39he80948d_0",
-   "pymongo/conda-forge/win-64/pymongo-3.11.4-py39h415ef7b_0"
-  ],
-  "pyproj": [
-   "pyproj/conda-forge/linux-64/pyproj-2.1.3-py37h516909a_0",
-   "pyproj/conda-forge/linux-64/pyproj-2.3.0-py37h2fd02e8_0"
-  ],
-  "pytz": [
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0",
-   "pytz/conda-forge/noarch/pytz-2017.3-py_1",
-   "pytz/conda-forge/noarch/pytz-2017.3-py_2",
-   "pytz/conda-forge/noarch/pytz-2018.4-py_0",
-   "pytz/conda-forge/noarch/pytz-2018.5-py_0",
-   "pytz/conda-forge/noarch/pytz-2018.6-py_0",
-   "pytz/conda-forge/noarch/pytz-2019.1-py_0",
-   "pytz/conda-forge/noarch/pytz-2019.2-py_0",
-   "pytz/conda-forge/noarch/pytz-2020.1-pyh9f0ad1d_0",
-   "pytz/conda-forge/noarch/pytz-2020.4-pyhd8ed1ab_0"
-  ],
-  "rasterio": [
-   "rasterio/conda-forge/linux-64/rasterio-1.0.25-py36hdff7cfa_0",
-   "rasterio/conda-forge/linux-64/rasterio-1.2.1-py37ha549118_0",
-   "rasterio/conda-forge/linux-64/rasterio-1.2.2-py39h63973eb_0"
-  ],
   "re": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "requests": [
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0",
-   "requests/conda-forge/linux-64/requests-2.12.0-py35_0",
-   "requests/conda-forge/noarch/requests-2.23.0-pyh8c360ce_2",
-   "requests/conda-forge/noarch/requests-2.24.0-pyh9f0ad1d_0",
-   "requests/conda-forge/noarch/requests-2.25.0-pyhd3deb0d_0",
-   "requests/conda-forge/noarch/requests-2.25.1-pyhd3deb0d_0",
-   "requests/conda-forge/noarch/requests-2.26.0-pyhd8ed1ab_0"
-  ],
-  "shapely": [
-   "shapely/conda-forge/linux-64/shapely-1.7.1-py37hba0730f_1",
-   "solaris/conda-forge/noarch/solaris-0.4.0-pyhe05a262_0"
-  ],
-  "sqlite3": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "starlette": [
-   "starlette-base/conda-forge/noarch/starlette-base-0.13.5-py_2",
-   "starlette-base/conda-forge/noarch/starlette-base-0.13.6-py_0",
-   "starlette/conda-forge/noarch/starlette-0.10.2-py_0",
-   "starlette/conda-forge/noarch/starlette-0.11.1-py_0",
-   "starlette/conda-forge/noarch/starlette-0.11.4-py_0",
-   "starlette/conda-forge/noarch/starlette-0.12.1-py_0",
-   "starlette/conda-forge/noarch/starlette-0.12.10-py_0",
-   "starlette/conda-forge/noarch/starlette-0.12.4-py_0",
-   "starlette/conda-forge/noarch/starlette-0.12.8-py_0",
-   "starlette/conda-forge/noarch/starlette-0.13.8-py_0",
-   "starlette/conda-forge/noarch/starlette-0.5.4-py_0",
-   "starlette/conda-forge/noarch/starlette-0.6.0-py_0",
-   "starlette/conda-forge/noarch/starlette-0.8.0-py_0",
-   "starlette/conda-forge/noarch/starlette-0.9.10-py_0"
   ],
   "tempfile": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "tinydb": [
-   "tinydb/conda-forge/noarch/tinydb-3.10.0-py_0",
-   "tinydb/conda-forge/noarch/tinydb-3.11.1-py_0",
-   "tinydb/conda-forge/noarch/tinydb-3.12.1-py_0",
-   "tinydb/conda-forge/noarch/tinydb-3.13.0-py_0",
-   "tinydb/conda-forge/noarch/tinydb-3.15.1-py_0",
-   "tinydb/conda-forge/noarch/tinydb-3.8.1.post1-py_0",
-   "tinydb/conda-forge/noarch/tinydb-4.2.0-pyh9f0ad1d_0",
-   "tinydb/conda-forge/noarch/tinydb-4.3.0-pyhd3deb0d_0",
-   "tinydb/conda-forge/noarch/tinydb-4.4.0-pyh44b312d_0"
-  ],
   "typing": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "unicodecsv": [
-   "unicodecsv/conda-forge/noarch/unicodecsv-0.14.1-py_1"
-  ],
-  "urllib": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "uuid": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -310,16 +279,6 @@
    "xarray/conda-forge/noarch/xarray-0.16.2-pyhd8ed1ab_0",
    "xarray/conda-forge/noarch/xarray-0.18.0-pyhd8ed1ab_0",
    "xarray/conda-forge/noarch/xarray-0.18.2-pyhd8ed1ab_0"
-  ],
-  "yaml": [
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0",
-   "pyyaml/conda-forge/linux-64/pyyaml-3.11-py35_0",
-   "pyyaml/conda-forge/win-64/pyyaml-5.2-py36hfa6e2cd_0"
-  ],
-  "zipfile": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ]
  }
 }

@@ -99,7 +99,27 @@
   "array.ArrayType",
   "array.array",
   "array_checker",
+  "ast",
+  "ast.literal_eval",
+  "asv",
+  "asv.machine.Machine.get_defaults",
+  "asv.util.datetime_to_js_timestamp",
+  "asv.util.human_file_size",
   "async_send_func",
+  "asyncio",
+  "asyncio.CancelledError",
+  "asyncio.Event",
+  "asyncio.Protocol",
+  "asyncio.Queue",
+  "asyncio.TimeoutError",
+  "asyncio.ensure_future",
+  "asyncio.gather",
+  "asyncio.get_event_loop",
+  "asyncio.new_event_loop",
+  "asyncio.run_coroutine_threadsafe",
+  "asyncio.set_event_loop",
+  "asyncio.wait",
+  "asyncio.wait_for",
   "asyncio_server_main",
   "atexit",
   "backend.convert_values",
@@ -193,10 +213,16 @@
   "client",
   "cls",
   "cls.__name__",
+  "collections",
+  "collections.ChainMap",
   "collections.Iterable",
+  "collections.OrderedDict",
+  "collections.UserList",
   "collections.abc.Iterable",
   "collections.defaultdict",
   "collections.deque",
+  "collections.namedtuple",
+  "concurrent.futures",
   "conftest.get_curio_context",
   "conftest.poll_readiness",
   "conftest.run_example_ioc",
@@ -208,6 +234,11 @@
   "context.create_many_channels",
   "context.disconnect",
   "context.get_pvs",
+  "contextlib",
+  "contextlib.contextmanager",
+  "copy",
+  "copy.copy",
+  "copy.deepcopy",
   "counter",
   "create_many_outer",
   "ctypes.sizeof",
@@ -215,6 +246,8 @@
   "curio.network.run_server",
   "curio.run_in_thread",
   "curio.sleep",
+  "curio.socket",
+  "curio.socket.create_connection",
   "curio.socket.gethostname",
   "curio.spawn",
   "curio_setup",
@@ -462,9 +495,6 @@
   "weakref.ref"
  ],
  "deps": {
-  "_asyncio": [
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "_ctypes": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -487,42 +517,15 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "ast": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "asv": [
-   "asv/conda-forge/linux-64/asv-0.3.1-py36hfc679d8_0",
-   "asv/conda-forge/linux-64/asv-0.4.2-py39hf149a3a_1"
-  ],
-  "asyncio": [],
   "caproto": [
    "caproto/conda-forge/noarch/caproto-0.7.0-pyhd8ed1ab_0",
    "caproto/conda-forge/noarch/caproto-0.8.0-pyhd8ed1ab_0"
-  ],
-  "collections": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "colorama": [
    "colorama/conda-forge/noarch/colorama-0.3.9-py_1",
    "colorama/conda-forge/noarch/colorama-0.4.1-py_0",
    "colorama/conda-forge/noarch/colorama-0.4.3-py_0",
    "colorama/conda-forge/noarch/colorama-0.4.4-pyh9f0ad1d_0"
-  ],
-  "concurrent": [
-   "futures/conda-forge/linux-64/futures-3.2.0-py27_0",
-   "futures/conda-forge/osx-64/futures-3.3.0-py27h8c360ce_1",
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "contextlib": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "copy": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "coverage": [
    "coverage/conda-forge/linux-64/coverage-4.5.2-py27h470a237_0",
