@@ -12,50 +12,23 @@
   "blending_plugin",
   "calculate_weight",
   "calibration_plugin",
-  "cartopy.crs",
   "cartopy.crs.CRS",
   "cartopy.crs.Geocentric",
   "cartopy.crs.Geodetic",
   "cartopy.crs.Globe",
-  "cartopy.crs.PlateCarree",
-  "cf_units",
-  "cf_units.Unit",
-  "cf_units.date2num",
   "check_dtype_and_units",
-  "clize",
   "clize.Parameter.IGNORE",
   "clize.Parameter.LAST_OPTION",
   "clize.Parameter.REQUIRED",
   "clize.Parameter.UNDOCUMENTED",
-  "clize.help.ClizeHelp",
-  "clize.help.HelpForAutodetectedDocstring",
-  "clize.parameters",
-  "clize.parameters.pass_name",
-  "clize.parser.value_converter",
-  "clize.run",
-  "clize.runner.Clize",
-  "clize.runner.Clize.get_cli",
-  "clize.runner.Clize.keep",
   "comp",
   "compare_attributes",
-  "contextlib",
-  "contextlib.contextmanager",
   "conversion_plugin",
   "coord_dims",
   "coord_type",
   "cube_return",
-  "dask.array",
-  "dask.array.zeros_like",
-  "datetime",
-  "datetime.datetime",
-  "datetime.datetime.now",
   "datetime.datetime.strftime",
-  "datetime.datetime.strptime",
-  "datetime.timedelta",
-  "datetime.timezone",
   "datetime.timezone.utc",
-  "dateutil.tz",
-  "dateutil.tz.tzoffset",
   "daynightplugin",
   "daynightplugin.day",
   "daynightplugin.night",
@@ -64,8 +37,6 @@
   "f_out",
   "forecast_plugin",
   "func",
-  "functools",
-  "functools.lru_cache",
   "functools.partial",
   "grid_spacing",
   "hashlib.sha256",
@@ -97,17 +68,12 @@
   "improver.synthetic_data.utilities.get_leading_dimension",
   "improver.wxcode.__init__.CLOUD_NAME",
   "improver.wxcode.__init__.prob_above_name",
-  "inspect.cleandoc",
-  "inspect.getdoc",
   "interpolation_function",
   "iris._cube_coord_common.LimitedAttributeDict",
   "iris_nimrod_patch.nimrod",
   "iris_nimrod_patch.nimrod_load_rules",
   "is_chain",
   "itertools",
-  "json",
-  "json.load",
-  "json.loads",
   "make_thresholds_with_units",
   "mask_rg_interp",
   "mean",
@@ -195,7 +161,6 @@
   "sum_func",
   "sys",
   "sys.modules.values",
-  "threading.Thread",
   "thresholder",
   "time",
   "tracemalloc.start",
@@ -215,6 +180,16 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "cartopy": [
+   "cartopy/conda-forge/linux-64/cartopy-0.17.0-py37hbeedcd3_1007",
+   "cartopy/conda-forge/linux-64/cartopy-0.18.0-py37h623d01f_6",
+   "cartopy/conda-forge/linux-64/cartopy-0.19.0.post1-py37h0c48da3_0"
+  ],
+  "cf_units": [
+   "cf-units/conda-forge/linux-64/cf-units-2.1.4-py38h5c078b8_2",
+   "cf_units/conda-forge/win-64/cf_units-1.1.3-py35_2",
+   "cf_units/conda-forge/win-64/cf_units-2.0.1-py36_1"
+  ],
   "clize": [
    "clize/conda-forge/noarch/clize-4.1.1-py_0",
    "clize/conda-forge/noarch/clize-4.2.0-pyhd8ed1ab_0"
@@ -223,7 +198,48 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "contextlib": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "copy": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "dask": [
+   "dask-core/conda-forge/noarch/dask-core-0.17.5-py_0",
+   "dask-core/conda-forge/noarch/dask-core-0.18.0-py_0",
+   "dask-core/conda-forge/noarch/dask-core-0.20.1-py_0",
+   "dask-core/conda-forge/noarch/dask-core-1.1.1-py_0",
+   "dask-core/conda-forge/noarch/dask-core-1.1.2-py_0",
+   "dask-core/conda-forge/noarch/dask-core-1.1.4-py_0",
+   "dask-core/conda-forge/noarch/dask-core-2.10.1-py_0",
+   "dask-core/conda-forge/noarch/dask-core-2.13.0-py_0",
+   "dask-core/conda-forge/noarch/dask-core-2.17.2-py_0",
+   "dask-core/conda-forge/noarch/dask-core-2.18.0-py_0",
+   "dask-core/conda-forge/noarch/dask-core-2.22.0-py_0",
+   "dask-core/conda-forge/noarch/dask-core-2.25.0-py_0",
+   "dask-core/conda-forge/noarch/dask-core-2.27.0-py_0",
+   "dask-core/conda-forge/noarch/dask-core-2.6.0-py_0",
+   "dask-core/conda-forge/noarch/dask-core-2.8.1-py_0",
+   "dask-core/conda-forge/noarch/dask-core-2020.12.0-pyhd8ed1ab_0",
+   "dask-core/conda-forge/noarch/dask-core-2021.3.1-pyhd8ed1ab_0",
+   "dask-core/conda-forge/noarch/dask-core-2021.4.0-pyhd8ed1ab_0",
+   "dask-core/conda-forge/noarch/dask-core-2021.4.1-pyhd8ed1ab_0",
+   "dask-core/conda-forge/noarch/dask-core-2021.5.1-pyhd8ed1ab_0"
+  ],
+  "datetime": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "dateutil": [
+   "python-dateutil/conda-forge/noarch/python-dateutil-2.7.2-py_0",
+   "python-dateutil/conda-forge/noarch/python-dateutil-2.7.4-py_0",
+   "python-dateutil/conda-forge/noarch/python-dateutil-2.7.5-py_0",
+   "python-dateutil/conda-forge/noarch/python-dateutil-2.8.1-py_0",
+   "python-dateutil/conda-forge/noarch/python-dateutil-2.8.2-pyhd8ed1ab_0"
+  ],
+  "functools": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -239,9 +255,17 @@
    "improver/conda-forge/noarch/improver-0.17.0-pyhd8ed1ab_0",
    "improver/conda-forge/noarch/improver-0.18.0-pyhd8ed1ab_0"
   ],
+  "inspect": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "iris": [
    "iris/conda-forge/linux-64/iris-3.0.1-py36hd000896_1",
    "iris/conda-forge/linux-64/iris-3.0.1-py38h578d9bd_1"
+  ],
+  "json": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "math": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -351,6 +375,10 @@
   "statsmodels": [
    "statsmodels/conda-forge/linux-64/statsmodels-0.9.0-py27h7eb728f_0",
    "statsmodels/conda-forge/linux-64/statsmodels-0.9.0-py36h7eb728f_0"
+  ],
+  "threading": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "tracemalloc": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
