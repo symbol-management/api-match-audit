@@ -29,13 +29,24 @@
   "logging.Logger.manager.loggerDict.values",
   "mark_as_fixture",
   "on_cleanup_error",
+  "ordereddict.OrderedDict",
   "os.environ.get",
   "os.environ.split",
   "os.getcwd",
   "os.path.exists",
   "os.path.isfile",
   "os.remove",
+  "parse",
+  "parse.Parser",
+  "parse_type.cfparse",
+  "parse_type.cfparse.Parser",
   "re.UNICODE",
+  "setuptools.Command",
+  "shlex",
+  "shlex.split",
+  "simplejson",
+  "simplejson.dumps",
+  "simplejson.load",
   "six.StringIO",
   "six.moves.configparser",
   "six.moves.configparser.ConfigParser",
@@ -46,20 +57,38 @@
   "socket.gethostname",
   "step_decorator",
   "steps_contain",
+  "struct",
   "struct.pack",
   "struct.unpack",
+  "subprocess",
+  "subprocess.call",
   "sys",
   "sys.modules.get",
   "sys.path.insert",
   "sys.path.remove",
   "sys.platform.startswith",
   "sys.stdout.write",
+  "termios",
   "termios.TIOCGWINSZ",
   "test_tag",
+  "threading.Lock",
   "time",
+  "traceback",
+  "traceback2",
+  "traceback2.extract_stack",
+  "traceback2.format_exc",
+  "traceback2.format_tb",
+  "traceback2.print_exc",
+  "types.ModuleType",
   "use_context_with_mode",
   "warnings.warn",
-  "xml.etree.ElementTree.ElementTree._write"
+  "weakref",
+  "xml.etree.ElementTree",
+  "xml.etree.ElementTree.Element",
+  "xml.etree.ElementTree.ElementTree",
+  "xml.etree.ElementTree.ElementTree._write",
+  "xml.etree.ElementTree._serialize",
+  "xml.etree.ElementTree._serialize_xml"
  ],
  "deps": {
   "_asyncio": [
@@ -158,43 +187,13 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "ordereddict": [
-   "ordereddict/conda-forge/linux-64/ordereddict-1.1-py26_0"
-  ],
   "os": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "parse": [
-   "parse/conda-forge/noarch/parse-1.11.1-py_0",
-   "parse/conda-forge/noarch/parse-1.12.0-py_0",
-   "parse/conda-forge/noarch/parse-1.12.1-py_0",
-   "parse/conda-forge/noarch/parse-1.17.0-pyh9f0ad1d_0",
-   "parse/conda-forge/noarch/parse-1.18.0-pyh9f0ad1d_0",
-   "parse/conda-forge/noarch/parse-1.19.0-pyh44b312d_0",
-   "parse/conda-forge/noarch/parse-1.9.0-py_0"
-  ],
-  "parse_type": [
-   "parse_type/conda-forge/linux-64/parse_type-0.5.2-py36hd000896_3",
-   "parse_type/conda-forge/osx-64/parse_type-0.3.4-py35_1"
-  ],
   "re": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "setuptools": [
-   "setuptools/conda-forge/linux-64/setuptools-40.6.1-py36_0",
-   "setuptools/conda-forge/linux-64/setuptools-46.3.0-py38h32f6830_0",
-   "setuptools/conda-forge/linux-64/setuptools-49.1.2-py38h32f6830_0"
-  ],
-  "shlex": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "simplejson": [
-   "simplejson/conda-forge/linux-64/simplejson-3.16.0-py27h470a237_2",
-   "simplejson/conda-forge/linux-64/simplejson-3.16.0-py35h470a237_2",
-   "simplejson/conda-forge/linux-64/simplejson-3.17.0-py38h516909a_0"
   ],
   "six": [
    "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
@@ -210,42 +209,7 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "struct": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "subprocess": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "termios": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "threading": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "traceback": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "traceback2": [
-   "traceback2/conda-forge/linux-64/traceback2-1.4.0-py35_0"
-  ],
-  "types": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "warnings": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "weakref": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "xml": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ]

@@ -38,11 +38,14 @@
   "flask.request.environ.get",
   "get_params",
   "get_single_random_path",
+  "lime.lime_tabular.LimeTabularExplainer",
+  "lime.lime_tabular.LimeTabularExplainer.explain_instance",
   "model_explanations._model_performance.utils.accuracy",
   "model_explanations._model_performance.utils.auc",
   "model_explanations._model_performance.utils.f1",
   "model_explanations._model_performance.utils.precision",
   "model_explanations._model_performance.utils.recall",
+  "multiprocessing",
   "multiprocessing.Pool",
   "multiprocessing.cpu_count",
   "nice_format",
@@ -83,6 +86,14 @@
   "params.ObservationParam.get",
   "params.Param.get_param_class",
   "params.VariableParam.get",
+  "pickle",
+  "pickle.dump",
+  "pickle.dumps",
+  "pickle.load",
+  "pickle.loads",
+  "pkg_resources",
+  "pkg_resources.get_distribution",
+  "pkg_resources.parse_version",
   "plot.plot_ceteris_paribus_cutoff",
   "plot.plot_ecdf",
   "plot.plot_fairness_check",
@@ -97,14 +108,51 @@
   "plot.prepare_data_for_shap_plot",
   "plot.tooltip_text",
   "plot_class",
+  "plotly.express",
+  "plotly.express.bar",
+  "plotly.express.imshow",
+  "plotly.express.line",
+  "plotly.express.scatter",
+  "plotly.graph_objects",
+  "plotly.graph_objects.Figure",
+  "plotly.graph_objects.Scatter",
+  "plotly.graph_objects.Scatterpolar",
+  "plotly.graph_objects.layout.Annotation",
+  "plotly.graph_objects.layout.XAxis",
+  "plotly.graph_objects.layout.YAxis",
+  "plotly.subplots.make_subplots",
   "predict_function",
+  "pycaret.classification.predict_model",
+  "pycaret.regression.predict_model",
+  "random",
+  "random.randrange",
+  "requests",
+  "requests.get",
+  "requests.post",
+  "shap.DeepExplainer",
+  "shap.GradientExplainer",
+  "shap.KernelExplainer",
+  "shap.LinearExplainer",
+  "shap.TreeExplainer",
+  "shap.force_plot",
+  "shap.summary_plot",
   "shutdown",
+  "sklearn.linear_model.LinearRegression",
+  "sklearn.linear_model.LogisticRegression",
+  "sklearn.tree.DecisionTreeClassifier",
+  "sklearn.tree.DecisionTreeRegressor",
   "sklearn.tree.plot_tree",
   "socket.AF_INET",
   "socket.SOCK_STREAM",
   "str.format",
   "sys",
+  "threading",
+  "threading.Thread",
   "time",
+  "tqdm.tqdm",
+  "tqdm.tqdm.pandas",
+  "types",
+  "types.MethodType",
   "utils.SubgroupConfusionMatrix",
   "utils.SubgroupConfusionMatrixMetrics",
   "utils._classification_performance",
@@ -133,13 +181,12 @@
   "utils.recall",
   "utils.rmse",
   "utils.shap",
-  "warnings.warn"
+  "warnings.warn",
+  "webbrowser",
+  "webbrowser.open",
+  "xgboost.DMatrix"
  ],
  "deps": {
-  "_pickle": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "abc": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -196,16 +243,6 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "lime": [
-   "ds-lime/conda-forge/linux-64/ds-lime-0.1.1.21-py36_0",
-   "ds-lime/conda-forge/noarch/ds-lime-0.1.1.27-py_1",
-   "lime/conda-forge/noarch/lime-0.1.1.30-py_1",
-   "lime/conda-forge/noarch/lime-0.1.1.31-py_2",
-   "lime/conda-forge/noarch/lime-0.1.1.32-py_1",
-   "lime/conda-forge/noarch/lime-0.1.1.35-py_0",
-   "lime/conda-forge/noarch/lime-0.2.0.0-pyh9f0ad1d_0",
-   "lime/conda-forge/noarch/lime-0.2.0.1-pyh9f0ad1d_0"
-  ],
   "logging": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -218,10 +255,6 @@
    "matplotlib-base/conda-forge/linux-64/matplotlib-base-3.1.1-py37hfd891ef_0",
    "matplotlib-base/conda-forge/linux-64/matplotlib-base-3.1.1-py38h250f245_2",
    "matplotlib/conda-forge/linux-64/matplotlib-1.5.3-np111py34_0"
-  ],
-  "multiprocessing": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "ntpath": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -236,70 +269,15 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "pandas": [],
-  "pickle": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "pkg_resources": [
-   "setuptools/conda-forge/linux-64/setuptools-40.6.1-py36_0",
-   "setuptools/conda-forge/linux-64/setuptools-46.3.0-py38h32f6830_0",
-   "setuptools/conda-forge/linux-64/setuptools-49.1.2-py38h32f6830_0"
-  ],
-  "plotly": [
-   "plotly/conda-forge/noarch/plotly-4.13.0-pyhd3deb0d_0",
-   "plotly/conda-forge/noarch/plotly-4.14.0-pyhd3deb0d_0",
-   "plotly/conda-forge/noarch/plotly-4.14.2-pyhd3deb0d_0"
-  ],
-  "pycaret": [
-   "pycaret/conda-forge/noarch/pycaret-2.1.2-pyh9f0ad1d_0",
-   "pycaret/conda-forge/noarch/pycaret-2.2.2-pyhd3deb0d_0",
-   "pycaret/conda-forge/noarch/pycaret-2.2.3-pyhd3deb0d_0",
-   "pycaret/conda-forge/noarch/pycaret-2.3.0-pyh44b312d_0",
-   "pycaret/conda-forge/noarch/pycaret-2.3.1-pyhd8ed1ab_0",
-   "pycaret/conda-forge/noarch/pycaret-2.3.2-pyhd8ed1ab_0"
-  ],
-  "random": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "re": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "requests": [
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0",
-   "requests/conda-forge/linux-64/requests-2.12.0-py35_0",
-   "requests/conda-forge/noarch/requests-2.23.0-pyh8c360ce_2",
-   "requests/conda-forge/noarch/requests-2.24.0-pyh9f0ad1d_0",
-   "requests/conda-forge/noarch/requests-2.25.0-pyhd3deb0d_0",
-   "requests/conda-forge/noarch/requests-2.25.1-pyhd3deb0d_0",
-   "requests/conda-forge/noarch/requests-2.26.0-pyhd8ed1ab_0"
-  ],
-  "shap": [],
-  "sklearn": [
-   "scikit-learn/conda-forge/linux-64/scikit-learn-0.17.1-np110py27_blas_openblas_200",
-   "scikit-learn/conda-forge/linux-64/scikit-learn-0.17.1-np110py35_blas_openblas_202",
-   "scikit-learn/conda-forge/linux-64/scikit-learn-0.17.1-np111py35_blas_openblas_202"
   ],
   "socket": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "threading": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "tqdm": [],
-  "types": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "warnings": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "webbrowser": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -309,12 +287,6 @@
    "werkzeug/conda-forge/noarch/werkzeug-0.16.0-py_0",
    "werkzeug/conda-forge/noarch/werkzeug-1.0.0-py_0",
    "werkzeug/conda-forge/noarch/werkzeug-1.0.1-pyh9f0ad1d_0"
-  ],
-  "xgboost": [
-   "py-xgboost/conda-forge/linux-64/py-xgboost-1.3.0-py36h5fab9bb_0",
-   "py-xgboost/conda-forge/linux-64/py-xgboost-1.3.3-py36hd000896_0",
-   "py-xgboost/conda-forge/linux-64/py-xgboost-1.3.3-py37h9c2f6ca_2",
-   "xgboost/conda-forge/linux-64/xgboost-0.7.post3-py36_0"
   ]
  }
 }

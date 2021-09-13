@@ -41,7 +41,14 @@
   "gwinc.ifo.Voyager.__init__.QuantumVacuum",
   "gwinc.ifo.aLIGO.__init__.QuantumVacuum",
   "gwinc_matlab.Matlab",
+  "h5py",
+  "h5py.File",
+  "h5py.Group",
   "homodyne",
+  "inspiral_range",
+  "inspiral_range.all_ranges",
+  "inspiral_range.range",
+  "io",
   "io.DATA_SAVE_FORMATS",
   "io.StringIO",
   "io.load_hdf5",
@@ -59,10 +66,21 @@
   "lossShighn",
   "lossSlown",
   "make2x2TF",
+  "matplotlib",
+  "matplotlib.pyplot",
+  "matplotlib.pyplot.figure",
+  "matplotlib.pyplot.gcf",
+  "matplotlib.pyplot.savefig",
+  "matplotlib.pyplot.show",
+  "matplotlib.pyplot.subplot2grid",
+  "matplotlib.pyplot.subplots_adjust",
+  "matplotlib.pyplot.suptitle",
+  "matplotlib.use",
   "nb.Budget",
   "nb.Calibration",
   "nb.Noise",
   "nb.precomp",
+  "noise",
   "noise.add",
   "noise.calc_trace",
   "noise.coatingthermal.coating_brownian",
@@ -117,9 +135,17 @@
   "range_func.__name__",
   "re.X",
   "read_recursive",
+  "scipy.constants",
+  "scipy.integrate",
+  "scipy.integrate.quad",
+  "scipy.interpolate",
+  "scipy.interpolate.PchipInterpolator",
+  "scipy.io",
+  "scipy.io.loadmat",
+  "scipy.io.matlab.mio5_params.mat_struct",
+  "scipy.special",
+  "scipy.special.iv",
   "scipy.special.modstruve",
-  "setuptools_scm",
-  "setuptools_scm.get_version",
   "signal",
   "signal.SIGINT",
   "signal.SIG_DFL",
@@ -134,16 +160,7 @@
   "subprocess.run",
   "suspension.FIBER_TYPES.index",
   "suspension.suspQuad",
-  "sympy",
   "sympy.Matrix",
-  "sympy.cos",
-  "sympy.cse",
-  "sympy.eye",
-  "sympy.linsolve",
-  "sympy.numbered_symbols",
-  "sympy.sin",
-  "sympy.symbols",
-  "sympy.zeros",
   "sys",
   "yaml",
   "yaml.SafeLoader",
@@ -188,35 +205,13 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "h5py": [
-   "h5py/conda-forge/linux-64/h5py-2.10.0-nompi_py37hf7afa78_105",
-   "h5py/conda-forge/linux-64/h5py-2.6.0-np111py34_4",
-   "h5py/conda-forge/linux-64/h5py-2.7.0-np113py36_1"
-  ],
   "importlib": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "inspiral_range": [
-   "inspiral-range/conda-forge/linux-64/inspiral-range-0.7.2-py36h5fab9bb_0",
-   "inspiral-range/conda-forge/noarch/inspiral-range-0.3.1-pyh9f0ad1d_0"
-  ],
-  "io": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "logging": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "matplotlib": [
-   "matplotlib-base/conda-forge/linux-64/matplotlib-base-3.1.1-py37hfd891ef_0",
-   "matplotlib-base/conda-forge/linux-64/matplotlib-base-3.1.1-py38h250f245_2",
-   "matplotlib/conda-forge/linux-64/matplotlib-1.5.3-np111py34_0"
-  ],
-  "noise": [
-   "noise/conda-forge/linux-64/noise-1.2.2-py36_0",
-   "noise/conda-forge/linux-64/noise-1.2.2-py36h14c3975_1000"
   ],
   "ntpath": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -239,10 +234,29 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "scipy": [],
+  "setuptools_scm": [
+   "setuptools-scm/conda-forge/noarch/setuptools-scm-3.5.0-pyh9f0ad1d_2",
+   "setuptools-scm/conda-forge/noarch/setuptools-scm-4.1.0-pyh9f0ad1d_0",
+   "setuptools-scm/conda-forge/noarch/setuptools-scm-4.1.2-pyh9f0ad1d_0",
+   "setuptools-scm/conda-forge/noarch/setuptools-scm-5.0.1-pyhd3deb0d_0",
+   "setuptools-scm/conda-forge/noarch/setuptools-scm-5.0.2-pyh44b312d_0",
+   "setuptools-scm/conda-forge/noarch/setuptools-scm-6.0.0-pyh44b312d_0",
+   "setuptools_scm/conda-forge/noarch/setuptools_scm-2.1.0-py_1",
+   "setuptools_scm/conda-forge/noarch/setuptools_scm-3.0.2-py_0",
+   "setuptools_scm/conda-forge/noarch/setuptools_scm-3.0.4-py_0",
+   "setuptools_scm/conda-forge/noarch/setuptools_scm-3.0.5-py_0",
+   "setuptools_scm/conda-forge/noarch/setuptools_scm-3.2.0-py_0",
+   "setuptools_scm/conda-forge/noarch/setuptools_scm-3.3.1-py_0",
+   "setuptools_scm/conda-forge/noarch/setuptools_scm-3.3.3-py_0",
+   "setuptools_scm/conda-forge/noarch/setuptools_scm-3.4.2-py_0"
+  ],
   "shutil": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "sympy": [
+   "sympy/conda-forge/linux-64/sympy-1.5.1-py27h8c360ce_2",
+   "sympy/conda-forge/linux-64/sympy-1.5.1-py36_0"
   ],
   "tempfile": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",

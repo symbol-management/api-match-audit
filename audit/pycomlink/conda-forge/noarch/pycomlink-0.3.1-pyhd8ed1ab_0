@@ -13,6 +13,7 @@
   "interpolator",
   "mapping",
   "matplotlib.pyplot.cm.gray_r",
+  "numba.jit",
   "numpy.NaN",
   "numpy.abs",
   "numpy.arange",
@@ -32,10 +33,38 @@
   "numpy.rint",
   "numpy.sqrt",
   "numpy.zeros",
+  "pkg_resources",
+  "pkg_resources.resource_filename",
+  "pycomlink.io.examples.read_one_cml",
+  "pycomlink.io.read_from_cmlh5",
+  "pykrige.OrdinaryKriging",
+  "pyproj",
+  "pyproj.Proj",
+  "pyproj.transform",
+  "scipy",
+  "scipy.interpolate",
+  "scipy.interpolate.interp1d",
   "scipy.spatial.cKDTree",
+  "shapely",
+  "shapely.geometry.LineString",
+  "shapely.geometry.Point",
+  "shapely.geometry.Polygon",
+  "shapely.ops",
+  "shapely.ops.cascaded_union",
+  "tensorflow",
   "tensorflow.compat.v1.ConfigProto",
   "tensorflow.compat.v1.Session",
-  "warnings.warn_explicit"
+  "tensorflow.compat.v1.keras.backend.set_session",
+  "tensorflow.keras.models.model_from_json",
+  "tensorflow.keras.optimizers.SGD",
+  "tqdm.tqdm",
+  "unittest",
+  "unittest.TestCase",
+  "warnings.warn_explicit",
+  "xarray",
+  "xarray.DataArray",
+  "xarray.Dataset",
+  "xarray.concat"
  ],
  "deps": {
   "__future__": [
@@ -86,11 +115,6 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "numba": [
-   "numba/conda-forge/linux-64/numba-0.38.1-py36_0",
-   "numba/conda-forge/linux-64/numba-0.40.0-py35hf8a1672_0",
-   "numba/conda-forge/linux-64/numba-0.41.0-py27h637b7d7_1000"
-  ],
   "numpy": [
    "numpy/conda-forge/linux-64/numpy-1.17.5-py36h95a1406_0",
    "numpy/conda-forge/linux-64/numpy-1.18.4-py37h8960a57_0",
@@ -103,69 +127,14 @@
   "pandas": [
    "pandas/conda-forge/linux-64/pandas-1.2.2-py37h40f5888_0"
   ],
-  "pkg_resources": [
-   "setuptools/conda-forge/linux-64/setuptools-40.6.1-py36_0",
-   "setuptools/conda-forge/linux-64/setuptools-46.3.0-py38h32f6830_0",
-   "setuptools/conda-forge/linux-64/setuptools-49.1.2-py38h32f6830_0"
-  ],
-  "pycomlink": [
-   "pycomlink/conda-forge/noarch/pycomlink-0.2.4-py_0",
-   "pycomlink/conda-forge/noarch/pycomlink-0.2.5-pyh9f0ad1d_0"
-  ],
-  "pykrige": [
-   "pykrige/conda-forge/linux-64/pykrige-1.3.2-np111py36_0",
-   "pykrige/conda-forge/linux-64/pykrige-1.6.0-py37h5e8e339_0"
-  ],
-  "pyproj": [
-   "pyproj/conda-forge/linux-64/pyproj-2.1.3-py37h516909a_0",
-   "pyproj/conda-forge/linux-64/pyproj-2.3.0-py37h2fd02e8_0"
-  ],
   "pytest": [
    "pytest/conda-forge/linux-64/pytest-3.7.0-py27_0",
    "pytest/conda-forge/linux-64/pytest-4.6.0-py37_0",
    "pytest/conda-forge/linux-64/pytest-6.0.2-py37hc8dfbb8_0"
   ],
-  "scipy": [
-   "scipy/conda-forge/linux-64/scipy-0.17.1-np110py27_blas_openblas_202",
-   "scipy/conda-forge/linux-64/scipy-1.7.0-py37h29e03ee_0",
-   "scipy/conda-forge/linux-64/scipy-1.7.0-py37ha768fb6_1"
-  ],
-  "shapely": [
-   "shapely/conda-forge/linux-64/shapely-1.5.15-np19py35_0",
-   "shapely/conda-forge/linux-64/shapely-1.7.1-py37hba0730f_1",
-   "solaris/conda-forge/noarch/solaris-0.4.0-pyhe05a262_0"
-  ],
-  "tensorflow": [],
-  "tqdm": [
-   "tqdm/conda-forge/noarch/tqdm-4.38.0-py_2",
-   "tqdm/conda-forge/noarch/tqdm-4.40.2-py_0",
-   "tqdm/conda-forge/noarch/tqdm-4.42.1-py_0",
-   "tqdm/conda-forge/noarch/tqdm-4.45.0-pyh9f0ad1d_0",
-   "tqdm/conda-forge/noarch/tqdm-4.51.0-pyh9f0ad1d_0",
-   "tqdm/conda-forge/noarch/tqdm-4.52.0-pyhd3deb0d_0",
-   "tqdm/conda-forge/noarch/tqdm-4.55.0-pyhd8ed1ab_0",
-   "tqdm/conda-forge/noarch/tqdm-4.56.0-pyhd8ed1ab_0",
-   "tqdm/conda-forge/noarch/tqdm-4.56.1-pyhd8ed1ab_0",
-   "tqdm/conda-forge/noarch/tqdm-4.60.0-pyhd8ed1ab_0"
-  ],
-  "unittest": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "warnings": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "xarray": [
-   "xarray/conda-forge/noarch/xarray-0.13.0-py_0",
-   "xarray/conda-forge/noarch/xarray-0.14.1-py_0",
-   "xarray/conda-forge/noarch/xarray-0.15.0-py_0",
-   "xarray/conda-forge/noarch/xarray-0.15.1-py_0",
-   "xarray/conda-forge/noarch/xarray-0.16.0-py_0",
-   "xarray/conda-forge/noarch/xarray-0.16.1-py_0",
-   "xarray/conda-forge/noarch/xarray-0.16.2-pyhd8ed1ab_0",
-   "xarray/conda-forge/noarch/xarray-0.18.0-pyhd8ed1ab_0",
-   "xarray/conda-forge/noarch/xarray-0.18.2-pyhd8ed1ab_0"
   ]
  }
 }
