@@ -13,6 +13,7 @@
   "dict.pop",
   "dummy_thread.get_ident",
   "errno",
+  "factory",
   "func",
   "functools.partial",
   "greenlet.getcurrent",
@@ -30,6 +31,8 @@
   "logging.StreamHandler.format",
   "long",
   "multiprocessing.Process",
+  "numbers",
+  "numbers.Integral",
   "object.__setattr__",
   "option",
   "os.EX_OK",
@@ -38,19 +41,35 @@
   "os.getpid",
   "os.kill",
   "os.waitpid",
+  "queue.Queue",
+  "random",
+  "random.choice",
+  "random.seed",
   "re.I",
+  "redis",
+  "redis.Redis",
+  "redis.SSLConnection",
+  "redis.WatchError",
+  "redis.exceptions.ConnectionError",
+  "redis.exceptions.ResponseError",
+  "redis.sentinel.Sentinel",
   "registry.DeferredJobRegistry",
   "registry.FailedJobRegistry",
   "registry.FinishedJobRegistry",
   "registry.ScheduledJobRegistry",
   "registry.StartedJobRegistry",
+  "rq.Worker.all",
   "rq.compat.__init__.PY2",
   "rq.compat.__init__.UTC",
   "rq.worker.WorkerStatus.BUSY",
   "rq.worker.WorkerStatus.IDLE",
   "rq.worker.WorkerStatus.SUSPENDED",
   "script",
+  "sentry_sdk",
+  "sentry_sdk.init",
+  "sentry_sdk.integrations.rq.RqIntegration",
   "setproctitle.setproctitle",
+  "signal",
   "signal.SIGALRM",
   "signal.SIGINT",
   "signal.SIGKILL",
@@ -60,11 +79,14 @@
   "signal.SIG_IGN",
   "signal.Signals",
   "signal.alarm",
-  "socket",
+  "signal.signal",
   "sys",
   "thread.get_ident",
   "time",
   "to_queue",
+  "traceback",
+  "traceback.format_exc",
+  "traceback.format_exception",
   "tuple.__getitem__",
   "unicode",
   "warnings.warn",
@@ -104,14 +126,6 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "factory": [
-   "factory_boy/conda-forge/noarch/factory_boy-2.10.0-py_0",
-   "factory_boy/conda-forge/noarch/factory_boy-2.11.0-py_0",
-   "factory_boy/conda-forge/noarch/factory_boy-2.11.1-py_0",
-   "factory_boy/conda-forge/noarch/factory_boy-2.11.1-pyh9f0ad1d_1",
-   "factory_boy/conda-forge/noarch/factory_boy-3.0.1-pyh9f0ad1d_1",
-   "factory_boy/conda-forge/noarch/factory_boy-3.1.0-pyh9f0ad1d_0"
-  ],
   "functools": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -137,10 +151,6 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "numbers": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "os": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -149,63 +159,11 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "queue": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "random": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "re": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "redis": [
-   "redis-py/conda-forge/noarch/redis-py-3.0.0-py_0",
-   "redis-py/conda-forge/noarch/redis-py-3.1.0-py_0",
-   "redis-py/conda-forge/noarch/redis-py-3.2.1-py_0",
-   "redis-py/conda-forge/noarch/redis-py-3.3.10-py_0",
-   "redis-py/conda-forge/noarch/redis-py-3.3.3-py_0",
-   "redis-py/conda-forge/noarch/redis-py-3.3.5-py_0",
-   "redis-py/conda-forge/noarch/redis-py-3.3.6-py_0",
-   "redis-py/conda-forge/noarch/redis-py-3.3.7-py_0",
-   "redis-py/conda-forge/noarch/redis-py-3.3.8-py_0",
-   "redis-py/conda-forge/noarch/redis-py-3.4.0-py_0",
-   "redis-py/conda-forge/noarch/redis-py-3.4.1-py_0"
-  ],
-  "rq": [
-   "rq/conda-forge/noarch/rq-0.11-py_0",
-   "rq/conda-forge/noarch/rq-1.0-py_1",
-   "rq/conda-forge/noarch/rq-1.2.0-py_0",
-   "rq/conda-forge/noarch/rq-1.2.2-py_0",
-   "rq/conda-forge/noarch/rq-1.5.2-pyhd8ed1ab_0",
-   "rq/conda-forge/noarch/rq-1.6.1-pyhd8ed1ab_0",
-   "rq/conda-forge/noarch/rq-1.8.0-pyhd8ed1ab_0",
-   "rq/conda-forge/noarch/rq-1.9.0-pyhd8ed1ab_0"
-  ],
-  "sentry_sdk": [
-   "sentry-sdk/conda-forge/noarch/sentry-sdk-0.15.0-pyh9f0ad1d_0",
-   "sentry-sdk/conda-forge/noarch/sentry-sdk-0.16.2-pyh9f0ad1d_0",
-   "sentry-sdk/conda-forge/noarch/sentry-sdk-0.17.0-pyh9f0ad1d_0",
-   "sentry-sdk/conda-forge/noarch/sentry-sdk-0.17.4-pyh9f0ad1d_0",
-   "sentry-sdk/conda-forge/noarch/sentry-sdk-0.17.5-pyh9f0ad1d_0",
-   "sentry-sdk/conda-forge/noarch/sentry-sdk-0.17.6-pyh9f0ad1d_0",
-   "sentry-sdk/conda-forge/noarch/sentry-sdk-0.18.0-pyh9f0ad1d_0",
-   "sentry-sdk/conda-forge/noarch/sentry-sdk-0.19.0-pyh9f0ad1d_0",
-   "sentry-sdk/conda-forge/noarch/sentry-sdk-0.19.3-pyhd3deb0d_0",
-   "sentry-sdk/conda-forge/noarch/sentry-sdk-0.19.4-pyhd3deb0d_0",
-   "sentry-sdk/conda-forge/noarch/sentry-sdk-0.20.0-pyh44b312d_0",
-   "sentry-sdk/conda-forge/noarch/sentry-sdk-0.20.2-pyh44b312d_0",
-   "sentry-sdk/conda-forge/noarch/sentry-sdk-0.20.3-pyh44b312d_0",
-   "sentry-sdk/conda-forge/noarch/sentry-sdk-0.7.6-py_0",
-   "sentry-sdk/conda-forge/noarch/sentry-sdk-1.2.0-pyhd8ed1ab_0"
-  ],
-  "signal": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "traceback": [
+  "socket": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
