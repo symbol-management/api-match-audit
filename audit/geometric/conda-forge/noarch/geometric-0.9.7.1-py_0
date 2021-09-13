@@ -18,8 +18,13 @@
   "addons.using_psi4",
   "addons.using_qcengine",
   "addons.using_rdkit",
+  "argparse",
+  "argparse.ArgumentDefaultsHelpFormatter",
+  "argparse.ArgumentParser",
   "buildbox",
   "byref",
+  "bz2",
+  "bz2.BZ2File",
   "cStringIO.StringIO",
   "c_float",
   "c_int",
@@ -28,9 +33,16 @@
   "convert",
   "covalent",
   "create_string_buffer",
+  "ctypes",
   "deepcopy",
   "dexdum_",
+  "enum.Enum",
+  "filecmp",
+  "filecmp.cmp",
   "finish",
+  "forcebalance",
+  "forcebalance.gmxio.GMX",
+  "forcebalance.output",
   "func",
   "geometric.__init__._versions",
   "geometric.molecule.Elements.index",
@@ -41,12 +53,22 @@
   "geometric.optimize.OPT_STATE.NEEDS_EVALUATION",
   "geometric.optimize.__name__",
   "getLogger",
+  "gzip",
+  "gzip.GzipFile",
+  "imp",
+  "imp.find_module",
+  "importlib.util",
+  "importlib.util.find_spec",
   "io.StringIO",
   "itertools",
   "itertools.izip_longest",
   "load_bz2",
   "load_gz",
   "load_uncompress",
+  "logging",
+  "logging.config",
+  "logging.config.fileConfig",
+  "logging.getLogger",
   "magic_string",
   "mk_amat",
   "multi_dot",
@@ -102,6 +124,10 @@
   "ov",
   "pytest.mark.skipif",
   "readPDB",
+  "shutil",
+  "shutil.copy2",
+  "shutil.copytree",
+  "shutil.move",
   "simtk.openmm.CustomNonbondedForce",
   "simtk.openmm.CustomNonbondedForce.NoCutoff",
   "simtk.unit.kilojoule_per_mole",
@@ -138,15 +164,6 @@
    "pytest/conda-forge/linux-64/pytest-4.6.0-py37_0",
    "pytest/conda-forge/linux-64/pytest-6.0.2-py37hc8dfbb8_0"
   ],
-  "argparse": [
-   "argparse/conda-forge/osx-64/argparse-1.4.0-py26_0",
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "bz2": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "collections": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -155,44 +172,11 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "ctypes": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "datetime": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "enum": [
-   "privy/conda-forge/noarch/privy-6.0.0-py_0",
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "filecmp": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "forcebalance": [
-   "forcebalance/conda-forge/linux-64/forcebalance-1.8.0-py37h6dcda5c_0",
-   "forcebalance/conda-forge/osx-64/forcebalance-1.7.3-py36h63ed162_0"
-  ],
-  "gzip": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "imp": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "importlib": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "json": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "logging": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -269,10 +253,6 @@
    "scipy/conda-forge/linux-64/scipy-1.7.0-py37ha768fb6_1"
   ],
   "select": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "shutil": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
