@@ -6,6 +6,7 @@
   "_python_process_context",
   "_python_process_wait",
   "_read_until_magic_words",
+  "_version.get_versions",
   "app.conf",
   "app.conf.format",
   "app.conf.get",
@@ -15,12 +16,55 @@
   "app.conf.update",
   "app.start",
   "app.task",
+  "astropy.coordinates.ICRS",
+  "astropy.coordinates.SkyCoord",
+  "astropy.io.fits",
+  "astropy.io.fits.getval",
+  "astropy.io.fits.open",
+  "astropy.table",
+  "astropy.table.Table",
+  "astropy.table.Table.read",
+  "astropy.time.Time",
+  "astropy.units",
   "astropy.units.deg",
+  "astropy.units.dimensionless_unscaled",
+  "astropy_healpix.HEALPix",
+  "astropy_healpix.pixel_resolution_to_nside",
+  "asyncio",
+  "asyncio.FIRST_COMPLETED",
+  "asyncio.StreamReader",
+  "asyncio.get_event_loop",
+  "asyncio.streams.StreamReaderProtocol",
+  "asyncio.streams._DEFAULT_LIMIT",
+  "asyncio.subprocess.PIPE",
+  "asyncio.subprocess.Process",
+  "asyncio.subprocess.SubprocessStreamProtocol",
+  "asyncio.wait",
   "bayestar.localize.s",
+  "celery.Celery",
+  "celery.bin.base.Command",
+  "celery.bootsteps",
+  "celery.bootsteps.ConsumerStep",
+  "celery.concurrency.solo",
+  "celery.concurrency.solo.TaskPool",
+  "celery.exceptions",
+  "celery.exceptions.Ignore",
+  "celery.exceptions.Retry",
+  "celery.group",
+  "celery.local.PromiseProxy",
+  "celery.signals.after_setup_logger",
   "celery.signals.after_setup_logger.connect",
+  "celery.task.PeriodicTask",
+  "celery.utils.dispatch.Signal",
+  "celery.utils.log.get_logger",
+  "celery.utils.log.get_task_logger",
   "circulars.create_emcoinc_circular.si",
   "circulars.create_initial_circular.si",
   "circulars.create_retraction_circular.si",
+  "click",
+  "click.group",
+  "click.testing",
+  "click.testing.CliRunner",
   "client.LVAlertClient",
   "comet.utility.WhitelistingFactory",
   "condor.JobAborted",
@@ -34,6 +78,7 @@
   "em_bright.classifier_other",
   "em_bright.em_bright_posterior_samples.s",
   "email.install",
+  "enum.IntEnum",
   "external_skymaps.create_upload_external_skymap",
   "external_skymaps.get_preferred_skymap",
   "external_skymaps.get_upload_external_skymap",
@@ -325,46 +370,15 @@
   "zope.interface.implementer"
  ],
  "deps": {
-  "_asyncio": [
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "_pytest": [
    "pytest/conda-forge/linux-64/pytest-3.7.0-py27_0",
    "pytest/conda-forge/linux-64/pytest-4.6.0-py37_0",
    "pytest/conda-forge/linux-64/pytest-6.0.2-py37hc8dfbb8_0"
   ],
-  "_version": [
-   "diffusioncma/conda-forge/linux-64/diffusioncma-0.5.8-py37h0da4684_0"
-  ],
   "argparse": [
    "argparse/conda-forge/osx-64/argparse-1.4.0-py26_0",
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "astropy": [],
-  "astropy_healpix": [
-   "astropy-healpix/conda-forge/linux-64/astropy-healpix-0.4-py36h7eb728f_0"
-  ],
-  "asyncio": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython"
-  ],
-  "celery": [
-   "celery/conda-forge/linux-64/celery-4.0.1-py35_0",
-   "celery/conda-forge/noarch/celery-4.1.1-py_0",
-   "celery/conda-forge/noarch/celery-4.2.2-py_0",
-   "celery/conda-forge/noarch/celery-4.4.0-py_0",
-   "celery/conda-forge/noarch/celery-4.4.0-py_1",
-   "celery/conda-forge/noarch/celery-4.4.1-py_0",
-   "celery/conda-forge/noarch/celery-4.4.2-pyh8c360ce_0",
-   "celery/conda-forge/noarch/celery-4.4.4-pyh9f0ad1d_0",
-   "celery/conda-forge/noarch/celery-4.4.6-pyh9f0ad1d_0"
-  ],
-  "click": [
-   "click/conda-forge/noarch/click-5.1-py_0",
-   "click/conda-forge/noarch/click-6.7-py_1",
-   "click/conda-forge/noarch/click-7.0-py_0",
-   "click/conda-forge/noarch/click-7.1-pyh8c360ce_0",
-   "click/conda-forge/noarch/click-7.1.1-pyh8c360ce_0"
   ],
   "comet": [
    "comet/conda-forge/noarch/comet-3.1.0-py_0"
@@ -382,11 +396,6 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "distutils": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "enum": [
-   "privy/conda-forge/noarch/privy-6.0.0-py_0",
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],

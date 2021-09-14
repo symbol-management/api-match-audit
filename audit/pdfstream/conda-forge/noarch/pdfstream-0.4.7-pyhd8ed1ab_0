@@ -3,11 +3,32 @@
   "_draw_all",
   "_inject_color",
   "_lower_key",
+  "area_detector_handlers.handlers.AreaDetectorTiffHandler",
+  "bluesky.callbacks.CallbackBase",
+  "bluesky.callbacks.best_effort.BestEffortCallback",
+  "bluesky.callbacks.best_effort.LivePlot",
+  "bluesky.callbacks.best_effort.LiveScatter",
+  "bluesky.callbacks.broker.LiveImage",
+  "bluesky.callbacks.core.CallbackBase",
+  "bluesky.callbacks.core.make_class_safe",
+  "bluesky.callbacks.stream.LiveDispatcher",
+  "bluesky.callbacks.zmq.Publisher",
+  "bluesky.callbacks.zmq.RemoteDispatcher",
   "collections.defaultdict",
+  "configparser.ConfigParser",
+  "configparser.Error",
   "countcolumnsvalues",
+  "databroker.Header",
+  "databroker.catalog",
+  "databroker.core.BlueskyRun",
+  "databroker.v1.Broker",
+  "databroker.v2.Broker",
   "diffpy.pdfgetx",
   "diffpy.pdfgetx.PDFConfig",
   "diffpy.pdfgetx.PDFGetter",
+  "event_model",
+  "event_model.ComposeDescriptorBundle",
+  "event_model.DocumentNames",
   "event_model.DocumentNames.datum",
   "event_model.DocumentNames.datum_page",
   "event_model.DocumentNames.descriptor",
@@ -16,6 +37,14 @@
   "event_model.DocumentNames.resource",
   "event_model.DocumentNames.start",
   "event_model.DocumentNames.stop",
+  "event_model.RunRouter",
+  "event_model._Validator",
+  "event_model.compose_run",
+  "event_model.unpack_event_page",
+  "fabio",
+  "fabio.open",
+  "fire",
+  "fire.Fire",
   "func",
   "func.__name__",
   "get_interp_data",
@@ -23,7 +52,27 @@
   "itertools.chain.from_iterable",
   "main.avg_imgs",
   "main.get_chi",
+  "matplotlib._pylab_helpers.Gcf",
+  "matplotlib._pylab_helpers.Gcf.draw_all",
+  "matplotlib._pylab_helpers.Gcf.get_all_fig_managers",
+  "matplotlib.axes.Axes",
+  "matplotlib.backends.backend_qt5",
+  "matplotlib.backends.backend_qt5._create_qApp",
+  "matplotlib.colors.to_hex",
+  "matplotlib.figure.Figure",
+  "matplotlib.gridspec.GridSpec",
+  "matplotlib.pyplot",
+  "matplotlib.pyplot.colorbar",
+  "matplotlib.pyplot.figure",
+  "matplotlib.pyplot.gca",
+  "matplotlib.pyplot.gcf",
+  "matplotlib.pyplot.rcParams",
+  "matplotlib.pyplot.savefig",
+  "matplotlib.pyplot.show",
+  "matplotlib.ticker.AutoMinorLocator",
+  "matplotlib.widgets.Slider",
   "numba.boolean",
+  "numba.jit",
   "numpy.abs",
   "numpy.arange",
   "numpy.bool",
@@ -31,6 +80,8 @@
   "numpy.invert",
   "numpy.subtract",
   "numpy.zeros",
+  "pathlib.Path",
+  "pathlib.PurePath",
   "pdfgetter",
   "pdfgetter.fq",
   "pdfgetter.gr",
@@ -48,7 +99,11 @@
   "pdfstream.units.LABELS.gr",
   "pdfstream.units.LABELS.iq",
   "pdfstream.units.LABELS.sq",
+  "pkg_resources.resource_filename",
   "rbinned",
+  "subprocess",
+  "subprocess.PIPE",
+  "subprocess.run",
   "suitcase.csv.Serializer",
   "suitcase.json_metadata.Serializer",
   "suitcase.tiff_series.Serializer",
@@ -58,26 +113,13 @@
   "tup.directory",
   "tup.file_prefix",
   "tup.p",
-  "tup.x"
+  "tup.x",
+  "uuid",
+  "uuid.uuid4"
  ],
  "deps": {
-  "_asyncio": [
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "area_detector_handlers": [
-   "area-detector-handlers/conda-forge/noarch/area-detector-handlers-0.0.8-pyhd8ed1ab_0"
-  ],
   "asyncio": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "backports": [
-   "configparser/conda-forge/noarch/configparser-5.0.0-py_0"
-  ],
-  "bluesky": [
-   "bluesky/conda-forge/noarch/bluesky-1.6.1-py_0",
-   "bluesky/conda-forge/noarch/bluesky-1.6.2-py_0",
-   "bluesky/conda-forge/noarch/bluesky-1.6.7-pyhd8ed1ab_0"
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython"
   ],
   "collections": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -86,43 +128,13 @@
   "concurrent": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython"
   ],
-  "configparser": [
-   "configparser/conda-forge/linux-64/configparser-3.7.1-py27_1",
-   "configparser/conda-forge/noarch/configparser-5.0.0-py_0",
-   "configparser/conda-forge/noarch/configparser-5.0.1-py_0",
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "copy": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "databroker": [
-   "databroker/conda-forge/noarch/databroker-1.0.6-pyh9f0ad1d_0",
-   "databroker/conda-forge/noarch/databroker-1.2.1-pyh44b312d_0"
-  ],
   "datetime": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "event_model": [
-   "event-model/conda-forge/noarch/event-model-1.11.0-py_0",
-   "event-model/conda-forge/noarch/event-model-1.11.1-py_0",
-   "event-model/conda-forge/noarch/event-model-1.12.0-py_0",
-   "event-model/conda-forge/noarch/event-model-1.13.0-py_0",
-   "event-model/conda-forge/noarch/event-model-1.13.2-py_0",
-   "event-model/conda-forge/noarch/event-model-1.13.3-py_0",
-   "event-model/conda-forge/noarch/event-model-1.14.0-py_0",
-   "event-model/conda-forge/noarch/event-model-1.15.0-py_0",
-   "event-model/conda-forge/noarch/event-model-1.17.1-pyhd8ed1ab_0"
-  ],
-  "fabio": [
-   "fabio/conda-forge/linux-64/fabio-0.10.0-py36hda16e5c_0",
-   "fabio/conda-forge/linux-64/fabio-0.10.0-py38h8790de6_0"
-  ],
-  "fire": [
-   "fire/conda-forge/noarch/fire-0.1.2-py_0",
-   "fire/conda-forge/noarch/fire-0.4.0-pyh44b312d_0"
   ],
   "functools": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -131,15 +143,6 @@
   "json": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "matplotlib": [
-   "matplotlib-base/conda-forge/linux-64/matplotlib-base-3.1.1-py37hfd891ef_0",
-   "matplotlib-base/conda-forge/linux-64/matplotlib-base-3.1.1-py38h250f245_2"
-  ],
-  "numba": [
-   "numba/conda-forge/linux-64/numba-0.38.1-py36_0",
-   "numba/conda-forge/linux-64/numba-0.40.0-py35hf8a1672_0",
-   "numba/conda-forge/linux-64/numba-0.41.0-py27h637b7d7_1000"
   ],
   "numpy": [
    "numpy/conda-forge/linux-64/numpy-1.17.5-py36h95a1406_0",
@@ -159,16 +162,6 @@
   ],
   "pandas": [
    "pandas/conda-forge/linux-64/pandas-1.2.2-py37h40f5888_0"
-  ],
-  "pathlib": [
-   "pathlib/conda-forge/noarch/pathlib-1.0.1-py_1",
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "pkg_resources": [
-   "setuptools/conda-forge/linux-64/setuptools-40.6.1-py36_0",
-   "setuptools/conda-forge/linux-64/setuptools-46.3.0-py38h32f6830_0",
-   "setuptools/conda-forge/linux-64/setuptools-49.1.2-py38h32f6830_0"
   ],
   "pyFAI": [
    "pyfai-base/conda-forge/linux-64/pyfai-base-0.19.0-py37h10a2094_2",
@@ -193,10 +186,6 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "subprocess": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "tifffile": [
    "tifffile/conda-forge/linux-64/tifffile-0.14.0-py35_1",
    "tifffile/conda-forge/noarch/tifffile-2020.11.18-pyhd8ed1ab_0",
@@ -213,10 +202,6 @@
    "tifffile/conda-forge/noarch/tifffile-2021.8.30-pyhd8ed1ab_0"
   ],
   "typing": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "uuid": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],

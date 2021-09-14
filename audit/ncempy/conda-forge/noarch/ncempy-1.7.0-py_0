@@ -6,10 +6,16 @@
   "genfire.fileio.saveResults",
   "genfire.reconstruct",
   "genfire.reconstruct.GenfireReconstructor",
+  "h5py",
+  "h5py.File",
+  "h5py._hl.group.Group",
+  "hyperspy.api",
+  "hyperspy.api.load",
   "initial_correlation_image",
   "io.StringIO",
   "itertools",
   "matplotlib.cm.gray",
+  "mmap",
   "ncempy.viz.__init__.imfft",
   "numpy.abs",
   "numpy.arange",
@@ -48,15 +54,29 @@
   "os.path.isfile",
   "os.remove",
   "os.stat",
+  "pathlib.Path",
+  "pickle",
+  "pickle.dump",
+  "pickle.load",
   "proc_group",
+  "scipy.interpolate",
+  "scipy.ndimage",
+  "scipy.ndimage.filters",
+  "scipy.ndimage.interpolation.shift",
+  "scipy.ndimage.map_coordinates",
+  "scipy.optimize",
+  "scipy.special",
+  "shutil",
+  "shutil.copyfile",
+  "skimage.external.tifffile",
+  "skimage.external.tifffile.imread",
+  "skimage.external.tifffile.imsave",
   "sys",
-  "upsampled_correlation"
+  "upsampled_correlation",
+  "xml.etree.ElementTree",
+  "xml.etree.ElementTree.fromstring"
  ],
  "deps": {
-  "_pickle": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "argparse": [
    "argparse/conda-forge/osx-64/argparse-1.4.0-py26_0",
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -78,14 +98,6 @@
    "glob2/conda-forge/noarch/glob2-0.6-py_0",
    "glob2/conda-forge/noarch/glob2-0.7-py_0"
   ],
-  "h5py": [
-   "h5py/conda-forge/linux-64/h5py-2.10.0-nompi_py37hf7afa78_105",
-   "h5py/conda-forge/linux-64/h5py-2.6.0-np111py34_4",
-   "h5py/conda-forge/linux-64/h5py-2.7.0-np113py36_1"
-  ],
-  "hyperspy": [
-   "hyperspy/conda-forge/linux-64/hyperspy-1.1.2-py34_0"
-  ],
   "json": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -94,10 +106,6 @@
    "matplotlib-base/conda-forge/linux-64/matplotlib-base-3.1.1-py37hfd891ef_0",
    "matplotlib-base/conda-forge/linux-64/matplotlib-base-3.1.1-py38h250f245_2",
    "matplotlib/conda-forge/linux-64/matplotlib-1.5.3-np111py34_0"
-  ],
-  "mmap": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "ntpath": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -112,33 +120,7 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "pathlib": [
-   "pathlib/conda-forge/noarch/pathlib-1.0.1-py_1",
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "pickle": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "re": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "scipy": [
-   "scipy/conda-forge/linux-64/scipy-0.17.1-np110py27_blas_openblas_202",
-   "scipy/conda-forge/linux-64/scipy-1.7.0-py37h29e03ee_0",
-   "scipy/conda-forge/linux-64/scipy-1.7.0-py37ha768fb6_1"
-  ],
-  "shutil": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "skimage": [
-   "scikit-image/conda-forge/linux-64/scikit-image-0.12.3-np112py27_1",
-   "scikit-image/conda-forge/win-64/scikit-image-0.13.0-np113py36_0"
-  ],
-  "xml": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ]

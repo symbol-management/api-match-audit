@@ -3,9 +3,16 @@
   "StringIO.StringIO",
   "_read_tle_decimal",
   "_xarr_conv",
+  "dask.array",
+  "dask.array.Array",
+  "dask.array.from_array",
+  "dask.array.where",
+  "elevation",
   "fprime",
   "get_max_parab",
   "get_root",
+  "glob",
+  "glob.glob",
   "io.StringIO",
   "io.open",
   "mpl_toolkits.basemap.Basemap",
@@ -40,51 +47,32 @@
   "os.path.isfile",
   "os.remove",
   "os.write",
+  "pprint",
+  "pprint.pprint",
   "pyorbital.tests.__init__.suite",
+  "scipy.optimize",
+  "scipy.optimize.brentq",
   "str.split",
   "sys",
+  "tempfile.mkstemp",
+  "unittest",
+  "unittest.TestCase",
+  "unittest.TestLoader",
+  "unittest.TestSuite",
+  "unittest.TextTestRunner",
+  "urllib.request.urlopen",
   "urllib2.urlopen",
   "vnorm",
-  "warnings.warn"
+  "warnings.warn",
+  "xarray",
+  "xarray.DataArray"
  ],
  "deps": {
   "__future__": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "dask": [
-   "dask-core/conda-forge/noarch/dask-core-0.17.5-py_0",
-   "dask-core/conda-forge/noarch/dask-core-0.18.0-py_0",
-   "dask-core/conda-forge/noarch/dask-core-0.20.1-py_0",
-   "dask-core/conda-forge/noarch/dask-core-1.1.1-py_0",
-   "dask-core/conda-forge/noarch/dask-core-1.1.2-py_0",
-   "dask-core/conda-forge/noarch/dask-core-1.1.4-py_0",
-   "dask-core/conda-forge/noarch/dask-core-2.10.1-py_0",
-   "dask-core/conda-forge/noarch/dask-core-2.13.0-py_0",
-   "dask-core/conda-forge/noarch/dask-core-2.17.2-py_0",
-   "dask-core/conda-forge/noarch/dask-core-2.18.0-py_0",
-   "dask-core/conda-forge/noarch/dask-core-2.22.0-py_0",
-   "dask-core/conda-forge/noarch/dask-core-2.25.0-py_0",
-   "dask-core/conda-forge/noarch/dask-core-2.27.0-py_0",
-   "dask-core/conda-forge/noarch/dask-core-2.6.0-py_0",
-   "dask-core/conda-forge/noarch/dask-core-2.8.1-py_0",
-   "dask-core/conda-forge/noarch/dask-core-2020.12.0-pyhd8ed1ab_0",
-   "dask-core/conda-forge/noarch/dask-core-2021.3.1-pyhd8ed1ab_0",
-   "dask-core/conda-forge/noarch/dask-core-2021.4.0-pyhd8ed1ab_0",
-   "dask-core/conda-forge/noarch/dask-core-2021.4.1-pyhd8ed1ab_0",
-   "dask-core/conda-forge/noarch/dask-core-2021.5.1-pyhd8ed1ab_0"
-  ],
   "datetime": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "elevation": [
-   "elevation/conda-forge/noarch/elevation-1.0.6-py_0",
-   "elevation/conda-forge/noarch/elevation-1.1.0-pyhd8ed1ab_0",
-   "elevation/conda-forge/noarch/elevation-1.1.2-pyhd8ed1ab_0",
-   "elevation/conda-forge/noarch/elevation-1.1.3-pyhd8ed1ab_0"
-  ],
-  "glob": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -118,43 +106,9 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "pprint": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "scipy": [
-   "scipy/conda-forge/linux-64/scipy-0.17.1-np110py27_blas_openblas_202",
-   "scipy/conda-forge/linux-64/scipy-1.7.0-py37h29e03ee_0",
-   "scipy/conda-forge/linux-64/scipy-1.7.0-py37ha768fb6_1"
-  ],
-  "tempfile": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "unittest": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "urllib": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "warnings": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "xarray": [
-   "xarray/conda-forge/linux-64/xarray-0.10.2-py36_0",
-   "xarray/conda-forge/noarch/xarray-0.12.0-py_0",
-   "xarray/conda-forge/noarch/xarray-0.13.0-py_0",
-   "xarray/conda-forge/noarch/xarray-0.14.1-py_0",
-   "xarray/conda-forge/noarch/xarray-0.15.0-py_0",
-   "xarray/conda-forge/noarch/xarray-0.15.1-py_0",
-   "xarray/conda-forge/noarch/xarray-0.16.0-py_0",
-   "xarray/conda-forge/noarch/xarray-0.16.1-py_0",
-   "xarray/conda-forge/noarch/xarray-0.16.2-pyhd8ed1ab_0",
-   "xarray/conda-forge/noarch/xarray-0.18.0-pyhd8ed1ab_0",
-   "xarray/conda-forge/noarch/xarray-0.18.2-pyhd8ed1ab_0"
   ]
  }
 }
