@@ -4,52 +4,12 @@
   "_init_db",
   "_self",
   "_type_name",
-  "aiohttp.web",
-  "aiohttp.web.Application",
-  "aiomysql",
-  "aiomysql.Pool",
-  "aiomysql.create_pool",
-  "aiosqlite",
-  "aiosqlite.connect",
-  "astroid.MANAGER",
   "astroid.MANAGER.ast_from_module_name",
   "astroid.MANAGER.register_transform",
-  "astroid.exceptions.AstroidError",
-  "astroid.inference_tip",
-  "astroid.node_classes.AnnAssign",
-  "astroid.node_classes.Assign",
-  "astroid.nodes",
-  "astroid.nodes.ClassDef",
-  "asyncio",
-  "asyncio.TimeoutError",
-  "asyncio.events.AbstractEventLoop",
-  "asyncio.gather",
-  "asyncio.get_event_loop",
-  "asyncio.get_event_loop_policy",
-  "asyncio.iscoroutine",
-  "asyncio.iscoroutinefunction",
-  "asyncio.new_event_loop",
-  "asyncio.set_event_loop_policy",
-  "asyncio.wait_for",
   "asyncmy",
   "asyncmy.charset.charset_by_name",
   "asyncmy.errors",
-  "asyncpg",
-  "asyncpg.IntegrityConstraintViolationError",
-  "asyncpg.InvalidCatalogNameError",
-  "asyncpg.InvalidTransactionStateError",
   "asyncpg.Record",
-  "asyncpg.SyntaxOrAccessError",
-  "asyncpg.connection.Connection",
-  "asyncpg.create_pool",
-  "asyncpg.exceptions.DataError",
-  "asyncpg.transaction.Transaction",
-  "asynctest.TestCase",
-  "asynctest._fail_on",
-  "asynctest._fail_on._FAIL_ON_ATTR",
-  "asynctest._fail_on._fail_on",
-  "asynctest.case._Policy",
-  "base64.b32encode",
   "blacksheep.JSONContent",
   "blacksheep.Request",
   "blacksheep.Response",
@@ -83,16 +43,6 @@
   "cls._meta.pk_attr.describe",
   "cls._meta.table_description",
   "cls._meta.unique_together",
-  "copy.copy",
-  "copy.deepcopy",
-  "datetime",
-  "datetime.date",
-  "datetime.datetime",
-  "datetime.datetime.fromtimestamp",
-  "datetime.datetime.now",
-  "datetime.time",
-  "datetime.timedelta",
-  "datetime.tzinfo",
   "default_name",
   "dict.fromkeys",
   "encoder",
@@ -109,12 +59,6 @@
   "inner",
   "listener",
   "method",
-  "operator",
-  "operator.eq",
-  "operator.ge",
-  "operator.gt",
-  "operator.le",
-  "operator.lt",
   "operator_",
   "os.environ.get",
   "os.remove",
@@ -140,7 +84,6 @@
   "pypika.enums.SqlTypes.NUMERIC",
   "pypika.enums.SqlTypes.VARCHAR",
   "pypika.terms.Equality.eq",
-  "pypika.terms.date",
   "pytz.utc",
   "r",
   "rapidjson",
@@ -207,14 +150,50 @@
   "unittest.expectedFailure.__doc__",
   "urllib.parse.uses_netloc.append",
   "v",
-  "warnings",
   "warnings.warn"
  ],
  "deps": {
+  "_asyncio": [
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "_contextvars": [
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "abc": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "aiohttp": [
+   "aiohttp/conda-forge/linux-64/aiohttp-3.6.3-py36h97a6639_2",
+   "aiohttp/conda-forge/linux-64/aiohttp-3.7.1-py37h8f50634_0",
+   "aiohttp/conda-forge/linux-64/aiohttp-3.7.2-py37h8f50634_0"
+  ],
+  "aiomysql": [
+   "aiomysql/conda-forge/noarch/aiomysql-0.0.20-py_1000",
+   "aiomysql/conda-forge/noarch/aiomysql-0.0.21-pyhd8ed1ab_0"
+  ],
+  "aiosqlite": [
+   "aiosqlite/conda-forge/noarch/aiosqlite-0.10.0-py_0",
+   "aiosqlite/conda-forge/noarch/aiosqlite-0.12.0-py_0",
+   "aiosqlite/conda-forge/noarch/aiosqlite-0.16.0-pyhd8ed1ab_0",
+   "aiosqlite/conda-forge/noarch/aiosqlite-0.16.1-pyhd8ed1ab_0",
+   "aiosqlite/conda-forge/noarch/aiosqlite-0.17.0-pyhd8ed1ab_0",
+   "aiosqlite/conda-forge/noarch/aiosqlite-0.9.0-py_0"
+  ],
+  "astroid": [
+   "astroid/conda-forge/linux-64/astroid-2.3.3-py38h32f6830_3",
+   "astroid/conda-forge/linux-64/astroid-2.4.2-py36h9f0ad1d_0"
+  ],
+  "asyncio": [],
+  "asyncpg": [
+   "asyncpg/conda-forge/linux-64/asyncpg-0.20.1-py37h516909a_0",
+   "asyncpg/conda-forge/linux-64/asyncpg-0.21.0-py39hbd71b63_1"
+  ],
+  "asynctest": [
+   "asynctest/conda-forge/noarch/asynctest-0.12.2-py_0",
+   "asynctest/conda-forge/noarch/asynctest-0.13.0-py_0"
+  ],
+  "base64": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -223,6 +202,14 @@
    "contextvars/conda-forge/noarch/contextvars-2.2-py_0",
    "contextvars/conda-forge/noarch/contextvars-2.3-py_0",
    "contextvars/conda-forge/noarch/contextvars-2.4-py_0",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "copy": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "datetime": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "decimal": [
@@ -284,6 +271,10 @@
    "nose2/conda-forge/noarch/nose2-0.9.0-py_0"
   ],
   "ntpath": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "operator": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -393,6 +384,10 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "uuid": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "warnings": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
