@@ -27,47 +27,9 @@
   "is_chunk_key",
   "is_zarr_key",
   "itertools",
-  "keyword.iskeyword",
-  "mmap",
-  "mmap.mmap",
   "multiprocessing.Pool",
   "multiprocessing.cpu_count",
   "norm",
-  "numbers",
-  "numbers.Integral",
-  "numcodecs",
-  "numcodecs.Adler32",
-  "numcodecs.AsType",
-  "numcodecs.BZ2",
-  "numcodecs.Blosc",
-  "numcodecs.Categorize",
-  "numcodecs.Delta",
-  "numcodecs.FixedScaleOffset",
-  "numcodecs.GZip",
-  "numcodecs.JSON",
-  "numcodecs.LZ4",
-  "numcodecs.LZMA",
-  "numcodecs.MsgPack",
-  "numcodecs.PackBits",
-  "numcodecs.Pickle",
-  "numcodecs.Quantize",
-  "numcodecs.VLenArray",
-  "numcodecs.VLenBytes",
-  "numcodecs.VLenUTF8",
-  "numcodecs.Zlib",
-  "numcodecs.abc.Codec",
-  "numcodecs.blosc.cbuffer_metainfo",
-  "numcodecs.blosc.cbuffer_sizes",
-  "numcodecs.compat.ensure_bytes",
-  "numcodecs.compat.ensure_contiguous_ndarray",
-  "numcodecs.compat.ensure_ndarray",
-  "numcodecs.compat.ensure_text",
-  "numcodecs.compat.ndarray_copy",
-  "numcodecs.get_codec",
-  "numcodecs.registry.codec_registry",
-  "numcodecs.registry.get_codec",
-  "numcodecs.registry.register_codec",
-  "numcodecs.tests.common.greetings",
   "numpy.NINF",
   "numpy.PINF",
   "numpy.arange",
@@ -94,9 +56,6 @@
   "numpy.uint64",
   "numpy.uint8",
   "numpy.zeros",
-  "operator",
-  "operator.itemgetter",
-  "operator.mul",
   "os.environ.get",
   "os.listdir",
   "os.path.exists",
@@ -108,18 +67,12 @@
   "os.scandir",
   "os.stat",
   "os.umask",
-  "pickle",
-  "pickle.PicklingError",
-  "pickle.dumps",
-  "pickle.loads",
   "pop_fields",
   "prep_source",
   "pytest.mark.parametrize",
   "pytest.mark.skipif",
   "pytest.mark.usefixtures",
   "pytest.mark.xfail",
-  "shlex",
-  "shlex.split",
   "storage.ConsolidatedMetadataStore",
   "storage._prog_ckey.match",
   "storage._prog_number.match",
@@ -128,28 +81,20 @@
   "struct.pack",
   "struct.unpack",
   "sys",
-  "textwrap",
-  "textwrap.TextWrapper",
-  "textwrap.dedent",
   "time",
   "typestr",
-  "unittest",
-  "unittest.TestCase",
-  "unittest.mock",
   "unittest.mock.patch.dict",
-  "unittest.skipIf",
-  "uuid",
-  "uuid.uuid4",
   "warnings.warn",
   "zarr.__file__",
   "zarr.hierarchy.group.create_dataset",
   "zarr.storage.default_compressor.get_config",
-  "zarr.version.version.startswith",
-  "zipfile",
-  "zipfile.ZipFile",
-  "zipfile.ZipInfo"
+  "zarr.version.version.startswith"
  ],
  "deps": {
+  "_pickle": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "_pytest": [
    "pytest/conda-forge/linux-64/pytest-3.7.0-py27_0",
    "pytest/conda-forge/linux-64/pytest-4.6.0-py37_0",
@@ -239,7 +184,15 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "keyword": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "math": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "mmap": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -251,9 +204,20 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "numbers": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "numcodecs": [
+   "numcodecs/conda-forge/linux-64/numcodecs-0.6.4-py27he1b5a44_0"
+  ],
   "numpy": [
    "numpy/conda-forge/linux-64/numpy-1.17.5-py36h95a1406_0",
    "numpy/conda-forge/linux-64/numpy-1.18.4-py37h8960a57_0"
+  ],
+  "operator": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "os": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -261,6 +225,10 @@
   ],
   "pathlib": [
    "pathlib/conda-forge/noarch/pathlib-1.0.1-py_1",
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "pickle": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -275,6 +243,10 @@
    "pytest/conda-forge/linux-64/pytest-6.0.2-py37hc8dfbb8_0"
   ],
   "re": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "shlex": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -294,6 +266,10 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "textwrap": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "threading": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -302,7 +278,19 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "unittest": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "uuid": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "warnings": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "zipfile": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ]

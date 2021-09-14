@@ -22,15 +22,8 @@
   "HasFuncDefaultInt",
   "HasFuncDefaultModel",
   "HasListDefault",
-  "IPython",
-  "IPython.__version__",
-  "IPython.core.display.HTML",
-  "IPython.core.display.display",
-  "IPython.core.displaypub",
-  "IPython.core.displaypub.publish_display_data",
   "IPython.display.HTML",
   "IPython.display.display",
-  "IPython.lib.pretty.RepresentationPrinter",
   "IncludeDefaultsKwargsTest",
   "IncludeDefaultsSetToSameTest",
   "IncludeDefaultsTest",
@@ -234,6 +227,13 @@
   "core.templates.PLOT_DIV.render",
   "core.templates.SCRIPT_TAG.render",
   "data_source.ChartDataSource.is_number",
+  "dateutil.parser",
+  "dateutil.relativedelta",
+  "dateutil.relativedelta.relativedelta",
+  "decimal",
+  "decimal.Decimal",
+  "difflib",
+  "difflib.get_close_matches",
   "document.Document._compute_patch_between_json",
   "enums.NamedColor",
   "enums.__dict__.items",
@@ -248,6 +248,7 @@
   "faulthandler",
   "file_output.FileOutputSubcommand.files_arg",
   "file_output.FileOutputSubcommand.other_args",
+  "flexx.pyscript.window",
   "flexx.pyscript.window.Math.cos",
   "fn",
   "foo",
@@ -260,15 +261,22 @@
   "glyph_class",
   "glyph_type",
   "good",
+  "gzip",
+  "gzip.open",
   "handler",
   "has_props.HasProps",
+  "hashlib",
   "hashlib.md5",
   "hashlib.sha256",
   "hidden_row",
+  "hmac",
   "hmac.compare_digest",
+  "hmac.new",
+  "icalendar.Calendar",
   "icalendar.Calendar.from_ical",
   "if_installed",
-  "io",
+  "importlib",
+  "importlib.import_module",
   "io.BytesIO",
   "io.curdoc",
   "io.open",
@@ -276,7 +284,12 @@
   "itertools.chain.from_iterable",
   "itertools.imap",
   "itertools.izip",
+  "json",
+  "json.JSONEncoder",
+  "json.dumps",
   "json.items",
+  "json.load",
+  "json.loads",
   "locator",
   "make_gh_link_node",
   "matplotlib.colors.colorConverter.to_rgb",
@@ -375,6 +388,8 @@
   "numpy.uint8",
   "numpy.void",
   "numpy.zeros",
+  "operator",
+  "operator.itemgetter",
   "options",
   "os.W_OK",
   "os.X_OK",
@@ -437,8 +452,16 @@
   "several_steps",
   "should_discard",
   "should_discard_ignoring_block",
+  "signal",
   "signal.SIGTERM",
+  "signal.signal",
+  "six",
+  "six.PY2",
   "six.StringIO",
+  "six.binary_type",
+  "six.class_types",
+  "six.iteritems",
+  "six.iterkeys",
   "six.moves.urllib",
   "six.moves.urllib.error.HTTPError",
   "six.moves.urllib.error.URLError",
@@ -449,6 +472,11 @@
   "six.moves.urllib.request.urlopen",
   "six.moves.xrange",
   "six.moves.zip",
+  "six.reraise",
+  "six.string_types",
+  "six.text_type",
+  "socket",
+  "socket.socket",
   "sphinx.directives.code.CodeBlock.option_spec",
   "sphinx.util.compat.Directive",
   "sphinx.util.console.brown",
@@ -480,6 +508,9 @@
   "type.__init__",
   "type.__new__",
   "type.setter",
+  "urllib",
+  "urllib.parse",
+  "urllib.parse.quote_plus",
   "urllib.quote_plus",
   "util.compiler.bundle_all_models",
   "util.serialization.make_id",
@@ -507,6 +538,11 @@
   "xml.etree.cElementTree.fromstring"
  ],
  "deps": {
+  "IPython": [
+   "ipython/conda-forge/linux-64/ipython-5.0.0-py34_1",
+   "ipython/conda-forge/linux-64/ipython-7.10.2-py36h5ca1d4c_0",
+   "ipython/conda-forge/linux-64/ipython-7.12.0-py36h5ca1d4c_0"
+  ],
   "__future__": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -591,49 +627,10 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "dateutil": [
-   "python-dateutil/conda-forge/noarch/python-dateutil-2.7.2-py_0",
-   "python-dateutil/conda-forge/noarch/python-dateutil-2.7.4-py_0",
-   "python-dateutil/conda-forge/noarch/python-dateutil-2.7.5-py_0",
-   "python-dateutil/conda-forge/noarch/python-dateutil-2.8.1-py_0",
-   "python-dateutil/conda-forge/noarch/python-dateutil-2.8.2-pyhd8ed1ab_0"
-  ],
-  "decimal": [
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "difflib": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "docutils": [
    "docutils/conda-forge/linux-64/docutils-0.16-py27h8c360ce_1"
   ],
-  "flexx": [
-   "flexx/conda-forge/noarch/flexx-0.4.1-py_1"
-  ],
   "functools": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "gzip": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "hashlib": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "hmac": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "icalendar": [
-   "icalendar/conda-forge/noarch/icalendar-4.0.2-py_1",
-   "icalendar/conda-forge/noarch/icalendar-4.0.3-py_0",
-   "icalendar/conda-forge/noarch/icalendar-4.0.4-py_0"
-  ],
-  "importlib": [
-   "importlib/conda-forge/linux-64/importlib-1.0.4-py26_0",
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -648,6 +645,10 @@
    "invoke/conda-forge/noarch/invoke-1.5.0-pyhd3deb0d_0",
    "invoke/conda-forge/noarch/invoke-1.6.0-pyhd8ed1ab_0"
   ],
+  "io": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "ipykernel": [
    "ipykernel/conda-forge/linux-64/ipykernel-4.10.0-py27_1",
    "ipykernel/conda-forge/linux-64/ipykernel-5.3.1-py37h43977f1_0",
@@ -658,10 +659,6 @@
    "jinja2/conda-forge/noarch/jinja2-2.11.3-pyh44b312d_0",
    "jinja2/conda-forge/noarch/jinja2-3.0.0-pyhd8ed1ab_0",
    "jinja2/conda-forge/noarch/jinja2-3.0.1-pyhd8ed1ab_0"
-  ],
-  "json": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "logging": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -700,10 +697,6 @@
   "numpy": [
    "numpy/conda-forge/linux-64/numpy-1.17.5-py36h95a1406_0",
    "numpy/conda-forge/linux-64/numpy-1.18.4-py37h8960a57_0"
-  ],
-  "operator": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "os": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -760,24 +753,6 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "signal": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "six": [
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0",
-   "lldb/conda-forge/linux-64/lldb-6.0.0-py35_0",
-   "privy/conda-forge/noarch/privy-6.0.0-py_0",
-   "six/conda-forge/linux-64/six-1.10.0-py34_0",
-   "six/conda-forge/linux-64/six-1.10.0-py34_1",
-   "six/conda-forge/noarch/six-1.14.0-py_1",
-   "six/conda-forge/noarch/six-1.16.0-pyh6c4a22f_0"
-  ],
-  "socket": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "sphinx": [
    "sphinx/conda-forge/linux-64/sphinx-1.8.3-py36_1000",
    "sphinx/conda-forge/noarch/sphinx-2.0.0-py_1",
@@ -819,10 +794,6 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "unittest": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "urllib": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],

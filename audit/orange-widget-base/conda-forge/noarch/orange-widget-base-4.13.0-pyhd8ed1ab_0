@@ -470,7 +470,6 @@
   "MockWidget.inputs",
   "MockWidget.outputs",
   "Obj",
-  "Orange.widgets.utils.SVGExporter.SVGExporter",
   "PyBridge",
   "PyQt5.QtCore.QAbstractItemModel",
   "PyQt5.QtCore.QItemSelection",
@@ -501,9 +500,6 @@
   "_ispending",
   "_parse_call_signal_id",
   "_set_control_value",
-  "abc",
-  "abc.ABC",
-  "abc.abstractmethod",
   "action_int",
   "action_str",
   "add_version",
@@ -588,28 +584,63 @@
   "modeldata",
   "msg",
   "normalize",
-  "numpy",
-  "numpy.all",
   "numpy.arange",
-  "numpy.argsort",
-  "numpy.array",
-  "numpy.asarray",
   "numpy.bool_",
   "numpy.datetime64",
   "numpy.float16",
   "numpy.floating",
-  "numpy.get_printoptions",
   "numpy.int64",
   "numpy.integer",
-  "numpy.ndarray",
-  "numpy.r_",
-  "numpy.set_printoptions",
   "numpy.str_",
-  "numpy.where",
+  "operator",
+  "operator.attrgetter",
+  "operator.eq",
+  "operator.index",
+  "operator.ior",
+  "operator.itemgetter",
+  "orangecanvas.application.canvasmain.CanvasMainWindow",
+  "orangecanvas.config",
+  "orangecanvas.config.Default",
+  "orangecanvas.document.interactions.EntryPoint",
+  "orangecanvas.document.interactions.NodeFromMimeDataDropHandler",
+  "orangecanvas.document.interactions.PluginDropHandler",
+  "orangecanvas.document.schemeedit.SchemeEditWidget",
+  "orangecanvas.gui.svgiconengine.SvgIconEngine",
+  "orangecanvas.registry.OutputSignal",
+  "orangecanvas.registry.WidgetDescription",
+  "orangecanvas.registry.WidgetRegistry",
+  "orangecanvas.registry.description.Default",
+  "orangecanvas.registry.description.Dynamic",
+  "orangecanvas.registry.description.Explicit",
+  "orangecanvas.registry.description.InputSignal",
+  "orangecanvas.registry.description.Multiple",
+  "orangecanvas.registry.description.NonDefault",
+  "orangecanvas.registry.description.OutputSignal",
+  "orangecanvas.registry.description.Single",
+  "orangecanvas.registry.discovery",
+  "orangecanvas.registry.discovery.WidgetDiscovery",
+  "orangecanvas.registry.discovery.WidgetSpecificationError",
+  "orangecanvas.registry.discovery.asmodule",
+  "orangecanvas.resources.icon_loader",
   "orangecanvas.resources.icon_loader.from_description",
+  "orangecanvas.scheme.Scheme",
+  "orangecanvas.scheme.SchemeNode",
+  "orangecanvas.scheme.SchemeNode.Invalidated",
+  "orangecanvas.scheme.SchemeNode.NoState",
+  "orangecanvas.scheme.SchemeNode.NotReady",
+  "orangecanvas.scheme.SchemeNode.Pending",
+  "orangecanvas.scheme.SchemeNode.Running",
+  "orangecanvas.scheme.SchemeNode.connect",
+  "orangecanvas.scheme.node.UserMessage",
+  "orangecanvas.scheme.signalmanager.Signal",
   "orangecanvas.scheme.signalmanager.Signal.Close",
   "orangecanvas.scheme.signalmanager.Signal.New",
+  "orangecanvas.scheme.signalmanager.SignalManager",
+  "orangecanvas.scheme.signalmanager.compress_signals",
+  "orangecanvas.scheme.widgetmanager.WidgetManager",
   "orangecanvas.scheme.widgetmanager.WidgetManager.DelayDeleteMask",
+  "orangecanvas.utils.name_lookup",
+  "orangecanvas.utils.qualified_name",
   "orangewidget.gui.OWComponent.__init__",
   "orangewidget.io.ClipboardFormat.write_image",
   "orangewidget.io.Compression.all",
@@ -682,6 +713,7 @@
   "setter",
   "show_link_contents",
   "shown",
+  "signal",
   "signal.default",
   "signal.type",
   "signal_from_args",
@@ -703,6 +735,12 @@
   "traverse",
   "type.__new__",
   "unittest.mock.patch.object",
+  "urllib.error.URLError",
+  "urllib.parse.urlencode",
+  "urllib.parse.urljoin",
+  "urllib.request.build_opener",
+  "urllib.request.pathname2url",
+  "urllib.request.urlopen",
   "userdata",
   "warnings.warn",
   "weakref.ref",
@@ -718,7 +756,15 @@
    "anyqt/conda-forge/noarch/anyqt-0.0.12-pyh44b312d_0",
    "anyqt/conda-forge/noarch/anyqt-0.0.13-pyh6c4a22f_0"
   ],
+  "Orange": [
+   "orange3/conda-forge/linux-64/orange3-3.25.0-py36h831f99a_1",
+   "orange3/conda-forge/linux-64/orange3-3.25.0-py37h3340039_1"
+  ],
   "_pickle": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "abc": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -765,12 +811,6 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "importlib_metadata": [
-   "importlib-metadata/conda-forge/linux-64/importlib-metadata-3.9.0-py38h578d9bd_0",
-   "importlib-metadata/conda-forge/noarch/importlib-metadata-1.7.0-pyhd8ed1ab_1",
-   "importlib-metadata/conda-forge/noarch/importlib-metadata-3.0.0-pyhd8ed1ab_0",
-   "importlib_metadata/conda-forge/linux-64/importlib_metadata-1.1.1-py37_0"
-  ],
   "inspect": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -799,12 +839,20 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "operator": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  "numpy": [
+   "numpy/conda-forge/linux-64/numpy-1.17.5-py36h95a1406_0",
+   "numpy/conda-forge/linux-64/numpy-1.18.4-py37h8960a57_0",
+   "numpy/conda-forge/linux-64/numpy-1.19.2-py36h68c22af_1"
   ],
-  "orangecanvas": [
-   "orange-canvas-core/conda-forge/noarch/orange-canvas-core-0.1.21-pyhd8ed1ab_0"
+  "orangewidget": [
+   "orange-widget-base/conda-forge/noarch/orange-widget-base-4.0.1-py_0",
+   "orange-widget-base/conda-forge/noarch/orange-widget-base-4.1.0-py_0",
+   "orange-widget-base/conda-forge/noarch/orange-widget-base-4.11.0-pyhd8ed1ab_0",
+   "orange-widget-base/conda-forge/noarch/orange-widget-base-4.13.0-pyhd8ed1ab_0",
+   "orange-widget-base/conda-forge/noarch/orange-widget-base-4.4.0-py_0",
+   "orange-widget-base/conda-forge/noarch/orange-widget-base-4.4.0-py_1",
+   "orange-widget-base/conda-forge/noarch/orange-widget-base-4.7.0-py_0",
+   "orange-widget-base/conda-forge/noarch/orange-widget-base-4.8.0-py_0"
   ],
   "os": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -848,10 +896,6 @@
    "requests/conda-forge/noarch/requests-2.25.1-pyhd3deb0d_0",
    "requests/conda-forge/noarch/requests-2.26.0-pyhd8ed1ab_0"
   ],
-  "signal": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "tempfile": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -884,10 +928,6 @@
    "typing_extensions/conda-forge/noarch/typing_extensions-3.7.4.3-py_0"
   ],
   "unittest": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "urllib": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],

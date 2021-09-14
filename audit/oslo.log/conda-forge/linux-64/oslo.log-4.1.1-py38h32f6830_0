@@ -14,9 +14,6 @@
   "errno",
   "excepthook",
   "file_handler",
-  "fixtures",
-  "fixtures.Fixture",
-  "fixtures.MonkeyPatch",
   "func_or_cls",
   "func_or_cls.__init__",
   "func_or_cls.__meta__",
@@ -30,7 +27,6 @@
   "logging.StreamHandler.format",
   "logging.handlers.SysLogHandler.LOG_USER",
   "method",
-  "monotonic.monotonic",
   "orig_init",
   "os.chmod",
   "os.error",
@@ -40,34 +36,12 @@
   "os.rename",
   "os.stat",
   "os.utime",
-  "oslo_config.cfg",
-  "oslo_config.cfg.BoolOpt",
-  "oslo_config.cfg.CONF",
-  "oslo_config.cfg.ConfigOpts",
-  "oslo_config.cfg.ConfigOpts.__call__",
-  "oslo_config.cfg.IntOpt",
-  "oslo_config.cfg.ListOpt",
-  "oslo_config.cfg.StrOpt",
-  "oslo_config.cfg.set_defaults",
-  "oslo_config.fixture",
-  "oslo_config.fixture.Config",
-  "oslo_context.context",
-  "oslo_context.context.RequestContext",
-  "oslo_context.context.get_current",
   "oslo_context.context.get_logging_values",
   "oslo_context.context.to_dict",
-  "oslo_context.fixture",
-  "oslo_context.fixture.ClearRequestContext",
-  "oslo_i18n",
-  "oslo_i18n.TranslatorFactory",
-  "oslo_i18n.fixture",
-  "oslo_i18n.fixture.Translation",
-  "oslo_log._options.versionutils.deprecated_opts",
   "oslo_log.handlers.ColorHandler.LEVEL_COLORS",
   "oslo_log.log._load_log_config.old_time",
   "oslo_log.log._loggers.logger",
   "oslo_log.log._loggers.logger.handlers",
-  "oslo_log.log.handlers.ColorHandler",
   "oslo_log.log.info",
   "oslo_log.log.warn",
   "oslo_log.versionutils.deprecated.BEXAR",
@@ -78,19 +52,11 @@
   "oslo_log.versionutils.deprecated.MITAKA",
   "oslo_log.versionutils.deprecated.NEWTON",
   "oslo_log.versionutils.deprecated.OCATA",
-  "oslo_serialization.jsonutils",
-  "oslo_serialization.jsonutils.dump",
-  "oslo_serialization.jsonutils.dumps",
-  "oslo_serialization.jsonutils.loads",
-  "oslo_serialization.jsonutils.to_primitive",
   "oslotest.base",
   "oslotest.base.BaseTestCase",
   "pyinotify.IN_DELETE",
   "pyinotify.IN_MOVED_FROM",
   "report_deprecated",
-  "stat",
-  "stat.ST_DEV",
-  "stat.ST_INO",
   "sys",
   "sys.stderr.getvalue",
   "systemd.journal",
@@ -150,6 +116,10 @@
    "debtcollector/conda-forge/noarch/debtcollector-1.19.0-py_0",
    "debtcollector/conda-forge/noarch/debtcollector-1.21.0-py_0"
   ],
+  "fixtures": [
+   "fixtures/conda-forge/linux-64/fixtures-3.0.0-py35_0",
+   "fixtures/conda-forge/noarch/fixtures-3.0.0-py_0"
+  ],
   "functools": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -166,6 +136,11 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "monotonic": [
+   "monotonic/conda-forge/linux-64/monotonic-1.1-py34_0",
+   "monotonic/conda-forge/linux-64/monotonic-1.2-py27_0",
+   "monotonic/conda-forge/noarch/monotonic-1.5-py_0"
+  ],
   "ntpath": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -173,6 +148,38 @@
   "os": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "oslo_config": [
+   "oslo.config/conda-forge/linux-64/oslo.config-8.7.0-py36h5fab9bb_0",
+   "oslo.config/conda-forge/noarch/oslo.config-4.12.0-py_0",
+   "oslo.config/conda-forge/noarch/oslo.config-5.0.0-py_0",
+   "oslo.config/conda-forge/noarch/oslo.config-6.0.0-py_0",
+   "oslo.config/conda-forge/noarch/oslo.config-8.2.0-py_0"
+  ],
+  "oslo_context": [
+   "oslo.context/conda-forge/noarch/oslo.context-3.0.2-py_0",
+   "oslo.context/conda-forge/noarch/oslo.context-3.1.1-py_0",
+   "oslo.context/conda-forge/noarch/oslo.context-3.2.0-pyhd8ed1ab_0",
+   "oslo.context/conda-forge/noarch/oslo.context-3.3.0-pyhd8ed1ab_0"
+  ],
+  "oslo_i18n": [
+   "oslo.i18n/conda-forge/linux-64/oslo.i18n-3.15.0-py27_0",
+   "oslo.i18n/conda-forge/noarch/oslo.i18n-3.18.0-py_0",
+   "oslo.i18n/conda-forge/noarch/oslo.i18n-3.21.0-py_0",
+   "oslo.i18n/conda-forge/noarch/oslo.i18n-3.23.0-py_0",
+   "oslo.i18n/conda-forge/noarch/oslo.i18n-3.23.1-py_0",
+   "oslo.i18n/conda-forge/noarch/oslo.i18n-5.0.1-py_0"
+  ],
+  "oslo_log": [
+   "oslo.log/conda-forge/linux-64/oslo.log-4.1.1-py38h32f6830_0"
+  ],
+  "oslo_serialization": [
+   "oslo.serialization/conda-forge/linux-64/oslo.serialization-2.24.0-py27_0",
+   "oslo.serialization/conda-forge/linux-64/oslo.serialization-3.0.0-py38_0",
+   "oslo.serialization/conda-forge/noarch/oslo.serialization-3.0.0-py_1",
+   "oslo.serialization/conda-forge/noarch/oslo.serialization-3.1.0-py_0",
+   "oslo.serialization/conda-forge/noarch/oslo.serialization-3.1.1-py_0",
+   "oslo.serialization/conda-forge/noarch/oslo.serialization-4.1.0-pyhd8ed1ab_0"
   ],
   "oslo_utils": [
    "oslo.utils/conda-forge/noarch/oslo.utils-3.28.0-py_0",
@@ -214,6 +221,10 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "socket": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "stat": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
