@@ -5,17 +5,46 @@
   "collections.abc.Mapping",
   "collections.abc.Sequence",
   "collections.defaultdict",
+  "colorlog.ColoredFormatter",
+  "cryptography.fernet.Fernet",
+  "cryptography.fernet.MultiFernet",
+  "cryptography.hazmat.backends.default_backend",
+  "cryptography.hazmat.primitives.asymmetric.rsa",
+  "cryptography.hazmat.primitives.asymmetric.rsa.generate_private_key",
+  "cryptography.hazmat.primitives.hashes",
+  "cryptography.hazmat.primitives.hashes.SHA256",
+  "cryptography.hazmat.primitives.serialization",
   "cryptography.hazmat.primitives.serialization.Encoding.PEM",
+  "cryptography.hazmat.primitives.serialization.NoEncryption",
   "cryptography.hazmat.primitives.serialization.PrivateFormat.PKCS8",
+  "cryptography.x509",
+  "cryptography.x509.CertificateBuilder",
+  "cryptography.x509.DNSName",
+  "cryptography.x509.Name",
+  "cryptography.x509.NameAttribute",
+  "cryptography.x509.SubjectAlternativeName",
+  "cryptography.x509.oid.NameOID",
   "cryptography.x509.oid.NameOID.COMMON_NAME",
+  "cryptography.x509.random_serial_number",
+  "dask_gateway.dask_cli.make_gateway_client",
+  "dask_gateway.dask_cli.make_security",
   "dask_gateway.dask_cli.start_scheduler",
   "dask_gateway.dask_cli.start_worker",
   "dask_gateway_server.utils.awaitable",
   "dask_gateway_server.utils.cancel_task",
   "datetime.timezone.utc",
+  "enum",
+  "enum.IntEnum",
   "errno",
   "functools.partial",
+  "grp",
+  "grp.getgrall",
   "handler",
+  "json",
+  "json.dump",
+  "json.dumps",
+  "json.load",
+  "json.loads",
   "kerberos",
   "kerberos.AUTH_GSS_COMPLETE",
   "kerberos.GSSError",
@@ -24,11 +53,21 @@
   "kerberos.authGSSServerResponse",
   "kerberos.authGSSServerStep",
   "kerberos.authGSSServerUserName",
+  "keyword.iskeyword",
+  "kubernetes_asyncio.client",
+  "kubernetes_asyncio.client.ApiClient",
+  "kubernetes_asyncio.client.CoreV1Api",
+  "kubernetes_asyncio.client.CustomObjectsApi",
+  "kubernetes_asyncio.client.rest.ApiException",
+  "kubernetes_asyncio.client.rest.RESTClientObject.__del__",
+  "kubernetes_asyncio.config",
+  "kubernetes_asyncio.config.ConfigException",
   "kubernetes_asyncio.config.adaptive_period",
   "kubernetes_asyncio.config.environment",
   "kubernetes_asyncio.config.idle_timeout",
   "kubernetes_asyncio.config.image",
   "kubernetes_asyncio.config.image_pull_policy",
+  "kubernetes_asyncio.config.load_incluster_config",
   "kubernetes_asyncio.config.load_kube_config",
   "kubernetes_asyncio.config.namespace",
   "kubernetes_asyncio.config.scheduler_cmd",
@@ -50,6 +89,8 @@
   "kubernetes_asyncio.config.worker_extra_pod_labels",
   "kubernetes_asyncio.config.worker_memory",
   "kubernetes_asyncio.config.worker_memory_limit",
+  "math",
+  "math.ceil",
   "method",
   "models.Cluster",
   "models.ClusterStatus.FAILED",
@@ -76,6 +117,11 @@
   "os.setgroups",
   "os.setuid",
   "pwd",
+  "select",
+  "shutil",
+  "shutil.rmtree",
+  "shutil.which",
+  "signal",
   "signal.SIGINT",
   "signal.SIGKILL",
   "signal.SIGTERM",
@@ -83,9 +129,13 @@
   "ssl.PROTOCOL_TLS_CLIENT",
   "sys",
   "sys.stdout.flush",
+  "textwrap",
+  "textwrap.dedent",
   "time",
   "traitlets.config.Application.log_format.default_value",
   "traitlets.config.Application.log_level.default_value",
+  "uuid",
+  "uuid.uuid4",
   "wait_is_shutdown",
   "watch"
  ],
@@ -111,20 +161,7 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "colorlog": [
-   "colorlog/conda-forge/linux-64/colorlog-2.6.3-py34_0",
-   "colorlog/conda-forge/linux-64/colorlog-4.6.2-py36h5fab9bb_0"
-  ],
-  "cryptography": [],
-  "dask_gateway": [
-   "dask-gateway/conda-forge/linux-64/dask-gateway-0.8.0-py36h9f0ad1d_0"
-  ],
   "datetime": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "enum": [
-   "privy/conda-forge/noarch/privy-6.0.0-py_0",
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -132,30 +169,11 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "grp": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "inspect": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "json": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "keyword": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "kubernetes_asyncio": [
-   "kubernetes_asyncio/conda-forge/noarch/kubernetes_asyncio-10.0.1-py_0"
-  ],
   "logging": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "math": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -164,18 +182,6 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "os": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "select": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "shutil": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "signal": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -207,23 +213,16 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "textwrap": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "tornado": [
    "tornado/conda-forge/linux-64/tornado-6.0.4-py38h1e0a361_2"
   ],
   "traitlets": [
    "traitlets/conda-forge/noarch/traitlets-5.0.4-py_0",
    "traitlets/conda-forge/noarch/traitlets-5.0.4-py_1",
-   "traitlets/conda-forge/noarch/traitlets-5.0.5-py_0"
+   "traitlets/conda-forge/noarch/traitlets-5.0.5-py_0",
+   "traitlets/conda-forge/noarch/traitlets-5.1.0-pyhd8ed1ab_0"
   ],
   "urllib": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "uuid": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
