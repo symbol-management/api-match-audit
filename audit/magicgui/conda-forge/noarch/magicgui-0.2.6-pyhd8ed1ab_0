@@ -12,10 +12,13 @@
   "collections.abc.Sequence",
   "collections.defaultdict",
   "collections.deque",
+  "docstring_parser.DocstringParam",
+  "docstring_parser.parse",
   "e",
   "e.block",
   "e.blocker",
   "e.unblock",
+  "em",
   "em.blocker",
   "em.callback_refs",
   "em.callbacks",
@@ -28,6 +31,9 @@
   "em1.connect",
   "em1.disconnect",
   "em1.ignore_callback_errors",
+  "enum.Enum",
+  "enum.EnumMeta",
+  "example",
   "example1",
   "example2",
   "f",
@@ -87,6 +93,11 @@
   "magicgui.types.FileDialogMode.EXISTING_FILES",
   "magicgui.types.FileDialogMode.OPTIONAL_FILE",
   "matcher",
+  "math",
+  "math.e",
+  "math.log",
+  "math.log2",
+  "math.pow",
   "max.setter",
   "measure",
   "min.setter",
@@ -149,12 +160,47 @@
   "testA",
   "testB",
   "tqdm.tqdm.__init__",
+  "traceback",
+  "traceback.format_exception",
+  "traceback.format_stack",
+  "traceback.print_stack",
   "transform",
+  "types",
+  "types.FunctionType",
+  "types.MappingProxyType",
+  "types.ModuleType",
+  "typing.Any",
+  "typing.Callable",
+  "typing.Collection",
+  "typing.DefaultDict",
+  "typing.Deque",
+  "typing.Dict",
+  "typing.ForwardRef",
+  "typing.Generic",
+  "typing.ItemsView",
+  "typing.Iterable",
+  "typing.Iterator",
+  "typing.KeysView",
+  "typing.List",
+  "typing.Mapping",
+  "typing.MutableMapping",
+  "typing.MutableSequence",
+  "typing.Optional",
+  "typing.Sequence",
+  "typing.TYPE_CHECKING",
+  "typing.Tuple",
+  "typing.Type",
+  "typing.TypeVar",
+  "typing.Union",
+  "typing.cast",
+  "typing.overload",
+  "unittest.mock.MagicMock",
   "value_widget.ValueWidget.value.fset",
   "w1",
   "w2",
   "warnings.warn",
   "wdg_class",
+  "weakref",
   "weakref.ReferenceType",
   "weakref.ref",
   "widget",
@@ -195,26 +241,6 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "docstring_parser": [
-   "docstring_parser/conda-forge/noarch/docstring_parser-0.7.1-py_0",
-   "docstring_parser/conda-forge/noarch/docstring_parser-0.7.3-py_0",
-   "docstring_parser/conda-forge/noarch/docstring_parser-0.8.1-pyhd8ed1ab_0",
-   "docstring_parser/conda-forge/noarch/docstring_parser-0.9.1-pyhd8ed1ab_0"
-  ],
-  "em": [
-   "empy/conda-forge/noarch/empy-3.3.4-py_0",
-   "empy/conda-forge/noarch/empy-3.3.4-pyh9f0ad1d_1"
-  ],
-  "enum": [
-   "privy/conda-forge/noarch/privy-6.0.0-py_0",
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "example": [
-   "django-nested-inline/conda-forge/linux-64/django-nested-inline-0.3.5-py27_0",
-   "django-nested-inline/conda-forge/noarch/django-nested-inline-0.4.0-py_0",
-   "flask_simplelogin/conda-forge/noarch/flask_simplelogin-0.0.7-pyhd3deb0d_0"
-  ],
   "factory": [
    "factory_boy/conda-forge/noarch/factory_boy-2.10.0-py_0",
    "factory_boy/conda-forge/noarch/factory_boy-2.11.0-py_0",
@@ -245,10 +271,6 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "logging": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "math": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -315,17 +337,6 @@
    "tqdm/conda-forge/noarch/tqdm-4.56.1-pyhd8ed1ab_0",
    "tqdm/conda-forge/noarch/tqdm-4.60.0-pyhd8ed1ab_0"
   ],
-  "traceback": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "types": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "typing": [
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "typing_extensions": [
    "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
    "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0",
@@ -333,15 +344,7 @@
    "typing_extensions/conda-forge/noarch/typing_extensions-3.7.4.2-py_0",
    "typing_extensions/conda-forge/noarch/typing_extensions-3.7.4.3-py_0"
   ],
-  "unittest": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "warnings": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "weakref": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ]

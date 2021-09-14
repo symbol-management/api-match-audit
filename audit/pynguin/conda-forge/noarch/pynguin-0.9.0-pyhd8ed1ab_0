@@ -49,6 +49,13 @@
   "bytecode.Compare.NE",
   "bytecode.Compare.NOT_IN",
   "csv.QUOTE_NONNUMERIC",
+  "dataclasses",
+  "dataclasses.dataclass",
+  "dataclasses.field",
+  "enum",
+  "enum.Enum",
+  "enum.IntEnum",
+  "enum.unique",
   "exp",
   "float.add",
   "inspect.Parameter.KEYWORD_ONLY",
@@ -58,11 +65,23 @@
   "inspect.Parameter.VAR_POSITIONAL",
   "inspect.Parameter.empty",
   "int.add",
+  "jellyfish.levenshtein_distance",
+  "math",
+  "math.ceil",
+  "math.floor",
+  "math.inf",
+  "math.isclose",
+  "math.isinf",
+  "math.isnan",
+  "math.nan",
+  "math.sqrt",
   "multiprocessing.Queue",
+  "networkx",
   "networkx.DiGraph",
   "networkx.NetworkXError",
   "networkx.NetworkXNoPath",
   "networkx.diameter",
+  "networkx.drawing.nx_pydot.to_pydot",
   "networkx.lowest_common_ancestor",
   "networkx.shortest_path_length",
   "os.path.isdir",
@@ -222,14 +241,48 @@
   "pynguin.utils.statistics.runtimevariable.RuntimeVariable.TotalExceptionsTimeline",
   "pynguin.utils.statistics.runtimevariable.RuntimeVariable.TotalExceptionsTimeline.name",
   "pynguin.utils.statistics.runtimevariable.RuntimeVariable.TotalTime.name",
+  "queue",
+  "queue.Queue",
+  "queue.SimpleQueue",
   "str.add",
   "strategy",
+  "string",
+  "string.printable",
   "sys",
   "sys.float_info.max",
   "sys.meta_path.insert",
   "sys.meta_path.remove",
   "sys.path.insert",
-  "time"
+  "threading",
+  "threading.Thread",
+  "threading.currentThread",
+  "time",
+  "types",
+  "types.CodeType",
+  "types.FunctionType",
+  "types.MethodType",
+  "types.ModuleType",
+  "typing",
+  "typing.Any",
+  "typing.Callable",
+  "typing.ClassVar",
+  "typing.Dict",
+  "typing.Generator",
+  "typing.Generic",
+  "typing.Iterable",
+  "typing.Iterator",
+  "typing.List",
+  "typing.NamedTuple",
+  "typing.Optional",
+  "typing.Sequence",
+  "typing.Set",
+  "typing.Tuple",
+  "typing.Type",
+  "typing.TypeVar",
+  "typing.Union",
+  "typing.cast",
+  "typing.get_type_hints",
+  "typing.overload"
  ],
  "deps": {
   "__future__": [
@@ -276,19 +329,6 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "dataclasses": [
-   "dataclasses/conda-forge/noarch/dataclasses-0.5-py_0",
-   "dataclasses/conda-forge/noarch/dataclasses-0.6-py_0",
-   "dataclasses/conda-forge/noarch/dataclasses-0.8-pyh787bdff_0",
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "enum": [
-   "privy/conda-forge/noarch/privy-6.0.0-py_0",
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "functools": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -301,29 +341,13 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "jellyfish": [
-   "jellyfish/conda-forge/linux-64/jellyfish-0.6.1-py37h8f50634_1000",
-   "jellyfish/conda-forge/linux-64/jellyfish-0.8.2-py36h8f6f2f9_1"
-  ],
   "logging": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "math": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "multiprocessing": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "networkx": [
-   "networkx/conda-forge/noarch/networkx-2.1-py_1",
-   "networkx/conda-forge/noarch/networkx-2.2-py_1",
-   "networkx/conda-forge/noarch/networkx-2.4-py_1",
-   "networkx/conda-forge/noarch/networkx-2.5-py_0",
-   "networkx/conda-forge/noarch/networkx-2.6.1-pyhd8ed1ab_0",
-   "networkx/conda-forge/noarch/networkx-2.6.1-pyhd8ed1ab_1"
   ],
   "ntpath": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -350,9 +374,6 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "queue": [
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "random": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -374,22 +395,6 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
    "statistics/conda-forge/linux-64/statistics-1.0.3.5-py27_1001"
-  ],
-  "string": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "threading": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "types": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "typing": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "typing_inspect": [
    "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
