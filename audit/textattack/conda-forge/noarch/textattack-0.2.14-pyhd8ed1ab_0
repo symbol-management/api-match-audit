@@ -18,11 +18,22 @@
   "logger.warn",
   "loss_backward",
   "loss_fct",
+  "lru",
   "model",
   "model.load_state_dict",
+  "more_itertools",
+  "more_itertools.consecutive_groups",
+  "nltk",
+  "nltk.corpus.wordnet",
   "nltk.corpus.wordnet.synsets",
+  "nltk.download",
   "nltk.pos_tag",
   "nltk.sent_tokenize",
+  "nltk.tokenize.word_tokenize",
+  "nltk.translate.bleu_score.sentence_bleu",
+  "nltk.translate.chrf_score",
+  "nltk.translate.meteor",
+  "num2words.num2words",
   "numpy.arange",
   "numpy.exp",
   "numpy.float32",
@@ -38,11 +49,24 @@
   "os.listdir",
   "os.path.exists",
   "os.remove",
+  "pickle.dump",
+  "pickle.load",
   "prepare_example_dict",
+  "random",
+  "random.choice",
+  "random.randrange",
+  "random.sample",
+  "random.seed",
+  "random.shuffle",
   "run_training.train_model",
+  "shutil",
+  "shutil.copyfile",
   "socket.AF_INET",
   "socket.SOCK_STREAM",
+  "stanza",
+  "stanza.download",
   "str_to_int",
+  "string",
   "strip",
   "sys",
   "sys.stderr.write",
@@ -81,30 +105,66 @@
   "textattack.shared.logger.warning",
   "textattack.shared.utils.logger.warn",
   "time",
+  "tokenizers",
+  "tokenizers.implementations.BaseTokenizer",
+  "torch",
   "torch.FloatTensor",
+  "torch.Tensor",
   "torch.acos",
+  "torch.autograd.Variable",
   "torch.cat",
+  "torch.cuda.device_count",
+  "torch.cuda.is_available",
+  "torch.cuda.manual_seed",
+  "torch.cuda.set_device",
   "torch.device",
   "torch.exp",
   "torch.float",
   "torch.from_numpy",
   "torch.index_select",
+  "torch.load",
   "torch.long",
+  "torch.manual_seed",
   "torch.max",
   "torch.mean",
   "torch.multiprocessing.Manager",
+  "torch.multiprocessing.Pool",
+  "torch.multiprocessing.Queue",
   "torch.multiprocessing.current_process",
+  "torch.multiprocessing.set_sharing_strategy",
   "torch.multiprocessing.set_start_method",
+  "torch.nn",
+  "torch.nn.CosineSimilarity",
+  "torch.nn.CrossEntropyLoss",
+  "torch.nn.DataParallel",
+  "torch.nn.MSELoss",
+  "torch.nn.Module",
+  "torch.nn.functional",
+  "torch.nn.functional.log_softmax",
+  "torch.nn.functional.max_pool1d",
+  "torch.nn.functional.relu",
+  "torch.nn.functional.softmax",
+  "torch.nn.utils.rnn.pack_padded_sequence",
+  "torch.nn.utils.rnn.pad_packed_sequence",
+  "torch.no_grad",
+  "torch.optim.Adam",
+  "torch.save",
   "torch.stack",
   "torch.sum",
+  "torch.tensor",
   "torch.topk",
   "torch.transpose",
   "torch.unsqueeze",
+  "torch.utils.data.DataLoader",
+  "torch.utils.data.RandomSampler",
+  "torch.utils.tensorboard.SummaryWriter",
   "torch.zeros",
   "tqdm",
   "tqdm.tqdm",
   "tqdm.trange",
   "transformation",
+  "types",
+  "types.ModuleType",
   "warnings.warn",
   "zipfile",
   "zipfile.ZipFile",
@@ -112,10 +172,6 @@
  ],
  "deps": {
   "_csv": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "_pickle": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -202,34 +258,13 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "lru": [
-   "py_lru_cache/conda-forge/noarch/py_lru_cache-0.1.4-py_0"
-  ],
   "math": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "more_itertools": [
-   "more-itertools/conda-forge/noarch/more-itertools-8.0.1-py_0",
-   "more-itertools/conda-forge/noarch/more-itertools-8.3.0-py_0",
-   "more-itertools/conda-forge/noarch/more-itertools-8.5.0-py_0",
-   "more-itertools/conda-forge/noarch/more-itertools-8.6.0-pyhd8ed1ab_0",
-   "more-itertools/conda-forge/noarch/more-itertools-8.8.0-pyhd8ed1ab_0"
-  ],
-  "nltk": [
-   "nltk/conda-forge/noarch/nltk-3.4.4-py_0",
-   "nltk/conda-forge/noarch/nltk-3.5-pyhd8ed1ab_1",
-   "nltk/conda-forge/noarch/nltk-3.6-pyhd8ed1ab_0",
-   "nltk/conda-forge/noarch/nltk-3.6.1-pyhd8ed1ab_0",
-   "nltk/conda-forge/noarch/nltk-3.6.2-pyhd8ed1ab_0"
-  ],
   "ntpath": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "num2words": [
-   "num2words/conda-forge/noarch/num2words-0.5.10-pyhd8ed1ab_0",
-   "num2words/conda-forge/noarch/num2words-0.5.10-pyhd8ed1ab_1"
   ],
   "numpy": [
    "numpy/conda-forge/linux-64/numpy-1.17.5-py36h95a1406_0",
@@ -252,10 +287,6 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "random": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "re": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -275,19 +306,7 @@
    "scipy/conda-forge/linux-64/scipy-1.7.0-py37h29e03ee_0",
    "scipy/conda-forge/linux-64/scipy-1.7.0-py37ha768fb6_1"
   ],
-  "shutil": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "socket": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "stanza": [
-   "stanza/conda-forge/noarch/stanza-1.2-pyhd8ed1ab_0",
-   "stanza/conda-forge/noarch/stanza-1.2.2-pyhd8ed1ab_0"
-  ],
-  "string": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -295,19 +314,7 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "tokenizers": [
-   "tokenizers/conda-forge/linux-64/tokenizers-0.9.4-py39h289741d_1"
-  ],
-  "torch": [
-   "pytorch-cpu/conda-forge/linux-64/pytorch-cpu-1.1.0-py37he1b5a44_0",
-   "pytorch/conda-forge/linux-64/pytorch-1.6.0-cuda92py37hc3ec645_1",
-   "pytorch/conda-forge/linux-64/pytorch-1.6.0-cuda92py38hb6ed0dd_1"
-  ],
   "transformers": [],
-  "types": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "warnings": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"

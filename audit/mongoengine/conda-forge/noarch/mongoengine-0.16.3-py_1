@@ -37,10 +37,6 @@
   "collections.abc.Hashable",
   "collections.defaultdict",
   "connection_class",
-  "dateutil",
-  "dateutil.parser",
-  "decimal",
-  "decimal.Decimal",
   "decimal.InvalidOperation",
   "default",
   "functools.partial",
@@ -96,35 +92,45 @@
   "numbers",
   "numbers.Number",
   "object.__getattribute__",
-  "operator",
-  "operator.itemgetter",
   "pprint",
   "pprint.pformat",
+  "pymongo",
+  "pymongo.ASCENDING",
+  "pymongo.DESCENDING",
+  "pymongo.GEO2D",
+  "pymongo.GEOHAYSTACK",
+  "pymongo.GEOSPHERE",
+  "pymongo.HASHED",
+  "pymongo.MongoClient",
+  "pymongo.MongoReplicaSetClient",
+  "pymongo.ReadPreference",
   "pymongo.ReadPreference.NEAREST",
   "pymongo.ReadPreference.PRIMARY",
   "pymongo.ReadPreference.PRIMARY_PREFERRED",
   "pymongo.ReadPreference.SECONDARY",
   "pymongo.ReadPreference.SECONDARY_PREFERRED",
+  "pymongo.TEXT",
+  "pymongo.collection.ReturnDocument",
   "pymongo.collection.ReturnDocument.AFTER",
   "pymongo.collection.ReturnDocument.BEFORE",
+  "pymongo.common.validate_read_preference",
+  "pymongo.errors",
+  "pymongo.errors.BulkWriteError",
+  "pymongo.errors.DuplicateKeyError",
+  "pymongo.errors.OperationFailure",
+  "pymongo.read_preferences.ReadPreference",
   "pymongo.read_preferences.ReadPreference.PRIMARY",
+  "pymongo.uri_parser",
+  "pymongo.uri_parser.parse_uri",
+  "pymongo.version_tuple",
+  "pymongo.write_concern.WriteConcern",
   "queryset_class",
   "re.IGNORECASE",
   "re.UNICODE",
   "remove",
   "repr_type",
-  "six",
-  "six.BytesIO",
-  "six.PY3",
-  "six.binary_type",
   "six.binary_type.__name__",
-  "six.integer_types",
   "six.moves.range",
-  "six.next",
-  "six.string_types",
-  "six.text_type",
-  "six.u",
-  "six.with_metaclass",
   "socket.AF_INET",
   "socket.AF_INET6",
   "socket.error",
@@ -132,7 +138,10 @@
   "super_new",
   "time",
   "update_func",
+  "uuid",
+  "uuid.UUID",
   "warnings.warn",
+  "weakref",
   "weakref.proxy"
  ],
  "deps": {
@@ -165,19 +174,35 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "pymongo": [
-   "pymongo/conda-forge/linux-64/pymongo-3.11.4-py39he80948d_0",
-   "pymongo/conda-forge/win-64/pymongo-3.11.4-py39h415ef7b_0"
+  "dateutil": [
+   "python-dateutil/conda-forge/noarch/python-dateutil-2.7.2-py_0",
+   "python-dateutil/conda-forge/noarch/python-dateutil-2.7.4-py_0",
+   "python-dateutil/conda-forge/noarch/python-dateutil-2.7.5-py_0",
+   "python-dateutil/conda-forge/noarch/python-dateutil-2.8.1-py_0",
+   "python-dateutil/conda-forge/noarch/python-dateutil-2.8.2-pyhd8ed1ab_0"
+  ],
+  "decimal": [
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "operator": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "re": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "socket": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  "six": [
+   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
+   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0",
+   "lldb/conda-forge/linux-64/lldb-6.0.0-py35_0",
+   "privy/conda-forge/noarch/privy-6.0.0-py_0",
+   "six/conda-forge/linux-64/six-1.10.0-py34_0",
+   "six/conda-forge/linux-64/six-1.10.0-py34_1",
+   "six/conda-forge/noarch/six-1.14.0-py_1",
+   "six/conda-forge/noarch/six-1.16.0-pyh6c4a22f_0"
   ],
-  "uuid": [
+  "socket": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -185,10 +210,6 @@
    "configobj/conda-forge/noarch/configobj-5.0.6-py_0"
   ],
   "warnings": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "weakref": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ]

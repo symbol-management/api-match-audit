@@ -90,11 +90,25 @@
   "os.path.isdir",
   "os.remove",
   "preprocessing.coco.CocoGenerator",
+  "progressbar",
+  "progressbar.progressbar",
+  "psutil",
+  "psutil.virtual_memory",
+  "pycocotools.coco.COCO",
+  "pycocotools.cocoeval.COCOeval",
+  "pytest",
+  "pytest.fixture",
+  "pytest.raises",
+  "random",
+  "random.shuffle",
   "retinanet.retinanet",
   "retinanet.retinanet_bbox",
+  "slidingwindow",
   "slidingwindow.DimOrder.HeightWidthChannel",
+  "slidingwindow.generate",
   "sys",
   "sys.path.insert",
+  "tensorflow",
   "tensorflow.ConfigProto",
   "tensorflow.FixedLenFeature",
   "tensorflow.Session",
@@ -107,8 +121,12 @@
   "tensorflow.config.experimental.list_physical_devices",
   "tensorflow.config.experimental.set_memory_growth",
   "tensorflow.config.experimental.set_visible_devices",
+  "tensorflow.data.TFRecordDataset",
+  "tensorflow.data.experimental.AUTOTUNE",
+  "tensorflow.data.experimental.ignore_errors",
   "tensorflow.device",
   "tensorflow.errors.OutOfRangeError",
+  "tensorflow.float32",
   "tensorflow.gather",
   "tensorflow.gather_nd",
   "tensorflow.image.ResizeMethod.AREA",
@@ -118,9 +136,12 @@
   "tensorflow.image.decode_image",
   "tensorflow.image.non_max_suppression",
   "tensorflow.image.resize",
+  "tensorflow.int32",
+  "tensorflow.int64",
   "tensorflow.io.FixedLenFeature",
   "tensorflow.io.TFRecordWriter",
   "tensorflow.io.parse_single_example",
+  "tensorflow.keras.backend.set_session",
   "tensorflow.map_fn",
   "tensorflow.meshgrid",
   "tensorflow.nn.top_k",
@@ -132,6 +153,7 @@
   "tensorflow.scatter_nd",
   "tensorflow.sparse_tensor_to_dense",
   "tensorflow.stack",
+  "tensorflow.string",
   "tensorflow.subtract",
   "tensorflow.train.BytesList",
   "tensorflow.train.Example",
@@ -141,14 +163,25 @@
   "tensorflow.train.Int64List",
   "tensorflow.transpose",
   "tensorflow.unstack",
+  "tensorflow.version.VERSION",
   "tensorflow.version.VERSION.split",
   "tensorflow.where",
+  "tqdm.tqdm",
   "utils.anchors.AnchorParameters.default",
   "utils.anchors.AnchorParameters.default.__dict__.keys",
   "utils.anchors.AnchorParameters.default.num_anchors",
   "utils.coco_eval.evaluate_coco",
   "visual_effect",
-  "warnings.warn"
+  "warnings.warn",
+  "xml.etree.ElementTree",
+  "xml.etree.ElementTree.ParseError",
+  "xml.etree.ElementTree.parse",
+  "xml.etree.cElementTree",
+  "xmltodict",
+  "xmltodict.parse",
+  "yaml",
+  "yaml.FullLoader",
+  "yaml.load"
  ],
  "deps": {
   "PIL": [
@@ -163,11 +196,6 @@
   "_csv": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "_pytest": [
-   "pytest/conda-forge/linux-64/pytest-3.7.0-py27_0",
-   "pytest/conda-forge/linux-64/pytest-4.6.0-py37_0",
-   "pytest/conda-forge/linux-64/pytest-6.0.2-py37hc8dfbb8_0"
   ],
   "argparse": [
    "argparse/conda-forge/osx-64/argparse-1.4.0-py26_0",
@@ -227,35 +255,6 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "pandas": [],
-  "progressbar": [
-   "progressbar2/conda-forge/linux-64/progressbar2-3.38.0-py36_0",
-   "progressbar2/conda-forge/noarch/progressbar2-3.38.0-py_1",
-   "progressbar2/conda-forge/noarch/progressbar2-3.43.1-py_0",
-   "progressbar2/conda-forge/noarch/progressbar2-3.46.1-py_0",
-   "progressbar2/conda-forge/noarch/progressbar2-3.47.0-py_0",
-   "progressbar2/conda-forge/noarch/progressbar2-3.50.0-py_0",
-   "progressbar2/conda-forge/noarch/progressbar2-3.50.0-py_2",
-   "progressbar2/conda-forge/noarch/progressbar2-3.51.0-pyh9f0ad1d_0",
-   "progressbar2/conda-forge/noarch/progressbar2-3.51.2-pyh9f0ad1d_0",
-   "progressbar2/conda-forge/noarch/progressbar2-3.53.0-pyh9f0ad1d_0",
-   "progressbar2/conda-forge/noarch/progressbar2-3.53.1-pyh9f0ad1d_0"
-  ],
-  "psutil": [
-   "psutil/conda-forge/linux-64/psutil-5.7.3-py39h38d8fee_0"
-  ],
-  "pycocotools": [
-   "pycocotools/conda-forge/linux-64/pycocotools-2.0.0-py36h516909a_1001",
-   "pycocotools/conda-forge/linux-64/pycocotools-2.0.1-py36h8c4c3a4_1"
-  ],
-  "pytest": [
-   "pytest/conda-forge/linux-64/pytest-3.7.0-py27_0",
-   "pytest/conda-forge/linux-64/pytest-4.6.0-py37_0",
-   "pytest/conda-forge/linux-64/pytest-6.0.2-py37hc8dfbb8_0"
-  ],
-  "random": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "six": [
    "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
    "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0",
@@ -266,22 +265,7 @@
    "six/conda-forge/noarch/six-1.14.0-py_1",
    "six/conda-forge/noarch/six-1.16.0-pyh6c4a22f_0"
   ],
-  "slidingwindow": [
-   "slidingwindow/conda-forge/noarch/slidingwindow-0.0.14-pyh9f0ad1d_0"
-  ],
   "tensorflow": [],
-  "tqdm": [
-   "tqdm/conda-forge/noarch/tqdm-4.38.0-py_2",
-   "tqdm/conda-forge/noarch/tqdm-4.40.2-py_0",
-   "tqdm/conda-forge/noarch/tqdm-4.42.1-py_0",
-   "tqdm/conda-forge/noarch/tqdm-4.45.0-pyh9f0ad1d_0",
-   "tqdm/conda-forge/noarch/tqdm-4.51.0-pyh9f0ad1d_0",
-   "tqdm/conda-forge/noarch/tqdm-4.52.0-pyhd3deb0d_0",
-   "tqdm/conda-forge/noarch/tqdm-4.55.0-pyhd8ed1ab_0",
-   "tqdm/conda-forge/noarch/tqdm-4.56.0-pyhd8ed1ab_0",
-   "tqdm/conda-forge/noarch/tqdm-4.56.1-pyhd8ed1ab_0",
-   "tqdm/conda-forge/noarch/tqdm-4.60.0-pyhd8ed1ab_0"
-  ],
   "urllib": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -289,19 +273,6 @@
   "warnings": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "xml": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "xmltodict": [
-   "xmltodict/conda-forge/noarch/xmltodict-0.11.0-py_1",
-   "xmltodict/conda-forge/noarch/xmltodict-0.12.0-py_0"
-  ],
-  "yaml": [
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0",
-   "pyyaml/conda-forge/win-64/pyyaml-5.2-py36hfa6e2cd_0"
   ]
  }
 }
