@@ -5,13 +5,18 @@
   "_gcs_uri_rewriter",
   "_get_filtered_mounts",
   "_local_uri_rewriter",
+  "apiclient.errors",
   "base.JobProvider",
   "base.Task",
   "chronology",
   "collections.Iterator",
   "collections.defaultdict",
+  "contextlib.contextmanager",
   "datetime.datetime.max",
   "datetime.datetime.min",
+  "dateutil.tz.tzlocal",
+  "difflib",
+  "difflib.Differ",
   "directory_fmt",
   "dsub.providers.google_v2.GoogleV2CustomMachine._MB_PER_GB",
   "dsub_util.load_file",
@@ -61,6 +66,7 @@
   "google_v2_pipelines.build_pipeline",
   "google_v2_pipelines.build_resources",
   "google_v2_pipelines.build_service_account",
+  "io",
   "io.BytesIO",
   "itertools",
   "job_model.EnvParam",
@@ -209,7 +215,11 @@
   "time",
   "unittest",
   "unittest.TestCase",
-  "unittest.main"
+  "unittest.main",
+  "uuid",
+  "uuid.uuid4",
+  "warnings",
+  "warnings.filterwarnings"
  ],
  "deps": {
   "__future__": [
@@ -228,26 +238,6 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "apiclient": [
-   "google-api-python-client/conda-forge/noarch/google-api-python-client-1.11.0-pyh9f0ad1d_0",
-   "google-api-python-client/conda-forge/noarch/google-api-python-client-1.12.0-pyh9f0ad1d_0",
-   "google-api-python-client/conda-forge/noarch/google-api-python-client-1.12.3-pyh9f0ad1d_0",
-   "google-api-python-client/conda-forge/noarch/google-api-python-client-1.12.5-pyh9f0ad1d_0",
-   "google-api-python-client/conda-forge/noarch/google-api-python-client-1.12.7-pyhd3deb0d_0",
-   "google-api-python-client/conda-forge/noarch/google-api-python-client-1.12.8-pyhd3deb0d_0",
-   "google-api-python-client/conda-forge/noarch/google-api-python-client-1.6.4-py_0",
-   "google-api-python-client/conda-forge/noarch/google-api-python-client-1.6.5-py_0",
-   "google-api-python-client/conda-forge/noarch/google-api-python-client-1.7.6-py_0",
-   "google-api-python-client/conda-forge/noarch/google-api-python-client-1.8.0-pyh8c360ce_0",
-   "google-api-python-client/conda-forge/noarch/google-api-python-client-1.8.2-pyh9f0ad1d_0",
-   "google-api-python-client/conda-forge/noarch/google-api-python-client-1.9.1-pyh9f0ad1d_0",
-   "google-api-python-client/conda-forge/noarch/google-api-python-client-1.9.1-pyh9f0ad1d_1",
-   "google-api-python-client/conda-forge/noarch/google-api-python-client-2.10.0-pyhd8ed1ab_0",
-   "google-api-python-client/conda-forge/noarch/google-api-python-client-2.13.0-pyhd8ed1ab_0",
-   "google-api-python-client/conda-forge/noarch/google-api-python-client-2.2.0-pyhd8ed1ab_0",
-   "google-api-python-client/conda-forge/noarch/google-api-python-client-2.4.0-pyhd8ed1ab_0",
-   "google-api-python-client/conda-forge/noarch/google-api-python-client-2.6.0-pyhd8ed1ab_0"
-  ],
   "argparse": [
    "argparse/conda-forge/osx-64/argparse-1.4.0-py26_0",
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -261,10 +251,6 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "contextlib": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "copy": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -274,17 +260,6 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "datetime": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "dateutil": [
-   "python-dateutil/conda-forge/noarch/python-dateutil-2.7.2-py_0",
-   "python-dateutil/conda-forge/noarch/python-dateutil-2.7.4-py_0",
-   "python-dateutil/conda-forge/noarch/python-dateutil-2.7.5-py_0",
-   "python-dateutil/conda-forge/noarch/python-dateutil-2.8.1-py_0",
-   "python-dateutil/conda-forge/noarch/python-dateutil-2.8.2-pyhd8ed1ab_0"
-  ],
-  "difflib": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -318,10 +293,6 @@
   ],
   "httplib2": [
    "httplib2/conda-forge/noarch/httplib2-0.19.0-pyhd8ed1ab_0"
-  ],
-  "io": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "json": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -419,14 +390,6 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "textwrap": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "uuid": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "warnings": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],

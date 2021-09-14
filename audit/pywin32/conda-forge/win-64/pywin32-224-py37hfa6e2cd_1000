@@ -14,6 +14,8 @@
   "IRTDUpdateEventKlass",
   "ISAPIParameters",
   "MakePublicAttributeName",
+  "Pyro4",
+  "Pyro4.errors.PyroError",
   "RaiseCOMException",
   "ScriptMapParams",
   "System",
@@ -34,9 +36,6 @@
   "_GetModule",
   "_ResolveType",
   "_WaitForFinish",
-  "__future__.generators",
-  "__future__.print_function",
-  "__future__.with_statement",
   "_getcount",
   "_thread",
   "ado_consts",
@@ -60,37 +59,17 @@
   "adodbapi.__init__.Time",
   "adodbapi.__init__.Timestamp",
   "adodbapi.__init__._makeByteBuffer",
-  "adodbapi.apibase",
-  "adodbapi.apibase.BINARY",
   "adodbapi.apibase.BINARY.values",
-  "adodbapi.apibase.DATETIME",
   "adodbapi.apibase.DATETIME.values",
-  "adodbapi.apibase.DataError",
-  "adodbapi.apibase.DatabaseError",
-  "adodbapi.apibase.NUMBER",
   "adodbapi.apibase.NUMBER.values",
-  "adodbapi.apibase.OTHER",
   "adodbapi.apibase.OTHER.values",
-  "adodbapi.apibase.ProgrammingError",
-  "adodbapi.apibase.ROWID",
   "adodbapi.apibase.ROWID.values",
-  "adodbapi.apibase.STRING",
   "adodbapi.apibase.STRING.values",
-  "adodbapi.apibase.adoStringTypes",
-  "adodbapi.apibase.mxDateTimeConverter",
-  "adodbapi.apibase.pythonDateTimeConverter",
-  "adodbapi.apibase.pythonTimeConverter",
-  "adodbapi.apibase.variantConversions",
-  "adodbapi.cvtFloat",
-  "adodbapi.cvtString",
   "adodbapi.dateconverter.Date",
   "adodbapi.dateconverter.DateObjectToIsoFormatString",
   "adodbapi.dateconverter.Time",
   "adodbapi.dateconverter.Timestamp",
   "adodbapi.getIndexedValue",
-  "adodbapi.remote",
-  "adodbapi.remote.connect",
-  "adodbapi.variantConversions",
   "adodbapitestconfig",
   "adodbapitestconfig.cleanup",
   "adodbapitestconfig.connStrAccess",
@@ -148,13 +127,9 @@
   "build.OleItem",
   "build.VTableItem",
   "build._makeDocString",
-  "cgi",
-  "cgi.escape",
   "clr.Reference",
   "clz",
   "cmp",
-  "codecs",
-  "codecs.open",
   "collections.Mapping",
   "commctrl",
   "commctrl.LVCFMT_LEFT",
@@ -162,11 +137,6 @@
   "commctrl.LVS_AUTOARRANGE",
   "commctrl.LVS_REPORT",
   "daodump.DumpDB",
-  "datetime",
-  "datetime.date",
-  "datetime.datetime",
-  "datetime.datetime.now",
-  "datetime.timedelta",
   "dbapi20",
   "dbapi20.DatabaseAPI20Test",
   "dbapi20.DatabaseAPI20Test.setUp",
@@ -195,8 +165,6 @@
   "gencache.MakeModuleForTypelib",
   "genpy.makepy_version",
   "getevents",
-  "glob",
-  "glob.glob",
   "gtrc",
   "gw_cpp_writer",
   "handler",
@@ -480,9 +448,6 @@
   "pywintypes.__import_pywin32_system_module__",
   "pywintypes.com_error",
   "r",
-  "random",
-  "random.choice",
-  "random.random",
   "result_class",
   "retob",
   "script_map_func",
@@ -521,17 +486,36 @@
   "testAccess.GenerateSupport",
   "time",
   "time.clock",
+  "traceback",
+  "traceback.format_exception_only",
+  "traceback.format_tb",
+  "traceback.print_exc",
+  "traceback.print_exception",
   "tryconnection2",
   "tryconnection2.try_connection",
   "tryconnection2.try_operation_with_expected_exception",
   "tryconnection3",
   "typ",
+  "types",
   "types.ClassType",
   "types.InstanceType",
+  "types.MethodType",
+  "unittest",
+  "unittest.FunctionTestCase",
   "unittest.FunctionTestCase.__call__",
+  "unittest.TestCase",
+  "unittest.TestSuite",
+  "unittest.TextTestRunner",
   "unittest.defaultTestLoader.loadTestsFromTestCase",
+  "unittest.main",
+  "unittest.makeSuite",
   "upcaseConverter",
+  "urllib.error",
+  "urllib.parse",
+  "urllib.request",
+  "urllib.request.urlopen",
   "util.WrapEnum",
+  "warnings",
   "warnings.warn",
   "win32api",
   "win32api.ExpandEnvironmentStrings",
@@ -765,19 +749,29 @@
   "xl5en32"
  ],
  "deps": {
-  "Pyro4": [
-   "pyro4/conda-forge/noarch/pyro4-4.74-py_0",
-   "pyro4/conda-forge/noarch/pyro4-4.75-py_0",
-   "pyro4/conda-forge/noarch/pyro4-4.76-py_0",
-   "pyro4/conda-forge/noarch/pyro4-4.78-py_0",
-   "pyro4/conda-forge/noarch/pyro4-4.79-py_0",
-   "pyro4/conda-forge/noarch/pyro4-4.80-pyh9f0ad1d_0"
+  "__future__": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "_pickle": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "adodbapi": [
+   "pywin32/conda-forge/win-64/pywin32-228-py37h4ab8f01_0"
+  ],
+  "cgi": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython"
+  ],
+  "codecs": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "copy": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "datetime": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -789,6 +783,10 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "getopt": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "glob": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -832,6 +830,10 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "random": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "re": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -857,26 +859,6 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "threading": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "traceback": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "types": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "unittest": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "urllib": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "warnings": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],

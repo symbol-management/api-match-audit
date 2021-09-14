@@ -12,11 +12,15 @@
   "convolve.kernel_gen",
   "coord_return",
   "custom_legend",
+  "dask.array",
+  "dask.array.map_blocks",
   "dask.distributed.Client",
   "dask.distributed.LocalCluster",
+  "dask_jobqueue.SLURMCluster",
   "distfunc",
   "ehi_calc",
   "eop_calc",
+  "fractions.Fraction",
   "functools.reduce",
   "get_map",
   "get_object_properties",
@@ -29,6 +33,7 @@
   "m.pcolormesh",
   "manage_chunks",
   "map_label",
+  "matplotlib",
   "matplotlib.cm.BrBG",
   "matplotlib.cm.Paired",
   "matplotlib.cm.PuRd",
@@ -36,6 +41,25 @@
   "matplotlib.cm.Set1.colors",
   "matplotlib.cm.Spectral_r",
   "matplotlib.cm.YlGnBu",
+  "matplotlib.cm.get_cmap",
+  "matplotlib.colors",
+  "matplotlib.colors.BoundaryNorm",
+  "matplotlib.colors.ListedColormap",
+  "matplotlib.lines.Line2D",
+  "matplotlib.patches.Patch",
+  "matplotlib.patches.Polygon",
+  "matplotlib.path.Path",
+  "matplotlib.pyplot",
+  "matplotlib.pyplot.clabel",
+  "matplotlib.pyplot.cm.get_cmap",
+  "matplotlib.pyplot.connect",
+  "matplotlib.pyplot.draw",
+  "matplotlib.pyplot.figure",
+  "matplotlib.pyplot.savefig",
+  "matplotlib.pyplot.setp",
+  "matplotlib.pyplot.show",
+  "matplotlib.pyplot.style.use",
+  "matplotlib.pyplot.subplots",
   "mpl_toolkits.basemap.Basemap",
   "multiprocessing.Pool",
   "multiprocessing.cpu_count",
@@ -76,6 +100,11 @@
   "numpy.zeros",
   "os.listdir",
   "os.path.exists",
+  "palettable.palette.BoundaryNorm",
+  "pandas",
+  "pandas.Series",
+  "pandas.to_datetime",
+  "pandas.to_timedelta",
   "pdf_calc",
   "print_ncattr",
   "pss_calc",
@@ -83,7 +112,11 @@
   "rtxx_calc",
   "rxx_calc",
   "sdii_calc",
-  "sys"
+  "sys",
+  "warnings",
+  "warnings.catch_warnings",
+  "warnings.filterwarnings",
+  "warnings.simplefilter"
  ],
  "deps": {
   "argparse": [
@@ -109,44 +142,7 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "dask": [
-   "dask-core/conda-forge/noarch/dask-core-0.17.5-py_0",
-   "dask-core/conda-forge/noarch/dask-core-0.18.0-py_0",
-   "dask-core/conda-forge/noarch/dask-core-0.20.1-py_0",
-   "dask-core/conda-forge/noarch/dask-core-1.1.1-py_0",
-   "dask-core/conda-forge/noarch/dask-core-1.1.2-py_0",
-   "dask-core/conda-forge/noarch/dask-core-1.1.4-py_0",
-   "dask-core/conda-forge/noarch/dask-core-2.10.1-py_0",
-   "dask-core/conda-forge/noarch/dask-core-2.13.0-py_0",
-   "dask-core/conda-forge/noarch/dask-core-2.17.2-py_0",
-   "dask-core/conda-forge/noarch/dask-core-2.18.0-py_0",
-   "dask-core/conda-forge/noarch/dask-core-2.22.0-py_0",
-   "dask-core/conda-forge/noarch/dask-core-2.25.0-py_0",
-   "dask-core/conda-forge/noarch/dask-core-2.27.0-py_0",
-   "dask-core/conda-forge/noarch/dask-core-2.6.0-py_0",
-   "dask-core/conda-forge/noarch/dask-core-2.8.1-py_0",
-   "dask-core/conda-forge/noarch/dask-core-2020.12.0-pyhd8ed1ab_0",
-   "dask-core/conda-forge/noarch/dask-core-2021.3.1-pyhd8ed1ab_0",
-   "dask-core/conda-forge/noarch/dask-core-2021.4.0-pyhd8ed1ab_0",
-   "dask-core/conda-forge/noarch/dask-core-2021.4.1-pyhd8ed1ab_0",
-   "dask-core/conda-forge/noarch/dask-core-2021.5.1-pyhd8ed1ab_0"
-  ],
-  "dask_jobqueue": [
-   "dask-jobqueue/conda-forge/noarch/dask-jobqueue-0.1.1-py_0",
-   "dask-jobqueue/conda-forge/noarch/dask-jobqueue-0.3.0-py_0",
-   "dask-jobqueue/conda-forge/noarch/dask-jobqueue-0.4.0-py_0",
-   "dask-jobqueue/conda-forge/noarch/dask-jobqueue-0.5.0-py_0",
-   "dask-jobqueue/conda-forge/noarch/dask-jobqueue-0.6.0-py_0",
-   "dask-jobqueue/conda-forge/noarch/dask-jobqueue-0.6.2-py_0",
-   "dask-jobqueue/conda-forge/noarch/dask-jobqueue-0.7.1-py_0",
-   "dask-jobqueue/conda-forge/noarch/dask-jobqueue-0.7.2-pyhd8ed1ab_0",
-   "dask-jobqueue/conda-forge/noarch/dask-jobqueue-0.7.2-pyhd8ed1ab_1"
-  ],
   "datetime": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "fractions": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -177,11 +173,6 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "matplotlib": [
-   "matplotlib-base/conda-forge/linux-64/matplotlib-base-3.1.1-py37hfd891ef_0",
-   "matplotlib-base/conda-forge/linux-64/matplotlib-base-3.1.1-py38h250f245_2",
-   "matplotlib/conda-forge/linux-64/matplotlib-1.5.3-np111py34_0"
-  ],
   "mpl_toolkits": [
    "matplotlib/conda-forge/linux-64/matplotlib-1.5.3-np111py34_0"
   ],
@@ -208,7 +199,6 @@
    "palettable/conda-forge/noarch/palettable-3.2.0-py_0",
    "palettable/conda-forge/noarch/palettable-3.3.0-py_0"
   ],
-  "pandas": [],
   "re": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -226,10 +216,6 @@
   "skimage": [
    "scikit-image/conda-forge/linux-64/scikit-image-0.12.3-np112py27_1",
    "scikit-image/conda-forge/win-64/scikit-image-0.13.0-np113py36_0"
-  ],
-  "warnings": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "xarray": [
    "xarray/conda-forge/linux-64/xarray-0.10.2-py36_0",

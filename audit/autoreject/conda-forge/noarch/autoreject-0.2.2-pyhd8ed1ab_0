@@ -8,8 +8,39 @@
   "collections.defaultdict",
   "functools.partial",
   "get_picks_bad_good",
+  "mne",
+  "mne.Evoked",
+  "mne.bem._check_origin",
+  "mne.bem._fit_sphere",
+  "mne.channels.interpolation._do_interp_dots",
+  "mne.channels.interpolation._make_interpolation_matrix",
+  "mne.epochs",
+  "mne.epochs.BaseEpochs",
   "mne.epochs._BaseEpochs",
+  "mne.externals.h5io.read_hdf5",
+  "mne.externals.h5io.write_hdf5",
+  "mne.forward._field_interpolation._compute_mapping_matrix",
+  "mne.forward._field_interpolation._setup_dots",
+  "mne.forward._lead_dots._do_cross_dots",
+  "mne.forward._lead_dots._do_self_dots",
+  "mne.forward._make_forward._create_meg_coils",
+  "mne.forward._make_forward._read_coil_defs",
+  "mne.get_config",
+  "mne.io.meas_info.channel_type",
+  "mne.io.pick.channel_type",
+  "mne.io.pick.pick_info",
+  "mne.parallel.check_n_jobs",
+  "mne.pick_channels",
+  "mne.pick_info",
+  "mne.pick_types",
+  "mne.set_log_level",
+  "mne.utils.ProgressBar",
+  "mne.utils._fetch_file",
+  "mne.utils.check_random_state",
+  "mne.utils.logger",
   "mne.utils.logger.info",
+  "mne.utils.warn",
+  "mne.viz.plot_epochs",
   "my_iterator",
   "my_thresh",
   "numpy.abs",
@@ -28,13 +59,20 @@
   "parallel",
   "scipy.stats.norm.cdf",
   "scipy.stats.norm.pdf",
+  "sklearn.base.BaseEstimator",
+  "sklearn.gaussian_process",
   "sklearn.gaussian_process.GaussianProcessRegressor",
   "sklearn.model_selection.KFold",
   "sklearn.model_selection.RandomizedSearchCV",
   "sklearn.model_selection.StratifiedShuffleSplit",
   "sklearn.model_selection.cross_val_score",
   "sklearn.model_selection.validation_curve",
+  "tqdm.tqdm",
+  "tqdm.tqdm_notebook",
   "utils._fast_map_meg_channels",
+  "warnings",
+  "warnings.catch_warnings",
+  "warnings.simplefilter",
   "warnings.warn"
  ],
  "deps": {
@@ -55,14 +93,6 @@
    "matplotlib-base/conda-forge/linux-64/matplotlib-base-3.1.1-py38h250f245_2",
    "matplotlib/conda-forge/linux-64/matplotlib-1.5.3-np111py34_0"
   ],
-  "mne": [
-   "mne/conda-forge/linux-64/mne-0.21.2-py37h89c1867_0",
-   "mne/conda-forge/noarch/mne-0.18.2-py_0",
-   "mne/conda-forge/noarch/mne-0.19.0-py_0",
-   "mne/conda-forge/noarch/mne-0.19.1-py_0",
-   "mne/conda-forge/noarch/mne-0.19.2-py_1",
-   "mne/conda-forge/noarch/mne-0.23.1-pyhd8ed1ab_0"
-  ],
   "ntpath": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -80,27 +110,6 @@
    "scipy/conda-forge/linux-64/scipy-0.17.1-np110py27_blas_openblas_202",
    "scipy/conda-forge/linux-64/scipy-1.7.0-py37h29e03ee_0",
    "scipy/conda-forge/linux-64/scipy-1.7.0-py37ha768fb6_1"
-  ],
-  "sklearn": [
-   "scikit-learn/conda-forge/linux-64/scikit-learn-0.17.1-np110py27_blas_openblas_200",
-   "scikit-learn/conda-forge/linux-64/scikit-learn-0.17.1-np110py35_blas_openblas_202",
-   "scikit-learn/conda-forge/linux-64/scikit-learn-0.17.1-np111py35_blas_openblas_202"
-  ],
-  "tqdm": [
-   "tqdm/conda-forge/noarch/tqdm-4.38.0-py_2",
-   "tqdm/conda-forge/noarch/tqdm-4.40.2-py_0",
-   "tqdm/conda-forge/noarch/tqdm-4.42.1-py_0",
-   "tqdm/conda-forge/noarch/tqdm-4.45.0-pyh9f0ad1d_0",
-   "tqdm/conda-forge/noarch/tqdm-4.51.0-pyh9f0ad1d_0",
-   "tqdm/conda-forge/noarch/tqdm-4.52.0-pyhd3deb0d_0",
-   "tqdm/conda-forge/noarch/tqdm-4.55.0-pyhd8ed1ab_0",
-   "tqdm/conda-forge/noarch/tqdm-4.56.0-pyhd8ed1ab_0",
-   "tqdm/conda-forge/noarch/tqdm-4.56.1-pyhd8ed1ab_0",
-   "tqdm/conda-forge/noarch/tqdm-4.60.0-pyhd8ed1ab_0"
-  ],
-  "warnings": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ]
  }
 }

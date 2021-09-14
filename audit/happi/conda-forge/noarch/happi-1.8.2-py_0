@@ -4,12 +4,26 @@
   "MyDevice",
   "attr_type",
   "backend",
+  "bson.regex",
+  "builtins",
   "cls",
   "collections.abc.Mapping",
   "collections.defaultdict",
+  "coloredlogs",
+  "coloredlogs.install",
+  "configparser",
+  "configparser.ConfigParser",
   "containers.registry",
   "containers.registry.entry_for_class",
+  "contextlib",
+  "contextlib.contextmanager",
   "create_arg",
+  "entrypoints",
+  "entrypoints.get_group_all",
+  "fcntl",
+  "fcntl.LOCK_EX",
+  "fcntl.LOCK_NB",
+  "fcntl.flock",
   "find",
   "functools.partial",
   "happi.Client._id_key",
@@ -19,6 +33,7 @@
   "happi.backends.__init__._get_backend",
   "happi.backends.__init__._get_backends",
   "happi.backends.__init__.logger",
+  "io",
   "io.StringIO",
   "item.HappiItem.args",
   "item.HappiItem.kwargs",
@@ -34,8 +49,12 @@
   "os.path.exists",
   "os.remove",
   "os.stat",
+  "pytest",
+  "pytest.fixture",
   "pytest.mark.parametrize",
   "pytest.mark.skipif",
+  "pytest.param",
+  "pytest.raises",
   "qs_db.QSBackend",
   "qtpy.QtCore.Qt.AscendingOrder",
   "qtpy.QtCore.Qt.ItemIsEditable",
@@ -47,8 +66,13 @@
   "simplejson.values",
   "sys",
   "time",
+  "types",
+  "types.SimpleNamespace",
+  "unittest.mock",
+  "unittest.mock.patch",
   "unittest.mock.patch.object",
   "valid_entry",
+  "warnings",
   "warnings.warn"
  ],
  "deps": {
@@ -60,11 +84,6 @@
   "_asyncio": [
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "_pytest": [
-   "pytest/conda-forge/linux-64/pytest-3.7.0-py27_0",
-   "pytest/conda-forge/linux-64/pytest-4.6.0-py37_0",
-   "pytest/conda-forge/linux-64/pytest-6.0.2-py37hc8dfbb8_0"
-  ],
   "argparse": [
    "argparse/conda-forge/osx-64/argparse-1.4.0-py26_0",
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -74,32 +93,7 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "backports": [
-   "configparser/conda-forge/noarch/configparser-5.0.0-py_0"
-  ],
-  "bson": [
-   "pymongo/conda-forge/linux-64/pymongo-3.11.4-py39he80948d_0",
-   "pymongo/conda-forge/win-64/pymongo-3.11.4-py39h415ef7b_0"
-  ],
-  "builtins": [
-   "pies2overrides/conda-forge/osx-64/pies2overrides-2.6.7-py27_1000"
-  ],
   "collections": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "coloredlogs": [
-   "coloredlogs/conda-forge/linux-64/coloredlogs-11.2-py36_0",
-   "coloredlogs/conda-forge/osx-64/coloredlogs-15.0-py39h6e9494a_0"
-  ],
-  "configparser": [
-   "configparser/conda-forge/linux-64/configparser-3.7.1-py27_1",
-   "configparser/conda-forge/noarch/configparser-5.0.0-py_0",
-   "configparser/conda-forge/noarch/configparser-5.0.1-py_0",
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "contextlib": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -108,15 +102,6 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "datetime": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "entrypoints": [
-   "entrypoints/conda-forge/linux-64/entrypoints-0.2.3-py27_1",
-   "entrypoints/conda-forge/linux-64/entrypoints-0.2.3-py37_1002",
-   "entrypoints/conda-forge/noarch/entrypoints-0.3-pyhd8ed1ab_1003"
-  ],
-  "fcntl": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -145,10 +130,6 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "inspect": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "io": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -216,11 +197,6 @@
    "pymongo/conda-forge/linux-64/pymongo-3.11.4-py39he80948d_0",
    "pymongo/conda-forge/win-64/pymongo-3.11.4-py39h415ef7b_0"
   ],
-  "pytest": [
-   "pytest/conda-forge/linux-64/pytest-3.7.0-py27_0",
-   "pytest/conda-forge/linux-64/pytest-4.6.0-py37_0",
-   "pytest/conda-forge/linux-64/pytest-6.0.2-py37hc8dfbb8_0"
-  ],
   "qtpy": [
    "qtpy/conda-forge/noarch/qtpy-1.5.1-pyh8a2030e_0",
    "qtpy/conda-forge/noarch/qtpy-1.5.2-pyh8a2030e_0",
@@ -240,19 +216,7 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "types": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "typing": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "unittest": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "warnings": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ]
