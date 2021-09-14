@@ -16,32 +16,14 @@
   "dpgen.remote.RemoteJob.JobStatus.finished",
   "dpgen.remote.RemoteJob.JobStatus.terminated",
   "export_file",
-  "filecmp",
-  "filecmp.cmp",
-  "glob",
-  "glob.glob",
   "group_local_jobs",
   "group_slurm_jobs",
-  "gzip",
-  "gzip.open",
   "hashlib.sha1",
   "import_file",
   "io_lammps",
   "io_lammps.ase2lammpsdata",
   "io_lammps.convert_cell",
   "itertools",
-  "json",
-  "json.dump",
-  "json.dumps",
-  "json.load",
-  "json.loads",
-  "monty.io.zopen",
-  "monty.json.MSONable",
-  "monty.json.MontyDecoder",
-  "monty.json.MontyEncoder",
-  "monty.os.path.zpath",
-  "monty.serialization.dumpfn",
-  "monty.serialization.loadfn",
   "near0",
   "numpy.abs",
   "numpy.arange",
@@ -57,9 +39,6 @@
   "numpy.random.standard_normal",
   "numpy.sqrt",
   "numpy.zeros",
-  "openbabel",
-  "openbabel.OBConversion",
-  "openbabel.OBMol",
   "os.chdir",
   "os.getcwd",
   "os.listdir",
@@ -72,13 +51,9 @@
   "os.symlink",
   "os.system",
   "os.unlink",
-  "ovito.io",
-  "ovito.modifiers",
   "pymatgen.Structure.from_file",
   "pymatgen.core.structure.Structure.from_file",
   "pymatgen.core.surface.Structure.from_file",
-  "requests",
-  "requests.get",
   "ruamel.yaml.error.MantissaNoDotYAML1_1Warning",
   "scipy.constants.Avogadro",
   "scipy.constants.electron_volt",
@@ -93,7 +68,6 @@
   "sys.stdout.write",
   "sys.to_lammps_lmp",
   "sys.to_vasp_poscar",
-  "threading.Thread",
   "time",
   "ucloud_submit_jobs",
   "warnings.warn"
@@ -208,6 +182,22 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "filecmp": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "glob": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "gzip": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "json": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "logging": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -215,6 +205,16 @@
   "math": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "monty": [
+   "monty/conda-forge/noarch/monty-2021.3.3-pyhd8ed1ab_0",
+   "monty/conda-forge/noarch/monty-2021.6.10-pyhd8ed1ab_0",
+   "monty/conda-forge/noarch/monty-3.0.1-py_0",
+   "monty/conda-forge/noarch/monty-3.0.2-py_0",
+   "monty/conda-forge/noarch/monty-3.0.4-pyh9f0ad1d_0",
+   "monty/conda-forge/noarch/monty-4.0.0-pyh9f0ad1d_0",
+   "monty/conda-forge/noarch/monty-4.0.1-pyh9f0ad1d_0",
+   "monty/conda-forge/noarch/monty-4.0.2-pyh9f0ad1d_0"
   ],
   "ntpath": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -225,9 +225,15 @@
    "numpy/conda-forge/linux-64/numpy-1.18.4-py37h8960a57_0",
    "numpy/conda-forge/linux-64/numpy-1.19.2-py36h68c22af_1"
   ],
+  "openbabel": [
+   "openbabel/conda-forge/linux-64/openbabel-2.4.1-py37hc189817_0"
+  ],
   "os": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "ovito": [
+   "ovito/conda-forge/linux-64/ovito-2.9.0-py36hc8086ef_0"
   ],
   "paramiko": [
    "paramiko/conda-forge/linux-64/paramiko-2.1.2-py35_0",
@@ -252,6 +258,16 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "requests": [
+   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
+   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0",
+   "requests/conda-forge/linux-64/requests-2.12.0-py35_0",
+   "requests/conda-forge/noarch/requests-2.23.0-pyh8c360ce_2",
+   "requests/conda-forge/noarch/requests-2.24.0-pyh9f0ad1d_0",
+   "requests/conda-forge/noarch/requests-2.25.0-pyhd3deb0d_0",
+   "requests/conda-forge/noarch/requests-2.25.1-pyhd3deb0d_0",
+   "requests/conda-forge/noarch/requests-2.26.0-pyhd8ed1ab_0"
+  ],
   "ruamel": [
    "ruamel.ordereddict/conda-forge/osx-64/ruamel.ordereddict-0.4.6-py27_0",
    "ruamel/conda-forge/linux-aarch64/ruamel-1.0-py36hc560c46_2",
@@ -275,6 +291,10 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "tarfile": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "threading": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
