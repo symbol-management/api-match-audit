@@ -17,13 +17,10 @@
   "cloudpickle.load",
   "collections.abc.Sequence",
   "collections.defaultdict",
-  "concurrent.futures.thread.ThreadPoolExecutor",
   "condor.get_schedd",
   "create_map",
   "dir.exists",
   "dir.mkdir",
-  "enum",
-  "enum.Enum",
   "errors.ComponentError",
   "errors.ComponentError._from_raw_error",
   "exceptions.CannotRerunComponents",
@@ -47,19 +44,11 @@
   "exceptions.TagNotFound",
   "exceptions.TimeoutError",
   "exceptions.UnknownPythonDeliveryMethod",
-  "fnmatch",
-  "fnmatch.fnmatchcase",
   "func",
   "functools.partial",
   "functools.reduce",
-  "getpass",
-  "getpass.getuser",
-  "gzip",
-  "gzip.open",
-  "halo.Halo",
   "hashlib.md5",
   "holds.ComponentHold",
-  "htcondor",
   "htcondor.Collector",
   "htcondor.DaemonTypes.Schedd",
   "htcondor.JobAction",
@@ -206,9 +195,6 @@
   "state.ComponentStatus.REMOVED",
   "state.ComponentStatus.UNMATERIALIZED",
   "state.ComponentStatus.display_statuses",
-  "string",
-  "string.ascii_letters",
-  "string.digits",
   "sys",
   "sys.argv.remove",
   "sys.flags.interactive",
@@ -220,20 +206,7 @@
   "tags.tag_file_path",
   "time",
   "transfer.TransferPath",
-  "typing.Any",
-  "typing.Callable",
-  "typing.Collection",
-  "typing.Dict",
-  "typing.Iterable",
-  "typing.Iterator",
-  "typing.List",
-  "typing.Mapping",
-  "typing.MutableMapping",
   "typing.MutableMapping.register",
-  "typing.NamedTuple",
-  "typing.Optional",
-  "typing.Tuple",
-  "typing.Union",
   "utils.BINDINGS_VERSION_INFO",
   "utils.CAN_USE_URL_OUTPUT_TRANSFER",
   "utils.StrEnum",
@@ -247,14 +220,12 @@
   "utils.rstr",
   "utils.table",
   "utils.timeout_to_seconds",
-  "utils.wait_for_path_to_exist"
+  "utils.wait_for_path_to_exist",
+  "weakref",
+  "weakref.WeakSet"
  ],
  "deps": {
   "_pickle": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "_weakrefset": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -282,6 +253,12 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "concurrent": [
+   "futures/conda-forge/linux-64/futures-3.2.0-py27_0",
+   "futures/conda-forge/osx-64/futures-3.3.0-py27h8c360ce_1",
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "contextlib": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -298,13 +275,39 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "enum": [
+   "privy/conda-forge/noarch/privy-6.0.0-py_0",
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "fnmatch": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "functools": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "getpass": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "gzip": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "halo": [
+   "halo/conda-forge/noarch/halo-0.0.28-py_0",
+   "halo/conda-forge/noarch/halo-0.0.29-py_0",
+   "halo/conda-forge/noarch/halo-0.0.30-py_0",
+   "halo/conda-forge/noarch/halo-0.0.31-pyhd8ed1ab_0"
+  ],
   "hashlib": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "htcondor": [
+   "python-htcondor/conda-forge/linux-64/python-htcondor-8.9.13-py39h471719e_0"
   ],
   "importlib": [
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -367,6 +370,10 @@
   "spinners": [
    "spinners/conda-forge/noarch/spinners-0.0.23-pyh8c360ce_0"
   ],
+  "string": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "subprocess": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -403,15 +410,15 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "typing": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "urllib": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "uuid": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "weakref": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ]

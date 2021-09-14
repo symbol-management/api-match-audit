@@ -29,46 +29,23 @@
   "os.path.isdir",
   "os.path.isfile",
   "pagination.Paginator.resolve_current_page",
-  "pendulum",
-  "pendulum.Date",
-  "pendulum.Pendulum",
   "pendulum.date.instance",
-  "pendulum.from_timestamp",
-  "pendulum.instance",
-  "pendulum.parse",
-  "pendulum.utcnow",
   "platforms.mysql_platform.MySQLPlatform.LENGTH_LIMIT_BLOB",
   "platforms.mysql_platform.MySQLPlatform.LENGTH_LIMIT_MEDIUMBLOB",
   "platforms.mysql_platform.MySQLPlatform.LENGTH_LIMIT_MEDIUMTEXT",
   "platforms.mysql_platform.MySQLPlatform.LENGTH_LIMIT_TEXT",
   "platforms.mysql_platform.MySQLPlatform.LENGTH_LIMIT_TINYBLOB",
   "platforms.mysql_platform.MySQLPlatform.LENGTH_LIMIT_TINYTEXT",
-  "psycopg2",
-  "psycopg2.extensions",
   "psycopg2.extensions.UNICODE",
   "psycopg2.extensions.UNICODEARRAY",
-  "psycopg2.extensions.register_type",
-  "psycopg2.extras",
-  "psycopg2.extras.DictConnection",
-  "psycopg2.extras.DictCursor",
-  "psycopg2.extras.DictRow",
-  "pygments.formatter.Formatter",
-  "pygments.formatter.Formatter.format",
-  "pygments.highlight",
-  "pygments.lexers.sql.SqlLexer",
-  "pygments.token.Comment",
   "pygments.token.Comment.Preproc",
-  "pygments.token.Error",
-  "pygments.token.Generic",
   "pygments.token.Generic.Deleted",
   "pygments.token.Generic.Error",
   "pygments.token.Generic.Heading",
   "pygments.token.Generic.Inserted",
   "pygments.token.Generic.Prompt",
   "pygments.token.Generic.Subheading",
-  "pygments.token.Keyword",
   "pygments.token.Keyword.Type",
-  "pygments.token.Name",
   "pygments.token.Name.Attribute",
   "pygments.token.Name.Builtin",
   "pygments.token.Name.Class",
@@ -79,60 +56,29 @@
   "pygments.token.Name.Namespace",
   "pygments.token.Name.Tag",
   "pygments.token.Name.Variable",
-  "pygments.token.Number",
-  "pygments.token.Operator",
   "pygments.token.Operator.Word",
-  "pygments.token.String",
-  "pygments.token.Token",
-  "pygments.token.Whitespace",
-  "pygments.util.get_choice_opt",
-  "pymysql",
-  "pymysql.converters",
-  "pymysql.converters.conversions",
-  "pymysql.converters.escape_date",
-  "pymysql.converters.escape_datetime",
-  "pymysql.cursors.DictCursor",
-  "random",
-  "random.choice",
   "re.I",
   "re.X",
   "related_class",
   "relations.Relation.no_constraints",
   "relations.pivot.Pivot",
-  "simplejson",
-  "simplejson.dumps",
-  "simplejson.loads",
-  "six.add_metaclass",
-  "sqlite3",
   "sqlite3.register_adapter",
   "support.collection.Collection.make",
   "sys",
-  "threading",
-  "threading.local",
   "time",
   "type.__getattribute__",
   "type.append",
   "type.upper",
   "type.values",
-  "urllib.parse.parse_qsl",
-  "urllib.parse.quote",
-  "urllib.parse.quote_plus",
-  "urllib.parse.unquote",
-  "urllib.parse.unquote_plus",
   "urllib.quote",
   "urllib.quote_plus",
   "urllib.unquote",
   "urllib.unquote_plus",
   "urlparse.parse_qsl",
   "utils.scope",
-  "uuid",
-  "uuid.uuid4",
   "warnings.warn",
   "warnings.warn_explicit",
-  "wrapped",
-  "wrapt.ObjectProxy",
-  "yaml",
-  "yaml.load"
+  "wrapped"
  ],
  "deps": {
   "MySQLdb": [
@@ -140,6 +86,10 @@
    "mysqlclient/conda-forge/linux-64/mysqlclient-1.4.6-py27haf22ab1_1"
   ],
   "__future__": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "_threading_local": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -242,7 +192,61 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "pendulum": [
+   "pendulum/conda-forge/linux-64/pendulum-1.4.4-py38_1"
+  ],
+  "psycopg2": [
+   "psycopg2/conda-forge/linux-64/psycopg2-2.9.1-py38h497a2fe_0"
+  ],
+  "pygments": [
+   "pygments/conda-forge/noarch/pygments-2.2.0-py_1",
+   "pygments/conda-forge/noarch/pygments-2.3.0-py_0",
+   "pygments/conda-forge/noarch/pygments-2.4.0-py_0",
+   "pygments/conda-forge/noarch/pygments-2.4.1-py_0",
+   "pygments/conda-forge/noarch/pygments-2.5.1-py_0",
+   "pygments/conda-forge/noarch/pygments-2.5.2-py_0",
+   "pygments/conda-forge/noarch/pygments-2.7.0-py_0",
+   "pygments/conda-forge/noarch/pygments-2.7.1-py_0",
+   "pygments/conda-forge/noarch/pygments-2.7.2-py_0",
+   "pygments/conda-forge/noarch/pygments-2.9.0-pyhd8ed1ab_0"
+  ],
+  "pymysql": [
+   "pymysql/conda-forge/noarch/pymysql-0.10.0-pyh9f0ad1d_0",
+   "pymysql/conda-forge/noarch/pymysql-0.10.1-pyh9f0ad1d_0",
+   "pymysql/conda-forge/noarch/pymysql-0.10.1-pyhd3deb0d_0",
+   "pymysql/conda-forge/noarch/pymysql-0.8.0-py_0",
+   "pymysql/conda-forge/noarch/pymysql-0.8.1-py_0",
+   "pymysql/conda-forge/noarch/pymysql-1.0.1-pyhd8ed1ab_0",
+   "pymysql/conda-forge/noarch/pymysql-1.0.2-pyhd8ed1ab_0"
+  ],
+  "random": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "re": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "simplejson": [
+   "simplejson/conda-forge/linux-64/simplejson-3.16.0-py27h470a237_2",
+   "simplejson/conda-forge/linux-64/simplejson-3.16.0-py35h470a237_2",
+   "simplejson/conda-forge/linux-64/simplejson-3.17.0-py38h516909a_0"
+  ],
+  "six": [
+   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
+   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0",
+   "lldb/conda-forge/linux-64/lldb-6.0.0-py35_0",
+   "privy/conda-forge/noarch/privy-6.0.0-py_0",
+   "six/conda-forge/linux-64/six-1.10.0-py34_0",
+   "six/conda-forge/linux-64/six-1.10.0-py34_1",
+   "six/conda-forge/noarch/six-1.14.0-py_1",
+   "six/conda-forge/noarch/six-1.16.0-pyh6c4a22f_0"
+  ],
+  "sqlite3": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "threading": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -250,9 +254,27 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "urllib": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "uuid": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "warnings": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "wrapt": [
+   "wrapt/conda-forge/linux-64/wrapt-1.12.1-py36h8c4c3a4_1",
+   "wrapt/conda-forge/linux-64/wrapt-1.12.1-py38h25fe258_2"
+  ],
+  "yaml": [
+   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
+   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0",
+   "pyyaml/conda-forge/linux-64/pyyaml-3.11-py35_0",
+   "pyyaml/conda-forge/win-64/pyyaml-5.2-py36hfa6e2cd_0"
   ]
  }
 }
