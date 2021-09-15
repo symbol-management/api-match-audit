@@ -10,6 +10,8 @@
   "assertIsNifti",
   "atexit",
   "atype",
+  "bisect",
+  "bisect.insort_left",
   "bytes.tell",
   "bytes.write",
   "callback",
@@ -19,6 +21,8 @@
   "collections.Sequence",
   "collections.defaultdict",
   "coordQuery",
+  "deprecation",
+  "deprecation.deprecated",
   "dumpatlases",
   "expectedShape",
   "featanalysis.getCOPEFile",
@@ -36,6 +40,9 @@
   "fmtarg",
   "fmtargval",
   "fmtval",
+  "fnmatch",
+  "fnmatch.filter",
+  "fnmatch.fnmatch",
   "fot",
   "fsl.utils.platform.platform.canHaveGui",
   "fsl.utils.platform.platform.fsldevdir",
@@ -43,6 +50,7 @@
   "fsl.utils.platform.platform.haveGui",
   "func",
   "functools.partial",
+  "hashlib",
   "hashlib.md5",
   "identifyAtlas",
   "image.Image",
@@ -52,6 +60,12 @@
   "image.looksLikeImage",
   "image.removeExt",
   "image.shape",
+  "inspect",
+  "inspect.getargspec",
+  "inspect.getfullargspec",
+  "inspect.ismethod",
+  "inspect.stack",
+  "inspect.unwrap",
   "isNoisyComponent",
   "isVertexAnnotFile",
   "isVertexDataFile",
@@ -102,6 +116,19 @@
   "os.remove",
   "printColumns",
   "proportions",
+  "random",
+  "random.sample",
+  "shutil",
+  "shutil.copy",
+  "shutil.move",
+  "shutil.rmtree",
+  "six",
+  "six.BytesIO",
+  "six.PY2",
+  "six.PY3",
+  "six.get_method_function",
+  "six.get_method_self",
+  "six.string_types",
   "sliceCovered",
   "sliceObjToSliceTuple",
   "splitExt",
@@ -118,10 +145,17 @@
   "task.schedtime",
   "task.task",
   "task.timeout",
+  "tempfile",
+  "tempfile.NamedTemporaryFile",
+  "tempfile.mkdtemp",
+  "tempfile.mkstemp",
   "time",
   "trimesh.nearest.vertex",
   "trimesh.ray.intersects_id",
   "unpack",
+  "warnings",
+  "warnings.catch_warnings",
+  "warnings.filterwarnings",
   "warnings.warn",
   "wrapper",
   "wrapperutils.HIDE_IF_TRUE",
@@ -153,10 +187,6 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "bisect": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "collections": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -169,26 +199,11 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "deprecation": [
-   "deprecation/conda-forge/noarch/deprecation-1.0.1-py_0",
-   "deprecation/conda-forge/noarch/deprecation-2.0-py_0",
-   "deprecation/conda-forge/noarch/deprecation-2.0.1-py_0",
-   "deprecation/conda-forge/noarch/deprecation-2.0.5-py_0",
-   "deprecation/conda-forge/noarch/deprecation-2.1.0-pyh9f0ad1d_0"
-  ],
-  "fnmatch": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "functools": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "glob": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "hashlib": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -199,10 +214,6 @@
   ],
   "indexed_gzip": [
    "indexed_gzip/conda-forge/linux-64/indexed_gzip-1.5.3-py38h97f6827_0"
-  ],
-  "inspect": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "json": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -243,10 +254,6 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "random": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "re": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -261,29 +268,11 @@
    "scipy/conda-forge/linux-64/scipy-1.7.0-py37h29e03ee_0",
    "scipy/conda-forge/linux-64/scipy-1.7.0-py37ha768fb6_1"
   ],
-  "shutil": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "six": [
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0",
-   "lldb/conda-forge/linux-64/lldb-6.0.0-py35_0",
-   "privy/conda-forge/noarch/privy-6.0.0-py_0",
-   "six/conda-forge/linux-64/six-1.10.0-py34_0",
-   "six/conda-forge/linux-64/six-1.10.0-py34_1",
-   "six/conda-forge/noarch/six-1.14.0-py_1",
-   "six/conda-forge/noarch/six-1.16.0-pyh6c4a22f_0"
-  ],
   "string": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "subprocess": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "tempfile": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -332,10 +321,6 @@
    "trimesh/conda-forge/noarch/trimesh-3.9.8-pyh44b312d_0"
   ],
   "types": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "warnings": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],

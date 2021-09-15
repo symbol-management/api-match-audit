@@ -28,6 +28,7 @@
   "f",
   "func",
   "io.BytesIO",
+  "ipaddress",
   "method",
   "multiprocessing.Condition",
   "multiprocessing.Process",
@@ -44,6 +45,12 @@
   "protocol.TBinaryProtocol.TBinaryProtocolFactory",
   "read",
   "reader_func",
+  "select",
+  "select.select",
+  "six",
+  "six.iteritems",
+  "six.iterkeys",
+  "six.itervalues",
   "six.moves.BaseHTTPServer",
   "six.moves.BaseHTTPServer.BaseHTTPRequestHandler",
   "six.moves.http_client",
@@ -55,6 +62,7 @@
   "six.moves.urllib.parse.quote",
   "six.moves.urllib.parse.unquote",
   "six.moves.zip",
+  "socket",
   "socket.AF_INET",
   "socket.AF_INET6",
   "socket.AF_UNIX",
@@ -66,14 +74,22 @@
   "socket.SO_REUSEADDR",
   "socket.error",
   "socket.gaierror",
+  "socket.getaddrinfo",
   "socket.getdefaulttimeout",
   "socket.setdefaulttimeout",
+  "socket.socket",
+  "ssl",
   "ssl.CERT_NONE",
   "ssl.CERT_REQUIRED",
   "ssl.OP_NO_SSLv2",
   "ssl.OP_NO_SSLv3",
   "ssl.PROTOCOL_SSLv23",
   "ssl.PROTOCOL_TLSv1",
+  "ssl.SSLContext",
+  "ssl.SSLError",
+  "ssl.match_hostname",
+  "ssl.wrap_socket",
+  "struct",
   "struct.pack",
   "struct.unpack",
   "sys",
@@ -97,11 +113,48 @@
   "thrift.transport.TTransport.TTransportException.NOT_OPEN",
   "thrift.transport.TTransport.TTransportException.SIZE_LIMIT",
   "thrift.transport.TTransport.TTransportException.UNKNOWN",
+  "tornado.concurrent",
+  "tornado.concurrent.Future",
+  "tornado.gen",
+  "tornado.gen.Return",
+  "tornado.gen.coroutine",
+  "tornado.gen.with_timeout",
+  "tornado.ioloop",
+  "tornado.ioloop.TimeoutError",
+  "tornado.iostream",
+  "tornado.iostream.IOStream",
+  "tornado.iostream.StreamBufferFullError",
+  "tornado.iostream.StreamClosedError",
+  "tornado.tcpserver",
+  "tornado.tcpserver.TCPServer",
   "transport.TTransport.TMemoryBuffer",
   "transport.TTransport.TTransportException.END_OF_FILE",
   "transport.TTransport.TTransportException.NOT_OPEN",
   "transport.TTransport.TTransportException.UNKNOWN",
   "try_close",
+  "twisted.internet.defer",
+  "twisted.internet.defer.Deferred",
+  "twisted.internet.defer.inlineCallbacks",
+  "twisted.internet.protocol.ClientFactory",
+  "twisted.internet.protocol.ServerFactory",
+  "twisted.internet.protocol.connectionDone",
+  "twisted.internet.threads.deferToThread",
+  "twisted.protocols.basic",
+  "twisted.protocols.basic.Int32StringReceiver",
+  "twisted.web.http",
+  "twisted.web.http.OK",
+  "twisted.web.resource",
+  "twisted.web.resource.Resource",
+  "twisted.web.server",
+  "twisted.web.server.NOT_DONE_YET",
+  "types",
+  "types.BuiltinFunctionType",
+  "types.BuiltinMethodType",
+  "types.FunctionType",
+  "types.LambdaType",
+  "types.MethodType",
+  "warnings",
+  "warnings.filterwarnings",
   "warnings.warn",
   "write",
   "writer_func",
@@ -119,22 +172,11 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "_ssl": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "base64": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "contextlib": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "ipaddress": [
-   "ipaddress/conda-forge/noarch/ipaddress-1.0.22-py_1",
-   "ipaddress/conda-forge/noarch/ipaddress-1.0.23-py_0",
-   "privy/conda-forge/noarch/privy-6.0.0-py_0",
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -154,47 +196,7 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "select": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "six": [
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0",
-   "lldb/conda-forge/linux-64/lldb-6.0.0-py35_0",
-   "privy/conda-forge/noarch/privy-6.0.0-py_0",
-   "six/conda-forge/linux-64/six-1.10.0-py34_0",
-   "six/conda-forge/linux-64/six-1.10.0-py34_1",
-   "six/conda-forge/noarch/six-1.14.0-py_1",
-   "six/conda-forge/noarch/six-1.16.0-pyh6c4a22f_0"
-  ],
-  "socket": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "ssl": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "struct": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "threading": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "tornado": [
-   "tornado/conda-forge/linux-64/tornado-6.0.4-py38h1e0a361_2"
-  ],
-  "twisted": [
-   "twisted/conda-forge/linux-64/twisted-18.7.0-py37h14c3975_1001"
-  ],
-  "types": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "warnings": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
