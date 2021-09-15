@@ -42,6 +42,7 @@
   "lib.reporting.print_error_as_table",
   "lib.utils.ask_boolean_question",
   "lib.workflows.get_workflows",
+  "logzero.logger",
   "logzero.logger.debug",
   "logzero.logger.error",
   "logzero.logger.info",
@@ -50,10 +51,18 @@
   "os.path.exists",
   "os.path.isdir",
   "os.path.isfile",
+  "pendulum",
+  "pendulum.from_timestamp",
+  "pendulum.now",
+  "pendulum.parse",
   "request",
   "subcommands.outputs.get_outputs",
   "sys",
-  "urljoin"
+  "tabulate.tabulate",
+  "tzlocal.get_localzone",
+  "urljoin",
+  "urllib.parse.urljoin",
+  "urllib.parse.urlparse"
  ],
  "deps": {
   "aiohttp": [
@@ -123,9 +132,6 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "logzero": [
-   "logzero/conda-forge/linux-64/logzero-1.6.3-py36h5fab9bb_1"
-  ],
   "ntpath": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -133,10 +139,6 @@
   "os": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "pendulum": [
-   "pendulum/conda-forge/linux-64/pendulum-1.4.4-py38_1",
-   "pendulum/conda-forge/linux-64/pendulum-2.0.2-py36_0"
   ],
   "re": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -152,26 +154,7 @@
    "requests/conda-forge/noarch/requests-2.25.1-pyhd3deb0d_0",
    "requests/conda-forge/noarch/requests-2.26.0-pyhd8ed1ab_0"
   ],
-  "tabulate": [
-   "tabulate/conda-forge/noarch/tabulate-0.8.1-py_0",
-   "tabulate/conda-forge/noarch/tabulate-0.8.2-py_0",
-   "tabulate/conda-forge/noarch/tabulate-0.8.3-py_0",
-   "tabulate/conda-forge/noarch/tabulate-0.8.4-py_0",
-   "tabulate/conda-forge/noarch/tabulate-0.8.6-py_0",
-   "tabulate/conda-forge/noarch/tabulate-0.8.7-pyh9f0ad1d_0",
-   "tabulate/conda-forge/noarch/tabulate-0.8.9-pyhd8ed1ab_0"
-  ],
   "typing": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "tzlocal": [
-   "tzlocal/conda-forge/noarch/tzlocal-1.5.1-py_0",
-   "tzlocal/conda-forge/noarch/tzlocal-2.0.0-py_0",
-   "tzlocal/conda-forge/noarch/tzlocal-2.1-pyh9f0ad1d_0",
-   "tzlocal/conda-forge/noarch/tzlocal-3.0-pyhd8ed1ab_0"
-  ],
-  "urllib": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ]

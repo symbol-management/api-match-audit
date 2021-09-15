@@ -3,16 +3,36 @@
   "CONFIG.minio_executable",
   "JenkinsTestServer",
   "XvfbServer",
+  "codecs",
+  "docker",
   "docker.DockerServer",
+  "docker.errors.APIError",
+  "docker.errors.ImageNotFound",
   "errno",
+  "future.utils.text_type",
+  "getpass",
+  "hashlib",
   "hashlib.sha1",
   "kubernetes.KubernetesServer",
+  "kubernetes.client",
+  "kubernetes.client.V1Container",
+  "kubernetes.client.V1DeleteOptions",
+  "kubernetes.client.V1EnvVar",
+  "kubernetes.client.V1ObjectMeta",
+  "kubernetes.client.V1Pod",
+  "kubernetes.client.V1PodSpec",
+  "kubernetes.client.rest.ApiException",
+  "kubernetes.config",
+  "kubernetes.config.load_incluster_config",
+  "kubernetes.config.load_kube_config",
   "os.environ.encode",
   "os.kill",
   "os.mkdir",
   "os.path.exists",
   "path.Path",
   "path.path",
+  "platform",
+  "platform.uname",
   "psutil",
   "psutil.Process",
   "psutil.wait_procs",
@@ -64,7 +84,6 @@
   "pytest_server_fixtures.__init__.DEFAULT_SERVER_FIXTURES_XVFB",
   "pytest_server_fixtures.__init__.FixtureConfig",
   "pytest_server_fixtures.__init__.SESSION_ID_LEN",
-  "signal",
   "signal.SIGINT",
   "signal.SIGKILL",
   "signal.SIGTERM",
@@ -81,9 +100,7 @@
   "sys",
   "sys.stderr.writelines",
   "thread.ThreadServer",
-  "time",
-  "traceback",
-  "traceback.print_exc"
+  "time"
  ],
  "deps": {
   "__future__": [
@@ -175,10 +192,6 @@
    "botocore/conda-forge/noarch/botocore-1.8.39-py_0",
    "botocore/conda-forge/noarch/botocore-1.9.13-py_0"
   ],
-  "codecs": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "collections": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -191,29 +204,9 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "docker": [
-   "docker-py/conda-forge/linux-64/docker-py-3.3.0-py35_0",
-   "docker-py/conda-forge/linux-64/docker-py-4.4.3-py37h9c2f6ca_0"
-  ],
   "functools": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "future": [
-   "future/conda-forge/linux-64/future-0.16.0-py34_0"
-  ],
-  "getpass": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "hashlib": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "kubernetes": [
-   "python-kubernetes/conda-forge/noarch/python-kubernetes-12.0.0-pyh9f0ad1d_0",
-   "python-kubernetes/conda-forge/noarch/python-kubernetes-12.0.1-pyhd3deb0d_0",
-   "python-kubernetes/conda-forge/noarch/python-kubernetes-17.17.0-pyhd8ed1ab_0"
   ],
   "logging": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -224,10 +217,6 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "os": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "platform": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -279,6 +268,10 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "signal": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "six": [
    "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
    "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0",
@@ -306,6 +299,10 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "threading": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "traceback": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],

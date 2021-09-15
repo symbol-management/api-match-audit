@@ -251,9 +251,13 @@
   "activate_function",
   "add_code_to_python_process",
   "add_code_to_python_process.run_python_code",
+  "argparse",
+  "argparse.ArgumentParser",
+  "argparse.SUPPRESS",
   "atexit",
   "attach_script",
   "attach_script.fix_main_thread_id",
+  "builtins",
   "builtins.execfile",
   "builtins.interpreter",
   "builtins.runfile",
@@ -313,6 +317,12 @@
   "handler",
   "info",
   "inputhook",
+  "inspect",
+  "inspect.currentframe",
+  "inspect.getargspec",
+  "inspect.getfullargspec",
+  "inspect.getsourcefile",
+  "inspect.getsourcelines",
   "io.StringIO",
   "io.open",
   "is_error_result",
@@ -412,12 +422,9 @@
   "request.command",
   "request.isnt_valid",
   "request.respond",
-  "run",
   "run_module_as_main",
   "set_trace",
   "settrace",
-  "shutil",
-  "shutil.copy",
   "signal.SIGINT",
   "signal.SIGKILL",
   "signal.SIGTERM",
@@ -457,13 +464,6 @@
   "sys.stdout.buffer",
   "sys.stdout.flush",
   "sys.stdout.write",
-  "threading",
-  "threading.Event",
-  "threading.RLock",
-  "threading.Thread",
-  "threading.current_thread",
-  "threading.enumerate",
-  "threading.local",
   "time",
   "time.clock",
   "validate_item",
@@ -485,13 +485,9 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "argparse": [
-   "argparse/conda-forge/osx-64/argparse-1.4.0-py26_0",
+  "_threading_local": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "builtins": [
-   "pies2overrides/conda-forge/osx-64/pies2overrides-2.6.7-py27_1000"
   ],
   "code": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -535,10 +531,6 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "importlib": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "inspect": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -587,6 +579,10 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "run": [
+   "win-unicode-console/conda-forge/win-64/win-unicode-console-0.5-py37_0",
+   "win_unicode_console/conda-forge/win-64/win_unicode_console-0.5-py36_0"
+  ],
   "runpy": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -595,6 +591,10 @@
    "setuptools/conda-forge/linux-64/setuptools-40.6.1-py36_0",
    "setuptools/conda-forge/linux-64/setuptools-46.3.0-py38h32f6830_0",
    "setuptools/conda-forge/linux-64/setuptools-49.1.2-py38h32f6830_0"
+  ],
+  "shutil": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "signal": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -626,6 +626,10 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "sysconfig": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "threading": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
