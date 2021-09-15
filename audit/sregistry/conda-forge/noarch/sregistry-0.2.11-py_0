@@ -5,33 +5,15 @@
   "call",
   "datetime.timezone.utc",
   "errno",
-  "fnmatch",
-  "fnmatch.filter",
-  "fnmatch.fnmatch",
   "function",
   "get_input",
   "get_secrets_file",
-  "globus_sdk",
-  "globus_sdk.NativeAppAuthClient",
-  "globus_sdk.RefreshTokenAuthorizer",
-  "globus_sdk.TransferClient",
-  "globus_sdk.TransferData",
-  "globus_sdk.exc.TransferAPIError",
   "google",
   "google.cloud.exceptions.NotFound",
   "google.cloud.storage",
   "google.cloud.storage.Client",
-  "googleapiclient.discovery.build",
-  "googleapiclient.errors.HttpError",
-  "googleapiclient.http.MediaFileUpload",
-  "googleapiclient.http.MediaIoBaseDownload",
-  "hashlib",
   "hashlib.md5",
   "hashlib.sha256",
-  "hmac",
-  "hmac.new",
-  "httplib2",
-  "httplib2.Http",
   "hub.Client",
   "hub.Client._credential_cache",
   "hub.Client._init_db",
@@ -48,21 +30,10 @@
   "hub.Client.quiet",
   "hub.Client.rename",
   "hub.Client.rm",
-  "io",
   "io.BytesIO",
   "io.StringIO",
   "itertools",
-  "math",
-  "math.ceil",
-  "multiprocessing",
   "multiprocessing.Pool",
-  "oauth2client.client",
-  "oauth2client.client.GoogleCredentials",
-  "oauth2client.client.GoogleCredentials.get_application_default",
-  "oauth2client.client.flow_from_clientsecrets",
-  "oauth2client.file.Storage",
-  "oauth2client.tools",
-  "oauth2client.tools.run_flow",
   "os.W_OK",
   "os.access",
   "os.close",
@@ -76,13 +47,7 @@
   "os.path.isdir",
   "os.path.isfile",
   "os.remove",
-  "pickle",
   "pwd",
-  "random.choice",
-  "requests_toolbelt.MultipartEncoder",
-  "requests_toolbelt.MultipartEncoderMonitor",
-  "requests_toolbelt.streaming_iterator.StreamingIterator",
-  "retrying.retry",
   "run_command",
   "shell.main",
   "signal.SIGINT",
@@ -171,9 +136,6 @@
   "sregistry.main.swift.__init__.Client",
   "sregistry.main.swift.__init__.pull",
   "sregistry.main.swift.__init__.push",
-  "subprocess.PIPE",
-  "subprocess.Popen",
-  "subprocess.STDOUT",
   "sys",
   "sys.stdout.flush",
   "sys.stdout.write",
@@ -308,7 +270,61 @@
    "python-dateutil/conda-forge/noarch/python-dateutil-2.8.2-pyhd8ed1ab_0"
   ],
   "dropbox": [],
+  "fnmatch": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "glob": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "globus_sdk": [
+   "globus-sdk/conda-forge/noarch/globus-sdk-1.1.1-py_0",
+   "globus-sdk/conda-forge/noarch/globus-sdk-1.10.0-pyhd8ed1ab_0",
+   "globus-sdk/conda-forge/noarch/globus-sdk-1.11.0-pyhd8ed1ab_0",
+   "globus-sdk/conda-forge/noarch/globus-sdk-1.6.1-py_0",
+   "globus-sdk/conda-forge/noarch/globus-sdk-1.7.0-py_0",
+   "globus-sdk/conda-forge/noarch/globus-sdk-1.7.1-py_0",
+   "globus-sdk/conda-forge/noarch/globus-sdk-1.7.1-py_1",
+   "globus-sdk/conda-forge/noarch/globus-sdk-1.9.1-pyh9f0ad1d_0"
+  ],
+  "googleapiclient": [
+   "google-api-python-client/conda-forge/noarch/google-api-python-client-1.11.0-pyh9f0ad1d_0",
+   "google-api-python-client/conda-forge/noarch/google-api-python-client-1.12.0-pyh9f0ad1d_0",
+   "google-api-python-client/conda-forge/noarch/google-api-python-client-1.12.3-pyh9f0ad1d_0",
+   "google-api-python-client/conda-forge/noarch/google-api-python-client-1.12.5-pyh9f0ad1d_0",
+   "google-api-python-client/conda-forge/noarch/google-api-python-client-1.12.7-pyhd3deb0d_0",
+   "google-api-python-client/conda-forge/noarch/google-api-python-client-1.12.8-pyhd3deb0d_0",
+   "google-api-python-client/conda-forge/noarch/google-api-python-client-1.6.4-py_0",
+   "google-api-python-client/conda-forge/noarch/google-api-python-client-1.6.5-py_0",
+   "google-api-python-client/conda-forge/noarch/google-api-python-client-1.7.6-py_0",
+   "google-api-python-client/conda-forge/noarch/google-api-python-client-1.8.0-pyh8c360ce_0",
+   "google-api-python-client/conda-forge/noarch/google-api-python-client-1.8.2-pyh9f0ad1d_0",
+   "google-api-python-client/conda-forge/noarch/google-api-python-client-1.9.1-pyh9f0ad1d_0",
+   "google-api-python-client/conda-forge/noarch/google-api-python-client-1.9.1-pyh9f0ad1d_1",
+   "google-api-python-client/conda-forge/noarch/google-api-python-client-2.10.0-pyhd8ed1ab_0",
+   "google-api-python-client/conda-forge/noarch/google-api-python-client-2.13.0-pyhd8ed1ab_0",
+   "google-api-python-client/conda-forge/noarch/google-api-python-client-2.2.0-pyhd8ed1ab_0",
+   "google-api-python-client/conda-forge/noarch/google-api-python-client-2.4.0-pyhd8ed1ab_0",
+   "google-api-python-client/conda-forge/noarch/google-api-python-client-2.6.0-pyhd8ed1ab_0"
+  ],
+  "hashlib": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "hmac": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "httplib2": [
+   "httplib2/conda-forge/linux-64/httplib2-0.12.3-py36_0",
+   "httplib2/conda-forge/linux-64/httplib2-0.14.0-py38_0",
+   "httplib2/conda-forge/noarch/httplib2-0.17.1-pyh9f0ad1d_0",
+   "httplib2/conda-forge/noarch/httplib2-0.17.3-pyh9f0ad1d_0",
+   "httplib2/conda-forge/noarch/httplib2-0.18.0-pyh9f0ad1d_0",
+   "httplib2/conda-forge/noarch/httplib2-0.19.0-pyhd8ed1ab_0"
+  ],
+  "io": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -316,11 +332,31 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "math": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "multiprocessing": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "ntpath": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "oauth2client": [
+   "oauth2client/conda-forge/noarch/oauth2client-4.1.2-py_1",
+   "oauth2client/conda-forge/noarch/oauth2client-4.1.3-py_0"
+  ],
   "os": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "pickle": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "random": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -337,6 +373,15 @@
    "requests/conda-forge/noarch/requests-2.25.0-pyhd3deb0d_0",
    "requests/conda-forge/noarch/requests-2.25.1-pyhd3deb0d_0",
    "requests/conda-forge/noarch/requests-2.26.0-pyhd8ed1ab_0"
+  ],
+  "requests_toolbelt": [
+   "requests-toolbelt/conda-forge/noarch/requests-toolbelt-0.8.0-py_1",
+   "requests-toolbelt/conda-forge/noarch/requests-toolbelt-0.9.0-py_0",
+   "requests-toolbelt/conda-forge/noarch/requests-toolbelt-0.9.1-py_0"
+  ],
+  "retrying": [
+   "retrying/conda-forge/linux-64/retrying-1.3.3-py35_0",
+   "retrying/conda-forge/noarch/retrying-1.3.3-py_2"
   ],
   "shutil": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -365,6 +410,10 @@
    "spython/conda-forge/noarch/spython-0.1.1-pyhd8ed1ab_0"
   ],
   "sqlalchemy": [],
+  "subprocess": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "swiftclient": [
    "python-swiftclient/conda-forge/linux-64/python-swiftclient-3.9.0-py37hc8dfbb8_1",
    "python-swiftclient/conda-forge/noarch/python-swiftclient-3.10.0-py_0",
