@@ -171,7 +171,6 @@
   "file_state_cache.setup",
   "generatedssuper.GeneratedsSuper",
   "get_filename",
-  "getopt",
   "index.FileIOError",
   "index.ParseError",
   "index.parse",
@@ -188,51 +187,10 @@
   "os.path.getmtime",
   "os.path.isdir",
   "os.path.isfile",
-  "pipes.quote",
   "re.VERBOSE",
   "render_derivedcompoundref",
   "render_sig",
   "renderer.sphinxrenderer.setup",
-  "shlex.quote",
-  "six",
-  "six.string_types",
-  "six.text_type",
-  "six.u",
-  "sphinx.addnodes",
-  "sphinx.addnodes.desc",
-  "sphinx.addnodes.desc_annotation",
-  "sphinx.addnodes.desc_content",
-  "sphinx.addnodes.desc_name",
-  "sphinx.addnodes.desc_signature",
-  "sphinx.addnodes.desc_signature_line",
-  "sphinx.addnodes.pending_xref",
-  "sphinx.application.Sphinx",
-  "sphinx.directives.ObjectDescription",
-  "sphinx.directives.SphinxDirective",
-  "sphinx.domains.c",
-  "sphinx.domains.c.CEnumObject",
-  "sphinx.domains.c.CEnumeratorObject",
-  "sphinx.domains.c.CFunctionObject",
-  "sphinx.domains.c.CMacroObject",
-  "sphinx.domains.c.CMemberObject",
-  "sphinx.domains.c.CStructObject",
-  "sphinx.domains.c.CTypeObject",
-  "sphinx.domains.c.CUnionObject",
-  "sphinx.domains.cpp",
-  "sphinx.domains.cpp.CPPClassObject",
-  "sphinx.domains.cpp.CPPEnumObject",
-  "sphinx.domains.cpp.CPPEnumeratorObject",
-  "sphinx.domains.cpp.CPPFunctionObject",
-  "sphinx.domains.cpp.CPPMemberObject",
-  "sphinx.domains.cpp.CPPTypeObject",
-  "sphinx.domains.cpp.CPPUnionObject",
-  "sphinx.domains.cpp.DefinitionParser",
-  "sphinx.domains.python",
-  "sphinx.domains.python.PyAttribute",
-  "sphinx.domains.python.PyClasslike",
-  "sphinx.domains.python.PyFunction",
-  "sphinx.environment.BuildEnvironment",
-  "sphinx.util.nodes.nested_parse_with_titles",
   "sphinx_csharp.csharp",
   "sphinx_csharp.csharp.CSharpAttribute",
   "sphinx_csharp.csharp.CSharpClass",
@@ -258,26 +216,10 @@
   "sys",
   "sys.stdout.write",
   "to_string",
-  "typing.Any",
-  "typing.Callable",
-  "typing.Dict",
-  "typing.List",
-  "typing.Optional",
-  "typing.Sequence",
-  "typing.Set",
-  "typing.Tuple",
-  "typing.Type",
-  "typing.Union",
-  "typing.cast",
   "update_signature",
-  "xml.dom.Node",
   "xml.dom.Node.CDATA_SECTION_NODE",
   "xml.dom.Node.ELEMENT_NODE",
   "xml.dom.Node.TEXT_NODE",
-  "xml.dom.minidom",
-  "xml.dom.minidom.parse",
-  "xml.dom.minidom.parseString",
-  "xml.etree.ElementTree",
   "xml.parsers.expat.ExpatError"
  ],
  "deps": {
@@ -297,6 +239,10 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "getopt": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "ntpath": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -305,15 +251,58 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "pipes": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "re": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "shlex": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "six": [
+   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
+   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0",
+   "lldb/conda-forge/linux-64/lldb-6.0.0-py35_0",
+   "privy/conda-forge/noarch/privy-6.0.0-py_0",
+   "six/conda-forge/linux-64/six-1.10.0-py34_0",
+   "six/conda-forge/linux-64/six-1.10.0-py34_1",
+   "six/conda-forge/noarch/six-1.14.0-py_1",
+   "six/conda-forge/noarch/six-1.16.0-pyh6c4a22f_0"
+  ],
+  "sphinx": [
+   "sphinx/conda-forge/noarch/sphinx-3.0.1-py_0",
+   "sphinx/conda-forge/noarch/sphinx-3.0.3-py_0",
+   "sphinx/conda-forge/noarch/sphinx-3.0.4-py_0",
+   "sphinx/conda-forge/noarch/sphinx-3.2.0-py_0",
+   "sphinx/conda-forge/noarch/sphinx-3.2.1-py_0",
+   "sphinx/conda-forge/noarch/sphinx-3.3.0-pyhd8ed1ab_0",
+   "sphinx/conda-forge/noarch/sphinx-3.3.1-pyhd8ed1ab_0",
+   "sphinx/conda-forge/noarch/sphinx-3.3.1-pyhd8ed1ab_1",
+   "sphinx/conda-forge/noarch/sphinx-3.4.2-pyhd8ed1ab_0",
+   "sphinx/conda-forge/noarch/sphinx-3.4.3-pyhd8ed1ab_0",
+   "sphinx/conda-forge/noarch/sphinx-3.5.2-pyhd8ed1ab_0",
+   "sphinx/conda-forge/noarch/sphinx-4.0.1-pyh6c4a22f_0",
+   "sphinx/conda-forge/noarch/sphinx-4.0.2-pyh6c4a22f_1",
+   "sphinx/conda-forge/noarch/sphinx-4.0.3-pyh6c4a22f_0",
+   "sphinx/conda-forge/noarch/sphinx-4.1.1-pyh6c4a22f_0"
   ],
   "subprocess": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "textwrap": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "typing": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "xml": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ]
