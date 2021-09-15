@@ -13,11 +13,17 @@
   "dict.pop",
   "dummy_thread.get_ident",
   "errno",
-  "factory",
   "func",
   "functools.partial",
   "greenlet.getcurrent",
   "handler",
+  "importlib",
+  "importlib.import_module",
+  "inspect",
+  "inspect.isbuiltin",
+  "inspect.isclass",
+  "inspect.isfunction",
+  "inspect.ismethod",
   "isatty",
   "job.Job.fetch",
   "job.JobStatus.DEFERRED",
@@ -31,8 +37,6 @@
   "logging.StreamHandler.format",
   "long",
   "multiprocessing.Process",
-  "numbers",
-  "numbers.Integral",
   "object.__setattr__",
   "option",
   "os.EX_OK",
@@ -41,11 +45,9 @@
   "os.getpid",
   "os.kill",
   "os.waitpid",
-  "pickle",
-  "pickle.HIGHEST_PROTOCOL",
-  "pickle.dumps",
-  "pickle.loads",
+  "re",
   "re.I",
+  "re.compile",
   "registry.DeferredJobRegistry",
   "registry.FailedJobRegistry",
   "registry.FinishedJobRegistry",
@@ -71,15 +73,8 @@
   "thread.get_ident",
   "time",
   "to_queue",
-  "traceback",
-  "traceback.format_exc",
-  "traceback.format_exception",
   "tuple.__getitem__",
-  "types",
   "unicode",
-  "uuid",
-  "uuid.uuid4",
-  "warnings",
   "warnings.warn",
   "worker_registration.REDIS_WORKER_KEYS",
   "worker_registration.register",
@@ -87,6 +82,10 @@
  ],
  "deps": {
   "__future__": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "_pickle": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -113,16 +112,15 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "factory": [
+   "factory_boy/conda-forge/noarch/factory_boy-2.10.0-py_0",
+   "factory_boy/conda-forge/noarch/factory_boy-2.11.0-py_0",
+   "factory_boy/conda-forge/noarch/factory_boy-2.11.1-py_0",
+   "factory_boy/conda-forge/noarch/factory_boy-2.11.1-pyh9f0ad1d_1",
+   "factory_boy/conda-forge/noarch/factory_boy-3.0.1-pyh9f0ad1d_1",
+   "factory_boy/conda-forge/noarch/factory_boy-3.1.0-pyh9f0ad1d_0"
+  ],
   "functools": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "importlib": [
-   "importlib/conda-forge/linux-64/importlib-1.0.4-py26_0",
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "inspect": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -138,7 +136,15 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "numbers": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "os": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "pickle": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -147,10 +153,6 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "random": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "re": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -199,6 +201,22 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "socket": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "traceback": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "types": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "uuid": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "warnings": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],

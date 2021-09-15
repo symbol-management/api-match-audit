@@ -24,19 +24,34 @@
   "_root_logger_wrapper.level",
   "_root_logger_wrapper.set_formatter",
   "_str_block_width",
+  "cgi.escape",
   "check_vba_stream",
   "clz",
+  "codecs",
+  "codecs.EncodedFile",
+  "codecs.StreamWriter",
+  "codecs.getwriter",
   "codecs.lookup",
   "codecs.lookup_error",
   "codecs.register_error",
+  "colorclass",
+  "colorclass.Color",
+  "colorclass.Windows.enable",
+  "csv.Error",
+  "csv.reader",
   "daemonize.Daemonize",
   "elementtree.cElementTree",
   "elementtree.cElementTree.fromstring",
+  "fnmatch",
+  "fnmatch.filter",
   "func",
   "func.__name__",
   "functools.reduce",
+  "hashlib",
   "hashlib.md5",
   "iglob",
+  "imp",
+  "imp.find_module",
   "io.BytesIO",
   "io.StringIO",
   "itertools",
@@ -47,8 +62,6 @@
   "logging.Logger.manager.loggerDict",
   "logging.root.handlers",
   "logging.root.level",
-  "lxml.etree",
-  "main",
   "msoffcrypto",
   "old_hook",
   "oletools.common.clsid.KNOWN_CLSIDS.get",
@@ -72,13 +85,19 @@
   "pcodedmp.pcodedmp",
   "pcodedmp.pcodedmp.processFile",
   "pyparsing.opAssoc.LEFT",
+  "re",
   "re.I",
   "re.IGNORECASE",
+  "re.compile",
+  "re.escape",
+  "re.findall",
+  "re.finditer",
+  "re.match",
+  "re.search",
+  "re.sub",
   "rec_clz",
   "rtfobj.rtf_iter_objects",
   "socket.AF_INET6",
-  "string",
-  "string.printable",
   "struct.Struct",
   "struct.calcsize",
   "struct.error",
@@ -92,16 +111,9 @@
   "sys.stdout.flush",
   "sys.stdout.isatty",
   "sys.version_info.major",
-  "textwrap",
-  "textwrap.fill",
-  "textwrap.wrap",
   "thirdparty.xxxswf.xxxswf.disneyland",
   "thirdparty.xxxswf.xxxswf.main",
   "time",
-  "traceback",
-  "traceback.extract_stack",
-  "traceback.extract_tb",
-  "traceback.format_list",
   "warnings.warn",
   "xml.etree.cElementTree.ParseError",
   "xml.etree.cElementTree.iterparse",
@@ -111,10 +123,6 @@
  ],
  "deps": {
   "__future__": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "_csv": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -130,16 +138,6 @@
   "binascii": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "cgi": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython"
-  ],
-  "codecs": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "colorclass": [
-   "colorclass/conda-forge/noarch/colorclass-2.2.0-py_0"
   ],
   "copy": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -161,23 +159,11 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "fnmatch": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "glob": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "hashlib": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "html": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "imp": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -194,6 +180,13 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "logging": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "lxml": [
+   "lxml/conda-forge/linux-64/lxml-4.2.6-py37h23eabaa_1000"
+  ],
+  "main": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -234,7 +227,7 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "re": [
+  "string": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -243,6 +236,14 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "tempfile": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "textwrap": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "traceback": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
