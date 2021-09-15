@@ -212,8 +212,6 @@
   "macroserver.prepare_macroserver",
   "macroserver.registerExtensions",
   "macroserver.unregisterExtensions",
-  "matplotlib.pylab",
-  "matplotlib.pyplot",
   "mock.MagicMock",
   "mock.Mock",
   "mock.call",
@@ -285,22 +283,45 @@
   "os.system",
   "os.write",
   "pairwise",
+  "pickle.loads",
   "pool.prepare_pool",
   "pool.registerExtensions",
   "pool.unregisterExtensions",
+  "posixpath",
+  "posixpath.join",
   "postAcqHook",
   "postNewfileHook",
   "preAcqHook",
+  "pygments",
+  "pygments.formatters",
   "pygments.formatters.HtmlFormatter",
+  "pygments.highlight",
+  "pygments.lexers",
   "pygments.lexers.PythonLexer",
   "pygments.lexers.PythonTracebackLexer",
+  "pylab",
   "pylab.legend",
   "pylab.plot",
+  "pyqtgraph",
+  "pyreadline",
   "pyreadline.GetOutputFile",
+  "pyreadline.unicode_helper.pyreadline_codepage",
+  "pytest",
   "pytest.mark.parametrize",
+  "qtconsole.manager.QtKernelManager",
+  "qtconsole.rich_jupyter_widget.RichJupyterWidget",
   "quote_string",
+  "random",
+  "random.random",
+  "random.uniform",
+  "re",
   "re.IGNORECASE",
   "re.MULTILINE",
+  "re.compile",
+  "re.findall",
+  "re.match",
+  "re.search",
+  "re.sub",
   "read",
   "real_listener",
   "release.__dict__.items",
@@ -408,6 +429,8 @@
   "sardana.macroserver.macro.ViewOption.ShowCtrlAxis",
   "sardana.macroserver.macro.ViewOption.ShowDial",
   "sardana.macroserver.macro.macro.name",
+  "sardana.macroserver.macros.test.RunMacroTestCase.macro_runs",
+  "sardana.macroserver.macros.test.RunMacroTestCase.setUp",
   "sardana.macroserver.macros.test.RunMacroTestCase.tearDown",
   "sardana.macroserver.macros.test.RunStopMacroTestCase.setUp",
   "sardana.macroserver.macros.test.RunStopMacroTestCase.tearDown",
@@ -514,6 +537,8 @@
   "sardana.pool.poolmotion.MotionState.MovingBacklash",
   "sardana.pool.poolmotion.MotionState.MovingInstability",
   "sardana.pool.poolobject.PoolObject.get_id",
+  "sardana.pool.test.BasePoolTestCase.setUp",
+  "sardana.pool.test.BasePoolTestCase.tearDown",
   "sardana.sardanadefs.AttrQuality.Valid",
   "sardana.sardanadefs.DataFormat.OneD",
   "sardana.sardanadefs.DataFormat.Scalar",
@@ -554,6 +579,8 @@
   "sardana.tango.macroserver.__init__.main_macroserver",
   "sardana.tango.macroserver.__init__.prepare_macroserver",
   "sardana.tango.macroserver.__init__.run",
+  "sardana.tango.macroserver.test.BaseMacroServerTestCase.setUp",
+  "sardana.tango.macroserver.test.BaseMacroServerTestCase.tearDown",
   "sardana.tango.pool.PoolDevice.PoolElementDevice._is_allowed",
   "sardana.tango.pool.PoolDevice.PoolElementDevice.get_attributes_to_restore",
   "sardana.tango.pool.PoolDevice.PoolElementDevice.init",
@@ -592,7 +619,11 @@
   "sardana.tango.pool.__init__.main_pool",
   "sardana.tango.pool.__init__.prepare_pool",
   "sardana.tango.pool.__init__.run",
+  "sardana.tango.pool.test.BasePoolTestCase.setUp",
+  "sardana.tango.pool.test.BasePoolTestCase.tearDown",
   "sardana.tango.pool.test.SarTestTestCase.pseudo_cls_list",
+  "sardana.tango.pool.test.SarTestTestCase.setUp",
+  "sardana.tango.pool.test.SarTestTestCase.tearDown",
   "sardana.taurus.core.tango.sardana.ChannelView.Channel",
   "sardana.taurus.core.tango.sardana.ChannelView.Conditioning",
   "sardana.taurus.core.tango.sardana.ChannelView.DataType",
@@ -624,6 +655,8 @@
   "sardana.taurus.qt.qtgui.extra_sardana.ShowScanOnline.__module__.__file__",
   "sardana.taurus.qt.qtgui.macrolistener.DynamicPlotManager.onExpConfChanged",
   "sardana.taurus.qt.qtgui.macrolistener.DynamicPlotManager.removePanels",
+  "sardana.util.motion.Motor.fromMotor",
+  "scipy.integrate.quad",
   "scipy.special.j0",
   "set.intersection",
   "set.union",
@@ -914,10 +947,6 @@
   "PyTango": [
    "pytango/conda-forge/linux-64/pytango-9.3.3-py38hd23d2ce_1"
   ],
-  "_pickle": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "array": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -1017,6 +1046,11 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "matplotlib": [
+   "matplotlib-base/conda-forge/linux-64/matplotlib-base-3.1.1-py37hfd891ef_0",
+   "matplotlib-base/conda-forge/linux-64/matplotlib-base-3.1.1-py38h250f245_2",
+   "matplotlib/conda-forge/linux-64/matplotlib-1.5.3-np111py34_0"
+  ],
   "multiprocessing": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -1060,10 +1094,6 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "posixpath": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "pygments": [
    "pygments/conda-forge/noarch/pygments-2.2.0-py_1",
    "pygments/conda-forge/noarch/pygments-2.3.0-py_0",
@@ -1075,59 +1105,6 @@
    "pygments/conda-forge/noarch/pygments-2.7.1-py_0",
    "pygments/conda-forge/noarch/pygments-2.7.2-py_0",
    "pygments/conda-forge/noarch/pygments-2.9.0-pyhd8ed1ab_0"
-  ],
-  "pylab": [
-   "matplotlib-base/conda-forge/linux-64/matplotlib-base-3.1.1-py37hfd891ef_0",
-   "matplotlib-base/conda-forge/linux-64/matplotlib-base-3.1.1-py38h250f245_2",
-   "matplotlib/conda-forge/linux-64/matplotlib-1.5.3-np111py34_0"
-  ],
-  "pyqtgraph": [
-   "pyqtgraph/conda-forge/linux-64/pyqtgraph-0.10.0-py36_1",
-   "pyqtgraph/conda-forge/noarch/pyqtgraph-0.10.0-py_4",
-   "pyqtgraph/conda-forge/noarch/pyqtgraph-0.10.0-py_5",
-   "pyqtgraph/conda-forge/noarch/pyqtgraph-0.11.0-pyh9f0ad1d_0",
-   "pyqtgraph/conda-forge/noarch/pyqtgraph-0.11.0-pyh9f0ad1d_1",
-   "pyqtgraph/conda-forge/noarch/pyqtgraph-0.11.0rc0-py_0",
-   "pyqtgraph/conda-forge/noarch/pyqtgraph-0.12.0-pyhd8ed1ab_0",
-   "pyqtgraph/conda-forge/noarch/pyqtgraph-0.12.1-pyhd8ed1ab_0",
-   "pyqtgraph/conda-forge/noarch/pyqtgraph-0.12.2-pyhd8ed1ab_0"
-  ],
-  "pyreadline": [
-   "pyreadline/conda-forge/win-64/pyreadline-2.1-py37h4c0cbd9_1003"
-  ],
-  "pytest": [
-   "pytest/conda-forge/linux-64/pytest-3.7.0-py27_0",
-   "pytest/conda-forge/linux-64/pytest-4.6.0-py37_0",
-   "pytest/conda-forge/linux-64/pytest-6.0.2-py37hc8dfbb8_0"
-  ],
-  "qtconsole": [
-   "qtconsole/conda-forge/linux-64/qtconsole-4.3.0-py36_0",
-   "qtconsole/conda-forge/noarch/qtconsole-4.4.2-py_1",
-   "qtconsole/conda-forge/noarch/qtconsole-4.5.1-py_0",
-   "qtconsole/conda-forge/noarch/qtconsole-4.5.5-py_0",
-   "qtconsole/conda-forge/noarch/qtconsole-4.7.0-py_0",
-   "qtconsole/conda-forge/noarch/qtconsole-4.7.3-pyh9f0ad1d_0",
-   "qtconsole/conda-forge/noarch/qtconsole-5.0.1-pyhd8ed1ab_0",
-   "qtconsole/conda-forge/noarch/qtconsole-5.0.3-pyhd8ed1ab_0",
-   "qtconsole/conda-forge/noarch/qtconsole-5.1.0-pyhd8ed1ab_0"
-  ],
-  "random": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "re": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "sardana": [
-   "sardana/conda-forge/noarch/sardana-3.0.3-pyhd8ed1ab_0",
-   "sardana/conda-forge/noarch/sardana-3.1.0-pyhd8ed1ab_0",
-   "sardana/conda-forge/noarch/sardana-3.1.1-pyhd8ed1ab_0"
-  ],
-  "scipy": [
-   "scipy/conda-forge/linux-64/scipy-0.17.1-np110py27_blas_openblas_202",
-   "scipy/conda-forge/linux-64/scipy-1.7.0-py37h29e03ee_0",
-   "scipy/conda-forge/linux-64/scipy-1.7.0-py37ha768fb6_1"
   ],
   "shelve": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -1184,7 +1161,8 @@
   "traitlets": [
    "traitlets/conda-forge/noarch/traitlets-5.0.4-py_0",
    "traitlets/conda-forge/noarch/traitlets-5.0.4-py_1",
-   "traitlets/conda-forge/noarch/traitlets-5.0.5-py_0"
+   "traitlets/conda-forge/noarch/traitlets-5.0.5-py_0",
+   "traitlets/conda-forge/noarch/traitlets-5.1.0-pyhd8ed1ab_0"
   ],
   "types": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
