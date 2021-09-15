@@ -43,8 +43,30 @@
   "font._get_font_by_file",
   "font._get_font_by_name",
   "font._get_glyph",
+  "freetype",
   "freetype.FT_LOAD_FLAGS",
+  "freetype.Face",
   "freetype.TT_NAME_IDS",
+  "gdspy",
+  "gdspy.Cell",
+  "gdspy.CellArray",
+  "gdspy.CellReference",
+  "gdspy.Curve",
+  "gdspy.GdsLibrary",
+  "gdspy.Label",
+  "gdspy.Path",
+  "gdspy.Polygon",
+  "gdspy.PolygonSet",
+  "gdspy.boolean",
+  "gdspy.clipper",
+  "gdspy.clipper._chop",
+  "gdspy.clipper.clip",
+  "gdspy.clipper.offset",
+  "gdspy.library",
+  "gdspy.library.use_current_library",
+  "gdspy.offset",
+  "gdspy.write_gds",
+  "hashlib",
   "hashlib.sha1",
   "invert_step_point",
   "itertools",
@@ -87,8 +109,14 @@
   "numpy.zeros",
   "offset1",
   "offset2",
+  "operator",
+  "operator.attrgetter",
+  "pdb",
+  "pdb.set_trace",
   "phidl.device_layout.Device._next_uid",
   "phidl.device_layout.Layer.layer_dict.get",
+  "pickle",
+  "pickle.dumps",
   "rectpack",
   "rectpack.MaxRectsBlsf",
   "rectpack.PackingBin.BBF",
@@ -96,6 +124,18 @@
   "rectpack.SORT_AREA",
   "rectpack.SORT_NONE",
   "rectpack.newPacker",
+  "scipy.integrate",
+  "scipy.optimize.fmin",
+  "scipy.optimize.fminbound",
+  "scipy.special.iv",
+  "six",
+  "six.string_types",
+  "skimage.draw",
+  "skimage.draw.ellipse",
+  "skimage.draw.polygon",
+  "skimage.draw.polygon_perimeter",
+  "skimage.morphology",
+  "skimage.morphology.binary_dilation",
   "step_points",
   "sys",
   "taper_section",
@@ -112,10 +152,6 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "_pickle": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "collections": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -124,17 +160,7 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "freetype": [
-   "freetype-py/conda-forge/noarch/freetype-py-2.0.0.post6-pyha1f7697_1"
-  ],
   "functools": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "gdspy": [
-   "gdspy/conda-forge/linux-64/gdspy-1.6.6-py37h2527ec5_0"
-  ],
-  "hashlib": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -160,43 +186,9 @@
    "numpy/conda-forge/linux-64/numpy-1.18.4-py37h8960a57_0",
    "numpy/conda-forge/linux-64/numpy-1.19.2-py36h68c22af_1"
   ],
-  "operator": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "os": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "pdb": [
-   "pdbpp/conda-forge/noarch/pdbpp-0.9.12-py_0",
-   "pdbpp/conda-forge/noarch/pdbpp-0.9.14-py_0",
-   "pdbpp/conda-forge/noarch/pdbpp-0.9.15-py_0",
-   "pdbpp/conda-forge/noarch/pdbpp-0.9.5-py_1",
-   "pdbpp/conda-forge/noarch/pdbpp-0.9.6-py_0",
-   "pdbpp/conda-forge/noarch/pdbpp-0.9.8-py_0",
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "pickle": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "scipy": [
-   "scipy/conda-forge/linux-64/scipy-1.7.0-py37ha768fb6_1"
-  ],
-  "six": [
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0",
-   "lldb/conda-forge/linux-64/lldb-6.0.0-py35_0",
-   "privy/conda-forge/noarch/privy-6.0.0-py_0",
-   "six/conda-forge/linux-64/six-1.10.0-py34_0",
-   "six/conda-forge/linux-64/six-1.10.0-py34_1",
-   "six/conda-forge/noarch/six-1.14.0-py_1",
-   "six/conda-forge/noarch/six-1.16.0-pyh6c4a22f_0"
-  ],
-  "skimage": [
-   "scikit-image/conda-forge/win-64/scikit-image-0.13.0-np113py36_0"
   ],
   "warnings": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",

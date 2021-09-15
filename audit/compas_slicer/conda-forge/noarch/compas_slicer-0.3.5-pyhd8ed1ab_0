@@ -11,7 +11,62 @@
   "_get_version_from_args",
   "are_neighboring_point_clouds",
   "collections.deque",
+  "compas",
+  "compas.__version__",
+  "compas._os.absjoin",
+  "compas.datastructures.Mesh",
+  "compas.datastructures.Mesh.from_data",
+  "compas.datastructures.Mesh.from_json",
+  "compas.datastructures.Mesh.from_obj",
+  "compas.datastructures.Mesh.from_vertices_and_faces",
+  "compas.datastructures.mesh_bounding_box",
+  "compas.datastructures.mesh_weld",
+  "compas.geometry.Frame",
+  "compas.geometry.Frame.from_data",
+  "compas.geometry.Line",
+  "compas.geometry.Plane",
+  "compas.geometry.Point",
+  "compas.geometry.Point.from_data",
+  "compas.geometry.Polyline",
+  "compas.geometry.Transformation",
+  "compas.geometry.Transformation.from_frame_to_frame",
+  "compas.geometry.Vector",
+  "compas.geometry.Vector.from_data",
+  "compas.geometry.Vector.from_start_end",
+  "compas.geometry.add_vectors",
+  "compas.geometry.barycentric_coordinates",
+  "compas.geometry.bounding_box_xy",
+  "compas.geometry.closest_point_in_cloud",
+  "compas.geometry.closest_point_on_plane",
+  "compas.geometry.closest_point_on_polyline",
+  "compas.geometry.cross_vectors",
+  "compas.geometry.distance_point_point",
+  "compas.geometry.distance_point_point_sqrd",
+  "compas.geometry.distance_point_point_xy",
+  "compas.geometry.dot_vectors",
+  "compas.geometry.intersection_line_line",
+  "compas.geometry.intersection_line_line_xy",
+  "compas.geometry.intersection_segment_plane",
+  "compas.geometry.length_vector",
+  "compas.geometry.norm_vector",
+  "compas.geometry.normalize_vector",
+  "compas.geometry.offset_line",
+  "compas.geometry.offset_polygon",
+  "compas.geometry.project_point_line",
+  "compas.geometry.scale_vector",
+  "compas.geometry.subtract_vectors",
+  "compas.plugins",
+  "compas.plugins.PluginNotInstalledError",
+  "compas.plugins.plugin",
+  "compas.utilities.itertools.pairwise",
+  "compas.utilities.pairwise",
+  "compas_cgal.slicer.slice_mesh",
+  "compas_ghpython",
+  "compas_ghpython.artists.MeshArtist",
   "compas_ghpython.get_grasshopper_library_path",
+  "compas_ghpython.utilities.list_to_ghtree",
+  "compas_rhino",
+  "compas_rhino._check_rhino_version",
   "compas_slicer.__init__.HERE",
   "compas_slicer.__init__.HOME",
   "compas_slicer.__init__.__version__",
@@ -19,6 +74,12 @@
   "compas_slicer.__init__.git_head_file",
   "compas_slicer.__init__.git_head_refs_file",
   "compas_slicer.__init__.ref_path",
+  "compas_slicer.geometry.Layer.from_data",
+  "compas_slicer.geometry.Path.from_data",
+  "compas_slicer.geometry.VerticalLayer.from_data",
+  "glob",
+  "glob.glob",
+  "igl",
   "igl.cotmatrix",
   "igl.cotmatrix_entries",
   "igl.cut_mesh",
@@ -27,6 +88,7 @@
   "igl.grad",
   "itertools",
   "load_json_file",
+  "networkx",
   "networkx.Graph",
   "networkx.connected_components",
   "networkx.dfs_edges",
@@ -41,12 +103,16 @@
   "os.path.isfile",
   "os.path.sep.join",
   "os.remove",
+  "progressbar",
+  "progressbar.ProgressBar",
   "pyclipper",
   "pyclipper.ET_CLOSEDPOLYGON",
   "pyclipper.JT_MITER",
   "pyclipper.PyclipperOffset",
   "pyclipper.scale_from_clipper",
   "pyclipper.scale_to_clipper",
+  "rdp",
+  "rdp.rdp",
   "rhinoscriptsyntax",
   "rhinoscriptsyntax.AddLoftSrf",
   "rhinoscriptsyntax.AddPoint",
@@ -63,7 +129,18 @@
   "rhinoscriptsyntax.PlaneFromFrame",
   "rhinoscriptsyntax.ScaleObject",
   "rhinoscriptsyntax.TransformObject",
-  "solver"
+  "scipy",
+  "scipy.sparse.csr_matrix",
+  "scipy.sparse.linalg.factorized",
+  "scipy.sparse.linalg.spsolve",
+  "scipy.spatial.distance_matrix",
+  "shutil",
+  "shutil.copyfile",
+  "solver",
+  "statistics",
+  "statistics.mean",
+  "statistics.median",
+  "subprocess"
  ],
  "deps": {
   "__future__": [
@@ -79,25 +156,6 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "compas": [],
-  "compas_cgal": [
-   "compas_cgal/conda-forge/linux-64/compas_cgal-0.1.1-py37h76abb25_6",
-   "compas_cgal/conda-forge/linux-64/compas_cgal-0.1.2-py37h76abb25_0"
-  ],
-  "compas_ghpython": [
-   "compas/conda-forge/linux-64/compas-0.17.3-py37h89c1867_0",
-   "compas/conda-forge/linux-64/compas-0.19.1-py38h578d9bd_0",
-   "compas/conda-forge/linux-64/compas-0.5.0-py36_0"
-  ],
-  "compas_rhino": [
-   "compas/conda-forge/linux-64/compas-0.17.3-py37h89c1867_0",
-   "compas/conda-forge/linux-64/compas-0.19.1-py38h578d9bd_0"
-  ],
-  "compas_slicer": [
-   "compas_slicer/conda-forge/noarch/compas_slicer-0.3.3-pyhd8ed1ab_0",
-   "compas_slicer/conda-forge/noarch/compas_slicer-0.3.4-pyhd8ed1ab_0",
-   "compas_slicer/conda-forge/noarch/compas_slicer-0.3.5-pyhd8ed1ab_0"
-  ],
   "copy": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -105,14 +163,6 @@
   "datetime": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "glob": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "igl": [
-   "igl/conda-forge/linux-64/igl-0.1-py36h7fc5cc3_0",
-   "igl/conda-forge/osx-64/igl-0.1-py36h8d973e4_0"
   ],
   "json": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -131,14 +181,6 @@
    "matplotlib-base/conda-forge/linux-64/matplotlib-base-3.1.1-py38h250f245_2",
    "matplotlib/conda-forge/linux-64/matplotlib-1.5.3-np111py34_0"
   ],
-  "networkx": [
-   "networkx/conda-forge/noarch/networkx-2.1-py_1",
-   "networkx/conda-forge/noarch/networkx-2.2-py_1",
-   "networkx/conda-forge/noarch/networkx-2.4-py_1",
-   "networkx/conda-forge/noarch/networkx-2.5-py_0",
-   "networkx/conda-forge/noarch/networkx-2.6.1-pyhd8ed1ab_0",
-   "networkx/conda-forge/noarch/networkx-2.6.1-pyhd8ed1ab_1"
-  ],
   "ntpath": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -149,28 +191,6 @@
    "numpy/conda-forge/linux-64/numpy-1.19.2-py36h68c22af_1"
   ],
   "os": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "progressbar": [],
-  "rdp": [
-   "rdp/conda-forge/noarch/rdp-0.8-pyhd8ed1ab_0"
-  ],
-  "scipy": [
-   "scipy/conda-forge/linux-64/scipy-0.17.1-np110py27_blas_openblas_202",
-   "scipy/conda-forge/linux-64/scipy-1.7.0-py37h29e03ee_0",
-   "scipy/conda-forge/linux-64/scipy-1.7.0-py37ha768fb6_1"
-  ],
-  "shutil": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "statistics": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
-   "statistics/conda-forge/linux-64/statistics-1.0.3.5-py27_1001"
-  ],
-  "subprocess": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ]
