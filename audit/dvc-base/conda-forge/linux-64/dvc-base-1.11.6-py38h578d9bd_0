@@ -351,20 +351,81 @@
   "os.umask",
   "os.unlink",
   "os_retry",
+  "oss2",
+  "oss2.Auth",
+  "oss2.BUCKET_ACL_PUBLIC_READ",
+  "oss2.BUCKET_STORAGE_CLASS_STANDARD",
+  "oss2.Bucket",
+  "oss2.ObjectIterator",
+  "oss2.exceptions.NoSuchBucket",
+  "oss2.models.BucketCreateConfig",
+  "paramiko",
+  "paramiko.SSHConfig",
   "params.StageParams",
   "params.StageParams.PARAM_DEPS",
   "params.StageParams.PARAM_OUTS",
   "path_info.PathInfo",
+  "pathspec.patterns.GitWildMatchPattern",
+  "pathspec.patterns.GitWildMatchPattern.escape",
+  "pathspec.util.normalize_file",
+  "pdb",
+  "pdb.post_mortem",
+  "pickle",
+  "pickle.dump",
+  "pickle.load",
+  "platform",
+  "platform.mac_ver",
+  "platform.platform",
+  "platform.python_version",
+  "platform.system",
+  "posixpath",
+  "posixpath.basename",
+  "posixpath.dirname",
+  "posixpath.join",
+  "posixpath.sep",
   "posixpath.sep.join",
+  "posixpath.split",
   "progress.Tqdm.BAR_FMT_NOTOTAL",
+  "psutil",
+  "pyarrow",
+  "pyarrow.hdfs.connect",
+  "pydoc",
+  "pydoc.plain",
+  "pydoc.plainpager",
+  "pydoc.tempfilepager",
+  "pydrive2.auth.GoogleAuth",
   "pydrive2.auth.GoogleAuth.DEFAULT_SETTINGS",
   "pydrive2.auth.GoogleAuth.DEFAULT_SETTINGS.update",
+  "pydrive2.drive.GoogleDrive",
+  "pydrive2.files.ApiRequestError",
+  "pygtrie.StringTrie",
+  "pygtrie.Trie",
+  "pyparsing.CharsNotIn",
+  "pyparsing.ParseException",
+  "pyparsing.ParseException.explain",
+  "pyparsing.ParserElement",
+  "pyparsing.ParserElement.enablePackrat",
+  "pyparsing.Suppress",
+  "pyparsing.ZeroOrMore",
   "re.I",
   "re.VERBOSE",
   "repo.RepoDependency.PARAM_REPO",
   "repo.RepoDependency.REPO_SCHEMA",
   "request",
+  "requests",
+  "requests.ConnectionError",
+  "requests.Session",
+  "requests.adapters.HTTPAdapter",
+  "requests.auth.HTTPBasicAuth",
+  "requests.auth.HTTPDigestAuth",
+  "requests.exceptions.ConnectionError",
+  "requests.exceptions.RequestException",
+  "requests.get",
+  "requests.post",
   "resolver_cls",
+  "rich.console.Console",
+  "rich.table.Table",
+  "rich.text.Text",
   "ruamel.yaml.YAML",
   "ruamel.yaml.YAMLError",
   "ruamel.yaml.constructor.DuplicateKeyError",
@@ -377,17 +438,43 @@
   "scheme.Schemes.WEBDAV",
   "scheme.Schemes.WEBDAVS",
   "scheme.Schemes.WEBHDFS",
+  "selectors",
+  "selectors.DefaultSelector",
+  "selectors.EVENT_READ",
+  "shlex",
+  "shlex.quote",
+  "shortuuid",
+  "shortuuid.uuid",
   "show.show",
+  "shtab",
   "shtab.DIRECTORY",
+  "shtab.FILE",
+  "shtab.complete",
+  "signal",
   "signal.SIGINT",
   "signal.SIG_IGN",
+  "signal.signal",
+  "speedcopy",
+  "speedcopy.patch_copyfile",
+  "sqlite3",
   "sqlite3.DatabaseError",
   "sqlite3.connect",
   "sqlite3.sqlite_version_info",
   "ssh.SSHCache",
   "stage.INVALID_STAGENAME_CHARS",
+  "stat",
+  "stat.S_IMODE",
+  "stat.S_ISDIR",
+  "stat.S_ISLNK",
+  "stat.S_ISREG",
+  "stat.S_IWRITE",
+  "stat.S_IXGRP",
+  "stat.S_IXOTH",
+  "stat.S_IXUSR",
   "stat_func",
   "str.strip",
+  "string",
+  "string.punctuation",
   "subprocess.STARTF_USESHOWWINDOW",
   "sys",
   "sys.getwindowsversion",
@@ -397,10 +484,26 @@
   "sys.stdout.isatty",
   "system.System.is_symlink",
   "t",
+  "tabulate.tabulate",
   "template",
   "template.PlotTemplates",
+  "threading",
+  "threading.Event",
+  "threading.Lock",
+  "threading.RLock",
+  "threading.Thread",
+  "threading._MainThread",
+  "threading.current_thread",
   "time",
   "to_ctime",
+  "toml",
+  "toml.TomlDecodeError",
+  "toml.TomlPreserveCommentDecoder",
+  "toml.TomlPreserveCommentEncoder",
+  "toml.dump",
+  "toml.loads",
+  "tqdm.tqdm",
+  "tqdm.tqdm.set_lock",
   "tree.get_cloud_tree",
   "tree.hdfs.HDFSTree.PARAM_CHECKSUM",
   "tree.local.LocalTree.CACHE_MODE",
@@ -408,9 +511,16 @@
   "tree.s3.S3Tree.PARAM_CHECKSUM",
   "tree.webhdfs.WebHDFSTree.PARAM_CHECKSUM",
   "trie.build_outs_trie",
+  "typing_extensions.Protocol",
   "url",
+  "urllib.parse.urlencode",
+  "urllib.parse.urlparse",
+  "urllib.parse.urlunparse",
+  "urllib3.util.retry.Retry",
   "utils.format_link",
   "utils.pkg.PKG",
+  "uuid",
+  "uuid.uuid4",
   "voluptuous.ALLOW_EXTRA",
   "voluptuous.All",
   "voluptuous.And",
@@ -425,6 +535,7 @@
   "voluptuous.Required",
   "voluptuous.Schema",
   "voluptuous.SetTo",
+  "webdav3.client.Client",
   "win32file.CreateFileW",
   "win32file.FILE_FLAG_BACKUP_SEMANTICS",
   "win32file.FILE_FLAG_OPEN_REPARSE_POINT",
@@ -436,10 +547,6 @@
  ],
  "deps": {
   "_csv": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "_pickle": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -751,10 +858,6 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "oss2": [
-   "oss2/conda-forge/linux-64/oss2-2.14.0-py39hf3d152e_1",
-   "oss2/conda-forge/linux-64/oss2-2.9.0-py36_0"
-  ],
   "packaging": [
    "packaging/conda-forge/noarch/packaging-18.0-py_0",
    "packaging/conda-forge/noarch/packaging-19.0-py_0",
@@ -765,140 +868,16 @@
    "packaging/conda-forge/noarch/packaging-20.8-pyhd3deb0d_0",
    "packaging/conda-forge/noarch/packaging-21.0-pyhd8ed1ab_0"
   ],
-  "paramiko": [
-   "paramiko/conda-forge/linux-64/paramiko-2.1.2-py35_0",
-   "paramiko/conda-forge/linux-64/paramiko-2.4.0-py27_0",
-   "paramiko/conda-forge/linux-64/paramiko-2.4.1-py27_1000",
-   "paramiko/conda-forge/noarch/paramiko-2.3.1-py_0",
-   "paramiko/conda-forge/noarch/paramiko-2.7.1-pyh9f0ad1d_1"
-  ],
   "pathlib": [
    "pathlib/conda-forge/noarch/pathlib-1.0.1-py_1",
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "pathspec": [
-   "pathspec/conda-forge/noarch/pathspec-0.6.0-py_0",
-   "pathspec/conda-forge/noarch/pathspec-0.7.0-py_0",
-   "pathspec/conda-forge/noarch/pathspec-0.8.0-pyh9f0ad1d_0",
-   "pathspec/conda-forge/noarch/pathspec-0.8.1-pyhd3deb0d_0"
-  ],
-  "pdb": [
-   "pdbpp/conda-forge/noarch/pdbpp-0.9.12-py_0",
-   "pdbpp/conda-forge/noarch/pdbpp-0.9.14-py_0",
-   "pdbpp/conda-forge/noarch/pdbpp-0.9.15-py_0",
-   "pdbpp/conda-forge/noarch/pdbpp-0.9.5-py_1",
-   "pdbpp/conda-forge/noarch/pdbpp-0.9.6-py_0",
-   "pdbpp/conda-forge/noarch/pdbpp-0.9.8-py_0",
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "pickle": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "platform": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "posixpath": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "psutil": [
-   "psutil/conda-forge/linux-64/psutil-5.7.3-py39h38d8fee_0"
-  ],
-  "pyarrow": [
-   "pyarrow/conda-forge/linux-64/pyarrow-1.0.1-py38h7b0d817_30_cuda",
-   "pyarrow/conda-forge/linux-64/pyarrow-2.0.0-py36ha2c856d_3_cuda"
-  ],
-  "pydoc": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "pydrive2": [
-   "pydrive2/conda-forge/noarch/pydrive2-1.4.1-py_1",
-   "pydrive2/conda-forge/noarch/pydrive2-1.4.10-pyh9f0ad1d_0",
-   "pydrive2/conda-forge/noarch/pydrive2-1.4.12-pyh9f0ad1d_0",
-   "pydrive2/conda-forge/noarch/pydrive2-1.4.4-py_0",
-   "pydrive2/conda-forge/noarch/pydrive2-1.4.5-py_0",
-   "pydrive2/conda-forge/noarch/pydrive2-1.4.6-py_0",
-   "pydrive2/conda-forge/noarch/pydrive2-1.4.8-pyh9f0ad1d_0",
-   "pydrive2/conda-forge/noarch/pydrive2-1.4.9-pyh9f0ad1d_0",
-   "pydrive2/conda-forge/noarch/pydrive2-1.6.0-pyh9f0ad1d_0",
-   "pydrive2/conda-forge/noarch/pydrive2-1.6.1-pyh9f0ad1d_0",
-   "pydrive2/conda-forge/noarch/pydrive2-1.7.2-pyh44b312d_0",
-   "pydrive2/conda-forge/noarch/pydrive2-1.7.3-pyh44b312d_0",
-   "pydrive2/conda-forge/noarch/pydrive2-1.8.0-pyh44b312d_0",
-   "pydrive2/conda-forge/noarch/pydrive2-1.8.3-pyhd8ed1ab_0"
-  ],
-  "pygtrie": [
-   "pygtrie/conda-forge/noarch/pygtrie-2.3.2-pyh8c360ce_0",
-   "pygtrie/conda-forge/noarch/pygtrie-2.4.0-pyhd3deb0d_0",
-   "pygtrie/conda-forge/noarch/pygtrie-2.4.1-pyhd3deb0d_0"
-  ],
-  "pyparsing": [
-   "pyparsing/conda-forge/noarch/pyparsing-2.3.1-py_0",
-   "pyparsing/conda-forge/noarch/pyparsing-2.4.1.1-py_0",
-   "pyparsing/conda-forge/noarch/pyparsing-2.4.4-py_0",
-   "pyparsing/conda-forge/noarch/pyparsing-2.4.6-py_0"
-  ],
   "re": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "requests": [
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0",
-   "requests/conda-forge/linux-64/requests-2.12.0-py35_0",
-   "requests/conda-forge/noarch/requests-2.23.0-pyh8c360ce_2",
-   "requests/conda-forge/noarch/requests-2.24.0-pyh9f0ad1d_0",
-   "requests/conda-forge/noarch/requests-2.25.0-pyhd3deb0d_0",
-   "requests/conda-forge/noarch/requests-2.25.1-pyhd3deb0d_0",
-   "requests/conda-forge/noarch/requests-2.26.0-pyhd8ed1ab_0"
-  ],
-  "rich": [
-   "rich/conda-forge/linux-64/rich-9.0.1-py37hc8dfbb8_0",
-   "rich/conda-forge/linux-64/rich-9.4.0-py36h5fab9bb_0",
-   "rich/conda-forge/linux-64/rich-9.4.0-py39hf3d152e_0"
-  ],
-  "selectors": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "shlex": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "shortuuid": [
-   "shortuuid/conda-forge/noarch/shortuuid-0.4.1-py_0",
-   "shortuuid/conda-forge/noarch/shortuuid-0.4.2-py_0",
-   "shortuuid/conda-forge/noarch/shortuuid-0.4.3-py_0",
-   "shortuuid/conda-forge/noarch/shortuuid-0.5.0-py_0",
-   "shortuuid/conda-forge/noarch/shortuuid-0.5.1-py_0",
-   "shortuuid/conda-forge/noarch/shortuuid-1.0.1-py_0"
-  ],
-  "shtab": [],
   "shutil": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "signal": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "speedcopy": [
-   "speedcopy/conda-forge/noarch/speedcopy-2.1.0-pyhd8ed1ab_0"
-  ],
-  "sqlite3": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "stat": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "string": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -906,27 +885,10 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "tabulate": [
-   "tabulate/conda-forge/noarch/tabulate-0.8.1-py_0",
-   "tabulate/conda-forge/noarch/tabulate-0.8.2-py_0",
-   "tabulate/conda-forge/noarch/tabulate-0.8.3-py_0",
-   "tabulate/conda-forge/noarch/tabulate-0.8.4-py_0",
-   "tabulate/conda-forge/noarch/tabulate-0.8.6-py_0",
-   "tabulate/conda-forge/noarch/tabulate-0.8.7-pyh9f0ad1d_0",
-   "tabulate/conda-forge/noarch/tabulate-0.8.9-pyhd8ed1ab_0"
-  ],
   "tempfile": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "threading": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "toml": [
-   "toml/conda-forge/noarch/toml-0.10.1-pyh9f0ad1d_0"
-  ],
-  "tqdm": [],
   "traceback": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -934,38 +896,6 @@
   "typing": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "typing_extensions": [
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0",
-   "typing_extensions/conda-forge/noarch/typing_extensions-3.10.0.0-pyha770c72_0",
-   "typing_extensions/conda-forge/noarch/typing_extensions-3.7.4.2-py_0",
-   "typing_extensions/conda-forge/noarch/typing_extensions-3.7.4.3-py_0"
-  ],
-  "urllib": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "urllib3": [
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0",
-   "urllib3/conda-forge/linux-64/urllib3-1.24.1-py37_1000",
-   "urllib3/conda-forge/linux-64/urllib3-1.25.7-py36_0",
-   "urllib3/conda-forge/linux-64/urllib3-1.25.8-py37hc8dfbb8_1",
-   "urllib3/conda-forge/noarch/urllib3-1.25.11-py_0",
-   "urllib3/conda-forge/noarch/urllib3-1.26.0-pyhd8ed1ab_0",
-   "urllib3/conda-forge/noarch/urllib3-1.26.2-pyhd8ed1ab_0",
-   "urllib3/conda-forge/noarch/urllib3-1.26.3-pyhd8ed1ab_0",
-   "urllib3/conda-forge/noarch/urllib3-1.26.5-pyhd8ed1ab_0",
-   "urllib3/conda-forge/noarch/urllib3-1.26.6-pyhd8ed1ab_0"
-  ],
-  "uuid": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "webdav3": [
-   "webdavclient3/conda-forge/noarch/webdavclient3-3.14.5-pyhd8ed1ab_1",
-   "webdavclient3/conda-forge/win-64/webdavclient3-3.14.5-py37h03978a9_0"
   ]
  }
 }
