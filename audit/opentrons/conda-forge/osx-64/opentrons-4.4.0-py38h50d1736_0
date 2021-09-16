@@ -34,6 +34,13 @@
   "_update",
   "_write_and_return",
   "_write_settings_file",
+  "abc",
+  "abc.ABC",
+  "abc.abstractmethod",
+  "aionotify",
+  "argparse",
+  "argparse.ArgumentParser",
+  "argparse.FileType",
   "args_handler.build_driver",
   "args_handler.root_argparser",
   "arun",
@@ -46,6 +53,8 @@
   "ast.Module",
   "ast.Name",
   "atexit",
+  "base64",
+  "base64.b64decode",
   "blink",
   "build_split",
   "bytearray.fromhex",
@@ -81,6 +90,10 @@
   "datetime.timezone.utc",
   "decorated_obj",
   "dispense_func",
+  "enum",
+  "enum.Enum",
+  "enum.EnumMeta",
+  "enum.auto",
   "errors.FailedToPlanMoveError",
   "errors.InvalidMountError",
   "errors.InvalidPipetteNameError",
@@ -98,10 +111,15 @@
   "file_operators.read_cal_file",
   "file_operators.save_to_file",
   "func",
+  "functools",
+  "functools.WRAPPER_UPDATES",
+  "functools.lru_cache",
   "functools.partial",
   "functools.reduce",
+  "functools.wraps",
   "generate_config_index",
   "get_item_covered_slot_keys",
+  "glob.glob",
   "gpio.GPIOCharDev",
   "gpio_simulator.SimulatingGPIOCharDev",
   "gpiod",
@@ -113,15 +131,31 @@
   "gpiod.LineEvent.FALLING_EDGE",
   "gradient",
   "handler",
+  "hashlib",
   "hashlib.sha256",
   "helpers.convert_to_dict",
   "helpers.hash_labware_def",
   "helpers.uri_from_definition",
   "initialize_robot",
+  "inspect",
   "inspect.Parameter.empty",
+  "inspect.Signature.from_callable",
+  "inspect.getfullargspec",
+  "inspect.ismethod",
+  "inspect.signature",
   "io.BytesIO",
   "itertools",
   "itertools.chain.from_iterable",
+  "json",
+  "json.JSONDecodeError",
+  "json.JSONDecoder",
+  "json.JSONEncoder",
+  "json.JSONEncoder.default",
+  "json.decoder.JSONDecodeError",
+  "json.dump",
+  "json.dumps",
+  "json.load",
+  "json.loads",
   "load_overrides",
   "m",
   "migration.MAX_VERSION",
@@ -370,19 +404,8 @@
   "os.getcwd",
   "os.listdir",
   "os.mkdir",
-  "os.pardir",
-  "os.path.abspath",
-  "os.path.basename",
-  "os.path.dirname",
   "os.path.exists",
   "os.path.isdir",
-  "os.path.islink",
-  "os.path.ismount",
-  "os.path.join",
-  "os.path.realpath",
-  "os.path.relpath",
-  "os.path.split",
-  "os.path.splitext",
   "os.readlink",
   "os.remove",
   "os.rmdir",
@@ -393,12 +416,6 @@
   "parse_key_values",
   "parse_optional_number",
   "parse_or_default",
-  "pathlib",
-  "pathlib.Path",
-  "pathlib.Path.cwd",
-  "pathlib.Path.home",
-  "pathlib.PurePath",
-  "pathlib.PurePosixPath",
   "protocol_file.ProtocolFileType.JSON",
   "publish_command",
   "pydantic.Extra.allow",
@@ -603,27 +620,11 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "abc": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "aionotify": [
-   "aionotify/conda-forge/linux-64/aionotify-0.2.0-py38_1000"
-  ],
-  "argparse": [
-   "argparse/conda-forge/osx-64/argparse-1.4.0-py26_0",
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "ast": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "asyncio": [],
-  "base64": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "binascii": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -654,31 +655,7 @@
   "datetime": [
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "enum": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "fcntl": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "functools": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "glob": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "hashlib": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "inspect": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "json": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -690,6 +667,10 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "math": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "ntpath": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -710,6 +691,10 @@
    "opentrons_shared_data/conda-forge/noarch/opentrons_shared_data-4.5.0-pyhd8ed1ab_0"
   ],
   "os": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "pathlib": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],

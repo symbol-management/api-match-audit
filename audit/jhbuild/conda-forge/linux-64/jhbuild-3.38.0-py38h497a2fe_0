@@ -34,6 +34,7 @@
   "format_line_text",
   "get_c_include_search_paths",
   "get_pkg_config_search_paths",
+  "gi",
   "gi.repository.GLib",
   "gi.repository.GLib.MainLoop",
   "gi.repository.GLib.SpawnFlags.SEARCH_PATH_FROM_ENVP",
@@ -90,6 +91,7 @@
   "gi.repository.Vte",
   "gi.repository.Vte.PtyFlags.DEFAULT",
   "gi.repository.Vte.Terminal",
+  "gi.require_version",
   "git.GitCvsBranch",
   "git.GitSvnBranch",
   "goalreport.cmd_goalreport.run",
@@ -97,8 +99,6 @@
   "gzip.GzipFile",
   "hashlib",
   "hashlib.md5",
-  "importlib",
-  "importlib.import_module",
   "io.BytesIO",
   "io.StringIO",
   "jhbuild.commands.__init__.Command",
@@ -136,9 +136,6 @@
   "jhbuild.utils.urlutils.urlparse_mod.uses_relative.append",
   "jhbuild.versioncontrol.__init__._repo_types",
   "list.append",
-  "locale",
-  "locale.Error",
-  "locale.getpreferredencoding",
   "make_non_blocking",
   "makedirs",
   "method",
@@ -186,7 +183,15 @@
   "os.unlink",
   "os.unsetenv",
   "os.write",
+  "parser",
+  "pickle",
+  "pickle.dump",
+  "pickle.load",
+  "pipes",
+  "pipes.quote",
   "possible_cls",
+  "random",
+  "random.random",
   "re.MULTILINE",
   "render",
   "repo_class",
@@ -200,7 +205,6 @@
   "skip_phase_method",
   "socket.error",
   "socket.gethostname",
-  "string",
   "string.split",
   "svn.get_info",
   "sys",
@@ -233,12 +237,6 @@
   "urlparse.urlsplit",
   "urlparse.urlunparse",
   "urlparse.urlunsplit",
-  "xml.dom.minidom",
-  "xml.etree.ElementTree",
-  "xml.etree.ElementTree.Element",
-  "xml.etree.ElementTree.ElementTree",
-  "xml.etree.ElementTree.parse",
-  "xml.parsers.expat",
   "xmlrpclib",
   "xmlrpclib.Binary",
   "xmlrpclib.ProtocolError",
@@ -247,10 +245,6 @@
  ],
  "deps": {
   "__future__": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "_pickle": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -289,11 +283,16 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "gi": [
-   "pygobject/conda-forge/linux-64/pygobject-3.30.5-py36h91a8f50_0",
-   "pygobject/conda-forge/linux-64/pygobject-3.40.1-py36h0796200_1"
+  "importlib": [
+   "importlib/conda-forge/linux-64/importlib-1.0.4-py26_0",
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "io": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "locale": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -317,23 +316,7 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "parser": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "pickle": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "pipes": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "pkgutil": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "random": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -362,6 +345,10 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "stat": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "string": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -394,6 +381,10 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "urllib": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "xml": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],

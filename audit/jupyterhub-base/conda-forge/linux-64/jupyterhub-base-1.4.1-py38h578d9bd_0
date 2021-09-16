@@ -39,12 +39,21 @@
   "crypto.EncryptionUnavailable",
   "crypto.KEY_ENV",
   "crypto.NoEncryptionKeys",
+  "cryptography",
+  "cryptography.fernet.Fernet",
+  "cryptography.fernet.InvalidToken",
+  "cryptography.fernet.MultiFernet",
   "datetime.timezone.utc",
+  "dateutil.parser.parse",
   "dbutil._temp_alembic_ini",
   "dbutil.upgrade_if_needed",
   "dict.__contains__",
   "dict.__delitem__",
   "dict.__getitem__",
+  "entrypoints",
+  "entrypoints.get_group_named",
+  "enum",
+  "enum.Enum",
   "errno",
   "exponential_backoff",
   "external_service",
@@ -52,15 +61,38 @@
   "finish_user_spawn",
   "func",
   "functools.partial",
+  "functools.wraps",
+  "getpass.getuser",
+  "glob.glob",
+  "grp",
+  "grp.getgrall",
+  "grp.getgrnam",
   "handlers.AddSlashHandler",
   "handlers.PrefixRedirectHandler",
   "handlers.Template404",
   "handlers.default_handlers",
+  "hashlib",
+  "hashlib.new",
   "help.setter",
   "hmac.compare_digest",
   "http.client.responses.get",
+  "inspect",
   "inspect.Parameter.VAR_KEYWORD",
+  "inspect.isasyncgenfunction",
+  "inspect.isawaitable",
+  "inspect.iscoroutinefunction",
+  "inspect.signature",
   "io.StringIO",
+  "jinja2.ChoiceLoader",
+  "jinja2.Environment",
+  "jinja2.FileSystemLoader",
+  "jinja2.FunctionLoader",
+  "jinja2.PrefixLoader",
+  "jinja2.Template",
+  "jinja2.TemplateNotFound",
+  "json",
+  "json.dumps",
+  "json.loads",
   "jupyterhub.__file__",
   "jupyterhub.apihandlers.__init__.auth",
   "jupyterhub.apihandlers.__init__.default_handlers",
@@ -195,6 +227,8 @@
   "os.stat",
   "os.urandom",
   "pass_func",
+  "pipes",
+  "pipes.quote",
   "post_filter",
   "pwd",
   "pytest.mark.filterwarnings",
@@ -204,6 +238,10 @@
   "pytest.mark.skipif",
   "pytest.mark.slow",
   "pytest.mark.user",
+  "random",
+  "random.choice",
+  "random.random",
+  "random.uniform",
   "re.IGNORECASE",
   "set_cookie",
   "signal.SIGINFO",
@@ -317,54 +355,11 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "cryptography": [
-   "cryptography/conda-forge/linux-64/cryptography-3.2.1-py37hc72a4ac_0",
-   "cryptography/conda-forge/linux-64/cryptography-3.3-py36h0a59100_0",
-   "cryptography/conda-forge/linux-64/cryptography-3.4.6-py38ha5dfef3_0",
-   "privy/conda-forge/noarch/privy-6.0.0-py_0"
-  ],
   "datetime": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "dateutil": [
-   "python-dateutil/conda-forge/noarch/python-dateutil-2.7.2-py_0",
-   "python-dateutil/conda-forge/noarch/python-dateutil-2.7.4-py_0",
-   "python-dateutil/conda-forge/noarch/python-dateutil-2.7.5-py_0",
-   "python-dateutil/conda-forge/noarch/python-dateutil-2.8.1-py_0",
-   "python-dateutil/conda-forge/noarch/python-dateutil-2.8.2-pyhd8ed1ab_0"
-  ],
   "distutils": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "entrypoints": [
-   "entrypoints/conda-forge/linux-64/entrypoints-0.2.3-py27_1",
-   "entrypoints/conda-forge/linux-64/entrypoints-0.2.3-py37_1002",
-   "entrypoints/conda-forge/noarch/entrypoints-0.3-pyhd8ed1ab_1003"
-  ],
-  "enum": [
-   "privy/conda-forge/noarch/privy-6.0.0-py_0",
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "functools": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "getpass": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "glob": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "grp": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "hashlib": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -372,21 +367,7 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "inspect": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "io": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "jinja2": [
-   "jinja2/conda-forge/noarch/jinja2-2.10-py_1",
-   "jinja2/conda-forge/noarch/jinja2-2.11.3-pyh44b312d_0",
-   "jinja2/conda-forge/noarch/jinja2-3.0.0-pyhd8ed1ab_0",
-   "jinja2/conda-forge/noarch/jinja2-3.0.1-pyhd8ed1ab_0"
-  ],
-  "json": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -428,10 +409,6 @@
    "pamela/conda-forge/noarch/pamela-0.3.0-py_1001",
    "pamela/conda-forge/noarch/pamela-1.0.0-py_0"
   ],
-  "pipes": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "pprint": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -458,10 +435,6 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "random": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "re": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -485,10 +458,6 @@
   ],
   "secrets": [
    "python2-secrets/conda-forge/noarch/python2-secrets-1.0.5-py_0"
-  ],
-  "shlex": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "shutil": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
