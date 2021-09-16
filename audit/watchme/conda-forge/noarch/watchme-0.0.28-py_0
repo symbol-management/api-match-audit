@@ -4,13 +4,8 @@
   "_filter_result",
   "_general_list",
   "affinity_array",
-  "bs4.BeautifulSoup",
   "check_exists",
   "clocks_array",
-  "configparser",
-  "configparser.ConfigParser",
-  "configparser.NoOptionError",
-  "crontab.CronTab",
   "ctypes.POINTER",
   "ctypes.byref",
   "device_array",
@@ -23,12 +18,9 @@
   "gen_new",
   "get_list",
   "get_task",
-  "getpass",
-  "getpass.getuser",
   "gpu.Task",
   "hic_array",
   "itertools",
-  "multiprocessing",
   "multiprocessing.Pool",
   "multiprocessing.Process",
   "multiprocessing.Queue",
@@ -57,28 +49,12 @@
   "psutil.os.sys.version",
   "psutil.os.sys.version_info",
   "psutil.os.uname",
-  "random.choice",
-  "re",
-  "re.search",
-  "re.sub",
   "sampleArray",
   "schedule.main",
-  "shutil",
-  "shutil.copyfile",
-  "shutil.move",
-  "shutil.rmtree",
-  "signal",
   "signal.SIGINT",
   "signal.SIG_IGN",
-  "signal.signal",
   "socket.gethostname",
   "string.join",
-  "subprocess",
-  "subprocess.CalledProcessError",
-  "subprocess.PIPE",
-  "subprocess.Popen",
-  "subprocess.STDOUT",
-  "subprocess.check_output",
   "sys",
   "sys.platform.startswith",
   "sys.stdout.flush",
@@ -122,6 +98,30 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "backports": [
+   "configparser/conda-forge/noarch/configparser-5.0.0-py_0"
+  ],
+  "bs4": [
+   "beautifulsoup4/conda-forge/linux-64/beautifulsoup4-4.7.1-py37_1001",
+   "beautifulsoup4/conda-forge/linux-64/beautifulsoup4-4.8.2-py37_0",
+   "beautifulsoup4/conda-forge/noarch/beautifulsoup4-4.9.3-pyhb0f4dca_0"
+  ],
+  "configparser": [
+   "configparser/conda-forge/linux-64/configparser-3.7.1-py27_1",
+   "configparser/conda-forge/noarch/configparser-5.0.0-py_0",
+   "configparser/conda-forge/noarch/configparser-5.0.1-py_0",
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "crontab": [
+   "crontab/conda-forge/noarch/crontab-0.22.1-py_0",
+   "crontab/conda-forge/noarch/crontab-0.22.3-py_0",
+   "crontab/conda-forge/noarch/crontab-0.22.4-py_0",
+   "crontab/conda-forge/noarch/crontab-0.22.5-py_0",
+   "crontab/conda-forge/noarch/crontab-0.22.6-py_0",
+   "crontab/conda-forge/noarch/crontab-0.22.8-pyh9f0ad1d_0",
+   "crontab/conda-forge/noarch/crontab-0.22.9-pyh9f0ad1d_0"
+  ],
   "ctypes": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -134,7 +134,15 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "getpass": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "json": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "multiprocessing": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -148,6 +156,14 @@
   ],
   "psutil": [
    "psutil/conda-forge/linux-64/psutil-5.7.3-py39h38d8fee_0"
+  ],
+  "random": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "re": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "requests": [
    "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
@@ -163,11 +179,23 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "shutil": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "signal": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "socket": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "string": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "subprocess": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
