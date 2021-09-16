@@ -21,7 +21,6 @@
   "base.BaseStrategy.decode_request",
   "ber_decoder",
   "bytes.fromhex",
-  "calendar.timegm",
   "collections.Mapping",
   "collections.MutableMapping",
   "collections.abc.Mapping",
@@ -33,26 +32,15 @@
   "core.rdns.ReverseDnsSetting.REQUIRE_RESOLVE_ALL_ADDRESSES",
   "core.rdns.ReverseDnsSetting.REQUIRE_RESOLVE_IP_ADDRESSES_ONLY",
   "core.rdns.ReverseDnsSetting.SUPPORTED_VALUES",
-  "cryptography.hazmat.backends.default_backend",
-  "cryptography.hazmat.primitives.hashes",
-  "cryptography.hazmat.primitives.hashes.Hash",
-  "cryptography.hazmat.primitives.hashes.SHA256",
-  "cryptography.x509",
-  "cryptography.x509.load_der_x509_certificate",
-  "ctypes",
-  "ctypes.c_long",
   "cursor.Writer",
   "datetime.datetime.max.replace",
   "datetime.timedelta.max",
-  "decimal.Decimal",
   "decimal.InvalidOperation",
   "dict.__delitem__",
   "dict.__eq__",
   "dict.__setitem__",
   "dict.clear",
-  "formatter",
   "functools.reduce",
-  "future.types.newstr.newstr",
   "get_byte",
   "get_bytes",
   "gssapi",
@@ -64,9 +52,7 @@
   "gssapi.exceptions.GSSError",
   "gssapi.exceptions.MissingContextError",
   "gssapi.raw.ChannelBindings",
-  "hashlib",
   "hashlib.md5",
-  "hashlib.new",
   "hmac",
   "hmac.new",
   "int.from_bytes",
@@ -95,6 +81,7 @@
   "os.linesep.join",
   "os.sep.join",
   "os.urandom",
+  "pprint.pformat",
   "protocol.oid.Oids.get",
   "protocol.rfc4512.DsaInfo.from_file",
   "protocol.rfc4512.DsaInfo.from_json",
@@ -111,19 +98,60 @@
   "protocol.schemas.edir914.edir_9_1_4_schema",
   "protocol.schemas.slapd24.slapd_2_4_dsa_info",
   "protocol.schemas.slapd24.slapd_2_4_schema",
+  "pyasn1.__version__",
+  "pyasn1.codec.ber.decoder",
+  "pyasn1.codec.ber.encoder.AbstractItemEncoder",
+  "pyasn1.codec.ber.encoder.BooleanEncoder",
+  "pyasn1.codec.ber.encoder.Encoder",
+  "pyasn1.codec.ber.encoder.encode",
+  "pyasn1.codec.ber.encoder.tagMap",
+  "pyasn1.codec.ber.encoder.typeMap",
+  "pyasn1.compat.octets.ints2octs",
+  "pyasn1.error.PyAsn1Error",
+  "pyasn1.type.base.Asn1Item",
+  "pyasn1.type.constraint.SingleValueConstraint",
+  "pyasn1.type.constraint.ValueRangeConstraint",
+  "pyasn1.type.constraint.ValueSizeConstraint",
+  "pyasn1.type.namedtype.DefaultedNamedType",
+  "pyasn1.type.namedtype.NamedType",
+  "pyasn1.type.namedtype.NamedTypes",
+  "pyasn1.type.namedtype.OptionalNamedType",
+  "pyasn1.type.namedval.NamedValues",
+  "pyasn1.type.tag.Tag",
+  "pyasn1.type.tag.TagSet",
+  "pyasn1.type.tag.tagClassApplication",
+  "pyasn1.type.tag.tagClassContext",
+  "pyasn1.type.tag.tagClassUniversal",
+  "pyasn1.type.tag.tagFormatConstructed",
+  "pyasn1.type.tag.tagFormatSimple",
+  "pyasn1.type.univ.Boolean",
   "pyasn1.type.univ.Boolean.tagSet",
   "pyasn1.type.univ.Boolean.tagSet.tagImplicitly",
   "pyasn1.type.univ.Boolean.typeId",
+  "pyasn1.type.univ.Choice",
+  "pyasn1.type.univ.Enumerated",
   "pyasn1.type.univ.Enumerated.subtypeSpec",
+  "pyasn1.type.univ.Integer",
   "pyasn1.type.univ.Integer.subtypeSpec",
   "pyasn1.type.univ.Integer.tagSet.tagImplicitly",
+  "pyasn1.type.univ.Null",
   "pyasn1.type.univ.Null.tagSet.tagImplicitly",
+  "pyasn1.type.univ.OctetString",
   "pyasn1.type.univ.OctetString.tagSet.tagImplicitly",
+  "pyasn1.type.univ.Sequence",
   "pyasn1.type.univ.Sequence.tagSet.tagImplicitly",
+  "pyasn1.type.univ.SequenceOf",
   "pyasn1.type.univ.SequenceOf.subtypeSpec",
   "pyasn1.type.univ.SequenceOf.tagSet.tagImplicitly",
+  "pyasn1.type.univ.SetOf",
   "pyasn1.type.univ.SetOf.subtypeSpec",
   "pyasn1.type.univ.SetOf.tagSet.tagImplicitly",
+  "queue.Empty",
+  "queue.Queue",
+  "random",
+  "random.SystemRandom",
+  "random.choice",
+  "random.randint",
   "re.IGNORECASE",
   "re.UNICODE",
   "re.VERBOSE",
@@ -146,11 +174,19 @@
   "socket.gethostname",
   "socket.inet_pton",
   "socket.socket",
+  "ssl",
   "ssl.CERT_NONE",
   "ssl.CERT_OPTIONAL",
   "ssl.CERT_REQUIRED",
+  "ssl.CertificateError",
   "ssl.PROTOCOL_SSLv23",
+  "ssl.Purpose",
   "ssl.Purpose.SERVER_AUTH",
+  "ssl.SSLContext",
+  "ssl.SSLError",
+  "ssl.create_default_context",
+  "ssl.match_hostname",
+  "ssl.wrap_socket",
   "strategy.asynchronous.AsyncStrategy._start_listen",
   "strategy.asynchronous.AsyncStrategy._stop_listen",
   "strategy.base.BaseStrategy.close",
@@ -158,6 +194,24 @@
   "strategy.base.BaseStrategy.decode_control",
   "strategy.base.BaseStrategy.decode_request",
   "strategy.base.BaseStrategy.open",
+  "string.ascii_letters",
+  "string.digits",
+  "string.hexdigits",
+  "string.whitespace",
+  "stringprep",
+  "stringprep.in_table_b1",
+  "stringprep.in_table_c12",
+  "stringprep.in_table_c21",
+  "stringprep.in_table_c22",
+  "stringprep.in_table_c3",
+  "stringprep.in_table_c4",
+  "stringprep.in_table_c5",
+  "stringprep.in_table_c6",
+  "stringprep.in_table_c7",
+  "stringprep.in_table_c8",
+  "stringprep.in_table_c9",
+  "stringprep.in_table_d1",
+  "stringprep.in_table_d2",
   "struct.pack",
   "struct.unpack",
   "sync.SyncStrategy._open_socket",
@@ -168,6 +222,7 @@
   "sys.stdin.encoding",
   "sys.stdout.encoding",
   "unicode",
+  "unicodedata.ucd_3_2_0",
   "unicodedata.ucd_3_2_0.normalize",
   "urllib.parse.unquote",
   "urllib.unquote",
@@ -194,15 +249,15 @@
    "pycryptodome/conda-forge/linux-64/pycryptodome-3.3.1-py37he80fd80_0",
    "pycryptodome/conda-forge/linux-64/pycryptodome-3.7.1-py27h16a7912_0"
   ],
-  "_ssl": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "base64": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "binascii": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "calendar": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -214,7 +269,31 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "cryptography": [
+   "cryptography/conda-forge/linux-64/cryptography-3.2.1-py37hc72a4ac_0",
+   "cryptography/conda-forge/linux-64/cryptography-3.3-py36h0a59100_0",
+   "cryptography/conda-forge/linux-64/cryptography-3.4.6-py38ha5dfef3_0",
+   "privy/conda-forge/noarch/privy-6.0.0-py_0"
+  ],
+  "ctypes": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "datetime": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "decimal": [
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "formatter": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "future": [
+   "future/conda-forge/linux-64/future-0.16.0-py34_0"
+  ],
+  "hashlib": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -238,41 +317,7 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "pprint": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "pyasn1": [
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0",
-   "pyasn1/conda-forge/noarch/pyasn1-0.3.4-py_0",
-   "pyasn1/conda-forge/noarch/pyasn1-0.3.5-py_0",
-   "pyasn1/conda-forge/noarch/pyasn1-0.3.6-py_0",
-   "pyasn1/conda-forge/noarch/pyasn1-0.3.7-py_0",
-   "pyasn1/conda-forge/noarch/pyasn1-0.4.2-py_0",
-   "pyasn1/conda-forge/noarch/pyasn1-0.4.5-py_0"
-  ],
-  "queue": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "random": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "re": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "ssl": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "string": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "stringprep": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -281,10 +326,6 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "types": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "unicodedata": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],

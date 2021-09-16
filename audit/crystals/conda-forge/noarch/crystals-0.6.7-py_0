@@ -28,16 +28,6 @@
   "itertools.chain.from_iterable",
   "lattice.Lattice.from_parameters",
   "lengthclose",
-  "math",
-  "math.cos",
-  "math.degrees",
-  "math.gcd",
-  "math.isclose",
-  "math.nan",
-  "math.radians",
-  "math.sin",
-  "math.sqrt",
-  "math.tan",
   "numpy.abs",
   "numpy.arccos",
   "numpy.empty",
@@ -52,9 +42,39 @@
   "numpy.random.seed",
   "numpy.rint",
   "numpy.zeros",
+  "operator",
+  "operator.attrgetter",
+  "operator.itemgetter",
   "os.environ.get",
   "os.remove",
+  "pathlib.Path",
+  "pickle",
+  "pickle.dumps",
+  "pickle.loads",
+  "random.choice",
+  "random.randint",
+  "random.random",
+  "random.seed",
+  "socket",
+  "socket.create_connection",
+  "spglib.get_error_message",
+  "spglib.get_spacegroup_type",
+  "spglib.get_symmetry",
+  "spglib.get_symmetry_dataset",
+  "spglib.standardize_cell",
+  "string.digits",
+  "string.punctuation",
   "sys",
+  "unittest",
+  "unittest.TestCase",
+  "unittest.main",
+  "unittest.skip",
+  "unittest.skipIf",
+  "unittest.skipUnless",
+  "urllib.error.URLError",
+  "urllib.request.Request",
+  "urllib.request.urlopen",
+  "urllib.request.urlretrieve",
   "warnings.warn"
  ],
  "deps": {
@@ -65,10 +85,6 @@
   "CifFile": [
    "pycifrw/conda-forge/linux-64/pycifrw-4.4.1-py39h07f9747_2",
    "pycifrw/conda-forge/win-64/pycifrw-4.4.1-py27h0c8e037_0"
-  ],
-  "_pickle": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "abc": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -130,6 +146,10 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "math": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "ntpath": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -138,28 +158,11 @@
    "numpy/conda-forge/linux-64/numpy-1.17.5-py36h95a1406_0",
    "numpy/conda-forge/linux-64/numpy-1.18.4-py37h8960a57_0"
   ],
-  "operator": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "os": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "pathlib": [
-   "pathlib/conda-forge/noarch/pathlib-1.0.1-py_1",
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "pickle": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "platform": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "random": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -177,28 +180,7 @@
    "requests/conda-forge/noarch/requests-2.25.1-pyhd3deb0d_0",
    "requests/conda-forge/noarch/requests-2.26.0-pyhd8ed1ab_0"
   ],
-  "socket": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "spglib": [
-   "spglib/conda-forge/linux-64/spglib-1.10.0.2-py35_0",
-   "spglib/conda-forge/linux-64/spglib-1.10.3.52-py35_0",
-   "spglib/conda-forge/linux-64/spglib-1.14.1-py36hda16e5c_1"
-  ],
-  "string": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "tempfile": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "unittest": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "urllib": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],

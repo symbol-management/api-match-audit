@@ -12,18 +12,14 @@
   "_get_content_type_meta",
   "cStringIO.StringIO",
   "canonicalization.CanonicalizationPolicy.from_c_value",
-  "cgi",
-  "cgi.parse_header",
   "charade",
   "charade.detect",
-  "chardet",
   "cls",
   "collections.Callable",
   "collections.MutableSet",
   "compat.urlparse.urljoin",
   "compat.urlparse.urlparse",
   "compat.urlparse.urlunsplit",
-  "cssutils.CSSParser",
   "dict.__delitem__",
   "dict.__eq__",
   "dict.__setitem__",
@@ -31,10 +27,30 @@
   "dict.pop",
   "django.core.mail.get_connection",
   "dkim",
+  "dns.resolver",
   "dnsplug.get_txt",
+  "doctest",
+  "doctest.testmod",
   "dummy_thread.get_ident",
   "element_cls",
+  "email",
+  "email.charset",
+  "email.encoders.encode_base64",
+  "email.generator",
+  "email.generator.BytesGenerator",
+  "email.generator.Generator",
+  "email.header.Header",
+  "email.header.decode_header",
+  "email.mime.base.MIMEBase",
+  "email.mime.multipart.MIMEMultipart",
+  "email.mime.text.MIMEText",
+  "email.utils.escapesre",
   "email.utils.escapesre.sub",
+  "email.utils.formataddr",
+  "email.utils.formatdate",
+  "email.utils.getaddresses",
+  "email.utils.parseaddr",
+  "email.utils.specialsre",
   "email.utils.specialsre.search",
   "emails.__init__.__version__",
   "emails.compat.__init__._ver",
@@ -75,27 +91,40 @@
   "hash.digest",
   "hash.name.lower",
   "hasher",
-  "hashlib",
   "hashlib.sha1",
   "hashlib.sha256",
+  "html5lib",
+  "html5lib.parse",
   "io.BytesIO",
   "io.StringIO",
+  "lxml.etree",
   "lxml.etree.Element",
   "lxml.etree.HTMLParser",
   "lxml.etree.XMLParser",
   "lxml.etree.fromstring",
   "lxml.etree.tostring",
   "message.Message.ADDRESS_HEADERS",
+  "mimetypes",
+  "mimetypes.guess_extension",
+  "mimetypes.guess_type",
   "packages.dkim.sign",
+  "random.randrange",
   "re.DOTALL",
   "re.IGNORECASE",
   "render",
   "send",
+  "socket",
+  "socket.getfqdn",
+  "ssl",
+  "ssl.SSLError",
+  "string",
+  "string.Template",
   "sys",
   "sys.version.lower",
   "thread.get_ident",
   "time",
   "transformer.MessageTransformer",
+  "urllib.parse",
   "urlparse",
   "v",
   "warnings.warn"
@@ -105,33 +134,28 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "_ssl": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "base64": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "cgi": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "chardet": [
+   "chardet/conda-forge/linux-64/chardet-3.0.2-py35_1",
+   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
+   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0"
   ],
   "collections": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "cssutils": [
+   "cssutils/conda-forge/noarch/cssutils-2.2.0-pyhd8ed1ab_0",
+   "cssutils/conda-forge/noarch/cssutils-2.3.0-pyhd8ed1ab_0"
+  ],
   "datetime": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "dns": [
-   "dnspython/conda-forge/noarch/dnspython-1.15.0-py_0",
-   "dnspython/conda-forge/noarch/dnspython-1.16.0-py_1",
-   "dnspython/conda-forge/noarch/dnspython-2.0.0-py_0",
-   "dnspython/conda-forge/noarch/dnspython-2.1.0-pyhd8ed1ab_0"
-  ],
-  "doctest": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "email": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -139,18 +163,11 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "html5lib": [
-   "html5lib/conda-forge/noarch/html5lib-0.999999999-py_1",
-   "html5lib/conda-forge/noarch/html5lib-1.0.1-py_0"
-  ],
-  "logging": [
+  "hashlib": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "lxml": [
-   "lxml/conda-forge/linux-64/lxml-4.2.6-py37h23eabaa_1000"
-  ],
-  "mimetypes": [
+  "logging": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -173,10 +190,6 @@
    "premailer/conda-forge/noarch/premailer-3.7.0-pyh9f0ad1d_0",
    "premailer/conda-forge/noarch/premailer-3.9.0-pyhd8ed1ab_0"
   ],
-  "random": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "re": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -195,26 +208,10 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "socket": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "ssl": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "string": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "tests": [
    "typhos/conda-forge/noarch/typhos-0.7.0-py_0"
   ],
   "unittest": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "urllib": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
