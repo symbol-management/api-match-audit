@@ -6,9 +6,29 @@
   "SpatialData.from_geometry_raster",
   "_helperfunction",
   "_signal_label",
+  "asdf",
+  "asdf.AsdfFile",
+  "asdf.ValidationError",
+  "asdf.extension.AsdfExtension",
+  "asdf.extension.BuiltinExtension",
+  "asdf.open",
+  "asdf.schema._type_to_tag",
+  "asdf.tagged.TaggedDict",
+  "asdf.tagged.tag_object",
+  "asdf.types.CustomType",
+  "asdf.types.ExtensionTypeMeta",
+  "asdf.types.tagged.Tagged",
+  "asdf.util.filepath_to_url",
+  "boltons.iterutils.get_path",
+  "boltons.iterutils.remap",
   "collections.abc.Iterable",
+  "colormap",
+  "dataclasses.dataclass",
+  "dataclasses.field",
   "func",
+  "functools",
   "functools.reduce",
+  "functools.wraps",
   "groove_cls",
   "hashlib.md5",
   "hashlib.sha256",
@@ -29,8 +49,6 @@
   "local_cs.LocalCoordinateSystem.from_xyz",
   "local_cs.LocalCoordinateSystem.from_xz_and_orientation",
   "local_cs.LocalCoordinateSystem.from_yz_and_orientation",
-  "math",
-  "math.isclose",
   "matplotlib.axes",
   "matplotlib.axes._axes.Axes",
   "matplotlib.figure.Figure",
@@ -89,16 +107,33 @@
   "pygments.highlight",
   "pygments.lexers.get_lexer_by_name",
   "pygments.lexers.get_lexer_for_filename",
+  "re",
+  "re.search",
   "scipy.spatial.transform.Rotation",
   "scipy.spatial.transform.Rotation.from_euler",
   "scipy.spatial.transform.Rotation.from_matrix",
   "scipy.spatial.transform.Slerp",
+  "socket",
   "socket.gethostname",
   "sympy",
   "sympy.Point2D",
   "sympy.Polygon",
   "sympy.simplify",
   "sympy.sympify",
+  "typing.Any",
+  "typing.Callable",
+  "typing.Dict",
+  "typing.Generator",
+  "typing.Iterator",
+  "typing.List",
+  "typing.Mapping",
+  "typing.OrderedDict",
+  "typing.Protocol",
+  "typing.TYPE_CHECKING",
+  "typing.Tuple",
+  "typing.Union",
+  "typing.runtime_checkable",
+  "warnings",
   "warnings.warn",
   "weldx.constants.WELDX_UNIT_REGISTRY.check",
   "weldx.constants.WELDX_UNIT_REGISTRY.get_dimensionality",
@@ -113,7 +148,10 @@
   "xarray.core.coordinates.DataArrayCoordinates",
   "xarray.core.coordinates.DatasetCoordinates",
   "xarray.register_dataarray_accessor",
-  "xarray.register_dataset_accessor"
+  "xarray.register_dataset_accessor",
+  "yaml",
+  "yaml.BaseLoader",
+  "yaml.load"
  ],
  "deps": {
   "__future__": [
@@ -126,33 +164,7 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "asdf": [
-   "asdf/conda-forge/noarch/asdf-2.8.1-pyhd8ed1ab_0"
-  ],
-  "boltons": [
-   "boltons/conda-forge/noarch/boltons-19.0.0-py_0",
-   "boltons/conda-forge/noarch/boltons-19.1.0-py_0",
-   "boltons/conda-forge/noarch/boltons-19.2.0-py_0",
-   "boltons/conda-forge/noarch/boltons-20.1.0-pyh9f0ad1d_0",
-   "boltons/conda-forge/noarch/boltons-20.2.0-pyh9f0ad1d_0",
-   "boltons/conda-forge/noarch/boltons-20.2.1-pyh9f0ad1d_0"
-  ],
-  "colormap": [
-   "colormap/conda-forge/noarch/colormap-1.0.1-py_2"
-  ],
   "copy": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "dataclasses": [
-   "dataclasses/conda-forge/noarch/dataclasses-0.5-py_0",
-   "dataclasses/conda-forge/noarch/dataclasses-0.6-py_0",
-   "dataclasses/conda-forge/noarch/dataclasses-0.8-pyh787bdff_0",
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "functools": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -160,8 +172,9 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "jsonschema": [
-   "jsonschema/conda-forge/noarch/jsonschema-3.2.0-pyhd8ed1ab_3"
+  "math": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "ntpath": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -174,27 +187,6 @@
   "os": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "re": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "socket": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "typing": [
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "warnings": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "yaml": [
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0",
-   "pyyaml/conda-forge/linux-64/pyyaml-3.11-py35_0",
-   "pyyaml/conda-forge/win-64/pyyaml-5.2-py36hfa6e2cd_0"
   ]
  }
 }

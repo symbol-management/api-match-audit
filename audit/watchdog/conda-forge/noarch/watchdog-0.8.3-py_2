@@ -37,6 +37,10 @@
   "_watchdog_fsevents.read_events",
   "_watchdog_fsevents.remove_watch",
   "_watchdog_fsevents.stop",
+  "argh.ArghParser",
+  "argh.aliases",
+  "argh.arg",
+  "argh.expects_obj",
   "cStringIO.StringIO",
   "cls",
   "collections.MutableSet",
@@ -45,12 +49,32 @@
   "compat.queue.Queue._get",
   "compat.queue.Queue._init",
   "compat.queue.Queue._put",
+  "ctypes",
+  "ctypes.CDLL",
+  "ctypes.CFUNCTYPE",
+  "ctypes.Structure",
+  "ctypes.WinError",
+  "ctypes.c_char_p",
+  "ctypes.c_int",
+  "ctypes.c_uint32",
+  "ctypes.c_void_p",
+  "ctypes.c_wchar_p",
   "ctypes.get_errno",
   "ctypes.sizeof",
+  "ctypes.util",
+  "ctypes.util.find_library",
   "ctypes.windll.kernel32.CloseHandle",
   "ctypes.windll.kernel32.CreateFileW",
   "ctypes.windll.kernel32.GetFileInformationByHandle",
+  "ctypes.wintypes",
+  "ctypes.wintypes.BOOL",
+  "ctypes.wintypes.DWORD",
+  "ctypes.wintypes.HANDLE",
   "ctypes.wintypes.POINTER",
+  "doctest",
+  "doctest.ELLIPSIS",
+  "doctest.testfile",
+  "doctest.testmod",
   "errno",
   "f",
   "f.__name__",
@@ -58,8 +82,10 @@
   "func",
   "function",
   "function.__doc__",
+  "functools",
   "functools.partial",
   "functools.reduce",
+  "functools.wraps",
   "int_class",
   "io.StringIO",
   "listdir",
@@ -75,6 +101,12 @@
   "os.setsid",
   "os.stat",
   "os.strerror",
+  "pathtools.path.absolute_path",
+  "pathtools.patterns.match_any_paths",
+  "queue",
+  "re",
+  "re.match",
+  "select",
   "select_backport",
   "select_backport.KQ_EV_ADD",
   "select_backport.KQ_EV_CLEAR",
@@ -87,14 +119,33 @@
   "select_backport.KQ_NOTE_RENAME",
   "select_backport.KQ_NOTE_REVOKE",
   "select_backport.KQ_NOTE_WRITE",
+  "signal",
   "signal.SIGTERM",
+  "signal.signal",
+  "stat",
+  "stat.S_IFDIR",
+  "stat.S_IFREG",
+  "stat.S_ISDIR",
+  "string.Template",
+  "struct",
   "struct.unpack_from",
+  "subprocess",
+  "subprocess.Popen",
   "sys",
   "sys.path.insert",
   "sys.platform.startswith",
   "sys.stdout.write",
+  "threading",
+  "threading.Condition",
+  "threading.Event",
+  "threading.Lock",
+  "threading.Thread",
+  "threading.Thread.start",
   "time",
+  "unicodedata",
+  "unicodedata.normalize",
   "walk",
+  "warnings",
   "warnings.warn",
   "warnings.warn_explicit",
   "watchdog.observers.read_directory_changes_async.WindowsApiAsyncObserver",
@@ -104,7 +155,10 @@
   "watchdog.utils.compat.queue.Empty",
   "win32stat",
   "win32stat.stat",
-  "write"
+  "write",
+  "yaml",
+  "yaml.dump",
+  "yaml.load"
  ],
  "deps": {
   "AppKit": [
@@ -114,26 +168,7 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "_ctypes": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "argh": [
-   "argh/conda-forge/linux-64/argh-0.26.2-py27_0"
-  ],
   "collections": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "ctypes": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "doctest": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "functools": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -152,62 +187,6 @@
   "os": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "pathtools": [
-   "pathtools/conda-forge/noarch/pathtools-0.1.2-py_1",
-   "pathtools/conda-forge/win-64/pathtools-0.1.2-py27_0",
-   "pathtools/conda-forge/win-64/pathtools-0.1.2-py36_0"
-  ],
-  "queue": [
-   "pies2overrides/conda-forge/osx-64/pies2overrides-2.6.7-py27_1000",
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "re": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "select": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "signal": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "stat": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "string": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "struct": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "subprocess": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "threading": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "unicodedata": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "warnings": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "yaml": [
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0",
-   "pyyaml/conda-forge/linux-64/pyyaml-3.11-py35_0",
-   "pyyaml/conda-forge/win-64/pyyaml-5.2-py36hfa6e2cd_0"
   ]
  }
 }

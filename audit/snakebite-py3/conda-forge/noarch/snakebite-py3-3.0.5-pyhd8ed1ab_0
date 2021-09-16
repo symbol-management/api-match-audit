@@ -10,10 +10,19 @@
   "Security_pb2._RENEWDELEGATIONTOKENREQUESTPROTO",
   "Security_pb2._RENEWDELEGATIONTOKENRESPONSEPROTO",
   "Security_pb2._TOKENPROTO",
+  "array",
   "array.array",
+  "binascii",
+  "binascii.b2a_hex",
+  "bz2",
+  "bz2.decompress",
   "errno",
   "exc_type",
+  "fnmatch",
+  "fnmatch.fnmatch",
   "func",
+  "getpass",
+  "getpass.getuser",
   "google.protobuf.descriptor",
   "google.protobuf.descriptor.Descriptor",
   "google.protobuf.descriptor.EnumDescriptor",
@@ -45,6 +54,7 @@
   "google.protobuf.service_reflection.GeneratedServiceType",
   "google.protobuf.symbol_database",
   "google.protobuf.symbol_database.Default",
+  "gssapi",
   "hdfs_pb2",
   "hdfs_pb2.DESCRIPTOR",
   "hdfs_pb2._CHECKSUMTYPEPROTO",
@@ -70,25 +80,65 @@
   "os.path.isfile",
   "os.remove",
   "os.rename",
+  "platform",
+  "platform.system",
+  "posixpath",
+  "posixpath.dirname",
+  "posixpath.join",
+  "posixpath.normpath",
   "property.findall",
+  "puresasl.client.SASLClient",
   "pwd",
+  "queue.PriorityQueue",
+  "random",
+  "random.random",
+  "re",
+  "re.compile",
+  "re.match",
+  "re.split",
+  "re.sub",
+  "select",
+  "select.select",
   "snakebite.config.HDFSConfig.core_try_paths",
   "snakebite.config.HDFSConfig.hdfs_try_paths",
   "snakebite.namenode.Namenode.DEFAULT_PORT",
   "snakebite.namenode.Namenode.DEFAULT_VERSION",
+  "socket",
   "socket.AF_INET",
   "socket.IPPROTO_TCP",
   "socket.SOCK_STREAM",
   "socket.TCP_NODELAY",
   "socket.error",
+  "socket.socket",
   "socket.timeout",
+  "stat",
+  "stat.S_IRGRP",
+  "stat.S_IROTH",
+  "stat.S_IRUSR",
+  "stat.S_IWGRP",
+  "stat.S_IWOTH",
+  "stat.S_IWUSR",
+  "stat.S_IXGRP",
+  "stat.S_IXOTH",
+  "stat.S_IXUSR",
+  "struct",
   "struct.pack",
   "struct.unpack",
+  "subprocess",
+  "subprocess.PIPE",
+  "subprocess.Popen",
   "sys",
   "sys.path.insert",
   "sys.stdout.buffer",
   "time",
-  "urlparse.urlparse"
+  "urllib.parse.urlparse",
+  "urlparse.urlparse",
+  "uuid",
+  "xml.etree.ElementTree",
+  "xml.etree.ElementTree.parse",
+  "zlib",
+  "zlib.MAX_WBITS",
+  "zlib.decompress"
  ],
  "deps": {
   "__future__": [
@@ -100,34 +150,9 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "array": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "binascii": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "bz2": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "datetime": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "fnmatch": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "getpass": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "gssapi": [
-   "python-gssapi/conda-forge/linux-64/python-gssapi-1.6.11-py36h270a780_0",
-   "python-gssapi/conda-forge/linux-64/python-gssapi-1.6.11-py39h24a2b69_0",
-   "python-gssapi/conda-forge/linux-64/python-gssapi-1.6.9-py37h74a8448_1"
   ],
   "inspect": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -150,67 +175,6 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "os": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "platform": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "posixpath": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "puresasl": [
-   "pure-sasl/conda-forge/noarch/pure-sasl-0.4.0-py_0",
-   "pure-sasl/conda-forge/noarch/pure-sasl-0.5.1-py_0",
-   "pure-sasl/conda-forge/noarch/pure-sasl-0.6.1-py_0"
-  ],
-  "queue": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "random": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "re": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "select": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "socket": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "stat": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "struct": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "subprocess": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "urllib": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "uuid": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "xml": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "zlib": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ]
