@@ -7,7 +7,6 @@
   "curry_wrapper",
   "django.conf.settings.LOGIN_URL",
   "django.db.models.Field",
-  "fasteners",
   "flask._app_ctx_stack.top",
   "flask.current_app.logger.error",
   "flask.current_app.logger.exception",
@@ -47,20 +46,7 @@
   "google.appengine.ext.ndb.StringProperty",
   "google.appengine.ext.webapp.util.login_required",
   "hashlib.sha256",
-  "hmac",
-  "hmac.new",
   "http_callable",
-  "httplib2",
-  "httplib2.DEFAULT_MAX_REDIRECTS",
-  "httplib2.Http",
-  "jsonpickle",
-  "jsonpickle.decode",
-  "jsonpickle.encode",
-  "keyring",
-  "keyring.get_password",
-  "keyring.set_password",
-  "markupsafe",
-  "markupsafe.escape",
   "method",
   "oauth2client.client.AssertionCredentials.NON_SERIALIZED_MEMBERS",
   "oauth2client.contrib.django_util.__init__.OAuth2Settings",
@@ -89,12 +75,6 @@
   "os.umask",
   "os.unlink",
   "os.urandom",
-  "pyasn1.codec.der.decoder",
-  "pyasn1.codec.der.decoder.decode",
-  "pyasn1_modules.pem",
-  "pyasn1_modules.pem.readPemBlocksFromFile",
-  "pyasn1_modules.rfc2459.Certificate",
-  "pyasn1_modules.rfc5208.PrivateKeyInfo",
   "request",
   "rsa",
   "rsa.PublicKey.load_pkcs1",
@@ -134,6 +114,8 @@
   "webapp2",
   "webapp2.RequestHandler",
   "webapp2.WSGIApplication",
+  "webbrowser",
+  "webbrowser.open",
   "wrapped",
   "wrapped_function"
  ],
@@ -186,6 +168,9 @@
    "django/conda-forge/linux-64/django-1.9.12-py27_0",
    "django/conda-forge/noarch/django-1.8.19-py_0"
   ],
+  "fasteners": [
+   "fasteners/conda-forge/noarch/fasteners-0.14.1-py_3"
+  ],
   "flask": [
    "flask/conda-forge/linux-64/flask-0.12-py36_0",
    "flask/conda-forge/noarch/flask-0.11.1-py_1",
@@ -201,6 +186,18 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "hmac": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "httplib2": [
+   "httplib2/conda-forge/linux-64/httplib2-0.12.3-py36_0",
+   "httplib2/conda-forge/linux-64/httplib2-0.14.0-py38_0",
+   "httplib2/conda-forge/noarch/httplib2-0.17.1-pyh9f0ad1d_0",
+   "httplib2/conda-forge/noarch/httplib2-0.17.3-pyh9f0ad1d_0",
+   "httplib2/conda-forge/noarch/httplib2-0.18.0-pyh9f0ad1d_0",
+   "httplib2/conda-forge/noarch/httplib2-0.19.0-pyhd8ed1ab_0"
+  ],
   "importlib": [
    "importlib/conda-forge/linux-64/importlib-1.0.4-py26_0",
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -214,9 +211,23 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "jsonpickle": [
+   "jsonpickle/conda-forge/noarch/jsonpickle-1.2-py_0",
+   "jsonpickle/conda-forge/noarch/jsonpickle-1.4.1-pyh9f0ad1d_0",
+   "jsonpickle/conda-forge/noarch/jsonpickle-1.5.1-pyhd8ed1ab_0",
+   "jsonpickle/conda-forge/noarch/jsonpickle-2.0.0-pyhd8ed1ab_0"
+  ],
+  "keyring": [
+   "keyring/conda-forge/linux-64/keyring-12.1.0-py27_0",
+   "keyring/conda-forge/linux-64/keyring-21.2.1-py36h5fab9bb_0",
+   "keyring/conda-forge/linux-64/keyring-22.4.0-py36hd000896_0"
+  ],
   "logging": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "markupsafe": [
+   "markupsafe/conda-forge/linux-64/markupsafe-2.0.0-py36h70b1f00_0"
   ],
   "ntpath": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -229,6 +240,26 @@
   "pickle": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "pyasn1": [
+   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
+   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0",
+   "pyasn1/conda-forge/noarch/pyasn1-0.3.4-py_0",
+   "pyasn1/conda-forge/noarch/pyasn1-0.3.5-py_0",
+   "pyasn1/conda-forge/noarch/pyasn1-0.3.6-py_0",
+   "pyasn1/conda-forge/noarch/pyasn1-0.3.7-py_0",
+   "pyasn1/conda-forge/noarch/pyasn1-0.4.2-py_0",
+   "pyasn1/conda-forge/noarch/pyasn1-0.4.5-py_0"
+  ],
+  "pyasn1_modules": [
+   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
+   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0",
+   "pyasn1-modules/conda-forge/noarch/pyasn1-modules-0.1.4-py_0",
+   "pyasn1-modules/conda-forge/noarch/pyasn1-modules-0.1.5-py_0",
+   "pyasn1-modules/conda-forge/noarch/pyasn1-modules-0.2.1-py_0",
+   "pyasn1-modules/conda-forge/noarch/pyasn1-modules-0.2.3-py_0",
+   "pyasn1-modules/conda-forge/noarch/pyasn1-modules-0.2.6-py_0",
+   "pyasn1-modules/conda-forge/noarch/pyasn1-modules-0.2.7-py_0"
   ],
   "shutil": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -253,10 +284,6 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "warnings": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "webbrowser": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
