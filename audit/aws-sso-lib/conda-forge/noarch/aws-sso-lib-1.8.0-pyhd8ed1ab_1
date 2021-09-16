@@ -1,12 +1,40 @@
 {
  "bad": [
   "account_iterator",
+  "botocore",
+  "botocore.UNSIGNED",
+  "botocore.compat",
+  "botocore.compat.total_seconds",
+  "botocore.config.Config",
+  "botocore.configloader",
+  "botocore.credentials.CredentialResolver",
+  "botocore.credentials.JSONFileCache",
+  "botocore.credentials.SSOCredentialFetcher",
+  "botocore.credentials.SSOProvider",
+  "botocore.exceptions.ProfileNotFound",
+  "botocore.exceptions.SSOError",
+  "botocore.exceptions.SSOTokenLoadError",
+  "botocore.exceptions.UnauthorizedSSOTokenError",
+  "botocore.session.Session",
+  "botocore.utils.CachedProperty",
+  "botocore.utils.datetime2timestamp",
+  "botocore.utils.tzutc",
   "collections.abc.Iterable",
+  "dateutil",
+  "dateutil.parser.parse",
+  "dateutil.tz.tzlocal",
   "format.format_account_id",
   "format.format_permission_set_arn",
+  "hashlib",
   "hashlib.sha1",
   "it",
   "itertools",
+  "logging",
+  "logging.INFO",
+  "logging.basicConfig",
+  "logging.getLogger",
+  "numbers",
+  "numbers.Number",
   "os.O_CREAT",
   "os.O_WRONLY",
   "os.environ.get",
@@ -15,10 +43,32 @@
   "os.path.isfile",
   "permission_set_iterator",
   "principal_iterator",
+  "random",
+  "random.choice",
+  "random.randint",
+  "shlex",
+  "shlex.quote",
+  "string",
+  "string.ascii_lowercase",
+  "string.digits",
+  "subprocess",
   "sys",
   "target_iterator",
+  "textwrap",
+  "textwrap.dedent",
+  "threading",
   "time",
-  "user_auth_handler"
+  "typing",
+  "typing.Dict",
+  "typing.Iterable",
+  "typing.Iterator",
+  "typing.TextIO",
+  "typing.Tuple",
+  "typing.Union",
+  "user_auth_handler",
+  "uuid",
+  "uuid.uuid4",
+  "webbrowser"
  ],
  "deps": {
   "aws_error_utils": [
@@ -65,20 +115,6 @@
    "boto3/conda-forge/noarch/boto3-1.9.57-py_0",
    "boto3/conda-forge/noarch/boto3-1.9.67-py_0"
   ],
-  "botocore": [
-   "botocore/conda-forge/noarch/botocore-1.17.58-pyh9f0ad1d_0",
-   "botocore/conda-forge/noarch/botocore-1.18.8-pyh9f0ad1d_0",
-   "botocore/conda-forge/noarch/botocore-1.20.108-pyhd8ed1ab_0",
-   "botocore/conda-forge/noarch/botocore-1.20.111-pyhd8ed1ab_0",
-   "botocore/conda-forge/noarch/botocore-1.20.31-pyhd8ed1ab_0",
-   "botocore/conda-forge/noarch/botocore-1.20.44-pyhd8ed1ab_0",
-   "botocore/conda-forge/noarch/botocore-1.20.55-pyhd8ed1ab_0",
-   "botocore/conda-forge/noarch/botocore-1.20.67-pyhd8ed1ab_0",
-   "botocore/conda-forge/noarch/botocore-1.20.79-pyhd8ed1ab_0",
-   "botocore/conda-forge/noarch/botocore-1.20.8-pyhd8ed1ab_0",
-   "botocore/conda-forge/noarch/botocore-1.20.93-pyhd8ed1ab_0",
-   "botocore/conda-forge/noarch/botocore-1.21.4-pyhd8ed1ab_0"
-  ],
   "collections": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -91,18 +127,7 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "dateutil": [
-   "python-dateutil/conda-forge/noarch/python-dateutil-2.7.2-py_0",
-   "python-dateutil/conda-forge/noarch/python-dateutil-2.7.4-py_0",
-   "python-dateutil/conda-forge/noarch/python-dateutil-2.7.5-py_0",
-   "python-dateutil/conda-forge/noarch/python-dateutil-2.8.1-py_0",
-   "python-dateutil/conda-forge/noarch/python-dateutil-2.8.2-pyhd8ed1ab_0"
-  ],
   "getpass": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "hashlib": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -110,15 +135,7 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "logging": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "ntpath": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "numbers": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -126,43 +143,7 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "random": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "re": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "shlex": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "string": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "subprocess": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "textwrap": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "threading": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "typing": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "uuid": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "webbrowser": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ]

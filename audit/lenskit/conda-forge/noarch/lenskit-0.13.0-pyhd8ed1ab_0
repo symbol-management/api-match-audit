@@ -3,22 +3,46 @@
   "agg",
   "algorithms.Recommender.adapt",
   "basic.TopN",
+  "binpickle",
+  "binpickle.BinPickleFile",
+  "binpickle.BinPickler.mappable",
   "bulk_impl",
   "cand_f",
+  "cffi",
+  "cffi.FFI",
   "collections.abc.Iterable",
   "collections.abc.Sequence",
+  "concurrent.futures.ProcessPoolExecutor",
+  "contextlib.contextmanager",
+  "csr.CSR",
+  "csr.CSR.empty",
+  "csr.CSR.from_coo",
+  "csr.CSR.from_scipy",
   "csr.create_empty",
   "csr.create_from_sizes",
+  "csr.kernel",
+  "csr.kernel.from_handle",
+  "csr.kernel.mult_abt",
+  "csr.kernel.name",
+  "csr.kernel.order_columns",
+  "csr.kernel.release_handle",
+  "csr.kernel.to_handle",
   "ctypes.cdll.libblas",
+  "dataclasses.dataclass",
   "debug.check_env",
+  "docopt.docopt",
   "ds",
   "faulthandler",
   "functools.partial",
   "functools.reduce",
   "gc",
+  "gzip",
+  "gzip.open",
   "hpfrec",
   "hpfrec.HPF",
   "i_embed",
+  "inspect",
+  "inspect.signature",
   "lenskit.algorithms.__init__.Algorithm",
   "lenskit.algorithms.__init__.Recommender",
   "lenskit.algorithms.tf.__init__.TF_AVAILABLE",
@@ -29,23 +53,53 @@
   "lenskit.util.__init__._log",
   "lenskit.util.__init__.resource",
   "lenskit.util.parallel.LKContext.INSTANCE",
+  "logging",
+  "logging.DEBUG",
+  "logging.Formatter",
+  "logging.INFO",
+  "logging.StreamHandler",
+  "logging.WARNING",
+  "logging.basicConfig",
+  "logging.getLogger",
+  "logging.handlers",
+  "logging.handlers.QueueHandler",
+  "logging.handlers.QueueListener",
   "map.path",
+  "math",
+  "math.ceil",
   "metric",
   "mf",
+  "mkl",
   "mkl.set_num_threads",
   "mkl_mth",
   "mkl_mth.restype",
   "mkl_vstr",
+  "multiprocessing",
+  "multiprocessing.context.SpawnContext",
   "multiprocessing.cpu_count",
   "multiprocessing.current_process",
+  "multiprocessing.queues.SimpleQueue",
+  "multiprocessing.shared_memory",
+  "multiprocessing.shared_memory.SharedMemory",
   "multiprocessing.shared_memory.buf",
+  "numba",
   "numba.boolean",
   "numba.config.NUMBA_NUM_THREADS",
+  "numba.double",
   "numba.experimental.jitclass",
+  "numba.extending.get_cython_function_address",
+  "numba.float64",
   "numba.get_num_threads",
+  "numba.int32",
+  "numba.intc",
+  "numba.jitclass",
+  "numba.njit",
+  "numba.prange",
   "numba.threading",
+  "numba.threading_layer",
   "numba.threads",
   "numba.typed.List",
+  "numba.uint64",
   "numpy.abs",
   "numpy.arange",
   "numpy.empty",
@@ -84,23 +138,80 @@
   "os.environ.get",
   "os.environ.pop",
   "os.getpid",
+  "pandas",
+  "pandas.DataFrame",
+  "pandas.DataFrame.from_records",
+  "pandas.Index",
+  "pandas.Int64Dtype",
+  "pandas.Series",
+  "pandas.concat",
+  "pandas.core.series.Series",
+  "pandas.merge",
+  "pandas.read_csv",
+  "pandas.read_parquet",
+  "pathlib",
+  "pathlib.Path",
+  "pickle",
+  "pickle.HIGHEST_PROTOCOL",
+  "pickle.dump",
+  "pickle5",
+  "pickle5.HIGHEST_PROTOCOL",
+  "pickle5.dumps",
+  "pickle5.loads",
   "prop",
   "prop.__doc__",
+  "psutil",
+  "psutil.Process",
+  "pytest",
+  "pytest.fixture",
   "pytest.mark.skipif",
+  "random",
+  "resource",
+  "scipy.sparse",
+  "scipy.sparse.coo_matrix",
+  "scipy.sparse.diags",
+  "scipy.sparse.linalg",
+  "scipy.sparse.linalg.norm",
+  "seedbank",
+  "seedbank.derive_seed",
+  "seedbank.initialize",
+  "seedbank.make_seed",
+  "seedbank.numpy_random_state",
+  "seedbank.numpy_rng",
+  "seedbank.root_seed",
+  "sklearn.decomposition.TruncatedSVD",
   "sys",
+  "tempfile",
+  "tempfile.mkstemp",
+  "tensorflow",
   "tensorflow.Graph",
+  "tensorflow.__version__",
   "tensorflow.config.set_visible_devices",
   "tensorflow.config.threading.set_inter_op_parallelism_threads",
   "tensorflow.config.threading.set_intra_op_parallelism_threads",
+  "tensorflow.keras",
+  "tensorflow.keras.Input",
+  "tensorflow.keras.Model",
   "tensorflow.keras.Model.from_config",
+  "tensorflow.keras.backend.mean",
+  "tensorflow.keras.layers.Dot",
+  "tensorflow.keras.layers.Embedding",
+  "tensorflow.keras.layers.Flatten",
   "tensorflow.keras.layers.Layer",
+  "tensorflow.keras.layers.Subtract",
   "tensorflow.keras.losses.Loss",
+  "tensorflow.keras.regularizers.l2",
+  "tensorflow.keras.utils.Sequence",
   "tensorflow.math.log_sigmoid",
   "tensorflow.random.set_seed",
   "test_load",
+  "textwrap.dedent",
+  "threading",
+  "threading.local",
   "time",
   "train",
   "train_load",
+  "typing.Optional",
   "u_embed",
   "util.LastMemo",
   "util.Stopwatch",
@@ -110,44 +221,17 @@
   "util.parallel.invoker",
   "util.read_df_detect",
   "util.rng",
+  "warnings",
   "warnings.warn",
-  "warnings.warning"
+  "warnings.warning",
+  "zlib"
  ],
  "deps": {
-  "_pickle": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "_pytest": [
-   "pytest/conda-forge/linux-64/pytest-3.7.0-py27_0",
-   "pytest/conda-forge/linux-64/pytest-4.6.0-py37_0",
-   "pytest/conda-forge/linux-64/pytest-6.0.2-py37hc8dfbb8_0"
-  ],
-  "_threading_local": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "abc": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "binpickle": [
-   "binpickle/conda-forge/linux-64/binpickle-0.3.1-py38h32f6830_0"
-  ],
-  "cffi": [
-   "cffi/conda-forge/linux-64/cffi-1.12.3-py37h8022711_0",
-   "privy/conda-forge/noarch/privy-6.0.0-py_0"
-  ],
   "collections": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "concurrent": [
-   "futures/conda-forge/linux-64/futures-3.2.0-py27_0",
-   "futures/conda-forge/osx-64/futures-3.3.0-py27h8c360ce_1",
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython"
-  ],
-  "contextlib": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -155,35 +239,11 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "csr": [
-   "csr/conda-forge/osx-64/csr-0.2.0-py37h011ccba_1",
-   "csr/conda-forge/win-64/csr-0.3.1-py38h3811b45_0"
-  ],
   "ctypes": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "dataclasses": [
-   "dataclasses/conda-forge/noarch/dataclasses-0.5-py_0",
-   "dataclasses/conda-forge/noarch/dataclasses-0.6-py_0",
-   "dataclasses/conda-forge/noarch/dataclasses-0.8-pyh787bdff_0",
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "docopt": [
-   "docopt/conda-forge/linux-64/docopt-0.6.2-py27_0",
-   "docopt/conda-forge/noarch/docopt-0.6.2-py_1"
-  ],
   "functools": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "gzip": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "inspect": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -191,27 +251,9 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "logging": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "math": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "mkl": [
-   "mkl-service/conda-forge/linux-64/mkl-service-2.3.0-py39h07f9747_1"
-  ],
-  "multiprocessing": [
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "ntpath": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "numba": [
-   "numba/conda-forge/linux-64/numba-0.40.0-py35hf8a1672_0",
-   "numba/conda-forge/linux-64/numba-0.41.0-py27h637b7d7_1000"
   ],
   "numpy": [
    "numpy/conda-forge/linux-64/numpy-1.17.5-py36h95a1406_0",
@@ -219,74 +261,6 @@
    "numpy/conda-forge/linux-64/numpy-1.19.2-py36h68c22af_1"
   ],
   "os": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "pandas": [],
-  "pathlib": [
-   "pathlib/conda-forge/noarch/pathlib-1.0.1-py_1",
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "pickle": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "pickle5": [
-   "pickle5/conda-forge/linux-64/pickle5-0.0.11-py36h8c4c3a4_0",
-   "pickle5/conda-forge/linux-64/pickle5-0.0.8-py36h516909a_0"
-  ],
-  "psutil": [
-   "psutil/conda-forge/linux-64/psutil-5.7.3-py39h38d8fee_0"
-  ],
-  "pytest": [
-   "pytest/conda-forge/linux-64/pytest-3.7.0-py27_0",
-   "pytest/conda-forge/linux-64/pytest-4.6.0-py37_0",
-   "pytest/conda-forge/linux-64/pytest-6.0.2-py37hc8dfbb8_0"
-  ],
-  "random": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "resource": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "scipy": [
-   "scipy/conda-forge/linux-64/scipy-0.17.1-np110py27_blas_openblas_202",
-   "scipy/conda-forge/linux-64/scipy-1.7.0-py37h29e03ee_0",
-   "scipy/conda-forge/linux-64/scipy-1.7.0-py37ha768fb6_1"
-  ],
-  "seedbank": [
-   "seedbank/conda-forge/noarch/seedbank-0.1.0-pyhd8ed1ab_0"
-  ],
-  "sklearn": [
-   "scikit-learn/conda-forge/linux-64/scikit-learn-0.17.1-np110py27_blas_openblas_200",
-   "scikit-learn/conda-forge/linux-64/scikit-learn-0.17.1-np110py35_blas_openblas_202",
-   "scikit-learn/conda-forge/linux-64/scikit-learn-0.17.1-np111py35_blas_openblas_202"
-  ],
-  "tempfile": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "tensorflow": [],
-  "textwrap": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "threading": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "typing": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "warnings": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "zlib": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ]

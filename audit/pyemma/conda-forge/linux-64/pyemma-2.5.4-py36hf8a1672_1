@@ -20,6 +20,9 @@
   "_test_classes.test_cls_v1.load",
   "_test_classes.to_interpolate_with_functions.map_y",
   "_update",
+  "abc.ABCMeta",
+  "abc.abstractmethod",
+  "abc.abstractproperty",
   "analysis.calc_cov_single_feat",
   "analysis.calc_cov_single_feat.run.s",
   "analysis.calc_cov_single_feat_a3d",
@@ -28,12 +31,25 @@
   "angles.BackboneTorsionFeature",
   "angles.DihedralFeature",
   "angles.SideChainTorsions",
+  "argparse",
+  "argparse.ArgumentParser",
   "assert_allclose_ignore_phase",
   "atexit",
+  "attr",
   "bar",
   "bar2",
+  "bhmm",
+  "bhmm.DiscreteHMM",
+  "bhmm._external.sklearn.utils.check_array",
   "bhmm.bayesian_hmm",
+  "bhmm.config.verbose",
   "bhmm.discrete_hmm",
+  "bhmm.estimators._tmatrix_disconnected",
+  "bhmm.estimators._tmatrix_disconnected.connected_sets",
+  "bhmm.estimators._tmatrix_disconnected.estimate_P",
+  "bhmm.estimators._tmatrix_disconnected.stationary_distribution",
+  "bhmm.estimators.maximum_likelihood.MaximumLikelihoodEstimator",
+  "bhmm.init.discrete.init_discrete_hmm_spectral",
   "bhmm.init_discrete_hmm",
   "bhmm.lag_observations",
   "bootstrapping_count_matrix",
@@ -43,16 +59,31 @@
   "cache_features_celery.run.s",
   "calc_cov_single_feat_res_mindist",
   "calc_cov_single_feat_res_mindist.run.s",
+  "celery.Celery",
+  "celery.group",
+  "celery.utils.log.get_task_logger",
   "cfg_getter",
   "cfg_setter",
+  "cgi.escape",
   "check",
   "cmp",
   "collections.Iterable",
   "collections.Mapping",
   "collections.defaultdict",
   "compute_weights_streamer",
+  "contextlib.closing",
+  "contextlib.contextmanager",
+  "copy",
+  "copy.copy",
+  "copy.deepcopy",
   "covar_c.covartools.variable_cols",
   "create_featurizer",
+  "csv",
+  "csv.Dialect",
+  "csv.Error",
+  "csv.QUOTE_MINIMAL",
+  "csv.Sniffer",
+  "csv.reader",
   "ctx",
   "custom_dialect",
   "datasource_method",
@@ -79,11 +110,15 @@
   "feat_equal",
   "feature",
   "func",
+  "functools",
   "functools.partial",
   "functools.reduce",
+  "functools.wraps",
   "gc",
   "gen_sorted_stride",
   "getlbl",
+  "glob",
+  "glob.glob",
   "h5file.H5File",
   "hashlib.md5",
   "hashlib.sha1",
@@ -95,14 +130,40 @@
   "itertools.chain.from_iterable",
   "kahan_sum",
   "klass",
+  "logging",
+  "logging.CRITICAL",
+  "logging.DEBUG",
+  "logging.ERROR",
+  "logging.Handler",
+  "logging.INFO",
+  "logging.WARN",
+  "logging.config.dictConfig",
+  "logging.getLogger",
+  "logging.shutdown",
+  "matplotlib",
+  "matplotlib.__version__",
   "matplotlib.__version__.split",
+  "matplotlib.cm.get_cmap",
+  "matplotlib.colors.LogNorm",
+  "matplotlib.figure.Figure",
+  "matplotlib.pylab",
   "matplotlib.pylab.figure",
   "matplotlib.pylab.savefig",
   "matplotlib.pylab.subplots",
   "matplotlib.pylab.subplots_adjust",
   "matplotlib.pylab.title",
   "matplotlib.pylab.xlabel",
+  "matplotlib.pyplot",
+  "matplotlib.pyplot.Circle",
+  "matplotlib.pyplot.close",
   "matplotlib.pyplot.cm.binary",
+  "matplotlib.pyplot.figure",
+  "matplotlib.pyplot.gca",
+  "matplotlib.pyplot.rcParams",
+  "matplotlib.pyplot.savefig",
+  "matplotlib.pyplot.subplots",
+  "matplotlib.ticker.LogLocator",
+  "matplotlib.use",
   "mbar",
   "mdtraj.Trajectory.__setitem__",
   "mdtraj.Trajectory._distance_unit",
@@ -225,24 +286,10 @@
   "paths.get_output_file_name",
   "paths.missing",
   "perform",
-  "pickle.Pickler",
-  "pickle.Unpickler",
-  "pickle.UnpicklingError",
   "pickle_extensions.HDF5PersistentUnpickler",
-  "pkg_resources",
-  "pkg_resources.resource_filename",
-  "platform",
-  "platform.platform",
-  "platform.python_version",
   "potentials.PrinzModel",
-  "progress_reporter",
-  "progress_reporter.ProgressReporter_",
   "pssh.ParallelSSHClient",
   "pssh.utils",
-  "psutil",
-  "psutil.Process",
-  "psutil.cpu_count",
-  "psutil.virtual_memory",
   "pydevd",
   "pydevd.settrace",
   "pyemma.__init__.__version__",
@@ -268,10 +315,8 @@
   "pyemma.config.logging_config",
   "pyemma.config.show_progress_bars",
   "pyemma.config.use_trajectory_lengths_cache",
-  "pyemma.coordinates.clustering.UniformTimeClustering._idx_to_traj_idx",
   "pyemma.coordinates.clustering.interface.AbstractClustering.data_producer.fset",
   "pyemma.coordinates.clustering.interface.AbstractClustering.data_producer.setter",
-  "pyemma.coordinates.data.FeatureReader.supports_format",
   "pyemma.coordinates.data.PyCSVReader.DEFAULT_OPEN_MODE",
   "pyemma.coordinates.data._base.datasource.EncapsulatedIterator._select_file_guard",
   "pyemma.coordinates.data._base.datasource.EncapsulatedIterator.chunksize.setter",
@@ -312,37 +357,13 @@
   "pyemma.util.config.traj_info_max_size",
   "pyemma.util.config.use_trajectory_lengths_cache",
   "pyemma.util.types.MethodType",
-  "pylab",
-  "random",
-  "random.getstate",
-  "random.randint",
-  "random.sample",
-  "random.seed",
-  "random.setstate",
   "rank_decision",
-  "re",
-  "re.match",
   "rescore",
   "rescore.run.s",
   "rescore_1FME_joined",
   "rescore_1FME_joined.run.s",
   "reshape",
   "running_moments.RunningCovar",
-  "scipy",
-  "scipy._lib._util.check_random_state",
-  "scipy.interpolate.griddata",
-  "scipy.linalg",
-  "scipy.linalg.eig",
-  "scipy.linalg.eigh",
-  "scipy.linalg.schur",
-  "scipy.linalg.svd",
-  "scipy.linalg.svdvals",
-  "scipy.misc.comb",
-  "scipy.sparse",
-  "scipy.sparse.diags",
-  "scipy.sparse.issparse",
-  "scipy.stats",
-  "scipy.stats.rv_discrete",
   "score_it",
   "selection_strategy",
   "set_reader_return_traj_objects",
@@ -413,66 +434,11 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "_csv": [
+  "_pickle": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "abc": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "argparse": [
-   "argparse/conda-forge/osx-64/argparse-1.4.0-py26_0",
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "attr": [
-   "attrs/conda-forge/noarch/attrs-17.3.0-py_0",
-   "attrs/conda-forge/noarch/attrs-17.3.0-py_1",
-   "attrs/conda-forge/noarch/attrs-17.4.0-py_0",
-   "attrs/conda-forge/noarch/attrs-18.1.0-py_0",
-   "attrs/conda-forge/noarch/attrs-18.1.0-py_1",
-   "attrs/conda-forge/noarch/attrs-18.2.0-py_0",
-   "attrs/conda-forge/noarch/attrs-20.2.0-pyh9f0ad1d_0",
-   "attrs/conda-forge/noarch/attrs-21.2.0-pyhd8ed1ab_0"
-  ],
-  "bhmm": [
-   "bhmm/conda-forge/linux-64/bhmm-0.6.2-py27_1",
-   "bhmm/conda-forge/osx-64/bhmm-0.6.3-py27_1"
-  ],
-  "celery": [
-   "celery/conda-forge/linux-64/celery-4.0.1-py35_0",
-   "celery/conda-forge/noarch/celery-4.1.1-py_0",
-   "celery/conda-forge/noarch/celery-4.2.2-py_0",
-   "celery/conda-forge/noarch/celery-4.4.0-py_0",
-   "celery/conda-forge/noarch/celery-4.4.0-py_1",
-   "celery/conda-forge/noarch/celery-4.4.1-py_0",
-   "celery/conda-forge/noarch/celery-4.4.2-pyh8c360ce_0",
-   "celery/conda-forge/noarch/celery-4.4.4-pyh9f0ad1d_0",
-   "celery/conda-forge/noarch/celery-4.4.6-pyh9f0ad1d_0",
-   "celery/conda-forge/noarch/celery-5.0.0-pyhd3deb0d_0",
-   "celery/conda-forge/noarch/celery-5.0.1-pyhd8ed1ab_0",
-   "celery/conda-forge/noarch/celery-5.0.3-pyhd8ed1ab_0",
-   "celery/conda-forge/noarch/celery-5.0.4-pyhd8ed1ab_0",
-   "celery/conda-forge/noarch/celery-5.1.1-pyhd8ed1ab_0",
-   "celery/conda-forge/noarch/celery-5.1.2-pyhd8ed1ab_0"
-  ],
-  "cgi": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython"
   ],
   "collections": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "contextlib": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "copy": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "csv": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -493,14 +459,6 @@
    "decorator/conda-forge/noarch/decorator-5.0.9-pyhd8ed1ab_0"
   ],
   "distutils": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "functools": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "glob": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -532,18 +490,9 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "logging": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "math": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "matplotlib": [
-   "matplotlib-base/conda-forge/linux-64/matplotlib-base-3.1.1-py37hfd891ef_0",
-   "matplotlib-base/conda-forge/linux-64/matplotlib-base-3.1.1-py38h250f245_2",
-   "matplotlib/conda-forge/linux-64/matplotlib-1.5.3-np111py34_0"
   ],
   "mdtraj": [
    "mdtraj/conda-forge/win-64/mdtraj-1.9.2-py27hce6d55d_1000"
@@ -601,10 +550,48 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "pickle": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "pkg_resources": [
+   "setuptools/conda-forge/linux-64/setuptools-40.6.1-py36_0",
+   "setuptools/conda-forge/linux-64/setuptools-46.3.0-py38h32f6830_0",
+   "setuptools/conda-forge/linux-64/setuptools-49.1.2-py38h32f6830_0"
+  ],
+  "platform": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "pprint": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "progress_reporter": [
+   "progress_reporter/conda-forge/noarch/progress_reporter-1.4.1-py_0",
+   "progress_reporter/conda-forge/noarch/progress_reporter-2.0-py_0"
+  ],
+  "psutil": [
+   "psutil/conda-forge/linux-64/psutil-5.7.3-py39h38d8fee_0"
+  ],
+  "pyemma": [
+   "pyemma/conda-forge/linux-64/pyemma-2.5.4-py36hf8a1672_1",
+   "pyemma/conda-forge/linux-64/pyemma-2.5.8-py36h284efc9_0"
+  ],
+  "pylab": [
+   "matplotlib-base/conda-forge/linux-64/matplotlib-base-3.1.1-py37hfd891ef_0",
+   "matplotlib-base/conda-forge/linux-64/matplotlib-base-3.1.1-py38h250f245_2",
+   "matplotlib/conda-forge/linux-64/matplotlib-1.5.3-np111py34_0"
+  ],
+  "random": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "re": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "scipy": [],
   "shutil": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"

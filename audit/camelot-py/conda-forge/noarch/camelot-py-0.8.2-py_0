@@ -3,6 +3,8 @@
   "ArgArray",
   "CFUNCTYPE",
   "POINTER",
+  "PyPDF2.PdfFileReader",
+  "PyPDF2.PdfFileWriter",
   "WINFUNCTYPE",
   "_gsprint._wrap_stderr",
   "_gsprint._wrap_stdin",
@@ -24,8 +26,17 @@
   "camelot.__init__.logger",
   "camelot.ext.ghostscript.__init__.__Ghostscript",
   "check_intersection",
-  "ctypes",
-  "ctypes.util",
+  "click",
+  "click.Choice",
+  "click.Path",
+  "click.UsageError",
+  "click.argument",
+  "click.echo",
+  "click.group",
+  "click.make_pass_decorator",
+  "click.option",
+  "click.pass_context",
+  "click.version_option",
   "cv2",
   "cv2.ADAPTIVE_THRESH_GAUSSIAN_C",
   "cv2.CHAIN_APPROX_SIMPLE",
@@ -47,26 +58,50 @@
   "distutils.version.LooseVersion",
   "ext.ghostscript.Ghostscript",
   "locale",
-  "matplotlib.patches",
-  "matplotlib.patches.Rectangle",
-  "matplotlib.pyplot",
-  "matplotlib.pyplot.figure",
-  "matplotlib.pyplot.show",
+  "logging",
+  "logging.Formatter",
+  "logging.INFO",
+  "logging.StreamHandler",
+  "logging.getLogger",
   "memmove",
   "numpy.invert",
   "numpy.multiply",
   "numpy.uint8",
   "numpy.zeros",
+  "operator.itemgetter",
   "os.path.exists",
   "os.rename",
   "pad",
+  "pandas",
+  "pandas.DataFrame",
+  "pandas.ExcelWriter",
+  "pdfminer.converter.PDFPageAggregator",
+  "pdfminer.layout.LAParams",
+  "pdfminer.layout.LTAnno",
+  "pdfminer.layout.LTChar",
+  "pdfminer.layout.LTImage",
+  "pdfminer.layout.LTTextLineHorizontal",
+  "pdfminer.layout.LTTextLineVertical",
+  "pdfminer.pdfdocument.PDFDocument",
+  "pdfminer.pdfinterp.PDFPageInterpreter",
+  "pdfminer.pdfinterp.PDFResourceManager",
+  "pdfminer.pdfpage.PDFPage",
+  "pdfminer.pdfpage.PDFPage.create_pages",
+  "pdfminer.pdfpage.PDFTextExtractionNotAllowed",
+  "pdfminer.pdfparser.PDFParser",
   "plot_method",
   "pointer",
+  "random",
+  "random.choice",
+  "re",
   "re.UNICODE",
+  "re.escape",
+  "re.sub",
   "scale_areas",
   "shutil",
   "shutil.move",
   "shutil.rmtree",
+  "sqlite3",
   "sqlite3.connect",
   "string",
   "string.ascii_lowercase",
@@ -78,6 +113,15 @@
   "tempfile.NamedTemporaryFile",
   "tempfile.mkdtemp",
   "to_format",
+  "urllib.parse.urlparse",
+  "urllib.parse.uses_netloc",
+  "urllib.parse.uses_params",
+  "urllib.parse.uses_relative",
+  "urllib.request.Request",
+  "urllib.request.urlopen",
+  "warnings",
+  "warnings.catch_warnings",
+  "warnings.simplefilter",
   "warnings.warn",
   "winreg",
   "winreg.CloseKey",
@@ -85,27 +129,23 @@
   "winreg.HKEY_LOCAL_MACHINE",
   "winreg.OpenKey",
   "winreg.QueryInfoKey",
-  "winreg.QueryValueEx"
+  "winreg.QueryValueEx",
+  "zipfile",
+  "zipfile.ZipFile"
  ],
  "deps": {
-  "PyPDF2": [
-   "pypdf2/conda-forge/linux-64/pypdf2-1.26.0-py36_1",
-   "pypdf2/conda-forge/noarch/pypdf2-1.26.0-py_2"
-  ],
-  "click": [
-   "click/conda-forge/noarch/click-5.1-py_0",
-   "click/conda-forge/noarch/click-6.7-py_1",
-   "click/conda-forge/noarch/click-7.0-py_0",
-   "click/conda-forge/noarch/click-7.1-pyh8c360ce_0",
-   "click/conda-forge/noarch/click-7.1.1-pyh8c360ce_0"
-  ],
   "copy": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "logging": [
+  "ctypes": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "matplotlib": [
+   "matplotlib-base/conda-forge/linux-64/matplotlib-base-3.1.1-py37hfd891ef_0",
+   "matplotlib-base/conda-forge/linux-64/matplotlib-base-3.1.1-py38h250f245_2",
+   "matplotlib/conda-forge/linux-64/matplotlib-1.5.3-np111py34_0"
   ],
   "ntpath": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -116,47 +156,7 @@
    "numpy/conda-forge/linux-64/numpy-1.18.4-py37h8960a57_0",
    "numpy/conda-forge/linux-64/numpy-1.19.2-py36h68c22af_1"
   ],
-  "operator": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "os": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "pandas": [
-   "pandas/conda-forge/linux-64/pandas-1.2.2-py37h40f5888_0"
-  ],
-  "pdfminer": [
-   "pdfminer.six/conda-forge/noarch/pdfminer.six-20181108-py_1",
-   "pdfminer.six/conda-forge/noarch/pdfminer.six-20191020-py_2",
-   "pdfminer.six/conda-forge/noarch/pdfminer.six-20200517-py_0",
-   "pdfminer.six/conda-forge/noarch/pdfminer.six-20200726-py_1",
-   "pdfminer.six/conda-forge/noarch/pdfminer.six-20201018-py_2",
-   "pdfminer.six/conda-forge/noarch/pdfminer.six-20201018-pyhd8ed1ab_3",
-   "pdfminer/conda-forge/noarch/pdfminer-20191125-pyhd8ed1ab_1"
-  ],
-  "random": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "re": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "sqlite3": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "urllib": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "warnings": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "zipfile": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ]

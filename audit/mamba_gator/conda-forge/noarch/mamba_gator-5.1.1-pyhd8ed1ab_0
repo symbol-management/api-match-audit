@@ -1,5 +1,6 @@
 {
  "bad": [
+  "binascii.hexlify",
   "collections.defaultdict",
   "errno",
   "execute_task",
@@ -21,6 +22,9 @@
   "jupyter_server.utils.url_escape",
   "jupyter_server.utils.url_path_join",
   "jupyterlab_server.LabServerApp",
+  "logging",
+  "logging.Logger",
+  "logging.getLogger",
   "mamba_gator.envmanager.EnvManager._conda_version",
   "nb_conda_kernels",
   "nb_conda_kernels.CondaKernelSpecManager",
@@ -46,6 +50,8 @@
   "pytest.raises",
   "random",
   "random.randint",
+  "re",
+  "re.match",
   "stat",
   "stat.S_IMODE",
   "stat.S_IWGRP",
@@ -58,9 +64,12 @@
   "subprocess.check_call",
   "sys",
   "sys.platform.startswith",
+  "tempfile",
   "tempfile.NamedTemporaryFile",
   "tempfile.TemporaryDirectory",
   "tempfile.gettempdir",
+  "threading.Event",
+  "threading.Thread",
   "time",
   "tmp",
   "tornado",
@@ -73,7 +82,11 @@
   "tornado.ioloop.IOLoop.current",
   "tornado.web.HTTPError",
   "tornado.web.authenticated",
+  "traceback",
+  "traceback.format_tb",
+  "traitlets.config.Application",
   "traitlets.config.Application.instance",
+  "traitlets.config.Config",
   "typing.Any",
   "typing.Callable",
   "typing.ClassVar",
@@ -83,8 +96,14 @@
   "typing.Optional",
   "typing.Tuple",
   "typing.Union",
+  "unittest",
+  "unittest.TestCase",
+  "unittest.mock",
+  "unittest.mock.AsyncMock",
+  "unittest.mock.patch",
   "unittest.mock.patch.dict",
   "unittest.mock.patch.multiple",
+  "unittest.skipIf",
   "uuid",
   "uuid.uuid4"
  ],
@@ -93,10 +112,6 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "asyncio": [],
-  "binascii": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "collections": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -113,41 +128,12 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "logging": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "ntpath": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "os": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "re": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "tempfile": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "threading": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "traceback": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "traitlets": [
-   "traitlets/conda-forge/noarch/traitlets-5.0.4-py_0",
-   "traitlets/conda-forge/noarch/traitlets-5.0.4-py_1",
-   "traitlets/conda-forge/noarch/traitlets-5.0.5-py_0",
-   "traitlets/conda-forge/noarch/traitlets-5.1.0-pyhd8ed1ab_0"
-  ],
-  "unittest": [
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ]
  }

@@ -3,20 +3,45 @@
   "K_matrix",
   "StoichiometricModel._read_network_sbtab",
   "cost_function.EnzymeCostFunction.ECF_LEVEL_NAMES",
+  "cvxpy",
+  "cvxpy.Constant",
   "cvxpy.Expression",
+  "cvxpy.Maximize",
+  "cvxpy.Minimize",
+  "cvxpy.OPTIMAL",
+  "cvxpy.OPTIMAL_INACCURATE",
+  "cvxpy.Problem",
+  "cvxpy.Variable",
+  "cvxpy.constraints.constraint.Constraint",
   "cvxpy.diag",
   "cvxpy.exp",
+  "cvxpy.expressions.expression.Expression",
   "cvxpy.log",
   "cvxpy.log_sum_exp",
   "cvxpy.logistic",
   "cvxpy.power",
+  "cvxpy.problems.objective.Objective",
   "cvxpy.reshape",
+  "cvxpy.transforms.scalarize.log_sum_exp",
   "cvxpy.vstack",
+  "equilibrator_api.ComponentContribution",
+  "equilibrator_api.Q_",
+  "equilibrator_api.R",
   "equilibrator_api.R.m_as",
+  "equilibrator_api.Reaction",
+  "equilibrator_api.default_T",
   "equilibrator_api.default_T.m_as",
+  "equilibrator_api.model.Bounds",
+  "equilibrator_api.model.StoichiometricModel",
+  "equilibrator_api.standard_concentration",
+  "equilibrator_api.ureg",
   "equilibrator_api.ureg.setup_matplotlib",
+  "equilibrator_cache.Compound",
   "expand_S",
   "itertools",
+  "logging",
+  "logging.warning",
+  "mpl_toolkits.mplot3d.Axes3D",
   "numpy.abs",
   "numpy.arange",
   "numpy.exp",
@@ -29,33 +54,30 @@
   "numpy.sign",
   "numpy.sqrt",
   "numpy.zeros",
+  "pandas",
+  "pandas.DataFrame",
+  "pandas.to_numeric",
+  "sbtab.SBtab",
+  "sbtab.SBtab.SBtabDocument",
+  "sbtab.SBtab.SBtabError",
+  "sbtab.SBtab.SBtabTable.from_data_frame",
+  "sbtab.SBtab.read_csv",
+  "scipy.integrate.ode",
+  "scipy.stats",
+  "scipy.stats.linregress",
   "thermo_models.ThermodynamicModel.from_sbtab",
+  "typing.Callable",
+  "typing.Dict",
+  "typing.Iterable",
+  "typing.List",
+  "typing.Optional",
+  "typing.Tuple",
+  "typing.Union",
+  "warnings",
   "warnings.warn"
  ],
  "deps": {
-  "cvxpy": [
-   "cvxpy-base/conda-forge/linux-64/cvxpy-base-1.0.27-py27he1b5a44_0",
-   "cvxpy-base/conda-forge/linux-64/cvxpy-base-1.1.4-py37h9fdb41a_0"
-  ],
-  "equilibrator_api": [
-   "equilibrator-api/conda-forge/noarch/equilibrator-api-0.4.0b6-pyhd8ed1ab_0",
-   "equilibrator-api/conda-forge/noarch/equilibrator-api-0.4.1-pyhd8ed1ab_0",
-   "equilibrator-api/conda-forge/noarch/equilibrator-api-0.4.2-pyhd8ed1ab_0",
-   "equilibrator-api/conda-forge/noarch/equilibrator-api-0.4.3-pyhd8ed1ab_1",
-   "equilibrator-api/conda-forge/noarch/equilibrator-api-0.4.4-pyhd8ed1ab_0",
-   "equilibrator-api/conda-forge/noarch/equilibrator-api-0.4.5-pyhd8ed1ab_0"
-  ],
-  "equilibrator_cache": [
-   "equilibrator-cache/conda-forge/noarch/equilibrator-cache-0.4.0-pyhd8ed1ab_0",
-   "equilibrator-cache/conda-forge/noarch/equilibrator-cache-0.4.1-pyhd8ed1ab_0",
-   "equilibrator-cache/conda-forge/noarch/equilibrator-cache-0.4.2-pyhd8ed1ab_0",
-   "equilibrator-cache/conda-forge/noarch/equilibrator-cache-0.4.3-pyhd8ed1ab_0"
-  ],
   "json": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "logging": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -64,34 +86,10 @@
    "matplotlib-base/conda-forge/linux-64/matplotlib-base-3.1.1-py38h250f245_2",
    "matplotlib/conda-forge/linux-64/matplotlib-1.5.3-np111py34_0"
   ],
-  "mpl_toolkits": [
-   "matplotlib/conda-forge/linux-64/matplotlib-1.5.3-np111py34_0"
-  ],
   "numpy": [
    "numpy/conda-forge/linux-64/numpy-1.17.5-py36h95a1406_0",
    "numpy/conda-forge/linux-64/numpy-1.18.4-py37h8960a57_0",
    "numpy/conda-forge/linux-64/numpy-1.19.2-py36h68c22af_1"
-  ],
-  "pandas": [],
-  "sbtab": [
-   "sbtab/conda-forge/noarch/sbtab-0.9.77-pyhd8ed1ab_0",
-   "sbtab/conda-forge/noarch/sbtab-0.9.78-pyhd8ed1ab_0",
-   "sbtab/conda-forge/noarch/sbtab-1.0.0-pyhd8ed1ab_0",
-   "sbtab/conda-forge/noarch/sbtab-1.0.1-pyhd8ed1ab_0",
-   "sbtab/conda-forge/noarch/sbtab-1.0.6-pyhd8ed1ab_0"
-  ],
-  "scipy": [
-   "scipy/conda-forge/linux-64/scipy-0.17.1-np110py27_blas_openblas_202",
-   "scipy/conda-forge/linux-64/scipy-1.7.0-py37h29e03ee_0",
-   "scipy/conda-forge/linux-64/scipy-1.7.0-py37ha768fb6_1"
-  ],
-  "typing": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "warnings": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ]
  }
 }

@@ -1,21 +1,64 @@
 {
  "bad": [
+  "dask",
   "dask.distributed.Client",
   "dask.distributed.wait",
+  "dask_kubernetes.KubeCluster.from_dict",
+  "dask_kubernetes.KubeCluster.from_yaml",
+  "distributed.comm.utils.offload",
+  "distributed.deploy.Cluster",
+  "distributed.deploy.LocalCluster",
+  "distributed.utils.tmpfile",
+  "distributed.utils_test.captured_logger",
+  "distributed.utils_test.loop",
   "format_labels",
+  "kubernetes",
+  "kubernetes.client",
+  "kubernetes.client.ApiClient",
+  "kubernetes.client.CoreV1Api",
+  "kubernetes.client.V1Container",
+  "kubernetes.client.V1DeleteOptions",
+  "kubernetes.client.V1EnvVar",
+  "kubernetes.client.V1Namespace",
+  "kubernetes.client.V1ObjectMeta",
+  "kubernetes.client.V1Pod",
+  "kubernetes.client.V1PodSpec",
+  "kubernetes.client.V1ResourceRequirements",
+  "kubernetes.client.V1beta1Eviction",
+  "kubernetes.client.rest.ApiException",
+  "kubernetes.config.ConfigException",
+  "kubernetes.config.load_incluster_config",
+  "kubernetes.config.load_kube_config",
+  "logging",
+  "logging.getLogger",
   "os.environ.get",
   "os.path.exists",
-  "time"
+  "pytest",
+  "pytest.fail",
+  "pytest.fixture",
+  "pytest.importorskip",
+  "pytest.raises",
+  "pytest.skip",
+  "random.random",
+  "socket",
+  "string",
+  "string.ascii_letters",
+  "string.digits",
+  "time",
+  "tornado.gen",
+  "tornado.gen.coroutine",
+  "urllib.parse.urlparse",
+  "uuid",
+  "uuid.uuid4",
+  "weakref.finalize",
+  "yaml",
+  "yaml.dump",
+  "yaml.load"
  ],
  "deps": {
   "__future__": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "_pytest": [
-   "pytest/conda-forge/linux-64/pytest-3.7.0-py27_0",
-   "pytest/conda-forge/linux-64/pytest-4.6.0-py37_0",
-   "pytest/conda-forge/linux-64/pytest-6.0.2-py37hc8dfbb8_0"
   ],
   "collections": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -46,34 +89,11 @@
    "dask-core/conda-forge/noarch/dask-core-2021.4.1-pyhd8ed1ab_0",
    "dask-core/conda-forge/noarch/dask-core-2021.5.1-pyhd8ed1ab_0"
   ],
-  "dask_kubernetes": [
-   "dask-kubernetes/conda-forge/noarch/dask-kubernetes-0.10.1-py_0",
-   "dask-kubernetes/conda-forge/noarch/dask-kubernetes-0.11.0-py_0",
-   "dask-kubernetes/conda-forge/noarch/dask-kubernetes-0.4.0-py_0",
-   "dask-kubernetes/conda-forge/noarch/dask-kubernetes-0.5.0-py_0",
-   "dask-kubernetes/conda-forge/noarch/dask-kubernetes-0.8.0-py_0",
-   "dask-kubernetes/conda-forge/noarch/dask-kubernetes-0.9.1-py_0",
-   "dask-kubernetes/conda-forge/noarch/dask-kubernetes-0.9.2-py_0",
-   "dask-kubernetes/conda-forge/noarch/dask-kubernetes-2021.3.1-pyhd8ed1ab_0"
-  ],
-  "distributed": [
-   "distributed/conda-forge/noarch/distributed-2.3.0-py_0",
-   "distributed/conda-forge/noarch/distributed-2.6.0-py_0"
-  ],
   "getpass": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "json": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "kubernetes": [
-   "python-kubernetes/conda-forge/noarch/python-kubernetes-12.0.0-pyh9f0ad1d_0",
-   "python-kubernetes/conda-forge/noarch/python-kubernetes-12.0.1-pyhd3deb0d_0",
-   "python-kubernetes/conda-forge/noarch/python-kubernetes-17.17.0-pyhd8ed1ab_0"
-  ],
-  "logging": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -84,45 +104,6 @@
   "os": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "pytest": [
-   "pytest/conda-forge/linux-64/pytest-3.7.0-py27_0",
-   "pytest/conda-forge/linux-64/pytest-4.6.0-py37_0",
-   "pytest/conda-forge/linux-64/pytest-6.0.2-py37hc8dfbb8_0"
-  ],
-  "random": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "socket": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "string": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "tornado": [
-   "tornado/conda-forge/linux-64/tornado-4.4.3-py35_0",
-   "tornado/conda-forge/linux-64/tornado-6.0.4-py38h1e0a361_2"
-  ],
-  "urllib": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "uuid": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "weakref": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "yaml": [
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0",
-   "pyyaml/conda-forge/linux-64/pyyaml-3.11-py35_0",
-   "pyyaml/conda-forge/win-64/pyyaml-5.2-py36hfa6e2cd_0"
   ]
  }
 }
