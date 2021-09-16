@@ -14,6 +14,12 @@
   "lan",
   "magics.SoS_Magics.names",
   "multiprocessing.Process",
+  "nbconvert.exporters.Exporter",
+  "nbconvert.exporters.html.HTMLExporter",
+  "nbconvert.exporters.markdown.MarkdownExporter",
+  "nbconvert.exporters.pdf.PDFExporter",
+  "nbconvert.preprocessors.execute.CellExecutionError",
+  "nbconvert.preprocessors.execute.ExecutePreprocessor",
   "numpy.uint8",
   "object.__class__.__name__",
   "os.chdir",
@@ -26,18 +32,79 @@
   "os.path.isfile",
   "os.remove",
   "os.stat",
+  "pkg_resources",
+  "pkg_resources.EntryPoint",
+  "pkg_resources.iter_entry_points",
+  "pprint",
+  "pprint.pformat",
   "previewer_func",
+  "psutil",
+  "psutil.pid_exists",
+  "pydoc",
+  "pydoc.html",
+  "pydoc.plaintext",
+  "pydoc.render_doc",
   "pytest.mark.usefixtures",
+  "queue.Empty",
   "re.M",
   "re.MULTILINE",
+  "rlcompleter",
+  "rlcompleter.Completer",
+  "selenium.common.exceptions.NoSuchElementException",
+  "selenium.webdriver.ActionChains",
+  "selenium.webdriver.common.by.By",
   "selenium.webdriver.common.by.By.CSS_SELECTOR",
   "selenium.webdriver.common.by.By.ID",
   "selenium.webdriver.common.by.By.TAG_NAME",
+  "selenium.webdriver.common.keys.Keys",
   "selenium.webdriver.common.keys.Keys.CONTROL",
   "selenium.webdriver.common.keys.Keys.ENTER",
   "selenium.webdriver.common.keys.Keys.ESCAPE",
   "selenium.webdriver.common.keys.Keys.SHIFT",
+  "selenium.webdriver.remote.webelement.WebElement",
+  "selenium.webdriver.support.expected_conditions",
+  "selenium.webdriver.support.expected_conditions.element_to_be_clickable",
+  "selenium.webdriver.support.expected_conditions.presence_of_all_elements_located",
+  "selenium.webdriver.support.expected_conditions.presence_of_element_located",
+  "selenium.webdriver.support.expected_conditions.visibility_of_all_elements_located",
+  "selenium.webdriver.support.expected_conditions.visibility_of_element_located",
+  "selenium.webdriver.support.ui.Select",
+  "selenium.webdriver.support.ui.WebDriverWait",
+  "shlex",
+  "shlex.split",
+  "shutil",
+  "shutil.copy",
+  "shutil.rmtree",
+  "sos.__main__.get_run_parser",
+  "sos._version.__sos_version__",
+  "sos._version.__version__",
+  "sos.controller.Controller",
+  "sos.controller.connect_controllers",
+  "sos.controller.disconnect_controllers",
+  "sos.converter.extract_workflow",
+  "sos.eval.SoS_eval",
+  "sos.eval.SoS_exec",
+  "sos.eval.interpolate",
+  "sos.executor_utils.kill_all_subprocesses",
+  "sos.executor_utils.prepare_env",
+  "sos.hosts.Host",
+  "sos.parser.SoS_Script",
+  "sos.parser.replace_sigil",
+  "sos.preview.get_previewers",
+  "sos.section_analyzer.analyze_section",
+  "sos.step_executor.Base_Step_Executor",
+  "sos.step_executor.Base_Step_Executor.run",
+  "sos.syntax.SOS_SECTION_HEADER",
   "sos.syntax.SOS_SECTION_HEADER.match",
+  "sos.syntax.SOS_USAGES",
+  "sos.targets.RemovedTarget",
+  "sos.targets.UnknownTarget",
+  "sos.targets.file_target",
+  "sos.targets.sos_targets",
+  "sos.targets.textMD5",
+  "sos.utils.WorkflowDict",
+  "sos.utils._parse_error",
+  "sos.utils.env",
   "sos.utils.env.config",
   "sos.utils.env.config.update",
   "sos.utils.env.exec_dir",
@@ -68,21 +135,44 @@
   "sos.utils.env.temp_dir",
   "sos.utils.env.verbosity",
   "sos.utils.env.zmq_context",
+  "sos.utils.get_traceback",
+  "sos.utils.load_config_files",
+  "sos.utils.loaded_modules",
+  "sos.utils.pexpect_run",
+  "sos.utils.pretty_size",
+  "sos.utils.short_repr",
+  "sos.visualize.Visualizer",
+  "stat",
+  "stat.S_IEXEC",
+  "subprocess",
+  "subprocess.DEVNULL",
+  "subprocess.call",
+  "subprocess.check_output",
   "sys",
   "sys.stderr.flush",
   "sys.stderr.write",
   "sys.stdout.buffer.write",
   "sys.stdout.flush",
   "sys.stdout.write",
+  "tabulate.tabulate",
+  "tempfile",
+  "tempfile.NamedTemporaryFile",
+  "tempfile.TemporaryFile",
+  "tempfile.gettempdir",
+  "tempfile.mkdtemp",
+  "textwrap.dedent",
   "time",
   "trigger_keystrokes",
   "update_existing",
+  "webbrowser",
+  "webbrowser.open",
   "workflow_executor.cancel_workflow",
   "workflow_executor.execute_pending_workflow",
   "x",
   "x.name",
   "x.split",
   "x.strip",
+  "zmq",
   "zmq.Context",
   "zmq.PUSH"
  ],
@@ -142,12 +232,6 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "nbconvert": [
-   "nbconvert/conda-forge/linux-64/nbconvert-5.3.0-py27_0",
-   "nbconvert/conda-forge/noarch/nbconvert-5.4.1-py_1",
-   "nbconvert/conda-forge/noarch/nbconvert-5.5.0-py_0",
-   "nbconvert/conda-forge/noarch/nbconvert-5.6.0-py_0"
-  ],
   "nbformat": [
    "nbformat/conda-forge/noarch/nbformat-4.4.0-py_1",
    "nbformat/conda-forge/noarch/nbformat-5.0.3-py_0",
@@ -168,30 +252,10 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "pandas": [],
-  "pkg_resources": [
-   "setuptools/conda-forge/linux-64/setuptools-40.6.1-py36_0",
-   "setuptools/conda-forge/linux-64/setuptools-46.3.0-py38h32f6830_0",
-   "setuptools/conda-forge/linux-64/setuptools-49.1.2-py38h32f6830_0"
-  ],
-  "pprint": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "psutil": [
-   "psutil/conda-forge/linux-64/psutil-5.7.3-py39h38d8fee_0"
-  ],
-  "pydoc": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "pytest": [
    "pytest/conda-forge/linux-64/pytest-3.7.0-py27_0",
    "pytest/conda-forge/linux-64/pytest-4.6.0-py37_0",
    "pytest/conda-forge/linux-64/pytest-6.0.2-py37hc8dfbb8_0"
-  ],
-  "queue": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "random": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -201,64 +265,7 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "rlcompleter": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "selenium": [
-   "selenium/conda-forge/linux-64/selenium-3.12.0-py35_0",
-   "selenium/conda-forge/linux-64/selenium-3.4.0-py36_0"
-  ],
-  "shlex": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "shutil": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "sos": [
-   "sos/conda-forge/noarch/sos-0.17.7-py_0",
-   "sos/conda-forge/noarch/sos-0.17.7-py_1",
-   "sos/conda-forge/noarch/sos-0.19.0-py_0",
-   "sos/conda-forge/noarch/sos-0.19.10-py_0",
-   "sos/conda-forge/noarch/sos-0.19.11-py_0",
-   "sos/conda-forge/noarch/sos-0.19.13-py_0",
-   "sos/conda-forge/noarch/sos-0.19.15-py_0",
-   "sos/conda-forge/noarch/sos-0.19.6-py_0",
-   "sos/conda-forge/noarch/sos-0.20.0-py_0",
-   "sos/conda-forge/noarch/sos-0.20.1-py_0",
-   "sos/conda-forge/noarch/sos-0.20.2-py_0",
-   "sos/conda-forge/noarch/sos-0.20.4-py_0",
-   "sos/conda-forge/noarch/sos-0.20.9-py_0",
-   "sos/conda-forge/noarch/sos-0.21.11-py_0",
-   "sos/conda-forge/noarch/sos-0.21.12-py_0",
-   "sos/conda-forge/noarch/sos-0.21.2-py_0",
-   "sos/conda-forge/noarch/sos-0.21.5-py_0",
-   "sos/conda-forge/noarch/sos-0.21.6-py_0"
-  ],
-  "stat": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "subprocess": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "tabulate": [
-   "tabulate/conda-forge/noarch/tabulate-0.8.1-py_0",
-   "tabulate/conda-forge/noarch/tabulate-0.8.2-py_0",
-   "tabulate/conda-forge/noarch/tabulate-0.8.3-py_0",
-   "tabulate/conda-forge/noarch/tabulate-0.8.4-py_0",
-   "tabulate/conda-forge/noarch/tabulate-0.8.6-py_0",
-   "tabulate/conda-forge/noarch/tabulate-0.8.7-pyh9f0ad1d_0",
-   "tabulate/conda-forge/noarch/tabulate-0.8.9-pyhd8ed1ab_0"
-  ],
   "tempfile": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "textwrap": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -269,14 +276,6 @@
   "types": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "webbrowser": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "zmq": [
-   "pyzmq/conda-forge/linux-64/pyzmq-18.0.1-py37hc4ba49a_1",
-   "pyzmq/conda-forge/linux-64/pyzmq-19.0.0-py27h1768529_0"
   ]
  }
 }
