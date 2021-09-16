@@ -4,23 +4,76 @@
   "PrivateKey",
   "Queue.Queue",
   "amount.Amount",
+  "appdirs.user_data_dir",
+  "ast",
+  "ast.literal_eval",
   "beembase.memo.get",
   "beemgraphenebase.chains.known_chains.items",
+  "binascii.hexlify",
+  "binascii.unhexlify",
   "blockchain.Blockchain.hash_op",
   "blockchainobject.BlockchainObject.clear_cache",
+  "calendar.timegm",
   "clear_cache",
+  "click",
+  "click.argument",
+  "click.disable_unicode_literals_warning",
+  "click.get_text_stream",
+  "click.group",
+  "click.option",
+  "click.progressbar",
+  "click.prompt",
+  "click.version_option",
   "collections.Mapping",
   "comment.Comment",
+  "concurrent.futures.ThreadPoolExecutor",
+  "concurrent.futures.as_completed",
+  "concurrent.futures.wait",
   "construct_op",
+  "cryptography",
+  "cryptography.exceptions.InvalidSignature",
+  "cryptography.hazmat.backends.default_backend",
+  "cryptography.hazmat.primitives.asymmetric.ec",
+  "cryptography.hazmat.primitives.asymmetric.ec.ECDSA",
+  "cryptography.hazmat.primitives.asymmetric.ec.EllipticCurvePublicNumbers",
+  "cryptography.hazmat.primitives.asymmetric.ec.SECP256K1",
+  "cryptography.hazmat.primitives.asymmetric.ec.derive_private_key",
+  "cryptography.hazmat.primitives.asymmetric.utils.decode_dss_signature",
+  "cryptography.hazmat.primitives.asymmetric.utils.encode_dss_signature",
+  "cryptography.hazmat.primitives.hashes",
+  "cryptography.hazmat.primitives.hashes.SHA256",
+  "ctypes",
+  "ctypes.c_uint8",
   "dict.__contains__",
   "dict.__getitem__",
   "dict.__setitem__",
   "dictionary.words.split",
+  "difflib",
+  "difflib.unified_diff",
+  "ecdsa",
+  "ecdsa.SECP256k1",
   "ecdsa.SECP256k1.baselen",
   "ecdsa.SECP256k1.curve",
   "ecdsa.SECP256k1.generator",
   "ecdsa.SECP256k1.generator.order",
   "ecdsa.SECP256k1.order",
+  "ecdsa.SigningKey.from_string",
+  "ecdsa.VerifyingKey.from_public_point",
+  "ecdsa.VerifyingKey.from_string",
+  "ecdsa.der.remove_integer",
+  "ecdsa.der.remove_sequence",
+  "ecdsa.ellipticcurve.Point",
+  "ecdsa.keys.VerifyingKey",
+  "ecdsa.numbertheory.inverse_mod",
+  "ecdsa.numbertheory.square_root_mod_prime",
+  "ecdsa.rfc6979.generate_k",
+  "ecdsa.util.number_to_string",
+  "ecdsa.util.sigdecode_der",
+  "ecdsa.util.sigdecode_string",
+  "ecdsa.util.sigencode_der",
+  "ecdsa.util.sigencode_string",
+  "ecdsa.util.string_to_number",
+  "events.Events",
   "exceptions.ApiNotSupported",
   "exceptions.CallRetriesReached",
   "exceptions.MissingRequiredActiveAuthority",
@@ -34,17 +87,38 @@
   "exceptions.UnnecessarySignatureDetected",
   "exceptions.decodeRPCErrorMsg",
   "fetchkeys",
+  "fractions.Fraction",
   "func",
+  "future.utils.python_2_unicode_compatible",
   "get_blocknum",
   "get_hashtags",
   "get_urls",
   "get_users",
+  "hashlib",
+  "hashlib.new",
   "hashlib.sha1",
   "hashlib.sha256",
   "hashlib.sha512",
   "int.from_bytes",
+  "io",
   "io.BytesIO",
+  "json",
+  "json.dumps",
+  "json.loads",
+  "logging",
+  "logging.DEBUG",
+  "logging.Formatter",
+  "logging.StreamHandler",
+  "logging.getLogger",
   "market.Market",
+  "math",
+  "math.ceil",
+  "math.cos",
+  "math.floor",
+  "math.log10",
+  "math.pi",
+  "math.sin",
+  "math.sqrt",
   "memo.Memo",
   "os.environ.get",
   "os.listdir",
@@ -56,6 +130,9 @@
   "os.urandom",
   "price.Price",
   "pylibscrypt.hash",
+  "queue.Queue",
+  "random",
+  "random.getrandbits",
   "re.M",
   "re.MULTILINE",
   "scrypt",
@@ -79,11 +156,15 @@
   "sys",
   "sys._MEIPASS",
   "thread.interrupt_main",
+  "threading",
+  "threading.Event",
+  "threading.Thread",
   "time",
   "urllib.urlencode",
   "urlparse.urljoin",
   "urlparse.urlparse",
-  "vote.ActiveVotes"
+  "vote.ActiveVotes",
+  "warnings"
  ],
  "deps": {
   "Crypto": [
@@ -100,52 +181,15 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "appdirs": [
-   "appdirs/conda-forge/noarch/appdirs-1.4.3-py_0",
-   "appdirs/conda-forge/noarch/appdirs-1.4.3-py_1",
-   "appdirs/conda-forge/noarch/appdirs-1.4.4-pyh9f0ad1d_0"
-  ],
-  "ast": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "base64": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "binascii": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "calendar": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "click": [
-   "click/conda-forge/noarch/click-5.1-py_0",
-   "click/conda-forge/noarch/click-6.7-py_1",
-   "click/conda-forge/noarch/click-7.0-py_0",
-   "click/conda-forge/noarch/click-7.1-pyh8c360ce_0",
-   "click/conda-forge/noarch/click-7.1.1-pyh8c360ce_0"
   ],
   "collections": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "concurrent": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython"
-  ],
   "copy": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "cryptography": [
-   "cryptography/conda-forge/linux-64/cryptography-3.2.1-py37hc72a4ac_0",
-   "cryptography/conda-forge/linux-64/cryptography-3.3-py36h0a59100_0",
-   "cryptography/conda-forge/linux-64/cryptography-3.4.6-py38ha5dfef3_0",
-   "privy/conda-forge/noarch/privy-6.0.0-py_0"
-  ],
-  "ctypes": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -153,51 +197,10 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "difflib": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "ecdsa": [
-   "ecdsa/conda-forge/noarch/ecdsa-0.13-py_0",
-   "ecdsa/conda-forge/noarch/ecdsa-0.16.0-pyhd8ed1ab_0",
-   "ecdsa/conda-forge/noarch/ecdsa-0.16.1-pyhd8ed1ab_0",
-   "ecdsa/conda-forge/noarch/ecdsa-0.17.0-pyhd8ed1ab_0"
-  ],
-  "events": [
-   "events/conda-forge/noarch/events-0.3-py_0",
-   "events/conda-forge/noarch/events-0.4-pyhd8ed1ab_0"
-  ],
-  "fractions": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "future": [
-   "future/conda-forge/linux-64/future-0.16.0-py34_0"
-  ],
-  "hashlib": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "io": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "json": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "keyring": [
    "keyring/conda-forge/linux-64/keyring-12.1.0-py27_0",
    "keyring/conda-forge/linux-64/keyring-21.2.1-py36h5fab9bb_0",
    "keyring/conda-forge/linux-64/keyring-22.4.0-py36hd000896_0"
-  ],
-  "logging": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "math": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "ntpath": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -232,14 +235,6 @@
    "pytz/conda-forge/noarch/pytz-2019.2-py_0",
    "pytz/conda-forge/noarch/pytz-2020.1-pyh9f0ad1d_0",
    "pytz/conda-forge/noarch/pytz-2020.4-pyhd8ed1ab_0"
-  ],
-  "queue": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "random": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "re": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -282,10 +277,6 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "threading": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "timeit": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -295,10 +286,6 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "urllib": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "warnings": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],

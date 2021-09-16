@@ -35,11 +35,17 @@
   "dynaphopy.power_spectrum.power_spectrum_functions.values",
   "eigenvector_order",
   "energy",
+  "fractions.Fraction",
   "itertools",
+  "lammps.lammps",
   "matplotlib.pylab.legend",
   "matplotlib.pylab.plot",
   "matplotlib.pylab.show",
   "matplotlib.pyplot.rcParams.update",
+  "mmap",
+  "mmap.mmap",
+  "mpl_toolkits.mplot3d.proj3d",
+  "mpl_toolkits.mplot3d.proj3d.proj_transform",
   "multiprocessing.cpu_count",
   "n",
   "numpy.abs",
@@ -68,20 +74,52 @@
   "os.remove",
   "os.stat",
   "parameters",
+  "phonopy.api_phonopy.Phonopy",
+  "phonopy.file_IO",
+  "phonopy.file_IO.parse_BORN",
+  "phonopy.file_IO.parse_FORCE_CONSTANTS",
+  "phonopy.file_IO.parse_FORCE_SETS",
+  "phonopy.file_IO.write_FORCE_CONSTANTS",
+  "phonopy.harmonic.dynmat_to_fc.DynmatToForceConstants",
+  "phonopy.harmonic.force_constants.set_tensor_symmetry_PJ",
+  "phonopy.structure.atoms.Atoms",
+  "phonopy.structure.atoms.PhonopyAtoms",
+  "phonopy.structure.symmetry.Symmetry",
+  "phonopy.units.VaspToTHz",
+  "pickle",
+  "pickle.dump",
+  "pickle.load",
+  "pyfftw",
+  "pyfftw.interfaces.numpy_fft.fft",
+  "random",
   "reconnect_eigenvectors",
+  "scipy.integrate",
+  "scipy.integrate.quad",
+  "scipy.integrate.simps",
+  "scipy.optimize.curve_fit",
+  "scipy.optimize.minimize_scalar",
+  "scipy.signal",
+  "scipy.signal.find_peaks_cwt",
+  "scipy.stats",
+  "scipy.stats.maxwell",
+  "seekpath",
+  "seekpath.get_path",
   "set_order",
   "sys",
   "sys.stdout.flush",
   "sys.stdout.write",
+  "textwrap",
+  "textwrap.fill",
   "unit_matrix",
+  "warnings",
+  "warnings.simplefilter",
   "warnings.warn",
+  "yaml",
+  "yaml.add_representer",
+  "yaml.dump",
   "z"
  ],
  "deps": {
-  "_pickle": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "copy": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -90,30 +128,14 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "fractions": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "h5py": [
    "h5py/conda-forge/linux-64/h5py-2.10.0-nompi_py37hf7afa78_105",
    "h5py/conda-forge/linux-64/h5py-2.6.0-np111py34_4",
    "h5py/conda-forge/linux-64/h5py-2.7.0-np113py36_1"
   ],
-  "lammps": [
-   "lammps/conda-forge/linux-64/lammps-2019.06.05-py36_mpich_3",
-   "lammps/conda-forge/linux-64/lammps-2019.06.05-py37_mpich_5",
-   "lammps/conda-forge/linux-64/lammps-2020.10.29-py36_openmpi_1"
-  ],
   "matplotlib": [
    "matplotlib-base/conda-forge/linux-64/matplotlib-base-3.1.1-py37hfd891ef_0",
    "matplotlib-base/conda-forge/linux-64/matplotlib-base-3.1.1-py38h250f245_2",
-   "matplotlib/conda-forge/linux-64/matplotlib-1.5.3-np111py34_0"
-  ],
-  "mmap": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "mpl_toolkits": [
    "matplotlib/conda-forge/linux-64/matplotlib-1.5.3-np111py34_0"
   ],
   "numpy": [
@@ -123,45 +145,6 @@
   "os": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "phonopy": [
-   "phonopy/conda-forge/linux-64/phonopy-1.11.12-np113py36_0",
-   "phonopy/conda-forge/linux-64/phonopy-1.12.6.53-py36_0",
-   "phonopy/conda-forge/linux-64/phonopy-1.14.0-py27h3010b51_1"
-  ],
-  "pickle": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "pyfftw": [
-   "pyfftw/conda-forge/linux-64/pyfftw-0.10.1-np111py34_0",
-   "pyfftw/conda-forge/linux-64/pyfftw-0.10.4-np113py36_1",
-   "pyfftw/conda-forge/linux-64/pyfftw-0.11.0-py27h3010b51_1001"
-  ],
-  "random": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "scipy": [],
-  "seekpath": [
-   "seekpath/conda-forge/noarch/seekpath-1.9.0-py_0",
-   "seekpath/conda-forge/noarch/seekpath-1.9.3-py_0",
-   "seekpath/conda-forge/noarch/seekpath-1.9.5-pyh9f0ad1d_0",
-   "seekpath/conda-forge/noarch/seekpath-1.9.6-pyh44b312d_1"
-  ],
-  "textwrap": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "warnings": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "yaml": [
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0",
-   "pyyaml/conda-forge/linux-64/pyyaml-3.11-py35_0",
-   "pyyaml/conda-forge/win-64/pyyaml-5.2-py36hfa6e2cd_0"
   ]
  }
 }

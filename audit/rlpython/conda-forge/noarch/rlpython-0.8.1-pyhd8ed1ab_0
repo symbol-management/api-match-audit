@@ -2,6 +2,13 @@
  "bad": [
   "gc",
   "get_row_len",
+  "importlib.import_module",
+  "inspect",
+  "inspect.getabsfile",
+  "inspect.getdoc",
+  "inspect.getsourcelines",
+  "inspect.signature",
+  "inspect.stack",
   "os.O_RDONLY",
   "os.chdir",
   "os.chmod",
@@ -17,7 +24,16 @@
   "os.setpgid",
   "os.tcgetpgrp",
   "os.tcsetpgrp",
+  "pkgutil.iter_modules",
+  "pprint.pformat",
+  "readline",
+  "readline.add_history",
+  "readline.clear_history",
+  "readline.get_line_buffer",
+  "readline.insert_text",
+  "readline.redisplay",
   "restore_pgrp",
+  "rlcompleter.Completer",
   "rlpython.__init__.VERSION",
   "rlpython.protocol.MESSAGE_TYPE.COMPLETION_REQUEST",
   "rlpython.protocol.MESSAGE_TYPE.COMPLETION_RESPONSE",
@@ -32,18 +48,36 @@
   "rlpython.repl.Repl.DOMAIN.LOCAL_NETWORK",
   "rlpython.repl.Repl.DOMAIN.NETWORK",
   "run_code",
+  "shlex",
+  "shlex.split",
+  "signal",
   "signal.SIGTERM",
   "signal.SIGTSTP",
   "signal.SIGTTOU",
   "signal.SIG_IGN",
+  "signal.signal",
+  "socket",
   "socket.AF_INET",
   "socket.AF_UNIX",
   "socket.SOCK_STREAM",
   "socket.SOL_SOCKET",
   "socket.SO_REUSEADDR",
+  "socket.socket",
   "socket.timeout",
   "sys",
+  "textwrap",
+  "textwrap.indent",
+  "textwrap.wrap",
+  "threading",
+  "threading.Thread",
+  "threading.enumerate",
   "time",
+  "traceback",
+  "traceback.format_exception",
+  "traceback.format_stack",
+  "types.ModuleType",
+  "urllib.parse.splitport",
+  "urllib.parse.urlparse",
   "write",
   "write_divider",
   "write_empty_row",
@@ -69,15 +103,6 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "importlib": [
-   "importlib/conda-forge/linux-64/importlib-1.0.4-py26_0",
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "inspect": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "json": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -94,36 +119,7 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "pkgutil": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "pprint": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "readline": [
-   "pyreadline3/conda-forge/win-64/pyreadline3-3.3-py38haa244fe_1",
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "rlcompleter": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "shlex": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "shutil": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "signal": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "socket": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -132,26 +128,6 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "tempfile": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "textwrap": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "threading": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "traceback": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "types": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "urllib": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ]

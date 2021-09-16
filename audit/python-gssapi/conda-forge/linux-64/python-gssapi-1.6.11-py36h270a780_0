@@ -59,8 +59,10 @@
   "gssapi.raw.add_cred_impersonate_name",
   "gssapi.raw.add_cred_with_password",
   "gssapi.raw.canonicalize_name",
+  "gssapi.raw.chan_bindings",
   "gssapi.raw.compare_name",
   "gssapi.raw.context_time",
+  "gssapi.raw.creds",
   "gssapi.raw.creds.Creds",
   "gssapi.raw.creds.acquire_cred",
   "gssapi.raw.creds.add_cred",
@@ -71,10 +73,26 @@
   "gssapi.raw.display_mech_attr",
   "gssapi.raw.display_name",
   "gssapi.raw.duplicate_name",
+  "gssapi.raw.exceptions",
   "gssapi.raw.export_cred",
   "gssapi.raw.export_name",
   "gssapi.raw.export_name_composite",
   "gssapi.raw.export_sec_context",
+  "gssapi.raw.ext_cred_imp_exp",
+  "gssapi.raw.ext_cred_store",
+  "gssapi.raw.ext_dce",
+  "gssapi.raw.ext_ggf",
+  "gssapi.raw.ext_iov_mic",
+  "gssapi.raw.ext_password",
+  "gssapi.raw.ext_password_add",
+  "gssapi.raw.ext_rfc4178",
+  "gssapi.raw.ext_rfc5587",
+  "gssapi.raw.ext_rfc5588",
+  "gssapi.raw.ext_rfc5801",
+  "gssapi.raw.ext_rfc6680",
+  "gssapi.raw.ext_rfc6680_comp_oid",
+  "gssapi.raw.ext_s4u",
+  "gssapi.raw.ext_set_cred_opt",
   "gssapi.raw.get_mic",
   "gssapi.raw.get_mic_iov",
   "gssapi.raw.get_mic_iov_length",
@@ -95,16 +113,20 @@
   "gssapi.raw.inquire_names_for_mech",
   "gssapi.raw.inquire_saslname_for_mech",
   "gssapi.raw.inquire_sec_context_by_oid",
+  "gssapi.raw.mech_krb5",
+  "gssapi.raw.message",
   "gssapi.raw.message.get_mic",
   "gssapi.raw.message.unwrap",
   "gssapi.raw.message.verify_mic",
   "gssapi.raw.message.wrap",
   "gssapi.raw.message.wrap_size_limit",
+  "gssapi.raw.misc",
   "gssapi.raw.misc.GSSError",
   "gssapi.raw.misc._display_status",
   "gssapi.raw.misc.indicate_mechs",
   "gssapi.raw.misc.inquire_mechs_for_name",
   "gssapi.raw.misc.inquire_names_for_mech",
+  "gssapi.raw.names",
   "gssapi.raw.names.Name",
   "gssapi.raw.names.canonicalize_name",
   "gssapi.raw.names.compare_name",
@@ -112,9 +134,11 @@
   "gssapi.raw.names.duplicate_name",
   "gssapi.raw.names.export_name",
   "gssapi.raw.names.import_name",
+  "gssapi.raw.oids",
   "gssapi.raw.oids.OID",
   "gssapi.raw.release_cred",
   "gssapi.raw.release_name",
+  "gssapi.raw.sec_contexts",
   "gssapi.raw.sec_contexts.SecurityContext",
   "gssapi.raw.sec_contexts.accept_sec_context",
   "gssapi.raw.sec_contexts.context_time",
@@ -129,6 +153,7 @@
   "gssapi.raw.set_sec_context_option",
   "gssapi.raw.store_cred",
   "gssapi.raw.store_cred_into",
+  "gssapi.raw.types",
   "gssapi.raw.types.AddressType",
   "gssapi.raw.types.IntEnumFlagSet",
   "gssapi.raw.types.MechType",
@@ -146,6 +171,8 @@
   "gssapi.raw.wrap_iov_length",
   "gssapi.raw.wrap_size_limit",
   "gssapi.sec_contexts.SecurityContext.__DEFER_STEP_ERRORS__",
+  "importlib",
+  "importlib.import_module",
   "k5test",
   "k5test.KerberosTestCase",
   "k5test.unit",
@@ -154,14 +181,20 @@
   "k5test.unit.krb_plugin_test",
   "os.environ.get",
   "os.path.exists",
+  "parameterized.parameterized",
   "parameterized.parameterized.expand",
-  "sys"
+  "pickle",
+  "pickle.dumps",
+  "pickle.loads",
+  "pkgutil",
+  "pkgutil.iter_modules",
+  "socket",
+  "socket.getfqdn",
+  "sys",
+  "types",
+  "types.FunctionType"
  ],
  "deps": {
-  "_pickle": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "collections": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -192,15 +225,6 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "gssapi": [
-   "python-gssapi/conda-forge/linux-64/python-gssapi-1.6.11-py39h24a2b69_0",
-   "python-gssapi/conda-forge/linux-64/python-gssapi-1.6.9-py37h74a8448_1"
-  ],
-  "importlib": [
-   "importlib/conda-forge/linux-64/importlib-1.0.4-py26_0",
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "ntpath": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -208,30 +232,7 @@
   "os": [
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "parameterized": [
-   "parameterized/conda-forge/noarch/parameterized-0.6.1-py_0",
-   "parameterized/conda-forge/noarch/parameterized-0.7.1-py_0",
-   "parameterized/conda-forge/noarch/parameterized-0.7.3-pyh9f0ad1d_0",
-   "parameterized/conda-forge/noarch/parameterized-0.7.4-pyh9f0ad1d_0",
-   "parameterized/conda-forge/noarch/parameterized-0.8.1-pyhd3deb0d_0"
-  ],
-  "pickle": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "pkgutil": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "shutil": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "socket": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "types": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],

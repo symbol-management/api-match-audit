@@ -16,6 +16,8 @@
   "_valid_theme",
   "add_treeview_data",
   "arrow_layout",
+  "base64",
+  "base64.urlsafe_b64encode",
   "button",
   "calendar",
   "calendar.LocaleTextCalendar",
@@ -31,30 +33,45 @@
   "dict.keys",
   "func",
   "func.__name__",
+  "hashlib",
   "hashlib.sha256",
   "hex.lstrip",
   "hue_to_rgb",
+  "inspect",
+  "inspect.currentframe",
+  "inspect.stack",
   "itertools",
   "itertools.chain.from_iterable",
   "list_of_look_and_feel_values",
   "make_days_layout",
+  "math.fabs",
+  "math.floor",
+  "pathlib.Path",
+  "pickle",
+  "pickle.dump",
+  "pickle.load",
   "popup",
   "popup_error",
   "popup_quick_message",
   "queue",
   "queue.Empty",
   "queue.Queue",
+  "random",
+  "random.choice",
+  "random.randint",
   "sample_layout",
   "set_options",
-  "site",
-  "site.getsitepackages",
   "sys",
   "sys.platform.startswith",
   "testMouseHook",
   "testMouseHook2",
   "testMouseUnhook",
   "testMouseUnhook2",
+  "textwrap",
+  "textwrap.fill",
+  "textwrap.wrap",
   "theme_background_color",
+  "threading.Thread",
   "time",
   "tkinter.BOTH",
   "tkinter.BOTTOM",
@@ -86,14 +103,9 @@
   "tkinter.Y",
   "tkinter.ttk.Frame.__getitem__",
   "tkinter.ttk.Frame.__setitem__",
-  "typing.Any",
-  "typing.Dict",
-  "typing.List",
-  "typing.Optional",
-  "typing.SupportsAbs",
-  "typing.Tuple",
-  "typing.Union",
   "update_days",
+  "warnings",
+  "warnings.simplefilter",
   "warnings.warn",
   "window",
   "window.AddRow",
@@ -115,31 +127,11 @@
   "window.update"
  ],
  "deps": {
-  "_pickle": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "base64": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "datetime": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "functools": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "hashlib": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "inspect": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "math": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -151,20 +143,11 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "pathlib": [
-   "pathlib/conda-forge/noarch/pathlib-1.0.1-py_1",
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "pickle": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "random": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "shutil": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "site": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -172,23 +155,15 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "textwrap": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "threading": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "tkinter": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "urllib": [
+  "typing": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "warnings": [
+  "urllib": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ]

@@ -13,6 +13,7 @@
   "_read_output",
   "_unpack_dataframes",
   "_unpack_frame",
+  "arviz.InferenceData.from_netcdf",
   "arviz.__init__._arviz_style_path",
   "arviz.__init__._formatter",
   "arviz.__init__._handler",
@@ -50,6 +51,11 @@
   "display_ref_val",
   "display_rope",
   "dtype",
+  "emcee",
+  "emcee.EnsembleSampler",
+  "emcee.__version__",
+  "emcee.backends",
+  "emcee.backends.HDFBackend",
   "ess_func",
   "fill_func",
   "fn",
@@ -69,6 +75,10 @@
   "get_sample_stats",
   "get_sample_stats_stan3",
   "get_width_and_height",
+  "glob.glob",
+  "gzip",
+  "gzip.open",
+  "hashlib",
   "hashlib.sha256",
   "helpers.draws.get",
   "helpers.eight_schools_params.astype",
@@ -82,16 +92,28 @@
   "helpers.multidim_models.model_1",
   "helpers.multidim_models.model_2",
   "histogram",
+  "html.escape",
   "ic_fun",
   "ic_func",
+  "importlib",
+  "importlib.import_module",
+  "importlib.util.find_spec",
   "in_bounds",
   "infer_dtypes",
   "inference_data.InferenceData.from_netcdf",
   "is_data",
   "itertools",
+  "json",
   "kde_fun",
   "label_idxs",
+  "locale",
+  "locale.getpreferredencoding",
   "log_joint",
+  "logging",
+  "logging.Formatter",
+  "logging.INFO",
+  "logging.StreamHandler",
+  "logging.getLogger",
   "logging.root.handlers",
   "marker_func",
   "matplotlib.animation.writers.is_available",
@@ -164,6 +186,8 @@
   "os.path.isdir",
   "os.remove",
   "pandas.Series.copy",
+  "pathlib.Path",
+  "pathlib.Path.home",
   "placeholder_func",
   "plot",
   "plots.backends.bokeh.dealiase_sel_kwargs",
@@ -172,18 +196,9 @@
   "pymc3.__version__.split",
   "pyro.distributions.HalfCauchy",
   "pyro.distributions.Normal",
-  "pystan",
-  "pystan.StanModel",
-  "pystan.__version__",
-  "pytest",
-  "pytest.fixture",
-  "pytest.importorskip",
   "pytest.mark.parametrize",
   "pytest.mark.skipif",
   "pytest.mark.slow",
-  "pytest.raises",
-  "pytest.skip",
-  "pytest.warns",
   "rcparams.rcParams.__repr__",
   "rcparams.rcParams.__str__",
   "rcparams.rcParams.clear",
@@ -192,15 +207,9 @@
   "rcparams.rcParams.pop",
   "rcparams.rcParams.popitem",
   "rcparams.rcParams.setdefault",
-  "re",
   "re.DOTALL",
   "re.IGNORECASE",
   "re.MULTILINE",
-  "re.compile",
-  "re.findall",
-  "re.match",
-  "re.search",
-  "re.sub",
   "rhat_func",
   "scalar_validator",
   "scipy.fftpack.fft",
@@ -231,8 +240,6 @@
   "scipy.stats.uniform",
   "scipy.stats.vonmises.rvs",
   "seen_add",
-  "shutil",
-  "shutil.rmtree",
   "stan",
   "stan.__version__",
   "stan.build",
@@ -242,50 +249,25 @@
   "stats.loo_pit.values.flatten",
   "sys",
   "sys.platform.startswith",
-  "tensorflow",
-  "tensorflow.__version__",
-  "tensorflow.compat.v1",
   "tensorflow.compat.v1.Session",
   "tensorflow.compat.v1.convert_to_tensor",
-  "tensorflow.compat.v1.disable_v2_behavior",
   "tensorflow.compat.v1.exp",
   "tensorflow.compat.v1.ones",
   "tensorflow.compat.v1.zeros",
-  "tensorflow_probability",
   "tensorflow_probability.mcmc.HamiltonianMonteCarlo",
   "tensorflow_probability.mcmc.sample_chain",
-  "tensorflow_probability.python.edward2",
   "tensorflow_probability.python.edward2.Normal",
-  "tensorflow_probability.python.edward2.make_log_joint_fn",
   "test_utils.utils_with_numba_import_fail.importlib.import_module",
   "tfunc",
-  "theano",
-  "torch",
   "torch.from_numpy",
   "typeof",
   "typeof.__name__",
-  "types.ModuleType",
-  "typing",
-  "typing.Any",
-  "typing.Callable",
-  "typing.Dict",
-  "typing.Iterable",
-  "typing.List",
-  "typing.Mapping",
-  "typing.Optional",
-  "typing.Set",
-  "typing.TYPE_CHECKING",
-  "typing.Tuple",
-  "typing.Union",
   "ufunc",
   "ujson",
   "ujson.dump",
   "ujson.dumps",
   "ujson.load",
-  "unittest.mock.Mock",
   "update_annot",
-  "urllib.parse.urlunsplit",
-  "urllib.request.urlretrieve",
   "utils.HtmlTemplate.css_template",
   "utils.HtmlTemplate.element_template.format",
   "utils.HtmlTemplate.html_template.format",
@@ -308,38 +290,14 @@
   "wrapper",
   "x",
   "x.shape",
-  "xarray",
-  "xarray.DataArray",
-  "xarray.Dataset",
-  "xarray.Dataset.assign",
   "xarray.Dataset.assign_coords",
-  "xarray.Dataset.chunk",
-  "xarray.Dataset.compute",
   "xarray.Dataset.cumsum",
   "xarray.Dataset.get_index",
-  "xarray.Dataset.load",
   "xarray.Dataset.max",
   "xarray.Dataset.mean",
   "xarray.Dataset.median",
   "xarray.Dataset.min",
-  "xarray.Dataset.persist",
-  "xarray.Dataset.quantile",
-  "xarray.Dataset.reset_coords",
-  "xarray.Dataset.reset_index",
-  "xarray.Dataset.set_coords",
-  "xarray.Dataset.set_index",
-  "xarray.Dataset.sortby",
-  "xarray.Dataset.sum",
-  "xarray.Dataset.unify_chunks",
-  "xarray.IndexVariable",
-  "xarray.apply_ufunc",
-  "xarray.broadcast",
-  "xarray.concat",
-  "xarray.core.indexing.MemoryCachedArray",
-  "xarray.core.options.OPTIONS",
-  "xarray.open_dataset",
-  "xarray.set_options",
-  "xarray.testing.assert_identical"
+  "xarray.Dataset.sum"
  ],
  "deps": {
   "_pickle": [
@@ -350,16 +308,6 @@
    "pytest/conda-forge/linux-64/pytest-3.7.0-py27_0",
    "pytest/conda-forge/linux-64/pytest-4.6.0-py37_0",
    "pytest/conda-forge/linux-64/pytest-6.0.2-py37hc8dfbb8_0"
-  ],
-  "arviz": [
-   "arviz/conda-forge/noarch/arviz-0.10.0-py_0",
-   "arviz/conda-forge/noarch/arviz-0.4.0-py_0",
-   "arviz/conda-forge/noarch/arviz-0.4.1-py_0",
-   "arviz/conda-forge/noarch/arviz-0.8.0-py_0",
-   "arviz/conda-forge/noarch/arviz-0.8.1-py_0",
-   "arviz/conda-forge/noarch/arviz-0.8.2-py_0",
-   "arviz/conda-forge/noarch/arviz-0.8.3-py_0",
-   "arviz/conda-forge/noarch/arviz-0.9.0-py_0"
   ],
   "bokeh": [
    "bokeh/conda-forge/linux-64/bokeh-1.3.1-py27_0"
@@ -376,30 +324,7 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "emcee": [
-   "emcee/conda-forge/noarch/emcee-3.1.0-pyh8a188c0_0"
-  ],
   "functools": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "glob": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "gzip": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "hashlib": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "html": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "importlib": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -408,18 +333,6 @@
    "jax/conda-forge/noarch/jax-0.2.13-pyhd8ed1ab_0",
    "jax/conda-forge/noarch/jax-0.2.17-pyhd8ed1ab_0",
    "jax/conda-forge/noarch/jax-0.2.7-pyhd8ed1ab_0"
-  ],
-  "json": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "locale": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "logging": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "matplotlib": [
    "matplotlib-base/conda-forge/linux-64/matplotlib-base-3.1.1-py37hfd891ef_0",
@@ -472,10 +385,6 @@
    "packaging/conda-forge/noarch/packaging-21.0-pyhd8ed1ab_0"
   ],
   "pandas": [],
-  "pathlib": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "pickle": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -508,9 +417,72 @@
    "pyro-ppl/conda-forge/noarch/pyro-ppl-1.6.0-pyhd8ed1ab_0",
    "pyro-ppl/conda-forge/noarch/pyro-ppl-1.7.0-pyhd8ed1ab_0"
   ],
+  "pystan": [
+   "pystan/conda-forge/linux-64/pystan-2.15.0.0-py35_0",
+   "pystan/conda-forge/linux-64/pystan-2.19.1.1-py39hde0f152_3"
+  ],
+  "pytest": [
+   "pytest/conda-forge/linux-64/pytest-3.7.0-py27_0",
+   "pytest/conda-forge/linux-64/pytest-4.6.0-py37_0",
+   "pytest/conda-forge/linux-64/pytest-6.0.2-py37hc8dfbb8_0"
+  ],
+  "re": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "shutil": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "tensorflow": [
+   "tensorflow-base/conda-forge/linux-64/tensorflow-base-1.13.1-py27h58012e3_6"
+  ],
+  "tensorflow_probability": [
+   "tensorflow-probability/conda-forge/noarch/tensorflow-probability-0.7-py_0",
+   "tensorflow-probability/conda-forge/noarch/tensorflow-probability-0.7-py_1",
+   "tensorflow-probability/conda-forge/noarch/tensorflow-probability-0.7-py_3"
+  ],
+  "theano": [
+   "theano-pymc/conda-forge/linux-64/theano-pymc-1.0.5-py36h90709c0_2",
+   "theano-pymc/conda-forge/linux-64/theano-pymc-1.1.0-py36ha03b18c_1",
+   "theano/conda-forge/linux-64/theano-1.0.3-py37hfc679d8_1",
+   "theano/conda-forge/linux-64/theano-1.0.5-py36hc4f0c31_1"
+  ],
+  "torch": [
+   "pytorch-cpu/conda-forge/linux-64/pytorch-cpu-1.1.0-py37he1b5a44_0",
+   "pytorch-cpu/conda-forge/win-64/pytorch-cpu-1.0.1-py36ha925a31_0",
+   "pytorch/conda-forge/linux-64/pytorch-1.6.0-cuda92py37hc3ec645_1",
+   "pytorch/conda-forge/linux-64/pytorch-1.6.0-cuda92py38hb6ed0dd_1"
+  ],
+  "types": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "typing": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "unittest": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "urllib": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "uuid": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "xarray": [
+   "xarray/conda-forge/noarch/xarray-0.14.1-py_0",
+   "xarray/conda-forge/noarch/xarray-0.15.0-py_0",
+   "xarray/conda-forge/noarch/xarray-0.15.1-py_0",
+   "xarray/conda-forge/noarch/xarray-0.16.0-py_0",
+   "xarray/conda-forge/noarch/xarray-0.16.1-py_0",
+   "xarray/conda-forge/noarch/xarray-0.16.2-pyhd8ed1ab_0",
+   "xarray/conda-forge/noarch/xarray-0.18.0-pyhd8ed1ab_0",
+   "xarray/conda-forge/noarch/xarray-0.18.2-pyhd8ed1ab_0"
   ]
  }
 }

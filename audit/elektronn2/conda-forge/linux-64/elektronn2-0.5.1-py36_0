@@ -3,12 +3,7 @@
   "add_node",
   "cPickle",
   "cls",
-  "code",
-  "code.InteractiveConsole",
   "collections.deque",
-  "colorlog",
-  "colorlog.LevelFormatter",
-  "colorlog.StreamHandler",
   "computations.apply_activation",
   "computations.apply_except_axis",
   "computations.conv",
@@ -96,12 +91,20 @@
   "graphutils.floatX",
   "graphutils.getinput_for_multioutput",
   "graphutils.make_func",
+  "gzip",
+  "gzip.open",
   "h5py",
   "h5py.File",
+  "hashlib",
   "hashlib.sha256",
+  "importlib",
+  "importlib.import_module",
+  "importlib.reload",
   "inspect",
   "inspect.getargspec",
   "itertools",
+  "jedi",
+  "jedi.Interpreter",
   "kernel",
   "knossos_utils.KnossosDataset",
   "knossos_utils.knossosdataset.KnossosDataset",
@@ -111,6 +114,13 @@
   "knossos_utils.skeleton.SkeletonNode",
   "log_beta_pdf",
   "log_inv_beta_func",
+  "logging",
+  "logging.DEBUG",
+  "logging.FileHandler",
+  "logging.Formatter",
+  "logging.INFO",
+  "logging.StreamHandler",
+  "logging.getLogger",
   "loss.AggregateLoss",
   "loss.MultinoulliNLL",
   "loss.Softmax",
@@ -224,17 +234,34 @@
   "out2r._output_func.func",
   "out2r.output",
   "pydot.find_graphviz",
-  "re",
-  "re.findall",
-  "re.search",
-  "re.sub",
   "recFields_helper",
   "recurrent",
   "recurrent._output_func.func",
   "recurrent._output_func.func.maker.fgraph.apply_nodes",
   "recurrent.output",
+  "scipy.integrate.cumtrapz",
+  "scipy.interpolate",
+  "scipy.interpolate.splev",
+  "scipy.interpolate.splprep",
+  "scipy.misc",
+  "scipy.ndimage",
+  "scipy.ndimage.distance_transform_edt",
+  "scipy.ndimage.filters",
+  "scipy.ndimage.filters.convolve",
+  "scipy.ndimage.filters.gaussian_filter",
+  "scipy.ndimage.maximum_filter",
+  "scipy.ndimage.measurements.label",
+  "scipy.ndimage.morphology.binary_erosion",
+  "scipy.ndimage.zoom",
+  "scipy.sparse",
+  "scipy.sparse.coo_matrix",
+  "scipy.sparse.csgraph",
   "scipy.sparse.csgraph.connected_components",
   "scipy.sparse.csgraph.minimum_spanning_tree",
+  "scipy.sparse.csr_matrix",
+  "scipy.spatial.distance.cdist",
+  "scipy.stats",
+  "scipy.stats.gaussian_kde",
   "self",
   "self._alloc",
   "self._apply_train",
@@ -314,10 +341,6 @@
   "sklearn.model_selection.KFold",
   "sklearn.neighbors.NearestNeighbors.__init__.__doc__",
   "socket.gethostname",
-  "subprocess",
-  "subprocess.PIPE",
-  "subprocess.Popen",
-  "subprocess.check_call",
   "sys",
   "sys.path.append",
   "sys.path.pop",
@@ -377,6 +400,8 @@
   "theano.tensor.tanh",
   "theano.tensor.tensordot",
   "theano.tensor.zeros",
+  "threading",
+  "threading.Thread",
   "time",
   "time.clock",
   "trainutils.user_input",
@@ -424,9 +449,16 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "code": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "collections": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "colorlog": [
+   "colorlog/conda-forge/linux-64/colorlog-4.6.2-py36h5fab9bb_0"
   ],
   "copy": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -441,26 +473,6 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "functools": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "gzip": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "hashlib": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "importlib": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "jedi": [
-   "jedi/conda-forge/linux-64/jedi-0.17.2-py36hd000896_1",
-   "jedi/conda-forge/linux-64/jedi-0.17.2-py37h9c2f6ca_1"
-  ],
-  "logging": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -515,7 +527,10 @@
    "pydotplus/conda-forge/noarch/pydotplus-2.0.2-py_2",
    "pydotplus/conda-forge/noarch/pydotplus-2.0.2-pyhaef67bd_5"
   ],
-  "scipy": [],
+  "re": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "seaborn": [
    "seaborn-base/conda-forge/noarch/seaborn-base-0.10.1-py_1",
    "seaborn-base/conda-forge/noarch/seaborn-base-0.11.1-pyhd8ed1ab_1",
@@ -541,15 +556,15 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "subprocess": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "tempfile": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "theano": [],
-  "threading": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "tqdm": [],
   "traceback": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",

@@ -10,28 +10,78 @@
   "_find_share_type",
   "_is_default",
   "_test_string",
+  "abc",
+  "abc.ABCMeta",
+  "abc.abstractmethod",
+  "argparse",
+  "argparse.Action",
+  "argparse.ArgumentError",
+  "argparse.ArgumentParser",
+  "argparse.ArgumentTypeError",
+  "argparse.HelpFormatter",
+  "argparse.SUPPRESS",
+  "ast",
+  "ast.literal_eval",
   "checker",
   "checker.assert_called_once_with",
   "client_class",
   "cls",
+  "contextlib",
+  "contextlib.contextmanager",
   "ddt",
   "ddt.data",
   "ddt.ddt",
   "ddt.unpack",
+  "debtcollector.removals",
+  "debtcollector.removals.remove",
+  "debtcollector.removals.removed_class",
+  "eventlet.sleep",
   "f",
   "f.start_version",
+  "fixtures",
+  "fixtures.EnvironmentVariable",
+  "fixtures.MonkeyPatch",
+  "fixtures.StringStream",
   "foo",
   "func",
   "get_column_index",
   "get_func",
+  "getpass",
+  "getpass.getpass",
+  "glob",
+  "glob.iglob",
+  "hashlib",
   "hashlib.md5",
   "hook_func",
+  "imp",
+  "imp.load_source",
+  "inspect",
+  "inspect.getargspec",
+  "inspect.isclass",
+  "ipaddress",
+  "ipaddress.IPv4Network",
+  "ipaddress.ip_network",
   "is_embedded_table",
   "is_empty_row",
   "is_table_border",
   "isbound",
   "itertools",
+  "keystoneauth1.adapter",
+  "keystoneauth1.fixture",
   "keystoneauth1.fixture.DiscoveryList",
+  "keystoneauth1.fixture.V2Token",
+  "keystoneauth1.fixture.V3Token",
+  "keystoneauth1.session",
+  "keystoneauth1.session.Session",
+  "keystoneauth1.session.discover.Discover",
+  "keystoneclient.client",
+  "keystoneclient.client.Client",
+  "logging",
+  "logging.DEBUG",
+  "logging.StreamHandler",
+  "logging.WARNING",
+  "logging.basicConfig",
+  "logging.getLogger",
   "manilaclient.API_MAX_VERSION.get_string",
   "manilaclient.API_MIN_VERSION.get_string",
   "manilaclient.__init__.version_info",
@@ -104,7 +154,10 @@
   "manilaclient.v2.client.ks_client.Client.called",
   "manilaclient.v2.client.ks_client.Client.return_value",
   "manilaclient.v2.client.ks_client.Client.return_value.auth_token.return_value",
+  "manilaclient.v2.client.session.Session",
   "manilaclient.v2.client.session.Session.called",
+  "manilaclient.v2.client.session.discover",
+  "manilaclient.v2.client.session.discover.Discover",
   "manilaclient.v2.client.session.discover.Discover.called",
   "manilaclient.v2.client.session.discover.Discover.return_value.url_for.side_effect",
   "manilaclient.v2.shell.OpenStackManilaShell",
@@ -142,9 +195,12 @@
   "os.environ.get",
   "os.path.isfile",
   "print_progress",
+  "random",
+  "random.randint",
   "re.DOTALL",
   "re.MULTILINE",
   "requests.__name__",
+  "requests.logging.getLogger",
   "shared_file_system_client",
   "six.moves.StringIO",
   "six.moves.range",
@@ -178,30 +234,14 @@
   "tempest.lib.exceptions.TimeoutException",
   "test_get_call",
   "test_post_call",
+  "textwrap",
+  "textwrap.fill",
   "time",
-  "traceback",
-  "traceback.format_exc",
+  "warnings",
   "warnings.warn"
  ],
  "deps": {
-  "abc": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "argparse": [
-   "argparse/conda-forge/osx-64/argparse-1.4.0-py26_0",
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "ast": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "collections": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "contextlib": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -213,82 +253,9 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "debtcollector": [
-   "debtcollector/conda-forge/linux-64/debtcollector-1.20.0-py27_0",
-   "debtcollector/conda-forge/linux-64/debtcollector-1.20.0-py27_1000",
-   "debtcollector/conda-forge/noarch/debtcollector-1.19.0-py_0",
-   "debtcollector/conda-forge/noarch/debtcollector-1.21.0-py_0"
-  ],
-  "eventlet": [
-   "eventlet/conda-forge/noarch/eventlet-0.22.0-py_0",
-   "eventlet/conda-forge/noarch/eventlet-0.28.0-py_0",
-   "eventlet/conda-forge/noarch/eventlet-0.29.1-py_0",
-   "eventlet/conda-forge/noarch/eventlet-0.30.0-pyhd8ed1ab_0",
-   "eventlet/conda-forge/noarch/eventlet-0.30.2-pyhd8ed1ab_0",
-   "eventlet/conda-forge/noarch/eventlet-0.30.3-pyhd8ed1ab_0",
-   "eventlet/conda-forge/noarch/eventlet-0.32.0-pyhd8ed1ab_0"
-  ],
-  "fixtures": [
-   "fixtures/conda-forge/linux-64/fixtures-3.0.0-py35_0",
-   "fixtures/conda-forge/noarch/fixtures-3.0.0-py_0"
-  ],
   "functools": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "getpass": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "glob": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "hashlib": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "imp": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "inspect": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "ipaddress": [
-   "ipaddress/conda-forge/noarch/ipaddress-1.0.22-py_1",
-   "ipaddress/conda-forge/noarch/ipaddress-1.0.23-py_0",
-   "privy/conda-forge/noarch/privy-6.0.0-py_0",
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "keystoneauth1": [
-   "keystoneauth1/conda-forge/noarch/keystoneauth1-3.10.0-py_0",
-   "keystoneauth1/conda-forge/noarch/keystoneauth1-3.13.1-py_0",
-   "keystoneauth1/conda-forge/noarch/keystoneauth1-3.14.0-py_0",
-   "keystoneauth1/conda-forge/noarch/keystoneauth1-3.4.0-py_0",
-   "keystoneauth1/conda-forge/noarch/keystoneauth1-3.5.0-py_0",
-   "keystoneauth1/conda-forge/noarch/keystoneauth1-3.6.2-py_0",
-   "keystoneauth1/conda-forge/noarch/keystoneauth1-3.7.0-py_0",
-   "keystoneauth1/conda-forge/noarch/keystoneauth1-4.0.0-py_0",
-   "keystoneauth1/conda-forge/noarch/keystoneauth1-4.1.0-py_0",
-   "keystoneauth1/conda-forge/noarch/keystoneauth1-4.3.1-pyhd8ed1ab_0"
-  ],
-  "keystoneclient": [
-   "python-keystoneclient/conda-forge/noarch/python-keystoneclient-4.0.0-py_0",
-   "python-keystoneclient/conda-forge/noarch/python-keystoneclient-4.1.0-py_0",
-   "python-keystoneclient/conda-forge/noarch/python-keystoneclient-4.1.1-py_0"
-  ],
-  "logging": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "manilaclient": [
-   "python-manilaclient/conda-forge/noarch/python-manilaclient-2.2.0-py_0",
-   "python-manilaclient/conda-forge/noarch/python-manilaclient-2.4.0-pyhd8ed1ab_0",
-   "python-manilaclient/conda-forge/noarch/python-manilaclient-2.5.0-pyhd8ed1ab_0",
-   "python-manilaclient/conda-forge/noarch/python-manilaclient-2.6.0-pyhd8ed1ab_0"
   ],
   "mock": [
    "mock/conda-forge/linux-64/mock-2.0.0-py27_1000",
@@ -380,10 +347,6 @@
    "prettytable/conda-forge/noarch/prettytable-2.1.0-pyhd8ed1ab_0",
    "ptable/conda-forge/noarch/ptable-0.9.2-py_0"
   ],
-  "random": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "re": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -416,15 +379,11 @@
    "testtools/conda-forge/noarch/testtools-2.3.0-py_1",
    "testtools/conda-forge/osx-64/testtools-2.2.0-py27_0"
   ],
-  "textwrap": [
+  "traceback": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "uuid": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "warnings": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ]
