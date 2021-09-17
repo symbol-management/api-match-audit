@@ -14,77 +14,22 @@
   "conf.settings.SHOW_AT_ADMIN_PANEL",
   "conf.settings.UWSGI_AUTO_RELOAD",
   "conf.settings.WSGI_AUTO_RELOAD",
-  "django",
-  "django.VERSION",
   "django.__file__",
-  "django.apps.AppConfig",
-  "django.apps.apps",
   "django.apps.apps.get_app_configs",
-  "django.conf.ENVIRONMENT_VARIABLE",
-  "django.conf.settings",
   "django.conf.settings.CACHES",
   "django.conf.settings.LANGUAGES",
   "django.conf.settings.LOGIN_URL",
   "django.conf.settings.MIDDLEWARE",
   "django.conf.settings.SETTINGS",
   "django.conf.settings.reload",
-  "django.conf.urls.include",
-  "django.conf.urls.url",
-  "django.contrib.admin",
   "django.contrib.admin.site.index_template",
-  "django.contrib.auth.decorators.user_passes_test",
-  "django.contrib.auth.models.Group",
   "django.contrib.auth.models.Group.objects.create",
-  "django.contrib.auth.models.User",
   "django.contrib.auth.models.User.objects.create_superuser",
   "django.contrib.auth.models.User.objects.create_user",
-  "django.contrib.messages",
   "django.contrib.messages.error",
-  "django.core.cache.caches",
-  "django.core.exceptions.ImproperlyConfigured",
-  "django.core.paginator.Paginator",
-  "django.core.signals.setting_changed",
   "django.core.signals.setting_changed.connect",
-  "django.dispatch",
-  "django.dispatch.Signal",
-  "django.dispatch.receiver",
-  "django.http.Http404",
-  "django.http.HttpResponse",
-  "django.http.HttpResponseRedirect",
-  "django.http.JsonResponse",
-  "django.template",
-  "django.template.Library",
-  "django.template.Node",
-  "django.test.RequestFactory",
-  "django.test.TestCase",
-  "django.test.client.Client",
-  "django.test.override_settings",
-  "django.urls.resolve",
-  "django.urls.reverse",
-  "django.urls.reverse_lazy",
-  "django.utils.decorators.method_decorator",
-  "django.utils.encoding.force_bytes",
-  "django.utils.functional.Promise",
-  "django.utils.functional.cached_property",
-  "django.utils.html.escape",
-  "django.utils.safestring.mark_safe",
-  "django.utils.timezone",
-  "django.utils.timezone.get_current_timezone",
-  "django.utils.timezone.utc",
-  "django.utils.translation.gettext_lazy",
-  "django.views.decorators.cache.never_cache",
-  "django.views.generic.TemplateView",
-  "django.views.generic.View",
-  "django.views.generic.base.RedirectView",
-  "django.views.generic.base.RedirectView.as_view",
   "file_hash",
-  "filecmp",
-  "filecmp.cmp",
-  "hashlib",
   "hashlib.md5",
-  "hashlib.new",
-  "importlib",
-  "importlib.import_module",
   "message_hashes",
   "os.W_OK",
   "os.access",
@@ -95,11 +40,7 @@
   "os.path.isfile",
   "os.unlink",
   "os.utime",
-  "polib.pofile",
   "re.IGNORECASE",
-  "requests",
-  "requests.exceptions.RequestException",
-  "requests.post",
   "rosetta.__init__.VERSION",
   "rosetta.conf.__init__.RosettaSettings",
   "rosetta.conf.__init__.reload_settings",
@@ -111,34 +52,34 @@
   "rosetta.conf.settings.SETTINGS_MODULE",
   "rosetta.conf.settings.SETTINGS_MODULE.split",
   "rosetta.conf.settings.STORAGE_CLASS.rsplit",
-  "shutil",
-  "shutil.copy",
-  "shutil.move",
   "signals.entry_changed.send",
   "signals.post_save.send",
-  "tempfile",
-  "tempfile.mkstemp",
   "time",
   "translate",
-  "unicodedata",
-  "unicodedata.normalize",
   "urlencode_safe",
-  "urllib.parse.urlencode",
-  "uuid",
-  "uuid.uuid4",
   "uwsgi",
   "uwsgi.reload",
-  "vcr",
-  "vcr.use_cassette",
   "views.TranslationFileDownload.as_view",
   "views.TranslationFileListView.as_view",
   "views.TranslationFormView.as_view",
-  "views.translate_text",
-  "zipfile",
-  "zipfile.ZipFile"
+  "views.translate_text"
  ],
  "deps": {
   "datetime": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "django": [],
+  "filecmp": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "hashlib": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "importlib": [
+   "importlib/conda-forge/linux-64/importlib-1.0.4-py26_0",
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -154,7 +95,26 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "polib": [
+   "polib/conda-forge/noarch/polib-1.0.7-py_0",
+   "polib/conda-forge/noarch/polib-1.1.0-pyh9f0ad1d_0",
+   "polib/conda-forge/noarch/polib-1.1.1-pyhd8ed1ab_0"
+  ],
   "re": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "requests": [
+   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
+   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0",
+   "requests/conda-forge/linux-64/requests-2.12.0-py35_0",
+   "requests/conda-forge/noarch/requests-2.23.0-pyh8c360ce_2",
+   "requests/conda-forge/noarch/requests-2.24.0-pyh9f0ad1d_0",
+   "requests/conda-forge/noarch/requests-2.25.0-pyhd3deb0d_0",
+   "requests/conda-forge/noarch/requests-2.25.1-pyhd3deb0d_0",
+   "requests/conda-forge/noarch/requests-2.26.0-pyhd8ed1ab_0"
+  ],
+  "shutil": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -167,6 +127,31 @@
    "six/conda-forge/linux-64/six-1.10.0-py34_1",
    "six/conda-forge/noarch/six-1.14.0-py_1",
    "six/conda-forge/noarch/six-1.16.0-pyh6c4a22f_0"
+  ],
+  "tempfile": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "unicodedata": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "urllib": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "uuid": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "vcr": [
+   "vcrpy/conda-forge/linux-64/vcrpy-3.0.0-py36_0",
+   "vcrpy/conda-forge/noarch/vcrpy-4.0.2-py_0",
+   "vcrpy/conda-forge/noarch/vcrpy-4.1.1-py_0"
+  ],
+  "zipfile": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ]
  }
 }
