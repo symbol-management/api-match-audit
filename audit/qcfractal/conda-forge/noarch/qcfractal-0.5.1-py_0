@@ -2,6 +2,11 @@
  "bad": [
   "Data",
   "Meta",
+  "bson",
+  "bson.ObjectId",
+  "bson.errors",
+  "bson.json_util.dumps",
+  "bson.objectid.ObjectId",
   "cleanup",
   "cli_utils.argparse_config_merge",
   "cli_utils.import_module",
@@ -12,14 +17,44 @@
   "collections.abc.Iterable",
   "collections.defaultdict",
   "common_models.Molecule.from_data",
+  "concurrent.futures.ProcessPoolExecutor",
+  "cryptography.hazmat.backends.default_backend",
+  "cryptography.hazmat.primitives.asymmetric.rsa",
+  "cryptography.hazmat.primitives.asymmetric.rsa.generate_private_key",
+  "cryptography.hazmat.primitives.hashes",
+  "cryptography.hazmat.primitives.hashes.SHA256",
+  "cryptography.hazmat.primitives.serialization",
   "cryptography.hazmat.primitives.serialization.Encoding.PEM",
+  "cryptography.hazmat.primitives.serialization.NoEncryption",
   "cryptography.hazmat.primitives.serialization.PrivateFormat.TraditionalOpenSSL",
+  "cryptography.x509",
+  "cryptography.x509.BasicConstraints",
+  "cryptography.x509.CertificateBuilder",
+  "cryptography.x509.DNSName",
+  "cryptography.x509.IPAddress",
+  "cryptography.x509.Name",
+  "cryptography.x509.NameAttribute",
+  "cryptography.x509.SubjectAlternativeName",
+  "cryptography.x509.oid.NameOID",
   "cryptography.x509.oid.NameOID.COMMON_NAME",
   "dask.distributed.wait",
   "dataset.Dataset.DataModel",
+  "datetime",
+  "datetime.datetime",
+  "datetime.datetime.utcnow",
+  "datetime.timedelta",
+  "enum.Enum",
   "f",
+  "fireworks",
+  "fireworks.Firework",
+  "fireworks.PyTask",
+  "fireworks.core.rocket_launcher",
+  "fireworks.core.rocket_launcher.rapidfire",
   "func",
+  "hashlib",
   "hashlib.sha1",
+  "importlib",
+  "importlib.import_module",
   "interface.models.rest_models.CollectionGETBody.parse_raw",
   "interface.models.rest_models.CollectionPOSTBody.parse_raw",
   "interface.models.rest_models.KVStoreGETBody.parse_raw",
@@ -40,6 +75,11 @@
   "interface.models.rest_models.TaskQueueGETBody.parse_raw",
   "interface.models.rest_models.TaskQueuePOSTBody.parse_raw",
   "itertools",
+  "json",
+  "json.dump",
+  "json.dumps",
+  "json.load",
+  "json.loads",
   "me_models.CollectionORM.drop_collection",
   "me_models.CollectionORM.objects",
   "me_models.KVStoreORM.drop_collection",
@@ -93,6 +133,8 @@
   "mongoengine_socket.MongoengineSocket",
   "numpy.abs",
   "numpy.nan",
+  "operator",
+  "operator.attrgetter",
   "os.chdir",
   "os.getcwd",
   "os.name.lower",
@@ -105,11 +147,19 @@
   "portal.collections.ReactionDataset",
   "portal.data.get_molecule",
   "portal.dict_utils.replace_dict_keys",
+  "pytest",
+  "pytest.approx",
   "pytest.config.getoption",
+  "pytest.fixture",
+  "pytest.importorskip",
   "pytest.mark.parametrize",
   "pytest.mark.skip",
   "pytest.mark.skipif",
   "pytest.mark.xfail",
+  "pytest.param",
+  "pytest.raises",
+  "pytest.skip",
+  "pytest.xfail",
   "qcelemental.constants.conversion_factor",
   "qcfractal.interface.collections.Generic.from_server",
   "qcfractal.interface.collections.ReactionDataset.from_server",
@@ -153,6 +203,8 @@
   "qcfractal.testing.mongoengine_socket_fixture.remove_user",
   "qcfractal.testing.mongoengine_socket_fixture.verify_user",
   "qcfractal.testing.test_server.get_address",
+  "random",
+  "random.random",
   "records.RecordBase.Config",
   "rfunc",
   "signal.CTRL_BREAK_EVENT",
@@ -170,11 +222,6 @@
  "deps": {
   "_asyncio": [
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "_pytest": [
-   "pytest/conda-forge/linux-64/pytest-3.7.0-py27_0",
-   "pytest/conda-forge/linux-64/pytest-4.6.0-py37_0",
-   "pytest/conda-forge/linux-64/pytest-6.0.2-py37hc8dfbb8_0"
   ],
   "_version": [
    "diffusioncma/conda-forge/linux-64/diffusioncma-0.5.8-py37h0da4684_0"
@@ -199,18 +246,9 @@
   "bcrypt": [
    "bcrypt/conda-forge/linux-64/bcrypt-3.2.0-py36h97a6639_0"
   ],
-  "bson": [
-   "pymongo/conda-forge/linux-64/pymongo-3.11.4-py39he80948d_0",
-   "pymongo/conda-forge/win-64/pymongo-3.11.4-py39h415ef7b_0"
-  ],
   "collections": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "concurrent": [
-   "futures/conda-forge/linux-64/futures-3.2.0-py27_0",
-   "futures/conda-forge/osx-64/futures-3.3.0-py27h8c360ce_1",
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython"
   ],
   "contextlib": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -220,32 +258,7 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "cryptography": [],
-  "datetime": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "enum": [
-   "privy/conda-forge/noarch/privy-6.0.0-py_0",
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "fireworks": [
-   "fireworks/conda-forge/noarch/fireworks-1.9.4-py_0",
-   "fireworks/conda-forge/noarch/fireworks-1.9.5-py_0",
-   "fireworks/conda-forge/noarch/fireworks-1.9.5-py_1",
-   "fireworks/conda-forge/noarch/fireworks-1.9.6-py_0"
-  ],
   "glob": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "hashlib": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "importlib": [
-   "importlib/conda-forge/linux-64/importlib-1.0.4-py26_0",
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -253,10 +266,6 @@
    "ipaddress/conda-forge/noarch/ipaddress-1.0.22-py_1",
    "ipaddress/conda-forge/noarch/ipaddress-1.0.23-py_0",
    "privy/conda-forge/noarch/privy-6.0.0-py_0",
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "json": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -284,10 +293,6 @@
    "numpy/conda-forge/linux-64/numpy-1.18.4-py37h8960a57_0",
    "numpy/conda-forge/linux-64/numpy-1.19.2-py36h68c22af_1"
   ],
-  "operator": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "os": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -311,11 +316,6 @@
   "pymongo": [
    "pymongo/conda-forge/linux-64/pymongo-3.11.4-py39he80948d_0",
    "pymongo/conda-forge/win-64/pymongo-3.11.4-py39h415ef7b_0"
-  ],
-  "pytest": [
-   "pytest/conda-forge/linux-64/pytest-3.7.0-py27_0",
-   "pytest/conda-forge/linux-64/pytest-4.6.0-py37_0",
-   "pytest/conda-forge/linux-64/pytest-6.0.2-py37hc8dfbb8_0"
   ],
   "qcelemental": [
    "qcelemental/conda-forge/noarch/qcelemental-0.10.0-py_0",
@@ -370,10 +370,6 @@
    "qcportal/conda-forge/noarch/qcportal-0.7.1-py_0",
    "qcportal/conda-forge/noarch/qcportal-0.7.1-py_1",
    "qcportal/conda-forge/noarch/qcportal-0.8.0-py_0"
-  ],
-  "random": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "requests": [
    "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",

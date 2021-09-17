@@ -7,10 +7,13 @@
   "cls",
   "fn",
   "functools.partial",
+  "future.utils.with_metaclass",
   "graphs.LandmarkGraph",
   "graphs.MNNGraph",
   "graphs.TraditionalGraph",
   "graphs.kNNGraph",
+  "igraph",
+  "igraph.Graph",
   "matrix.dense_nonzero_discrete",
   "matrix.dense_set_diagonal",
   "matrix.elementwise_maximum",
@@ -25,6 +28,9 @@
   "matrix.sparse_nonzero_discrete",
   "matrix.sparse_set_diagonal",
   "matrix.to_array",
+  "numbers",
+  "numbers.Integral",
+  "numbers.Number",
   "numpy.arange",
   "numpy.exp",
   "numpy.inf",
@@ -38,10 +44,38 @@
   "numpy.zeros",
   "object.__init__",
   "pandas.SparseDataFrame",
+  "pickle",
+  "pickle.HIGHEST_PROTOCOL",
+  "pickle.dump",
+  "pickle.load",
+  "pygsp",
   "pygsp.graphs.Graph",
+  "pygsp.utils.build_logger",
+  "scipy.sparse",
+  "scipy.sparse.bsr_matrix",
+  "scipy.sparse.coo_matrix",
+  "scipy.sparse.csc_matrix",
+  "scipy.sparse.csr_matrix",
+  "scipy.sparse.dia_matrix",
+  "scipy.sparse.dok_matrix",
+  "scipy.sparse.hstack",
+  "scipy.sparse.issparse",
+  "scipy.sparse.lil_matrix",
+  "scipy.sparse.vstack",
+  "scipy.spatial.distance.cdist",
+  "scipy.spatial.distance.pdist",
+  "scipy.spatial.distance.squareform",
+  "sklearn.cluster.MiniBatchKMeans",
+  "sklearn.decomposition.PCA",
+  "sklearn.decomposition.TruncatedSVD",
+  "sklearn.neighbors.NearestNeighbors",
+  "sklearn.preprocessing.normalize",
+  "sklearn.utils.extmath.randomized_svd",
   "sklearn.utils.graph.graph_shortest_path",
   "sys",
   "sys.version.split",
+  "tasklogger",
+  "tasklogger.get_tasklogger",
   "utils.check_if_not",
   "utils.check_in",
   "utils.check_int",
@@ -51,10 +85,6 @@
  ],
  "deps": {
   "__future__": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "_pickle": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -80,18 +110,7 @@
    "deprecated/conda-forge/noarch/deprecated-1.2.7-py_0",
    "deprecated/conda-forge/noarch/deprecated-1.2.8-pyh9f0ad1d_0"
   ],
-  "future": [
-   "future/conda-forge/linux-64/future-0.16.0-py34_0"
-  ],
-  "igraph": [
-   "python-igraph/conda-forge/linux-64/python-igraph-0.9.1-py36h644ed5e_0",
-   "python-igraph/conda-forge/linux-64/python-igraph-0.9.5-py36h644ed5e_0"
-  ],
   "inspect": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "numbers": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -102,30 +121,6 @@
   ],
   "pandas": [
    "pandas/conda-forge/linux-64/pandas-1.2.2-py37h40f5888_0"
-  ],
-  "pickle": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "pygsp": [
-   "pygsp/conda-forge/noarch/pygsp-0.5.1-py_0"
-  ],
-  "scipy": [
-   "scipy/conda-forge/linux-64/scipy-0.17.1-np110py27_blas_openblas_202",
-   "scipy/conda-forge/linux-64/scipy-1.7.0-py37h29e03ee_0",
-   "scipy/conda-forge/linux-64/scipy-1.7.0-py37ha768fb6_1"
-  ],
-  "sklearn": [
-   "scikit-learn/conda-forge/linux-64/scikit-learn-0.17.1-np110py27_blas_openblas_200",
-   "scikit-learn/conda-forge/linux-64/scikit-learn-0.17.1-np110py35_blas_openblas_202",
-   "scikit-learn/conda-forge/linux-64/scikit-learn-0.17.1-np111py35_blas_openblas_202"
-  ],
-  "tasklogger": [
-   "tasklogger/conda-forge/noarch/tasklogger-0.3.0-py_0",
-   "tasklogger/conda-forge/noarch/tasklogger-0.4.0-py_0",
-   "tasklogger/conda-forge/noarch/tasklogger-0.4.2-py_0",
-   "tasklogger/conda-forge/noarch/tasklogger-1.0.0-py_0",
-   "tasklogger/conda-forge/noarch/tasklogger-1.1.0-pyhd8ed1ab_0"
   ],
   "warnings": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",

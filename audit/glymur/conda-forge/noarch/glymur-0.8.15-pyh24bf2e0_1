@@ -6,6 +6,7 @@
   "Segment",
   "_context_string",
   "_print_quantization_style",
+  "contextlib2.ExitStack",
   "core.ENUMERATED_COLORSPACE",
   "core.GREYSCALE",
   "core.OPJ_CINEMA_24_COMP",
@@ -19,10 +20,13 @@
   "core.SRGB",
   "core._COLORSPACE_MAP_DISPLAY.keys",
   "ctypes.POINTER",
+  "ctypes.Structure",
   "ctypes.addressof",
   "ctypes.byref",
   "ctypes.c_int32.from_address",
   "ctypes.windll.LoadLibrary",
+  "distutils.version.LooseVersion",
+  "gdal",
   "gdal.DecToDMS",
   "gdal.FileFromMemBuffer",
   "gdal.Open",
@@ -93,6 +97,7 @@
   "lib.openjpeg.setup_decoder",
   "lib.openjpeg.setup_encoder",
   "lib.openjpeg.version",
+  "lxml.etree",
   "numpy.abs",
   "numpy.frombuffer",
   "numpy.int",
@@ -107,21 +112,35 @@
   "os.getcwd",
   "os.path.exists",
   "os.path.getsize",
+  "osr",
   "osr.CoordinateTransformation",
   "osr.SpatialReference",
+  "parser",
+  "pkg_resources",
+  "pkg_resources.resource_filename",
+  "platform",
+  "platform.system",
+  "pprint",
+  "pprint.pformat",
+  "struct",
   "struct.pack",
   "struct.unpack",
   "struct.unpack_from",
   "sys",
+  "textwrap",
+  "textwrap.indent",
+  "uuid.UUID",
   "version.openjpeg_version",
   "version.openjpeg_version_tuple",
-  "warnings.warn"
+  "warnings.warn",
+  "xml.etree.ElementTree",
+  "xml.etree.ElementTree.ElementTree",
+  "xml.etree.ElementTree.ParseError",
+  "xml.etree.ElementTree.fromstring",
+  "xml.etree.ElementTree.parse",
+  "xml.etree.ElementTree.tostring"
  ],
  "deps": {
-  "_ctypes": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "argparse": [
    "argparse/conda-forge/osx-64/argparse-1.4.0-py26_0",
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -149,11 +168,6 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "contextlib2": [
-   "contextlib2/conda-forge/noarch/contextlib2-0.5.5-py_2",
-   "contextlib2/conda-forge/noarch/contextlib2-0.6.0-py_0",
-   "contextlib2/conda-forge/noarch/contextlib2-0.6.0.post1-py_0"
-  ],
   "copy": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -166,21 +180,9 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "distutils": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "gdal": [
-   "gdal/conda-forge/linux-64/gdal-3.0.3-py38hbb6b9fb_0",
-   "gdal/conda-forge/linux-64/gdal-3.0.4-py36hd60729c_6",
-   "gdal/conda-forge/linux-64/gdal-3.1.2-py36hcf62b00_2"
-  ],
   "io": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "lxml": [
-   "lxml/conda-forge/linux-64/lxml-4.2.6-py37h23eabaa_1000"
   ],
   "math": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -199,49 +201,11 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "osr": [
-   "gdal/conda-forge/linux-64/gdal-3.0.3-py38hbb6b9fb_0",
-   "gdal/conda-forge/linux-64/gdal-3.0.4-py36hd60729c_6",
-   "gdal/conda-forge/linux-64/gdal-3.1.2-py36hcf62b00_2"
-  ],
-  "parser": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "pkg_resources": [
-   "setuptools/conda-forge/linux-64/setuptools-40.6.1-py36_0",
-   "setuptools/conda-forge/linux-64/setuptools-46.3.0-py38h32f6830_0",
-   "setuptools/conda-forge/linux-64/setuptools-49.1.2-py38h32f6830_0"
-  ],
-  "platform": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "pprint": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "re": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "struct": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "textwrap": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "uuid": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "warnings": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "xml": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ]

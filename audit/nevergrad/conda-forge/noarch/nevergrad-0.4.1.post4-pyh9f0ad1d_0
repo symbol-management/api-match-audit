@@ -28,6 +28,8 @@
   "callbacks.ParametersLogger",
   "checker",
   "choice.BaseChoice",
+  "cma",
+  "cma.CMAEvolutionStrategy",
   "collections.abc.Iterable",
   "collections.defaultdict",
   "collections.deque",
@@ -36,6 +38,9 @@
   "common.testing.parametrized",
   "common.testing.printed_assert_equal",
   "common.testing.skip_error_on_systems",
+  "concurrent.futures",
+  "concurrent.futures.ProcessPoolExecutor",
+  "concurrent.futures.ThreadPoolExecutor",
   "container.Instrumentation",
   "core.ARCoating",
   "core.BenchmarkChunk",
@@ -87,6 +92,7 @@
   "datasets.get_dataset_filepath",
   "datasets.make_perceptron_data",
   "datasets.mocked_data",
+  "datetime",
   "deblock24",
   "decorators.Registry",
   "discretization.Encoder",
@@ -159,11 +165,19 @@
   "itertools",
   "itertools.chain.from_iterable",
   "maker",
+  "matplotlib",
+  "matplotlib.cm",
+  "matplotlib.legend.Legend",
+  "matplotlib.pyplot",
+  "matplotlib.pyplot.clf",
+  "matplotlib.pyplot.close",
+  "matplotlib.pyplot.savefig",
+  "matplotlib.pyplot.subplot",
+  "matplotlib.use",
   "mfunc",
   "mfunc.pareto_front",
   "mlfunctionlib.MLTuning",
   "moduler",
-  "mpl_toolkits.axes_grid1.make_axes_locatable",
   "mutation",
   "mutation.Crossover",
   "mutation.Jumping",
@@ -303,6 +317,9 @@
   "pruning.max_len",
   "pruning.min_len",
   "pytest.mark.parametrize",
+  "random",
+  "random.sample",
+  "random.seed",
   "recaster.Message",
   "recaster.MessagingThread",
   "recaster.SequentialRecastOptimizer",
@@ -332,6 +349,8 @@
   "sys",
   "sys.executable.split",
   "target_function",
+  "tempfile",
+  "tempfile.TemporaryDirectory",
   "testing._get_all_markdown_links",
   "testing.assert_markdown_links_not_broken",
   "testing.assert_set_equal",
@@ -373,11 +392,6 @@
   "utils.UidQueue",
   "utils._get_nash",
   "utils.sample_nash",
-  "uuid",
-  "warnings",
-  "warnings.catch_warnings",
-  "warnings.filterwarnings",
-  "warnings.simplefilter",
   "warnings.warn",
   "xpbase.Experiment",
   "xpbase.OptimizerSettings",
@@ -408,17 +422,9 @@
    "bayesian-optimization/conda-forge/noarch/bayesian-optimization-1.0.1-py_0",
    "bayesian-optimization/conda-forge/noarch/bayesian-optimization-1.1.0-py_0"
   ],
-  "cma": [
-   "cma/conda-forge/noarch/cma-2.7.0-py_0"
-  ],
   "collections": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "concurrent": [
-   "futures/conda-forge/linux-64/futures-3.2.0-py27_0",
-   "futures/conda-forge/osx-64/futures-3.3.0-py27h8c360ce_1",
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython"
   ],
   "contextlib": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -429,10 +435,6 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "ctypes": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "datetime": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -489,9 +491,7 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "matplotlib": [
-   "matplotlib-base/conda-forge/linux-64/matplotlib-base-3.1.1-py37hfd891ef_0",
-   "matplotlib-base/conda-forge/linux-64/matplotlib-base-3.1.1-py38h250f245_2",
+  "mpl_toolkits": [
    "matplotlib/conda-forge/linux-64/matplotlib-1.5.3-np111py34_0"
   ],
   "nevergrad": [
@@ -537,10 +537,6 @@
    "pytest/conda-forge/linux-64/pytest-4.6.0-py37_0",
    "pytest/conda-forge/linux-64/pytest-6.0.2-py37hc8dfbb8_0"
   ],
-  "random": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "re": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -575,10 +571,6 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "tempfile": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "threading": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -605,6 +597,14 @@
    "typing_extensions/conda-forge/noarch/typing_extensions-3.7.4.3-py_0"
   ],
   "unittest": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "uuid": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "warnings": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ]

@@ -26,7 +26,9 @@
   "colcon_core.subprocess.check_output",
   "colcon_core.task.run",
   "environment_callback",
+  "flake8.LOG",
   "flake8.LOG.setLevel",
+  "flake8.api.legacy.get_style_guide",
   "get_makefile_targets",
   "get_variable_from_cmake_cache",
   "os.cpu_count",
@@ -35,18 +37,18 @@
   "os.path.getmtime",
   "os.path.isfile",
   "os.sched_getaffinity",
+  "pathlib.Path",
+  "pkg_resources.parse_version",
+  "pytest",
+  "pytest.fixture",
   "scspell.Report",
   "scspell.SCSPELL_BUILTIN_DICT",
   "scspell.spell_check",
   "str.lstrip",
-  "sys"
+  "sys",
+  "xml.etree.ElementTree.ElementTree"
  ],
  "deps": {
-  "_pytest": [
-   "pytest/conda-forge/linux-64/pytest-3.7.0-py27_0",
-   "pytest/conda-forge/linux-64/pytest-4.6.0-py37_0",
-   "pytest/conda-forge/linux-64/pytest-6.0.2-py37hc8dfbb8_0"
-  ],
   "argcomplete": [
    "argcomplete/conda-forge/noarch/argcomplete-1.10.0-py_0",
    "argcomplete/conda-forge/noarch/argcomplete-1.10.1-py_0",
@@ -71,14 +73,6 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "flake8": [
-   "flake8/conda-forge/noarch/flake8-3.8.1-pyh9f0ad1d_0",
-   "flake8/conda-forge/noarch/flake8-3.8.2-pyh9f0ad1d_0",
-   "flake8/conda-forge/noarch/flake8-3.8.3-py_1",
-   "flake8/conda-forge/noarch/flake8-3.8.3-pyh9f0ad1d_0",
-   "flake8/conda-forge/noarch/flake8-3.8.4-py_0",
-   "flake8/conda-forge/noarch/flake8-3.9.1-pyhd8ed1ab_0"
-  ],
   "logging": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -91,21 +85,6 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "pathlib": [
-   "pathlib/conda-forge/noarch/pathlib-1.0.1-py_1",
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "pkg_resources": [
-   "setuptools/conda-forge/linux-64/setuptools-40.6.1-py36_0",
-   "setuptools/conda-forge/linux-64/setuptools-46.3.0-py38h32f6830_0",
-   "setuptools/conda-forge/linux-64/setuptools-49.1.2-py38h32f6830_0"
-  ],
-  "pytest": [
-   "pytest/conda-forge/linux-64/pytest-3.7.0-py27_0",
-   "pytest/conda-forge/linux-64/pytest-4.6.0-py37_0",
-   "pytest/conda-forge/linux-64/pytest-6.0.2-py37hc8dfbb8_0"
-  ],
   "re": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -115,10 +94,6 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "subprocess": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "xml": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ]
