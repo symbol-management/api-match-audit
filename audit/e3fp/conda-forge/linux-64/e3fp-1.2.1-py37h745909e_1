@@ -20,9 +20,15 @@
   "array_ops.make_transform_matrix",
   "array_ops.project_to_plane",
   "array_ops.rotate_angles",
+  "ast",
+  "ast.literal_eval",
   "cPickle",
   "collections.defaultdict",
   "concat",
+  "concurrent.futures",
+  "configparser.DuplicateSectionError",
+  "configparser.NoSectionError",
+  "configparser.SafeConfigParser",
   "counts_method",
   "dep_method",
   "dep_method.__doc__",
@@ -48,13 +54,20 @@
   "functools.reduce",
   "get_first_unique_tuple_inds",
   "get_function",
+  "glob",
+  "glob.glob",
+  "h5py",
   "itertools",
   "itertools.chain.from_iterable",
   "mmh3",
   "mmh3.hash",
+  "mock",
   "mol_to_standardised_mol",
   "mol_type",
+  "mpi4py",
   "new_class",
+  "numba",
+  "numba.jit",
   "numpy.arange",
   "numpy.arccos",
   "numpy.bool",
@@ -83,7 +96,25 @@
   "os.path.isfile",
   "os.remove",
   "os.unlink",
+  "pickle",
+  "pickle.HIGHEST_PROTOCOL",
+  "pickle.dump",
+  "pickle.load",
+  "python_utilities",
+  "python_utilities.io_tools.HDF5Buffer",
+  "python_utilities.io_tools.smart_open",
+  "python_utilities.io_tools.touch_dir",
+  "python_utilities.parallel",
+  "python_utilities.parallel.ALL_PARALLEL_MODES",
+  "python_utilities.parallel.Parallelizer",
+  "python_utilities.parallel.make_data_iterator",
+  "python_utilities.scripting.setup_logging",
+  "random",
+  "random.shuffle",
+  "rdkit",
+  "rdkit.Chem",
   "rdkit.Chem.AddHs",
+  "rdkit.Chem.AllChem",
   "rdkit.Chem.AllChem.CalcExactMolWt",
   "rdkit.Chem.AllChem.CalcNumRotatableBonds",
   "rdkit.Chem.AllChem.EmbedMultipleConfs",
@@ -102,22 +133,40 @@
   "rdkit.Chem.Mol",
   "rdkit.Chem.MolFromMol2File",
   "rdkit.Chem.MolFromSmiles",
+  "rdkit.Chem.PropertyMol",
+  "rdkit.Chem.PropertyMol.PropertyMol",
   "rdkit.Chem.RemoveHs",
   "rdkit.Chem.SDWriter",
   "rdkit.Chem.SanitizeMol",
+  "rdkit.DataStructs.cDataStructs.ExplicitBitVect",
+  "rdkit.DataStructs.cDataStructs.SparseBitVect",
   "rdkit_fp_type",
+  "scipy",
+  "scipy.__version__",
   "scipy.corrcoef",
+  "scipy.sparse.csr_matrix",
+  "scipy.sparse.issparse",
+  "scipy.sparse.vstack",
+  "scipy.spatial.distance.cdist",
+  "scipy.spatial.distance.pdist",
+  "scipy.spatial.distance.squareform",
   "scipy.sqrt",
   "signed_to_unsigned_int",
+  "subprocess",
+  "subprocess.PIPE",
+  "subprocess.Popen",
   "sys",
+  "tempfile",
+  "tempfile.mkstemp",
+  "unittest",
+  "unittest.TestCase",
+  "unittest.main",
+  "unittest.mock",
+  "unittest.mock.patch",
   "warnings.warn"
  ],
  "deps": {
   "__future__": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "_pickle": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -126,42 +175,13 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "ast": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "backports": [
-   "configparser/conda-forge/noarch/configparser-5.0.0-py_0"
-  ],
   "collections": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "concurrent": [
-   "futures/conda-forge/linux-64/futures-3.2.0-py27_0",
-   "futures/conda-forge/osx-64/futures-3.3.0-py27h8c360ce_1",
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "configparser": [
-   "configparser/conda-forge/linux-64/configparser-3.7.1-py27_1",
-   "configparser/conda-forge/noarch/configparser-5.0.0-py_0",
-   "configparser/conda-forge/noarch/configparser-5.0.1-py_0",
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "copy": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "glob": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "h5py": [
-   "h5py/conda-forge/linux-64/h5py-2.10.0-nompi_py37hf7afa78_105",
-   "h5py/conda-forge/linux-64/h5py-2.6.0-np111py34_4",
-   "h5py/conda-forge/linux-64/h5py-2.7.0-np113py36_1"
   ],
   "inspect": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -171,23 +191,9 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "mock": [
-   "mock/conda-forge/linux-64/mock-2.0.0-py27_1000",
-   "mock/conda-forge/linux-64/mock-3.0.3-py37_0"
-  ],
-  "mpi4py": [
-   "mpi4py/conda-forge/linux-64/mpi4py-2.0.0-py35_2",
-   "mpi4py/conda-forge/linux-64/mpi4py-3.0.3-py36hbfda36e_2",
-   "mpi4py/conda-forge/linux-64/mpi4py-3.0.3-py37h029bd4c_2"
-  ],
   "ntpath": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "numba": [
-   "numba/conda-forge/linux-64/numba-0.38.1-py36_0",
-   "numba/conda-forge/linux-64/numba-0.40.0-py35hf8a1672_0",
-   "numba/conda-forge/linux-64/numba-0.41.0-py27h637b7d7_1000"
   ],
   "numpy": [
    "numpy/conda-forge/linux-64/numpy-1.17.5-py36h95a1406_0",
@@ -197,41 +203,11 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "pickle": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "python_utilities": [
-   "sdaxen_python_utilities/conda-forge/noarch/sdaxen_python_utilities-0.1.4-pyh9f0ad1d_0",
-   "sdaxen_python_utilities/conda-forge/noarch/sdaxen_python_utilities-0.1.4-pyhd3deb0d_0"
-  ],
-  "random": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "rdkit": [
-   "rdkit/conda-forge/linux-64/rdkit-2018.09.3-py27h9c20d5c_0",
-   "rdkit/conda-forge/linux-64/rdkit-2019.03.4-py37hb31dc5d_1",
-   "rdkit/conda-forge/linux-64/rdkit-2020.09.4-py39hccf6a74_0"
-  ],
   "re": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "scipy": [
-   "scipy/conda-forge/linux-64/scipy-0.17.1-np110py27_blas_openblas_202",
-   "scipy/conda-forge/linux-64/scipy-1.7.0-py37h29e03ee_0",
-   "scipy/conda-forge/linux-64/scipy-1.7.0-py37ha768fb6_1"
-  ],
   "standardiser": [],
-  "subprocess": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "tempfile": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "test": [
    "abtem/conda-forge/noarch/abtem-1.0.0b11-pyhd8ed1ab_0",
    "abtem/conda-forge/noarch/abtem-1.0.0b11-pyhd8ed1ab_1",
@@ -383,10 +359,6 @@
    "wildmeshing/conda-forge/linux-64/wildmeshing-0.1.1-py36hbff90af_1",
    "wsproto/conda-forge/noarch/wsproto-0.13.0-py_0",
    "wsproto/conda-forge/noarch/wsproto-0.14.0-py_0"
-  ],
-  "unittest": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "warnings": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",

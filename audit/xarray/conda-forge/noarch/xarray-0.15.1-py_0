@@ -11,6 +11,12 @@
   "Nio",
   "NumpyIndexingAdapter",
   "Other",
+  "PseudoNetCDF",
+  "PseudoNetCDF.PseudoNetCDFDimension",
+  "PseudoNetCDF.PseudoNetCDFFile",
+  "PseudoNetCDF.PseudoNetCDFVariable",
+  "PseudoNetCDF.pncopen",
+  "PseudoNetCDF.pncwrite",
   "Subclass",
   "UnreliableArray",
   "Variable",
@@ -454,6 +460,9 @@
   "parallel_add",
   "parallel_identity",
   "pdcompat.Panel",
+  "platform",
+  "platform.machine",
+  "platform.uname",
   "plot._infer_line_data",
   "plotfunc",
   "plotfunc.__doc__",
@@ -486,22 +495,33 @@
   "selkeys",
   "set.intersection",
   "set_cdms2_attrs",
+  "shutil",
+  "shutil.rmtree",
   "stack_negative",
   "stackable",
   "store_open",
   "str.maketrans",
   "struct.calcsize",
+  "subprocess",
+  "subprocess.PIPE",
+  "subprocess.Popen",
   "subset",
   "summarize_variable",
   "summarizer",
   "sys",
   "t",
+  "tempfile",
+  "tempfile.mkdtemp",
   "test_coding_times._all_cftime_date_types",
   "test_indexer",
   "test_sel",
   "time",
   "transpose",
   "twice",
+  "unittest.mock",
+  "unittest.mock.MagicMock",
+  "unittest.mock.Mock",
+  "unittest.mock.call",
   "utils.NDArrayMixin",
   "utils.NdimSizeLenMixin",
   "utils.ReprObject",
@@ -550,6 +570,7 @@
   "xarray.tests.has_nc_time_axis",
   "xarray.tests.has_netCDF4",
   "xarray.tests.has_scipy",
+  "xarray.tests.mock.patch",
   "xarray.tests.mock.patch.object",
   "xarray.tests.requires_bottleneck",
   "xarray.tests.requires_cfgrib",
@@ -575,10 +596,6 @@
   "zarr.Blosc"
  ],
  "deps": {
-  "PseudoNetCDF": [
-   "pseudonetcdf/conda-forge/noarch/pseudonetcdf-3.0.0-py_0",
-   "pseudonetcdf/conda-forge/noarch/pseudonetcdf-3.0.1-py_0"
-  ],
   "_pickle": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -799,10 +816,6 @@
    "setuptools/conda-forge/linux-64/setuptools-46.3.0-py38h32f6830_0",
    "setuptools/conda-forge/linux-64/setuptools-49.1.2-py38h32f6830_0"
   ],
-  "platform": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "preprocess": [
    "preprocess/conda-forge/noarch/preprocess-1.2.3-py_1"
   ],
@@ -845,20 +858,8 @@
    "seaborn/conda-forge/noarch/seaborn-0.10.1-py_0",
    "seaborn/conda-forge/noarch/seaborn-0.9.0-py_0"
   ],
-  "shutil": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "sparse": [],
   "struct": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "subprocess": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "tempfile": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -884,10 +885,6 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "unicodedata": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "unittest": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],

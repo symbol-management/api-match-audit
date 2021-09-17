@@ -15,6 +15,8 @@
   "at",
   "atexit",
   "binding.parse_assembly",
+  "cProfile",
+  "cProfile.Profile",
   "cfunc",
   "check",
   "check_constant",
@@ -23,9 +25,33 @@
   "checker",
   "cls",
   "collections.defaultdict",
+  "contextlib",
+  "contextlib.contextmanager",
+  "ctypes",
+  "ctypes.ArgumentError",
+  "ctypes.CDLL",
+  "ctypes.CFUNCTYPE",
   "ctypes.POINTER",
+  "ctypes.Structure",
   "ctypes.addressof",
   "ctypes.byref",
+  "ctypes.c_bool",
+  "ctypes.c_char_p",
+  "ctypes.c_int",
+  "ctypes.c_int32",
+  "ctypes.c_longlong",
+  "ctypes.c_size_t",
+  "ctypes.c_uint",
+  "ctypes.c_uint64",
+  "ctypes.c_ulonglong",
+  "ctypes.c_void_p",
+  "ctypes.cast",
+  "ctypes.create_string_buffer",
+  "ctypes.py_object",
+  "ctypes.string_at",
+  "ctypes.util.find_library",
+  "enum",
+  "enum.IntEnum",
   "f",
   "faulthandler",
   "ffi.LLVMContextRef",
@@ -379,6 +405,8 @@
   "func2",
   "functools.partial",
   "gc",
+  "graphviz",
+  "graphviz.Source",
   "imap",
   "instructions.AllocaInstr",
   "instructions.AtomicRMW",
@@ -409,11 +437,20 @@
   "io.StringIO",
   "itertools",
   "itertools.imap",
+  "llvmlite.binding.ObjectFileRef.from_data",
+  "llvmlite.binding.Target.from_default_triple",
+  "llvmlite.binding.Target.from_triple",
   "llvmlite.binding.create_target_library_info",
   "llvmlite.binding.ffi.lib._name",
+  "llvmlite.ir.Constant.literal_array",
+  "llvmlite.ir.Constant.literal_struct",
   "llvmlite.tests.__init__.discover_tests",
   "llvmlite.tests.__init__.msg",
   "llvmlite.tests.__init__.run_tests",
+  "locale",
+  "locale.Error",
+  "locale.LC_ALL",
+  "locale.setlocale",
   "long",
   "meta",
   "metaclass",
@@ -422,43 +459,82 @@
   "os.environ.get",
   "passmanagers.FunctionPassManager",
   "passmanagers.ModulePassManager",
+  "pickle",
+  "pickle.dumps",
+  "pickle.loads",
+  "platform",
+  "platform.machine",
+  "platform.python_implementation",
+  "platform.system",
   "run_tests_real",
+  "six.PY2",
+  "six.integer_types",
   "st1",
   "st2",
+  "string",
+  "string.ascii_letters",
+  "string.digits",
+  "struct",
   "struct.pack",
   "struct.unpack",
+  "subprocess",
+  "subprocess.PIPE",
+  "subprocess.Popen",
+  "subprocess.check_call",
   "sys",
   "sys.gettotalrefcount",
   "sys.meta_path.append",
   "sys.modules.__file__",
   "sys.platform.startswith",
   "targets.TargetData",
+  "threading",
   "time",
   "type.__new__",
+  "types",
   "types.ArrayType",
   "types.ClassType",
   "types.DoubleType",
   "types.FloatType",
+  "types.FunctionType",
   "types.IdentifiedStructType",
   "types.IntType",
   "types.LiteralStructType",
   "types.MetaDataType",
+  "types.MethodType",
+  "types.ModuleType",
   "types.PointerType",
   "types.VoidType",
   "unicode",
+  "unittest",
+  "unittest.TestCase",
+  "unittest.TestLoader",
+  "unittest.TestSuite",
+  "unittest.TextTestRunner",
+  "unittest.main",
+  "unittest.result",
+  "unittest.result.TestResult",
   "unittest.result.add_results",
   "unittest.result.buffer",
   "unittest.result.errors",
   "unittest.result.expectedFailures",
+  "unittest.result.failfast",
   "unittest.result.failures",
   "unittest.result.skipped",
   "unittest.result.stream",
   "unittest.result.stream.getvalue",
   "unittest.result.testsRun",
   "unittest.result.unexpectedSuccesses",
+  "unittest.runner",
+  "unittest.runner.TextTestResult",
+  "unittest.runner.TextTestRunner",
   "unittest.runner._makeResult",
   "unittest.runner.buffer",
   "unittest.runner.failfast",
+  "unittest.signals",
+  "unittest.signals.installHandler",
+  "unittest.signals.registerResult",
+  "unittest.skipIf",
+  "unittest.skipUnless",
   "values.Constant",
   "values.DIValue",
   "values.Function",
@@ -479,23 +555,7 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "_ctypes": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "_pickle": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "cProfile": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "collections": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "contextlib": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -503,39 +563,11 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "ctypes": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "enum": [
-   "privy/conda-forge/noarch/privy-6.0.0-py_0",
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "functools": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "graphviz": [
-   "python-graphviz/conda-forge/noarch/python-graphviz-0.11.1-py_1",
-   "python-graphviz/conda-forge/noarch/python-graphviz-0.12-py_0",
-   "python-graphviz/conda-forge/noarch/python-graphviz-0.13-py_0",
-   "python-graphviz/conda-forge/noarch/python-graphviz-0.13.2-py_0",
-   "python-graphviz/conda-forge/noarch/python-graphviz-0.15-pyhd3deb0d_0",
-   "python-graphviz/conda-forge/noarch/python-graphviz-0.16-pyh243d235_2",
-   "python-graphviz/conda-forge/noarch/python-graphviz-0.16-pyhd3deb0d_0",
-   "python-graphviz/conda-forge/noarch/python-graphviz-0.16-pyhd3deb0d_1",
-   "python-graphviz/conda-forge/noarch/python-graphviz-0.8.4-py_1003"
-  ],
   "io": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "llvmlite": [
-   "llvmlite/conda-forge/linux-64/llvmlite-0.26.0-py37hd28b015_0",
-   "llvmlite/conda-forge/linux-64/llvmlite-0.35.0-py37h9d7f4d0_1"
-  ],
-  "locale": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -559,53 +591,11 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "pickle": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "platform": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "re": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "six": [
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0",
-   "lldb/conda-forge/linux-64/lldb-6.0.0-py35_0",
-   "privy/conda-forge/noarch/privy-6.0.0-py_0",
-   "six/conda-forge/linux-64/six-1.10.0-py34_0",
-   "six/conda-forge/linux-64/six-1.10.0-py34_1",
-   "six/conda-forge/noarch/six-1.14.0-py_1",
-   "six/conda-forge/noarch/six-1.16.0-pyh6c4a22f_0"
-  ],
-  "string": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "struct": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "subprocess": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "textwrap": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "threading": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "types": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "unittest": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
