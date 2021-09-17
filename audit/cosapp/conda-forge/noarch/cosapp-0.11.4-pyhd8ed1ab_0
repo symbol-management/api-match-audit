@@ -36,8 +36,12 @@
   "add_unknown",
   "advanced_filter",
   "append",
+  "array",
   "array.ArrayType",
   "assert_type",
+  "base64",
+  "base64.b64decode",
+  "base64.b64encode",
   "branin",
   "branin_low_fidelity",
   "build_d3_json",
@@ -52,6 +56,9 @@
   "collections.abc.MutableSequence",
   "collections.abc.MutableSet",
   "conditions",
+  "configparser.DEFAULTSECT",
+  "configparser.RawConfigParser",
+  "configparser._UNSET",
   "connect",
   "connectors_to_visJS",
   "constrained",
@@ -153,9 +160,30 @@
   "io.StringIO",
   "is_valid",
   "itertools",
+  "json",
+  "json.JSONDecodeError",
+  "json.JSONEncoder",
+  "json.dump",
+  "json.dumps",
+  "json.load",
   "license.endswith",
   "license.strip",
   "local_properties",
+  "logging",
+  "logging.CRITICAL",
+  "logging.DEBUG",
+  "logging.ERROR",
+  "logging.Filter",
+  "logging.Formatter",
+  "logging.Handler",
+  "logging.INFO",
+  "logging.LogRecord",
+  "logging.StreamHandler",
+  "logging.WARNING",
+  "logging.getLogRecordFactory",
+  "logging.getLogger",
+  "logging.handlers.RotatingFileHandler",
+  "logging.log",
   "make_case",
   "make_triang",
   "message",
@@ -251,7 +279,6 @@
   "pytest.mark.notebook",
   "pytest.mark.parametrize",
   "pytest.mark.skip",
-  "pythonfmu.Fmi2Causality",
   "pythonfmu.Fmi2Causality.input",
   "pythonfmu.Fmi2Causality.local",
   "pythonfmu.Fmi2Causality.output",
@@ -261,9 +288,7 @@
   "pythonfmu.Fmi2Status.fatal",
   "pythonfmu.Fmi2Status.ok",
   "pythonfmu.Fmi2Status.warning",
-  "pythonfmu.Fmi2Variability",
   "pythonfmu.Fmi2Variability.tunable",
-  "pythonfmu.FmuBuilder",
   "pythonfmu.FmuBuilder._add_variables",
   "pythonfmu.FmuBuilder._get_default_value",
   "pythonfmu.FmuBuilder._get_default_variables",
@@ -271,7 +296,6 @@
   "pythonfmu.FmuBuilder._get_project_folder",
   "pythonfmu.FmuBuilder._get_script_file",
   "pythonfmu.FmuBuilder._get_variable_type",
-  "pythonfmu.FmuBuilder.build_FMU",
   "pythonfmu.FmuBuilder.generate_fmu_facade",
   "pythonfmu.FmuBuilder.to_fmu",
   "raise_ValueError",
@@ -284,37 +308,10 @@
   "record_dt",
   "res",
   "restore_connector",
-  "scipy",
-  "scipy.interpolate",
-  "scipy.linalg",
-  "scipy.linalg.LinAlgError",
-  "scipy.linalg.LinAlgWarning",
-  "scipy.linalg.cholesky",
-  "scipy.linalg.inv",
-  "scipy.linalg.lu_factor",
-  "scipy.linalg.lu_solve",
-  "scipy.linalg.qr",
-  "scipy.linalg.solve",
-  "scipy.linalg.solve_triangular",
-  "scipy.linalg.svd",
-  "scipy.optimize",
-  "scipy.optimize.OptimizeResult",
-  "scipy.optimize.minimize",
-  "scipy.optimize.root",
-  "scipy.sparse.csc_matrix",
-  "scipy.sparse.linalg.spsolve",
   "scipy.spatial.cKDTree",
-  "scipy.spatial.distance.squareform",
-  "scipy.special",
   "scipy.special.erf",
   "scipy.special.erfc",
-  "scipy.special.factorial",
-  "scipy.stats",
-  "scipy.stats.norm",
   "scipy.stats.norm.ppf",
-  "shutil",
-  "shutil.copy2",
-  "shutil.rmtree",
   "slot",
   "socket.AF_INET",
   "socket.SOCK_STREAM",
@@ -324,18 +321,11 @@
   "str_der",
   "struct.pack",
   "struct.unpack",
-  "subprocess",
-  "subprocess.PIPE",
-  "subprocess.Popen",
   "sys",
   "sys.path.append",
   "sys.path.remove",
   "system_class",
   "system_cls",
-  "tempfile",
-  "tempfile.NamedTemporaryFile",
-  "tempfile.gettempdir",
-  "tempfile.mkdtemp",
   "time",
   "to_visJS",
   "transfer",
@@ -344,6 +334,9 @@
   "update_one_connection",
   "value_str",
   "vars.items",
+  "warnings",
+  "warnings.catch_warnings",
+  "warnings.simplefilter",
   "warnings.warn",
   "weakref.proxy",
   "weakref.ref",
@@ -366,25 +359,7 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "array": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "backports": [
-   "configparser/conda-forge/noarch/configparser-5.0.0-py_0"
-  ],
-  "base64": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "collections": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "configparser": [
-   "configparser/conda-forge/linux-64/configparser-3.7.1-py27_1",
-   "configparser/conda-forge/noarch/configparser-5.0.0-py_0",
-   "configparser/conda-forge/noarch/configparser-5.0.1-py_0",
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -446,16 +421,8 @@
    "jinja2/conda-forge/noarch/jinja2-3.0.0-pyhd8ed1ab_0",
    "jinja2/conda-forge/noarch/jinja2-3.0.1-pyhd8ed1ab_0"
   ],
-  "json": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "jsonschema": [
    "jsonschema/conda-forge/noarch/jsonschema-3.2.0-pyhd8ed1ab_3"
-  ],
-  "logging": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "math": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -503,11 +470,31 @@
    "pytest/conda-forge/linux-64/pytest-4.6.0-py37_0",
    "pytest/conda-forge/linux-64/pytest-6.0.2-py37hc8dfbb8_0"
   ],
+  "pythonfmu": [
+   "pythonfmu/conda-forge/linux-64/pythonfmu-0.6.1-py39he80948d_0",
+   "pythonfmu/conda-forge/linux-64/pythonfmu-0.6.2-py39he80948d_0"
+  ],
   "re": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "scipy": [
+   "scipy/conda-forge/linux-64/scipy-1.7.0-py37h29e03ee_0",
+   "scipy/conda-forge/linux-64/scipy-1.7.0-py37ha768fb6_1"
+  ],
+  "shutil": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "socket": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "subprocess": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "tempfile": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -528,10 +515,6 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "uuid": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "warnings": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
