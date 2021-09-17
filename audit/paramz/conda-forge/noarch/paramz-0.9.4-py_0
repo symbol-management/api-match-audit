@@ -3,7 +3,6 @@
   "M",
   "O",
   "Stub",
-  "Test",
   "TestLikelihood",
   "a",
   "adjust",
@@ -24,14 +23,20 @@
   "climin.adadelta.Adadelta",
   "climin.adam.Adam",
   "climin.rprop.Rprop",
+  "collections",
+  "collections.OrderedDict",
   "collections.defaultdict",
   "collections.deque",
+  "copy",
   "copy._parent_index_",
   "copy._trigger_params_changed",
+  "copy.deepcopy",
   "core.observable_array.ObsAr",
   "core.parameter_core.Parameterizable",
   "core.parameter_core.Parameterizable.copy",
   "core.pickleable.Pickleable.__setstate__",
+  "datetime",
+  "datetime.datetime.now",
   "decorator.decorate",
   "err",
   "frmt",
@@ -50,6 +55,7 @@
   "matplotlib.pyplot",
   "matplotlib.pyplot.gca",
   "matplotlib.pyplot.plot",
+  "multiprocessing",
   "multiprocessing.Pool",
   "newfunc",
   "numbers.Number",
@@ -108,54 +114,39 @@
   "paramz.__init__._unpickle",
   "paramz.transformations.__fixed__.size",
   "paramz.transformations.__fixed__.tolist",
+  "pickle",
+  "pickle.PickleError",
+  "pickle.UnpicklingError",
+  "pickle.dump",
+  "pickle.load",
   "pickleable.Pickleable.__getstate__",
   "pickleable.Pickleable.__setstate__",
-  "re",
-  "re.Pattern",
-  "re._pattern_type",
-  "re.compile",
-  "re.match",
+  "pprint",
+  "pprint.pformat",
+  "pydot",
+  "pydot.Dot",
+  "pydot.Edge",
+  "pydot.Node",
   "ref",
+  "scipy.optimize",
+  "scipy.optimize.fmin",
+  "scipy.optimize.fmin_bfgs",
+  "scipy.optimize.fmin_l_bfgs_b",
+  "scipy.optimize.fmin_tnc",
   "sys",
   "sys.stdout.flush",
-  "tempfile",
-  "tempfile.TemporaryFile",
   "time",
   "transformations.__fixed__.size",
-  "unittest",
-  "unittest.TestCase",
-  "unittest.case.SkipTest",
-  "unittest.main",
   "util._inherit_doc",
   "warn_and_retry",
-  "warnings",
-  "warnings.catch_warnings",
-  "warnings.simplefilter",
   "warnings.warn",
   "weakref.ref"
  ],
  "deps": {
+  "Test": [
+   "netket/conda-forge/noarch/netket-3.0b2-pyhd8ed1ab_0"
+  ],
   "__future__": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "_pickle": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "collections": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "copy": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "datetime": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "multiprocessing": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -168,25 +159,7 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "pickle": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "pprint": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "pydot": [
-   "pydot/conda-forge/linux-64/pydot-1.4.1-py36hd000896_1003",
-   "pydot/conda-forge/linux-64/pydot-1.4.2-py38h578d9bd_0",
-   "pydot/conda-forge/noarch/pydot-1.2.3-py_0",
-   "pydot/conda-forge/noarch/pydot-1.2.4-py_0"
-  ],
-  "scipy": [
-   "scipy/conda-forge/linux-64/scipy-0.17.1-np110py27_blas_openblas_202",
-   "scipy/conda-forge/linux-64/scipy-1.7.0-py37h29e03ee_0",
-   "scipy/conda-forge/linux-64/scipy-1.7.0-py37ha768fb6_1"
-  ],
+  "re": [],
   "six": [
    "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
    "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0",
@@ -196,6 +169,18 @@
    "six/conda-forge/linux-64/six-1.10.0-py34_1",
    "six/conda-forge/noarch/six-1.14.0-py_1",
    "six/conda-forge/noarch/six-1.16.0-pyh6c4a22f_0"
+  ],
+  "tempfile": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "unittest": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "warnings": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "weakref": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",

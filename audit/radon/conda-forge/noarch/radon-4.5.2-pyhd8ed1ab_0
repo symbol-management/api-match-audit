@@ -18,10 +18,16 @@
   "cc_rank",
   "cc_visit",
   "cls",
+  "codecs.BOM_UTF8",
   "codecs.lookup",
+  "codecs.open",
+  "collections",
   "collections.Iterable",
   "collections.Iterator",
+  "collections.abc",
   "collections.defaultdict",
+  "collections.namedtuple",
+  "colorama",
   "colorama.Fore.CYAN",
   "colorama.Fore.GREEN",
   "colorama.Fore.MAGENTA",
@@ -30,29 +36,62 @@
   "colorama.Fore.YELLOW",
   "colorama.Style.BRIGHT",
   "colorama.Style.RESET_ALL",
+  "colorama.init",
+  "configparser",
+  "configparser.ConfigParser",
+  "contextlib.contextmanager",
   "find_cookie",
+  "flake8_polyfill.options",
   "flake8_polyfill.options.no_assert",
   "flake8_polyfill.options.radon_max_cc",
+  "flake8_polyfill.options.register",
   "flake8_polyfill.options.show_closures",
+  "fnmatch",
+  "fnmatch.fnmatch",
   "get_type",
   "h_class",
   "h_visit",
+  "hashlib",
   "hashlib.md5",
+  "inspect",
+  "inspect.getargspec",
+  "inspect.getfullargspec",
   "io.StringIO",
   "io.TextIOWrapper",
   "io.open",
+  "locale",
+  "locale.getpreferredencoding",
   "log_result",
+  "mando.Program",
+  "math",
+  "math.ceil",
+  "math.log",
+  "math.radians",
+  "math.sin",
+  "math.sqrt",
   "max.upper",
   "meth",
   "mi_compute",
   "mi_rank",
   "mi_visit",
   "min.upper",
+  "nbformat",
+  "nbformat.NO_CONVERT",
+  "nbformat.read",
+  "operator",
+  "operator.attrgetter",
+  "operator.itemgetter",
   "os.path.exists",
   "os.path.isfile",
   "outstream",
+  "platform",
+  "platform.python_implementation",
+  "pytest",
+  "pytest.fixture",
+  "pytest.main",
   "pytest.mark.parametrize",
   "pytest.mark.skipif",
+  "pytest.raises",
   "radon.__init__.main",
   "radon.cli.__init__.CONFIG_SECTION_NAME",
   "radon.cli.__init__.Config",
@@ -91,55 +130,7 @@
   "xml.etree.cElementTree.tostring"
  ],
  "deps": {
-  "_pytest": [
-   "pytest/conda-forge/linux-64/pytest-3.7.0-py27_0",
-   "pytest/conda-forge/linux-64/pytest-4.6.0-py37_0",
-   "pytest/conda-forge/linux-64/pytest-6.0.2-py37hc8dfbb8_0"
-  ],
   "ast": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "backports": [
-   "configparser/conda-forge/noarch/configparser-5.0.0-py_0"
-  ],
-  "codecs": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "collections": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "colorama": [
-   "colorama/conda-forge/noarch/colorama-0.3.9-py_1",
-   "colorama/conda-forge/noarch/colorama-0.4.1-py_0",
-   "colorama/conda-forge/noarch/colorama-0.4.3-py_0",
-   "colorama/conda-forge/noarch/colorama-0.4.4-pyh9f0ad1d_0"
-  ],
-  "configparser": [
-   "configparser/conda-forge/linux-64/configparser-3.7.1-py27_1",
-   "configparser/conda-forge/noarch/configparser-5.0.0-py_0",
-   "configparser/conda-forge/noarch/configparser-5.0.1-py_0",
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "contextlib": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "flake8_polyfill": [
-   "flake8-polyfill/conda-forge/noarch/flake8-polyfill-1.0.2-py_0"
-  ],
-  "fnmatch": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "hashlib": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "inspect": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -151,43 +142,13 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "locale": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "mando": [
-   "mando/conda-forge/noarch/mando-0.6.4-py_0"
-  ],
-  "math": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "nbformat": [
-   "nbformat/conda-forge/noarch/nbformat-4.4.0-py_1",
-   "nbformat/conda-forge/noarch/nbformat-5.0.3-py_0",
-   "nbformat/conda-forge/noarch/nbformat-5.0.8-py_0",
-   "nbformat/conda-forge/noarch/nbformat-5.1.2-pyhd8ed1ab_1"
-  ],
   "ntpath": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "operator": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "os": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "platform": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "pytest": [
-   "pytest/conda-forge/linux-64/pytest-3.7.0-py27_0",
-   "pytest/conda-forge/linux-64/pytest-4.6.0-py37_0",
-   "pytest/conda-forge/linux-64/pytest-6.0.2-py37hc8dfbb8_0"
   ],
   "re": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
