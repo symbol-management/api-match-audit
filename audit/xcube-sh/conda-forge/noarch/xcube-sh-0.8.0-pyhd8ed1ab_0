@@ -8,13 +8,6 @@
   "itertools",
   "observer",
   "os.environ.get",
-  "psutil",
-  "psutil.Process",
-  "pyproj",
-  "pyproj.Transformer.from_crs",
-  "pyproj.crs.CRS.from_string",
-  "requests_oauthlib",
-  "requests_oauthlib.OAuth2Session",
   "sentinelhub.SentinelHub.METADATA",
   "sentinelhub.SentinelHub.METADATA.dataset_band_sample_type",
   "sentinelhub.SentinelHub.features_to_time_ranges",
@@ -22,60 +15,9 @@
   "sys",
   "sys.stdin.isatty",
   "time",
-  "typing.Any",
-  "typing.Callable",
-  "typing.Container",
-  "typing.Dict",
-  "typing.Iterable",
-  "typing.Iterator",
-  "typing.KeysView",
-  "typing.List",
-  "typing.Optional",
-  "typing.Sequence",
-  "typing.Tuple",
-  "typing.Union",
-  "urllib.parse",
-  "urllib.parse.urlparse",
   "warnings.warn",
-  "xarray",
-  "xarray.Dataset",
-  "xarray.open_zarr",
-  "xcube.constants.EXTENSION_POINT_CLI_COMMANDS",
-  "xcube.constants.EXTENSION_POINT_DATA_OPENERS",
-  "xcube.constants.EXTENSION_POINT_DATA_STORES",
-  "xcube.core.dsio.write_dataset",
-  "xcube.core.store.DataDescriptor",
-  "xcube.core.store.DataOpener",
-  "xcube.core.store.DataStore",
-  "xcube.core.store.DataStoreError",
-  "xcube.core.store.DatasetDescriptor",
-  "xcube.core.store.DefaultSearchMixin",
-  "xcube.core.store.TYPE_SPECIFIER_CUBE",
   "xcube.core.store.TYPE_SPECIFIER_CUBE.satisfies",
-  "xcube.core.store.VariableDescriptor",
-  "xcube.util.assertions.assert_condition",
-  "xcube.util.assertions.assert_given",
-  "xcube.util.assertions.assert_not_none",
-  "xcube.util.extension",
-  "xcube.util.extension.ExtensionRegistry",
-  "xcube.util.extension.import_component",
-  "xcube.util.jsonschema.JsonArraySchema",
-  "xcube.util.jsonschema.JsonBooleanSchema",
-  "xcube.util.jsonschema.JsonDateSchema",
-  "xcube.util.jsonschema.JsonDateSchema.new_range",
-  "xcube.util.jsonschema.JsonIntegerSchema",
-  "xcube.util.jsonschema.JsonNumberSchema",
-  "xcube.util.jsonschema.JsonObjectSchema",
-  "xcube.util.jsonschema.JsonStringSchema",
-  "xcube.util.perf.measure_time",
-  "xcube_sh.constants.CRS_ID_TO_URI.keys",
-  "yaml",
-  "yaml.dump",
-  "yaml.safe_load",
-  "zarr",
-  "zarr.LRUStoreCache",
-  "zarr.convenience.open_array",
-  "zarr.convenience.save_array"
+  "xcube_sh.constants.CRS_ID_TO_URI.keys"
  ],
  "deps": {
   "abc": [
@@ -129,6 +71,13 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "psutil": [
+   "psutil/conda-forge/linux-64/psutil-5.7.3-py39h38d8fee_0"
+  ],
+  "pyproj": [
+   "pyproj/conda-forge/linux-64/pyproj-2.1.3-py37h516909a_0",
+   "pyproj/conda-forge/linux-64/pyproj-2.3.0-py37h2fd02e8_0"
+  ],
   "random": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -143,13 +92,63 @@
    "requests/conda-forge/noarch/requests-2.25.1-pyhd3deb0d_0",
    "requests/conda-forge/noarch/requests-2.26.0-pyhd8ed1ab_0"
   ],
+  "requests_oauthlib": [
+   "requests-oauthlib/conda-forge/noarch/requests-oauthlib-1.0.0-py_1",
+   "requests-oauthlib/conda-forge/noarch/requests-oauthlib-1.1.0-pyh9f0ad1d_0",
+   "requests-oauthlib/conda-forge/noarch/requests-oauthlib-1.2.0-py_0",
+   "requests-oauthlib/conda-forge/noarch/requests-oauthlib-1.2.0-pyh9f0ad1d_1",
+   "requests-oauthlib/conda-forge/noarch/requests-oauthlib-1.3.0-pyh9f0ad1d_0"
+  ],
   "subprocess": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "typing": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "urllib": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "warnings": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "xarray": [
+   "xarray/conda-forge/linux-64/xarray-0.10.2-py36_0",
+   "xarray/conda-forge/noarch/xarray-0.12.0-py_0",
+   "xarray/conda-forge/noarch/xarray-0.13.0-py_0",
+   "xarray/conda-forge/noarch/xarray-0.14.1-py_0",
+   "xarray/conda-forge/noarch/xarray-0.15.0-py_0",
+   "xarray/conda-forge/noarch/xarray-0.15.1-py_0",
+   "xarray/conda-forge/noarch/xarray-0.16.0-py_0",
+   "xarray/conda-forge/noarch/xarray-0.16.1-py_0",
+   "xarray/conda-forge/noarch/xarray-0.16.2-pyhd8ed1ab_0",
+   "xarray/conda-forge/noarch/xarray-0.18.0-pyhd8ed1ab_0",
+   "xarray/conda-forge/noarch/xarray-0.18.2-pyhd8ed1ab_0"
+  ],
+  "xcube": [
+   "xcube/conda-forge/noarch/xcube-0.6.1-pyhd8ed1ab_0",
+   "xcube/conda-forge/noarch/xcube-0.8.0-pyhd8ed1ab_0",
+   "xcube/conda-forge/noarch/xcube-0.8.1-pyhd8ed1ab_0",
+   "xcube/conda-forge/noarch/xcube-0.8.2-pyhd8ed1ab_0"
+  ],
+  "yaml": [
+   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
+   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0",
+   "pyyaml/conda-forge/linux-64/pyyaml-3.11-py35_0",
+   "pyyaml/conda-forge/win-64/pyyaml-5.2-py36hfa6e2cd_0"
+  ],
+  "zarr": [
+   "zarr/conda-forge/linux-64/zarr-2.3.1-py27_0",
+   "zarr/conda-forge/noarch/zarr-2.2.0-py_1",
+   "zarr/conda-forge/noarch/zarr-2.7.1-pyhd8ed1ab_0",
+   "zarr/conda-forge/noarch/zarr-2.8.0-pyhd8ed1ab_1",
+   "zarr/conda-forge/noarch/zarr-2.8.0-pyhd8ed1ab_2",
+   "zarr/conda-forge/noarch/zarr-2.8.2-pyhd8ed1ab_0",
+   "zarr/conda-forge/noarch/zarr-2.8.3-pyhd8ed1ab_0",
+   "zarr/conda-forge/noarch/zarr-2.9.5-pyhd8ed1ab_0"
   ]
  }
 }
