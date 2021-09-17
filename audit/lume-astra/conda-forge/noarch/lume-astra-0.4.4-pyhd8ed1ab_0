@@ -12,15 +12,9 @@
   "archive.write_output_h5",
   "astra_distgen.run_astra_with_distgen",
   "datetime.timezone.utc",
-  "distgen.Generator",
-  "distgen.tools.update_nested_dict",
-  "distgen.writers.write_astra",
   "errno",
   "get_final_screen_name",
-  "h5py",
-  "h5py.File",
   "hashlib.blake2b",
-  "numbers.Number",
   "numpy.NAN",
   "numpy.abs",
   "numpy.empty",
@@ -32,7 +26,6 @@
   "numpy.random.normal",
   "numpy.sqrt",
   "numpy.string_",
-  "optparse.OptionParser",
   "os.chdir",
   "os.chmod",
   "os.getcwd",
@@ -52,36 +45,13 @@
   "parsers.parse_astra_input_file",
   "parsers.parse_astra_output_file",
   "parsers.parse_astra_phase_file",
-  "pmd_beamphysics.ParticleGroup",
-  "pmd_beamphysics.pmd_init",
-  "pmd_beamphysics.units.nice_array",
-  "pmd_beamphysics.units.nice_scale_prefix",
-  "pmd_beamphysics.units.read_dataset_and_unit_h5",
-  "pmd_beamphysics.units.unit",
-  "pmd_beamphysics.units.write_dataset_and_unit_h5",
   "run_astra",
-  "shutil",
-  "subprocess",
-  "subprocess.CalledProcessError",
-  "subprocess.PIPE",
-  "subprocess.Popen",
-  "subprocess.STDOUT",
-  "subprocess.TimeoutExpired",
-  "subprocess.call",
-  "subprocess.run",
   "sys",
-  "tempfile",
-  "tempfile.TemporaryDirectory",
   "tools.execute",
   "tools.execute2",
   "tools.fingerprint",
   "tools.full_path",
-  "traceback",
-  "traceback.format_exc",
-  "urllib.request",
-  "writers.write_namelists",
-  "yaml",
-  "yaml.safe_load"
+  "writers.write_namelists"
  ],
  "deps": {
   "_version": [
@@ -98,6 +68,16 @@
   "datetime": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "distgen": [
+   "distgen/conda-forge/noarch/distgen-0.1.0-py_0",
+   "distgen/conda-forge/noarch/distgen-0.4.0-py_0",
+   "distgen/conda-forge/noarch/distgen-0.4.5-pyhd8ed1ab_0"
+  ],
+  "h5py": [
+   "h5py/conda-forge/linux-64/h5py-2.10.0-nompi_py37hf7afa78_105",
+   "h5py/conda-forge/linux-64/h5py-2.6.0-np111py34_4",
+   "h5py/conda-forge/linux-64/h5py-2.7.0-np113py36_1"
   ],
   "inspect": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -120,10 +100,18 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "numbers": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "numpy": [
    "numpy/conda-forge/linux-64/numpy-1.17.5-py36h95a1406_0",
    "numpy/conda-forge/linux-64/numpy-1.18.4-py37h8960a57_0",
    "numpy/conda-forge/linux-64/numpy-1.19.2-py36h68c22af_1"
+  ],
+  "optparse": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "os": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -133,9 +121,41 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "pmd_beamphysics": [
+   "openpmd-beamphysics/conda-forge/noarch/openpmd-beamphysics-0.4.0-py_1",
+   "openpmd-beamphysics/conda-forge/noarch/openpmd-beamphysics-0.5.1-pyhd8ed1ab_0",
+   "openpmd-beamphysics/conda-forge/noarch/openpmd-beamphysics-0.5.2-pyhd8ed1ab_0",
+   "openpmd-beamphysics/conda-forge/noarch/openpmd-beamphysics-0.5.3-pyhd8ed1ab_0"
+  ],
   "re": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "shutil": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "subprocess": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "tempfile": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "traceback": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "urllib": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "yaml": [
+   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
+   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0",
+   "pyyaml/conda-forge/linux-64/pyyaml-3.11-py35_0",
+   "pyyaml/conda-forge/win-64/pyyaml-5.2-py36hfa6e2cd_0"
   ]
  }
 }
