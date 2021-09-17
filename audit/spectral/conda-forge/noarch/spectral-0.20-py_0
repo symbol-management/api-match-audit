@@ -8,6 +8,7 @@
   "ImageDraw",
   "KeyParser",
   "NullStdOut",
+  "OpenGL.GL",
   "OpenGL.GL.GL_ALPHA_BITS",
   "OpenGL.GL.GL_AMBIENT",
   "OpenGL.GL.GL_CLAMP",
@@ -85,15 +86,23 @@
   "OpenGL.GL.glVertexPointerf",
   "OpenGL.GL.glViewport",
   "OpenGL.GL.glget.glGetIntegerv",
+  "OpenGL.GLU",
   "OpenGL.GLU.gluLookAt",
   "OpenGL.GLU.gluPerspective",
+  "OpenGL.GLUT",
   "OpenGL.GLUT.glutBitmapString",
   "OpenGL.GLUT.glutInit",
   "P",
+  "PIL.Image",
+  "PIL.Image.fromarray",
+  "PIL.ImageDraw",
   "Params",
   "T",
   "__builtin__",
   "__builtin__.open",
+  "__future__.division",
+  "__future__.print_function",
+  "__future__.unicode_literals",
   "__name__.split",
   "_prepared_data_and_metadata",
   "_thread",
@@ -102,13 +111,17 @@
   "algorithms.ImageIterator",
   "algorithms.algorithms.TrainingClassSet",
   "apply_to_target",
+  "array",
   "array.array",
   "array.array.array",
   "bilfile.BilFile",
+  "builtins",
   "calc_stats",
   "check_wx_app",
   "classifiers.Classifier.classify",
+  "collections",
   "collections.Callable",
+  "colorsys",
   "compare",
   "create_mask",
   "detector",
@@ -129,8 +142,6 @@
   "get_rgb",
   "get_val",
   "get_window",
-  "glob",
-  "glob.glob",
   "glutSetWindowTitle",
   "graphics._get_rgb_kwargs",
   "graphics.get_rgb",
@@ -150,6 +161,16 @@
   "label_axis_for_feature",
   "load_assert",
   "mapper",
+  "math",
+  "math.acos",
+  "math.asin",
+  "math.cos",
+  "math.erf",
+  "math.exp",
+  "math.log",
+  "math.pi",
+  "math.sin",
+  "math.sqrt",
   "metaline_to_pair",
   "method",
   "method.__name__.split",
@@ -202,6 +223,8 @@
   "os.stat",
   "os.unlink",
   "perceptron.Perceptron.train",
+  "random",
+  "random.choice",
   "running_ipython",
   "scipy.special.erf",
   "set_mpl_interactive",
@@ -245,6 +268,7 @@
   "utilities.status.StatusDisplay",
   "warn",
   "warn_no_ipython",
+  "warnings",
   "warnings.warn",
   "write_envi_header",
   "wx.App",
@@ -258,43 +282,15 @@
   "wx.WXK_SHIFT"
  ],
  "deps": {
-  "OpenGL": [
-   "pyopengl/conda-forge/noarch/pyopengl-3.1.1a1-py_1",
-   "pyopengl/conda-forge/noarch/pyopengl-3.1.3b2-py_0"
-  ],
-  "PIL": [
-   "pillow/conda-forge/linux-64/pillow-6.2.1-py36hd70f55b_1",
-   "pillow/conda-forge/linux-64/pillow-7.0.0-py36h8328e55_1",
-   "pillow/conda-forge/linux-64/pillow-7.2.0-py37h718be6c_1"
-  ],
-  "__future__": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "_pickle": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "array": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "builtins": [
-   "pies2overrides/conda-forge/osx-64/pies2overrides-2.6.7-py27_1000"
-  ],
-  "collections": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "colorsys": [
+  "glob": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "io": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "math": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -329,10 +325,6 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "random": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "resample": [
    "resample/conda-forge/noarch/resample-1.0.1-pyh9f0ad1d_0"
   ],
@@ -347,10 +339,6 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "unicodedata": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "warnings": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],

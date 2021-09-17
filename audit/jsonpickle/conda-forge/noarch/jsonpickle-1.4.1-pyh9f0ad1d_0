@@ -10,19 +10,27 @@
   "backend.json.set_decoder_options",
   "backend.json.set_encoder_options",
   "backend.json.set_preferred_backend",
+  "builtins",
   "collections.Iterator",
   "collections.abc.Iterator",
   "collections.defaultdict",
   "compat.queue.Queue",
   "compat.string_types",
   "compat.ustr",
+  "decimal",
+  "decimal.Decimal",
   "f",
+  "factory",
   "flatten",
   "flatten_func",
   "handler",
   "handlers.CloneFactory",
   "handlers.get",
   "has_tag",
+  "importlib_metadata",
+  "importlib_metadata.version",
+  "inspect",
+  "inspect.getmro",
   "io.StringIO",
   "io.TextIOWrapper",
   "loadclass",
@@ -31,8 +39,19 @@
   "numpy.object",
   "object.__getattribute__",
   "object.__new__",
+  "pandas",
+  "pandas.DataFrame",
+  "pandas.Index",
   "pandas.Interval",
+  "pandas.MultiIndex",
   "pandas.Period",
+  "pandas.PeriodIndex",
+  "pandas.Series",
+  "pandas.Timestamp",
+  "pandas.read_csv",
+  "queue",
+  "quopri",
+  "quopri.decodestring",
   "restore",
   "restore_key",
   "sys",
@@ -60,9 +79,18 @@
   "tags.STATE",
   "tags.TUPLE",
   "tags.TYPE",
+  "threading",
+  "threading.Lock",
   "time",
+  "types",
+  "types.BuiltinFunctionType",
+  "types.BuiltinMethodType",
   "types.ClassType",
   "types.FileType",
+  "types.FunctionType",
+  "types.LambdaType",
+  "types.MethodType",
+  "types.ModuleType",
   "util.b64decode",
   "util.b64encode",
   "util.b85decode",
@@ -86,7 +114,11 @@
   "util.is_type",
   "util.items",
   "util.untranslate_module_name",
-  "warnings.warn"
+  "uuid",
+  "uuid.UUID",
+  "warnings",
+  "warnings.warn",
+  "zlib"
  ],
  "deps": {
   "__future__": [
@@ -105,9 +137,6 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "builtins": [
-   "pies2overrides/conda-forge/osx-64/pies2overrides-2.6.7-py27_1000"
-  ],
   "collections": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -117,28 +146,6 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "datetime": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "decimal": [
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "factory": [
-   "factory_boy/conda-forge/noarch/factory_boy-2.10.0-py_0",
-   "factory_boy/conda-forge/noarch/factory_boy-2.11.0-py_0",
-   "factory_boy/conda-forge/noarch/factory_boy-2.11.1-py_0",
-   "factory_boy/conda-forge/noarch/factory_boy-2.11.1-pyh9f0ad1d_1",
-   "factory_boy/conda-forge/noarch/factory_boy-3.0.1-pyh9f0ad1d_1",
-   "factory_boy/conda-forge/noarch/factory_boy-3.1.0-pyh9f0ad1d_0"
-  ],
-  "importlib_metadata": [
-   "importlib-metadata/conda-forge/linux-64/importlib-metadata-3.9.0-py38h578d9bd_0",
-   "importlib-metadata/conda-forge/noarch/importlib-metadata-1.7.0-pyhd8ed1ab_1",
-   "importlib-metadata/conda-forge/noarch/importlib-metadata-3.0.0-pyhd8ed1ab_0",
-   "importlib_metadata/conda-forge/linux-64/importlib_metadata-1.1.1-py37_0",
-   "importlib_metadata/conda-forge/noarch/importlib_metadata-0.5-py_0"
-  ],
-  "inspect": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -159,37 +166,7 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "pandas": [],
-  "queue": [
-   "pies2overrides/conda-forge/osx-64/pies2overrides-2.6.7-py27_1000",
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "quopri": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "re": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "threading": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "types": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "uuid": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "warnings": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "zlib": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ]

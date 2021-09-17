@@ -4,12 +4,73 @@
   "_metric",
   "_metric.needs_triggers",
   "add_config_entry",
+  "astropy.io.registry._get_valid_format",
+  "astropy.units.Quantity",
+  "astropy.units.Unit",
+  "astropy.units.dimensionless_unscaled",
+  "builtins",
+  "cycler.cycler",
+  "decorator",
+  "decorator.decorator",
+  "dqsegdb.urifunctions",
+  "dqsegdb.urifunctions.getDataUrllib2",
   "etg.get_etg_parameters",
   "format_result",
+  "getpass.getuser",
+  "glue.lal.Cache",
+  "gwdetchar.cli.logger",
+  "gwdetchar.io.html",
+  "gwdetchar.io.html.table",
+  "gwdetchar.plot.texify",
+  "gwpy.segments.DataQualityDict",
+  "gwpy.segments.DataQualityDict.from_veto_definer_file",
+  "gwpy.segments.DataQualityDict.query",
+  "gwpy.segments.DataQualityDict.read",
+  "gwpy.segments.DataQualityFlag",
+  "gwpy.segments.DataQualityFlag.query",
+  "gwpy.segments.DataQualityFlag.read",
+  "gwpy.segments.Segment",
+  "gwpy.segments.SegmentList",
+  "gwpy.segments.SegmentList.read",
+  "gwpy.table.filters.in_segmentlist",
+  "gwpy.time.Time",
+  "gwpy.time.tconvert",
+  "gwpy.time.to_gps",
+  "gwsumm.batch",
+  "gwsumm.batch.PROG",
+  "gwsumm.batch.main",
+  "gwsumm.channels.get_channel",
+  "gwsumm.config.GWSummConfigParser",
+  "gwsumm.globalv",
+  "gwsumm.globalv.TRIGGERS",
+  "gwsumm.globalv.VERBOSE",
+  "gwsumm.plot.get_column_label",
+  "gwsumm.plot.get_plot",
+  "gwsumm.segments.format_padding",
+  "gwsumm.segments.get_segments",
+  "gwsumm.state.ALLSTATE",
+  "gwsumm.state.SummaryState",
+  "gwsumm.state.generate_all_state",
+  "gwsumm.tabs.get_tab",
+  "gwsumm.tabs.register_tab",
+  "gwsumm.triggers.get_times",
+  "gwsumm.triggers.get_triggers",
+  "gwsumm.utils.get_default_ifo",
+  "gwsumm.utils.mkdir",
+  "gwsumm.utils.re_cchar",
   "gwsumm.utils.re_cchar.sub",
+  "gwsumm.utils.vprint",
   "gwvet.cli.ACTIONS.items",
   "gwvet.cli.ACTIONS.run",
   "gwvet.cli.__init__.flag",
+  "imp",
+  "imp.load_source",
+  "inspect",
+  "inspect.getargspec",
+  "inspect.getmembers",
+  "inspect.isfunction",
+  "math.ceil",
+  "math.floor",
   "metric",
   "metric.description.splitlines",
   "metric.name",
@@ -20,10 +81,13 @@
   "os.chdir",
   "os.path.isfile",
   "re.I",
+  "scipy.stats.poisson",
   "scipy.stats.poisson.cdf",
   "select_flag",
   "sys",
-  "sys.argv.endswith"
+  "sys.argv.endswith",
+  "urllib.parse.urlparse",
+  "urllib.request.urlopen"
  ],
  "deps": {
   "MarkupPy": [
@@ -34,80 +98,19 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "astropy": [
-   "astropy/conda-forge/linux-64/astropy-4.2-py37h5e8e339_1"
-  ],
-  "backports": [
-   "configparser/conda-forge/noarch/configparser-5.0.0-py_0"
-  ],
-  "builtins": [
-   "pies2overrides/conda-forge/osx-64/pies2overrides-2.6.7-py27_1000"
-  ],
   "collections": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "configparser": [
-   "configparser/conda-forge/linux-64/configparser-3.7.1-py27_1",
-   "configparser/conda-forge/noarch/configparser-5.0.0-py_0",
-   "configparser/conda-forge/noarch/configparser-5.0.1-py_0",
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "cycler": [
-   "cycler/conda-forge/noarch/cycler-0.10.0-py_1",
-   "cycler/conda-forge/noarch/cycler-0.10.0-py_2"
   ],
   "datetime": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "decorator": [
-   "decorator/conda-forge/noarch/decorator-4.3.0-py_0",
-   "decorator/conda-forge/noarch/decorator-4.3.2-py_0",
-   "decorator/conda-forge/noarch/decorator-4.4.0-py_0",
-   "decorator/conda-forge/noarch/decorator-4.4.1-py_0",
-   "decorator/conda-forge/noarch/decorator-4.4.2-py_0",
-   "decorator/conda-forge/noarch/decorator-5.0.2-pyhd8ed1ab_0",
-   "decorator/conda-forge/noarch/decorator-5.0.3-pyhd8ed1ab_0",
-   "decorator/conda-forge/noarch/decorator-5.0.4-pyhd8ed1ab_0",
-   "decorator/conda-forge/noarch/decorator-5.0.5-pyhd8ed1ab_0",
-   "decorator/conda-forge/noarch/decorator-5.0.6-pyhd8ed1ab_0",
-   "decorator/conda-forge/noarch/decorator-5.0.9-pyhd8ed1ab_0"
-  ],
-  "dqsegdb": [
-   "dqsegdb/conda-forge/linux-64/dqsegdb-1.6.1-py37_0"
-  ],
-  "getpass": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "glob": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "glue": [
-   "lscsoft-glue/conda-forge/linux-64/lscsoft-glue-1.60.0-py37h14c3975_0",
-   "lscsoft-glue/conda-forge/linux-64/lscsoft-glue-1.60.0-py37h14c3975_1",
-   "lscsoft-glue/conda-forge/linux-64/lscsoft-glue-2.0.0-py36h8f6f2f9_4"
-  ],
-  "gwdetchar": [
-   "gwdetchar/conda-forge/noarch/gwdetchar-2.0.0-pyhd8ed1ab_0",
-   "gwdetchar/conda-forge/noarch/gwdetchar-2.0.1-pyhd8ed1ab_0",
-   "gwdetchar/conda-forge/noarch/gwdetchar-2.0.2-pyhd8ed1ab_0",
-   "gwdetchar/conda-forge/noarch/gwdetchar-2.0.3-pyhd8ed1ab_0"
-  ],
-  "gwpy": [
-   "gwpy/conda-forge/noarch/gwpy-2.0.0-pyh9f0ad1d_0",
-   "gwpy/conda-forge/noarch/gwpy-2.0.1-pyh9f0ad1d_0",
-   "gwpy/conda-forge/noarch/gwpy-2.0.2-pyhd8ed1ab_0",
-   "gwpy/conda-forge/noarch/gwpy-2.0.4-pyhd8ed1ab_1"
-  ],
-  "gwsumm": [
-   "gwsumm/conda-forge/noarch/gwsumm-2.0.0-pyhd8ed1ab_0",
-   "gwsumm/conda-forge/noarch/gwsumm-2.0.1-pyhd8ed1ab_0"
-  ],
-  "imp": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -116,15 +119,7 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "inspect": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "json": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "math": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -151,15 +146,6 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "re": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "scipy": [
-   "scipy/conda-forge/linux-64/scipy-0.17.1-np110py27_blas_openblas_202",
-   "scipy/conda-forge/linux-64/scipy-1.7.0-py37h29e03ee_0",
-   "scipy/conda-forge/linux-64/scipy-1.7.0-py37ha768fb6_1"
-  ],
-  "urllib": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ]

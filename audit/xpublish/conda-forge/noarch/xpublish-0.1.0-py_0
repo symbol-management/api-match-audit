@@ -1,14 +1,55 @@
 {
  "bad": [
   "collections.abc.Mapping",
+  "dask",
+  "fastapi.APIRouter",
+  "fastapi.Depends",
+  "fastapi.FastAPI",
+  "fastapi.HTTPException",
+  "fastapi.openapi.utils.get_openapi",
+  "h5py",
+  "h5py.version.hdf5_version",
+  "locale",
+  "locale.getlocale",
+  "netCDF4",
   "netCDF4.__hdf5libversion__",
   "netCDF4.__netcdf4libversion__",
+  "numcodecs.compat.ensure_ndarray",
   "os.environ.get",
   "os.path.isdir",
+  "pkg_resources.DistributionNotFound",
+  "pkg_resources.get_distribution",
+  "platform",
+  "platform.uname",
+  "starlette.responses.HTMLResponse",
+  "starlette.responses.Response",
+  "struct",
   "struct.calcsize",
+  "subprocess",
+  "subprocess.PIPE",
+  "subprocess.Popen",
   "sys",
   "time",
-  "zarr.storage.array_meta_key.get_config"
+  "typing.Dict",
+  "typing.List",
+  "typing.Tuple",
+  "uvicorn",
+  "uvicorn.run",
+  "xarray",
+  "xarray.Dataset",
+  "xarray.backends.zarr.DIMENSION_KEY",
+  "xarray.backends.zarr.encode_zarr_attr_value",
+  "xarray.backends.zarr.encode_zarr_variable",
+  "xarray.backends.zarr.extract_zarr_variable_encoding",
+  "xarray.register_dataset_accessor",
+  "xarray.set_options",
+  "zarr.meta.encode_fill_value",
+  "zarr.storage.array_meta_key",
+  "zarr.storage.array_meta_key.get_config",
+  "zarr.storage.attrs_key",
+  "zarr.storage.default_compressor",
+  "zarr.storage.group_meta_key",
+  "zarr.util.normalize_shape"
  ],
  "deps": {
   "cachey": [
@@ -42,26 +83,6 @@
    "dask-core/conda-forge/noarch/dask-core-2021.4.1-pyhd8ed1ab_0",
    "dask-core/conda-forge/noarch/dask-core-2021.5.1-pyhd8ed1ab_0"
   ],
-  "fastapi": [
-   "fastapi/conda-forge/noarch/fastapi-0.42.0-py_0",
-   "fastapi/conda-forge/noarch/fastapi-0.43.0-py_0",
-   "fastapi/conda-forge/noarch/fastapi-0.45.0-py_0",
-   "fastapi/conda-forge/noarch/fastapi-0.55.0-py_0",
-   "fastapi/conda-forge/noarch/fastapi-0.56.0-py_0",
-   "fastapi/conda-forge/noarch/fastapi-0.57.0-py_0",
-   "fastapi/conda-forge/noarch/fastapi-0.58.0-py_0",
-   "fastapi/conda-forge/noarch/fastapi-0.60.0-py_0",
-   "fastapi/conda-forge/noarch/fastapi-0.61.0-py_0",
-   "fastapi/conda-forge/noarch/fastapi-0.62.0-pyhd8ed1ab_0",
-   "fastapi/conda-forge/noarch/fastapi-0.64.0-pyhd8ed1ab_0",
-   "fastapi/conda-forge/noarch/fastapi-0.65.2-pyhd8ed1ab_0",
-   "fastapi/conda-forge/noarch/fastapi-0.66.0-pyhd8ed1ab_0"
-  ],
-  "h5py": [
-   "h5py/conda-forge/linux-64/h5py-2.10.0-nompi_py37hf7afa78_105",
-   "h5py/conda-forge/linux-64/h5py-2.6.0-np111py34_4",
-   "h5py/conda-forge/linux-64/h5py-2.7.0-np113py36_1"
-  ],
   "importlib": [
    "importlib/conda-forge/linux-64/importlib-1.0.4-py26_0",
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -71,21 +92,9 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "locale": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "logging": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "netCDF4": [
-   "netcdf4/conda-forge/linux-64/netcdf4-1.2.4-np111py35_1",
-   "netcdf4/conda-forge/linux-64/netcdf4-1.5.1.2-py27had58050_0",
-   "netcdf4/conda-forge/linux-64/netcdf4-1.5.5.1-mpi_openmpi_py39h16caffe_0"
-  ],
-  "numcodecs": [
-   "numcodecs/conda-forge/linux-64/numcodecs-0.6.4-py27he1b5a44_0"
   ],
   "numpy": [
    "numpy/conda-forge/linux-64/numpy-1.17.5-py36h95a1406_0",
@@ -94,65 +103,6 @@
   "os": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "pkg_resources": [
-   "setuptools/conda-forge/linux-64/setuptools-40.6.1-py36_0",
-   "setuptools/conda-forge/linux-64/setuptools-46.3.0-py38h32f6830_0",
-   "setuptools/conda-forge/linux-64/setuptools-49.1.2-py38h32f6830_0"
-  ],
-  "platform": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "starlette": [
-   "starlette-base/conda-forge/noarch/starlette-base-0.13.5-py_2",
-   "starlette-base/conda-forge/noarch/starlette-base-0.13.6-py_0",
-   "starlette/conda-forge/noarch/starlette-0.10.2-py_0",
-   "starlette/conda-forge/noarch/starlette-0.11.1-py_0",
-   "starlette/conda-forge/noarch/starlette-0.11.4-py_0",
-   "starlette/conda-forge/noarch/starlette-0.12.1-py_0",
-   "starlette/conda-forge/noarch/starlette-0.12.10-py_0",
-   "starlette/conda-forge/noarch/starlette-0.12.4-py_0",
-   "starlette/conda-forge/noarch/starlette-0.12.8-py_0",
-   "starlette/conda-forge/noarch/starlette-0.13.8-py_0",
-   "starlette/conda-forge/noarch/starlette-0.5.4-py_0",
-   "starlette/conda-forge/noarch/starlette-0.6.0-py_0",
-   "starlette/conda-forge/noarch/starlette-0.8.0-py_0",
-   "starlette/conda-forge/noarch/starlette-0.9.10-py_0"
-  ],
-  "struct": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "subprocess": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "typing": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "uvicorn": [
-   "uvicorn/conda-forge/linux-64/uvicorn-0.12.3-py36h5fab9bb_0",
-   "uvicorn/conda-forge/linux-64/uvicorn-0.8.2-py36_0"
-  ],
-  "xarray": [
-   "xarray/conda-forge/noarch/xarray-0.16.0-py_0",
-   "xarray/conda-forge/noarch/xarray-0.16.1-py_0",
-   "xarray/conda-forge/noarch/xarray-0.16.2-pyhd8ed1ab_0",
-   "xarray/conda-forge/noarch/xarray-0.18.0-pyhd8ed1ab_0",
-   "xarray/conda-forge/noarch/xarray-0.18.2-pyhd8ed1ab_0"
-  ],
-  "zarr": [
-   "zarr/conda-forge/linux-64/zarr-2.1.1-py34_0",
-   "zarr/conda-forge/linux-64/zarr-2.3.1-py27_0",
-   "zarr/conda-forge/noarch/zarr-2.2.0-py_1",
-   "zarr/conda-forge/noarch/zarr-2.7.1-pyhd8ed1ab_0",
-   "zarr/conda-forge/noarch/zarr-2.8.0-pyhd8ed1ab_1",
-   "zarr/conda-forge/noarch/zarr-2.8.0-pyhd8ed1ab_2",
-   "zarr/conda-forge/noarch/zarr-2.8.2-pyhd8ed1ab_0",
-   "zarr/conda-forge/noarch/zarr-2.8.3-pyhd8ed1ab_0",
-   "zarr/conda-forge/noarch/zarr-2.9.5-pyhd8ed1ab_0"
   ]
  }
 }

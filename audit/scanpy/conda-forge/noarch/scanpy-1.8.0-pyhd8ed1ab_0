@@ -85,22 +85,28 @@
   "_utils.setup_axes",
   "_utils.ticks_formatter",
   "_utils.update_params",
+  "abc.ABC",
   "adapt",
   "add_centroid",
   "anndata.concat",
   "bbknn.bbknn",
+  "builtins",
   "cellbrowser.cellbrowser",
   "cellbrowser.cellbrowser.build",
   "cellbrowser.cellbrowser.scanpyToCellbrowser",
   "cellbrowser.cellbrowser.serve",
   "cellbrowser.cellbrowser.setDebug",
   "cmap",
+  "collections.OrderedDict",
+  "collections.OrderedDict.fromkeys",
+  "collections.abc",
   "collections.abc.Collection",
   "collections.abc.Iterable",
   "collections.abc.Mapping",
   "collections.abc.MutableMapping",
   "collections.abc.Sequence",
   "collections.abc.Set",
+  "collections.namedtuple",
   "cudf",
   "cudf.Series",
   "cugraph",
@@ -109,6 +115,10 @@
   "cuml.UMAP",
   "cuml.neighbors.NearestNeighbors",
   "data_to_axis",
+  "datetime.datetime",
+  "datetime.datetime.now",
+  "datetime.timedelta",
+  "datetime.timezone",
   "datetime.timezone.utc",
   "dca.api.dca",
   "dir.mkdir",
@@ -130,8 +140,14 @@
   "harmonypy.run_harmony",
   "id.open",
   "importlib_metadata.version.parse",
+  "inspect",
+  "inspect.Parameter",
   "inspect.Parameter.empty",
+  "inspect.Signature",
   "inspect.Signature.empty",
+  "inspect.getdoc",
+  "inspect.getmembers",
+  "inspect.signature",
   "io.StringIO",
   "is_flat",
   "is_valid_filename",
@@ -144,6 +160,7 @@
   "make_pos",
   "make_sc_tree",
   "map.items",
+  "math.floor",
   "matplotlib.cm.tab10.colors",
   "matplotlib.cm.tab20.colors",
   "matplotlib.colors.TwoSlopeNorm",
@@ -243,6 +260,8 @@
   "pandas.api.types.is_categorical",
   "pandas.api.types.is_categorical_dtype",
   "pandas.api.types.is_numeric_dtype",
+  "pathlib.Path",
+  "pathlib.PurePath",
   "patsy.dmatrix",
   "phate",
   "phenograph",
@@ -268,6 +287,8 @@
   "pypairs.settings.n_jobs",
   "pypairs.settings.verbosity",
   "pypairs.settings.writedir",
+  "random",
+  "random.seed",
   "readwrite._download",
   "readwrite._read",
   "readwrite.read_params",
@@ -310,11 +331,42 @@
   "scanpy.plotting.utils",
   "scatter",
   "scatterplots.embedding",
+  "scipy",
+  "scipy.cluster.hierarchy",
+  "scipy.cluster.hierarchy.dendrogram",
+  "scipy.cluster.hierarchy.linkage",
+  "scipy.linalg.eig",
+  "scipy.linalg.eigh",
+  "scipy.optimize.root",
+  "scipy.sparse",
+  "scipy.sparse.coo_matrix",
+  "scipy.sparse.csc_matrix",
   "scipy.sparse.csgraph.connected_components",
   "scipy.sparse.csgraph.minimum_spanning_tree",
+  "scipy.sparse.csr_matrix",
+  "scipy.sparse.issparse",
+  "scipy.sparse.isspmatrix_coo",
+  "scipy.sparse.isspmatrix_csr",
+  "scipy.sparse.lil_matrix",
+  "scipy.sparse.linalg.LinearOperator",
+  "scipy.sparse.linalg.eigsh",
+  "scipy.sparse.linalg.svds",
+  "scipy.sparse.spdiags",
+  "scipy.sparse.spmatrix",
+  "scipy.sparse.vstack",
+  "scipy.spatial.distance",
+  "scipy.spatial.distance.squareform",
+  "scipy.stats",
   "scipy.stats.distributions.norm.sf",
+  "scipy.stats.entropy",
+  "scipy.stats.gaussian_kde",
+  "scipy.stats.kendalltau",
+  "scipy.stats.mstats.kendalltau",
+  "scipy.stats.norm",
   "scipy.stats.norm.cdf",
   "scipy.stats.norm.pdf",
+  "scipy.stats.ttest_1samp",
+  "scipy.stats.ttest_ind_from_stats",
   "scrublet",
   "settings",
   "settings.N_PCS",
@@ -335,6 +387,11 @@
   "umap.nndescent.make_initialisations",
   "umap.nndescent.make_initialized_nnd_search",
   "v_value",
+  "warnings",
+  "warnings.catch_warnings",
+  "warnings.filterwarnings",
+  "warnings.formatwarning",
+  "warnings.simplefilter",
   "warnings.warn",
   "wishbone.core.wishbone",
   "wishbone.wb.SCData",
@@ -353,23 +410,12 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "abc": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "anndata": [
    "anndata/conda-forge/noarch/anndata-0.6.22.post1-py_0",
    "anndata/conda-forge/noarch/anndata-0.6.22.post1-py_1"
   ],
   "argparse": [
    "argparse/conda-forge/osx-64/argparse-1.4.0-py26_0",
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "builtins": [
-   "pies2overrides/conda-forge/osx-64/pies2overrides-2.6.7-py27_1000"
-  ],
-  "collections": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -413,10 +459,6 @@
    "dask-core/conda-forge/noarch/dask-core-2021.4.1-pyhd8ed1ab_0",
    "dask-core/conda-forge/noarch/dask-core-2021.5.1-pyhd8ed1ab_0"
   ],
-  "datetime": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "enum": [
    "privy/conda-forge/noarch/privy-6.0.0-py_0",
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -450,10 +492,6 @@
    "importlib-metadata/conda-forge/noarch/importlib-metadata-1.7.0-pyhd8ed1ab_1",
    "importlib-metadata/conda-forge/noarch/importlib-metadata-3.0.0-pyhd8ed1ab_0",
    "importlib_metadata/conda-forge/linux-64/importlib_metadata-1.1.1-py37_0"
-  ],
-  "inspect": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "io": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -495,10 +533,6 @@
   ],
   "magic": [
    "filemagic/conda-forge/noarch/filemagic-1.6-pyh9f0ad1d_0"
-  ],
-  "math": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "matplotlib": [
    "matplotlib-base/conda-forge/linux-64/matplotlib-base-3.1.1-py37hfd891ef_0",
@@ -555,11 +589,6 @@
    "packaging/conda-forge/noarch/packaging-21.0-pyhd8ed1ab_0"
   ],
   "pandas": [],
-  "pathlib": [
-   "pathlib/conda-forge/noarch/pathlib-1.0.1-py_1",
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "patsy": [
    "patsy/conda-forge/noarch/patsy-0.5.0-py_1"
   ],
@@ -586,11 +615,6 @@
    "pytoml/conda-forge/noarch/pytoml-0.1.19-py_0",
    "pytoml/conda-forge/noarch/pytoml-0.1.21-py_0"
   ],
-  "random": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "scipy": [],
   "seaborn": [
    "seaborn-base/conda-forge/noarch/seaborn-base-0.10.1-py_1",
    "seaborn-base/conda-forge/noarch/seaborn-base-0.11.1-pyhd8ed1ab_1",
@@ -683,10 +707,6 @@
    "umap-learn/conda-forge/linux-64/umap-learn-0.4.2-py38h32f6830_0"
   ],
   "urllib": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "warnings": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
