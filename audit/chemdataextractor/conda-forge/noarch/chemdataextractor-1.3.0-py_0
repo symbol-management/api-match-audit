@@ -32,6 +32,18 @@
   "chemdataextractor.text.__init__.TLDS",
   "chemdner.chemdner_cli",
   "cleaner",
+  "click",
+  "click.Choice",
+  "click.ClickException",
+  "click.File",
+  "click.argument",
+  "click.echo",
+  "click.group",
+  "click.help_option",
+  "click.option",
+  "click.pass_context",
+  "click.pass_obj",
+  "click.version_option",
   "cluster.cluster_cli",
   "collections.MutableMapping",
   "collections.MutableSequence",
@@ -41,7 +53,14 @@
   "config.config.clear",
   "config.config.get",
   "config.config_cli",
+  "cssselect.GenericTranslator",
+  "cssselect.HTMLTranslator",
+  "cssselect.parser.FunctionalPseudoElement",
+  "cssselect.xpath.ExpressionError",
+  "cssselect.xpath.XPathExpr",
+  "cssselect.xpath._unicode_safe_getattr",
   "data.data_cli",
+  "dateutil.parser",
   "dawg",
   "dawg.CompletionDAWG",
   "dict.__repr__",
@@ -51,9 +70,13 @@
   "evaluate.evaluate",
   "fget",
   "func",
+  "functools",
+  "functools.wraps",
   "gc",
+  "html.unescape",
   "input.name",
   "input.readlines",
+  "io",
   "io.open",
   "lxml.builder.E",
   "lxml.etree",
@@ -75,25 +98,59 @@
   "nltk.corpus.ChunkedCorpusReader",
   "nltk.corpus.PlaintextCorpusReader",
   "nltk.corpus.TaggedCorpusReader",
+  "nltk.corpus.reader.util.read_line_block",
+  "nltk.corpus.reader.util.tagged_treebank_para_block_reader",
+  "nltk.tokenize.RegexpTokenizer",
+  "nltk.tokenize.punkt.PunktSentenceTokenizer",
+  "nltk.tokenize.punkt.PunktTrainer",
   "obj",
   "os.listdir",
   "os.path.getsize",
   "os.path.isdir",
   "os.path.isfile",
   "parse.cem.chemical_name.scan",
+  "pdfminer.converter.PDFPageAggregator",
+  "pdfminer.layout.LAParams",
+  "pdfminer.layout.LTFigure",
+  "pdfminer.layout.LTTextBox",
+  "pdfminer.layout.LTTextLine",
+  "pdfminer.pdfdocument.PDFDocument",
+  "pdfminer.pdfinterp.PDFPageInterpreter",
+  "pdfminer.pdfinterp.PDFResourceManager",
+  "pdfminer.pdfpage.PDFPage",
+  "pdfminer.pdfpage.PDFPage.create_pages",
+  "pdfminer.pdfparser.PDFParser",
+  "pickle",
+  "pickle.HIGHEST_PROTOCOL",
+  "pickle.dump",
+  "pickle.load",
   "pos.pos_cli",
+  "pycrfsuite",
   "pycrfsuite.Trainer",
+  "random",
+  "random.shuffle",
   "re.I",
   "re.U",
   "reader.DEFAULT_READERS",
   "selector.Selector.from_html",
   "selector.Selector.from_xml",
+  "six",
+  "six.BytesIO",
+  "six.MAXSIZE",
+  "six.PY2",
+  "six.binary_type",
+  "six.iteritems",
   "six.moves.cPickle.load",
   "six.moves.html_parser.HTMLParser",
   "six.moves.urllib.parse.unquote",
   "six.moves.urllib.parse.urlparse",
   "six.moves.zip",
+  "six.string_types",
+  "six.text_type",
   "six.text_type.strip",
+  "six.with_metaclass",
+  "string",
+  "string.punctuation",
   "strip_between",
   "strip_following",
   "strip_preceding",
@@ -101,14 +158,13 @@
   "text.CONTROL_RE.sub",
   "tokenize.tokenize_cli",
   "upd_feat",
-  "yaml.SafeLoader.add_constructor"
+  "yaml",
+  "yaml.SafeLoader",
+  "yaml.SafeLoader.add_constructor",
+  "yaml.safe_dump"
  ],
  "deps": {
   "__future__": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "_pickle": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -126,41 +182,11 @@
    "beautifulsoup4/conda-forge/linux-64/beautifulsoup4-4.8.2-py37_0",
    "beautifulsoup4/conda-forge/noarch/beautifulsoup4-4.9.3-pyhb0f4dca_0"
   ],
-  "click": [
-   "click/conda-forge/noarch/click-5.1-py_0",
-   "click/conda-forge/noarch/click-6.7-py_1",
-   "click/conda-forge/noarch/click-7.0-py_0",
-   "click/conda-forge/noarch/click-7.1-pyh8c360ce_0",
-   "click/conda-forge/noarch/click-7.1.1-pyh8c360ce_0"
-  ],
   "collections": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "copy": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "cssselect": [
-   "cssselect/conda-forge/noarch/cssselect-1.0.1-py_0",
-   "cssselect/conda-forge/noarch/cssselect-1.0.3-py_0"
-  ],
-  "dateutil": [
-   "python-dateutil/conda-forge/noarch/python-dateutil-2.7.2-py_0",
-   "python-dateutil/conda-forge/noarch/python-dateutil-2.7.4-py_0",
-   "python-dateutil/conda-forge/noarch/python-dateutil-2.7.5-py_0",
-   "python-dateutil/conda-forge/noarch/python-dateutil-2.8.1-py_0",
-   "python-dateutil/conda-forge/noarch/python-dateutil-2.8.2-pyhd8ed1ab_0"
-  ],
-  "functools": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "html": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "io": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -172,40 +198,11 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "nltk": [
-   "nltk/conda-forge/noarch/nltk-3.4.4-py_0",
-   "nltk/conda-forge/noarch/nltk-3.5-pyhd8ed1ab_1",
-   "nltk/conda-forge/noarch/nltk-3.6-pyhd8ed1ab_0",
-   "nltk/conda-forge/noarch/nltk-3.6.1-pyhd8ed1ab_0",
-   "nltk/conda-forge/noarch/nltk-3.6.2-pyhd8ed1ab_0"
-  ],
   "ntpath": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "os": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "pdfminer": [
-   "pdfminer.six/conda-forge/noarch/pdfminer.six-20181108-py_1",
-   "pdfminer.six/conda-forge/noarch/pdfminer.six-20191020-py_2",
-   "pdfminer.six/conda-forge/noarch/pdfminer.six-20200517-py_0",
-   "pdfminer.six/conda-forge/noarch/pdfminer.six-20200720-py_0",
-   "pdfminer.six/conda-forge/noarch/pdfminer.six-20200726-py_0",
-   "pdfminer.six/conda-forge/noarch/pdfminer.six-20200726-py_1",
-   "pdfminer.six/conda-forge/noarch/pdfminer.six-20201018-py_2",
-   "pdfminer.six/conda-forge/noarch/pdfminer.six-20201018-pyhd8ed1ab_3",
-   "pdfminer/conda-forge/noarch/pdfminer-20191125-pyhd8ed1ab_1"
-  ],
-  "pickle": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "pycrfsuite": [
-   "python-crfsuite/conda-forge/linux-64/python-crfsuite-0.9.5-py27h470a237_0"
-  ],
-  "random": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -223,20 +220,6 @@
    "requests/conda-forge/noarch/requests-2.25.1-pyhd3deb0d_0",
    "requests/conda-forge/noarch/requests-2.26.0-pyhd8ed1ab_0"
   ],
-  "six": [
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0",
-   "lldb/conda-forge/linux-64/lldb-6.0.0-py35_0",
-   "privy/conda-forge/noarch/privy-6.0.0-py_0",
-   "six/conda-forge/linux-64/six-1.10.0-py34_0",
-   "six/conda-forge/linux-64/six-1.10.0-py34_1",
-   "six/conda-forge/noarch/six-1.14.0-py_1",
-   "six/conda-forge/noarch/six-1.16.0-pyh6c4a22f_0"
-  ],
-  "string": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "types": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -244,12 +227,6 @@
   "unicodedata": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "yaml": [
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0",
-   "pyyaml/conda-forge/linux-64/pyyaml-3.11-py35_0",
-   "pyyaml/conda-forge/win-64/pyyaml-5.2-py36hfa6e2cd_0"
   ]
  }
 }
