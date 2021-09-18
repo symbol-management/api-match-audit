@@ -11,6 +11,8 @@
   "_utils.match_uri_to_workspace",
   "_utils.position_to_jedi_linecolumn",
   "ast.PyCF_ONLY_AST",
+  "autopep8.continued_indentation",
+  "autopep8.fix_code",
   "collections.defaultdict",
   "config.config.Config",
   "ctypes.windll.kernel32",
@@ -19,12 +21,23 @@
   "func",
   "functools.partial",
   "hook_handlers",
+  "inspect",
+  "inspect.signature",
   "io.StringIO",
   "io.open",
   "is_valid",
+  "jedi",
+  "jedi.Project",
+  "jedi.Script",
+  "jedi.__version__",
+  "jedi.api.classes.Completion",
+  "jedi.api.environment.create_environment",
+  "jedi.api.environment.get_cached_default_environment",
   "local_to_document",
   "lsp.MessageType.Info",
   "lsp.TextDocumentSyncKind.INCREMENTAL",
+  "mccabe",
+  "mccabe.PathGraphingAstVisitor",
   "method",
   "os.environ.copy",
   "os.kill",
@@ -32,9 +45,55 @@
   "os.path.exists",
   "os.path.isdir",
   "os.path.samefile",
+  "parso",
+  "parso.parse",
+  "parso.python.tree",
+  "parso.python.tree.Function",
+  "parso.python.tree.IfStmt",
+  "parso.python.tree.Keyword",
+  "parso.python.tree.Module",
+  "parso.python.tree.Newline",
+  "parso.python.tree.Operator",
+  "parso.python.tree.PythonErrorNode",
+  "parso.python.tree.PythonNode",
+  "parso.python.tree.TryStmt",
+  "pathlib",
+  "pathlib.Path",
+  "pathlib.PurePath",
+  "pkg_resources",
+  "pluggy",
+  "pluggy.HookimplMarker",
+  "pluggy.HookspecMarker",
+  "pycodestyle",
+  "pycodestyle.BaseReport",
+  "pycodestyle.Checker",
+  "pycodestyle.StyleGuide",
+  "pycodestyle.USER_CONFIG",
+  "pycodestyle._checks",
+  "pycodestyle.continued_indentation",
+  "pycodestyle.register_check",
+  "pydocstyle",
+  "pydocstyle.checker.ConventionChecker",
+  "pydocstyle.config.ConfigurationParser",
   "pydocstyle.config.ConfigurationParser.DEFAULT_MATCH_DIR_RE",
   "pydocstyle.config.ConfigurationParser.DEFAULT_MATCH_RE",
+  "pydocstyle.parser.ParseError",
   "pydocstyle.utils.__name__",
+  "pyflakes.api",
+  "pyflakes.api.check",
+  "pyflakes.messages",
+  "pyflakes.messages.BreakOutsideLoop",
+  "pyflakes.messages.ContinueInFinally",
+  "pyflakes.messages.ContinueOutsideLoop",
+  "pyflakes.messages.DuplicateArgument",
+  "pyflakes.messages.FutureFeatureNotDefined",
+  "pyflakes.messages.ReturnOutsideFunction",
+  "pyflakes.messages.TwoStarredExpressions",
+  "pyflakes.messages.UndefinedExport",
+  "pyflakes.messages.UndefinedLocal",
+  "pyflakes.messages.UndefinedName",
+  "pyflakes.messages.YieldOutsideFunction",
+  "pylint.epylint.py_run",
   "pylsp.__init__.PYLSP",
   "pylsp.lsp.CompletionItemKind.Class",
   "pylsp.lsp.CompletionItemKind.File",
@@ -67,16 +126,44 @@
   "pylsp.lsp.SymbolKind.Property",
   "pylsp.lsp.SymbolKind.String",
   "pylsp.lsp.SymbolKind.Variable",
+  "pylsp_jsonrpc.dispatchers.MethodDispatcher",
+  "pylsp_jsonrpc.endpoint.Endpoint",
+  "pylsp_jsonrpc.streams.JsonRpcStreamReader",
+  "pylsp_jsonrpc.streams.JsonRpcStreamWriter",
+  "rope.base.libutils",
+  "rope.base.libutils.path_to_resource",
+  "rope.base.project.Project",
+  "rope.contrib.codeassist.code_assist",
+  "rope.contrib.codeassist.sorted_proposals",
+  "rope.refactor.rename.Rename",
+  "socketserver",
+  "socketserver.StreamRequestHandler",
+  "socketserver.TCPServer",
+  "subprocess.PIPE",
+  "subprocess.Popen",
   "sys",
   "sys.platform.startswith",
   "sys.stdin.buffer",
   "sys.stdout.buffer",
+  "threading",
+  "threading.Lock",
+  "threading.RLock",
+  "threading.Thread",
+  "threading.Timer",
   "time",
   "ujson",
   "ujson.load",
   "ujson.loads",
   "uris.from_fs_path",
-  "uris.to_fs_path"
+  "uris.to_fs_path",
+  "urllib.parse",
+  "urllib.parse.quote",
+  "urllib.parse.unquote",
+  "urllib.parse.urlparse",
+  "urllib.parse.urlunparse",
+  "yapf.yapflib.file_resources",
+  "yapf.yapflib.file_resources.GetDefaultStyleForDir",
+  "yapf.yapflib.yapf_api.FormatCode"
  ],
  "deps": {
   "argparse": [
@@ -87,15 +174,6 @@
   "ast": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "autopep8": [
-   "autopep8/conda-forge/noarch/autopep8-1.3.3-py_0",
-   "autopep8/conda-forge/noarch/autopep8-1.3.4-py_0",
-   "autopep8/conda-forge/noarch/autopep8-1.4.2-py_0",
-   "autopep8/conda-forge/noarch/autopep8-1.5-py_0",
-   "autopep8/conda-forge/noarch/autopep8-1.5.2-pyh9f0ad1d_0",
-   "autopep8/conda-forge/noarch/autopep8-1.5.4-pyh9f0ad1d_0",
-   "autopep8/conda-forge/noarch/autopep8-1.5.7-pyhd8ed1ab_0"
   ],
   "backports": [
    "configparser/conda-forge/noarch/configparser-5.0.0-py_0"
@@ -123,17 +201,9 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "inspect": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "io": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "jedi": [
-   "jedi/conda-forge/linux-64/jedi-0.17.2-py36hd000896_1",
-   "jedi/conda-forge/linux-64/jedi-0.17.2-py37h9c2f6ca_1"
   ],
   "json": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -143,9 +213,6 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "mccabe": [
-   "mccabe/conda-forge/noarch/mccabe-0.6.1-py_1"
-  ],
   "ntpath": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -154,103 +221,9 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "parso": [
-   "parso/conda-forge/noarch/parso-0.1.1-py_0",
-   "parso/conda-forge/noarch/parso-0.2.1-py_0",
-   "parso/conda-forge/noarch/parso-0.3.1-py_0",
-   "parso/conda-forge/noarch/parso-0.3.3-py_0",
-   "parso/conda-forge/noarch/parso-0.3.4-py_0",
-   "parso/conda-forge/noarch/parso-0.4.0-py_0",
-   "parso/conda-forge/noarch/parso-0.5.1-py_0",
-   "parso/conda-forge/noarch/parso-0.5.2-py_0",
-   "parso/conda-forge/noarch/parso-0.7.0-pyh9f0ad1d_0",
-   "parso/conda-forge/noarch/parso-0.8.0-py_1",
-   "parso/conda-forge/noarch/parso-0.8.0-pyh9f0ad1d_0",
-   "parso/conda-forge/noarch/parso-0.8.1-pyhd8ed1ab_0"
-  ],
-  "pathlib": [
-   "pathlib/conda-forge/noarch/pathlib-1.0.1-py_1",
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "pkg_resources": [
-   "setuptools/conda-forge/linux-64/setuptools-40.6.1-py36_0",
-   "setuptools/conda-forge/linux-64/setuptools-46.3.0-py38h32f6830_0",
-   "setuptools/conda-forge/linux-64/setuptools-49.1.2-py38h32f6830_0"
-  ],
-  "pluggy": [
-   "pluggy/conda-forge/linux-64/pluggy-0.13.1-py38h578d9bd_4",
-   "pluggy/conda-forge/noarch/pluggy-0.11.0-py_0",
-   "pluggy/conda-forge/noarch/pluggy-0.12.0-py_0"
-  ],
-  "pycodestyle": [
-   "pycodestyle/conda-forge/noarch/pycodestyle-2.5.0-py_0",
-   "pycodestyle/conda-forge/noarch/pycodestyle-2.6.0-pyh9f0ad1d_0",
-   "pycodestyle/conda-forge/noarch/pycodestyle-2.7.0-pyhd8ed1ab_0"
-  ],
-  "pydocstyle": [
-   "pydocstyle/conda-forge/noarch/pydocstyle-4.0.1-py_0",
-   "pydocstyle/conda-forge/noarch/pydocstyle-5.1.0-py_0",
-   "pydocstyle/conda-forge/noarch/pydocstyle-5.1.1-py_0",
-   "pydocstyle/conda-forge/noarch/pydocstyle-6.1.0-pyhd8ed1ab_0",
-   "pydocstyle/conda-forge/noarch/pydocstyle-6.1.1-pyhd8ed1ab_0"
-  ],
-  "pyflakes": [
-   "pyflakes/conda-forge/noarch/pyflakes-2.0.0-py_0",
-   "pyflakes/conda-forge/noarch/pyflakes-2.1.1-py_0",
-   "pyflakes/conda-forge/noarch/pyflakes-2.2.0-pyh9f0ad1d_0",
-   "pyflakes/conda-forge/noarch/pyflakes-2.3.0-pyhd8ed1ab_0",
-   "pyflakes/conda-forge/noarch/pyflakes-2.3.1-pyhd8ed1ab_0"
-  ],
-  "pylint": [
-   "pylint/conda-forge/linux-64/pylint-1.8.3-py35_0",
-   "pylint/conda-forge/noarch/pylint-2.8.2-pyhd8ed1ab_0",
-   "pylint/conda-forge/noarch/pylint-2.8.3-pyhd8ed1ab_0",
-   "pylint/conda-forge/noarch/pylint-2.9.0-pyhd8ed1ab_0",
-   "pylint/conda-forge/noarch/pylint-2.9.2-pyhd8ed1ab_0",
-   "pylint/conda-forge/noarch/pylint-2.9.4-pyhd8ed1ab_0",
-   "pylint/conda-forge/noarch/pylint-2.9.5-pyhd8ed1ab_0"
-  ],
-  "pylsp_jsonrpc": [
-   "python-lsp-jsonrpc/conda-forge/noarch/python-lsp-jsonrpc-1.0.0-pyhd8ed1ab_0"
-  ],
   "re": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "rope": [
-   "rope/conda-forge/noarch/rope-0.14.0-py_0",
-   "rope/conda-forge/noarch/rope-0.17.0-pyh9f0ad1d_0",
-   "rope/conda-forge/noarch/rope-0.18.0-pyh9f0ad1d_0",
-   "rope/conda-forge/noarch/rope-0.18.0-pyhd3deb0d_0",
-   "rope/conda-forge/noarch/rope-0.19.0-pyhd8ed1ab_0"
-  ],
-  "socketserver": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "subprocess": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "threading": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "urllib": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "yapf": [
-   "yapf/conda-forge/linux-64/yapf-0.12.1-py35_0",
-   "yapf/conda-forge/noarch/yapf-0.18.0-py_0",
-   "yapf/conda-forge/noarch/yapf-0.20.2-py_0",
-   "yapf/conda-forge/noarch/yapf-0.21.0-py_0",
-   "yapf/conda-forge/noarch/yapf-0.23.0-py_0",
-   "yapf/conda-forge/noarch/yapf-0.26.0-py_0",
-   "yapf/conda-forge/noarch/yapf-0.27.0-py_0",
-   "yapf/conda-forge/noarch/yapf-0.28.0-py_0",
-   "yapf/conda-forge/noarch/yapf-0.30.0-pyh9f0ad1d_0"
   ]
  }
 }

@@ -8,22 +8,47 @@
   "UDSpan",
   "UDWord",
   "Word",
+  "__future__.absolute_import",
+  "__future__.division",
+  "__future__.print_function",
+  "abc.ABC",
+  "abc.abstractmethod",
   "align_words",
   "alignment_score",
+  "argparse",
+  "argparse.ArgumentParser",
+  "argparse.FileType",
+  "argparse.Namespace",
+  "ast",
+  "ast.literal_eval",
   "atexit",
   "beyond_end",
+  "bisect.bisect_right",
+  "case",
   "char_case",
   "clf",
   "clffunc",
+  "collections",
+  "collections.Counter",
+  "collections.OrderedDict",
   "collections.defaultdict",
+  "collections.namedtuple",
   "compare_ignoring_whitespace",
   "composite_func",
   "compute_lcs",
+  "contextlib",
+  "contextlib.closing",
   "conv",
   "corenlp",
   "corenlp.CoreNLPClient",
   "criterion",
+  "csv",
+  "datetime.datetime",
+  "datetime.datetime.now",
   "decode_all",
+  "distutils.util.strtobool",
+  "enum",
+  "enum.Enum",
   "extend_end",
   "f",
   "f1",
@@ -49,6 +74,7 @@
   "google.protobuf.reflection.GeneratedProtocolMessageType",
   "google.protobuf.symbol_database",
   "google.protobuf.symbol_database.Default",
+  "hashlib",
   "hashlib.md5",
   "highway_func",
   "id.setter",
@@ -67,6 +93,10 @@
   "load_model",
   "loss_function",
   "lzma.LZMAError",
+  "math",
+  "math.ceil",
+  "math.exp",
+  "math.log",
   "max_max_jlength",
   "multiprocessing.Process",
   "nlp.processors._variant.__class__.__name__",
@@ -96,6 +126,9 @@
   "os.unlink",
   "pack",
   "pad",
+  "pickle",
+  "pickle.dumps",
+  "pickle.loads",
   "pipeline",
   "process",
   "process_sentence",
@@ -106,11 +139,22 @@
   "pytest.mark.travis",
   "pythainlp",
   "pythainlp.sent_tokenize",
+  "random",
+  "random.randint",
+  "random.random",
+  "random.sample",
+  "random.seed",
+  "random.shuffle",
   "re.UNICODE",
   "regex_matches_to_indexed_words",
   "rnn_loop",
   "set.union",
   "set_root",
+  "shutil",
+  "shutil.copy",
+  "shutil.copyfile",
+  "shutil.move",
+  "shutil.rmtree",
   "six.moves.BaseHTTPServer.BaseHTTPRequestHandler",
   "six.moves.BaseHTTPServer.HTTPServer",
   "six.moves.http_client",
@@ -151,11 +195,21 @@
   "stanza.utils.training.common.Mode.TRAIN",
   "strings_starting",
   "strong_connect",
+  "subprocess",
+  "subprocess.DEVNULL",
+  "subprocess.PIPE",
+  "subprocess.Popen",
+  "subprocess.TimeoutExpired",
+  "subprocess.check_output",
+  "subprocess.run",
   "sudachidict_core",
   "sudachipy",
   "sys",
   "sys.args",
   "sys.argv.index",
+  "tempfile",
+  "tempfile.NamedTemporaryFile",
+  "tempfile.TemporaryDirectory",
   "test_data_to_batches",
   "tests.__init__.DEPPARSE_MODEL",
   "tests.__init__.DEPPARSE_PRETRAIN",
@@ -203,77 +257,20 @@
   "type.setter",
   "update_state",
   "vocab.Vocab.load_state_dict",
+  "warnings",
   "warnings.warn"
  ],
  "deps": {
-  "__future__": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "_pickle": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "_pytest": [
    "pytest/conda-forge/linux-64/pytest-3.7.0-py27_0",
    "pytest/conda-forge/linux-64/pytest-4.6.0-py37_0",
    "pytest/conda-forge/linux-64/pytest-6.0.2-py37hc8dfbb8_0"
   ],
-  "abc": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "argparse": [
-   "argparse/conda-forge/osx-64/argparse-1.4.0-py26_0",
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "ast": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "bisect": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "case": [
-   "case/conda-forge/osx-64/case-1.5.3-py36hc560c46_1002",
-   "case/conda-forge/win-64/case-1.5.3-py37h03978a9_1003"
-  ],
-  "collections": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "contextlib": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "copy": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "csv": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "datetime": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "distutils": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "enum": [
-   "privy/conda-forge/noarch/privy-6.0.0-py_0",
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "glob": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "hashlib": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -297,10 +294,6 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "lzma": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "math": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -328,18 +321,10 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "pickle": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "pytest": [
    "pytest/conda-forge/linux-64/pytest-3.7.0-py27_0",
    "pytest/conda-forge/linux-64/pytest-4.6.0-py37_0",
    "pytest/conda-forge/linux-64/pytest-6.0.2-py37hc8dfbb8_0"
-  ],
-  "random": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "re": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -359,10 +344,6 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "shutil": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "socket": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -370,14 +351,6 @@
   "spacy": [
    "spacy/conda-forge/linux-64/spacy-1.8.1-np112py35_0",
    "spacy/conda-forge/linux-64/spacy-2.3.2-py36h51d7077_1"
-  ],
-  "subprocess": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "tempfile": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "torch": [],
   "tqdm": [
@@ -405,10 +378,6 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "uuid": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "warnings": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],

@@ -7,8 +7,12 @@
   "arg",
   "astropy.cosmology.Planck15",
   "astropy.cosmology.Planck15.clone",
+  "astropy.cosmology.z_at_value",
+  "astropy.io.misc.yaml",
+  "astropy.io.misc.yaml.AstropyDumper",
   "astropy.io.misc.yaml.AstropyDumper.yaml_multi_representers.items",
   "astropy.io.misc.yaml.AstropyDumper.yaml_representers.items",
+  "astropy.io.misc.yaml.AstropyLoader",
   "astropy.io.misc.yaml.AstropyLoader.yaml_constructors.items",
   "astropy.io.misc.yaml.AstropyLoader.yaml_multi_constructors.items",
   "astropy.io.misc.yaml.Dumper",
@@ -17,8 +21,12 @@
   "astropy.io.misc.yaml.Loader",
   "astropy.io.misc.yaml.Loader.yaml_constructors.items",
   "astropy.io.misc.yaml.Loader.yaml_multi_constructors.items",
+  "astropy.io.misc.yaml.dump",
+  "astropy.io.misc.yaml.load",
+  "astropy.units",
   "astropy.units.MHz",
   "astropy.units.Mpc",
+  "builtins",
   "c_21cmfast.ffi.addressof",
   "c_21cmfast.ffi.cast",
   "c_21cmfast.ffi.from_buffer",
@@ -46,13 +54,16 @@
   "cached_property.cached_property",
   "calibrate_photon_cons",
   "cffi.FFI",
+  "click",
+  "click.Choice",
+  "click.Group",
+  "click.Path",
+  "click.argument",
+  "click.option",
+  "click.pass_context",
   "cls",
   "cls.__class__.__name__",
-  "contextlib",
-  "contextlib.contextmanager",
   "get_all_subclasses",
-  "glob",
-  "glob.glob",
   "h5py",
   "h5py.File",
   "hashlib.md5",
@@ -66,6 +77,22 @@
   "inputs.global_params.use",
   "inspect",
   "kls",
+  "matplotlib.colors",
+  "matplotlib.colors.LinearSegmentedColormap.from_list",
+  "matplotlib.colors.LogNorm",
+  "matplotlib.colors.Normalize",
+  "matplotlib.pyplot",
+  "matplotlib.pyplot.Axes",
+  "matplotlib.pyplot.Figure",
+  "matplotlib.pyplot.colorbar",
+  "matplotlib.pyplot.gca",
+  "matplotlib.pyplot.gcf",
+  "matplotlib.pyplot.imshow",
+  "matplotlib.pyplot.register_cmap",
+  "matplotlib.pyplot.savefig",
+  "matplotlib.pyplot.sca",
+  "matplotlib.pyplot.subplots",
+  "matplotlib.ticker.AutoLocator",
   "multiprocessing.current_process",
   "numpy.abs",
   "numpy.arange",
@@ -95,13 +122,12 @@
   "powerbox.get_power",
   "py21cmfast.c_21cmfast.ffi",
   "py21cmfast.c_21cmfast.lib",
-  "re",
-  "re.match",
   "rms",
   "scipy.interpolate.interp1d",
   "sys",
   "typing.List",
   "typing.Optional",
+  "warnings",
   "warnings.warn",
   "wrapper.AstroParams",
   "wrapper.CosmoParams",
@@ -119,33 +145,21 @@
   "yaml.load"
  ],
  "deps": {
-  "astropy": [
-   "astropy/conda-forge/linux-64/astropy-2.0-np111py36_0",
-   "astropy/conda-forge/linux-64/astropy-2.0.2-np111py27_0",
-   "astropy/conda-forge/linux-64/astropy-4.2-py37h5e8e339_1"
-  ],
-  "builtins": [
-   "pies2overrides/conda-forge/osx-64/pies2overrides-2.6.7-py27_1000"
-  ],
-  "click": [
-   "click/conda-forge/noarch/click-5.1-py_0",
-   "click/conda-forge/noarch/click-6.7-py_1",
-   "click/conda-forge/noarch/click-7.0-py_0",
-   "click/conda-forge/noarch/click-7.1-pyh8c360ce_0",
-   "click/conda-forge/noarch/click-7.1.1-pyh8c360ce_0"
+  "contextlib": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "copy": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "glob": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "logging": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "matplotlib": [
-   "matplotlib-base/conda-forge/linux-64/matplotlib-base-3.1.1-py37hfd891ef_0",
-   "matplotlib-base/conda-forge/linux-64/matplotlib-base-3.1.1-py38h250f245_2",
-   "matplotlib/conda-forge/linux-64/matplotlib-1.5.3-np111py34_0"
   ],
   "ntpath": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -160,7 +174,7 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "warnings": [
+  "re": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ]

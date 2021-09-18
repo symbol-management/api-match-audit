@@ -3,15 +3,23 @@
   "_load_profile",
   "add_message",
   "collections.defaultdict",
+  "ipdb",
+  "ipdb.set_trace",
   "logilab.common.configuration.OptionsManagerMixIn",
   "logilab.common.configuration.OptionsManagerMixIn.__init__",
   "m",
+  "mccabe.PathGraphingAstVisitor",
+  "mimetypes",
+  "mimetypes.guess_type",
   "os.getcwd",
   "os.listdir",
   "os.path.commonprefix",
   "os.path.exists",
   "os.path.isdir",
   "os.path.isfile",
+  "pep8ext_naming.NamingChecker",
+  "pkg_resources",
+  "pkg_resources.resource_string",
   "prospector.formatters.FORMATTERS.keys",
   "prospector.tools.TOOLS.items",
   "prospector.tools.TOOLS.keys",
@@ -39,14 +47,84 @@
   "prospector.tools.pyroma.__init__.PYROMA_TEST_CLASSES",
   "prospector.tools.pyroma.__init__._old",
   "prospector.tools.vulture.__init__.ProspectorVulture",
+  "pycodestyle.BaseReport",
   "pycodestyle.DEFAULT_CONFIG",
+  "pycodestyle.PROJECT_CONFIG",
+  "pycodestyle.StyleGuide",
+  "pycodestyle.USER_CONFIG",
+  "pycodestyle.register_check",
+  "pydocstyle.checker.AllError",
+  "pydocstyle.checker.ConventionChecker",
+  "pyflakes.api.checkPath",
+  "pyflakes.reporter.Reporter",
+  "pylint.__pkginfo__.numversion",
+  "pylint.checkers.BaseTokenChecker",
+  "pylint.config.OptionsManagerMixIn",
+  "pylint.config.find_pylintrc",
+  "pylint.exceptions.UnknownMessageError",
+  "pylint.interfaces.ITokenChecker",
+  "pylint.lint.PyLinter",
   "pylint.lint.PyLinter.__doc__",
+  "pylint.lint.PyLinter.expand_files",
+  "pylint.reporters.BaseReporter",
   "pylint.utils.UnknownMessage",
+  "pylint.utils._splitstrip",
+  "pyroma.projectdata",
+  "pyroma.projectdata.get_data",
+  "pyroma.ratings",
+  "pyroma.ratings.ALL_TESTS",
+  "pyroma.ratings.Author",
+  "pyroma.ratings.AuthorEmail",
+  "pyroma.ratings.BusFactor",
+  "pyroma.ratings.Classifiers",
+  "pyroma.ratings.Description",
+  "pyroma.ratings.Keywords",
+  "pyroma.ratings.LicenceClassifier",
+  "pyroma.ratings.License",
+  "pyroma.ratings.LongDescription",
+  "pyroma.ratings.Name",
+  "pyroma.ratings.PEPVersion",
+  "pyroma.ratings.PackageDocs",
+  "pyroma.ratings.PythonVersion",
+  "pyroma.ratings.SDist",
+  "pyroma.ratings.Url",
+  "pyroma.ratings.ValidREST",
+  "pyroma.ratings.Version",
+  "pyroma.ratings.VersionIsString",
+  "pyroma.ratings.ZipSafe",
   "re.IGNORECASE",
+  "requirements_detector.detect.RequirementsNotFound",
+  "requirements_detector.find_requirements",
+  "setoptconf",
+  "setoptconf.BooleanSetting",
+  "setoptconf.Choice",
+  "setoptconf.ChoiceSetting",
+  "setoptconf.CommandLineSource",
+  "setoptconf.ConfigDirectory",
+  "setoptconf.ConfigFileSource",
+  "setoptconf.ConfigurationManager",
+  "setoptconf.EnvironmentVariableSource",
+  "setoptconf.HomeDirectory",
+  "setoptconf.IntegerSetting",
+  "setoptconf.ListSetting",
+  "setoptconf.String",
+  "setoptconf.StringSetting",
+  "sre_constants",
+  "sre_constants.error",
   "sys",
   "sys.stderr.write",
+  "tokenize",
   "tokenize.NEWLINE",
-  "warnings.warn"
+  "tokenize.detect_encoding",
+  "tokenize.open",
+  "vulture.Vulture",
+  "warnings",
+  "warnings.warn",
+  "xml.dom.minidom.Document",
+  "yaml",
+  "yaml.parser.ParserError",
+  "yaml.safe_dump",
+  "yaml.safe_load"
  ],
  "deps": {
   "__future__": [
@@ -68,29 +146,11 @@
   "frosted": [
    "frosted/conda-forge/noarch/frosted-1.4.1-py_1"
   ],
-  "ipdb": [
-   "ipdb/conda-forge/noarch/ipdb-0.11-py_1",
-   "ipdb/conda-forge/noarch/ipdb-0.12-py_0",
-   "ipdb/conda-forge/noarch/ipdb-0.12.1-py_0",
-   "ipdb/conda-forge/noarch/ipdb-0.12.2-py_0",
-   "ipdb/conda-forge/noarch/ipdb-0.12.3-py_0",
-   "ipdb/conda-forge/noarch/ipdb-0.13.0-pyh9f0ad1d_0",
-   "ipdb/conda-forge/noarch/ipdb-0.13.4-pyhd3deb0d_0",
-   "ipdb/conda-forge/noarch/ipdb-0.13.7-pyhd8ed1ab_0",
-   "ipdb/conda-forge/noarch/ipdb-0.13.9-pyhd8ed1ab_0"
-  ],
   "json": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "logging": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "mccabe": [
-   "mccabe/conda-forge/noarch/mccabe-0.6.1-py_1"
-  ],
-  "mimetypes": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -102,83 +162,9 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "pep8ext_naming": [
-   "pep8-naming/conda-forge/noarch/pep8-naming-0.10.0-pyh9f0ad1d_0",
-   "pep8-naming/conda-forge/noarch/pep8-naming-0.12.0-pyhd8ed1ab_0",
-   "pep8-naming/conda-forge/noarch/pep8-naming-0.6.0-py_0",
-   "pep8-naming/conda-forge/noarch/pep8-naming-0.6.1-py_0",
-   "pep8-naming/conda-forge/noarch/pep8-naming-0.7.0-py_0",
-   "pep8-naming/conda-forge/noarch/pep8-naming-0.8.2-py_0",
-   "pep8-naming/conda-forge/noarch/pep8-naming-0.9.0-py_0"
-  ],
-  "pkg_resources": [
-   "setuptools/conda-forge/linux-64/setuptools-40.6.1-py36_0",
-   "setuptools/conda-forge/linux-64/setuptools-46.3.0-py38h32f6830_0",
-   "setuptools/conda-forge/linux-64/setuptools-49.1.2-py38h32f6830_0"
-  ],
-  "pycodestyle": [
-   "pycodestyle/conda-forge/noarch/pycodestyle-2.5.0-py_0",
-   "pycodestyle/conda-forge/noarch/pycodestyle-2.6.0-pyh9f0ad1d_0",
-   "pycodestyle/conda-forge/noarch/pycodestyle-2.7.0-pyhd8ed1ab_0"
-  ],
-  "pydocstyle": [
-   "pydocstyle/conda-forge/noarch/pydocstyle-4.0.1-py_0",
-   "pydocstyle/conda-forge/noarch/pydocstyle-5.1.0-py_0",
-   "pydocstyle/conda-forge/noarch/pydocstyle-5.1.1-py_0",
-   "pydocstyle/conda-forge/noarch/pydocstyle-6.1.0-pyhd8ed1ab_0",
-   "pydocstyle/conda-forge/noarch/pydocstyle-6.1.1-pyhd8ed1ab_0"
-  ],
-  "pyflakes": [
-   "pyflakes/conda-forge/noarch/pyflakes-2.0.0-py_0",
-   "pyflakes/conda-forge/noarch/pyflakes-2.1.1-py_0",
-   "pyflakes/conda-forge/noarch/pyflakes-2.2.0-pyh9f0ad1d_0",
-   "pyflakes/conda-forge/noarch/pyflakes-2.3.0-pyhd8ed1ab_0",
-   "pyflakes/conda-forge/noarch/pyflakes-2.3.1-pyhd8ed1ab_0"
-  ],
-  "pylint": [],
-  "pyroma": [
-   "pyroma/conda-forge/noarch/pyroma-2.3-py_1",
-   "pyroma/conda-forge/noarch/pyroma-2.3.1-py_0"
-  ],
   "re": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "requirements_detector": [
-   "requirements-detector/conda-forge/linux-64/requirements-detector-0.5.2-py34_0",
-   "requirements-detector/conda-forge/win-64/requirements-detector-0.5.2-py36_0"
-  ],
-  "setoptconf": [
-   "setoptconf/conda-forge/linux-64/setoptconf-0.2.0-py36h9f0ad1d_1002",
-   "setoptconf/conda-forge/win-64/setoptconf-0.2.0-py38h32f6830_1003"
-  ],
-  "sre_constants": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "tokenize": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "vulture": [
-   "vulture/conda-forge/noarch/vulture-0.28-py_0",
-   "vulture/conda-forge/noarch/vulture-0.29-py_0",
-   "vulture/conda-forge/noarch/vulture-1.6-pyh9f0ad1d_0",
-   "vulture/conda-forge/noarch/vulture-2.0-pyh9f0ad1d_0"
-  ],
-  "warnings": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "xml": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "yaml": [
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0",
-   "pyyaml/conda-forge/linux-64/pyyaml-3.11-py35_0",
-   "pyyaml/conda-forge/win-64/pyyaml-5.2-py36hfa6e2cd_0"
   ]
  }
 }

@@ -5,8 +5,32 @@
   "dask.distributed.Client",
   "dask.distributed.LocalCluster",
   "dask.distributed.performance_report",
+  "geopandas",
+  "geopandas.GeoDataFrame",
+  "geopandas.GeoDataFrame.from_features",
+  "geopandas.points_from_xy",
+  "geopandas.read_file",
   "hydroengine",
   "hydroengine.get_lake_time_series",
+  "hydromt.flw",
+  "hydromt.flw.basin_map",
+  "hydromt.flw.basin_shape",
+  "hydromt.flw.flwdir_from_da",
+  "hydromt.flw.gaugemap",
+  "hydromt.gis_utils.cellres",
+  "hydromt.gis_utils.reggrid_area",
+  "hydromt.io.open_mfraster",
+  "hydromt.models.model_api.Model",
+  "hydromt.stats._nse",
+  "hydromt.workflows",
+  "hydromt.workflows.forcing.pet",
+  "hydromt.workflows.forcing.precip",
+  "hydromt.workflows.forcing.resample_time",
+  "hydromt.workflows.forcing.temp",
+  "hydromt.workflows.get_basin_geometry",
+  "hydromt.workflows.hydrography",
+  "hydromt.workflows.parse_region",
+  "hydromt.workflows.topography",
   "numpy.abs",
   "numpy.arange",
   "numpy.bool",
@@ -24,6 +48,16 @@
   "numpy.uint8",
   "numpy.zeros",
   "os.path.isfile",
+  "pandas",
+  "pandas.DataFrame",
+  "pandas.Index",
+  "pandas.Series",
+  "pandas.isna",
+  "pandas.notna",
+  "pandas.read_csv",
+  "pandas.to_datetime",
+  "pandas.to_timedelta",
+  "pcraster",
   "ptf.ErosK_texture",
   "ptf.UsleK_EPIC",
   "ptf.UsleK_Renard",
@@ -32,11 +66,33 @@
   "ptf.pore_size_index_brakensiek",
   "ptf.thetar_toth",
   "ptf.thetas_toth",
+  "pyflwdir.core_conversion",
+  "pyflwdir.core_conversion.d8_to_ldd",
+  "pyflwdir.core_d8",
+  "pyflwdir.core_d8.isvalid",
+  "pyflwdir.core_ldd",
+  "pyflwdir.core_ldd._mv",
+  "pyproj",
+  "pyproj.CRS.from_user_input",
+  "scipy.optimize.curve_fit",
+  "shapely.geometry.box",
   "toml",
   "toml.dump",
   "toml.load",
+  "typing.Optional",
+  "xarray",
+  "xarray.DataArray",
+  "xarray.DataArray.copy",
+  "xarray.Dataset",
+  "xarray.Variable",
+  "xarray.apply_ufunc",
+  "xarray.concat",
+  "xarray.full_like",
+  "xarray.merge",
+  "xarray.open_dataset",
   "xarray.ufuncs.exp",
-  "xarray.ufuncs.log"
+  "xarray.ufuncs.log",
+  "xarray.where"
  ],
  "deps": {
   "codecs": [
@@ -65,14 +121,9 @@
    "dask-core/conda-forge/noarch/dask-core-2021.4.1-pyhd8ed1ab_0",
    "dask-core/conda-forge/noarch/dask-core-2021.5.1-pyhd8ed1ab_0"
   ],
-  "geopandas": [],
   "glob": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "hydromt": [
-   "hydromt/conda-forge/noarch/hydromt-0.4.0-pyhd8ed1ab_0",
-   "hydromt/conda-forge/noarch/hydromt-0.4.1-pyhd8ed1ab_0"
   ],
   "logging": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -94,46 +145,6 @@
   "os": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "pandas": [],
-  "pcraster": [
-   "pcraster/conda-forge/linux-64/pcraster-4.3.0-py36h9496471_3",
-   "pcraster/conda-forge/linux-64/pcraster-4.3.0-py38h399d707_2",
-   "pcraster/conda-forge/linux-64/pcraster-4.3.1-py37hed8d073_1"
-  ],
-  "pyflwdir": [
-   "pyflwdir/conda-forge/noarch/pyflwdir-0.4.4-pyhd8ed1ab_0",
-   "pyflwdir/conda-forge/noarch/pyflwdir-0.4.6-pyhd8ed1ab_0",
-   "pyflwdir/conda-forge/noarch/pyflwdir-0.4.7-pyhd8ed1ab_0"
-  ],
-  "pyproj": [
-   "pyproj/conda-forge/linux-64/pyproj-2.1.3-py37h516909a_0",
-   "pyproj/conda-forge/linux-64/pyproj-2.3.0-py37h2fd02e8_0"
-  ],
-  "scipy": [
-   "scipy/conda-forge/linux-64/scipy-0.17.1-np110py27_blas_openblas_202",
-   "scipy/conda-forge/linux-64/scipy-1.7.0-py37h29e03ee_0",
-   "scipy/conda-forge/linux-64/scipy-1.7.0-py37ha768fb6_1"
-  ],
-  "shapely": [
-   "shapely/conda-forge/linux-64/shapely-1.5.15-np19py35_0",
-   "shapely/conda-forge/linux-64/shapely-1.7.1-py37hba0730f_1",
-   "solaris/conda-forge/noarch/solaris-0.4.0-pyhe05a262_0"
-  ],
-  "typing": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "xarray": [
-   "xarray/conda-forge/noarch/xarray-0.13.0-py_0",
-   "xarray/conda-forge/noarch/xarray-0.14.1-py_0",
-   "xarray/conda-forge/noarch/xarray-0.15.0-py_0",
-   "xarray/conda-forge/noarch/xarray-0.15.1-py_0",
-   "xarray/conda-forge/noarch/xarray-0.16.0-py_0",
-   "xarray/conda-forge/noarch/xarray-0.16.1-py_0",
-   "xarray/conda-forge/noarch/xarray-0.16.2-pyhd8ed1ab_0",
-   "xarray/conda-forge/noarch/xarray-0.18.0-pyhd8ed1ab_0",
-   "xarray/conda-forge/noarch/xarray-0.18.2-pyhd8ed1ab_0"
   ]
  }
 }
