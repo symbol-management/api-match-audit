@@ -19,7 +19,6 @@
   "Unquote",
   "_",
   "_boto_single.BotoBackend._close",
-  "_dummy_thread",
   "_librsync.RS_JOB_BLOCKSIZE",
   "_librsync.librsyncError",
   "_thread",
@@ -28,28 +27,17 @@
   "add_prefix",
   "add_to_chains",
   "add_to_sets",
-  "array",
   "array.array",
   "assert_only_one",
   "atexit",
   "b2.download_dest.DownloadDestLocalFile",
   "b2.file_version.FileVersionInfoFactory.from_api_response",
-  "base64",
-  "base64.b64encode",
   "bfmt",
-  "binascii.hexlify",
-  "boto",
-  "boto.s3.connection.OrdinaryCallingFormat",
-  "boto.s3.connection.S3Connection",
-  "boto.s3.connection.SubdomainCallingFormat",
-  "boto.storage_uri",
   "boto3",
   "boto3.resource",
   "botocore",
   "botocore.exceptions.ClientError",
   "builtins.str.join",
-  "calendar",
-  "calendar.timegm",
   "chain_times_str",
   "check_full",
   "check_inc",
@@ -60,10 +48,10 @@
   "close",
   "closing_func",
   "cloudfiles.errors.NoSuchObject",
+  "collections",
   "collections.deque",
-  "concurrent.futures.ThreadPoolExecutor",
-  "copy",
-  "copy.copy",
+  "configparser",
+  "configparser.ConfigParser",
   "copy_raw",
   "copy_to_local",
   "datetime",
@@ -283,15 +271,10 @@
   "kerberos.authGSSClientResponse",
   "kerberos.authGSSClientStep",
   "log_diff",
-  "logging",
-  "logging.FileHandler",
-  "logging.Filter",
-  "logging.Formatter",
-  "logging.Formatter.format",
-  "logging.StreamHandler",
-  "logging.getLogger",
-  "logging.shutdown",
   "make_filename",
+  "math",
+  "math.fabs",
+  "math.sqrt",
   "md5.new",
   "mock.MagicMock",
   "multiprocessing.dummy.TimeoutError",
@@ -327,16 +310,31 @@
   "os.minor",
   "os.mkdir",
   "os.mkfifo",
+  "os.path",
+  "os.path.abspath",
+  "os.path.basename",
   "os.path.exists",
+  "os.path.expanduser",
+  "os.path.expandvars",
   "os.path.getmtime",
   "os.path.getsize",
+  "os.path.isabs",
   "os.path.isfile",
+  "os.path.join",
+  "os.path.normcase",
+  "os.path.normpath",
+  "os.path.realpath",
+  "os.path.sep",
   "os.path.sep.join",
+  "os.path.split",
+  "os.path.splitext",
+  "os.pathsep",
   "os.pipe",
   "os.readlink",
   "os.remove",
   "os.rename",
   "os.rmdir",
+  "os.sep",
   "os.set_inheritable",
   "os.setgid",
   "os.setuid",
@@ -403,6 +401,13 @@
   "sys.stdout.isatty",
   "sys.stdout.write",
   "sys.version_info.major",
+  "tempfile",
+  "tempfile.TemporaryFile",
+  "tempfile.gettempdir",
+  "tempfile.mkdtemp",
+  "tempfile.mkstemp",
+  "tempfile.mktemp",
+  "tempfile.tempdir",
   "time",
   "timetostring",
   "tobytes",
@@ -419,6 +424,10 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "_dummy_thread": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "_pickle": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -427,17 +436,31 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "backports": [
-   "configparser/conda-forge/noarch/configparser-5.0.0-py_0"
-  ],
-  "collections": [
+  "array": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "configparser": [
-   "configparser/conda-forge/linux-64/configparser-3.7.1-py27_1",
-   "configparser/conda-forge/noarch/configparser-5.0.0-py_0",
-   "configparser/conda-forge/noarch/configparser-5.0.1-py_0",
+  "base64": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "binascii": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "boto": [
+   "boto/conda-forge/noarch/boto-2.49.0-py_0"
+  ],
+  "calendar": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "concurrent": [
+   "futures/conda-forge/linux-64/futures-3.2.0-py27_0",
+   "futures/conda-forge/osx-64/futures-3.3.0-py27h8c360ce_1",
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython"
+  ],
+  "copy": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -505,25 +528,21 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "logging": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "lxml": [
    "lxml/conda-forge/linux-64/lxml-3.7.3-py27_0",
    "lxml/conda-forge/linux-64/lxml-4.2.6-py27hc9114bc_0",
    "lxml/conda-forge/linux-64/lxml-4.2.6-py37h23eabaa_1000",
    "pyexcel-ods3/conda-forge/noarch/pyexcel-ods3-0.5.3-py_0"
   ],
-  "math": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "mock": [
    "mock/conda-forge/linux-64/mock-2.0.0-py27_1000",
    "mock/conda-forge/linux-64/mock-3.0.3-py37_0"
   ],
   "multiprocessing": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "ntpath": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -648,10 +667,6 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "tarfile": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "tempfile": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],

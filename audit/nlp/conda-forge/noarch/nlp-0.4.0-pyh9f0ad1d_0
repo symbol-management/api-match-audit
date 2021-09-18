@@ -25,7 +25,6 @@
   "_strip",
   "_strip_if_str",
   "_transpose_and_strip_dicts",
-  "apache_beam",
   "apache_beam.CoGroupByKey",
   "apache_beam.Create",
   "apache_beam.Filter",
@@ -38,21 +37,7 @@
   "apache_beam.io.ReadAllFromText",
   "apache_beam.io.ReadFromTFRecord",
   "apache_beam.io.ReadFromText",
-  "apache_beam.io.filebasedsink",
-  "apache_beam.io.filebasedsink.FileBasedSink",
-  "apache_beam.io.filesystem.CompressionTypes",
-  "apache_beam.io.filesystems.FileSystems",
-  "apache_beam.io.filesystems.FileSystems.create",
-  "apache_beam.io.filesystems.FileSystems.match",
-  "apache_beam.io.filesystems.FileSystems.open",
-  "apache_beam.io.iobase.Write",
-  "apache_beam.io.parquetio.WriteToParquet",
   "apache_beam.io.textio.CompressionTypes.GZIP",
-  "apache_beam.metrics.Metrics.counter",
-  "apache_beam.metrics.MetricsFilter",
-  "apache_beam.options.pipeline_options.PipelineOptions",
-  "apache_beam.options.pipeline_options.TypeOptions",
-  "apache_beam.pipeline.Pipeline",
   "apache_beam.ptransform_fn",
   "apache_beam.transforms.PTransform",
   "apache_beam.transforms.Reshuffle",
@@ -69,12 +54,23 @@
   "bert_score.utils.get_hash",
   "bert_score.utils.lang2model",
   "bert_score.utils.model2layers",
+  "bs4.BeautifulSoup",
   "builder_cls",
   "builder_cls.get_imported_module_dir",
+  "bz2",
+  "bz2.open",
+  "bz2file",
+  "bz2file.BZ2File",
   "class_type",
+  "codecs",
+  "codecs.getreader",
+  "collections",
+  "collections.Counter",
+  "collections.OrderedDict",
   "collections.abc.Iterable",
   "collections.abc.Mapping",
   "collections.defaultdict",
+  "collections.namedtuple",
   "command",
   "conll.mention",
   "conll.mention.Mention",
@@ -110,6 +106,8 @@
   "dill._dill.log.info",
   "does_function_return_dict",
   "encode_example",
+  "enum",
+  "enum.Enum",
   "errno",
   "eval.evaluator",
   "eval.evaluator.b_cubed",
@@ -138,9 +136,6 @@
   "hashlib.md5",
   "hashlib.sha1",
   "hashlib.sha256",
-  "importlib",
-  "importlib.import_module",
-  "importlib.invalidate_caches",
   "incomplete_dir",
   "info.DatasetInfo.from_directory",
   "info.DatasetInfo.from_merge",
@@ -153,6 +148,12 @@
   "langdetect.DetectorFactory.seed",
   "line_has_too_long_word",
   "lower",
+  "math",
+  "math.ceil",
+  "math.exp",
+  "math.floor",
+  "math.log",
+  "math.trunc",
   "metric_cls",
   "mwparserfromhell",
   "mwparserfromhell.parse",
@@ -171,18 +172,26 @@
   "numpy.random.seed",
   "numpy.random.set_state",
   "numpy.zeros",
+  "operator.itemgetter",
   "os.DirEntry",
   "os.environ.get",
   "os.getcwd",
   "os.listdir",
+  "os.path.abspath",
+  "os.path.basename",
+  "os.path.dirname",
   "os.path.exists",
+  "os.path.expanduser",
   "os.path.getsize",
   "os.path.isdir",
   "os.path.isfile",
+  "os.path.join",
+  "os.path.splitext",
   "os.remove",
   "os.rename",
   "os.rmdir",
   "os.scandir",
+  "os.sep",
   "os.stat",
   "parse_date",
   "parse_example",
@@ -248,6 +257,8 @@
   "sys",
   "sys.version.split",
   "temp_file_manager",
+  "tempfile",
+  "tempfile.NamedTemporaryFile",
   "tensorflow.compat.v2",
   "tensorflow.compat.v2.compat.as_text",
   "tensorflow.config.list_physical_devices",
@@ -312,28 +323,11 @@
    "absl-py/conda-forge/noarch/absl-py-0.4.1-py_0",
    "absl-py/conda-forge/noarch/absl-py-0.5.0-py_0"
   ],
+  "apache_beam": [
+   "apache-beam/conda-forge/linux-64/apache-beam-2.22.0-py37h5e8e339_0"
+  ],
   "argparse": [
    "argparse/conda-forge/osx-64/argparse-1.4.0-py26_0",
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "bs4": [
-   "beautifulsoup4/conda-forge/linux-64/beautifulsoup4-4.7.1-py37_1001",
-   "beautifulsoup4/conda-forge/linux-64/beautifulsoup4-4.8.2-py37_0",
-   "beautifulsoup4/conda-forge/noarch/beautifulsoup4-4.9.3-pyhb0f4dca_0"
-  ],
-  "bz2": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "bz2file": [
-   "bz2file/conda-forge/noarch/bz2file-0.98-py_0"
-  ],
-  "codecs": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "collections": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -361,11 +355,6 @@
    "elasticsearch/conda-forge/noarch/elasticsearch-7.7.1-pyh9f0ad1d_0",
    "elasticsearch/conda-forge/noarch/elasticsearch-7.8.0-pyh9f0ad1d_0",
    "elasticsearch/conda-forge/noarch/elasticsearch-7.8.1-pyh9f0ad1d_0"
-  ],
-  "enum": [
-   "privy/conda-forge/noarch/privy-6.0.0-py_0",
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "faiss": [
    "faiss/conda-forge/linux-64/faiss-1.6.3-py36hd337d12_3_cpu",
@@ -407,6 +396,10 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "importlib": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "inspect": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -432,10 +425,6 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "math": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "matplotlib": [
    "matplotlib-base/conda-forge/linux-64/matplotlib-base-3.1.1-py37hfd891ef_0",
    "matplotlib-base/conda-forge/linux-64/matplotlib-base-3.1.1-py38h250f245_2",
@@ -448,18 +437,10 @@
    "nltk/conda-forge/noarch/nltk-3.6.1-pyhd8ed1ab_0",
    "nltk/conda-forge/noarch/nltk-3.6.2-pyhd8ed1ab_0"
   ],
-  "ntpath": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "numpy": [
    "numpy/conda-forge/linux-64/numpy-1.17.5-py36h95a1406_0",
    "numpy/conda-forge/linux-64/numpy-1.18.4-py37h8960a57_0",
    "numpy/conda-forge/linux-64/numpy-1.19.2-py36h68c22af_1"
-  ],
-  "operator": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "os": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -529,10 +510,6 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "tarfile": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "tempfile": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
