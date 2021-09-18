@@ -11,12 +11,6 @@
   "Nio",
   "NumpyIndexingAdapter",
   "Other",
-  "PseudoNetCDF",
-  "PseudoNetCDF.PseudoNetCDFDimension",
-  "PseudoNetCDF.PseudoNetCDFFile",
-  "PseudoNetCDF.PseudoNetCDFVariable",
-  "PseudoNetCDF.pncopen",
-  "PseudoNetCDF.pncwrite",
   "Subclass",
   "UnreliableArray",
   "Variable",
@@ -294,7 +288,18 @@
   "groupby.GroupBy",
   "groupby._dummy_copy",
   "groupby.peek_at",
+  "gzip",
+  "gzip.open",
+  "h5netcdf",
+  "h5netcdf.File",
+  "h5netcdf.__version__",
+  "h5py",
+  "h5py.check_dtype",
+  "h5py.special_dtype",
+  "h5py.version.hdf5_version",
   "hashlib.md5",
+  "importlib",
+  "importlib.import_module",
   "indexing.ExplicitlyIndexed",
   "indexing.ImplicitToExplicitIndexingAdapter",
   "indexing.MemoryCachedArray",
@@ -306,6 +311,14 @@
   "interpolator",
   "io.BytesIO",
   "io.StringIO",
+  "iris",
+  "iris.coords.AuxCoord",
+  "iris.coords.CellMethod",
+  "iris.coords.DimCoord",
+  "iris.cube.Cube",
+  "iris.exceptions",
+  "iris.exceptions.CoordinateNotFoundError",
+  "iris.fileformats.netcdf.parse_cell_methods",
   "is_alignable",
   "is_array_like",
   "isint",
@@ -460,9 +473,6 @@
   "parallel_add",
   "parallel_identity",
   "pdcompat.Panel",
-  "platform",
-  "platform.machine",
-  "platform.uname",
   "plot._infer_line_data",
   "plotfunc",
   "plotfunc.__doc__",
@@ -495,33 +505,22 @@
   "selkeys",
   "set.intersection",
   "set_cdms2_attrs",
-  "shutil",
-  "shutil.rmtree",
   "stack_negative",
   "stackable",
   "store_open",
   "str.maketrans",
   "struct.calcsize",
-  "subprocess",
-  "subprocess.PIPE",
-  "subprocess.Popen",
   "subset",
   "summarize_variable",
   "summarizer",
   "sys",
   "t",
-  "tempfile",
-  "tempfile.mkdtemp",
   "test_coding_times._all_cftime_date_types",
   "test_indexer",
   "test_sel",
   "time",
   "transpose",
   "twice",
-  "unittest.mock",
-  "unittest.mock.MagicMock",
-  "unittest.mock.Mock",
-  "unittest.mock.call",
   "utils.NDArrayMixin",
   "utils.NdimSizeLenMixin",
   "utils.ReprObject",
@@ -570,7 +569,6 @@
   "xarray.tests.has_nc_time_axis",
   "xarray.tests.has_netCDF4",
   "xarray.tests.has_scipy",
-  "xarray.tests.mock.patch",
   "xarray.tests.mock.patch.object",
   "xarray.tests.requires_bottleneck",
   "xarray.tests.requires_cfgrib",
@@ -596,6 +594,10 @@
   "zarr.Blosc"
  ],
  "deps": {
+  "PseudoNetCDF": [
+   "pseudonetcdf/conda-forge/noarch/pseudonetcdf-3.0.0-py_0",
+   "pseudonetcdf/conda-forge/noarch/pseudonetcdf-3.0.1-py_0"
+  ],
   "_pickle": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -704,33 +706,11 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "gzip": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "h5netcdf": [
-   "h5netcdf/conda-forge/noarch/h5netcdf-0.11.0-pyhd8ed1ab_0",
-   "h5netcdf/conda-forge/noarch/h5netcdf-0.4.3-py_0",
-   "h5netcdf/conda-forge/noarch/h5netcdf-0.6.0-py_0",
-   "h5netcdf/conda-forge/noarch/h5netcdf-0.6.1-py_0",
-   "h5netcdf/conda-forge/noarch/h5netcdf-0.7.3-py_0",
-   "h5netcdf/conda-forge/noarch/h5netcdf-0.7.4-py_0",
-   "h5netcdf/conda-forge/noarch/h5netcdf-0.8.0-py_0"
-  ],
-  "h5py": [
-   "h5py/conda-forge/linux-64/h5py-2.6.0-np111py34_4",
-   "h5py/conda-forge/linux-64/h5py-2.7.0-np113py36_1"
-  ],
   "hashlib": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "html": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "importlib": [
-   "importlib/conda-forge/linux-64/importlib-1.0.4-py26_0",
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -741,10 +721,6 @@
   "io": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "iris": [
-   "iris/conda-forge/linux-64/iris-3.0.1-py36hd000896_1",
-   "iris/conda-forge/linux-64/iris-3.0.1-py38h578d9bd_1"
   ],
   "locale": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -816,6 +792,10 @@
    "setuptools/conda-forge/linux-64/setuptools-46.3.0-py38h32f6830_0",
    "setuptools/conda-forge/linux-64/setuptools-49.1.2-py38h32f6830_0"
   ],
+  "platform": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "preprocess": [
    "preprocess/conda-forge/noarch/preprocess-1.2.3-py_1"
   ],
@@ -858,8 +838,20 @@
    "seaborn/conda-forge/noarch/seaborn-0.10.1-py_0",
    "seaborn/conda-forge/noarch/seaborn-0.9.0-py_0"
   ],
+  "shutil": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "sparse": [],
   "struct": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "subprocess": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "tempfile": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -885,6 +877,10 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "unicodedata": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "unittest": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
