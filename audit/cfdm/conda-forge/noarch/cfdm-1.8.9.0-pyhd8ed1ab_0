@@ -87,10 +87,6 @@
   "d_s",
   "docstring._docstring_substitution_definitions",
   "docstring._docstring_substitution_definitions.copy",
-  "doctest",
-  "doctest.DocTestSuite",
-  "doctest.ELLIPSIS",
-  "doctest.NORMALIZE_WHITESPACE",
   "eq",
   "faulthandler",
   "filter_method",
@@ -99,8 +95,6 @@
   "functools.partial",
   "functools.reduce",
   "get_property",
-  "importlib",
-  "importlib.import_module",
   "itertools",
   "klass",
   "klass.__name__",
@@ -131,7 +125,6 @@
   "mixin.RaggedIndexed",
   "nc_get_dimension",
   "nc_get_variable",
-  "netCDF4",
   "netCDF4.Dataset",
   "netCDF4.__file__",
   "netCDF4.__hdf5libversion__",
@@ -141,84 +134,22 @@
   "netCDF4.default_fillvals",
   "netCDF4.num2date",
   "netCDF4.stringtochar",
-  "netcdf_flattener",
   "netcdf_flattener._Flattener._Flattener__new_separator",
   "netcdf_flattener.__file__",
-  "netcdf_flattener.__version__",
-  "netcdf_flattener.flatten",
-  "numpy",
   "numpy.__file__",
-  "numpy.__version__",
-  "numpy.all",
-  "numpy.allclose",
-  "numpy.amax",
-  "numpy.amin",
   "numpy.arange",
-  "numpy.argsort",
-  "numpy.around",
-  "numpy.array",
-  "numpy.asanyarray",
   "numpy.dtype",
   "numpy.empty",
-  "numpy.expand_dims",
   "numpy.float64",
-  "numpy.intersect1d",
-  "numpy.ma.MaskedArray",
-  "numpy.ma.all",
-  "numpy.ma.allclose",
-  "numpy.ma.arange",
-  "numpy.ma.array",
-  "numpy.ma.core.MaskError",
-  "numpy.ma.count",
-  "numpy.ma.empty",
-  "numpy.ma.filled",
-  "numpy.ma.getmaskarray",
-  "numpy.ma.isMA",
-  "numpy.ma.is_masked",
   "numpy.ma.masked",
-  "numpy.ma.masked_all",
-  "numpy.ma.masked_array",
-  "numpy.ma.masked_where",
-  "numpy.ma.nomask",
-  "numpy.ma.take",
-  "numpy.ma.where",
-  "numpy.ndarray",
-  "numpy.ndenumerate",
-  "numpy.ndim",
-  "numpy.ones",
-  "numpy.prod",
-  "numpy.reshape",
-  "numpy.result_type",
-  "numpy.shape",
-  "numpy.size",
-  "numpy.squeeze",
-  "numpy.sum",
-  "numpy.take",
-  "numpy.transpose",
-  "numpy.trim_zeros",
-  "numpy.unique",
-  "numpy.where",
   "operation_method",
-  "operator",
-  "operator.mul",
-  "os",
   "os.W_OK",
   "os.access",
   "os.chdir",
-  "os.curdir",
   "os.getcwd",
-  "os.pardir",
-  "os.path.abspath",
-  "os.path.basename",
-  "os.path.dirname",
-  "os.path.expanduser",
-  "os.path.expandvars",
   "os.path.isdir",
   "os.path.isfile",
-  "os.path.join",
-  "os.path.realpath",
   "os.remove",
-  "os.walk",
   "parent_depth",
   "parent_docstring_rewrite",
   "parent_exclusions",
@@ -228,8 +159,7 @@
   "subst",
   "sys",
   "sys.float_info.epsilon",
-  "take",
-  "urllib.parse"
+  "take"
  ],
  "deps": {
   "_pickle": [
@@ -274,6 +204,10 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "doctest": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "enum": [
    "privy/conda-forge/noarch/privy-6.0.0-py_0",
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -283,11 +217,40 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "importlib": [
+   "importlib/conda-forge/linux-64/importlib-1.0.4-py26_0",
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "inspect": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "logging": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "netCDF4": [
+   "netcdf4/conda-forge/linux-64/netcdf4-1.2.4-np111py35_1",
+   "netcdf4/conda-forge/linux-64/netcdf4-1.5.1.2-py27had58050_0",
+   "netcdf4/conda-forge/linux-64/netcdf4-1.5.5.1-mpi_openmpi_py39h16caffe_0"
+  ],
+  "netcdf_flattener": [
+   "netcdf-flattener/conda-forge/noarch/netcdf-flattener-1.2.0-pyh9f0ad1d_0"
+  ],
+  "ntpath": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "numpy": [
+   "numpy/conda-forge/linux-64/numpy-1.17.5-py36h95a1406_0",
+   "numpy/conda-forge/linux-64/numpy-1.18.4-py37h8960a57_0"
+  ],
+  "operator": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "os": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -336,6 +299,10 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "unittest": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "urllib": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ]
