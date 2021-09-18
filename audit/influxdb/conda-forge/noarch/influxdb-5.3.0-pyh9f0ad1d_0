@@ -15,8 +15,18 @@
   "bytearray.fromhex",
   "client.InfluxDBClient.query",
   "client.InfluxDBClient.write_points",
+  "codecs",
   "collections.defaultdict",
+  "datetime",
+  "datetime.datetime",
+  "datetime.datetime.now",
   "datetime.datetime.today",
+  "datetime.datetime.utcfromtimestamp",
+  "datetime.datetime.utcnow",
+  "datetime.timedelta",
+  "dateutil.parser.parse",
+  "decimal.Decimal",
+  "distutils.spawn",
   "filter.items",
   "functools.partial",
   "influxdb.DataFrameClient.from_dsn",
@@ -26,21 +36,41 @@
   "itertools",
   "itertools.chain.from_iterable",
   "list_chunks",
+  "math",
+  "math.ceil",
   "mock.MagicMock",
   "mock.patch",
   "mock.patch.object",
   "nose.tools.raises",
+  "numpy",
   "numpy.NaN",
+  "numpy.__version__",
   "numpy.inf",
   "numpy.int64",
   "numpy.isnan",
+  "numpy.lib.NumpyVersion",
   "numpy.nan",
   "numpy.number",
+  "numpy.where",
   "os.environ.get",
   "os.path.isfile",
+  "pandas",
+  "pandas.DataFrame",
+  "pandas.DatetimeIndex",
   "pandas.Period",
+  "pandas.PeriodIndex",
+  "pandas.Series",
+  "pandas.Timestamp",
+  "pandas.concat",
+  "pandas.date_range",
+  "pandas.isnull",
+  "pandas.period_range",
+  "pandas.to_datetime",
+  "pandas.util.testing.assert_frame_equal",
   "pt",
   "reformat_error",
+  "shutil",
+  "shutil.rmtree",
   "six.moves.urllib.parse.urlparse",
   "six.moves.xrange",
   "socket.AF_INET",
@@ -49,18 +79,25 @@
   "socket.SOCK_STREAM",
   "socket.SOL_SOCKET",
   "socket.SO_REUSEADDR",
+  "struct",
   "struct.unpack",
+  "subprocess",
+  "subprocess.CalledProcessError",
+  "subprocess.PIPE",
+  "subprocess.Popen",
+  "subprocess.check_output",
   "sys",
+  "tempfile",
+  "tempfile.mkdtemp",
   "time",
   "unicode",
+  "warnings",
+  "warnings.catch_warnings",
+  "warnings.simplefilter",
   "warnings.warn"
  ],
  "deps": {
   "__future__": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "codecs": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -69,24 +106,6 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "copy": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "datetime": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "dateutil": [
-   "python-dateutil/conda-forge/noarch/python-dateutil-2.7.2-py_0",
-   "python-dateutil/conda-forge/noarch/python-dateutil-2.7.4-py_0",
-   "python-dateutil/conda-forge/noarch/python-dateutil-2.7.5-py_0",
-   "python-dateutil/conda-forge/noarch/python-dateutil-2.8.1-py_0",
-   "python-dateutil/conda-forge/noarch/python-dateutil-2.8.2-pyhd8ed1ab_0"
-  ],
-  "decimal": [
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "distutils": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -106,10 +125,6 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "math": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "mock": [
    "mock/conda-forge/linux-64/mock-2.0.0-py27_1000",
    "mock/conda-forge/linux-64/mock-3.0.3-py37_0"
@@ -126,16 +141,10 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "numpy": [
-   "numpy/conda-forge/linux-64/numpy-1.17.5-py36h95a1406_0",
-   "numpy/conda-forge/linux-64/numpy-1.18.4-py37h8960a57_0",
-   "numpy/conda-forge/linux-64/numpy-1.19.2-py36h68c22af_1"
-  ],
   "os": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "pandas": [],
   "pytz": [
    "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
    "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0",
@@ -170,10 +179,6 @@
    "requests-mock/conda-forge/noarch/requests-mock-1.9.2-pyhd8ed1ab_0",
    "requests-mock/conda-forge/noarch/requests-mock-1.9.3-pyhd8ed1ab_0"
   ],
-  "shutil": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "six": [
    "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
    "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0",
@@ -188,23 +193,7 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "struct": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "subprocess": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "tempfile": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "unittest": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "warnings": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ]

@@ -18,6 +18,7 @@
   "_winreg.KEY_QUERY_VALUE",
   "_winreg.OpenKeyEx",
   "_winreg.QueryValueEx",
+  "array",
   "array.array",
   "as_list_R",
   "c",
@@ -32,11 +33,12 @@
   "conversion.ri2py",
   "conversion.ri2ro",
   "conversion.set_conversion",
+  "csv",
   "csv.writer",
-  "ctypes",
-  "ctypes.CDLL",
   "curr_type",
   "data_func",
+  "datetime",
+  "datetime.datetime",
   "expression",
   "extract",
   "f_iter",
@@ -48,9 +50,9 @@
   "fun.rcall",
   "func",
   "function",
+  "functools.singledispatch",
   "gc",
   "get_ipython",
-  "glob.glob",
   "idem",
   "identical",
   "inherits",
@@ -70,10 +72,15 @@
   "itertools",
   "itertools.izip",
   "key",
+  "math",
+  "math.floor",
   "multiprocessing.Process",
   "multiprocessing.Queue",
   "newEnv",
+  "numpy",
   "numpy.arange",
+  "numpy.array",
+  "numpy.asarray",
   "numpy.bool_",
   "numpy.complex_",
   "numpy.double",
@@ -84,8 +91,13 @@
   "numpy.int64",
   "numpy.integer",
   "numpy.isnan",
+  "numpy.ndarray",
   "numpy.object_",
   "numpy.random.randn",
+  "numpy.rec.fromarrays",
+  "numpy.recarray",
+  "numpy.testing.assert_almost_equal",
+  "numpy.testing.assert_equal",
   "numpy.uint32",
   "object.__new__",
   "os.environ.get",
@@ -271,9 +283,13 @@
   "rpy2.rpy_classic.r.wilcox_test",
   "seq_R",
   "set_conversion",
+  "shutil.rmtree",
   "signal.SIGINT",
   "str.join",
   "struct.calcsize",
+  "subprocess",
+  "subprocess.Popen",
+  "subprocess.check_output",
   "sys",
   "sys.last_value",
   "sys.maxint",
@@ -281,6 +297,10 @@
   "sys.stdout.flush",
   "sys.stdout.write",
   "sys.version_info.major",
+  "tempfile",
+  "tempfile.NamedTemporaryFile",
+  "tempfile.mkdtemp",
+  "tempfile.mktemp",
   "test_Device.suite",
   "test_EmbeddedR.suite",
   "test_Sexp.suite",
@@ -312,10 +332,6 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "array": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "collections": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -328,15 +344,11 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "csv": [
+  "ctypes": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "datetime": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "functools": [
+  "glob": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -350,10 +362,6 @@
    "jinja2/conda-forge/noarch/jinja2-3.0.0-pyhd8ed1ab_0",
    "jinja2/conda-forge/noarch/jinja2-3.0.1-pyhd8ed1ab_0"
   ],
-  "math": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "multiprocessing": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -361,11 +369,6 @@
   "ntpath": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "numpy": [
-   "numpy/conda-forge/linux-64/numpy-1.17.5-py36h95a1406_0",
-   "numpy/conda-forge/linux-64/numpy-1.18.4-py37h8960a57_0",
-   "numpy/conda-forge/linux-64/numpy-1.19.2-py36h68c22af_1"
   ],
   "operator": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -397,10 +400,6 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "rpy2": [],
-  "shutil": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "signal": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -427,14 +426,6 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "struct": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "subprocess": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "tempfile": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],

@@ -9,11 +9,22 @@
   "backend_messages.authentication.Authentication.HASH_SHA512",
   "backend_messages.authentication.Authentication.MD5_PASSWORD",
   "collections.deque",
+  "configparser.ConfigParser",
+  "crypt",
   "crypt_windows.crypt",
   "datatypes.VerticaType.BINARY",
   "datatypes.VerticaType.BOOL",
   "datatypes.VerticaType.LONGVARBINARY",
   "datatypes.VerticaType.VARBINARY",
+  "datetime",
+  "datetime.date",
+  "datetime.datetime",
+  "datetime.datetime.strptime",
+  "datetime.datetime.utcfromtimestamp",
+  "datetime.time",
+  "dateutil.parser",
+  "dateutil.parser.parse",
+  "decimal.Decimal",
   "errno",
   "errors.ConnectionError",
   "errors.CopyRejected",
@@ -31,18 +42,19 @@
   "errors.QueryError.from_error_response",
   "errors.SSLNotSupported",
   "errors.VerticaSyntaxError",
+  "getpass",
+  "getpass.getuser",
+  "hashlib",
   "hashlib.md5",
   "hashlib.sha512",
+  "inspect",
+  "inspect.getsourcefile",
   "klass",
   "message.BackendMessage.register",
   "messages.backend_messages.__all__",
   "messages.frontend_messages.__all__",
-  "ordereddict.OrderedDict",
   "os.path.exists",
   "os.sys.platform",
-  "platform",
-  "pytz",
-  "pytz.UTC",
   "pytz.utc",
   "re.I",
   "re.U",
@@ -52,12 +64,6 @@
   "socket.SOCK_STREAM",
   "socket.SOL_SOCKET",
   "socket.SO_KEEPALIVE",
-  "ssl",
-  "ssl.CertificateError",
-  "ssl.SSLContext",
-  "ssl.SSLError",
-  "ssl.SSLSocket",
-  "ssl.wrap_socket",
   "struct.calcsize",
   "struct.pack",
   "struct.unpack",
@@ -65,6 +71,8 @@
   "sys",
   "sys.version_info.major",
   "sys.version_info.minor",
+  "tempfile",
+  "tempfile.TemporaryFile",
   "vertica.log.VerticaLogging.setup_file_logging",
   "vertica.messages.Authentication",
   "vertica.messages.Authentication.CHANGE_PASSWORD",
@@ -110,51 +118,15 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "_ssl": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "abc": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "backports": [
-   "configparser/conda-forge/noarch/configparser-5.0.0-py_0"
-  ],
   "collections": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "configparser": [
-   "configparser/conda-forge/linux-64/configparser-3.7.1-py27_1",
-   "configparser/conda-forge/noarch/configparser-5.0.0-py_0",
-   "configparser/conda-forge/noarch/configparser-5.0.1-py_0",
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "crypt": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "datetime": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "dateutil": [
-   "python-dateutil/conda-forge/noarch/python-dateutil-2.7.2-py_0",
-   "python-dateutil/conda-forge/noarch/python-dateutil-2.7.4-py_0",
-   "python-dateutil/conda-forge/noarch/python-dateutil-2.7.5-py_0",
-   "python-dateutil/conda-forge/noarch/python-dateutil-2.8.1-py_0",
-   "python-dateutil/conda-forge/noarch/python-dateutil-2.8.2-pyhd8ed1ab_0"
-  ],
-  "decimal": [
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "getpass": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "hashlib": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "inspect": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -173,9 +145,29 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "ordereddict": [
+   "ordereddict/conda-forge/linux-64/ordereddict-1.1-py26_0"
+  ],
   "os": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "platform": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "pytz": [
+   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
+   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0",
+   "pytz/conda-forge/noarch/pytz-2017.3-py_1",
+   "pytz/conda-forge/noarch/pytz-2017.3-py_2",
+   "pytz/conda-forge/noarch/pytz-2018.4-py_0",
+   "pytz/conda-forge/noarch/pytz-2018.5-py_0",
+   "pytz/conda-forge/noarch/pytz-2018.6-py_0",
+   "pytz/conda-forge/noarch/pytz-2019.1-py_0",
+   "pytz/conda-forge/noarch/pytz-2019.2-py_0",
+   "pytz/conda-forge/noarch/pytz-2020.1-pyh9f0ad1d_0",
+   "pytz/conda-forge/noarch/pytz-2020.4-pyhd8ed1ab_0"
   ],
   "re": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -195,7 +187,7 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "tempfile": [
+  "ssl": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],

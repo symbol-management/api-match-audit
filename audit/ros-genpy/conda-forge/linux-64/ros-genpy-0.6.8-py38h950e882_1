@@ -3,51 +3,84 @@
   "atexit",
   "cStringIO.StringIO",
   "errno",
+  "genmsg",
+  "genmsg.Constant",
+  "genmsg.DURATION",
+  "genmsg.HEADER",
+  "genmsg.InvalidMsgSpec",
+  "genmsg.MsgContext",
+  "genmsg.MsgContext.create_default",
+  "genmsg.MsgGenerationException",
+  "genmsg.MsgSpec",
+  "genmsg.SEP",
+  "genmsg.TIME",
+  "genmsg.base.log",
+  "genmsg.command_line",
+  "genmsg.command_line.includepath_to_dict",
+  "genmsg.compute_full_text",
+  "genmsg.compute_md5",
+  "genmsg.gentools",
+  "genmsg.gentools.compute_full_type_name",
+  "genmsg.is_legal_resource_base_name",
+  "genmsg.msg_loader",
+  "genmsg.msg_loader.MsgContext.create_default",
+  "genmsg.msg_loader.load_depends",
+  "genmsg.msg_loader.load_msg_from_string",
+  "genmsg.msgs",
+  "genmsg.msgs.InvalidMsgSpec",
+  "genmsg.msgs.PRIMITIVE_TYPES",
+  "genmsg.msgs.bare_msg_type",
+  "genmsg.msgs.is_builtin",
+  "genmsg.msgs.is_header_type",
+  "genmsg.msgs.parse_type",
+  "genmsg.package_resource_name",
   "io.BytesIO",
   "io.StringIO",
   "itertools",
   "itertools.izip",
+  "keyword",
+  "keyword.kwlist",
   "list_msg_class",
+  "math",
+  "math.pow",
+  "numbers",
+  "numbers.Integral",
+  "numbers.Real",
+  "optparse.OptionParser",
   "os.listdir",
   "os.path.exists",
   "os.path.isdir",
+  "roslib.load_manifest",
+  "rospkg.ResourceNotFound",
   "rostime.Duration.from_sec",
   "rostime.Time.from_sec",
   "serializer_generator",
+  "shutil",
+  "shutil.rmtree",
+  "struct",
   "struct.Struct",
   "struct.calcsize",
   "sys",
-  "sys.path.append"
+  "sys.path.append",
+  "tempfile",
+  "tempfile.NamedTemporaryFile",
+  "tempfile.mkdtemp",
+  "traceback",
+  "traceback.print_exc",
+  "warnings",
+  "yaml",
+  "yaml.dump"
  ],
  "deps": {
   "__future__": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "genmsg": [
-   "ros-genmsg/conda-forge/linux-64/ros-genmsg-0.5.12-py38he1b5a44_0"
-  ],
   "importlib": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "keyword": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "math": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "ntpath": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "numbers": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "optparse": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -58,43 +91,6 @@
   "re": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "roslib": [
-   "ros-roslib/conda-forge/linux-64/ros-roslib-1.14.6-py38h794f011_3"
-  ],
-  "rospkg": [
-   "rospkg/conda-forge/noarch/rospkg-1.2.0-py_0",
-   "rospkg/conda-forge/noarch/rospkg-1.2.1-py_0",
-   "rospkg/conda-forge/noarch/rospkg-1.2.2-py_0",
-   "rospkg/conda-forge/noarch/rospkg-1.2.3-py_1",
-   "rospkg/conda-forge/noarch/rospkg-1.2.6-pyh9f0ad1d_0",
-   "rospkg/conda-forge/noarch/rospkg-1.3.0-pyhd8ed1ab_0"
-  ],
-  "shutil": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "struct": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "tempfile": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "traceback": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "warnings": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "yaml": [
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0",
-   "pyyaml/conda-forge/linux-64/pyyaml-3.11-py35_0",
-   "pyyaml/conda-forge/win-64/pyyaml-5.2-py36hfa6e2cd_0"
   ]
  }
 }

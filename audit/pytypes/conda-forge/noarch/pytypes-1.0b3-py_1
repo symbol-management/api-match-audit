@@ -11,9 +11,6 @@
   "_issubclass_2",
   "_raise_typecheck_error",
   "_select_Generic_superclass_parameters",
-  "abc",
-  "abc.ABCMeta",
-  "abc.abstractmethod",
   "atexit",
   "backports.typing",
   "backports.typing.Any",
@@ -37,6 +34,8 @@
   "backports.typing.Union",
   "backports.typing._gorg",
   "backports.typing.no_type_check",
+  "datetime",
+  "datetime.datetime.now",
   "func",
   "func.__annotations__",
   "func.__doc__",
@@ -53,6 +52,23 @@
   "func.fset",
   "hashlib",
   "hashlib.md5",
+  "imp",
+  "imp.PY_SOURCE",
+  "imp.load_module",
+  "inspect",
+  "inspect.findsource",
+  "inspect.getargspec",
+  "inspect.getfullargspec",
+  "inspect.getmembers",
+  "inspect.getmodule",
+  "inspect.getsourcelines",
+  "inspect.isclass",
+  "inspect.isfunction",
+  "inspect.isgeneratorfunction",
+  "inspect.ismethod",
+  "inspect.ismethoddescriptor",
+  "inspect.ismodule",
+  "inspect.stack",
   "is_no_type_check",
   "os.EX_USAGE",
   "os.path.exists",
@@ -79,9 +95,6 @@
   "pytypes.default_indent.join",
   "pytypes.typechecker._pending_modules.append",
   "pytypes.typechecker._pytypes___import__.__code__",
-  "random",
-  "random.randint",
-  "random.sample",
   "subprocess",
   "subprocess.call",
   "subprocess.check_output",
@@ -95,10 +108,6 @@
   "sys.version_info.minor",
   "tempfile",
   "tempfile.gettempdir",
-  "threading",
-  "threading._profile_hook",
-  "threading.current_thread",
-  "threading.setprofile",
   "traceback",
   "traceback.extract_stack",
   "traceback.print_exception",
@@ -111,8 +120,6 @@
   "type_util.get_Tuple_params",
   "type_util.get_iterable_itemtype",
   "type_util.is_iterable",
-  "types",
-  "types.GeneratorType",
   "types.InstanceType",
   "types.__builtins__",
   "typing.Union.__getitem__",
@@ -141,25 +148,20 @@
   "util.is_method",
   "util.mro",
   "util.search_class_module",
+  "warnings",
+  "warnings.catch_warnings",
+  "warnings.simplefilter",
   "warnings.warn",
   "warnings.warn_explicit",
   "xrange"
  ],
  "deps": {
+  "abc": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "builtins": [
    "pies2overrides/conda-forge/osx-64/pies2overrides-2.6.7-py27_1000"
-  ],
-  "datetime": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "imp": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "inspect": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "ntpath": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -174,16 +176,24 @@
    "setuptools/conda-forge/linux-64/setuptools-46.3.0-py38h32f6830_0",
    "setuptools/conda-forge/linux-64/setuptools-49.1.2-py38h32f6830_0"
   ],
+  "random": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "re": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "threading": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "types": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "typing": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython"
-  ],
-  "warnings": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ]
  }
 }

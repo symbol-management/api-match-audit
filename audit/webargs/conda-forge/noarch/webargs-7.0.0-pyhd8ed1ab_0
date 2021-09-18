@@ -1,11 +1,23 @@
 {
  "bad": [
   "async_error_handler",
+  "bottle",
+  "bottle.HTTPError",
+  "bottle.request",
   "collections.abc.Mapping",
   "error_class",
   "error_handler",
+  "falcon",
+  "falcon.HTTPError",
+  "falcon.Request",
+  "falcon.status_codes",
+  "falcon.util.uri.parse_query_string",
   "flask.abort",
   "func",
+  "functools",
+  "functools.wraps",
+  "inspect",
+  "inspect.iscoroutinefunction",
   "loader_func",
   "marshmallow",
   "marshmallow.EXCLUDE",
@@ -22,26 +34,12 @@
   "marshmallow.utils.missing",
   "marshmallow.validate",
   "pyramid.httpexceptions.exception_response",
+  "pytest",
+  "pytest.fixture",
   "pytest.mark.parametrize",
   "tornado.concurrent",
   "tornado.escape._unicode",
   "tornado.web",
-  "typing",
-  "typing.Any",
-  "typing.AnyStr",
-  "typing.Awaitable",
-  "typing.Callable",
-  "typing.Dict",
-  "typing.Iterable",
-  "typing.List",
-  "typing.Mapping",
-  "typing.NoReturn",
-  "typing.Optional",
-  "typing.Tuple",
-  "typing.Type",
-  "typing.TypeVar",
-  "typing.Union",
-  "typing.cast",
   "validator",
   "webargs.__init__.__version__",
   "webargs.core.Parser.DEFAULT_LOCATION",
@@ -50,18 +48,9 @@
   "webargs.core.json.JSONDecodeError",
   "webargs.core.json.dumps",
   "webargs.core.json.loads",
-  "webob.multidict.MultiDict",
-  "webtest",
-  "webtest.TestApp",
-  "webtest.Upload",
-  "werkzeug.exceptions.HTTPException"
+  "webob.multidict.MultiDict"
  ],
  "deps": {
-  "_pytest": [
-   "pytest/conda-forge/linux-64/pytest-3.7.0-py27_0",
-   "pytest/conda-forge/linux-64/pytest-4.6.0-py37_0",
-   "pytest/conda-forge/linux-64/pytest-6.0.2-py37hc8dfbb8_0"
-  ],
   "aiohttp": [
    "aiohttp/conda-forge/linux-64/aiohttp-3.6.3-py36h97a6639_2",
    "aiohttp/conda-forge/linux-64/aiohttp-3.7.1-py37h8f50634_0",
@@ -71,17 +60,9 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "bottle": [
-   "bottle/conda-forge/noarch/bottle-0.12.13-py_1",
-   "bottle/conda-forge/noarch/bottle-0.12.17-py_0",
-   "bottle/conda-forge/noarch/bottle-0.12.18-py_0"
-  ],
   "distutils": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "falcon": [
-   "falcon/conda-forge/linux-64/falcon-1.1.0-py35_0"
   ],
   "flask": [
    "flask/conda-forge/linux-64/flask-0.12-py36_0",
@@ -89,14 +70,6 @@
    "flask/conda-forge/noarch/flask-1.0.2-py_1",
    "flask/conda-forge/noarch/flask-1.0.3-py_0",
    "flask/conda-forge/noarch/flask-1.1.0-py_0"
-  ],
-  "functools": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "inspect": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "json": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -106,10 +79,21 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "pytest": [
-   "pytest/conda-forge/linux-64/pytest-3.7.0-py27_0",
-   "pytest/conda-forge/linux-64/pytest-4.6.0-py37_0",
-   "pytest/conda-forge/linux-64/pytest-6.0.2-py37hc8dfbb8_0"
+  "typing": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "webtest": [
+   "webtest/conda-forge/noarch/webtest-2.0.33-py_0",
+   "webtest/conda-forge/noarch/webtest-2.0.34-py_0",
+   "webtest/conda-forge/noarch/webtest-2.0.35-pyh9f0ad1d_0"
+  ],
+  "werkzeug": [
+   "werkzeug/conda-forge/noarch/werkzeug-0.12.2-py_1",
+   "werkzeug/conda-forge/noarch/werkzeug-0.15.3-py_0",
+   "werkzeug/conda-forge/noarch/werkzeug-0.16.0-py_0",
+   "werkzeug/conda-forge/noarch/werkzeug-1.0.0-py_0",
+   "werkzeug/conda-forge/noarch/werkzeug-1.0.1-pyh9f0ad1d_0"
   ]
  }
 }
