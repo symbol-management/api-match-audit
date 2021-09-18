@@ -41,6 +41,12 @@
   "io.open",
   "itertools",
   "loads",
+  "mako",
+  "mako.__version__",
+  "mako.lookup.TemplateLookup",
+  "mako.template.Template",
+  "mercurial.__version__.version",
+  "multiprocessing",
   "next.maximize",
   "nprint",
   "os.F_OK",
@@ -52,7 +58,18 @@
   "os.path.exists",
   "os.path.isdir",
   "os.unlink",
+  "pathlib",
+  "pathlib2",
+  "pathlib2.Path",
   "pathlib2.__name__",
+  "perf",
+  "perf.BenchmarkSuite",
+  "perf.BenchmarkSuite.load",
+  "perf.Runner",
+  "perf.add_runs",
+  "perf.perf_counter",
+  "perf.python_has_jit",
+  "perf.python_implementation",
   "performance.__init__.VERSION",
   "performance.benchmarks.__init__.BENCH_GROUPS",
   "performance.benchmarks.__init__.DEFAULT_GROUP",
@@ -61,24 +78,54 @@
   "performance.benchmarks.__init__.python2_only",
   "perm1_ins",
   "perm1_pop",
+  "pickle",
+  "pipes.quote",
+  "platform",
+  "platform.python_implementation",
+  "pyaes",
+  "pyaes.AESModeOfOperationCTR",
   "quantity_delta",
+  "random",
+  "random.Random",
+  "random.random",
+  "random.randrange",
+  "random.seed",
   "re.IGNORECASE",
   "re.UNICODE",
   "real_compile",
   "real_search",
   "real_sub",
   "search",
+  "six",
+  "six.BytesIO",
+  "six.PY2",
+  "six.PY3",
   "six.StringIO",
+  "six.int2byte",
+  "six.integer_types",
+  "six.iterbytes",
   "six.moves.StringIO",
   "six.moves.map",
   "six.moves.xrange",
   "six.moves.zip",
+  "six.text_type",
   "six.text_type.__name__",
+  "six.u",
   "socket.AF_INET",
   "spambayes.hammie",
   "spambayes.hammie.open",
   "spambayes.mboxutils",
   "spambayes.mboxutils.getmbox",
+  "sqlalchemy.Column",
+  "sqlalchemy.ForeignKey",
+  "sqlalchemy.Integer",
+  "sqlalchemy.MetaData",
+  "sqlalchemy.String",
+  "sqlalchemy.Table",
+  "sqlalchemy.create_engine",
+  "sqlalchemy.ext.declarative.declarative_base",
+  "sqlalchemy.orm.relationship",
+  "sqlalchemy.orm.sessionmaker",
   "sqlite3.connect",
   "struct.unpack",
   "sys",
@@ -88,7 +135,17 @@
   "sys.stdout.flush",
   "time",
   "timer",
+  "tornado.gen.Task",
+  "tornado.gen.coroutine",
+  "tornado.httpclient.AsyncHTTPClient",
+  "tornado.httpserver.HTTPServer",
+  "tornado.ioloop.IOLoop",
+  "tornado.ioloop.IOLoop.instance",
+  "tornado.netutil.bind_sockets",
+  "tornado.web.Application",
+  "tornado.web.RequestHandler",
   "urllib2",
+  "xml.etree.ElementTree",
   "xml.etree.ElementTree.SubElement.__module__"
  ],
  "deps": {
@@ -193,23 +250,7 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "mako": [
-   "mako/conda-forge/noarch/mako-1.0.10-py_0",
-   "mako/conda-forge/noarch/mako-1.0.14-py_0",
-   "mako/conda-forge/noarch/mako-1.0.7-py_1",
-   "mako/conda-forge/noarch/mako-1.1.3-pyh9f0ad1d_0",
-   "mako/conda-forge/noarch/mako-1.1.4-pyh44b312d_0",
-   "mako/conda-forge/noarch/mako-1.1.5-pyhd8ed1ab_0"
-  ],
   "math": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "mercurial": [
-   "mercurial/conda-forge/linux-64/mercurial-4.5-py27_0",
-   "mercurial/conda-forge/linux-64/mercurial-5.4-py36h8c4c3a4_1"
-  ],
-  "multiprocessing": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -221,41 +262,10 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "pathlib": [
-   "pathlib/conda-forge/noarch/pathlib-1.0.1-py_1",
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "pathlib2": [
-   "pathlib2/conda-forge/linux-64/pathlib2-2.3.3-py36_1000"
-  ],
-  "perf": [
-   "perf/conda-forge/linux-64/perf-1.6.0-py37_0",
-   "perf/conda-forge/win-64/perf-1.5.1-py27_0"
-  ],
-  "pickle": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "pipes": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "pkg_resources": [
    "setuptools/conda-forge/linux-64/setuptools-40.6.1-py36_0",
    "setuptools/conda-forge/linux-64/setuptools-46.3.0-py38h32f6830_0",
    "setuptools/conda-forge/linux-64/setuptools-49.1.2-py38h32f6830_0"
-  ],
-  "platform": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "pyaes": [
-   "pyaes/conda-forge/noarch/pyaes-1.6.1-py_0"
-  ],
-  "random": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "re": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -269,21 +279,10 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "six": [
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0",
-   "lldb/conda-forge/linux-64/lldb-6.0.0-py35_0",
-   "privy/conda-forge/noarch/privy-6.0.0-py_0",
-   "six/conda-forge/linux-64/six-1.10.0-py34_0",
-   "six/conda-forge/linux-64/six-1.10.0-py34_1",
-   "six/conda-forge/noarch/six-1.14.0-py_1",
-   "six/conda-forge/noarch/six-1.16.0-pyh6c4a22f_0"
-  ],
   "socket": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "sqlalchemy": [],
   "sqlite3": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -309,9 +308,6 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "tornado": [
-   "tornado/conda-forge/linux-64/tornado-4.4.3-py35_0"
-  ],
   "traceback": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -321,10 +317,6 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "urllib": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "xml": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ]
