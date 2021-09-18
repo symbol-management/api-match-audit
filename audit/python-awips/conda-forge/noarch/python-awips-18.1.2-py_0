@@ -54,6 +54,8 @@
   "func",
   "functools.reduce",
   "hashlib.md5",
+  "http.client",
+  "http.server",
   "httplib",
   "id.lower",
   "io.StringIO",
@@ -62,6 +64,7 @@
   "key_reader",
   "m",
   "m.ClassAdapter",
+  "main",
   "method",
   "multiprocessing.Condition",
   "multiprocessing.Process",
@@ -81,6 +84,7 @@
   "numpy.short",
   "numpy.string_",
   "obj_class",
+  "optparse.OptionParser",
   "os.R_OK",
   "os.WNOHANG",
   "os._exit",
@@ -101,6 +105,8 @@
   "params.SITE_ID",
   "params.SITE_ID.decode",
   "params.STATION_ID",
+  "pkgutil",
+  "pkgutil.iter_modules",
   "protocol.TBinaryProtocol.TBinaryProtocolFactory",
   "pwd",
   "pypies.impl.H5pyDataStore.vlen_str_type",
@@ -117,7 +123,9 @@
   "reader",
   "set.getEnumClass",
   "setMethod",
+  "six.BytesIO",
   "six.moves.cStringIO",
+  "six.with_metaclass",
   "socket.AF_INET",
   "socket.AF_INET6",
   "socket.AF_UNIX",
@@ -136,9 +144,13 @@
   "socket.inet_ntoa",
   "socket.setdefaulttimeout",
   "ssl.PROTOCOL_TLSv1",
+  "string",
+  "string.Template",
   "string.atoi",
   "struct.pack",
   "struct.unpack",
+  "subprocess",
+  "subprocess.check_output",
   "sys",
   "sys.platform.startswith",
   "sys.stderr.write",
@@ -147,7 +159,11 @@
   "testWarning",
   "testWarning.WarningTestCase",
   "thread",
+  "threading",
+  "threading.Thread",
+  "threading.Timer",
   "threading._active.items",
+  "threading.currentThread",
   "thrift.Thrift.TType.BOOL",
   "thrift.Thrift.TType.BYTE",
   "thrift.Thrift.TType.DOUBLE",
@@ -173,6 +189,7 @@
   "transport.TTransport.TMemoryBuffer",
   "try_close",
   "type.getText",
+  "types",
   "unicode",
   "urllib2",
   "urllib2.HTTPError",
@@ -253,11 +270,6 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "http": [
-   "pies2overrides/conda-forge/osx-64/pies2overrides-2.6.7-py27_1000",
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "inspect": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -267,10 +279,6 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "logging": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "main": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -291,15 +299,7 @@
    "numpy/conda-forge/linux-64/numpy-1.18.4-py37h8960a57_0",
    "numpy/conda-forge/linux-64/numpy-1.19.2-py36h68c22af_1"
   ],
-  "optparse": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "os": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "pkgutil": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -330,16 +330,6 @@
    "shapely/conda-forge/linux-64/shapely-1.7.1-py37hba0730f_1",
    "solaris/conda-forge/noarch/solaris-0.4.0-pyhe05a262_0"
   ],
-  "six": [
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0",
-   "lldb/conda-forge/linux-64/lldb-6.0.0-py35_0",
-   "privy/conda-forge/noarch/privy-6.0.0-py_0",
-   "six/conda-forge/linux-64/six-1.10.0-py34_0",
-   "six/conda-forge/linux-64/six-1.10.0-py34_1",
-   "six/conda-forge/noarch/six-1.14.0-py_1",
-   "six/conda-forge/noarch/six-1.16.0-pyh6c4a22f_0"
-  ],
   "socket": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -355,19 +345,7 @@
    "stomp.py/conda-forge/noarch/stomp.py-6.0.0-pyh9f0ad1d_0",
    "stomp.py/conda-forge/noarch/stomp.py-7.0.0-pyhd8ed1ab_0"
   ],
-  "string": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "struct": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "subprocess": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "threading": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -377,10 +355,6 @@
   ],
   "twisted": [
    "twisted/conda-forge/linux-64/twisted-18.7.0-py37h14c3975_1001"
-  ],
-  "types": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "unittest": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",

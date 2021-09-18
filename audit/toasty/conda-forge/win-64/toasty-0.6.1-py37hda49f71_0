@@ -87,7 +87,10 @@
   "pyramid.next_highest_power_of_2",
   "pyramid.pos_children",
   "pyramid.pos_parent",
+  "pytest",
+  "pytest.fail",
   "pytest.mark.skipif",
+  "pytest.raises",
   "reproject.mosaicking.wcs_helpers.find_optimal_celestial_wcs",
   "samplers.healpix_fits_file_sampler",
   "samplers.plate_carree_ecliptic_sampler",
@@ -114,14 +117,33 @@
   "toasty.pipeline.__init__._load_local_pio",
   "toasty.tests.__init__.TESTS_DIR",
   "toasty.tests.__init__.check_xml_elements_equal",
+  "tqdm.tqdm",
   "transform.f16x3_to_rgb",
+  "urllib.parse.quote",
+  "urllib.parse.urljoin",
+  "urllib.parse.urlsplit",
   "value",
+  "wwt_data_formats.enums.DataSetType",
   "wwt_data_formats.enums.DataSetType.PLANET",
   "wwt_data_formats.enums.DataSetType.SKY",
+  "wwt_data_formats.enums.ProjectionType",
   "wwt_data_formats.enums.ProjectionType.SKY_IMAGE",
   "wwt_data_formats.enums.ProjectionType.TAN",
   "wwt_data_formats.enums.ProjectionType.TOAST",
-  "wwt_data_formats.folder.Folder.from_file"
+  "wwt_data_formats.filecabinet.FileCabinetWriter",
+  "wwt_data_formats.folder.Folder",
+  "wwt_data_formats.folder.Folder.from_file",
+  "wwt_data_formats.folder.make_absolutizing_url_mutator",
+  "wwt_data_formats.imageset.ImageSet",
+  "wwt_data_formats.layers.ImageSetLayer",
+  "wwt_data_formats.layers.LayerContainerReader",
+  "wwt_data_formats.layers.LayerContainerReader.from_file",
+  "wwt_data_formats.place.Place",
+  "wwt_data_formats.write_xml_doc",
+  "yaml",
+  "yaml.SafeDumper",
+  "yaml.dump",
+  "yaml.safe_load"
  ],
  "deps": {
   "PIL": [
@@ -132,11 +154,6 @@
   "__future__": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "_pytest": [
-   "pytest/conda-forge/linux-64/pytest-3.7.0-py27_0",
-   "pytest/conda-forge/linux-64/pytest-4.6.0-py37_0",
-   "pytest/conda-forge/linux-64/pytest-6.0.2-py37hc8dfbb8_0"
   ],
   "abc": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -231,11 +248,6 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "pytest": [
-   "pytest/conda-forge/linux-64/pytest-3.7.0-py27_0",
-   "pytest/conda-forge/linux-64/pytest-4.6.0-py37_0",
-   "pytest/conda-forge/linux-64/pytest-6.0.2-py37hc8dfbb8_0"
-  ],
   "queue": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -258,42 +270,13 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "tqdm": [
-   "tqdm/conda-forge/noarch/tqdm-4.38.0-py_2",
-   "tqdm/conda-forge/noarch/tqdm-4.40.2-py_0",
-   "tqdm/conda-forge/noarch/tqdm-4.42.1-py_0",
-   "tqdm/conda-forge/noarch/tqdm-4.45.0-pyh9f0ad1d_0",
-   "tqdm/conda-forge/noarch/tqdm-4.51.0-pyh9f0ad1d_0",
-   "tqdm/conda-forge/noarch/tqdm-4.52.0-pyhd3deb0d_0",
-   "tqdm/conda-forge/noarch/tqdm-4.55.0-pyhd8ed1ab_0",
-   "tqdm/conda-forge/noarch/tqdm-4.56.0-pyhd8ed1ab_0",
-   "tqdm/conda-forge/noarch/tqdm-4.56.1-pyhd8ed1ab_0",
-   "tqdm/conda-forge/noarch/tqdm-4.60.0-pyhd8ed1ab_0"
-  ],
-  "urllib": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "warnings": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "wwt_data_formats": [
-   "wwt_data_formats/conda-forge/noarch/wwt_data_formats-0.4.1-pyhac0dd68_0",
-   "wwt_data_formats/conda-forge/noarch/wwt_data_formats-0.4.4-pyhac0dd68_0",
-   "wwt_data_formats/conda-forge/noarch/wwt_data_formats-0.4.6-pyhac0dd68_0",
-   "wwt_data_formats/conda-forge/noarch/wwt_data_formats-0.9.0-pyh050c7b8_0",
-   "wwt_data_formats/conda-forge/noarch/wwt_data_formats-0.9.1-pyh050c7b8_0"
-  ],
   "xml": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "yaml": [
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0",
-   "pyyaml/conda-forge/linux-64/pyyaml-3.11-py35_0",
-   "pyyaml/conda-forge/win-64/pyyaml-5.2-py36hfa6e2cd_0"
   ]
  }
 }
