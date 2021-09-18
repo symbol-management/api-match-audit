@@ -93,6 +93,9 @@
   "guide_dist.log_prob",
   "guide_enum",
   "h",
+  "heapq",
+  "heapq.heappop",
+  "heapq.heappush",
   "hook",
   "horovod.torch",
   "horovod.torch.DistributedOptimizer",
@@ -116,6 +119,7 @@
   "input.unsqueeze",
   "input.var",
   "itertools",
+  "lap",
   "lap.lapjv",
   "layer",
   "lifted_fn",
@@ -125,10 +129,22 @@
   "loss.sum",
   "loss_fn",
   "make_complete_graph",
+  "math",
+  "math.ceil",
+  "math.e",
+  "math.exp",
+  "math.gamma",
+  "math.inf",
   "math.inf.any",
+  "math.lgamma",
+  "math.log",
+  "math.nan",
+  "math.pi",
   "math.pi.cos",
   "math.pi.log",
   "math.pi.tan",
+  "math.pow",
+  "math.sqrt",
   "method",
   "model_enum",
   "msngr",
@@ -143,6 +159,8 @@
   "new.size",
   "new_empty",
   "nn_baseline",
+  "numbers",
+  "numbers.Number",
   "numpy.random.get_state",
   "numpy.random.randint",
   "numpy.random.randn",
@@ -151,6 +169,12 @@
   "numpy.uint8",
   "numpy.zeros",
   "opt_eig_ape_loss",
+  "opt_einsum",
+  "opt_einsum.contract",
+  "opt_einsum.contract_expression",
+  "opt_einsum.get_symbol",
+  "opt_einsum.shared_intermediates",
+  "opt_einsum.sharing.count_cached_ops",
   "os.mkdir",
   "os.path.exists",
   "os.remove",
@@ -258,6 +282,10 @@
   "pyro.poutine.runtime._PYRO_PARAM_STORE.clear",
   "pyro.poutine.runtime._PYRO_PARAM_STORE.get_param",
   "pyro.poutine.runtime._PYRO_PARAM_STORE.keys",
+  "queue",
+  "queue.Empty",
+  "queue.LifoQueue",
+  "queue.Queue",
   "reparam",
   "reparam.args_kwargs",
   "replay",
@@ -385,6 +413,8 @@
   "torch.where",
   "torch.zeros",
   "torch.zeros_like",
+  "traceback",
+  "traceback.format_exc",
   "transform",
   "transform.inv.log_abs_det_jacobian",
   "transform.log_abs_det_jacobian",
@@ -395,6 +425,8 @@
   "vectorize",
   "warnings.warn",
   "warnings.warn_explicit",
+  "weakref",
+  "weakref.finalize",
   "weakref.ref",
   "weakself",
   "wrapper"
@@ -487,10 +519,6 @@
    "python-graphviz/conda-forge/noarch/python-graphviz-0.16-pyhd3deb0d_1",
    "python-graphviz/conda-forge/noarch/python-graphviz-0.8.4-py_1003"
   ],
-  "heapq": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "inspect": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -499,14 +527,7 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "lap": [
-   "lap/conda-forge/linux-64/lap-0.4.0-py37h0da4684_1002"
-  ],
   "logging": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "math": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -518,10 +539,6 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "numbers": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "numpy": [
    "numpy/conda-forge/linux-64/numpy-1.17.5-py36h95a1406_0",
    "numpy/conda-forge/linux-64/numpy-1.18.4-py37h8960a57_0",
@@ -530,13 +547,6 @@
   "operator": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "opt_einsum": [
-   "opt-einsum/conda-forge/noarch/opt-einsum-2.3.2-py_0",
-   "opt-einsum/conda-forge/noarch/opt-einsum-3.0.0-py_0",
-   "opt_einsum/conda-forge/linux-64/opt_einsum-2.3.1-py37_1000",
-   "opt_einsum/conda-forge/noarch/opt_einsum-3.2.1-py_0",
-   "opt_einsum/conda-forge/noarch/opt_einsum-3.3.0-pyhd8ed1ab_1"
   ],
   "os": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -554,10 +564,6 @@
   ],
   "pyroapi": [
    "pyro-api/conda-forge/noarch/pyro-api-0.1.2-pyhd8ed1ab_0"
-  ],
-  "queue": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "random": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -592,10 +598,6 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "traceback": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "typing": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -605,10 +607,6 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "warnings": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "weakref": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ]

@@ -252,6 +252,10 @@
   "plist_type",
   "prop_type",
   "py_type",
+  "pystache",
+  "pystache.render",
+  "queue.Empty",
+  "queue.Queue",
   "rapidjson",
   "rapidjson.dump",
   "rapidjson.dumps",
@@ -264,6 +268,7 @@
   "signal.SIGTERM",
   "signal.siginterrupt",
   "smb_class",
+  "socket",
   "socket.gethostname",
   "sys",
   "sys.argv.split",
@@ -273,12 +278,38 @@
   "t",
   "time",
   "time.clock",
+  "traceback",
+  "traceback.format_exc",
+  "types",
+  "types.BuiltinFunctionType",
+  "types.BuiltinMethodType",
   "types.FileType",
+  "types.FunctionType",
+  "types.MethodType",
+  "unyt",
+  "unyt.Unit",
+  "unyt.UnitRegistry",
+  "unyt.array.unyt_array",
+  "unyt.array.unyt_quantity",
+  "unyt.exceptions.UnitConversionError",
+  "unyt.exceptions.UnitParseError",
+  "unyt.unyt_array",
+  "unyt.unyt_quantity",
   "validator",
   "validator_class",
   "warnings.warn",
+  "weakref",
   "weakref.getweakrefs",
+  "yaml",
+  "yaml.Dumper",
+  "yaml.Loader",
+  "yaml.SafeDumper",
+  "yaml.SafeLoader",
+  "yaml.dump",
+  "yaml.load",
   "yaml.resolver.BaseResolver.DEFAULT_MAPPING_TAG",
+  "yaml.safe_load",
+  "zmq",
   "zmq.Context.instance",
   "zmq.EAGAIN",
   "zmq.IDENTITY",
@@ -432,13 +463,6 @@
   "psutil": [
    "psutil/conda-forge/linux-64/psutil-5.7.3-py39h38d8fee_0"
   ],
-  "pystache": [
-   "pystache/conda-forge/noarch/pystache-0.5.4-py_1"
-  ],
-  "queue": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "re": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -456,10 +480,6 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "socket": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "subprocess": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -472,28 +492,9 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "traceback": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "types": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "unittest": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "unyt": [
-   "unyt/conda-forge/noarch/unyt-2.2.0-py_0",
-   "unyt/conda-forge/noarch/unyt-2.2.1-py_0",
-   "unyt/conda-forge/noarch/unyt-2.2.2-py_0",
-   "unyt/conda-forge/noarch/unyt-2.3.1-py_0",
-   "unyt/conda-forge/noarch/unyt-2.4.0-py_0",
-   "unyt/conda-forge/noarch/unyt-2.5.0-py_0",
-   "unyt/conda-forge/noarch/unyt-2.6.0-py_0",
-   "unyt/conda-forge/noarch/unyt-2.7.1-py_0",
-   "unyt/conda-forge/noarch/unyt-2.8.0-py_0"
   ],
   "uuid": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -502,20 +503,6 @@
   "warnings": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "weakref": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "yaml": [
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0",
-   "pyyaml/conda-forge/linux-64/pyyaml-3.11-py35_0",
-   "pyyaml/conda-forge/win-64/pyyaml-5.2-py36hfa6e2cd_0"
-  ],
-  "zmq": [
-   "pyzmq/conda-forge/linux-64/pyzmq-18.0.1-py37hc4ba49a_1",
-   "pyzmq/conda-forge/linux-64/pyzmq-19.0.0-py27h1768529_0"
   ]
  }
 }

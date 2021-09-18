@@ -66,7 +66,19 @@
   "os.environ.get",
   "os.fstat",
   "os.getpid",
+  "pkg_resources",
+  "pkg_resources.working_set",
   "processor",
+  "psycopg2.sql",
+  "pyramid.httpexceptions.HTTPException",
+  "pyramid.request.Request",
+  "pyramid.response.Response",
+  "pyramid.router.Router",
+  "pyramid.router.Router.__call__",
+  "pyramid.router.Router.handle_request",
+  "pyramid.security.authenticated_userid",
+  "queue",
+  "queue.Queue",
   "real_execute",
   "real_executemany",
   "real_func",
@@ -74,13 +86,29 @@
   "real_putrequest",
   "realign_remark",
   "record_many_sql",
+  "rq.job.Job",
+  "rq.queue.Queue",
+  "rq.timeouts.JobTimeoutException",
+  "rq.worker.Worker",
+  "rq.worker.Worker.handle_exception",
+  "rq.worker.Worker.perform_job",
+  "sanic.Sanic",
   "sanic.Sanic.handle_request",
+  "sanic.exceptions.InvalidUsage",
+  "sanic.exceptions.SanicException",
+  "sanic.handlers.ErrorHandler",
+  "sanic.handlers.ErrorHandler.lookup",
+  "sanic.request.Request",
+  "sanic.request.RequestParameters",
+  "sanic.router.Router",
+  "sanic.router.Router.get",
   "sentry_sdk.Hub.current",
   "sentry_sdk.Hub.current.get_integration",
   "sentry_sdk._compat.queue.all_tasks_done.acquire",
   "sentry_sdk._compat.queue.all_tasks_done.release",
   "sentry_sdk._compat.queue.all_tasks_done.wait",
   "sentry_sdk._compat.queue.unfinished_tasks",
+  "sentry_sdk._compat.urlparse.urlsplit",
   "sentry_sdk.client._client_init_debug.get",
   "sentry_sdk.hub.Hub.current",
   "sentry_sdk.hub.Hub.current.add_breadcrumb",
@@ -111,6 +139,7 @@
   "sentry_sdk.utils.logger.setLevel",
   "sentry_sdk.utils.logger.warn",
   "sentry_sdk.utils.logger.warning",
+  "socket",
   "socket.gethostname",
   "strip_databag",
   "sys",
@@ -127,6 +156,7 @@
   "weak_handler",
   "weak_job",
   "weak_request",
+  "weakref",
   "weakref.ref",
   "wrapper"
  ],
@@ -271,64 +301,11 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "pkg_resources": [
-   "setuptools/conda-forge/linux-64/setuptools-40.6.1-py36_0",
-   "setuptools/conda-forge/linux-64/setuptools-46.3.0-py38h32f6830_0",
-   "setuptools/conda-forge/linux-64/setuptools-49.1.2-py38h32f6830_0"
-  ],
-  "psycopg2": [
-   "psycopg2/conda-forge/linux-64/psycopg2-2.8.4-py36h72c5cf5_0",
-   "psycopg2/conda-forge/linux-64/psycopg2-2.9.1-py38h497a2fe_0"
-  ],
-  "pyramid": [
-   "pyramid/conda-forge/noarch/pyramid-1.10.1-py_0",
-   "pyramid/conda-forge/noarch/pyramid-1.10.5-pyh44b312d_0",
-   "pyramid/conda-forge/noarch/pyramid-1.10.7-pyhd8ed1ab_0",
-   "pyramid/conda-forge/noarch/pyramid-1.10.8-pyhd8ed1ab_0"
-  ],
-  "queue": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "random": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "re": [
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "rq": [
-   "rq/conda-forge/noarch/rq-1.0-py_1",
-   "rq/conda-forge/noarch/rq-1.2.0-py_0",
-   "rq/conda-forge/noarch/rq-1.2.2-py_0",
-   "rq/conda-forge/noarch/rq-1.5.2-pyhd8ed1ab_0",
-   "rq/conda-forge/noarch/rq-1.6.1-pyhd8ed1ab_0",
-   "rq/conda-forge/noarch/rq-1.8.0-pyhd8ed1ab_0",
-   "rq/conda-forge/noarch/rq-1.9.0-pyhd8ed1ab_0"
-  ],
-  "sanic": [
-   "sanic/conda-forge/linux-64/sanic-0.8.3-py37_1000",
-   "sanic/conda-forge/linux-64/sanic-20.3.0-py36h9f0ad1d_0"
-  ],
-  "sentry_sdk": [
-   "sentry-sdk/conda-forge/noarch/sentry-sdk-0.15.0-pyh9f0ad1d_0",
-   "sentry-sdk/conda-forge/noarch/sentry-sdk-0.16.2-pyh9f0ad1d_0",
-   "sentry-sdk/conda-forge/noarch/sentry-sdk-0.17.0-pyh9f0ad1d_0",
-   "sentry-sdk/conda-forge/noarch/sentry-sdk-0.17.4-pyh9f0ad1d_0",
-   "sentry-sdk/conda-forge/noarch/sentry-sdk-0.17.5-pyh9f0ad1d_0",
-   "sentry-sdk/conda-forge/noarch/sentry-sdk-0.17.6-pyh9f0ad1d_0",
-   "sentry-sdk/conda-forge/noarch/sentry-sdk-0.18.0-pyh9f0ad1d_0",
-   "sentry-sdk/conda-forge/noarch/sentry-sdk-0.19.0-pyh9f0ad1d_0",
-   "sentry-sdk/conda-forge/noarch/sentry-sdk-0.19.3-pyhd3deb0d_0",
-   "sentry-sdk/conda-forge/noarch/sentry-sdk-0.19.4-pyhd3deb0d_0",
-   "sentry-sdk/conda-forge/noarch/sentry-sdk-0.20.0-pyh44b312d_0",
-   "sentry-sdk/conda-forge/noarch/sentry-sdk-0.20.2-pyh44b312d_0",
-   "sentry-sdk/conda-forge/noarch/sentry-sdk-0.20.3-pyh44b312d_0",
-   "sentry-sdk/conda-forge/noarch/sentry-sdk-0.7.6-py_0",
-   "sentry-sdk/conda-forge/noarch/sentry-sdk-1.2.0-pyhd8ed1ab_0"
-  ],
-  "socket": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "threading": [
@@ -360,10 +337,6 @@
    "urllib3/conda-forge/noarch/urllib3-1.26.6-pyhd8ed1ab_0"
   ],
   "uuid": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "weakref": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
