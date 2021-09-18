@@ -75,24 +75,14 @@
   "block.BlockManager",
   "block._hdu",
   "block.calculate_updated_layout",
-  "bz2",
-  "bz2.BZ2Compressor",
-  "bz2.BZ2Decompressor",
   "callback",
   "chain",
   "cls",
-  "collections.OrderedDict",
-  "collections.UserDict",
-  "collections.UserList",
-  "collections.UserString",
   "collections.abc.Sequence",
   "collections.defaultdict",
-  "collections.namedtuple",
-  "colorama",
   "colorama.Fore.GREEN",
   "colorama.Fore.RED",
   "colorama.Style.RESET_ALL",
-  "colorama.init",
   "compression.compress",
   "compression.decompress",
   "compression.get_compressed_size",
@@ -109,7 +99,6 @@
   "constants.STSCI_SCHEMA_URI_BASE",
   "constants.YAML_END_MARKER_REGEX",
   "constants.YAML_TAG_PREFIX",
-  "contextlib.contextmanager",
   "convert_to_tuples",
   "ctypes.windll.kernel32.CloseHandle",
   "ctypes.windll.kernel32.MoveFileExW",
@@ -151,14 +140,11 @@
   "helpers.get_test_data_path",
   "helpers.yaml_to_asdf",
   "hook",
-  "importlib",
-  "importlib.import_module",
-  "importlib.resources",
-  "importlib.util.find_spec",
+  "http.client",
+  "http.server",
+  "importlib_resources",
+  "importlib_resources.path",
   "input.startswith",
-  "inspect",
-  "inspect.getmembers",
-  "inspect.signature",
   "io.BufferedRandom",
   "io.BufferedReader",
   "io.BufferedWriter",
@@ -167,12 +153,21 @@
   "io.FileIO",
   "io.StringIO",
   "io.open",
+  "jsonschema",
+  "jsonschema.ValidationError",
+  "jsonschema._utils",
+  "jsonschema._utils.load_schema",
+  "jsonschema.exceptions.ValidationError",
+  "jsonschema.validators",
   "jsonschema.validators.Draft4Validator.ID_OF",
   "jsonschema.validators.Draft4Validator.TYPE_CHECKER.redefine_many",
   "jsonschema.validators.Draft4Validator.VALIDATORS",
   "jsonschema.validators.Draft4Validator.VALIDATORS.copy",
+  "jsonschema.validators.RefResolver",
+  "jsonschema.validators.create",
   "jsonschema.validators.update",
   "loader",
+  "lz4.block",
   "main.main",
   "main.main_from_args",
   "mark_block",
@@ -229,13 +224,24 @@
   "os.remove",
   "os.rename",
   "os.stat",
+  "pathlib",
+  "pathlib.Path",
+  "pkg_resources.DistributionNotFound",
+  "pkg_resources.get_distribution",
+  "pkg_resources.iter_entry_points",
+  "pkg_resources.parse_version",
   "pytest.mark.filterwarnings",
   "pytest.mark.parametrize",
   "pytest.mark.remote_data",
   "pytest.mark.xfail",
+  "pytest_remotedata.disable_internet.INTERNET_OFF",
+  "queue",
   "queue.put",
   "r",
   "r.add_mapping",
+  "random",
+  "random.getrandbits",
+  "random.seed",
   "recurse",
   "reference.Reference",
   "reference.find_references",
@@ -253,10 +259,16 @@
   "schema.validate",
   "schema.validate_large_literals",
   "schema_loader",
-  "shutil",
-  "shutil.copyfileobj",
-  "shutil.rmtree",
+  "semantic_version.SimpleSpec",
+  "semantic_version.Version",
+  "semantic_version.Version.__eq__",
+  "semantic_version.Version.__hash__",
+  "semantic_version.Version.__lt__",
+  "socketserver",
+  "socketserver.TCPServer",
   "str.__eq__",
+  "string",
+  "string.ascii_letters",
   "struct.pack",
   "struct.unpack",
   "struct.unpack_from",
@@ -312,6 +324,10 @@
   "yamlutil.tagged_tree_to_custom_tree"
  ],
  "deps": {
+  "_bz2": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "_pytest": [
    "pytest/conda-forge/linux-64/pytest-3.7.0-py27_0",
    "pytest/conda-forge/linux-64/pytest-4.6.0-py37_0",
@@ -346,6 +362,24 @@
   ],
   "builtins": [
    "pies2overrides/conda-forge/osx-64/pies2overrides-2.6.7-py27_1000"
+  ],
+  "bz2": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "collections": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "colorama": [
+   "colorama/conda-forge/noarch/colorama-0.3.9-py_1",
+   "colorama/conda-forge/noarch/colorama-0.4.1-py_0",
+   "colorama/conda-forge/noarch/colorama-0.4.3-py_0",
+   "colorama/conda-forge/noarch/colorama-0.4.4-pyh9f0ad1d_0"
+  ],
+  "contextlib": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "copy": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -391,12 +425,13 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "http": [
-   "pies2overrides/conda-forge/osx-64/pies2overrides-2.6.7-py27_1000",
+  "importlib": [
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "inspect": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "importlib_resources": [],
   "io": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -405,16 +440,9 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "jsonschema": [
-   "jsonschema/conda-forge/noarch/jsonschema-3.2.0-pyhd8ed1ab_3"
-  ],
   "logging": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "lz4": [
-   "lz4/conda-forge/linux-64/lz4-1.1.0-py37h3b97293_1",
-   "lz4/conda-forge/linux-64/lz4-3.1.1-py37h96bc0eb_0"
   ],
   "math": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -437,16 +465,6 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "pathlib": [
-   "pathlib/conda-forge/noarch/pathlib-1.0.1-py_1",
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "pkg_resources": [
-   "setuptools/conda-forge/linux-64/setuptools-40.6.1-py36_0",
-   "setuptools/conda-forge/linux-64/setuptools-46.3.0-py38h32f6830_0",
-   "setuptools/conda-forge/linux-64/setuptools-49.1.2-py38h32f6830_0"
-  ],
   "platform": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -460,34 +478,11 @@
    "pytest/conda-forge/linux-64/pytest-4.6.0-py37_0",
    "pytest/conda-forge/linux-64/pytest-6.0.2-py37hc8dfbb8_0"
   ],
-  "pytest_remotedata": [
-   "pytest-remotedata/conda-forge/noarch/pytest-remotedata-0.2.0-py_0",
-   "pytest-remotedata/conda-forge/noarch/pytest-remotedata-0.3.0-py_0",
-   "pytest-remotedata/conda-forge/noarch/pytest-remotedata-0.3.1-py_0",
-   "pytest-remotedata/conda-forge/noarch/pytest-remotedata-0.3.2-pyh9f0ad1d_0"
-  ],
-  "queue": [
-   "pies2overrides/conda-forge/osx-64/pies2overrides-2.6.7-py27_1000",
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "random": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "re": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "semantic_version": [
-   "semantic_version/conda-forge/noarch/semantic_version-2.8.2-py_0",
-   "semantic_version/conda-forge/noarch/semantic_version-2.8.5-pyh9f0ad1d_0"
-  ],
-  "socketserver": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "string": [
+  "shutil": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
