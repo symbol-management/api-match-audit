@@ -1,23 +1,11 @@
 {
  "bad": [
-  "asyncio",
-  "boto.https_connection",
-  "boto.https_connection.CertValidatingHTTPSConnection",
   "boto.https_connection.HTTPConnection",
   "boto.https_connection.HTTPConnectionPool",
   "boto.https_connection.HTTPSConnection",
   "boto.https_connection.HTTPSConnectionPool",
-  "botocore.awsrequest",
-  "botocore.awsrequest.AWSHTTPConnection",
-  "botocore.awsrequest.AWSHTTPSConnection",
-  "botocore.vendored.requests.packages.urllib3.connectionpool",
   "botocore.vendored.requests.packages.urllib3.connectionpool.AWSHTTPConnectionPool",
   "botocore.vendored.requests.packages.urllib3.connectionpool.AWSHTTPSConnectionPool",
-  "botocore.vendored.requests.packages.urllib3.connectionpool.HTTPConnection",
-  "botocore.vendored.requests.packages.urllib3.connectionpool.HTTPConnectionPool",
-  "botocore.vendored.requests.packages.urllib3.connectionpool.HTTPSConnection",
-  "botocore.vendored.requests.packages.urllib3.connectionpool.HTTPSConnectionPool",
-  "botocore.vendored.requests.packages.urllib3.connectionpool.VerifiedHTTPSConnection",
   "callback",
   "cassette.Cassette.use",
   "cassette.Cassette.use_arg_getter",
@@ -32,7 +20,6 @@
   "compat.get_httpmessage",
   "connection_class_getter",
   "decompress_body",
-  "decorator",
   "filters.decode_response",
   "filters.replace_headers",
   "filters.replace_post_data_parameters",
@@ -40,19 +27,9 @@
   "fn",
   "function",
   "function.__name__",
-  "functools",
   "functools.partial",
-  "functools.wraps",
   "get_conn",
-  "http.client",
-  "http.client.HTTPConnection",
   "http.client.HTTPConnection.__dict__.items",
-  "http.client.HTTPResponse",
-  "http.client.HTTPSConnection",
-  "httplib2",
-  "httplib2.HTTPConnectionWithTimeout",
-  "httplib2.HTTPSConnectionWithTimeout",
-  "httplib2.SCHEME_TO_CONNECTION",
   "io.BytesIO",
   "is_compressed",
   "itertools",
@@ -70,23 +47,11 @@
   "record_response",
   "record_responses",
   "request.Request._from_dict",
-  "requests",
-  "requests.__build__",
-  "requests.packages.urllib3.connectionpool",
-  "requests.packages.urllib3.connectionpool.HTTPConnection",
-  "requests.packages.urllib3.connectionpool.HTTPConnectionPool",
-  "requests.packages.urllib3.connectionpool.HTTPSConnection",
-  "requests.packages.urllib3.connectionpool.HTTPSConnectionPool",
-  "requests.packages.urllib3.connectionpool.VerifiedHTTPSConnection",
   "rv",
   "rv.encode",
-  "shutil",
-  "shutil.copyfileobj",
   "simplejson",
   "simplejson.dumps",
   "simplejson.loads",
-  "six",
-  "six.with_metaclass",
   "stubs.aiohttp_stubs.vcr_request",
   "stubs.boto3_stubs",
   "stubs.boto3_stubs.VCRRequestsHTTPConnection",
@@ -107,23 +72,7 @@
   "tornado.simple_httpclient",
   "tornado.simple_httpclient.SimpleAsyncHTTPClient",
   "transformer",
-  "types",
-  "types.FunctionType",
-  "unittest.mock",
-  "unittest.mock.Mock",
   "unittest.mock.patch.object",
-  "urllib",
-  "urllib.parse.parse_qs",
-  "urllib.parse.parse_qsl",
-  "urllib.parse.urlencode",
-  "urllib.parse.urlparse",
-  "urllib.parse.urlunparse",
-  "urllib3.connectionpool",
-  "urllib3.connectionpool.HTTPConnection",
-  "urllib3.connectionpool.HTTPConnectionPool",
-  "urllib3.connectionpool.HTTPSConnection",
-  "urllib3.connectionpool.HTTPSConnectionPool",
-  "urllib3.connectionpool.VerifiedHTTPSConnection",
   "vcr.__init__.default_vcr",
   "vcr._handle_coroutine.handle_coroutine",
   "vcr.stubs.__init__.VCRConnection",
@@ -143,19 +92,7 @@
   "vcr.stubs.aiohttp_stubs.__init__.play_responses",
   "vcr.stubs.aiohttp_stubs.__init__.vcr_request",
   "vcr.stubs.aiohttp_stubs.__init__.vcr_response",
-  "warnings",
-  "warnings.warn",
-  "yaml",
-  "yaml.CDumper",
-  "yaml.CLoader",
-  "yaml.Dumper",
-  "yaml.Loader",
-  "yaml.constructor.ConstructorError",
-  "yaml.dump",
-  "yaml.load",
-  "zlib",
-  "zlib.MAX_WBITS",
-  "zlib.decompress"
+  "warnings.warn"
  ],
  "deps": {
   "aiohttp": [
@@ -166,6 +103,30 @@
   "asyncio": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "boto": [
+   "boto/conda-forge/noarch/boto-2.49.0-py_0"
+  ],
+  "botocore": [
+   "botocore/conda-forge/noarch/botocore-1.10.23-py_0",
+   "botocore/conda-forge/noarch/botocore-1.10.29-py_0",
+   "botocore/conda-forge/noarch/botocore-1.10.42-py_0",
+   "botocore/conda-forge/noarch/botocore-1.10.47-py_0",
+   "botocore/conda-forge/noarch/botocore-1.10.5-py_0",
+   "botocore/conda-forge/noarch/botocore-1.10.78-py_0",
+   "botocore/conda-forge/noarch/botocore-1.12.110-py_0",
+   "botocore/conda-forge/noarch/botocore-1.12.118-py_0",
+   "botocore/conda-forge/noarch/botocore-1.12.134-py_0",
+   "botocore/conda-forge/noarch/botocore-1.12.135-py_0",
+   "botocore/conda-forge/noarch/botocore-1.12.201-py_0",
+   "botocore/conda-forge/noarch/botocore-1.12.223-py_0",
+   "botocore/conda-forge/noarch/botocore-1.12.224-py_0",
+   "botocore/conda-forge/noarch/botocore-1.12.35-py_0",
+   "botocore/conda-forge/noarch/botocore-1.12.47-py_0",
+   "botocore/conda-forge/noarch/botocore-1.12.48-py_0",
+   "botocore/conda-forge/noarch/botocore-1.12.90-py_0",
+   "botocore/conda-forge/noarch/botocore-1.8.39-py_0",
+   "botocore/conda-forge/noarch/botocore-1.9.13-py_0"
   ],
   "collections": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -178,6 +139,35 @@
   "copy": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "decorator": [
+   "decorator/conda-forge/noarch/decorator-4.3.0-py_0",
+   "decorator/conda-forge/noarch/decorator-4.3.2-py_0",
+   "decorator/conda-forge/noarch/decorator-4.4.0-py_0",
+   "decorator/conda-forge/noarch/decorator-4.4.1-py_0",
+   "decorator/conda-forge/noarch/decorator-4.4.2-py_0",
+   "decorator/conda-forge/noarch/decorator-5.0.2-pyhd8ed1ab_0",
+   "decorator/conda-forge/noarch/decorator-5.0.3-pyhd8ed1ab_0",
+   "decorator/conda-forge/noarch/decorator-5.0.4-pyhd8ed1ab_0",
+   "decorator/conda-forge/noarch/decorator-5.0.5-pyhd8ed1ab_0",
+   "decorator/conda-forge/noarch/decorator-5.0.6-pyhd8ed1ab_0",
+   "decorator/conda-forge/noarch/decorator-5.0.9-pyhd8ed1ab_0"
+  ],
+  "functools": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "http": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "httplib2": [
+   "httplib2/conda-forge/linux-64/httplib2-0.12.3-py36_0",
+   "httplib2/conda-forge/linux-64/httplib2-0.14.0-py38_0",
+   "httplib2/conda-forge/noarch/httplib2-0.17.1-pyh9f0ad1d_0",
+   "httplib2/conda-forge/noarch/httplib2-0.17.3-pyh9f0ad1d_0",
+   "httplib2/conda-forge/noarch/httplib2-0.18.0-pyh9f0ad1d_0",
+   "httplib2/conda-forge/noarch/httplib2-0.19.0-pyhd8ed1ab_0"
   ],
   "inspect": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -199,7 +189,51 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "requests": [],
+  "shutil": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "six": [
+   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
+   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0",
+   "lldb/conda-forge/linux-64/lldb-6.0.0-py35_0",
+   "privy/conda-forge/noarch/privy-6.0.0-py_0",
+   "six/conda-forge/linux-64/six-1.10.0-py34_0",
+   "six/conda-forge/linux-64/six-1.10.0-py34_1",
+   "six/conda-forge/noarch/six-1.14.0-py_1",
+   "six/conda-forge/noarch/six-1.16.0-pyh6c4a22f_0"
+  ],
   "tempfile": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "types": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "unittest": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "urllib": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "urllib3": [
+   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
+   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0",
+   "urllib3/conda-forge/linux-64/urllib3-1.24.1-py37_1000",
+   "urllib3/conda-forge/linux-64/urllib3-1.25.7-py36_0",
+   "urllib3/conda-forge/linux-64/urllib3-1.25.8-py37hc8dfbb8_1",
+   "urllib3/conda-forge/noarch/urllib3-1.25.11-py_0",
+   "urllib3/conda-forge/noarch/urllib3-1.26.0-pyhd8ed1ab_0",
+   "urllib3/conda-forge/noarch/urllib3-1.26.2-pyhd8ed1ab_0",
+   "urllib3/conda-forge/noarch/urllib3-1.26.3-pyhd8ed1ab_0",
+   "urllib3/conda-forge/noarch/urllib3-1.26.5-pyhd8ed1ab_0",
+   "urllib3/conda-forge/noarch/urllib3-1.26.6-pyhd8ed1ab_0"
+  ],
+  "warnings": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -212,8 +246,18 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "yaml": [
+   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
+   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0",
+   "pyyaml/conda-forge/linux-64/pyyaml-3.11-py35_0",
+   "pyyaml/conda-forge/win-64/pyyaml-5.2-py36hfa6e2cd_0"
+  ],
   "yarl": [
    "yarl/conda-forge/linux-64/yarl-1.2.5-py36h470a237_0"
+  ],
+  "zlib": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ]
  }
 }

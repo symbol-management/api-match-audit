@@ -42,6 +42,10 @@
   "lal.CreateREAL8TimeSeries",
   "lal.DimensionlessUnit",
   "lal.LALDETECTORTYPE_ABSENT",
+  "lal.gpstime",
+  "lal.gpstime.tconvert",
+  "lal.utils.CacheEntry",
+  "lal.utils.CacheEntry.from_T050017",
   "ligo.segments.coalesce",
   "logging.handlers.append",
   "matplotlib.rcParams.update",
@@ -75,25 +79,60 @@
   "os.path.getmtime",
   "os.path.isdir",
   "os.remove",
+  "pickle",
+  "pickle.dump",
+  "pickle.dumps",
+  "pickle.load",
+  "pickle.loads",
   "reporter_factory",
+  "scipy.special.digamma",
   "scipy.special.erf",
+  "scipy.special.polygamma",
+  "scipy.stats",
+  "scipy.stats.beta",
   "scipy.stats.beta.ppf",
   "scipy.stats.beta.rvs",
   "scipy.stats.beta.std",
   "scipy.stats.beta.var",
+  "scipy.stats.randint",
   "scipy.stats.rv_continuous.__subclasses__",
+  "scipy.stats.uniform",
   "six.moves.configparser",
   "six.moves.configparser.SafeConfigParser",
   "sklearn.SupervisedSklearnClassifier",
+  "sklearn.ensemble",
+  "sklearn.ensemble.GradientBoostingClassifier",
+  "sklearn.ensemble.RandomForestClassifier",
+  "sklearn.kernel_approximation",
+  "sklearn.kernel_approximation.Nystroem",
+  "sklearn.linear_model",
   "sklearn.linear_model.PassiveAggressive",
+  "sklearn.linear_model.Perceptron",
+  "sklearn.linear_model.SGDClassifier",
   "sklearn.model_selection",
   "sklearn.model_selection.GridSearchCV",
   "sklearn.model_selection.RandomizedSearchCV",
+  "sklearn.naive_bayes",
+  "sklearn.naive_bayes.GaussianNB",
+  "sklearn.neural_network",
   "sklearn.neural_network.MLPClassifier",
+  "sklearn.pipeline",
+  "sklearn.pipeline.Pipeline",
+  "sklearn.preprocessing",
+  "sklearn.preprocessing.FunctionTransformer",
+  "sklearn.preprocessing.RobustScaler",
+  "sklearn.preprocessing.StandardScaler",
+  "sklearn.svm",
+  "sklearn.svm.LinearSVC",
+  "sklearn.svm.SVC",
+  "socket",
   "split_segments_by_livetime",
   "sys",
   "time",
+  "timeit",
+  "timeit.default_timer",
   "transform_col",
+  "xgboost.XGBClassifier",
   "xrange"
  ],
  "deps": {
@@ -103,10 +142,6 @@
    "python-ldas-tools-framecpp/conda-forge/linux-64/python-ldas-tools-framecpp-2.6.9-py37hb3f55d8_0"
   ],
   "__future__": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "_pickle": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -165,11 +200,6 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "keras": [],
-  "lal": [
-   "python-lal/conda-forge/linux-64/python-lal-6.19.0-py35h7eb728f_1",
-   "python-lal/conda-forge/linux-64/python-lal-6.22.0-mkl_py36h32b98d5_0",
-   "python-lal/conda-forge/linux-64/python-lal-7.1.0-fftw_py36h75dcf95_100"
-  ],
   "ligo": [
    "ligo-segments/conda-forge/linux-64/ligo-segments-1.0.1-py36h14c3975_1000"
   ],
@@ -198,24 +228,7 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "pickle": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "scipy": [
-   "scipy/conda-forge/linux-64/scipy-1.7.0-py37h29e03ee_0",
-   "scipy/conda-forge/linux-64/scipy-1.7.0-py37ha768fb6_1"
-  ],
   "shutil": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "sklearn": [
-   "scikit-learn/conda-forge/linux-64/scikit-learn-0.17.1-np110py27_blas_openblas_200",
-   "scikit-learn/conda-forge/linux-64/scikit-learn-0.17.1-np110py35_blas_openblas_202",
-   "scikit-learn/conda-forge/linux-64/scikit-learn-0.17.1-np111py35_blas_openblas_202"
-  ],
-  "socket": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -228,19 +241,9 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "timeit": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "traceback": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "xgboost": [
-   "py-xgboost/conda-forge/linux-64/py-xgboost-1.3.0-py36h5fab9bb_0",
-   "py-xgboost/conda-forge/linux-64/py-xgboost-1.3.3-py36hd000896_0",
-   "py-xgboost/conda-forge/linux-64/py-xgboost-1.3.3-py37h9c2f6ca_2",
-   "xgboost/conda-forge/linux-64/xgboost-0.7.post3-py36_0"
   ]
  }
 }

@@ -16,16 +16,9 @@
   "_parse_seq",
   "_ttype_spec",
   "_type",
-  "array",
   "array.array",
-  "asyncio",
-  "asyncio.coroutine",
-  "asyncio.get_event_loop",
-  "asyncio.wait_for",
   "binary.TBinaryProtocol",
   "binary.TBinaryProtocolFactory",
-  "binascii",
-  "binascii.hexlify",
   "buffered.TBufferedTransport",
   "buffered.TBufferedTransportFactory",
   "buffered.TCyBufferedTransport",
@@ -34,7 +27,6 @@
   "collections.defaultdict",
   "cybin.TCyBinaryProtocol",
   "cybin.TCyBinaryProtocolFactory",
-  "datetime.timedelta",
   "errno",
   "exc.TProtocolException.BAD_VERSION",
   "exc.TProtocolException.INVALID_DATA",
@@ -44,7 +36,6 @@
   "framed.TFramedTransport",
   "framed.TFramedTransportFactory",
   "func",
-  "functools",
   "functools.partial",
   "get_definition",
   "httplib",
@@ -52,6 +43,7 @@
   "httplib.HTTPSConnection",
   "io.BytesIO",
   "itertools.izip_longest",
+  "linecache",
   "memory.TCyMemoryBuffer",
   "memory.TMemoryBuffer",
   "meta",
@@ -60,7 +52,14 @@
   "os.path.samefile",
   "os.stat",
   "os.unlink",
+  "platform",
+  "platform.system",
+  "ply.lex",
+  "ply.lex.lex",
+  "ply.yacc",
+  "ply.yacc.yacc",
   "skip",
+  "socket",
   "socket.AF_INET",
   "socket.AF_UNIX",
   "socket.IPPROTO_TCP",
@@ -75,6 +74,8 @@
   "socket.error",
   "socket.getdefaulttimeout",
   "socket.setdefaulttimeout",
+  "socket.socket",
+  "ssl",
   "ssl.CERT_REQUIRED",
   "ssl.OP_CIPHER_SERVER_PREFERENCE",
   "ssl.OP_NO_COMPRESSION",
@@ -85,11 +86,16 @@
   "ssl.PROTOCOL_SSLv23",
   "ssl.Purpose.CLIENT_AUTH",
   "ssl.Purpose.SERVER_AUTH",
+  "ssl.SSLContext",
+  "ssl.SSLError",
+  "ssl.create_default_context",
+  "ssl.wrap_socket",
   "struct",
   "struct.pack",
   "struct.unpack",
   "sys",
   "sys.platform.startswith",
+  "threading.local",
   "thrift.TApplicationException.UNKNOWN_METHOD",
   "thrift.TMessageType.CALL",
   "thrift.TMessageType.EXCEPTION",
@@ -144,6 +150,21 @@
   "thriftpy2.transport.buffered.__init__.TBufferedTransport",
   "thriftpy2.transport.framed.__init__.TFramedTransport",
   "time",
+  "tornado.gen",
+  "tornado.gen.Return",
+  "tornado.gen.TimeoutError",
+  "tornado.gen.coroutine",
+  "tornado.gen.maybe_future",
+  "tornado.gen.with_timeout",
+  "tornado.iostream",
+  "tornado.iostream.IOStream",
+  "tornado.iostream.SSLIOStream",
+  "tornado.iostream.StreamBufferFullError",
+  "tornado.iostream.StreamClosedError",
+  "tornado.locks.Lock",
+  "tornado.tcpserver",
+  "tornado.tcpserver.TCPServer",
+  "tornado.version",
   "tracker.VersionMixin.CURRENT",
   "tracker.VersionMixin.VERSION_SUPPORT_REQUEST_HEADER",
   "tracker.VersionMixin.VERSION_SUPPORT_RESPONSE_HEADER",
@@ -170,11 +191,17 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "_ssl": [
+  "_asyncio": [
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "array": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "_threading_local": [
+  "asyncio": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython"
+  ],
+  "binascii": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -190,16 +217,20 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "datetime": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "functools": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "http": [
    "pies2overrides/conda-forge/osx-64/pies2overrides-2.6.7-py27_1000",
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "json": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "linecache": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -215,28 +246,9 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "platform": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "ply": [
-   "ply/conda-forge/linux-64/ply-3.10-py35_0",
-   "ply/conda-forge/noarch/ply-3.11-py_1"
-  ],
-  "socket": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "ssl": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "threading": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "tornado": [
-   "tornado/conda-forge/linux-64/tornado-6.0.4-py38h1e0a361_2"
   ],
   "toro": [
    "toro/conda-forge/linux-64/toro-1.0.1-py35_0"

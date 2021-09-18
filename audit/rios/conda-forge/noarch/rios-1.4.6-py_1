@@ -24,11 +24,8 @@
   "cuiprogress.SilentProgress",
   "decimal.ROUND_HALF_UP",
   "dict.__new__",
-  "dis",
   "dis.EXTENDED_ARG",
   "dis.HAVE_ARGUMENT",
-  "dis.get_instructions",
-  "distutils.version.LooseVersion",
   "f",
   "fileinfo.ImageFileStats",
   "fileinfo.ImageInfo",
@@ -89,12 +86,21 @@
   "object.__getattribute__",
   "object.__new__",
   "object.__setattr__",
+  "opcode",
+  "opcode.opmap",
+  "operator",
+  "operator.attrgetter",
+  "operator.itemgetter",
   "os.close",
   "os.path.exists",
   "os.path.isfile",
   "os.remove",
+  "osgeo.gdal",
   "osgeo.gdal.CE_None",
+  "osgeo.gdal.ColorTable",
   "osgeo.gdal.DMD_EXTENSION",
+  "osgeo.gdal.Dataset",
+  "osgeo.gdal.DontUseExceptions",
   "osgeo.gdal.GA_Update",
   "osgeo.gdal.GDT_Byte",
   "osgeo.gdal.GDT_Float32",
@@ -112,11 +118,59 @@
   "osgeo.gdal.GFU_Green",
   "osgeo.gdal.GFU_PixelCount",
   "osgeo.gdal.GFU_Red",
+  "osgeo.gdal.GetDataTypeName",
+  "osgeo.gdal.GetDriverByName",
+  "osgeo.gdal.GetUseExceptions",
+  "osgeo.gdal.IdentifyDriver",
+  "osgeo.gdal.Open",
+  "osgeo.gdal.RasterAttributeTable",
+  "osgeo.gdal.RasterizeLayer",
+  "osgeo.gdal.TermProgress_nocb",
+  "osgeo.gdal.UseExceptions",
+  "osgeo.gdal.__version__",
+  "osgeo.gdalconst",
+  "osgeo.gdalconst.GDT_Byte",
+  "osgeo.gdalconst.GDT_Float32",
+  "osgeo.gdalconst.GDT_Float64",
+  "osgeo.gdalconst.GDT_Int16",
+  "osgeo.gdalconst.GDT_Int32",
+  "osgeo.gdalconst.GDT_UInt16",
+  "osgeo.gdalconst.GDT_UInt32",
+  "osgeo.ogr",
+  "osgeo.ogr.DontUseExceptions",
+  "osgeo.ogr.Feature",
+  "osgeo.ogr.FeatureDefn",
+  "osgeo.ogr.Geometry",
+  "osgeo.ogr.GetDriverByName",
+  "osgeo.ogr.GetUseExceptions",
+  "osgeo.ogr.Open",
+  "osgeo.ogr.UseExceptions",
+  "osgeo.ogr.wkbPolygon",
+  "osgeo.osr",
+  "osgeo.osr.CoordinateTransformation",
+  "osgeo.osr.SpatialReference",
   "parallel.jobmanager.JobInfo",
   "parallel.jobmanager.getJobMgrObject",
+  "pickle",
+  "pickle.BUILD",
+  "pickle.GLOBAL",
+  "pickle.INST",
+  "pickle.MARK",
+  "pickle.OBJ",
+  "pickle.POP",
+  "pickle.Pickler",
+  "pickle.PicklingError",
+  "pickle.REDUCE",
+  "pickle.TUPLE",
+  "pickle._Pickler",
   "pickle._Pickler.dispatch.copy",
+  "pickle._Pickler.dump",
+  "pickle._Pickler.save_global",
   "pickle.__builtins__",
   "pickle._keep_alive",
+  "pickle.load",
+  "pickle.loads",
+  "pickle.whichmodule",
   "pixelgrid.PixelGridDefn",
   "pixelgrid.findCommonRegion",
   "rat.DEFAULT_AUTOCOLORTABLETYPE",
@@ -167,6 +221,7 @@
   "save",
   "set.__new__",
   "str.upper",
+  "struct",
   "struct.pack",
   "sys",
   "sys.modules.items",
@@ -187,36 +242,24 @@
   "teststats.run",
   "testvector.run",
   "time",
-  "traceback",
-  "traceback.print_exception",
+  "tornado.gen",
+  "tornado.gen.coroutine",
   "tuple.__new__",
   "turbogdal.turborat",
   "turbogdal.turborat.readColumn",
   "turbogdal.turborat.writeColumn",
-  "types",
-  "types.BuiltinFunctionType",
   "types.ClassType",
-  "types.CodeType",
-  "types.FunctionType",
-  "types.GeneratorType",
   "types.InstanceType",
-  "types.MethodType",
-  "types.ModuleType",
   "types.__dict__.items",
   "vectorreader.Vector",
   "vectorreader.VectorReader",
+  "weakref",
+  "weakref.WeakKeyDictionary",
+  "weakref.WeakSet",
   "write"
  ],
  "deps": {
   "__future__": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "_pickle": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "_weakrefset": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -248,6 +291,14 @@
   "decimal": [
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "dis": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "distutils": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "imp": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -273,32 +324,11 @@
    "numpy/conda-forge/linux-64/numpy-1.18.4-py37h8960a57_0",
    "numpy/conda-forge/linux-64/numpy-1.19.2-py36h68c22af_1"
   ],
-  "opcode": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "operator": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "os": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "osgeo": [
-   "gdal/conda-forge/linux-64/gdal-3.0.3-py38hbb6b9fb_0",
-   "gdal/conda-forge/linux-64/gdal-3.0.4-py36hd60729c_6",
-   "gdal/conda-forge/linux-64/gdal-3.1.2-py36hcf62b00_2"
-  ],
-  "pickle": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "random": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "struct": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -310,11 +340,11 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "tornado": [
-   "tornado/conda-forge/linux-64/tornado-4.4.3-py35_0",
-   "tornado/conda-forge/linux-64/tornado-6.0.4-py38h1e0a361_2"
+  "traceback": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "weakref": [
+  "types": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ]
