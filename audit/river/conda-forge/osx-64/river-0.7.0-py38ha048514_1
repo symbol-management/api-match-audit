@@ -69,33 +69,13 @@
   "get_delay",
   "get_moment",
   "get_size",
-  "glob",
-  "graphviz",
-  "graphviz.Digraph",
-  "gzip",
-  "gzip.open",
-  "hashlib",
   "hashlib.blake2s",
-  "heapq",
-  "heapq.merge",
-  "heapq.nsmallest",
   "hoeffding_tree.HoeffdingTree.leaf_prediction.setter",
   "hoeffding_tree.HoeffdingTree.split_criterion.setter",
   "html_repr.CSS",
   "html_repr.pipeline_to_html",
-  "importlib",
-  "importlib.import_module",
   "inc_cp",
   "infer_name",
-  "inspect",
-  "inspect._empty",
-  "inspect.cleandoc",
-  "inspect.getmembers",
-  "inspect.getsource",
-  "inspect.isabstract",
-  "inspect.isclass",
-  "inspect.isfunction",
-  "inspect.signature",
   "instantiate",
   "io.StringIO",
   "io.TextIOWrapper",
@@ -115,6 +95,10 @@
   "n_choose_k",
   "node_prediction",
   "normalize_error",
+  "numbers",
+  "numbers.Integral",
+  "numbers.Number",
+  "numbers.Real",
   "numpy.abs",
   "numpy.absolute",
   "numpy.arange",
@@ -153,14 +137,31 @@
   "operator.gt",
   "operator.lt",
   "operator.mul",
+  "os",
   "os.environ.get",
+  "os.makedirs",
+  "os.path.basename",
+  "os.path.dirname",
   "os.path.exists",
+  "os.path.expanduser",
   "os.path.getsize",
+  "os.path.join",
+  "os.path.realpath",
+  "os.path.splitext",
   "os.remove",
+  "pandas",
+  "pandas.DataFrame",
   "pandas.DataFrame.sparse.from_spmatrix",
+  "pandas.Series",
+  "pandas.concat",
+  "pandas.read_csv",
   "parse_libsvm_feature",
+  "pathlib",
+  "pathlib.Path",
   "perform_test",
   "platform",
+  "pprint",
+  "pprint.pformat",
   "pred_func",
   "print_dict",
   "print_title",
@@ -168,10 +169,21 @@
   "pytest.mark.filterwarnings",
   "pytest.mark.parametrize",
   "pytest.mark.slow",
+  "queue",
+  "random",
+  "random.Random",
+  "random.choice",
+  "random.gauss",
+  "random.random",
+  "random.shuffle",
   "random_fun",
   "random_subspace",
   "report.ClassificationReport",
   "reshape_probas",
+  "river.compose.Pipeline.predict_many",
+  "river.compose.Pipeline.predict_one",
+  "river.compose.Pipeline.predict_proba_many",
+  "river.compose.Pipeline.predict_proba_one",
   "river.datasets.Insects.variants",
   "river.linear_model.__name__",
   "river.linear_model._eval_gradient_one",
@@ -181,17 +193,64 @@
   "river.linear_model.loss",
   "river.reco.__init__.__all__",
   "river.stream.__init__.__all__",
+  "river.synth.Friedman",
+  "river.synth.LED",
+  "river.synth.Mv",
+  "river.synth.SEA",
+  "river.synth.Sine",
   "river.tree.HoeffdingTreeRegressor.leaf_prediction.setter",
   "river.tree.HoeffdingTreeRegressor.split_criterion.setter",
   "river.utils.vectordict.VectorDict",
   "safe_div",
   "scipy.spatial.cKDTree",
+  "shutil",
+  "shutil.copyfileobj",
   "sign",
   "sk_fbeta",
   "sk_r2",
+  "sklearn",
+  "sklearn.base",
+  "sklearn.base.BaseEstimator",
+  "sklearn.base.ClassifierMixin",
+  "sklearn.base.ClusterMixin",
+  "sklearn.base.RegressorMixin",
+  "sklearn.base.TransformerMixin",
+  "sklearn.cluster.KMeans",
+  "sklearn.datasets",
+  "sklearn.datasets.load_linnerud",
   "sklearn.exceptions",
   "sklearn.exceptions.NotFittedError",
+  "sklearn.linear_model",
+  "sklearn.linear_model.Perceptron",
+  "sklearn.linear_model.SGDClassifier",
+  "sklearn.linear_model.SGDRegressor",
+  "sklearn.metrics",
+  "sklearn.metrics.accuracy_score",
+  "sklearn.metrics.f1_score",
+  "sklearn.metrics.fbeta_score",
+  "sklearn.metrics.log_loss",
+  "sklearn.metrics.matthews_corrcoef",
+  "sklearn.metrics.mean_absolute_error",
+  "sklearn.metrics.mean_squared_error",
+  "sklearn.metrics.precision_score",
+  "sklearn.metrics.r2_score",
+  "sklearn.metrics.recall_score",
+  "sklearn.naive_bayes",
+  "sklearn.naive_bayes.BernoulliNB",
   "sklearn.naive_bayes.ComplementNB",
+  "sklearn.naive_bayes.MultinomialNB",
+  "sklearn.pipeline",
+  "sklearn.pipeline.Pipeline",
+  "sklearn.preprocessing",
+  "sklearn.preprocessing.LabelEncoder",
+  "sklearn.utils",
+  "sklearn.utils.check_X_y",
+  "sklearn.utils.check_array",
+  "sklearn.utils.estimator_checks",
+  "sklearn.utils.estimator_checks.check_estimator",
+  "sklearn.utils.multiclass.check_classification_targets",
+  "sklearn.utils.multiclass.unique_labels",
+  "sklearn.utils.validation.check_is_fitted",
   "split_pair",
   "step",
   "summing.RollingSum",
@@ -271,6 +330,42 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "glob": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "graphviz": [
+   "python-graphviz/conda-forge/noarch/python-graphviz-0.11.1-py_1",
+   "python-graphviz/conda-forge/noarch/python-graphviz-0.12-py_0",
+   "python-graphviz/conda-forge/noarch/python-graphviz-0.13-py_0",
+   "python-graphviz/conda-forge/noarch/python-graphviz-0.13.2-py_0",
+   "python-graphviz/conda-forge/noarch/python-graphviz-0.15-pyhd3deb0d_0",
+   "python-graphviz/conda-forge/noarch/python-graphviz-0.16-pyh243d235_2",
+   "python-graphviz/conda-forge/noarch/python-graphviz-0.16-pyhd3deb0d_0",
+   "python-graphviz/conda-forge/noarch/python-graphviz-0.16-pyhd3deb0d_1",
+   "python-graphviz/conda-forge/noarch/python-graphviz-0.8.4-py_1003"
+  ],
+  "gzip": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "hashlib": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "heapq": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "importlib": [
+   "importlib/conda-forge/linux-64/importlib-1.0.4-py26_0",
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "inspect": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "io": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -287,33 +382,11 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "ntpath": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "numbers": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "numpy": [
    "numpy/conda-forge/linux-64/numpy-1.17.5-py36h95a1406_0",
    "numpy/conda-forge/linux-64/numpy-1.18.4-py37h8960a57_0"
   ],
-  "os": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "pandas": [],
-  "pathlib": [
-   "pathlib/conda-forge/noarch/pathlib-1.0.1-py_1",
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "pickle": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "pprint": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -322,32 +395,11 @@
    "pytest/conda-forge/linux-64/pytest-4.6.0-py37_0",
    "pytest/conda-forge/linux-64/pytest-6.0.2-py37hc8dfbb8_0"
   ],
-  "queue": [
-   "pies2overrides/conda-forge/osx-64/pies2overrides-2.6.7-py27_1000",
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "random": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "re": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "river": [
-   "river/conda-forge/osx-64/river-0.7.0-py38ha048514_1"
-  ],
   "scipy": [],
-  "shutil": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "sklearn": [
-   "scikit-learn/conda-forge/linux-64/scikit-learn-0.17.1-np110py27_blas_openblas_200",
-   "scikit-learn/conda-forge/linux-64/scikit-learn-0.17.1-np110py35_blas_openblas_202",
-   "scikit-learn/conda-forge/linux-64/scikit-learn-0.17.1-np111py35_blas_openblas_202"
-  ],
   "sqlalchemy": [
    "sqlalchemy/conda-forge/linux-64/sqlalchemy-1.4.18-py37h6b43d8f_0",
    "sqlalchemy/conda-forge/linux-64/sqlalchemy-1.4.5-py39h3811e60_0"

@@ -37,12 +37,6 @@
   "add_param",
   "addclosure",
   "after_leave",
-  "argparse",
-  "argparse.ArgumentParser",
-  "ast",
-  "ast.dump",
-  "ast.literal_eval",
-  "ast.parse",
   "before_visit",
   "check",
   "codecs.BOM_UTF8.decode",
@@ -55,30 +49,37 @@
   "dedent_if_necessary",
   "detect_encoding",
   "different_case_versions",
+  "enum.Enum",
+  "enum.auto",
   "filter_line",
   "get_length",
   "handler",
+  "hypothesis",
   "hypothesis.HealthCheck.filter_too_much",
   "hypothesis.HealthCheck.too_slow",
   "hypothesis.Phase.generate",
   "hypothesis.Phase.shrink",
+  "hypothesis.given",
+  "hypothesis.note",
+  "hypothesis.reject",
+  "hypothesis.settings.get_profile",
+  "hypothesis.settings.load_profile",
+  "hypothesis.settings.register_profile",
   "hypothesmith.from_grammar",
   "importlib",
   "importlib.import_module",
-  "inspect",
-  "inspect.cleandoc",
-  "inspect.getclasstree",
-  "inspect.getfullargspec",
-  "inspect.getmembers",
-  "inspect.getmro",
-  "inspect.isabstract",
-  "inspect.isfunction",
-  "inspect.ismethod",
-  "inspect.signature",
   "io.BytesIO",
   "iter.value",
   "itertools",
   "leave_func",
+  "libcst.CSTTransformer.on_leave",
+  "libcst.CSTTransformer.on_leave_attribute",
+  "libcst.CSTTransformer.on_visit",
+  "libcst.CSTTransformer.on_visit_attribute",
+  "libcst.CSTVisitor.on_leave",
+  "libcst.CSTVisitor.on_leave_attribute",
+  "libcst.CSTVisitor.on_visit",
+  "libcst.CSTVisitor.on_visit_attribute",
   "libcst.MaybeSentinel.DEFAULT",
   "libcst.RemovalSentinel.REMOVE",
   "libcst.__dict__.items",
@@ -131,6 +132,8 @@
   "libcst.codemod._runner.SkipReason.BLACKLISTED",
   "libcst.codemod._runner.SkipReason.GENERATED",
   "libcst.codemod._runner.SkipReason.OTHER",
+  "libcst.codemod.visitors.AddImportsVisitor.add_needed_import",
+  "libcst.codemod.visitors.RemoveImportsVisitor.remove_unused_import_by_node",
   "libcst.codemod.visitors._add_imports.AddImportsVisitor.CONTEXT_KEY",
   "libcst.codemod.visitors._remove_imports.RemoveImportsVisitor.CONTEXT_KEY",
   "libcst.matchers.__init__.AnnotationMatchType",
@@ -240,6 +243,7 @@
   "libcst.metadata.ExpressionContext.DEL",
   "libcst.metadata.ExpressionContext.LOAD",
   "libcst.metadata.ExpressionContext.STORE",
+  "libcst.metadata.QualifiedNameProvider.has_name",
   "libcst.metadata.QualifiedNameSource.IMPORT",
   "libcst.metadata.QualifiedNameSource.LOCAL",
   "libcst.metadata.expression_context_provider.ExpressionContext.DEL",
@@ -254,17 +258,29 @@
   "multiprocessing.cpu_count",
   "object.__getattribute__",
   "object.__setattr__",
+  "os",
+  "os.devnull",
   "os.environ.get",
   "os.getcwd",
+  "os.linesep",
   "os.linesep.join",
   "os.listdir",
+  "os.pardir",
+  "os.path",
+  "os.path.abspath",
+  "os.path.dirname",
   "os.path.isdir",
   "os.path.isfile",
+  "os.path.join",
   "os.remove",
   "os.rename",
   "p",
+  "pathlib.Path",
+  "queue.Empty",
   "re.UNICODE",
   "s",
+  "shutil",
+  "shutil.copyfile",
   "slice._codegen",
   "slice.value",
   "slice.visit",
@@ -274,7 +290,16 @@
   "sys",
   "sys.stdin.read",
   "time",
+  "traceback",
+  "traceback.format_exc",
+  "unittest",
+  "unittest.TestCase",
+  "unittest.expectedFailure",
+  "unittest.main",
+  "unittest.mock.Mock",
+  "unittest.mock.patch",
   "unittest.mock.patch.object",
+  "unittest.skipUnless",
   "update_annotation",
   "update_annotations",
   "v",
@@ -291,6 +316,15 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "abc": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "argparse": [
+   "argparse/conda-forge/osx-64/argparse-1.4.0-py26_0",
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "ast": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -333,49 +367,17 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "enum": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "functools": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "hypothesis": [
-   "hypothesis/conda-forge/noarch/hypothesis-5.18.2-py_0",
-   "hypothesis/conda-forge/noarch/hypothesis-5.19.1-py_0",
-   "hypothesis/conda-forge/noarch/hypothesis-5.2.0-py_0",
-   "hypothesis/conda-forge/noarch/hypothesis-5.20.3-py_0",
-   "hypothesis/conda-forge/noarch/hypothesis-5.23.0-py_0",
-   "hypothesis/conda-forge/noarch/hypothesis-5.23.1-py_0",
-   "hypothesis/conda-forge/noarch/hypothesis-5.37.3-py_0",
-   "hypothesis/conda-forge/noarch/hypothesis-5.37.5-py_0",
-   "hypothesis/conda-forge/noarch/hypothesis-5.41.1-pyhd8ed1ab_0",
-   "hypothesis/conda-forge/noarch/hypothesis-5.41.5-pyhd8ed1ab_0",
-   "hypothesis/conda-forge/noarch/hypothesis-5.43.6-pyhd8ed1ab_0",
-   "hypothesis/conda-forge/noarch/hypothesis-5.47.0-pyhd8ed1ab_0",
-   "hypothesis/conda-forge/noarch/hypothesis-5.8.6-py_0",
-   "hypothesis/conda-forge/noarch/hypothesis-5.9.0-py_0",
-   "hypothesis/conda-forge/noarch/hypothesis-6.0.1-pyhd8ed1ab_0",
-   "hypothesis/conda-forge/noarch/hypothesis-6.13.1-pyhd8ed1ab_0",
-   "hypothesis/conda-forge/noarch/hypothesis-6.13.2-pyhd8ed1ab_0",
-   "hypothesis/conda-forge/noarch/hypothesis-6.13.6-pyhd8ed1ab_0",
-   "hypothesis/conda-forge/noarch/hypothesis-6.2.0-pyhd8ed1ab_0",
-   "hypothesis/conda-forge/noarch/hypothesis-6.5.0-pyhd8ed1ab_0",
-   "hypothesis/conda-forge/noarch/hypothesis-6.6.1-pyhd8ed1ab_0",
-   "hypothesis/conda-forge/noarch/hypothesis-6.8.1-pyhd8ed1ab_0",
-   "hypothesis/conda-forge/noarch/hypothesis-6.8.9-pyhd8ed1ab_0"
+  "inspect": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "json": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "libcst": [
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0",
-   "libcst/conda-forge/linux-64/libcst-0.3.14-py36hd000896_0",
-   "libcst/conda-forge/linux-64/libcst-0.3.16-py36hd000896_1",
-   "libcst/conda-forge/linux-64/libcst-0.3.5-py38h32f6830_0"
   ],
   "mypy_extensions": [
    "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
@@ -383,32 +385,11 @@
    "mypy_extensions/conda-forge/linux-64/mypy_extensions-0.4.1-py36_0",
    "mypy_extensions/conda-forge/osx-64/mypy_extensions-0.4.3-py27h8c360ce_1"
   ],
-  "ntpath": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "os": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "pathlib": [
-   "pathlib/conda-forge/noarch/pathlib-1.0.1-py_1",
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "pickle": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "queue": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "re": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "shutil": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -421,10 +402,6 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "tokenize": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "traceback": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -447,10 +424,6 @@
    "typing_inspect/conda-forge/noarch/typing_inspect-0.5.0-py_0",
    "typing_inspect/conda-forge/noarch/typing_inspect-0.5.0-py_1",
    "typing_inspect/conda-forge/noarch/typing_inspect-0.7.1-pyh6c4a22f_0"
-  ],
-  "unittest": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "yaml": [
    "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",

@@ -26,15 +26,12 @@
   "func",
   "function",
   "functools.partial",
-  "hashlib",
   "hashlib.md5",
   "hashlib.sha1",
   "hashlib.sha256",
   "io.BytesIO",
   "itertools",
   "lock_file_on_windows",
-  "memory_profiler.memory_usage",
-  "memory_profiler.profile",
   "models.Base.metadata.bind",
   "models.Base.metadata.create_all",
   "models.Obj.__table__.insert",
@@ -68,53 +65,17 @@
   "os.rmdir",
   "os.unlink",
   "os.urandom",
-  "pathlib",
-  "pathlib.Path",
-  "profilehooks.profile",
-  "psutil",
-  "psutil.Process",
-  "pytest",
-  "pytest.fixture",
   "pytest.mark.benchmark",
   "pytest.mark.parametrize",
   "pytest.mark.skipif",
-  "pytest.raises",
-  "pytest.warns",
   "pywintypes",
   "pywintypes.OVERLAPPED",
-  "random",
-  "random.getstate",
-  "random.randint",
-  "random.seed",
-  "random.setstate",
-  "random.shuffle",
-  "sqlalchemy.Boolean",
-  "sqlalchemy.Column",
-  "sqlalchemy.Integer",
-  "sqlalchemy.String",
-  "sqlalchemy.create_engine",
-  "sqlalchemy.event",
-  "sqlalchemy.event.listens_for",
-  "sqlalchemy.ext.declarative.declarative_base",
-  "sqlalchemy.orm.sessionmaker",
-  "sqlalchemy.sql.func",
   "sqlalchemy.sql.func.coalesce",
   "sqlalchemy.sql.func.sum",
-  "stat",
-  "stat.S_IEXEC",
-  "stat.S_IREAD",
-  "stat.S_IWRITE",
   "sys",
-  "tempfile",
-  "tempfile.NamedTemporaryFile",
-  "tempfile.TemporaryDirectory",
-  "tempfile.TemporaryFile",
-  "tempfile.mkdtemp",
   "time",
   "utils.Location.BOTH",
   "utils.Location.LEFTONLY",
-  "uuid",
-  "uuid.uuid4",
   "warnings.warn",
   "win32con",
   "win32con.LOCKFILE_EXCLUSIVE_LOCK",
@@ -124,6 +85,11 @@
   "win32file._get_osfhandle"
  ],
  "deps": {
+  "_pytest": [
+   "pytest/conda-forge/linux-64/pytest-3.7.0-py27_0",
+   "pytest/conda-forge/linux-64/pytest-4.6.0-py37_0",
+   "pytest/conda-forge/linux-64/pytest-6.0.2-py37hc8dfbb8_0"
+  ],
   "abc": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -160,6 +126,10 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "hashlib": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "io": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -167,6 +137,13 @@
   "json": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "memory_profiler": [
+   "memory_profiler/conda-forge/noarch/memory_profiler-0.54.0-py_0",
+   "memory_profiler/conda-forge/noarch/memory_profiler-0.55.0-py_0",
+   "memory_profiler/conda-forge/noarch/memory_profiler-0.56.0-py_0",
+   "memory_profiler/conda-forge/noarch/memory_profiler-0.57.0-py_0",
+   "memory_profiler/conda-forge/noarch/memory_profiler-0.58.0-py_0"
   ],
   "ntpath": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -176,11 +153,44 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "pathlib": [
+   "pathlib/conda-forge/noarch/pathlib-1.0.1-py_1",
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "profilehooks": [
+   "profilehooks/conda-forge/linux-64/profilehooks-1.12.0-py36h9f0ad1d_1"
+  ],
+  "psutil": [
+   "psutil/conda-forge/linux-64/psutil-5.7.3-py39h38d8fee_0"
+  ],
+  "pytest": [
+   "pytest/conda-forge/linux-64/pytest-3.7.0-py27_0",
+   "pytest/conda-forge/linux-64/pytest-4.6.0-py37_0",
+   "pytest/conda-forge/linux-64/pytest-6.0.2-py37hc8dfbb8_0"
+  ],
+  "random": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "shutil": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "sqlalchemy": [],
+  "stat": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "subprocess": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "tempfile": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "uuid": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
