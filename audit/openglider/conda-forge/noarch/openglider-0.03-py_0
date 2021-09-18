@@ -20,10 +20,6 @@
   "ballooning_merge_curve",
   "bsf",
   "circle_val",
-  "collada",
-  "collada.Collada",
-  "collada.material.Effect",
-  "collada.material.Material",
   "cut_hash",
   "deserializer",
   "dist_func",
@@ -55,29 +51,71 @@
   "insert_block",
   "insert_diagonal",
   "inspect",
+  "interpolation",
   "interpolation_x",
   "interpolation_y",
   "io.StringIO",
   "l1",
   "l2",
   "left_triangle",
+  "locale",
+  "locale.LC_NUMERIC",
+  "locale.getlocale",
+  "locale.setlocale",
+  "matplotlib.pyplot",
+  "matplotlib.pyplot.axes",
+  "matplotlib.pyplot.plot",
+  "matplotlib.pyplot.show",
   "meshpy._internals",
   "meshpy._internals.triangulate",
   "meshpy._triangle",
+  "meshpy.triangle.MeshInfo",
+  "numbers",
+  "numbers.Number",
+  "numpy",
   "numpy.abs",
+  "numpy.append",
   "numpy.arccos",
   "numpy.arcsin",
   "numpy.arctan",
   "numpy.arctan2",
+  "numpy.array",
+  "numpy.bmat",
   "numpy.complex",
+  "numpy.concatenate",
   "numpy.cos",
+  "numpy.cross",
+  "numpy.delete",
+  "numpy.dot",
   "numpy.e",
+  "numpy.hstack",
+  "numpy.imag",
+  "numpy.insert",
+  "numpy.interp",
+  "numpy.linalg.LinAlgError",
+  "numpy.linalg.inv",
+  "numpy.linalg.linalg.LinAlgError",
+  "numpy.linalg.lstsq",
+  "numpy.linalg.norm",
+  "numpy.linalg.pinv",
+  "numpy.linalg.solve",
+  "numpy.linalg.svd",
+  "numpy.linspace",
+  "numpy.loadtxt",
   "numpy.log",
+  "numpy.matrix",
   "numpy.multiply",
+  "numpy.ndarray",
+  "numpy.ones",
   "numpy.pi",
+  "numpy.real",
+  "numpy.set_printoptions",
   "numpy.sin",
+  "numpy.sinc",
   "numpy.sqrt",
   "numpy.tan",
+  "numpy.vdot",
+  "numpy.vectorize",
   "numpy.zeros",
   "openglider.__init__.cross",
   "openglider.glider.ballooning.Ballooning.arcsinc",
@@ -107,6 +145,7 @@
   "openglider.vector.spline.__init__.SymmetricGenericSpline",
   "openglider.vector.spline.bspline.BSpline.constraint_fit",
   "os.mkdir",
+  "pandas",
   "paraBEM.Panel3",
   "paraBEM.PanelVector3",
   "point",
@@ -132,11 +171,6 @@
   "str.upper",
   "symmetric_fit",
   "sys",
-  "tempfile",
-  "tempfile.NamedTemporaryFile",
-  "tempfile.gettempdir",
-  "tempfile.gettempprefix",
-  "tempfile.tempdir",
   "time",
   "try_convert",
   "vtk.vtkArrowSource",
@@ -158,6 +192,9 @@
   "__future__": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "collada": [
+   "pycollada/conda-forge/noarch/pycollada-0.7.1-py_0"
   ],
   "collections": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -196,22 +233,11 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "interpolation": [
-   "interpolation/conda-forge/noarch/interpolation-2.0.0-py_0",
-   "interpolation/conda-forge/noarch/interpolation-2.1.0-py_0",
-   "interpolation/conda-forge/noarch/interpolation-2.1.4-py_0",
-   "interpolation/conda-forge/noarch/interpolation-2.2.0-pyhd8ed1ab_0",
-   "interpolation/conda-forge/noarch/interpolation-2.2.1-pyhd8ed1ab_0"
-  ],
   "io": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "json": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "locale": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -223,27 +249,9 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "matplotlib": [
-   "matplotlib-base/conda-forge/linux-64/matplotlib-base-3.1.1-py37hfd891ef_0",
-   "matplotlib-base/conda-forge/linux-64/matplotlib-base-3.1.1-py38h250f245_2",
-   "matplotlib/conda-forge/linux-64/matplotlib-1.5.3-np111py34_0"
-  ],
-  "meshpy": [
-   "meshpy/conda-forge/linux-64/meshpy-2020.1-py36h284efc9_0",
-   "meshpy/conda-forge/linux-64/meshpy-2020.1-py36hcf32051_0"
-  ],
   "ntpath": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "numbers": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "numpy": [
-   "numpy/conda-forge/linux-64/numpy-1.17.5-py36h95a1406_0",
-   "numpy/conda-forge/linux-64/numpy-1.18.4-py37h8960a57_0",
-   "numpy/conda-forge/linux-64/numpy-1.19.2-py36h68c22af_1"
   ],
   "openglider": [
    "openglider/conda-forge/noarch/openglider-0.03-py_0",
@@ -253,11 +261,6 @@
   "os": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "pandas": [
-   "pandas/conda-forge/linux-64/pandas-0.17.0-np111py35_0",
-   "pandas/conda-forge/linux-64/pandas-0.22.0-py35_0",
-   "pandas/conda-forge/linux-64/pandas-1.2.2-py37h40f5888_0"
   ],
   "paraBEM": [
    "parabem/conda-forge/linux-64/parabem-0.1.0-py37h78e549b_1"
@@ -308,6 +311,10 @@
    "svgwrite/conda-forge/noarch/svgwrite-1.2.0-py_0",
    "svgwrite/conda-forge/noarch/svgwrite-1.3.0-py_0",
    "svgwrite/conda-forge/noarch/svgwrite-1.3.1-py_0"
+  ],
+  "tempfile": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "traceback": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",

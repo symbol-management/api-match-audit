@@ -6,7 +6,6 @@
   "_python_process_context",
   "_python_process_wait",
   "_read_until_magic_words",
-  "_version.get_versions",
   "app.conf",
   "app.conf.format",
   "app.conf.get",
@@ -16,55 +15,12 @@
   "app.conf.update",
   "app.start",
   "app.task",
-  "astropy.coordinates.ICRS",
-  "astropy.coordinates.SkyCoord",
-  "astropy.io.fits",
-  "astropy.io.fits.getval",
-  "astropy.io.fits.open",
-  "astropy.table",
-  "astropy.table.Table",
-  "astropy.table.Table.read",
-  "astropy.time.Time",
-  "astropy.units",
   "astropy.units.deg",
-  "astropy.units.dimensionless_unscaled",
-  "astropy_healpix.HEALPix",
-  "astropy_healpix.pixel_resolution_to_nside",
-  "asyncio",
-  "asyncio.FIRST_COMPLETED",
-  "asyncio.StreamReader",
-  "asyncio.get_event_loop",
-  "asyncio.streams.StreamReaderProtocol",
-  "asyncio.streams._DEFAULT_LIMIT",
-  "asyncio.subprocess.PIPE",
-  "asyncio.subprocess.Process",
-  "asyncio.subprocess.SubprocessStreamProtocol",
-  "asyncio.wait",
   "bayestar.localize.s",
-  "celery.Celery",
-  "celery.bin.base.Command",
-  "celery.bootsteps",
-  "celery.bootsteps.ConsumerStep",
-  "celery.concurrency.solo",
-  "celery.concurrency.solo.TaskPool",
-  "celery.exceptions",
-  "celery.exceptions.Ignore",
-  "celery.exceptions.Retry",
-  "celery.group",
-  "celery.local.PromiseProxy",
-  "celery.signals.after_setup_logger",
   "celery.signals.after_setup_logger.connect",
-  "celery.task.PeriodicTask",
-  "celery.utils.dispatch.Signal",
-  "celery.utils.log.get_logger",
-  "celery.utils.log.get_task_logger",
   "circulars.create_emcoinc_circular.si",
   "circulars.create_initial_circular.si",
   "circulars.create_retraction_circular.si",
-  "click",
-  "click.group",
-  "click.testing",
-  "click.testing.CliRunner",
   "client.LVAlertClient",
   "comet.utility.WhitelistingFactory",
   "condor.JobAborted",
@@ -78,7 +34,6 @@
   "em_bright.classifier_other",
   "em_bright.em_bright_posterior_samples.s",
   "email.install",
-  "enum.IntEnum",
   "external_skymaps.create_upload_external_skymap",
   "external_skymaps.get_preferred_skymap",
   "external_skymaps.get_upload_external_skymap",
@@ -160,25 +115,48 @@
   "gwcelery.util.PromiseProxy",
   "gwcelery.util.SPHINX",
   "gwpy.timeseries.TimeSeries.read",
+  "gzip",
+  "gzip.GzipFile",
+  "html",
+  "html.escape",
+  "http.client.HTTPException",
+  "imapclient.IMAPClient",
   "inference.pre_pe_tasks",
   "inference.start_pe.s",
   "io.BytesIO",
+  "ipaddress",
+  "ipaddress.ip_network",
   "is_complete",
   "itertools",
   "jinja.env.get_template",
+  "jinja2.Environment",
+  "jinja2.PackageLoader",
+  "jinja2.select_autoescape",
+  "kombu.exceptions",
+  "lal",
   "lal.GPSTimeNow",
   "lal.GreenwichMeanSiderealTime",
   "lal.GreenwichMeanSiderealTimeToGPS",
   "lal.LIGOTimeGPS",
+  "ligo.computeDiskMass",
+  "ligo.computeDiskMass.computeDiskMass",
+  "ligo.em_bright",
+  "ligo.em_bright.source_classification",
+  "ligo.em_bright.source_classification_pe",
   "ligo.followup_advocate",
   "ligo.gracedb.exceptions.HTTPError",
   "ligo.gracedb.rest",
   "ligo.gracedb.rest.GraceDb",
   "ligo.gracedb.rest.HTTPError",
+  "ligo.p_astro_computation",
+  "ligo.p_astro_computation.choose_snr",
+  "ligo.p_astro_computation.evaluate_p_astro_from_bayesfac",
   "ligo.raven.gracedb_events",
   "ligo.raven.gracedb_events.ExtTrig",
   "ligo.raven.gracedb_events.SE",
   "ligo.raven.search",
+  "ligo.segments.segment",
+  "ligo.segments.segmentlist",
   "ligo.skymap.bayestar",
   "ligo.skymap.bayestar.localize",
   "ligo.skymap.io.events",
@@ -203,20 +181,45 @@
   "lvalert.handler",
   "lvalert.install",
   "lvalert.signals.lvalert_received.connect",
+  "lxml",
+  "lxml.etree",
   "lxml.etree.fromstring",
   "lxml.etree.parse",
+  "matplotlib.pyplot",
+  "matplotlib.pyplot.axis",
+  "matplotlib.pyplot.figure",
+  "matplotlib.pyplot.imread",
+  "matplotlib.pyplot.imshow",
+  "matplotlib.pyplot.style.context",
+  "matplotlib.pyplot.subplots",
+  "matplotlib.pyplot.text",
+  "multiprocessing",
   "multiprocessing.Pipe",
   "multiprocessing.Process",
+  "numpy",
+  "numpy.all",
+  "numpy.any",
   "numpy.arange",
+  "numpy.argmax",
+  "numpy.argmin",
+  "numpy.around",
+  "numpy.array",
+  "numpy.asarray",
+  "numpy.atleast_1d",
   "numpy.exp",
   "numpy.float64",
   "numpy.inf",
   "numpy.int64",
   "numpy.log",
+  "numpy.ones",
   "numpy.pi",
+  "numpy.recfromtxt",
+  "numpy.round",
   "numpy.square",
+  "numpy.transpose",
   "numpy.uint32",
   "numpy.zeros",
+  "operator.itemgetter",
   "os.chmod",
   "os.dup2",
   "os.environ.get",
@@ -370,15 +373,46 @@
   "zope.interface.implementer"
  ],
  "deps": {
+  "_asyncio": [
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "_pytest": [
    "pytest/conda-forge/linux-64/pytest-3.7.0-py27_0",
    "pytest/conda-forge/linux-64/pytest-4.6.0-py37_0",
    "pytest/conda-forge/linux-64/pytest-6.0.2-py37hc8dfbb8_0"
   ],
+  "_version": [
+   "diffusioncma/conda-forge/linux-64/diffusioncma-0.5.8-py37h0da4684_0"
+  ],
   "argparse": [
    "argparse/conda-forge/osx-64/argparse-1.4.0-py26_0",
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "astropy": [],
+  "astropy_healpix": [
+   "astropy-healpix/conda-forge/linux-64/astropy-healpix-0.4-py36h7eb728f_0"
+  ],
+  "asyncio": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython"
+  ],
+  "celery": [
+   "celery/conda-forge/linux-64/celery-4.0.1-py35_0",
+   "celery/conda-forge/noarch/celery-4.1.1-py_0",
+   "celery/conda-forge/noarch/celery-4.2.2-py_0",
+   "celery/conda-forge/noarch/celery-4.4.0-py_0",
+   "celery/conda-forge/noarch/celery-4.4.0-py_1",
+   "celery/conda-forge/noarch/celery-4.4.1-py_0",
+   "celery/conda-forge/noarch/celery-4.4.2-pyh8c360ce_0",
+   "celery/conda-forge/noarch/celery-4.4.4-pyh9f0ad1d_0",
+   "celery/conda-forge/noarch/celery-4.4.6-pyh9f0ad1d_0"
+  ],
+  "click": [
+   "click/conda-forge/noarch/click-5.1-py_0",
+   "click/conda-forge/noarch/click-6.7-py_1",
+   "click/conda-forge/noarch/click-7.0-py_0",
+   "click/conda-forge/noarch/click-7.1-pyh8c360ce_0",
+   "click/conda-forge/noarch/click-7.1.1-pyh8c360ce_0"
   ],
   "comet": [
    "comet/conda-forge/noarch/comet-3.1.0-py_0"
@@ -396,6 +430,11 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "distutils": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "enum": [
+   "privy/conda-forge/noarch/privy-6.0.0-py_0",
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -446,25 +485,10 @@
    "gwpy/conda-forge/noarch/gwpy-2.0.2-pyhd8ed1ab_0",
    "gwpy/conda-forge/noarch/gwpy-2.0.4-pyhd8ed1ab_1"
   ],
-  "gzip": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "h5py": [
    "h5py/conda-forge/linux-64/h5py-2.10.0-nompi_py37hf7afa78_105",
    "h5py/conda-forge/linux-64/h5py-2.6.0-np111py34_4",
    "h5py/conda-forge/linux-64/h5py-2.7.0-np113py36_1"
-  ],
-  "html": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "http": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "imapclient": [
-   "imapclient/conda-forge/noarch/imapclient-2.2.0-pyhd8ed1ab_0"
   ],
   "importlib": [
    "importlib/conda-forge/linux-64/importlib-1.0.4-py26_0",
@@ -475,49 +499,11 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "ipaddress": [
-   "ipaddress/conda-forge/noarch/ipaddress-1.0.22-py_1",
-   "ipaddress/conda-forge/noarch/ipaddress-1.0.23-py_0",
-   "privy/conda-forge/noarch/privy-6.0.0-py_0",
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "jinja2": [
-   "jinja2/conda-forge/noarch/jinja2-2.10-py_1",
-   "jinja2/conda-forge/noarch/jinja2-2.11.3-pyh44b312d_0",
-   "jinja2/conda-forge/noarch/jinja2-3.0.0-pyhd8ed1ab_0",
-   "jinja2/conda-forge/noarch/jinja2-3.0.1-pyhd8ed1ab_0"
-  ],
   "json": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "kombu": [
-   "kombu/conda-forge/linux-64/kombu-4.6.10-py37hc8dfbb8_1",
-   "kombu/conda-forge/linux-64/kombu-4.6.11-py36h9f0ad1d_0",
-   "kombu/conda-forge/noarch/kombu-4.2.1-py_0",
-   "kombu/conda-forge/noarch/kombu-4.4.0-py_0",
-   "kombu/conda-forge/noarch/kombu-4.6.3-py_0"
-  ],
-  "lal": [
-   "python-lal/conda-forge/linux-64/python-lal-6.19.0-py35h7eb728f_1",
-   "python-lal/conda-forge/linux-64/python-lal-6.22.0-mkl_py36h32b98d5_0",
-   "python-lal/conda-forge/linux-64/python-lal-7.1.0-fftw_py36h75dcf95_100"
-  ],
-  "ligo": [],
   "logging": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "lxml": [
-   "lxml/conda-forge/linux-64/lxml-4.2.6-py37h23eabaa_1000"
-  ],
-  "matplotlib": [
-   "matplotlib-base/conda-forge/linux-64/matplotlib-base-3.1.1-py37hfd891ef_0",
-   "matplotlib-base/conda-forge/linux-64/matplotlib-base-3.1.1-py38h250f245_2",
-   "matplotlib/conda-forge/linux-64/matplotlib-1.5.3-np111py34_0"
-  ],
-  "multiprocessing": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -526,14 +512,6 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "ntpath": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "numpy": [
-   "numpy/conda-forge/linux-64/numpy-1.17.5-py36h95a1406_0",
-   "numpy/conda-forge/linux-64/numpy-1.18.4-py37h8960a57_0"
-  ],
-  "operator": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],

@@ -20,12 +20,7 @@
   "addtag",
   "append",
   "append.append",
-  "argparse.ArgumentParser",
   "astype",
-  "base64",
-  "base64.b64encode",
-  "binascii",
-  "binascii.hexlify",
   "bitorder_decode",
   "bytecount_format",
   "bytes2str",
@@ -33,7 +28,6 @@
   "collections.abc.Iterable",
   "collections.abc.MutableMapping",
   "collections.defaultdict",
-  "concurrent.futures.ThreadPoolExecutor",
   "create_output",
   "datetime.datetime.fromordinal",
   "datetime.strftime",
@@ -64,25 +58,29 @@
   "keyindex",
   "lex",
   "log_warning",
+  "lxml.etree",
   "lxml.etree.XMLParser",
   "lxml.etree.XMLSchema",
   "lxml.etree.fromstring",
   "lxml.etree.parse",
   "lxml.etree.tostring",
-  "math",
-  "math.ceil",
-  "math.floor",
-  "math.log",
-  "math.pow",
-  "math.trunc",
+  "lzma",
+  "lzma.compress",
+  "lzma.decompress",
   "matlabstr2py",
   "matplotlib",
   "matplotlib.pyplot",
   "matplotlib.pyplot.show",
   "matplotlib.use",
+  "mmap",
+  "mmap.ALLOCATIONGRANULARITY",
+  "multiprocessing",
   "multiprocessing.cpu_count",
   "next_token",
   "notnone",
+  "numcodecs.abc.Codec",
+  "numcodecs.registry",
+  "numcodecs.registry.register_codec",
   "numpy",
   "numpy.absolute",
   "numpy.all",
@@ -181,9 +179,27 @@
   "warnings.warn"
  ],
  "deps": {
+  "argparse": [
+   "argparse/conda-forge/osx-64/argparse-1.4.0-py26_0",
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "base64": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "binascii": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "collections": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "concurrent": [
+   "futures/conda-forge/linux-64/futures-3.2.0-py27_0",
+   "futures/conda-forge/osx-64/futures-3.3.0-py27h8c360ce_1",
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython"
   ],
   "datetime": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -218,28 +234,13 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "lxml": [
-   "lxml/conda-forge/linux-64/lxml-4.2.6-py37h23eabaa_1000"
-  ],
-  "lzma": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "mmap": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "multiprocessing": [
+  "math": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "ntpath": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "numcodecs": [
-   "numcodecs/conda-forge/linux-64/numcodecs-0.5.2-py35_0",
-   "numcodecs/conda-forge/linux-64/numcodecs-0.6.4-py27he1b5a44_0"
   ],
   "optparse": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
