@@ -33,6 +33,7 @@
   "input.typ",
   "input.typ.maxlen",
   "input.typ.typ",
+  "io",
   "io.BytesIO",
   "itertools",
   "load_bytearray",
@@ -49,9 +50,20 @@
   "os.environ.get",
   "parse_body",
   "parse_sequence",
+  "pathlib.Path",
+  "pkgutil",
+  "pkgutil.iter_modules",
+  "re",
+  "re.compile",
+  "re.finditer",
+  "re.match",
+  "re.sub",
   "replace_constant",
+  "semantic_version.NpmSpec",
+  "semantic_version.Version",
   "sha3",
   "sha3.sha3_256",
+  "socketserver.ThreadingMixIn",
   "sortkey",
   "synonymise",
   "sys",
@@ -60,9 +72,32 @@
   "sys.tracebacklimit",
   "sys.version_info.major",
   "sys.version_info.minor",
+  "textwrap",
+  "textwrap.indent",
+  "tokenize",
+  "tokenize.COMMENT",
   "tokenize.NAME",
   "tokenize.OP",
+  "tokenize.TokenError",
+  "tokenize.TokenInfo",
+  "tokenize.tokenize",
+  "tokenize.untokenize",
   "type_",
+  "typing.Any",
+  "typing.Callable",
+  "typing.Dict",
+  "typing.Iterable",
+  "typing.Iterator",
+  "typing.List",
+  "typing.Optional",
+  "typing.Sequence",
+  "typing.Set",
+  "typing.Tuple",
+  "typing.Type",
+  "typing.TypeVar",
+  "typing.Union",
+  "uuid",
+  "uuid.uuid4",
   "v",
   "visitor_fn",
   "vy_class",
@@ -156,7 +191,10 @@
   "vyper.opcodes.OPCODES",
   "vyper.parser.context.Constancy.Constant",
   "vyper.parser.context.Constancy.Mutable",
+  "vyper.parser.parser.LLLnode.from_list",
+  "vyper.parser.parser_utils.LLLnode.from_list",
   "vyper.parser.parser_utils.LLLnode.repr_show_gas",
+  "vyper.signatures.FunctionSignature.from_definition",
   "vyper.utils.LOADED_LIMITS",
   "vyper.utils.LOADED_LIMITS.items",
   "vyper.utils.LOADED_LIMITS.keys",
@@ -246,10 +284,6 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "io": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "json": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -266,55 +300,14 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "pathlib": [
-   "pathlib/conda-forge/noarch/pathlib-1.0.1-py_1",
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "pkg_resources": [
    "setuptools/conda-forge/linux-64/setuptools-40.6.1-py36_0",
    "setuptools/conda-forge/linux-64/setuptools-46.3.0-py38h32f6830_0",
    "setuptools/conda-forge/linux-64/setuptools-49.1.2-py38h32f6830_0"
   ],
-  "pkgutil": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "re": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "semantic_version": [
-   "semantic_version/conda-forge/noarch/semantic_version-2.8.2-py_0",
-   "semantic_version/conda-forge/noarch/semantic_version-2.8.5-pyh9f0ad1d_0"
-  ],
-  "socketserver": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "textwrap": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "tokenize": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython"
-  ],
   "types": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "typing": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "uuid": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "vyper": [
-   "vyper/conda-forge/noarch/vyper-0.2.10-pyhd8ed1ab_0",
-   "vyper/conda-forge/noarch/vyper-0.2.11-pyhd8ed1ab_0",
-   "vyper/conda-forge/noarch/vyper-0.2.12-pyhd8ed1ab_0"
   ],
   "warnings": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",

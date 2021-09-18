@@ -52,24 +52,29 @@
   "log.logger.warn",
   "log.logger.warning",
   "mock.patch",
-  "oneagent",
   "oneagent.common.AgentState.ACTIVE",
-  "oneagent.common.DYNATRACE_HTTP_HEADER_NAME",
-  "oneagent.common.DYNATRACE_MESSAGE_PROPERTY_NAME",
-  "oneagent.common.MessagingDestinationType",
   "oneagent.common.MessagingDestinationType.QUEUE",
   "oneagent.common.MessagingDestinationType.TOPIC",
-  "oneagent.get_sdk",
-  "oneagent.initialize",
-  "oneagent.sdk.Channel",
   "oneagent.sdk.ChannelType",
   "oneagent.sdk.ChannelType.OTHER",
   "oneagent.sdk.ChannelType.TCP_IP",
   "oneagent.sdk.DatabaseVendor.ORACLE",
-  "oneagent.shutdown",
   "os.environ.get",
   "os.environ.pop",
+  "psycopg2",
+  "psycopg2.connect",
   "psycopg2.extensions.connection",
+  "psycopg2.extensions.cursor",
+  "pymongo.monitoring",
+  "pymongo.monitoring.CommandListener",
+  "pymongo.monitoring.CommandSucceededEvent",
+  "pymongo.monitoring.register",
+  "pysnmp.proto.rfc1905.GetBulkRequestPDU",
+  "pysnmp.proto.rfc1905.GetRequestPDU",
+  "re",
+  "re.search",
+  "redis",
+  "redis.VERSION",
   "remove_tracer",
   "sdk.sdk.add_custom_request_attribute",
   "sdk.sdk.create_database_info",
@@ -85,19 +90,37 @@
   "sdk.sdk.trace_outgoing_web_request",
   "sdk.sdk.trace_sql_database_request",
   "send",
+  "six",
+  "six.PY3",
   "six.moves.http_client",
   "six.moves.urllib.parse",
   "six.moves.urllib.parse.ParseResult",
   "six.moves.urllib.parse.urlunparse",
+  "six.text_type",
   "socket",
   "socket.AF_INET6",
   "socket.gethostname",
   "socket.inet_pton",
+  "sqlalchemy",
+  "sqlalchemy.engine.Engine",
+  "sqlalchemy.engine.base.Connection",
+  "sqlalchemy.event",
+  "sqlalchemy.event.listens_for",
+  "starlette",
   "sys",
   "sys.argv.endswith",
+  "threading",
+  "threading.Lock",
   "time",
   "trace_query",
-  "wrapped"
+  "wrapped",
+  "wrapt",
+  "wrapt.FunctionWrapper",
+  "wrapt.ObjectProxy",
+  "wrapt.importer.when_imported",
+  "wrapt.patch_function_wrapper",
+  "wrapt.wrap_function_wrapper",
+  "wsgiref.util.request_uri"
  ],
  "deps": {
   "aiohttp": [
@@ -169,6 +192,9 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "oneagent": [
+   "oneagent-sdk/conda-forge/noarch/oneagent-sdk-1.4.0.20210127.165413-pyh6c4a22f_0"
+  ],
   "os": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -181,68 +207,10 @@
    "pika/conda-forge/noarch/pika-1.1.0-py_0",
    "pika/conda-forge/noarch/pika-1.2.0-pyh44b312d_0"
   ],
-  "psycopg2": [
-   "psycopg2/conda-forge/linux-64/psycopg2-2.9.1-py38h497a2fe_0"
-  ],
-  "pymongo": [
-   "pymongo/conda-forge/linux-64/pymongo-3.11.4-py39he80948d_0",
-   "pymongo/conda-forge/win-64/pymongo-3.11.4-py39h415ef7b_0"
-  ],
-  "pysnmp": [
-   "pysnmp/conda-forge/noarch/pysnmp-4.4.10-py_0",
-   "pysnmp/conda-forge/noarch/pysnmp-4.4.12-py_1",
-   "pysnmp/conda-forge/noarch/pysnmp-4.4.4-py_0",
-   "pysnmp/conda-forge/noarch/pysnmp-4.4.5-py_0",
-   "pysnmp/conda-forge/noarch/pysnmp-4.4.9-py_0"
-  ],
-  "re": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "redis": [
-   "redis-py/conda-forge/noarch/redis-py-3.0.0-py_0",
-   "redis-py/conda-forge/noarch/redis-py-3.1.0-py_0",
-   "redis-py/conda-forge/noarch/redis-py-3.2.1-py_0",
-   "redis-py/conda-forge/noarch/redis-py-3.3.10-py_0",
-   "redis-py/conda-forge/noarch/redis-py-3.3.3-py_0",
-   "redis-py/conda-forge/noarch/redis-py-3.3.5-py_0",
-   "redis-py/conda-forge/noarch/redis-py-3.3.6-py_0",
-   "redis-py/conda-forge/noarch/redis-py-3.3.7-py_0",
-   "redis-py/conda-forge/noarch/redis-py-3.3.8-py_0",
-   "redis-py/conda-forge/noarch/redis-py-3.4.0-py_0",
-   "redis-py/conda-forge/noarch/redis-py-3.4.1-py_0"
-  ],
-  "six": [
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0",
-   "lldb/conda-forge/linux-64/lldb-6.0.0-py35_0",
-   "privy/conda-forge/noarch/privy-6.0.0-py_0",
-   "six/conda-forge/linux-64/six-1.10.0-py34_0",
-   "six/conda-forge/linux-64/six-1.10.0-py34_1",
-   "six/conda-forge/noarch/six-1.14.0-py_1",
-   "six/conda-forge/noarch/six-1.16.0-pyh6c4a22f_0"
-  ],
-  "sqlalchemy": [
-   "sqlalchemy/conda-forge/linux-64/sqlalchemy-1.3.12-py27h516909a_0",
-   "sqlalchemy/conda-forge/linux-64/sqlalchemy-1.4.18-py37h6b43d8f_0",
-   "sqlalchemy/conda-forge/linux-64/sqlalchemy-1.4.5-py39h3811e60_0"
-  ],
   "starlette": [
    "starlette-base/conda-forge/noarch/starlette-base-0.13.5-py_2",
    "starlette-base/conda-forge/noarch/starlette-base-0.13.6-py_0",
    "starlette/conda-forge/noarch/starlette-0.13.8-py_0"
-  ],
-  "threading": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "wrapt": [
-   "wrapt/conda-forge/linux-64/wrapt-1.12.1-py36h8c4c3a4_1",
-   "wrapt/conda-forge/linux-64/wrapt-1.12.1-py38h25fe258_2"
-  ],
-  "wsgiref": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ]
  }
 }
