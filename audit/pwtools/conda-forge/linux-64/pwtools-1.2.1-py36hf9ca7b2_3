@@ -8,17 +8,9 @@
   "_open",
   "_sum",
   "_xyz2str",
-  "ase",
-  "ase.Atoms",
-  "ase.calculators.calculator.FileIOCalculator",
-  "ase.calculators.calculator.FileIOCalculator.write_input",
-  "ase.calculators.calculator.kpts2mp",
-  "ase.constraints.UnitCellFilter",
-  "ase.optimize.BFGS",
   "assrt",
   "collections.abc.Callable",
   "comp_func",
-  "configparser.ConfigParser",
   "container",
   "converter",
   "eos",
@@ -43,25 +35,10 @@
   "func.__doc__",
   "functools.reduce",
   "getter",
-  "glob",
-  "glob.fnmatch.filter",
-  "gzip",
-  "gzip.open",
-  "h5py",
-  "h5py.Dataset",
-  "h5py.File",
-  "importlib",
-  "importlib.import_module",
   "inter",
-  "io",
-  "io.IOBase",
   "io.StringIO",
   "itertools",
   "mkrange",
-  "mpl_toolkits.axes_grid1.make_axes_locatable",
-  "mpl_toolkits.axes_grid1.parasite_axes.ParasiteAxes",
-  "mpl_toolkits.axes_grid1.parasite_axes.SubplotHost",
-  "mpl_toolkits.mplot3d.Axes3D",
   "new_axisline",
   "norm",
   "numpy.abs",
@@ -109,9 +86,6 @@
   "os.unlink",
   "pa",
   "pad",
-  "parser",
-  "pathlib",
-  "pathlib.Path",
   "pv",
   "pwtools._dcd",
   "pwtools._dcd.get_dcd_file_info",
@@ -147,11 +121,6 @@
   "set.difference",
   "set.intersection",
   "set.symmetric_difference",
-  "shutil",
-  "shutil.copy",
-  "shutil.copytree",
-  "shutil.rmtree",
-  "shutil.which",
   "signal.SIGPIPE",
   "signal.SIG_DFL",
   "sklearn.model_selection.RepeatedKFold",
@@ -168,9 +137,7 @@
   "sys",
   "time",
   "tofloat",
-  "types",
   "volfunc_ax",
-  "warnings",
   "warnings.warn"
  ],
  "deps": {
@@ -187,6 +154,25 @@
    "pytest/conda-forge/linux-64/pytest-4.6.0-py37_0",
    "pytest/conda-forge/linux-64/pytest-6.0.2-py37hc8dfbb8_0"
   ],
+  "ase": [
+   "ase/conda-forge/linux-64/ase-3.13.0-py27_0",
+   "ase/conda-forge/noarch/ase-3.16.2-py_0",
+   "ase/conda-forge/noarch/ase-3.17.0-py_0",
+   "ase/conda-forge/noarch/ase-3.18.1-py_0",
+   "ase/conda-forge/noarch/ase-3.18.2-py_0",
+   "ase/conda-forge/noarch/ase-3.20.1-py_0",
+   "ase/conda-forge/noarch/ase-3.21.0-pyhd8ed1ab_0"
+  ],
+  "backports": [
+   "configparser/conda-forge/noarch/configparser-5.0.0-py_0"
+  ],
+  "configparser": [
+   "configparser/conda-forge/linux-64/configparser-3.7.1-py27_1",
+   "configparser/conda-forge/noarch/configparser-5.0.0-py_0",
+   "configparser/conda-forge/noarch/configparser-5.0.1-py_0",
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "copy": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -195,7 +181,33 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "fnmatch": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "functools": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "glob": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "gzip": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "h5py": [
+   "h5py/conda-forge/linux-64/h5py-2.10.0-nompi_py37hf7afa78_105",
+   "h5py/conda-forge/linux-64/h5py-2.6.0-np111py34_4",
+   "h5py/conda-forge/linux-64/h5py-2.7.0-np113py36_1"
+  ],
+  "importlib": [
+   "importlib/conda-forge/linux-64/importlib-1.0.4-py26_0",
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "io": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -212,6 +224,9 @@
    "matplotlib-base/conda-forge/linux-64/matplotlib-base-3.1.1-py38h250f245_2",
    "matplotlib/conda-forge/linux-64/matplotlib-1.5.3-np111py34_0"
   ],
+  "mpl_toolkits": [
+   "matplotlib/conda-forge/linux-64/matplotlib-1.5.3-np111py34_0"
+  ],
   "ntpath": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -221,6 +236,15 @@
    "numpy/conda-forge/linux-64/numpy-1.18.4-py37h8960a57_0"
   ],
   "os": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "parser": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "pathlib": [
+   "pathlib/conda-forge/noarch/pathlib-1.0.1-py_1",
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -242,6 +266,10 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "scipy": [],
+  "shutil": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "signal": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -271,7 +299,15 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "types": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "uuid": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "warnings": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ]
