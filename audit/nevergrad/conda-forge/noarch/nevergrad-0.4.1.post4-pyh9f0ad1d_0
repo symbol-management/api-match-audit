@@ -21,6 +21,9 @@
   "base.registry",
   "base.registry.register",
   "base.update_leaderboard",
+  "bayes_opt.BayesianOptimization",
+  "bayes_opt.UtilityFunction",
+  "bayes_opt.util.acq_max",
   "block",
   "block24",
   "callback",
@@ -28,8 +31,6 @@
   "callbacks.ParametersLogger",
   "checker",
   "choice.BaseChoice",
-  "cma",
-  "cma.CMAEvolutionStrategy",
   "collections.abc.Iterable",
   "collections.defaultdict",
   "collections.deque",
@@ -38,9 +39,6 @@
   "common.testing.parametrized",
   "common.testing.printed_assert_equal",
   "common.testing.skip_error_on_systems",
-  "concurrent.futures",
-  "concurrent.futures.ProcessPoolExecutor",
-  "concurrent.futures.ThreadPoolExecutor",
   "container.Instrumentation",
   "core.ARCoating",
   "core.BenchmarkChunk",
@@ -92,7 +90,6 @@
   "datasets.get_dataset_filepath",
   "datasets.make_perceptron_data",
   "datasets.mocked_data",
-  "datetime",
   "deblock24",
   "decorators.Registry",
   "discretization.Encoder",
@@ -146,6 +143,9 @@
   "functools.reduce",
   "game.Game",
   "game._Game",
+  "glob",
+  "glob.glob",
+  "hashlib",
   "hashlib.md5",
   "helpers.flatten_parameter",
   "hiplot.Displays.XY",
@@ -153,6 +153,9 @@
   "ifunc.descriptors",
   "ifunc.dimension",
   "ifunc.parametrization.spawn_child",
+  "inspect",
+  "inspect.ismethod",
+  "inspect.signature",
   "instantiate.COMMENT_CHARS",
   "instantiate.FileTextFunction",
   "instantiate.FolderFunction",
@@ -244,6 +247,10 @@
   "numpy.uint32",
   "numpy.zeros",
   "onemax",
+  "operator",
+  "operator.add",
+  "operator.and_",
+  "operator.itemgetter",
   "opt",
   "opt.ask",
   "opt.budget",
@@ -317,9 +324,6 @@
   "pruning.max_len",
   "pruning.min_len",
   "pytest.mark.parametrize",
-  "random",
-  "random.sample",
-  "random.seed",
   "recaster.Message",
   "recaster.MessagingThread",
   "recaster.SequentialRecastOptimizer",
@@ -346,6 +350,10 @@
   "sequences.samplers.items",
   "sklearn.neural_network.MLPRegressor",
   "square",
+  "subprocess",
+  "subprocess.CalledProcessError",
+  "subprocess.PIPE",
+  "subprocess.Popen",
   "sys",
   "sys.executable.split",
   "target_function",
@@ -392,6 +400,10 @@
   "utils.UidQueue",
   "utils._get_nash",
   "utils.sample_nash",
+  "warnings",
+  "warnings.catch_warnings",
+  "warnings.filterwarnings",
+  "warnings.simplefilter",
   "warnings.warn",
   "xpbase.Experiment",
   "xpbase.OptimizerSettings",
@@ -418,13 +430,17 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "bayes_opt": [
-   "bayesian-optimization/conda-forge/noarch/bayesian-optimization-1.0.1-py_0",
-   "bayesian-optimization/conda-forge/noarch/bayesian-optimization-1.1.0-py_0"
+  "cma": [
+   "cma/conda-forge/noarch/cma-2.7.0-py_0"
   ],
   "collections": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "concurrent": [
+   "futures/conda-forge/linux-64/futures-3.2.0-py27_0",
+   "futures/conda-forge/osx-64/futures-3.3.0-py27h8c360ce_1",
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython"
   ],
   "contextlib": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -438,6 +454,10 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "datetime": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "fcmaes": [
    "fcmaes/conda-forge/linux-64/fcmaes-1.3.1-py36h605e78d_0",
    "fcmaes/conda-forge/linux-64/fcmaes-1.3.2-py36h605e78d_0"
@@ -446,16 +466,8 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "glob": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "gym": [
    "gym/conda-forge/linux-64/gym-0.17.2-py37hc8dfbb8_1"
-  ],
-  "hashlib": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "heapq": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -476,10 +488,6 @@
    "hiplot/conda-forge/noarch/hiplot-0.1.9-py_0"
   ],
   "importlib": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "inspect": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -510,10 +518,6 @@
    "numpy/conda-forge/linux-64/numpy-1.18.4-py37h8960a57_0",
    "numpy/conda-forge/linux-64/numpy-1.19.2-py36h68c22af_1"
   ],
-  "operator": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "os": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -536,6 +540,10 @@
    "pytest/conda-forge/linux-64/pytest-3.7.0-py27_0",
    "pytest/conda-forge/linux-64/pytest-4.6.0-py37_0",
    "pytest/conda-forge/linux-64/pytest-6.0.2-py37hc8dfbb8_0"
+  ],
+  "random": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "re": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -567,10 +575,6 @@
    "scikit-learn/conda-forge/linux-64/scikit-learn-0.17.1-np110py35_blas_openblas_202",
    "scikit-learn/conda-forge/linux-64/scikit-learn-0.17.1-np111py35_blas_openblas_202"
   ],
-  "subprocess": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "threading": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -601,10 +605,6 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "uuid": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "warnings": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ]

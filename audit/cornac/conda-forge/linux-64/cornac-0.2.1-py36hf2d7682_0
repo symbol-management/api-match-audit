@@ -10,10 +10,18 @@
   "coe",
   "collections.defaultdict",
   "convmf.CNN_module",
+  "cornac.models.c2pf.c2pf",
+  "cornac.models.c2pf.c2pf.c2pf",
+  "cornac.models.c2pf.c2pf.r_c2pf",
+  "cornac.models.c2pf.c2pf.t_c2pf",
+  "cornac.models.mcf.mcf",
   "cornac.models.mcf.mcf.mcf",
   "cornac.models.pmf.pmf.pmf_linear",
   "cornac.models.pmf.pmf.pmf_non_linear",
+  "cornac.models.sorec.sorec",
   "cornac.models.sorec.sorec.sorec",
+  "csv",
+  "csv.reader",
   "data.MultimodalTestSet.from_uir",
   "data.MultimodalTrainSet.from_uir",
   "eval_methods.cross_validation.CrossValidation",
@@ -59,19 +67,13 @@
   "os.path.exists",
   "os.path.isfile",
   "os.remove",
+  "pickle",
   "pickle.dump",
   "pickle.load",
-  "random",
-  "random.randint",
   "recommender.Recommender.fit",
   "rule",
-  "shutil",
-  "shutil.rmtree",
   "skmeans",
   "str.maketrans",
-  "string",
-  "string.punctuation",
-  "tensorflow",
   "tensorflow.ConfigProto",
   "tensorflow.Session",
   "tensorflow.Variable",
@@ -79,17 +81,14 @@
   "tensorflow.cast",
   "tensorflow.clip_by_value",
   "tensorflow.concat",
-  "tensorflow.constant",
   "tensorflow.constant_initializer",
   "tensorflow.contrib.layers.xavier_initializer",
   "tensorflow.digamma",
   "tensorflow.exp",
-  "tensorflow.float32",
   "tensorflow.gather",
   "tensorflow.get_variable",
   "tensorflow.global_variables_initializer",
   "tensorflow.identity",
-  "tensorflow.int32",
   "tensorflow.lgamma",
   "tensorflow.log",
   "tensorflow.losses.Reduction.NONE",
@@ -97,17 +96,11 @@
   "tensorflow.matmul",
   "tensorflow.maximum",
   "tensorflow.multiply",
-  "tensorflow.nn.conv2d",
   "tensorflow.nn.dropout",
-  "tensorflow.nn.elu",
-  "tensorflow.nn.embedding_lookup",
-  "tensorflow.nn.l2_loss",
   "tensorflow.nn.leaky_relu",
   "tensorflow.nn.max_pool",
-  "tensorflow.nn.relu",
   "tensorflow.nn.relu6",
   "tensorflow.nn.sigmoid",
-  "tensorflow.nn.softplus",
   "tensorflow.nn.tanh",
   "tensorflow.placeholder",
   "tensorflow.pow",
@@ -122,57 +115,30 @@
   "tensorflow.sqrt",
   "tensorflow.square",
   "tensorflow.sub",
-  "tensorflow.train.AdamOptimizer",
-  "tensorflow.train.RMSPropOptimizer",
   "tensorflow.trainable_variables",
   "tensorflow.transpose",
   "tensorflow.truncated_normal",
   "tensorflow.variable_scope",
   "tensorflow.zeros_initializer",
   "time",
-  "torch",
-  "torch.cuda.is_available",
   "torch.device",
   "torch.double",
   "torch.float",
   "torch.from_numpy",
-  "torch.nn.functional.logsigmoid",
-  "torch.optim.Adam",
-  "torch.optim.RMSprop",
-  "torch.set_default_dtype",
   "torch.sigmoid",
   "torch.sum",
-  "torch.tensor",
-  "tqdm",
-  "tqdm.tqdm",
-  "tqdm.trange",
-  "typing.Callable",
-  "typing.Dict",
-  "typing.List",
-  "typing.Union",
+  "urllib.request",
+  "urllib.request.build_opener",
+  "urllib.request.install_opener",
+  "urllib.request.urlretrieve",
   "utils.get_rng",
   "utils.init_utils.xavier_uniform",
   "utils.init_utils.zeros",
   "vae.VAE",
-  "vmf.vmf",
-  "zipfile",
-  "zipfile.ZipFile",
-  "zipfile.is_zipfile"
+  "vmf.vmf"
  ],
  "deps": {
-  "_csv": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "collections": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "cornac": [
-   "cornac/conda-forge/linux-64/cornac-0.3.3-py36hb3f55d8_0",
-   "cornac/conda-forge/linux-64/cornac-1.13.5-py39hde0f152_0"
-  ],
-  "csv": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -197,7 +163,7 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "pickle": [
+  "random": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -209,11 +175,44 @@
    "scipy/conda-forge/linux-64/scipy-1.7.0-py37h29e03ee_0",
    "scipy/conda-forge/linux-64/scipy-1.7.0-py37ha768fb6_1"
   ],
+  "shutil": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "string": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "tarfile": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "urllib": [
+  "tensorflow": [
+   "tensorflow-base/conda-forge/linux-64/tensorflow-base-1.13.1-py27h58012e3_6"
+  ],
+  "torch": [
+   "pytorch-cpu/conda-forge/linux-64/pytorch-cpu-1.1.0-py37he1b5a44_0",
+   "pytorch-cpu/conda-forge/win-64/pytorch-cpu-1.0.1-py36ha925a31_0",
+   "pytorch/conda-forge/linux-64/pytorch-1.6.0-cuda92py37hc3ec645_1",
+   "pytorch/conda-forge/linux-64/pytorch-1.6.0-cuda92py38hb6ed0dd_1"
+  ],
+  "tqdm": [
+   "tqdm/conda-forge/noarch/tqdm-4.38.0-py_2",
+   "tqdm/conda-forge/noarch/tqdm-4.40.2-py_0",
+   "tqdm/conda-forge/noarch/tqdm-4.42.1-py_0",
+   "tqdm/conda-forge/noarch/tqdm-4.45.0-pyh9f0ad1d_0",
+   "tqdm/conda-forge/noarch/tqdm-4.51.0-pyh9f0ad1d_0",
+   "tqdm/conda-forge/noarch/tqdm-4.52.0-pyhd3deb0d_0",
+   "tqdm/conda-forge/noarch/tqdm-4.55.0-pyhd8ed1ab_0",
+   "tqdm/conda-forge/noarch/tqdm-4.56.0-pyhd8ed1ab_0",
+   "tqdm/conda-forge/noarch/tqdm-4.56.1-pyhd8ed1ab_0",
+   "tqdm/conda-forge/noarch/tqdm-4.60.0-pyhd8ed1ab_0"
+  ],
+  "typing": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "zipfile": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ]

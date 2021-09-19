@@ -9,13 +9,22 @@
   "_abcoll.KeysView",
   "_abcoll.ValuesView",
   "_inside_skip",
+  "bs4.BeautifulSoup",
   "collections.Callable",
   "dict.__delitem__",
   "dict.__eq__",
   "dict.__setitem__",
   "dict.clear",
   "dict.pop",
-  "flask.Markup",
+  "django.conf.settings",
+  "django.core.cache.cache",
+  "django.template",
+  "django.template.Context",
+  "django.template.Library",
+  "django.template.Template",
+  "django.template.loader.render_to_string",
+  "django.test.TestCase",
+  "django.utils.safestring.mark_safe",
   "fn",
   "hashlib",
   "hashlib.md5",
@@ -44,15 +53,7 @@
   "pickle.dumps",
   "pickle.load",
   "pickle.loads",
-  "redis.Redis",
-  "simplejson",
-  "simplejson.JSONDecodeError",
-  "simplejson.dumps",
-  "simplejson.loads",
-  "socket",
   "socket.timeout",
-  "ssl",
-  "ssl.SSLError",
   "sys",
   "urllib.parse.urlencode",
   "urllib.request.HTTPError",
@@ -70,10 +71,9 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "bs4": [
-   "beautifulsoup4/conda-forge/linux-64/beautifulsoup4-4.7.1-py37_1001",
-   "beautifulsoup4/conda-forge/linux-64/beautifulsoup4-4.8.2-py37_0",
-   "beautifulsoup4/conda-forge/noarch/beautifulsoup4-4.9.3-pyhb0f4dca_0"
+  "_ssl": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "collections": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -83,7 +83,9 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "django": [],
+  "flask": [
+   "flask/conda-forge/noarch/flask-2.0.1-pyhd8ed1ab_0"
+  ],
   "json": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -92,11 +94,40 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "markupsafe": [
+   "markupsafe/conda-forge/linux-64/markupsafe-2.0.0-py36h70b1f00_0"
+  ],
   "os": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "re": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "redis": [
+   "redis-py/conda-forge/noarch/redis-py-3.0.0-py_0",
+   "redis-py/conda-forge/noarch/redis-py-3.1.0-py_0",
+   "redis-py/conda-forge/noarch/redis-py-3.2.1-py_0",
+   "redis-py/conda-forge/noarch/redis-py-3.3.10-py_0",
+   "redis-py/conda-forge/noarch/redis-py-3.3.3-py_0",
+   "redis-py/conda-forge/noarch/redis-py-3.3.5-py_0",
+   "redis-py/conda-forge/noarch/redis-py-3.3.6-py_0",
+   "redis-py/conda-forge/noarch/redis-py-3.3.7-py_0",
+   "redis-py/conda-forge/noarch/redis-py-3.3.8-py_0",
+   "redis-py/conda-forge/noarch/redis-py-3.4.0-py_0",
+   "redis-py/conda-forge/noarch/redis-py-3.4.1-py_0"
+  ],
+  "simplejson": [
+   "simplejson/conda-forge/linux-64/simplejson-3.16.0-py27h470a237_2",
+   "simplejson/conda-forge/linux-64/simplejson-3.16.0-py35h470a237_2",
+   "simplejson/conda-forge/linux-64/simplejson-3.17.0-py38h516909a_0"
+  ],
+  "socket": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "ssl": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],

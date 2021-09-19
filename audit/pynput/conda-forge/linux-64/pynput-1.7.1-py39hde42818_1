@@ -3,7 +3,9 @@
   "AbstractListener._emitter",
   "AppKit.NSEvent",
   "AppKit.NSEvent.mouseLocation",
+  "CoreFoundation",
   "CoreFoundation.CFRelease",
+  "Quartz",
   "Quartz.CFMachPortCreateRunLoopSource",
   "Quartz.CFRunLoopAddSource",
   "Quartz.CFRunLoopGetCurrent",
@@ -58,6 +60,14 @@
   "Quartz.kCGScrollWheelEventDeltaAxis1",
   "Quartz.kCGScrollWheelEventDeltaAxis2",
   "Quartz.kCGSessionEventTap",
+  "Xlib.X",
+  "Xlib.XK",
+  "Xlib.display",
+  "Xlib.ext",
+  "Xlib.ext.xtest",
+  "Xlib.keysymdef.xkb",
+  "Xlib.protocol",
+  "Xlib.threaded",
   "_CONTROL_CODES.get",
   "_NORMAL_MODIFIERS.get",
   "_base.Controller",
@@ -86,6 +96,8 @@
   "ctypes.windll.user32.UnhookWindowsHookEx",
   "ctypes.windll.user32.VkKeyScanW",
   "ctypes.wintypes.LPDWORD",
+  "enum",
+  "enum.Enum",
   "errno",
   "errno.ENOENT.get",
   "evdev",
@@ -99,9 +111,13 @@
   "f",
   "functools.reduce",
   "i2kc",
+  "importlib",
+  "importlib.import_module",
   "itertools",
   "kc2i",
   "objc._objc.__file__",
+  "operator",
+  "operator.__or__",
   "os.environ.get",
   "os.getuid",
   "overwrite",
@@ -147,6 +163,9 @@
   "six.moves.queue.Empty",
   "six.moves.queue.Full",
   "source",
+  "subprocess",
+  "subprocess.CalledProcessError",
+  "subprocess.check_output",
   "sys",
   "win32_vks.CONTROL",
   "win32_vks.MENU",
@@ -154,20 +173,6 @@
   "xorg_keysyms.SYMBOLS.get"
  ],
  "deps": {
-  "CoreFoundation": [
-   "pyobjc-framework-cocoa/conda-forge/osx-64/pyobjc-framework-cocoa-6.2-py37hc8dfbb8_1"
-  ],
-  "Quartz": [
-   "pyobjc-framework-quartz/conda-forge/osx-64/pyobjc-framework-quartz-5.3-py36_0",
-   "pyobjc-framework-quartz/conda-forge/osx-64/pyobjc-framework-quartz-7.2-py37hf985489_0"
-  ],
-  "Xlib": [
-   "python-xlib/conda-forge/noarch/python-xlib-0.22-py_0",
-   "python-xlib/conda-forge/noarch/python-xlib-0.24-py_0",
-   "python-xlib/conda-forge/noarch/python-xlib-0.25-py_0",
-   "python-xlib/conda-forge/noarch/python-xlib-0.26-py_0",
-   "python-xlib/conda-forge/noarch/python-xlib-0.28-pyh9f0ad1d_0"
-  ],
   "_ctypes": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -180,17 +185,7 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "enum": [
-   "privy/conda-forge/noarch/privy-6.0.0-py_0",
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "functools": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "importlib": [
-   "importlib/conda-forge/linux-64/importlib-1.0.4-py26_0",
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -200,10 +195,6 @@
   ],
   "objc": [
    "pyobjc-core/conda-forge/osx-64/pyobjc-core-6.0-py38_0"
-  ],
-  "operator": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "os": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -238,10 +229,6 @@
    "six/conda-forge/linux-64/six-1.10.0-py34_1",
    "six/conda-forge/noarch/six-1.14.0-py_1",
    "six/conda-forge/noarch/six-1.16.0-pyh6c4a22f_0"
-  ],
-  "subprocess": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "threading": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
