@@ -28,6 +28,9 @@
   "__builtin__",
   "__builtin__.bytes",
   "__builtin__.unicode",
+  "__future__.absolute_import",
+  "__future__.unicode_literals",
+  "__future__.with_statement",
   "_close",
   "_py2xml",
   "_xml2py",
@@ -36,17 +39,43 @@
   "callback",
   "check",
   "check_unassigned",
+  "codecs",
+  "codecs.getreader",
+  "codecs.getwriter",
   "collections.MutableSet",
   "collections.deque",
+  "copy",
+  "copy.copy",
+  "copy.deepcopy",
+  "datetime",
+  "datetime.date",
+  "datetime.datetime",
+  "datetime.datetime.now",
+  "datetime.datetime.strptime",
+  "datetime.datetime.utcnow",
+  "datetime.time",
+  "datetime.timedelta",
+  "datetime.tzinfo",
+  "dateutil.parser.parse",
+  "dateutil.tz.tzoffset",
+  "dateutil.tz.tzutc",
   "del_multi",
   "dict.__delitem__",
   "dict.__eq__",
   "dict.__setitem__",
   "dict.clear",
+  "dns.resolver",
+  "encodings.idna",
   "errno",
   "func",
   "gc",
+  "gevent.queue",
+  "gevent.queue.JoinableQueue",
+  "gevent.thread",
+  "gevent.thread.LockType",
+  "gnupg.GPG",
   "handler",
+  "hashlib",
   "hashlib.md5",
   "hashlib.sha1",
   "io.BytesIO",
@@ -75,6 +104,10 @@
   "plugin_class",
   "plugin_class.plugin_multi_attrib",
   "plugin_filter",
+  "random",
+  "random.normalvariate",
+  "random.randint",
+  "random.random",
   "re.X",
   "restart",
   "sleekxmpp.__init__.NullHandler",
@@ -190,20 +223,28 @@
   "sys",
   "sys.setdefaultencoding",
   "sys.stdin.encoding",
+  "threading",
+  "threading.Event",
+  "threading.Lock",
+  "threading.RLock",
+  "threading.Thread",
+  "threading.Timer",
+  "threading.current_thread",
+  "threading.enumerate",
   "time",
+  "types",
+  "types.BuiltinFunctionType",
   "types.UnicodeType",
   "unicode",
   "unicodedata.ucd_3_2_0.normalize",
+  "unittest",
+  "unittest.TestCase",
   "urllib.quote",
   "weakref.ref",
   "xml.etree.cElementTree.Element",
   "xml.parsers.expat.ExpatError"
  ],
  "deps": {
-  "__future__": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "_ssl": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -215,46 +256,7 @@
   "builtins": [
    "pies2overrides/conda-forge/osx-64/pies2overrides-2.6.7-py27_1000"
   ],
-  "codecs": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "collections": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "copy": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "datetime": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "dateutil": [
-   "python-dateutil/conda-forge/noarch/python-dateutil-2.7.2-py_0",
-   "python-dateutil/conda-forge/noarch/python-dateutil-2.7.4-py_0",
-   "python-dateutil/conda-forge/noarch/python-dateutil-2.7.5-py_0",
-   "python-dateutil/conda-forge/noarch/python-dateutil-2.8.1-py_0",
-   "python-dateutil/conda-forge/noarch/python-dateutil-2.8.2-pyhd8ed1ab_0"
-  ],
-  "dns": [
-   "dnspython/conda-forge/noarch/dnspython-1.15.0-py_0",
-   "dnspython/conda-forge/noarch/dnspython-1.16.0-py_1",
-   "dnspython/conda-forge/noarch/dnspython-2.0.0-py_0",
-   "dnspython/conda-forge/noarch/dnspython-2.1.0-pyhd8ed1ab_0"
-  ],
-  "encodings": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "gevent": [
-   "gevent/conda-forge/linux-64/gevent-21.1.2-py38h497a2fe_0"
-  ],
-  "gnupg": [
-   "gnupg-py/conda-forge/noarch/gnupg-py-2.3.1-py_0"
-  ],
-  "hashlib": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -303,10 +305,6 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "random": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "re": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -342,19 +340,7 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "threading": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "types": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "unicodedata": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "unittest": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],

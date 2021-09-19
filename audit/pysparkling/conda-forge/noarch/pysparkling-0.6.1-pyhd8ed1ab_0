@@ -20,9 +20,6 @@
   "all_of_type",
   "array.array",
   "assert_acceptable_types",
-  "base64",
-  "base64.b64decode",
-  "base64.b64encode",
   "boto",
   "bz2",
   "bz2.compress",
@@ -33,18 +30,38 @@
   "cb",
   "clean_column_name",
   "clean_element",
+  "cloudpickle",
+  "cloudpickle.dumps",
   "codec.Codec.compress",
   "codec.Codec.decompress",
   "codec.NoCodec",
   "collections.defaultdict",
   "combFunc",
+  "concurrent.futures",
+  "concurrent.futures.ProcessPoolExecutor",
+  "concurrent.futures.ThreadPoolExecutor",
+  "contextlib.closing",
   "conv",
   "convert",
   "convert_dict",
   "converter",
+  "copy",
+  "copy.deepcopy",
   "create_context",
   "create_row",
+  "csv",
   "csv.QUOTE_ALL",
+  "csv.QUOTE_MINIMAL",
+  "csv.writer",
+  "ctypes",
+  "ctypes.c_byte",
+  "ctypes.c_int",
+  "ctypes.c_long",
+  "ctypes.c_short",
+  "ctypes.c_ubyte",
+  "ctypes.c_uint",
+  "ctypes.c_ulong",
+  "ctypes.c_ushort",
   "ctypes.sizeof",
   "dataType",
   "dataType.containsNull",
@@ -60,7 +77,22 @@
   "data_serializer",
   "date_format",
   "date_formatter",
+  "datetime",
+  "datetime.date",
+  "datetime.date.fromtimestamp",
+  "datetime.date.today",
+  "datetime.datetime",
+  "datetime.datetime.fromtimestamp",
+  "datetime.datetime.now",
+  "datetime.datetime.strptime",
+  "datetime.time",
+  "datetime.timedelta",
+  "datetime.timezone",
   "datetime_parser",
+  "dateutil.relativedelta.relativedelta",
+  "dateutil.tz.tzlocal",
+  "decimal",
+  "decimal.Decimal",
   "deserializer",
   "element_verifier",
   "encode_rows",
@@ -75,22 +107,30 @@
   "fs.file_system.FileSystem.load_text",
   "fs.get_fs",
   "func",
+  "functools",
+  "functools.lru_cache",
   "functools.partial",
   "functools.reduce",
   "gcloud.storage",
   "gcloud.storage.Client",
   "get_caster",
   "get_datetime_parser",
+  "io",
   "io.BytesIO",
   "io.StringIO",
   "io.TextIOWrapper",
   "io.open",
   "itertools",
   "itertools.chain.from_iterable",
+  "json",
+  "json.JSONEncoder",
+  "json.dumps",
+  "json.loads",
   "kconv",
   "key",
   "key_caster",
   "key_verifier",
+  "multiprocessing",
   "multiprocessing.Pool",
   "multiprocessing.cpu_count",
   "new_msg",
@@ -132,8 +172,7 @@
   "tcpstream.TCPBinaryStream",
   "tcpstream.TCPDeserializer",
   "tcpstream.TCPTextStream",
-  "tempfile",
-  "tempfile.NamedTemporaryFile",
+  "threading.RLock",
   "time",
   "time.clock",
   "timestamp_format",
@@ -144,6 +183,10 @@
   "two_arg_func",
   "type_caster",
   "unique_generator",
+  "unittest",
+  "unittest.TestCase",
+  "unittest.main",
+  "unittest.skipIf",
   "value_caster",
   "value_verifier",
   "vconv",
@@ -159,58 +202,16 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "_csv": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "_pickle": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "cloudpickle": [
-   "cloudpickle/conda-forge/noarch/cloudpickle-1.2.0-py_0",
-   "cloudpickle/conda-forge/noarch/cloudpickle-1.2.1-py_0",
-   "cloudpickle/conda-forge/noarch/cloudpickle-1.2.2-py_0",
-   "cloudpickle/conda-forge/noarch/cloudpickle-1.2.2-py_1",
-   "cloudpickle/conda-forge/noarch/cloudpickle-1.3.0-py_0"
+  "base64": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "collections": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "concurrent": [
-   "futures/conda-forge/linux-64/futures-3.2.0-py27_0",
-   "futures/conda-forge/osx-64/futures-3.3.0-py27h8c360ce_1",
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython"
-  ],
-  "contextlib": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "copy": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "csv": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "ctypes": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "datetime": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "dateutil": [
-   "python-dateutil/conda-forge/noarch/python-dateutil-2.7.2-py_0",
-   "python-dateutil/conda-forge/noarch/python-dateutil-2.7.4-py_0",
-   "python-dateutil/conda-forge/noarch/python-dateutil-2.7.5-py_0",
-   "python-dateutil/conda-forge/noarch/python-dateutil-2.8.1-py_0",
-   "python-dateutil/conda-forge/noarch/python-dateutil-2.8.2-pyhd8ed1ab_0"
-  ],
-  "decimal": [
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "doctest": [
@@ -218,10 +219,6 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "fnmatch": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "functools": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -241,14 +238,6 @@
    "python-hdfs/conda-forge/noarch/python-hdfs-2.5.4-py_0",
    "python-hdfs/conda-forge/noarch/python-hdfs-2.5.8-pyhd8ed1ab_0"
   ],
-  "io": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "json": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "logging": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -267,10 +256,6 @@
    "memory_profiler/conda-forge/noarch/memory_profiler-0.56.0-py_0",
    "memory_profiler/conda-forge/noarch/memory_profiler-0.57.0-py_0",
    "memory_profiler/conda-forge/noarch/memory_profiler-0.58.0-py_0"
-  ],
-  "multiprocessing": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "ntpath": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -379,6 +364,10 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "tarfile": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "tempfile": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -534,10 +523,6 @@
    "wsproto/conda-forge/noarch/wsproto-0.13.0-py_0",
    "wsproto/conda-forge/noarch/wsproto-0.14.0-py_0"
   ],
-  "threading": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "timeit": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -547,10 +532,6 @@
    "tornado/conda-forge/linux-64/tornado-6.0.4-py38h1e0a361_2"
   ],
   "traceback": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "unittest": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],

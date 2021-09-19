@@ -17,21 +17,71 @@
   "numpy.log",
   "numpy.random.seed",
   "numpy.sqrt",
+  "random",
+  "random.randint",
+  "random.seed",
+  "ray",
+  "ray.cloudpickle",
   "ray.cloudpickle.dump",
   "ray.cloudpickle.load",
+  "ray.cluster_resources",
+  "ray.get",
+  "ray.init",
+  "ray.is_initialized",
+  "ray.put",
+  "ray.shutdown",
+  "ray.tune",
+  "ray.tune.Trainable",
+  "ray.tune.grid_search",
+  "ray.tune.logger.CSVLogger",
+  "ray.tune.logger.JsonLogger",
+  "ray.tune.logger.Logger",
+  "ray.tune.logger.MLFLowLogger",
+  "ray.tune.logger.TBXLogger",
+  "ray.tune.run",
+  "ray.tune.sample.Domain",
+  "ray.tune.sample_from",
+  "ray.tune.schedulers.ASHAScheduler",
+  "ray.tune.schedulers.AsyncHyperBandScheduler",
+  "ray.tune.schedulers.HyperBandForBOHB",
+  "ray.tune.schedulers.HyperBandScheduler",
+  "ray.tune.schedulers.MedianStoppingRule",
+  "ray.tune.schedulers.PopulationBasedTraining",
+  "ray.tune.schedulers.TrialScheduler",
+  "ray.tune.stopper.CombinedStopper",
   "ray.tune.stopper.MaximumIterationStopper",
+  "ray.tune.stopper.Stopper",
+  "ray.tune.suggest.BasicVariantGenerator",
+  "ray.tune.suggest.ConcurrencyLimiter",
+  "ray.tune.suggest.bohb.TuneBOHB",
+  "ray.tune.suggest.hyperopt.HyperOptSearch",
+  "ray.tune.suggest.optuna.OptunaSearch",
+  "ray.tune.suggest.optuna.param",
   "ray.tune.suggest.optuna.param.suggest_categorical",
   "ray.tune.suggest.optuna.param.suggest_loguniform",
   "ray.tune.suggest.optuna.param.suggest_uniform",
+  "ray.tune.suggest.skopt.SkOptSearch",
+  "ray.tune.suggest.suggestion.Searcher",
+  "ray.tune.trial.Trial",
   "ray.tune.trial.Trial.TERMINATED",
+  "scipy.stats.rankdata",
   "score",
+  "sklearn.base.BaseEstimator",
+  "sklearn.base.clone",
+  "sklearn.base.is_classifier",
+  "sklearn.ensemble.BaseEnsemble",
   "sklearn.exceptions.NotFittedError",
   "sklearn.metrics.check_scoring",
   "sklearn.model_selection.ParameterGrid",
   "sklearn.model_selection.check_cv",
   "sklearn.model_selection.cross_validate",
+  "sklearn.pipeline.Pipeline",
   "sklearn.tree.BaseDecisionTree",
   "sklearn.utils.metaestimators._safe_split",
+  "sklearn.utils.validation.check_is_fitted",
+  "skopt",
+  "skopt.Optimizer",
+  "skopt.space.Dimension",
   "time",
   "tune_sklearn.utils.EarlyStopping.CATBOOST",
   "tune_sklearn.utils.EarlyStopping.LGBM",
@@ -40,7 +90,9 @@
   "tune_sklearn.utils.EarlyStopping.WARM_START_ENSEMBLE",
   "tune_sklearn.utils.EarlyStopping.WARM_START_ITER",
   "tune_sklearn.utils.EarlyStopping.XGB",
-  "warnings.warn"
+  "warnings.warn",
+  "xgboost",
+  "xgboost.sklearn.XGBModel"
  ],
  "deps": {
   "ConfigSpace": [
@@ -104,33 +156,6 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "random": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "ray": [
-   "ray-core/conda-forge/linux-64/ray-core-1.0.1-py37hf931bba_1"
-  ],
-  "scipy": [
-   "scipy/conda-forge/linux-64/scipy-0.17.1-np110py27_blas_openblas_202",
-   "scipy/conda-forge/linux-64/scipy-1.7.0-py37h29e03ee_0",
-   "scipy/conda-forge/linux-64/scipy-1.7.0-py37ha768fb6_1"
-  ],
-  "sklearn": [
-   "scikit-learn/conda-forge/linux-64/scikit-learn-0.17.1-np110py27_blas_openblas_200",
-   "scikit-learn/conda-forge/linux-64/scikit-learn-0.17.1-np110py35_blas_openblas_202",
-   "scikit-learn/conda-forge/linux-64/scikit-learn-0.17.1-np111py35_blas_openblas_202"
-  ],
-  "skopt": [
-   "scikit-optimize/conda-forge/linux-64/scikit-optimize-0.3-py35_0",
-   "scikit-optimize/conda-forge/noarch/scikit-optimize-0.5-py_0",
-   "scikit-optimize/conda-forge/noarch/scikit-optimize-0.5.1-py_0",
-   "scikit-optimize/conda-forge/noarch/scikit-optimize-0.5.2-py_0",
-   "scikit-optimize/conda-forge/noarch/scikit-optimize-0.7-py_0",
-   "scikit-optimize/conda-forge/noarch/scikit-optimize-0.7.4-pyh9f0ad1d_1",
-   "scikit-optimize/conda-forge/noarch/scikit-optimize-0.8.0-pyh9f0ad1d_0",
-   "scikit-optimize/conda-forge/noarch/scikit-optimize-0.8.1-pyh9f0ad1d_0"
-  ],
   "typing": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -138,12 +163,6 @@
   "warnings": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "xgboost": [
-   "py-xgboost/conda-forge/linux-64/py-xgboost-1.3.0-py36h5fab9bb_0",
-   "py-xgboost/conda-forge/linux-64/py-xgboost-1.3.3-py36hd000896_0",
-   "py-xgboost/conda-forge/linux-64/py-xgboost-1.3.3-py37h9c2f6ca_2",
-   "xgboost/conda-forge/linux-64/xgboost-0.7.post3-py36_0"
   ]
  }
 }

@@ -12,6 +12,8 @@
   "arg_dump.dump_args",
   "atexit",
   "cStringIO.StringIO",
+  "catkin.find_in_workspaces.find_in_workspaces",
+  "catkin_pkg.package.parse_package",
   "child.ROSLaunchChild",
   "core.add_printerrlog_handler",
   "core.add_printlog_handler",
@@ -21,6 +23,8 @@
   "f",
   "fn",
   "get_ros_root",
+  "getpass",
+  "getpass.getuser",
   "h",
   "io.StringIO",
   "is_child_mode",
@@ -38,6 +42,7 @@
   "node_args.print_node_args",
   "node_args.print_node_filename",
   "node_args.print_node_list",
+  "optparse.OptionParser",
   "os.X_OK",
   "os.access",
   "os.environ.get",
@@ -54,17 +59,57 @@
   "param_dump.dump_params",
   "param_server_multi",
   "param_server_multi.setParam",
+  "paramiko",
+  "paramiko.AuthenticationException",
+  "paramiko.AutoAddPolicy",
+  "paramiko.BadHostKeyException",
+  "paramiko.SSHClient",
+  "paramiko.SSHConfig",
+  "paramiko.SSHException",
   "parent.ROSLaunchParent",
   "prev_handler",
   "printerrlog",
   "printlog",
   "printlog_bold",
+  "queue.Empty",
+  "queue.Queue",
   "rlutil._wait_for_master",
   "rlutil.change_terminal_name",
   "rlutil.check_log_disk_usage",
   "rlutil.get_or_generate_uuid",
   "rlutil.print_file_list",
   "rlutil.resolve_launch_arguments",
+  "rosclean",
+  "rosclean.get_disk_usage",
+  "rosgraph",
+  "rosgraph.Master",
+  "rosgraph.MasterException",
+  "rosgraph.ROS_MASTER_URI",
+  "rosgraph.ROS_NAMESPACE",
+  "rosgraph.get_master_uri",
+  "rosgraph.myargv",
+  "rosgraph.names",
+  "rosgraph.names.PRIV_NAME",
+  "rosgraph.names.SEP",
+  "rosgraph.names.anonymous_name",
+  "rosgraph.names.canonicalize_name",
+  "rosgraph.names.get_ros_namespace",
+  "rosgraph.names.is_legal_name",
+  "rosgraph.names.is_private",
+  "rosgraph.names.load_mappings",
+  "rosgraph.names.make_global_ns",
+  "rosgraph.names.ns_join",
+  "rosgraph.names.script_resolve_name",
+  "rosgraph.network",
+  "rosgraph.network.create_local_xmlrpc_uri",
+  "rosgraph.network.get_local_addresses",
+  "rosgraph.network.is_local_address",
+  "rosgraph.network.parse_http_host_and_port",
+  "rosgraph.roslogging",
+  "rosgraph.xmlrpc",
+  "rosgraph.xmlrpc.XmlRpcHandler",
+  "rosgraph.xmlrpc.XmlRpcNode",
+  "rosgraph_msgs.msg.Log",
   "rosgraph_msgs.msg.Log.ERROR",
   "rosgraph_msgs.msg.Log.INFO",
   "roslaunch.__init__.NAME",
@@ -75,6 +120,8 @@
   "roslaunch.__init__.main",
   "roslaunch.__init__.write_pid_file",
   "setup_env",
+  "shlex",
+  "shlex.split",
   "signal.SIGHUP",
   "signal.SIGINT",
   "signal.SIGKILL",
@@ -97,8 +144,16 @@
   "sys.stdin.read",
   "sys.stdout.write",
   "tag_value",
+  "threading",
+  "threading.Lock",
+  "threading.RLock",
+  "threading.Thread",
   "threading._DummyThread._Thread__stop",
   "time",
+  "traceback",
+  "traceback.format_exc",
+  "traceback.print_exc",
+  "types",
   "urlparse.urlparse",
   "xml.dom.Node.ELEMENT_NODE",
   "xmlrpclib.Binary",
@@ -115,25 +170,7 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "catkin": [
-   "ros-catkin/conda-forge/linux-64/ros-catkin-0.7.17-py36he1b5a44_1"
-  ],
-  "catkin_pkg": [
-   "catkin_pkg/conda-forge/noarch/catkin_pkg-0.4.13-py_0",
-   "catkin_pkg/conda-forge/noarch/catkin_pkg-0.4.14-py_0",
-   "catkin_pkg/conda-forge/noarch/catkin_pkg-0.4.15-py_0",
-   "catkin_pkg/conda-forge/noarch/catkin_pkg-0.4.16-py_0",
-   "catkin_pkg/conda-forge/noarch/catkin_pkg-0.4.17-pyh9f0ad1d_0",
-   "catkin_pkg/conda-forge/noarch/catkin_pkg-0.4.18-pyh9f0ad1d_0",
-   "catkin_pkg/conda-forge/noarch/catkin_pkg-0.4.20-pyh9f0ad1d_0",
-   "catkin_pkg/conda-forge/noarch/catkin_pkg-0.4.22-pyh9f0ad1d_0",
-   "catkin_pkg/conda-forge/noarch/catkin_pkg-0.4.23-pyh9f0ad1d_0"
-  ],
   "copy": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "getpass": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -149,42 +186,17 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "optparse": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "os": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "paramiko": [
-   "paramiko/conda-forge/linux-64/paramiko-2.1.2-py35_0",
-   "paramiko/conda-forge/linux-64/paramiko-2.4.0-py27_0",
-   "paramiko/conda-forge/linux-64/paramiko-2.4.1-py27_1000",
-   "paramiko/conda-forge/noarch/paramiko-2.3.1-py_0",
-   "paramiko/conda-forge/noarch/paramiko-2.7.1-pyh9f0ad1d_1"
-  ],
   "platform": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "queue": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "re": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "rosclean": [
-   "ros-rosclean/conda-forge/linux-64/ros-rosclean-1.14.6-py27he1b5a44_0",
-   "ros-rosclean/conda-forge/osx-64/ros-rosclean-1.14.6-py37h4a8c4bd_0"
-  ],
-  "rosgraph": [
-   "ros-rosgraph/conda-forge/linux-64/ros-rosgraph-1.14.3-py27he1b5a44_0"
-  ],
-  "rosgraph_msgs": [
-   "ros-rosgraph-msgs/conda-forge/osx-64/ros-rosgraph-msgs-1.11.2-py37hdadc0f0_1"
   ],
   "roslib": [
    "ros-roslib/conda-forge/linux-64/ros-roslib-1.14.6-py38h794f011_3"
@@ -203,10 +215,6 @@
    "rospkg/conda-forge/noarch/rospkg-1.2.6-pyh9f0ad1d_0",
    "rospkg/conda-forge/noarch/rospkg-1.3.0-pyhd8ed1ab_0"
   ],
-  "shlex": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "signal": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -216,18 +224,6 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "subprocess": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "threading": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "traceback": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "types": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],

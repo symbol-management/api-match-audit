@@ -10,8 +10,6 @@
   "_slugify_name",
   "actions",
   "atexit",
-  "base64",
-  "base64.b64decode",
   "bytes.seek",
   "chardet",
   "chardet.detect",
@@ -70,6 +68,8 @@
   "config.items",
   "contains_posix_var",
   "contains_windows_var",
+  "copy.copy",
+  "copy.deepcopy",
   "create",
   "csv",
   "csv.Error",
@@ -79,6 +79,13 @@
   "csv.excel",
   "csv.reader",
   "data",
+  "datetime",
+  "datetime.date",
+  "datetime.datetime",
+  "datetime.datetime.now",
+  "datetime.datetime.strptime",
+  "datetime.time",
+  "datetime.timedelta",
   "dateutil.parser",
   "dateutil.parser.isoparse",
   "dateutil.parser.parse",
@@ -134,11 +141,19 @@
   "errors.UniqueError",
   "exceptions.FrictionlessException",
   "func",
+  "functools",
   "functools.partial",
+  "functools.wraps",
+  "gdown",
+  "gdown.download",
   "glob",
   "glob.glob",
   "glob.has_magic",
+  "gzip",
+  "gzip.BadGzipFile",
+  "gzip.open",
   "hash.split",
+  "hashlib",
   "hashlib.sha256",
   "helpers.ControlledDict",
   "helpers.ControlledList",
@@ -162,7 +177,6 @@
   "helpers.stringify_header",
   "index_class",
   "infer",
-  "inspect.signature",
   "internal_delete",
   "io",
   "io.BufferedRandom",
@@ -177,10 +191,16 @@
   "io.open",
   "itertools",
   "itertools.chain.from_iterable",
+  "json",
+  "json.decoder.JSONDecodeError",
+  "json.dump",
+  "json.dumps",
+  "json.loads",
   "list.__setitem__",
   "main.program.command",
   "metadata.Metadata.property",
   "metadata_property",
+  "multiprocessing",
   "multiprocessing.Pool",
   "multiprocessing.cpu_count",
   "os.environ.get",
@@ -194,15 +214,8 @@
   "parsers.JsonParser.native_types",
   "pq",
   "process",
-  "re",
-  "re.compile",
-  "re.match",
-  "re.search",
-  "re.sub",
   "report.Report.from_validate",
   "resource.Resource.from_source",
-  "subprocess",
-  "subprocess.run",
   "sys",
   "system.system.create_check",
   "system.system.create_control",
@@ -227,33 +240,11 @@
   "zipfile.BadZipfile"
  ],
  "deps": {
+  "base64": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "collections": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "copy": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "datetime": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "functools": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "gdown": [
-   "gdown/conda-forge/noarch/gdown-3.11.0-pyh9f0ad1d_0",
-   "gdown/conda-forge/noarch/gdown-3.11.1-pyh9f0ad1d_0",
-   "gdown/conda-forge/noarch/gdown-3.12.2-pyh9f0ad1d_0",
-   "gdown/conda-forge/noarch/gdown-3.13.0-pyhd8ed1ab_0",
-   "gdown/conda-forge/noarch/gdown-3.9.0-py_0"
-  ],
-  "gzip": [
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "hashlib": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -270,12 +261,12 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "isodate": [
-   "isodate/conda-forge/noarch/isodate-0.6.0-py_0"
-  ],
-  "json": [
+  "inspect": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "isodate": [
+   "isodate/conda-forge/noarch/isodate-0.6.0-py_0"
   ],
   "jsonlines": [
    "jsonlines/conda-forge/noarch/jsonlines-1.2.0-py_1",
@@ -286,10 +277,6 @@
    "jsonschema/conda-forge/noarch/jsonschema-3.2.0-pyhd8ed1ab_3"
   ],
   "logging": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "multiprocessing": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -330,6 +317,10 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "pprint": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "re": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -381,6 +372,10 @@
   ],
   "stringcase": [
    "stringcase/conda-forge/noarch/stringcase-1.2.0-py_0"
+  ],
+  "subprocess": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "tabulate": [
    "tabulate/conda-forge/noarch/tabulate-0.8.1-py_0",

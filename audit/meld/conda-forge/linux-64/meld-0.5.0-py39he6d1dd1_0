@@ -143,10 +143,13 @@
   "meld.system.state.positions",
   "metaclass",
   "metropolis",
+  "mpi4py.MPI",
   "mpi4py.MPI.COMM_WORLD",
   "mpi4py.MPI.Comm",
+  "multiprocessing",
   "multiprocessing.Process",
   "multiprocessing.Queue",
+  "netCDF4",
   "netCDF4.Dataset",
   "numpy.abs",
   "numpy.cos",
@@ -160,21 +163,50 @@
   "os.getcwd",
   "os.mkdir",
   "os.path.exists",
+  "parmed",
   "parmed.Atom",
   "parmed.AtomType",
+  "parmed.Structure",
+  "parmed.load_file",
   "parmed.tools.addLJType",
+  "parmed.unit",
   "parmed.unit.angstrom",
   "parmed.unit.degrees",
   "parmed.unit.kilocalorie_per_mole",
   "parmed.unit.radian",
+  "pickle",
+  "pickle.dump",
+  "pickle.load",
+  "pickle.loads",
+  "queue",
+  "queue.Empty",
+  "random",
+  "random.choice",
+  "random.randint",
+  "random.random",
+  "random.randrange",
+  "random.sample",
+  "random.uniform",
   "rotate_around_vector",
   "scaler",
+  "scipy.interpolate",
+  "scipy.interpolate.interp1d",
+  "scipy.stats",
+  "select",
+  "select.select",
   "set_sighandler",
+  "shutil",
+  "shutil.copy",
+  "shutil.rmtree",
+  "signal",
   "signal.ITIMER_REAL",
   "signal.SIGALRM",
   "signal.SIG_DFL",
   "signal.getitimer",
+  "signal.getsignal",
   "signal.setitimer",
+  "signal.signal",
+  "simtk.openmm",
   "simtk.openmm.CMAPTorsionForce",
   "simtk.openmm.Context",
   "simtk.openmm.CustomAngleForce",
@@ -193,6 +225,24 @@
   "simtk.openmm.Platform.getPlatform",
   "simtk.openmm.Platform.getPlatformByName",
   "simtk.openmm.System",
+  "simtk.openmm.app",
+  "simtk.openmm.app.AmberPrmtopFile",
+  "simtk.openmm.app.GBn",
+  "simtk.openmm.app.GBn2",
+  "simtk.openmm.app.OBC2",
+  "simtk.openmm.app.Simulation",
+  "simtk.openmm.app.forcefield",
+  "simtk.openmm.app.forcefield.AllBonds",
+  "simtk.openmm.app.forcefield.CutoffNonPeriodic",
+  "simtk.openmm.app.forcefield.CutoffPeriodic",
+  "simtk.openmm.app.forcefield.HBonds",
+  "simtk.openmm.app.forcefield.NoCutoff",
+  "simtk.openmm.app.forcefield.PME",
+  "simtk.openmm.version",
+  "simtk.openmm.version.full_version",
+  "simtk.openmm.version.git_revision",
+  "simtk.unit",
+  "simtk.unit.Quantity",
   "simtk.unit.angstrom",
   "simtk.unit.atmosphere",
   "simtk.unit.degree",
@@ -209,15 +259,34 @@
   "sklearn.model_selection.KFold",
   "sklearn.model_selection.RandomizedSearchCV",
   "socket.gethostname",
+  "socketserver",
+  "socketserver.StreamRequestHandler",
+  "socketserver.ThreadingTCPServer",
   "split_len",
+  "struct",
   "struct.unpack",
   "sys",
   "sys.stderr.flush",
   "sys.stdout.flush",
+  "tempfile",
+  "tempfile.NamedTemporaryFile",
+  "tempfile.mkdtemp",
+  "threading",
+  "threading.currentThread",
   "time",
   "timeout",
   "tt",
   "type.__setattr__",
+  "unittest",
+  "unittest.TestCase",
+  "unittest.main",
+  "unittest.mock",
+  "unittest.mock.ANY",
+  "unittest.mock.MagicMock",
+  "unittest.mock.Mock",
+  "unittest.mock.call",
+  "unittest.mock.patch",
+  "unittest.mock.sentinel",
   "unittest.mock.sentinel.ALL_STATES",
   "unittest.mock.sentinel.E1",
   "unittest.mock.sentinel.E2",
@@ -237,10 +306,6 @@
   "unittest.mock.sentinel.pos6"
  ],
  "deps": {
-  "_pickle": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "builtins": [
    "pies2overrides/conda-forge/osx-64/pies2overrides-2.6.7-py27_1000"
   ],
@@ -268,18 +333,6 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "mpi4py": [
-   "mpi4py/conda-forge/linux-64/mpi4py-3.0.3-py37h029bd4c_2"
-  ],
-  "multiprocessing": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "netCDF4": [
-   "netcdf4/conda-forge/linux-64/netcdf4-1.2.4-np111py35_1",
-   "netcdf4/conda-forge/linux-64/netcdf4-1.5.1.2-py27had58050_0",
-   "netcdf4/conda-forge/linux-64/netcdf4-1.5.5.1-mpi_openmpi_py39h16caffe_0"
-  ],
   "ntpath": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -293,59 +346,11 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "parmed": [
-   "ambertools/conda-forge/linux-64/ambertools-19.0-py37h5dc2433_0",
-   "ambertools/conda-forge/linux-64/ambertools-20.0-py36he882800_0",
-   "parmed/conda-forge/linux-64/parmed-3.4.1-py36ha03b18c_0",
-   "parmed/conda-forge/linux-64/parmed-3.4.1-py37he226ad3_0",
-   "parmed/conda-forge/linux-64/parmed-3.4.1-py39he80948d_0"
-  ],
-  "pickle": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "platform": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "queue": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "random": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "scipy": [
-   "scipy/conda-forge/linux-64/scipy-0.17.1-np110py27_blas_openblas_202",
-   "scipy/conda-forge/linux-64/scipy-1.7.0-py37h29e03ee_0",
-   "scipy/conda-forge/linux-64/scipy-1.7.0-py37ha768fb6_1"
-  ],
-  "select": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "shutil": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "signal": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "simtk": [
-   "openmm/conda-forge/linux-64/openmm-7.5.0-py38hc16d3cc_6",
-   "openmm/conda-forge/linux-64/openmm-7.5.1-py36heb70152_1"
-  ],
   "socket": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "socketserver": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "struct": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -353,19 +358,7 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "tempfile": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "threading": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "typing": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "unittest": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ]

@@ -132,6 +132,7 @@
   "loader",
   "mainmethod",
   "make_minhashes",
+  "multiprocessing",
   "multiprocessing.Pool",
   "numpy.float64",
   "numpy.random.seed",
@@ -142,11 +143,18 @@
   "os.path.isdir",
   "os.path.isfile",
   "os.unlink",
+  "pkg_resources.DistributionNotFound",
+  "pkg_resources.get_distribution",
+  "pylab",
   "pylab.cm.YlGnBu",
   "pylab.colorbar",
   "pylab.figure",
   "pylab.hist",
   "query_match",
+  "random",
+  "random.randint",
+  "random.random",
+  "random.shuffle",
   "rustcall",
   "save_siglist",
   "sbt.SBT.load",
@@ -157,11 +165,19 @@
   "sbtmh.SigLeaf.load",
   "sbtmh.search_minhashes",
   "sbtmh.search_minhashes_containment",
+  "scipy.cluster.hierarchy",
+  "scipy.cluster.hierarchy.dendrogram",
+  "scipy.cluster.hierarchy.linkage",
+  "screed",
   "screed.__file__",
+  "screed.__version__",
+  "screed.open",
   "search.format_bp",
   "search.gather_databases",
   "search.search_databases",
   "select_sigs",
+  "shutil",
+  "shutil.move",
   "signature.SourmashSignature",
   "signature.SourmashSignature.from_params",
   "signature.load_signatures",
@@ -186,9 +202,19 @@
   "sys",
   "sys.stderr.flush",
   "sys.stdout.flush",
+  "tarfile",
+  "tarfile.TarInfo",
+  "tempfile",
+  "tempfile.NamedTemporaryFile",
   "time",
   "utils.command_list",
-  "utils.opfilter"
+  "utils.opfilter",
+  "weakref",
+  "weakref.WeakKeyDictionary",
+  "xopen",
+  "zipfile",
+  "zipfile.ZipFile",
+  "zipfile.is_zipfile"
  ],
  "deps": {
   "__future__": [
@@ -257,10 +283,6 @@
    "matplotlib-base/conda-forge/linux-64/matplotlib-base-3.1.1-py38h250f245_2",
    "matplotlib/conda-forge/linux-64/matplotlib-1.5.3-np111py34_0"
   ],
-  "multiprocessing": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "ntpath": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -274,55 +296,7 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "pkg_resources": [
-   "setuptools/conda-forge/linux-64/setuptools-40.6.1-py36_0",
-   "setuptools/conda-forge/linux-64/setuptools-46.3.0-py38h32f6830_0",
-   "setuptools/conda-forge/linux-64/setuptools-49.1.2-py38h32f6830_0"
-  ],
-  "pylab": [
-   "matplotlib-base/conda-forge/linux-64/matplotlib-base-3.1.1-py37hfd891ef_0",
-   "matplotlib-base/conda-forge/linux-64/matplotlib-base-3.1.1-py38h250f245_2",
-   "matplotlib/conda-forge/linux-64/matplotlib-1.5.3-np111py34_0"
-  ],
-  "random": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "re": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "scipy": [
-   "scipy/conda-forge/linux-64/scipy-0.17.1-np110py27_blas_openblas_202",
-   "scipy/conda-forge/linux-64/scipy-1.7.0-py37h29e03ee_0",
-   "scipy/conda-forge/linux-64/scipy-1.7.0-py37ha768fb6_1"
-  ],
-  "screed": [
-   "screed/conda-forge/noarch/screed-1.0.5-pyhd8ed1ab_0",
-   "screed/conda-forge/noarch/screed-1.0.5-pyhd8ed1ab_1"
-  ],
-  "shutil": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "tarfile": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "tempfile": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "weakref": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "xopen": [
-   "xopen/conda-forge/linux-64/xopen-0.9.0-py36h9f0ad1d_0",
-   "xopen/conda-forge/linux-64/xopen-1.0.1-py36hd000896_1",
-   "xopen/conda-forge/linux-64/xopen-1.1.0-py36hd000896_1"
-  ],
-  "zipfile": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ]
