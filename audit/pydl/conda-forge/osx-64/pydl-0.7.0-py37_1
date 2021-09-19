@@ -25,6 +25,8 @@
   "astropy.units.radian",
   "cython_version.cython_version",
   "goddard.astro.get_juldate",
+  "gzip",
+  "gzip.open",
   "is_cap_used",
   "mangle.ManglePolygon",
   "mangle.PolygonList",
@@ -98,6 +100,9 @@
   "os.path.isfile",
   "os.remove",
   "pcomp",
+  "pickle.dump",
+  "pickle.load",
+  "pkg_resources.resource_filename",
   "pydl.__init__.UnsupportedPythonError",
   "pydlutils.image.djs_maskinterp",
   "pydlutils.math.computechi2",
@@ -109,8 +114,23 @@
   "pydlutils.spheregroup.spherematch",
   "pydlutils.yanny.yanny",
   "run_git",
+  "scipy.cluster.vq.kmeans",
+  "scipy.cluster.vq.whiten",
+  "scipy.linalg.cho_solve_banded",
+  "scipy.linalg.cholesky_banded",
+  "scipy.signal.medfilt",
+  "scipy.signal.medfilt2d",
+  "scipy.special.chebyt",
   "scipy.special.erf",
+  "scipy.special.legendre",
   "set_maskbits",
+  "shutil.copy",
+  "shutil.rmtree",
+  "six",
+  "six.PY3",
+  "six.b",
+  "six.integer_types",
+  "six.string_types",
   "smooth",
   "spec1d.log.level",
   "spec2d.combine1fiber",
@@ -126,10 +146,6 @@
  ],
  "deps": {
   "__future__": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "_pickle": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -151,10 +167,6 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "glob": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "gzip": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -192,33 +204,9 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "pkg_resources": [
-   "setuptools/conda-forge/linux-64/setuptools-40.6.1-py36_0",
-   "setuptools/conda-forge/linux-64/setuptools-46.3.0-py38h32f6830_0",
-   "setuptools/conda-forge/linux-64/setuptools-49.1.2-py38h32f6830_0"
-  ],
   "re": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "scipy": [
-   "scipy/conda-forge/linux-64/scipy-0.17.1-np110py27_blas_openblas_202",
-   "scipy/conda-forge/linux-64/scipy-1.7.0-py37h29e03ee_0",
-   "scipy/conda-forge/linux-64/scipy-1.7.0-py37ha768fb6_1"
-  ],
-  "shutil": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "six": [
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0",
-   "lldb/conda-forge/linux-64/lldb-6.0.0-py35_0",
-   "privy/conda-forge/noarch/privy-6.0.0-py_0",
-   "six/conda-forge/linux-64/six-1.10.0-py34_0",
-   "six/conda-forge/linux-64/six-1.10.0-py34_1",
-   "six/conda-forge/noarch/six-1.14.0-py_1",
-   "six/conda-forge/noarch/six-1.16.0-pyh6c4a22f_0"
   ],
   "subprocess": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",

@@ -1,6 +1,7 @@
 {
  "bad": [
   "_format_num",
+  "flask.abort",
   "flask.g.active_page",
   "flask.g.jobs",
   "flask.g.pagination",
@@ -9,6 +10,7 @@
   "flask.g.query",
   "flask.g.subtitle",
   "flask.g.title",
+  "flask.redirect",
   "flask.request.args.copy",
   "flask.request.args.get",
   "flask.request.endpoint",
@@ -18,13 +20,31 @@
   "flask.request.path",
   "flask.session.get",
   "flask.session.setdefault",
+  "flask_assets.Bundle",
+  "flask_assets.Environment",
+  "flask_turbolinks.turbolinks",
   "itertools",
   "key",
   "make_card",
+  "markdown",
+  "markdown.markdown",
+  "natsort",
   "natsort.REAL",
+  "natsort.natsort_keygen",
+  "numbers.Real",
   "os.listdir",
   "os.urandom",
-  "sys"
+  "shlex",
+  "shlex.split",
+  "signac",
+  "signac.contrib.filterparse.parse_filter_arg",
+  "signac.get_project",
+  "sys",
+  "warnings",
+  "warnings.catch_warnings",
+  "warnings.simplefilter",
+  "watchdog.events.FileSystemEventHandler",
+  "watchdog.observers.Observer"
  ],
  "deps": {
   "argparse": [
@@ -46,13 +66,6 @@
    "flask/conda-forge/noarch/flask-1.0.2-py_1",
    "flask/conda-forge/noarch/flask-1.0.3-py_0",
    "flask/conda-forge/noarch/flask-1.1.0-py_0"
-  ],
-  "flask_assets": [
-   "flask-assets/conda-forge/noarch/flask-assets-0.12-py_0",
-   "flask-assets/conda-forge/noarch/flask-assets-2.0-py_0"
-  ],
-  "flask_turbolinks": [
-   "flask-turbolinks/conda-forge/noarch/flask-turbolinks-0.2.0-py_0"
   ],
   "functools": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -80,14 +93,6 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "markdown": [
-   "markdown/conda-forge/noarch/markdown-3.1.1-py_0",
-   "markdown/conda-forge/noarch/markdown-3.2.1-py_0",
-   "markdown/conda-forge/noarch/markdown-3.2.2-py_0",
-   "markdown/conda-forge/noarch/markdown-3.3.1-pyh9f0ad1d_0",
-   "markdown/conda-forge/noarch/markdown-3.3.2-pyh9f0ad1d_0",
-   "markdown/conda-forge/noarch/markdown-3.3.3-pyh9f0ad1d_0"
-  ],
   "markupsafe": [
    "markupsafe/conda-forge/linux-64/markupsafe-2.0.0-py36h70b1f00_0"
   ],
@@ -95,21 +100,7 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "natsort": [
-   "natsort/conda-forge/noarch/natsort-5.1.1-py_0",
-   "natsort/conda-forge/noarch/natsort-5.3.1-py_0",
-   "natsort/conda-forge/noarch/natsort-5.3.2-py_0",
-   "natsort/conda-forge/noarch/natsort-5.3.3-py_1",
-   "natsort/conda-forge/noarch/natsort-5.5.0-py_0",
-   "natsort/conda-forge/noarch/natsort-6.0.0-py_0",
-   "natsort/conda-forge/noarch/natsort-6.2.0-py_0",
-   "natsort/conda-forge/noarch/natsort-7.1.1-pyhd8ed1ab_0"
-  ],
   "ntpath": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "numbers": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -120,33 +111,6 @@
   "re": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "shlex": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "signac": [
-   "signac/conda-forge/noarch/signac-0.9.3-py_1",
-   "signac/conda-forge/noarch/signac-0.9.4-py_0",
-   "signac/conda-forge/noarch/signac-0.9.5-py_0",
-   "signac/conda-forge/noarch/signac-1.0.0-py_0",
-   "signac/conda-forge/noarch/signac-1.1.0-py_0",
-   "signac/conda-forge/noarch/signac-1.2.0-py_0",
-   "signac/conda-forge/noarch/signac-1.3.0-py_0",
-   "signac/conda-forge/noarch/signac-1.5.1-pyhd8ed1ab_0"
-  ],
-  "warnings": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "watchdog": [
-   "watchdog/conda-forge/linux-64/watchdog-0.10.4-py36h5fab9bb_0",
-   "watchdog/conda-forge/linux-64/watchdog-0.9.0-py36_1",
-   "watchdog/conda-forge/linux-64/watchdog-2.0.2-py37h89c1867_0",
-   "watchdog/conda-forge/noarch/watchdog-0.8.3-py_2"
-  ],
-  "webassets": [
-   "webassets/conda-forge/noarch/webassets-2.0-py_0"
   ],
   "werkzeug": [
    "werkzeug/conda-forge/noarch/werkzeug-0.15.3-py_0",

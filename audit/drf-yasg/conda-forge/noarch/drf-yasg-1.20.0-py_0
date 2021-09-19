@@ -49,7 +49,25 @@
   "collections.abc.Iterator",
   "collections.abc.Mapping",
   "collections.defaultdict",
+  "coreschema",
+  "coreschema.Boolean",
+  "coreschema.Integer",
+  "coreschema.Number",
+  "coreschema.String",
   "default",
+  "django.conf.settings",
+  "django.contrib.auth.get_user_model",
+  "django.core.exceptions.ImproperlyConfigured",
+  "django.core.management.base.BaseCommand",
+  "django.core.validators",
+  "django.core.validators.MaxLengthValidator",
+  "django.core.validators.MaxValueValidator",
+  "django.core.validators.MinLengthValidator",
+  "django.core.validators.MinValueValidator",
+  "django.core.validators.RegexValidator",
+  "django.core.validators.URLValidator",
+  "django.core.validators.validate_ipv4_address",
+  "django.db.models",
   "django.db.models.AutoField",
   "django.db.models.BinaryField",
   "django.db.models.BooleanField",
@@ -67,12 +85,27 @@
   "django.db.models.TextField",
   "django.db.models.TimeField",
   "django.db.models.UUIDField",
+  "django.http.HttpResponse",
+  "django.shortcuts.resolve_url",
+  "django.template.loader.render_to_string",
+  "django.urls.URLPattern",
+  "django.urls.URLResolver",
+  "django.urls.get_script_prefix",
+  "django.utils.cache.add_never_cache_headers",
+  "django.utils.encoding.force_str",
+  "django.utils.functional.Promise",
+  "django.utils.module_loading.import_string",
+  "django.views.decorators.cache.cache_page",
+  "django.views.decorators.vary.vary_on_headers",
   "djangorestframework_camel_case.parser.CamelCaseJSONParser",
   "djangorestframework_camel_case.render.CamelCaseJSONRenderer",
   "djangorestframework_camel_case.render.camelize",
   "filter_backend",
+  "flex.core.parse",
+  "flex.exceptions.ValidationError",
   "generator_class",
   "improves",
+  "inflection.camelize",
   "info",
   "inspector",
   "inspector.process_result",
@@ -115,6 +148,11 @@
   "openapi.TYPE_OBJECT",
   "openapi.TYPE_STRING",
   "openapi.resolve_ref",
+  "operator",
+  "operator.__gt__",
+  "operator.__lt__",
+  "pkg_resources.DistributionNotFound",
+  "pkg_resources.get_distribution",
   "rest_framework.settings.api_settings.COERCE_DECIMAL_TO_STRING",
   "rest_framework.settings.api_settings.DEFAULT_AUTHENTICATION_CLASSES",
   "rest_framework.settings.api_settings.DEFAULT_PARSER_CLASSES",
@@ -152,10 +190,6 @@
    "coreapi/conda-forge/noarch/coreapi-2.3.3-pyh9f0ad1d_0",
    "python-coreapi/conda-forge/noarch/python-coreapi-2.3.3-py_0"
   ],
-  "coreschema": [
-   "coreschema/conda-forge/noarch/coreschema-0.0.4-pyh9f0ad1d_0",
-   "python-coreschema/conda-forge/noarch/python-coreschema-0.0.4-py_0"
-  ],
   "datetime": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -163,28 +197,9 @@
   "decimal": [
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "django": [
-   "django/conda-forge/noarch/django-3.0.6-py_0",
-   "django/conda-forge/noarch/django-3.0.7-py_0",
-   "django/conda-forge/noarch/django-3.1.3-pyhd8ed1ab_0",
-   "django/conda-forge/noarch/django-3.1.4-pyhd8ed1ab_0",
-   "django/conda-forge/noarch/django-3.1.7-pyhd8ed1ab_0",
-   "django/conda-forge/noarch/django-3.2.2-pyhd8ed1ab_0",
-   "django/conda-forge/noarch/django-3.2.3-pyhd8ed1ab_0",
-   "django/conda-forge/noarch/django-3.2.5-pyhd8ed1ab_0"
-  ],
-  "flex": [
-   "flex-swagger/conda-forge/noarch/flex-swagger-6.13.2-py_1"
-  ],
   "functools": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "inflection": [
-   "inflection/conda-forge/noarch/inflection-0.3.1-py_1",
-   "inflection/conda-forge/noarch/inflection-0.4.0-pyh9f0ad1d_0",
-   "inflection/conda-forge/noarch/inflection-0.5.0-pyh9f0ad1d_0",
-   "inflection/conda-forge/noarch/inflection-0.5.1-pyh9f0ad1d_0"
   ],
   "inspect": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -202,18 +217,9 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "operator": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "os": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "pkg_resources": [
-   "setuptools/conda-forge/linux-64/setuptools-40.6.1-py36_0",
-   "setuptools/conda-forge/linux-64/setuptools-46.3.0-py38h32f6830_0",
-   "setuptools/conda-forge/linux-64/setuptools-49.1.2-py38h32f6830_0"
   ],
   "re": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
