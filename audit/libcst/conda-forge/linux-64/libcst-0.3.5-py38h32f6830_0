@@ -44,56 +44,23 @@
   "collections.abc.Sequence",
   "collections.defaultdict",
   "command_class",
-  "contextlib.ExitStack",
-  "contextlib.contextmanager",
-  "copy",
-  "copy.deepcopy",
   "create_token",
-  "dataclasses",
-  "dataclasses.MISSING",
-  "dataclasses.asdict",
-  "dataclasses.dataclass",
-  "dataclasses.field",
   "dataclasses.field.name",
-  "dataclasses.fields",
-  "dataclasses.replace",
   "dedent_if_necessary",
   "detect_encoding",
   "different_case_versions",
-  "difflib",
-  "difflib.unified_diff",
-  "distutils.spawn",
-  "enum.Enum",
-  "enum.auto",
   "filter_line",
-  "functools.lru_cache",
-  "functools.wraps",
   "get_length",
   "handler",
-  "hypothesis",
   "hypothesis.HealthCheck.filter_too_much",
   "hypothesis.HealthCheck.too_slow",
   "hypothesis.Phase.generate",
   "hypothesis.Phase.shrink",
-  "hypothesis.given",
-  "hypothesis.note",
-  "hypothesis.reject",
-  "hypothesis.settings.get_profile",
-  "hypothesis.settings.load_profile",
-  "hypothesis.settings.register_profile",
   "hypothesmith.from_grammar",
   "io.BytesIO",
   "iter.value",
   "itertools",
   "leave_func",
-  "libcst.CSTTransformer.on_leave",
-  "libcst.CSTTransformer.on_leave_attribute",
-  "libcst.CSTTransformer.on_visit",
-  "libcst.CSTTransformer.on_visit_attribute",
-  "libcst.CSTVisitor.on_leave",
-  "libcst.CSTVisitor.on_leave_attribute",
-  "libcst.CSTVisitor.on_visit",
-  "libcst.CSTVisitor.on_visit_attribute",
   "libcst.MaybeSentinel.DEFAULT",
   "libcst.RemovalSentinel.REMOVE",
   "libcst.__dict__.items",
@@ -146,8 +113,6 @@
   "libcst.codemod._runner.SkipReason.BLACKLISTED",
   "libcst.codemod._runner.SkipReason.GENERATED",
   "libcst.codemod._runner.SkipReason.OTHER",
-  "libcst.codemod.visitors.AddImportsVisitor.add_needed_import",
-  "libcst.codemod.visitors.RemoveImportsVisitor.remove_unused_import_by_node",
   "libcst.codemod.visitors._add_imports.AddImportsVisitor.CONTEXT_KEY",
   "libcst.codemod.visitors._remove_imports.RemoveImportsVisitor.CONTEXT_KEY",
   "libcst.matchers.__init__.AnnotationMatchType",
@@ -257,7 +222,6 @@
   "libcst.metadata.ExpressionContext.DEL",
   "libcst.metadata.ExpressionContext.LOAD",
   "libcst.metadata.ExpressionContext.STORE",
-  "libcst.metadata.QualifiedNameProvider.has_name",
   "libcst.metadata.QualifiedNameSource.IMPORT",
   "libcst.metadata.QualifiedNameSource.LOCAL",
   "libcst.metadata.expression_context_provider.ExpressionContext.DEL",
@@ -270,7 +234,6 @@
   "multiprocessing.Process",
   "multiprocessing.Queue",
   "multiprocessing.cpu_count",
-  "mypy_extensions.TypedDict",
   "object.__getattribute__",
   "object.__setattr__",
   "os.environ.get",
@@ -293,8 +256,6 @@
   "sys",
   "sys.stdin.read",
   "time",
-  "typing_extensions.Literal",
-  "typing_extensions.final",
   "unittest.mock.patch.object",
   "update_annotation",
   "update_annotations",
@@ -335,9 +296,66 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "contextlib": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "copy": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "dataclasses": [
+   "dataclasses/conda-forge/noarch/dataclasses-0.5-py_0",
+   "dataclasses/conda-forge/noarch/dataclasses-0.6-py_0",
+   "dataclasses/conda-forge/noarch/dataclasses-0.8-pyh787bdff_0",
+   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
+   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "datetime": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "difflib": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "distutils": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "enum": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "functools": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "hypothesis": [
+   "hypothesis/conda-forge/noarch/hypothesis-5.18.2-py_0",
+   "hypothesis/conda-forge/noarch/hypothesis-5.19.1-py_0",
+   "hypothesis/conda-forge/noarch/hypothesis-5.2.0-py_0",
+   "hypothesis/conda-forge/noarch/hypothesis-5.20.3-py_0",
+   "hypothesis/conda-forge/noarch/hypothesis-5.23.0-py_0",
+   "hypothesis/conda-forge/noarch/hypothesis-5.23.1-py_0",
+   "hypothesis/conda-forge/noarch/hypothesis-5.37.3-py_0",
+   "hypothesis/conda-forge/noarch/hypothesis-5.37.5-py_0",
+   "hypothesis/conda-forge/noarch/hypothesis-5.41.1-pyhd8ed1ab_0",
+   "hypothesis/conda-forge/noarch/hypothesis-5.41.5-pyhd8ed1ab_0",
+   "hypothesis/conda-forge/noarch/hypothesis-5.43.6-pyhd8ed1ab_0",
+   "hypothesis/conda-forge/noarch/hypothesis-5.47.0-pyhd8ed1ab_0",
+   "hypothesis/conda-forge/noarch/hypothesis-5.8.6-py_0",
+   "hypothesis/conda-forge/noarch/hypothesis-5.9.0-py_0",
+   "hypothesis/conda-forge/noarch/hypothesis-6.0.1-pyhd8ed1ab_0",
+   "hypothesis/conda-forge/noarch/hypothesis-6.13.1-pyhd8ed1ab_0",
+   "hypothesis/conda-forge/noarch/hypothesis-6.13.2-pyhd8ed1ab_0",
+   "hypothesis/conda-forge/noarch/hypothesis-6.13.6-pyhd8ed1ab_0",
+   "hypothesis/conda-forge/noarch/hypothesis-6.2.0-pyhd8ed1ab_0",
+   "hypothesis/conda-forge/noarch/hypothesis-6.5.0-pyhd8ed1ab_0",
+   "hypothesis/conda-forge/noarch/hypothesis-6.6.1-pyhd8ed1ab_0",
+   "hypothesis/conda-forge/noarch/hypothesis-6.8.1-pyhd8ed1ab_0",
+   "hypothesis/conda-forge/noarch/hypothesis-6.8.9-pyhd8ed1ab_0"
   ],
   "importlib": [
    "importlib/conda-forge/linux-64/importlib-1.0.4-py26_0",
@@ -351,6 +369,19 @@
   "json": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "libcst": [
+   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
+   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0",
+   "libcst/conda-forge/linux-64/libcst-0.3.14-py36hd000896_0",
+   "libcst/conda-forge/linux-64/libcst-0.3.16-py36hd000896_1",
+   "libcst/conda-forge/linux-64/libcst-0.3.5-py38h32f6830_0"
+  ],
+  "mypy_extensions": [
+   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
+   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0",
+   "mypy_extensions/conda-forge/linux-64/mypy_extensions-0.4.1-py36_0",
+   "mypy_extensions/conda-forge/osx-64/mypy_extensions-0.4.3-py27h8c360ce_1"
   ],
   "ntpath": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -402,6 +433,13 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "typing": [],
+  "typing_extensions": [
+   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
+   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0",
+   "typing_extensions/conda-forge/noarch/typing_extensions-3.10.0.0-pyha770c72_0",
+   "typing_extensions/conda-forge/noarch/typing_extensions-3.7.4.2-py_0",
+   "typing_extensions/conda-forge/noarch/typing_extensions-3.7.4.3-py_0"
+  ],
   "typing_inspect": [
    "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
    "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0",
