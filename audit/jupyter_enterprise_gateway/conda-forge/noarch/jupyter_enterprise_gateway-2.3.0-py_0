@@ -24,14 +24,11 @@
   "processproxy.RemoteProcessProxy.get_current_time",
   "processproxy.RemoteProcessProxy.get_time_diff",
   "sessions.kernelsessionmanager.KernelSessionManager.get_kernel_username",
-  "signal",
   "signal.SIGHUP",
   "signal.SIGINT",
   "signal.SIGKILL",
   "signal.SIGTERM",
   "signal.SIG_IGN",
-  "signal.signal",
-  "socket",
   "socket.AF_INET",
   "socket.SHUT_RDWR",
   "socket.SHUT_WR",
@@ -39,61 +36,15 @@
   "socket.error",
   "socket.gethostbyname",
   "socket.gethostname",
-  "socket.socket",
   "socket.timeout",
-  "ssl",
   "ssl.CERT_REQUIRED",
   "ssl.PROTOCOL_TLSv1_2",
   "sys",
   "time",
-  "tornado",
-  "tornado.escape.json_decode",
-  "tornado.escape.json_encode",
-  "tornado.escape.utf8",
-  "tornado.gen",
-  "tornado.gen.coroutine",
-  "tornado.httpserver",
-  "tornado.httpserver.HTTPServer",
-  "tornado.log.LogFormatter",
-  "tornado.log.enable_pretty_logging",
-  "tornado.web",
-  "tornado.web.Application",
-  "tornado.web.HTTPError",
-  "tornado.web.RequestHandler",
-  "tornado.web.StaticFileHandler",
-  "tornado.web.StaticFileHandler.get",
-  "tornado.web.StaticFileHandler.initialize",
-  "tornado.web.authenticated",
-  "traitlets.Bool",
-  "traitlets.CBool",
-  "traitlets.Instance",
-  "traitlets.Integer",
-  "traitlets.List",
-  "traitlets.Set",
-  "traitlets.Type",
-  "traitlets.Unicode",
-  "traitlets.config.Configurable",
-  "traitlets.config.configurable.LoggingConfigurable",
-  "traitlets.default",
-  "traitlets.directional_link",
-  "traitlets.log",
   "traitlets.log.debug",
   "traitlets.log.error",
-  "traitlets.log.get_logger",
-  "traitlets.observe",
-  "weakref",
   "weakref.proxy",
-  "websocket",
-  "websocket.WebSocketConnectionClosedException",
-  "websocket.create_connection",
-  "yarn_api_client.resource_manager.ResourceManager",
-  "zmq.eventloop.ioloop",
-  "zmq.eventloop.ioloop.IOLoop.current",
-  "zmq.eventloop.ioloop.PeriodicCallback",
-  "zmq.eventloop.ioloop.install",
-  "zmq.ssh.tunnel",
-  "zmq.ssh.tunnel.paramiko_tunnel",
-  "zmq.ssh.tunnel.try_passwordless_ssh"
+  "zmq.eventloop.ioloop.IOLoop.current"
  ],
  "deps": {
   "Crypto": [
@@ -219,6 +170,18 @@
    "requests/conda-forge/noarch/requests-2.25.1-pyhd3deb0d_0",
    "requests/conda-forge/noarch/requests-2.26.0-pyhd8ed1ab_0"
   ],
+  "signal": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "socket": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "ssl": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "subprocess": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -227,9 +190,18 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "tornado": [
+   "tornado/conda-forge/linux-64/tornado-4.4.3-py35_0"
+  ],
   "traceback": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "traitlets": [
+   "traitlets/conda-forge/noarch/traitlets-5.0.4-py_0",
+   "traitlets/conda-forge/noarch/traitlets-5.0.4-py_1",
+   "traitlets/conda-forge/noarch/traitlets-5.0.5-py_0",
+   "traitlets/conda-forge/noarch/traitlets-5.1.0-pyhd8ed1ab_0"
   ],
   "urllib3": [
    "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
@@ -247,6 +219,32 @@
   "uuid": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "weakref": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "websocket": [
+   "websocket-client/conda-forge/linux-64/websocket-client-0.40.0-py27_0",
+   "websocket-client/conda-forge/noarch/websocket-client-0.46.0-py_0",
+   "websocket-client/conda-forge/noarch/websocket-client-0.47.0-py_0",
+   "websocket-client/conda-forge/noarch/websocket-client-0.48.0-py_0",
+   "websocket-client/conda-forge/noarch/websocket-client-0.49.0-py_0"
+  ],
+  "yarn_api_client": [
+   "yarn-api-client/conda-forge/noarch/yarn-api-client-0.2.3-py_0",
+   "yarn-api-client/conda-forge/noarch/yarn-api-client-0.3.0-py_0",
+   "yarn-api-client/conda-forge/noarch/yarn-api-client-0.3.1-py_0",
+   "yarn-api-client/conda-forge/noarch/yarn-api-client-0.3.2-py_0",
+   "yarn-api-client/conda-forge/noarch/yarn-api-client-0.3.3-py_0",
+   "yarn-api-client/conda-forge/noarch/yarn-api-client-0.3.5-py_0",
+   "yarn-api-client/conda-forge/noarch/yarn-api-client-0.3.7-py_0",
+   "yarn-api-client/conda-forge/noarch/yarn-api-client-1.0.0-py_0",
+   "yarn-api-client/conda-forge/noarch/yarn-api-client-1.0.1-py_0"
+  ],
+  "zmq": [
+   "pyzmq/conda-forge/linux-64/pyzmq-18.0.1-py37hc4ba49a_1",
+   "pyzmq/conda-forge/linux-64/pyzmq-19.0.0-py27h1768529_0"
   ]
  }
 }

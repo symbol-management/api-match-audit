@@ -30,31 +30,11 @@
   "conll_2003_to_dataframes",
   "conll_to_bert",
   "consolidate",
-  "distutils.version.LooseVersion",
   "download_file",
   "extract_dict",
   "extract_regex_tok",
-  "ibm_cloud_sdk_core.authenticators.IAMAuthenticator",
-  "ibm_watson.NaturalLanguageUnderstandingV1",
-  "ibm_watson.natural_language_understanding_v1.CategoriesOptions",
-  "ibm_watson.natural_language_understanding_v1.ConceptsOptions",
-  "ibm_watson.natural_language_understanding_v1.EmotionOptions",
-  "ibm_watson.natural_language_understanding_v1.EntitiesOptions",
-  "ibm_watson.natural_language_understanding_v1.Features",
-  "ibm_watson.natural_language_understanding_v1.KeywordsOptions",
-  "ibm_watson.natural_language_understanding_v1.RelationsOptions",
-  "ibm_watson.natural_language_understanding_v1.SemanticRolesOptions",
-  "ibm_watson.natural_language_understanding_v1.SentimentOptions",
-  "ibm_watson.natural_language_understanding_v1.SyntaxOptions",
-  "ibm_watson.natural_language_understanding_v1.SyntaxOptionsTokens",
   "iob_to_spans",
-  "ipywidgets",
-  "ipywidgets.IntProgress",
-  "ipywidgets.Layout",
   "iter_gen",
-  "json",
-  "json.load",
-  "json.loads",
   "lemmatize",
   "list_gen",
   "load_dict",
@@ -105,6 +85,7 @@
   "pandas.tests.extension.base.BaseArithmeticOpsTests.series_array_exc",
   "pandas.tests.extension.base.BaseArithmeticOpsTests.series_scalar_exc",
   "parse_response",
+  "pyarrow",
   "pyarrow.Array.from_buffers",
   "pyarrow.BufferOutputStream",
   "pyarrow.ChunkedArray",
@@ -113,16 +94,24 @@
   "pyarrow.ListArray.from_arrays",
   "pyarrow.PyExtensionType",
   "pyarrow.RecordBatch.from_arrays",
+  "pyarrow.RecordBatchStreamReader",
+  "pyarrow.RecordBatchStreamWriter",
   "pyarrow.StructArray.from_arrays",
   "pyarrow.Table.from_arrays",
   "pyarrow.Table.from_batches",
   "pyarrow.Table.from_pandas",
+  "pyarrow.__version__",
   "pyarrow.array",
   "pyarrow.concat_arrays",
   "pyarrow.concat_tables",
+  "pyarrow.feather.read_table",
+  "pyarrow.feather.write_feather",
   "pyarrow.from_numpy_dtype",
   "pyarrow.list_",
   "pyarrow.py_buffer",
+  "pyarrow.types.is_list",
+  "pyarrow.types.is_primitive",
+  "pyarrow.types.is_struct",
   "pytest.mark.parametrize",
   "pytest.mark.skip",
   "pytest.mark.skipif",
@@ -130,10 +119,21 @@
   "regex.Regex",
   "regex.compile",
   "regex.sub",
+  "requests",
+  "requests.get",
   "seq_to_windows",
+  "spacy",
+  "spacy.displacy",
+  "spacy.lang.en.English",
+  "spacy.load",
   "spans_to_iob",
+  "text_extensions_for_pandas.SpanDtype.name",
+  "text_extensions_for_pandas.TokenSpanDtype.name",
   "text_extensions_for_pandas.array.span.Span.NULL_OFFSET_VALUE",
   "text_extensions_for_pandas.array.token_span.TokenSpan.USE_TOKEN_OFFSETS_IN_REPR",
+  "textwrap",
+  "textwrap.dedent",
+  "textwrap.shorten",
   "time",
   "token_features_to_tree",
   "warnings.warn",
@@ -144,6 +144,29 @@
    "pytest/conda-forge/linux-64/pytest-3.7.0-py27_0",
    "pytest/conda-forge/linux-64/pytest-4.6.0-py37_0",
    "pytest/conda-forge/linux-64/pytest-6.0.2-py37hc8dfbb8_0"
+  ],
+  "distutils": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "ibm_cloud_sdk_core": [
+   "ibm-cloud-sdk-core/conda-forge/noarch/ibm-cloud-sdk-core-3.1.0-pyh9f0ad1d_0"
+  ],
+  "ibm_watson": [
+   "ibm-watson/conda-forge/noarch/ibm-watson-4.5.0-pyh9f0ad1d_0",
+   "ibm-watson/conda-forge/noarch/ibm-watson-4.6.0-pyh9f0ad1d_0",
+   "ibm-watson/conda-forge/noarch/ibm-watson-4.7.0-pyh9f0ad1d_0"
+  ],
+  "ipywidgets": [
+   "ipywidgets/conda-forge/noarch/ipywidgets-7.4.1-py_0",
+   "ipywidgets/conda-forge/noarch/ipywidgets-7.6.0-pyhd3deb0d_0",
+   "ipywidgets/conda-forge/noarch/ipywidgets-7.6.2-pyhd3deb0d_0",
+   "ipywidgets/conda-forge/noarch/ipywidgets-7.6.2-pyhd3deb0d_1",
+   "ipywidgets/conda-forge/noarch/ipywidgets-7.6.4-pyhd8ed1ab_0"
+  ],
+  "json": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "math": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -166,10 +189,6 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "pandas": [],
-  "pyarrow": [
-   "pyarrow/conda-forge/linux-64/pyarrow-1.0.1-py38h7b0d817_30_cuda",
-   "pyarrow/conda-forge/linux-64/pyarrow-2.0.0-py36ha2c856d_3_cuda"
-  ],
   "pytest": [
    "pytest/conda-forge/linux-64/pytest-3.7.0-py27_0",
    "pytest/conda-forge/linux-64/pytest-4.6.0-py37_0",
@@ -179,28 +198,7 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "requests": [
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0",
-   "requests/conda-forge/linux-64/requests-2.12.0-py35_0",
-   "requests/conda-forge/noarch/requests-2.23.0-pyh8c360ce_2",
-   "requests/conda-forge/noarch/requests-2.24.0-pyh9f0ad1d_0",
-   "requests/conda-forge/noarch/requests-2.25.0-pyhd3deb0d_0",
-   "requests/conda-forge/noarch/requests-2.25.1-pyhd3deb0d_0",
-   "requests/conda-forge/noarch/requests-2.26.0-pyhd8ed1ab_0"
-  ],
-  "spacy": [
-   "spacy/conda-forge/linux-64/spacy-2.3.2-py36h51d7077_1"
-  ],
   "tempfile": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "text_extensions_for_pandas": [
-   "text_extensions_for_pandas/conda-forge/linux-64/text_extensions_for_pandas-0.1b2-py38h578d9bd_0",
-   "text_extensions_for_pandas/conda-forge/osx-64/text_extensions_for_pandas-0.1-py36h79c6626_0"
-  ],
-  "textwrap": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],

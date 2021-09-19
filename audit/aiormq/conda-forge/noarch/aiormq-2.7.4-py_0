@@ -1,10 +1,8 @@
 {
  "bad": [
   "_test",
-  "binascii.hexlify",
   "cb",
   "consumer",
-  "enum.Enum",
   "exceptions.AuthenticationError",
   "exceptions.ChannelAccessRefused",
   "exceptions.ChannelClosed",
@@ -31,84 +29,9 @@
   "functools.partial",
   "io.BytesIO",
   "os.urandom",
-  "pamqp.ContentHeader",
-  "pamqp.ProtocolHeader",
-  "pamqp.body.ContentBody",
-  "pamqp.frame",
-  "pamqp.heartbeat.Heartbeat",
-  "pamqp.specification",
-  "pamqp.specification.AMQPFrameError",
-  "pamqp.specification.AMQPInternalError",
-  "pamqp.specification.AMQPSyntaxError",
-  "pamqp.specification.Basic.Ack",
-  "pamqp.specification.Basic.Cancel",
-  "pamqp.specification.Basic.CancelOk",
-  "pamqp.specification.Basic.Consume",
-  "pamqp.specification.Basic.ConsumeOk",
-  "pamqp.specification.Basic.Deliver",
-  "pamqp.specification.Basic.Get",
-  "pamqp.specification.Basic.GetEmpty",
-  "pamqp.specification.Basic.GetOk",
-  "pamqp.specification.Basic.Nack",
-  "pamqp.specification.Basic.Properties",
-  "pamqp.specification.Basic.Publish",
-  "pamqp.specification.Basic.Qos",
-  "pamqp.specification.Basic.QosOk",
-  "pamqp.specification.Basic.Recover",
-  "pamqp.specification.Basic.RecoverAsync",
-  "pamqp.specification.Basic.RecoverOk",
-  "pamqp.specification.Basic.Reject",
-  "pamqp.specification.Basic.Return",
-  "pamqp.specification.Channel.Close",
-  "pamqp.specification.Channel.CloseOk",
-  "pamqp.specification.Channel.Flow",
-  "pamqp.specification.Channel.FlowOk",
-  "pamqp.specification.Channel.Open",
-  "pamqp.specification.Channel.OpenOk",
-  "pamqp.specification.Confirm.Select",
-  "pamqp.specification.Connection.Close",
-  "pamqp.specification.Connection.CloseOk",
-  "pamqp.specification.Connection.Open",
-  "pamqp.specification.Connection.Start",
-  "pamqp.specification.Connection.StartOk",
-  "pamqp.specification.Connection.TuneOk",
-  "pamqp.specification.Exchange.Bind",
-  "pamqp.specification.Exchange.BindOk",
-  "pamqp.specification.Exchange.Declare",
-  "pamqp.specification.Exchange.DeclareOk",
-  "pamqp.specification.Exchange.Delete",
-  "pamqp.specification.Exchange.DeleteOk",
-  "pamqp.specification.Exchange.Unbind",
-  "pamqp.specification.Exchange.UnbindOk",
-  "pamqp.specification.Frame",
-  "pamqp.specification.Queue.Bind",
-  "pamqp.specification.Queue.BindOk",
-  "pamqp.specification.Queue.Declare",
-  "pamqp.specification.Queue.DeclareOk",
-  "pamqp.specification.Queue.Delete",
-  "pamqp.specification.Queue.DeleteOk",
-  "pamqp.specification.Queue.Purge",
-  "pamqp.specification.Queue.PurgeOk",
-  "pamqp.specification.Queue.Unbind",
-  "pamqp.specification.Queue.UnbindOk",
-  "pamqp.specification.REPLY_SUCCESS",
-  "pamqp.specification.Tx.Commit",
-  "pamqp.specification.Tx.CommitOk",
-  "pamqp.specification.Tx.Rollback",
-  "pamqp.specification.Tx.RollbackOk",
-  "pamqp.specification.Tx.Select",
-  "pamqp.specification.Tx.SelectOk",
-  "platform",
-  "platform.python_build",
-  "platform.python_implementation",
-  "platform.python_version",
-  "ssl",
   "ssl.CERT_NONE",
   "ssl.Purpose.CLIENT_AUTH",
-  "ssl.Purpose.SERVER_AUTH",
-  "ssl.create_default_context",
-  "yarl.DEFAULT_PORTS",
-  "yarl.URL"
+  "ssl.Purpose.SERVER_AUTH"
  ],
  "deps": {
   "abc": [
@@ -120,11 +43,20 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "binascii": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "collections": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "contextlib": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "enum": [
+   "privy/conda-forge/noarch/privy-6.0.0-py_0",
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -140,9 +72,23 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "pamqp": [
+   "pamqp/conda-forge/noarch/pamqp-2.3.0-py_0"
+  ],
+  "platform": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "ssl": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "typing": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "yarl": [
+   "yarl/conda-forge/linux-64/yarl-1.2.5-py36h470a237_0"
   ]
  }
 }

@@ -13,7 +13,6 @@
   "ast.PyCF_ONLY_AST",
   "collections.defaultdict",
   "config.config.Config",
-  "configparser",
   "ctypes.windll.kernel32",
   "errno",
   "flatten",
@@ -23,18 +22,9 @@
   "io.StringIO",
   "io.open",
   "is_valid",
-  "jedi",
-  "jedi.Project",
-  "jedi.Script",
-  "jedi.__version__",
-  "jedi.api.classes.Completion",
-  "jedi.api.environment.create_environment",
-  "jedi.api.environment.get_cached_default_environment",
   "local_to_document",
   "lsp.MessageType.Info",
   "lsp.TextDocumentSyncKind.INCREMENTAL",
-  "mccabe",
-  "mccabe.PathGraphingAstVisitor",
   "method",
   "os.environ.copy",
   "os.kill",
@@ -42,30 +32,6 @@
   "os.path.exists",
   "os.path.isdir",
   "os.path.samefile",
-  "parso",
-  "parso.parse",
-  "parso.python.tree",
-  "parso.python.tree.Function",
-  "parso.python.tree.IfStmt",
-  "parso.python.tree.Keyword",
-  "parso.python.tree.Module",
-  "parso.python.tree.Newline",
-  "parso.python.tree.Operator",
-  "parso.python.tree.PythonErrorNode",
-  "parso.python.tree.PythonNode",
-  "parso.python.tree.TryStmt",
-  "pkg_resources",
-  "pluggy",
-  "pluggy.HookimplMarker",
-  "pluggy.HookspecMarker",
-  "pycodestyle",
-  "pycodestyle.BaseReport",
-  "pycodestyle.Checker",
-  "pycodestyle.StyleGuide",
-  "pycodestyle.USER_CONFIG",
-  "pycodestyle._checks",
-  "pycodestyle.continued_indentation",
-  "pycodestyle.register_check",
   "pydocstyle.config.ConfigurationParser.DEFAULT_MATCH_DIR_RE",
   "pydocstyle.config.ConfigurationParser.DEFAULT_MATCH_RE",
   "pydocstyle.utils.__name__",
@@ -101,17 +67,10 @@
   "pylsp.lsp.SymbolKind.Property",
   "pylsp.lsp.SymbolKind.String",
   "pylsp.lsp.SymbolKind.Variable",
-  "subprocess.PIPE",
-  "subprocess.Popen",
   "sys",
   "sys.platform.startswith",
   "sys.stdin.buffer",
   "sys.stdout.buffer",
-  "threading",
-  "threading.Lock",
-  "threading.RLock",
-  "threading.Thread",
-  "threading.Timer",
   "time",
   "ujson",
   "ujson.load",
@@ -138,11 +97,17 @@
    "autopep8/conda-forge/noarch/autopep8-1.5.4-pyh9f0ad1d_0",
    "autopep8/conda-forge/noarch/autopep8-1.5.7-pyhd8ed1ab_0"
   ],
+  "backports": [
+   "configparser/conda-forge/noarch/configparser-5.0.0-py_0"
+  ],
   "collections": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "configparser": [
+   "configparser/conda-forge/linux-64/configparser-3.7.1-py27_1",
+   "configparser/conda-forge/noarch/configparser-5.0.0-py_0",
+   "configparser/conda-forge/noarch/configparser-5.0.1-py_0",
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -166,6 +131,10 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "jedi": [
+   "jedi/conda-forge/linux-64/jedi-0.17.2-py36hd000896_1",
+   "jedi/conda-forge/linux-64/jedi-0.17.2-py37h9c2f6ca_1"
+  ],
   "json": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -173,6 +142,9 @@
   "logging": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "mccabe": [
+   "mccabe/conda-forge/noarch/mccabe-0.6.1-py_1"
   ],
   "ntpath": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -182,10 +154,39 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "parso": [
+   "parso/conda-forge/noarch/parso-0.1.1-py_0",
+   "parso/conda-forge/noarch/parso-0.2.1-py_0",
+   "parso/conda-forge/noarch/parso-0.3.1-py_0",
+   "parso/conda-forge/noarch/parso-0.3.3-py_0",
+   "parso/conda-forge/noarch/parso-0.3.4-py_0",
+   "parso/conda-forge/noarch/parso-0.4.0-py_0",
+   "parso/conda-forge/noarch/parso-0.5.1-py_0",
+   "parso/conda-forge/noarch/parso-0.5.2-py_0",
+   "parso/conda-forge/noarch/parso-0.7.0-pyh9f0ad1d_0",
+   "parso/conda-forge/noarch/parso-0.8.0-py_1",
+   "parso/conda-forge/noarch/parso-0.8.0-pyh9f0ad1d_0",
+   "parso/conda-forge/noarch/parso-0.8.1-pyhd8ed1ab_0"
+  ],
   "pathlib": [
    "pathlib/conda-forge/noarch/pathlib-1.0.1-py_1",
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "pkg_resources": [
+   "setuptools/conda-forge/linux-64/setuptools-40.6.1-py36_0",
+   "setuptools/conda-forge/linux-64/setuptools-46.3.0-py38h32f6830_0",
+   "setuptools/conda-forge/linux-64/setuptools-49.1.2-py38h32f6830_0"
+  ],
+  "pluggy": [
+   "pluggy/conda-forge/linux-64/pluggy-0.13.1-py38h578d9bd_4",
+   "pluggy/conda-forge/noarch/pluggy-0.11.0-py_0",
+   "pluggy/conda-forge/noarch/pluggy-0.12.0-py_0"
+  ],
+  "pycodestyle": [
+   "pycodestyle/conda-forge/noarch/pycodestyle-2.5.0-py_0",
+   "pycodestyle/conda-forge/noarch/pycodestyle-2.6.0-pyh9f0ad1d_0",
+   "pycodestyle/conda-forge/noarch/pycodestyle-2.7.0-pyhd8ed1ab_0"
   ],
   "pydocstyle": [
    "pydocstyle/conda-forge/noarch/pydocstyle-4.0.1-py_0",
@@ -225,6 +226,14 @@
    "rope/conda-forge/noarch/rope-0.19.0-pyhd8ed1ab_0"
   ],
   "socketserver": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "subprocess": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "threading": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
