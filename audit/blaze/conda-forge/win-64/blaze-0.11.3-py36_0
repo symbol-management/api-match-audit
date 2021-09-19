@@ -14,24 +14,38 @@
   "__builtin__.apply",
   "__builtin__.basestring",
   "__builtin__.unicode",
+  "__future__.absolute_import",
+  "__future__.division",
+  "__future__.print_function",
   "_split_agg",
   "_split_chunk",
   "a",
   "append",
   "applier",
+  "argparse",
+  "argparse.ArgumentDefaultsHelpFormatter",
+  "argparse.ArgumentParser",
+  "argparse.FileType",
   "assemble",
   "b",
+  "base64.b64encode",
+  "bcolz",
   "bcolz.carray",
+  "bcolz.ctable",
   "binop",
   "blaze.__file__",
   "blaze.compatibility.builtins.__name__",
   "blaze.compatibility.builtins.all",
   "blaze.compatibility.builtins.any",
   "blaze.compatibility.builtins.sum",
+  "blaze.compatibility.pickle.HIGHEST_PROTOCOL",
+  "blaze.compatibility.pickle.dumps",
+  "blaze.compatibility.pickle.loads",
   "blaze.compute.compute_up.funcs.items",
   "blaze.compute.compute_up.register",
   "blaze.compute.core.compute_up.register",
   "blaze.compute.core.optimize.register",
+  "blaze.compute.pyfunc.math.cos",
   "blaze.data._data.blocks",
   "blaze.discover.register",
   "blaze.expr.Expr._arguments",
@@ -66,12 +80,10 @@
   "blaze.server.server.RC.UNAUTHORIZED",
   "blaze.server.server.RC.UNPROCESSABLE_ENTITY",
   "blaze_expr",
-  "blosc",
   "broadcast",
   "builtins",
   "c",
   "cPickle",
-  "cProfile.Profile",
   "cls",
   "coerce_",
   "collections.Callable",
@@ -88,7 +100,6 @@
   "cons",
   "contextlib.ExitStack",
   "contextlib.contextmanager",
-  "contextlib2.ExitStack",
   "convert",
   "core.compute.register",
   "core.compute_up",
@@ -97,11 +108,6 @@
   "core.optimize.register",
   "core.subs.get",
   "create_call",
-  "ctypes",
-  "ctypes.c_int32",
-  "ctypes.c_int64",
-  "ctypes.c_ssize_t",
-  "ctypes.c_void_p",
   "ctypes.sizeof",
   "cytoolz.concat",
   "cytoolz.curry",
@@ -123,7 +129,6 @@
   "datashape.object_",
   "dict.keys",
   "discover",
-  "distutils.version.LooseVersion",
   "dshape_methods",
   "errno",
   "expr.Expr.__array__",
@@ -172,9 +177,6 @@
   "itertools",
   "itertools.izip_longest",
   "joiner",
-  "json",
-  "json.dumps",
-  "json.loads",
   "json_dumps.json_dumps.funcs.items",
   "m",
   "marshal",
@@ -286,10 +288,6 @@
   "warnings.warn"
  ],
  "deps": {
-  "__future__": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "_pickle": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -299,27 +297,27 @@
    "pytest/conda-forge/linux-64/pytest-4.6.0-py37_0",
    "pytest/conda-forge/linux-64/pytest-6.0.2-py37hc8dfbb8_0"
   ],
-  "argparse": [
-   "argparse/conda-forge/osx-64/argparse-1.4.0-py26_0",
+  "blosc": [
+   "python-blosc/conda-forge/linux-64/python-blosc-1.10.1-py39hde0f152_0"
+  ],
+  "cProfile": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "base64": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "bcolz": [
-   "bcolz/conda-forge/win-64/bcolz-1.2.1-py35h830ac7b_1"
-  ],
-  "blaze": [
-   "blaze/conda-forge/osx-64/blaze-0.11.3-py35_0",
-   "blaze/conda-forge/win-64/blaze-0.11.3-py36_0"
   ],
   "collections": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "contextlib2": [
+   "contextlib2/conda-forge/noarch/contextlib2-0.5.5-py_2",
+   "contextlib2/conda-forge/noarch/contextlib2-0.6.0-py_0",
+   "contextlib2/conda-forge/noarch/contextlib2-0.6.0.post1-py_0"
+  ],
   "copy": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "ctypes": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -349,6 +347,10 @@
   ],
   "distance": [
    "distance/conda-forge/noarch/distance-0.1.3-py_0"
+  ],
+  "distutils": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "flask": [
    "flask/conda-forge/linux-64/flask-0.12-py36_0",
@@ -396,6 +398,10 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "io": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "json": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],

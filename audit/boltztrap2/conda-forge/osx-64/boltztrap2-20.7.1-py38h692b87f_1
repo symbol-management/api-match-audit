@@ -11,18 +11,45 @@
   "FD",
   "FermiInteractorStyle",
   "LoaderError",
+  "ase",
+  "ase.Atom",
+  "ase.Atoms",
+  "ase.cell",
+  "ase.cell.Cell",
+  "ase.dft.kpoints",
+  "ase.dft.kpoints.bandpath",
+  "ase.io",
+  "ase.io.read",
+  "ase.io.wien2k",
+  "colorama",
   "colorama.Fore.GREEN",
   "colorama.Fore.RED",
   "colorama.Style.BRIGHT",
   "colorama.Style.RESET_ALL",
+  "colorama.init",
   "dFDde",
   "error",
   "functools.reduce",
   "io.StringIO",
   "itertools",
+  "logging",
+  "logging.DEBUG",
+  "logging.ERROR",
+  "logging.INFO",
+  "logging.WARNING",
+  "logging.basicConfig",
+  "logging.getLogger",
+  "logging.info",
+  "logging.warning",
+  "lzma",
+  "lzma.open",
   "matplotlib.rcParams.by_key",
+  "multiprocessing",
   "multiprocessing.Process",
   "multiprocessing.Queue",
+  "multiprocessing.sharedctypes",
+  "multiprocessing.sharedctypes.RawArray",
+  "netCDF4",
   "netCDF4.Dataset",
   "netCDF4.chartostring",
   "numpy.abs",
@@ -50,12 +77,38 @@
   "os.access",
   "os.chdir",
   "os.getcwd",
+  "os.path",
+  "os.path.abspath",
+  "os.path.basename",
+  "os.path.dirname",
   "os.path.isdir",
   "os.path.isfile",
+  "os.path.join",
+  "os.path.splitext",
+  "pyfftw.interfaces.numpy_fft",
+  "scipy",
+  "scipy.constants",
   "scipy.constants.alpha",
+  "scipy.constants.c",
+  "scipy.integrate",
+  "scipy.integrate.quad",
+  "scipy.linalg",
+  "scipy.linalg.inv",
+  "scipy.linalg.lstsq",
+  "scipy.linalg.norm",
+  "scipy.linalg.solve",
+  "scipy.optimize",
+  "scipy.optimize.minimize_scalar",
+  "scipy.optimize.newton",
+  "scipy.signal",
+  "scipy.signal.convolve",
+  "scipy.spatial",
   "scipy.spatial.Voronoi",
+  "scipy.spatial.distance",
+  "scipy.spatial.distance.cdist",
   "sys",
   "time",
+  "vtk",
   "vtk.VTK_POLYHEDRON",
   "vtk.vtkActor",
   "vtk.vtkAxesActor",
@@ -80,19 +133,15 @@
   "vtk.vtkSliderWidget",
   "vtk.vtkSphereSource",
   "vtk.vtkStructuredGrid",
-  "vtk.vtkUnstructuredGrid"
+  "vtk.vtkUnstructuredGrid",
+  "xml.etree.ElementTree",
+  "xml.etree.ElementTree.parse"
  ],
  "deps": {
   "argparse": [
    "argparse/conda-forge/osx-64/argparse-1.4.0-py26_0",
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "ase": [
-   "ase/conda-forge/noarch/ase-3.18.1-py_0",
-   "ase/conda-forge/noarch/ase-3.18.2-py_0",
-   "ase/conda-forge/noarch/ase-3.20.1-py_0",
-   "ase/conda-forge/noarch/ase-3.21.0-pyhd8ed1ab_0"
   ],
   "ast": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -101,12 +150,6 @@
   "collections": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "colorama": [
-   "colorama/conda-forge/noarch/colorama-0.3.9-py_1",
-   "colorama/conda-forge/noarch/colorama-0.4.1-py_0",
-   "colorama/conda-forge/noarch/colorama-0.4.3-py_0",
-   "colorama/conda-forge/noarch/colorama-0.4.4-pyh9f0ad1d_0"
   ],
   "contextlib": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -136,14 +179,6 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "logging": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "lzma": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "math": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -153,46 +188,11 @@
    "matplotlib-base/conda-forge/linux-64/matplotlib-base-3.1.1-py38h250f245_2",
    "matplotlib/conda-forge/linux-64/matplotlib-1.5.3-np111py34_0"
   ],
-  "multiprocessing": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "netCDF4": [
-   "netcdf4/conda-forge/linux-64/netcdf4-1.2.4-np111py35_1",
-   "netcdf4/conda-forge/linux-64/netcdf4-1.5.1.2-py27had58050_0",
-   "netcdf4/conda-forge/linux-64/netcdf4-1.5.5.1-mpi_openmpi_py39h16caffe_0"
-  ],
-  "ntpath": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "numpy": [
    "numpy/conda-forge/linux-64/numpy-1.17.5-py36h95a1406_0",
    "numpy/conda-forge/linux-64/numpy-1.18.4-py37h8960a57_0"
   ],
   "os": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "pyfftw": [
-   "pyfftw/conda-forge/linux-64/pyfftw-0.10.1-np111py34_0",
-   "pyfftw/conda-forge/linux-64/pyfftw-0.10.4-np113py36_1",
-   "pyfftw/conda-forge/linux-64/pyfftw-0.11.0-py27h3010b51_1001"
-  ],
-  "scipy": [
-   "scipy/conda-forge/linux-64/scipy-1.7.0-py37h29e03ee_0",
-   "scipy/conda-forge/linux-64/scipy-1.7.0-py37ha768fb6_1"
-  ],
-  "vtk": [
-   "paraview/conda-forge/linux-64/paraview-5.8.0rc3-py38hf29adf7_1",
-   "paraview/conda-forge/linux-64/paraview-5.9.0-py36hf5abf66_1",
-   "paraview/conda-forge/linux-64/paraview-5.9.0rc2-py39h8787616_5",
-   "tomviz/conda-forge/linux-64/tomviz-1.9.0.post145-py37h152eb46_1",
-   "vtk/conda-forge/linux-64/vtk-7.0.0-py27_0",
-   "vtk/conda-forge/linux-64/vtk-7.1.1-py35_202",
-   "vtk/conda-forge/linux-64/vtk-9.0.1-no_osmesa_py37hd9d43e1_106"
-  ],
-  "xml": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ]

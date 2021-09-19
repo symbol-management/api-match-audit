@@ -14,14 +14,59 @@
   "_recursive_list_commands",
   "_safelen",
   "atexit",
+  "base64",
+  "base64.b32decode",
   "cancellation_iterator",
   "check_completed",
   "clean_help",
   "cleaned_item_name",
+  "click",
+  "click.BadParameter",
+  "click.Choice",
+  "click.ClickException",
+  "click.Command",
+  "click.Group",
+  "click.IntRange",
+  "click.MultiCommand",
+  "click.Option",
+  "click.ParamType",
+  "click.UUID",
+  "click.UsageError",
+  "click.argument",
+  "click.command",
+  "click.confirm",
+  "click.confirmation_option",
+  "click.echo",
+  "click.get_current_context",
+  "click.group",
+  "click.help_option",
+  "click.option",
+  "click.prompt",
   "collections.deque",
+  "configobj.ConfigObj",
+  "contextlib.contextmanager",
+  "cryptography.hazmat.backends.default_backend",
+  "cryptography.hazmat.primitives.hashes",
+  "cryptography.hazmat.primitives.hashes.SHA256",
+  "cryptography.hazmat.primitives.serialization",
   "cryptography.hazmat.primitives.serialization.Encoding.PEM",
+  "cryptography.hazmat.primitives.serialization.load_pem_private_key",
+  "cryptography.hazmat.primitives.serialization.load_pem_public_key",
+  "cryptography.x509",
+  "cryptography.x509.CertificateBuilder",
+  "cryptography.x509.ExtensionNotFound",
+  "cryptography.x509.Name",
+  "cryptography.x509.NameAttribute",
+  "cryptography.x509.ObjectIdentifier",
+  "cryptography.x509.extensions.UnrecognizedExtension",
+  "cryptography.x509.load_pem_x509_certificate",
   "cryptography.x509.oid.ExtensionOID.KEY_USAGE",
   "cryptography.x509.oid.NameOID.COMMON_NAME",
+  "datetime",
+  "datetime.datetime.utcnow",
+  "datetime.timedelta",
+  "decorator",
+  "distutils.version.LooseVersion",
   "errno",
   "exchange_code_and_store_config",
   "f",
@@ -37,10 +82,19 @@
   "httplib.HTTPConnection.debuglevel",
   "json_converter",
   "kf",
+  "logging",
+  "logging.DEBUG",
+  "logging.basicConfig",
+  "logging.config",
+  "logging.getLogger",
   "match",
   "match_func",
   "none_to_null",
   "os.environ.get",
+  "os.path",
+  "os.path.expanduser",
+  "os.path.join",
+  "os.path.normpath",
   "os.umask",
   "os.urandom",
   "per_val_callback",
@@ -66,52 +120,7 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "base64": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "click": [
-   "click/conda-forge/noarch/click-5.1-py_0",
-   "click/conda-forge/noarch/click-6.7-py_1",
-   "click/conda-forge/noarch/click-7.0-py_0",
-   "click/conda-forge/noarch/click-7.1-pyh8c360ce_0",
-   "click/conda-forge/noarch/click-7.1.1-pyh8c360ce_0"
-  ],
-  "configobj": [
-   "configobj-dev/conda-forge/noarch/configobj-dev-2019.9.1-py_0",
-   "configobj/conda-forge/noarch/configobj-5.0.6-py_0"
-  ],
-  "contextlib": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "copy": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "cryptography": [
-   "cryptography/conda-forge/linux-64/cryptography-3.2.1-py37hc72a4ac_0",
-   "cryptography/conda-forge/linux-64/cryptography-3.3-py36h0a59100_0",
-   "cryptography/conda-forge/linux-64/cryptography-3.4.6-py38ha5dfef3_0"
-  ],
-  "datetime": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "decorator": [
-   "decorator/conda-forge/noarch/decorator-4.3.0-py_0",
-   "decorator/conda-forge/noarch/decorator-4.3.2-py_0",
-   "decorator/conda-forge/noarch/decorator-4.4.0-py_0",
-   "decorator/conda-forge/noarch/decorator-4.4.1-py_0",
-   "decorator/conda-forge/noarch/decorator-4.4.2-py_0",
-   "decorator/conda-forge/noarch/decorator-5.0.2-pyhd8ed1ab_0",
-   "decorator/conda-forge/noarch/decorator-5.0.3-pyhd8ed1ab_0",
-   "decorator/conda-forge/noarch/decorator-5.0.4-pyhd8ed1ab_0",
-   "decorator/conda-forge/noarch/decorator-5.0.5-pyhd8ed1ab_0",
-   "decorator/conda-forge/noarch/decorator-5.0.6-pyhd8ed1ab_0",
-   "decorator/conda-forge/noarch/decorator-5.0.9-pyhd8ed1ab_0"
-  ],
-  "distutils": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -136,14 +145,6 @@
    "jmespath/conda-forge/noarch/jmespath-0.9.5-py_0"
   ],
   "json": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "logging": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "ntpath": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],

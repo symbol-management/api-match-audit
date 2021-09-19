@@ -5,11 +5,22 @@
   "GetValue",
   "boto.config.get",
   "errno",
+  "freezegun.freeze_time",
   "gcs_oauth2_boto_plugin.oauth2_client.CredTypes.OAUTH2_SERVICE_ACCOUNT",
   "gcs_oauth2_boto_plugin.oauth2_client.CredTypes.OAUTH2_USER_ACCOUNT",
+  "google_reauth.reauth_creds",
+  "google_reauth.reauth_creds.Oauth2WithReauthCredentials",
   "hashlib.sha1",
+  "httplib2",
+  "httplib2.Http",
+  "httplib2.ServerNotFoundError",
   "io.open",
+  "logging",
+  "logging.getLogger",
+  "mock",
   "mock.patch",
+  "oauth2client.client",
+  "oauth2client.service_account",
   "os.O_BINARY",
   "os.O_CREAT",
   "os.O_EXCL",
@@ -18,18 +29,34 @@
   "os.environ.get",
   "os.getuid",
   "os.open",
+  "os.path.abspath",
+  "os.path.join",
   "os.stat",
   "os.unlink",
+  "retry_decorator.retry_decorator",
+  "six",
+  "six.BytesIO",
+  "six.ensure_binary",
+  "six.ensure_text",
   "six.moves.input",
   "six.moves.urllib",
   "six.moves.urllib.parse.parse_qs",
   "six.moves.urllib.parse.urlencode",
+  "six.text_type",
+  "socket",
   "socket.error",
+  "socks",
+  "stat",
+  "stat.S_IMODE",
   "sys",
   "sys.stdout.write",
+  "tempfile",
   "threading",
   "threading.Lock",
   "time",
+  "unittest",
+  "unittest.TestCase",
+  "unittest.main",
   "webbrowser",
   "webbrowser.open"
  ],
@@ -45,19 +72,6 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "freezegun": [
-   "freezegun/conda-forge/noarch/freezegun-0.3.13-py_0",
-   "freezegun/conda-forge/noarch/freezegun-0.3.14-py_0",
-   "freezegun/conda-forge/noarch/freezegun-0.3.15-py_0",
-   "freezegun/conda-forge/noarch/freezegun-1.0.0-py_0"
-  ],
-  "google_reauth": [
-   "google-reauth/conda-forge/noarch/google-reauth-0.1.0-pyh9f0ad1d_0",
-   "google-reauth/conda-forge/noarch/google-reauth-0.1.1-pyhd3deb0d_0"
-  ],
-  "httplib2": [
-   "httplib2/conda-forge/noarch/httplib2-0.19.0-pyhd8ed1ab_0"
-  ],
   "io": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -66,53 +80,7 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "logging": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "mock": [
-   "mock/conda-forge/linux-64/mock-2.0.0-py27_1000",
-   "mock/conda-forge/linux-64/mock-3.0.3-py37_0"
-  ],
-  "ntpath": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "oauth2client": [
-   "oauth2client/conda-forge/noarch/oauth2client-4.1.2-py_1",
-   "oauth2client/conda-forge/noarch/oauth2client-4.1.3-py_0"
-  ],
   "os": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "retry_decorator": [
-   "retry_decorator/conda-forge/noarch/retry_decorator-1.1.1-pyh9f0ad1d_0"
-  ],
-  "six": [
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0",
-   "six/conda-forge/noarch/six-1.14.0-py_1",
-   "six/conda-forge/noarch/six-1.16.0-pyh6c4a22f_0"
-  ],
-  "socket": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "socks": [
-   "pysocks/conda-forge/linux-64/pysocks-1.6.8-py35_1",
-   "pysocks/conda-forge/osx-64/pysocks-1.6.6-py36_0",
-   "socksipy-branch/conda-forge/noarch/socksipy-branch-1.01-pyh9f0ad1d_0"
-  ],
-  "stat": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "tempfile": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "unittest": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ]

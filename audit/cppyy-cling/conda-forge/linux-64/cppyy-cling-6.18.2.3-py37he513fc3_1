@@ -49,9 +49,28 @@
   "clang.cindex.Diagnostic.Warning",
   "clang.cindex.TokenKind.PUNCTUATION",
   "collections.Mapping",
+  "cppyy",
+  "cppyy.gbl",
+  "cppyy.load_reflection_info",
+  "ctypes.RTLD_GLOBAL",
   "get_basic_cppflags",
   "get_include_dir",
   "get_library_dir",
+  "gettext",
+  "gettext.install",
+  "imp.load_source",
+  "importlib.util",
+  "inspect",
+  "inspect.getdoc",
+  "inspect.getmembers",
+  "inspect.isroutine",
+  "logging",
+  "logging.DEBUG",
+  "logging.ERROR",
+  "logging.INFO",
+  "logging.WARNING",
+  "logging.basicConfig",
+  "logging.getLogger",
   "map_operator_name",
   "mark_forward_kinds",
   "os.R_OK",
@@ -61,21 +80,39 @@
   "os.environ.get",
   "os.getcwd",
   "os.listdir",
+  "os.path.abspath",
+  "os.path.basename",
+  "os.path.dirname",
   "os.path.exists",
   "os.path.isfile",
+  "os.path.join",
+  "os.path.sep",
+  "os.path.splitext",
   "os.putenv",
   "os.stat",
   "re.I",
+  "setuptools",
+  "setuptools.command.build_py.build_py",
+  "setuptools.command.build_py.build_py.run",
+  "setuptools.setup",
+  "subprocess",
+  "subprocess.CalledProcessError",
+  "subprocess.STDOUT",
+  "subprocess.call",
+  "subprocess.check_output",
   "sys",
   "sys.argv.find",
-  "warnings.warn"
+  "sysconfig",
+  "sysconfig.get_config_var",
+  "traceback",
+  "traceback.format_exc",
+  "warnings",
+  "warnings.warn",
+  "wheel.bdist_wheel.bdist_wheel",
+  "wheel.bdist_wheel.bdist_wheel.finalize_options"
  ],
  "deps": {
   "__future__": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "_ctypes": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -111,11 +148,6 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "cppyy": [
-   "cppyy/conda-forge/linux-64/cppyy-1.5.4-py27hc9558a2_1",
-   "cppyy/conda-forge/linux-64/cppyy-1.6.1-py37h192cbe9_0",
-   "cppyy/conda-forge/linux-64/cppyy-2.1.0-py39ha3ed2ce_0"
-  ],
   "ctypes": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -124,35 +156,11 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "gettext": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "glob": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "imp": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "importlib": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "inspect": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "json": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "logging": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "ntpath": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -163,32 +171,6 @@
   "re": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "setuptools": [
-   "setuptools/conda-forge/linux-64/setuptools-40.6.1-py36_0",
-   "setuptools/conda-forge/linux-64/setuptools-46.3.0-py38h32f6830_0",
-   "setuptools/conda-forge/linux-64/setuptools-49.1.2-py38h32f6830_0"
-  ],
-  "subprocess": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "sysconfig": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "traceback": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "warnings": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "wheel": [
-   "wheel/conda-forge/linux-64/wheel-0.33.4-py37_0",
-   "wheel/conda-forge/noarch/wheel-0.35.0-pyh9f0ad1d_0",
-   "wheel/conda-forge/noarch/wheel-0.36.1-pyhd3deb0d_0"
   ]
  }
 }

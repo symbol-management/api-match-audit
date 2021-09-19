@@ -8,6 +8,9 @@
   "acados_template.AcadosOcpSolver",
   "biorbd.Model.ForwardDynamics",
   "biorbd.Model.ForwardDynamicsConstraintsDirect",
+  "bioviz",
+  "bioviz.Viz",
+  "casadi",
   "casadi.Callback",
   "casadi.DM",
   "casadi.Function",
@@ -57,6 +60,8 @@
   "get_objective_functions",
   "get_objective_values",
   "ifcn",
+  "inspect",
+  "inspect.signature",
   "interfaces.acados_interface.AcadosInterface",
   "interfaces.ipopt_interface.IpoptInterface",
   "lfcn",
@@ -105,6 +110,7 @@
   "misc.enums.Solver.ACADOS",
   "misc.enums.Solver.IPOPT",
   "misc.enums.Solver.NONE",
+  "multiprocessing",
   "multiprocessing.Queue",
   "non_linear_program.NonLinearProgram.add",
   "non_linear_program.NonLinearProgram.add_path_condition",
@@ -124,6 +130,8 @@
   "objective_functions.ObjectiveFunction.MayerFunction",
   "optimization.solution.Solution.SimplifiedOCP",
   "os.path.isdir",
+  "os.path.split",
+  "os.path.splitext",
   "penalty.PenaltyFunctionAbstract._parameter_modifier",
   "penalty.PenaltyFunctionAbstract._span_checker",
   "penalty.PenaltyFunctionAbstract.add_or_replace",
@@ -154,6 +162,9 @@
   "penalty.PenaltyType.TRACK_SEGMENT_WITH_CUSTOM_RT",
   "penalty.PenaltyType.TRACK_STATE",
   "penalty.PenaltyType.TRACK_TORQUE",
+  "pickle",
+  "pickle.dump",
+  "pickle.load",
   "print_constraints",
   "print_objective_functions",
   "problem.Problem.custom",
@@ -167,27 +178,24 @@
   "problem.Problem.torque_activations_driven_with_contact",
   "problem.Problem.torque_driven",
   "problem.Problem.torque_driven_with_contact",
+  "scipy.interpolate",
+  "scipy.interpolate.interp1d",
+  "scipy.interpolate.splev",
+  "scipy.interpolate.splrep",
+  "scipy.linalg",
+  "scipy.linalg.block_diag",
   "send",
   "spline",
   "tfcn",
+  "typing.Any",
+  "typing.Callable",
+  "typing.Union",
   "warnings.warn"
  ],
  "deps": {
-  "_pickle": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "biorbd": [
    "biorbd/conda-forge/linux-64/biorbd-1.4.4-py36_casadi_h51c87da_0",
    "biorbd/conda-forge/linux-64/biorbd-1.4.4-py37_casadi_h10fe0fe_0"
-  ],
-  "bioviz": [
-   "bioviz/conda-forge/linux-64/bioviz-2.0.0-py37_casadi_h905994a_0",
-   "bioviz/conda-forge/linux-64/bioviz-2.1.0-py38_eigen_h0c77c26_1"
-  ],
-  "casadi": [
-   "casadi/conda-forge/linux-64/casadi-3.4.3-py35_blas_openblas_0",
-   "casadi/conda-forge/linux-64/casadi-3.5.5-py38hd0c8a5a_4"
   ],
   "copy": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -202,10 +210,6 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "inspect": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "math": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -214,14 +218,6 @@
    "matplotlib-base/conda-forge/linux-64/matplotlib-base-3.1.1-py37hfd891ef_0",
    "matplotlib-base/conda-forge/linux-64/matplotlib-base-3.1.1-py38h250f245_2",
    "matplotlib/conda-forge/linux-64/matplotlib-1.5.3-np111py34_0"
-  ],
-  "multiprocessing": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "ntpath": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "numpy": [
    "numpy/conda-forge/linux-64/numpy-1.17.5-py36h95a1406_0",
@@ -242,19 +238,7 @@
    "packaging/conda-forge/noarch/packaging-20.8-pyhd3deb0d_0",
    "packaging/conda-forge/noarch/packaging-21.0-pyhd8ed1ab_0"
   ],
-  "pickle": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "scipy": [
-   "scipy/conda-forge/linux-64/scipy-1.7.0-py37h29e03ee_0",
-   "scipy/conda-forge/linux-64/scipy-1.7.0-py37ha768fb6_1"
-  ],
   "tkinter": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "typing": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ]

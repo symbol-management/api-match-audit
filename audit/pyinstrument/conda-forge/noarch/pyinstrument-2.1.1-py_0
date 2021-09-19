@@ -6,10 +6,10 @@
   "codecs.lookup",
   "collections.deque",
   "django.conf.settings",
-  "django.http.HttpResponse",
-  "django.utils.deprecation.MiddlewareMixin",
   "frame_for_stack",
   "functools.partial",
+  "importlib",
+  "importlib.import_module",
   "io.BytesIO",
   "io.StringIO",
   "itertools",
@@ -23,7 +23,12 @@
   "operator.methodcaller",
   "optparse.OptionParser",
   "os.mkdir",
+  "os.path.abspath",
+  "os.path.dirname",
   "os.path.exists",
+  "os.path.join",
+  "os.path.relpath",
+  "os.sep",
   "pyinstrument_cext.setstatprofile",
   "recorders.TimeAggregatingRecorder",
   "recorders.TimelineRecorder",
@@ -44,7 +49,8 @@
   "types.ClassType",
   "types.MethodType",
   "types.ModuleType",
-  "unicode"
+  "unicode",
+  "warnings"
  ],
  "deps": {
   "__future__": [
@@ -59,12 +65,17 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "functools": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  "django": [
+   "django/conda-forge/noarch/django-3.0.6-py_0",
+   "django/conda-forge/noarch/django-3.0.7-py_0",
+   "django/conda-forge/noarch/django-3.1.3-pyhd8ed1ab_0",
+   "django/conda-forge/noarch/django-3.1.4-pyhd8ed1ab_0",
+   "django/conda-forge/noarch/django-3.1.7-pyhd8ed1ab_0",
+   "django/conda-forge/noarch/django-3.2.2-pyhd8ed1ab_0",
+   "django/conda-forge/noarch/django-3.2.3-pyhd8ed1ab_0",
+   "django/conda-forge/noarch/django-3.2.5-pyhd8ed1ab_0"
   ],
-  "importlib": [
-   "importlib/conda-forge/linux-64/importlib-1.0.4-py26_0",
+  "functools": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -72,15 +83,7 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "ntpath": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "os": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "warnings": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ]
