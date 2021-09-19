@@ -11,20 +11,9 @@
   "actions",
   "atexit",
   "bytes.seek",
-  "chardet",
-  "chardet.detect",
   "check",
-  "click",
-  "click.Path",
-  "click.argument",
-  "click.group",
-  "click.option",
-  "click.secho",
-  "click.version_option",
-  "codecs",
   "codecs.BOM_UTF16_BE",
   "codecs.BOM_UTF16_LE",
-  "codecs.BOM_UTF8",
   "codecs.lookup",
   "collections.deque",
   "config.COMPRESSION_EXCEPTIONS",
@@ -68,29 +57,8 @@
   "config.items",
   "contains_posix_var",
   "contains_windows_var",
-  "copy.copy",
-  "copy.deepcopy",
   "create",
-  "csv",
-  "csv.Error",
-  "csv.QUOTE_MINIMAL",
   "csv.QUOTE_NONE",
-  "csv.Sniffer",
-  "csv.excel",
-  "csv.reader",
-  "data",
-  "datetime",
-  "datetime.date",
-  "datetime.datetime",
-  "datetime.datetime.now",
-  "datetime.datetime.strptime",
-  "datetime.time",
-  "datetime.timedelta",
-  "dateutil.parser",
-  "dateutil.parser.isoparse",
-  "dateutil.parser.parse",
-  "decimal",
-  "decimal.Decimal",
   "decimal.InvalidOperation",
   "dialects.InlineDialect",
   "dict.__setitem__",
@@ -141,19 +109,8 @@
   "errors.UniqueError",
   "exceptions.FrictionlessException",
   "func",
-  "functools",
   "functools.partial",
-  "functools.wraps",
-  "gdown",
-  "gdown.download",
-  "glob",
-  "glob.glob",
-  "glob.has_magic",
-  "gzip",
-  "gzip.BadGzipFile",
-  "gzip.open",
   "hash.split",
-  "hashlib",
   "hashlib.sha256",
   "helpers.ControlledDict",
   "helpers.ControlledList",
@@ -178,29 +135,18 @@
   "index_class",
   "infer",
   "internal_delete",
-  "io",
   "io.BufferedRandom",
   "io.BytesIO",
   "io.DEFAULT_BUFFER_SIZE",
-  "io.RawIOBase",
-  "io.SEEK_CUR",
-  "io.SEEK_END",
-  "io.SEEK_SET",
   "io.StringIO",
   "io.TextIOWrapper",
   "io.open",
   "itertools",
   "itertools.chain.from_iterable",
-  "json",
-  "json.decoder.JSONDecodeError",
-  "json.dump",
-  "json.dumps",
-  "json.loads",
   "list.__setitem__",
   "main.program.command",
   "metadata.Metadata.property",
   "metadata_property",
-  "multiprocessing",
   "multiprocessing.Pool",
   "multiprocessing.cpu_count",
   "os.environ.get",
@@ -240,11 +186,78 @@
   "zipfile.BadZipfile"
  ],
  "deps": {
+  "_csv": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "base64": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "chardet": [
+   "chardet/conda-forge/linux-64/chardet-3.0.2-py35_1",
+   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
+   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0"
+  ],
+  "click": [
+   "click/conda-forge/noarch/click-5.1-py_0",
+   "click/conda-forge/noarch/click-6.7-py_1",
+   "click/conda-forge/noarch/click-7.0-py_0",
+   "click/conda-forge/noarch/click-7.1-pyh8c360ce_0",
+   "click/conda-forge/noarch/click-7.1.1-pyh8c360ce_0"
+  ],
+  "codecs": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "collections": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "copy": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "csv": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "data": [
+   "dateparser/conda-forge/noarch/dateparser-0.6.0-py_0"
+  ],
+  "datetime": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "dateutil": [
+   "python-dateutil/conda-forge/noarch/python-dateutil-2.7.2-py_0",
+   "python-dateutil/conda-forge/noarch/python-dateutil-2.7.4-py_0",
+   "python-dateutil/conda-forge/noarch/python-dateutil-2.7.5-py_0",
+   "python-dateutil/conda-forge/noarch/python-dateutil-2.8.1-py_0",
+   "python-dateutil/conda-forge/noarch/python-dateutil-2.8.2-pyhd8ed1ab_0"
+  ],
+  "decimal": [
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "functools": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "gdown": [
+   "gdown/conda-forge/noarch/gdown-3.11.0-pyh9f0ad1d_0",
+   "gdown/conda-forge/noarch/gdown-3.11.1-pyh9f0ad1d_0",
+   "gdown/conda-forge/noarch/gdown-3.12.2-pyh9f0ad1d_0",
+   "gdown/conda-forge/noarch/gdown-3.13.0-pyhd8ed1ab_0",
+   "gdown/conda-forge/noarch/gdown-3.9.0-py_0"
+  ],
+  "glob": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "gzip": [
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "hashlib": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -265,8 +278,16 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "io": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "isodate": [
    "isodate/conda-forge/noarch/isodate-0.6.0-py_0"
+  ],
+  "json": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "jsonlines": [
    "jsonlines/conda-forge/noarch/jsonlines-1.2.0-py_1",
@@ -277,6 +298,10 @@
    "jsonschema/conda-forge/noarch/jsonschema-3.2.0-pyhd8ed1ab_3"
   ],
   "logging": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "multiprocessing": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
