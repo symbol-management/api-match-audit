@@ -9,16 +9,95 @@
   "directive_class",
   "io.StringIO",
   "itertools",
+  "jinja2",
+  "jinja2.Environment",
+  "jinja2.StrictUndefined",
+  "jinja2.nodes.Name",
+  "markdown_it.MarkdownIt",
+  "markdown_it.common.utils.escapeHtml",
+  "markdown_it.renderer.RendererHTML",
+  "markdown_it.token.NestedTokens",
+  "markdown_it.token.Token",
+  "markdown_it.token.nest_tokens",
+  "markdown_it.utils.AttrDict",
+  "mdit_py_plugins.amsmath.amsmath_plugin",
+  "mdit_py_plugins.anchors.anchors_plugin",
+  "mdit_py_plugins.colon_fence.colon_fence_plugin",
+  "mdit_py_plugins.deflist.deflist_plugin",
+  "mdit_py_plugins.dollarmath.dollarmath_plugin",
+  "mdit_py_plugins.footnote.footnote_plugin",
+  "mdit_py_plugins.front_matter.front_matter_plugin",
+  "mdit_py_plugins.myst_blocks.myst_block_plugin",
+  "mdit_py_plugins.myst_role.myst_role_plugin",
+  "mdit_py_plugins.substitution.substitution_plugin",
   "myst_parser.__init__.__version__",
   "myst_parser.__init__.setup_sphinx",
   "re.MULTILINE",
   "role_func",
+  "sphinx.addnodes",
+  "sphinx.addnodes.meta",
+  "sphinx.addnodes.pending_xref",
+  "sphinx.addnodes.seealso",
+  "sphinx.application.Sphinx",
+  "sphinx.application.builtin_extensions",
+  "sphinx.config.Config",
+  "sphinx.directives.SphinxDirective",
+  "sphinx.domains.math.MathDomain",
+  "sphinx.domains.std.StandardDomain",
+  "sphinx.environment.BuildEnvironment",
+  "sphinx.environment.NoUri",
+  "sphinx.errors.NoUri",
+  "sphinx.events.EventManager",
+  "sphinx.ext.mathjax",
+  "sphinx.ext.mathjax.html_visit_displaymath",
+  "sphinx.io.SphinxStandaloneReader",
+  "sphinx.locale._",
+  "sphinx.locale.__",
+  "sphinx.parsers.Parser",
+  "sphinx.project.Project",
+  "sphinx.registry.SphinxComponentRegistry",
+  "sphinx.transforms.post_transforms.ReferencesResolver",
   "sphinx.util.console.bold",
+  "sphinx.util.docname_join",
+  "sphinx.util.docutils.additional_nodes",
   "sphinx.util.docutils.additional_nodes.discard",
+  "sphinx.util.docutils.sphinx_domains",
+  "sphinx.util.docutils.unregister_node",
+  "sphinx.util.logging",
+  "sphinx.util.logging.getLogger",
+  "sphinx.util.math.get_node_equation_number",
+  "sphinx.util.nodes.clean_astext",
+  "sphinx.util.nodes.make_refnode",
+  "sphinx.util.tags.Tags",
+  "sphinx.version_info",
+  "sphinx.writers.html.HTMLTranslator",
   "stringify",
   "sys",
+  "tempfile",
   "test_func",
-  "time"
+  "textwrap.dedent",
+  "time",
+  "types.ModuleType",
+  "typing.Any",
+  "typing.Callable",
+  "typing.Dict",
+  "typing.Iterable",
+  "typing.Iterator",
+  "typing.List",
+  "typing.Optional",
+  "typing.TYPE_CHECKING",
+  "typing.Tuple",
+  "typing.Type",
+  "typing.Union",
+  "typing.cast",
+  "urllib.parse.quote",
+  "urllib.parse.unquote",
+  "urllib.parse.urlparse",
+  "uuid.uuid4",
+  "yaml",
+  "yaml.parser.ParserError",
+  "yaml.safe_load",
+  "yaml.scanner.ScannerError"
  ],
  "deps": {
   "argparse": [
@@ -57,32 +136,9 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "jinja2": [
-   "jinja2/conda-forge/noarch/jinja2-2.10-py_1",
-   "jinja2/conda-forge/noarch/jinja2-2.11.3-pyh44b312d_0",
-   "jinja2/conda-forge/noarch/jinja2-3.0.0-pyhd8ed1ab_0",
-   "jinja2/conda-forge/noarch/jinja2-3.0.1-pyhd8ed1ab_0"
-  ],
   "json": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "markdown_it": [
-   "markdown-it-py/conda-forge/noarch/markdown-it-py-0.4.3-py_0",
-   "markdown-it-py/conda-forge/noarch/markdown-it-py-0.4.5-py_0",
-   "markdown-it-py/conda-forge/noarch/markdown-it-py-0.4.9-py_0",
-   "markdown-it-py/conda-forge/noarch/markdown-it-py-0.5.1-py_0",
-   "markdown-it-py/conda-forge/noarch/markdown-it-py-0.5.5-py_0",
-   "markdown-it-py/conda-forge/noarch/markdown-it-py-0.5.7-pyhd8ed1ab_0",
-   "markdown-it-py/conda-forge/noarch/markdown-it-py-0.5.8-pyhd8ed1ab_0",
-   "markdown-it-py/conda-forge/noarch/markdown-it-py-0.6.0-pyhd8ed1ab_0",
-   "markdown-it-py/conda-forge/noarch/markdown-it-py-0.6.1-pyhd8ed1ab_0",
-   "markdown-it-py/conda-forge/noarch/markdown-it-py-0.6.2-pyhd8ed1ab_0",
-   "markdown-it-py/conda-forge/noarch/markdown-it-py-1.1.0-pyhd8ed1ab_0"
-  ],
-  "mdit_py_plugins": [
-   "mdit-py-plugins/conda-forge/noarch/mdit-py-plugins-0.2.6-pyhd8ed1ab_0",
-   "mdit-py-plugins/conda-forge/noarch/mdit-py-plugins-0.2.8-pyhd8ed1ab_0"
   ],
   "ntpath": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -100,40 +156,6 @@
   "re": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "sphinx": [
-   "sphinx/conda-forge/noarch/sphinx-2.1.0-py_0",
-   "sphinx/conda-forge/noarch/sphinx-2.2.0-py_0"
-  ],
-  "tempfile": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "textwrap": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "types": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "typing": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "urllib": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "uuid": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "yaml": [
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0",
-   "pyyaml/conda-forge/linux-64/pyyaml-3.11-py35_0",
-   "pyyaml/conda-forge/win-64/pyyaml-5.2-py36hfa6e2cd_0"
   ]
  }
 }

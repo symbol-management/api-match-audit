@@ -8,9 +8,51 @@
   "cytoolz.partial",
   "cytoolz.pipe",
   "eth_account._utils.legacy_transactions.Transaction.from_bytes",
+  "eth_keyfile.create_keyfile_json",
+  "eth_keyfile.decode_keyfile_json",
+  "eth_keys.KeyAPI",
+  "eth_keys.exceptions.ValidationError",
+  "eth_keys.keys",
   "eth_keys.keys.PrivateKey",
+  "eth_rlp.HashableRLP",
+  "eth_typing.Address",
+  "eth_typing.Hash32",
+  "eth_utils.ValidationError",
+  "eth_utils.curried.ValidationError",
+  "eth_utils.curried.apply_formatter_to_array",
+  "eth_utils.curried.apply_formatters_to_dict",
+  "eth_utils.curried.apply_formatters_to_sequence",
+  "eth_utils.curried.apply_one_of_formatters",
+  "eth_utils.curried.combomethod",
+  "eth_utils.curried.hexstr_if_str",
+  "eth_utils.curried.is_0x_prefixed",
+  "eth_utils.curried.is_address",
+  "eth_utils.curried.is_bytes",
+  "eth_utils.curried.is_dict",
+  "eth_utils.curried.is_integer",
+  "eth_utils.curried.is_list_like",
+  "eth_utils.curried.is_string",
+  "eth_utils.curried.keccak",
+  "eth_utils.curried.text_if_str",
+  "eth_utils.curried.to_bytes",
+  "eth_utils.curried.to_canonical_address",
+  "eth_utils.curried.to_int",
+  "eth_utils.curried.to_text",
+  "eth_utils.is_binary_address",
+  "eth_utils.is_checksum_address",
+  "eth_utils.keccak",
+  "eth_utils.to_bytes",
+  "eth_utils.to_int",
+  "eth_utils.to_tuple",
+  "eth_utils.toolz",
+  "eth_utils.toolz.first",
+  "hashlib",
+  "hashlib.pbkdf2_hmac",
   "hashlib.sha256",
   "hashlib.sha512",
+  "hexbytes.HexBytes",
+  "hmac",
+  "hmac.new",
   "int.__new__",
   "itertools",
   "mnemonic.Mnemonic.detect_language",
@@ -19,6 +61,15 @@
   "os.urandom",
   "tuple.__getitem__",
   "typed_transactions.TypedTransaction.from_dict",
+  "typing.Any",
+  "typing.Dict",
+  "typing.List",
+  "typing.NamedTuple",
+  "typing.Tuple",
+  "typing.Type",
+  "typing.Union",
+  "typing.cast",
+  "warnings",
   "warnings.warn"
  ],
  "deps": {
@@ -32,37 +83,6 @@
   "eth_abi": [
    "eth-abi/conda-forge/noarch/eth-abi-2.1.1-py_0",
    "eth-abi/conda-forge/noarch/eth-abi-2.1.1-py_2"
-  ],
-  "eth_keyfile": [
-   "eth-keyfile/conda-forge/noarch/eth-keyfile-0.5.1-pyh9f0ad1d_1"
-  ],
-  "eth_keys": [
-   "eth-keys/conda-forge/noarch/eth-keys-0.3.3-pyh9f0ad1d_0"
-  ],
-  "eth_rlp": [
-   "eth-rlp/conda-forge/noarch/eth-rlp-0.1.2-py_0",
-   "eth-rlp/conda-forge/noarch/eth-rlp-0.2.0-py_0",
-   "eth-rlp/conda-forge/noarch/eth-rlp-0.2.1-py_0"
-  ],
-  "eth_typing": [
-   "eth-typing/conda-forge/noarch/eth-typing-2.2.1-py_0",
-   "eth-typing/conda-forge/noarch/eth-typing-2.2.2-py_0"
-  ],
-  "eth_utils": [
-   "eth-utils/conda-forge/linux-64/eth-utils-1.9.4-py37hc8dfbb8_1",
-   "eth-utils/conda-forge/linux-64/eth-utils-1.9.5-py36hc560c46_1"
-  ],
-  "hashlib": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "hexbytes": [
-   "hexbytes/conda-forge/noarch/hexbytes-0.2.1-py_0",
-   "hexbytes/conda-forge/noarch/hexbytes-0.2.2-pyhd8ed1ab_0"
-  ],
-  "hmac": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "json": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -92,20 +112,7 @@
   "secrets": [
    "python2-secrets/conda-forge/noarch/python2-secrets-1.0.5-py_0"
   ],
-  "toolz": [
-   "toolz/conda-forge/noarch/toolz-0.10.0-py_0",
-   "toolz/conda-forge/noarch/toolz-0.8.2-py_2",
-   "toolz/conda-forge/noarch/toolz-0.9.0-py_1"
-  ],
-  "typing": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "unicodedata": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "warnings": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ]

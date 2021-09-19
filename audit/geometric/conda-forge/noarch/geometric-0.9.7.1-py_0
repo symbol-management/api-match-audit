@@ -18,9 +18,6 @@
   "addons.using_psi4",
   "addons.using_qcengine",
   "addons.using_rdkit",
-  "argparse",
-  "argparse.ArgumentDefaultsHelpFormatter",
-  "argparse.ArgumentParser",
   "buildbox",
   "byref",
   "bz2",
@@ -33,16 +30,10 @@
   "convert",
   "covalent",
   "create_string_buffer",
-  "ctypes",
   "deepcopy",
   "dexdum_",
   "enum.Enum",
-  "filecmp",
-  "filecmp.cmp",
   "finish",
-  "forcebalance",
-  "forcebalance.gmxio.GMX",
-  "forcebalance.output",
   "func",
   "geometric.__init__._versions",
   "geometric.molecule.Elements.index",
@@ -53,22 +44,12 @@
   "geometric.optimize.OPT_STATE.NEEDS_EVALUATION",
   "geometric.optimize.__name__",
   "getLogger",
-  "gzip",
-  "gzip.GzipFile",
-  "imp",
-  "imp.find_module",
-  "importlib.util",
-  "importlib.util.find_spec",
   "io.StringIO",
   "itertools",
   "itertools.izip_longest",
   "load_bz2",
   "load_gz",
   "load_uncompress",
-  "logging",
-  "logging.config",
-  "logging.config.fileConfig",
-  "logging.getLogger",
   "magic_string",
   "mk_amat",
   "multi_dot",
@@ -124,10 +105,6 @@
   "ov",
   "pytest.mark.skipif",
   "readPDB",
-  "shutil",
-  "shutil.copy2",
-  "shutil.copytree",
-  "shutil.move",
   "simtk.openmm.CustomNonbondedForce",
   "simtk.openmm.CustomNonbondedForce.NoCutoff",
   "simtk.unit.kilojoule_per_mole",
@@ -139,6 +116,13 @@
   "string.replace",
   "string.rjust",
   "string.split",
+  "subprocess",
+  "subprocess.CalledProcessError",
+  "subprocess.PIPE",
+  "subprocess.Popen",
+  "subprocess.call",
+  "subprocess.check_call",
+  "subprocess.run",
   "sys",
   "sys.stderr.write",
   "sys.stdin.isatty",
@@ -164,6 +148,11 @@
    "pytest/conda-forge/linux-64/pytest-4.6.0-py37_0",
    "pytest/conda-forge/linux-64/pytest-6.0.2-py37hc8dfbb8_0"
   ],
+  "argparse": [
+   "argparse/conda-forge/osx-64/argparse-1.4.0-py26_0",
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "collections": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -172,11 +161,39 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "ctypes": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "datetime": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "filecmp": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "forcebalance": [
+   "forcebalance/conda-forge/linux-64/forcebalance-1.8.0-py37h6dcda5c_0",
+   "forcebalance/conda-forge/osx-64/forcebalance-1.7.3-py36h63ed162_0"
+  ],
+  "gzip": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "imp": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "importlib": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "json": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "logging": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -256,6 +273,10 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "shutil": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "simtk": [
    "openmm/conda-forge/linux-64/openmm-7.5.0-py38hc16d3cc_6",
    "openmm/conda-forge/linux-64/openmm-7.5.1-py36heb70152_1"
@@ -271,10 +292,6 @@
    "six/conda-forge/noarch/six-1.16.0-pyh6c4a22f_0"
   ],
   "string": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "subprocess": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],

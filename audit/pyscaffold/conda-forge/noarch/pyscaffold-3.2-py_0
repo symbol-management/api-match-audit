@@ -21,11 +21,19 @@
   "checker",
   "collections.abc.MutableMapping",
   "collections.defaultdict",
+  "colorama",
+  "colorama.init",
   "command",
   "contrib.ptr.PyTest",
+  "cookiecutter.main.cookiecutter",
+  "curses",
+  "distutils.cmd.Command",
+  "enum.Enum",
   "func",
   "functools.reduce",
   "future_builtins.map",
+  "getpass",
+  "getpass.getuser",
   "helpers.register",
   "helpers.unregister",
   "info.check_git",
@@ -38,6 +46,8 @@
   "io.open",
   "itertools",
   "itertools.chain.from_iterable",
+  "keyword",
+  "keyword.iskeyword",
   "local_scheme",
   "log.ReportFormatter.SPACING",
   "log.logger",
@@ -57,6 +67,15 @@
   "os.path.isfile",
   "os.path.samefile",
   "os.stat",
+  "pkg_resources",
+  "pkg_resources.DistributionNotFound",
+  "pkg_resources.evaluate_marker",
+  "pkg_resources.get_distribution",
+  "pkg_resources.invalid_marker",
+  "pkg_resources.iter_entry_points",
+  "pkg_resources.parse_version",
+  "pkg_resources.require",
+  "pkg_resources.resource_string",
   "posixpath.samestat",
   "pyscaffold.api.__init__.DEFAULT_OPTIONS",
   "pyscaffold.api.__init__._activate",
@@ -81,16 +100,17 @@
   "shell.git",
   "shell.shell_command_error2exit_decorator",
   "socket.gethostname",
-  "sphinx.setup_command.BuildDoc",
-  "string",
-  "string.Template",
   "structure.FileOp.NO_CREATE",
   "structure.FileOp.NO_OVERWRITE",
+  "subprocess",
+  "subprocess.CalledProcessError",
+  "subprocess.PIPE",
+  "subprocess.Popen",
+  "subprocess.STDOUT",
+  "subprocess.check_output",
+  "subprocess.list2cmdline",
   "sys",
   "sys.stdout.flush",
-  "tarfile",
-  "tarfile.DIRTYPE",
-  "tarfile.open",
   "templates.authors",
   "templates.changelog",
   "templates.conftest_py",
@@ -128,6 +148,8 @@
   "utils.move",
   "utils.prepare_namespace",
   "version_scheme",
+  "warnings",
+  "warnings.simplefilter",
   "warnings.warn"
  ],
  "deps": {
@@ -144,34 +166,17 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "backports": [
-   "configparser/conda-forge/noarch/configparser-5.0.0-py_0"
-  ],
   "collections": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "colorama": [
-   "colorama/conda-forge/noarch/colorama-0.3.9-py_1",
-   "colorama/conda-forge/noarch/colorama-0.4.1-py_0",
-   "colorama/conda-forge/noarch/colorama-0.4.3-py_0",
-   "colorama/conda-forge/noarch/colorama-0.4.4-pyh9f0ad1d_0"
-  ],
   "configparser": [
-   "configparser/conda-forge/linux-64/configparser-3.7.1-py27_1",
-   "configparser/conda-forge/noarch/configparser-5.0.0-py_0",
-   "configparser/conda-forge/noarch/configparser-5.0.1-py_0",
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "contextlib": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "cookiecutter": [
-   "cookiecutter/conda-forge/noarch/cookiecutter-1.7.0-py_0",
-   "cookiecutter/conda-forge/noarch/cookiecutter-1.7.2-pyh9f0ad1d_0",
-   "cookiecutter/conda-forge/noarch/cookiecutter-1.7.3-pyh6c4a22f_0"
   ],
   "copy": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -181,28 +186,11 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "curses": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "datetime": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "distutils": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "enum": [
-   "privy/conda-forge/noarch/privy-6.0.0-py_0",
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "functools": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "getpass": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -211,10 +199,6 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "io": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "keyword": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -238,11 +222,6 @@
    "pathlib/conda-forge/noarch/pathlib-1.0.1-py_1",
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "pkg_resources": [
-   "setuptools/conda-forge/linux-64/setuptools-40.6.1-py36_0",
-   "setuptools/conda-forge/linux-64/setuptools-46.3.0-py38h32f6830_0",
-   "setuptools/conda-forge/linux-64/setuptools-49.1.2-py38h32f6830_0"
   ],
   "platform": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -288,11 +267,32 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "subprocess": [
+  "sphinx": [
+   "sphinx/conda-forge/linux-64/sphinx-1.8.3-py36_1000",
+   "sphinx/conda-forge/noarch/sphinx-2.0.0-py_1",
+   "sphinx/conda-forge/noarch/sphinx-2.1.0-py_0",
+   "sphinx/conda-forge/noarch/sphinx-2.2.0-py_0",
+   "sphinx/conda-forge/noarch/sphinx-3.0.1-py_0",
+   "sphinx/conda-forge/noarch/sphinx-3.0.3-py_0",
+   "sphinx/conda-forge/noarch/sphinx-3.0.4-py_0",
+   "sphinx/conda-forge/noarch/sphinx-3.2.0-py_0",
+   "sphinx/conda-forge/noarch/sphinx-3.2.1-py_0",
+   "sphinx/conda-forge/noarch/sphinx-3.3.0-pyhd8ed1ab_0",
+   "sphinx/conda-forge/noarch/sphinx-3.3.1-pyhd8ed1ab_0",
+   "sphinx/conda-forge/noarch/sphinx-3.3.1-pyhd8ed1ab_1",
+   "sphinx/conda-forge/noarch/sphinx-3.4.2-pyhd8ed1ab_0",
+   "sphinx/conda-forge/noarch/sphinx-3.4.3-pyhd8ed1ab_0",
+   "sphinx/conda-forge/noarch/sphinx-3.5.2-pyhd8ed1ab_0",
+   "sphinx/conda-forge/noarch/sphinx-4.0.1-pyh6c4a22f_0",
+   "sphinx/conda-forge/noarch/sphinx-4.0.2-pyh6c4a22f_1",
+   "sphinx/conda-forge/noarch/sphinx-4.0.3-pyh6c4a22f_0",
+   "sphinx/conda-forge/noarch/sphinx-4.1.1-pyh6c4a22f_0"
+  ],
+  "string": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "warnings": [
+  "tarfile": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ]
