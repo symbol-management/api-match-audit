@@ -4,9 +4,28 @@
   "KD",
   "Response",
   "ca_certs_locater.get",
+  "calendar",
+  "calendar.timegm",
+  "certifi.where",
+  "email",
+  "email.feedparser",
+  "email.header",
+  "email.header.Header",
+  "email.header.decode_header",
+  "email.message",
+  "email.message.Message",
+  "email.message_from_bytes",
+  "email.utils",
+  "email.utils.parsedate_tz",
   "errno",
+  "gettext.gettext",
+  "gzip",
+  "gzip.GzipFile",
   "hashlib.md5",
   "hashlib.sha1",
+  "hmac",
+  "hmac.new",
+  "http.client",
   "httplib2.__init__.AUTH_SCHEME_CLASSES",
   "httplib2.__init__.AUTH_SCHEME_ORDER",
   "httplib2.__init__.AllHosts",
@@ -68,63 +87,52 @@
   "os.path.exists",
   "os.path.isfile",
   "os.remove",
+  "random",
+  "random.randrange",
   "re.ASCII",
+  "socket",
   "socket.IPPROTO_TCP",
   "socket.SHUT_RDWR",
   "socket.SOCK_STREAM",
   "socket.TCP_NODELAY",
+  "socket._GLOBAL_DEFAULT_TIMEOUT",
   "socket.error",
   "socket.gaierror",
+  "socket.getaddrinfo",
   "socket.gethostbyname",
   "socket.inet_aton",
   "socket.inet_ntoa",
+  "socket.socket",
   "socket.timeout",
+  "socks.socksocket",
+  "ssl",
   "ssl.CERT_NONE",
   "ssl.CERT_REQUIRED",
+  "ssl.CertificateError",
+  "ssl.SSLContext",
+  "ssl.SSLError",
+  "ssl.TLSVersion",
+  "ssl.match_hostname",
+  "struct",
   "struct.pack",
   "struct.unpack",
   "sys",
-  "time"
+  "time",
+  "unittest",
+  "unittest.TestCase",
+  "unittest.main",
+  "urllib.parse",
+  "zlib",
+  "zlib.MAX_WBITS",
+  "zlib.decompress",
+  "zlib.error"
  ],
  "deps": {
-  "_ssl": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "base64": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "calendar": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "certifi": [
-   "certifi/conda-forge/linux-64/certifi-2016.9.26-py27_0",
-   "certifi/conda-forge/linux-64/certifi-2020.12.5-py36hd000896_1"
-  ],
   "copy": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "email": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "gettext": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "gzip": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "hmac": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "http": [
-   "pies2overrides/conda-forge/osx-64/pies2overrides-2.6.7-py27_1000",
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -140,39 +148,7 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "random": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "re": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "socket": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "socks": [
-   "pysocks/conda-forge/linux-64/pysocks-1.6.8-py35_1",
-   "pysocks/conda-forge/osx-64/pysocks-1.6.6-py36_0",
-   "socksipy-branch/conda-forge/noarch/socksipy-branch-1.01-pyh9f0ad1d_0"
-  ],
-  "ssl": [
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "struct": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "unittest": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "urllib": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "zlib": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ]

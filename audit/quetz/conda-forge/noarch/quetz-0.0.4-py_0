@@ -27,16 +27,74 @@
   "db_models.User.username",
   "db_models.User.username.ilike",
   "db_models.User.username.isnot",
+  "fastapi.APIRouter",
+  "fastapi.Depends",
+  "fastapi.FastAPI",
+  "fastapi.File",
+  "fastapi.Form",
+  "fastapi.HTTPException",
+  "fastapi.Request",
+  "fastapi.UploadFile",
+  "fastapi.responses.HTMLResponse",
+  "fastapi.status",
+  "fastapi.status.HTTP_400_BAD_REQUEST",
+  "fastapi.status.HTTP_401_UNAUTHORIZED",
+  "fastapi.status.HTTP_403_FORBIDDEN",
+  "fastapi.status.HTTP_404_NOT_FOUND",
+  "fastapi.status.HTTP_409_CONFLICT",
   "io.BytesIO",
   "os.path.isfile",
+  "pydantic.BaseModel",
+  "pydantic.Field",
   "quetz.auth_github.validate_token",
   "quetz.config.github_client_id",
   "quetz.config.github_client_secret",
   "quetz.config.session_https_only",
   "quetz.config.session_secret",
   "quetz.config.sqlalchemy_database_url",
+  "secrets",
+  "secrets.token_urlsafe",
+  "shutil",
+  "shutil.copyfileobj",
+  "sqlalchemy.BLOB",
+  "sqlalchemy.Boolean",
+  "sqlalchemy.Column",
+  "sqlalchemy.DateTime",
+  "sqlalchemy.ForeignKey",
+  "sqlalchemy.Index",
+  "sqlalchemy.Integer",
+  "sqlalchemy.String",
+  "sqlalchemy.UniqueConstraint",
+  "sqlalchemy.create_engine",
+  "sqlalchemy.exc.IntegrityError",
+  "sqlalchemy.ext.declarative.declarative_base",
+  "sqlalchemy.func",
   "sqlalchemy.func.now",
+  "sqlalchemy.orm.Session",
+  "sqlalchemy.orm.aliased",
+  "sqlalchemy.orm.joinedload",
+  "sqlalchemy.orm.relationship",
+  "sqlalchemy.orm.sessionmaker",
+  "starlette.middleware.sessions.SessionMiddleware",
+  "starlette.responses.RedirectResponse",
+  "starlette.staticfiles.StaticFiles",
+  "subprocess",
+  "subprocess.run",
   "sys",
+  "tarfile",
+  "tarfile.open",
+  "toml",
+  "toml.TomlDecodeError",
+  "toml.load",
+  "typing.Any",
+  "typing.List",
+  "typing.NamedTuple",
+  "typing.Optional",
+  "typing.Type",
+  "uuid",
+  "uuid.UUID",
+  "uuid.uuid4",
+  "zipfile.ZipFile",
   "zstandard",
   "zstandard.ZstdDecompressor"
  ],
@@ -60,18 +118,6 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "fastapi": [
-   "fastapi/conda-forge/noarch/fastapi-0.55.0-py_0",
-   "fastapi/conda-forge/noarch/fastapi-0.56.0-py_0",
-   "fastapi/conda-forge/noarch/fastapi-0.57.0-py_0",
-   "fastapi/conda-forge/noarch/fastapi-0.58.0-py_0",
-   "fastapi/conda-forge/noarch/fastapi-0.60.0-py_0",
-   "fastapi/conda-forge/noarch/fastapi-0.61.0-py_0",
-   "fastapi/conda-forge/noarch/fastapi-0.62.0-pyhd8ed1ab_0",
-   "fastapi/conda-forge/noarch/fastapi-0.64.0-pyhd8ed1ab_0",
-   "fastapi/conda-forge/noarch/fastapi-0.65.2-pyhd8ed1ab_0",
-   "fastapi/conda-forge/noarch/fastapi-0.66.0-pyhd8ed1ab_0"
-  ],
   "json": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -81,60 +127,6 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "os": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "pydantic": [
-   "pydantic/conda-forge/linux-64/pydantic-1.7.2-py38h25fe258_0",
-   "pydantic/conda-forge/linux-64/pydantic-1.8-py37h6b43d8f_1"
-  ],
-  "secrets": [
-   "python2-secrets/conda-forge/noarch/python2-secrets-1.0.5-py_0"
-  ],
-  "shutil": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "sqlalchemy": [],
-  "starlette": [
-   "starlette-base/conda-forge/noarch/starlette-base-0.13.5-py_2",
-   "starlette-base/conda-forge/noarch/starlette-base-0.13.6-py_0",
-   "starlette/conda-forge/noarch/starlette-0.10.2-py_0",
-   "starlette/conda-forge/noarch/starlette-0.11.1-py_0",
-   "starlette/conda-forge/noarch/starlette-0.11.4-py_0",
-   "starlette/conda-forge/noarch/starlette-0.12.1-py_0",
-   "starlette/conda-forge/noarch/starlette-0.12.10-py_0",
-   "starlette/conda-forge/noarch/starlette-0.12.4-py_0",
-   "starlette/conda-forge/noarch/starlette-0.12.8-py_0",
-   "starlette/conda-forge/noarch/starlette-0.13.8-py_0",
-   "starlette/conda-forge/noarch/starlette-0.8.0-py_0",
-   "starlette/conda-forge/noarch/starlette-0.9.10-py_0"
-  ],
-  "subprocess": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "tarfile": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "toml": [
-   "toml/conda-forge/noarch/toml-0.10.0-py_0",
-   "toml/conda-forge/noarch/toml-0.10.1-pyh9f0ad1d_0",
-   "toml/conda-forge/noarch/toml-0.9.2-py_1",
-   "toml/conda-forge/noarch/toml-0.9.3.1-py_1",
-   "toml/conda-forge/noarch/toml-0.9.3.1-py_2",
-   "toml/conda-forge/noarch/toml-0.9.4-py_0"
-  ],
-  "typing": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "uuid": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "zipfile": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ]
