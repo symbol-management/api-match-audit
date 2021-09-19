@@ -20,6 +20,10 @@
   "_run_dialog",
   "_run_in_t",
   "_trim_formatted_text",
+  "abc",
+  "abc.ABCMeta",
+  "abc.abstractmethod",
+  "abc.abstractproperty",
   "add",
   "ansi_escape_sequences.ANSI_SEQUENCES.items",
   "ansi_escape_sequences.REVERSE_ANSI_SEQUENCES.get",
@@ -58,17 +62,8 @@
   "create_group_func",
   "create_line_generator",
   "create_transform_handler",
-  "ctypes.ArgumentError",
-  "ctypes.Structure",
-  "ctypes.Union",
   "ctypes.byref",
-  "ctypes.c_char",
-  "ctypes.c_long",
-  "ctypes.c_short",
-  "ctypes.c_uint",
-  "ctypes.c_ulong",
   "ctypes.pointer",
-  "ctypes.windll",
   "ctypes.windll.kernel32.CloseHandle",
   "ctypes.windll.kernel32.CreateConsoleScreenBuffer",
   "ctypes.windll.kernel32.CreateEventA",
@@ -90,12 +85,7 @@
   "ctypes.windll.kernel32.WaitForMultipleObjects",
   "ctypes.windll.kernel32.WriteConsoleW",
   "ctypes.windll.user32.RedrawWindow",
-  "ctypes.wintypes.BOOL",
-  "ctypes.wintypes.DWORD",
-  "ctypes.wintypes.HANDLE",
   "ctypes.wintypes.LPVOID",
-  "ctypes.wintypes.WCHAR",
-  "ctypes.wintypes.WORD",
   "cursor_pos_to_screen_pos",
   "depth",
   "dimension.Dimension.zero",
@@ -112,14 +102,10 @@
   "eventloop.Future.succeed",
   "explode_text_fragments",
   "f",
-  "fcntl",
-  "fcntl.ioctl",
   "filter_processor",
   "find_closest_generator",
   "func",
-  "functools",
   "functools.partial",
-  "functools.wraps",
   "future.Future",
   "future.Future.from_asyncio_future",
   "future.Future.succeed",
@@ -155,6 +141,10 @@
   "input.fileno",
   "input.handle",
   "input_is_ready_func",
+  "inspect",
+  "inspect.ArgSpec",
+  "inspect.getargspec",
+  "inspect.iscoroutine",
   "is_current_completion",
   "is_none",
   "is_scroll_button",
@@ -248,8 +238,6 @@
   "lexer_tokens_for_line",
   "log.logger.info",
   "log.logger.warning",
-  "math",
-  "math.ceil",
   "meta_width",
   "move",
   "move_cursor",
@@ -416,6 +404,9 @@
   "string.upper",
   "struct.unpack",
   "style.Style.from_dict",
+  "subprocess",
+  "subprocess.Popen",
+  "subprocess.call",
   "sys",
   "sys.platform.startswith",
   "sys.stderr.write",
@@ -442,9 +433,6 @@
   "time",
   "to_container",
   "to_text",
-  "traceback",
-  "traceback.format_tb",
-  "traceback.print_exc",
   "transform",
   "translate_rowcol",
   "unwrapper",
@@ -452,9 +440,6 @@
   "vt100.Vt100_Output.from_pty",
   "wait_for_responses",
   "walk",
-  "weakref",
-  "weakref.WeakKeyDictionary",
-  "weakref.WeakValueDictionary",
   "weakref.ref",
   "win32.Win32EventLoop",
   "win32.Win32Input",
@@ -474,11 +459,11 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "_threading_local": [
+  "_ctypes": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "abc": [
+  "_threading_local": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -514,11 +499,19 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "ctypes": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "datetime": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "inspect": [
+  "fcntl": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "functools": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -527,6 +520,10 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "logging": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "math": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -610,10 +607,6 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "struct": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "subprocess": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -781,6 +774,10 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "traceback": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "tty": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -798,6 +795,10 @@
    "wcwidth/conda-forge/noarch/wcwidth-0.2.4-pyh9f0ad1d_0",
    "wcwidth/conda-forge/noarch/wcwidth-0.2.5-pyh9f0ad1d_1",
    "wcwidth/conda-forge/noarch/wcwidth-0.2.5-pyh9f0ad1d_2"
+  ],
+  "weakref": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "xml": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",

@@ -1,9 +1,6 @@
 {
  "bad": [
-  "aiobotocore",
-  "aiobotocore.get_session",
   "bookstore.PACKAGE_DIR",
-  "botocore.exceptions.ClientError",
   "jinja2.Environment",
   "jinja2.FileSystemLoader",
   "nb_client_gen",
@@ -22,12 +19,9 @@
   "os.chdir",
   "os.getcwd",
   "pathlib.Path",
-  "pytest",
-  "pytest.fixture",
   "pytest.mark.asyncio",
   "pytest.mark.parametrize",
   "pytest.mark.usefixtures",
-  "pytest.raises",
   "requests",
   "requests.Session",
   "requests.get",
@@ -41,11 +35,8 @@
   "tornado.web.Application",
   "tornado.web.HTTPError",
   "tornado.web.authenticated",
-  "traitlets.Bool",
-  "traitlets.Integer",
-  "traitlets.Unicode",
-  "traitlets.config.Config",
-  "traitlets.config.LoggingConfigurable",
+  "typing.Dict",
+  "typing.NamedTuple",
   "unittest.mock.Mock",
   "uuid",
   "uuid.uuid4"
@@ -56,9 +47,66 @@
    "ipython/conda-forge/linux-64/ipython-7.10.2-py36h5ca1d4c_0",
    "ipython/conda-forge/linux-64/ipython-7.12.0-py36h5ca1d4c_0"
   ],
+  "_pytest": [
+   "pytest/conda-forge/linux-64/pytest-3.7.0-py27_0",
+   "pytest/conda-forge/linux-64/pytest-4.6.0-py37_0",
+   "pytest/conda-forge/linux-64/pytest-6.0.2-py37hc8dfbb8_0"
+  ],
+  "aiobotocore": [
+   "aiobotocore/conda-forge/noarch/aiobotocore-0.10.4-py_0",
+   "aiobotocore/conda-forge/noarch/aiobotocore-0.11.0-py_0",
+   "aiobotocore/conda-forge/noarch/aiobotocore-0.11.1-py_0",
+   "aiobotocore/conda-forge/noarch/aiobotocore-0.12.0-py_0",
+   "aiobotocore/conda-forge/noarch/aiobotocore-1.0.3-py_0",
+   "aiobotocore/conda-forge/noarch/aiobotocore-1.0.4-py_0",
+   "aiobotocore/conda-forge/noarch/aiobotocore-1.3.0-pyhd8ed1ab_0",
+   "aiobotocore/conda-forge/noarch/aiobotocore-1.3.1-pyhd8ed1ab_0",
+   "aiobotocore/conda-forge/noarch/aiobotocore-1.3.3-pyhd8ed1ab_0"
+  ],
   "asyncio": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "botocore": [
+   "botocore/conda-forge/noarch/botocore-1.10.23-py_0",
+   "botocore/conda-forge/noarch/botocore-1.10.29-py_0",
+   "botocore/conda-forge/noarch/botocore-1.10.42-py_0",
+   "botocore/conda-forge/noarch/botocore-1.10.47-py_0",
+   "botocore/conda-forge/noarch/botocore-1.10.5-py_0",
+   "botocore/conda-forge/noarch/botocore-1.10.78-py_0",
+   "botocore/conda-forge/noarch/botocore-1.12.110-py_0",
+   "botocore/conda-forge/noarch/botocore-1.12.118-py_0",
+   "botocore/conda-forge/noarch/botocore-1.12.134-py_0",
+   "botocore/conda-forge/noarch/botocore-1.12.135-py_0",
+   "botocore/conda-forge/noarch/botocore-1.12.201-py_0",
+   "botocore/conda-forge/noarch/botocore-1.12.223-py_0",
+   "botocore/conda-forge/noarch/botocore-1.12.224-py_0",
+   "botocore/conda-forge/noarch/botocore-1.12.35-py_0",
+   "botocore/conda-forge/noarch/botocore-1.12.47-py_0",
+   "botocore/conda-forge/noarch/botocore-1.12.48-py_0",
+   "botocore/conda-forge/noarch/botocore-1.12.90-py_0",
+   "botocore/conda-forge/noarch/botocore-1.13.0-py_2",
+   "botocore/conda-forge/noarch/botocore-1.13.31-py_0",
+   "botocore/conda-forge/noarch/botocore-1.13.41-py_0",
+   "botocore/conda-forge/noarch/botocore-1.14.16-py_0",
+   "botocore/conda-forge/noarch/botocore-1.15.13-py_0",
+   "botocore/conda-forge/noarch/botocore-1.15.39-pyh9f0ad1d_0",
+   "botocore/conda-forge/noarch/botocore-1.16.19-pyh9f0ad1d_0",
+   "botocore/conda-forge/noarch/botocore-1.16.8-pyh9f0ad1d_0",
+   "botocore/conda-forge/noarch/botocore-1.17.58-pyh9f0ad1d_0",
+   "botocore/conda-forge/noarch/botocore-1.18.8-pyh9f0ad1d_0",
+   "botocore/conda-forge/noarch/botocore-1.20.108-pyhd8ed1ab_0",
+   "botocore/conda-forge/noarch/botocore-1.20.111-pyhd8ed1ab_0",
+   "botocore/conda-forge/noarch/botocore-1.20.31-pyhd8ed1ab_0",
+   "botocore/conda-forge/noarch/botocore-1.20.44-pyhd8ed1ab_0",
+   "botocore/conda-forge/noarch/botocore-1.20.55-pyhd8ed1ab_0",
+   "botocore/conda-forge/noarch/botocore-1.20.67-pyhd8ed1ab_0",
+   "botocore/conda-forge/noarch/botocore-1.20.79-pyhd8ed1ab_0",
+   "botocore/conda-forge/noarch/botocore-1.20.8-pyhd8ed1ab_0",
+   "botocore/conda-forge/noarch/botocore-1.20.93-pyhd8ed1ab_0",
+   "botocore/conda-forge/noarch/botocore-1.21.4-pyhd8ed1ab_0",
+   "botocore/conda-forge/noarch/botocore-1.8.39-py_0",
+   "botocore/conda-forge/noarch/botocore-1.9.13-py_0"
   ],
   "copy": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -80,13 +128,20 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "pytest": [
+   "pytest/conda-forge/linux-64/pytest-3.7.0-py27_0",
+   "pytest/conda-forge/linux-64/pytest-4.6.0-py37_0",
+   "pytest/conda-forge/linux-64/pytest-6.0.2-py37hc8dfbb8_0"
+  ],
   "re": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "typing": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  "traitlets": [
+   "traitlets/conda-forge/noarch/traitlets-5.0.4-py_0",
+   "traitlets/conda-forge/noarch/traitlets-5.0.4-py_1",
+   "traitlets/conda-forge/noarch/traitlets-5.0.5-py_0",
+   "traitlets/conda-forge/noarch/traitlets-5.1.0-pyhd8ed1ab_0"
   ]
  }
 }

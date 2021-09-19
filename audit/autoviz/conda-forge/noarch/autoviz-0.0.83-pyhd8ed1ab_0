@@ -2,6 +2,7 @@
  "bad": [
   "cmap",
   "collections.defaultdict",
+  "datashader",
   "display",
   "find_remove_duplicates",
   "flatten",
@@ -14,6 +15,26 @@
   "io.StringIO",
   "left_subtract",
   "list_difference",
+  "matplotlib",
+  "matplotlib.pyplot",
+  "matplotlib.pyplot.axis",
+  "matplotlib.pyplot.close",
+  "matplotlib.pyplot.figure",
+  "matplotlib.pyplot.gca",
+  "matplotlib.pyplot.get_cmap",
+  "matplotlib.pyplot.imread",
+  "matplotlib.pyplot.imshow",
+  "matplotlib.pyplot.legend",
+  "matplotlib.pyplot.savefig",
+  "matplotlib.pyplot.scatter",
+  "matplotlib.pyplot.show",
+  "matplotlib.pyplot.subplot",
+  "matplotlib.pyplot.subplots",
+  "matplotlib.pyplot.suptitle",
+  "matplotlib.pyplot.xlabel",
+  "matplotlib.pyplot.ylabel",
+  "matplotlib.style.use",
+  "matplotlib.use",
   "numpy.empty",
   "numpy.int64",
   "numpy.nan",
@@ -23,6 +44,28 @@
   "numpy.uint8",
   "os.mkdir",
   "os.path.isdir",
+  "pandas",
+  "pandas.DataFrame",
+  "pandas.DatetimeIndex",
+  "pandas.Series",
+  "pandas.factorize",
+  "pandas.pivot_table",
+  "pandas.read_csv",
+  "pandas.read_excel",
+  "pandas.to_datetime",
+  "pandas.unique",
+  "scipy.stats.probplot",
+  "scipy.stats.skew",
+  "seaborn",
+  "seaborn.boxplot",
+  "seaborn.color_palette",
+  "seaborn.distplot",
+  "seaborn.heatmap",
+  "seaborn.regplot",
+  "seaborn.scatterplot",
+  "seaborn.set",
+  "seaborn.stripplot",
+  "seaborn.violinplot",
   "sklearn.exceptions.DataConversionWarning",
   "sklearn.feature_selection.mutual_info_classif",
   "sklearn.feature_selection.mutual_info_regression",
@@ -32,6 +75,8 @@
   "sklearn.multioutput.MultiOutputClassifier",
   "sys",
   "time",
+  "warnings",
+  "warnings.filterwarnings",
   "warnings.warn"
  ],
  "deps": {
@@ -46,16 +91,6 @@
   "copy": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "datashader": [
-   "datashader/conda-forge/noarch/datashader-0.10.0-py_0",
-   "datashader/conda-forge/noarch/datashader-0.11.0-pyh9f0ad1d_0",
-   "datashader/conda-forge/noarch/datashader-0.12.0-pyhd3deb0d_0",
-   "datashader/conda-forge/noarch/datashader-0.12.1-pyh44b312d_0",
-   "datashader/conda-forge/noarch/datashader-0.6.2-py_0",
-   "datashader/conda-forge/noarch/datashader-0.6.5-py_0",
-   "datashader/conda-forge/noarch/datashader-0.6.6-0",
-   "datashader/conda-forge/noarch/datashader-0.7.0-py_1"
   ],
   "holoviews": [
    "holoviews/conda-forge/noarch/holoviews-1.10.3-py_0",
@@ -88,11 +123,6 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "matplotlib": [
-   "matplotlib-base/conda-forge/linux-64/matplotlib-base-3.1.1-py37hfd891ef_0",
-   "matplotlib-base/conda-forge/linux-64/matplotlib-base-3.1.1-py38h250f245_2",
-   "matplotlib/conda-forge/linux-64/matplotlib-1.5.3-np111py34_0"
-  ],
   "ntpath": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -106,7 +136,6 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "pandas": [],
   "panel": [
    "panel/conda-forge/noarch/panel-0.10.0-py_0",
    "panel/conda-forge/noarch/panel-0.10.1-pyhd8ed1ab_0",
@@ -142,19 +171,6 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "scipy": [
-   "scipy/conda-forge/linux-64/scipy-0.17.1-np110py27_blas_openblas_202",
-   "scipy/conda-forge/linux-64/scipy-1.7.0-py37h29e03ee_0",
-   "scipy/conda-forge/linux-64/scipy-1.7.0-py37ha768fb6_1"
-  ],
-  "seaborn": [
-   "seaborn-base/conda-forge/noarch/seaborn-base-0.10.1-py_1",
-   "seaborn-base/conda-forge/noarch/seaborn-base-0.11.1-pyhd8ed1ab_1",
-   "seaborn/conda-forge/noarch/seaborn-0.10.0-py_0",
-   "seaborn/conda-forge/noarch/seaborn-0.10.0-py_1",
-   "seaborn/conda-forge/noarch/seaborn-0.10.1-py_0",
-   "seaborn/conda-forge/noarch/seaborn-0.9.0-py_0"
-  ],
   "sklearn": [
    "scikit-learn/conda-forge/linux-64/scikit-learn-0.17.1-np110py27_blas_openblas_200",
    "scikit-learn/conda-forge/linux-64/scikit-learn-0.17.1-np110py35_blas_openblas_202",
@@ -165,10 +181,6 @@
    "statsmodels/conda-forge/linux-64/statsmodels-0.9.0-py36h7eb728f_0"
   ],
   "traceback": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "warnings": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],

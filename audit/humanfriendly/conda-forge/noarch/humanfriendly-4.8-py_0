@@ -6,10 +6,19 @@
   "StringIO.StringIO",
   "Subject",
   "auto_encode",
+  "capturer.CaptureOutput",
   "codecs.encode",
   "cog",
   "cog.out",
   "collections.defaultdict",
+  "coloredlogs",
+  "coloredlogs.install",
+  "csv",
+  "csv.writer",
+  "decimal",
+  "decimal.Decimal",
+  "fcntl",
+  "fcntl.ioctl",
   "functools.partial",
   "highlight_column_name",
   "humanfriendly.__init__.CombinedUnit",
@@ -28,12 +37,16 @@
   "humanfriendly.__init__.round_number",
   "humanfriendly.__init__.show_cursor_code",
   "humanfriendly.__init__.time_units",
+  "humanfriendly.compat.unittest.SkipTest",
+  "humanfriendly.compat.unittest.TestCase",
   "humanfriendly.terminal.ANSI_COLOR_CODES.keys",
   "humanfriendly.terminal.ANSI_TEXT_STYLES.keys",
   "humanfriendly.terminal.output.replace",
   "humanfriendly.terminal.output.split",
   "humanfriendly.terminal.output.strip",
+  "importlib.import_module",
   "io.StringIO",
+  "multiprocessing",
   "normalize_columns",
   "os.chmod",
   "os.environ.get",
@@ -54,6 +67,10 @@
   "round_number",
   "struct.pack",
   "struct.unpack",
+  "subprocess",
+  "subprocess.PIPE",
+  "subprocess.Popen",
+  "subprocess.call",
   "sys",
   "sys.stderr.write",
   "sys.stdout.write",
@@ -63,13 +80,6 @@
   "trim_empty_lines"
  ],
  "deps": {
-  "_csv": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "capturer": [
-   "capturer/conda-forge/linux-64/capturer-3.0-py36h9f0ad1d_1"
-  ],
   "codecs": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -78,39 +88,11 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "coloredlogs": [
-   "coloredlogs/conda-forge/linux-64/coloredlogs-11.2-py36_0",
-   "coloredlogs/conda-forge/osx-64/coloredlogs-15.0-py39h6e9494a_0"
-  ],
-  "csv": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "decimal": [
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "fcntl": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "functools": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "getopt": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "humanfriendly": [
-   "humanfriendly/conda-forge/noarch/humanfriendly-4.12.1-py_0",
-   "humanfriendly/conda-forge/noarch/humanfriendly-4.15-py_0",
-   "humanfriendly/conda-forge/noarch/humanfriendly-4.15.1-py_0",
-   "humanfriendly/conda-forge/noarch/humanfriendly-4.16-py_0",
-   "humanfriendly/conda-forge/noarch/humanfriendly-4.16.1-py_0",
-   "humanfriendly/conda-forge/noarch/humanfriendly-4.8-py_0"
-  ],
-  "importlib": [
-   "importlib/conda-forge/linux-64/importlib-1.0.4-py26_0",
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -126,10 +108,6 @@
    "monotonic/conda-forge/linux-64/monotonic-1.1-py34_0",
    "monotonic/conda-forge/linux-64/monotonic-1.2-py27_0",
    "monotonic/conda-forge/noarch/monotonic-1.5-py_0"
-  ],
-  "multiprocessing": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "ntpath": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -175,10 +153,6 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "struct": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "subprocess": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],

@@ -25,6 +25,13 @@
   "api.reaction.seed.extract",
   "api.reaction.seed.load",
   "api.reaction.seed.transform",
+  "click_log",
+  "click_log.basic_config",
+  "click_log.simple_verbosity_option",
+  "cobra_component_models.io.CompoundModel",
+  "cobra_component_models.orm.BiologyQualifier",
+  "cobra_component_models.orm.BiologyQualifier.get_map",
+  "cobra_component_models.orm.Compound",
   "cobra_component_models.orm.Compound.annotation",
   "cobra_component_models.orm.Compound.charge.is_",
   "cobra_component_models.orm.Compound.chemical_formula.is_",
@@ -36,12 +43,21 @@
   "cobra_component_models.orm.Compound.mass.is_",
   "cobra_component_models.orm.Compound.names",
   "cobra_component_models.orm.Compound.smiles.isnot",
+  "cobra_component_models.orm.CompoundAnnotation",
   "cobra_component_models.orm.CompoundAnnotation.identifier",
+  "cobra_component_models.orm.CompoundName",
+  "cobra_component_models.orm.Namespace",
+  "cobra_component_models.orm.Namespace.get_map",
   "cobra_component_models.orm.Namespace.id",
   "cobra_component_models.orm.Namespace.prefix",
   "cobra_component_models.orm.Namespace.prefix.like",
+  "cobra_component_models.orm.Reaction",
   "cobra_component_models.orm.Reaction.id",
+  "cobra_component_models.orm.ReactionAnnotation",
   "cobra_component_models.orm.ReactionAnnotation.identifier",
+  "cobra_component_models.orm.ReactionName",
+  "cobra_component_models.serializer.CompoundSerializer",
+  "depinfo.print_dependencies",
   "etl.KEGGReactionNameParser.parse",
   "fetch_resource",
   "fetcher",
@@ -66,6 +82,10 @@
   "openbabel.pybel",
   "openbabel.pybel.readstring",
   "os.cpu_count",
+  "pandas",
+  "pandas.DataFrame",
+  "pandas.read_csv",
+  "pandas.read_sql_query",
   "rdflib.namespace.SKOS.altLabel",
   "rdflib.namespace.SKOS.prefLabel",
   "rdkit.Chem.MolFromInchi",
@@ -79,7 +99,18 @@
   "rdkit.Chem.rdmolops",
   "rdkit.Chem.rdmolops.GetFormalCharge",
   "sys",
-  "time"
+  "time",
+  "typing.Any",
+  "typing.Callable",
+  "typing.Collection",
+  "typing.Coroutine",
+  "typing.Dict",
+  "typing.List",
+  "typing.Optional",
+  "typing.Set",
+  "typing.Tuple",
+  "typing.Type",
+  "typing.Union"
  ],
  "deps": {
   "__future__": [
@@ -106,14 +137,6 @@
    "click/conda-forge/noarch/click-7.1-pyh8c360ce_0",
    "click/conda-forge/noarch/click-7.1.1-pyh8c360ce_0"
   ],
-  "click_log": [
-   "click-log/conda-forge/noarch/click-log-0.3.2-py_0",
-   "click-log/conda-forge/noarch/click-log-0.3.2-pyh9f0ad1d_0"
-  ],
-  "cobra_component_models": [
-   "cobra-component-models/conda-forge/noarch/cobra-component-models-0.3.2-py_0",
-   "cobra-component-models/conda-forge/noarch/cobra-component-models-0.4.0-py_0"
-  ],
   "collections": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -121,10 +144,6 @@
   "datetime": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "depinfo": [
-   "depinfo/conda-forge/noarch/depinfo-1.6.0-pyhd8ed1ab_0",
-   "depinfo/conda-forge/noarch/depinfo-1.7.0-pyhd8ed1ab_0"
   ],
   "httpx": [],
   "json": [
@@ -153,9 +172,6 @@
   "os": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "pandas": [
-   "pandas/conda-forge/linux-64/pandas-1.2.2-py37h40f5888_0"
   ],
   "pathlib": [
    "pathlib/conda-forge/noarch/pathlib-1.0.1-py_1",
@@ -200,10 +216,6 @@
    "tqdm/conda-forge/noarch/tqdm-4.56.0-pyhd8ed1ab_0",
    "tqdm/conda-forge/noarch/tqdm-4.56.1-pyhd8ed1ab_0",
    "tqdm/conda-forge/noarch/tqdm-4.60.0-pyhd8ed1ab_0"
-  ],
-  "typing": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "urllib": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
