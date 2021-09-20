@@ -3,8 +3,18 @@
   "MessageException",
   "Queue",
   "Queue.Empty",
+  "bs4",
+  "bz2",
+  "bz2.compress",
+  "bz2.decompress",
+  "cProfile",
+  "cProfile.runctx",
   "cls",
+  "copy",
+  "csv",
+  "csv.DictReader",
   "csv.QUOTE_ALL",
+  "csv.Sniffer",
   "csv.writer",
   "gc",
   "handle",
@@ -72,14 +82,9 @@
   "psutil.STATUS_ZOMBIE",
   "psutil.TimeoutExpired",
   "queue",
-  "raven",
-  "raven.breadcrumbs",
-  "raven.breadcrumbs.ignore_logger",
-  "raven.contrib.tornado.AsyncSentryClient",
   "rejected.process.Process.ERROR",
   "rejected.process.Process.PROCESSED",
   "rejected.process.Process.REDELIVERED",
-  "signal",
   "signal.ITIMER_PROF",
   "signal.ITIMER_REAL",
   "signal.SIGABRT",
@@ -93,7 +98,6 @@
   "signal.pause",
   "signal.setitimer",
   "signal.siginterrupt",
-  "signal.signal",
   "socket",
   "socket.AF_INET",
   "socket.IPPROTO_TCP",
@@ -110,61 +114,15 @@
   "sys.argv.split",
   "sys.path.insert",
   "time",
-  "tornado.concurrent",
-  "tornado.concurrent.is_future",
-  "tornado.gen",
-  "tornado.gen.Return",
-  "tornado.gen.TimeoutError",
-  "tornado.gen.coroutine",
-  "tornado.gen.engine",
-  "tornado.ioloop",
-  "tornado.ioloop.IOLoop.current",
-  "tornado.iostream",
-  "tornado.iostream.IOStream",
-  "tornado.locks",
-  "tornado.locks.Lock",
-  "tornado.testing",
-  "tornado.testing.AsyncTestCase",
-  "tornado.testing.gen_test",
-  "umsgpack",
-  "uuid",
-  "uuid.uuid4",
   "warnings",
-  "warnings.warn",
-  "yaml",
-  "yaml.dump",
-  "yaml.load",
-  "zlib",
-  "zlib.compress",
-  "zlib.decompress"
+  "warnings.warn"
  ],
  "deps": {
-  "bs4": [
-   "beautifulsoup4/conda-forge/linux-64/beautifulsoup4-4.7.1-py37_1001",
-   "beautifulsoup4/conda-forge/linux-64/beautifulsoup4-4.8.2-py37_0",
-   "beautifulsoup4/conda-forge/noarch/beautifulsoup4-4.9.3-pyhb0f4dca_0"
-  ],
-  "bz2": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "cProfile": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "collections": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "contextlib": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "copy": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "csv": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -193,6 +151,36 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "os": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "raven": [
+   "raven/conda-forge/linux-64/raven-6.6.0-py35_0",
+   "raven/conda-forge/noarch/raven-6.10.0-py_0",
+   "raven/conda-forge/noarch/raven-6.9.0-py_1"
+  ],
+  "signal": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "tornado": [],
+  "umsgpack": [
+   "u-msgpack-python/conda-forge/noarch/u-msgpack-python-2.5.2-py_0",
+   "u-msgpack-python/conda-forge/noarch/u-msgpack-python-2.6.0-pyh9f0ad1d_0",
+   "u-msgpack-python/conda-forge/noarch/u-msgpack-python-2.7.0-pyh9f0ad1d_0",
+   "u-msgpack-python/conda-forge/noarch/u-msgpack-python-2.7.1-pyh9f0ad1d_0"
+  ],
+  "uuid": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "yaml": [
+   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
+   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0",
+   "pyyaml/conda-forge/linux-64/pyyaml-3.11-py35_0",
+   "pyyaml/conda-forge/win-64/pyyaml-5.2-py36hfa6e2cd_0"
+  ],
+  "zlib": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ]

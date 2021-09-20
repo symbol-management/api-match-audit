@@ -1,12 +1,33 @@
 {
  "bad": [
   "clean_module_name",
+  "copy",
+  "copy.deepcopy",
   "ctypes.POINTER",
   "elephas.java.java_classes.DataTypeUtil.getDTypeForName",
   "elephas.java.java_classes.DataTypeUtil.getDtypeFromContext",
+  "enum.Enum",
+  "flask.Flask",
+  "flask.request",
   "flask.request.data",
   "functools.partial",
   "get_ipython",
+  "h5py",
+  "h5py.File",
+  "hyperas.ensemble.VotingModel",
+  "hyperas.optim.base_minimizer",
+  "hyperas.optim.get_hyperopt_model_string",
+  "hyperopt.Trials",
+  "hyperopt.rand",
+  "hyperopt.rand.suggest",
+  "inspect",
+  "inspect.getargspec",
+  "inspect.getmembers",
+  "inspect.getsourcelines",
+  "inspect.isclass",
+  "inspect.isfunction",
+  "inspect.isroutine",
+  "jnius.autoclass",
   "multiprocessing.Process",
   "numpy.arange",
   "numpy.ceil",
@@ -19,80 +40,73 @@
   "os.environ.get",
   "os.getcwd",
   "os.path.exists",
+  "pickle",
+  "pickle.dumps",
+  "pickle.loads",
   "predict_function",
   "pydl4j",
   "pydl4j.add_classpath",
   "pydl4j.validate_jars",
+  "pyspark",
+  "pyspark.RDD",
+  "pyspark.SparkContext",
+  "pyspark.keyword_only",
+  "pyspark.ml.Estimator",
+  "pyspark.ml.Model",
+  "pyspark.ml.param.shared.HasFeaturesCol",
+  "pyspark.ml.param.shared.HasLabelCol",
+  "pyspark.ml.param.shared.HasOutputCol",
   "pyspark.ml.param.shared.Param",
   "pyspark.ml.param.shared.Params",
+  "pyspark.mllib.linalg.Matrices",
+  "pyspark.mllib.linalg.Matrices.dense",
+  "pyspark.mllib.linalg.Matrix",
+  "pyspark.mllib.linalg.Vector",
+  "pyspark.mllib.linalg.Vectors",
+  "pyspark.mllib.linalg.Vectors.dense",
+  "pyspark.mllib.linalg.Vectors.fromML",
+  "pyspark.mllib.regression.LabeledPoint",
+  "pyspark.sql.DataFrame",
+  "pyspark.sql.SQLContext",
+  "pyspark.sql.SparkSession",
   "pyspark.sql.SparkSession.builder.getOrCreate",
+  "pyspark.sql.types.DoubleType",
+  "pyspark.sql.types.StringType",
+  "pyspark.sql.types.StructField",
+  "re",
+  "re.search",
+  "re.sub",
   "reload",
+  "shutil",
+  "shutil.copy",
+  "shutil.rmtree",
   "six.moves.cPickle",
   "six.moves.cPickle.dumps",
   "six.moves.cPickle.loads",
+  "socket",
   "socket.AF_INET",
   "socket.IPPROTO_TCP",
   "socket.SOCK_STREAM",
   "socket.TCP_NODELAY",
   "socket.gethostbyname",
   "socket.gethostname",
+  "socket.socket",
   "sys",
   "sys.setdefaultencoding",
+  "threading",
+  "threading.Thread",
   "urllib2",
+  "warnings",
   "warnings.warn"
  ],
  "deps": {
-  "_pickle": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "abc": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "copy": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "ctypes": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "enum": [
-   "privy/conda-forge/noarch/privy-6.0.0-py_0",
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "flask": [
-   "flask/conda-forge/linux-64/flask-0.12-py36_0",
-   "flask/conda-forge/noarch/flask-0.11.1-py_1",
-   "flask/conda-forge/noarch/flask-1.0.2-py_1",
-   "flask/conda-forge/noarch/flask-1.0.3-py_0",
-   "flask/conda-forge/noarch/flask-1.1.0-py_0"
-  ],
-  "h5py": [
-   "h5py/conda-forge/linux-64/h5py-2.10.0-nompi_py37hf7afa78_105",
-   "h5py/conda-forge/linux-64/h5py-2.6.0-np111py34_4",
-   "h5py/conda-forge/linux-64/h5py-2.7.0-np113py36_1"
-  ],
-  "hyperas": [
-   "hyperas/conda-forge/noarch/hyperas-0.4.1-py_0",
-   "hyperas/conda-forge/noarch/hyperas-0.4.1-pyh8c360ce_1"
-  ],
-  "hyperopt": [
-   "hyperopt/conda-forge/noarch/hyperopt-0.2.2-py_0",
-   "hyperopt/conda-forge/noarch/hyperopt-0.2.3-pyh9f0ad1d_0",
-   "hyperopt/conda-forge/noarch/hyperopt-0.2.4-pyh9f0ad1d_0",
-   "hyperopt/conda-forge/noarch/hyperopt-0.2.5-pyh9f0ad1d_0"
-  ],
-  "inspect": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "jnius": [
-   "pyjnius/conda-forge/linux-64/pyjnius-1.1.3-py37hf484d3e_1000",
-   "pyjnius/conda-forge/linux-64/pyjnius-1.1.4-py36h045720a_1001",
-   "pyjnius/conda-forge/linux-64/pyjnius-1.2.0-py36h93af967_0"
   ],
   "json": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -111,48 +125,16 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "pickle": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "pyspark": [
-   "pyspark/conda-forge/noarch/pyspark-2.4.1-py_0",
-   "pyspark/conda-forge/noarch/pyspark-2.4.2-py_0",
-   "pyspark/conda-forge/noarch/pyspark-2.4.3-py_0",
-   "pyspark/conda-forge/noarch/pyspark-2.4.5-py_0",
-   "pyspark/conda-forge/noarch/pyspark-2.4.6-py_0",
-   "pyspark/conda-forge/noarch/pyspark-3.0.2-pyh44b312d_0"
-  ],
   "random": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "re": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "shutil": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "socket": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "tensorflow": [],
-  "threading": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "typing": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "urllib": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "warnings": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ]

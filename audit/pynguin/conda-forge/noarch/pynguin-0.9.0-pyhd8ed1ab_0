@@ -2,6 +2,7 @@
  "bad": [
   "_SearchStatistics",
   "_retrieve_class_information",
+  "ast",
   "ast.AST",
   "ast.Assert",
   "ast.Assign",
@@ -24,6 +25,7 @@
   "ast.Load",
   "ast.Module",
   "ast.Name",
+  "ast.NodeVisitor",
   "ast.Pass",
   "ast.Set",
   "ast.Starred",
@@ -35,8 +37,18 @@
   "ast.arguments",
   "ast.cmpop",
   "ast.expr",
+  "ast.fix_missing_locations",
+  "ast.get_docstring",
+  "ast.iter_fields",
   "ast.keyword",
+  "ast.parse",
   "ast.stmt",
+  "astor",
+  "astor.to_source",
+  "bytecode.BasicBlock",
+  "bytecode.Bytecode",
+  "bytecode.Bytecode.from_code",
+  "bytecode.Compare",
   "bytecode.Compare.EQ",
   "bytecode.Compare.EXC_MATCH",
   "bytecode.Compare.GE",
@@ -48,24 +60,60 @@
   "bytecode.Compare.LT",
   "bytecode.Compare.NE",
   "bytecode.Compare.NOT_IN",
+  "bytecode.ControlFlowGraph",
+  "bytecode.ControlFlowGraph.from_bytecode",
+  "bytecode.Instr",
+  "csv",
+  "csv.DictWriter",
   "csv.QUOTE_NONNUMERIC",
+  "dataclasses",
+  "dataclasses.dataclass",
+  "dataclasses.field",
+  "enum",
+  "enum.Enum",
+  "enum.IntEnum",
+  "enum.unique",
   "exp",
   "float.add",
+  "importlib",
+  "importlib.abc.FileLoader",
+  "importlib.abc.MetaPathFinder",
+  "importlib.import_module",
+  "importlib.machinery.ModuleSpec",
+  "importlib.machinery.SourceFileLoader",
+  "inspect",
+  "inspect.Parameter",
   "inspect.Parameter.KEYWORD_ONLY",
   "inspect.Parameter.POSITIONAL_ONLY",
   "inspect.Parameter.POSITIONAL_OR_KEYWORD",
   "inspect.Parameter.VAR_KEYWORD",
   "inspect.Parameter.VAR_POSITIONAL",
   "inspect.Parameter.empty",
+  "inspect.Signature",
+  "inspect.getmembers",
+  "inspect.getmodule",
+  "inspect.getmro",
+  "inspect.isclass",
+  "inspect.isfunction",
+  "inspect.ismethod",
+  "inspect.signature",
   "int.add",
+  "jellyfish.levenshtein_distance",
+  "multiprocessing",
   "multiprocessing.Queue",
+  "networkx",
   "networkx.DiGraph",
   "networkx.NetworkXError",
   "networkx.NetworkXNoPath",
   "networkx.diameter",
+  "networkx.drawing.nx_pydot.to_pydot",
   "networkx.lowest_common_ancestor",
   "networkx.shortest_path_length",
+  "numbers",
+  "numbers.Number",
   "os.path.isdir",
+  "pathlib.Path",
+  "pkgutil.iter_modules",
   "pynguin.analyses.seeding.constantseeding.dynamic_constant_seeding.add_value.__name__",
   "pynguin.analyses.seeding.constantseeding.dynamic_constant_seeding.add_value_for_strings.__name__",
   "pynguin.analyses.seeding.constantseeding.dynamic_constant_seeding.has_floats",
@@ -222,6 +270,9 @@
   "pynguin.utils.statistics.runtimevariable.RuntimeVariable.TotalExceptionsTimeline",
   "pynguin.utils.statistics.runtimevariable.RuntimeVariable.TotalExceptionsTimeline.name",
   "pynguin.utils.statistics.runtimevariable.RuntimeVariable.TotalTime.name",
+  "queue",
+  "queue.Queue",
+  "queue.SimpleQueue",
   "str.add",
   "strategy",
   "sys",
@@ -229,6 +280,9 @@
   "sys.meta_path.insert",
   "sys.meta_path.remove",
   "sys.path.insert",
+  "threading",
+  "threading.Thread",
+  "threading.currentThread",
   "time"
  ],
  "deps": {
@@ -247,19 +301,6 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "ast": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "astor": [
-   "astor/conda-forge/noarch/astor-0.7.1-py_0",
-   "astor/conda-forge/noarch/astor-0.8.1-pyh9f0ad1d_0"
-  ],
-  "bytecode": [
-   "bytecode/conda-forge/noarch/bytecode-0.10.0-py_0",
-   "bytecode/conda-forge/noarch/bytecode-0.11.0-py_0",
-   "bytecode/conda-forge/noarch/bytecode-0.12.0-pyhd8ed1ab_0"
-  ],
   "collections": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -268,42 +309,13 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "csv": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "ctypes": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "dataclasses": [
-   "dataclasses/conda-forge/noarch/dataclasses-0.5-py_0",
-   "dataclasses/conda-forge/noarch/dataclasses-0.6-py_0",
-   "dataclasses/conda-forge/noarch/dataclasses-0.8-pyh787bdff_0",
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "enum": [
-   "privy/conda-forge/noarch/privy-6.0.0-py_0",
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "functools": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "importlib": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "inspect": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "jellyfish": [
-   "jellyfish/conda-forge/linux-64/jellyfish-0.6.1-py37h8f50634_1000",
-   "jellyfish/conda-forge/linux-64/jellyfish-0.8.2-py36h8f6f2f9_1"
   ],
   "logging": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -313,23 +325,7 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "multiprocessing": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "networkx": [
-   "networkx/conda-forge/noarch/networkx-2.1-py_1",
-   "networkx/conda-forge/noarch/networkx-2.2-py_1",
-   "networkx/conda-forge/noarch/networkx-2.4-py_1",
-   "networkx/conda-forge/noarch/networkx-2.5-py_0",
-   "networkx/conda-forge/noarch/networkx-2.6.1-pyhd8ed1ab_0",
-   "networkx/conda-forge/noarch/networkx-2.6.1-pyhd8ed1ab_1"
-  ],
   "ntpath": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "numbers": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -337,20 +333,8 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "pathlib": [
-   "pathlib/conda-forge/noarch/pathlib-1.0.1-py_1",
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "pkgutil": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "pydoc": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "queue": [
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "random": [
@@ -376,10 +360,6 @@
    "statistics/conda-forge/linux-64/statistics-1.0.3.5-py27_1001"
   ],
   "string": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "threading": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],

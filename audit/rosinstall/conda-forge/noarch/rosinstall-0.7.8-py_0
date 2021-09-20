@@ -2,38 +2,75 @@
  "bad": [
   "_add_stack",
   "_del_stack",
+  "catkin_pkg.package.parse_package_string",
+  "codecs",
   "codecs.unicode_escape_decode",
+  "distutils",
+  "distutils.version.StrictVersion",
+  "optparse.OptionParser",
   "os.getcwd",
   "os.mkdir",
   "os.path.exists",
   "os.path.isdir",
   "os.path.isfile",
+  "rosdistro",
+  "rosdistro.get_cached_distribution",
+  "rosdistro.get_distribution_file",
+  "rosdistro.get_index",
+  "rosdistro.get_index_url",
+  "rosdistro.manifest_provider.get_release_tag",
+  "rospkg.distro",
+  "rospkg.distro.distro_uri",
+  "rospkg.distro.load_distro",
+  "shutil",
+  "shutil.move",
+  "shutil.rmtree",
+  "subprocess",
+  "subprocess.PIPE",
+  "subprocess.Popen",
+  "subprocess.check_call",
   "sys",
   "sys.stderr.write",
+  "urllib.request.urlopen",
   "urllib2.urlopen",
-  "wstool.multiproject_cli.__MULTIPRO_CMD_ALIASES__.get"
+  "vcstools",
+  "vcstools.get_vcs_client",
+  "wstool.cli_common.ONLY_OPTION_VALID_ATTRS",
+  "wstool.cli_common.get_info_list",
+  "wstool.cli_common.get_info_table",
+  "wstool.cli_common.get_info_table_raw_csv",
+  "wstool.cli_common.get_workspace",
+  "wstool.common.MultiProjectException",
+  "wstool.common.select_elements",
+  "wstool.config_elements.SetupConfigElement",
+  "wstool.config_yaml",
+  "wstool.config_yaml.get_path_spec_from_yaml",
+  "wstool.helpers",
+  "wstool.helpers.ROSINSTALL_FILENAME",
+  "wstool.multiproject_cli.IndentedHelpFormatterWithNL",
+  "wstool.multiproject_cli.MultiprojectCLI",
+  "wstool.multiproject_cli.__MULTIPRO_CMD_ALIASES__",
+  "wstool.multiproject_cli.__MULTIPRO_CMD_ALIASES__.get",
+  "wstool.multiproject_cli.__MULTIPRO_CMD_DICT__",
+  "wstool.multiproject_cli.__MULTIPRO_CMD_HELP_LIST__",
+  "wstool.multiproject_cli.list_usage",
+  "wstool.multiproject_cmd",
+  "wstool.multiproject_cmd.cmd_diff",
+  "wstool.multiproject_cmd.cmd_find_unmanaged_repos",
+  "wstool.multiproject_cmd.cmd_info",
+  "wstool.multiproject_cmd.cmd_install_or_update",
+  "wstool.multiproject_cmd.cmd_persist_config",
+  "wstool.multiproject_cmd.cmd_snapshot",
+  "wstool.multiproject_cmd.cmd_status",
+  "wstool.multiproject_cmd.cmd_version",
+  "wstool.multiproject_cmd.get_config",
+  "yaml",
+  "yaml.dump",
+  "yaml.load",
+  "yaml.safe_dump"
  ],
  "deps": {
   "__future__": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "catkin_pkg": [
-   "catkin_pkg/conda-forge/noarch/catkin_pkg-0.4.13-py_0",
-   "catkin_pkg/conda-forge/noarch/catkin_pkg-0.4.14-py_0",
-   "catkin_pkg/conda-forge/noarch/catkin_pkg-0.4.15-py_0",
-   "catkin_pkg/conda-forge/noarch/catkin_pkg-0.4.16-py_0",
-   "catkin_pkg/conda-forge/noarch/catkin_pkg-0.4.17-pyh9f0ad1d_0",
-   "catkin_pkg/conda-forge/noarch/catkin_pkg-0.4.18-pyh9f0ad1d_0",
-   "catkin_pkg/conda-forge/noarch/catkin_pkg-0.4.20-pyh9f0ad1d_0",
-   "catkin_pkg/conda-forge/noarch/catkin_pkg-0.4.22-pyh9f0ad1d_0",
-   "catkin_pkg/conda-forge/noarch/catkin_pkg-0.4.23-pyh9f0ad1d_0"
-  ],
-  "codecs": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "distutils": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -41,49 +78,9 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "optparse": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "os": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "rosdistro": [
-   "rosdistro/conda-forge/linux-64/rosdistro-0.7.5-py38_0",
-   "rosdistro/conda-forge/linux-64/rosdistro-0.8.1-py36h9f0ad1d_1"
-  ],
-  "rospkg": [
-   "rospkg/conda-forge/noarch/rospkg-1.2.0-py_0",
-   "rospkg/conda-forge/noarch/rospkg-1.2.1-py_0",
-   "rospkg/conda-forge/noarch/rospkg-1.2.2-py_0",
-   "rospkg/conda-forge/noarch/rospkg-1.2.3-py_1",
-   "rospkg/conda-forge/noarch/rospkg-1.2.6-pyh9f0ad1d_0",
-   "rospkg/conda-forge/noarch/rospkg-1.3.0-pyhd8ed1ab_0"
-  ],
-  "shutil": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "subprocess": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "urllib": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "vcstools": [
-   "vcstools/conda-forge/noarch/vcstools-0.1.42-py_0"
-  ],
-  "wstool": [
-   "wstool/conda-forge/noarch/wstool-0.1.18-py_0"
-  ],
-  "yaml": [
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0",
-   "pyyaml/conda-forge/linux-64/pyyaml-3.11-py35_0",
-   "pyyaml/conda-forge/win-64/pyyaml-5.2-py36hfa6e2cd_0"
   ]
  }
 }
