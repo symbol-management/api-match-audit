@@ -1,15 +1,44 @@
 {
  "bad": [
   "dagster.core.telemetry.log_workspace_stats",
+  "dagster_graphql.dauphin",
+  "dagster_graphql.implementation.context.DagsterGraphQLContext",
+  "dagster_graphql.schema.create_schema",
+  "dagster_graphql.version.__version__",
+  "flask.redirect",
   "flask.request.args",
+  "flask_cors.CORS",
+  "flask_graphql.GraphQLView",
+  "flask_sockets.Sockets",
+  "gevent.pywsgi",
+  "gevent.pywsgi.WSGIServer",
+  "geventwebsocket.handler.WebSocketHandler",
+  "graphql.error.base.GraphQLError",
+  "graphql.execution.executors.gevent.GeventExecutor",
+  "graphql_ws.constants.GQL_COMPLETE",
+  "graphql_ws.constants.GQL_DATA",
+  "graphql_ws.gevent.GeventSubscriptionServer",
+  "graphql_ws.gevent.SubscriptionObserver",
+  "gzip",
+  "gzip.GzipFile",
+  "io",
   "io.BytesIO",
+  "nbconvert.HTMLExporter",
+  "nbformat",
+  "nbformat.reads",
   "os.getcwd",
   "os.getpid",
   "os.path.exists",
   "rx.Observable.of",
+  "six",
+  "six.raise_from",
+  "six.text_type",
   "sys",
   "sys.path.append",
-  "templates.playground.TEMPLATE.replace"
+  "templates.playground.TEMPLATE.replace",
+  "threading",
+  "threading.Event",
+  "threading.Thread"
  ],
  "deps": {
   "__future__": [
@@ -34,88 +63,12 @@
   "dagster": [
    "dagster/conda-forge/linux-64/dagster-0.9.13-py37hc8dfbb8_1"
   ],
-  "dagster_graphql": [
-   "dagster-graphql/conda-forge/noarch/dagster-graphql-0.6.9-py_0",
-   "dagster-graphql/conda-forge/noarch/dagster-graphql-0.7.11.post0-pyhc8dfbb8_1",
-   "dagster-graphql/conda-forge/noarch/dagster-graphql-0.7.14-pyh32f6830_1",
-   "dagster-graphql/conda-forge/noarch/dagster-graphql-0.7.14-pyhc8dfbb8_1",
-   "dagster-graphql/conda-forge/noarch/dagster-graphql-0.7.15-pyh32f6830_1",
-   "dagster-graphql/conda-forge/noarch/dagster-graphql-0.7.15-pyhc8dfbb8_1",
-   "dagster-graphql/conda-forge/noarch/dagster-graphql-0.7.16-pyhc8dfbb8_0",
-   "dagster-graphql/conda-forge/noarch/dagster-graphql-0.8.2-pyh32f6830_1",
-   "dagster-graphql/conda-forge/noarch/dagster-graphql-0.8.2-pyhc8dfbb8_0",
-   "dagster-graphql/conda-forge/noarch/dagster-graphql-0.9.14-pyh32f6830_0",
-   "dagster-graphql/conda-forge/noarch/dagster-graphql-0.9.14-pyh32f6830_1",
-   "dagster-graphql/conda-forge/noarch/dagster-graphql-0.9.18-pyh44b312d_0",
-   "dagster-graphql/conda-forge/noarch/dagster-graphql-0.9.18-pyheb06c22_0",
-   "dagster-graphql/conda-forge/noarch/dagster-graphql-0.9.2-pyh32f6830_0",
-   "dagster-graphql/conda-forge/noarch/dagster-graphql-0.9.2-pyh32f6830_1",
-   "dagster-graphql/conda-forge/noarch/dagster-graphql-0.9.2-pyhc8dfbb8_0",
-   "dagster-graphql/conda-forge/noarch/dagster-graphql-0.9.2-pyhc8dfbb8_1",
-   "dagster-graphql/conda-forge/noarch/dagster-graphql-0.9.20-pyh44b312d_1",
-   "dagster_graphql/conda-forge/noarch/dagster_graphql-0.6.5-py_0",
-   "dagster_graphql/conda-forge/noarch/dagster_graphql-0.6.6-py_0",
-   "dagster_graphql/conda-forge/noarch/dagster_graphql-0.6.7-py_0",
-   "dagster_graphql/conda-forge/noarch/dagster_graphql-0.6.7.post0-py_0"
-  ],
   "flask": [
    "flask/conda-forge/linux-64/flask-0.12-py36_0",
    "flask/conda-forge/noarch/flask-0.11.1-py_1",
    "flask/conda-forge/noarch/flask-1.0.2-py_1",
    "flask/conda-forge/noarch/flask-1.0.3-py_0",
    "flask/conda-forge/noarch/flask-1.1.0-py_0"
-  ],
-  "flask_cors": [
-   "flask-cors/conda-forge/noarch/flask-cors-3.0.10-pyhd8ed1ab_0",
-   "flask-cors/conda-forge/noarch/flask-cors-3.0.6-py_0",
-   "flask-cors/conda-forge/noarch/flask-cors-3.0.7-py_0",
-   "flask_cors/conda-forge/noarch/flask_cors-3.0.10-pyhd3deb0d_0",
-   "flask_cors/conda-forge/noarch/flask_cors-3.0.8-py_0",
-   "flask_cors/conda-forge/noarch/flask_cors-3.0.9-pyh9f0ad1d_0"
-  ],
-  "flask_graphql": [
-   "flask-graphql/conda-forge/noarch/flask-graphql-2.0.0-py_0",
-   "flask-graphql/conda-forge/noarch/flask-graphql-2.0.1-py_0",
-   "flask-graphql/conda-forge/noarch/flask-graphql-2.0.1-pyh9f0ad1d_2"
-  ],
-  "flask_sockets": [
-   "flask-sockets/conda-forge/noarch/flask-sockets-0.2.1-py_0"
-  ],
-  "gevent": [
-   "gevent/conda-forge/linux-64/gevent-21.1.2-py38h497a2fe_0"
-  ],
-  "geventwebsocket": [
-   "gevent-websocket/conda-forge/noarch/gevent-websocket-0.10.1-py_0"
-  ],
-  "graphql": [
-   "graphql-core/conda-forge/noarch/graphql-core-1.1-py_1",
-   "graphql-core/conda-forge/noarch/graphql-core-2.0-py_0",
-   "graphql-core/conda-forge/noarch/graphql-core-2.1-py_0"
-  ],
-  "graphql_ws": [
-   "graphql-ws/conda-forge/noarch/graphql-ws-0.3.0-py_0",
-   "graphql-ws/conda-forge/noarch/graphql-ws-0.3.1-pyh9f0ad1d_0",
-   "graphql-ws/conda-forge/noarch/graphql-ws-0.3.1-pyh9f0ad1d_1"
-  ],
-  "gzip": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "io": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "nbconvert": [
-   "nbconvert/conda-forge/linux-64/nbconvert-5.3.0-py27_0",
-   "nbconvert/conda-forge/noarch/nbconvert-5.4.1-py_1",
-   "nbconvert/conda-forge/noarch/nbconvert-5.5.0-py_0",
-   "nbconvert/conda-forge/noarch/nbconvert-5.6.0-py_0"
-  ],
-  "nbformat": [
-   "nbformat/conda-forge/noarch/nbformat-4.4.0-py_1",
-   "nbformat/conda-forge/noarch/nbformat-5.0.3-py_0",
-   "nbformat/conda-forge/noarch/nbformat-5.0.8-py_0",
-   "nbformat/conda-forge/noarch/nbformat-5.1.2-pyhd8ed1ab_1"
   ],
   "ntpath": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -130,20 +83,6 @@
    "rx/conda-forge/noarch/rx-3.1.0-py_0",
    "rx/conda-forge/noarch/rx-3.1.1-py_0"
   ],
-  "six": [
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0",
-   "lldb/conda-forge/linux-64/lldb-6.0.0-py35_0",
-   "privy/conda-forge/noarch/privy-6.0.0-py_0",
-   "six/conda-forge/linux-64/six-1.10.0-py34_0",
-   "six/conda-forge/linux-64/six-1.10.0-py34_1",
-   "six/conda-forge/noarch/six-1.14.0-py_1",
-   "six/conda-forge/noarch/six-1.16.0-pyh6c4a22f_0"
-  ],
-  "threading": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "typing": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -151,13 +90,6 @@
   "uuid": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "werkzeug": [
-   "werkzeug/conda-forge/noarch/werkzeug-0.12.2-py_1",
-   "werkzeug/conda-forge/noarch/werkzeug-0.15.3-py_0",
-   "werkzeug/conda-forge/noarch/werkzeug-0.16.0-py_0",
-   "werkzeug/conda-forge/noarch/werkzeug-1.0.0-py_0",
-   "werkzeug/conda-forge/noarch/werkzeug-1.0.1-pyh9f0ad1d_0"
   ]
  }
 }

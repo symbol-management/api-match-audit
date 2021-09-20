@@ -44,12 +44,27 @@
   "cls",
   "collections.Iterable",
   "collections.abc.Callable",
+  "crystals.Crystal",
+  "crystals.Crystal.from_cif",
+  "crystals.Crystal.from_database",
   "dataformat",
   "func",
   "functools.partial",
+  "h5py",
+  "h5py.File",
+  "h5py.version.hdf5_version",
+  "h5py.version.hdf5_version_tuple",
+  "h5py.version.version",
   "iris.gui.__init__.gui_environment",
+  "math.sqrt",
   "method",
   "multiprocessing.freeze_support",
+  "npstreams",
+  "npstreams.__version__",
+  "npstreams.average",
+  "npstreams.itercopy",
+  "npstreams.peek",
+  "npstreams.pmap",
   "numpy.abs",
   "numpy.arange",
   "numpy.bool",
@@ -69,6 +84,10 @@
   "numpy.zeros",
   "os.cpu_count",
   "os.environ.get",
+  "pathlib.Path",
+  "pathlib.Path.home",
+  "pkg_resources.parse_version",
+  "platform",
   "pyqtgraph",
   "pyqtgraph.CircleROI",
   "pyqtgraph.ImageView",
@@ -81,33 +100,15 @@
   "pyqtgraph.mkPen",
   "pyqtgraph.setConfigOptions",
   "pywt.Modes",
-  "qdarkstyle",
-  "qdarkstyle.__version__",
-  "qdarkstyle.load_stylesheet_pyqt5",
-  "runpy.run_path",
-  "scipy.ndimage.gaussian_filter",
-  "scipy.optimize.curve_fit",
-  "skued",
-  "skued.ArbitrarySelection",
-  "skued.Selection",
-  "skued.__version__",
-  "skued.available_dt_filters",
-  "skued.available_first_stage_filters",
-  "skued.azimuthal_average",
-  "skued.baseline.dt_max_level",
-  "skued.baseline_dt",
-  "skued.diffread",
-  "skued.exponential",
-  "skued.ialign",
-  "skued.nfold",
-  "skued.powder_calq",
-  "skued.spectrum_colors",
+  "shutil.copy2",
+  "subprocess.Popen",
   "sys",
-  "urllib.error.URLError",
-  "urllib.request.urlopen",
-  "warnings.warn",
-  "webbrowser",
-  "webbrowser.open"
+  "tempfile.gettempdir",
+  "traceback",
+  "traceback.format_exc",
+  "types.FunctionType",
+  "warnings",
+  "warnings.warn"
  ],
  "deps": {
   "abc": [
@@ -127,27 +128,9 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "crystals": [
-   "crystals/conda-forge/noarch/crystals-0.6.0-py_0",
-   "crystals/conda-forge/noarch/crystals-0.6.1-py_0",
-   "crystals/conda-forge/noarch/crystals-0.6.2-py_1",
-   "crystals/conda-forge/noarch/crystals-0.6.5-py_0",
-   "crystals/conda-forge/noarch/crystals-0.6.5-py_1",
-   "crystals/conda-forge/noarch/crystals-0.6.7-py_0",
-   "crystals/conda-forge/noarch/crystals-1.1.1-py_0",
-   "crystals/conda-forge/noarch/crystals-1.2.0-py_0",
-   "crystals/conda-forge/noarch/crystals-1.2.1-pyhd8ed1ab_1",
-   "crystals/conda-forge/noarch/crystals-1.2.2-pyhd8ed1ab_0",
-   "crystals/conda-forge/noarch/crystals-1.4.0-pyhd8ed1ab_0"
-  ],
   "functools": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "h5py": [
-   "h5py/conda-forge/linux-64/h5py-2.10.0-nompi_py37hf7afa78_105",
-   "h5py/conda-forge/linux-64/h5py-2.6.0-np111py34_4",
-   "h5py/conda-forge/linux-64/h5py-2.7.0-np113py36_1"
   ],
   "json": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -156,17 +139,6 @@
   "logging": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "math": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "npstreams": [
-   "npstreams/conda-forge/noarch/npstreams-1.5.2-py_0",
-   "npstreams/conda-forge/noarch/npstreams-1.6-py_0",
-   "npstreams/conda-forge/noarch/npstreams-1.6.4-pyhd8ed1ab_0",
-   "npstreams/conda-forge/noarch/npstreams-1.6.5-pyhd8ed1ab_0",
-   "npstreams/conda-forge/noarch/npstreams-1.6.6-pyhd8ed1ab_0"
   ],
   "ntpath": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -180,40 +152,44 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "pathlib": [
+  "qdarkstyle": [
+   "qdarkstyle/conda-forge/noarch/qdarkstyle-2.5.4-py_0",
+   "qdarkstyle/conda-forge/noarch/qdarkstyle-2.6-py_0",
+   "qdarkstyle/conda-forge/noarch/qdarkstyle-2.6.1-py_0",
+   "qdarkstyle/conda-forge/noarch/qdarkstyle-2.6.3-py_0",
+   "qdarkstyle/conda-forge/noarch/qdarkstyle-2.6.4-py_0",
+   "qdarkstyle/conda-forge/noarch/qdarkstyle-2.6.5-py_0",
+   "qdarkstyle/conda-forge/noarch/qdarkstyle-2.6.6-py_0",
+   "qdarkstyle/conda-forge/noarch/qdarkstyle-2.6.8-py_0",
+   "qdarkstyle/conda-forge/noarch/qdarkstyle-2.7-py_0",
+   "qdarkstyle/conda-forge/noarch/qdarkstyle-2.8.1-pyhd8ed1ab_2",
+   "qdarkstyle/conda-forge/noarch/qdarkstyle-3.0.2-pyhd8ed1ab_0"
+  ],
+  "runpy": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "pkg_resources": [
-   "setuptools/conda-forge/linux-64/setuptools-40.6.1-py36_0",
-   "setuptools/conda-forge/linux-64/setuptools-46.3.0-py38h32f6830_0",
-   "setuptools/conda-forge/linux-64/setuptools-49.1.2-py38h32f6830_0"
+  "scipy": [
+   "scipy/conda-forge/linux-64/scipy-0.17.1-np110py27_blas_openblas_202",
+   "scipy/conda-forge/linux-64/scipy-1.7.0-py37h29e03ee_0",
+   "scipy/conda-forge/linux-64/scipy-1.7.0-py37ha768fb6_1"
   ],
-  "platform": [
+  "skued": [
+   "scikit-ued/conda-forge/noarch/scikit-ued-2.0.2-py_0",
+   "scikit-ued/conda-forge/noarch/scikit-ued-2.0.2-py_1",
+   "scikit-ued/conda-forge/noarch/scikit-ued-2.0.3-py_0",
+   "scikit-ued/conda-forge/noarch/scikit-ued-2.0.4-py_0",
+   "scikit-ued/conda-forge/noarch/scikit-ued-2.0.5-pyhd8ed1ab_3",
+   "scikit-ued/conda-forge/noarch/scikit-ued-2.1.1-pyhd8ed1ab_0",
+   "scikit-ued/conda-forge/noarch/scikit-ued-2.1.2-pyhd8ed1ab_0",
+   "scikit-ued/conda-forge/noarch/scikit-ued-2.1.5-pyhd8ed1ab_0",
+   "scikit-ued/conda-forge/noarch/scikit-ued-2.1.7-pyhd8ed1ab_0"
+  ],
+  "urllib": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "shutil": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "subprocess": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "tempfile": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "traceback": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "types": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "warnings": [
+  "webbrowser": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ]

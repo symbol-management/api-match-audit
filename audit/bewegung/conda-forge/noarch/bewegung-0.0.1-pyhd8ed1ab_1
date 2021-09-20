@@ -5,16 +5,22 @@
   "_sin_fade",
   "backends.backends.prototype",
   "backends.backends.values",
+  "cairo",
   "cairo.Context",
   "cairo.FORMAT_ARGB32",
   "cairo.Format",
   "cairo.ImageSurface",
+  "calendar",
+  "calendar.isleap",
   "core.DrawingBoard",
   "core.canvas.inventory.type",
   "core.vector.Matrix.from_2d_rotation",
   "core.vector.Vector2D.from_polar",
+  "datashader.Canvas",
+  "datashader.transfer_functions.Image",
   "dtype",
   "func",
+  "gi",
   "gi.repository.Pango",
   "gi.repository.Pango.Alignment.CENTER",
   "gi.repository.Pango.Alignment.LEFT",
@@ -28,14 +34,35 @@
   "gi.repository.Rsvg.Handle",
   "gi.repository.Rsvg.Handle.new_from_data",
   "gi.repository.Rsvg.Handle.new_from_file",
+  "gi.require_version",
+  "importlib",
+  "io",
   "io.BytesIO",
   "layertask",
   "layertask.sequence",
+  "math",
+  "math.acos",
+  "math.atan2",
+  "math.cos",
+  "math.floor",
+  "math.isclose",
+  "math.pi",
+  "math.sin",
+  "math.sqrt",
+  "matplotlib",
+  "matplotlib.figure.Figure",
+  "matplotlib.pyplot",
+  "matplotlib.pyplot.figure",
+  "matplotlib.use",
   "method",
   "mplcairo.base",
+  "multiprocessing",
   "multiprocessing.Pool",
   "multiprocessing.current_process",
   "numba.boolean",
+  "numba.float32",
+  "numba.float64",
+  "numba.jit",
   "numpy.arccos",
   "numpy.arctan2",
   "numpy.cos",
@@ -54,9 +81,14 @@
   "os.environ.get",
   "preptask",
   "sequence.Sequence.__dict__.copy",
+  "subprocess.DEVNULL",
+  "subprocess.PIPE",
+  "subprocess.Popen",
   "sys",
   "sys.float_info.min",
   "time.Time.range",
+  "types.MethodType",
+  "types.TracebackType",
   "vector.Matrix.from_2d_rotation",
   "vector.Matrix.from_3d_rotation"
  ],
@@ -75,24 +107,6 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "cairo": [
-   "pycairo/conda-forge/linux-64/pycairo-1.18.2-py27h438ddbb_0",
-   "pycairo/conda-forge/linux-64/pycairo-1.20.0-py36hf4f9691_1"
-  ],
-  "calendar": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "datashader": [
-   "datashader/conda-forge/noarch/datashader-0.10.0-py_0",
-   "datashader/conda-forge/noarch/datashader-0.11.0-pyh9f0ad1d_0",
-   "datashader/conda-forge/noarch/datashader-0.12.0-pyhd3deb0d_0",
-   "datashader/conda-forge/noarch/datashader-0.12.1-pyh44b312d_0",
-   "datashader/conda-forge/noarch/datashader-0.6.2-py_0",
-   "datashader/conda-forge/noarch/datashader-0.6.5-py_0",
-   "datashader/conda-forge/noarch/datashader-0.6.6-0",
-   "datashader/conda-forge/noarch/datashader-0.7.0-py_1"
-  ],
   "datetime": [
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -100,40 +114,9 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "gi": [
-   "pygobject/conda-forge/linux-64/pygobject-3.30.5-py36h91a8f50_0",
-   "pygobject/conda-forge/linux-64/pygobject-3.40.1-py36h0796200_1"
-  ],
-  "importlib": [
-   "importlib/conda-forge/linux-64/importlib-1.0.4-py26_0",
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "inspect": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "io": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "math": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "matplotlib": [
-   "matplotlib-base/conda-forge/linux-64/matplotlib-base-3.1.1-py37hfd891ef_0",
-   "matplotlib-base/conda-forge/linux-64/matplotlib-base-3.1.1-py38h250f245_2",
-   "matplotlib/conda-forge/linux-64/matplotlib-1.5.3-np111py34_0"
-  ],
-  "multiprocessing": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "numba": [
-   "numba/conda-forge/linux-64/numba-0.38.1-py36_0",
-   "numba/conda-forge/linux-64/numba-0.40.0-py35hf8a1672_0",
-   "numba/conda-forge/linux-64/numba-0.41.0-py27h637b7d7_1000"
   ],
   "numpy": [
    "numpy/conda-forge/linux-64/numpy-1.17.5-py36h95a1406_0",
@@ -141,10 +124,6 @@
    "numpy/conda-forge/linux-64/numpy-1.19.2-py36h68c22af_1"
   ],
   "os": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "subprocess": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -170,10 +149,6 @@
    "typeguard/conda-forge/noarch/typeguard-2.6.1-py_0",
    "typeguard/conda-forge/noarch/typeguard-2.7.0-py_0",
    "typeguard/conda-forge/noarch/typeguard-2.9.0-py_0"
-  ],
-  "types": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "typing": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
