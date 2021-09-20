@@ -143,12 +143,20 @@
   "io.open",
   "itertools",
   "itertools.chain.from_iterable",
+  "jsonschema",
+  "jsonschema.validators.validator_for",
   "list.__setitem__",
   "main.program.command",
   "metadata.Metadata.property",
   "metadata_property",
+  "multiprocessing",
   "multiprocessing.Pool",
   "multiprocessing.cpu_count",
+  "openpyxl",
+  "openpyxl.Workbook",
+  "openpyxl.load_workbook",
+  "openpyxl.utils.rows_from_range",
+  "operator.setitem",
   "os.environ.get",
   "os.getcwd",
   "os.listdir",
@@ -158,10 +166,44 @@
   "os.remove",
   "p1",
   "parsers.JsonParser.native_types",
+  "pathlib.Path",
+  "pkgutil",
+  "pkgutil.iter_modules",
+  "pprint.pformat",
   "pq",
   "process",
   "report.Report.from_validate",
+  "requests",
+  "requests.Session",
+  "requests.get",
+  "requests.request",
+  "requests.utils",
   "resource.Resource.from_source",
+  "rfc3986.exceptions",
+  "rfc3986.uri",
+  "rfc3986.validators",
+  "shutil",
+  "shutil.copy",
+  "shutil.copyfileobj",
+  "shutil.move",
+  "shutil.rmtree",
+  "simpleeval",
+  "simpleeval.simple_eval",
+  "simplejson",
+  "simplejson.dump",
+  "simplejson.dumps",
+  "slugify.slugify",
+  "statistics",
+  "statistics.mean",
+  "statistics.median",
+  "statistics.mode",
+  "statistics.stdev",
+  "stringcase",
+  "stringcase.camelcase",
+  "stringcase.lowercase",
+  "stringcase.snakecase",
+  "subprocess",
+  "subprocess.run",
   "sys",
   "system.system.create_check",
   "system.system.create_control",
@@ -170,6 +212,11 @@
   "system.system.create_parser",
   "system.system.create_server",
   "system.system.create_storage",
+  "tabulate.tabulate",
+  "tempfile",
+  "tempfile.NamedTemporaryFile",
+  "tempfile.TemporaryFile",
+  "tempfile.mkdtemp",
   "time",
   "type.capitalize",
   "type_value",
@@ -177,27 +224,13 @@
   "validator_class",
   "warnings.warn",
   "write",
-  "xlrd",
-  "xlrd.XLRDError",
   "xlrd.XL_CELL_BOOLEAN",
   "xlrd.XL_CELL_DATE",
   "xlrd.XL_CELL_NUMBER",
-  "xlrd.open_workbook",
-  "xlrd.xldate.xldate_as_datetime",
-  "xlwt",
-  "xlwt.Workbook",
-  "yaml",
-  "yaml.SafeDumper",
-  "yaml.dump",
-  "yaml.safe_load",
   "zip.extractall",
   "zip.write",
   "zip.writestr",
-  "zipfile",
-  "zipfile.BadZipFile",
-  "zipfile.BadZipfile",
-  "zipfile.LargeZipFile",
-  "zipfile.ZipFile"
+  "zipfile.BadZipfile"
  ],
  "deps": {
   "_csv": [
@@ -308,14 +341,7 @@
    "jsonlines/conda-forge/noarch/jsonlines-1.2.0-pyh9f0ad1d_2",
    "jsonlines/conda-forge/noarch/jsonlines-2.0.0-pyhd3deb0d_0"
   ],
-  "jsonschema": [
-   "jsonschema/conda-forge/noarch/jsonschema-3.2.0-pyhd8ed1ab_3"
-  ],
   "logging": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "multiprocessing": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -323,109 +349,11 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "openpyxl": [
-   "openpyxl/conda-forge/linux-64/openpyxl-2.4.5-py36_0",
-   "openpyxl/conda-forge/noarch/openpyxl-2.5.11-py_0",
-   "openpyxl/conda-forge/noarch/openpyxl-2.5.4-py_1",
-   "openpyxl/conda-forge/noarch/openpyxl-2.5.7-py_0",
-   "openpyxl/conda-forge/noarch/openpyxl-2.5.8-py_0",
-   "openpyxl/conda-forge/noarch/openpyxl-2.5.9-py_0",
-   "openpyxl/conda-forge/noarch/openpyxl-2.6.0-py_0",
-   "openpyxl/conda-forge/noarch/openpyxl-2.6.3-py_0",
-   "openpyxl/conda-forge/noarch/openpyxl-3.0.0-py_0",
-   "openpyxl/conda-forge/noarch/openpyxl-3.0.3-py_0",
-   "openpyxl/conda-forge/noarch/openpyxl-3.0.4-py_0",
-   "openpyxl/conda-forge/noarch/openpyxl-3.0.5-py_0",
-   "openpyxl/conda-forge/noarch/openpyxl-3.0.7-pyhd8ed1ab_0"
-  ],
-  "operator": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "os": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "pathlib": [
-   "pathlib/conda-forge/noarch/pathlib-1.0.1-py_1",
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "pkgutil": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "pprint": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "re": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "requests": [
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0",
-   "requests/conda-forge/linux-64/requests-2.12.0-py35_0",
-   "requests/conda-forge/noarch/requests-2.23.0-pyh8c360ce_2",
-   "requests/conda-forge/noarch/requests-2.24.0-pyh9f0ad1d_0",
-   "requests/conda-forge/noarch/requests-2.25.0-pyhd3deb0d_0",
-   "requests/conda-forge/noarch/requests-2.25.1-pyhd3deb0d_0",
-   "requests/conda-forge/noarch/requests-2.26.0-pyhd8ed1ab_0"
-  ],
-  "rfc3986": [
-   "rfc3986/conda-forge/noarch/rfc3986-1.4.0-pyh9f0ad1d_0",
-   "rfc3986/conda-forge/noarch/rfc3986-1.5.0-pyhd8ed1ab_0"
-  ],
-  "shutil": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "simpleeval": [
-   "simpleeval/conda-forge/linux-64/simpleeval-0.9.10-py37h8f50634_1",
-   "simpleeval/conda-forge/linux-64/simpleeval-0.9.10-py38h1e0a361_0"
-  ],
-  "simplejson": [
-   "simplejson/conda-forge/linux-64/simplejson-3.16.0-py27h470a237_2",
-   "simplejson/conda-forge/linux-64/simplejson-3.16.0-py35h470a237_2",
-   "simplejson/conda-forge/linux-64/simplejson-3.17.0-py38h516909a_0"
-  ],
-  "slugify": [
-   "python-slugify/conda-forge/noarch/python-slugify-1.2.6-py_0",
-   "python-slugify/conda-forge/noarch/python-slugify-2.0.1-py_0",
-   "python-slugify/conda-forge/noarch/python-slugify-3.0.0-py_0",
-   "python-slugify/conda-forge/noarch/python-slugify-3.0.1-py_0",
-   "python-slugify/conda-forge/noarch/python-slugify-3.0.2-py_0",
-   "python-slugify/conda-forge/noarch/python-slugify-3.0.3-py_0",
-   "python-slugify/conda-forge/noarch/python-slugify-3.0.5-py_0",
-   "python-slugify/conda-forge/noarch/python-slugify-3.0.6-py_0",
-   "python-slugify/conda-forge/noarch/python-slugify-4.0.0-py_0",
-   "python-slugify/conda-forge/noarch/python-slugify-4.0.1-pyh9f0ad1d_0",
-   "python-slugify/conda-forge/noarch/python-slugify-5.0.0-pyhd8ed1ab_0",
-   "python-slugify/conda-forge/noarch/python-slugify-5.0.2-pyhd8ed1ab_0"
-  ],
-  "statistics": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
-   "statistics/conda-forge/linux-64/statistics-1.0.3.5-py27_1001"
-  ],
-  "stringcase": [
-   "stringcase/conda-forge/noarch/stringcase-1.2.0-py_0"
-  ],
-  "subprocess": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "tabulate": [
-   "tabulate/conda-forge/noarch/tabulate-0.8.1-py_0",
-   "tabulate/conda-forge/noarch/tabulate-0.8.2-py_0",
-   "tabulate/conda-forge/noarch/tabulate-0.8.3-py_0",
-   "tabulate/conda-forge/noarch/tabulate-0.8.4-py_0",
-   "tabulate/conda-forge/noarch/tabulate-0.8.6-py_0",
-   "tabulate/conda-forge/noarch/tabulate-0.8.7-pyh9f0ad1d_0",
-   "tabulate/conda-forge/noarch/tabulate-0.8.9-pyhd8ed1ab_0"
-  ],
-  "tempfile": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -448,6 +376,24 @@
    "configobj/conda-forge/noarch/configobj-5.0.6-py_0"
   ],
   "warnings": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "xlrd": [
+   "xlrd/conda-forge/noarch/xlrd-1.2.0-py_0",
+   "xlrd/conda-forge/noarch/xlrd-1.2.0-pyh9f0ad1d_1",
+   "xlrd/conda-forge/noarch/xlrd-2.0.1-pyhd8ed1ab_3"
+  ],
+  "xlwt": [
+   "xlwt/conda-forge/noarch/xlwt-1.3.0-py_1"
+  ],
+  "yaml": [
+   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
+   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0",
+   "pyyaml/conda-forge/linux-64/pyyaml-3.11-py35_0",
+   "pyyaml/conda-forge/win-64/pyyaml-5.2-py36hfa6e2cd_0"
+  ],
+  "zipfile": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ]

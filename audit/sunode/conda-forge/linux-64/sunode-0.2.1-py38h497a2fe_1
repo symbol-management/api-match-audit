@@ -45,22 +45,42 @@
   "backward",
   "basis",
   "calc_jac_prod",
+  "cffi.FFI",
   "check_dtype",
+  "dataclasses",
+  "dataclasses.dataclass",
+  "dataclasses.make_dataclass",
   "dydp",
   "format.lower",
   "func",
   "functools.partial",
   "gc",
   "get",
+  "glob",
+  "glob.glob",
+  "hypothesis.extra.numpy",
+  "hypothesis.given",
+  "hypothesis.settings",
+  "hypothesis.strategies",
+  "hypothesis.strategies.integers",
+  "hypothesis.strategies.sampled_from",
   "jac_calc",
   "jac_dense",
   "jac_prod",
   "jac_sparse",
   "make_fin",
+  "numba",
+  "numba.carray",
+  "numba.cfunc",
   "numba.core.typing.cffi_utils",
   "numba.core.typing.cffi_utils.map_type",
   "numba.core.typing.cffi_utils.register_module",
   "numba.core.typing.cffi_utils.register_type",
+  "numba.farray",
+  "numba.from_dtype",
+  "numba.njit",
+  "numba.types.CPointer",
+  "numba.types.Opaque",
   "numpy.dtype",
   "numpy.empty",
   "numpy.float32",
@@ -70,11 +90,16 @@
   "numpy.nan",
   "numpy.random.randn",
   "numpy.zeros",
+  "pandas",
+  "pandas.Index",
   "path_as_ast",
   "quad_calc",
   "read_dict",
   "rhs",
   "rhs_calc",
+  "scipy.sparse",
+  "scipy.sparse.csc_matrix",
+  "scipy.sparse.csr_matrix",
   "sens_calc",
   "sens_pre",
   "sens_rhs",
@@ -189,6 +214,8 @@
   "sympy.assumptions.Q.positive",
   "sympy.printing.numpy.SciPyPrinter",
   "sys",
+  "textwrap",
+  "textwrap.dedent",
   "theano.gof.var.Constant",
   "theano.gof.var.Variable",
   "theano.tensor.as_tensor_variable",
@@ -227,10 +254,6 @@
    "astor/conda-forge/noarch/astor-0.7.1-py_0",
    "astor/conda-forge/noarch/astor-0.8.1-pyh9f0ad1d_0"
   ],
-  "cffi": [
-   "cffi/conda-forge/linux-64/cffi-1.12.3-py37h8022711_0",
-   "privy/conda-forge/noarch/privy-6.0.0-py_0"
-  ],
   "collections": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -238,27 +261,6 @@
   "copy": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "dataclasses": [
-   "dataclasses/conda-forge/noarch/dataclasses-0.5-py_0",
-   "dataclasses/conda-forge/noarch/dataclasses-0.6-py_0",
-   "dataclasses/conda-forge/noarch/dataclasses-0.8-pyh787bdff_0",
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "glob": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "hypothesis": [
-   "hypothesis/conda-forge/noarch/hypothesis-6.13.1-pyhd8ed1ab_0",
-   "hypothesis/conda-forge/noarch/hypothesis-6.13.2-pyhd8ed1ab_0",
-   "hypothesis/conda-forge/noarch/hypothesis-6.13.6-pyhd8ed1ab_0",
-   "hypothesis/conda-forge/noarch/hypothesis-6.5.0-pyhd8ed1ab_0",
-   "hypothesis/conda-forge/noarch/hypothesis-6.6.1-pyhd8ed1ab_0",
-   "hypothesis/conda-forge/noarch/hypothesis-6.8.1-pyhd8ed1ab_0",
-   "hypothesis/conda-forge/noarch/hypothesis-6.8.9-pyhd8ed1ab_0"
   ],
   "importlib": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -276,11 +278,6 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "numba": [
-   "numba/conda-forge/linux-64/numba-0.38.1-py36_0",
-   "numba/conda-forge/linux-64/numba-0.40.0-py35hf8a1672_0",
-   "numba/conda-forge/linux-64/numba-0.41.0-py27h637b7d7_1000"
-  ],
   "numpy": [
    "numpy/conda-forge/linux-64/numpy-1.17.5-py36h95a1406_0",
    "numpy/conda-forge/linux-64/numpy-1.18.4-py37h8960a57_0",
@@ -290,26 +287,14 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "pandas": [
-   "pandas/conda-forge/linux-64/pandas-1.2.2-py37h40f5888_0"
-  ],
   "pytest": [
    "pytest/conda-forge/linux-64/pytest-3.7.0-py27_0",
    "pytest/conda-forge/linux-64/pytest-4.6.0-py37_0",
    "pytest/conda-forge/linux-64/pytest-6.0.2-py37hc8dfbb8_0"
   ],
-  "scipy": [
-   "scipy/conda-forge/linux-64/scipy-0.17.1-np110py27_blas_openblas_202",
-   "scipy/conda-forge/linux-64/scipy-1.7.0-py37h29e03ee_0",
-   "scipy/conda-forge/linux-64/scipy-1.7.0-py37ha768fb6_1"
-  ],
   "sympy": [
    "sympy/conda-forge/linux-64/sympy-1.5.1-py27h8c360ce_2",
    "sympy/conda-forge/linux-64/sympy-1.5.1-py36_0"
-  ],
-  "textwrap": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "theano": [],
   "typing": [
