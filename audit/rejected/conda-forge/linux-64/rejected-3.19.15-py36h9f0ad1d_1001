@@ -3,35 +3,12 @@
   "MessageException",
   "Queue",
   "Queue.Empty",
-  "bs4",
-  "bz2",
-  "bz2.compress",
-  "bz2.decompress",
-  "cProfile",
-  "cProfile.runctx",
   "cls",
-  "copy",
-  "csv",
-  "csv.DictReader",
   "csv.QUOTE_ALL",
-  "csv.Sniffer",
-  "csv.writer",
   "gc",
   "handle",
-  "helper",
-  "helper.Controller",
-  "helper.config",
-  "helper.config.Data",
-  "helper.parser",
-  "helper.parser.description",
-  "helper.parser.get",
-  "helper.start",
-  "importlib",
-  "importlib.import_module",
   "io.StringIO",
-  "mock",
   "mock.Mock",
-  "multiprocessing",
   "multiprocessing.Process",
   "multiprocessing.active_children",
   "multiprocessing.current_process",
@@ -41,47 +18,8 @@
   "os.kill",
   "os.path.exists",
   "os.path.isdir",
-  "pickle",
-  "pickle.dumps",
-  "pickle.loads",
-  "pika",
-  "pika.BasicProperties",
-  "pika.ConnectionParameters",
-  "pika.PlainCredentials",
-  "pika.TornadoConnection",
-  "pika.adapters.tornado_connection",
-  "pika.adapters.tornado_connection.TornadoConnection",
-  "pika.channel",
-  "pika.channel.Channel",
-  "pika.exceptions",
-  "pika.exceptions.ChannelClosed",
-  "pika.exceptions.ConnectionClosed",
-  "pika.spec",
-  "pika.spec.Basic.Deliver",
-  "pika.spec.BasicProperties",
-  "pika.spec.FRAME_MAX_SIZE",
-  "pkg_resources",
-  "pkg_resources.DistributionNotFound",
-  "pkg_resources.RequirementParseError",
-  "pkg_resources.get_distribution",
-  "plistlib",
-  "plistlib.dumps",
-  "plistlib.loads",
-  "plistlib.readPlistFromBytes",
   "plistlib.readPlistFromString",
-  "plistlib.writePlistToBytes",
   "plistlib.writePlistToString",
-  "profile",
-  "psutil",
-  "psutil.NoSuchProcess",
-  "psutil.Process",
-  "psutil.STATUS_DEAD",
-  "psutil.STATUS_RUNNING",
-  "psutil.STATUS_SLEEPING",
-  "psutil.STATUS_STOPPED",
-  "psutil.STATUS_ZOMBIE",
-  "psutil.TimeoutExpired",
-  "queue",
   "rejected.process.Process.ERROR",
   "rejected.process.Process.PROCESSED",
   "rejected.process.Process.REDELIVERED",
@@ -98,14 +36,12 @@
   "signal.pause",
   "signal.setitimer",
   "signal.siginterrupt",
-  "socket",
   "socket.AF_INET",
   "socket.IPPROTO_TCP",
   "socket.IPPROTO_UDP",
   "socket.SOCK_DGRAM",
   "socket.SOCK_STREAM",
   "socket.error",
-  "socket.socket",
   "sprockets_influxdb",
   "sprockets_influxdb.Measurement",
   "sprockets_influxdb.add_measurement",
@@ -114,10 +50,30 @@
   "sys.argv.split",
   "sys.path.insert",
   "time",
-  "warnings",
   "warnings.warn"
  ],
  "deps": {
+  "_csv": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "_pickle": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "bs4": [
+   "beautifulsoup4/conda-forge/linux-64/beautifulsoup4-4.7.1-py37_1001",
+   "beautifulsoup4/conda-forge/linux-64/beautifulsoup4-4.8.2-py37_0",
+   "beautifulsoup4/conda-forge/noarch/beautifulsoup4-4.9.3-pyhb0f4dca_0"
+  ],
+  "bz2": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "cProfile": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "collections": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -126,7 +82,24 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "copy": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "csv": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "datetime": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "helper": [
+   "helper/conda-forge/linux-64/helper-2.4.1-py34_0",
+   "helper/conda-forge/noarch/helper-2.4.2-py_1"
+  ],
+  "importlib": [
+   "importlib/conda-forge/linux-64/importlib-1.0.4-py26_0",
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -146,11 +119,48 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "mock": [
+   "mock/conda-forge/linux-64/mock-2.0.0-py27_1000",
+   "mock/conda-forge/linux-64/mock-3.0.3-py37_0"
+  ],
+  "multiprocessing": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "ntpath": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "os": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "pickle": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "pika": [
+   "pika/conda-forge/linux-64/pika-0.11.2-py35_0",
+   "pika/conda-forge/noarch/pika-1.0.0b1-py_0"
+  ],
+  "pkg_resources": [
+   "setuptools/conda-forge/linux-64/setuptools-40.6.1-py36_0",
+   "setuptools/conda-forge/linux-64/setuptools-46.3.0-py38h32f6830_0",
+   "setuptools/conda-forge/linux-64/setuptools-49.1.2-py38h32f6830_0"
+  ],
+  "plistlib": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "profile": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "psutil": [
+   "psutil/conda-forge/linux-64/psutil-5.7.3-py39h38d8fee_0"
+  ],
+  "queue": [
+   "pies2overrides/conda-forge/osx-64/pies2overrides-2.6.7-py27_1000",
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -163,6 +173,10 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "socket": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "tornado": [],
   "umsgpack": [
    "u-msgpack-python/conda-forge/noarch/u-msgpack-python-2.5.2-py_0",
@@ -171,6 +185,10 @@
    "u-msgpack-python/conda-forge/noarch/u-msgpack-python-2.7.1-pyh9f0ad1d_0"
   ],
   "uuid": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "warnings": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
