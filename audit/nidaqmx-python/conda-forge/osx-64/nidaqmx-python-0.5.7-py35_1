@@ -17,7 +17,6 @@
   "ctypes.cdll.nicaiu",
   "ctypes.windll.LoadLibrary",
   "ctypes.windll.nicaiu",
-  "enum.Enum",
   "nidaqmx._lib.lib_importer.cdll.DAQmxGetAnalogPowerUpStates",
   "nidaqmx._lib.lib_importer.cdll.DAQmxGetAnalogPowerUpStatesWithOutputType",
   "nidaqmx._lib.lib_importer.cdll.DAQmxGetDigitalPowerUpStates",
@@ -1292,7 +1291,6 @@
   "nidaqmx.error_codes.DAQmxErrors.WRITE_NO_OUTPUT_CHANS_IN_TASK.value",
   "nidaqmx.error_codes.DAQmxErrors.WRITE_NUM_CHANS_MISMATCH.value",
   "nidaqmx.error_codes.DAQmxWarnings.CAPI_STRING_TRUNCATED_TO_FIT_BUFFER.value",
-  "nidaqmx.system.System.local",
   "nidaqmx.tests.fixtures.bridge_device.ai_physical_chans.name",
   "nidaqmx.tests.fixtures.x_series_device.ai_meas_types",
   "nidaqmx.tests.fixtures.x_series_device.ai_physical_chans",
@@ -1319,49 +1317,29 @@
   "numpy.uint32",
   "numpy.uint8",
   "numpy.zeros",
-  "platform",
-  "platform.python_implementation",
   "pykka",
   "pykka.ThreadingActor",
   "pykka.Timeout",
   "pykka.get_all",
-  "pytest",
-  "pytest.fixture",
   "pytest.mark.parametrize",
   "pytest.mark.skip",
   "pytest.mark.skipif",
-  "pytest.raises",
-  "pytest.warns",
-  "random",
-  "random.choice",
-  "random.getrandbits",
-  "random.randint",
-  "random.sample",
-  "random.seed",
-  "random.uniform",
-  "re",
   "re.IGNORECASE",
-  "re.compile",
-  "re.match",
-  "re.search",
-  "six",
-  "six.integer_types",
-  "six.string_types",
-  "six.text_type",
   "sys",
   "sys.platform.startswith",
-  "threading",
-  "threading.Lock",
   "time",
   "type.value",
-  "warnings",
-  "warnings.filterwarnings",
   "warnings.warn"
  ],
  "deps": {
   "__future__": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "_pytest": [
+   "pytest/conda-forge/linux-64/pytest-3.7.0-py27_0",
+   "pytest/conda-forge/linux-64/pytest-4.6.0-py37_0",
+   "pytest/conda-forge/linux-64/pytest-6.0.2-py37hc8dfbb8_0"
   ],
   "collections": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -1370,6 +1348,14 @@
   "ctypes": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "enum": [
+   "privy/conda-forge/noarch/privy-6.0.0-py_0",
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "nidaqmx": [
+   "nidaqmx-python/conda-forge/osx-64/nidaqmx-python-0.5.7-py35_1"
   ],
   "ntpath": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -1381,6 +1367,41 @@
    "numpy/conda-forge/linux-64/numpy-1.19.2-py36h68c22af_1"
   ],
   "os": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "platform": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "pytest": [
+   "pytest/conda-forge/linux-64/pytest-3.7.0-py27_0",
+   "pytest/conda-forge/linux-64/pytest-4.6.0-py37_0",
+   "pytest/conda-forge/linux-64/pytest-6.0.2-py37hc8dfbb8_0"
+  ],
+  "random": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "re": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "six": [
+   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
+   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0",
+   "lldb/conda-forge/linux-64/lldb-6.0.0-py35_0",
+   "privy/conda-forge/noarch/privy-6.0.0-py_0",
+   "six/conda-forge/linux-64/six-1.10.0-py34_0",
+   "six/conda-forge/linux-64/six-1.10.0-py34_1",
+   "six/conda-forge/noarch/six-1.14.0-py_1",
+   "six/conda-forge/noarch/six-1.16.0-pyh6c4a22f_0"
+  ],
+  "threading": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "warnings": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ]
