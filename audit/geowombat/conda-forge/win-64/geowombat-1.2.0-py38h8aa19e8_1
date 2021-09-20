@@ -58,52 +58,10 @@
   "predict",
   "pymorph",
   "pymorph.sedisk",
-  "rasterio",
-  "rasterio.Band",
-  "rasterio.Env",
-  "rasterio.coords.BoundingBox",
-  "rasterio.crs.CRS",
-  "rasterio.crs.CRS.from_dict",
-  "rasterio.crs.CRS.from_epsg",
-  "rasterio.crs.CRS.from_proj4",
-  "rasterio.crs.CRS.from_string",
-  "rasterio.enums.Resampling",
   "rasterio.enums.Resampling.nearest",
-  "rasterio.features",
-  "rasterio.features.rasterize",
-  "rasterio.features.shapes",
-  "rasterio.open",
-  "rasterio.shutil",
   "rasterio.shutil.copy",
   "rasterio.shutil.rmtree",
-  "rasterio.transform.array_bounds",
-  "rasterio.transform.from_bounds",
-  "rasterio.vrt.WarpedVRT",
-  "rasterio.warp.aligned_target",
-  "rasterio.warp.calculate_default_transform",
-  "rasterio.warp.reproject",
-  "rasterio.warp.transform_bounds",
-  "rasterio.windows.Window",
-  "rasterio.windows.from_bounds",
-  "scipy.integrate",
   "scipy.spatial.cKDTree",
-  "sklearn.linear_model.LinearRegression",
-  "sklearn.linear_model.TheilSenRegressor",
-  "subprocess",
-  "subprocess.PIPE",
-  "subprocess.call",
-  "subprocess.run",
-  "tarfile",
-  "tarfile.open",
-  "warnings",
-  "warnings.filterwarnings",
-  "xarray",
-  "xarray.DataArray",
-  "xarray.Dataset",
-  "xarray.concat",
-  "xarray.open_dataset",
-  "xarray.open_rasterio",
-  "xarray.register_dataarray_accessor",
   "xarray.ufuncs.arccos",
   "xarray.ufuncs.cos",
   "xarray.ufuncs.deg2rad",
@@ -111,13 +69,7 @@
   "xarray.ufuncs.maximum",
   "xarray.ufuncs.minimum",
   "xarray.ufuncs.rad2deg",
-  "xarray.ufuncs.sin",
-  "xarray.where",
-  "xml.etree.ElementTree",
-  "xml.etree.ElementTree.parse",
-  "zarr",
-  "zarr.ProcessSynchronizer",
-  "zarr.open"
+  "xarray.ufuncs.sin"
  ],
  "deps": {
   "affine": [
@@ -298,6 +250,16 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "rasterio": [
+   "rasterio/conda-forge/linux-64/rasterio-1.0.25-py36hdff7cfa_0",
+   "rasterio/conda-forge/linux-64/rasterio-1.2.1-py37ha549118_0",
+   "rasterio/conda-forge/linux-64/rasterio-1.2.2-py39h63973eb_0"
+  ],
+  "scipy": [
+   "scipy/conda-forge/linux-64/scipy-0.17.1-np110py27_blas_openblas_202",
+   "scipy/conda-forge/linux-64/scipy-1.7.0-py37h29e03ee_0",
+   "scipy/conda-forge/linux-64/scipy-1.7.0-py37ha768fb6_1"
+  ],
   "shapely": [
    "shapely/conda-forge/linux-64/shapely-1.5.15-np19py35_0",
    "shapely/conda-forge/linux-64/shapely-1.7.1-py37hba0730f_1",
@@ -307,7 +269,20 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "sklearn": [
+   "scikit-learn/conda-forge/linux-64/scikit-learn-0.17.1-np110py27_blas_openblas_200",
+   "scikit-learn/conda-forge/linux-64/scikit-learn-0.17.1-np110py35_blas_openblas_202",
+   "scikit-learn/conda-forge/linux-64/scikit-learn-0.17.1-np111py35_blas_openblas_202"
+  ],
   "string": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "subprocess": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "tarfile": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -326,6 +301,26 @@
    "tqdm/conda-forge/noarch/tqdm-4.56.0-pyhd8ed1ab_0",
    "tqdm/conda-forge/noarch/tqdm-4.56.1-pyhd8ed1ab_0",
    "tqdm/conda-forge/noarch/tqdm-4.60.0-pyhd8ed1ab_0"
-  ]
+  ],
+  "warnings": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "xarray": [
+   "xarray/conda-forge/noarch/xarray-0.13.0-py_0",
+   "xarray/conda-forge/noarch/xarray-0.14.1-py_0",
+   "xarray/conda-forge/noarch/xarray-0.15.0-py_0",
+   "xarray/conda-forge/noarch/xarray-0.15.1-py_0",
+   "xarray/conda-forge/noarch/xarray-0.16.0-py_0",
+   "xarray/conda-forge/noarch/xarray-0.16.1-py_0",
+   "xarray/conda-forge/noarch/xarray-0.16.2-pyhd8ed1ab_0",
+   "xarray/conda-forge/noarch/xarray-0.18.0-pyhd8ed1ab_0",
+   "xarray/conda-forge/noarch/xarray-0.18.2-pyhd8ed1ab_0"
+  ],
+  "xml": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "zarr": []
  }
 }
