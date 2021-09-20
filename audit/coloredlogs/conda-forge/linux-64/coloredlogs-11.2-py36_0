@@ -3,9 +3,12 @@
   "FormatStringParser",
   "FormatStringToken",
   "adjust_level",
+  "capturer.CaptureOutput",
   "check_contents",
   "cleanup_handlers",
   "collections.defaultdict",
+  "colorama",
+  "colorama.init",
   "coloredlogs.CHROOT_FILES.insert",
   "coloredlogs.CHROOT_FILES.pop",
   "coloredlogs.__init__.BasicFormatter",
@@ -42,17 +45,44 @@
   "coloredlogs.converter.__init__.html_encode",
   "coloredlogs.converter.__init__.parse_hex_color",
   "coloredlogs.converter.__init__.select_text_color",
+  "contextlib",
+  "contextlib.contextmanager",
   "find_defined_levels",
   "find_handler",
   "formatter_type",
   "function",
   "functools.partial",
   "get_level",
+  "getopt",
+  "getopt.getopt",
+  "humanfriendly.coerce_boolean",
   "humanfriendly.compat.StringIO",
+  "humanfriendly.compat.coerce_string",
+  "humanfriendly.compat.is_string",
+  "humanfriendly.terminal.ANSI_COLOR_CODES",
   "humanfriendly.terminal.ANSI_COLOR_CODES.items",
+  "humanfriendly.terminal.ANSI_CSI",
+  "humanfriendly.terminal.ANSI_TEXT_STYLES",
+  "humanfriendly.terminal.ansi_style",
+  "humanfriendly.terminal.ansi_wrap",
+  "humanfriendly.terminal.clean_terminal_output",
+  "humanfriendly.terminal.connected_to_terminal",
+  "humanfriendly.terminal.output",
   "humanfriendly.terminal.output.append",
   "humanfriendly.terminal.output.decode",
   "humanfriendly.terminal.output.startswith",
+  "humanfriendly.terminal.terminal_supports_colors",
+  "humanfriendly.terminal.usage",
+  "humanfriendly.terminal.warning",
+  "humanfriendly.testing.PatchedAttribute",
+  "humanfriendly.testing.PatchedItem",
+  "humanfriendly.testing.TestCase",
+  "humanfriendly.testing.retry",
+  "humanfriendly.text.format",
+  "humanfriendly.text.random_string",
+  "humanfriendly.text.split",
+  "imp",
+  "imp.new_module",
   "level_to_number",
   "log_method",
   "logging.NOTICE",
@@ -79,20 +109,18 @@
   "socket.SOCK_RAW",
   "socket.SOCK_STREAM",
   "socket.gethostname",
+  "subprocess",
+  "subprocess.PIPE",
+  "subprocess.Popen",
+  "subprocess.check_call",
   "sys",
   "sys.modules.get",
   "sys.modules.pop",
   "sys.platform.startswith",
   "sys.stdout.getvalue",
-  "time",
-  "verboselogs.VerboseLogger",
-  "webbrowser",
-  "webbrowser.open"
+  "time"
  ],
  "deps": {
-  "capturer": [
-   "capturer/conda-forge/linux-64/capturer-3.0-py36h9f0ad1d_1"
-  ],
   "codecs": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -101,33 +129,7 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "colorama": [
-   "colorama/conda-forge/noarch/colorama-0.3.9-py_1",
-   "colorama/conda-forge/noarch/colorama-0.4.1-py_0",
-   "colorama/conda-forge/noarch/colorama-0.4.3-py_0",
-   "colorama/conda-forge/noarch/colorama-0.4.4-pyh9f0ad1d_0"
-  ],
-  "contextlib": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "functools": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "getopt": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "humanfriendly": [
-   "humanfriendly/conda-forge/noarch/humanfriendly-4.12.1-py_0",
-   "humanfriendly/conda-forge/noarch/humanfriendly-4.15-py_0",
-   "humanfriendly/conda-forge/noarch/humanfriendly-4.15.1-py_0",
-   "humanfriendly/conda-forge/noarch/humanfriendly-4.16-py_0",
-   "humanfriendly/conda-forge/noarch/humanfriendly-4.16.1-py_0",
-   "humanfriendly/conda-forge/noarch/humanfriendly-4.8-py_0"
-  ],
-  "imp": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -163,11 +165,15 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "subprocess": [
+  "tempfile": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "tempfile": [
+  "verboselogs": [
+   "verboselogs/conda-forge/noarch/verboselogs-1.4-py_1",
+   "verboselogs/conda-forge/noarch/verboselogs-1.7-py_0"
+  ],
+  "webbrowser": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ]

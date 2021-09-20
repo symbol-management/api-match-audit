@@ -2,19 +2,39 @@
  "bad": [
   "DirectoryContainer",
   "NullChanges",
+  "PyPDF2",
   "_exit",
   "_get_base_temporary_directory",
   "_orig_EndRecData",
   "_string",
   "append",
+  "argcomplete",
+  "argparse",
+  "argparse.Action",
+  "argparse.ArgumentParser",
+  "argparse.HelpFormatter",
+  "argparse._StoreAction",
+  "argparse._StoreTrueAction",
+  "base64",
+  "base64.b64decode",
+  "base64.b64encode",
+  "binascii",
+  "binascii.a2b_hex",
+  "binascii.b2a_hex",
+  "binascii.hexlify",
   "binwalk",
   "bytes.startswith",
   "cls",
   "cls.parse",
+  "codecs",
+  "codecs.getreader",
+  "codecs.open",
   "compare.compare_binary_files",
   "compare.compare_files",
   "compile_func",
   "cont",
+  "contextlib",
+  "contextlib.contextmanager",
   "curses.setupterm",
   "curses.tigetstr",
   "diffoscope.comparators.__init__.logger",
@@ -64,6 +84,8 @@
   "maybe_decode",
   "objcopy",
   "operation_and_feeder",
+  "operator",
+  "operator.itemgetter",
   "os.O_NONBLOCK",
   "os.O_WRONLY",
   "os._exit",
@@ -109,10 +131,23 @@
   "signal.SIG_DFL",
   "specialize.specialize",
   "str.upper",
+  "string",
+  "string.Formatter",
+  "string.Formatter.parse",
   "struct.calcsize",
   "struct.pack",
   "struct.unpack",
   "struct.unpack_from",
+  "subprocess",
+  "subprocess.CalledProcessError",
+  "subprocess.DEVNULL",
+  "subprocess.PIPE",
+  "subprocess.Popen",
+  "subprocess.STDOUT",
+  "subprocess.call",
+  "subprocess.check_call",
+  "subprocess.check_output",
+  "subprocess.run",
   "sys",
   "sys.stderr.buffer.write",
   "sys.stdout.isatty",
@@ -134,6 +169,7 @@
   "tlsh",
   "to_string",
   "tools.tool_required.all",
+  "urllib.parse.urlparse",
   "utils.PartialString.cont",
   "utils.PartialString.escape",
   "utils.PartialString.numl",
@@ -144,46 +180,11 @@
   "xml.parsers.expat.ExpatError"
  ],
  "deps": {
-  "PyPDF2": [
-   "pypdf2/conda-forge/linux-64/pypdf2-1.26.0-py36_1",
-   "pypdf2/conda-forge/noarch/pypdf2-1.26.0-py_2"
-  ],
   "abc": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "argcomplete": [
-   "argcomplete/conda-forge/noarch/argcomplete-1.10.0-py_0",
-   "argcomplete/conda-forge/noarch/argcomplete-1.10.1-py_0",
-   "argcomplete/conda-forge/noarch/argcomplete-1.10.2-py_0",
-   "argcomplete/conda-forge/noarch/argcomplete-1.10.3-py_0",
-   "argcomplete/conda-forge/noarch/argcomplete-1.11.1-py_0",
-   "argcomplete/conda-forge/noarch/argcomplete-1.11.1-pyh9f0ad1d_1",
-   "argcomplete/conda-forge/noarch/argcomplete-1.12.0-pyh9f0ad1d_0",
-   "argcomplete/conda-forge/noarch/argcomplete-1.12.3-pyhd8ed1ab_0"
-  ],
-  "argparse": [
-   "argparse/conda-forge/osx-64/argparse-1.4.0-py26_0",
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "base64": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "binascii": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "codecs": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "collections": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "contextlib": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -288,10 +289,6 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "operator": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "os": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -345,15 +342,7 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "string": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "struct": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "subprocess": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -374,10 +363,6 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "unicodedata": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "urllib": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],

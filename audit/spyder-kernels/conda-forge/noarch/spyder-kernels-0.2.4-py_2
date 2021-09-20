@@ -4,6 +4,7 @@
   "ConfigParser",
   "Queue",
   "StringIO",
+  "Test",
   "UserDict.DictMixin",
   "__builtin__",
   "_thread",
@@ -11,18 +12,27 @@
   "bdb.Breakpoint.bpbynumber",
   "bdb.Breakpoint.bplist",
   "bdb.Breakpoint.next",
+  "bdb.effective",
+  "bs4",
+  "bs4.element.NavigableString",
   "cPickle",
+  "cloudpickle",
+  "cloudpickle.dumps",
   "cloudpickle.loads",
   "cls",
   "collections.MutableMapping",
   "collections.defaultdict",
+  "configparser",
+  "dateutil.parser.parse",
   "dict.__delitem__",
   "dict.__getitem__",
   "dict.__setitem__",
+  "dis",
   "dis.opmap",
   "dis.opmap.get",
   "get_ipython",
   "get_new_name",
+  "guiqwt.pyplot",
   "io.BytesIO",
   "io.open",
   "ipykernel.kernelapp.IPKernelApp.instance",
@@ -46,6 +56,8 @@
   "numpy.uint32",
   "numpy.uint64",
   "numpy.uint8",
+  "operator",
+  "operator.methodcaller",
   "os.chdir",
   "os.environ.copy",
   "os.environ.get",
@@ -59,29 +71,25 @@
   "spyder.pil_patch.Image.Image",
   "spyder.pil_patch.Image.open",
   "spyder_kernels.py3compat.builtins.__dict__",
-  "spyder_kernels.py3compat.pickle.PickleError",
-  "spyder_kernels.py3compat.pickle.PicklingError",
-  "spyder_kernels.py3compat.pickle.dump",
-  "spyder_kernels.py3compat.pickle.load",
-  "spyder_kernels.py3compat.pickle.loads",
   "spyder_kernels.utils.iofuncs.iofunctions.load_funcs",
   "spyder_kernels.utils.iofuncs.iofunctions.save",
   "spydercustomize",
   "str.lower",
+  "string",
   "string.lower",
+  "subprocess.Popen",
   "sys",
   "sys.argv.append",
   "sys.maxint",
   "sys.modules.items",
   "sys.path.insert",
   "sys.path.remove",
-  "tarfile",
-  "tarfile.open",
   "thread",
   "time",
-  "traitlets.config.loader.Config",
-  "traitlets.config.loader.load_pyconfig_files",
   "unicode",
+  "warnings",
+  "warnings.catch_warnings",
+  "warnings.simplefilter",
   "winreg"
  ],
  "deps": {
@@ -94,9 +102,6 @@
    "pillow/conda-forge/linux-64/pillow-6.2.1-py36hd70f55b_1",
    "pillow/conda-forge/linux-64/pillow-7.0.0-py36h8328e55_1",
    "pillow/conda-forge/linux-64/pillow-7.2.0-py37h718be6c_1"
-  ],
-  "Test": [
-   "netket/conda-forge/noarch/netket-3.0b2-pyhd8ed1ab_0"
   ],
   "__future__": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -111,31 +116,8 @@
    "pytest/conda-forge/linux-64/pytest-4.6.0-py37_0",
    "pytest/conda-forge/linux-64/pytest-6.0.2-py37hc8dfbb8_0"
   ],
-  "bdb": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "bs4": [
-   "beautifulsoup4/conda-forge/linux-64/beautifulsoup4-4.7.1-py37_1001",
-   "beautifulsoup4/conda-forge/linux-64/beautifulsoup4-4.8.2-py37_0",
-   "beautifulsoup4/conda-forge/noarch/beautifulsoup4-4.9.3-pyhb0f4dca_0"
-  ],
   "builtins": [
    "pies2overrides/conda-forge/osx-64/pies2overrides-2.6.7-py27_1000"
-  ],
-  "cloudpickle": [
-   "cloudpickle/conda-forge/noarch/cloudpickle-1.2.0-py_0",
-   "cloudpickle/conda-forge/noarch/cloudpickle-1.2.1-py_0",
-   "cloudpickle/conda-forge/noarch/cloudpickle-1.2.2-py_0",
-   "cloudpickle/conda-forge/noarch/cloudpickle-1.2.2-py_1",
-   "cloudpickle/conda-forge/noarch/cloudpickle-1.3.0-py_0"
-  ],
-  "configparser": [
-   "configparser/conda-forge/linux-64/configparser-3.7.1-py27_1",
-   "configparser/conda-forge/noarch/configparser-5.0.0-py_0",
-   "configparser/conda-forge/noarch/configparser-5.0.1-py_0",
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "copy": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -145,24 +127,9 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "dateutil": [
-   "python-dateutil/conda-forge/noarch/python-dateutil-2.7.2-py_0",
-   "python-dateutil/conda-forge/noarch/python-dateutil-2.7.4-py_0",
-   "python-dateutil/conda-forge/noarch/python-dateutil-2.7.5-py_0",
-   "python-dateutil/conda-forge/noarch/python-dateutil-2.8.1-py_0",
-   "python-dateutil/conda-forge/noarch/python-dateutil-2.8.2-pyhd8ed1ab_0"
-  ],
-  "dis": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "distutils": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "guiqwt": [
-   "guiqwt/conda-forge/linux-64/guiqwt-3.0.3-py37h964fd68_2",
-   "guiqwt/conda-forge/win-64/guiqwt-3.0.5-py36h2ba58a2_1"
   ],
   "inspect": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -194,10 +161,6 @@
    "numpy/conda-forge/linux-64/numpy-1.17.5-py36h95a1406_0",
    "numpy/conda-forge/linux-64/numpy-1.18.4-py37h8960a57_0",
    "numpy/conda-forge/linux-64/numpy-1.19.2-py36h68c22af_1"
-  ],
-  "operator": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "os": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -267,11 +230,12 @@
    "spyder/conda-forge/linux-64/spyder-4.1.3-py38h32f6830_0",
    "spyder/conda-forge/linux-64/spyder-5.0.3-py37h89c1867_0"
   ],
-  "string": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  "spyder_kernels": [
+   "spyder-kernels/conda-forge/linux-64/spyder-kernels-0.4.1-py27_0",
+   "spyder-kernels/conda-forge/linux-64/spyder-kernels-1.8.1-py37hc8dfbb8_1",
+   "spyder-kernels/conda-forge/noarch/spyder-kernels-0.2.4-py_2"
   ],
-  "subprocess": [
+  "tarfile": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -283,11 +247,13 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "unittest": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  "traitlets": [
+   "traitlets/conda-forge/noarch/traitlets-5.0.4-py_0",
+   "traitlets/conda-forge/noarch/traitlets-5.0.4-py_1",
+   "traitlets/conda-forge/noarch/traitlets-5.0.5-py_0",
+   "traitlets/conda-forge/noarch/traitlets-5.1.0-pyhd8ed1ab_0"
   ],
-  "warnings": [
+  "unittest": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ]

@@ -8,9 +8,39 @@
   "conf.oslo_concurrency.disable_process_locking",
   "conf.oslo_concurrency.lock_path",
   "conf.register_opts",
+  "contextlib",
+  "contextlib.contextmanager",
+  "enum",
+  "enum.IntEnum",
+  "enum.unique",
   "errno",
+  "eventlet",
+  "eventlet.event.Event",
+  "eventlet.green.subprocess",
   "eventlet.green.subprocess.PIPE",
+  "eventlet.green.subprocess.Popen",
+  "eventlet.green.subprocess.TimeoutExpired",
+  "eventlet.greenpool",
+  "eventlet.greenpool.GreenPool",
+  "eventlet.monkey_patch",
+  "eventlet.sleep",
+  "eventlet.tpool",
+  "eventlet.tpool.execute",
   "f",
+  "fasteners",
+  "fasteners.InterProcessLock",
+  "fasteners.ReaderWriterLock",
+  "fcntl",
+  "fcntl.LOCK_EX",
+  "fcntl.LOCK_NB",
+  "fcntl.LOCK_UN",
+  "fcntl.flock",
+  "fixtures",
+  "fixtures.FakeLogger",
+  "fixtures.Fixture",
+  "fixtures.MockPatch",
+  "fixtures.MonkeyPatch",
+  "fixtures.TempDir",
   "foo",
   "functools.partial",
   "inner_lock",
@@ -19,6 +49,7 @@
   "msvcrt.LK_NBLCK",
   "msvcrt.LK_UNLCK",
   "msvcrt.locking",
+  "multiprocessing",
   "multiprocessing.Process",
   "multiprocessing.Queue",
   "multiprocessing.cpu_count",
@@ -37,7 +68,18 @@
   "os.remove",
   "os.rmdir",
   "os.unlink",
+  "oslo_config.cfg",
+  "oslo_config.cfg.BoolOpt",
+  "oslo_config.cfg.CONF",
+  "oslo_config.cfg.ConfigOpts",
+  "oslo_config.cfg.RequiredOptError",
+  "oslo_config.cfg.StrOpt",
+  "oslo_config.cfg.set_defaults",
+  "oslo_config.fixture",
+  "oslo_config.fixture.Config",
   "oslo_config.fixture.lock",
+  "oslo_i18n",
+  "oslo_i18n.TranslatorFactory",
   "oslotest.base",
   "oslotest.base.BaseTestCase",
   "outer_lock",
@@ -45,10 +87,25 @@
   "signal.SIGPIPE",
   "signal.SIG_DFL",
   "socket.timeout",
+  "stat",
+  "stat.S_IRGRP",
+  "stat.S_IROTH",
+  "stat.S_IRWXU",
+  "stat.S_IXGRP",
+  "stat.S_IXOTH",
+  "subprocess",
+  "subprocess.Popen",
+  "subprocess.call",
   "sys",
   "sys.platform.startswith",
   "test_without_hypen",
   "test_without_prefix",
+  "threading",
+  "threading.Event",
+  "threading.Semaphore",
+  "threading.Thread",
+  "threading.Timer",
+  "threading._active",
   "time",
   "unittest.mock.mock.call_count",
   "unittest.mock.patch.object",
@@ -70,10 +127,6 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "contextlib": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "copy": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -81,31 +134,6 @@
   "distutils": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "enum": [
-   "privy/conda-forge/noarch/privy-6.0.0-py_0",
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "eventlet": [
-   "eventlet/conda-forge/noarch/eventlet-0.22.0-py_0",
-   "eventlet/conda-forge/noarch/eventlet-0.28.0-py_0",
-   "eventlet/conda-forge/noarch/eventlet-0.29.1-py_0",
-   "eventlet/conda-forge/noarch/eventlet-0.30.0-pyhd8ed1ab_0",
-   "eventlet/conda-forge/noarch/eventlet-0.30.2-pyhd8ed1ab_0",
-   "eventlet/conda-forge/noarch/eventlet-0.30.3-pyhd8ed1ab_0",
-   "eventlet/conda-forge/noarch/eventlet-0.32.0-pyhd8ed1ab_0"
-  ],
-  "fasteners": [
-   "fasteners/conda-forge/noarch/fasteners-0.14.1-py_3"
-  ],
-  "fcntl": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "fixtures": [
-   "fixtures/conda-forge/linux-64/fixtures-3.0.0-py35_0",
-   "fixtures/conda-forge/noarch/fixtures-3.0.0-py_0"
   ],
   "functools": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -124,10 +152,6 @@
    "monotonic/conda-forge/linux-64/monotonic-1.2-py27_0",
    "monotonic/conda-forge/noarch/monotonic-1.5-py_0"
   ],
-  "multiprocessing": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "ntpath": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -135,21 +159,6 @@
   "os": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "oslo_config": [
-   "oslo.config/conda-forge/linux-64/oslo.config-8.7.0-py36h5fab9bb_0",
-   "oslo.config/conda-forge/noarch/oslo.config-4.12.0-py_0",
-   "oslo.config/conda-forge/noarch/oslo.config-5.0.0-py_0",
-   "oslo.config/conda-forge/noarch/oslo.config-6.0.0-py_0",
-   "oslo.config/conda-forge/noarch/oslo.config-8.2.0-py_0"
-  ],
-  "oslo_i18n": [
-   "oslo.i18n/conda-forge/linux-64/oslo.i18n-3.15.0-py27_0",
-   "oslo.i18n/conda-forge/noarch/oslo.i18n-3.18.0-py_0",
-   "oslo.i18n/conda-forge/noarch/oslo.i18n-3.21.0-py_0",
-   "oslo.i18n/conda-forge/noarch/oslo.i18n-3.23.0-py_0",
-   "oslo.i18n/conda-forge/noarch/oslo.i18n-3.23.1-py_0",
-   "oslo.i18n/conda-forge/noarch/oslo.i18n-5.0.1-py_0"
   ],
   "oslo_utils": [
    "oslo.utils/conda-forge/noarch/oslo.utils-3.28.0-py_0",
@@ -203,19 +212,7 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "stat": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "subprocess": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "tempfile": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "threading": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],

@@ -4,10 +4,12 @@
   "SpecClass",
   "compat.b",
   "compat.u",
+  "conda.cli.common",
   "conda.cli.common.add_parser_json",
   "conda.cli.common.add_parser_prefix",
   "conda.cli.common.add_parser_quiet",
   "conda.cli.common.add_parser_yes",
+  "conda.cli.common.arg2spec",
   "conda.cli.common.check_specs",
   "conda.cli.common.error_and_exit",
   "conda.cli.common.exception_and_exit",
@@ -15,13 +17,26 @@
   "conda.cli.common.get_prefix",
   "conda.cli.common.handle_envs_list",
   "conda.cli.common.json_progress_bars",
+  "conda.cli.common.stdout_json",
+  "conda.cli.conda_argparse.ArgumentParser",
+  "conda.cli.install",
+  "conda.cli.install.check_prefix",
+  "conda.cli.install.print_activate",
   "conda.cli.main.args_func",
+  "conda.cli.main_remove",
   "conda.config",
   "conda.config.default_prefix",
   "conda.config.envs_dirs",
   "conda.config.get_rc_urls",
   "conda.config.root_dir",
   "conda.config.root_env_name",
+  "conda.install",
+  "conda.install.linked",
+  "conda.install.rm_rf",
+  "conda.misc.touch_nonadmin",
+  "conda.plan",
+  "conda.plan.execute_actions",
+  "conda.plan.install_actions",
   "conda.plan.is_root_prefix",
   "conda.resolve.normalized_version",
   "conda_env.specs.__init__.all_specs",
@@ -42,6 +57,7 @@
   "main_remove.configure_parser",
   "main_update.configure_parser",
   "main_upload.configure_parser",
+  "nbformat",
   "os.environ.get",
   "os.getcwd",
   "os.path.exists",
@@ -49,12 +65,23 @@
   "os.pathsep.join",
   "seen_add",
   "specs.detect",
+  "subprocess",
+  "subprocess.Popen",
+  "subprocess.check_output",
   "sys",
   "sys.argv.append",
   "sys.stderr.write",
+  "textwrap",
+  "textwrap.dedent",
+  "textwrap.wrap",
   "time",
   "unicode",
-  "yaml.dict"
+  "yaml",
+  "yaml.add_representer",
+  "yaml.dict",
+  "yaml.dump",
+  "yaml.load",
+  "yaml.nodes.MappingNode"
  ],
  "deps": {
   "__future__": [
@@ -76,9 +103,6 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "conda": [
-   "conda/conda-forge/linux-64/conda-4.5.11-py37_1000"
-  ],
   "copy": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -87,12 +111,6 @@
    "importlib/conda-forge/linux-64/importlib-1.0.4-py26_0",
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "nbformat": [
-   "nbformat/conda-forge/noarch/nbformat-4.4.0-py_1",
-   "nbformat/conda-forge/noarch/nbformat-5.0.3-py_0",
-   "nbformat/conda-forge/noarch/nbformat-5.0.8-py_0",
-   "nbformat/conda-forge/noarch/nbformat-5.1.2-pyhd8ed1ab_1"
   ],
   "ntpath": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -105,20 +123,6 @@
   "re": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "subprocess": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "textwrap": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "yaml": [
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0",
-   "pyyaml/conda-forge/linux-64/pyyaml-3.11-py35_0",
-   "pyyaml/conda-forge/win-64/pyyaml-5.2-py36hfa6e2cd_0"
   ]
  }
 }

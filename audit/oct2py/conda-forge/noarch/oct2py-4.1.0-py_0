@@ -8,6 +8,10 @@
   "_extract",
   "_thread",
   "clsptr",
+  "ctypes",
+  "ctypes.WINFUNCTYPE",
+  "ctypes.c_int",
+  "ctypes.c_uint",
   "ctypes.windll.kernel32.SetConsoleCtrlHandler",
   "custom",
   "dict.__delitem__",
@@ -19,6 +23,8 @@
   "dynamic.OctaveUserClass.to_value",
   "func",
   "get_handler",
+  "glob",
+  "glob.glob",
   "in_type",
   "io.StringIO",
   "metakernel.pexpect.EOF",
@@ -53,18 +59,15 @@
   "numpy.uint64",
   "numpy.uint8",
   "oct2py.__init__.octave",
+  "octave_kernel.kernel.OctaveEngine",
+  "octave_kernel.kernel.STDIN_PROMPT",
   "os.getcwd",
   "os.listdir",
   "os.system",
   "out_type",
   "polynomial",
-  "queue",
-  "shutil",
-  "shutil.rmtree",
   "sys",
   "sys.stdin.encoding",
-  "tempfile",
-  "tempfile.mkdtemp",
   "thread",
   "thread.interrupt_main",
   "threading",
@@ -74,10 +77,8 @@
   "type_",
   "types",
   "types.MethodType",
-  "unittest",
-  "unittest.TestCase",
+  "warnings",
   "warnings.warn",
-  "weakref",
   "weakref.ref"
  ],
  "deps": {
@@ -102,15 +103,7 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "ctypes": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "datetime": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "glob": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -127,17 +120,6 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "numpy": [],
-  "octave_kernel": [
-   "octave_kernel/conda-forge/noarch/octave_kernel-0.28.4-py_1",
-   "octave_kernel/conda-forge/noarch/octave_kernel-0.29.1-py_0",
-   "octave_kernel/conda-forge/noarch/octave_kernel-0.29.2-py_0",
-   "octave_kernel/conda-forge/noarch/octave_kernel-0.30.0-py_0",
-   "octave_kernel/conda-forge/noarch/octave_kernel-0.30.1-py_0",
-   "octave_kernel/conda-forge/noarch/octave_kernel-0.30.2-py_0",
-   "octave_kernel/conda-forge/noarch/octave_kernel-0.30.3-py_0",
-   "octave_kernel/conda-forge/noarch/octave_kernel-0.31.0-py_0",
-   "octave_kernel/conda-forge/noarch/octave_kernel-0.32.0-pyh9f0ad1d_0"
-  ],
   "os": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -151,16 +133,33 @@
    "pytest/conda-forge/linux-64/pytest-4.6.0-py37_0",
    "pytest/conda-forge/linux-64/pytest-6.0.2-py37hc8dfbb8_0"
   ],
+  "queue": [
+   "pies2overrides/conda-forge/osx-64/pies2overrides-2.6.7-py27_1000",
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "scipy": [
    "scipy/conda-forge/linux-64/scipy-0.17.1-np110py27_blas_openblas_202",
    "scipy/conda-forge/linux-64/scipy-1.7.0-py37h29e03ee_0",
    "scipy/conda-forge/linux-64/scipy-1.7.0-py37ha768fb6_1"
   ],
+  "shutil": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "tempfile": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "timeit": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "warnings": [
+  "unittest": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "weakref": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ]

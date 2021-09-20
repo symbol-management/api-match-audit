@@ -18,20 +18,35 @@
   "_discretize_sph._discretize_sph_func",
   "amr_grid.AMRGrid",
   "ancestors",
+  "astropy.extern.six",
   "astropy.extern.six.iteritems",
   "astropy.extern.six.string_types",
+  "astropy.log",
   "astropy.log.info",
   "astropy.log.warn",
+  "astropy.table.Column",
+  "astropy.table.Table",
+  "astropy.table.Table.read",
+  "astropy.tests.helper.pytest",
   "astropy.tests.helper.pytest.config.getoption",
+  "astropy.tests.helper.pytest.fixture",
+  "astropy.tests.helper.pytest.main",
   "astropy.tests.helper.pytest.mark.parametrize",
   "astropy.tests.helper.pytest.mark.skipif",
   "astropy.tests.helper.pytest.mark.xfail",
+  "astropy.tests.helper.pytest.raises",
+  "astropy.tests.helper.pytest.skip",
+  "astropy.tests.helper.pytest.xfail",
+  "astropy.units",
   "astropy.units.Hz",
   "astropy.units.Jy",
+  "astropy.units.Quantity",
   "astropy.units.arcsec",
   "astropy.units.kg",
   "astropy.units.micron",
+  "astropy.units.one",
   "astropy.units.percent",
+  "astropy.units.spectral",
   "check",
   "check_recursive",
   "collections.Mapping",
@@ -50,6 +65,13 @@
   "get_volumes",
   "grid.OctreeGrid",
   "grid.tests.yt_compat.get_frb",
+  "h5py",
+  "h5py.Dataset",
+  "h5py.ExternalLink",
+  "h5py.File",
+  "h5py.Group",
+  "h5py.SoftLink",
+  "h5py.highlevel.File",
   "hashlib.md5",
   "helpers.find_last_iteration",
   "hyperion.__init__._get_test_runner",
@@ -103,6 +125,8 @@
   "numpy.uint8",
   "numpy.zeros",
   "object.__setattr__",
+  "operator.lt",
+  "operator.ne",
   "os.mkdir",
   "os.path.exists",
   "os.path.isdir",
@@ -112,8 +136,13 @@
   "raw_input",
   "re.I",
   "sed.SED",
+  "string",
+  "string.ascii_letters",
+  "string.digits",
   "struct.pack",
   "struct.unpack",
+  "subprocess",
+  "subprocess.call",
   "sys",
   "sys.platform.startswith",
   "testing.helper.TestRunner",
@@ -130,6 +159,8 @@
   "vancestors",
   "version.__version__.encode",
   "voronoi_helpers.voronoi_grid",
+  "warnings",
+  "warnings.simplefilter",
   "warnings.warn",
   "yt.frontends.stream.api.StreamStaticOutput",
   "yt.mods.ProjectionPlot",
@@ -154,10 +185,6 @@
    "pytest/conda-forge/linux-64/pytest-4.6.0-py37_0",
    "pytest/conda-forge/linux-64/pytest-6.0.2-py37hc8dfbb8_0"
   ],
-  "astropy": [
-   "astropy/conda-forge/linux-64/astropy-2.0-np111py36_0",
-   "astropy/conda-forge/linux-64/astropy-2.0.2-np111py27_0"
-  ],
   "collections": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -169,11 +196,6 @@
   "distutils": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "h5py": [
-   "h5py/conda-forge/linux-64/h5py-2.10.0-nompi_py37hf7afa78_105",
-   "h5py/conda-forge/linux-64/h5py-2.6.0-np111py34_4",
-   "h5py/conda-forge/linux-64/h5py-2.7.0-np113py36_1"
   ],
   "hashlib": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -207,10 +229,6 @@
    "numpy/conda-forge/linux-64/numpy-1.17.5-py36h95a1406_0",
    "numpy/conda-forge/linux-64/numpy-1.18.4-py37h8960a57_0",
    "numpy/conda-forge/linux-64/numpy-1.19.2-py36h68c22af_1"
-  ],
-  "operator": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "os": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -275,15 +293,7 @@
    "sphinx/conda-forge/noarch/sphinx-4.0.3-pyh6c4a22f_0",
    "sphinx/conda-forge/noarch/sphinx-4.1.1-pyh6c4a22f_0"
   ],
-  "string": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "struct": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "subprocess": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -297,10 +307,6 @@
   ],
   "tvtk": [
    "mayavi/conda-forge/linux-64/mayavi-4.6.1-py36_0"
-  ],
-  "warnings": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "yt": [
    "yt/conda-forge/linux-64/yt-3.3.1-np111py27_0",

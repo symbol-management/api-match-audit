@@ -13,8 +13,35 @@
   "collections.Container",
   "collections.abc.Container",
   "datetime.datetime.today",
+  "docutils.io.StringOutput",
+  "docutils.nodes",
+  "docutils.nodes.Element",
+  "docutils.nodes.General",
+  "docutils.nodes.Text",
+  "docutils.nodes.admonition",
+  "docutils.nodes.bullet_list",
+  "docutils.nodes.document",
+  "docutils.nodes.emphasis",
+  "docutils.nodes.image",
+  "docutils.nodes.list_item",
+  "docutils.nodes.paragraph",
+  "docutils.nodes.reference",
+  "docutils.nodes.section",
+  "docutils.nodes.title",
+  "docutils.parsers.rst.Directive",
+  "docutils.parsers.rst.directives",
+  "docutils.parsers.rst.directives.admonitions.BaseAdmonition",
+  "docutils.parsers.rst.directives.flag",
+  "docutils.utils.column_width",
+  "docutils.utils.new_document",
+  "glob",
+  "glob.glob",
+  "http.server",
+  "http.server.SimpleHTTPRequestHandler",
+  "invoke.run",
   "io.open",
   "next.setter",
+  "operator.attrgetter",
   "os.chdir",
   "os.getcwd",
   "os.path.isdir",
@@ -22,15 +49,44 @@
   "os.remove",
   "parent",
   "re.UNICODE",
+  "shutil",
+  "shutil.rmtree",
+  "socketserver",
+  "sphinx.__version__",
+  "sphinx.addnodes",
+  "sphinx.addnodes.pending_xref",
+  "sphinx.cmd.build.main",
+  "sphinx.cmd.quickstart.do_prompt",
+  "sphinx.cmd.quickstart.ensuredir",
+  "sphinx.cmd.quickstart.is_path",
+  "sphinx.locale._",
+  "sphinx.main",
   "sphinx.quickstart.do_prompt",
   "sphinx.quickstart.ensuredir",
   "sphinx.quickstart.is_path",
   "sphinx.util.console.bold",
+  "sphinx.util.console.color_terminal",
+  "sphinx.util.console.nocolor",
+  "sphinx.util.nodes.set_source_info",
+  "sphinx.util.osutil.make_filename",
+  "sphinx.util.osutil.relative_uri",
+  "sphinx.util.texescape",
+  "sphinx.util.texescape.init",
+  "sphinx.util.texescape.tex_escape_map",
+  "string.Formatter",
   "sys",
   "sys.path.insert",
   "sys.path.pop",
+  "textwrap.wrap",
   "time",
+  "unicodedata.normalize",
+  "urllib.parse.urljoin",
   "urlparse.urljoin",
+  "watchdog.observers.Observer",
+  "watchdog.tricks.ShellCommandTrick",
+  "webbrowser",
+  "webbrowser.open_new_tab",
+  "werkzeug.contrib.atom.AtomFeed",
   "write_file"
  ],
  "deps": {
@@ -58,33 +114,11 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "docutils": [
-   "docutils/conda-forge/linux-64/docutils-0.16-py27h8c360ce_1"
-  ],
-  "glob": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "http": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "invoke": [
-   "invoke/conda-forge/noarch/invoke-1.3.0-py_1",
-   "invoke/conda-forge/noarch/invoke-1.4.0-py_0",
-   "invoke/conda-forge/noarch/invoke-1.4.1-py_0",
-   "invoke/conda-forge/noarch/invoke-1.5.0-pyhd3deb0d_0",
-   "invoke/conda-forge/noarch/invoke-1.6.0-pyhd8ed1ab_0"
-  ],
   "io": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "ntpath": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "operator": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -95,49 +129,6 @@
   "re": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "shutil": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "socketserver": [
-   "pies2overrides/conda-forge/osx-64/pies2overrides-2.6.7-py27_1000",
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "sphinx": [
-   "sphinx/conda-forge/linux-64/sphinx-1.8.3-py36_1000"
-  ],
-  "string": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "textwrap": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "unicodedata": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "urllib": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "watchdog": [
-   "watchdog/conda-forge/linux-64/watchdog-0.10.4-py36h5fab9bb_0",
-   "watchdog/conda-forge/linux-64/watchdog-0.9.0-py36_1",
-   "watchdog/conda-forge/linux-64/watchdog-2.0.2-py37h89c1867_0",
-   "watchdog/conda-forge/noarch/watchdog-0.8.3-py_2"
-  ],
-  "webbrowser": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "werkzeug": [
-   "werkzeug/conda-forge/noarch/werkzeug-0.12.2-py_1",
-   "werkzeug/conda-forge/noarch/werkzeug-0.15.3-py_0",
-   "werkzeug/conda-forge/noarch/werkzeug-0.16.0-py_0"
   ]
  }
 }

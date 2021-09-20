@@ -12,6 +12,15 @@
   "add_row",
   "add_to_row",
   "build_header",
+  "calendar",
+  "calendar.isleap",
+  "calendar.monthrange",
+  "cartopy",
+  "cartopy.crs",
+  "cartopy.crs.PlateCarree",
+  "cartopy.feature.STATES",
+  "cartopy.mpl.gridliner.LATITUDE_FORMATTER",
+  "cartopy.mpl.gridliner.LONGITUDE_FORMATTER",
   "cls",
   "cls._get_catalog_dtype",
   "cls._get_header_dtype",
@@ -19,6 +28,7 @@
   "collections.defaultdict",
   "compute_mct",
   "compute_vertices",
+  "contextlib.contextmanager",
   "csep.core.catalogs.CSEPCatalog.from_dataframe",
   "csep.core.catalogs.CSEPCatalog.from_dict",
   "csep.core.catalogs.CSEPCatalog.load_json",
@@ -26,8 +36,14 @@
   "csep.utils.comcat.VersionOption.FIRST",
   "csep.utils.comcat.VersionOption.LAST",
   "csep.utils.time_utils.HistoricTime.utcnow",
+  "csv",
+  "csv.DictWriter",
+  "csv.reader",
   "datetime.replace",
   "datetime.timezone.utc",
+  "dateutil",
+  "dateutil.parser.parse",
+  "discretize",
   "ecdf",
   "f",
   "functools.reduce",
@@ -70,6 +86,13 @@
   "numpy.zeros",
   "object.from_dict",
   "object.to_dict",
+  "operator",
+  "operator.eq",
+  "operator.ge",
+  "operator.gt",
+  "operator.iconcat",
+  "operator.le",
+  "operator.lt",
   "os.path.exists",
   "os.path.isdir",
   "os.path.isfile",
@@ -84,32 +107,21 @@
   "sys",
   "sys.stderr.write",
   "time",
+  "urllib.error.HTTPError",
+  "urllib.parse.urlencode",
+  "urllib.parse.urlparse",
+  "urllib.request",
+  "urllib.request.urlopen",
+  "warnings",
   "warnings.warn"
  ],
  "deps": {
-  "_csv": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "_pytest": [
    "pytest/conda-forge/linux-64/pytest-3.7.0-py27_0",
    "pytest/conda-forge/linux-64/pytest-4.6.0-py37_0",
    "pytest/conda-forge/linux-64/pytest-6.0.2-py37hc8dfbb8_0"
   ],
-  "calendar": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "cartopy": [
-   "cartopy/conda-forge/linux-64/cartopy-0.17.0-py37hbeedcd3_1007",
-   "cartopy/conda-forge/linux-64/cartopy-0.18.0-py37h623d01f_6",
-   "cartopy/conda-forge/linux-64/cartopy-0.19.0.post1-py37h0c48da3_0"
-  ],
   "collections": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "contextlib": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -117,24 +129,9 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "csv": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "datetime": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "dateutil": [
-   "python-dateutil/conda-forge/noarch/python-dateutil-2.7.2-py_0",
-   "python-dateutil/conda-forge/noarch/python-dateutil-2.7.4-py_0",
-   "python-dateutil/conda-forge/noarch/python-dateutil-2.7.5-py_0",
-   "python-dateutil/conda-forge/noarch/python-dateutil-2.8.1-py_0",
-   "python-dateutil/conda-forge/noarch/python-dateutil-2.8.2-pyhd8ed1ab_0"
-  ],
-  "discretize": [
-   "discretize/conda-forge/linux-64/discretize-0.5.1-py37h48f8a5e_0",
-   "discretize/conda-forge/linux-64/discretize-0.6.0-py36h8e82bdb_1"
   ],
   "enum": [
    "privy/conda-forge/noarch/privy-6.0.0-py_0",
@@ -175,10 +172,6 @@
    "obspy/conda-forge/linux-64/obspy-1.0.3-py35_1",
    "obspy/conda-forge/linux-64/obspy-1.2.2-py27h588f082_0"
   ],
-  "operator": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "os": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -216,18 +209,10 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "urllib": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "vcr": [
    "vcrpy/conda-forge/linux-64/vcrpy-3.0.0-py36_0",
    "vcrpy/conda-forge/noarch/vcrpy-4.0.2-py_0",
    "vcrpy/conda-forge/noarch/vcrpy-4.1.1-py_0"
-  ],
-  "warnings": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "xml": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
