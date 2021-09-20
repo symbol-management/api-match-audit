@@ -87,6 +87,11 @@
   "d_s",
   "docstring._docstring_substitution_definitions",
   "docstring._docstring_substitution_definitions.copy",
+  "doctest",
+  "doctest.DocTestSuite",
+  "doctest.ELLIPSIS",
+  "doctest.NORMALIZE_WHITESPACE",
+  "enum.Enum",
   "eq",
   "faulthandler",
   "filter_method",
@@ -94,12 +99,30 @@
   "function_to_call_to_test",
   "functools.partial",
   "functools.reduce",
+  "functools.total_ordering",
+  "functools.wraps",
   "get_property",
+  "importlib",
+  "importlib.import_module",
+  "inspect",
+  "inspect.isfunction",
+  "inspect.ismethod",
+  "inspect.isroutine",
   "itertools",
   "klass",
   "klass.__name__",
+  "logging",
+  "logging.CRITICAL",
+  "logging.DEBUG",
   "logging.DETAIL",
+  "logging.INFO",
   "logging.Logger.detail",
+  "logging.WARNING",
+  "logging.addLevelName",
+  "logging.basicConfig",
+  "logging.disable",
+  "logging.getLevelName",
+  "logging.getLogger",
   "method_with_display_kwarg",
   "method_with_verbose_kwarg",
   "mixin.ArrayMixin",
@@ -125,6 +148,7 @@
   "mixin.RaggedIndexed",
   "nc_get_dimension",
   "nc_get_variable",
+  "netCDF4",
   "netCDF4.Dataset",
   "netCDF4.__file__",
   "netCDF4.__hdf5libversion__",
@@ -134,8 +158,11 @@
   "netCDF4.default_fillvals",
   "netCDF4.num2date",
   "netCDF4.stringtochar",
+  "netcdf_flattener",
   "netcdf_flattener._Flattener._Flattener__new_separator",
   "netcdf_flattener.__file__",
+  "netcdf_flattener.__version__",
+  "netcdf_flattener.flatten",
   "numpy.__file__",
   "numpy.arange",
   "numpy.dtype",
@@ -156,12 +183,17 @@
   "pop",
   "short_iteration",
   "struct.unpack",
-  "subprocess",
-  "subprocess.run",
   "subst",
   "sys",
   "sys.float_info.epsilon",
-  "take"
+  "take",
+  "unittest",
+  "unittest.TestCase",
+  "unittest.TestLoader",
+  "unittest.TestSuite",
+  "unittest.TextTestRunner",
+  "unittest.main",
+  "unittest.mock.patch"
  ],
  "deps": {
   "_pickle": [
@@ -206,39 +238,9 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "doctest": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "enum": [
-   "privy/conda-forge/noarch/privy-6.0.0-py_0",
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "functools": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "importlib": [
-   "importlib/conda-forge/linux-64/importlib-1.0.4-py26_0",
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "inspect": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "logging": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "netCDF4": [
-   "netcdf4/conda-forge/linux-64/netcdf4-1.2.4-np111py35_1",
-   "netcdf4/conda-forge/linux-64/netcdf4-1.5.1.2-py27had58050_0",
-   "netcdf4/conda-forge/linux-64/netcdf4-1.5.5.1-mpi_openmpi_py39h16caffe_0"
-  ],
-  "netcdf_flattener": [
-   "netcdf-flattener/conda-forge/noarch/netcdf-flattener-1.2.0-pyh9f0ad1d_0"
   ],
   "ntpath": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -288,15 +290,15 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "subprocess": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "tempfile": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "textwrap": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "unittest": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],

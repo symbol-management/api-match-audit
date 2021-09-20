@@ -63,10 +63,13 @@
   "nglview.color.ColormakerRegistry._ready",
   "nglview.color.ColormakerRegistry.add_scheme",
   "nglview.datafiles.__init__.MODULE_DIR",
+  "notebook.notebookapp.NotebookApp",
+  "notebook.notebookapp.random_ports",
   "numpy.arange",
   "numpy.empty",
   "numpy.frombuffer",
   "numpy.zeros",
+  "openbabel",
   "openbabel.openbabel",
   "openbabel.openbabel.OBConversion",
   "os.chdir",
@@ -76,8 +79,30 @@
   "os.path.exists",
   "os.path.isfile",
   "os.remove",
+  "parmed",
   "parmed.Atom",
+  "parmed.Structure",
+  "parmed.load_file",
+  "prody",
+  "prody.Ensemble",
+  "prody.writePDB",
+  "pymatgen",
+  "pymatgen.core.Lattice",
+  "pymatgen.core.Lattice.cubic",
+  "pymatgen.core.Structure",
+  "pymatgen.io.ase.AseAtomsAdaptor",
+  "pytraj",
+  "pytraj.datafiles.load_ala3",
+  "pytraj.datafiles.load_trpcage",
+  "pytraj.datafiles.load_tz2",
+  "pytraj.load",
+  "pytraj.superpose",
+  "qcelemental",
+  "qcelemental.models.Molecule.from_data",
+  "rdkit",
+  "rdkit.Chem",
   "rdkit.Chem.AddHs",
+  "rdkit.Chem.AllChem",
   "rdkit.Chem.AllChem.EmbedMultipleConfs",
   "rdkit.Chem.MolFromSmiles",
   "rdkit.Chem.MolToMolBlock",
@@ -89,11 +114,34 @@
   "schrodinger.application.desmond.packages.traj.read_traj",
   "schrodinger.structure.StructureReader",
   "show.__all__",
+  "sidecar.Sidecar",
+  "simpletraj",
+  "socket",
   "socket.error",
   "socket.gethostname",
   "sys",
   "theme.ThemeManager",
   "time",
+  "tornado.httpserver",
+  "tornado.httpserver.HTTPServer",
+  "traitlets",
+  "traitlets.Any",
+  "traitlets.Bool",
+  "traitlets.CaselessStrEnum",
+  "traitlets.Dict",
+  "traitlets.Float",
+  "traitlets.HasTraits",
+  "traitlets.Instance",
+  "traitlets.Int",
+  "traitlets.Integer",
+  "traitlets.List",
+  "traitlets.TraitError",
+  "traitlets.Unicode",
+  "traitlets.link",
+  "traitlets.observe",
+  "traitlets.validate",
+  "unittest",
+  "unittest.skipUnless",
   "update_coords",
   "utils.get_fn",
   "utils.js_utils.execute",
@@ -103,7 +151,8 @@
   "utils.py_utils.get_positive_index",
   "utils.repr_dict",
   "utils.widget_utils.get_widget_by_name",
-  "widget.__all__"
+  "widget.__all__",
+  "zipfile.ZipFile"
  ],
  "deps": {
   "Bio": [
@@ -219,11 +268,6 @@
    "nglview/conda-forge/noarch/nglview-2.7.0-pyh5ca1d4c_0",
    "nglview/conda-forge/noarch/nglview-3.0.3-pyh8a188c0_0"
   ],
-  "notebook": [
-   "notebook/conda-forge/linux-64/notebook-6.0.1-py38_0",
-   "notebook/conda-forge/linux-64/notebook-6.3.0-py36hd000896_0",
-   "notebook/conda-forge/noarch/notebook-6.4.0-pyha770c72_0"
-  ],
   "ntpath": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -233,61 +277,19 @@
    "numpy/conda-forge/linux-64/numpy-1.18.4-py37h8960a57_0",
    "numpy/conda-forge/linux-64/numpy-1.19.2-py36h68c22af_1"
   ],
-  "openbabel": [
-   "openbabel/conda-forge/linux-64/openbabel-2.4.1-py37hc189817_0"
-  ],
   "os": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "parmed": [
-   "ambertools/conda-forge/linux-64/ambertools-19.0-py37h5dc2433_0",
-   "ambertools/conda-forge/linux-64/ambertools-20.0-py36he882800_0",
-   "parmed/conda-forge/linux-64/parmed-3.4.1-py36ha03b18c_0",
-   "parmed/conda-forge/linux-64/parmed-3.4.1-py37he226ad3_0",
-   "parmed/conda-forge/linux-64/parmed-3.4.1-py39he80948d_0"
   ],
   "pathlib": [
    "pathlib/conda-forge/noarch/pathlib-1.0.1-py_1",
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "prody": [
-   "prody/conda-forge/linux-64/prody-1.11-py38hadf7658_1"
-  ],
-  "pymatgen": [
-   "pymatgen/conda-forge/linux-64/pymatgen-2019.12.22-py37hc9558a2_0",
-   "pymatgen/conda-forge/linux-64/pymatgen-2019.7.21-py36h516909a_1",
-   "pymatgen/conda-forge/linux-64/pymatgen-2019.7.30-py36h516909a_0"
-  ],
   "pytest": [
    "pytest/conda-forge/linux-64/pytest-3.7.0-py27_0",
    "pytest/conda-forge/linux-64/pytest-4.6.0-py37_0",
    "pytest/conda-forge/linux-64/pytest-6.0.2-py37hc8dfbb8_0"
-  ],
-  "pytraj": [
-   "ambertools/conda-forge/linux-64/ambertools-19.0-py37h5dc2433_0",
-   "ambertools/conda-forge/linux-64/ambertools-20.0-py36he882800_0"
-  ],
-  "qcelemental": [
-   "qcelemental/conda-forge/noarch/qcelemental-0.10.0-py_0",
-   "qcelemental/conda-forge/noarch/qcelemental-0.12.0-py_0",
-   "qcelemental/conda-forge/noarch/qcelemental-0.15.1-py_0",
-   "qcelemental/conda-forge/noarch/qcelemental-0.16.0-py_0",
-   "qcelemental/conda-forge/noarch/qcelemental-0.18.0-pyhd8ed1ab_0",
-   "qcelemental/conda-forge/noarch/qcelemental-0.19.0-pyhd8ed1ab_0",
-   "qcelemental/conda-forge/noarch/qcelemental-0.2.6-py_0",
-   "qcelemental/conda-forge/noarch/qcelemental-0.21.0-pyhd8ed1ab_0",
-   "qcelemental/conda-forge/noarch/qcelemental-0.3.1-py_0",
-   "qcelemental/conda-forge/noarch/qcelemental-0.3.3-py_0",
-   "qcelemental/conda-forge/noarch/qcelemental-0.4.1-py_0",
-   "qcelemental/conda-forge/noarch/qcelemental-0.5.0-py_0",
-   "qcelemental/conda-forge/noarch/qcelemental-0.9.0-py_0"
-  ],
-  "rdkit": [
-   "rdkit/conda-forge/linux-64/rdkit-2018.09.3-py27h9c20d5c_0",
-   "rdkit/conda-forge/linux-64/rdkit-2019.03.4-py37hb31dc5d_1",
-   "rdkit/conda-forge/linux-64/rdkit-2020.09.4-py39hccf6a74_0"
   ],
   "re": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -302,15 +304,6 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "sidecar": [
-   "sidecar/conda-forge/noarch/sidecar-0.4.0-pyh9f0ad1d_0",
-   "sidecar/conda-forge/noarch/sidecar-0.5.0-pyhd8ed1ab_0",
-   "sidecar/conda-forge/noarch/sidecar-0.5.1-pyhd8ed1ab_0"
-  ],
-  "simpletraj": [
-   "simpletraj/conda-forge/linux-64/simpletraj-0.5-py27h7eb728f_0",
-   "simpletraj/conda-forge/linux-64/simpletraj-0.5-py36hda16e5c_1002"
-  ],
   "six": [
    "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
    "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0",
@@ -320,10 +313,6 @@
    "six/conda-forge/linux-64/six-1.10.0-py34_1",
    "six/conda-forge/noarch/six-1.14.0-py_1",
    "six/conda-forge/noarch/six-1.16.0-pyh6c4a22f_0"
-  ],
-  "socket": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "subprocess": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -337,25 +326,11 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "tornado": [
-   "tornado/conda-forge/linux-64/tornado-4.4.3-py35_0",
-   "tornado/conda-forge/linux-64/tornado-6.0.4-py38h1e0a361_2"
-  ],
-  "traitlets": [
-   "traitlets/conda-forge/noarch/traitlets-5.0.4-py_0",
-   "traitlets/conda-forge/noarch/traitlets-5.0.4-py_1",
-   "traitlets/conda-forge/noarch/traitlets-5.0.5-py_0",
-   "traitlets/conda-forge/noarch/traitlets-5.1.0-pyhd8ed1ab_0"
-  ],
   "types": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "typing": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "unittest": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -368,10 +343,6 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "warnings": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "zipfile": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ]
