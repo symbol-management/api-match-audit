@@ -17,6 +17,13 @@
   "_run_loop",
   "_tstamp",
   "agg_fnc",
+  "aiohttp",
+  "aiohttp.ClientError",
+  "aiohttp.ClientOSError",
+  "aiohttp.ClientResponseError",
+  "aiohttp.ClientSession",
+  "aiohttp.ClientTimeout",
+  "aiohttp.TCPConnector",
   "aoi_func",
   "apply_flag",
   "bokeh.palettes.all_palettes",
@@ -54,6 +61,12 @@
   "get_with_retries",
   "hashlib.sha256",
   "immediate_func",
+  "inspect",
+  "inspect.currentframe",
+  "inspect.getfile",
+  "inspect.signature",
+  "inspect.unwrap",
+  "io",
   "io.StringIO",
   "itertools",
   "itertools.chain.from_iterable",
@@ -62,61 +75,130 @@
   "make_extra",
   "make_row",
   "metric_func",
+  "multiprocessing",
   "multiprocessing.current_process",
   "netCDF4.Dataset",
   "next_run_time",
+  "numpy",
   "numpy.Inf",
   "numpy.NINF",
   "numpy.NaN",
   "numpy.abs",
+  "numpy.all",
+  "numpy.allclose",
+  "numpy.append",
   "numpy.arange",
+  "numpy.argmax",
+  "numpy.argmin",
+  "numpy.argsort",
+  "numpy.argwhere",
+  "numpy.around",
+  "numpy.array",
+  "numpy.asarray",
   "numpy.bitwise_and",
   "numpy.bitwise_or.reduce",
   "numpy.ceil",
+  "numpy.concatenate",
   "numpy.cos",
+  "numpy.count_nonzero",
+  "numpy.diff",
+  "numpy.errstate",
   "numpy.greater",
   "numpy.greater_equal",
+  "numpy.histogram",
   "numpy.inf",
+  "numpy.isclose",
+  "numpy.isin",
   "numpy.isnan",
+  "numpy.isscalar",
+  "numpy.issubdtype",
   "numpy.less",
   "numpy.less_equal",
+  "numpy.linspace",
   "numpy.logical_and",
   "numpy.logical_not",
+  "numpy.mean",
+  "numpy.meshgrid",
   "numpy.minimum",
   "numpy.nan",
+  "numpy.nan_to_num",
+  "numpy.nanmax",
+  "numpy.nanmean",
+  "numpy.nanmedian",
+  "numpy.nanmin",
+  "numpy.nanstd",
+  "numpy.ndarray",
+  "numpy.ndim",
   "numpy.nditer",
+  "numpy.nonzero",
   "numpy.number",
   "numpy.object",
+  "numpy.ones",
+  "numpy.percentile",
   "numpy.pi",
   "numpy.random.rand",
   "numpy.random.randint",
   "numpy.random.randn",
   "numpy.random.random",
+  "numpy.repeat",
   "numpy.right_shift",
+  "numpy.round",
+  "numpy.searchsorted",
+  "numpy.shape",
   "numpy.sin",
+  "numpy.sort",
   "numpy.sqrt",
+  "numpy.std",
+  "numpy.sum",
+  "numpy.testing.assert_allclose",
+  "numpy.testing.assert_approx_equal",
+  "numpy.testing.assert_array_equal",
+  "numpy.tile",
   "numpy.timedelta64",
+  "numpy.unique",
+  "numpy.unravel_index",
+  "numpy.where",
   "numpy.zeros",
   "nwpoutput",
   "object.__setattr__",
   "optimize_netcdf",
+  "os",
   "os.close",
+  "os.getenv",
   "os.kill",
   "os.listdir",
+  "os.path.abspath",
+  "os.path.dirname",
+  "os.path.join",
   "out",
   "out.append",
   "out.items",
   "pair_type",
   "pandas.NaT",
+  "pkg_resources",
+  "pkg_resources.DistributionNotFound",
+  "pkg_resources.Requirement",
+  "pkg_resources.Requirement.parse",
+  "pkg_resources.get_distribution",
+  "pkg_resources.resource_filename",
   "plotly.io.orca.config.executable",
   "plotly.io.orca.config.server_url",
   "process_grib_to_netcdf",
+  "pytest",
+  "pytest.approx",
+  "pytest.fixture",
+  "pytest.importorskip",
+  "pytest.main",
   "pytest.mark.asyncio",
   "pytest.mark.filterwarnings",
   "pytest.mark.parametrize",
   "pytest.mark.skipif",
   "pytest.mark.timeout",
   "pytest.mark.xfail",
+  "pytest.param",
+  "pytest.raises",
+  "pytest.skip",
+  "pytest.warns",
   "pytz.utc.localize",
   "raw_report",
   "raw_report.processed_forecasts_observations",
@@ -131,6 +213,9 @@
   "sentry_sdk.integrations.logging._IGNORED_LOGGERS.remove",
   "sentry_sdk.integrations.logging.getLogger",
   "ser",
+  "shutil",
+  "shutil.copytree",
+  "shutil.which",
   "signal.SIGINT",
   "signal.SIGTERM",
   "signal.SIGUSR1",
@@ -209,9 +294,20 @@
   "solarforecastarbiter.validation.quality_mapping.LATEST_VERSION_FLAG.all",
   "startup_find_next_runtime",
   "sys",
+  "tempfile",
+  "tempfile.NamedTemporaryFile",
+  "tempfile.TemporaryDirectory",
+  "tempfile.mkstemp",
   "time",
   "type_",
+  "typing.ClassVar",
+  "typing.Tuple",
+  "typing.Union",
   "ub_op",
+  "urllib.error",
+  "urllib.error.HTTPError",
+  "urllib.error.URLError",
+  "urllib.parse.parse_qs",
   "validate_defaults",
   "validation_func",
   "warnings.warn",
@@ -220,16 +316,6 @@
  "deps": {
   "_asyncio": [
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "_pytest": [
-   "pytest/conda-forge/linux-64/pytest-3.7.0-py27_0",
-   "pytest/conda-forge/linux-64/pytest-4.6.0-py37_0",
-   "pytest/conda-forge/linux-64/pytest-6.0.2-py37hc8dfbb8_0"
-  ],
-  "aiohttp": [
-   "aiohttp/conda-forge/linux-64/aiohttp-3.6.3-py36h97a6639_2",
-   "aiohttp/conda-forge/linux-64/aiohttp-3.7.1-py37h8f50634_0",
-   "aiohttp/conda-forge/linux-64/aiohttp-3.7.2-py37h8f50634_0"
   ],
   "asyncio": [],
   "asynctest": [
@@ -280,14 +366,6 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "inspect": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "io": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "jinja2": [
    "jinja2/conda-forge/noarch/jinja2-2.10-py_1",
    "jinja2/conda-forge/noarch/jinja2-2.11.3-pyh44b312d_0",
@@ -318,38 +396,16 @@
    "matplotlib-base/conda-forge/linux-64/matplotlib-base-3.1.1-py38h250f245_2",
    "matplotlib/conda-forge/linux-64/matplotlib-1.5.3-np111py34_0"
   ],
-  "multiprocessing": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "netCDF4": [
    "netcdf4/conda-forge/linux-64/netcdf4-1.2.4-np111py35_1",
    "netcdf4/conda-forge/linux-64/netcdf4-1.5.1.2-py27had58050_0",
    "netcdf4/conda-forge/linux-64/netcdf4-1.5.5.1-mpi_openmpi_py39h16caffe_0"
-  ],
-  "ntpath": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "numpy": [
-   "numpy/conda-forge/linux-64/numpy-1.17.5-py36h95a1406_0",
-   "numpy/conda-forge/linux-64/numpy-1.18.4-py37h8960a57_0",
-   "numpy/conda-forge/linux-64/numpy-1.19.2-py36h68c22af_1"
-  ],
-  "os": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "pandas": [],
   "pathlib": [
    "pathlib/conda-forge/noarch/pathlib-1.0.1-py_1",
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "pkg_resources": [
-   "setuptools/conda-forge/linux-64/setuptools-40.6.1-py36_0",
-   "setuptools/conda-forge/linux-64/setuptools-46.3.0-py38h32f6830_0",
-   "setuptools/conda-forge/linux-64/setuptools-49.1.2-py38h32f6830_0"
   ],
   "platform": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -364,11 +420,6 @@
    "pvlib-python/conda-forge/noarch/pvlib-python-0.8.0-pyh9f0ad1d_0",
    "pvlib-python/conda-forge/noarch/pvlib-python-0.9.0-pyhd8ed1ab_0",
    "pvlib-python/conda-forge/noarch/pvlib-python-0.9.0-pyhd8ed1ab_1"
-  ],
-  "pytest": [
-   "pytest/conda-forge/linux-64/pytest-3.7.0-py27_0",
-   "pytest/conda-forge/linux-64/pytest-4.6.0-py37_0",
-   "pytest/conda-forge/linux-64/pytest-6.0.2-py37hc8dfbb8_0"
   ],
   "pytz": [
    "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
@@ -433,10 +484,6 @@
    "sentry-sdk/conda-forge/noarch/sentry-sdk-0.7.6-py_0",
    "sentry-sdk/conda-forge/noarch/sentry-sdk-1.2.0-pyhd8ed1ab_0"
   ],
-  "shutil": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "signal": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -456,23 +503,11 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "tempfile": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "threading": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "types": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "typing": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "urllib": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],

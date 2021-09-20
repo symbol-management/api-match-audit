@@ -8,17 +8,45 @@
   "_manylinux.manylinux_compatible",
   "_platform_tags",
   "_version_nodot",
+  "adios",
   "bdist_wheel.bdist_wheel.get_tag",
   "collections.defaultdict",
   "conv",
   "convert.convert",
+  "csv",
+  "csv.writer",
+  "ctypes",
+  "ctypes.BigEndianStructure",
+  "ctypes.CDLL",
+  "ctypes.LittleEndianStructure",
+  "ctypes.Structure",
+  "ctypes.c_char",
+  "ctypes.c_char_p",
+  "ctypes.c_int",
+  "ctypes.c_uint32",
   "ctypes.c_uint32.from_buffer_copy",
+  "ctypes.c_uint64",
   "ctypes.sizeof",
+  "distutils",
+  "distutils.core.Command",
+  "distutils.dist",
+  "distutils.dist.Distribution",
+  "distutils.log",
+  "distutils.log.debug",
+  "distutils.log.info",
+  "distutils.log.warn",
+  "distutils.util",
+  "distutils.util.get_platform",
   "email.generator.BytesGenerator",
   "email.generator.Generator",
   "email.message.Message",
   "email.parser.Parser",
+  "glob",
+  "glob.glob",
+  "glob.iglob",
   "gnu_get_libc_version",
+  "hashlib",
+  "hashlib.new",
   "hashlib.sha256",
   "imp",
   "imp.get_suffixes",
@@ -26,14 +54,28 @@
   "io",
   "io.BytesIO",
   "io.StringIO",
+  "os",
   "os.chmod",
   "os.confstr",
+  "os.environ",
   "os.environ.split",
+  "os.makedirs",
   "os.mkdir",
+  "os.name",
+  "os.path",
+  "os.path.basename",
+  "os.path.curdir",
+  "os.path.dirname",
   "os.path.exists",
   "os.path.isdir",
   "os.path.isfile",
+  "os.path.islink",
+  "os.path.join",
+  "os.path.normpath",
+  "os.path.splitdrive",
+  "os.sep",
   "os.unlink",
+  "os.walk",
   "pack.pack",
   "pkg_resources",
   "pkg_resources.Requirement.parse",
@@ -45,10 +87,12 @@
   "platform.mac_ver",
   "platform.python_implementation",
   "platform.system",
-  "re",
   "re.VERBOSE",
-  "re.compile",
-  "re.match",
+  "shutil",
+  "shutil.copy",
+  "shutil.copy2",
+  "shutil.copytree",
+  "shutil.rmtree",
   "stat",
   "stat.S_IFMT",
   "stat.S_IMODE",
@@ -61,12 +105,8 @@
   "sys.implementation.name",
   "sys.stderr.write",
   "sys.stdout.flush",
-  "sysconfig",
-  "sysconfig.get_config_var",
   "tempfile",
   "tempfile.mkdtemp",
-  "textwrap",
-  "textwrap.dedent",
   "time",
   "typing.Dict",
   "typing.FrozenSet",
@@ -92,32 +132,12 @@
   "wheel.cli.__init__.pack_f",
   "wheel.cli.__init__.parser",
   "wheel.cli.__init__.unpack_f",
-  "wheel.cli.__init__.version_f",
-  "zipfile",
-  "zipfile.ZIP_DEFLATED",
-  "zipfile.ZIP_STORED",
-  "zipfile.ZipFile",
-  "zipfile.ZipFile.close",
-  "zipfile.ZipFile.open",
-  "zipfile.ZipFile.writestr",
-  "zipfile.ZipInfo"
+  "wheel.cli.__init__.version_f"
  ],
  "deps": {
   "__future__": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "_csv": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "_ctypes": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "adios": [
-   "adios-python/conda-forge/linux-64/adios-python-1.13.1-py36hdd001d2_1006",
-   "adios-python/conda-forge/linux-64/adios-python-1.13.1-py37h7127e17_1"
   ],
   "argparse": [
    "argparse/conda-forge/osx-64/argparse-1.4.0-py26_0",
@@ -132,39 +152,23 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "csv": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "ctypes": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "distutils": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "glob": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "hashlib": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "logging": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "ntpath": [
+  "re": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "os": [
+  "sysconfig": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "shutil": [
+  "textwrap": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "zipfile": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ]

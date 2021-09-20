@@ -5,48 +5,123 @@
   "_prepare_coords",
   "_send_email",
   "_split_addresses",
+  "bs4",
+  "bs4.BeautifulSoup",
+  "cartopy",
+  "cartopy.crs",
+  "cartopy.crs.PlateCarree",
+  "cartopy.crs.Robinson",
+  "cartopy.mpl.geoaxes.GeoAxes",
   "commify",
+  "defusedxml.ElementTree",
   "defusedxml.ElementTree.fromstring",
   "defusedxml.ElementTree.parse",
+  "email.encoders",
+  "email.encoders.encode_base64",
+  "email.message.Message",
+  "email.mime.application.MIMEApplication",
+  "email.mime.audio.MIMEAudio",
+  "email.mime.base.MIMEBase",
+  "email.mime.image.MIMEImage",
+  "email.mime.multipart.MIMEMultipart",
+  "email.mime.text.MIMEText",
+  "email.utils",
+  "fiona.collection",
+  "ftplib.FTP",
+  "ftplib.error_perm",
   "functools.partial",
   "impactutils.time.ancient_time.HistoricTime.datetime",
   "impactutils.time.ancient_time.HistoricTime.strptime",
+  "io",
   "io.BytesIO",
   "itertools",
+  "locale",
+  "locale.getpreferredencoding",
+  "lxml.etree",
   "lxml.etree.Element",
   "lxml.etree.ElementTree",
   "lxml.etree.SubElement",
+  "matplotlib",
+  "matplotlib.colors.LinearSegmentedColormap",
+  "matplotlib.font_manager",
+  "matplotlib.patheffects",
+  "matplotlib.patheffects.Normal",
+  "matplotlib.patheffects.Stroke",
+  "matplotlib.pyplot",
+  "matplotlib.pyplot.axes",
+  "matplotlib.pyplot.figure",
+  "matplotlib.pyplot.sca",
+  "matplotlib.rcParams",
+  "matplotlib.use",
+  "mimetypes",
+  "mimetypes.guess_type",
+  "numpy",
   "numpy.abs",
+  "numpy.any",
+  "numpy.append",
   "numpy.arange",
   "numpy.arccos",
   "numpy.arcsin",
   "numpy.arctan",
   "numpy.arctan2",
+  "numpy.argmin",
+  "numpy.argwhere",
+  "numpy.array",
+  "numpy.array_equal",
+  "numpy.asarray",
   "numpy.bool_",
   "numpy.ceil",
+  "numpy.clip",
+  "numpy.concatenate",
   "numpy.cos",
+  "numpy.cross",
   "numpy.deg2rad",
   "numpy.degrees",
+  "numpy.dot",
   "numpy.empty",
+  "numpy.fliplr",
   "numpy.float64",
   "numpy.floor",
+  "numpy.hstack",
   "numpy.int64",
+  "numpy.isclose",
   "numpy.isnan",
+  "numpy.linalg.det",
+  "numpy.linalg.svd",
+  "numpy.linspace",
   "numpy.log",
   "numpy.logical_not",
+  "numpy.max",
+  "numpy.mean",
+  "numpy.min",
   "numpy.minimum",
   "numpy.mod",
   "numpy.nan",
+  "numpy.nanmax",
+  "numpy.nanmin",
+  "numpy.ndarray",
+  "numpy.ones",
+  "numpy.ones_like",
   "numpy.pi",
   "numpy.power",
   "numpy.rad2deg",
   "numpy.radians",
+  "numpy.reshape",
+  "numpy.roll",
+  "numpy.round",
+  "numpy.shape",
   "numpy.sign",
   "numpy.signbit",
   "numpy.sin",
   "numpy.sqrt",
+  "numpy.sum",
+  "numpy.transpose",
   "numpy.uint8",
+  "numpy.unique",
+  "numpy.vstack",
+  "numpy.where",
   "numpy.zeros",
+  "numpy.zeros_like",
   "openquake.baselib.slots.with_slots",
   "openquake.hazardlib.geo.geodetic",
   "openquake.hazardlib.geo.geodetic.EARTH_RADIUS",
@@ -69,14 +144,35 @@
   "openquake.hazardlib.gsim.base.DistancesContext",
   "openquake.hazardlib.gsim.base.GMPE",
   "openquake.hazardlib.gsim.base.RuptureContext",
+  "operator",
+  "os",
   "os.chmod",
   "os.getcwd",
   "os.mkdir",
+  "os.name",
+  "os.path",
+  "os.path.abspath",
+  "os.path.basename",
   "os.path.commonprefix",
+  "os.path.dirname",
   "os.path.exists",
   "os.path.isdir",
+  "os.path.join",
+  "os.path.sep",
+  "os.path.split",
   "os.stat",
   "os.utime",
+  "os.walk",
+  "pandas",
+  "pandas.DataFrame.from_dict",
+  "pandas.MultiIndex.from_arrays",
+  "pandas.Timestamp",
+  "pandas.__version__",
+  "pandas.core.indexes.multi.MultiIndex",
+  "pandas.errors.ParserError",
+  "pandas.read_csv",
+  "pandas.read_excel",
+  "pandas.read_json",
   "proj",
   "ps2ff.constants.MagScaling.HB08",
   "ps2ff.constants.MagScaling.S14",
@@ -89,14 +185,29 @@
   "pytz.utc.localize",
   "read_moment_quakeml",
   "round_to_nearest",
+  "shutil",
+  "shutil.copyfile",
+  "shutil.move",
+  "shutil.rmtree",
   "socket.timeout",
   "spline",
+  "subprocess",
+  "subprocess.PIPE",
+  "subprocess.Popen",
   "sys",
   "sys.version_info.major",
+  "tempfile",
+  "tempfile.mkdtemp",
   "time",
+  "urllib.error.HTTPError",
+  "urllib.parse",
+  "urllib.parse.urljoin",
+  "urllib.request",
+  "urllib.request.urlopen",
   "urllib2",
   "urllib2.urlopen",
   "validate_json",
+  "warnings",
   "warnings.warn"
  ],
  "deps": {
@@ -108,16 +219,6 @@
   "abc": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "bs4": [
-   "beautifulsoup4/conda-forge/linux-64/beautifulsoup4-4.7.1-py37_1001",
-   "beautifulsoup4/conda-forge/linux-64/beautifulsoup4-4.8.2-py37_0",
-   "beautifulsoup4/conda-forge/noarch/beautifulsoup4-4.9.3-pyhb0f4dca_0"
-  ],
-  "cartopy": [
-   "cartopy/conda-forge/linux-64/cartopy-0.17.0-py37hbeedcd3_1007",
-   "cartopy/conda-forge/linux-64/cartopy-0.18.0-py37h623d01f_6",
-   "cartopy/conda-forge/linux-64/cartopy-0.19.0.post1-py37h0c48da3_0"
   ],
   "collections": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -131,39 +232,12 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "defusedxml": [
-   "defusedxml/conda-forge/noarch/defusedxml-0.5.0-py_1",
-   "defusedxml/conda-forge/noarch/defusedxml-0.6.0-py_0",
-   "defusedxml/conda-forge/noarch/defusedxml-0.7.0-pyhd8ed1ab_0",
-   "defusedxml/conda-forge/noarch/defusedxml-0.7.1-pyhd8ed1ab_0"
-  ],
-  "email": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "fiona": [
-   "fiona/conda-forge/linux-64/fiona-1.7.1-np111py34_1",
-   "fiona/conda-forge/linux-64/fiona-1.7.12-py35_0",
-   "fiona/conda-forge/linux-64/fiona-1.7.5-np112py35_0"
-  ],
-  "ftplib": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "h5py": [
    "h5py/conda-forge/linux-64/h5py-2.10.0-nompi_py37hf7afa78_105",
    "h5py/conda-forge/linux-64/h5py-2.6.0-np111py34_4",
    "h5py/conda-forge/linux-64/h5py-2.7.0-np113py36_1"
   ],
-  "io": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "json": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "locale": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -171,32 +245,12 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "lxml": [
-   "lxml/conda-forge/linux-64/lxml-4.2.6-py37h23eabaa_1000"
-  ],
   "math": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "matplotlib": [
-   "matplotlib-base/conda-forge/linux-64/matplotlib-base-3.1.1-py37hfd891ef_0",
-   "matplotlib-base/conda-forge/linux-64/matplotlib-base-3.1.1-py38h250f245_2",
-   "matplotlib/conda-forge/linux-64/matplotlib-1.5.3-np111py34_0"
-  ],
-  "mimetypes": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "mpl_toolkits": [
    "matplotlib/conda-forge/linux-64/matplotlib-1.5.3-np111py34_0"
-  ],
-  "ntpath": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "numpy": [
-   "numpy/conda-forge/linux-64/numpy-1.17.5-py36h95a1406_0",
-   "numpy/conda-forge/linux-64/numpy-1.18.4-py37h8960a57_0"
   ],
   "openpyxl": [
    "openpyxl/conda-forge/linux-64/openpyxl-2.4.5-py36_0",
@@ -213,15 +267,6 @@
    "openpyxl/conda-forge/noarch/openpyxl-3.0.5-py_0",
    "openpyxl/conda-forge/noarch/openpyxl-3.0.7-pyhd8ed1ab_0"
   ],
-  "operator": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "os": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "pandas": [],
   "paramiko": [
    "paramiko/conda-forge/linux-64/paramiko-2.1.2-py35_0",
    "paramiko/conda-forge/linux-64/paramiko-2.4.0-py27_0",
@@ -270,31 +315,11 @@
    "shapely/conda-forge/linux-64/shapely-1.7.1-py37hba0730f_1",
    "solaris/conda-forge/noarch/solaris-0.4.0-pyhe05a262_0"
   ],
-  "shutil": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "smtplib": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "string": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "subprocess": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "tempfile": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "urllib": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "warnings": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],

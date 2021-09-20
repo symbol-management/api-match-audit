@@ -12,20 +12,34 @@
   "basetype",
   "basetype.__name__",
   "calc",
+  "cffi.FFI",
+  "codecs",
   "codecs.lookup",
   "collections.abc.Iterable",
   "collections.abc.Mapping",
   "collections.abc.Sequence",
   "collections.defaultdict",
   "collections.deque",
+  "coloredlogs",
   "convert",
+  "ctypes.util.find_library",
   "datetime.timezone.utc",
+  "decimal.Decimal",
+  "distutils.version.LooseVersion",
+  "distutils.version.StrictVersion",
+  "distutils.version.Version",
   "from_document_info",
   "func",
   "functools.partial",
   "get_leptonica_version",
   "image_name_fn",
+  "importlib",
+  "importlib.import_module",
+  "importlib.util",
+  "importlib.util.module_from_spec",
+  "importlib.util.spec_from_file_location",
   "io.BytesIO",
+  "io.IOBase",
   "io.StringIO",
   "io.UnsupportedOperation",
   "itertools.chain.from_iterable",
@@ -33,11 +47,17 @@
   "jpeg_args",
   "lang_error",
   "locale.lower",
+  "multiprocessing",
   "multiprocessing.Pipe",
   "multiprocessing.Process",
   "multiprocessing.Queue",
+  "multiprocessing.connection.Connection",
+  "multiprocessing.connection.wait",
   "multiprocessing.cpu_count",
+  "multiprocessing.pool.Pool",
+  "multiprocessing.pool.ThreadPool",
   "multiprocessing.set_start_method",
+  "multiprocessing.synchronize.SemLock",
   "ocrmypdf.api.Verbosity.quiet",
   "ocrmypdf.cli.plugins_only_parser.parse_known_args",
   "ocrmypdf.exceptions.ExitCode.bad_args",
@@ -74,22 +94,38 @@
   "ocrmypdf.subprocess.__init__.old_version_required_for",
   "ocrmypdf.subprocess.__init__.osx_install_advice",
   "ocrmypdf.subprocess.__init__.windows_install_advice",
+  "os",
+  "os.PathLike",
   "os.W_OK",
   "os.access",
   "os.close",
+  "os.devnull",
   "os.dup",
   "os.dup2",
+  "os.environ",
   "os.environ.get",
   "os.fsencode",
+  "os.fspath",
+  "os.get_exec_path",
   "os.isatty",
+  "os.name",
   "os.nice",
+  "os.path.abspath",
+  "os.path.basename",
+  "os.path.dirname",
   "os.path.exists",
+  "os.path.islink",
+  "os.path.join",
+  "os.path.lexists",
   "os.path.samefile",
+  "os.path.splitext",
   "os.pathsep.join",
   "os.stat",
+  "os.supports_effective_ids",
   "os.symlink",
   "os.unlink",
   "path_walker",
+  "pathlib.Path",
   "pdfminer.pdffont.PDFSimpleFont.__init__",
   "pikepdf.Name.CCITTFaxDecode",
   "pikepdf.Name.ColorSpace",
@@ -106,8 +142,12 @@
   "pikepdf.objects.Name.PDF",
   "pikepdf.objects.Name.Resources",
   "pikepdf.objects.Name.XObject",
+  "pkg_resources",
+  "pkg_resources.get_distribution",
+  "pkg_resources.resource_filename",
   "pngquant_args",
   "pool_class",
+  "pprint.pprint",
   "predicate",
   "re.ASCII",
   "re.IGNORECASE",
@@ -117,12 +157,27 @@
   "report_on_metadata",
   "seen_add",
   "shim",
+  "shutil",
+  "shutil.copy",
+  "shutil.copyfile",
+  "shutil.copyfileobj",
+  "shutil.move",
+  "shutil.rmtree",
+  "shutil.which",
   "signal.SIGBUS",
   "signal.SIGINT",
   "signal.SIG_BLOCK",
   "signal.SIG_IGN",
   "str.casefold",
   "str.maketrans",
+  "subprocess",
+  "subprocess.CalledProcessError",
+  "subprocess.CompletedProcess",
+  "subprocess.PIPE",
+  "subprocess.Popen",
+  "subprocess.STDOUT",
+  "subprocess.TimeoutExpired",
+  "subprocess.run",
   "sys",
   "sys.platform.startswith",
   "sys.stderr.fileno",
@@ -131,7 +186,39 @@
   "sys.stdout.buffer",
   "sys.stdout.flush",
   "sys.stdout.isatty",
+  "tempfile",
+  "tempfile.TemporaryDirectory",
+  "tempfile.TemporaryFile",
+  "tempfile.gettempdir",
+  "tempfile.mkdtemp",
+  "typing.AbstractSet",
+  "typing.Any",
+  "typing.AnyStr",
+  "typing.BinaryIO",
+  "typing.Callable",
+  "typing.Container",
+  "typing.ContextManager",
+  "typing.Dict",
+  "typing.Iterable",
+  "typing.Iterator",
+  "typing.List",
+  "typing.Mapping",
+  "typing.MutableSet",
+  "typing.NamedTuple",
+  "typing.NewType",
+  "typing.Optional",
+  "typing.Sequence",
+  "typing.Set",
+  "typing.TYPE_CHECKING",
+  "typing.Tuple",
+  "typing.Type",
+  "typing.TypeVar",
+  "typing.Union",
+  "typing.cast",
+  "unittest.mock.patch",
   "unittest.mock.patch.multiple",
+  "warnings",
+  "warnings.simplefilter",
   "warnings.warn",
   "winreg",
   "winreg.EnumKey",
@@ -163,21 +250,9 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "cffi": [
-   "cffi/conda-forge/linux-64/cffi-1.12.3-py37h8022711_0",
-   "privy/conda-forge/noarch/privy-6.0.0-py_0"
-  ],
-  "codecs": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "collections": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "coloredlogs": [
-   "coloredlogs/conda-forge/linux-64/coloredlogs-11.2-py36_0",
-   "coloredlogs/conda-forge/osx-64/coloredlogs-15.0-py39h6e9494a_0"
   ],
   "contextlib": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -187,18 +262,7 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "ctypes": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "datetime": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "decimal": [
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "distutils": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -213,14 +277,6 @@
   "img2pdf": [
    "img2pdf/conda-forge/win-64/img2pdf-0.3.6-py37hc8dfbb8_2"
   ],
-  "importlib": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "io": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "locale": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -230,23 +286,6 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "math": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "multiprocessing": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "ntpath": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "os": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "pathlib": [
-   "pathlib/conda-forge/noarch/pathlib-1.0.1-py_1",
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -264,11 +303,6 @@
    "pikepdf/conda-forge/linux-64/pikepdf-2.2.1-py38h709712a_0",
    "pikepdf/conda-forge/linux-64/pikepdf-2.8.0.post2-py37he226ad3_0"
   ],
-  "pkg_resources": [
-   "setuptools/conda-forge/linux-64/setuptools-40.6.1-py36_0",
-   "setuptools/conda-forge/linux-64/setuptools-46.3.0-py38h32f6830_0",
-   "setuptools/conda-forge/linux-64/setuptools-49.1.2-py38h32f6830_0"
-  ],
   "pkgutil": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -281,10 +315,6 @@
    "pluggy/conda-forge/linux-64/pluggy-0.13.1-py38h578d9bd_4",
    "pluggy/conda-forge/noarch/pluggy-0.11.0-py_0",
    "pluggy/conda-forge/noarch/pluggy-0.12.0-py_0"
-  ],
-  "pprint": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "queue": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -303,19 +333,7 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "shutil": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "signal": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "subprocess": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "tempfile": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -332,23 +350,11 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "typing": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "unicodedata": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "unittest": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "uuid": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "warnings": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
