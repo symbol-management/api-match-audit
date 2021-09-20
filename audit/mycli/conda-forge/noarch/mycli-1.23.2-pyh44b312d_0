@@ -11,44 +11,6 @@
   "behave.then",
   "behave.when",
   "callback",
-  "cli_helpers.tabular_output.TabularOutputFormatter",
-  "cli_helpers.tabular_output.preprocessors",
-  "cli_helpers.tabular_output.preprocessors.align_decimals",
-  "cli_helpers.utils.filter_dict_by_key",
-  "cli_helpers.utils.strip_ansi",
-  "click",
-  "click.Abort",
-  "click.File",
-  "click.ParamType",
-  "click.Path",
-  "click.argument",
-  "click.clear",
-  "click.command",
-  "click.confirm",
-  "click.core.Option",
-  "click.disable_unicode_literals_warning",
-  "click.echo",
-  "click.echo_via_pager",
-  "click.edit",
-  "click.get_terminal_size",
-  "click.get_text_stream",
-  "click.option",
-  "click.prompt",
-  "click.secho",
-  "click.testing.CliRunner",
-  "collections.Counter",
-  "collections.OrderedDict",
-  "collections.namedtuple",
-  "configobj.ConfigObj",
-  "configobj.ConfigObjError",
-  "cryptography.hazmat.backends.default_backend",
-  "cryptography.hazmat.primitives.ciphers.Cipher",
-  "cryptography.hazmat.primitives.ciphers.algorithms",
-  "cryptography.hazmat.primitives.ciphers.algorithms.AES",
-  "cryptography.hazmat.primitives.ciphers.modes",
-  "cryptography.hazmat.primitives.ciphers.modes.ECB",
-  "datetime.datetime",
-  "datetime.datetime.now",
   "db_utils",
   "db_utils.close_cn",
   "db_utils.create_db",
@@ -58,37 +20,20 @@
   "favoritequeries.FavoriteQueries.instance.list",
   "favoritequeries.FavoriteQueries.instance.save",
   "favoritequeries.FavoriteQueries.instance.usage",
-  "fileinput",
-  "fileinput.input",
   "fixture_utils",
   "fixture_utils.read_fixture_files",
   "get",
   "get_col_type",
   "get_ipython",
-  "io",
   "io.BytesIO",
   "io.StringIO",
   "io.TextIOWrapper",
   "io.open",
   "is_operand",
   "itertools",
-  "locale",
-  "locale.getpreferredencoding",
-  "logging",
-  "logging.CRITICAL",
-  "logging.DEBUG",
-  "logging.ERROR",
-  "logging.FileHandler",
-  "logging.Formatter",
-  "logging.INFO",
-  "logging.NullHandler",
-  "logging.WARNING",
-  "logging.captureWarnings",
-  "logging.getLogger",
   "mock.Mock",
   "mock.patch",
   "mock.patch.object",
-  "multiprocessing",
   "multiprocessing.Process",
   "mycli.__init__.__version__",
   "mycli.main.cli.params",
@@ -215,7 +160,6 @@
   "pytest.mark.skip",
   "pytest.mark.skipif",
   "pytest.mark.xfail",
-  "random.choice",
   "show_fish_help",
   "signal.CTRL_C_EVENT",
   "signal.SIGINT",
@@ -234,8 +178,6 @@
   "test_asserts",
   "then",
   "time",
-  "traceback",
-  "traceback.format_exc",
   "urlparse.unquote",
   "urlparse.urlparse",
   "watch_query",
@@ -251,7 +193,57 @@
    "pytest/conda-forge/linux-64/pytest-4.6.0-py37_0",
    "pytest/conda-forge/linux-64/pytest-6.0.2-py37hc8dfbb8_0"
   ],
+  "cli_helpers": [
+   "cli_helpers/conda-forge/noarch/cli_helpers-1.1.0-py_0",
+   "cli_helpers/conda-forge/noarch/cli_helpers-1.2.1-py_0",
+   "cli_helpers/conda-forge/noarch/cli_helpers-2.1.0-pyhd3deb0d_0"
+  ],
+  "click": [
+   "click/conda-forge/noarch/click-5.1-py_0",
+   "click/conda-forge/noarch/click-6.7-py_1",
+   "click/conda-forge/noarch/click-7.0-py_0",
+   "click/conda-forge/noarch/click-7.1-pyh8c360ce_0",
+   "click/conda-forge/noarch/click-7.1.1-pyh8c360ce_0"
+  ],
+  "collections": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "configobj": [
+   "configobj-dev/conda-forge/noarch/configobj-dev-2019.9.1-py_0",
+   "configobj/conda-forge/noarch/configobj-5.0.6-py_0"
+  ],
   "copy": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "cryptography": [
+   "cryptography/conda-forge/linux-64/cryptography-3.2.1-py37hc72a4ac_0",
+   "cryptography/conda-forge/linux-64/cryptography-3.3-py36h0a59100_0",
+   "cryptography/conda-forge/linux-64/cryptography-3.4.6-py38ha5dfef3_0",
+   "privy/conda-forge/noarch/privy-6.0.0-py_0"
+  ],
+  "datetime": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "fileinput": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "io": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "locale": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "logging": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "multiprocessing": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -312,6 +304,10 @@
    "pytest/conda-forge/linux-64/pytest-4.6.0-py37_0",
    "pytest/conda-forge/linux-64/pytest-6.0.2-py37hc8dfbb8_0"
   ],
+  "random": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "re": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -359,6 +355,10 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "threading": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "traceback": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
