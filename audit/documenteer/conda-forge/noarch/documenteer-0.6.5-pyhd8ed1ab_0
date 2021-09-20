@@ -21,6 +21,8 @@
   "exclude",
   "format_field_nodes",
   "get_field_formatter",
+  "glob",
+  "glob.glob",
   "itertools",
   "jira.setup",
   "lsst.pex.config.ConfigurableField",
@@ -29,6 +31,11 @@
   "lsst.pex.config.registry.ConfigurableWrapper",
   "lsst.pipe.base.CmdLineTask",
   "lsst.pipe.base.PipelineTask",
+  "lsst_dd_rtd_theme",
+  "lsst_dd_rtd_theme.get_html_theme_path",
+  "lsst_sphinx_bootstrap_theme",
+  "lsst_sphinx_bootstrap_theme.get_html_templates_path",
+  "lsst_sphinx_bootstrap_theme.get_html_theme_path",
   "lsstdocushare.setup",
   "mockcoderefs.setup",
   "os.chdir",
@@ -39,9 +46,62 @@
   "os.remove",
   "os.symlink",
   "packagetoctree.setup",
+  "pathlib",
+  "pathlib.Path",
+  "pathlib.Path.cwd",
+  "pkg_resources.DistributionNotFound",
+  "pkg_resources.get_distribution",
+  "posixpath",
+  "posixpath.dirname",
+  "posixpath.join",
+  "posixpath.normpath",
   "pyapisummary.TaskApiDirective.directive_name",
+  "pybtex.plugin.register_plugin",
+  "pybtex.style.formatting.plain",
+  "pybtex.style.formatting.toplevel",
+  "pybtex.style.template.field",
+  "pybtex.style.template.first_of",
+  "pybtex.style.template.href",
+  "pybtex.style.template.join",
+  "pybtex.style.template.optional",
+  "pybtex.style.template.optional_field",
+  "pybtex.style.template.sentence",
+  "pybtex.style.template.tag",
   "remotecodeblock.setup",
+  "requests",
+  "requests.HTTPError",
+  "requests.Session",
+  "requests.adapters.HTTPAdapter",
+  "requests.get",
+  "requests.packages.urllib3.util.retry.Retry",
   "sep_factory",
+  "sphinx",
+  "sphinx.addnodes",
+  "sphinx.addnodes.desc",
+  "sphinx.addnodes.desc_addname",
+  "sphinx.addnodes.desc_annotation",
+  "sphinx.addnodes.desc_content",
+  "sphinx.addnodes.desc_signature",
+  "sphinx.addnodes.seealso",
+  "sphinx.addnodes.toctree",
+  "sphinx.application",
+  "sphinx.cmd.build.build_main",
+  "sphinx.config",
+  "sphinx.directives.code.LiteralIncludeReader",
+  "sphinx.directives.code.container_wrapper",
+  "sphinx.domains.python.PyXRefRole",
+  "sphinx.domains.python._pseudo_parse_arglist",
+  "sphinx.errors.SphinxError",
+  "sphinx.util.docstrings.prepare_docstring",
+  "sphinx.util.docutils.SphinxDirective",
+  "sphinx.util.docutils.switch_source_input",
+  "sphinx.util.inspect.Signature",
+  "sphinx.util.inspect.getdoc",
+  "sphinx.util.logging",
+  "sphinx.util.logging.getLogger",
+  "sphinx.util.matching.Matcher",
+  "sphinx.util.nodes.set_source_info",
+  "sphinx.util.parselinenos",
   "sphinxcontrib.doxylink.doxylink",
   "sphinxcontrib.doxylink.doxylink.SymbolMap",
   "sys",
@@ -53,6 +113,19 @@
   "topics.ConfigTopicDirective.directive_name",
   "topics.ConfigurableTopicDirective.directive_name",
   "topics.TaskTopicDirective.directive_name",
+  "typing.Any",
+  "typing.Callable",
+  "typing.Dict",
+  "typing.Generator",
+  "typing.List",
+  "typing.Optional",
+  "typing.Sequence",
+  "typing.Set",
+  "typing.TYPE_CHECKING",
+  "typing.Tuple",
+  "typing.Union",
+  "xml.etree.ElementTree",
+  "xml.etree.ElementTree.parse",
   "xref"
  ],
  "deps": {
@@ -125,10 +198,6 @@
    "gitpython/conda-forge/noarch/gitpython-3.1.7-py_0",
    "gitpython/conda-forge/noarch/gitpython-3.1.9-py_0"
   ],
-  "glob": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "importlib": [
    "importlib/conda-forge/linux-64/importlib-1.0.4-py26_0",
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -142,12 +211,6 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "lsst_dd_rtd_theme": [
-   "lsst-dd-rtd-theme/conda-forge/noarch/lsst-dd-rtd-theme-0.2.3-py_0"
-  ],
-  "lsst_sphinx_bootstrap_theme": [
-   "lsst-sphinx-bootstrap-theme/conda-forge/noarch/lsst-sphinx-bootstrap-theme-0.2.2-py_0"
-  ],
   "ntpath": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -156,66 +219,19 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "pathlib": [
-   "pathlib/conda-forge/noarch/pathlib-1.0.1-py_1",
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "pkg_resources": [
-   "setuptools/conda-forge/linux-64/setuptools-40.6.1-py36_0",
-   "setuptools/conda-forge/linux-64/setuptools-46.3.0-py38h32f6830_0",
-   "setuptools/conda-forge/linux-64/setuptools-49.1.2-py38h32f6830_0"
-  ],
-  "posixpath": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "pybtex": [
-   "pybtex/conda-forge/linux-64/pybtex-0.21-py37_1000",
-   "pybtex/conda-forge/linux-64/pybtex-0.22.2-py37_0",
-   "pybtex/conda-forge/linux-64/pybtex-0.23.0-py39hf3d152e_1"
-  ],
   "re": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "requests": [
-   "requests/conda-forge/linux-64/requests-2.12.0-py35_0"
   ],
   "shutil": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "sphinx": [
-   "sphinx/conda-forge/linux-64/sphinx-1.8.3-py36_1000",
-   "sphinx/conda-forge/noarch/sphinx-2.0.0-py_1",
-   "sphinx/conda-forge/noarch/sphinx-2.1.0-py_0",
-   "sphinx/conda-forge/noarch/sphinx-2.2.0-py_0",
-   "sphinx/conda-forge/noarch/sphinx-3.0.1-py_0",
-   "sphinx/conda-forge/noarch/sphinx-3.0.3-py_0",
-   "sphinx/conda-forge/noarch/sphinx-3.0.4-py_0",
-   "sphinx/conda-forge/noarch/sphinx-3.2.0-py_0",
-   "sphinx/conda-forge/noarch/sphinx-3.2.1-py_0",
-   "sphinx/conda-forge/noarch/sphinx-3.3.0-pyhd8ed1ab_0",
-   "sphinx/conda-forge/noarch/sphinx-3.3.1-pyhd8ed1ab_0",
-   "sphinx/conda-forge/noarch/sphinx-3.3.1-pyhd8ed1ab_1",
-   "sphinx/conda-forge/noarch/sphinx-3.4.2-pyhd8ed1ab_0",
-   "sphinx/conda-forge/noarch/sphinx-3.4.3-pyhd8ed1ab_0",
-   "sphinx/conda-forge/noarch/sphinx-3.5.2-pyhd8ed1ab_0"
-  ],
   "subprocess": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "typing": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "urllib": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "xml": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],

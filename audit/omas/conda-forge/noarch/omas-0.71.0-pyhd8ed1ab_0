@@ -18,6 +18,9 @@
   "ast.FunctionDef",
   "b2s",
   "base_class",
+  "botocore.exceptions.ClientError",
+  "botocore.exceptions.NoCredentialsError",
+  "bson.objectid.ObjectId",
   "bytes.decode",
   "c",
   "closest_index",
@@ -26,7 +29,11 @@
   "collections.abc.Sequence",
   "compare_version",
   "consistent_density",
+  "contextlib.contextmanager",
   "convert_int",
+  "copy",
+  "copy.copy",
+  "copy.deepcopy",
   "create_html_documentation",
   "create_json_structure",
   "define_cocos",
@@ -38,6 +45,7 @@
   "dict.values",
   "different_ods",
   "different_ods_attrs",
+  "difflib",
   "dir.keys",
   "ext_arr",
   "f",
@@ -143,18 +151,10 @@
   "omfit.classes.omfit_gacode.OMFITinputprofiles",
   "omfit.classes.omfit_onetwo.OMFITstatefile",
   "omfit_eqdsk.OMFITgeqdsk",
-  "os",
   "os.W_OK",
   "os.access",
-  "os.environ",
   "os.environ.get",
-  "os.makedirs",
-  "os.path.abspath",
-  "os.path.dirname",
   "os.path.exists",
-  "os.path.split",
-  "os.path.splitext",
-  "os.sep",
   "os.sep.join",
   "overlay_function",
   "p2l",
@@ -194,6 +194,8 @@
   "sys",
   "sys.path.append",
   "sys.path.insert",
+  "tempfile",
+  "tempfile.gettempdir",
   "test_omas_core",
   "test_omas_examples",
   "test_omas_physics",
@@ -287,68 +289,7 @@
    "boto3/conda-forge/noarch/boto3-1.9.57-py_0",
    "boto3/conda-forge/noarch/boto3-1.9.67-py_0"
   ],
-  "botocore": [
-   "botocore/conda-forge/noarch/botocore-1.10.23-py_0",
-   "botocore/conda-forge/noarch/botocore-1.10.29-py_0",
-   "botocore/conda-forge/noarch/botocore-1.10.42-py_0",
-   "botocore/conda-forge/noarch/botocore-1.10.47-py_0",
-   "botocore/conda-forge/noarch/botocore-1.10.5-py_0",
-   "botocore/conda-forge/noarch/botocore-1.10.78-py_0",
-   "botocore/conda-forge/noarch/botocore-1.12.110-py_0",
-   "botocore/conda-forge/noarch/botocore-1.12.118-py_0",
-   "botocore/conda-forge/noarch/botocore-1.12.134-py_0",
-   "botocore/conda-forge/noarch/botocore-1.12.135-py_0",
-   "botocore/conda-forge/noarch/botocore-1.12.201-py_0",
-   "botocore/conda-forge/noarch/botocore-1.12.223-py_0",
-   "botocore/conda-forge/noarch/botocore-1.12.224-py_0",
-   "botocore/conda-forge/noarch/botocore-1.12.35-py_0",
-   "botocore/conda-forge/noarch/botocore-1.12.47-py_0",
-   "botocore/conda-forge/noarch/botocore-1.12.48-py_0",
-   "botocore/conda-forge/noarch/botocore-1.12.90-py_0",
-   "botocore/conda-forge/noarch/botocore-1.13.0-py_2",
-   "botocore/conda-forge/noarch/botocore-1.13.31-py_0",
-   "botocore/conda-forge/noarch/botocore-1.13.41-py_0",
-   "botocore/conda-forge/noarch/botocore-1.14.16-py_0",
-   "botocore/conda-forge/noarch/botocore-1.15.13-py_0",
-   "botocore/conda-forge/noarch/botocore-1.15.39-pyh9f0ad1d_0",
-   "botocore/conda-forge/noarch/botocore-1.16.19-pyh9f0ad1d_0",
-   "botocore/conda-forge/noarch/botocore-1.16.8-pyh9f0ad1d_0",
-   "botocore/conda-forge/noarch/botocore-1.17.58-pyh9f0ad1d_0",
-   "botocore/conda-forge/noarch/botocore-1.18.8-pyh9f0ad1d_0",
-   "botocore/conda-forge/noarch/botocore-1.20.108-pyhd8ed1ab_0",
-   "botocore/conda-forge/noarch/botocore-1.20.111-pyhd8ed1ab_0",
-   "botocore/conda-forge/noarch/botocore-1.20.31-pyhd8ed1ab_0",
-   "botocore/conda-forge/noarch/botocore-1.20.44-pyhd8ed1ab_0",
-   "botocore/conda-forge/noarch/botocore-1.20.55-pyhd8ed1ab_0",
-   "botocore/conda-forge/noarch/botocore-1.20.67-pyhd8ed1ab_0",
-   "botocore/conda-forge/noarch/botocore-1.20.79-pyhd8ed1ab_0",
-   "botocore/conda-forge/noarch/botocore-1.20.8-pyhd8ed1ab_0",
-   "botocore/conda-forge/noarch/botocore-1.20.93-pyhd8ed1ab_0",
-   "botocore/conda-forge/noarch/botocore-1.21.4-pyhd8ed1ab_0",
-   "botocore/conda-forge/noarch/botocore-1.8.39-py_0",
-   "botocore/conda-forge/noarch/botocore-1.9.13-py_0"
-  ],
-  "bson": [
-   "bson/conda-forge/noarch/bson-0.5.4-py_1",
-   "bson/conda-forge/noarch/bson-0.5.7-py_0",
-   "bson/conda-forge/noarch/bson-0.5.8-py_0",
-   "bson/conda-forge/noarch/bson-0.5.9-py_0",
-   "pymongo/conda-forge/linux-64/pymongo-3.11.4-py39he80948d_0",
-   "pymongo/conda-forge/win-64/pymongo-3.11.4-py39h415ef7b_0"
-  ],
   "collections": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "contextlib": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "copy": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "difflib": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -381,10 +322,18 @@
    "matplotlib-base/conda-forge/linux-64/matplotlib-base-3.1.1-py37hfd891ef_0",
    "matplotlib-base/conda-forge/linux-64/matplotlib-base-3.1.1-py38h250f245_2"
   ],
+  "ntpath": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "numpy": [
    "numpy/conda-forge/linux-64/numpy-1.17.5-py36h95a1406_0",
    "numpy/conda-forge/linux-64/numpy-1.18.4-py37h8960a57_0",
    "numpy/conda-forge/linux-64/numpy-1.19.2-py36h68c22af_1"
+  ],
+  "os": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "pickle": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -423,10 +372,6 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "subprocess": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "tempfile": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],

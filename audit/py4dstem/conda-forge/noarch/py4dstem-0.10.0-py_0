@@ -76,10 +76,13 @@
   "calculate_thresholds",
   "check_id",
   "chi3",
+  "collections",
   "collections.Callable",
+  "collections.OrderedDict",
   "collections.Sequence",
   "collections.abc.Iterator",
   "collections.abc.Sequence",
+  "copy.copy",
   "cos",
   "datastructure.DataObject.get_dataobjects",
   "dict.__repr__",
@@ -166,17 +169,11 @@
   "numpy.uint8",
   "numpy.zeros",
   "os.getcwd",
-  "os.path",
-  "os.path.abspath",
-  "os.path.dirname",
   "os.path.exists",
-  "os.path.expanduser",
   "os.path.isdir",
-  "os.path.join",
-  "os.path.normpath",
-  "os.path.splitext",
-  "pathlib",
-  "pathlib.Path",
+  "pickle",
+  "pickle.dump",
+  "pickle.load",
   "pop_id",
   "process.preprocess.bin_data_diffraction",
   "process.preprocess.bin_data_mmap",
@@ -210,6 +207,20 @@
   "read_kitware_counted",
   "read_mrc_relativity",
   "save",
+  "scipy.fftpack.dst",
+  "scipy.fftpack.idst",
+  "scipy.io",
+  "scipy.ndimage.filters",
+  "scipy.ndimage.filters.gaussian_filter",
+  "scipy.ndimage.morphology.binary_closing",
+  "scipy.ndimage.morphology.binary_dilation",
+  "scipy.ndimage.morphology.binary_erosion",
+  "scipy.ndimage.morphology.binary_opening",
+  "scipy.optimize",
+  "scipy.optimize.curve_fit",
+  "scipy.optimize.least_squares",
+  "scipy.optimize.leastsq",
+  "scipy.signal.convolve2d",
   "scipy.spatial.Voronoi",
   "scipy.special.erf",
   "sigpy",
@@ -219,6 +230,9 @@
   "sqrt",
   "sys",
   "sys.flags.interactive",
+  "tempfile",
+  "tempfile.TemporaryDirectory",
+  "tempfile.TemporaryFile",
   "time",
   "torch.cuda.ShortTensor",
   "torch.device",
@@ -228,6 +242,9 @@
   "torch.transpose",
   "torch.zeros",
   "two_sided_gaussian_fun",
+  "unittest",
+  "unittest.TestCase",
+  "unittest.main",
   "version.__version__.split",
   "write_log",
   "x_t",
@@ -243,19 +260,7 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "_pickle": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "cmath": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "collections": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "copy": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -323,6 +328,10 @@
    "ncempy/conda-forge/noarch/ncempy-1.7.0-py_0",
    "ncempy/conda-forge/noarch/ncempy-1.8.1-pyhd8ed1ab_0"
   ],
+  "ntpath": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "numba": [
    "numba/conda-forge/linux-64/numba-0.38.1-py36_0",
    "numba/conda-forge/linux-64/numba-0.40.0-py35hf8a1672_0",
@@ -340,6 +349,11 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "pathlib": [
+   "pathlib/conda-forge/noarch/pathlib-1.0.1-py_1",
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "pdb": [
    "pdbpp/conda-forge/noarch/pdbpp-0.9.12-py_0",
    "pdbpp/conda-forge/noarch/pdbpp-0.9.14-py_0",
@@ -347,10 +361,6 @@
    "pdbpp/conda-forge/noarch/pdbpp-0.9.5-py_1",
    "pdbpp/conda-forge/noarch/pdbpp-0.9.6-py_0",
    "pdbpp/conda-forge/noarch/pdbpp-0.9.8-py_0",
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "pickle": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -368,11 +378,6 @@
    "qtconsole/conda-forge/noarch/qtconsole-5.0.3-pyhd8ed1ab_0",
    "qtconsole/conda-forge/noarch/qtconsole-5.1.0-pyhd8ed1ab_0"
   ],
-  "scipy": [
-   "scipy/conda-forge/linux-64/scipy-0.17.1-np110py27_blas_openblas_202",
-   "scipy/conda-forge/linux-64/scipy-1.7.0-py37h29e03ee_0",
-   "scipy/conda-forge/linux-64/scipy-1.7.0-py37ha768fb6_1"
-  ],
   "skimage": [
    "scikit-image/conda-forge/linux-64/scikit-image-0.12.3-np112py27_1",
    "scikit-image/conda-forge/win-64/scikit-image-0.13.0-np113py36_0"
@@ -381,10 +386,6 @@
    "scikit-learn/conda-forge/linux-64/scikit-learn-0.17.1-np110py27_blas_openblas_200",
    "scikit-learn/conda-forge/linux-64/scikit-learn-0.17.1-np110py35_blas_openblas_202",
    "scikit-learn/conda-forge/linux-64/scikit-learn-0.17.1-np111py35_blas_openblas_202"
-  ],
-  "tempfile": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "torch": [
    "pytorch-cpu/conda-forge/linux-64/pytorch-cpu-1.1.0-py37he1b5a44_0",
@@ -403,10 +404,6 @@
    "tqdm/conda-forge/noarch/tqdm-4.56.0-pyhd8ed1ab_0",
    "tqdm/conda-forge/noarch/tqdm-4.56.1-pyhd8ed1ab_0",
    "tqdm/conda-forge/noarch/tqdm-4.60.0-pyhd8ed1ab_0"
-  ],
-  "unittest": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "weakref": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
