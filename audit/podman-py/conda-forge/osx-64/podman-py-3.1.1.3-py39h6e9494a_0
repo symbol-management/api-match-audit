@@ -2,7 +2,12 @@
  "bad": [
   "collections.abc.Mapping",
   "hashlib.sha256",
+  "http.client.HTTPException",
   "io.StringIO",
+  "ipaddress",
+  "ipaddress.IPv4Network",
+  "ipaddress.IPv6Network",
+  "ipaddress.ip_network",
   "itertools",
   "podman.api.DEFAULT_TIMEOUT",
   "podman.api.__init__._api_version",
@@ -16,18 +21,69 @@
   "podman.domain.system.SystemManager.version.__doc__",
   "podman.errors.__init__.NotFoundError",
   "pop",
+  "pytoml",
+  "requests",
+  "requests.Response",
+  "requests.Session",
+  "requests.adapters.HTTPAdapter",
   "requests.codes.created",
   "requests.codes.no_content",
   "requests.codes.not_found",
   "requests.codes.not_modified",
   "requests.codes.ok",
   "requests.codes.okay",
+  "requests.exceptions.HTTPError",
+  "requests.packages.urllib3.HTTPConnectionPool",
+  "requests.packages.urllib3.connection.HTTPConnection",
+  "requests.packages.urllib3.util.Timeout",
+  "shutil",
+  "shutil.copy2",
+  "shutil.copyfileobj",
+  "socket",
   "socket.AF_UNIX",
   "socket.SOCK_STREAM",
+  "socket.socket",
+  "ssl",
   "ssl.PROTOCOL_TLSv1_2",
+  "struct",
   "struct.unpack_from",
   "sys",
-  "version.__compatible_version__"
+  "tarfile",
+  "tarfile.TarInfo",
+  "tarfile.open",
+  "tempfile",
+  "tempfile.NamedTemporaryFile",
+  "tempfile.TemporaryDirectory",
+  "toml",
+  "typing",
+  "typing.Any",
+  "typing.BinaryIO",
+  "typing.ClassVar",
+  "typing.Dict",
+  "typing.Generator",
+  "typing.IO",
+  "typing.Iterable",
+  "typing.Iterator",
+  "typing.List",
+  "typing.Mapping",
+  "typing.MutableMapping",
+  "typing.Optional",
+  "typing.Sequence",
+  "typing.TYPE_CHECKING",
+  "typing.Tuple",
+  "typing.Type",
+  "typing.TypeVar",
+  "typing.Union",
+  "urllib",
+  "urllib.parse",
+  "urllib.parse.quote_plus",
+  "urllib.parse.unquote",
+  "urllib.parse.urlparse",
+  "urllib3.HTTPConnectionPool",
+  "urllib3.connection.HTTPConnection",
+  "urllib3.util.Timeout",
+  "version.__compatible_version__",
+  "version.__version__"
  ],
  "deps": {
   "abc": [
@@ -66,18 +122,7 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "http": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "io": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "ipaddress": [
-   "ipaddress/conda-forge/noarch/ipaddress-1.0.22-py_1",
-   "ipaddress/conda-forge/noarch/ipaddress-1.0.23-py_0",
-   "privy/conda-forge/noarch/privy-6.0.0-py_0",
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -102,10 +147,6 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "pytoml": [
-   "pytoml/conda-forge/noarch/pytoml-0.1.19-py_0",
-   "pytoml/conda-forge/noarch/pytoml-0.1.21-py_0"
-  ],
   "random": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -113,65 +154,6 @@
   "re": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "requests": [
-   "requests/conda-forge/linux-64/requests-2.12.0-py35_0"
-  ],
-  "shutil": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "socket": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "ssl": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "struct": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "tarfile": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "tempfile": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "toml": [
-   "toml/conda-forge/noarch/toml-0.10.0-py_0",
-   "toml/conda-forge/noarch/toml-0.10.1-pyh9f0ad1d_0",
-   "toml/conda-forge/noarch/toml-0.9.2-py_1",
-   "toml/conda-forge/noarch/toml-0.9.3.1-py_1",
-   "toml/conda-forge/noarch/toml-0.9.3.1-py_2",
-   "toml/conda-forge/noarch/toml-0.9.4-py_0"
-  ],
-  "typing": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "urllib": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "urllib3": [
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0",
-   "urllib3/conda-forge/linux-64/urllib3-1.24.1-py37_1000",
-   "urllib3/conda-forge/linux-64/urllib3-1.25.7-py36_0",
-   "urllib3/conda-forge/linux-64/urllib3-1.25.8-py37hc8dfbb8_1",
-   "urllib3/conda-forge/noarch/urllib3-1.25.11-py_0",
-   "urllib3/conda-forge/noarch/urllib3-1.26.0-pyhd8ed1ab_0",
-   "urllib3/conda-forge/noarch/urllib3-1.26.2-pyhd8ed1ab_0",
-   "urllib3/conda-forge/noarch/urllib3-1.26.3-pyhd8ed1ab_0",
-   "urllib3/conda-forge/noarch/urllib3-1.26.5-pyhd8ed1ab_0",
-   "urllib3/conda-forge/noarch/urllib3-1.26.6-pyhd8ed1ab_0"
-  ],
-  "version": [
-   "telegram-send/conda-forge/noarch/telegram-send-0.25-py_0"
   ],
   "warnings": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",

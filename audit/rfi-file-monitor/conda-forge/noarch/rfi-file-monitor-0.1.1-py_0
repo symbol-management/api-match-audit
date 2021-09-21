@@ -78,14 +78,56 @@
   "gi.repository.Gtk.WindowType.TOPLEVEL",
   "makedirs",
   "map.add_action",
+  "munch.Munch",
+  "munch.munchify",
   "os.cpu_count",
   "os.sched_getaffinity",
   "os.unlink",
   "os.urandom",
+  "paramiko",
+  "paramiko.AutoAddPolicy",
+  "paramiko.RejectPolicy",
+  "paramiko.SFTPClient",
+  "paramiko.SSHClient",
+  "pathtools.patterns.match_path",
+  "platform",
+  "platform.system",
+  "posixpath",
+  "posixpath.dirname",
+  "posixpath.split",
+  "stat.S_ISDIR",
+  "stat.S_ISREG",
   "sys",
+  "tempfile",
+  "tempfile.NamedTemporaryFile",
+  "threading",
+  "threading.Lock",
+  "threading.RLock",
+  "threading.Thread",
+  "threading.current_thread",
   "time",
+  "typing.Any",
+  "typing.Callable",
+  "typing.Dict",
+  "typing.Final",
+  "typing.List",
+  "typing.NamedTuple",
+  "typing.Optional",
+  "typing.OrderedDict",
+  "typing.Sequence",
+  "typing.final",
+  "urllib",
+  "urllib.parse.quote",
+  "urllib.parse.urlparse",
   "utils.PREFERENCES_CONFIG_FILE.open",
-  "utils.PREFERENCES_CONFIG_FILE.parent.mkdir"
+  "utils.PREFERENCES_CONFIG_FILE.parent.mkdir",
+  "watchdog.events.PatternMatchingEventHandler",
+  "watchdog.observers.Observer",
+  "webbrowser",
+  "webbrowser.open_new_tab",
+  "yaml",
+  "yaml.safe_dump",
+  "yaml.safe_load"
  ],
  "deps": {
   "abc": [
@@ -191,12 +233,6 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "munch": [
-   "munch/conda-forge/noarch/munch-2.3.0-py_0",
-   "munch/conda-forge/noarch/munch-2.3.1-py_0",
-   "munch/conda-forge/noarch/munch-2.3.2-py_0",
-   "munch/conda-forge/noarch/munch-2.4.0-py_0"
-  ],
   "ntpath": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -205,65 +241,10 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "paramiko": [
-   "paramiko/conda-forge/linux-64/paramiko-2.1.2-py35_0",
-   "paramiko/conda-forge/linux-64/paramiko-2.4.0-py27_0",
-   "paramiko/conda-forge/linux-64/paramiko-2.4.1-py27_1000",
-   "paramiko/conda-forge/noarch/paramiko-2.3.1-py_0",
-   "paramiko/conda-forge/noarch/paramiko-2.7.1-pyh9f0ad1d_1"
-  ],
   "pathlib": [
    "pathlib/conda-forge/noarch/pathlib-1.0.1-py_1",
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "pathtools": [
-   "pathtools/conda-forge/noarch/pathtools-0.1.2-py_1",
-   "pathtools/conda-forge/win-64/pathtools-0.1.2-py27_0",
-   "pathtools/conda-forge/win-64/pathtools-0.1.2-py36_0"
-  ],
-  "platform": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "posixpath": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "stat": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "tempfile": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "threading": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "typing": [
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "urllib": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "watchdog": [
-   "watchdog/conda-forge/linux-64/watchdog-0.10.4-py36h5fab9bb_0",
-   "watchdog/conda-forge/linux-64/watchdog-0.9.0-py36_1",
-   "watchdog/conda-forge/linux-64/watchdog-2.0.2-py37h89c1867_0",
-   "watchdog/conda-forge/noarch/watchdog-0.8.3-py_2"
-  ],
-  "webbrowser": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "yaml": [
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0",
-   "pyyaml/conda-forge/linux-64/pyyaml-3.11-py35_0",
-   "pyyaml/conda-forge/win-64/pyyaml-5.2-py36hfa6e2cd_0"
   ]
  }
 }

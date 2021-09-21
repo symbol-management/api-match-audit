@@ -16,14 +16,57 @@
   "designateclient.functionaltests.config.cfg.CONF.identity.username",
   "designateclient.v2.utils.get_item_properties",
   "designateclient.version.version_info.version_string",
+  "fixtures",
+  "fixtures.FakeLogger",
+  "fixtures.Fixture",
+  "fixtures.MonkeyPatch",
+  "fixtures.NestedTempfile",
+  "fixtures.StringStream",
+  "fixtures.TempHomeDir",
+  "fixtures.Timeout",
   "func",
   "itertools",
+  "keystoneauth1.adapter",
+  "keystoneauth1.adapter.Adapter",
+  "keystoneauth1.adapter.LegacyJsonAdapter",
+  "keystoneauth1.identity.generic",
+  "keystoneauth1.identity.generic.Password",
+  "keystoneauth1.session",
+  "keystoneauth1.session.Session",
+  "keystoneauth1.session.Session._send_request",
+  "keystoneauth1.session.Session.get_auth_headers",
+  "keystoneauth1.session.Session.get_endpoint",
   "keystoneauth1.session.timeout",
   "os.environ.get",
+  "osc_lib.command.command",
+  "osc_lib.command.command.Command",
+  "osc_lib.command.command.Lister",
+  "osc_lib.command.command.ShowOne",
+  "osc_lib.exceptions",
+  "osc_lib.exceptions.CommandError",
+  "osc_lib.utils",
+  "osc_lib.utils.build_kwargs_dict",
+  "osc_lib.utils.get_client_class",
+  "oslo_config.cfg",
+  "oslo_config.cfg.CONF",
   "oslo_config.cfg.CONF.register_group",
   "oslo_config.cfg.CONF.register_opts",
+  "oslo_config.cfg.OptGroup",
+  "oslo_config.cfg.StrOpt",
+  "oslo_serialization.jsonutils",
+  "oslo_serialization.jsonutils.dumps",
+  "oslo_serialization.jsonutils.loads",
+  "oslo_utils.uuidutils",
+  "oslo_utils.uuidutils.is_uuid_like",
   "oslotest.base",
   "oslotest.base.BaseTestCase",
+  "pbr.version",
+  "requests_mock.contrib.fixture",
+  "requests_mock.contrib.fixture.Fixture",
+  "stevedore.extension",
+  "stevedore.extension.ExtensionManager",
+  "string",
+  "string.digits",
   "sys",
   "tempest.lib.cli.base",
   "tempest.lib.cli.base.CLIClient",
@@ -31,8 +74,19 @@
   "tempest.lib.cli.base.execute",
   "tempest.lib.cli.output_parser",
   "tempest.lib.exceptions.CommandFailed",
+  "tempfile",
+  "tempfile.NamedTemporaryFile",
   "time",
-  "unittest.mock.patch.object"
+  "traceback",
+  "traceback.print_exception",
+  "unittest.mock.patch.object",
+  "urllib.parse",
+  "urllib.parse.parse_qs",
+  "urllib.parse.urlencode",
+  "urllib.parse.urlparse",
+  "uuid",
+  "uuid.UUID",
+  "uuid.uuid4"
  ],
  "deps": {
   "__future__": [
@@ -56,22 +110,6 @@
    "cliff/conda-forge/noarch/cliff-3.7.0-pyhd8ed1ab_0",
    "cliff/conda-forge/noarch/cliff-3.8.0-pyhd8ed1ab_0"
   ],
-  "fixtures": [
-   "fixtures/conda-forge/linux-64/fixtures-3.0.0-py35_0",
-   "fixtures/conda-forge/noarch/fixtures-3.0.0-py_0"
-  ],
-  "keystoneauth1": [
-   "keystoneauth1/conda-forge/noarch/keystoneauth1-3.10.0-py_0",
-   "keystoneauth1/conda-forge/noarch/keystoneauth1-3.13.1-py_0",
-   "keystoneauth1/conda-forge/noarch/keystoneauth1-3.14.0-py_0",
-   "keystoneauth1/conda-forge/noarch/keystoneauth1-3.4.0-py_0",
-   "keystoneauth1/conda-forge/noarch/keystoneauth1-3.5.0-py_0",
-   "keystoneauth1/conda-forge/noarch/keystoneauth1-3.6.2-py_0",
-   "keystoneauth1/conda-forge/noarch/keystoneauth1-3.7.0-py_0",
-   "keystoneauth1/conda-forge/noarch/keystoneauth1-4.0.0-py_0",
-   "keystoneauth1/conda-forge/noarch/keystoneauth1-4.1.0-py_0",
-   "keystoneauth1/conda-forge/noarch/keystoneauth1-4.3.1-pyhd8ed1ab_0"
-  ],
   "logging": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -84,76 +122,7 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "osc_lib": [
-   "osc-lib/conda-forge/noarch/osc-lib-1.15.0-py_0",
-   "osc-lib/conda-forge/noarch/osc-lib-2.0.0-py_0",
-   "osc-lib/conda-forge/noarch/osc-lib-2.3.0-pyhd8ed1ab_0",
-   "osc-lib/conda-forge/noarch/osc-lib-2.4.1-pyhd8ed1ab_0",
-   "osc-lib/conda-forge/noarch/osc-lib-2.4.2-pyhd8ed1ab_0"
-  ],
-  "oslo_config": [
-   "oslo.config/conda-forge/linux-64/oslo.config-8.7.0-py36h5fab9bb_0",
-   "oslo.config/conda-forge/noarch/oslo.config-4.12.0-py_0",
-   "oslo.config/conda-forge/noarch/oslo.config-5.0.0-py_0",
-   "oslo.config/conda-forge/noarch/oslo.config-6.0.0-py_0",
-   "oslo.config/conda-forge/noarch/oslo.config-8.2.0-py_0"
-  ],
-  "oslo_serialization": [
-   "oslo.serialization/conda-forge/linux-64/oslo.serialization-2.24.0-py27_0",
-   "oslo.serialization/conda-forge/linux-64/oslo.serialization-3.0.0-py38_0",
-   "oslo.serialization/conda-forge/noarch/oslo.serialization-3.0.0-py_1",
-   "oslo.serialization/conda-forge/noarch/oslo.serialization-3.1.0-py_0",
-   "oslo.serialization/conda-forge/noarch/oslo.serialization-3.1.1-py_0",
-   "oslo.serialization/conda-forge/noarch/oslo.serialization-4.1.0-pyhd8ed1ab_0"
-  ],
-  "oslo_utils": [
-   "oslo.utils/conda-forge/noarch/oslo.utils-3.28.0-py_0",
-   "oslo.utils/conda-forge/noarch/oslo.utils-3.29.0-py_0",
-   "oslo.utils/conda-forge/noarch/oslo.utils-3.31.0-py_0",
-   "oslo.utils/conda-forge/noarch/oslo.utils-3.36.0-py_0",
-   "oslo.utils/conda-forge/noarch/oslo.utils-4.4.0-py_0",
-   "oslo.utils/conda-forge/noarch/oslo.utils-4.7.0-pyhd8ed1ab_0",
-   "oslo.utils/conda-forge/noarch/oslo.utils-4.8.0-pyhd8ed1ab_0",
-   "oslo.utils/conda-forge/noarch/oslo.utils-4.9.2-pyhd8ed1ab_0"
-  ],
-  "pbr": [
-   "pbr/conda-forge/noarch/pbr-4.0.4-py_0",
-   "pbr/conda-forge/noarch/pbr-4.1.0-py_0",
-   "pbr/conda-forge/noarch/pbr-4.2.0-py_0",
-   "pbr/conda-forge/noarch/pbr-5.1.2-py_0",
-   "pbr/conda-forge/noarch/pbr-5.1.3-py_0",
-   "pbr/conda-forge/noarch/pbr-5.2.0-py_0",
-   "pbr/conda-forge/noarch/pbr-5.2.1-py_0",
-   "pbr/conda-forge/noarch/pbr-5.4.2-py_0",
-   "pbr/conda-forge/noarch/pbr-5.4.5-pyh9f0ad1d_0",
-   "pbr/conda-forge/noarch/pbr-5.5.0-pyh9f0ad1d_0",
-   "pbr/conda-forge/noarch/pbr-5.5.1-pyh9f0ad1d_0",
-   "pbr/conda-forge/noarch/pbr-5.6.0-pyhd8ed1ab_0"
-  ],
   "random": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "requests_mock": [
-   "requests-mock/conda-forge/noarch/requests-mock-1.5.2-py_0",
-   "requests-mock/conda-forge/noarch/requests-mock-1.8.0-pyh9f0ad1d_0",
-   "requests-mock/conda-forge/noarch/requests-mock-1.9.1-pyhd8ed1ab_0",
-   "requests-mock/conda-forge/noarch/requests-mock-1.9.2-pyhd8ed1ab_0",
-   "requests-mock/conda-forge/noarch/requests-mock-1.9.3-pyhd8ed1ab_0"
-  ],
-  "stevedore": [
-   "stevedore/conda-forge/noarch/stevedore-1.26.0-py_0",
-   "stevedore/conda-forge/noarch/stevedore-1.27.0-py_0",
-   "stevedore/conda-forge/noarch/stevedore-1.27.1-py_0",
-   "stevedore/conda-forge/noarch/stevedore-1.28.0-py_0",
-   "stevedore/conda-forge/noarch/stevedore-1.29.0-py_0",
-   "stevedore/conda-forge/noarch/stevedore-1.30.1-py_0"
-  ],
-  "string": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "tempfile": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -161,19 +130,7 @@
    "testtools/conda-forge/noarch/testtools-2.3.0-py_1",
    "testtools/conda-forge/osx-64/testtools-2.2.0-py27_0"
   ],
-  "traceback": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "unittest": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "urllib": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "uuid": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ]
