@@ -10,18 +10,10 @@
   "coe",
   "collections.defaultdict",
   "convmf.CNN_module",
-  "cornac.models.c2pf.c2pf",
-  "cornac.models.c2pf.c2pf.c2pf",
-  "cornac.models.c2pf.c2pf.r_c2pf",
-  "cornac.models.c2pf.c2pf.t_c2pf",
-  "cornac.models.mcf.mcf",
   "cornac.models.mcf.mcf.mcf",
   "cornac.models.pmf.pmf.pmf_linear",
   "cornac.models.pmf.pmf.pmf_non_linear",
-  "cornac.models.sorec.sorec",
   "cornac.models.sorec.sorec.sorec",
-  "csv",
-  "csv.reader",
   "data.MultimodalTestSet.from_uir",
   "data.MultimodalTrainSet.from_uir",
   "eval_methods.cross_validation.CrossValidation",
@@ -32,6 +24,8 @@
   "is_match_fn",
   "itertools",
   "model.Model",
+  "numbers",
+  "numbers.Integral",
   "numpy.abs",
   "numpy.add",
   "numpy.arange",
@@ -67,7 +61,6 @@
   "os.path.exists",
   "os.path.isfile",
   "os.remove",
-  "pickle",
   "pickle.dump",
   "pickle.load",
   "recommender.Recommender.fit",
@@ -121,16 +114,22 @@
   "tensorflow.variable_scope",
   "tensorflow.zeros_initializer",
   "time",
+  "torch",
+  "torch.cuda.is_available",
   "torch.device",
   "torch.double",
   "torch.float",
   "torch.from_numpy",
+  "torch.nn.functional.logsigmoid",
+  "torch.optim.Adam",
+  "torch.optim.RMSprop",
+  "torch.set_default_dtype",
   "torch.sigmoid",
   "torch.sum",
-  "urllib.request",
-  "urllib.request.build_opener",
-  "urllib.request.install_opener",
-  "urllib.request.urlretrieve",
+  "torch.tensor",
+  "tqdm",
+  "tqdm.tqdm",
+  "tqdm.trange",
   "utils.get_rng",
   "utils.init_utils.xavier_uniform",
   "utils.init_utils.zeros",
@@ -138,7 +137,19 @@
   "vmf.vmf"
  ],
  "deps": {
+  "_csv": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "collections": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "cornac": [
+   "cornac/conda-forge/linux-64/cornac-0.3.3-py36hb3f55d8_0",
+   "cornac/conda-forge/linux-64/cornac-1.13.5-py39hde0f152_0"
+  ],
+  "csv": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -150,16 +161,16 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "numbers": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "numpy": [
    "numpy/conda-forge/linux-64/numpy-1.17.5-py36h95a1406_0",
    "numpy/conda-forge/linux-64/numpy-1.18.4-py37h8960a57_0",
    "numpy/conda-forge/linux-64/numpy-1.19.2-py36h68c22af_1"
   ],
   "os": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "pickle": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -190,25 +201,11 @@
   "tensorflow": [
    "tensorflow-base/conda-forge/linux-64/tensorflow-base-1.13.1-py27h58012e3_6"
   ],
-  "torch": [
-   "pytorch-cpu/conda-forge/linux-64/pytorch-cpu-1.1.0-py37he1b5a44_0",
-   "pytorch-cpu/conda-forge/win-64/pytorch-cpu-1.0.1-py36ha925a31_0",
-   "pytorch/conda-forge/linux-64/pytorch-1.6.0-cuda92py37hc3ec645_1",
-   "pytorch/conda-forge/linux-64/pytorch-1.6.0-cuda92py38hb6ed0dd_1"
-  ],
-  "tqdm": [
-   "tqdm/conda-forge/noarch/tqdm-4.38.0-py_2",
-   "tqdm/conda-forge/noarch/tqdm-4.40.2-py_0",
-   "tqdm/conda-forge/noarch/tqdm-4.42.1-py_0",
-   "tqdm/conda-forge/noarch/tqdm-4.45.0-pyh9f0ad1d_0",
-   "tqdm/conda-forge/noarch/tqdm-4.51.0-pyh9f0ad1d_0",
-   "tqdm/conda-forge/noarch/tqdm-4.52.0-pyhd3deb0d_0",
-   "tqdm/conda-forge/noarch/tqdm-4.55.0-pyhd8ed1ab_0",
-   "tqdm/conda-forge/noarch/tqdm-4.56.0-pyhd8ed1ab_0",
-   "tqdm/conda-forge/noarch/tqdm-4.56.1-pyhd8ed1ab_0",
-   "tqdm/conda-forge/noarch/tqdm-4.60.0-pyhd8ed1ab_0"
-  ],
   "typing": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "urllib": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],

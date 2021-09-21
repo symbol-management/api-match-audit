@@ -18,7 +18,9 @@
   "_group",
   "_parseMethod",
   "addoffset",
+  "base64.urlsafe_b64encode",
   "builders.wheel.WheelBuilder.make_in",
+  "bz2",
   "charsAsStr",
   "closeTag",
   "closeTag.tag",
@@ -30,6 +32,8 @@
   "collections.abc.Mapping",
   "collections.abc.MutableMapping",
   "collections.defaultdict",
+  "contextlib",
+  "contextlib.contextmanager",
   "dependency_from_pep_508",
   "endlocMarker",
   "exc_type",
@@ -44,7 +48,7 @@
   "functools.partial",
   "functools.update_wrapper.__doc__",
   "functools.wraps.__doc__",
-  "gzip.GzipFile",
+  "hashlib",
   "hashlib.sha256",
   "io.BytesIO",
   "io.DEFAULT_BUFFER_SIZE",
@@ -56,18 +60,10 @@
   "itertools",
   "itertools.ifilterfalse",
   "itertools.imap",
-  "jsonschema.Draft7Validator",
-  "lark.Lark",
-  "lark.Lark.open",
-  "lark.Token",
-  "lark.Tree",
-  "lark.UnexpectedCharacters",
-  "lark.UnexpectedToken",
   "license.setter",
   "locMarker",
   "locator",
   "locator.copy",
-  "lzma",
   "makeOptionalList",
   "masks",
   "meta",
@@ -75,18 +71,6 @@
   "metaclass",
   "multi_constraint.MultiConstraint",
   "object.__new__",
-  "operator",
-  "operator.attrgetter",
-  "operator.eq",
-  "operator.ge",
-  "operator.getitem",
-  "operator.gt",
-  "operator.itemgetter",
-  "operator.le",
-  "operator.lt",
-  "operator.methodcaller",
-  "operator.ne",
-  "ordereddict.OrderedDict",
   "os.chdir",
   "os.chmod",
   "os.getcwd",
@@ -106,9 +90,6 @@
   "patterns.TILDE_CONSTRAINT.match",
   "patterns.TILDE_PEP440_CONSTRAINT.match",
   "patterns.X_CONSTRAINT.match",
-  "pdb",
-  "pdb.set_trace",
-  "pkgutil.extend_path",
   "poetry.core.__init__.__vendor_site__",
   "poetry.core.json.__init__.SCHEMA_DIR",
   "poetry.core.packages.__init__._make_file_or_dir_dep",
@@ -125,9 +106,6 @@
   "poetry.core.version.__init__.OP_LE",
   "poetry.core.version.__init__.OP_LT",
   "poetry.core.version.__init__.OP_NE",
-  "pprint",
-  "pprint.pformat",
-  "pprint.pprint",
   "preparseFn",
   "print_",
   "range.is_strictly_higher",
@@ -148,15 +126,8 @@
   "six.moves.urllib.parse.urlsplit",
   "six.moves.urllib.request.url2pathname",
   "skipper",
-  "stat",
-  "stat.S_ISDIR",
-  "stat.S_IWRITE",
   "str.strip",
-  "string",
-  "string.ascii_lowercase",
-  "string.ascii_uppercase",
-  "string.printable",
-  "string.whitespace",
+  "struct",
   "struct.Struct",
   "sys",
   "sys.maxint",
@@ -174,12 +145,7 @@
   "toItem",
   "try_not_ender",
   "type.__new__",
-  "types",
   "types.ClassType",
-  "types.MethodType",
-  "types.ModuleType",
-  "types.SimpleNamespace",
-  "types.resolve_bases",
   "unicode",
   "union_constraint.UnionConstraint",
   "urllib2.urlopen",
@@ -197,19 +163,7 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "base64": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "bz2": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "collections": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "contextlib": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -225,7 +179,7 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "hashlib": [
+  "gzip": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -241,13 +195,36 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "jsonschema": [
+   "jsonschema/conda-forge/noarch/jsonschema-3.2.0-pyhd8ed1ab_3"
+  ],
+  "lark": [
+   "lark-parser/conda-forge/noarch/lark-parser-0.11.3-pyhd8ed1ab_0",
+   "lark-parser/conda-forge/noarch/lark-parser-0.7.1-py_0",
+   "lark-parser/conda-forge/noarch/lark-parser-0.7.5-py_0",
+   "lark-parser/conda-forge/noarch/lark-parser-0.8.1-py_0",
+   "lark-parser/conda-forge/noarch/lark-parser-0.8.3-pyh9f0ad1d_0",
+   "lark-parser/conda-forge/noarch/lark-parser-0.8.6-pyh9f0ad1d_0",
+   "lark-parser/conda-forge/noarch/lark-parser-0.8.7-pyh9f0ad1d_0"
+  ],
   "logging": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "lzma": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "ntpath": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "operator": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "ordereddict": [
+   "ordereddict/conda-forge/linux-64/ordereddict-1.1-py26_0"
   ],
   "os": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -264,7 +241,21 @@
   "pathlib2": [
    "pathlib2/conda-forge/linux-64/pathlib2-2.3.3-py36_1000"
   ],
+  "pdb": [
+   "pdbpp/conda-forge/noarch/pdbpp-0.9.12-py_0",
+   "pdbpp/conda-forge/noarch/pdbpp-0.9.14-py_0",
+   "pdbpp/conda-forge/noarch/pdbpp-0.9.15-py_0",
+   "pdbpp/conda-forge/noarch/pdbpp-0.9.5-py_1",
+   "pdbpp/conda-forge/noarch/pdbpp-0.9.6-py_0",
+   "pdbpp/conda-forge/noarch/pdbpp-0.9.8-py_0",
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "pipes": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "pkgutil": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -274,6 +265,10 @@
    "poetry-core/conda-forge/noarch/poetry-core-1.0.3-pyhd8ed1ab_0"
   ],
   "posixpath": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "pprint": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -293,7 +288,11 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "struct": [
+  "stat": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "string": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -311,6 +310,9 @@
   ],
   "traceback": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "types": [
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "typing": [
