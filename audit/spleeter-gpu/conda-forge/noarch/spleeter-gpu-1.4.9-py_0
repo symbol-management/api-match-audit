@@ -10,25 +10,19 @@
   "conv_activation_layer",
   "create_bidirectional",
   "deconv_activation_layer",
-  "ffmpeg",
   "ffmpeg.FFMPEGProcessAudioAdapter",
-  "ffmpeg._run.Error",
-  "ffmpeg.input",
-  "ffmpeg.probe",
   "functools.partial",
   "github.GithubModelProvider",
   "github.GithubModelProvider.LATEST_RELEASE",
-  "glob.glob",
-  "hashlib",
   "hashlib.sha256",
-  "importlib_resources",
-  "importlib_resources.is_resource",
-  "importlib_resources.open_text",
-  "logging",
   "model.provider.ModelProvider.writeProbe",
   "multiprocessing.Pool",
+  "musdb",
+  "musdb.DB",
   "museval",
   "museval.eval_mus_dir",
+  "norbert",
+  "norbert.wiener",
   "numpy.abs",
   "numpy.dtype",
   "numpy.float32",
@@ -37,11 +31,6 @@
   "numpy.log",
   "os.environ.get",
   "os.path.exists",
-  "pandas",
-  "pandas.DataFrame",
-  "pandas.MultiIndex.from_tuples",
-  "pandas.read_csv",
-  "pathlib.Path",
   "predictor",
   "spleeter.commands.__init__.OPT_ADAPTER",
   "spleeter.commands.__init__.OPT_BITRATE",
@@ -64,17 +53,14 @@
   "spleeter.model.__init__.get_model_function",
   "spleeter.model.provider.__init__.ModelProvider",
   "start",
-  "subprocess",
   "sys",
-  "tempfile.NamedTemporaryFile",
-  "tempfile.gettempdir",
+  "tarfile",
+  "tarfile.open",
   "tensorflow.abs",
   "tensorflow.cast",
   "tensorflow.compat.v1.ConfigProto",
   "tensorflow.compat.v1.keras.initializers.he_uniform",
-  "tensorflow.compat.v1.logging.DEBUG",
   "tensorflow.compat.v1.logging.Formatter",
-  "tensorflow.compat.v1.logging.INFO",
   "tensorflow.compat.v1.logging.StreamHandler",
   "tensorflow.compat.v1.logging.getLogger",
   "tensorflow.compat.v1.metrics.mean",
@@ -117,9 +103,7 @@
   "tensorflow.tile",
   "tensorflow.transpose",
   "tensorflow.zeros",
-  "time",
-  "warnings",
-  "warnings.filterwarnings"
+  "time"
  ],
  "deps": {
   "abc": [
@@ -131,18 +115,28 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "ffmpeg": [
+   "ffmpeg-python/conda-forge/noarch/ffmpeg-python-0.2.0-py_0"
+  ],
+  "glob": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "hashlib": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "importlib": [
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "importlib_resources": [],
   "json": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "musdb": [
-   "musdb/conda-forge/linux-64/musdb-0.3.1-py37_0"
-  ],
-  "norbert": [
-   "norbert/conda-forge/noarch/norbert-0.2.1-py_0"
+  "logging": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "ntpath": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -157,6 +151,12 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "pandas": [],
+  "pathlib": [
+   "pathlib/conda-forge/noarch/pathlib-1.0.1-py_1",
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "requests": [
    "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
    "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0",
@@ -167,10 +167,18 @@
    "requests/conda-forge/noarch/requests-2.25.1-pyhd3deb0d_0",
    "requests/conda-forge/noarch/requests-2.26.0-pyhd8ed1ab_0"
   ],
-  "tarfile": [
+  "subprocess": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "tensorflow": []
+  "tempfile": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "tensorflow": [],
+  "warnings": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ]
  }
 }

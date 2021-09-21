@@ -77,6 +77,7 @@
   "datasets.ConcatDataset",
   "datasets.append",
   "errno",
+  "factory",
   "fbnet_builder.FBNetBuilder",
   "fbnet_builder.get_blocks",
   "fbnet_builder.get_num_stages",
@@ -90,6 +91,12 @@
   "fpn.LastLevelMaxPool",
   "fpn.LastLevelP6P7",
   "func",
+  "glob",
+  "glob.glob",
+  "importlib",
+  "importlib.util",
+  "importlib.util.module_from_spec",
+  "importlib.util.spec_from_file_location",
   "input.dim",
   "input.is_cuda",
   "input.new_empty",
@@ -99,6 +106,9 @@
   "input.size",
   "itertools",
   "itertools.chain.from_iterable",
+  "json",
+  "json.dump",
+  "json.loads",
   "layers.interpolate",
   "layers.misc._NewEmptyTensorOp.apply",
   "loss_func",
@@ -111,6 +121,12 @@
   "m.weight.data.normal_",
   "m.weight.size",
   "masker",
+  "math",
+  "math.ceil",
+  "math.floor",
+  "math.sqrt",
+  "matplotlib.pyplot",
+  "matplotlib.pyplot.get_cmap",
   "meta_arch",
   "mobilenet.MobileNetV2",
   "modeling.matcher.Matcher.BELOW_LOW_THRESHOLD",
@@ -146,7 +162,19 @@
   "numpy.zeros",
   "os.environ.get",
   "os.path.exists",
+  "pkg_resources",
+  "pkg_resources.resource_filename",
   "pooler",
+  "pycocotools.coco.COCO",
+  "pycocotools.cocoeval.COCOeval",
+  "pycocotools.mask",
+  "pycocotools.mask.decode",
+  "pycocotools.mask.encode",
+  "pycocotools.mask.frPyObjects",
+  "pycocotools.mask.merge",
+  "random",
+  "random.choice",
+  "random.random",
   "resnet.ResNet",
   "samplers.DistributedSampler",
   "samplers.GroupedBatchSampler",
@@ -203,7 +231,10 @@
   "transforms.Normalize",
   "transforms.RandomHorizontalFlip",
   "transforms.Resize",
-  "transforms.ToTensor"
+  "transforms.ToTensor",
+  "xml.etree.ElementTree",
+  "xml.etree.ElementTree.parse",
+  "xml.etree.cElementTree"
  ],
  "deps": {
   "PIL": [
@@ -238,38 +269,9 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "factory": [
-   "factory_boy/conda-forge/noarch/factory_boy-2.10.0-py_0",
-   "factory_boy/conda-forge/noarch/factory_boy-2.11.0-py_0",
-   "factory_boy/conda-forge/noarch/factory_boy-2.11.1-py_0",
-   "factory_boy/conda-forge/noarch/factory_boy-2.11.1-pyh9f0ad1d_1",
-   "factory_boy/conda-forge/noarch/factory_boy-3.0.1-pyh9f0ad1d_1",
-   "factory_boy/conda-forge/noarch/factory_boy-3.1.0-pyh9f0ad1d_0"
-  ],
-  "glob": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "importlib": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "json": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "logging": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "math": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "matplotlib": [
-   "matplotlib-base/conda-forge/linux-64/matplotlib-base-3.1.1-py37hfd891ef_0",
-   "matplotlib-base/conda-forge/linux-64/matplotlib-base-3.1.1-py38h250f245_2",
-   "matplotlib/conda-forge/linux-64/matplotlib-1.5.3-np111py34_0"
   ],
   "ntpath": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -284,19 +286,6 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "pickle": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "pkg_resources": [
-   "setuptools/conda-forge/linux-64/setuptools-40.6.1-py36_0",
-   "setuptools/conda-forge/linux-64/setuptools-46.3.0-py38h32f6830_0",
-   "setuptools/conda-forge/linux-64/setuptools-49.1.2-py38h32f6830_0"
-  ],
-  "pycocotools": [
-   "pycocotools/conda-forge/linux-64/pycocotools-2.0.0-py36h516909a_1001",
-   "pycocotools/conda-forge/linux-64/pycocotools-2.0.1-py36h8c4c3a4_1"
-  ],
-  "random": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -325,10 +314,6 @@
    "tqdm/conda-forge/noarch/tqdm-4.60.0-pyhd8ed1ab_0"
   ],
   "urllib": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "xml": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],

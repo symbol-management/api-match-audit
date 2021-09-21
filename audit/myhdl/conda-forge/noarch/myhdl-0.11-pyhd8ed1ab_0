@@ -11,7 +11,6 @@
   "_getSignString",
   "_getTypeString",
   "_pop",
-  "ast",
   "ast.AST",
   "ast.Add",
   "ast.And",
@@ -40,11 +39,8 @@
   "ast.Mod",
   "ast.Mult",
   "ast.Name",
-  "ast.NodeTransformer",
-  "ast.NodeVisitor",
   "ast.Not",
   "ast.NotEq",
-  "ast.Num",
   "ast.Or",
   "ast.Pow",
   "ast.Print",
@@ -53,25 +49,17 @@
   "ast.Slice",
   "ast.Starred",
   "ast.Store",
-  "ast.Str",
   "ast.Sub",
   "ast.Subscript",
   "ast.Tuple",
   "ast.UAdd",
   "ast.USub",
   "ast.Yield",
-  "ast.copy_location",
   "ast.expr",
-  "ast.iter_fields",
-  "ast.parse",
   "ast.stmt",
-  "builtins",
   "cStringIO.StringIO",
   "compressSensitivityList",
   "converter",
-  "ctypes",
-  "ctypes.LibraryLoader",
-  "ctypes.WinDLL",
   "datetime.datetime.today",
   "delay",
   "difflib",
@@ -84,22 +72,12 @@
   "func",
   "genFunc",
   "inferVhdlObj",
-  "inspect",
-  "inspect.cleandoc",
-  "inspect.currentframe",
-  "inspect.getargspec",
-  "inspect.getdoc",
-  "inspect.getouterframes",
-  "inspect.getsource",
-  "inspect.getsourcefile",
-  "inspect.getsourcelines",
-  "inspect.isclass",
-  "inspect.isgeneratorfunction",
-  "inspect.ismethod",
-  "inspect.stack",
   "intbv",
   "io.StringIO",
   "itertools",
+  "math",
+  "math.ceil",
+  "math.log",
   "msvcrt",
   "msvcrt.get_osfhandle",
   "myhdl._Signal._Signal.next.fset",
@@ -187,33 +165,44 @@
   "platform.platform",
   "platform.python_implementation",
   "platform.python_version",
-  "re",
-  "re.compile",
   "reset_sigs",
   "reset_vars",
   "set_next",
   "shutil",
   "shutil.copyfile",
+  "string",
+  "string.Template",
   "sys",
   "t",
   "time",
   "tokenize.INDENT",
+  "tokenize.generate_tokens",
+  "tokenize.untokenize",
   "types.ClassType",
   "vhd_unsigned",
-  "warnings",
-  "warnings.filterwarnings",
-  "warnings.warn"
+  "warnings.warn",
+  "weakref.WeakValueDictionary"
  ],
  "deps": {
   "__future__": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "ast": [
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "builtins": [
+   "pies2overrides/conda-forge/osx-64/pies2overrides-2.6.7-py27_1000"
+  ],
   "collections": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "copy": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "ctypes": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -225,7 +214,7 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "math": [
+  "inspect": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -237,7 +226,7 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "string": [
+  "re": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -253,15 +242,11 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "tokenize": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "types": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "weakref": [
+  "warnings": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ]
