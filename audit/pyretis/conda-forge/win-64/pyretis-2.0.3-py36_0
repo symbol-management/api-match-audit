@@ -27,13 +27,6 @@
   "colorama.Fore.RED",
   "colorama.Fore.YELLOW",
   "colorama.init",
-  "contextlib.contextmanager",
-  "copy",
-  "copy.copy",
-  "copy.deepcopy",
-  "datetime",
-  "datetime.datetime",
-  "datetime.datetime.now",
   "dfs_set",
   "docutils.core",
   "docutils.writers.html4css1.HTMLTranslator",
@@ -58,11 +51,10 @@
   "gtype",
   "gzip",
   "gzip.open",
+  "imp",
+  "imp.load_source",
   "imp_l",
   "imp_r",
-  "importlib",
-  "importlib.util.module_from_spec",
-  "importlib.util.spec_from_file_location",
   "improved",
   "initiate_path_ensemble_kick",
   "io.DEFAULT_BUFFER_SIZE",
@@ -120,9 +112,8 @@
   "os.system",
   "pathlib",
   "pathlib.Path",
-  "pickle",
-  "pickle.dump",
-  "pickle.load",
+  "pprint",
+  "pprint.pformat",
   "pyretis.core.particlefunctions.calculate_thermo.__code__.co_code",
   "pyretis.core.particlefunctions.calculate_thermo_path.__code__.co_code",
   "pyretis.core.path._GENERATED_SHORT.get",
@@ -153,8 +144,13 @@
   "run_analysis_files",
   "runner",
   "section_to_text",
-  "shlex",
-  "shlex.split",
+  "shutil",
+  "shutil.copy",
+  "shutil.copyfile",
+  "shutil.copyfileobj",
+  "shutil.copytree",
+  "shutil.move",
+  "shutil.rmtree",
   "signal.SIGINT",
   "signal.default_int_handler",
   "simtk.openmm.LangevinIntegrator",
@@ -169,6 +165,10 @@
   "struct.error",
   "struct.pack",
   "struct.unpack",
+  "subprocess",
+  "subprocess.DEVNULL",
+  "subprocess.PIPE",
+  "subprocess.Popen",
   "sys",
   "sys.path.insert",
   "sys.version.split",
@@ -183,11 +183,20 @@
   "test_helpers.TEST_SETTINGS.items",
   "thermo_func",
   "tqd",
+  "unittest",
+  "unittest.TestCase",
+  "unittest.main",
+  "unittest.mock.patch",
+  "unittest.skipIf",
   "write_mock_cpt",
   "write_mock_edr",
   "write_mock_trr"
  ],
  "deps": {
+  "_pickle": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "abc": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -205,7 +214,19 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "imp": [
+  "contextlib": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "copy": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "datetime": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "importlib": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -251,7 +272,7 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "pprint": [
+  "pickle": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -275,7 +296,7 @@
   "scipy": [
    "scipy/conda-forge/linux-64/scipy-1.7.0-py37ha768fb6_1"
   ],
-  "shutil": [
+  "shlex": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -288,10 +309,6 @@
    "openmm/conda-forge/linux-64/openmm-7.5.1-py36heb70152_1"
   ],
   "struct": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "subprocess": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -316,10 +333,6 @@
    "tqdm/conda-forge/noarch/tqdm-4.60.0-pyhd8ed1ab_0"
   ],
   "traceback": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "unittest": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],

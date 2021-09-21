@@ -19,11 +19,14 @@
   "electronegativity",
   "functools.reduce",
   "get_final_abinit_out",
+  "gridfs",
   "group",
   "hashlib.md5",
   "hashlib.sha224",
+  "html.parser.HTMLParser",
   "itertools",
   "itertools.izip",
+  "lxml.builder.E",
   "lxml.builder.E.body",
   "lxml.builder.E.br",
   "lxml.builder.E.h1",
@@ -38,6 +41,8 @@
   "lxml.builder.E.th",
   "lxml.builder.E.title",
   "lxml.builder.E.tr",
+  "lxml.builder.ElementMaker",
+  "lxml.etree",
   "lxml.etree.tostring",
   "mass",
   "matplotlib.colors.normalize",
@@ -48,11 +53,29 @@
   "matplotlib.pylab.subplot",
   "matplotlib.pylab.subplots",
   "matplotlib.pylab.xlabel",
+  "mayavi.mlab",
+  "mayavi.mlab.figure",
+  "mayavi.mlab.gcf",
+  "mayavi.mlab.pipeline",
+  "mayavi.mlab.pipeline.scalar_field",
+  "mayavi.mlab.pipeline.volume",
+  "mayavi.mlab.plot3d",
+  "mayavi.mlab.points3d",
+  "mayavi.mlab.quiver3d",
+  "mayavi.mlab.savefig",
+  "mayavi.mlab.show",
+  "mayavi.mlab.view",
   "melting_point",
   "multiprocessing.Pool",
   "multiprocessing.Process",
+  "networkx",
   "networkx.Graph",
+  "networkx.readwrite.json_graph",
   "networkx.readwrite.json_graph.node_link_data",
+  "numbers",
+  "numbers.Integral",
+  "numbers.Number",
+  "numbers.Real",
   "numpy.abs",
   "numpy.arange",
   "numpy.arccos",
@@ -101,7 +124,16 @@
   "p",
   "period",
   "phase",
+  "pprint",
+  "pprint.PrettyPrinter",
+  "pprint.PrettyPrinter.format",
   "procar.ProcarPlot",
+  "psutil",
+  "psutil.cpu_count",
+  "pychemia.Structure.from_dict",
+  "pychemia.Structure.load_json",
+  "pychemia.Structure.random_cell",
+  "pychemia.Structure.random_cluster",
   "pychemia.__init__.HAS_MATPLOTLIB",
   "pychemia.__init__.HAS_PYMONGO",
   "pychemia.__init__.pcm_log",
@@ -115,6 +147,9 @@
   "pychemia.code.octopus.InputVariables",
   "pychemia.code.octopus.coordinates",
   "pychemia.code.octopus.energy",
+  "pychemia.crystal.KPoints.from_dict",
+  "pychemia.crystal.KPoints.optimized_grid",
+  "pychemia.crystal.Lattice.from_parameters_to_cell",
   "pychemia.crystral.Lattice",
   "pychemia.pcm_log.debug",
   "pychemia.pcm_log.error",
@@ -123,20 +158,44 @@
   "pychemia.runner.execute",
   "pychemia.symm.StructureSymmetry",
   "pychemia.symm.symmetrize",
+  "pyhull.voronoi.VoronoiTess",
+  "pymatgen.Structure",
+  "pymatgen.io.cif",
+  "pymongo",
+  "pymongo.ASCENDING",
+  "pymongo.MongoClient",
+  "pymongo.errors.OperationFailure",
+  "pymongo.errors.ServerSelectionTimeoutError",
   "pymongo.ssl_support.ssl.CERT_NONE",
+  "pymongo.version_tuple",
   "re.MULTILINE",
   "scipy.spatial.qhull.QhullError",
+  "shutil",
+  "shutil.copy",
+  "shutil.copy2",
+  "shutil.copyfile",
+  "shutil.copytree",
+  "shutil.rmtree",
   "socket.gethostname",
   "spglib.standarize_cell",
   "struct.unpack",
   "structure.Structure.load_json",
+  "subprocess",
+  "subprocess.CalledProcessError",
+  "subprocess.PIPE",
+  "subprocess.Popen",
+  "subprocess.call",
+  "subprocess.check_output",
   "sys",
   "sys.float_info.max",
   "sys.float_info.min",
   "sys.stdout.flush",
   "sys.stdout.write",
+  "threading.Thread",
   "time",
   "tvtk.api.tvtk.PolyData",
+  "uuid",
+  "uuid.uuid4",
   "valence",
   "valence_nominal",
   "vec",
@@ -183,19 +242,11 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "gridfs": [
-   "pymongo/conda-forge/linux-64/pymongo-3.11.4-py39he80948d_0",
-   "pymongo/conda-forge/win-64/pymongo-3.11.4-py39h415ef7b_0"
-  ],
   "gzip": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "hashlib": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "html": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -211,9 +262,6 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "lxml": [
-   "lxml/conda-forge/linux-64/lxml-4.2.6-py37h23eabaa_1000"
-  ],
   "math": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -223,22 +271,7 @@
    "matplotlib-base/conda-forge/linux-64/matplotlib-base-3.1.1-py38h250f245_2",
    "matplotlib/conda-forge/linux-64/matplotlib-1.5.3-np111py34_0"
   ],
-  "mayavi": [
-   "mayavi/conda-forge/linux-64/mayavi-4.6.1-py36_0"
-  ],
-  "networkx": [
-   "networkx/conda-forge/noarch/networkx-2.1-py_1",
-   "networkx/conda-forge/noarch/networkx-2.2-py_1",
-   "networkx/conda-forge/noarch/networkx-2.4-py_1",
-   "networkx/conda-forge/noarch/networkx-2.5-py_0",
-   "networkx/conda-forge/noarch/networkx-2.6.1-pyhd8ed1ab_0",
-   "networkx/conda-forge/noarch/networkx-2.6.1-pyhd8ed1ab_1"
-  ],
   "ntpath": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "numbers": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -250,28 +283,6 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "pprint": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "psutil": [
-   "psutil/conda-forge/linux-64/psutil-5.7.3-py39h38d8fee_0"
-  ],
-  "pychemia": [
-   "pychemia/conda-forge/linux-64/pychemia-0.20.6.1-py37h8f50634_1",
-   "pychemia/conda-forge/win-64/pychemia-0.20.6.1-py36h779f372_1"
-  ],
-  "pyhull": [
-   "pyhull/conda-forge/linux-64/pyhull-2015.2.1-py36h1f35d00_2",
-   "pyhull/conda-forge/linux-64/pyhull-2015.2.1-py37h6dcda5c_2"
-  ],
-  "pymatgen": [
-   "pymatgen/conda-forge/linux-64/pymatgen-2019.12.22-py37hc9558a2_0"
-  ],
-  "pymongo": [
-   "pymongo/conda-forge/linux-64/pymongo-3.11.4-py39he80948d_0",
-   "pymongo/conda-forge/win-64/pymongo-3.11.4-py39h415ef7b_0"
-  ],
   "random": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -282,10 +293,6 @@
   ],
   "scipy": [],
   "shlex": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "shutil": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -301,20 +308,8 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "subprocess": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "threading": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "tvtk": [
    "mayavi/conda-forge/linux-64/mayavi-4.6.1-py36_0"
-  ],
-  "uuid": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "vtk": [
    "paraview/conda-forge/linux-64/paraview-5.8.0rc3-py38hf29adf7_1",

@@ -21,21 +21,31 @@
   "dict.fromkeys",
   "dir.x",
   "dir.y",
+  "django.conf",
+  "dulwich.repo",
   "dumps",
   "errno",
   "format_time",
   "format_value",
+  "fractions.Fraction",
   "func",
   "functools.partial",
   "gc",
+  "genshi.template.MarkupTemplate",
+  "genshi.template.NewTextTemplate",
   "getboolean",
   "getstr",
+  "glob",
+  "glob.glob",
   "hashlib.md5",
   "hex.count",
   "hex.get_by_id",
   "hex.get_by_pos",
   "hex.link_nodes",
   "hex.size",
+  "html5lib",
+  "html5lib.__version__",
+  "html5lib.parse",
   "io.BytesIO",
   "io.StringIO",
   "io.open",
@@ -46,7 +56,6 @@
   "mako.lookup.TemplateLookup",
   "mako.template.Template",
   "mercurial.__version__.version",
-  "multiprocessing",
   "next.maximize",
   "nprint",
   "os.F_OK",
@@ -59,17 +68,7 @@
   "os.path.isdir",
   "os.unlink",
   "pathlib",
-  "pathlib2",
-  "pathlib2.Path",
   "pathlib2.__name__",
-  "perf",
-  "perf.BenchmarkSuite",
-  "perf.BenchmarkSuite.load",
-  "perf.Runner",
-  "perf.add_runs",
-  "perf.perf_counter",
-  "perf.python_has_jit",
-  "perf.python_implementation",
   "performance.__init__.VERSION",
   "performance.benchmarks.__init__.BENCH_GROUPS",
   "performance.benchmarks.__init__.DEFAULT_GROUP",
@@ -78,56 +77,35 @@
   "performance.benchmarks.__init__.python2_only",
   "perm1_ins",
   "perm1_pop",
-  "pickle",
-  "pipes.quote",
-  "platform",
-  "platform.python_implementation",
-  "pyaes",
-  "pyaes.AESModeOfOperationCTR",
+  "pkg_resources",
+  "pkg_resources.get_distribution",
   "quantity_delta",
-  "random",
-  "random.Random",
-  "random.random",
-  "random.randrange",
-  "random.seed",
   "re.IGNORECASE",
   "re.UNICODE",
   "real_compile",
   "real_search",
   "real_sub",
   "search",
-  "six",
-  "six.BytesIO",
-  "six.PY2",
-  "six.PY3",
+  "shutil",
+  "shutil.rmtree",
+  "shutil.which",
   "six.StringIO",
-  "six.int2byte",
-  "six.integer_types",
-  "six.iterbytes",
   "six.moves.StringIO",
   "six.moves.map",
   "six.moves.xrange",
   "six.moves.zip",
-  "six.text_type",
   "six.text_type.__name__",
-  "six.u",
   "socket.AF_INET",
   "spambayes.hammie",
   "spambayes.hammie.open",
   "spambayes.mboxutils",
   "spambayes.mboxutils.getmbox",
-  "sqlalchemy.Column",
-  "sqlalchemy.ForeignKey",
-  "sqlalchemy.Integer",
-  "sqlalchemy.MetaData",
-  "sqlalchemy.String",
-  "sqlalchemy.Table",
-  "sqlalchemy.create_engine",
-  "sqlalchemy.ext.declarative.declarative_base",
-  "sqlalchemy.orm.relationship",
-  "sqlalchemy.orm.sessionmaker",
   "sqlite3.connect",
   "struct.unpack",
+  "subprocess",
+  "subprocess.PIPE",
+  "subprocess.Popen",
+  "subprocess.STDOUT",
   "sys",
   "sys.implementation.name",
   "sys.stderr.flush",
@@ -135,17 +113,10 @@
   "sys.stdout.flush",
   "time",
   "timer",
-  "tornado.gen.Task",
-  "tornado.gen.coroutine",
-  "tornado.httpclient.AsyncHTTPClient",
-  "tornado.httpserver.HTTPServer",
-  "tornado.ioloop.IOLoop",
-  "tornado.ioloop.IOLoop.instance",
-  "tornado.netutil.bind_sockets",
-  "tornado.web.Application",
-  "tornado.web.RequestHandler",
+  "unittest",
+  "unittest.TestCase",
+  "unittest.main",
   "urllib2",
-  "xml.etree.ElementTree",
   "xml.etree.ElementTree.SubElement.__module__"
  ],
  "deps": {
@@ -206,32 +177,13 @@
    "django/conda-forge/noarch/django-3.0.6-py_0",
    "django/conda-forge/noarch/django-3.0.7-py_0"
   ],
-  "dulwich": [
-   "dulwich/conda-forge/linux-64/dulwich-0.19.16-py36h8c4c3a4_0",
-   "dulwich/conda-forge/linux-64/dulwich-0.20.22-py39h3811e60_0"
-  ],
-  "fractions": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "functools": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "genshi": [
-   "genshi/conda-forge/linux-64/genshi-0.7.3-py36h97a6639_1"
-  ],
-  "glob": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "hashlib": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "html5lib": [
-   "html5lib/conda-forge/noarch/html5lib-0.999999999-py_1",
-   "html5lib/conda-forge/noarch/html5lib-1.0.1-py_0"
   ],
   "importlib": [
    "importlib/conda-forge/linux-64/importlib-1.0.4-py26_0",
@@ -254,6 +206,10 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "multiprocessing": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "ntpath": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -262,10 +218,31 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "pkg_resources": [
-   "setuptools/conda-forge/linux-64/setuptools-40.6.1-py36_0",
-   "setuptools/conda-forge/linux-64/setuptools-46.3.0-py38h32f6830_0",
-   "setuptools/conda-forge/linux-64/setuptools-49.1.2-py38h32f6830_0"
+  "pathlib2": [
+   "pathlib2/conda-forge/linux-64/pathlib2-2.3.3-py36_1000"
+  ],
+  "perf": [
+   "perf/conda-forge/linux-64/perf-1.6.0-py37_0",
+   "perf/conda-forge/win-64/perf-1.5.1-py27_0"
+  ],
+  "pickle": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "pipes": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "platform": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "pyaes": [
+   "pyaes/conda-forge/noarch/pyaes-1.6.1-py_0"
+  ],
+  "random": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "re": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -275,14 +252,21 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "shutil": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  "six": [
+   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
+   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0",
+   "lldb/conda-forge/linux-64/lldb-6.0.0-py35_0",
+   "privy/conda-forge/noarch/privy-6.0.0-py_0",
+   "six/conda-forge/linux-64/six-1.10.0-py34_0",
+   "six/conda-forge/linux-64/six-1.10.0-py34_1",
+   "six/conda-forge/noarch/six-1.14.0-py_1",
+   "six/conda-forge/noarch/six-1.16.0-pyh6c4a22f_0"
   ],
   "socket": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "sqlalchemy": [],
   "sqlite3": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -291,10 +275,6 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
    "statistics/conda-forge/linux-64/statistics-1.0.3.5-py27_1001"
-  ],
-  "subprocess": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "sympy": [
    "sympy/conda-forge/linux-64/sympy-1.5.1-py27h8c360ce_2",
@@ -308,15 +288,18 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "tornado": [
+   "tornado/conda-forge/linux-64/tornado-4.4.3-py35_0"
+  ],
   "traceback": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "unittest": [
+  "urllib": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "urllib": [
+  "xml": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ]
