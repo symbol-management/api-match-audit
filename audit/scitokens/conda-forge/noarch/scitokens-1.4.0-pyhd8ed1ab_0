@@ -1,61 +1,24 @@
 {
  "bad": [
-  "cryptography.hazmat.backends",
-  "cryptography.hazmat.backends.default_backend",
-  "cryptography.hazmat.primitives.asymmetric.ec",
-  "cryptography.hazmat.primitives.asymmetric.ec.EllipticCurvePrivateKey",
-  "cryptography.hazmat.primitives.asymmetric.ec.EllipticCurvePublicNumbers",
-  "cryptography.hazmat.primitives.asymmetric.ec.SECP256R1",
-  "cryptography.hazmat.primitives.asymmetric.ec.generate_private_key",
-  "cryptography.hazmat.primitives.asymmetric.rsa",
-  "cryptography.hazmat.primitives.asymmetric.rsa.RSAPrivateKey",
-  "cryptography.hazmat.primitives.asymmetric.rsa.RSAPublicNumbers",
-  "cryptography.hazmat.primitives.asymmetric.rsa.generate_private_key",
-  "cryptography.hazmat.primitives.hashes",
-  "cryptography.hazmat.primitives.hashes.Hash",
-  "cryptography.hazmat.primitives.hashes.SHA256",
-  "cryptography.hazmat.primitives.serialization",
-  "cryptography.hazmat.primitives.serialization.Encoding",
   "cryptography.hazmat.primitives.serialization.Encoding.PEM",
-  "cryptography.hazmat.primitives.serialization.NoEncryption",
   "cryptography.hazmat.primitives.serialization.PrivateFormat.TraditionalOpenSSL",
-  "cryptography.hazmat.primitives.serialization.PublicFormat",
   "cryptography.hazmat.primitives.serialization.PublicFormat.SubjectPublicKeyInfo",
-  "cryptography.hazmat.primitives.serialization.load_pem_private_key",
-  "cryptography.hazmat.primitives.serialization.load_pem_public_key",
-  "cryptography.utils",
-  "jwt",
-  "jwt.decode",
-  "jwt.encode",
-  "jwt.get_unverified_header",
   "os.environ.get",
   "os.environ.strip",
   "os.geteuid",
   "os.path.exists",
   "os.path.isfile",
-  "posixpath",
-  "posixpath.normpath",
-  "re",
-  "re.search",
   "scitokens.utils.__init__.decode_base64",
-  "six",
   "six.moves.configparser",
   "six.moves.configparser.ConfigParser",
   "six.moves.configparser.NoOptionError",
   "six.moves.configparser.NoSectionError",
   "six.moves.configparser.RawConfigParser",
-  "six.string_types",
-  "sqlite3",
   "sqlite3.Row",
   "sqlite3.connect",
   "str.encode",
   "sys",
   "time",
-  "urllib.parse",
-  "urllib.parse.urljoin",
-  "urllib.parse.urlparse",
-  "urllib.parse.urlunparse",
-  "urllib.request",
   "urllib2",
   "urllib2.Request",
   "urllib2.urlopen",
@@ -63,8 +26,6 @@
   "urltools.normalize_path",
   "utils.keycache.KeyCache",
   "utils.keycache.getkeyinfo",
-  "uuid",
-  "uuid.uuid4",
   "validator"
  ],
  "deps": {
@@ -81,9 +42,17 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "cryptography": [],
   "json": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "jwt": [
+   "pyjwt/conda-forge/noarch/pyjwt-1.6.0-py_0",
+   "pyjwt/conda-forge/noarch/pyjwt-1.6.1-py_0",
+   "pyjwt/conda-forge/noarch/pyjwt-1.6.3-py_0",
+   "pyjwt/conda-forge/noarch/pyjwt-1.6.4-py_0",
+   "pyjwt/conda-forge/noarch/pyjwt-1.7.1-py_0"
   ],
   "logging": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -101,6 +70,36 @@
    "setuptools/conda-forge/linux-64/setuptools-40.6.1-py36_0",
    "setuptools/conda-forge/linux-64/setuptools-46.3.0-py38h32f6830_0",
    "setuptools/conda-forge/linux-64/setuptools-49.1.2-py38h32f6830_0"
+  ],
+  "posixpath": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "re": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "six": [
+   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
+   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0",
+   "lldb/conda-forge/linux-64/lldb-6.0.0-py35_0",
+   "privy/conda-forge/noarch/privy-6.0.0-py_0",
+   "six/conda-forge/linux-64/six-1.10.0-py34_0",
+   "six/conda-forge/linux-64/six-1.10.0-py34_1",
+   "six/conda-forge/noarch/six-1.14.0-py_1",
+   "six/conda-forge/noarch/six-1.16.0-pyh6c4a22f_0"
+  ],
+  "sqlite3": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "urllib": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "uuid": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ]
  }
 }
