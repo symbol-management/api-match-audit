@@ -7,31 +7,75 @@
   "duecredit.Url",
   "duecredit.due",
   "errno",
+  "graph_tool",
+  "graph_tool.Graph",
+  "graph_tool.generation",
+  "graph_tool.generation.circular_graph",
+  "graph_tool.generation.lattice",
+  "graph_tool.topology",
+  "graph_tool.topology.subgraph_isomorphism",
+  "networkx",
   "networkx.Graph",
   "networkx.algorithms.isomorphism.GraphMatcher",
   "networkx.cycle_graph",
+  "networkx.generators.lattice.grid_2d_graph",
   "networkx.get_node_attributes",
   "networkx.set_node_attributes",
+  "numpy",
+  "numpy.all",
   "numpy.arange",
+  "numpy.array",
+  "numpy.average",
   "numpy.cos",
+  "numpy.cross",
   "numpy.inf",
+  "numpy.inner",
+  "numpy.ix_",
+  "numpy.linalg.det",
+  "numpy.linalg.eig",
+  "numpy.linalg.norm",
+  "numpy.mean",
+  "numpy.ndarray",
+  "numpy.outer",
   "numpy.pi",
   "numpy.sin",
   "numpy.sqrt",
+  "numpy.sum",
+  "numpy.trace",
+  "numpy.transpose",
+  "numpy.triu",
   "numpy.zeros",
+  "openbabel",
   "openbabel.openbabel",
   "openbabel.openbabel.OBMolBondIter",
   "openbabel.pybel",
   "openbabel.pybel.readfile",
+  "pybel",
+  "qcelemental",
   "qcelemental.covalentradii.get",
   "qcelemental.periodictable.to_mass",
   "rdkit.Chem.MolFromMol2File",
   "rdkit.Chem.MolFromPDBFile",
   "rdkit.Chem.SDMolSupplier",
   "rdkit.Chem.rdmolops.GetAdjacencyMatrix",
+  "scipy",
+  "scipy.optimize",
+  "scipy.optimize.linear_sum_assignment",
+  "scipy.optimize.newton",
+  "scipy.spatial.distance.cdist",
   "spyrmsd.__init__.versions",
   "spyrmsd.optional.__init__.versions",
+  "subprocess",
+  "subprocess.PIPE",
+  "subprocess.Popen",
   "sys",
+  "typing.Any",
+  "typing.Dict",
+  "typing.List",
+  "typing.Optional",
+  "typing.Tuple",
+  "typing.Union",
+  "warnings",
   "warnings.warn"
  ],
  "deps": {
@@ -40,53 +84,17 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "graph_tool": [
-   "graph-tool-base/conda-forge/linux-64/graph-tool-base-2.43-py37hb8ebace_0"
-  ],
   "logging": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "networkx": [
-   "networkx/conda-forge/noarch/networkx-2.1-py_1",
-   "networkx/conda-forge/noarch/networkx-2.2-py_1",
-   "networkx/conda-forge/noarch/networkx-2.4-py_1",
-   "networkx/conda-forge/noarch/networkx-2.5-py_0",
-   "networkx/conda-forge/noarch/networkx-2.6.1-pyhd8ed1ab_0",
-   "networkx/conda-forge/noarch/networkx-2.6.1-pyhd8ed1ab_1"
   ],
   "ntpath": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "numpy": [
-   "numpy/conda-forge/linux-64/numpy-1.17.5-py36h95a1406_0",
-   "numpy/conda-forge/linux-64/numpy-1.18.4-py37h8960a57_0"
-  ],
-  "openbabel": [
-   "openbabel/conda-forge/linux-64/openbabel-2.4.1-py37hc189817_0"
-  ],
   "os": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "pybel": [
-   "openbabel/conda-forge/linux-64/openbabel-2.4.1-py37hc189817_0"
-  ],
-  "qcelemental": [
-   "qcelemental/conda-forge/noarch/qcelemental-0.10.0-py_0",
-   "qcelemental/conda-forge/noarch/qcelemental-0.12.0-py_0",
-   "qcelemental/conda-forge/noarch/qcelemental-0.15.1-py_0",
-   "qcelemental/conda-forge/noarch/qcelemental-0.16.0-py_0",
-   "qcelemental/conda-forge/noarch/qcelemental-0.18.0-pyhd8ed1ab_0",
-   "qcelemental/conda-forge/noarch/qcelemental-0.19.0-pyhd8ed1ab_0",
-   "qcelemental/conda-forge/noarch/qcelemental-0.2.6-py_0",
-   "qcelemental/conda-forge/noarch/qcelemental-0.21.0-pyhd8ed1ab_0",
-   "qcelemental/conda-forge/noarch/qcelemental-0.3.1-py_0",
-   "qcelemental/conda-forge/noarch/qcelemental-0.3.3-py_0",
-   "qcelemental/conda-forge/noarch/qcelemental-0.4.1-py_0",
-   "qcelemental/conda-forge/noarch/qcelemental-0.5.0-py_0",
-   "qcelemental/conda-forge/noarch/qcelemental-0.9.0-py_0"
   ],
   "rdkit": [
    "rdkit/conda-forge/linux-64/rdkit-2018.09.3-py27h9c20d5c_0",
@@ -94,19 +102,6 @@
    "rdkit/conda-forge/linux-64/rdkit-2020.09.4-py39hccf6a74_0"
   ],
   "re": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "scipy": [],
-  "subprocess": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "typing": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "warnings": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ]

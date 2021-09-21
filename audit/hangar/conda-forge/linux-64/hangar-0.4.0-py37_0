@@ -6,6 +6,12 @@
   "arrayset.Arraysets._from_staging_area",
   "atexit",
   "backends.selection.BACKEND_ACCESSOR_MAP.items",
+  "blosc",
+  "blosc.SHUFFLE",
+  "blosc.compress",
+  "blosc.decompress",
+  "blosc.detect_number_of_cores",
+  "blosc.set_nthreads",
   "bytes.split",
   "chunks.chunk_bytes",
   "chunks.clientCommitChunkedIterator",
@@ -22,6 +28,8 @@
   "commiting.get_commit_ancestors_graph",
   "commiting.get_commit_spec",
   "commiting.tmp_cmt_env",
+  "configparser",
+  "configparser.ConfigParser",
   "constants.CMT_DIGEST_JOIN_KEY.join",
   "constants.CMT_KV_JOIN_KEY.join",
   "constants.CMT_REC_JOIN_KEY",
@@ -173,6 +181,8 @@
   "heads.get_staging_branch_head",
   "heads.set_branch_head_commit",
   "heads.set_staging_branch_head",
+  "importlib",
+  "importlib.import_module",
   "io.StringIO",
   "is_prime",
   "lmdb.BadValsizeError",
@@ -181,10 +191,18 @@
   "merger.select_merge_algorithm",
   "multiprocessing.cpu_count",
   "multiprocessing.get_context",
+  "numpy",
+  "numpy.array",
   "numpy.dtype",
   "numpy.empty",
   "numpy.floor",
   "numpy.frombuffer",
+  "numpy.lib.format.open_memmap",
+  "numpy.math.ceil",
+  "numpy.ndarray",
+  "numpy.prod",
+  "numpy.ravel",
+  "numpy.typeDict",
   "numpy.zeros",
   "os.W_OK",
   "os.access",
@@ -244,8 +262,15 @@
   "parsing.repo_writer_lock_db_val_from_raw_val",
   "parsing.repo_writer_lock_force_release_sentinal",
   "parsing.repo_writer_lock_sentinal_db_val",
+  "platform",
+  "platform.system",
+  "platform.uname",
   "postprocess",
   "queries.RecordQuery",
+  "random",
+  "random.choice",
+  "random.randint",
+  "random.shuffle",
   "re.ASCII",
   "records.commiting.check_commit_hash_in_history",
   "records.commiting.commit_records",
@@ -302,22 +327,40 @@
   "records.vcompat.startup_check_repo_version",
   "request_header_validator_interceptor.RequestHeaderValidatorInterceptor",
   "seen_add",
+  "shutil",
+  "shutil.rmtree",
+  "string",
+  "string.ascii_letters",
+  "string.digits",
+  "struct",
   "struct.calcsize",
   "struct.pack",
   "struct.unpack",
   "sys",
+  "tempfile",
+  "tempfile.TemporaryDirectory",
+  "tempfile.mkdtemp",
   "time",
+  "typing.Any",
+  "typing.Callable",
+  "typing.Dict",
+  "typing.Iterable",
+  "typing.Iterator",
+  "typing.List",
+  "typing.Mapping",
+  "typing.MutableMapping",
+  "typing.NamedTuple",
+  "typing.Optional",
+  "typing.Pattern",
+  "typing.Sequence",
+  "typing.Set",
+  "typing.Tuple",
+  "typing.Union",
   "ver_f",
   "warnings.warn",
   "weakref.proxy"
  ],
  "deps": {
-  "backports": [
-   "configparser/conda-forge/noarch/configparser-5.0.0-py_0"
-  ],
-  "blosc": [
-   "python-blosc/conda-forge/linux-64/python-blosc-1.10.1-py39hde0f152_0"
-  ],
   "click": [
    "click/conda-forge/noarch/click-5.1-py_0",
    "click/conda-forge/noarch/click-6.7-py_1",
@@ -333,13 +376,6 @@
    "futures/conda-forge/linux-64/futures-3.2.0-py27_0",
    "futures/conda-forge/osx-64/futures-3.3.0-py27h8c360ce_1",
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython"
-  ],
-  "configparser": [
-   "configparser/conda-forge/linux-64/configparser-3.7.1-py27_1",
-   "configparser/conda-forge/noarch/configparser-5.0.0-py_0",
-   "configparser/conda-forge/noarch/configparser-5.0.1-py_0",
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "contextlib": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -362,11 +398,6 @@
   "hdf5plugin": [
    "hdf5plugin/conda-forge/linux-64/hdf5plugin-2.3.2-py39h621bcbd_1",
    "hdf5plugin/conda-forge/linux-64/hdf5plugin-3.0.0-py38hff3c14e_0"
-  ],
-  "importlib": [
-   "importlib/conda-forge/linux-64/importlib-1.0.4-py26_0",
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "json": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -392,11 +423,6 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "numpy": [
-   "numpy/conda-forge/linux-64/numpy-1.17.5-py36h95a1406_0",
-   "numpy/conda-forge/linux-64/numpy-1.18.4-py37h8960a57_0",
-   "numpy/conda-forge/linux-64/numpy-1.19.2-py36h68c22af_1"
-  ],
   "os": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -415,31 +441,7 @@
    "setuptools/conda-forge/linux-64/setuptools-46.3.0-py38h32f6830_0",
    "setuptools/conda-forge/linux-64/setuptools-49.1.2-py38h32f6830_0"
   ],
-  "platform": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "random": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "re": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "shutil": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "string": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "struct": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "tempfile": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -465,10 +467,6 @@
    "tqdm/conda-forge/noarch/tqdm-4.60.0-pyhd8ed1ab_0"
   ],
   "types": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "typing": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],

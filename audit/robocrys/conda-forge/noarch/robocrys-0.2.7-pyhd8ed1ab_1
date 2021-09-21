@@ -5,22 +5,81 @@
   "collections.defaultdict",
   "distances_to_plane",
   "get_coords",
+  "inflect",
+  "inflect.engine",
+  "matminer.featurizers.base.BaseFeaturizer",
+  "matminer.featurizers.site.CrystalNNFingerprint",
+  "matminer.featurizers.site.CrystalNNFingerprint.from_preset",
+  "matminer.featurizers.structure.SiteStatsFingerprint",
+  "matminer.featurizers.structure.SiteStatsFingerprint.from_preset",
+  "matminer.utils.io.load_dataframe_from_json",
+  "monty.fractions.gcd",
+  "monty.json.MontyDecoder",
+  "monty.serialization.loadfn",
+  "networkx",
   "networkx.is_isomorphic",
   "networkx.set_node_attributes",
+  "numpy",
+  "numpy.argsort",
+  "numpy.array",
+  "numpy.asarray",
+  "numpy.dot",
   "numpy.floor",
   "numpy.int32",
+  "numpy.linalg.norm",
+  "numpy.mean",
+  "numpy.ndarray",
+  "numpy.where",
   "os.listdir",
+  "pkg_resources.resource_filename",
+  "pymatgen.analysis.dimensionality.get_structure_components",
+  "pymatgen.analysis.graphs.MoleculeGraph",
+  "pymatgen.analysis.graphs.StructureGraph",
+  "pymatgen.analysis.local_env.CrystalNN",
+  "pymatgen.analysis.local_env.NearNeighbors",
+  "pymatgen.analysis.local_env.cn_opt_params",
   "pymatgen.analysis.local_env.cn_opt_params.values",
   "pymatgen.analysis.prototypes.AflowPrototypeMatcher",
+  "pymatgen.analysis.structure_matcher.StructureMatcher",
+  "pymatgen.core.composition.Composition",
+  "pymatgen.core.periodic_table.Element",
+  "pymatgen.core.periodic_table.Element.from_Z",
   "pymatgen.core.periodic_table.Species",
+  "pymatgen.core.periodic_table.get_el_sp",
+  "pymatgen.core.structure.IStructure",
+  "pymatgen.core.structure.PeriodicSite",
+  "pymatgen.core.structure.Structure",
   "pymatgen.core.structure.Structure.from_file",
   "pymatgen.core.structure.Structure.from_sites",
+  "pymatgen.ext.matproj.MPRestError",
+  "pymatgen.ext.matproj.MPRester",
+  "pymatgen.io.babel.BabelMolAdaptor",
+  "pymatgen.io.babel.BabelMolAdaptor.from_molecule_graph",
+  "pymatgen.symmetry.analyzer.SpacegroupAnalyzer",
+  "pymatgen.util.coord.get_angle",
+  "pymatgen.util.string.formula_double_format",
+  "pymatgen.util.string.htmlify",
+  "pymatgen.util.string.latexify",
+  "pymatgen.util.string.latexify_spacegroup",
+  "pymatgen.util.string.unicodeify",
   "robocrys.util.common_formulas",
   "robocrys.util.connected_geometries",
   "robocrys.util.dimensionality_to_shape",
   "robocrys.util.geometry_to_polyhedra",
   "robocrys.util.polyhedra_plurals",
   "sys",
+  "typing.Any",
+  "typing.Dict",
+  "typing.Iterable",
+  "typing.List",
+  "typing.Optional",
+  "typing.Set",
+  "typing.Tuple",
+  "typing.Union",
+  "unittest",
+  "unittest.TestCase",
+  "warnings",
+  "warnings.filterwarnings",
   "warnings.warn"
  ],
  "deps": {
@@ -37,56 +96,16 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "inflect": [
-   "inflect/conda-forge/linux-64/inflect-5.2.0-py36hd000896_0",
-   "inflect/conda-forge/noarch/inflect-2.1.0-py_0",
-   "inflect/conda-forge/noarch/inflect-3.0.2-py_0",
-   "inflect/conda-forge/noarch/inflect-4.0.0-py_0"
-  ],
-  "matminer": [],
-  "monty": [
-   "monty/conda-forge/noarch/monty-2021.3.3-pyhd8ed1ab_0",
-   "monty/conda-forge/noarch/monty-2021.6.10-pyhd8ed1ab_0",
-   "monty/conda-forge/noarch/monty-3.0.1-py_0",
-   "monty/conda-forge/noarch/monty-3.0.2-py_0",
-   "monty/conda-forge/noarch/monty-3.0.4-pyh9f0ad1d_0",
-   "monty/conda-forge/noarch/monty-4.0.0-pyh9f0ad1d_0",
-   "monty/conda-forge/noarch/monty-4.0.1-pyh9f0ad1d_0",
-   "monty/conda-forge/noarch/monty-4.0.2-pyh9f0ad1d_0"
-  ],
-  "networkx": [
-   "networkx/conda-forge/noarch/networkx-2.1-py_1",
-   "networkx/conda-forge/noarch/networkx-2.2-py_1",
-   "networkx/conda-forge/noarch/networkx-2.4-py_1",
-   "networkx/conda-forge/noarch/networkx-2.5-py_0",
-   "networkx/conda-forge/noarch/networkx-2.6.1-pyhd8ed1ab_0",
-   "networkx/conda-forge/noarch/networkx-2.6.1-pyhd8ed1ab_1"
-  ],
   "ntpath": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "numpy": [
-   "numpy/conda-forge/linux-64/numpy-1.17.5-py36h95a1406_0",
-   "numpy/conda-forge/linux-64/numpy-1.18.4-py37h8960a57_0",
-   "numpy/conda-forge/linux-64/numpy-1.19.2-py36h68c22af_1"
   ],
   "os": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "pkg_resources": [
-   "setuptools/conda-forge/linux-64/setuptools-40.6.1-py36_0",
-   "setuptools/conda-forge/linux-64/setuptools-46.3.0-py38h32f6830_0",
-   "setuptools/conda-forge/linux-64/setuptools-49.1.2-py38h32f6830_0"
-  ],
   "pubchempy": [
    "pubchempy/conda-forge/noarch/pubchempy-1.0.4-py_0"
-  ],
-  "pymatgen": [
-   "pymatgen/conda-forge/linux-64/pymatgen-2019.12.22-py37hc9558a2_0",
-   "pymatgen/conda-forge/linux-64/pymatgen-2019.7.21-py36h516909a_1",
-   "pymatgen/conda-forge/linux-64/pymatgen-2019.7.30-py36h516909a_0"
   ],
   "re": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -96,18 +115,6 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
    "statistics/conda-forge/linux-64/statistics-1.0.3.5-py27_1001"
-  ],
-  "typing": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "unittest": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "warnings": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ]
  }
 }

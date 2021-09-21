@@ -14,15 +14,15 @@
   "backend.priority",
   "backends.fail.Keyring",
   "class_",
+  "configparser",
+  "configparser.NoOptionError",
+  "configparser.NoSectionError",
+  "configparser.RawConfigParser",
   "core.disable",
   "core.load_keyring",
   "credentials.Credential",
   "credentials.SimpleCredential",
   "ctypes.POINTER",
-  "dbus",
-  "dbus.DBusException",
-  "dbus.Interface",
-  "dbus.SessionBus",
   "dbus.mainloop.glib.DBusGMainLoop",
   "dict.items",
   "dict.update",
@@ -33,11 +33,6 @@
   "func",
   "func.always_returns",
   "functools.partial",
-  "getpass",
-  "getpass.getpass",
-  "getpass.getuser",
-  "importlib_metadata",
-  "importlib_metadata.entry_points",
   "init_func",
   "limit",
   "method",
@@ -48,14 +43,9 @@
   "os.environ.items",
   "os.path.exists",
   "os.path.isfile",
-  "pathlib",
-  "pathlib.Path.home",
   "platform",
   "platform.system",
   "platform.win32_ver",
-  "pytest",
-  "pytest.fixture",
-  "pytest.raises",
   "pywintypes",
   "random",
   "random.choice",
@@ -77,6 +67,9 @@
   "sys.path.insert",
   "sys.stdin.isatty",
   "sys.stdin.read",
+  "typing",
+  "typing.Optional",
+  "typing.cast",
   "util.once",
   "util.platform_.config_root",
   "util.properties.ClassProperty",
@@ -86,6 +79,11 @@
   "win32ctypes.pywin32.win32cred.__name__"
  ],
  "deps": {
+  "_pytest": [
+   "pytest/conda-forge/linux-64/pytest-3.7.0-py27_0",
+   "pytest/conda-forge/linux-64/pytest-4.6.0-py37_0",
+   "pytest/conda-forge/linux-64/pytest-6.0.2-py37hc8dfbb8_0"
+  ],
   "abc": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -95,17 +93,7 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "backports": [
-   "configparser/conda-forge/noarch/configparser-5.0.0-py_0"
-  ],
   "collections": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "configparser": [
-   "configparser/conda-forge/linux-64/configparser-3.7.1-py27_1",
-   "configparser/conda-forge/noarch/configparser-5.0.0-py_0",
-   "configparser/conda-forge/noarch/configparser-5.0.1-py_0",
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -117,9 +105,20 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "dbus": [
+   "dbus-python/conda-forge/linux-64/dbus-python-1.2.16-py27h1369247_0",
+   "dbus-python/conda-forge/linux-64/dbus-python-1.2.16-py37h1369247_0"
+  ],
   "functools": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "getpass": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "importlib_metadata": [
+   "importlib_metadata/conda-forge/noarch/importlib_metadata-0.5-py_0"
   ],
   "logging": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -133,17 +132,22 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "pathlib": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "pluggy": [
    "pluggy/conda-forge/linux-64/pluggy-0.13.1-py38h578d9bd_4",
    "pluggy/conda-forge/noarch/pluggy-0.11.0-py_0",
    "pluggy/conda-forge/noarch/pluggy-0.12.0-py_0"
   ],
+  "pytest": [
+   "pytest/conda-forge/linux-64/pytest-3.7.0-py27_0",
+   "pytest/conda-forge/linux-64/pytest-4.6.0-py37_0",
+   "pytest/conda-forge/linux-64/pytest-6.0.2-py37hc8dfbb8_0"
+  ],
   "secretstorage": [
    "secretstorage/conda-forge/linux-64/secretstorage-3.3.0-py37h89c1867_0"
-  ],
-  "typing": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "warnings": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",

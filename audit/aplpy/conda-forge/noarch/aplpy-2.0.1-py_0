@@ -6,11 +6,59 @@
   "_compiler.compiler",
   "aplpy.tests.__init__.MPL_VERSION",
   "aplpy.tests.__init__.ROOT",
+  "astropy.config.configuration.ConfigurationDefaultMissingError",
+  "astropy.config.configuration.ConfigurationDefaultMissingWarning",
+  "astropy.config.configuration.update_default_config",
+  "astropy.convolution.Box2DKernel",
+  "astropy.convolution.Gaussian2DKernel",
+  "astropy.convolution.convolve",
+  "astropy.coordinates.BarycentricTrueEcliptic",
+  "astropy.coordinates.FK4",
+  "astropy.coordinates.FK5",
+  "astropy.coordinates.Galactic",
+  "astropy.coordinates.HeliocentricTrueEcliptic",
+  "astropy.coordinates.ICRS",
+  "astropy.io.fits",
+  "astropy.io.fits.BinTableHDU",
+  "astropy.io.fits.CompImageHDU",
+  "astropy.io.fits.HDUList",
+  "astropy.io.fits.Header.fromtextfile",
+  "astropy.io.fits.ImageHDU",
+  "astropy.io.fits.PrimaryHDU",
+  "astropy.io.fits.getdata",
+  "astropy.io.fits.getheader",
+  "astropy.io.fits.open",
+  "astropy.io.fits.writeto",
+  "astropy.log",
   "astropy.log.info",
   "astropy.log.warning",
+  "astropy.nddata.utils.block_reduce",
+  "astropy.table.Table",
+  "astropy.tests.helper.TestRunner",
+  "astropy.tests.helper.enable_deprecations_as_exceptions",
+  "astropy.tests.helper.pytest",
+  "astropy.tests.helper.pytest.raises",
+  "astropy.tests.helper.pytest.warns",
+  "astropy.tests.plugins.display.PYTEST_HEADER_MODULES",
+  "astropy.tests.plugins.display.TESTED_VERSIONS",
+  "astropy.tests.pytest_plugins",
+  "astropy.units",
+  "astropy.units.Quantity",
+  "astropy.units.Unit",
   "astropy.units.arcsec",
   "astropy.units.degree",
   "astropy.units.radian",
+  "astropy.utils.decorators.wraps",
+  "astropy.version.version",
+  "astropy.visualization.AsymmetricPercentileInterval",
+  "astropy.visualization.simple_norm",
+  "astropy.visualization.wcsaxes.WCSAxes",
+  "astropy.visualization.wcsaxes.WCSAxesSubplot",
+  "astropy.wcs",
+  "astropy.wcs.WCS",
+  "astropy.wcs.utils.proj_plane_pixel_scales",
+  "astropy.wcs.utils.wcs_to_celestial_frame",
+  "builtins",
   "convolve_util.convolve",
   "cython_version.cython_version",
   "f",
@@ -19,24 +67,42 @@
   "header.check",
   "io.BytesIO",
   "normalizer",
+  "numpy",
   "numpy.arange",
   "numpy.arctan2",
+  "numpy.array",
+  "numpy.atleast_1d",
+  "numpy.broadcast_arrays",
+  "numpy.clip",
+  "numpy.column_stack",
   "numpy.cos",
   "numpy.degrees",
+  "numpy.empty_like",
   "numpy.float32",
   "numpy.inf",
   "numpy.isfinite",
   "numpy.isinf",
   "numpy.isnan",
+  "numpy.isreal",
+  "numpy.isscalar",
+  "numpy.linspace",
+  "numpy.mean",
+  "numpy.meshgrid",
   "numpy.minimum",
   "numpy.nan",
+  "numpy.nan_to_num",
+  "numpy.ndarray",
+  "numpy.ones",
   "numpy.radians",
   "numpy.random.random",
   "numpy.random.seed",
   "numpy.sin",
   "numpy.sqrt",
+  "numpy.sum",
   "numpy.uint8",
   "numpy.zeros",
+  "operator",
+  "operator.mul",
   "os.environ.get",
   "os.getcwd",
   "os.path.exists",
@@ -46,10 +112,20 @@
   "pytest.mark.parametrize",
   "pytest.mark.remote_data",
   "pytest.mark.xfail",
+  "random",
+  "random.sample",
   "reproject.mosaicking.find_optimal_celestial_wcs",
   "run_git",
   "slicer.slice_hypercube",
+  "string",
+  "string.ascii_letters",
+  "string.digits",
+  "subprocess",
+  "subprocess.PIPE",
+  "subprocess.Popen",
   "sys",
+  "tempfile",
+  "tempfile.mkdtemp",
   "version.githash",
   "version.version",
   "warnings.warn"
@@ -73,10 +149,6 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "astropy": [],
-  "builtins": [
-   "pies2overrides/conda-forge/osx-64/pies2overrides-2.6.7-py27_1000"
-  ],
   "collections": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -90,10 +162,6 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "distutils": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "functools": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -113,14 +181,6 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "numpy": [
-   "numpy/conda-forge/linux-64/numpy-1.17.5-py36h95a1406_0",
-   "numpy/conda-forge/linux-64/numpy-1.18.4-py37h8960a57_0"
-  ],
-  "operator": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "os": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -137,24 +197,8 @@
    "pytest/conda-forge/linux-64/pytest-4.6.0-py37_0",
    "pytest/conda-forge/linux-64/pytest-6.0.2-py37hc8dfbb8_0"
   ],
-  "random": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "reproject": [
    "reproject/conda-forge/win-64/reproject-0.3.1-np112py36_0"
-  ],
-  "string": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "subprocess": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "tempfile": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "threading": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
