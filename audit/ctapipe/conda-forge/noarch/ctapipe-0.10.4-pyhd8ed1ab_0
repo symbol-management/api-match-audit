@@ -91,12 +91,8 @@
   "containers.EventType.SKY_PEDESTAL",
   "containers.EventType.SUBARRAY",
   "containers.EventType.UNKNOWN",
-  "contextlib.contextmanager",
   "convert_geometry_1d_to_2d",
   "convert_geometry_back",
-  "copy",
-  "copy.copy",
-  "copy.deepcopy",
   "core.QualityQuery.quality_criteria.help",
   "core.traits.Bool",
   "core.traits.FloatTelescopeParameter",
@@ -114,26 +110,13 @@
   "ctapipe.image.ImageCleaner.from_name",
   "ctapipe.image.ImageCleaner.non_abstract_subclasses",
   "ctapipe.image.extractor.ImageExtractor.from_name",
-  "ctapipe.instrument.CameraDescription.get_known_camera_names",
-  "ctapipe.instrument.CameraGeometry.from_name",
-  "ctapipe.instrument.CameraGeometry.guess_pixel_width",
-  "ctapipe.instrument.CameraGeometry.make_rectangular",
-  "ctapipe.instrument.CameraReadout.from_name",
-  "ctapipe.instrument.OpticsDescription.get_known_optics_names",
   "ctapipe.instrument.PixelShape.HEXAGON",
   "ctapipe.instrument.PixelShape.SQUARE",
   "ctapipe.instrument.PixelShape.__members__.values",
-  "ctapipe.instrument.SubarrayDescription.from_hdf",
-  "ctapipe.instrument.TelescopeDescription.from_name",
-  "ctapipe.instrument.camera.CameraDescription.from_name",
-  "ctapipe.instrument.camera.CameraDescription.get_known_camera_names",
-  "ctapipe.instrument.camera.CameraGeometry.from_name",
-  "ctapipe.instrument.camera.CameraGeometry.guess_pixel_width",
   "ctapipe.io.DataLevel.DL1_IMAGES",
   "ctapipe.io.DataLevel.DL1_PARAMETERS",
   "ctapipe.io.DataLevel.R0",
   "ctapipe.io.DataLevel.R1",
-  "ctapipe.io.EventSource.from_config",
   "ctapipe.io.EventSource.input_url.default_value",
   "ctapipe.io.datalevels.DataLevel.DL0",
   "ctapipe.io.datalevels.DataLevel.DL1_IMAGES",
@@ -144,13 +127,6 @@
   "datalevels.DataLevel.DL1_PARAMETERS",
   "datalevels.DataLevel.R0",
   "datalevels.DataLevel.R1",
-  "enum",
-  "enum.Enum",
-  "enum.IntEnum",
-  "enum.auto",
-  "enum.unique",
-  "eventio.file_types.is_eventio",
-  "eventio.simtel.simtelfile.SimTelFile",
   "extractor",
   "extractor.lwt.tel",
   "extractor.peak_index.tel",
@@ -160,12 +136,10 @@
   "fill_from_simtel",
   "find_all_traitlets",
   "fit_function",
-  "flow",
   "flow.cut",
   "flow.cuts",
   "flow.set_cut",
   "flow.set_cuts",
-  "functools.lru_cache",
   "functools.partial",
   "gain_selector",
   "geometry.CameraGeometry.from_name",
@@ -173,6 +147,7 @@
   "gs_low",
   "image.toymodel.SkewedGaussian",
   "image_processor",
+  "inspect.isabstract",
   "instrument.CameraGeometry.simtel_shape_to_type",
   "instrument.SubarrayDescription.from_hdf",
   "interpolator",
@@ -191,6 +166,9 @@
   "itertools",
   "lc",
   "linear_nd",
+  "math",
+  "math.erf",
+  "math.pi",
   "matplotlib.pylab.cm.terrain",
   "matplotlib.pylab.figure",
   "matplotlib.pylab.show",
@@ -262,18 +240,6 @@
   "os.fsdecode",
   "os.getcwd",
   "os.path.exists",
-  "platform",
-  "platform.architecture",
-  "platform.libc_ver",
-  "platform.machine",
-  "platform.node",
-  "platform.processor",
-  "platform.python_compiler",
-  "platform.python_implementation",
-  "platform.python_version_tuple",
-  "platform.release",
-  "platform.system",
-  "platform.version",
   "process_images",
   "process_images.check_image.to_table",
   "pytest.mark.filterwarnings",
@@ -295,8 +261,12 @@
   "scipy.spatial.Delaunay",
   "scipy.spatial.cKDTree",
   "scipy.stats.norm.pdf",
+  "shutil",
   "subcls",
   "sys",
+  "tempfile",
+  "tempfile.NamedTemporaryFile",
+  "tempfile.TemporaryDirectory",
   "thickness_to_alt",
   "time",
   "tr",
@@ -342,7 +312,44 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "contextlib": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "copy": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "ctapipe": [
+   "ctapipe/conda-forge/noarch/ctapipe-0.10.0.post1-pyhd8ed1ab_0",
+   "ctapipe/conda-forge/noarch/ctapipe-0.10.2-pyhd8ed1ab_0",
+   "ctapipe/conda-forge/noarch/ctapipe-0.10.3-pyhd8ed1ab_0",
+   "ctapipe/conda-forge/noarch/ctapipe-0.10.4-pyhd8ed1ab_0",
+   "ctapipe/conda-forge/noarch/ctapipe-0.10.5-pyhd8ed1ab_0",
+   "ctapipe/conda-forge/noarch/ctapipe-0.9.1-pyhd8ed1ab_0",
+   "ctapipe/conda-forge/noarch/ctapipe-0.9.1-pyhd8ed1ab_1"
+  ],
+  "enum": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "eventio": [
+   "eventio/conda-forge/osx-64/eventio-1.4.2-py37h57c32b8_1"
+  ],
+  "flow": [
+   "signac-flow/conda-forge/linux-64/signac-flow-0.6.4-py36_1000",
+   "signac-flow/conda-forge/linux-64/signac-flow-0.7.0-py37_0",
+   "signac-flow/conda-forge/noarch/signac-flow-0.10.0-py_0",
+   "signac-flow/conda-forge/noarch/signac-flow-0.10.1-py_0",
+   "signac-flow/conda-forge/noarch/signac-flow-0.14.0-pyhd8ed1ab_0",
+   "signac-flow/conda-forge/noarch/signac-flow-0.8.0-py_0",
+   "signac-flow/conda-forge/noarch/signac-flow-0.9.0-py_0"
+  ],
   "fnmatch": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "functools": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -358,10 +365,6 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "inspect": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "jinja2": [
    "jinja2/conda-forge/noarch/jinja2-2.10-py_1",
    "jinja2/conda-forge/noarch/jinja2-2.11.3-pyh44b312d_0",
@@ -373,10 +376,6 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "logging": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "math": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -426,6 +425,10 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "platform": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "pprint": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -466,10 +469,6 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "shutil": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "subprocess": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -478,10 +477,6 @@
    "pytables/conda-forge/linux-64/pytables-3.4.2-py27_5",
    "pytables/conda-forge/linux-64/pytables-3.4.2-py27_7",
    "pytables/conda-forge/linux-64/pytables-3.6.1-py38h1b207d3_2"
-  ],
-  "tempfile": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "textwrap": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",

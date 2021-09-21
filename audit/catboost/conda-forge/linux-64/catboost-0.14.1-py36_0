@@ -9,9 +9,16 @@
   "collections.MutableMapping",
   "collections.Sequence",
   "collections.defaultdict",
+  "enum.Enum",
   "factor_utils.FactorUtils.create_label",
   "factor_utils.LabelMode.AddFeature",
+  "hashlib",
   "hashlib.md5",
+  "imp",
+  "imp.load_dynamic",
+  "ipywidgets.DOMWidget",
+  "ipywidgets.Layout",
+  "ipywidgets.widget_serialization",
   "numpy.dtype",
   "numpy.float",
   "numpy.float32",
@@ -23,6 +30,7 @@
   "numpy.random.choice",
   "numpy.sqrt",
   "numpy.zeros",
+  "operator.itemgetter",
   "os.chdir",
   "os.close",
   "os.getcwd",
@@ -32,11 +40,41 @@
   "os.path.isfile",
   "os.remove",
   "os.rmdir",
+  "pandas",
+  "pandas.DataFrame",
+  "pandas.Series",
+  "pandas.read_csv",
+  "platform",
+  "platform.system",
+  "plotly.graph_objs",
+  "plotly.graph_objs.Figure",
+  "plotly.graph_objs.Layout",
+  "plotly.graph_objs.Scatter",
+  "plotly.offline.init_notebook_mode",
+  "plotly.offline.iplot",
+  "plotly.offline.plot",
+  "random",
+  "six",
+  "six.integer_types",
+  "six.iteritems",
   "six.moves.urllib.error.URLError",
   "six.moves.urllib.request.urlretrieve",
+  "six.string_types",
   "sys",
+  "tarfile",
+  "tarfile.open",
+  "tempfile",
+  "tempfile.mkdtemp",
+  "tempfile.mkstemp",
+  "threading.Event",
+  "threading.Thread",
   "time",
+  "traitlets.Dict",
+  "traitlets.Unicode",
+  "traitlets.default",
   "type.name",
+  "uuid",
+  "uuid.uuid1",
   "warnings.warn",
   "widget.MetricVisualizer"
  ],
@@ -62,26 +100,6 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "enum": [
-   "privy/conda-forge/noarch/privy-6.0.0-py_0",
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "hashlib": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "imp": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "ipywidgets": [
-   "ipywidgets/conda-forge/noarch/ipywidgets-7.4.1-py_0",
-   "ipywidgets/conda-forge/noarch/ipywidgets-7.6.0-pyhd3deb0d_0",
-   "ipywidgets/conda-forge/noarch/ipywidgets-7.6.2-pyhd3deb0d_0",
-   "ipywidgets/conda-forge/noarch/ipywidgets-7.6.2-pyhd3deb0d_1",
-   "ipywidgets/conda-forge/noarch/ipywidgets-7.6.4-pyhd8ed1ab_0"
-  ],
   "json": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -98,63 +116,7 @@
    "numpy/conda-forge/linux-64/numpy-1.17.5-py36h95a1406_0",
    "numpy/conda-forge/linux-64/numpy-1.18.4-py37h8960a57_0"
   ],
-  "operator": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "os": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "pandas": [
-   "pandas/conda-forge/linux-64/pandas-1.2.2-py37h40f5888_0"
-  ],
-  "platform": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "plotly": [
-   "plotly/conda-forge/noarch/plotly-3.0.0-py_0",
-   "plotly/conda-forge/noarch/plotly-3.1.1-py_0",
-   "plotly/conda-forge/noarch/plotly-3.3.0-py_0",
-   "plotly/conda-forge/noarch/plotly-3.4.2-py_0",
-   "plotly/conda-forge/noarch/plotly-4.13.0-pyhd3deb0d_0",
-   "plotly/conda-forge/noarch/plotly-4.14.0-pyhd3deb0d_0",
-   "plotly/conda-forge/noarch/plotly-4.14.2-pyhd3deb0d_0"
-  ],
-  "random": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "six": [
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0",
-   "lldb/conda-forge/linux-64/lldb-6.0.0-py35_0",
-   "privy/conda-forge/noarch/privy-6.0.0-py_0",
-   "six/conda-forge/linux-64/six-1.10.0-py34_0",
-   "six/conda-forge/linux-64/six-1.10.0-py34_1",
-   "six/conda-forge/noarch/six-1.14.0-py_1",
-   "six/conda-forge/noarch/six-1.16.0-pyh6c4a22f_0"
-  ],
-  "tarfile": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "tempfile": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "threading": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "traitlets": [
-   "traitlets/conda-forge/noarch/traitlets-5.0.4-py_0",
-   "traitlets/conda-forge/noarch/traitlets-5.0.4-py_1",
-   "traitlets/conda-forge/noarch/traitlets-5.0.5-py_0",
-   "traitlets/conda-forge/noarch/traitlets-5.1.0-pyhd8ed1ab_0"
-  ],
-  "uuid": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
