@@ -9,8 +9,22 @@
   "_winapi.MemoryMap",
   "_winapi.get_security_attributes_for_user",
   "alg",
+  "array",
   "array.array",
   "atexit",
+  "base64",
+  "base64.binascii.Error",
+  "base64.decodebytes",
+  "base64.decodestring",
+  "base64.encodebytes",
+  "base64.encodestring",
+  "bcrypt",
+  "bcrypt.kdf",
+  "binascii",
+  "binascii.Error",
+  "binascii.hexlify",
+  "binascii.unhexlify",
+  "builtins",
   "cStringIO",
   "cStringIO.StringIO",
   "cipher",
@@ -22,13 +36,61 @@
   "collections.deque",
   "compress_in",
   "compress_out",
+  "cryptography.exceptions.InvalidSignature",
+  "cryptography.exceptions.UnsupportedAlgorithm",
+  "cryptography.hazmat.backends.default_backend",
+  "cryptography.hazmat.primitives.asymmetric.dsa",
+  "cryptography.hazmat.primitives.asymmetric.dsa.DSAParameterNumbers",
+  "cryptography.hazmat.primitives.asymmetric.dsa.DSAPrivateNumbers",
+  "cryptography.hazmat.primitives.asymmetric.dsa.DSAPublicNumbers",
+  "cryptography.hazmat.primitives.asymmetric.dsa.generate_private_key",
+  "cryptography.hazmat.primitives.asymmetric.ec",
+  "cryptography.hazmat.primitives.asymmetric.ec.ECDH",
+  "cryptography.hazmat.primitives.asymmetric.ec.ECDSA",
+  "cryptography.hazmat.primitives.asymmetric.ec.EllipticCurvePublicKey.from_encoded_point",
+  "cryptography.hazmat.primitives.asymmetric.ec.SECP256R1",
+  "cryptography.hazmat.primitives.asymmetric.ec.SECP384R1",
+  "cryptography.hazmat.primitives.asymmetric.ec.SECP521R1",
+  "cryptography.hazmat.primitives.asymmetric.ec.derive_private_key",
+  "cryptography.hazmat.primitives.asymmetric.ec.generate_private_key",
+  "cryptography.hazmat.primitives.asymmetric.padding",
+  "cryptography.hazmat.primitives.asymmetric.padding.PKCS1v15",
+  "cryptography.hazmat.primitives.asymmetric.rsa",
+  "cryptography.hazmat.primitives.asymmetric.rsa.RSAPrivateKey",
+  "cryptography.hazmat.primitives.asymmetric.rsa.RSAPrivateNumbers",
+  "cryptography.hazmat.primitives.asymmetric.rsa.RSAPublicNumbers",
+  "cryptography.hazmat.primitives.asymmetric.rsa.generate_private_key",
+  "cryptography.hazmat.primitives.asymmetric.utils.decode_dss_signature",
+  "cryptography.hazmat.primitives.asymmetric.utils.encode_dss_signature",
+  "cryptography.hazmat.primitives.asymmetric.x25519.X25519PrivateKey",
+  "cryptography.hazmat.primitives.asymmetric.x25519.X25519PrivateKey.generate",
+  "cryptography.hazmat.primitives.asymmetric.x25519.X25519PublicKey",
+  "cryptography.hazmat.primitives.asymmetric.x25519.X25519PublicKey.from_public_bytes",
+  "cryptography.hazmat.primitives.ciphers.Cipher",
+  "cryptography.hazmat.primitives.ciphers.algorithms",
+  "cryptography.hazmat.primitives.ciphers.algorithms.AES",
+  "cryptography.hazmat.primitives.ciphers.algorithms.Blowfish",
+  "cryptography.hazmat.primitives.ciphers.algorithms.TripleDES",
+  "cryptography.hazmat.primitives.ciphers.modes",
+  "cryptography.hazmat.primitives.ciphers.modes.CBC",
+  "cryptography.hazmat.primitives.ciphers.modes.CTR",
+  "cryptography.hazmat.primitives.constant_time",
+  "cryptography.hazmat.primitives.constant_time.bytes_eq",
+  "cryptography.hazmat.primitives.hashes",
+  "cryptography.hazmat.primitives.hashes.SHA1",
+  "cryptography.hazmat.primitives.serialization",
+  "cryptography.hazmat.primitives.serialization.BestAvailableEncryption",
   "cryptography.hazmat.primitives.serialization.Encoding.PEM",
   "cryptography.hazmat.primitives.serialization.Encoding.Raw",
   "cryptography.hazmat.primitives.serialization.Encoding.X962",
+  "cryptography.hazmat.primitives.serialization.NoEncryption",
   "cryptography.hazmat.primitives.serialization.PrivateFormat.TraditionalOpenSSL",
   "cryptography.hazmat.primitives.serialization.PublicFormat.Raw",
   "cryptography.hazmat.primitives.serialization.PublicFormat.UncompressedPoint",
+  "cryptography.hazmat.primitives.serialization.load_der_private_key",
   "errno",
+  "fnmatch",
+  "fnmatch.fnmatch",
   "func",
   "functools.partial",
   "gp",
@@ -50,8 +112,18 @@
   "hashlib.sha256",
   "hashlib.sha384",
   "hashlib.sha512",
+  "io",
   "io.BytesIO",
   "io.StringIO",
+  "logging",
+  "logging.CRITICAL",
+  "logging.DEBUG",
+  "logging.ERROR",
+  "logging.Formatter",
+  "logging.INFO",
+  "logging.StreamHandler",
+  "logging.WARNING",
+  "logging.getLogger",
   "mac_engine",
   "mode",
   "os.O_APPEND",
@@ -66,7 +138,10 @@
   "os.chown",
   "os.close",
   "os.kill",
+  "os.path.expanduser",
+  "os.path.isabs",
   "os.path.isfile",
+  "os.path.normpath",
   "os.read",
   "os.remove",
   "os.rmdir",
@@ -177,6 +252,7 @@
   "sspicon.ISC_REQ_DELEGATE",
   "struct.pack",
   "struct.unpack",
+  "subprocess",
   "sys",
   "thread",
   "time",
@@ -189,37 +265,15 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "array": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "base64": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "bcrypt": [
-   "bcrypt/conda-forge/linux-64/bcrypt-3.2.0-py36h97a6639_0"
-  ],
-  "binascii": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython"
-  ],
-  "builtins": [
-   "pies2overrides/conda-forge/osx-64/pies2overrides-2.6.7-py27_1000"
-  ],
   "collections": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "cryptography": [],
   "ctypes": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "fcntl": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "fnmatch": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -255,20 +309,8 @@
    "invoke/conda-forge/noarch/invoke-1.5.0-pyhd3deb0d_0",
    "invoke/conda-forge/noarch/invoke-1.6.0-pyhd8ed1ab_0"
   ],
-  "io": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "logging": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "nacl": [
    "pynacl/conda-forge/linux-64/pynacl-1.4.0-py37h8f50634_1"
-  ],
-  "ntpath": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "os": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -323,10 +365,6 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "struct": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "subprocess": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],

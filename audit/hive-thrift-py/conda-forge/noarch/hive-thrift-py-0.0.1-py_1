@@ -5,6 +5,7 @@
   "FacebookService",
   "FacebookService.Iface",
   "Queue",
+  "SCons.Builder.Builder",
   "TApplicationException",
   "TApplicationException.MISSING_RESULT",
   "TApplicationException.UNKNOWN_METHOD",
@@ -38,7 +39,13 @@
   "httplib",
   "httplib.HTTP",
   "httplib.HTTPS",
+  "logging",
+  "logging.error",
+  "logging.exception",
   "method",
+  "os.path",
+  "os.path.abspath",
+  "os.path.dirname",
   "readFrame",
   "reinitialize_args",
   "setOption_args",
@@ -47,8 +54,6 @@
   "socket.error",
   "struct.pack",
   "struct.unpack",
-  "threading",
-  "threading.Thread",
   "thrift.protocol.fastbinary",
   "thrift.protocol.fastbinary.decode_binary",
   "thrift.protocol.fastbinary.encode_binary",
@@ -58,30 +63,12 @@
   "ttypes.fb_status",
   "ttypes.fb_status.ALIVE",
   "urlparse",
-  "warnings",
   "xrange",
   "zope.interface.Attribute",
   "zope.interface.Interface",
   "zope.interface.implements"
  ],
  "deps": {
-  "SCons": [
-   "scons/conda-forge/linux-64/scons-3.0.2-py37_1000",
-   "scons/conda-forge/linux-64/scons-4.0.1-py36h5fab9bb_1",
-   "scons/conda-forge/linux-64/scons-4.1.0.post1-py37h89c1867_0"
-  ],
-  "logging": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "ntpath": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "os": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "select": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -94,6 +81,10 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "threading": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "thrift": [
    "python-awips/conda-forge/noarch/python-awips-18.1.2-py_0",
    "python-awips/conda-forge/noarch/python-awips-18.1.2-pyh9f0ad1d_1",
@@ -103,6 +94,10 @@
   ],
   "twisted": [
    "twisted/conda-forge/linux-64/twisted-18.7.0-py37h14c3975_1001"
+  ],
+  "warnings": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ]
  }
 }

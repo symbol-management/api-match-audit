@@ -9,8 +9,18 @@
   "add_statistic",
   "call_register_options",
   "collections.defaultdict",
+  "configparser",
+  "configparser.ConfigParser",
+  "configparser.ParsingError",
+  "configparser.RawConfigParser",
   "configparser_for",
+  "contextlib",
+  "contextlib.contextmanager",
   "dict.fromkeys",
+  "distutils.log",
+  "distutils.log.WARN",
+  "enum",
+  "enum.Enum",
   "errno",
   "exists",
   "filename_from",
@@ -32,21 +42,45 @@
   "flake8.main.application.program",
   "flake8.main.application.register_plugin_options",
   "float_format",
+  "fnmatch",
   "functools.partial",
   "handler_cls",
+  "importlib.metadata",
   "installer",
   "int_format",
+  "io",
   "io.BytesIO",
   "io.StringIO",
   "itertools",
+  "logging",
+  "logging.DEBUG",
+  "logging.FileHandler",
+  "logging.Formatter",
+  "logging.INFO",
+  "logging.NullHandler",
+  "logging.StreamHandler",
+  "logging.addLevelName",
+  "logging.getLogger",
   "mercurial.demandimport.disable",
   "method",
+  "multiprocessing",
   "os.chmod",
+  "os.curdir",
   "os.environ.get",
   "os.mkdir",
+  "os.path",
+  "os.path.abspath",
+  "os.path.altsep",
+  "os.path.basename",
   "os.path.commonprefix",
   "os.path.exists",
+  "os.path.isabs",
   "os.path.isdir",
+  "os.path.join",
+  "os.path.relpath",
+  "os.path.sep",
+  "os.path.split",
+  "os.sep",
   "parse_options",
   "piped_process",
   "re.I",
@@ -56,6 +90,9 @@
   "signal.SIGINT",
   "signal.SIG_IGN",
   "startswith",
+  "subprocess",
+  "subprocess.PIPE",
+  "subprocess.Popen",
   "sys",
   "sys.path.extend",
   "sys.stdin.buffer.read",
@@ -84,34 +121,11 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "backports": [
-   "configparser/conda-forge/noarch/configparser-5.0.0-py_0"
-  ],
   "collections": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "configparser": [
-   "configparser/conda-forge/linux-64/configparser-3.7.1-py27_1",
-   "configparser/conda-forge/noarch/configparser-5.0.0-py_0",
-   "configparser/conda-forge/noarch/configparser-5.0.1-py_0",
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "contextlib": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "copy": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "distutils": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "enum": [
-   "privy/conda-forge/noarch/privy-6.0.0-py_0",
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -123,10 +137,6 @@
    "flake8/conda-forge/noarch/flake8-3.8.4-py_0",
    "flake8/conda-forge/noarch/flake8-3.9.1-pyhd8ed1ab_0"
   ],
-  "fnmatch": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "functools": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -134,15 +144,8 @@
   "functools32": [
    "functools32/conda-forge/linux-64/functools32-3.2.3.2-py27_1"
   ],
-  "importlib": [
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "importlib_metadata": [],
   "inspect": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "io": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -154,21 +157,9 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "logging": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "mercurial": [
    "mercurial/conda-forge/linux-64/mercurial-4.5-py27_0",
    "mercurial/conda-forge/linux-64/mercurial-5.4-py36h8c4c3a4_1"
-  ],
-  "multiprocessing": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "ntpath": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "os": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -203,10 +194,6 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "stat": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "subprocess": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],

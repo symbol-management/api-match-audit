@@ -8,17 +8,49 @@
   "conf.oslo_concurrency.disable_process_locking",
   "conf.oslo_concurrency.lock_path",
   "conf.register_opts",
+  "contextlib",
+  "contextlib.contextmanager",
   "errno",
+  "eventlet",
+  "eventlet.event.Event",
+  "eventlet.green.subprocess",
   "eventlet.green.subprocess.PIPE",
+  "eventlet.green.subprocess.Popen",
+  "eventlet.green.subprocess.TimeoutExpired",
+  "eventlet.greenpool",
+  "eventlet.greenpool.GreenPool",
+  "eventlet.monkey_patch",
+  "eventlet.sleep",
+  "eventlet.tpool",
+  "eventlet.tpool.execute",
   "f",
+  "fasteners",
+  "fasteners.InterProcessLock",
+  "fasteners.ReaderWriterLock",
+  "fcntl",
+  "fcntl.LOCK_EX",
+  "fcntl.LOCK_NB",
+  "fcntl.LOCK_UN",
+  "fcntl.flock",
+  "fixtures",
+  "fixtures.FakeLogger",
+  "fixtures.Fixture",
+  "fixtures.MockPatch",
+  "fixtures.MonkeyPatch",
+  "fixtures.TempDir",
   "foo",
   "functools.partial",
   "inner_lock",
+  "io",
   "io.BytesIO",
+  "logging",
+  "logging.DEBUG",
+  "logging.getLogger",
   "msvcrt",
   "msvcrt.LK_NBLCK",
   "msvcrt.LK_UNLCK",
   "msvcrt.locking",
+  "multiprocessing",
   "multiprocessing.Process",
   "multiprocessing.Queue",
   "multiprocessing.cpu_count",
@@ -26,6 +58,7 @@
   "on_execute",
   "os._exit",
   "os.chmod",
+  "os.devnull",
   "os.environ.get",
   "os.execv",
   "os.fork",
@@ -33,9 +66,14 @@
   "os.fsencode",
   "os.geteuid",
   "os.kill",
+  "os.path.basename",
+  "os.path.dirname",
   "os.path.exists",
+  "os.path.isabs",
+  "os.path.join",
   "os.remove",
   "os.rmdir",
+  "os.sep",
   "os.unlink",
   "oslo_config.fixture.lock",
   "oslotest.base",
@@ -45,6 +83,9 @@
   "signal.SIGPIPE",
   "signal.SIG_DFL",
   "socket.timeout",
+  "subprocess",
+  "subprocess.Popen",
+  "subprocess.call",
   "sys",
   "sys.platform.startswith",
   "test_without_hypen",
@@ -70,10 +111,6 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "contextlib": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "copy": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -87,35 +124,7 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "eventlet": [
-   "eventlet/conda-forge/noarch/eventlet-0.22.0-py_0",
-   "eventlet/conda-forge/noarch/eventlet-0.28.0-py_0",
-   "eventlet/conda-forge/noarch/eventlet-0.29.1-py_0",
-   "eventlet/conda-forge/noarch/eventlet-0.30.0-pyhd8ed1ab_0",
-   "eventlet/conda-forge/noarch/eventlet-0.30.2-pyhd8ed1ab_0",
-   "eventlet/conda-forge/noarch/eventlet-0.30.3-pyhd8ed1ab_0",
-   "eventlet/conda-forge/noarch/eventlet-0.32.0-pyhd8ed1ab_0"
-  ],
-  "fasteners": [
-   "fasteners/conda-forge/noarch/fasteners-0.14.1-py_3"
-  ],
-  "fcntl": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "fixtures": [
-   "fixtures/conda-forge/linux-64/fixtures-3.0.0-py35_0",
-   "fixtures/conda-forge/noarch/fixtures-3.0.0-py_0"
-  ],
   "functools": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "io": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "logging": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -123,14 +132,6 @@
    "monotonic/conda-forge/linux-64/monotonic-1.1-py34_0",
    "monotonic/conda-forge/linux-64/monotonic-1.2-py27_0",
    "monotonic/conda-forge/noarch/monotonic-1.5-py_0"
-  ],
-  "multiprocessing": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "ntpath": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "os": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -204,10 +205,6 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "stat": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "subprocess": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],

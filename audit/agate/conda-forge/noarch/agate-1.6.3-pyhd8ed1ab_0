@@ -6,6 +6,9 @@
   "agate.table.__init__.Table",
   "agate.tableset.__init__.TableSet",
   "apply_computation",
+  "babel.core.Locale",
+  "babel.core.default_locale",
+  "babel.numbers.format_decimal",
   "cdecimal.Decimal",
   "cdecimal.InvalidOperation",
   "cdecimal.ROUND_CEILING",
@@ -14,48 +17,70 @@
   "collections.Sequence",
   "collections.abc.Sequence",
   "collections.defaultdict",
+  "csv",
+  "csv.DictReader",
+  "csv.DictWriter",
+  "csv.DictWriter.writerow",
+  "csv.Error",
+  "csv.Sniffer",
+  "csv.field_size_limit",
   "datetime.date.min",
   "datetime.time.min",
+  "decimal.Decimal",
   "decimal.InvalidOperation",
   "decimal.ROUND_CEILING",
   "decimal.ROUND_FLOOR",
+  "decimal.getcontext",
   "dump_json",
   "func",
   "functools.cmp_to_key",
+  "glob.glob",
+  "io",
   "io.open",
+  "isodate",
+  "isodate.parse_datetime",
   "itertools",
   "key",
+  "leather",
+  "leather.Bars",
+  "leather.Chart",
+  "leather.Columns",
+  "leather.Dots",
+  "leather.Lattice",
+  "leather.Line",
+  "locale",
+  "locale.LC_TIME",
+  "locale.getlocale",
+  "locale.setlocale",
+  "math",
+  "math.ceil",
+  "math.floor",
+  "math.isinf",
+  "math.isnan",
   "name_bin",
+  "os.path.dirname",
   "os.path.exists",
   "os.path.isdir",
   "os.path.isfile",
+  "os.path.join",
+  "os.path.split",
   "project",
   "six.StringIO",
   "six.moves.range",
   "six.moves.zip_longest",
   "sys",
   "unicode",
-  "unittest2",
-  "unittest2.TestCase",
+  "unittest",
+  "warnings",
   "warnings.warn",
   "write",
   "write_row"
  ],
  "deps": {
-  "_csv": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "agate": [
    "agate/conda-forge/noarch/agate-1.6.0-py_3",
    "agate/conda-forge/noarch/agate-1.6.2-pyhd8ed1ab_1",
    "agate/conda-forge/noarch/agate-1.6.3-pyhd8ed1ab_0"
-  ],
-  "babel": [
-   "babel/conda-forge/noarch/babel-2.6.0-py_1",
-   "babel/conda-forge/noarch/babel-2.8.0-py_0",
-   "babel/conda-forge/noarch/babel-2.8.1-pyhd3deb0d_0",
-   "babel/conda-forge/noarch/babel-2.9.0-pyhd3deb0d_0"
   ],
   "codecs": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -69,48 +94,15 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "csv": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "datetime": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "decimal": [
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "functools": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "glob": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "io": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "isodate": [
-   "isodate/conda-forge/noarch/isodate-0.6.0-py_0"
-  ],
   "json": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "leather": [
-   "leather/conda-forge/noarch/leather-0.3.3-py_0"
-  ],
-  "locale": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "math": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "ntpath": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -154,13 +146,8 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "unittest": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "warnings": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  "unittest2": [
+   "unittest2/conda-forge/noarch/unittest2-1.1.0-py_0"
   ]
  }
 }

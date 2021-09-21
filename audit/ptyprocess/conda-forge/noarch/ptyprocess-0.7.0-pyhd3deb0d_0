@@ -3,8 +3,15 @@
   "__builtin__",
   "_access_check",
   "_fork_pty.fork_pty",
+  "builtins",
   "errno",
   "exctype",
+  "fcntl",
+  "fcntl.FD_CLOEXEC",
+  "fcntl.F_SETFD",
+  "fcntl.fcntl",
+  "fcntl.ioctl",
+  "io",
   "os.EX_OSERR",
   "os.F_OK",
   "os.O_NOCTTY",
@@ -22,6 +29,8 @@
   "os.chdir",
   "os.close",
   "os.closerange",
+  "os.curdir",
+  "os.defpath",
   "os.dup2",
   "os.environ.get",
   "os.execv",
@@ -31,77 +40,58 @@
   "os.linesep.encode",
   "os.open",
   "os.openpty",
+  "os.path.dirname",
   "os.path.exists",
   "os.path.isdir",
+  "os.path.join",
+  "os.path.normcase",
+  "os.pathsep",
   "os.pipe",
   "os.read",
   "os.setsid",
   "os.ttyname",
   "os.waitpid",
   "os.write",
+  "pty",
+  "pty.CHILD",
+  "pty.STDERR_FILENO",
+  "pty.STDIN_FILENO",
+  "pty.STDOUT_FILENO",
+  "pty.fork",
+  "resource",
+  "resource.RLIMIT_NOFILE",
+  "resource.getrlimit",
+  "shutil.which",
+  "signal",
   "signal.SIGCONT",
   "signal.SIGHUP",
   "signal.SIGINT",
   "signal.SIGKILL",
+  "struct",
   "struct.pack",
   "struct.unpack",
   "sys",
   "sys.platform.lower",
   "sys.stdout.buffer.write",
   "sys.stdout.write",
+  "termios",
   "termios.CEOF",
   "termios.CINTR",
   "termios.ECHO",
   "termios.TCSANOW",
   "termios.VEOF",
   "termios.VINTR",
+  "termios.error",
+  "termios.tcgetattr",
+  "termios.tcsetattr",
   "time"
  ],
  "deps": {
-  "builtins": [
-   "pies2overrides/conda-forge/osx-64/pies2overrides-2.6.7-py27_1000"
-  ],
   "codecs": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "fcntl": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "io": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "ntpath": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "os": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "pty": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "resource": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "shutil": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "signal": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "struct": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "termios": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ]

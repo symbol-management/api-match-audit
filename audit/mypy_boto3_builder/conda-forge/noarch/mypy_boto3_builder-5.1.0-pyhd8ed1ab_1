@@ -1,5 +1,33 @@
 {
  "bad": [
+  "boto3.__version__",
+  "boto3.docs.utils.is_resource_action",
+  "boto3.dynamodb.conditions.ConditionBase",
+  "boto3.exceptions.ResourceNotExistsError",
+  "boto3.resources.base.ServiceResource",
+  "boto3.resources.model.Collection",
+  "boto3.session.Session",
+  "boto3.utils.ServiceContext",
+  "builtins",
+  "dataclasses.dataclass",
+  "decimal.Decimal",
+  "isort.api.Config",
+  "isort.api.sort_code_string",
+  "jinja2",
+  "jinja2.Environment",
+  "jinja2.FileSystemLoader",
+  "jinja2.StrictUndefined",
+  "keyword",
+  "keyword.kwlist",
+  "logging",
+  "logging.DEBUG",
+  "logging.Formatter",
+  "logging.INFO",
+  "logging.Logger",
+  "logging.StreamHandler",
+  "logging.getLogger",
+  "mdformat",
+  "mdformat.text",
   "mypy_boto3_builder.constants.BOTO3_STUBS_STATIC_PATH.glob",
   "mypy_boto3_builder.constants.BOTOCORE_STUBS_STATIC_PATH.glob",
   "mypy_boto3_builder.constants.TEMPLATES_PATH.as_posix",
@@ -82,8 +110,60 @@
   "mypy_boto3_builder.type_annotations.type.Type.overload",
   "mypy_boto3_builder.type_annotations.type.Type.str",
   "mypy_boto3_builder.type_maps.syntax_type_map.SYNTAX_TYPE_MAP",
+  "mypy_boto3_builder.type_maps.typed_dicts.ec2_tag_type",
+  "mypy_boto3_builder.type_maps.typed_dicts.paginator_config_type",
+  "mypy_boto3_builder.type_maps.typed_dicts.s3_copy_source_type",
+  "mypy_boto3_builder.type_maps.typed_dicts.waiter_config_type",
+  "pathlib.Path",
+  "pkg_resources",
+  "pkg_resources.DistributionNotFound",
+  "pkg_resources.get_distribution",
+  "pyparsing.Combine",
+  "pyparsing.Forward",
+  "pyparsing.Group",
+  "pyparsing.LineEnd",
+  "pyparsing.LineStart",
+  "pyparsing.Literal",
+  "pyparsing.Optional",
+  "pyparsing.ParseException",
+  "pyparsing.ParserElement",
+  "pyparsing.ParserElement.enablePackrat",
+  "pyparsing.SkipTo",
+  "pyparsing.White",
+  "pyparsing.Word",
+  "pyparsing.alphanums",
+  "pyparsing.alphas",
+  "pyparsing.delimitedList",
+  "pyparsing.indentedBlock",
+  "re",
+  "re.compile",
   "resource_class",
-  "sys"
+  "sys",
+  "textwrap",
+  "textwrap.dedent",
+  "textwrap.wrap",
+  "types.MethodType",
+  "typing",
+  "typing.Any",
+  "typing.Callable",
+  "typing.Dict",
+  "typing.Generator",
+  "typing.IO",
+  "typing.Iterable",
+  "typing.Iterator",
+  "typing.List",
+  "typing.Literal",
+  "typing.Mapping",
+  "typing.Optional",
+  "typing.Pattern",
+  "typing.Sequence",
+  "typing.Set",
+  "typing.Tuple",
+  "typing.Type",
+  "typing.TypeVar",
+  "typing.Union",
+  "typing.overload",
+  "unittest.mock.MagicMock"
  ],
  "deps": {
   "abc": [
@@ -97,45 +177,6 @@
   ],
   "black": [
    "black/conda-forge/noarch/black-21.5b1-pyhd8ed1ab_0"
-  ],
-  "boto3": [
-   "boto3/conda-forge/noarch/boto3-1.10.14-py_0",
-   "boto3/conda-forge/noarch/boto3-1.10.18-py_0",
-   "boto3/conda-forge/noarch/boto3-1.12.24-pyh8c360ce_0",
-   "boto3/conda-forge/noarch/boto3-1.12.41-pyh9f0ad1d_0",
-   "boto3/conda-forge/noarch/boto3-1.12.9-py_1",
-   "boto3/conda-forge/noarch/boto3-1.13.18-pyh9f0ad1d_0",
-   "boto3/conda-forge/noarch/boto3-1.13.5-pyh9f0ad1d_0",
-   "boto3/conda-forge/noarch/boto3-1.13.8-pyh9f0ad1d_0",
-   "boto3/conda-forge/noarch/boto3-1.14.1-pyh9f0ad1d_0",
-   "boto3/conda-forge/noarch/boto3-1.14.6-pyh9f0ad1d_0",
-   "boto3/conda-forge/noarch/boto3-1.15.12-pyh9f0ad1d_0",
-   "boto3/conda-forge/noarch/boto3-1.15.6-pyh9f0ad1d_0",
-   "boto3/conda-forge/noarch/boto3-1.15.9-pyh9f0ad1d_0",
-   "boto3/conda-forge/noarch/boto3-1.16.32-pyhd8ed1ab_0",
-   "boto3/conda-forge/noarch/boto3-1.16.42-pyhd8ed1ab_0",
-   "boto3/conda-forge/noarch/boto3-1.16.43-pyhd8ed1ab_0",
-   "boto3/conda-forge/noarch/boto3-1.16.56-pyhd8ed1ab_0",
-   "boto3/conda-forge/noarch/boto3-1.16.63-pyhd8ed1ab_0",
-   "boto3/conda-forge/noarch/boto3-1.17.112-pyhd8ed1ab_0",
-   "boto3/conda-forge/noarch/boto3-1.17.36-pyhd8ed1ab_0",
-   "boto3/conda-forge/noarch/boto3-1.17.37-pyhd8ed1ab_0",
-   "boto3/conda-forge/noarch/boto3-1.17.68-pyhd8ed1ab_0",
-   "boto3/conda-forge/noarch/boto3-1.17.7-pyhd8ed1ab_0",
-   "boto3/conda-forge/noarch/boto3-1.18.0-pyhd8ed1ab_0",
-   "boto3/conda-forge/noarch/boto3-1.5.36-py_0",
-   "boto3/conda-forge/noarch/boto3-1.7.40-py_0",
-   "boto3/conda-forge/noarch/boto3-1.8.7-py_0",
-   "boto3/conda-forge/noarch/boto3-1.9.104-py_0",
-   "boto3/conda-forge/noarch/boto3-1.9.111-py_0",
-   "boto3/conda-forge/noarch/boto3-1.9.141-py_0",
-   "boto3/conda-forge/noarch/boto3-1.9.161-py_0",
-   "boto3/conda-forge/noarch/boto3-1.9.230-py_0",
-   "boto3/conda-forge/noarch/boto3-1.9.235-py_0",
-   "boto3/conda-forge/noarch/boto3-1.9.31-py_1",
-   "boto3/conda-forge/noarch/boto3-1.9.44-py_0",
-   "boto3/conda-forge/noarch/boto3-1.9.57-py_0",
-   "boto3/conda-forge/noarch/boto3-1.9.67-py_0"
   ],
   "botocore": [
    "botocore/conda-forge/noarch/botocore-1.10.23-py_0",
@@ -178,22 +219,8 @@
    "botocore/conda-forge/noarch/botocore-1.8.39-py_0",
    "botocore/conda-forge/noarch/botocore-1.9.13-py_0"
   ],
-  "builtins": [
-   "pies2overrides/conda-forge/osx-64/pies2overrides-2.6.7-py27_1000"
-  ],
-  "dataclasses": [
-   "dataclasses/conda-forge/noarch/dataclasses-0.5-py_0",
-   "dataclasses/conda-forge/noarch/dataclasses-0.6-py_0",
-   "dataclasses/conda-forge/noarch/dataclasses-0.8-pyh787bdff_0",
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "datetime": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "decimal": [
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "enum": [
@@ -202,79 +229,6 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "inspect": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "isort": [
-   "isort/conda-forge/linux-64/isort-5.5.1-py36hc560c46_0",
-   "isort/conda-forge/noarch/isort-5.6.4-py_0",
-   "isort/conda-forge/noarch/isort-5.7.0-pyhd8ed1ab_0",
-   "isort/conda-forge/noarch/isort-5.8.0-pyhd8ed1ab_0",
-   "isort/conda-forge/noarch/isort-5.9.2-pyhd8ed1ab_0"
-  ],
-  "jinja2": [
-   "jinja2/conda-forge/noarch/jinja2-2.10-py_1",
-   "jinja2/conda-forge/noarch/jinja2-2.11.3-pyh44b312d_0",
-   "jinja2/conda-forge/noarch/jinja2-3.0.0-pyhd8ed1ab_0",
-   "jinja2/conda-forge/noarch/jinja2-3.0.1-pyhd8ed1ab_0"
-  ],
-  "keyword": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "logging": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "mdformat": [
-   "mdformat/conda-forge/noarch/mdformat-0.7.6-pyhd8ed1ab_1",
-   "mdformat/conda-forge/noarch/mdformat-0.7.7-pyhd8ed1ab_0",
-   "mdformat/conda-forge/noarch/mdformat-0.7.9-pyhd8ed1ab_0"
-  ],
-  "mypy_boto3_builder": [
-   "mypy_boto3_builder/conda-forge/noarch/mypy_boto3_builder-4.13.1-pyhd8ed1ab_1",
-   "mypy_boto3_builder/conda-forge/noarch/mypy_boto3_builder-4.14.0-pyhd8ed1ab_1",
-   "mypy_boto3_builder/conda-forge/noarch/mypy_boto3_builder-4.14.1-pyhd8ed1ab_0",
-   "mypy_boto3_builder/conda-forge/noarch/mypy_boto3_builder-4.17.0-pyhd8ed1ab_0",
-   "mypy_boto3_builder/conda-forge/noarch/mypy_boto3_builder-4.18.0-pyhd8ed1ab_0",
-   "mypy_boto3_builder/conda-forge/noarch/mypy_boto3_builder-4.18.3-pyhd8ed1ab_0",
-   "mypy_boto3_builder/conda-forge/noarch/mypy_boto3_builder-4.19.0-pyhd8ed1ab_0"
-  ],
-  "pathlib": [
-   "pathlib/conda-forge/noarch/pathlib-1.0.1-py_1",
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "pkg_resources": [
-   "setuptools/conda-forge/linux-64/setuptools-40.6.1-py36_0",
-   "setuptools/conda-forge/linux-64/setuptools-46.3.0-py38h32f6830_0",
-   "setuptools/conda-forge/linux-64/setuptools-49.1.2-py38h32f6830_0"
-  ],
-  "pyparsing": [
-   "pyparsing/conda-forge/noarch/pyparsing-2.2.1-py_0",
-   "pyparsing/conda-forge/noarch/pyparsing-2.2.2-py_0",
-   "pyparsing/conda-forge/noarch/pyparsing-2.3.0-py_0",
-   "pyparsing/conda-forge/noarch/pyparsing-2.3.1-py_0",
-   "pyparsing/conda-forge/noarch/pyparsing-2.4.1.1-py_0",
-   "pyparsing/conda-forge/noarch/pyparsing-2.4.4-py_0",
-   "pyparsing/conda-forge/noarch/pyparsing-2.4.6-py_0"
-  ],
-  "re": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "textwrap": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "types": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "typing": [
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "unittest": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ]

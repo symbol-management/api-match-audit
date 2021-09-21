@@ -2,23 +2,60 @@
  "bad": [
   "comp_fn",
   "functools.partial",
+  "joblib.Parallel",
+  "joblib.delayed",
   "join_fn",
+  "math.ceil",
+  "math.floor",
+  "math.sqrt",
+  "multiprocessing",
   "multiprocessing.cpu_count",
   "nose.tools.assert_equal",
   "nose.tools.assert_list_equal",
   "nose.tools.nottest",
   "nose.tools.raises",
+  "operator",
+  "operator.eq",
+  "operator.ge",
+  "operator.gt",
+  "operator.itemgetter",
+  "operator.le",
+  "operator.lt",
+  "operator.ne",
   "os.getcwd",
+  "os.path.abspath",
+  "os.path.dirname",
   "os.path.exists",
+  "os.path.expanduser",
+  "os.path.join",
+  "os.path.realpath",
   "os.remove",
   "os.sep.join",
   "overlap",
+  "pandas",
+  "pandas.DataFrame",
+  "pandas.Series",
+  "pandas.concat",
+  "pandas.isnull",
+  "pandas.merge",
+  "pandas.notnull",
   "pandas.np.NaN",
   "pandas.np.float",
   "pandas.np.integer",
+  "pandas.np.issubdtype",
   "pandas.np.object",
   "pandas.np.random.randint",
   "pandas.np.random.randn",
+  "pandas.read_csv",
+  "pandas.set_option",
+  "py_stringmatching.similarity_measure.cosine.Cosine",
+  "py_stringmatching.similarity_measure.dice.Dice",
+  "py_stringmatching.similarity_measure.jaccard.Jaccard",
+  "py_stringmatching.similarity_measure.levenshtein.Levenshtein",
+  "py_stringmatching.similarity_measure.overlap_coefficient.OverlapCoefficient",
+  "py_stringmatching.tokenizer.delimiter_tokenizer.DelimiterTokenizer",
+  "py_stringmatching.tokenizer.qgram_tokenizer.QgramTokenizer",
+  "py_stringmatching.tokenizer.tokenizer.Tokenizer",
   "py_stringsimjoin.join.cosine_join_cy.cosine_join_cy",
   "py_stringsimjoin.join.dice_join_cy.dice_join_cy",
   "py_stringsimjoin.join.disk_edit_distance_join_cy.disk_edit_distance_join_cy",
@@ -27,63 +64,26 @@
   "py_stringsimjoin.join.overlap_coefficient_join_cy.overlap_coefficient_join_cy",
   "py_stringsimjoin.join.overlap_join_cy.overlap_join_cy",
   "py_stringsimjoin.utils.generic_helper.COMP_OP_MAP.keys",
+  "pyprind",
+  "pyprind.ProgBar",
+  "random",
+  "random.choice",
   "sim_fn",
   "sim_func",
   "six.moves.copyreg",
   "six.moves.copyreg.pickle",
-  "six.moves.xrange"
+  "six.moves.xrange",
+  "types",
+  "types.MethodType",
+  "unittest",
+  "unittest.TestCase"
  ],
  "deps": {
   "datetime": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "joblib": [
-   "joblib/conda-forge/noarch/joblib-0.12.1-py_0",
-   "joblib/conda-forge/noarch/joblib-0.12.2-py_0",
-   "joblib/conda-forge/noarch/joblib-0.12.4-py_0",
-   "joblib/conda-forge/noarch/joblib-0.13.1-py_0",
-   "joblib/conda-forge/noarch/joblib-0.13.2-py_0",
-   "joblib/conda-forge/noarch/joblib-0.14.0-py_0",
-   "joblib/conda-forge/noarch/joblib-0.14.1-py_0",
-   "joblib/conda-forge/noarch/joblib-0.17.0-py_0",
-   "joblib/conda-forge/noarch/joblib-1.0.0-pyhd8ed1ab_0",
-   "joblib/conda-forge/noarch/joblib-1.0.1-pyhd8ed1ab_0"
-  ],
-  "math": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "multiprocessing": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "ntpath": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "numpy": [
-   "numpy/conda-forge/linux-64/numpy-1.17.5-py36h95a1406_0",
-   "numpy/conda-forge/linux-64/numpy-1.18.4-py37h8960a57_0",
-   "numpy/conda-forge/linux-64/numpy-1.19.2-py36h68c22af_1"
-  ],
-  "operator": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "os": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "pandas": [],
-  "py_stringmatching": [
-   "py_stringmatching/conda-forge/linux-64/py_stringmatching-0.4.1-py36hc1659b7_0"
-  ],
-  "pyprind": [
-   "pyprind/conda-forge/linux-64/pyprind-2.11.2-py35_1000",
-   "pyprind/conda-forge/linux-64/pyprind-2.9.9-py27_0"
-  ],
-  "random": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -98,14 +98,6 @@
    "six/conda-forge/noarch/six-1.16.0-pyh6c4a22f_0"
   ],
   "string": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "types": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "unittest": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ]
