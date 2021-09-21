@@ -12,14 +12,23 @@
   "bytes.__new__",
   "bytes.__repr__",
   "cStringIO.StringIO",
+  "calendar",
+  "calendar.timegm",
+  "codecs",
   "codecs.utf_8_decode",
   "codecs.utf_8_encode",
   "collections.Mapping",
   "collections.abc.Mapping",
+  "contextlib",
+  "contextlib.contextmanager",
+  "decimal",
+  "decimal.Context",
+  "decimal.Decimal",
   "decimal.Inexact",
   "decimal.InvalidOperation",
   "decimal.Overflow",
   "decimal.ROUND_HALF_EVEN",
+  "decimal.localcontext",
   "dict.__delitem__",
   "dict.__setitem__",
   "docs_repr",
@@ -27,8 +36,16 @@
   "fn",
   "func",
   "functools.partial",
+  "future",
+  "hashlib",
   "hashlib.md5",
   "index",
+  "inspect",
+  "inspect.currentframe",
+  "inspect.getargvalues",
+  "inspect.getframeinfo",
+  "inspect.isclass",
+  "inspect.ismethod",
   "int.from_bytes",
   "io.BytesIO",
   "io.StringIO",
@@ -189,10 +206,6 @@
   "mockupdb._bson.__init__._name_value_to_bson",
   "mockupdb._bson.__init__._raise_unknown_type",
   "mockupdb._bson.__init__.gen_list_name",
-  "mockupdb._bson._cbson._bson_to_dict",
-  "mockupdb._bson._cbson._dict_to_bson",
-  "mockupdb._bson._cbson._element_to_dict",
-  "mockupdb._bson._cbson.decode_all",
   "mockupdb._bson.binary.UUID_REPRESENTATION_NAMES.get",
   "mockupdb._bson.codec_options.DEFAULT_CODEC_OPTIONS.with_options",
   "mockupdb._bson.py3compat.abc.Mapping",
@@ -200,14 +213,9 @@
   "mockupdb._bson.py3compat.string_type.__name__",
   "mockupdb._bson.py3compat.text_type.__name__",
   "object_hook",
-  "optparse.OptionParser",
-  "ordereddict.OrderedDict",
   "os.getpid",
-  "queue.Empty",
-  "queue.Queue",
   "raise_args_err",
-  "random",
-  "random.randint",
+  "re",
   "re.DOTALL",
   "re.I",
   "re.IGNORECASE",
@@ -220,14 +228,8 @@
   "re.UNICODE",
   "re.VERBOSE",
   "re.X",
+  "re.compile",
   "request_cls",
-  "select",
-  "select.error",
-  "select.select",
-  "simplejson",
-  "simplejson.dumps",
-  "simplejson.loads",
-  "socket",
   "socket.AF_INET",
   "socket.AI_PASSIVE",
   "socket.SHUT_RDWR",
@@ -235,11 +237,7 @@
   "socket.SOL_SOCKET",
   "socket.SO_REUSEADDR",
   "socket.error",
-  "socket.getaddrinfo",
   "socket.gethostname",
-  "socket.socket",
-  "ssl",
-  "ssl.wrap_socket",
   "str.__new__",
   "str.__repr__",
   "struct.Struct",
@@ -253,9 +251,7 @@
   "time",
   "transform_value",
   "tuple.__new__",
-  "unicode",
-  "weakref",
-  "weakref.WeakKeyDictionary"
+  "unicode"
  ],
  "deps": {
   "__future__": [
@@ -270,19 +266,7 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "calendar": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "codecs": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "collections": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "contextlib": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -294,21 +278,7 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "decimal": [
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "functools": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "future": [
-   "future/conda-forge/linux-64/future-0.16.0-py34_0"
-  ],
-  "hashlib": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "inspect": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -320,15 +290,46 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "mockupdb": [
+   "mockupdb/conda-forge/noarch/mockupdb-1.4.1-py_0"
+  ],
   "ntpath": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "optparse": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "ordereddict": [
+   "ordereddict/conda-forge/linux-64/ordereddict-1.1-py26_0"
   ],
   "os": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "re": [
+  "queue": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "random": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "select": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "simplejson": [
+   "simplejson/conda-forge/linux-64/simplejson-3.16.0-py27h470a237_2",
+   "simplejson/conda-forge/linux-64/simplejson-3.16.0-py35h470a237_2",
+   "simplejson/conda-forge/linux-64/simplejson-3.17.0-py38h516909a_0"
+  ],
+  "socket": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "ssl": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -345,6 +346,10 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "uuid": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "weakref": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ]

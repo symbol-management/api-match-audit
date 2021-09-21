@@ -17,17 +17,30 @@
   "_helpers.polygon_from_bounds",
   "_helpers.test_valid_bounds",
   "_helpers.valid_latlon_bounds",
+  "affine.Affine",
+  "affine.Affine.from_gdal",
+  "ast",
+  "ast.literal_eval",
+  "blosc",
+  "cachetools.TTLCache",
+  "cachetools.cachedmethod",
+  "cachetools.keys.hashkey",
   "client.auth.Auth.from_environment_or_token_json",
   "client.services.__all__",
+  "cloudpickle",
+  "cloudpickle.dumps",
   "cloudpickle.loads",
   "collections.Mapping",
   "collections.Sequence",
   "collections.defaultdict",
+  "colormap",
+  "concurrent.futures",
   "data_loader",
   "descarteslabs.__init__.descartes_auth",
   "descarteslabs.client.addons.blosc.compress_ptr",
   "descarteslabs.client.addons.blosc.decompress",
   "descarteslabs.client.addons.blosc.decompress_ptr",
+  "descarteslabs.client.addons.concurrent.futures.wait",
   "descarteslabs.client.addons.mercantile.bounds",
   "descarteslabs.client.addons.mercantile.children",
   "descarteslabs.client.addons.mercantile.parent",
@@ -47,6 +60,7 @@
   "descarteslabs.client.addons.numpy.zeros_like",
   "descarteslabs.client.scripts.cli.parser.parse_args",
   "descarteslabs.client.services.catalog.Catalog.UPLOAD_NDARRAY_SUPPORTED_DTYPES",
+  "descarteslabs.client.services.service.service.requests.Session",
   "descarteslabs.common.dotdict.dotdict.idr.indent",
   "descarteslabs.common.dotdict.dotdict.idr.maxdict",
   "descarteslabs.common.dotdict.dotdict.idr.maxlevel",
@@ -56,7 +70,15 @@
   "descarteslabs.common.dotdict.dotdict.untruncated_idr.repr",
   "descarteslabs.common.services.tasks.constants.FunctionType.PY_BUNDLE",
   "descarteslabs.common.services.tasks.constants.FunctionType.PY_PICKLE",
+  "descarteslabs.scenes.Collection._str_to_predicate",
+  "descarteslabs.scenes.Scene._bands_to_list",
+  "descarteslabs.scenes.Scene._scenes_bands_dict",
+  "descarteslabs.scenes.Scene.from_id",
+  "descarteslabs.vectors.Feature._create_from_jsonapi",
   "descarteslabs.vectors.FeatureCollection.COMPLETION_POLL_INTERVAL_SECONDS",
+  "descarteslabs.vectors.FeatureCollection._from_jsonapi",
+  "descarteslabs.vectors.FeatureCollection.create",
+  "descarteslabs.vectors.FeatureCollection.list",
   "descarteslabs.vectors.properties.bar",
   "descarteslabs.vectors.properties.foo",
   "dict.__getitem__",
@@ -71,6 +93,14 @@
   "geocontext.GeoContext",
   "hashlib.sha1",
   "id.startswith",
+  "importlib",
+  "importlib.import_module",
+  "inspect",
+  "inspect.getargspec",
+  "inspect.getfullargspec",
+  "inspect.getsource",
+  "inspect.isfunction",
+  "inspect.ismodule",
   "io.BytesIO",
   "io.StringIO",
   "io.open",
@@ -96,6 +126,8 @@
   "numpy.sqrt",
   "numpy.zeros",
   "object.__getattribute__",
+  "operator",
+  "operator.attrgetter",
   "os.chdir",
   "os.chmod",
   "os.environ.get",
@@ -107,7 +139,13 @@
   "os.remove",
   "os.unlink",
   "p",
+  "platform",
+  "platform.platform",
+  "platform.python_version",
   "pred",
+  "re",
+  "re.compile",
+  "re.match",
   "repr1",
   "requests.Session.__attrs__",
   "responses.calls.request",
@@ -116,6 +154,8 @@
   "responses.calls.request.url",
   "scene.Scene._bands_to_list",
   "scene.Scene._scenes_bands_dict",
+  "shutil",
+  "shutil.rmtree",
   "six.StringIO",
   "six.moves.builtins",
   "six.moves.input",
@@ -133,6 +173,10 @@
   "threaded_ndarrays",
   "time",
   "unittest.mock.patch.object",
+  "warnings",
+  "warnings.catch_warnings",
+  "warnings.resetwarnings",
+  "warnings.simplefilter",
   "warnings.warn",
   "x"
  ],
@@ -149,20 +193,8 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "affine": [
-   "affine/conda-forge/linux-64/affine-2.0.0.post1-py36_0",
-   "affine/conda-forge/noarch/affine-2.1.0-py_1",
-   "affine/conda-forge/noarch/affine-2.2.0-py_0",
-   "affine/conda-forge/noarch/affine-2.2.1-py_0",
-   "affine/conda-forge/noarch/affine-2.2.2-py_0",
-   "affine/conda-forge/noarch/affine-2.3.0-py_0"
-  ],
   "argparse": [
    "argparse/conda-forge/osx-64/argparse-1.4.0-py26_0",
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "ast": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -170,31 +202,7 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "blosc": [
-   "python-blosc/conda-forge/linux-64/python-blosc-1.10.1-py39hde0f152_0"
-  ],
-  "cachetools": [
-   "cachetools/conda-forge/noarch/cachetools-4.1.0-py_1",
-   "cachetools/conda-forge/noarch/cachetools-4.2.1-pyhd8ed1ab_0",
-   "cachetools/conda-forge/noarch/cachetools-4.2.2-pyhd8ed1ab_0",
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0"
-  ],
-  "cloudpickle": [
-   "cloudpickle/conda-forge/noarch/cloudpickle-1.2.0-py_0",
-   "cloudpickle/conda-forge/noarch/cloudpickle-1.2.1-py_0",
-   "cloudpickle/conda-forge/noarch/cloudpickle-1.2.2-py_0",
-   "cloudpickle/conda-forge/noarch/cloudpickle-1.2.2-py_1",
-   "cloudpickle/conda-forge/noarch/cloudpickle-1.3.0-py_0"
-  ],
   "collections": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "colormap": [
-   "colormap/conda-forge/noarch/colormap-1.0.1-py_2"
-  ],
-  "concurrent": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -205,15 +213,6 @@
   "datetime": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "descarteslabs": [
-   "descarteslabs/conda-forge/noarch/descarteslabs-0.15.0-py_0",
-   "descarteslabs/conda-forge/noarch/descarteslabs-0.16.0-py_0",
-   "descarteslabs/conda-forge/noarch/descarteslabs-0.19.0-py_0",
-   "descarteslabs/conda-forge/noarch/descarteslabs-0.21.0-py_0",
-   "descarteslabs/conda-forge/noarch/descarteslabs-0.26.0-py_0",
-   "descarteslabs/conda-forge/noarch/descarteslabs-1.4.0-py_0",
-   "descarteslabs/conda-forge/noarch/descarteslabs-1.4.1-py_0"
   ],
   "dis": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -230,15 +229,6 @@
    "geojson/conda-forge/noarch/geojson-2.4.1-py_0"
   ],
   "glob": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "importlib": [
-   "importlib/conda-forge/linux-64/importlib-1.0.4-py26_0",
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "inspect": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -287,10 +277,6 @@
    "numpy/conda-forge/linux-64/numpy-1.18.4-py37h8960a57_0",
    "numpy/conda-forge/linux-64/numpy-1.19.2-py36h68c22af_1"
   ],
-  "operator": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "os": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -309,15 +295,7 @@
    "setuptools/conda-forge/linux-64/setuptools-46.3.0-py38h32f6830_0",
    "setuptools/conda-forge/linux-64/setuptools-49.1.2-py38h32f6830_0"
   ],
-  "platform": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "random": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "re": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -347,10 +325,6 @@
    "shapely/conda-forge/linux-64/shapely-1.5.15-np19py35_0",
    "shapely/conda-forge/linux-64/shapely-1.7.1-py37hba0730f_1",
    "solaris/conda-forge/noarch/solaris-0.4.0-pyhe05a262_0"
-  ],
-  "shutil": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "six": [
    "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
@@ -404,10 +378,6 @@
    "urllib3/conda-forge/noarch/urllib3-1.26.6-pyhd8ed1ab_0"
   ],
   "uuid": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "warnings": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],

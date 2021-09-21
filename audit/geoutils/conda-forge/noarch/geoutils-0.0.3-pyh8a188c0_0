@@ -6,6 +6,7 @@
   "geoutils.datasets.__init__._module_path",
   "geoutils.datasets.__init__.available",
   "matplotlib.pyplot.cm.datad.keys",
+  "numbers.Number",
   "numpy.abs",
   "numpy.arange",
   "numpy.ceil",
@@ -20,12 +21,48 @@
   "numpy.zeros",
   "os.cpu_count",
   "os.path.exists",
+  "pyproj",
+  "pyproj.CRS",
+  "pyproj.Transformer.from_crs",
+  "rasterio",
+  "rasterio.control.GroundControlPoint",
+  "rasterio.coords.BoundingBox",
+  "rasterio.crs.CRS",
+  "rasterio.crs.CRS.from_epsg",
+  "rasterio.crs.CRS.from_user_input",
+  "rasterio.features",
+  "rasterio.features.rasterize",
   "rasterio.io.Dataset",
+  "rasterio.io.DatasetReader",
+  "rasterio.io.MemoryFile",
+  "rasterio.mask",
+  "rasterio.mask.mask",
+  "rasterio.open",
+  "rasterio.plot.show",
+  "rasterio.transform",
+  "rasterio.transform.Affine",
+  "rasterio.transform.from_bounds",
+  "rasterio.warp",
+  "rasterio.warp.Resampling",
   "rasterio.warp.Resampling.nearest",
+  "rasterio.warp.reproject",
+  "rasterio.warp.transform_bounds",
+  "rasterio.windows",
+  "rasterio.windows.Window",
+  "rasterio.windows.from_bounds",
+  "re",
+  "re.match",
   "reducer_function",
+  "rioxarray",
   "rioxarray.DataArray",
+  "rioxarray.open_rasterio",
+  "scipy.ndimage.map_coordinates",
+  "shapely.geometry.base.BaseGeometry",
+  "shapely.geometry.polygon.Polygon",
+  "shapely.ops",
   "sys",
   "sys.stderr.write",
+  "warnings",
   "warnings.warn"
  ],
  "deps": {
@@ -76,10 +113,6 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "numbers": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "numpy": [
    "numpy/conda-forge/linux-64/numpy-1.17.5-py36h95a1406_0",
    "numpy/conda-forge/linux-64/numpy-1.18.4-py37h8960a57_0",
@@ -89,61 +122,9 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "pyproj": [
-   "pyproj/conda-forge/linux-64/pyproj-2.1.3-py37h516909a_0",
-   "pyproj/conda-forge/linux-64/pyproj-2.3.0-py37h2fd02e8_0"
-  ],
-  "rasterio": [
-   "rasterio/conda-forge/linux-64/rasterio-1.0.25-py36hdff7cfa_0",
-   "rasterio/conda-forge/linux-64/rasterio-1.2.1-py37ha549118_0",
-   "rasterio/conda-forge/linux-64/rasterio-1.2.2-py39h63973eb_0"
-  ],
-  "re": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "rioxarray": [
-   "rioxarray/conda-forge/noarch/rioxarray-0.0.11-py_0",
-   "rioxarray/conda-forge/noarch/rioxarray-0.0.13-py_0",
-   "rioxarray/conda-forge/noarch/rioxarray-0.0.14-py_0",
-   "rioxarray/conda-forge/noarch/rioxarray-0.0.21-py_0",
-   "rioxarray/conda-forge/noarch/rioxarray-0.0.24-py_0",
-   "rioxarray/conda-forge/noarch/rioxarray-0.0.28-py_0",
-   "rioxarray/conda-forge/noarch/rioxarray-0.0.29-py_0",
-   "rioxarray/conda-forge/noarch/rioxarray-0.1.1-pyhd8ed1ab_0",
-   "rioxarray/conda-forge/noarch/rioxarray-0.3.1-pyhd8ed1ab_0",
-   "rioxarray/conda-forge/noarch/rioxarray-0.4.2-pyhd8ed1ab_0"
-  ],
-  "scipy": [
-   "scipy/conda-forge/linux-64/scipy-0.17.1-np110py27_blas_openblas_202",
-   "scipy/conda-forge/linux-64/scipy-1.7.0-py37h29e03ee_0",
-   "scipy/conda-forge/linux-64/scipy-1.7.0-py37ha768fb6_1"
-  ],
-  "shapely": [
-   "shapely/conda-forge/linux-64/shapely-1.5.15-np19py35_0",
-   "shapely/conda-forge/linux-64/shapely-1.7.1-py37hba0730f_1",
-   "solaris/conda-forge/noarch/solaris-0.4.0-pyhe05a262_0"
-  ],
   "typing": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "warnings": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "xarray": [
-   "xarray/conda-forge/linux-64/xarray-0.10.2-py36_0",
-   "xarray/conda-forge/noarch/xarray-0.12.0-py_0",
-   "xarray/conda-forge/noarch/xarray-0.13.0-py_0",
-   "xarray/conda-forge/noarch/xarray-0.14.1-py_0",
-   "xarray/conda-forge/noarch/xarray-0.15.0-py_0",
-   "xarray/conda-forge/noarch/xarray-0.15.1-py_0",
-   "xarray/conda-forge/noarch/xarray-0.16.0-py_0",
-   "xarray/conda-forge/noarch/xarray-0.16.1-py_0",
-   "xarray/conda-forge/noarch/xarray-0.16.2-pyhd8ed1ab_0",
-   "xarray/conda-forge/noarch/xarray-0.18.0-pyhd8ed1ab_0",
-   "xarray/conda-forge/noarch/xarray-0.18.2-pyhd8ed1ab_0"
   ]
  }
 }

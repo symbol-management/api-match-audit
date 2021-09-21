@@ -9,13 +9,22 @@
   "_Validity",
   "_mkdir_recursively",
   "_validate_resourceTypeGeneral",
+  "ads",
+  "ads.SearchQuery",
   "api.Login",
   "api.Records.search",
   "api.records.Records.search",
+  "ast",
+  "ast.literal_eval",
   "check",
   "collections.Iterable",
   "collections.Mapping",
   "compare_attribute",
+  "contextlib",
+  "contextlib.ExitStack",
+  "contextlib.contextmanager",
+  "contextlib.nullcontext",
+  "contextlib.redirect_stdout",
   "convert_size",
   "count_errors",
   "count_errors.errors",
@@ -26,13 +35,22 @@
   "decode",
   "deformat",
   "deposit.Deposit",
+  "difflib",
+  "difflib.get_close_matches",
   "drop_all_but_highest_levs",
   "errno",
   "error",
   "exclude",
+  "fcntl",
+  "fcntl.LOCK_EX",
+  "fcntl.LOCK_UN",
+  "fcntl.flock",
   "file_matches",
   "first_match",
   "functools.partial",
+  "h5py",
+  "h5py.File",
+  "h5py.Group",
   "hashlib.md5",
   "horizons.horizon_splines_from_sxs",
   "horizons.write_horizon_splines_from_sxs",
@@ -78,9 +96,18 @@
   "os.symlink",
   "os.utime",
   "path_to_dict",
+  "re",
+  "re.compile",
+  "re.match",
+  "re.search",
+  "re.sub",
   "read_catalog",
   "references.inspire.map_bibtex_keys_to_identifiers",
   "s",
+  "shutil",
+  "shutil.copyfileobj",
+  "shutil.get_terminal_size",
+  "shutil.rmtree",
   "str.lower",
   "stringify_nan",
   "stringify_nans",
@@ -125,6 +152,7 @@
   "utilities.lock_file_manager",
   "utilities.md5checksum",
   "verbosity_manager",
+  "warnings",
   "warnings.warn",
   "waveforms.convert_modes"
  ],
@@ -133,16 +161,8 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "ads": [
-   "ads/conda-forge/osx-64/ads-0.12.3-py36_1",
-   "ads/conda-forge/win-64/ads-0.12.3-py35_1"
-  ],
   "argparse": [
    "argparse/conda-forge/osx-64/argparse-1.4.0-py26_0",
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "ast": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -150,22 +170,11 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "contextlib": [
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "copy": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "datetime": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "difflib": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "fcntl": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -184,11 +193,6 @@
   "glob": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "h5py": [
-   "h5py/conda-forge/linux-64/h5py-2.10.0-nompi_py37hf7afa78_105",
-   "h5py/conda-forge/linux-64/h5py-2.6.0-np111py34_4",
-   "h5py/conda-forge/linux-64/h5py-2.7.0-np113py36_1"
   ],
   "io": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -244,10 +248,6 @@
    "pytz/conda-forge/noarch/pytz-2020.1-pyh9f0ad1d_0",
    "pytz/conda-forge/noarch/pytz-2020.4-pyhd8ed1ab_0"
   ],
-  "re": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "requests": [
    "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
    "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0",
@@ -268,10 +268,6 @@
    "scipy/conda-forge/linux-64/scipy-1.7.0-py37ha768fb6_1"
   ],
   "select": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "shutil": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -304,10 +300,6 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "urllib": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "warnings": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ]

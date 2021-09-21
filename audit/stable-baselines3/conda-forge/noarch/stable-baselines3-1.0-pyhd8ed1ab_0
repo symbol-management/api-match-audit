@@ -13,11 +13,36 @@
   "env_id",
   "functools.partial",
   "functools.reduce",
+  "glob",
+  "glob.glob",
+  "gym",
+  "gym.Env",
+  "gym.GoalEnv",
+  "gym.ObservationWrapper",
+  "gym.RewardWrapper",
+  "gym.Space",
+  "gym.Wrapper",
+  "gym.envs.registration.EnvSpec",
+  "gym.make",
+  "gym.spaces",
+  "gym.spaces.Box",
+  "gym.spaces.Dict",
+  "gym.spaces.Discrete",
+  "gym.spaces.MultiBinary",
+  "gym.spaces.MultiDiscrete",
+  "gym.spaces.Space",
+  "gym.spaces.Tuple",
+  "gym.spaces.dict.Dict",
+  "gym.spaces.utils.flatdim",
+  "gym.wrappers.monitoring.video_recorder",
+  "gym.wrappers.monitoring.video_recorder.VideoRecorder",
+  "inspect",
   "io.BytesIO",
   "is_excluded",
   "item_generator",
   "make_env",
   "method",
+  "noise",
   "noise.reset",
   "numpy.abs",
   "numpy.arange",
@@ -38,16 +63,30 @@
   "numpy.square",
   "numpy.uint8",
   "numpy.zeros",
+  "pandas",
+  "pandas.DataFrame",
+  "pandas.concat",
+  "pandas.read_csv",
+  "pickle",
+  "pickle.HIGHEST_PROTOCOL",
+  "pickle.dump",
+  "pickle.load",
+  "psutil",
   "q_net",
+  "random",
+  "random.seed",
   "stable_baselines3.__init__.version_file",
   "stable_baselines3.common.type_aliases.TrainFrequencyUnit.EPISODE",
   "stable_baselines3.common.type_aliases.TrainFrequencyUnit.STEP",
+  "stable_baselines3.common.vec_env.VecTransposeImage.transpose_image",
   "stable_baselines3.common.vec_env.__init__.unwrap_vec_wrapper",
   "stable_baselines3.common.vec_env.base_vec_env.VecEnvWrapper.__init__",
   "stable_baselines3.her.goal_selection_strategy.GoalSelectionStrategy.EPISODE",
   "stable_baselines3.her.goal_selection_strategy.GoalSelectionStrategy.FINAL",
   "stable_baselines3.her.goal_selection_strategy.GoalSelectionStrategy.FUTURE",
   "sys",
+  "tempfile",
+  "tempfile.gettempdir",
   "time",
   "torch.FloatTensor",
   "torch.abs",
@@ -77,14 +116,14 @@
   "torch.tanh",
   "torch.unbind",
   "torch.zeros_like",
+  "warnings",
   "warnings.warn",
-  "wrapper_class"
+  "wrapper_class",
+  "zipfile",
+  "zipfile.BadZipFile",
+  "zipfile.ZipFile"
  ],
  "deps": {
-  "_pickle": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "abc": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -125,17 +164,6 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "glob": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "gym": [
-   "gym/conda-forge/linux-64/gym-0.17.2-py37hc8dfbb8_1"
-  ],
-  "inspect": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "io": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -153,10 +181,6 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "noise": [
-   "noise/conda-forge/linux-64/noise-1.2.2-py36_0",
-   "noise/conda-forge/linux-64/noise-1.2.2-py36h14c3975_1000"
-  ],
   "ntpath": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -169,41 +193,13 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "pandas": [],
   "pathlib": [
    "pathlib/conda-forge/noarch/pathlib-1.0.1-py_1",
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "pickle": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "psutil": [
-   "psutil/conda-forge/linux-64/psutil-5.7.3-py39h38d8fee_0"
-  ],
-  "random": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "stable_baselines3": [
-   "stable-baselines3/conda-forge/noarch/stable-baselines3-1.0-pyhd8ed1ab_0",
-   "stable-baselines3/conda-forge/noarch/stable-baselines3-1.1.0-pyhd8ed1ab_0"
-  ],
-  "tempfile": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "torch": [],
   "typing": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "warnings": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "zipfile": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ]

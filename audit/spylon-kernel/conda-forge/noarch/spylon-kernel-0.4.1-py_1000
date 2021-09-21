@@ -3,6 +3,9 @@
   "atexit",
   "handler",
   "jClass",
+  "jedi",
+  "jedi.api.helpers.get_on_completion_name",
+  "jedi.common",
   "jedi.common.splitlines",
   "metakernel.ExceptionWrapper",
   "metakernel.IPythonKernel",
@@ -16,6 +19,8 @@
   "py4j.java_gateway.JavaClass",
   "py4j.java_gateway.JavaMember",
   "py4j.java_gateway.JavaObject",
+  "pyspark.java_gateway",
+  "pyspark.sql.SparkSession",
   "shutil",
   "shutil.rmtree",
   "signal",
@@ -24,23 +29,15 @@
   "spylon.spark",
   "spylon.spark.utils.SparkJVMHelpers",
   "spylon_kernel.SpylonKernel.run_as_main",
-  "subprocess",
-  "subprocess.PIPE",
-  "subprocess.Popen",
   "sys",
   "tempfile",
   "tempfile.mkdtemp",
-  "textwrap.dedent",
   "threading",
   "tornado.gen",
   "tornado.ioloop",
   "tornado.ioloop.IOLoop",
   "tornado.ioloop.IOLoop.configure",
-  "trim",
-  "typing.Any",
-  "typing.Callable",
-  "typing.List",
-  "typing.Union"
+  "trim"
  ],
  "deps": {
   "IPython": [
@@ -60,10 +57,6 @@
    "futures/conda-forge/linux-64/futures-3.2.0-py27_0",
    "futures/conda-forge/osx-64/futures-3.3.0-py27h8c360ce_1",
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython"
-  ],
-  "jedi": [
-   "jedi/conda-forge/linux-64/jedi-0.17.2-py36hd000896_1",
-   "jedi/conda-forge/linux-64/jedi-0.17.2-py37h9c2f6ca_1"
   ],
   "json": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -86,13 +79,17 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "pyspark": [
-   "pyspark/conda-forge/noarch/pyspark-2.4.1-py_0",
-   "pyspark/conda-forge/noarch/pyspark-2.4.2-py_0",
-   "pyspark/conda-forge/noarch/pyspark-2.4.3-py_0",
-   "pyspark/conda-forge/noarch/pyspark-2.4.5-py_0",
-   "pyspark/conda-forge/noarch/pyspark-2.4.6-py_0",
-   "pyspark/conda-forge/noarch/pyspark-3.0.2-pyh44b312d_0"
+  "subprocess": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "textwrap": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "typing": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ]
  }
 }
