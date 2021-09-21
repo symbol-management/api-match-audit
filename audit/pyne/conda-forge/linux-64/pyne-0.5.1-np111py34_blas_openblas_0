@@ -30,10 +30,19 @@
   "conflict_handler",
   "consume_optional",
   "consume_positionals",
+  "copy",
+  "copy.copy",
+  "copy.deepcopy",
+  "csv",
+  "csv.reader",
   "data.atomic_mass",
   "data.b",
   "data.data_checksums",
+  "datetime",
+  "datetime.datetime.now",
   "dict.get",
+  "distutils.dir_util.mkpath",
+  "distutils.dir_util.remove_tree",
   "ds",
   "ds.discretize",
   "ds.dst_group_struct",
@@ -50,8 +59,14 @@
   "get_lines",
   "get_metavar",
   "get_subactions",
+  "gettext.gettext",
+  "glob",
+  "glob.glob",
+  "gzip.GzipFile",
+  "hashlib",
   "hashlib.md5",
   "help.strip",
+  "html.parser.HTMLParser",
   "id.get_int",
   "id.get_string",
   "interp",
@@ -74,21 +89,7 @@
   "match_argument",
   "match_partial",
   "match_x1_yo_to_data_tuple",
-  "matplotlib",
-  "matplotlib.backends.backend_qt4agg.FigureCanvasQTAgg",
   "matplotlib.backends.backend_qt4agg.NavigationToolbar2QTAgg",
-  "matplotlib.figure.Figure",
-  "matplotlib.pyplot",
-  "matplotlib.pyplot.fill",
-  "matplotlib.pyplot.plot",
-  "matplotlib.pyplot.show",
-  "matplotlib.pyplot.title",
-  "matplotlib.pyplot.xlabel",
-  "matplotlib.pyplot.xlim",
-  "matplotlib.pyplot.ylabel",
-  "matplotlib.pyplot.ylim",
-  "matplotlib.pyplot.yscale",
-  "matplotlib.use",
   "mcnp.PtracEvent",
   "mcnp.PtracReader",
   "mcnp.Wwinp",
@@ -97,7 +98,6 @@
   "mesh.MeshError",
   "models.chi",
   "models.sigma_s",
-  "multiprocessing",
   "multiprocessing.Pool",
   "nlbs",
   "nucname.id",
@@ -226,16 +226,7 @@
   "struct.unpack",
   "sympy.separate",
   "sys",
-  "tables",
-  "tables.Filters",
-  "tables.Float32Col",
-  "tables.FloatCol",
-  "tables.Int32Col",
-  "tables.IntCol",
-  "tables.IsDescription",
   "tables.append",
-  "tables.group.Group",
-  "tables.open_file",
   "take_action",
   "time",
   "type_func",
@@ -253,10 +244,6 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "_csv": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "argparse": [
    "argparse/conda-forge/osx-64/argparse-1.4.0-py26_0",
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -267,42 +254,6 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "collections": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "copy": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "csv": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "datetime": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "distutils": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "gettext": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "glob": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "gzip": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "hashlib": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "html": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -323,6 +274,15 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "math": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "matplotlib": [
+   "matplotlib-base/conda-forge/linux-64/matplotlib-base-3.1.1-py37hfd891ef_0",
+   "matplotlib-base/conda-forge/linux-64/matplotlib-base-3.1.1-py38h250f245_2",
+   "matplotlib/conda-forge/linux-64/matplotlib-1.5.3-np111py34_0"
+  ],
+  "multiprocessing": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -374,6 +334,11 @@
   "sympy": [
    "sympy/conda-forge/linux-64/sympy-1.5.1-py27h8c360ce_2",
    "sympy/conda-forge/linux-64/sympy-1.5.1-py36_0"
+  ],
+  "tables": [
+   "pytables/conda-forge/linux-64/pytables-3.4.2-py27_5",
+   "pytables/conda-forge/linux-64/pytables-3.4.2-py27_7",
+   "pytables/conda-forge/linux-64/pytables-3.6.1-py38h1b207d3_2"
   ],
   "tarfile": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",

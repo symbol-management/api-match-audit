@@ -37,8 +37,6 @@
   "numpy.int8",
   "numpy.integer",
   "numpy.isnan",
-  "operator.itemgetter",
-  "operator.sub",
   "os.close",
   "os.environ.get",
   "os.path.exists",
@@ -47,24 +45,13 @@
   "os.remove",
   "os.stat",
   "other",
-  "owslib.namespaces.Namespaces",
-  "owslib.sos.SensorObservationService",
-  "owslib.swe.observation.sos100.SensorObservationService_1_0_0",
-  "owslib.swe.sensor.sml.SensorML",
-  "pendulum",
-  "pendulum.instance",
-  "pendulum.parse",
-  "pkg_resources.resource_filename",
-  "pkg_resources.working_set",
   "pkg_resources.working_set.iter_entry_points",
-  "pkgutil.get_data",
   "pprint",
   "pprint.pformat",
   "process_table",
-  "pytest",
+  "pygeoif.from_wkt",
   "pytest.mark.integration",
   "pytest.mark.slowtest",
-  "pytest.raises",
   "regex",
   "regex.compile",
   "regex.findall",
@@ -72,12 +59,15 @@
   "regex.match",
   "regex.search",
   "regex.split",
-  "requests",
-  "requests.get",
   "sys",
   "sys.stderr.encoding",
   "sys.stdout.encoding",
   "sys.version_info.major",
+  "tabulate",
+  "tabulate.PRESERVE_WHITESPACE",
+  "tabulate.tabulate",
+  "textwrap",
+  "textwrap.TextWrapper",
   "traceback",
   "traceback.print_exc",
   "traceback.print_tb",
@@ -93,6 +83,11 @@
   "_csv": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "_pytest": [
+   "pytest/conda-forge/linux-64/pytest-3.7.0-py27_0",
+   "pytest/conda-forge/linux-64/pytest-4.6.0-py37_0",
+   "pytest/conda-forge/linux-64/pytest-6.0.2-py37hc8dfbb8_0"
   ],
   "cf_units": [
    "cf-units/conda-forge/linux-64/cf-units-2.1.4-py38h5c078b8_2",
@@ -189,17 +184,52 @@
    "numpy/conda-forge/linux-64/numpy-1.18.4-py37h8960a57_0",
    "numpy/conda-forge/linux-64/numpy-1.19.2-py36h68c22af_1"
   ],
+  "operator": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "os": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "pygeoif": [
-   "pygeoif/conda-forge/linux-64/pygeoif-0.6-py35_0",
-   "pygeoif/conda-forge/win-64/pygeoif-0.6-py36_1"
+  "owslib": [
+   "owslib/conda-forge/noarch/owslib-0.19.0-py_2",
+   "owslib/conda-forge/noarch/owslib-0.19.1-py_0",
+   "owslib/conda-forge/noarch/owslib-0.19.2-py_0",
+   "owslib/conda-forge/noarch/owslib-0.21.0-pyhd8ed1ab_0",
+   "owslib/conda-forge/noarch/owslib-0.23.0-pyhd8ed1ab_0"
+  ],
+  "pendulum": [
+   "pendulum/conda-forge/linux-64/pendulum-1.4.4-py38_1",
+   "pendulum/conda-forge/linux-64/pendulum-2.0.2-py36_0"
+  ],
+  "pkg_resources": [
+   "setuptools/conda-forge/linux-64/setuptools-40.6.1-py36_0",
+   "setuptools/conda-forge/linux-64/setuptools-46.3.0-py38h32f6830_0",
+   "setuptools/conda-forge/linux-64/setuptools-49.1.2-py38h32f6830_0"
+  ],
+  "pkgutil": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "pytest": [
+   "pytest/conda-forge/linux-64/pytest-3.7.0-py27_0",
+   "pytest/conda-forge/linux-64/pytest-4.6.0-py37_0",
+   "pytest/conda-forge/linux-64/pytest-6.0.2-py37hc8dfbb8_0"
   ],
   "re": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "requests": [
+   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
+   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0",
+   "requests/conda-forge/linux-64/requests-2.12.0-py35_0",
+   "requests/conda-forge/noarch/requests-2.23.0-pyh8c360ce_2",
+   "requests/conda-forge/noarch/requests-2.24.0-pyh9f0ad1d_0",
+   "requests/conda-forge/noarch/requests-2.25.0-pyhd3deb0d_0",
+   "requests/conda-forge/noarch/requests-2.25.1-pyhd3deb0d_0",
+   "requests/conda-forge/noarch/requests-2.26.0-pyhd8ed1ab_0"
   ],
   "six": [
    "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
@@ -215,20 +245,7 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "tabulate": [
-   "tabulate/conda-forge/noarch/tabulate-0.8.1-py_0",
-   "tabulate/conda-forge/noarch/tabulate-0.8.2-py_0",
-   "tabulate/conda-forge/noarch/tabulate-0.8.3-py_0",
-   "tabulate/conda-forge/noarch/tabulate-0.8.4-py_0",
-   "tabulate/conda-forge/noarch/tabulate-0.8.6-py_0",
-   "tabulate/conda-forge/noarch/tabulate-0.8.7-pyh9f0ad1d_0",
-   "tabulate/conda-forge/noarch/tabulate-0.8.9-pyhd8ed1ab_0"
-  ],
   "tempfile": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "textwrap": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],

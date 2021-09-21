@@ -23,20 +23,10 @@
   "check.header_note",
   "check.startswith",
   "cmds.has_command",
-  "codecs",
-  "codecs.open",
   "command_class",
   "compat.builtins.input",
   "compat.builtins.raw_input",
-  "curses",
-  "dbus",
-  "dbus.Interface",
-  "dbus.SystemBus",
-  "dbus.glib",
   "dep_resolve",
-  "distutils.sysconfig.get_python_lib",
-  "email.utils.mktime_tz",
-  "email.utils.parsedate_tz",
   "errno",
   "extract_path_from_cflags",
   "fmt_details",
@@ -44,6 +34,9 @@
   "format_line_text",
   "get_c_include_search_paths",
   "get_pkg_config_search_paths",
+  "gettext",
+  "gettext.translation",
+  "gi",
   "gi.repository.GLib",
   "gi.repository.GLib.MainLoop",
   "gi.repository.GLib.SpawnFlags.SEARCH_PATH_FROM_ENVP",
@@ -100,9 +93,12 @@
   "gi.repository.Vte",
   "gi.repository.Vte.PtyFlags.DEFAULT",
   "gi.repository.Vte.Terminal",
+  "gi.require_version",
   "git.GitCvsBranch",
   "git.GitSvnBranch",
   "goalreport.cmd_goalreport.run",
+  "gzip",
+  "gzip.GzipFile",
   "hashlib",
   "hashlib.md5",
   "importlib",
@@ -138,7 +134,9 @@
   "jhbuild.utils.sxml.sxml.moduleset",
   "jhbuild.utils.sxml.sxml.patch",
   "jhbuild.utils.sxml.sxml.repository",
+  "jhbuild.utils.urlutils.urlparse_mod.uses_netloc",
   "jhbuild.utils.urlutils.urlparse_mod.uses_netloc.append",
+  "jhbuild.utils.urlutils.urlparse_mod.uses_relative",
   "jhbuild.utils.urlutils.urlparse_mod.uses_relative.append",
   "jhbuild.versioncontrol.__init__._repo_types",
   "list.append",
@@ -151,6 +149,11 @@
   "method.error_phases",
   "mirror_class",
   "normalize",
+  "operator",
+  "optparse",
+  "optparse.OptionParser",
+  "optparse.SUPPRESS_HELP",
+  "optparse.make_option",
   "os.O_NDELAY",
   "os.R_OK",
   "os.WEXITSTATUS",
@@ -192,21 +195,25 @@
   "os.unlink",
   "os.unsetenv",
   "os.write",
+  "pickle",
+  "pickle.dump",
+  "pickle.load",
+  "pipes.quote",
   "possible_cls",
   "re.MULTILINE",
   "render",
   "repo_class",
   "repo_type",
   "shell_split",
+  "shlex",
+  "shlex.split",
   "signal.SIGCONT",
   "signal.SIGINT",
   "signal.SIGKILL",
   "signal.SIGSTOP",
   "signal.SIGTERM",
   "skip_phase_method",
-  "socket",
   "socket.error",
-  "socket.getfqdn",
   "socket.gethostname",
   "string.split",
   "svn.get_info",
@@ -222,16 +229,17 @@
   "sys.stdout.flush",
   "sys.stdout.write",
   "system_repo_class",
-  "tempfile",
-  "tempfile.gettempdir",
-  "tempfile.mkdtemp",
   "terminal.TerminalBuildScript.end_build",
   "terminal.TerminalBuildScript.message",
   "terminal.TerminalBuildScript.start_phase",
   "terminal.t_bold.encode",
   "terminal.t_reset.encode",
   "time",
+  "types",
   "types.ClassType",
+  "types.FunctionType",
+  "types.MethodType",
+  "types.ModuleType",
   "urllib.unquote",
   "urllib2.HTTPError",
   "urllib2.Request",
@@ -254,10 +262,6 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "_pickle": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "ast": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -265,29 +269,33 @@
   "builtins": [
    "pies2overrides/conda-forge/osx-64/pies2overrides-2.6.7-py27_1000"
   ],
+  "codecs": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "curses": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "dbus": [
+   "dbus-python/conda-forge/linux-64/dbus-python-1.2.16-py27h1369247_0",
+   "dbus-python/conda-forge/linux-64/dbus-python-1.2.16-py37h1369247_0"
+  ],
+  "distutils": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "email": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "fcntl": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "gettext": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "gi": [
-   "pygobject/conda-forge/linux-64/pygobject-3.30.5-py36h91a8f50_0",
-   "pygobject/conda-forge/linux-64/pygobject-3.40.1-py36h0796200_1"
-  ],
-  "gzip": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "io": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "jhbuild": [
-   "jhbuild/conda-forge/linux-64/jhbuild-3.38.0-py38h497a2fe_0",
-   "jhbuild/conda-forge/osx-64/jhbuild-3.38.0-py38h5406a74_1"
   ],
   "logging": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -297,23 +305,11 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "operator": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "optparse": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "os": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "parser": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "pickle": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -337,15 +333,15 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "shlex": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "shutil": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "signal": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "socket": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -365,15 +361,15 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "tempfile": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "textwrap": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "traceback": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "types": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],

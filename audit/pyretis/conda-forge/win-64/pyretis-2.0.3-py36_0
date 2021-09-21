@@ -15,18 +15,29 @@
   "_txt_histogram",
   "adjust_coordinate",
   "analyse_and_output_matched",
-  "argparse",
-  "argparse.ArgumentParser",
   "check_ok",
   "cls",
   "cmap",
   "collections.deque",
+  "colorama",
+  "colorama.Fore",
   "colorama.Fore.BLUE",
   "colorama.Fore.CYAN",
   "colorama.Fore.GREEN",
   "colorama.Fore.RED",
   "colorama.Fore.YELLOW",
+  "colorama.init",
+  "contextlib.contextmanager",
+  "copy",
+  "copy.copy",
+  "copy.deepcopy",
+  "datetime",
+  "datetime.datetime",
+  "datetime.datetime.now",
   "dfs_set",
+  "docutils.core",
+  "docutils.writers.html4css1.HTMLTranslator",
+  "docutils.writers.html4css1.Writer",
   "done_l",
   "done_r",
   "eng",
@@ -37,13 +48,21 @@
   "eng.snapshot_to_system",
   "errno",
   "fake_order_value",
+  "filecmp",
+  "filecmp.cmp",
   "fooengine.FooEngine",
+  "formatter",
   "func",
   "function",
   "generator",
   "gtype",
+  "gzip",
+  "gzip.open",
   "imp_l",
   "imp_r",
+  "importlib",
+  "importlib.util.module_from_spec",
+  "importlib.util.spec_from_file_location",
   "improved",
   "initiate_path_ensemble_kick",
   "io.DEFAULT_BUFFER_SIZE",
@@ -80,6 +99,7 @@
   "numpy.sqrt",
   "numpy.zeros",
   "obj",
+  "operator.itemgetter",
   "os.chdir",
   "os.environ.get",
   "os.extsep.join",
@@ -98,6 +118,11 @@
   "os.stat",
   "os.strerror",
   "os.system",
+  "pathlib",
+  "pathlib.Path",
+  "pickle",
+  "pickle.dump",
+  "pickle.load",
   "pyretis.core.particlefunctions.calculate_thermo.__code__.co_code",
   "pyretis.core.particlefunctions.calculate_thermo_path.__code__.co_code",
   "pyretis.core.path._GENERATED_SHORT.get",
@@ -128,6 +153,8 @@
   "run_analysis_files",
   "runner",
   "section_to_text",
+  "shlex",
+  "shlex.split",
   "signal.SIGINT",
   "signal.default_int_handler",
   "simtk.openmm.LangevinIntegrator",
@@ -161,11 +188,12 @@
   "write_mock_trr"
  ],
  "deps": {
-  "_pickle": [
+  "abc": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "abc": [
+  "argparse": [
+   "argparse/conda-forge/osx-64/argparse-1.4.0-py26_0",
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -177,44 +205,7 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "colorama": [
-   "colorama/conda-forge/noarch/colorama-0.3.9-py_1",
-   "colorama/conda-forge/noarch/colorama-0.4.1-py_0",
-   "colorama/conda-forge/noarch/colorama-0.4.3-py_0",
-   "colorama/conda-forge/noarch/colorama-0.4.4-pyh9f0ad1d_0"
-  ],
-  "contextlib": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "copy": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "datetime": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "docutils": [
-   "docutils/conda-forge/linux-64/docutils-0.16-py27h8c360ce_1"
-  ],
-  "filecmp": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "formatter": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "gzip": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "imp": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "importlib": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -256,20 +247,7 @@
    "numpy/conda-forge/linux-64/numpy-1.17.5-py36h95a1406_0",
    "numpy/conda-forge/linux-64/numpy-1.18.4-py37h8960a57_0"
   ],
-  "operator": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "os": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "pathlib": [
-   "pathlib/conda-forge/noarch/pathlib-1.0.1-py_1",
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "pickle": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -296,10 +274,6 @@
   ],
   "scipy": [
    "scipy/conda-forge/linux-64/scipy-1.7.0-py37ha768fb6_1"
-  ],
-  "shlex": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "shutil": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",

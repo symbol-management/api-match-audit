@@ -27,9 +27,17 @@
   "_write_config_file",
   "add_options",
   "alembic.__file__",
+  "alembic.environment.EnvironmentContext",
+  "alembic.migration.MigrationContext",
   "alembic.op._proxy",
+  "alembic.script.ScriptDirectory.from_config",
   "alembic.script.down_revision",
   "alembic.script.generate_revision",
+  "alembic.testing.exclusions.BooleanPredicate",
+  "alembic.testing.exclusions.closed",
+  "alembic.testing.exclusions.only_if",
+  "alembic.testing.exclusions.open",
+  "alembic.testing.exclusions.skip_if",
   "alter_column",
   "alter_table",
   "autogenerate.RevisionContext",
@@ -71,8 +79,15 @@
   "compat.collections_abc.Iterable",
   "compat.string_types",
   "conf",
+  "configparser",
+  "configparser.ConfigParser",
   "const",
+  "contextlib",
+  "contextlib.contextmanager",
   "ctx",
+  "datetime",
+  "datetime.datetime.now",
+  "datetime.datetime.utcnow",
   "dict.__init__",
   "dict.__new__",
   "dict.__repr__",
@@ -80,18 +95,13 @@
   "do_nothing",
   "env._sqlite_file_db",
   "environment.EnvironmentContext.configure",
-  "fcntl",
-  "fcntl.ioctl",
   "fixture_functions.fixture",
   "fn",
   "formatannotation",
   "formatarg",
+  "functools",
   "functools.partial",
   "hook",
-  "imp",
-  "imp.cache_from_source",
-  "imp.load_compiled",
-  "imp.load_source",
   "impl.DefaultImpl.type_synonyms",
   "importlib",
   "importlib.machinery",
@@ -159,23 +169,13 @@
   "ops.DropTableOp",
   "ops.ExecuteSQLOp",
   "ops.RenameTableOp",
-  "os",
   "os.F_OK",
   "os.access",
   "os.environ.get",
   "os.listdir",
-  "os.makedirs",
   "os.mkdir",
-  "os.path.abspath",
-  "os.path.dirname",
   "os.path.exists",
-  "os.path.isabs",
   "os.path.isfile",
-  "os.path.join",
-  "os.path.normpath",
-  "os.path.realpath",
-  "os.path.split",
-  "os.path.splitext",
   "os.unlink",
   "quote",
   "quoted_name_cls",
@@ -202,10 +202,6 @@
   "script.Script._from_path",
   "script.ScriptDirectory.from_config",
   "seen_add",
-  "shutil",
-  "shutil.copy",
-  "shutil.move",
-  "shutil.rmtree",
   "sqlalchemy.engine.url.get_dialect",
   "sqlalchemy.testing.config._current.options",
   "sqlalchemy.testing.config.db.__class__.__module__",
@@ -224,6 +220,8 @@
   "sys.version_info.major",
   "termios.TIOCGWINSZ",
   "traverser",
+  "types",
+  "types.FunctionType",
   "unicode",
   "util.CommandError",
   "util.Dispatcher",
@@ -295,39 +293,15 @@
    "pytest/conda-forge/linux-64/pytest-4.6.0-py37_0",
    "pytest/conda-forge/linux-64/pytest-6.0.2-py37hc8dfbb8_0"
   ],
-  "alembic": [
-   "alembic/conda-forge/noarch/alembic-0.8.10-py_2",
-   "alembic/conda-forge/noarch/alembic-0.9.9-py_0",
-   "alembic/conda-forge/noarch/alembic-1.4.0-py_0",
-   "alembic/conda-forge/noarch/alembic-1.4.2-pyh9f0ad1d_0"
-  ],
   "argparse": [
    "argparse/conda-forge/osx-64/argparse-1.4.0-py26_0",
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "backports": [
-   "configparser/conda-forge/noarch/configparser-5.0.0-py_0"
-  ],
   "builtins": [
    "pies2overrides/conda-forge/osx-64/pies2overrides-2.6.7-py27_1000"
   ],
   "collections": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "configparser": [
-   "configparser/conda-forge/linux-64/configparser-3.7.1-py27_1",
-   "configparser/conda-forge/noarch/configparser-5.0.0-py_0",
-   "configparser/conda-forge/noarch/configparser-5.0.1-py_0",
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "contextlib": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "datetime": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -343,7 +317,11 @@
    "python-editor/conda-forge/noarch/python-editor-1.0.3-py_0",
    "python-editor/conda-forge/noarch/python-editor-1.0.4-py_0"
   ],
-  "functools": [
+  "fcntl": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "imp": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -367,6 +345,14 @@
    "mako/conda-forge/noarch/mako-1.1.4-pyh44b312d_0",
    "mako/conda-forge/noarch/mako-1.1.5-pyhd8ed1ab_0"
   ],
+  "ntpath": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "os": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "pkg_resources": [
    "setuptools/conda-forge/linux-64/setuptools-40.6.1-py36_0",
    "setuptools/conda-forge/linux-64/setuptools-46.3.0-py38h32f6830_0",
@@ -381,6 +367,10 @@
    "pytest/conda-forge/linux-64/pytest-6.0.2-py37hc8dfbb8_0"
   ],
   "re": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "shutil": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -402,10 +392,6 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "textwrap": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "types": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
