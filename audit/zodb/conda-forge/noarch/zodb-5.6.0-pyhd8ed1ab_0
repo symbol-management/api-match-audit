@@ -45,6 +45,12 @@
   "TestObjectReader",
   "TheException",
   "Worker",
+  "ZConfig",
+  "ZConfig.ConfigurationSyntaxError",
+  "ZConfig.loadConfig",
+  "ZConfig.loadConfigFile",
+  "ZConfig.loadSchema",
+  "ZEO.ClientStorage.ClientStorage",
   "ZODB.PersistentList.PersistentList",
   "ZODB.PersistentMapping.PersistentMapping",
   "ZODB.StorageTypes",
@@ -66,12 +72,13 @@
   "Zope2.DB",
   "Zope2.app",
   "Zope2.startup",
+  "_compat_pickle.IMPORT_MAPPING",
+  "_compat_pickle.NAME_MAPPING",
   "_opener",
   "_option",
   "_text_transaction_info",
   "_total_size",
   "add_test_based_on_test_class",
-  "atexit",
   "base_and_changes",
   "base_only",
   "beforeLock1",
@@ -88,7 +95,6 @@
   "dict.fromkeys",
   "dict.items",
   "eq",
-  "errno",
   "ext",
   "f",
   "fstest",
@@ -96,7 +102,6 @@
   "fstest.U64",
   "fstest.check",
   "func",
-  "gc",
   "get",
   "handle_dir",
   "handle_file",
@@ -106,7 +111,6 @@
   "index_get",
   "info_func",
   "int.__new__",
-  "io",
   "io.BufferedReader",
   "io.BytesIO",
   "io.FileIO",
@@ -120,7 +124,6 @@
   "manuel.doctest",
   "manuel.footnote",
   "manuel.testing",
-  "marshal",
   "maybe_remove_empty_dir_containing",
   "meth",
   "mycmp",
@@ -209,7 +212,6 @@
   "sum.update",
   "supportsUndo",
   "sync",
-  "sys",
   "sys.path.append",
   "sys.path.insert",
   "sys.platform.startswith",
@@ -218,7 +220,6 @@
   "sys.stdout.flush",
   "sys.stdout.getvalue",
   "sys.stdout.write",
-  "time",
   "time.clock",
   "time.time.gmtime",
   "time.time.sleep",
@@ -274,20 +275,7 @@
   "zope.testing.setupstack.tearDown"
  ],
  "deps": {
-  "ZConfig": [
-   "zconfig/conda-forge/noarch/zconfig-3.2.0-py_1",
-   "zconfig/conda-forge/noarch/zconfig-3.4.0-py_0",
-   "zconfig/conda-forge/noarch/zconfig-3.6.0-pyhd8ed1ab_0"
-  ],
-  "ZEO": [
-   "zeo/conda-forge/noarch/zeo-5.2.0-py_0",
-   "zeo/conda-forge/noarch/zeo-5.2.2-pyhd8ed1ab_0"
-  ],
   "__future__": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "_compat_pickle": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -346,6 +334,10 @@
    "helper/conda-forge/linux-64/helper-2.4.1-py34_0",
    "helper/conda-forge/noarch/helper-2.4.2-py_1",
    "helper/conda-forge/noarch/helper-2.5.0-pyh44b312d_0"
+  ],
+  "io": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "logging": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",

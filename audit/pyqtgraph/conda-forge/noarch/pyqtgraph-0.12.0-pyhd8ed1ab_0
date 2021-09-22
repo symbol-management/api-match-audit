@@ -52,6 +52,7 @@
   "Node.saveState",
   "Node.terminalRenamed",
   "NotEq",
+  "OpenGL.GL",
   "OpenGL.GL.GL_BLEND",
   "OpenGL.GL.GL_EQUAL",
   "OpenGL.GL.GL_FALSE",
@@ -69,8 +70,13 @@
   "OpenGL.GL.GL_TRIANGLES",
   "OpenGL.GL.GL_TRUE",
   "OpenGL.GL.GL_VERTEX_ARRAY",
+  "OpenGL.GL.framebufferobjects",
   "OpenGL.GL.framebufferobjects.GL_COLOR_ATTACHMENT0",
   "OpenGL.GL.framebufferobjects.GL_FRAMEBUFFER",
+  "OpenGL.GL.framebufferobjects.glBindFramebuffer",
+  "OpenGL.GL.framebufferobjects.glDeleteFramebuffers",
+  "OpenGL.GL.framebufferobjects.glFramebufferTexture2D",
+  "OpenGL.GL.framebufferobjects.glGenFramebuffers",
   "OpenGL.GL.glBegin",
   "OpenGL.GL.glBlendFunc",
   "OpenGL.GL.glClear",
@@ -90,8 +96,18 @@
   "OpenGL.GL.glStencilOp",
   "OpenGL.GL.glVertex2f",
   "OpenGL.GL.glVertexPointerf",
+  "OpenGL.GL.shaders",
+  "OpenGL.GL.shaders.compileProgram",
+  "OpenGL.GL.shaders.compileShader",
   "OpenGL.NullFunctionError",
+  "OpenGL.arrays.vbo",
+  "OpenGL.error.NullFunctionError",
+  "PIL.Image",
   "PIL.Image.VERSION",
+  "PIL.Image._ENDIAN",
+  "PIL.Image._MODE_CONV",
+  "PIL.Image._fromarray_typemap",
+  "PIL.Image.fromarray",
   "Parameter.Parameter.saveState",
   "Parameter.Parameter.setLimits",
   "Parameter.Parameter.value",
@@ -674,7 +690,6 @@
   "absZValue",
   "action",
   "asarray",
-  "atexit",
   "baseClass",
   "buildSubMenu",
   "bytes.fromhex",
@@ -720,7 +735,6 @@
   "dict.clear",
   "dockarea.DockArea",
   "eq",
-  "errno",
   "examples.ExampleApp.ExampleLoader",
   "examples.items",
   "exceptionHandling.register",
@@ -730,7 +744,6 @@
   "exporters.ImageExporter",
   "exporters.SVGExporter",
   "exporters.listExporters",
-  "faulthandler",
   "filter.insert",
   "filter.remove",
   "fn",
@@ -781,7 +794,6 @@
   "functions.toposort",
   "functions.transformCoordinates",
   "functools.reduce",
-  "gc",
   "genString",
   "getFunc",
   "getId",
@@ -857,7 +869,6 @@
   "indent",
   "initExample",
   "interpolateArray",
-  "itertools",
   "itertools.imap",
   "list.__contains__",
   "list.__getitem__",
@@ -1115,7 +1126,6 @@
   "str.strip",
   "struct.pack",
   "subprocess.CalledProcessError.__init__",
-  "sys",
   "sys.__stdout__.write",
   "sys.excepthook.implements",
   "sys.flags.interactive",
@@ -1142,7 +1152,6 @@
   "test_PlotItem",
   "test_stability",
   "threading._active.get",
-  "time",
   "time.clock",
   "transformStr",
   "typeStr",
@@ -1181,15 +1190,6 @@
   "xml.dom.minidom.encode"
  ],
  "deps": {
-  "OpenGL": [
-   "pyopengl/conda-forge/noarch/pyopengl-3.1.1a1-py_1",
-   "pyopengl/conda-forge/noarch/pyopengl-3.1.3b2-py_0"
-  ],
-  "PIL": [
-   "pillow/conda-forge/linux-64/pillow-6.2.1-py36hd70f55b_1",
-   "pillow/conda-forge/linux-64/pillow-7.0.0-py36h8328e55_1",
-   "pillow/conda-forge/linux-64/pillow-7.2.0-py37h718be6c_1"
-  ],
   "PyQt5": [
    "pyqt-impl/conda-forge/osx-64/pyqt-impl-5.12.3-py37h5ae2165_5",
    "pyqt-impl/conda-forge/osx-64/pyqt-impl-5.12.3-py37h5ae2165_7",
@@ -1237,9 +1237,6 @@
   "bottleneck": [
    "bottleneck/conda-forge/linux-64/bottleneck-1.2.0-np111py34_0",
    "bottleneck/conda-forge/linux-64/bottleneck-1.3.2-py36h92226af_2"
-  ],
-  "builtins": [
-   "pies2overrides/conda-forge/osx-64/pies2overrides-2.6.7-py27_1000"
   ],
   "cProfile": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",

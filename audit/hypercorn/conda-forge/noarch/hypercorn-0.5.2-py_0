@@ -21,15 +21,10 @@
   "os.getpid",
   "os.remove",
   "os.stat",
-  "pytoml",
-  "pytoml.load",
-  "signal",
   "signal.SIGINT",
   "signal.SIGTERM",
   "signal.SIG_IGN",
-  "signal.signal",
   "sleep",
-  "socket",
   "socket.AF_INET",
   "socket.AF_INET6",
   "socket.AF_UNIX",
@@ -37,59 +32,20 @@
   "socket.SOL_SOCKET",
   "socket.SO_RESUSEPORT",
   "socket.SO_REUSEADDR",
-  "socket.fromfd",
-  "socket.socket",
-  "ssl",
   "ssl.OP_NO_COMPRESSION",
   "ssl.OP_NO_SSLv2",
   "ssl.OP_NO_SSLv3",
   "ssl.OP_NO_TLSv1",
   "ssl.OP_NO_TLSv1_1",
   "ssl.Purpose.CLIENT_AUTH",
-  "ssl.SSLContext",
-  "ssl.SSLError",
   "ssl.VerifyFlags",
   "ssl.VerifyMode",
-  "ssl.create_default_context",
-  "stat",
-  "stat.S_ISSOCK",
-  "sys",
   "sys.modules.values",
   "sys.path.insert",
-  "time",
-  "trio",
-  "trio.BrokenResourceError",
-  "trio.ClosedResourceError",
-  "trio.Event",
-  "trio.SocketListener",
-  "trio.TASK_STATUS_IGNORED",
-  "trio.TooSlowError",
-  "trio._core._run._TaskStatus",
-  "trio.abc.Stream",
-  "trio.fail_after",
-  "trio.open_memory_channel",
-  "trio.open_nursery",
-  "trio.run",
   "trio.run.trio_worker",
   "trio.serve_listeners",
   "trio.sleep",
-  "trio.socket.from_stdlib_socket",
   "trio.ssl.SSLListener",
-  "typing.Any",
-  "typing.AnyStr",
-  "typing.Awaitable",
-  "typing.Callable",
-  "typing.Coroutine",
-  "typing.Dict",
-  "typing.Iterable",
-  "typing.List",
-  "typing.Mapping",
-  "typing.Optional",
-  "typing.Tuple",
-  "typing.Type",
-  "typing.Union",
-  "typing_extensions.Protocol",
-  "urllib.parse.unquote",
   "utils.ASGIHTTPState.CLOSED",
   "utils.ASGIHTTPState.REQUEST",
   "utils.ASGIHTTPState.RESPONSE",
@@ -98,12 +54,9 @@
   "utils.ASGIWebsocketState.HANDSHAKE",
   "utils.ASGIWebsocketState.HTTPCLOSED",
   "utils.ASGIWebsocketState.RESPONSE",
-  "uvloop",
-  "uvloop.EventLoopPolicy",
   "warnings.warn",
   "worker_func",
   "worker_serve",
-  "wsgiref.handlers.format_date_time",
   "wsproto",
   "wsproto.ConnectionType",
   "wsproto.WSConnection",
@@ -132,6 +85,10 @@
  ],
  "deps": {
   "_asyncio": [
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "_ssl": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "argparse": [
@@ -179,15 +136,60 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "pytoml": [
+   "pytoml/conda-forge/noarch/pytoml-0.1.19-py_0",
+   "pytoml/conda-forge/noarch/pytoml-0.1.21-py_0"
+  ],
   "random": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "signal": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "socket": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "ssl": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "stat": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "trio": [
+   "trio/conda-forge/linux-64/trio-0.18.0-py38h578d9bd_0"
   ],
   "types": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "typing": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "typing_extensions": [
+   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
+   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0",
+   "typing_extensions/conda-forge/noarch/typing_extensions-3.10.0.0-pyha770c72_0",
+   "typing_extensions/conda-forge/noarch/typing_extensions-3.7.4.2-py_0",
+   "typing_extensions/conda-forge/noarch/typing_extensions-3.7.4.3-py_0"
+  ],
+  "urllib": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "uvloop": [
+   "uvloop/conda-forge/linux-64/uvloop-0.14.0-py36h8f6f2f9_2"
+  ],
   "warnings": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "wsgiref": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ]
