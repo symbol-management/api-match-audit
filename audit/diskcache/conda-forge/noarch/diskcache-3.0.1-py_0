@@ -14,7 +14,6 @@
   "cPickle.load",
   "cStringIO.StringIO",
   "cleanup",
-  "codecs",
   "codecs.encode",
   "collections.ItemsView",
   "collections.KeysView",
@@ -23,58 +22,41 @@
   "collections.ValuesView",
   "del_func",
   "diskcache.__init__.__all__",
-  "django.core.cache.backends.base.BaseCache",
-  "django.core.cache.backends.base.DEFAULT_TIMEOUT",
   "errno",
   "func",
   "function",
   "functools.partial",
   "get_func",
   "incr_func",
-  "io",
   "io.BytesIO",
   "io.open",
   "itertools",
   "itertools.chain.from_iterable",
   "itertools.izip",
   "method",
-  "operator",
-  "operator.eq",
-  "operator.ge",
-  "operator.gt",
-  "operator.le",
-  "operator.lt",
-  "operator.ne",
-  "os",
-  "os.makedirs",
-  "os.path",
   "os.path.exists",
   "os.path.getsize",
-  "os.path.join",
   "os.remove",
   "os.rmdir",
   "os.urandom",
-  "os.walk",
-  "pickle",
   "pop_func",
   "seq_op",
   "seq_op.__name__",
   "set_func",
-  "shutil.rmtree",
   "sqlite3.Binary",
   "sqlite3.OperationalError",
   "sqlite3.connect",
   "struct.pack",
   "sys",
-  "tempfile",
-  "tempfile.mkdtemp",
   "time",
   "tuple.__new__",
-  "warnings",
-  "warnings.catch_warnings",
   "warnings.warn"
  ],
  "deps": {
+  "codecs": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "collections": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -83,11 +65,44 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "django": [
+   "django/conda-forge/linux-64/django-1.8.14-py34_0",
+   "django/conda-forge/linux-64/django-1.9.12-py27_0",
+   "django/conda-forge/noarch/django-1.8.19-py_0",
+   "django/conda-forge/noarch/django-3.0.6-py_0",
+   "django/conda-forge/noarch/django-3.0.7-py_0",
+   "django/conda-forge/noarch/django-3.1.3-pyhd8ed1ab_0",
+   "django/conda-forge/noarch/django-3.1.4-pyhd8ed1ab_0",
+   "django/conda-forge/noarch/django-3.1.7-pyhd8ed1ab_0",
+   "django/conda-forge/noarch/django-3.2.2-pyhd8ed1ab_0",
+   "django/conda-forge/noarch/django-3.2.3-pyhd8ed1ab_0",
+   "django/conda-forge/noarch/django-3.2.5-pyhd8ed1ab_0"
+  ],
   "functools": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "io": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "math": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "ntpath": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "operator": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "os": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "pickle": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -96,6 +111,10 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "random": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "shutil": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -111,7 +130,15 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "tempfile": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "threading": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "warnings": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],

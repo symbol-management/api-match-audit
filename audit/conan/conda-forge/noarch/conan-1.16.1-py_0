@@ -205,13 +205,6 @@
   "os.unlink",
   "os.utime",
   "partial_sums",
-  "platform",
-  "platform.machine",
-  "platform.processor",
-  "platform.python_version",
-  "platform.release",
-  "platform.system",
-  "platform.version",
   "print_progress",
   "progress_units",
   "property_lines",
@@ -219,8 +212,6 @@
   "pygments.lexers.IniLexer",
   "pygments.lexers.PythonLexer",
   "pygments.lexers.TextLexer",
-  "random",
-  "random.choice",
   "re.DOTALL",
   "re.I",
   "re.IGNORECASE",
@@ -232,24 +223,11 @@
   "retry_with_new_token",
   "safemembers",
   "save_new",
-  "shlex",
-  "shlex.split",
   "show",
-  "shutil",
-  "shutil.copy",
-  "shutil.copy2",
-  "shutil.copytree",
-  "shutil.move",
-  "shutil.rmtree",
   "signal.SIGBREAK",
   "signal.SIGINT",
   "signal.SIGTERM",
-  "six",
-  "six.BytesIO",
-  "six.PY2",
-  "six.PY3",
   "six.StringIO",
-  "six.add_metaclass",
   "six.moves.configparser",
   "six.moves.configparser.ConfigParser",
   "six.moves.configparser.Error",
@@ -271,24 +249,13 @@
   "six.moves.winreg.HKEY_LOCAL_MACHINE",
   "six.moves.winreg.OpenKey",
   "six.moves.winreg.QueryValueEx",
-  "six.string_types",
-  "sqlite3",
   "sqlite3.OperationalError",
   "sqlite3.PARSE_DECLTYPES",
   "sqlite3.connect",
   "str.__hash__",
   "str.__new__",
-  "string",
-  "string.ascii_letters",
   "stringlist",
   "strip_path",
-  "subprocess",
-  "subprocess.CalledProcessError",
-  "subprocess.PIPE",
-  "subprocess.Popen",
-  "subprocess.STDOUT",
-  "subprocess.check_output",
-  "subprocess.list2cmdline",
   "sys",
   "sys.modules.keys",
   "sys.modules.pop",
@@ -298,21 +265,14 @@
   "sys.path.pop",
   "sys.stderr.write",
   "sys.stdout.isatty",
-  "tempfile",
-  "tempfile.mkdtemp",
-  "tempfile.mktemp",
   "time",
   "to_file_bytes",
-  "unittest",
-  "unittest.TestCase",
   "unzip_and_get_files",
   "valid_path",
   "validate_pass_encoding",
   "verify",
   "warnings.warn",
-  "wrapper",
-  "yaml",
-  "yaml.safe_load"
+  "wrapper"
  ],
  "deps": {
   "_ctypes": [
@@ -501,6 +461,10 @@
   "patch": [
    "python-patch/conda-forge/noarch/python-patch-1.16-py_0"
   ],
+  "platform": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "pluginbase": [
    "pluginbase/conda-forge/noarch/pluginbase-0.5-py_0",
    "pluginbase/conda-forge/noarch/pluginbase-0.7-py_0",
@@ -520,6 +484,10 @@
    "pygments/conda-forge/noarch/pygments-2.7.1-py_0",
    "pygments/conda-forge/noarch/pygments-2.7.2-py_0",
    "pygments/conda-forge/noarch/pygments-2.9.0-pyhd8ed1ab_0"
+  ],
+  "random": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "re": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -544,7 +512,29 @@
    "python-node-semver/conda-forge/noarch/python-node-semver-0.5.1-py_0",
    "python-node-semver/conda-forge/noarch/python-node-semver-0.7.0-py_0"
   ],
+  "shlex": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "shutil": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "signal": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "six": [
+   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
+   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0",
+   "lldb/conda-forge/linux-64/lldb-6.0.0-py35_0",
+   "privy/conda-forge/noarch/privy-6.0.0-py_0",
+   "six/conda-forge/linux-64/six-1.10.0-py34_0",
+   "six/conda-forge/linux-64/six-1.10.0-py34_1",
+   "six/conda-forge/noarch/six-1.14.0-py_1",
+   "six/conda-forge/noarch/six-1.16.0-pyh6c4a22f_0"
+  ],
+  "sqlite3": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -552,7 +542,19 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "string": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "subprocess": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "tarfile": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "tempfile": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -584,6 +586,10 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "unittest": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "uuid": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -600,6 +606,12 @@
   "xml": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "yaml": [
+   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
+   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0",
+   "pyyaml/conda-forge/linux-64/pyyaml-3.11-py35_0",
+   "pyyaml/conda-forge/win-64/pyyaml-5.2-py36hfa6e2cd_0"
   ],
   "zipfile": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
