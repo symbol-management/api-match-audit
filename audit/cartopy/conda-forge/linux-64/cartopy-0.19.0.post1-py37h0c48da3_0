@@ -117,9 +117,6 @@
   "numpy.sqrt",
   "numpy.uint8",
   "numpy.zeros",
-  "operator",
-  "operator.itemgetter",
-  "operator.mul",
   "os.W_OK",
   "os._image_url",
   "os.access",
@@ -129,26 +126,8 @@
   "os.path.getsize",
   "os.path.isdir",
   "os.path.isfile",
-  "osgeo.gdal",
-  "osgeo.gdal.FillNodata",
-  "osgeo.gdal_array",
-  "osgeo.gdal_array.OpenArray",
-  "owslib.map.wms111.WebMapService_1_1_1",
-  "owslib.map.wms130.WebMapService_1_3_0",
-  "owslib.util",
-  "owslib.wfs.WebFeatureService",
-  "owslib.wms.WebMapService",
-  "owslib.wmts",
-  "owslib.wmts.ContentMetadata",
-  "owslib.wmts.WebMapTileService",
-  "pickle",
-  "pickle.dump",
-  "pickle.dumps",
-  "pickle.load",
-  "pickle.loads",
   "poly_codes",
   "proj",
-  "pyepsg",
   "pykdtree.kdtree",
   "pytest.mark.filterwarnings",
   "pytest.mark.natural_earth",
@@ -159,31 +138,8 @@
   "pytest.mark.xfail",
   "re.MULTILINE",
   "remove_path_dupes",
-  "scipy.interpolate.NearestNDInterpolator",
-  "scipy.interpolate.griddata",
-  "scipy.signal.convolve2d",
-  "scipy.spatial",
-  "shapefile",
-  "shapefile.NULL",
-  "shapely.geometry",
-  "shapely.geometry.GeometryCollection",
-  "shapely.geometry.LineString",
-  "shapely.geometry.LinearRing",
-  "shapely.geometry.MultiLineString",
-  "shapely.geometry.MultiPoint",
-  "shapely.geometry.MultiPolygon",
-  "shapely.geometry.Point",
-  "shapely.geometry.Polygon",
-  "shapely.geometry.box",
-  "shapely.geometry.collection.GeometryCollection",
-  "shapely.geometry.polygon.LineString",
-  "shapely.geometry.polygon.orient",
-  "shapely.geometry.shape",
   "shapely.geos.geos_version",
-  "shapely.prepared.prep",
-  "shapely.wkt",
   "soup",
-  "string",
   "sys",
   "sys.modules.__file__",
   "sys.stdout.flush",
@@ -200,16 +156,17 @@
   "unittest.mock.sentinel.renderer._rasterizing",
   "unittest.mock.sentinel.styler",
   "warnings.warn",
-  "warp_array",
-  "weakref",
-  "weakref.WeakKeyDictionary",
-  "weakref.WeakValueDictionary"
+  "warp_array"
  ],
  "deps": {
   "PIL": [
    "pillow/conda-forge/linux-64/pillow-6.2.1-py36hd70f55b_1",
    "pillow/conda-forge/linux-64/pillow-7.0.0-py36h8328e55_1",
    "pillow/conda-forge/linux-64/pillow-7.2.0-py37h718be6c_1"
+  ],
+  "_pickle": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "_pytest": [
    "pytest/conda-forge/linux-64/pytest-3.7.0-py27_0",
@@ -320,9 +277,32 @@
    "numpy/conda-forge/linux-64/numpy-1.18.4-py37h8960a57_0",
    "numpy/conda-forge/linux-64/numpy-1.19.2-py36h68c22af_1"
   ],
+  "operator": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "os": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "osgeo": [
+   "gdal/conda-forge/linux-64/gdal-3.0.3-py38hbb6b9fb_0",
+   "gdal/conda-forge/linux-64/gdal-3.0.4-py36hd60729c_6",
+   "gdal/conda-forge/linux-64/gdal-3.1.2-py36hcf62b00_2"
+  ],
+  "owslib": [
+   "owslib/conda-forge/noarch/owslib-0.19.0-py_2",
+   "owslib/conda-forge/noarch/owslib-0.19.1-py_0",
+   "owslib/conda-forge/noarch/owslib-0.19.2-py_0",
+   "owslib/conda-forge/noarch/owslib-0.21.0-pyhd8ed1ab_0",
+   "owslib/conda-forge/noarch/owslib-0.23.0-pyhd8ed1ab_0"
+  ],
+  "pickle": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "pyepsg": [
+   "pyepsg/conda-forge/noarch/pyepsg-0.4.0-py_0"
   ],
   "pytest": [
    "pytest/conda-forge/linux-64/pytest-3.7.0-py27_0",
@@ -333,7 +313,27 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "scipy": [
+   "scipy/conda-forge/linux-64/scipy-0.17.1-np110py27_blas_openblas_202",
+   "scipy/conda-forge/linux-64/scipy-1.7.0-py37h29e03ee_0",
+   "scipy/conda-forge/linux-64/scipy-1.7.0-py37ha768fb6_1"
+  ],
+  "shapefile": [
+   "pyshp/conda-forge/noarch/pyshp-1.2.12-py_0",
+   "pyshp/conda-forge/noarch/pyshp-2.0.0-py_0",
+   "pyshp/conda-forge/noarch/pyshp-2.1.1-pyh9f0ad1d_0",
+   "pyshp/conda-forge/noarch/pyshp-2.1.2-pyh9f0ad1d_0"
+  ],
+  "shapely": [
+   "shapely/conda-forge/linux-64/shapely-1.5.15-np19py35_0",
+   "shapely/conda-forge/linux-64/shapely-1.7.1-py37hba0730f_1",
+   "solaris/conda-forge/noarch/solaris-0.4.0-pyhe05a262_0"
+  ],
   "shutil": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "string": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -362,6 +362,10 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "warnings": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "weakref": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
