@@ -5,87 +5,40 @@
   "_drop",
   "_make_event_processor",
   "_wrap_post_function",
-  "aiohttp.web.Application",
   "aiohttp.web.Application._handle",
-  "aiohttp.web.HTTPException",
-  "aiohttp.web_request.Request",
   "atexit",
   "before_send",
-  "bootstrap",
   "bootstrap.LambdaRuntimeClient.post_invocation_error",
   "bootstrap.LambdaRuntimeClient.post_invocation_result",
   "bootstrap.handle_event_request",
   "bootstrap.handle_http_request",
   "bootstrap.to_json",
   "callback",
-  "celery.app.trace",
-  "celery.app.trace.build_tracer",
-  "celery.exceptions.Retry",
-  "celery.exceptions.SoftTimeLimitExceeded",
-  "certifi",
-  "certifi.where",
   "collections.Mapping",
   "collections.Sequence",
   "collections.abc.Mapping",
   "collections.abc.Sequence",
   "collections.deque",
   "contextlib.ContextManager",
-  "contextvars.ContextVar",
-  "django.VERSION",
-  "django.core.handlers.base.BaseHandler",
-  "django.core.handlers.base.BaseHandler.get_response",
-  "django.core.handlers.wsgi.WSGIHandler",
-  "django.core.handlers.wsgi.WSGIHandler.__call__",
-  "django.core.handlers.wsgi.WSGIRequest",
-  "django.core.signals",
   "django.core.signals.got_request_exception.connect",
-  "django.core.urlresolvers.get_resolver",
-  "django.core.urlresolvers.resolve",
   "django.db.backends.util.CursorWrapper",
   "django.db.backends.util.CursorWrapper.execute",
   "django.db.backends.util.CursorWrapper.executemany",
-  "django.db.backends.utils.CursorWrapper",
-  "django.db.models.query.QuerySet",
-  "django.http.request.QueryDict",
-  "django.http.response.HttpResponse",
-  "django.template.TemplateSyntaxError",
-  "django.template.base.Origin",
-  "django.template.loader.LoaderOrigin",
-  "django.urls.get_resolver",
-  "django.urls.resolve",
-  "django.urls.resolvers.URLPattern",
-  "django.urls.resolvers.URLResolver",
-  "django.utils.datastructures.MultiValueDict",
-  "echo",
   "f",
-  "flask.Flask",
-  "flask.Flask.__call__",
-  "flask.Request",
-  "flask._app_ctx_stack",
   "flask._app_ctx_stack.top",
   "flask._app_ctx_stack.top.app",
   "flask._app_ctx_stack.top.sentry_sdk_scope_manager",
-  "flask._request_ctx_stack",
   "flask._request_ctx_stack.top.request",
-  "flask.signals.appcontext_pushed",
   "flask.signals.appcontext_pushed.connect",
-  "flask.signals.appcontext_tearing_down",
   "flask.signals.appcontext_tearing_down.connect",
-  "flask.signals.got_request_exception",
   "flask.signals.got_request_exception.connect",
-  "flask.signals.request_started",
   "flask.signals.request_started.connect",
-  "flask_login",
   "fn",
   "handler",
   "httplib.HTTPConnection",
   "initial_client",
   "initial_client.integrations.get",
   "inner",
-  "inspect",
-  "inspect.getdoc",
-  "inspect.isawaitable",
-  "inspect.iscoroutinefunction",
   "integration_cls",
   "io.BytesIO",
   "meta",
@@ -114,6 +67,7 @@
   "os.fstat",
   "os.getpid",
   "processor",
+  "psycopg2.sql",
   "real_execute",
   "real_executemany",
   "real_func",
@@ -182,12 +136,49 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "_contextvars": [
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "_threading_local": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "aiohttp": [
+   "aiohttp/conda-forge/linux-64/aiohttp-3.6.3-py36h97a6639_2",
+   "aiohttp/conda-forge/linux-64/aiohttp-3.7.1-py37h8f50634_0",
+   "aiohttp/conda-forge/linux-64/aiohttp-3.7.2-py37h8f50634_0"
+  ],
   "asyncio": [
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "billiard": [
+   "billiard/conda-forge/linux-64/billiard-3.5.0.2-py36_0",
+   "billiard/conda-forge/linux-64/billiard-3.5.0.3-py27h14c3975_1",
+   "billiard/conda-forge/linux-64/billiard-3.6.4.0-py37h6b43d8f_0"
+  ],
+  "bootstrap": [
+   "metoffice-afterburner/conda-forge/linux-64/metoffice-afterburner-1.3.2b1.post4-py38h578d9bd_0"
+  ],
+  "celery": [
+   "celery/conda-forge/linux-64/celery-4.0.1-py35_0",
+   "celery/conda-forge/noarch/celery-4.1.1-py_0",
+   "celery/conda-forge/noarch/celery-4.2.2-py_0",
+   "celery/conda-forge/noarch/celery-4.4.0-py_0",
+   "celery/conda-forge/noarch/celery-4.4.0-py_1",
+   "celery/conda-forge/noarch/celery-4.4.1-py_0",
+   "celery/conda-forge/noarch/celery-4.4.2-pyh8c360ce_0",
+   "celery/conda-forge/noarch/celery-4.4.4-pyh9f0ad1d_0",
+   "celery/conda-forge/noarch/celery-4.4.6-pyh9f0ad1d_0",
+   "celery/conda-forge/noarch/celery-5.0.0-pyhd3deb0d_0",
+   "celery/conda-forge/noarch/celery-5.0.1-pyhd8ed1ab_0",
+   "celery/conda-forge/noarch/celery-5.0.3-pyhd8ed1ab_0",
+   "celery/conda-forge/noarch/celery-5.0.4-pyhd8ed1ab_0",
+   "celery/conda-forge/noarch/celery-5.1.1-pyhd8ed1ab_0",
+   "celery/conda-forge/noarch/celery-5.1.2-pyhd8ed1ab_0"
+  ],
+  "certifi": [
+   "certifi/conda-forge/linux-64/certifi-2016.9.26-py27_0",
+   "certifi/conda-forge/linux-64/certifi-2020.12.5-py36hd000896_1"
   ],
   "cgi": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -197,6 +188,13 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "contextvars": [
+   "contextvars/conda-forge/noarch/contextvars-2.1-py_0",
+   "contextvars/conda-forge/noarch/contextvars-2.2-py_0",
+   "contextvars/conda-forge/noarch/contextvars-2.3-py_0",
+   "contextvars/conda-forge/noarch/contextvars-2.4-py_0",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "copy": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -204,6 +202,24 @@
   "datetime": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "django": [],
+  "echo": [
+   "echo/conda-forge/noarch/echo-0.2-pyh9f0ad1d_0",
+   "echo/conda-forge/noarch/echo-0.4-pyh9f0ad1d_0"
+  ],
+  "flask": [
+   "flask/conda-forge/linux-64/flask-0.12-py36_0",
+   "flask/conda-forge/noarch/flask-0.11.1-py_1",
+   "flask/conda-forge/noarch/flask-1.0.2-py_1",
+   "flask/conda-forge/noarch/flask-1.0.3-py_0",
+   "flask/conda-forge/noarch/flask-1.1.0-py_0",
+   "flask/conda-forge/noarch/flask-2.0.1-pyhd8ed1ab_0"
+  ],
+  "flask_login": [
+   "flask-login/conda-forge/linux-64/flask-login-0.4.0-py27_0",
+   "flask-login/conda-forge/noarch/flask-login-0.4.1-py_0",
+   "flask-login/conda-forge/noarch/flask-login-0.5.0-pyh9f0ad1d_0"
   ],
   "functools": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -219,6 +235,10 @@
   ],
   "importlib": [
    "importlib/conda-forge/linux-64/importlib-1.0.4-py26_0",
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "inspect": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -256,10 +276,6 @@
    "setuptools/conda-forge/linux-64/setuptools-40.6.1-py36_0",
    "setuptools/conda-forge/linux-64/setuptools-46.3.0-py38h32f6830_0",
    "setuptools/conda-forge/linux-64/setuptools-49.1.2-py38h32f6830_0"
-  ],
-  "psycopg2": [
-   "psycopg2/conda-forge/linux-64/psycopg2-2.8.4-py36h72c5cf5_0",
-   "psycopg2/conda-forge/linux-64/psycopg2-2.9.1-py38h497a2fe_0"
   ],
   "pyramid": [
    "pyramid/conda-forge/noarch/pyramid-1.10.1-py_0",
