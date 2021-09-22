@@ -1,0 +1,282 @@
+{
+ "bad": [
+  "airflow.settings.webserver.paperboy_sql",
+  "config.application.Paperboy.launch_instance",
+  "config.base.Interval.DAILY",
+  "config.base.Interval.FIVE_MINUTES",
+  "config.base.Interval.HOURLY",
+  "config.base.Interval.MINUTELY",
+  "config.base.Interval.MONTHLY",
+  "config.base.Interval.SIX_HOURS",
+  "config.base.Interval.TEN_MINUTES",
+  "config.base.Interval.THIRTY_MINUTES",
+  "config.base.Interval.THREE_HOURS",
+  "config.base.Interval.TWELVE_HOURS",
+  "config.base.Interval.TWO_HOURS",
+  "config.base.Interval.WEEKLY",
+  "falcon.HTTPBadRequest",
+  "falcon.HTTPFound",
+  "falcon.HTTP_302",
+  "falcon.HTTP_404",
+  "falcon.HTTP_725",
+  "from_api",
+  "from_base",
+  "handler",
+  "id.split",
+  "io.BytesIO",
+  "jupyterlab_email.attachments.CUSTOM_TAG",
+  "luigi.parameter.ParameterVisibility.HIDDEN",
+  "models.base.Base.metadata.create_all",
+  "models.job.JobSQL",
+  "models.job.JobSQL.id",
+  "models.job.JobSQL.level",
+  "models.job.JobSQL.notebookId",
+  "models.job.JobSQL.userId",
+  "models.notebook.NotebookSQL.id",
+  "models.notebook.NotebookSQL.level",
+  "models.notebook.NotebookSQL.privacy",
+  "models.notebook.NotebookSQL.userId.like",
+  "models.report.ReportSQL.id",
+  "models.report.ReportSQL.output",
+  "models.report.ReportSQL.userId",
+  "models.user.UserSQL.id",
+  "os.cpu_count",
+  "os.environ.get",
+  "os.path.exists",
+  "os.remove",
+  "paperboy.config.User",
+  "paperboy.config.job.JobConfig.from_config",
+  "paperboy.config.notebook.NotebookConfig.from_config",
+  "paperboy.config.report.ReportConfig.from_config",
+  "paperboy.config.user.UserConfig.from_config",
+  "paperboy.scheduler.airflow.AirflowScheduler.fakequery",
+  "paperboy.scheduler.airflow_operators.DokkuOperator",
+  "paperboy.scheduler.airflow_operators.JobCleanupOperator",
+  "paperboy.scheduler.airflow_operators.JobOperator",
+  "paperboy.scheduler.airflow_operators.NBConvertOperator",
+  "paperboy.scheduler.airflow_operators.PapermillOperator",
+  "paperboy.scheduler.airflow_operators.ReportOperator",
+  "paperboy.scheduler.airflow_operators.ReportPostOperator",
+  "paperboy.scheduler.airflow_operators.VoilaOperator",
+  "paperboy.storage.sqla.models.user.UserSQL.id",
+  "paperboy.storage.sqla.models.user.UserSQL.name",
+  "six.moves.urllib_parse.urljoin",
+  "sm",
+  "storage.StorageError.handle",
+  "storage.sqla.Base.metadata.create_all"
+ ],
+ "deps": {
+  "abc": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "airflow": [
+   "airflow/conda-forge/linux-64/airflow-2.1.0-py37h89c1867_0",
+   "airflow/conda-forge/linux-64/airflow-2.1.2-py36h5fab9bb_0"
+  ],
+  "backports": [
+   "backports.tempfile/conda-forge/noarch/backports.tempfile-1.0-py_0"
+  ],
+  "base64": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "bs4": [
+   "beautifulsoup4/conda-forge/linux-64/beautifulsoup4-4.7.1-py37_1001",
+   "beautifulsoup4/conda-forge/linux-64/beautifulsoup4-4.8.2-py37_0",
+   "beautifulsoup4/conda-forge/noarch/beautifulsoup4-4.9.3-pyhb0f4dca_0"
+  ],
+  "cgi": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "concurrent": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython"
+  ],
+  "configparser": [
+   "configparser/conda-forge/linux-64/configparser-3.7.1-py27_1",
+   "configparser/conda-forge/noarch/configparser-5.0.0-py_0",
+   "configparser/conda-forge/noarch/configparser-5.0.1-py_0",
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "crontab": [],
+  "datetime": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "emails": [
+   "emails/conda-forge/noarch/emails-0.5.15-py_0",
+   "emails/conda-forge/noarch/emails-0.6-py_0"
+  ],
+  "enum": [
+   "privy/conda-forge/noarch/privy-6.0.0-py_0",
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "falcon": [
+   "falcon/conda-forge/linux-64/falcon-1.1.0-py35_0"
+  ],
+  "flask": [
+   "flask/conda-forge/linux-64/flask-0.12-py36_0",
+   "flask/conda-forge/noarch/flask-0.11.1-py_1",
+   "flask/conda-forge/noarch/flask-1.0.2-py_1",
+   "flask/conda-forge/noarch/flask-1.0.3-py_0",
+   "flask/conda-forge/noarch/flask-1.1.0-py_0",
+   "flask/conda-forge/noarch/flask-2.0.1-pyhd8ed1ab_0"
+  ],
+  "flask_login": [
+   "flask-login/conda-forge/linux-64/flask-login-0.4.0-py27_0",
+   "flask-login/conda-forge/noarch/flask-login-0.4.1-py_0",
+   "flask-login/conda-forge/noarch/flask-login-0.5.0-pyh9f0ad1d_0"
+  ],
+  "functools": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "getpass": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "gunicorn": [
+   "gunicorn/conda-forge/linux-64/gunicorn-19.8.0-py38_0"
+  ],
+  "jinja2": [
+   "jinja2/conda-forge/noarch/jinja2-2.10-py_1",
+   "jinja2/conda-forge/noarch/jinja2-2.11.3-pyh44b312d_0",
+   "jinja2/conda-forge/noarch/jinja2-3.0.0-pyhd8ed1ab_0",
+   "jinja2/conda-forge/noarch/jinja2-3.0.1-pyhd8ed1ab_0"
+  ],
+  "json": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "jwt": [
+   "pyjwt/conda-forge/noarch/pyjwt-1.6.0-py_0",
+   "pyjwt/conda-forge/noarch/pyjwt-1.6.1-py_0",
+   "pyjwt/conda-forge/noarch/pyjwt-1.6.3-py_0",
+   "pyjwt/conda-forge/noarch/pyjwt-1.6.4-py_0",
+   "pyjwt/conda-forge/noarch/pyjwt-1.7.1-py_0",
+   "pyjwt/conda-forge/noarch/pyjwt-2.0.1-pyhd8ed1ab_1",
+   "pyjwt/conda-forge/noarch/pyjwt-2.1.0-pyhd8ed1ab_0"
+  ],
+  "logging": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "luigi": [
+   "luigi/conda-forge/linux-64/luigi-2.7.9-py36_0",
+   "luigi/conda-forge/linux-64/luigi-3.0.2-py37h89c1867_1"
+  ],
+  "math": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "mimetypes": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "nbformat": [
+   "nbformat/conda-forge/noarch/nbformat-4.4.0-py_1",
+   "nbformat/conda-forge/noarch/nbformat-5.0.3-py_0",
+   "nbformat/conda-forge/noarch/nbformat-5.0.8-py_0",
+   "nbformat/conda-forge/noarch/nbformat-5.1.2-pyhd8ed1ab_1"
+  ],
+  "nbstripout": [
+   "nbstripout/conda-forge/noarch/nbstripout-0.3.6-py_0",
+   "nbstripout/conda-forge/noarch/nbstripout-0.3.7-py_0",
+   "nbstripout/conda-forge/noarch/nbstripout-0.3.8-pyh9f0ad1d_0",
+   "nbstripout/conda-forge/noarch/nbstripout-0.3.9-pyh9f0ad1d_0",
+   "nbstripout/conda-forge/noarch/nbstripout-0.4.0-pyhd8ed1ab_0",
+   "nbstripout/conda-forge/noarch/nbstripout-0.5.0-pyhd8ed1ab_0"
+  ],
+  "ntpath": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "os": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "paperboy": [
+   "jupyter_paperboy/conda-forge/linux-64/jupyter_paperboy-0.1.2-py38_0"
+  ],
+  "papermill": [
+   "papermill/conda-forge/linux-64/papermill-0.14.2-py35_0",
+   "papermill/conda-forge/noarch/papermill-2.3.0-pyhd8ed1ab_0",
+   "papermill/conda-forge/noarch/papermill-2.3.3-pyhd8ed1ab_0"
+  ],
+  "queue": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "random": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "re": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "requests": [
+   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
+   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0",
+   "requests/conda-forge/linux-64/requests-2.12.0-py35_0",
+   "requests/conda-forge/noarch/requests-2.23.0-pyh8c360ce_2",
+   "requests/conda-forge/noarch/requests-2.24.0-pyh9f0ad1d_0",
+   "requests/conda-forge/noarch/requests-2.25.0-pyhd3deb0d_0",
+   "requests/conda-forge/noarch/requests-2.25.1-pyhd3deb0d_0",
+   "requests/conda-forge/noarch/requests-2.26.0-pyhd8ed1ab_0"
+  ],
+  "six": [
+   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
+   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0",
+   "lldb/conda-forge/linux-64/lldb-6.0.0-py35_0",
+   "privy/conda-forge/noarch/privy-6.0.0-py_0",
+   "six/conda-forge/linux-64/six-1.10.0-py34_0",
+   "six/conda-forge/linux-64/six-1.10.0-py34_1",
+   "six/conda-forge/noarch/six-1.14.0-py_1",
+   "six/conda-forge/noarch/six-1.16.0-pyh6c4a22f_0"
+  ],
+  "sqlalchemy": [],
+  "subprocess": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "tempfile": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "threading": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "traitlets": [
+   "traitlets/conda-forge/noarch/traitlets-5.0.4-py_0",
+   "traitlets/conda-forge/noarch/traitlets-5.0.4-py_1",
+   "traitlets/conda-forge/noarch/traitlets-5.0.5-py_0",
+   "traitlets/conda-forge/noarch/traitlets-5.1.0-pyhd8ed1ab_0"
+  ],
+  "uuid": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "venv": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "waitress": [
+   "waitress/conda-forge/noarch/waitress-1.2.0-py_0",
+   "waitress/conda-forge/noarch/waitress-1.4.1-py_0",
+   "waitress/conda-forge/noarch/waitress-1.4.3-py_0",
+   "waitress/conda-forge/noarch/waitress-1.4.4-pyhd8ed1ab_0"
+  ],
+  "werkzeug": [
+   "werkzeug/conda-forge/noarch/werkzeug-0.12.2-py_1",
+   "werkzeug/conda-forge/noarch/werkzeug-0.15.3-py_0",
+   "werkzeug/conda-forge/noarch/werkzeug-0.16.0-py_0",
+   "werkzeug/conda-forge/noarch/werkzeug-1.0.0-py_0",
+   "werkzeug/conda-forge/noarch/werkzeug-1.0.1-pyh9f0ad1d_0"
+  ]
+ }
+}
