@@ -27,12 +27,15 @@
   "assert_rounds_range",
   "auth_tests.test_hashers",
   "bchr",
+  "bcrypt",
+  "bcrypt.__about__.__version__",
   "bcrypt._backend_mixin_map",
+  "bcrypt._bcrypt.__version__",
+  "bcrypt.hashpw",
   "bcryptor",
   "bcryptor.engine.Engine",
   "bmix",
   "builder",
-  "builtins",
   "calc",
   "calc_block",
   "calendar",
@@ -42,8 +45,6 @@
   "check_padding",
   "check_repair_unused",
   "check_table",
-  "codecs",
-  "codecs.getreader",
   "codecs.lookup",
   "collections.Iterable",
   "collections.MutableMapping",
@@ -80,6 +81,9 @@
   "d1.using",
   "d1.verify",
   "d1.wrapped",
+  "datetime",
+  "datetime.datetime.now",
+  "datetime.datetime.utcfromtimestamp",
   "decode",
   "detect_wrap_bug",
   "dict.__delitem__",
@@ -87,12 +91,32 @@
   "dict.__setitem__",
   "dict.clear",
   "dict.pop",
-  "distutils.dist.Distribution",
+  "django.VERSION",
+  "django.apps.apps",
   "django.apps.apps.populate",
+  "django.conf.LazySettings",
+  "django.conf.settings",
   "django.conf.settings.configure",
   "django.conf.settings.configured",
+  "django.contrib.auth.hashers",
+  "django.contrib.auth.hashers.BCryptPasswordHasher",
+  "django.contrib.auth.hashers.UnsaltedMD5PasswordHasher",
+  "django.contrib.auth.hashers.check_password",
+  "django.contrib.auth.hashers.get_hasher",
+  "django.contrib.auth.hashers.identify_hasher",
+  "django.contrib.auth.hashers.is_password_usable",
+  "django.contrib.auth.hashers.make_password",
+  "django.contrib.auth.hashers.mask_hash",
+  "django.contrib.auth.hashers.reset_hashers",
+  "django.contrib.auth.models",
+  "django.contrib.auth.models.User",
   "django.contrib.auth.models.User.set_password",
+  "django.contrib.auth.models.check_password",
+  "django.core.signals.setting_changed",
   "django.core.signals.setting_changed.disconnect",
+  "django.dispatch.receiver",
+  "django.utils.module_loading.import_string",
+  "django.utils.translation.ugettext_noop",
   "django_to_passlib_name",
   "dummy",
   "dummy.value",
@@ -191,9 +215,6 @@
   "itertools.chain.from_iterable",
   "itertools.imap",
   "itertools.izip",
-  "json",
-  "json.dumps",
-  "json.loads",
   "keyed_hmac",
   "keyed_hmac.digest_info.digest_size",
   "launch",
@@ -451,6 +472,11 @@
   "test_func",
   "testcase",
   "thread.get_ident",
+  "threading",
+  "threading.Lock",
+  "threading.RLock",
+  "threading.Thread",
+  "threading.current_thread",
   "time",
   "time.utctimetuple",
   "timer",
@@ -505,11 +531,15 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "bcrypt": [
-   "bcrypt/conda-forge/linux-64/bcrypt-3.2.0-py36h97a6639_0"
-  ],
   "binascii": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython"
+  ],
+  "builtins": [
+   "pies2overrides/conda-forge/osx-64/pies2overrides-2.6.7-py27_1000"
+  ],
+  "codecs": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "crypt": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -521,13 +551,9 @@
    "cryptography/conda-forge/linux-64/cryptography-3.4.6-py38ha5dfef3_0",
    "privy/conda-forge/noarch/privy-6.0.0-py_0"
   ],
-  "datetime": [
+  "distutils": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "django": [
-   "django/conda-forge/linux-64/django-1.8.14-py34_0",
-   "django/conda-forge/noarch/django-1.8.19-py_0"
   ],
   "functools": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -543,6 +569,10 @@
    "helper/conda-forge/noarch/helper-2.5.0-pyh44b312d_0"
   ],
   "inspect": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "json": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -771,10 +801,6 @@
    "wsproto/conda-forge/noarch/wsproto-0.14.0-py_0"
   ],
   "textwrap": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "threading": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],

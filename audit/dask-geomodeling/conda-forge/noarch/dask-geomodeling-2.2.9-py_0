@@ -20,18 +20,48 @@
   "Xor",
   "agg_func",
   "collections.defaultdict",
+  "contextlib.contextmanager",
+  "dask.base.normalize_token",
   "dask.base.normalize_token.register",
+  "dask.base.tokenize",
+  "dask.config",
   "dask.config.config",
   "dask.config.config.get",
+  "dask.config.get",
+  "dask.local.get_sync",
+  "dask_geomodeling.core.Block.from_json",
   "dask_geomodeling.utils.POLYGON.format",
+  "datetime.datetime",
+  "datetime.datetime.strptime",
+  "datetime.datetime.utcfromtimestamp",
+  "datetime.timedelta",
+  "datetime.timedelta.total_seconds",
   "equal",
+  "fiona",
   "fiona.Env",
+  "fiona.collection",
+  "fiona.crs",
+  "fiona.crs.from_epsg",
+  "fiona.crs.from_string",
+  "fiona.crs.to_string",
+  "fiona.drivers",
+  "fiona.open",
   "fiona.supported_drivers.get",
   "format.lower",
   "func",
   "functools.partial",
+  "geopandas",
+  "geopandas.GeoDataFrame",
+  "geopandas.GeoDataFrame.from_file",
+  "geopandas.GeoSeries",
+  "geopandas.__version__",
   "io.BytesIO",
+  "ipyleaflet.Map",
+  "ipyleaflet.WMSLayer",
   "itertools",
+  "matplotlib.cm",
+  "matplotlib.cm.get_cmap",
+  "matplotlib.colors.Normalize",
   "move_or_copy",
   "numpy.add",
   "numpy.arange",
@@ -79,6 +109,18 @@
   "os.remove",
   "os.rmdir",
   "osgeo.gdal.GA_Update",
+  "pandas",
+  "pandas.Categorical.from_codes",
+  "pandas.DataFrame",
+  "pandas.DatetimeIndex",
+  "pandas.Series",
+  "pandas.Timedelta",
+  "pandas.Timestamp",
+  "pandas.concat",
+  "pandas.cut",
+  "pandas.date_range",
+  "pandas.merge",
+  "pandas.tseries.frequencies.to_offset",
   "single_group",
   "sys",
   "warnings.warn"
@@ -89,67 +131,13 @@
    "pillow/conda-forge/linux-64/pillow-7.0.0-py36h8328e55_1",
    "pillow/conda-forge/linux-64/pillow-7.2.0-py37h718be6c_1"
   ],
-  "contextlib": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "dask": [
-   "dask-core/conda-forge/noarch/dask-core-0.18.0-py_0",
-   "dask-core/conda-forge/noarch/dask-core-0.20.1-py_0",
-   "dask-core/conda-forge/noarch/dask-core-1.1.1-py_0",
-   "dask-core/conda-forge/noarch/dask-core-1.1.2-py_0",
-   "dask-core/conda-forge/noarch/dask-core-1.1.4-py_0",
-   "dask-core/conda-forge/noarch/dask-core-2.10.1-py_0",
-   "dask-core/conda-forge/noarch/dask-core-2.13.0-py_0",
-   "dask-core/conda-forge/noarch/dask-core-2.17.2-py_0",
-   "dask-core/conda-forge/noarch/dask-core-2.18.0-py_0",
-   "dask-core/conda-forge/noarch/dask-core-2.22.0-py_0",
-   "dask-core/conda-forge/noarch/dask-core-2.25.0-py_0",
-   "dask-core/conda-forge/noarch/dask-core-2.27.0-py_0",
-   "dask-core/conda-forge/noarch/dask-core-2.6.0-py_0",
-   "dask-core/conda-forge/noarch/dask-core-2.8.1-py_0",
-   "dask-core/conda-forge/noarch/dask-core-2020.12.0-pyhd8ed1ab_0",
-   "dask-core/conda-forge/noarch/dask-core-2021.3.1-pyhd8ed1ab_0",
-   "dask-core/conda-forge/noarch/dask-core-2021.4.0-pyhd8ed1ab_0",
-   "dask-core/conda-forge/noarch/dask-core-2021.4.1-pyhd8ed1ab_0",
-   "dask-core/conda-forge/noarch/dask-core-2021.5.1-pyhd8ed1ab_0"
-  ],
-  "dask_geomodeling": [
-   "dask-geomodeling/conda-forge/noarch/dask-geomodeling-2.0.3-py_0",
-   "dask-geomodeling/conda-forge/noarch/dask-geomodeling-2.0.4-py_0",
-   "dask-geomodeling/conda-forge/noarch/dask-geomodeling-2.1.1-py_0",
-   "dask-geomodeling/conda-forge/noarch/dask-geomodeling-2.2.10-py_0",
-   "dask-geomodeling/conda-forge/noarch/dask-geomodeling-2.2.3-py_0",
-   "dask-geomodeling/conda-forge/noarch/dask-geomodeling-2.2.6-py_0",
-   "dask-geomodeling/conda-forge/noarch/dask-geomodeling-2.2.9-py_0",
-   "dask-geomodeling/conda-forge/noarch/dask-geomodeling-2.3.2-pyhd8ed1ab_0"
-  ],
-  "datetime": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "distutils": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "fiona": [
-   "fiona/conda-forge/linux-64/fiona-1.7.1-np111py34_1",
-   "fiona/conda-forge/linux-64/fiona-1.7.12-py35_0",
-   "fiona/conda-forge/linux-64/fiona-1.7.5-np112py35_0"
-  ],
   "functools": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "geopandas": [
-   "geopandas-base/conda-forge/noarch/geopandas-base-0.9.0-pyhd8ed1ab_1",
-   "geopandas/conda-forge/noarch/geopandas-0.4.0-py_1",
-   "geopandas/conda-forge/noarch/geopandas-0.4.1-py_1",
-   "geopandas/conda-forge/noarch/geopandas-0.5.0-py_0",
-   "geopandas/conda-forge/noarch/geopandas-0.6.3-py_0",
-   "geopandas/conda-forge/noarch/geopandas-0.8.0-py_1",
-   "geopandas/conda-forge/noarch/geopandas-0.8.2-pyhd8ed1ab_0",
-   "geopandas/conda-forge/noarch/geopandas-0.9.0-pyhd8ed1ab_0"
   ],
   "glob": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -158,14 +146,6 @@
   "inspect": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "ipyleaflet": [
-   "ipyleaflet/conda-forge/linux-64/ipyleaflet-0.6.2-py27_0",
-   "ipyleaflet/conda-forge/linux-64/ipyleaflet-0.8.1-py35_0",
-   "ipyleaflet/conda-forge/noarch/ipyleaflet-0.12.3-py_1",
-   "ipyleaflet/conda-forge/noarch/ipyleaflet-0.13.1-pyh9f0ad1d_0",
-   "ipyleaflet/conda-forge/noarch/ipyleaflet-0.13.2-pyh9f0ad1d_0",
-   "ipyleaflet/conda-forge/noarch/ipyleaflet-0.13.5-pyhd8ed1ab_0"
   ],
   "json": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -178,11 +158,6 @@
   "math": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "matplotlib": [
-   "matplotlib-base/conda-forge/linux-64/matplotlib-base-3.1.1-py37hfd891ef_0",
-   "matplotlib-base/conda-forge/linux-64/matplotlib-base-3.1.1-py38h250f245_2",
-   "matplotlib/conda-forge/linux-64/matplotlib-1.5.3-np111py34_0"
   ],
   "notebook": [
    "notebook/conda-forge/linux-64/notebook-6.0.1-py38_0",
@@ -215,7 +190,6 @@
    "gdal/conda-forge/linux-64/gdal-3.0.4-py36hd60729c_6",
    "gdal/conda-forge/linux-64/gdal-3.1.2-py36hcf62b00_2"
   ],
-  "pandas": [],
   "parser": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
