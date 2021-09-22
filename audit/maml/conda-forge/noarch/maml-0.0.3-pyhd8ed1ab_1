@@ -5,12 +5,7 @@
   "_generate_atom_indices",
   "cached_transform_one",
   "collections.defaultdict",
-  "cvxpy",
-  "cvxpy.Minimize",
-  "cvxpy.Problem",
-  "cvxpy.Variable",
   "cvxpy.abs",
-  "cvxpy.expressions.expression.Expression",
   "cvxpy.multiply",
   "cvxpy.norm1",
   "cvxpy.norm_inf",
@@ -22,117 +17,40 @@
   "get_pair_distances",
   "get_xml",
   "i",
-  "inspect",
-  "inspect.signature",
-  "io",
   "io.StringIO",
   "itertools",
-  "joblib",
-  "joblib.Parallel",
-  "joblib.cpu_count",
-  "joblib.delayed",
-  "joblib.dump",
-  "joblib.load",
   "load_config",
-  "matminer.featurizers.composition.ElementProperty",
   "megnet.layers.readout.Set2Set",
   "megnet.utils.layer.repeat_with_index",
   "metric_func",
-  "monty.dev.requires",
-  "monty.io.zopen",
-  "monty.json.MSONable",
-  "monty.os.path.which",
-  "monty.serialization.loadfn",
-  "monty.shutil.copy_r",
-  "monty.shutil.remove",
-  "monty.tempfile.ScratchDir",
-  "numba.njit",
-  "numpy",
   "numpy.abs",
   "numpy.absolute",
-  "numpy.all",
-  "numpy.allclose",
-  "numpy.any",
-  "numpy.append",
   "numpy.arange",
-  "numpy.argmax",
-  "numpy.argmin",
-  "numpy.argsort",
-  "numpy.array",
-  "numpy.asarray",
-  "numpy.atleast_1d",
-  "numpy.atleast_2d",
-  "numpy.concatenate",
   "numpy.cos",
-  "numpy.cumsum",
-  "numpy.dot",
   "numpy.exp",
-  "numpy.fill_diagonal",
   "numpy.float",
   "numpy.float32",
   "numpy.floor",
-  "numpy.gradient",
-  "numpy.hstack",
   "numpy.inf",
   "numpy.infty",
-  "numpy.insert",
   "numpy.int",
-  "numpy.isclose",
-  "numpy.linalg.eigvals",
-  "numpy.linalg.inv",
-  "numpy.linalg.lstsq",
-  "numpy.linalg.norm",
-  "numpy.linalg.solve",
-  "numpy.linspace",
-  "numpy.loadtxt",
   "numpy.log10",
   "numpy.log2",
-  "numpy.max",
-  "numpy.mean",
-  "numpy.min",
-  "numpy.ndarray",
-  "numpy.ones",
-  "numpy.pad",
   "numpy.pi",
-  "numpy.prod",
   "numpy.random.RandomState",
   "numpy.random.shuffle",
-  "numpy.ravel",
-  "numpy.repeat",
-  "numpy.reshape",
-  "numpy.savetxt",
   "numpy.sign",
-  "numpy.sort",
-  "numpy.split",
   "numpy.sqrt",
-  "numpy.stack",
-  "numpy.std",
   "numpy.str",
-  "numpy.sum",
-  "numpy.tile",
-  "numpy.unique",
-  "numpy.where",
   "numpy.zeros",
-  "numpy.zeros_like",
   "obj_conversion",
   "object.__init__",
-  "os",
   "os.chdir",
   "os.getcwd",
   "os.listdir",
-  "os.makedirs",
-  "os.path.abspath",
-  "os.path.basename",
-  "os.path.dirname",
   "os.path.exists",
   "os.path.isfile",
-  "os.path.join",
   "os.symlink",
-  "pandas",
-  "pandas.DataFrame",
-  "pandas.concat",
-  "pandas.read_csv",
-  "pathlib.Path",
   "process",
   "pymatgen.core.Species",
   "pymatgen.core.Species.from_string",
@@ -141,23 +59,13 @@
   "re.I",
   "re.S",
   "read_func",
-  "requests",
-  "requests.get",
   "ruamel.yaml",
   "ruamel.yaml.dump",
   "scorer",
-  "shutil",
-  "shutil.copy",
-  "shutil.copyfile",
   "sklearn.metrics.check_scoring",
   "sklearn.utils.validation.check_memory",
   "str_formatify",
   "stress_format_change",
-  "subprocess",
-  "subprocess.PIPE",
-  "subprocess.Popen",
-  "tempfile",
-  "tempfile.mkdtemp",
   "tensorflow.Tensor",
   "tensorflow.exp",
   "tensorflow.expand_dims",
@@ -172,18 +80,7 @@
   "tensorflow.unique_with_counts",
   "tensorflow.zeros",
   "tftb",
-  "typing.Any",
-  "typing.Callable",
-  "typing.Dict",
-  "typing.List",
-  "typing.Optional",
-  "typing.Sequence",
-  "typing.Tuple",
-  "typing.Union",
   "value_type",
-  "warnings",
-  "warnings.catch_warnings",
-  "warnings.simplefilter",
   "warnings.warn"
  ],
  "deps": {
@@ -194,6 +91,30 @@
   "collections": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "cvxpy": [
+   "cvxpy-base/conda-forge/linux-64/cvxpy-base-1.0.27-py27he1b5a44_0",
+   "cvxpy-base/conda-forge/linux-64/cvxpy-base-1.1.4-py37h9fdb41a_0"
+  ],
+  "inspect": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "io": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "joblib": [
+   "joblib/conda-forge/noarch/joblib-0.12.1-py_0",
+   "joblib/conda-forge/noarch/joblib-0.12.2-py_0",
+   "joblib/conda-forge/noarch/joblib-0.12.4-py_0",
+   "joblib/conda-forge/noarch/joblib-0.13.1-py_0",
+   "joblib/conda-forge/noarch/joblib-0.13.2-py_0",
+   "joblib/conda-forge/noarch/joblib-0.14.0-py_0",
+   "joblib/conda-forge/noarch/joblib-0.14.1-py_0",
+   "joblib/conda-forge/noarch/joblib-0.17.0-py_0",
+   "joblib/conda-forge/noarch/joblib-1.0.0-pyhd8ed1ab_0",
+   "joblib/conda-forge/noarch/joblib-1.0.1-pyhd8ed1ab_0"
   ],
   "json": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -207,7 +128,44 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "matminer": [
+   "matminer/conda-forge/noarch/matminer-0.7.3-pyhd8ed1ab_0"
+  ],
+  "monty": [
+   "monty/conda-forge/noarch/monty-2021.3.3-pyhd8ed1ab_0",
+   "monty/conda-forge/noarch/monty-2021.6.10-pyhd8ed1ab_0",
+   "monty/conda-forge/noarch/monty-3.0.1-py_0",
+   "monty/conda-forge/noarch/monty-3.0.2-py_0",
+   "monty/conda-forge/noarch/monty-3.0.4-pyh9f0ad1d_0",
+   "monty/conda-forge/noarch/monty-4.0.0-pyh9f0ad1d_0",
+   "monty/conda-forge/noarch/monty-4.0.1-pyh9f0ad1d_0",
+   "monty/conda-forge/noarch/monty-4.0.2-pyh9f0ad1d_0"
+  ],
+  "ntpath": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "numba": [
+   "numba/conda-forge/linux-64/numba-0.38.1-py36_0",
+   "numba/conda-forge/linux-64/numba-0.40.0-py35hf8a1672_0",
+   "numba/conda-forge/linux-64/numba-0.41.0-py27h637b7d7_1000"
+  ],
   "numbers": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "numpy": [
+   "numpy/conda-forge/linux-64/numpy-1.17.5-py36h95a1406_0",
+   "numpy/conda-forge/linux-64/numpy-1.18.4-py37h8960a57_0",
+   "numpy/conda-forge/linux-64/numpy-1.19.2-py36h68c22af_1"
+  ],
+  "os": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "pandas": [],
+  "pathlib": [
+   "pathlib/conda-forge/noarch/pathlib-1.0.1-py_1",
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -220,9 +178,23 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "requests": [
+   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
+   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0",
+   "requests/conda-forge/linux-64/requests-2.12.0-py35_0",
+   "requests/conda-forge/noarch/requests-2.23.0-pyh8c360ce_2",
+   "requests/conda-forge/noarch/requests-2.24.0-pyh9f0ad1d_0",
+   "requests/conda-forge/noarch/requests-2.25.0-pyhd3deb0d_0",
+   "requests/conda-forge/noarch/requests-2.25.1-pyhd3deb0d_0",
+   "requests/conda-forge/noarch/requests-2.26.0-pyhd8ed1ab_0"
+  ],
   "scipy": [
    "scipy/conda-forge/linux-64/scipy-1.7.0-py37h29e03ee_0",
    "scipy/conda-forge/linux-64/scipy-1.7.0-py37ha768fb6_1"
+  ],
+  "shutil": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "sklearn": [
    "scikit-learn/conda-forge/linux-64/scikit-learn-0.17.1-np110py27_blas_openblas_200",
@@ -230,6 +202,14 @@
    "scikit-learn/conda-forge/linux-64/scikit-learn-0.17.1-np111py35_blas_openblas_202"
   ],
   "stat": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "subprocess": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "tempfile": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -245,6 +225,14 @@
    "tqdm/conda-forge/noarch/tqdm-4.56.0-pyhd8ed1ab_0",
    "tqdm/conda-forge/noarch/tqdm-4.56.1-pyhd8ed1ab_0",
    "tqdm/conda-forge/noarch/tqdm-4.60.0-pyhd8ed1ab_0"
+  ],
+  "typing": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "warnings": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "xml": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
