@@ -22,7 +22,10 @@
   "dict.fromkeys",
   "expand_column",
   "func",
+  "functools",
   "functools.reduce",
+  "functools.singledispatch",
+  "gdalconst",
   "gdalconst.GDT_Float64",
   "google.protobuf.descriptor",
   "google.protobuf.descriptor.Descriptor",
@@ -39,6 +42,8 @@
   "google.protobuf.reflection.GeneratedProtocolMessageType",
   "google.protobuf.symbol_database",
   "google.protobuf.symbol_database.Default",
+  "h5py",
+  "h5py.File",
   "hourly2dataframe",
   "ifnone",
   "int.from_bytes",
@@ -56,6 +61,7 @@
   "marstime.getSZAfromTime",
   "marstime.getUTC",
   "marstime.getUTCfromLS",
+  "networkx.readwrite.json_graph",
   "networkx.readwrite.json_graph.node_link_data",
   "numpy.abs",
   "numpy.arange",
@@ -90,6 +96,18 @@
   "os.path.isfile",
   "os.remove",
   "os.rename",
+  "pandas",
+  "pandas.DataFrame",
+  "pandas.MultiIndex.from_tuples",
+  "pandas.Series",
+  "pandas.concat",
+  "pandas.core.common.array_equivalent",
+  "pandas.merge",
+  "pandas.read_csv",
+  "pandas.to_numeric",
+  "parse",
+  "pkg_resources.DistributionNotFound",
+  "pkg_resources.get_distribution",
   "plio.__file__",
   "plio.__init__._dist",
   "plio.__init__.dist_loc",
@@ -123,18 +141,37 @@
   "plio.io.ogr.wkbPolygon",
   "plio.io.osr.CoordinateTransformation",
   "plio.io.osr.SpatialReference",
+  "pvl",
+  "pvl.PVLGroup",
+  "pvl.PVLModule",
+  "pvl.collections.PVLModule",
+  "pvl.decoder.PVLDecoder",
+  "pvl.dumps",
+  "pvl.encoder.ISISEncoder",
+  "pvl.load",
+  "pvl.loads",
+  "pytest",
+  "pytest.fixture",
   "pytest.mark.parametrize",
   "pytest.mark.skipif",
+  "pytest.raises",
+  "pytest.warns",
+  "re",
+  "re.findall",
   "remove_field_name",
   "replacement",
+  "scipy.io",
+  "scipy.io.readsav",
   "season2dataframe",
+  "simplejson",
+  "simplejson.dumps",
+  "simplejson.loads",
   "sqlalchemy.ext.mutable.MutableDict.associate_with",
   "str.rstrip",
+  "struct",
   "struct.unpack",
   "sys",
   "sys.path.insert",
-  "tempfile",
-  "tempfile.mkdtemp",
   "track.TrackedDict",
   "utils.create_dir",
   "utils.delete_dir",
@@ -142,16 +179,10 @@
   "utils.find_in_dict",
   "utils.find_nested_in_dict",
   "warn",
-  "warnings",
   "warnings.Warn",
   "warnings.warn"
  ],
  "deps": {
-  "_pytest": [
-   "pytest/conda-forge/linux-64/pytest-3.7.0-py27_0",
-   "pytest/conda-forge/linux-64/pytest-4.6.0-py37_0",
-   "pytest/conda-forge/linux-64/pytest-6.0.2-py37hc8dfbb8_0"
-  ],
   "affine": [
    "affine/conda-forge/linux-64/affine-2.0.0.post1-py36_0",
    "affine/conda-forge/noarch/affine-2.1.0-py_1",
@@ -180,20 +211,6 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "functools": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "gdalconst": [
-   "gdal/conda-forge/linux-64/gdal-3.0.3-py38hbb6b9fb_0",
-   "gdal/conda-forge/linux-64/gdal-3.0.4-py36hd60729c_6",
-   "gdal/conda-forge/linux-64/gdal-3.1.2-py36hcf62b00_2"
-  ],
-  "h5py": [
-   "h5py/conda-forge/linux-64/h5py-2.10.0-nompi_py37hf7afa78_105",
-   "h5py/conda-forge/linux-64/h5py-2.6.0-np111py34_4",
-   "h5py/conda-forge/linux-64/h5py-2.7.0-np113py36_1"
-  ],
   "importlib": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -210,14 +227,6 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "networkx": [
-   "networkx/conda-forge/noarch/networkx-2.1-py_1",
-   "networkx/conda-forge/noarch/networkx-2.2-py_1",
-   "networkx/conda-forge/noarch/networkx-2.4-py_1",
-   "networkx/conda-forge/noarch/networkx-2.5-py_0",
-   "networkx/conda-forge/noarch/networkx-2.6.1-pyhd8ed1ab_0",
-   "networkx/conda-forge/noarch/networkx-2.6.1-pyhd8ed1ab_1"
-  ],
   "ntpath": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -231,52 +240,12 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "pandas": [],
-  "parse": [
-   "parse/conda-forge/noarch/parse-1.11.1-py_0",
-   "parse/conda-forge/noarch/parse-1.12.0-py_0",
-   "parse/conda-forge/noarch/parse-1.12.1-py_0",
-   "parse/conda-forge/noarch/parse-1.17.0-pyh9f0ad1d_0",
-   "parse/conda-forge/noarch/parse-1.18.0-pyh9f0ad1d_0",
-   "parse/conda-forge/noarch/parse-1.19.0-pyh44b312d_0",
-   "parse/conda-forge/noarch/parse-1.9.0-py_0"
-  ],
-  "pkg_resources": [
-   "setuptools/conda-forge/linux-64/setuptools-40.6.1-py36_0",
-   "setuptools/conda-forge/linux-64/setuptools-46.3.0-py38h32f6830_0",
-   "setuptools/conda-forge/linux-64/setuptools-49.1.2-py38h32f6830_0"
-  ],
-  "pvl": [
-   "pvl/conda-forge/noarch/pvl-1.0.0-pyh9f0ad1d_0",
-   "pvl/conda-forge/noarch/pvl-1.0.1-pyh9f0ad1d_0",
-   "pvl/conda-forge/noarch/pvl-1.2.0-pyhd8ed1ab_0",
-   "pvl/conda-forge/noarch/pvl-1.2.1-pyhd8ed1ab_0"
-  ],
-  "pytest": [
-   "pytest/conda-forge/linux-64/pytest-3.7.0-py27_0",
-   "pytest/conda-forge/linux-64/pytest-4.6.0-py37_0",
-   "pytest/conda-forge/linux-64/pytest-6.0.2-py37hc8dfbb8_0"
-  ],
-  "re": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "scipy": [
-   "scipy/conda-forge/linux-64/scipy-0.17.1-np110py27_blas_openblas_202",
-   "scipy/conda-forge/linux-64/scipy-1.7.0-py37h29e03ee_0",
-   "scipy/conda-forge/linux-64/scipy-1.7.0-py37ha768fb6_1"
-  ],
   "shutil": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "simplejson": [
-   "simplejson/conda-forge/linux-64/simplejson-3.16.0-py27h470a237_2",
-   "simplejson/conda-forge/linux-64/simplejson-3.16.0-py35h470a237_2",
-   "simplejson/conda-forge/linux-64/simplejson-3.17.0-py38h516909a_0"
-  ],
   "sqlalchemy": [],
-  "struct": [
+  "tempfile": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -285,6 +254,10 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "unittest": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "warnings": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],

@@ -66,18 +66,20 @@
   "expyriment.stimuli.Shape",
   "expyriment.stimuli._visual.Visual",
   "file_handler",
-  "fileinspector",
-  "fileinspector.determine_category",
-  "fileinspector.determine_type",
   "filesystem_encoding",
   "fnc",
   "fnc.__doc__",
   "fnc.__name__",
   "func",
+  "functools",
   "functools.partial",
   "gc",
   "get_escape_sequence",
+  "imp",
   "imp.is_frozen",
+  "imp.load_compiled",
+  "imp.load_source",
+  "io",
   "io.open",
   "item_class",
   "item_type_translate",
@@ -205,13 +207,39 @@
   "platform.system",
   "plugin_folder",
   "plugin_properties",
+  "pseudorandom.Enforce",
+  "pseudorandom.EnforceFailed",
+  "pseudorandom.InvalidConstraint",
+  "pseudorandom.MaxRep",
+  "pseudorandom.MinDist",
+  "psychopy.constants",
+  "psychopy.constants.PLAYING",
+  "psychopy.core",
+  "psychopy.core.getTime",
+  "psychopy.core.quit",
+  "psychopy.core.wait",
+  "psychopy.event",
+  "psychopy.event.Mouse",
+  "psychopy.event.clearEvents",
+  "psychopy.event.getKeys",
+  "psychopy.event.mouseButtons",
+  "psychopy.logging",
+  "psychopy.logging.CRITICAL",
   "psychopy.logging.console.setLevel",
+  "psychopy.prefs",
   "psychopy.prefs.hardware",
+  "psychopy.sound.Sound",
+  "psychopy.tools.colorspacetools",
+  "psychopy.tools.colorspacetools.cielab2rgb",
+  "psychopy.tools.colorspacetools.srgbTF",
+  "psychopy.visual",
   "psychopy.visual.GratingStim",
+  "psychopy.visual.ImageStim",
   "psychopy.visual.Line",
   "psychopy.visual.Rect",
   "psychopy.visual.ShapeStim",
   "psychopy.visual.SimpleImageStim",
+  "psychopy.visual.Window",
   "pygame",
   "pygame.BLEND_RGBA_MIN",
   "pygame.BLEND_RGB_MAX",
@@ -271,7 +299,9 @@
   "pygame.transform.rotate",
   "pygame.transform.scale",
   "pygame.transform.smoothscale",
+  "pyglet.window.key",
   "pygments.formatters.HtmlFormatter",
+  "pygments.highlight",
   "pygments.lexers.Python3Lexer",
   "pygments.lexers.Python3TracebackLexer",
   "pygments.lexers.PythonLexer",
@@ -442,6 +472,12 @@
   "qtpy.QtWidgets.QTreeWidgetItem",
   "qtpy.QtWidgets.QVBoxLayout",
   "qtpy.QtWidgets.QWidget",
+  "re",
+  "re.compile",
+  "re.findall",
+  "re.finditer",
+  "re.match",
+  "re.search",
   "req_fnc",
   "restore_object",
   "safe_decode",
@@ -451,8 +487,10 @@
   "safe_str",
   "safe_yaml_load",
   "safedecode",
-  "shlex",
-  "shlex.split",
+  "scipy.signal",
+  "scipy.signal.resample",
+  "scipy.signal.sawtooth",
+  "scipy.signal.square",
   "signal.SIGKILL",
   "signal.SIGTERM",
   "sip",
@@ -462,11 +500,11 @@
   "sys.path.append",
   "sys.path.insert",
   "sys.stdout.write",
+  "textwrap",
+  "textwrap.dedent",
   "time",
   "tkinter.LEFT",
   "tkinter.RIGHT",
-  "types",
-  "types.FunctionType",
   "validator",
   "warnings.warn",
   "yamldoc._functiondoc.FunctionDoc",
@@ -518,19 +556,10 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "functools": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "imp": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  "fileinspector": [
+   "fileinspector/conda-forge/noarch/fileinspector-1.0.2-pyh8c360ce_0"
   ],
   "inspect": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "io": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -563,30 +592,6 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "pseudorandom": [
-   "pseudorandom/conda-forge/noarch/pseudorandom-0.2.2-pyh8c360ce_0"
-  ],
-  "psychopy": [
-   "psychopy/conda-forge/linux-64/psychopy-3.1.3-py37_2",
-   "psychopy/conda-forge/linux-64/psychopy-3.2.4-py36_2",
-   "psychopy/conda-forge/linux-64/psychopy-3.2.4-py37_5"
-  ],
-  "pyglet": [
-   "pyglet/conda-forge/linux-64/pyglet-1.4.2-py37_0",
-   "pyglet/conda-forge/linux-64/pyglet-1.5.1-py36h9f0ad1d_0"
-  ],
-  "pygments": [
-   "pygments/conda-forge/noarch/pygments-2.2.0-py_1",
-   "pygments/conda-forge/noarch/pygments-2.3.0-py_0",
-   "pygments/conda-forge/noarch/pygments-2.4.0-py_0",
-   "pygments/conda-forge/noarch/pygments-2.4.1-py_0",
-   "pygments/conda-forge/noarch/pygments-2.5.1-py_0",
-   "pygments/conda-forge/noarch/pygments-2.5.2-py_0",
-   "pygments/conda-forge/noarch/pygments-2.7.0-py_0",
-   "pygments/conda-forge/noarch/pygments-2.7.1-py_0",
-   "pygments/conda-forge/noarch/pygments-2.7.2-py_0",
-   "pygments/conda-forge/noarch/pygments-2.9.0-pyhd8ed1ab_0"
-  ],
   "qdatamatrix": [
    "qdatamatrix/conda-forge/noarch/qdatamatrix-0.1.23-pyh8c360ce_0",
    "qdatamatrix/conda-forge/noarch/qdatamatrix-0.1.29-pyhd3deb0d_0",
@@ -605,19 +610,14 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "re": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "scipy": [
-   "scipy/conda-forge/linux-64/scipy-0.17.1-np110py27_blas_openblas_202",
-   "scipy/conda-forge/linux-64/scipy-1.7.0-py37h29e03ee_0",
-   "scipy/conda-forge/linux-64/scipy-1.7.0-py37ha768fb6_1"
-  ],
   "shapely": [
    "shapely/conda-forge/linux-64/shapely-1.5.15-np19py35_0",
    "shapely/conda-forge/linux-64/shapely-1.7.1-py37hba0730f_1",
    "solaris/conda-forge/noarch/solaris-0.4.0-pyhe05a262_0"
+  ],
+  "shlex": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "shutil": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -659,10 +659,6 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "textwrap": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "threading": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -672,6 +668,10 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "traceback": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "types": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
