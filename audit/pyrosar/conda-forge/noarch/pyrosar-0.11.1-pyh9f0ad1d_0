@@ -38,12 +38,19 @@
   "api.lat.product",
   "api.lat.ratio",
   "api.lat.sigma2gamma",
+  "attr",
   "cStringIO.StringIO",
+  "codecs",
   "cos",
   "csv",
   "csv.DictReader",
   "csv.Sniffer",
   "ctypes.util",
+  "datetime",
+  "datetime.datetime",
+  "datetime.datetime.now",
+  "datetime.datetime.strptime",
+  "datetime.timedelta",
   "dict.__delitem__",
   "dict.__setitem__",
   "django.contrib.gis.gdal.OGRException",
@@ -58,6 +65,7 @@
   "ftplib.error_perm",
   "ftplib.error_temp",
   "gammaparse",
+  "geoalchemy2.Geometry",
   "getOrbitContentVersions",
   "get_pts",
   "handler",
@@ -94,12 +102,34 @@
   "input.close",
   "input.getvalue",
   "input.read",
+  "inspect",
+  "inspect.getfullargspec",
+  "inspect.ismethod",
   "intrange",
   "io.BytesIO",
   "io.StringIO",
   "linesimplify.reduce",
   "locals.append",
+  "math",
+  "math.ceil",
+  "math.floor",
+  "math.radians",
+  "math.sin",
+  "matplotlib",
   "matplotlib.cm.jet",
+  "matplotlib.collections.PatchCollection",
+  "matplotlib.patches.Polygon",
+  "matplotlib.pyplot",
+  "matplotlib.pyplot.legend",
+  "matplotlib.pyplot.plot",
+  "matplotlib.pyplot.savefig",
+  "matplotlib.pyplot.scatter",
+  "matplotlib.pyplot.show",
+  "matplotlib.pyplot.subplots",
+  "matplotlib.pyplot.xlabel",
+  "matplotlib.pyplot.ylabel",
+  "matplotlib.rcParams",
+  "matplotlib.use",
   "numpy.abs",
   "numpy.add",
   "numpy.cos",
@@ -170,8 +200,16 @@
   "pysqlite2.dbapi2.connect",
   "pytest.mark.parametrize",
   "pytest.mark.skipif",
+  "re",
   "re.DOTALL",
   "re.S",
+  "re.compile",
+  "re.findall",
+  "re.finditer",
+  "re.match",
+  "re.search",
+  "re.split",
+  "re.sub",
   "replace",
   "reset",
   "ret_func",
@@ -221,20 +259,6 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "attr": [
-   "attrs/conda-forge/noarch/attrs-17.3.0-py_0",
-   "attrs/conda-forge/noarch/attrs-17.3.0-py_1",
-   "attrs/conda-forge/noarch/attrs-17.4.0-py_0",
-   "attrs/conda-forge/noarch/attrs-18.1.0-py_0",
-   "attrs/conda-forge/noarch/attrs-18.1.0-py_1",
-   "attrs/conda-forge/noarch/attrs-18.2.0-py_0",
-   "attrs/conda-forge/noarch/attrs-20.2.0-pyh9f0ad1d_0",
-   "attrs/conda-forge/noarch/attrs-21.2.0-pyhd8ed1ab_0"
-  ],
-  "codecs": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "collections": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -250,19 +274,6 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "datetime": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "geoalchemy2": [
-   "geoalchemy2/conda-forge/noarch/geoalchemy2-0.4.2-py_0",
-   "geoalchemy2/conda-forge/noarch/geoalchemy2-0.6.1-py_0",
-   "geoalchemy2/conda-forge/noarch/geoalchemy2-0.6.3-py_0"
-  ],
-  "inspect": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "json": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -270,15 +281,6 @@
   "logging": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "math": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "matplotlib": [
-   "matplotlib-base/conda-forge/linux-64/matplotlib-base-3.1.1-py37hfd891ef_0",
-   "matplotlib-base/conda-forge/linux-64/matplotlib-base-3.1.1-py38h250f245_2",
-   "matplotlib/conda-forge/linux-64/matplotlib-1.5.3-np111py34_0"
   ],
   "ntpath": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -315,10 +317,6 @@
    "pytest/conda-forge/linux-64/pytest-3.7.0-py27_0",
    "pytest/conda-forge/linux-64/pytest-4.6.0-py37_0",
    "pytest/conda-forge/linux-64/pytest-6.0.2-py37hc8dfbb8_0"
-  ],
-  "re": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "requests": [
    "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
