@@ -63,8 +63,6 @@
   "beyond_end",
   "bp_flat_y",
   "cPickle",
-  "cProfile",
-  "cProfile.runctx",
   "char_classes.ALPHA_LOWER.strip",
   "char_classes.CONCAT_ICONS.replace",
   "char_classes.CONCAT_QUOTES.replace",
@@ -91,6 +89,7 @@
   "custom_tokenizer",
   "deprojectivize",
   "displacy.render",
+  "distutils.version.LooseVersion",
   "dummy_pipe",
   "en_search_prefixes",
   "en_tokenizer",
@@ -173,10 +172,15 @@
   "errors.Warnings.W032.format",
   "exclude_dir",
   "extend_end",
+  "factory",
   "find_multiword_span",
   "fr_tokenizer_w_infix",
+  "ftfy",
   "func",
+  "functools",
   "functools.partial",
+  "gensim.corpora.wikicorpus.extract_pages",
+  "gensim.models.Word2Vec",
   "get_doc_settings",
   "get_ipython",
   "get_model_meta",
@@ -344,6 +348,11 @@
   "pytest.mark.xfail",
   "pyvi.ViTokenizer",
   "pyvi.ViTokenizer.spacy_tokenize",
+  "random",
+  "random.randint",
+  "random.random",
+  "random.seed",
+  "random.shuffle",
   "reader",
   "renderer",
   "renderer.render",
@@ -354,6 +363,10 @@
   "sentencizer.punct_chars",
   "sentencizer.to_bytes",
   "setter",
+  "shutil",
+  "shutil.copytree",
+  "shutil.rmtree",
+  "socket",
   "socket.error",
   "spacy.Errors.E189",
   "spacy.attrs.DEP",
@@ -605,6 +618,10 @@
   "sys.modules.__file__",
   "sys.platform.startswith",
   "sys.stdout.fileno",
+  "tempfile",
+  "tempfile.TemporaryDirectory",
+  "tempfile.TemporaryFile",
+  "tempfile.mkdtemp",
   "templates.TPL_DEP_ARCS.format",
   "templates.TPL_DEP_SVG.format",
   "templates.TPL_DEP_WORDS.format",
@@ -730,6 +747,10 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "cProfile": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "catalogue": [
    "catalogue/conda-forge/linux-64/catalogue-2.0.1-py39hf3d152e_2",
    "catalogue/conda-forge/noarch/catalogue-0.0.4-py_0",
@@ -770,32 +791,6 @@
   "datetime": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "distutils": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "factory": [
-   "factory_boy/conda-forge/noarch/factory_boy-2.10.0-py_0",
-   "factory_boy/conda-forge/noarch/factory_boy-2.11.0-py_0",
-   "factory_boy/conda-forge/noarch/factory_boy-2.11.1-py_0",
-   "factory_boy/conda-forge/noarch/factory_boy-2.11.1-pyh9f0ad1d_1",
-   "factory_boy/conda-forge/noarch/factory_boy-3.0.1-pyh9f0ad1d_1",
-   "factory_boy/conda-forge/noarch/factory_boy-3.1.0-pyh9f0ad1d_0"
-  ],
-  "ftfy": [
-   "ftfy/conda-forge/noarch/ftfy-5.5.1-py_0",
-   "ftfy/conda-forge/noarch/ftfy-5.8-pyhd8ed1ab_0",
-   "ftfy/conda-forge/noarch/ftfy-6.0-pyhd8ed1ab_0",
-   "ftfy/conda-forge/noarch/ftfy-6.0.1-pyhd8ed1ab_0",
-   "ftfy/conda-forge/noarch/ftfy-6.0.3-pyhd8ed1ab_0"
-  ],
-  "functools": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "gensim": [
-   "gensim/conda-forge/linux-64/gensim-3.8.3-py38h709712a_3"
   ],
   "getopt": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -902,10 +897,6 @@
    "pytest/conda-forge/linux-64/pytest-4.6.0-py37_0",
    "pytest/conda-forge/linux-64/pytest-6.0.2-py37hc8dfbb8_0"
   ],
-  "random": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "re": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -920,14 +911,6 @@
    "requests/conda-forge/noarch/requests-2.25.1-pyhd3deb0d_0",
    "requests/conda-forge/noarch/requests-2.26.0-pyhd8ed1ab_0"
   ],
-  "shutil": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "socket": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "spacy": [
    "spacy/conda-forge/linux-64/spacy-1.8.1-np112py35_0"
   ],
@@ -939,10 +922,6 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "tarfile": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "tempfile": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
