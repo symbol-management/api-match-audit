@@ -70,16 +70,38 @@
   "basicauth.decode",
   "bigdftparser.metainfo.__init__.m_env",
   "bytes.fromhex",
+  "cachetools.TTLCache",
+  "cachetools.cached",
   "calc_score",
   "call_next",
   "castepparser.metainfo.__init__.m_env",
+  "celery.Celery",
+  "celery.Task",
+  "celery.exceptions.SoftTimeLimitExceeded",
+  "celery.signals.after_setup_logger",
   "celery.signals.after_setup_logger.connect",
+  "celery.signals.after_setup_task_logger",
   "celery.signals.after_setup_task_logger.connect",
+  "celery.signals.celeryd_after_setup",
   "celery.signals.celeryd_after_setup.connect",
+  "celery.signals.worker_process_init",
   "celery.signals.worker_process_init.connect",
+  "celery.signals.worker_process_shutdown",
   "celery.signals.worker_process_shutdown.connect",
+  "celery.utils.worker_direct",
+  "celery.worker.request.Request",
   "charmmparser.metainfo.__init__.m_env",
   "cli.cli.command",
+  "click",
+  "click.Choice",
+  "click.Command",
+  "click.Group",
+  "click.Path",
+  "click.argument",
+  "click.echo",
+  "click.group",
+  "click.option",
+  "click.pass_context",
   "client.client.archive.get_archive_calc",
   "client.client.archive.get_archive_logs",
   "client.client.archive.post_archive_query",
@@ -116,7 +138,10 @@
   "common.rfc3339DateTime.parse",
   "compare_cell",
   "complete_cell",
+  "concurrent.futures",
+  "concurrent.futures.ProcessPoolExecutor",
   "content_generator",
+  "contextlib.contextmanager",
   "convert",
   "convert_to_metainfo",
   "convert_value",
@@ -130,6 +155,16 @@
   "create_section",
   "create_update",
   "crystalparser.metainfo.__init__.m_env",
+  "datetime",
+  "datetime.datetime",
+  "datetime.datetime.combine",
+  "datetime.datetime.fromisoformat",
+  "datetime.datetime.fromtimestamp",
+  "datetime.datetime.now",
+  "datetime.datetime.strptime",
+  "datetime.datetime.utcfromtimestamp",
+  "datetime.datetime.utcnow",
+  "datetime.timedelta",
   "dftbplusparser.metainfo.__init__.m_env",
   "dict.fromkeys",
   "dir.join_file",
@@ -214,10 +249,6 @@
   "gromosparser.metainfo.__init__.m_env",
   "group_callback",
   "gulpparser.metainfo.__init__.m_env",
-  "gzip",
-  "gzip.GzipFile",
-  "gzip.compress",
-  "gzip.open",
   "handle_item",
   "handler",
   "handler.__name__.startswith",
@@ -226,8 +257,6 @@
   "hashlib.sha1",
   "hashlib.sha224",
   "hashlib.sha512",
-  "hmac",
-  "hmac.new",
   "index",
   "init",
   "inspect.Parameter.KEYWORD_ONLY",
@@ -243,15 +272,6 @@
   "items",
   "iter_content",
   "iterator",
-  "jmespath",
-  "jmespath.search",
-  "jwt",
-  "jwt.ExpiredSignatureError",
-  "jwt.InvalidTokenError",
-  "jwt.algorithms.RSAAlgorithm.from_jwk",
-  "jwt.decode",
-  "jwt.encode",
-  "jwt.get_unverified_header",
   "lammpsparser.metainfo.__init__.m_env",
   "libatomsparser.metainfo.__init__.m_env",
   "lobsterparser.metainfo.__init__.m_env",
@@ -319,7 +339,6 @@
   "mopacparser.metainfo.__init__.m_env",
   "mpesparser.MPESParser.main",
   "mpesparser.metainfo.__init__.m_env",
-  "multiprocessing",
   "multiprocessing.Pool",
   "namdparser.metainfo.__init__.m_env",
   "nomad.aflow_prototypes.aflow_prototypes.get",
@@ -825,7 +844,6 @@
   "signature_token",
   "stop_all",
   "str.__class__.__module__",
-  "string.ascii_uppercase",
   "struct.pack",
   "structlog.items",
   "sys.modules.m_package",
@@ -937,51 +955,8 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "cachetools": [
-   "cachetools/conda-forge/noarch/cachetools-4.1.0-py_1",
-   "cachetools/conda-forge/noarch/cachetools-4.2.1-pyhd8ed1ab_0",
-   "cachetools/conda-forge/noarch/cachetools-4.2.2-pyhd8ed1ab_0",
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0"
-  ],
-  "celery": [
-   "celery/conda-forge/linux-64/celery-4.0.1-py35_0",
-   "celery/conda-forge/noarch/celery-4.1.1-py_0",
-   "celery/conda-forge/noarch/celery-4.2.2-py_0",
-   "celery/conda-forge/noarch/celery-4.4.0-py_0",
-   "celery/conda-forge/noarch/celery-4.4.0-py_1",
-   "celery/conda-forge/noarch/celery-4.4.1-py_0",
-   "celery/conda-forge/noarch/celery-4.4.2-pyh8c360ce_0",
-   "celery/conda-forge/noarch/celery-4.4.4-pyh9f0ad1d_0",
-   "celery/conda-forge/noarch/celery-4.4.6-pyh9f0ad1d_0",
-   "celery/conda-forge/noarch/celery-5.0.0-pyhd3deb0d_0",
-   "celery/conda-forge/noarch/celery-5.0.1-pyhd8ed1ab_0",
-   "celery/conda-forge/noarch/celery-5.0.3-pyhd8ed1ab_0",
-   "celery/conda-forge/noarch/celery-5.0.4-pyhd8ed1ab_0",
-   "celery/conda-forge/noarch/celery-5.1.1-pyhd8ed1ab_0",
-   "celery/conda-forge/noarch/celery-5.1.2-pyhd8ed1ab_0"
-  ],
-  "click": [
-   "click/conda-forge/noarch/click-5.1-py_0",
-   "click/conda-forge/noarch/click-6.7-py_1",
-   "click/conda-forge/noarch/click-7.0-py_0",
-   "click/conda-forge/noarch/click-7.1-pyh8c360ce_0",
-   "click/conda-forge/noarch/click-7.1.1-pyh8c360ce_0"
-  ],
   "collections": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "concurrent": [
-   "futures/conda-forge/linux-64/futures-3.2.0-py27_0",
-   "futures/conda-forge/osx-64/futures-3.3.0-py27h8c360ce_1",
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython"
-  ],
-  "contextlib": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "datetime": [
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "decorator": [
@@ -1069,7 +1044,15 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "gzip": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "hashlib": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "hmac": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -1091,9 +1074,23 @@
    "jinja2/conda-forge/noarch/jinja2-3.0.0-pyhd8ed1ab_0",
    "jinja2/conda-forge/noarch/jinja2-3.0.1-pyhd8ed1ab_0"
   ],
+  "jmespath": [
+   "jmespath/conda-forge/linux-64/jmespath-0.9.1-py36_0",
+   "jmespath/conda-forge/noarch/jmespath-0.10.0-pyh9f0ad1d_0",
+   "jmespath/conda-forge/noarch/jmespath-0.9.3-py_1",
+   "jmespath/conda-forge/noarch/jmespath-0.9.4-py_0",
+   "jmespath/conda-forge/noarch/jmespath-0.9.5-py_0"
+  ],
   "json": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "jwt": [
+   "pyjwt/conda-forge/noarch/pyjwt-1.6.0-py_0",
+   "pyjwt/conda-forge/noarch/pyjwt-1.6.1-py_0",
+   "pyjwt/conda-forge/noarch/pyjwt-1.6.3-py_0",
+   "pyjwt/conda-forge/noarch/pyjwt-1.6.4-py_0",
+   "pyjwt/conda-forge/noarch/pyjwt-1.7.1-py_0"
   ],
   "keycloak": [
    "python-keycloak/conda-forge/noarch/python-keycloak-0.19.0-py_0",
@@ -1153,6 +1150,10 @@
   "msgpack": [
    "msgpack-python/conda-forge/linux-64/msgpack-python-1.0.0-py38hc9558a2_0",
    "msgpack-python/conda-forge/linux-64/msgpack-python-1.0.2-py36h605e78d_0"
+  ],
+  "multiprocessing": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "nomad": [
    "nomad-lab/conda-forge/linux-64/nomad-lab-0.10.4-py36h4d9540e_0",
@@ -1304,6 +1305,10 @@
    "starlette/conda-forge/noarch/starlette-0.13.8-py_0",
    "starlette/conda-forge/noarch/starlette-0.8.0-py_0",
    "starlette/conda-forge/noarch/starlette-0.9.10-py_0"
+  ],
+  "string": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "struct": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
