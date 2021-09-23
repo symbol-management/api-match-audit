@@ -28,14 +28,10 @@
   "eval.SoS_eval",
   "eval.stmtHash.script",
   "executor_utils.kill_all_subprocesses",
-  "fasteners",
-  "fasteners.InterProcessLock",
   "file_only",
   "file_target",
   "func",
   "func.__name__",
-  "glob",
-  "glob.glob",
   "has_job",
   "hashlib.md5",
   "hashlib.md5.hexdigest",
@@ -56,13 +52,28 @@
   "io.FileIO",
   "io.FileIO.read",
   "io.StringIO",
+  "jinja2.Environment",
+  "jinja2.PackageLoader",
+  "jinja2.select_autoescape",
+  "keyword",
+  "keyword.kwlist",
+  "logging",
+  "logging.DEBUG",
+  "logging.ERROR",
+  "logging.FileHandler",
+  "logging.Formatter",
+  "logging.Formatter.format",
+  "logging.INFO",
+  "logging.StreamHandler",
+  "logging.WARNING",
+  "logging.getLogger",
+  "lzma",
+  "lzma.compress",
+  "lzma.decompress",
   "merge_dict",
   "monitor.summarizeExecution",
-  "multiprocessing",
   "multiprocessing.Pool",
   "multiprocessing.Process",
-  "multiprocessing.pool.Pool",
-  "multiprocessing.pool.ThreadPool",
   "networkx.DiGraph",
   "networkx.ancestors",
   "networkx.find_cycle",
@@ -101,6 +112,10 @@
   "os.unlink",
   "os.utime",
   "parser.SoS_Script",
+  "pickle.dump",
+  "pickle.dumps",
+  "pickle.load",
+  "pickle.loads",
   "pprint",
   "pprint.PrettyPrinter",
   "pprint.pformat",
@@ -298,10 +313,6 @@
    "pillow/conda-forge/linux-64/pillow-7.0.0-py36h8328e55_1",
    "pillow/conda-forge/linux-64/pillow-7.2.0-py37h718be6c_1"
   ],
-  "_pickle": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "_version": [
    "configobj/conda-forge/noarch/configobj-5.0.6-py_0"
   ],
@@ -344,6 +355,9 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "fasteners": [
+   "fasteners/conda-forge/noarch/fasteners-0.14.1-py_3"
+  ],
   "fnmatch": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -353,6 +367,10 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "getpass": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "glob": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -391,25 +409,7 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "jinja2": [
-   "jinja2/conda-forge/noarch/jinja2-2.10-py_1",
-   "jinja2/conda-forge/noarch/jinja2-2.11.3-pyh44b312d_0",
-   "jinja2/conda-forge/noarch/jinja2-3.0.0-pyhd8ed1ab_0",
-   "jinja2/conda-forge/noarch/jinja2-3.0.1-pyhd8ed1ab_0"
-  ],
   "json": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "keyword": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "logging": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "lzma": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -422,6 +422,10 @@
    "markdown/conda-forge/noarch/markdown-3.3.3-pyh9f0ad1d_0"
   ],
   "math": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "multiprocessing": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
