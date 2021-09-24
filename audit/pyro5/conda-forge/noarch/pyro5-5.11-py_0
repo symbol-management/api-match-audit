@@ -104,10 +104,13 @@
   "makeStrValue",
   "method",
   "method.__qualname__",
+  "msgpack",
   "nameserver.lookup",
   "nameserver.start_ns",
   "nameserver.yplookup",
   "nsbatch",
+  "numbers",
+  "numbers.Number",
   "object.__hash__",
   "object.__new__",
   "os.environ.get",
@@ -137,6 +140,10 @@
   "protocol.recv_stub",
   "replacement_function",
   "replacer",
+  "select",
+  "select.select",
+  "selectors",
+  "selectors.EVENT_READ",
   "serializers.MarshalSerializer.serializer_id",
   "serializers.SerializerBase",
   "serializers.SerializerBase.class_to_dict",
@@ -149,11 +156,17 @@
   "serializers.serializers",
   "serializers.serializers.values",
   "serializers.serializers_by_id",
+  "serpent",
+  "serpent.dumps",
+  "serpent.loads",
+  "serpent.register_class",
+  "serpent.unregister_class",
   "server.Daemon",
   "server.Daemon.__new__",
   "server.expose",
   "server.oneway",
   "set_reuseaddr",
+  "socket",
   "socket.AF_INET",
   "socket.AF_INET6",
   "socket.AF_UNIX",
@@ -172,8 +185,10 @@
   "socket.TCP_NODELAY",
   "socket.error",
   "socket.gaierror",
+  "socket.getaddrinfo",
   "socket.gethostbyaddr",
   "socket.gethostname",
+  "socket.socket",
   "socket.timeout",
   "socketutil.ERRNO_BADF",
   "socketutil.ERRNO_EADDRINUSE",
@@ -189,26 +204,41 @@
   "socketutil.interrupt_socket",
   "socketutil.receive_data",
   "socketutil.send_data",
+  "sqlite3",
   "sqlite3.DatabaseError",
   "sqlite3.connect",
+  "ssl",
   "ssl.CERT_NONE",
   "ssl.CERT_REQUIRED",
   "ssl.Purpose.CLIENT_AUTH",
   "ssl.Purpose.SERVER_AUTH",
+  "ssl.SSLContext",
+  "ssl.SSLSocket",
+  "ssl.create_default_context",
   "struct.calcsize",
   "struct.error",
   "struct.pack",
   "struct.unpack",
   "sys.stderr.write",
   "sys.stdout.encoding",
+  "threading.local",
+  "typing.Any",
+  "typing.Callable",
+  "typing.Dict",
+  "typing.Optional",
+  "typing.Sequence",
+  "typing.Set",
+  "typing.Tuple",
+  "typing.Type",
+  "typing.Union",
+  "uuid",
+  "uuid.UUID",
+  "uuid.uuid4",
   "valuetype",
-  "warnings.warn"
+  "warnings.warn",
+  "weakref"
  ],
  "deps": {
-  "_threading_local": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "argparse": [
    "argparse/conda-forge/osx-64/argparse-1.4.0-py26_0",
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -268,15 +298,7 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "msgpack": [
-   "msgpack-python/conda-forge/linux-64/msgpack-python-1.0.0-py38hc9558a2_0",
-   "msgpack-python/conda-forge/linux-64/msgpack-python-1.0.2-py36h605e78d_0"
-  ],
   "ntpath": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "numbers": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -296,36 +318,6 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "select": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "selectors": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "serpent": [
-   "serpent/conda-forge/noarch/serpent-1.25-py_1",
-   "serpent/conda-forge/noarch/serpent-1.26-py_0",
-   "serpent/conda-forge/noarch/serpent-1.28-py_0",
-   "serpent/conda-forge/noarch/serpent-1.28-py_1",
-   "serpent/conda-forge/noarch/serpent-1.30.1-py_0",
-   "serpent/conda-forge/noarch/serpent-1.30.2-py_0",
-   "serpent/conda-forge/noarch/serpent-1.40-pyhd8ed1ab_0",
-   "serpent/conda-forge/noarch/serpent-1.40-pyhd8ed1ab_1"
-  ],
-  "socket": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "sqlite3": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "ssl": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "struct": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -338,19 +330,7 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "typing": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "uuid": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "warnings": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "weakref": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],

@@ -32,6 +32,8 @@
   "ligo.gracedb",
   "ligo.gracedb.rest.GraceDb",
   "ligo.gracedb.rest.HTTPError",
+  "liquid.Liquid",
+  "networkx",
   "networkx.draw",
   "numpy.abs",
   "numpy.greater_equal",
@@ -45,7 +47,35 @@
   "os.path.isfile",
   "os.symlink",
   "os.system",
-  "update"
+  "otter",
+  "otter.Otter",
+  "otter.bootstrap",
+  "otter.bootstrap.Badge",
+  "otter.bootstrap.Card",
+  "otter.bootstrap.CardDeck",
+  "otter.bootstrap.Container",
+  "otter.bootstrap.ListGroup",
+  "otter.bootstrap.Navbar",
+  "pathlib",
+  "pathlib.Path",
+  "pytz",
+  "pytz.timezone",
+  "requests",
+  "requests.post",
+  "stat",
+  "stat.S_IRGRP",
+  "stat.S_IROTH",
+  "stat.S_IRUSR",
+  "unittest",
+  "unittest.TestCase",
+  "update",
+  "uuid",
+  "uuid.uuid4",
+  "venv",
+  "venv.EnvBuilder",
+  "yaml",
+  "yaml.dump",
+  "yaml.safe_load"
  ],
  "deps": {
   "asimov": [
@@ -140,9 +170,6 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "liquid": [
-   "liquidpy/conda-forge/noarch/liquidpy-0.6.3-pyhd8ed1ab_0"
-  ],
   "logging": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -150,14 +177,6 @@
   "math": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "networkx": [
-   "networkx/conda-forge/noarch/networkx-2.1-py_1",
-   "networkx/conda-forge/noarch/networkx-2.2-py_1",
-   "networkx/conda-forge/noarch/networkx-2.4-py_1",
-   "networkx/conda-forge/noarch/networkx-2.5-py_0",
-   "networkx/conda-forge/noarch/networkx-2.6.1-pyhd8ed1ab_0",
-   "networkx/conda-forge/noarch/networkx-2.6.1-pyhd8ed1ab_1"
   ],
   "ntpath": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -172,75 +191,22 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "otter": [
-   "otter-report/conda-forge/noarch/otter-report-0.3.2-pyhd8ed1ab_0"
-  ],
-  "pathlib": [
-   "pathlib/conda-forge/noarch/pathlib-1.0.1-py_1",
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "pkg_resources": [
    "setuptools/conda-forge/linux-64/setuptools-40.6.1-py36_0",
    "setuptools/conda-forge/linux-64/setuptools-46.3.0-py38h32f6830_0",
    "setuptools/conda-forge/linux-64/setuptools-49.1.2-py38h32f6830_0"
   ],
-  "pytz": [
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0",
-   "pytz/conda-forge/noarch/pytz-2017.3-py_1",
-   "pytz/conda-forge/noarch/pytz-2017.3-py_2",
-   "pytz/conda-forge/noarch/pytz-2018.4-py_0",
-   "pytz/conda-forge/noarch/pytz-2018.5-py_0",
-   "pytz/conda-forge/noarch/pytz-2018.6-py_0",
-   "pytz/conda-forge/noarch/pytz-2019.1-py_0",
-   "pytz/conda-forge/noarch/pytz-2019.2-py_0",
-   "pytz/conda-forge/noarch/pytz-2020.1-pyh9f0ad1d_0",
-   "pytz/conda-forge/noarch/pytz-2020.4-pyhd8ed1ab_0"
-  ],
   "re": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "requests": [
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0",
-   "requests/conda-forge/linux-64/requests-2.12.0-py35_0",
-   "requests/conda-forge/noarch/requests-2.23.0-pyh8c360ce_2",
-   "requests/conda-forge/noarch/requests-2.24.0-pyh9f0ad1d_0",
-   "requests/conda-forge/noarch/requests-2.25.0-pyhd3deb0d_0",
-   "requests/conda-forge/noarch/requests-2.25.1-pyhd3deb0d_0",
-   "requests/conda-forge/noarch/requests-2.26.0-pyhd8ed1ab_0"
-  ],
   "shutil": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "stat": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "subprocess": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "unittest": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "uuid": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "venv": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "yaml": [
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0",
-   "pyyaml/conda-forge/linux-64/pyyaml-3.11-py35_0",
-   "pyyaml/conda-forge/win-64/pyyaml-5.2-py36hfa6e2cd_0"
   ]
  }
 }
