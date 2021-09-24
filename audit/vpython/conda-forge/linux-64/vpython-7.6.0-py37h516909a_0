@@ -9,8 +9,14 @@
   "fct",
   "get_ipython",
   "io.open",
+  "jupyter_core.paths.jupyter_data_dir",
+  "jupyterlab",
+  "jupyterlab.__version__",
+  "jupyterlab.commands",
+  "jupyterlab.commands.get_app_dir",
   "max.setter",
   "min.setter",
+  "multiprocessing",
   "multiprocessing.Process",
   "numpy.arange",
   "os.getcwd",
@@ -19,33 +25,26 @@
   "os.listdir",
   "os.path.isfile",
   "os.system",
+  "platform",
+  "platform.python_implementation",
+  "platform.python_version",
+  "platform.system",
   "print_to_string",
   "range.setter",
   "rate_control.ws_queue.get",
   "rate_control.ws_queue.put",
   "rate_control.ws_queue.qsize",
   "sender",
-  "signal",
   "signal.CTRL_C_EVENT",
   "signal.SIGINT",
-  "signal.signal",
-  "socket",
-  "socket.socket",
-  "spyder.__version__",
   "spyder.config.main.CONF",
-  "spyder.config.manager.CONF",
   "spyder.config.manager.CONF.get",
   "stop_server",
   "sys.modules.items",
   "time.clock",
-  "tornado.httpserver",
-  "tornado.ioloop",
-  "tornado.web",
-  "tornado.websocket",
-  "txaio",
   "txaio.config.loop",
   "type.setter",
-  "vector",
+  "urllib.parse.unquote",
   "vpython.__init__.__ispython3",
   "vpython.__init__.__p",
   "vpython.__init__.__require_notebook",
@@ -53,15 +52,9 @@
   "vpython.baseObj.attrs",
   "vpython.baseObj.glow",
   "vpython.baseObj.glow.handle_msg",
-  "vpython.baseObj.handle_attach",
-  "vpython.baseObj.initialize",
   "vpython.baseObj.object_registry",
-  "vpython.baseObj.package",
   "vpython.baseObj.sent",
-  "vpython.baseObj.trigger",
   "vpython.baseObj.updates",
-  "webbrowser",
-  "webbrowser.open",
   "wsperiodic"
  ],
  "deps": {
@@ -116,37 +109,11 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "jupyter_core": [
-   "jupyter_core/conda-forge/linux-64/jupyter_core-4.7.0-py37h9c2f6ca_1",
-   "jupyter_core/conda-forge/noarch/jupyter_core-4.5.0-py_0"
-  ],
-  "jupyterlab": [
-   "jupyterlab/conda-forge/linux-64/jupyterlab-1.0.7-py37_0",
-   "jupyterlab/conda-forge/noarch/jupyterlab-1.2.10-py_0",
-   "jupyterlab/conda-forge/noarch/jupyterlab-1.2.6-py_0",
-   "jupyterlab/conda-forge/noarch/jupyterlab-1.2.7-py_0",
-   "jupyterlab/conda-forge/noarch/jupyterlab-2.0.0-py_1",
-   "jupyterlab/conda-forge/noarch/jupyterlab-2.0.1-py_0",
-   "jupyterlab/conda-forge/noarch/jupyterlab-2.1.2-py_0",
-   "jupyterlab/conda-forge/noarch/jupyterlab-2.1.4-py_0",
-   "jupyterlab/conda-forge/noarch/jupyterlab-3.0.0-pyhd8ed1ab_0",
-   "jupyterlab/conda-forge/noarch/jupyterlab-3.0.1-pyhd8ed1ab_0",
-   "jupyterlab/conda-forge/noarch/jupyterlab-3.0.10-pyhd8ed1ab_0",
-   "jupyterlab/conda-forge/noarch/jupyterlab-3.0.13-pyhd8ed1ab_0",
-   "jupyterlab/conda-forge/noarch/jupyterlab-3.0.4-pyhd8ed1ab_0",
-   "jupyterlab/conda-forge/noarch/jupyterlab-3.0.5-pyhd8ed1ab_0",
-   "jupyterlab/conda-forge/noarch/jupyterlab-3.1.8-pyhd8ed1ab_0",
-   "jupyterlab/conda-forge/noarch/jupyterlab-3.1.9-pyhd8ed1ab_0"
-  ],
   "logging": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "math": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "multiprocessing": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -173,10 +140,6 @@
    "packaging/conda-forge/noarch/packaging-20.8-pyhd3deb0d_0",
    "packaging/conda-forge/noarch/packaging-21.0-pyhd8ed1ab_0"
   ],
-  "platform": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "queue": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -189,11 +152,42 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "signal": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "socket": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "spyder": [
+   "spyder/conda-forge/linux-64/spyder-4.1.3-py38h32f6830_0",
+   "spyder/conda-forge/linux-64/spyder-5.0.3-py37h89c1867_0"
+  ],
   "threading": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "urllib": [
+  "tornado": [
+   "tornado/conda-forge/linux-64/tornado-4.4.3-py35_0",
+   "tornado/conda-forge/linux-64/tornado-6.0.4-py38h1e0a361_2"
+  ],
+  "txaio": [
+   "txaio/conda-forge/noarch/txaio-18.8.1-py_0",
+   "txaio/conda-forge/noarch/txaio-2.10.0-py_0",
+   "txaio/conda-forge/noarch/txaio-2.9.0-py_0",
+   "txaio/conda-forge/noarch/txaio-20.1.1-py_0",
+   "txaio/conda-forge/noarch/txaio-20.4.1-pyhd8ed1ab_0"
+  ],
+  "vector": [
+   "vector/conda-forge/noarch/vector-0.8.1-pyhd8ed1ab_0",
+   "vector/conda-forge/noarch/vector-0.8.2-pyhd8ed1ab_1",
+   "vector/conda-forge/noarch/vector-0.8.3-pyhd8ed1ab_0"
+  ],
+  "vpython": [
+   "vpython/conda-forge/linux-64/vpython-7.6.0-py37h516909a_0"
+  ],
+  "webbrowser": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ]
