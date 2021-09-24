@@ -32,8 +32,6 @@
   "_validation.warn_for_D",
   "atlas_not_found",
   "avgfunc",
-  "calendar",
-  "calendar.month_abbr",
   "cls",
   "collections.abc.Iterable",
   "collections.deque",
@@ -44,18 +42,16 @@
   "compat.statsmodels.bind_df_model",
   "compat.statsmodels.check_seasonal_order",
   "context_managers.except_and_reraise",
-  "datetime.datetime",
-  "datetime.datetime.now",
   "decomposed",
-  "distutils.sysconfig.customize_compiler",
-  "distutils.version.LooseVersion",
   "do_fit",
-  "enum.Enum",
   "fit_partial",
   "fun",
   "func",
   "functools.partial",
+  "get_version",
   "icfunc",
+  "importlib",
+  "importlib.import_module",
   "joblib",
   "joblib.Parallel",
   "joblib.__version__",
@@ -64,16 +60,9 @@
   "joblib.dump",
   "joblib.load",
   "kde",
-  "math",
-  "math.ceil",
-  "matplotlib",
-  "matplotlib.__version__",
-  "matplotlib.get_backend",
-  "matplotlib.gridspec",
-  "matplotlib.gridspec.GridSpec",
-  "matplotlib.pyplot",
-  "matplotlib.use",
   "metrics.smape",
+  "numbers",
+  "numbers.Number",
   "numpy.abs",
   "numpy.arange",
   "numpy.bool",
@@ -105,6 +94,12 @@
   "os.mkdir",
   "os.path.exists",
   "os.stat",
+  "pickle",
+  "pickle.dump",
+  "pickle.load",
+  "pkg_resources.parse_version",
+  "platform",
+  "platform.platform",
   "pmdarima.__check_build.__init__.INPLACE_MSG",
   "pmdarima.__check_build.__init__.STANDARD_MSG",
   "pmdarima.__check_build.__init__.raise_build_error",
@@ -143,11 +138,46 @@
   "stationarity.ADFTest",
   "stationarity.KPSSTest",
   "stationarity.PPTest",
+  "statsmodels",
+  "statsmodels.__version__",
+  "statsmodels.api",
+  "statsmodels.api.OLS",
+  "statsmodels.api.datasets.sunspots.load_pandas",
+  "statsmodels.api.tsa.datetools.dates_from_range",
+  "statsmodels.api.tsa.statespace.SARIMAX",
+  "statsmodels.api.tsa.stattools.acf",
+  "statsmodels.api.tsa.stattools.pacf",
+  "statsmodels.graphics.gofplots",
+  "statsmodels.graphics.gofplots.qqplot",
+  "statsmodels.graphics.tsaplots",
+  "statsmodels.graphics.tsaplots.plot_acf",
+  "statsmodels.graphics.tsaplots.plot_pacf",
+  "statsmodels.graphics.utils",
+  "statsmodels.graphics.utils.create_mpl_fig",
+  "statsmodels.tools.add_constant",
+  "statsmodels.tsa.stattools.acf",
+  "statsmodels.tsa.stattools.pacf",
   "sys.stderr.write",
   "sys.stdout.encoding",
   "sys.version.replace",
+  "tarfile",
+  "tarfile.open",
+  "tempfile",
+  "tempfile.TemporaryDirectory",
   "testfunc",
+  "textwrap",
+  "textwrap.dedent",
+  "threading",
+  "threading.Thread",
+  "traceback",
+  "traceback.format_exc",
+  "traceback.format_exception_only",
+  "unittest.mock",
+  "unittest.mock.MagicMock",
+  "unittest.mock.patch",
   "unittest.mock.patch.object",
+  "urllib3",
+  "urllib3.PoolManager",
   "warnings.warn"
  ],
  "deps": {
@@ -156,16 +186,16 @@
    "cython/conda-forge/linux-64/cython-0.29.16-py36h831f99a_0",
    "cython/conda-forge/linux-64/cython-0.29.7-py37he1b5a44_0"
   ],
-  "_pickle": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "_pytest": [
    "pytest/conda-forge/linux-64/pytest-3.7.0-py27_0",
    "pytest/conda-forge/linux-64/pytest-4.6.0-py37_0",
    "pytest/conda-forge/linux-64/pytest-6.0.2-py37hc8dfbb8_0"
   ],
   "abc": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "calendar": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -177,31 +207,37 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "functools": [
+  "datetime": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "get_version": [
-   "get_version/conda-forge/noarch/get_version-2.1-py_0",
-   "get_version/conda-forge/noarch/get_version-2.1-py_1",
-   "get_version/conda-forge/noarch/get_version-3.2-pyhd8ed1ab_0",
-   "get_version/conda-forge/noarch/get_version-3.4-pyhd8ed1ab_0",
-   "get_version/conda-forge/noarch/get_version-3.5-pyhd8ed1ab_0"
+  "distutils": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "enum": [
+   "privy/conda-forge/noarch/privy-6.0.0-py_0",
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "functools": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "glob": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "importlib": [
-   "importlib/conda-forge/linux-64/importlib-1.0.4-py26_0",
+  "math": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "matplotlib": [
+   "matplotlib-base/conda-forge/linux-64/matplotlib-base-3.1.1-py37hfd891ef_0",
+   "matplotlib-base/conda-forge/linux-64/matplotlib-base-3.1.1-py38h250f245_2",
+   "matplotlib/conda-forge/linux-64/matplotlib-1.5.3-np111py34_0"
   ],
   "ntpath": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "numbers": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -221,19 +257,6 @@
   "pandas": [],
   "pathlib": [
    "pathlib/conda-forge/noarch/pathlib-1.0.1-py_1",
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "pickle": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "pkg_resources": [
-   "setuptools/conda-forge/linux-64/setuptools-40.6.1-py36_0",
-   "setuptools/conda-forge/linux-64/setuptools-46.3.0-py38h32f6830_0",
-   "setuptools/conda-forge/linux-64/setuptools-49.1.2-py38h32f6830_0"
-  ],
-  "platform": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -259,50 +282,9 @@
    "scikit-learn/conda-forge/linux-64/scikit-learn-0.17.1-np110py35_blas_openblas_202",
    "scikit-learn/conda-forge/linux-64/scikit-learn-0.17.1-np111py35_blas_openblas_202"
   ],
-  "statsmodels": [
-   "statsmodels/conda-forge/linux-64/statsmodels-0.9.0-py27h7eb728f_0",
-   "statsmodels/conda-forge/linux-64/statsmodels-0.9.0-py36h7eb728f_0"
-  ],
   "subprocess": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "tarfile": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "tempfile": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "textwrap": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "threading": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "traceback": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "unittest": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "urllib3": [
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0",
-   "urllib3/conda-forge/linux-64/urllib3-1.24.1-py37_1000",
-   "urllib3/conda-forge/linux-64/urllib3-1.25.7-py36_0",
-   "urllib3/conda-forge/linux-64/urllib3-1.25.8-py37hc8dfbb8_1",
-   "urllib3/conda-forge/noarch/urllib3-1.25.11-py_0",
-   "urllib3/conda-forge/noarch/urllib3-1.26.0-pyhd8ed1ab_0",
-   "urllib3/conda-forge/noarch/urllib3-1.26.2-pyhd8ed1ab_0",
-   "urllib3/conda-forge/noarch/urllib3-1.26.3-pyhd8ed1ab_0",
-   "urllib3/conda-forge/noarch/urllib3-1.26.5-pyhd8ed1ab_0",
-   "urllib3/conda-forge/noarch/urllib3-1.26.6-pyhd8ed1ab_0"
   ],
   "warnings": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",

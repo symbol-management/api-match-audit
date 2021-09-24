@@ -90,6 +90,9 @@
   "os.path.sep.join",
   "os.remove",
   "os.system",
+  "osgeo.gdal",
+  "osgeo.gdal.DEMProcessing",
+  "osgeo.gdal.Dataset",
   "osgeo.gdal.GDT_Byte",
   "osgeo.gdal.GDT_CFloat64",
   "osgeo.gdal.GDT_Float32",
@@ -101,12 +104,55 @@
   "osgeo.gdal.GRA_Bilinear",
   "osgeo.gdal.GRA_Lanczos",
   "osgeo.gdal.GRA_NearestNeighbour",
+  "osgeo.gdal.GetDriverByName",
+  "osgeo.gdal.Open",
+  "osgeo.gdal.RasterizeLayer",
+  "osgeo.gdal.ReprojectImage",
+  "osgeo.gdal.Warp",
+  "osgeo.ogr",
+  "osgeo.ogr.Feature",
+  "osgeo.ogr.FieldDefn",
+  "osgeo.ogr.GetDriverByName",
+  "osgeo.ogr.OFTInteger",
+  "osgeo.ogr.Open",
+  "osgeo.ogr.wkbPolygon",
+  "osgeo.osr",
+  "osgeo.osr.CoordinateTransformation",
+  "osgeo.osr.SpatialReference",
+  "pyproj",
+  "pyproj.Proj",
+  "pyproj.transform",
   "read_shift_params",
   "read_stats_file",
   "scipy.spatial.ConvexHull",
+  "shapely.geometry.LineString",
+  "shapely.geometry.Point",
+  "shapely.geometry.linestring.LineString",
+  "shapely.geometry.mapping",
+  "shapely.geometry.point.Point",
+  "shapely.geometry.polygon.Polygon",
+  "shapely.geometry.polygon.orient",
+  "shapely.ops.transform",
+  "shapely.strtree.STRtree",
   "skimage.exposure.match_histograms",
+  "skimage.feature.greycomatrix",
+  "skimage.feature.greycoprops",
+  "skimage.feature.peak_local_max",
+  "skimage.filters.rank",
+  "skimage.filters.rank.mean",
+  "skimage.measure.ransac",
+  "skimage.morphology.binary_closing",
+  "skimage.morphology.binary_dilation",
+  "skimage.morphology.disk",
+  "skimage.transform.AffineTransform",
+  "skimage.transform.EuclideanTransform",
+  "skimage.transform.PiecewiseAffineTransform",
+  "skimage.transform.warp",
   "tmp_curve",
-  "write_geotiff"
+  "write_geotiff",
+  "yaml",
+  "yaml.SafeLoader",
+  "yaml.load"
  ],
  "deps": {
   "__future__": [
@@ -190,17 +236,8 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "osgeo": [
-   "gdal/conda-forge/linux-64/gdal-3.0.3-py38hbb6b9fb_0",
-   "gdal/conda-forge/linux-64/gdal-3.0.4-py36hd60729c_6",
-   "gdal/conda-forge/linux-64/gdal-3.1.2-py36hcf62b00_2"
-  ],
   "pandas": [
    "pandas/conda-forge/linux-64/pandas-1.2.2-py37h40f5888_0"
-  ],
-  "pyproj": [
-   "pyproj/conda-forge/linux-64/pyproj-2.1.3-py37h516909a_0",
-   "pyproj/conda-forge/linux-64/pyproj-2.3.0-py37h2fd02e8_0"
   ],
   "random": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -214,16 +251,10 @@
    "scipy/conda-forge/linux-64/scipy-1.7.0-py37h29e03ee_0",
    "scipy/conda-forge/linux-64/scipy-1.7.0-py37ha768fb6_1"
   ],
-  "shapely": [
-   "shapely/conda-forge/linux-64/shapely-1.5.15-np19py35_0",
-   "shapely/conda-forge/linux-64/shapely-1.7.1-py37hba0730f_1",
-   "solaris/conda-forge/noarch/solaris-0.4.0-pyhe05a262_0"
-  ],
   "shutil": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "skimage": [],
   "sklearn": [
    "scikit-learn/conda-forge/linux-64/scikit-learn-0.17.1-np110py27_blas_openblas_200",
    "scikit-learn/conda-forge/linux-64/scikit-learn-0.17.1-np110py35_blas_openblas_202",
@@ -232,12 +263,6 @@
   "subprocess": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "yaml": [
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0",
-   "pyyaml/conda-forge/linux-64/pyyaml-3.11-py35_0",
-   "pyyaml/conda-forge/win-64/pyyaml-5.2-py36hfa6e2cd_0"
   ]
  }
 }
