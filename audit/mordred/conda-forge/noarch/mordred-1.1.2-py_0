@@ -100,7 +100,9 @@
   "pickled",
   "pretty",
   "r",
+  "rdkit.Chem",
   "rdkit.Chem.AddHs",
+  "rdkit.Chem.AllChem",
   "rdkit.Chem.AllChem.EmbedMolecule",
   "rdkit.Chem.AllChem.MolFromSmiles",
   "rdkit.Chem.AllChem.MolToMolFile",
@@ -111,7 +113,14 @@
   "rdkit.Chem.BondType.DOUBLE",
   "rdkit.Chem.BondType.SINGLE",
   "rdkit.Chem.BondType.TRIPLE",
+  "rdkit.Chem.Crippen",
+  "rdkit.Chem.Crippen.MolLogP",
+  "rdkit.Chem.Crippen.MolMR",
+  "rdkit.Chem.Descriptors.ExactMolWt",
+  "rdkit.Chem.Descriptors.MolWt",
+  "rdkit.Chem.EState",
   "rdkit.Chem.EState.EStateIndices",
+  "rdkit.Chem.EState.EState_VSA",
   "rdkit.Chem.EState.TypeAtoms",
   "rdkit.Chem.FindAllPathsOfLengthN",
   "rdkit.Chem.FindAllSubgraphsOfLengthN",
@@ -120,6 +129,9 @@
   "rdkit.Chem.GetMolFrags",
   "rdkit.Chem.GetPeriodicTable",
   "rdkit.Chem.GetSymmSSSR",
+  "rdkit.Chem.GraphDescriptors",
+  "rdkit.Chem.GraphDescriptors.BalabanJ",
+  "rdkit.Chem.GraphDescriptors.BertzCT",
   "rdkit.Chem.HybridizationType",
   "rdkit.Chem.HybridizationType.SP",
   "rdkit.Chem.HybridizationType.SP2",
@@ -130,6 +142,8 @@
   "rdkit.Chem.Mol",
   "rdkit.Chem.MolFromSmarts",
   "rdkit.Chem.MolFromSmiles",
+  "rdkit.Chem.MolSurf",
+  "rdkit.Chem.MolSurf.LabuteASA",
   "rdkit.Chem.MolToSmiles",
   "rdkit.Chem.RWMol",
   "rdkit.Chem.RemoveHs",
@@ -146,8 +160,18 @@
   "rdkit.Chem.rdMolDescriptors.CalcTPSA",
   "rdkit.Chem.rdPartialCharges.ComputeGasteigerCharges",
   "read",
+  "six",
+  "six.PY2",
+  "six.PY3",
+  "six.integer_types",
+  "six.string_types",
+  "six.with_metaclass",
   "tsa",
-  "warning"
+  "warning",
+  "yaml",
+  "yaml.CLoader",
+  "yaml.Loader",
+  "yaml.load"
  ],
  "deps": {
   "Bio": [
@@ -251,24 +275,9 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "rdkit": [
-   "rdkit/conda-forge/linux-64/rdkit-2018.09.3-py27h9c20d5c_0",
-   "rdkit/conda-forge/linux-64/rdkit-2019.03.4-py37hb31dc5d_1",
-   "rdkit/conda-forge/linux-64/rdkit-2020.09.4-py39hccf6a74_0"
-  ],
   "shutil": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "six": [
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0",
-   "lldb/conda-forge/linux-64/lldb-6.0.0-py35_0",
-   "privy/conda-forge/noarch/privy-6.0.0-py_0",
-   "six/conda-forge/linux-64/six-1.10.0-py34_0",
-   "six/conda-forge/linux-64/six-1.10.0-py34_1",
-   "six/conda-forge/noarch/six-1.14.0-py_1",
-   "six/conda-forge/noarch/six-1.16.0-pyh6c4a22f_0"
   ],
   "tempfile": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -289,12 +298,6 @@
   "types": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "yaml": [
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0",
-   "pyyaml/conda-forge/linux-64/pyyaml-3.11-py35_0",
-   "pyyaml/conda-forge/win-64/pyyaml-5.2-py36hfa6e2cd_0"
   ]
  }
 }

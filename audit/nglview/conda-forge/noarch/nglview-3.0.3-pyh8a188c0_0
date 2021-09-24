@@ -49,16 +49,12 @@
   "make_dummy_comm",
   "make_func",
   "make_widget_box",
-  "mdtraj",
-  "mdtraj.load",
   "mock.ANY",
   "mock.MagicMock",
   "mock.call",
   "mock.mock_open",
   "mock.patch",
   "mock.patch.object",
-  "moviepy.editor",
-  "moviepy.editor.ImageSequenceClip",
   "nglview.NGLWidget._coordinates_dict",
   "nglview.NGLWidget._set_coordinates",
   "nglview.NGLWidget.add_component",
@@ -104,6 +100,8 @@
   "pymatgen.core.Lattice.cubic",
   "pymatgen.core.Structure",
   "pymatgen.io.ase.AseAtomsAdaptor",
+  "pytest",
+  "pytest.raises",
   "pytraj",
   "pytraj.datafiles.load_ala3",
   "pytraj.datafiles.load_trpcage",
@@ -112,7 +110,10 @@
   "pytraj.superpose",
   "qcelemental",
   "qcelemental.models.Molecule.from_data",
+  "rdkit",
+  "rdkit.Chem",
   "rdkit.Chem.AddHs",
+  "rdkit.Chem.AllChem",
   "rdkit.Chem.AllChem.EmbedMultipleConfs",
   "rdkit.Chem.MolFromSmiles",
   "rdkit.Chem.MolToMolBlock",
@@ -124,18 +125,19 @@
   "schrodinger.application.desmond.packages.traj.read_traj",
   "schrodinger.structure.StructureReader",
   "show.__all__",
-  "shutil.rmtree",
-  "socket",
+  "six",
+  "six.add_metaclass",
   "socket.error",
   "socket.gethostname",
-  "tempfile",
-  "tempfile.mkdtemp",
-  "tempfile.mkstemp",
+  "subprocess",
+  "subprocess.check_call",
   "theme.ThemeManager",
   "threading",
   "threading.Event",
   "threading.Thread",
+  "typing.List",
   "update_coords",
+  "urllib.request.urlopen",
   "utils.get_fn",
   "utils.js_utils.execute",
   "utils.js_utils.run",
@@ -144,7 +146,12 @@
   "utils.py_utils.get_positive_index",
   "utils.repr_dict",
   "utils.widget_utils.get_widget_by_name",
-  "widget.__all__"
+  "warnings",
+  "warnings.catch_warnings",
+  "warnings.filterwarnings",
+  "warnings.simplefilter",
+  "widget.__all__",
+  "zipfile.ZipFile"
  ],
  "deps": {
   "Bio": [
@@ -164,11 +171,6 @@
    "pillow/conda-forge/linux-64/pillow-6.2.1-py36hd70f55b_1",
    "pillow/conda-forge/linux-64/pillow-7.0.0-py36h8328e55_1",
    "pillow/conda-forge/linux-64/pillow-7.2.0-py37h718be6c_1"
-  ],
-  "_pytest": [
-   "pytest/conda-forge/linux-64/pytest-3.7.0-py27_0",
-   "pytest/conda-forge/linux-64/pytest-4.6.0-py37_0",
-   "pytest/conda-forge/linux-64/pytest-6.0.2-py37hc8dfbb8_0"
   ],
   "abc": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -241,6 +243,13 @@
    "matplotlib-base/conda-forge/linux-64/matplotlib-base-3.1.1-py38h250f245_2",
    "matplotlib/conda-forge/linux-64/matplotlib-1.5.3-np111py34_0"
   ],
+  "mdtraj": [
+   "mdtraj/conda-forge/win-64/mdtraj-1.9.2-py27hce6d55d_1000"
+  ],
+  "moviepy": [
+   "moviepy/conda-forge/noarch/moviepy-0.2.3.5-py_0",
+   "moviepy/conda-forge/noarch/moviepy-1.0.1-py_0"
+  ],
   "ntpath": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -254,16 +263,6 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "pytest": [
-   "pytest/conda-forge/linux-64/pytest-3.7.0-py27_0",
-   "pytest/conda-forge/linux-64/pytest-4.6.0-py37_0",
-   "pytest/conda-forge/linux-64/pytest-6.0.2-py37hc8dfbb8_0"
-  ],
-  "rdkit": [
-   "rdkit/conda-forge/linux-64/rdkit-2018.09.3-py27h9c20d5c_0",
-   "rdkit/conda-forge/linux-64/rdkit-2019.03.4-py37hb31dc5d_1",
-   "rdkit/conda-forge/linux-64/rdkit-2020.09.4-py39hccf6a74_0"
-  ],
   "re": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -272,6 +271,10 @@
    "scipy/conda-forge/linux-64/scipy-0.17.1-np110py27_blas_openblas_202",
    "scipy/conda-forge/linux-64/scipy-1.7.0-py37h29e03ee_0",
    "scipy/conda-forge/linux-64/scipy-1.7.0-py37ha768fb6_1"
+  ],
+  "shutil": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "sidecar": [
    "sidecar/conda-forge/noarch/sidecar-0.4.0-pyh9f0ad1d_0",
@@ -282,17 +285,11 @@
    "simpletraj/conda-forge/linux-64/simpletraj-0.5-py27h7eb728f_0",
    "simpletraj/conda-forge/linux-64/simpletraj-0.5-py36hda16e5c_1002"
   ],
-  "six": [
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0",
-   "lldb/conda-forge/linux-64/lldb-6.0.0-py35_0",
-   "privy/conda-forge/noarch/privy-6.0.0-py_0",
-   "six/conda-forge/linux-64/six-1.10.0-py34_0",
-   "six/conda-forge/linux-64/six-1.10.0-py34_1",
-   "six/conda-forge/noarch/six-1.14.0-py_1",
-   "six/conda-forge/noarch/six-1.16.0-pyh6c4a22f_0"
+  "socket": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "subprocess": [
+  "tempfile": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -310,27 +307,11 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "typing": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "unittest": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "urllib": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "uuid": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "warnings": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "zipfile": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ]
