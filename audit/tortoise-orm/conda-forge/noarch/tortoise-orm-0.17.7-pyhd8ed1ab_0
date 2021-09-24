@@ -4,52 +4,12 @@
   "_init_db",
   "_self",
   "_type_name",
-  "aiohttp.web",
-  "aiohttp.web.Application",
-  "aiomysql",
-  "aiomysql.Pool",
-  "aiomysql.create_pool",
-  "aiosqlite",
-  "aiosqlite.connect",
-  "astroid.MANAGER",
   "astroid.MANAGER.ast_from_module_name",
   "astroid.MANAGER.register_transform",
-  "astroid.exceptions.AstroidError",
-  "astroid.inference_tip",
-  "astroid.node_classes.AnnAssign",
-  "astroid.node_classes.Assign",
-  "astroid.nodes",
-  "astroid.nodes.ClassDef",
-  "asyncio",
-  "asyncio.TimeoutError",
-  "asyncio.events.AbstractEventLoop",
-  "asyncio.gather",
-  "asyncio.get_event_loop",
-  "asyncio.get_event_loop_policy",
-  "asyncio.iscoroutine",
-  "asyncio.iscoroutinefunction",
-  "asyncio.new_event_loop",
-  "asyncio.set_event_loop_policy",
-  "asyncio.wait_for",
   "asyncmy",
   "asyncmy.charset.charset_by_name",
   "asyncmy.errors",
-  "asyncpg",
-  "asyncpg.IntegrityConstraintViolationError",
-  "asyncpg.InvalidCatalogNameError",
-  "asyncpg.InvalidTransactionStateError",
   "asyncpg.Record",
-  "asyncpg.SyntaxOrAccessError",
-  "asyncpg.connection.Connection",
-  "asyncpg.create_pool",
-  "asyncpg.exceptions.DataError",
-  "asyncpg.transaction.Transaction",
-  "asynctest.TestCase",
-  "asynctest._fail_on",
-  "asynctest._fail_on._FAIL_ON_ATTR",
-  "asynctest._fail_on._fail_on",
-  "asynctest.case._Policy",
-  "base64.b32encode",
   "blacksheep.JSONContent",
   "blacksheep.Request",
   "blacksheep.Response",
@@ -83,17 +43,9 @@
   "cls._meta.pk_attr.describe",
   "cls._meta.table_description",
   "cls._meta.unique_together",
-  "contextvars.ContextVar",
-  "decimal",
-  "decimal.Decimal",
   "default_name",
   "dict.fromkeys",
   "encoder",
-  "enum.Enum",
-  "enum.IntEnum",
-  "fastapi.FastAPI",
-  "fastapi.Request",
-  "fastapi.responses.JSONResponse",
   "field_map_update",
   "func",
   "functools.partial",
@@ -105,18 +57,8 @@
   "hashlib.sha256",
   "hashlib.sha3_224",
   "inner",
-  "inspect",
-  "inspect.cleandoc",
-  "inspect.getsource",
-  "inspect.isclass",
   "listener",
   "method",
-  "operator",
-  "operator.eq",
-  "operator.ge",
-  "operator.gt",
-  "operator.le",
-  "operator.lt",
   "operator_",
   "os.environ.get",
   "os.remove",
@@ -147,10 +89,7 @@
   "rapidjson",
   "rapidjson.dumps",
   "rapidjson.loads",
-  "re",
   "re.MULTILINE",
-  "re.findall",
-  "re.sub",
   "related_pk_formatting_func",
   "split_reference",
   "sqlite3.IntegrityError",
@@ -207,47 +146,61 @@
   "tortoise.utils.generate_schema_for_client",
   "type.__new__",
   "type_name",
-  "typing",
-  "typing.Any",
-  "typing.AsyncGenerator",
-  "typing.AsyncIterator",
-  "typing.Awaitable",
-  "typing.Callable",
-  "typing.Coroutine",
-  "typing.Dict",
-  "typing.Generator",
-  "typing.Generic",
-  "typing.Iterable",
-  "typing.Iterator",
-  "typing.List",
-  "typing.Optional",
-  "typing.Sequence",
-  "typing.Set",
-  "typing.SupportsInt",
-  "typing.TYPE_CHECKING",
-  "typing.Tuple",
-  "typing.Type",
-  "typing.TypeVar",
-  "typing.Union",
-  "typing.cast",
-  "typing.get_type_hints",
-  "unittest",
-  "unittest.SkipTest",
-  "unittest.case._Outcome",
-  "unittest.expectedFailure",
   "unittest.expectedFailure.__doc__",
-  "unittest.result.TestResult",
-  "unittest.skip",
-  "unittest.skipIf",
-  "unittest.skipUnless",
   "urllib.parse.uses_netloc.append",
   "v",
-  "warnings",
   "warnings.warn"
  ],
  "deps": {
+  "_asyncio": [
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "_contextvars": [
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "abc": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "aiohttp": [
+   "aiohttp/conda-forge/linux-64/aiohttp-3.6.3-py36h97a6639_2",
+   "aiohttp/conda-forge/linux-64/aiohttp-3.7.1-py37h8f50634_0",
+   "aiohttp/conda-forge/linux-64/aiohttp-3.7.2-py37h8f50634_0"
+  ],
+  "aiomysql": [
+   "aiomysql/conda-forge/noarch/aiomysql-0.0.20-py_1000",
+   "aiomysql/conda-forge/noarch/aiomysql-0.0.21-pyhd8ed1ab_0"
+  ],
+  "aiosqlite": [
+   "aiosqlite/conda-forge/noarch/aiosqlite-0.10.0-py_0",
+   "aiosqlite/conda-forge/noarch/aiosqlite-0.12.0-py_0",
+   "aiosqlite/conda-forge/noarch/aiosqlite-0.16.0-pyhd8ed1ab_0",
+   "aiosqlite/conda-forge/noarch/aiosqlite-0.16.1-pyhd8ed1ab_0",
+   "aiosqlite/conda-forge/noarch/aiosqlite-0.17.0-pyhd8ed1ab_0",
+   "aiosqlite/conda-forge/noarch/aiosqlite-0.9.0-py_0"
+  ],
+  "astroid": [
+   "astroid/conda-forge/linux-64/astroid-2.3.3-py38h32f6830_3",
+   "astroid/conda-forge/linux-64/astroid-2.4.2-py36h9f0ad1d_0"
+  ],
+  "asyncio": [],
+  "asyncpg": [
+   "asyncpg/conda-forge/linux-64/asyncpg-0.20.1-py37h516909a_0",
+   "asyncpg/conda-forge/linux-64/asyncpg-0.21.0-py39hbd71b63_1"
+  ],
+  "asynctest": [
+   "asynctest/conda-forge/noarch/asynctest-0.12.2-py_0",
+   "asynctest/conda-forge/noarch/asynctest-0.13.0-py_0"
+  ],
+  "base64": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "contextvars": [
+   "contextvars/conda-forge/noarch/contextvars-2.1-py_0",
+   "contextvars/conda-forge/noarch/contextvars-2.2-py_0",
+   "contextvars/conda-forge/noarch/contextvars-2.3-py_0",
+   "contextvars/conda-forge/noarch/contextvars-2.4-py_0",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "copy": [
@@ -258,10 +211,25 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "decimal": [
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "enum": [
    "privy/conda-forge/noarch/privy-6.0.0-py_0",
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "fastapi": [
+   "fastapi/conda-forge/noarch/fastapi-0.55.0-py_0",
+   "fastapi/conda-forge/noarch/fastapi-0.56.0-py_0",
+   "fastapi/conda-forge/noarch/fastapi-0.57.0-py_0",
+   "fastapi/conda-forge/noarch/fastapi-0.58.0-py_0",
+   "fastapi/conda-forge/noarch/fastapi-0.60.0-py_0",
+   "fastapi/conda-forge/noarch/fastapi-0.61.0-py_0",
+   "fastapi/conda-forge/noarch/fastapi-0.62.0-pyhd8ed1ab_0",
+   "fastapi/conda-forge/noarch/fastapi-0.64.0-pyhd8ed1ab_0",
+   "fastapi/conda-forge/noarch/fastapi-0.65.2-pyhd8ed1ab_0",
+   "fastapi/conda-forge/noarch/fastapi-0.66.0-pyhd8ed1ab_0"
   ],
   "functools": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -269,6 +237,10 @@
   ],
   "importlib": [
    "importlib/conda-forge/linux-64/importlib-1.0.4-py26_0",
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "inspect": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -298,6 +270,10 @@
    "nose2/conda-forge/noarch/nose2-0.9.0-py_0"
   ],
   "ntpath": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "operator": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -355,6 +331,10 @@
    "quart/conda-forge/noarch/quart-0.9.0-py_0",
    "quart/conda-forge/noarch/quart-0.9.1-py_0"
   ],
+  "re": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "sanic": [
    "sanic/conda-forge/linux-64/sanic-0.8.3-py37_1000",
    "sanic/conda-forge/linux-64/sanic-20.3.0-py36h9f0ad1d_0"
@@ -383,6 +363,10 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "typing": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "typing_extensions": [
    "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
    "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0",
@@ -390,11 +374,19 @@
    "typing_extensions/conda-forge/noarch/typing_extensions-3.7.4.2-py_0",
    "typing_extensions/conda-forge/noarch/typing_extensions-3.7.4.3-py_0"
   ],
+  "unittest": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "urllib": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "uuid": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "warnings": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
