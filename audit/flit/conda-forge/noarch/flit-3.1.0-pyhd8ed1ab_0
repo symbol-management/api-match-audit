@@ -14,37 +14,13 @@
   "flit.config.metadata_list_fields",
   "flit.vcs.__init__.git",
   "flit.vcs.__init__.hg",
-  "flit_core.buildapi",
-  "flit_core.common",
-  "flit_core.common.Metadata",
-  "flit_core.common.NoDocstringError",
-  "flit_core.common.NoVersionError",
-  "flit_core.common.VCSError",
-  "flit_core.common.dist_info_name",
-  "flit_core.common.get_info_from_module",
-  "flit_core.common.hash_file",
-  "flit_core.common.make_metadata",
-  "flit_core.common.parse_entry_point",
   "flit_core.common.script_template.format",
-  "flit_core.common.write_entry_points",
-  "flit_core.config",
-  "flit_core.config.read_flit_config",
-  "flit_core.sdist.SdistBuilder",
-  "flit_core.wheel",
-  "flit_core.wheel.WheelBuilder",
-  "flit_core.wheel.make_wheel_in",
-  "getpass",
-  "getpass.getpass",
-  "hashlib",
   "hashlib.md5",
   "init.TEMPLATE.format",
   "init.TerminalIniter",
   "install.Installer.from_ini_path",
   "io.BytesIO",
   "io.StringIO",
-  "keyring",
-  "keyring.get_password",
-  "keyring.set_password",
   "logging.root.addHandler",
   "logging.root.setLevel",
   "logo.clogo.format",
@@ -60,56 +36,14 @@
   "os.remove",
   "os.symlink",
   "os.unlink",
-  "pathlib",
-  "pathlib.Path",
-  "posixpath.join",
-  "pprint.pformat",
-  "random",
-  "random.choice",
-  "re",
   "re.I",
   "re.IGNORECASE",
   "re.VERBOSE",
-  "re.compile",
-  "re.escape",
-  "re.match",
-  "re.search",
-  "re.split",
-  "re.sub",
-  "requests",
-  "requests.ConnectionError",
-  "requests.get",
-  "requests.post",
   "sdist.SdistBuilder.from_ini_path",
-  "shutil",
-  "shutil.copy2",
-  "shutil.copytree",
-  "shutil.rmtree",
-  "shutil.which",
-  "site",
-  "site.ENABLE_USER_SITE",
   "str.isidentifier",
-  "subprocess",
-  "subprocess.check_call",
-  "subprocess.check_output",
   "sys.stderr.isatty",
   "sys.stdin.isatty",
-  "sysconfig",
-  "sysconfig.get_config_var",
-  "sysconfig.get_path",
-  "sysconfig.get_paths",
-  "tarfile",
-  "tarfile.TarInfo",
-  "tarfile.open",
-  "tempfile",
-  "tempfile.NamedTemporaryFile",
-  "tempfile.TemporaryDirectory",
-  "toml",
-  "toml.dump",
-  "toml.dumps",
-  "types.SimpleNamespace",
-  "upload.main",
-  "urllib.parse.urlparse"
+  "upload.main"
  ],
  "deps": {
   "__future__": [
@@ -154,6 +88,19 @@
   "docutils": [
    "docutils/conda-forge/linux-64/docutils-0.16-py27h8c360ce_1"
   ],
+  "flit_core": [
+   "flit-core/conda-forge/noarch/flit-core-3.0.0-py_0",
+   "flit-core/conda-forge/noarch/flit-core-3.0.0-py_1",
+   "flit-core/conda-forge/noarch/flit-core-3.1.0-pyhd8ed1ab_0"
+  ],
+  "getpass": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "hashlib": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "io": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -161,6 +108,11 @@
   "json": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "keyring": [
+   "keyring/conda-forge/linux-64/keyring-12.1.0-py27_0",
+   "keyring/conda-forge/linux-64/keyring-21.2.1-py36h5fab9bb_0",
+   "keyring/conda-forge/linux-64/keyring-22.4.0-py36hd000896_0"
   ],
   "logging": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -174,7 +126,78 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "pathlib": [
+   "pathlib/conda-forge/noarch/pathlib-1.0.1-py_1",
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "posixpath": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "pprint": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "random": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "re": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "requests": [
+   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
+   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0",
+   "requests/conda-forge/linux-64/requests-2.12.0-py35_0",
+   "requests/conda-forge/noarch/requests-2.23.0-pyh8c360ce_2",
+   "requests/conda-forge/noarch/requests-2.24.0-pyh9f0ad1d_0",
+   "requests/conda-forge/noarch/requests-2.25.0-pyhd3deb0d_0",
+   "requests/conda-forge/noarch/requests-2.25.1-pyhd3deb0d_0",
+   "requests/conda-forge/noarch/requests-2.26.0-pyhd8ed1ab_0"
+  ],
+  "shutil": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "site": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "subprocess": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "sysconfig": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "tarfile": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "tempfile": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "toml": [
+   "toml/conda-forge/noarch/toml-0.10.0-py_0",
+   "toml/conda-forge/noarch/toml-0.10.1-pyh9f0ad1d_0",
+   "toml/conda-forge/noarch/toml-0.9.2-py_1",
+   "toml/conda-forge/noarch/toml-0.9.3.1-py_1",
+   "toml/conda-forge/noarch/toml-0.9.3.1-py_2",
+   "toml/conda-forge/noarch/toml-0.9.4-py_0"
+  ],
+  "types": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "typing": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "urllib": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ]
