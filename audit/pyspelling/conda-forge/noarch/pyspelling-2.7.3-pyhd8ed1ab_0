@@ -15,6 +15,13 @@
   "func",
   "io.BytesIO",
   "io.StringIO",
+  "locale",
+  "locale.getpreferredencoding",
+  "markdown",
+  "markdown.Markdown",
+  "mmap",
+  "mmap.ACCESS_READ",
+  "mmap.mmap",
   "module",
   "odf.OdfFilter",
   "os.path.exists",
@@ -44,25 +51,43 @@
   "re.M",
   "re.MULTILINE",
   "re.S",
+  "soupsieve",
+  "soupsieve.compile",
+  "soupsieve.util.lower",
+  "string",
+  "string.ascii_uppercase",
+  "string.digits",
+  "struct",
   "struct.pack",
   "subprocess.STARTF_USESHOWWINDOW",
   "sys.platform.startswith",
   "sys.stdout.encoding",
+  "tokenize",
+  "tokenize.COMMENT",
   "tokenize.DEDENT",
+  "tokenize.ENCODING",
   "tokenize.INDENT",
   "tokenize.NAME",
   "tokenize.NEWLINE",
+  "tokenize.NL",
   "tokenize.STRING",
+  "tokenize.generate_tokens",
+  "unicodedata",
+  "unicodedata.lookup",
+  "unicodedata.normalize",
   "util.call",
   "util.call_spellchecker",
   "util.random_name_gen",
   "util.read_config",
   "util.warn_deprecated",
   "warnings.warn",
+  "wcmatch.fnmatch",
   "wcmatch.fnmatch.B",
   "wcmatch.fnmatch.I",
   "wcmatch.fnmatch.N",
   "wcmatch.fnmatch.S",
+  "wcmatch.fnmatch.fnmatch",
+  "wcmatch.glob",
   "wcmatch.glob.A",
   "wcmatch.glob.B",
   "wcmatch.glob.C",
@@ -79,7 +104,14 @@
   "wcmatch.glob.S",
   "wcmatch.glob.T",
   "wcmatch.glob.X",
-  "xml.XmlFilter"
+  "wcmatch.glob.globmatch",
+  "wcmatch.glob.iglob",
+  "xml.XmlFilter",
+  "yaml",
+  "yaml.Loader",
+  "yaml.load",
+  "zipfile",
+  "zipfile.ZipFile"
  ],
  "deps": {
   "argparse": [
@@ -127,22 +159,6 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "locale": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "markdown": [
-   "markdown/conda-forge/noarch/markdown-3.1.1-py_0",
-   "markdown/conda-forge/noarch/markdown-3.2.1-py_0",
-   "markdown/conda-forge/noarch/markdown-3.2.2-py_0",
-   "markdown/conda-forge/noarch/markdown-3.3.1-pyh9f0ad1d_0",
-   "markdown/conda-forge/noarch/markdown-3.3.2-pyh9f0ad1d_0",
-   "markdown/conda-forge/noarch/markdown-3.3.3-pyh9f0ad1d_0"
-  ],
-  "mmap": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "ntpath": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -159,17 +175,6 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "soupsieve": [
-   "soupsieve/conda-forge/linux-64/soupsieve-1.7-py37_1000"
-  ],
-  "string": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "struct": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "subprocess": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -178,34 +183,11 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "tokenize": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython"
-  ],
   "traceback": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "unicodedata": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "warnings": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "wcmatch": [
-   "wcmatch/conda-forge/noarch/wcmatch-8.1-pyhd8ed1ab_0",
-   "wcmatch/conda-forge/noarch/wcmatch-8.1.1-pyhd8ed1ab_0",
-   "wcmatch/conda-forge/noarch/wcmatch-8.1.2-pyhd8ed1ab_0",
-   "wcmatch/conda-forge/noarch/wcmatch-8.2-pyhd8ed1ab_0"
-  ],
-  "yaml": [
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0",
-   "pyyaml/conda-forge/linux-64/pyyaml-3.11-py35_0",
-   "pyyaml/conda-forge/win-64/pyyaml-5.2-py36hfa6e2cd_0"
-  ],
-  "zipfile": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ]
