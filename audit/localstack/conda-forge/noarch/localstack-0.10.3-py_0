@@ -33,6 +33,9 @@
   "download_and_extract",
   "download_and_extract_with_retry",
   "dynamodb_extract_keys",
+  "elasticsearch.Elasticsearch",
+  "elasticsearch.RequestsHttpConnection",
+  "email.parser",
   "enable_thread_profiling",
   "error_response",
   "f",
@@ -40,6 +43,12 @@
   "find_existing_item",
   "find_id",
   "fix_headers_for_updated_response",
+  "flask.Flask",
+  "flask.Response",
+  "flask.jsonify",
+  "flask.make_response",
+  "flask.render_template",
+  "flask.request",
   "flask.request.args.get",
   "flask.request.args.getlist",
   "flask.request.data",
@@ -50,6 +59,9 @@
   "flask.request.headers.get",
   "flask.request.method",
   "flask.request.url",
+  "flask.send_from_directory",
+  "flask_cors.CORS",
+  "flask_swagger.swagger",
   "forbiddenfruit.curse",
   "format_func_details",
   "func",
@@ -63,14 +75,22 @@
   "get_service_status",
   "get_stream",
   "get_thread_stats",
+  "glob",
+  "glob.glob",
   "hashlib.md5",
   "hashlib.sha1",
   "hashlib.sha256",
+  "importlib",
+  "importlib.import_module",
   "installer",
   "io.BytesIO",
   "io.StringIO",
   "is_alpine",
   "is_mapped",
+  "json",
+  "json.JSONEncoder",
+  "json.dumps",
+  "json.loads",
   "jsonpath_rw.parse",
   "kinesis_shard_id",
   "lambda_function",
@@ -122,7 +142,22 @@
   "localstack.utils.common.safe_requests.post",
   "log_install_msg",
   "logger_func",
+  "logging",
+  "logging.CRITICAL",
+  "logging.DEBUG",
+  "logging.ERROR",
+  "logging.FATAL",
+  "logging.Filter",
+  "logging.Formatter",
+  "logging.INFO",
   "logging.SEVERE",
+  "logging.StreamHandler",
+  "logging.WARNING",
+  "logging.addLevelName",
+  "logging.basicConfig",
+  "logging.captureWarnings",
+  "logging.getLevelName",
+  "logging.getLogger",
   "m_obj",
   "make_error",
   "method",
@@ -135,6 +170,7 @@
   "moto.server.create_backend_app_orig",
   "multiprocessing.Process",
   "multiprocessing.Queue",
+  "multiprocessing.dummy.Pool",
   "next.items",
   "original_init",
   "os._exit",
@@ -173,6 +209,13 @@
   "send_dynamodb_request",
   "signal.SIGINT",
   "signal.SIGTERM",
+  "six",
+  "six.PY2",
+  "six.PY3",
+  "six.binary_type",
+  "six.integer_types",
+  "six.iteritems",
+  "six.itervalues",
   "six.moves.BaseHTTPServer.BaseHTTPRequestHandler",
   "six.moves.BaseHTTPServer.BaseHTTPRequestHandler.parse_request",
   "six.moves.BaseHTTPServer.HTTPServer",
@@ -187,6 +230,9 @@
   "six.moves.urllib.parse.urlparse",
   "six.moves.urllib.parse.urlunparse",
   "six.moves.urllib_parse.urljoin",
+  "six.string_types",
+  "six.text_type",
+  "six.with_metaclass",
   "socket.AF_INET",
   "socket.AF_UNIX",
   "socket.SOCK_STREAM",
@@ -373,47 +419,7 @@
    "docopt/conda-forge/linux-64/docopt-0.6.2-py27_0",
    "docopt/conda-forge/noarch/docopt-0.6.2-py_1"
   ],
-  "elasticsearch": [
-   "elasticsearch/conda-forge/noarch/elasticsearch-6.3.1-py_0",
-   "elasticsearch/conda-forge/noarch/elasticsearch-7.0.4-py_0",
-   "elasticsearch/conda-forge/noarch/elasticsearch-7.1.0-py_0",
-   "elasticsearch/conda-forge/noarch/elasticsearch-7.10.0-pyhd3deb0d_0",
-   "elasticsearch/conda-forge/noarch/elasticsearch-7.12.0-pyh44b312d_0",
-   "elasticsearch/conda-forge/noarch/elasticsearch-7.13.1-pyhd8ed1ab_0",
-   "elasticsearch/conda-forge/noarch/elasticsearch-7.13.3-pyhd8ed1ab_0",
-   "elasticsearch/conda-forge/noarch/elasticsearch-7.13.4-pyhd8ed1ab_0",
-   "elasticsearch/conda-forge/noarch/elasticsearch-7.7.1-pyh9f0ad1d_0",
-   "elasticsearch/conda-forge/noarch/elasticsearch-7.8.0-pyh9f0ad1d_0",
-   "elasticsearch/conda-forge/noarch/elasticsearch-7.8.1-pyh9f0ad1d_0"
-  ],
-  "email": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "flask": [
-   "flask/conda-forge/linux-64/flask-0.12-py36_0",
-   "flask/conda-forge/noarch/flask-0.11.1-py_1",
-   "flask/conda-forge/noarch/flask-1.0.2-py_1",
-   "flask/conda-forge/noarch/flask-1.0.3-py_0",
-   "flask/conda-forge/noarch/flask-1.1.0-py_0"
-  ],
-  "flask_cors": [
-   "flask-cors/conda-forge/noarch/flask-cors-3.0.10-pyhd8ed1ab_0",
-   "flask-cors/conda-forge/noarch/flask-cors-3.0.6-py_0",
-   "flask-cors/conda-forge/noarch/flask-cors-3.0.7-py_0",
-   "flask_cors/conda-forge/noarch/flask_cors-3.0.10-pyhd3deb0d_0",
-   "flask_cors/conda-forge/noarch/flask_cors-3.0.8-py_0",
-   "flask_cors/conda-forge/noarch/flask_cors-3.0.9-pyh9f0ad1d_0"
-  ],
-  "flask_swagger": [
-   "flask-swagger/conda-forge/noarch/flask-swagger-0.2.13-py_2",
-   "flask-swagger/conda-forge/noarch/flask-swagger-0.2.14-py_0"
-  ],
   "functools": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "glob": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -425,20 +431,11 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "importlib": [
-   "importlib/conda-forge/linux-64/importlib-1.0.4-py26_0",
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "inspect": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "io": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "json": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -480,15 +477,7 @@
    "localstack-ext/conda-forge/noarch/localstack-ext-0.11.3.1-pyh9f0ad1d_0",
    "localstack-ext/conda-forge/noarch/localstack-ext-0.11.8-pyh9f0ad1d_0"
   ],
-  "logging": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "moto": [],
-  "multiprocessing": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "ntpath": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -581,16 +570,6 @@
   "signal": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "six": [
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0",
-   "lldb/conda-forge/linux-64/lldb-6.0.0-py35_0",
-   "privy/conda-forge/noarch/privy-6.0.0-py_0",
-   "six/conda-forge/linux-64/six-1.10.0-py34_0",
-   "six/conda-forge/linux-64/six-1.10.0-py34_1",
-   "six/conda-forge/noarch/six-1.14.0-py_1",
-   "six/conda-forge/noarch/six-1.16.0-pyh6c4a22f_0"
   ],
   "socket": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
