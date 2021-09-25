@@ -23,28 +23,73 @@
   "Source.from_strike_dip_rake",
   "_run_test",
   "check_is_in",
+  "click",
+  "click.Choice",
+  "click.IntRange",
+  "click.Path",
+  "click.argument",
+  "click.command",
+  "click.echo",
+  "click.option",
+  "click.progressbar",
+  "click.style",
   "collections.defaultdict",
+  "colorama",
   "colorama.Fore.BLUE",
   "colorama.Fore.GREEN",
   "colorama.Fore.RED",
   "colorama.Fore.RESET",
   "colorama.Fore.YELLOW",
+  "concurrent.futures",
+  "ctypes",
+  "ctypes.CDLL",
   "ctypes.POINTER",
   "ctypes.byref",
+  "ctypes.c_bool",
+  "ctypes.c_double",
+  "ctypes.c_int",
   "database_interfaces.find_and_open_files",
   "database_interfaces.remote_instaseis_db.RemoteInstaseisDB",
+  "distutils.version.LooseVersion",
   "f",
   "f.readline",
   "finite_elem_mapping.inside_element",
+  "fnmatch",
+  "fnmatch.fnmatch",
+  "geographiclib",
   "get_prog_fct",
+  "glob",
+  "glob.glob",
+  "glob.iglob",
+  "h5py",
+  "h5py.File",
   "helpers.io_chunker",
   "i",
+  "imp",
+  "imp.load_source",
   "input.values",
+  "instaseis.FiniteSource.from_Haskell",
+  "instaseis.FiniteSource.from_srf_file",
+  "instaseis.FiniteSource.from_usgs_param_file",
+  "instaseis.Receiver.parse",
+  "instaseis.Source.from_strike_dip_rake",
+  "instaseis.Source.parse",
   "instaseis.__init__.InstaseisError",
   "instaseis.__init__.__version__",
   "instaseis._test_dbs",
+  "io",
   "io.BytesIO",
   "io.open",
+  "jsonschema.ValidationError",
+  "jsonschema.validate",
+  "matplotlib",
+  "matplotlib.backends.backend_qt5agg.FigureCanvasQTAgg",
+  "matplotlib.figure.Figure",
+  "matplotlib.pyplot",
+  "matplotlib.pyplot.plot",
+  "matplotlib.pyplot.show",
+  "matplotlib.rc",
+  "matplotlib.rcParams",
   "mesh.Mesh",
   "mesh.displ_buffer",
   "mesh.displ_buffer.add",
@@ -54,34 +99,69 @@
   "mesh.strain_buffer",
   "mesh.strain_buffer.add",
   "mesh.strain_buffer.get",
+  "mock",
   "mpl_toolkits.basemap.Basemap",
   "netCDF4",
   "netCDF4.Dataset",
   "netCDF4.__version__.split",
+  "numpy",
+  "numpy.__version__",
   "numpy.abs",
+  "numpy.any",
   "numpy.arange",
   "numpy.arccos",
   "numpy.arcsin",
   "numpy.arctan2",
+  "numpy.argmin",
+  "numpy.argwhere",
+  "numpy.array",
   "numpy.ceil",
+  "numpy.concatenate",
   "numpy.cos",
+  "numpy.cross",
   "numpy.deg2rad",
+  "numpy.dot",
   "numpy.empty",
   "numpy.exp",
+  "numpy.eye",
+  "numpy.fft",
+  "numpy.fft.irfft",
+  "numpy.fft.rfft",
+  "numpy.fft.rfftfreq",
   "numpy.float128",
   "numpy.float32",
   "numpy.float64",
+  "numpy.gradient",
   "numpy.inf",
   "numpy.int8",
+  "numpy.interp",
+  "numpy.isclose",
   "numpy.isnan",
+  "numpy.linspace",
   "numpy.log10",
   "numpy.logical_and",
+  "numpy.ma.is_masked",
+  "numpy.meshgrid",
+  "numpy.ndarray",
+  "numpy.ones",
+  "numpy.ones_like",
+  "numpy.outer",
+  "numpy.percentile",
   "numpy.pi",
   "numpy.rad2deg",
   "numpy.radians",
   "numpy.random.seed",
+  "numpy.require",
+  "numpy.rollaxis",
+  "numpy.savetxt",
   "numpy.sin",
+  "numpy.sort",
   "numpy.sqrt",
+  "numpy.sum",
+  "numpy.testing.assert_allclose",
+  "numpy.testing.assert_almost_equal",
+  "numpy.trapz",
+  "numpy.where",
   "numpy.zeros",
   "obspy",
   "obspy.Catalog",
@@ -119,18 +199,9 @@
   "os.remove",
   "os.system",
   "pbar",
-  "pyqtgraph",
-  "pyqtgraph.Point",
-  "pyqtgraph.setConfigOptions",
   "pytest.mark.parametrize",
   "pytest.mark.skipif",
   "request_multiple_times",
-  "requests",
-  "requests.get",
-  "responses",
-  "responses.GET",
-  "responses.activate",
-  "responses.add_callback",
   "rotations.coord_transform_lat_lon_depth_to_xyz",
   "rotations.coord_transform_xyz_to_lat_lon_depth",
   "rotations.rotate_frame_rd",
@@ -152,25 +223,10 @@
   "sys.version_info.major",
   "tempfile",
   "tempfile.mkdtemp",
-  "timeit",
-  "timeit.default_timer",
-  "tornado",
-  "tornado.gen",
-  "tornado.httpclient.AsyncHTTPClient",
-  "tornado.httpserver.HTTPServer",
-  "tornado.ioloop",
-  "tornado.ioloop.IOLoop",
-  "tornado.platform.asyncio",
-  "tornado.testing.bind_unused_port",
-  "tornado.web",
-  "tornado.web.HTTPError",
-  "tornado.web.RequestHandler",
-  "unittest.mock",
-  "unittest.mock.patch",
-  "warnings.warn",
-  "xdist",
-  "zipfile",
-  "zipfile.ZipFile"
+  "warnings",
+  "warnings.catch_warnings",
+  "warnings.simplefilter",
+  "warnings.warn"
  ],
  "deps": {
   "PySide2": [
@@ -199,26 +255,7 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "click": [
-   "click/conda-forge/noarch/click-5.1-py_0",
-   "click/conda-forge/noarch/click-6.7-py_1",
-   "click/conda-forge/noarch/click-7.0-py_0",
-   "click/conda-forge/noarch/click-7.1-pyh8c360ce_0",
-   "click/conda-forge/noarch/click-7.1.1-pyh8c360ce_0"
-  ],
   "collections": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "colorama": [
-   "colorama/conda-forge/noarch/colorama-0.3.9-py_1",
-   "colorama/conda-forge/noarch/colorama-0.4.1-py_0",
-   "colorama/conda-forge/noarch/colorama-0.4.3-py_0",
-   "colorama/conda-forge/noarch/colorama-0.4.4-pyh9f0ad1d_0"
-  ],
-  "concurrent": [
-   "futures/conda-forge/linux-64/futures-3.2.0-py27_0",
-   "futures/conda-forge/osx-64/futures-3.3.0-py27h8c360ce_1",
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -230,36 +267,7 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "ctypes": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "distutils": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "fnmatch": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "functools": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "geographiclib": [
-   "geographiclib/conda-forge/noarch/geographiclib-1.49-py_0",
-   "geographiclib/conda-forge/noarch/geographiclib-1.52-pyhd8ed1ab_0"
-  ],
-  "glob": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "h5py": [
-   "h5py/conda-forge/linux-64/h5py-2.10.0-nompi_py37hf7afa78_105",
-   "h5py/conda-forge/linux-64/h5py-2.6.0-np111py34_4",
-   "h5py/conda-forge/linux-64/h5py-2.7.0-np113py36_1"
-  ],
-  "imp": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -267,20 +275,9 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "instaseis": [
-   "instaseis/conda-forge/osx-64/instaseis-1.1.1-py27_0",
-   "instaseis/conda-forge/osx-64/instaseis-1.4.2-py36h41b6769_2"
-  ],
-  "io": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "json": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "jsonschema": [
-   "jsonschema/conda-forge/noarch/jsonschema-3.2.0-pyhd8ed1ab_3"
   ],
   "logging": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -290,23 +287,9 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "matplotlib": [
-   "matplotlib-base/conda-forge/linux-64/matplotlib-base-3.1.1-py37hfd891ef_0",
-   "matplotlib-base/conda-forge/linux-64/matplotlib-base-3.1.1-py38h250f245_2",
-   "matplotlib/conda-forge/linux-64/matplotlib-1.5.3-np111py34_0"
-  ],
-  "mock": [
-   "mock/conda-forge/linux-64/mock-2.0.0-py27_1000",
-   "mock/conda-forge/linux-64/mock-3.0.3-py37_0"
-  ],
   "ntpath": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "numpy": [
-   "numpy/conda-forge/linux-64/numpy-1.17.5-py36h95a1406_0",
-   "numpy/conda-forge/linux-64/numpy-1.18.4-py37h8960a57_0",
-   "numpy/conda-forge/linux-64/numpy-1.19.2-py36h68c22af_1"
   ],
   "os": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -319,6 +302,17 @@
   "platform": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "pyqtgraph": [
+   "pyqtgraph/conda-forge/linux-64/pyqtgraph-0.10.0-py36_1",
+   "pyqtgraph/conda-forge/noarch/pyqtgraph-0.10.0-py_4",
+   "pyqtgraph/conda-forge/noarch/pyqtgraph-0.10.0-py_5",
+   "pyqtgraph/conda-forge/noarch/pyqtgraph-0.11.0-pyh9f0ad1d_0",
+   "pyqtgraph/conda-forge/noarch/pyqtgraph-0.11.0-pyh9f0ad1d_1",
+   "pyqtgraph/conda-forge/noarch/pyqtgraph-0.11.0rc0-py_0",
+   "pyqtgraph/conda-forge/noarch/pyqtgraph-0.12.0-pyhd8ed1ab_0",
+   "pyqtgraph/conda-forge/noarch/pyqtgraph-0.12.1-pyhd8ed1ab_0",
+   "pyqtgraph/conda-forge/noarch/pyqtgraph-0.12.2-pyhd8ed1ab_0"
   ],
   "pytest": [
    "pytest/conda-forge/linux-64/pytest-3.7.0-py27_0",
@@ -333,6 +327,24 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "requests": [
+   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
+   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0",
+   "requests/conda-forge/linux-64/requests-2.12.0-py35_0",
+   "requests/conda-forge/noarch/requests-2.23.0-pyh8c360ce_2",
+   "requests/conda-forge/noarch/requests-2.24.0-pyh9f0ad1d_0",
+   "requests/conda-forge/noarch/requests-2.25.0-pyhd3deb0d_0",
+   "requests/conda-forge/noarch/requests-2.25.1-pyhd3deb0d_0",
+   "requests/conda-forge/noarch/requests-2.26.0-pyhd8ed1ab_0"
+  ],
+  "responses": [
+   "responses/conda-forge/noarch/responses-0.10.12-py_0",
+   "responses/conda-forge/noarch/responses-0.10.16-pyh9f0ad1d_0",
+   "responses/conda-forge/noarch/responses-0.10.9-py_0",
+   "responses/conda-forge/noarch/responses-0.11.0-pyh9f0ad1d_0",
+   "responses/conda-forge/noarch/responses-0.12.1-pyhd3deb0d_0",
+   "responses/conda-forge/noarch/responses-0.13.1-pyhd8ed1ab_0"
+  ],
   "scipy": [],
   "shutil": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -342,11 +354,39 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "timeit": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "tornado": [
+   "tornado/conda-forge/linux-64/tornado-4.4.3-py35_0",
+   "tornado/conda-forge/linux-64/tornado-6.0.4-py38h1e0a361_2"
+  ],
+  "unittest": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "urllib": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "warnings": [
+  "xdist": [
+   "pytest-xdist/conda-forge/linux-64/pytest-xdist-1.19.1-py36_0",
+   "pytest-xdist/conda-forge/noarch/pytest-xdist-1.20.1-py_0",
+   "pytest-xdist/conda-forge/noarch/pytest-xdist-1.22.0-py_0",
+   "pytest-xdist/conda-forge/noarch/pytest-xdist-1.22.1-py_0",
+   "pytest-xdist/conda-forge/noarch/pytest-xdist-1.24.1-py_0",
+   "pytest-xdist/conda-forge/noarch/pytest-xdist-1.26.0-py_0",
+   "pytest-xdist/conda-forge/noarch/pytest-xdist-1.26.1-py_0",
+   "pytest-xdist/conda-forge/noarch/pytest-xdist-1.27.0-py_0",
+   "pytest-xdist/conda-forge/noarch/pytest-xdist-1.29.0-py_0",
+   "pytest-xdist/conda-forge/noarch/pytest-xdist-1.30.0-py_0",
+   "pytest-xdist/conda-forge/noarch/pytest-xdist-1.31.0-py_0",
+   "pytest-xdist/conda-forge/noarch/pytest-xdist-1.33.0-pyh9f0ad1d_0",
+   "pytest-xdist/conda-forge/noarch/pytest-xdist-2.1.0-py_0",
+   "pytest-xdist/conda-forge/noarch/pytest-xdist-2.2.0-pyhd8ed1ab_0"
+  ],
+  "zipfile": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ]
