@@ -6,11 +6,14 @@
   "collections.defaultdict",
   "func",
   "functools.partial",
+  "hashlib",
   "hashlib.md5",
   "hcrystalball.__init__.dist_name",
   "hcrystalball.__init__.logger",
   "hcrystalball.wrappers.__init__.__all__",
+  "inspect",
   "inspect.Parameter.empty",
+  "inspect.signature",
   "itertools.chain.from_iterable",
   "numpy.arange",
   "numpy.isinf",
@@ -20,11 +23,33 @@
   "numpy.sin",
   "numpy.zeros",
   "pandas.api.types.is_datetime64_dtype",
+  "pickle",
+  "pickle.dump",
+  "pickle.load",
+  "pmdarima.arima.ARIMA",
+  "pmdarima.arima.AutoARIMA",
+  "prefect.Flow",
+  "prefect.Parameter",
+  "prefect.task",
+  "prefect.unmapped",
+  "prefect.utilities.debug.raise_on_exception",
+  "scipy.sparse",
+  "scipy.sparse.hstack",
+  "scipy.sparse.issparse",
+  "sklearn.base.BaseEstimator",
+  "sklearn.base.TransformerMixin",
   "sklearn.compose.ColumnTransformer",
+  "sklearn.ensemble.RandomForestRegressor",
+  "sklearn.linear_model.ElasticNet",
+  "sklearn.metrics.SCORERS",
   "sklearn.metrics.SCORERS.keys",
   "sklearn.metrics._scorer._BaseScorer",
   "sklearn.model_selection.GridSearchCV",
+  "sklearn.pipeline.Pipeline",
   "sklearn.set_config",
+  "sklearn.utils.check_random_state",
+  "sklearn.utils.validation.check_array",
+  "sklearn.utils.validation.check_is_fitted",
   "str.lower",
   "tbats.BATS",
   "tbats.TBATS",
@@ -32,10 +57,6 @@
   "workalendar.registry.registry.region_registry.keys"
  ],
  "deps": {
-  "_pickle": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "abc": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -53,14 +74,6 @@
    "fbprophet/conda-forge/linux-64/fbprophet-0.2-py27_0"
   ],
   "functools": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "hashlib": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "inspect": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -83,40 +96,10 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "pickle": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "pkg_resources": [
    "setuptools/conda-forge/linux-64/setuptools-40.6.1-py36_0",
    "setuptools/conda-forge/linux-64/setuptools-46.3.0-py38h32f6830_0",
    "setuptools/conda-forge/linux-64/setuptools-49.1.2-py38h32f6830_0"
-  ],
-  "pmdarima": [
-   "pmdarima/conda-forge/linux-64/pmdarima-1.8.1-py37h6f94858_0",
-   "pmdarima/conda-forge/osx-64/pmdarima-1.8.2-py36hab44bd3_0"
-  ],
-  "prefect": [
-   "prefect/conda-forge/noarch/prefect-0.13.1-py_0",
-   "prefect/conda-forge/noarch/prefect-0.13.10-py_0",
-   "prefect/conda-forge/noarch/prefect-0.13.11-py_0",
-   "prefect/conda-forge/noarch/prefect-0.14.12-pyhd8ed1ab_0",
-   "prefect/conda-forge/noarch/prefect-0.14.14-pyhd8ed1ab_0",
-   "prefect/conda-forge/noarch/prefect-0.14.15-pyhd8ed1ab_0",
-   "prefect/conda-forge/noarch/prefect-0.14.16-pyhd8ed1ab_0",
-   "prefect/conda-forge/noarch/prefect-0.14.20-pyhd8ed1ab_0",
-   "prefect/conda-forge/noarch/prefect-0.14.21-pyhd8ed1ab_0",
-   "prefect/conda-forge/noarch/prefect-0.14.6-pyhd8ed1ab_0"
-  ],
-  "scipy": [
-   "scipy/conda-forge/linux-64/scipy-0.17.1-np110py27_blas_openblas_202",
-   "scipy/conda-forge/linux-64/scipy-1.7.0-py37h29e03ee_0",
-   "scipy/conda-forge/linux-64/scipy-1.7.0-py37ha768fb6_1"
-  ],
-  "sklearn": [
-   "scikit-learn/conda-forge/linux-64/scikit-learn-0.17.1-np110py27_blas_openblas_200",
-   "scikit-learn/conda-forge/linux-64/scikit-learn-0.17.1-np110py35_blas_openblas_202",
-   "scikit-learn/conda-forge/linux-64/scikit-learn-0.17.1-np111py35_blas_openblas_202"
   ],
   "statsmodels": [
    "statsmodels/conda-forge/linux-64/statsmodels-0.9.0-py27h7eb728f_0",
