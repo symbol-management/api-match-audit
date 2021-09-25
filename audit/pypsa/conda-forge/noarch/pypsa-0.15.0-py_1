@@ -54,6 +54,7 @@
   "numpy.sqrt",
   "numpy.typeDict.values",
   "numpy.zeros",
+  "operator.itemgetter",
   "orig_apply_solver",
   "os.listdir",
   "os.path.exists",
@@ -61,17 +62,46 @@
   "os.remove",
   "os.unlink",
   "pandas.Series.zsum",
+  "plotly.offline",
+  "plotly.offline.iplot",
+  "pyomo",
+  "pyomo.core.base.constraint._GeneralConstraintData",
   "pyomo.core.base.expr_coopr3",
   "pyomo.core.base.expr_coopr3._SumExpression",
   "pyomo.core.base.numvalue.NumericConstant",
   "pyomo.core.expr.expr_pyomo5.LinearExpression",
+  "pyomo.core.expr.numeric_expr.LinearExpression",
   "pyomo.environ.Binary",
+  "pyomo.environ.ComponentUID",
+  "pyomo.environ.ConcreteModel",
+  "pyomo.environ.Constraint",
+  "pyomo.environ.Expression",
   "pyomo.environ.NonNegativeReals",
+  "pyomo.environ.Objective",
   "pyomo.environ.Reals",
+  "pyomo.environ.SolverFactory",
+  "pyomo.environ.Suffix",
   "pyomo.environ.Suffix.IMPORT",
+  "pyomo.environ.Var",
+  "pyomo.environ.maximize",
+  "pyomo.environ.minimize",
+  "pyomo.solvers.plugins.solvers.persistent_solver.PersistentSolver",
+  "pyproj",
+  "pyproj.Proj",
+  "pyproj.transform",
   "reindex_maybe",
+  "resource",
+  "resource.RUSAGE_SELF",
+  "resource.getrusage",
   "scipy.sparse.csgraph.connected_components",
   "set_from_series",
+  "shapely.geometry.LineString",
+  "shapely.ops.transform",
+  "shapely.wkt.loads",
+  "six",
+  "six.iteritems",
+  "six.iterkeys",
+  "six.itervalues",
   "six.moves.cPickle",
   "six.moves.cPickle.dump",
   "six.moves.cPickle.load",
@@ -79,8 +109,14 @@
   "six.moves.map",
   "six.moves.range",
   "six.moves.reduce",
+  "six.string_types",
+  "sklearn.cluster.KMeans",
+  "sklearn.cluster.spectral_clustering",
   "sub_network_pf_fun",
   "sub_network_prepare_fun",
+  "tempfile",
+  "tempfile.mkstemp",
+  "textwrap.dedent",
   "typ",
   "weakref.ref"
  ],
@@ -150,39 +186,11 @@
    "numpy/conda-forge/linux-64/numpy-1.18.4-py37h8960a57_0",
    "numpy/conda-forge/linux-64/numpy-1.19.2-py36h68c22af_1"
   ],
-  "operator": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "os": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "pandas": [],
-  "plotly": [
-   "plotly/conda-forge/noarch/plotly-2.7.0-py_1",
-   "plotly/conda-forge/noarch/plotly-3.0.0-py_0",
-   "plotly/conda-forge/noarch/plotly-3.1.1-py_0",
-   "plotly/conda-forge/noarch/plotly-3.3.0-py_0",
-   "plotly/conda-forge/noarch/plotly-3.4.2-py_0",
-   "plotly/conda-forge/noarch/plotly-4.13.0-pyhd3deb0d_0",
-   "plotly/conda-forge/noarch/plotly-4.14.0-pyhd3deb0d_0",
-   "plotly/conda-forge/noarch/plotly-4.14.2-pyhd3deb0d_0",
-   "plotly/conda-forge/noarch/plotly-4.2.0-py_0",
-   "plotly/conda-forge/noarch/plotly-4.3.0-py_0",
-   "plotly/conda-forge/noarch/plotly-4.5.0-py_0",
-   "plotly/conda-forge/noarch/plotly-4.5.2-py_0",
-   "plotly/conda-forge/noarch/plotly-4.5.3-py_0",
-   "plotly/conda-forge/noarch/plotly-4.5.4-pyh8c360ce_0",
-   "plotly/conda-forge/noarch/plotly-4.6.0-pyh9f0ad1d_0"
-  ],
-  "pyomo": [
-   "pyomo/conda-forge/linux-64/pyomo-6.0-py37he226ad3_0"
-  ],
-  "pyproj": [
-   "pyproj/conda-forge/linux-64/pyproj-2.1.3-py37h516909a_0",
-   "pyproj/conda-forge/linux-64/pyproj-2.3.0-py37h2fd02e8_0"
-  ],
   "re": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -197,42 +205,10 @@
    "requests/conda-forge/noarch/requests-2.25.1-pyhd3deb0d_0",
    "requests/conda-forge/noarch/requests-2.26.0-pyhd8ed1ab_0"
   ],
-  "resource": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "scipy": [
    "scipy/conda-forge/linux-64/scipy-0.17.1-np110py27_blas_openblas_202",
    "scipy/conda-forge/linux-64/scipy-1.7.0-py37h29e03ee_0",
    "scipy/conda-forge/linux-64/scipy-1.7.0-py37ha768fb6_1"
-  ],
-  "shapely": [
-   "shapely/conda-forge/linux-64/shapely-1.5.15-np19py35_0",
-   "shapely/conda-forge/linux-64/shapely-1.7.1-py37hba0730f_1",
-   "solaris/conda-forge/noarch/solaris-0.4.0-pyhe05a262_0"
-  ],
-  "six": [
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0",
-   "lldb/conda-forge/linux-64/lldb-6.0.0-py35_0",
-   "privy/conda-forge/noarch/privy-6.0.0-py_0",
-   "six/conda-forge/linux-64/six-1.10.0-py34_0",
-   "six/conda-forge/linux-64/six-1.10.0-py34_1",
-   "six/conda-forge/noarch/six-1.14.0-py_1",
-   "six/conda-forge/noarch/six-1.16.0-pyh6c4a22f_0"
-  ],
-  "sklearn": [
-   "scikit-learn/conda-forge/linux-64/scikit-learn-0.17.1-np110py27_blas_openblas_200",
-   "scikit-learn/conda-forge/linux-64/scikit-learn-0.17.1-np110py35_blas_openblas_202",
-   "scikit-learn/conda-forge/linux-64/scikit-learn-0.17.1-np111py35_blas_openblas_202"
-  ],
-  "tempfile": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "textwrap": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "warnings": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
