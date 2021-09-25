@@ -9,30 +9,15 @@
   "WebServer",
   "app.cleanup_qapp",
   "app.get_qapp",
-  "astropy.coordinates.ICRS",
-  "astropy.coordinates.SkyCoord",
-  "astropy.coordinates.SkyCoord.from_name",
-  "astropy.coordinates.concatenate",
-  "astropy.io.fits",
-  "astropy.io.fits.writeto",
-  "astropy.table.Column",
-  "astropy.table.Table",
-  "astropy.time.Time",
-  "astropy.time.Time.now",
-  "astropy.units",
   "astropy.units.Mpc",
-  "astropy.units.Quantity",
-  "astropy.units.Unit",
   "astropy.units.arcsec",
   "astropy.units.au",
   "astropy.units.day",
-  "astropy.units.def_unit",
   "astropy.units.deg",
   "astropy.units.deg.value",
   "astropy.units.degree",
   "astropy.units.hour",
   "astropy.units.hourangle",
-  "astropy.units.imperial.enable",
   "astropy.units.imperial.foot",
   "astropy.units.imperial.inch",
   "astropy.units.imperial.mile",
@@ -41,64 +26,21 @@
   "astropy.units.lyr",
   "astropy.units.m",
   "astropy.units.meter",
-  "astropy.units.one",
   "astropy.units.pc",
   "astropy.units.pix",
   "astropy.units.pixel",
-  "astropy.units.rad",
-  "astropy.utils.console.ProgressBar",
-  "astropy.wcs.WCS",
-  "asyncio",
-  "asyncio.new_event_loop",
-  "asyncio.set_event_loop",
-  "bs4.BeautifulSoup",
-  "codecs",
-  "codecs.getencoder",
-  "csv",
-  "csv.DictWriter",
-  "dateutil.parser",
-  "dateutil.parser.parse",
-  "dateutil.tz",
-  "dateutil.tz.tzlocal",
-  "dateutil.tz.tzutc",
   "hashlib.md5",
   "io.BytesIO",
   "io.StringIO",
   "io.open",
-  "ipyevents.Event",
-  "ipykernel",
-  "ipykernel.comm.Comm",
-  "ipykernel.connect.get_connection_file",
-  "ipywidgets",
-  "ipywidgets.DOMWidget",
-  "ipywidgets.Dropdown",
-  "ipywidgets.FloatRangeSlider",
-  "ipywidgets.FloatSlider",
-  "ipywidgets.FloatText",
-  "ipywidgets.HBox",
-  "ipywidgets.Layout",
-  "ipywidgets.VBox",
-  "ipywidgets.register",
-  "jupyter_core.paths.jupyter_runtime_dir",
   "layers.ImageLayer",
   "layers.UI_COLORMAPS",
   "layers.UI_COLORMAPS.items",
   "layers.UI_COLORMAPS.keys",
   "layers.VALID_STRETCHES",
   "logger.logger.debug",
-  "matplotlib.cm",
-  "matplotlib.cm.ScalarMappable",
-  "matplotlib.colors.Colormap",
-  "matplotlib.colors.LogNorm",
-  "matplotlib.colors.Normalize",
-  "matplotlib.colors.colorConverter",
   "matplotlib.colors.colorConverter.to_rgb",
-  "matplotlib.colors.rgb2hex",
-  "matplotlib.colors.to_hex",
-  "matplotlib.pyplot.cm",
-  "matplotlib.pyplot.cm.get_cmap",
   "matplotlib.pyplot.cm.viridis",
-  "matplotlib.testing.compare.compare_images",
   "numpy.arange",
   "numpy.arccos",
   "numpy.arctan2",
@@ -137,7 +79,6 @@
   "qtpy.QtWidgets.QOpenGLWidget",
   "qtpy.QtWidgets.QWidget",
   "reproject.mosaicking.find_optimal_celestial_wcs",
-  "requests.compat.urljoin",
   "socket.AF_INET",
   "socket.SOCK_STREAM",
   "socket.gethostbyname",
@@ -163,7 +104,23 @@
    "pytest/conda-forge/linux-64/pytest-4.6.0-py37_0",
    "pytest/conda-forge/linux-64/pytest-6.0.2-py37hc8dfbb8_0"
   ],
+  "astropy": [
+   "astropy/conda-forge/linux-64/astropy-4.2-py37h5e8e339_1"
+  ],
+  "asyncio": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "base64": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "bs4": [
+   "beautifulsoup4/conda-forge/linux-64/beautifulsoup4-4.7.1-py37_1001",
+   "beautifulsoup4/conda-forge/linux-64/beautifulsoup4-4.8.2-py37_0",
+   "beautifulsoup4/conda-forge/noarch/beautifulsoup4-4.9.3-pyhb0f4dca_0"
+  ],
+  "codecs": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -171,21 +128,65 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "csv": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "datetime": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "dateutil": [
+   "python-dateutil/conda-forge/noarch/python-dateutil-2.7.2-py_0",
+   "python-dateutil/conda-forge/noarch/python-dateutil-2.7.4-py_0",
+   "python-dateutil/conda-forge/noarch/python-dateutil-2.7.5-py_0",
+   "python-dateutil/conda-forge/noarch/python-dateutil-2.8.1-py_0",
+   "python-dateutil/conda-forge/noarch/python-dateutil-2.8.2-pyhd8ed1ab_0"
   ],
   "io": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "ipyevents": [
+   "ipyevents/conda-forge/noarch/ipyevents-0.0.1-py_0",
+   "ipyevents/conda-forge/noarch/ipyevents-0.5.0-py_0",
+   "ipyevents/conda-forge/noarch/ipyevents-0.6.1-py_0",
+   "ipyevents/conda-forge/noarch/ipyevents-0.6.2-py_0",
+   "ipyevents/conda-forge/noarch/ipyevents-0.6.3-py_0",
+   "ipyevents/conda-forge/noarch/ipyevents-0.7.1-py_0",
+   "ipyevents/conda-forge/noarch/ipyevents-0.8.0-py_0",
+   "ipyevents/conda-forge/noarch/ipyevents-0.8.1-py_0",
+   "ipyevents/conda-forge/noarch/ipyevents-0.8.2-pyhd8ed1ab_0",
+   "ipyevents/conda-forge/noarch/ipyevents-0.9.0-pyhd8ed1ab_0",
+   "ipyevents/conda-forge/noarch/ipyevents-2.0.1-pyhd8ed1ab_0"
+  ],
+  "ipykernel": [
+   "ipykernel/conda-forge/linux-64/ipykernel-4.10.0-py27_1",
+   "ipykernel/conda-forge/linux-64/ipykernel-5.3.1-py37h43977f1_0",
+   "ipykernel/conda-forge/linux-64/ipykernel-5.3.3-py37h43977f1_0"
+  ],
+  "ipywidgets": [
+   "ipywidgets/conda-forge/noarch/ipywidgets-7.4.1-py_0",
+   "ipywidgets/conda-forge/noarch/ipywidgets-7.6.0-pyhd3deb0d_0",
+   "ipywidgets/conda-forge/noarch/ipywidgets-7.6.2-pyhd3deb0d_0",
+   "ipywidgets/conda-forge/noarch/ipywidgets-7.6.2-pyhd3deb0d_1",
+   "ipywidgets/conda-forge/noarch/ipywidgets-7.6.4-pyhd8ed1ab_0"
+  ],
   "json": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "jupyter_core": [
+   "jupyter_core/conda-forge/linux-64/jupyter_core-4.7.0-py37h9c2f6ca_1",
+   "jupyter_core/conda-forge/noarch/jupyter_core-4.5.0-py_0"
+  ],
   "logging": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "matplotlib": [
+   "matplotlib-base/conda-forge/linux-64/matplotlib-base-3.1.1-py37hfd891ef_0",
+   "matplotlib-base/conda-forge/linux-64/matplotlib-base-3.1.1-py38h250f245_2"
   ],
   "mimetypes": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -285,6 +286,10 @@
    "traitlets/conda-forge/noarch/traitlets-5.0.4-py_1",
    "traitlets/conda-forge/noarch/traitlets-5.0.5-py_0",
    "traitlets/conda-forge/noarch/traitlets-5.1.0-pyhd8ed1ab_0"
+  ],
+  "urllib": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "uuid": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
