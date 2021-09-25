@@ -1,0 +1,354 @@
+{
+ "bad": [
+  "LogHandler",
+  "_test_applyChildValues",
+  "_test_applyCleaningFunctions",
+  "_test_applyNAInsertion",
+  "_test_applyNewLevels",
+  "_test_convertICD10Codes",
+  "_test_fillMissing",
+  "_test_fillVisits",
+  "_test_flattenHierarchical",
+  "_test_keepVisits",
+  "_test_makeNa",
+  "_test_parseSpirometryData",
+  "_test_processData",
+  "check",
+  "collections.Sequence",
+  "collections.defaultdict",
+  "config.DEFAULT_CFILE",
+  "config.DEFAULT_DFILES",
+  "config.DEFAULT_PFILE",
+  "config.DEFAULT_TFILE",
+  "config.DEFAULT_VFILES",
+  "ct",
+  "custom.cleaner",
+  "custom.exporter",
+  "custom.formatter",
+  "custom.processor",
+  "custom.runExporter",
+  "custom.runFormatter",
+  "custom.runLoader",
+  "custom.runSniffer",
+  "datatable.AUTO_VARIABLE_ID",
+  "datatable.Column",
+  "datatable.DataTable",
+  "eval_cmd",
+  "expression.Expression",
+  "fileinfo.fileinfo",
+  "fmt",
+  "func",
+  "functools.partial",
+  "functools.reduce",
+  "genTable",
+  "genvids",
+  "hierarchy.getHierarchyFilePath",
+  "hierarchy.loadHierarchyFile",
+  "icd10.codeToNumeric",
+  "icd10.storeCodes",
+  "inferType",
+  "io.StringIO",
+  "isCategorised",
+  "isProcessed",
+  "loadtables.addNewVariable",
+  "loadtables.categoryVariables",
+  "loadtables.columnTypes",
+  "makexprs",
+  "merging.mergeDataFrames",
+  "multiprocessing.Lock",
+  "multiprocessing.Manager",
+  "multiprocessing.Pool",
+  "multiprocessing.Process",
+  "multiprocessing.cpu_count",
+  "notebook.notebookapp.main",
+  "numlist",
+  "numpy.arange",
+  "numpy.bool",
+  "numpy.ceil",
+  "numpy.empty",
+  "numpy.float",
+  "numpy.float16",
+  "numpy.float32",
+  "numpy.int",
+  "numpy.int32",
+  "numpy.integer",
+  "numpy.isnan",
+  "numpy.log10",
+  "numpy.nan",
+  "numpy.number",
+  "numpy.pi",
+  "numpy.random.choice",
+  "numpy.random.randint",
+  "numpy.random.randn",
+  "numpy.random.random",
+  "numpy.sin",
+  "numpy.uint32",
+  "numpy.uint8",
+  "numpy.zeros",
+  "os.chdir",
+  "os.getcwd",
+  "os.path.exists",
+  "os.remove",
+  "pandas.api.types.is_datetime64_any_dtype",
+  "pandas.api.types.is_numeric_dtype",
+  "parseBlow",
+  "processing.parseProcesses",
+  "processing_functions_core.binariseCategorical",
+  "processing_functions_core.expandCompound",
+  "processing_functions_core.isSparse",
+  "processing_functions_core.redundantColumns",
+  "pyparsing.opAssoc.LEFT",
+  "pyparsing.opAssoc.RIGHT",
+  "pyparsing.pyparsing_common.identifier",
+  "pyparsing.pyparsing_common.integer.setParseAction",
+  "pyparsing.pyparsing_common.number",
+  "re.IGNORECASE",
+  "replaceIDs",
+  "set.difference",
+  "set.intersection",
+  "set.union",
+  "split_udi",
+  "storage.HDFStoreCollection",
+  "ukbparse.custom.cleaner",
+  "ukbparse.custom.exporter",
+  "ukbparse.custom.formatter",
+  "ukbparse.custom.loader",
+  "ukbparse.custom.processor",
+  "ukbparse.custom.registry.clearRegistry",
+  "ukbparse.custom.sniffer",
+  "ukbparse.fileinfo.fileinfo.cache_clear",
+  "ukbparse.fileinfo.sniff.cache_clear",
+  "ukbparse.hierarchy.__file__",
+  "ukbparse.hierarchy.description",
+  "ukbparse.hierarchy.loadHierarchyFile.cache_clear",
+  "ukbparse.hierarchy.parents",
+  "ukbparse.icd10.storeCodes.store",
+  "ukbparse.processing_functions.dummy_proc1",
+  "ukbparse.processing_functions.dummy_proc2",
+  "ukbparse.tests.__init__.gen_DataTableFromDataFrame",
+  "ukbparse.tests.__init__.gen_tables",
+  "ukbparse.tests.__init__.table_headers",
+  "ukbparse.tests.__init__.table_templates",
+  "ukbparse.tests.__init__.tempdir",
+  "ukbparse.util.CTYPES.categorical_multiple",
+  "ukbparse.util.CTYPES.categorical_single",
+  "ukbparse.util.CTYPES.continuous",
+  "ukbparse.util.CTYPES.date",
+  "ukbparse.util.CTYPES.integer",
+  "ukbparse.util.CTYPES.time",
+  "ukbparse.util.CTYPES.unknown",
+  "update",
+  "util.CTYPES.categorical_multiple",
+  "util.CTYPES.categorical_multiple_non_numeric",
+  "util.CTYPES.categorical_single",
+  "util.CTYPES.categorical_single_non_numeric",
+  "util.CTYPES.compound",
+  "util.CTYPES.continuous",
+  "util.CTYPES.date",
+  "util.CTYPES.integer",
+  "util.CTYPES.sequence",
+  "util.CTYPES.text",
+  "util.CTYPES.time",
+  "util.CTYPES.unknown",
+  "util.DATA_TYPES.get",
+  "util.generateColumnName",
+  "util.parseColumnName",
+  "util.parseMatlabRange",
+  "warnings.warn"
+ ],
+ "deps": {
+  "_csv": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "_pytest": [
+   "pytest/conda-forge/linux-64/pytest-3.7.0-py27_0",
+   "pytest/conda-forge/linux-64/pytest-4.6.0-py37_0",
+   "pytest/conda-forge/linux-64/pytest-6.0.2-py37hc8dfbb8_0"
+  ],
+  "argparse": [
+   "argparse/conda-forge/osx-64/argparse-1.4.0-py26_0",
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "bash_kernel": [
+   "bash_kernel/conda-forge/linux-64/bash_kernel-0.7.2-py38_1",
+   "bash_kernel/conda-forge/linux-64/bash_kernel-0.7.2-py39hde42818_3",
+   "bash_kernel/conda-forge/noarch/bash_kernel-0.7.2-py_0"
+  ],
+  "bs4": [
+   "beautifulsoup4/conda-forge/linux-64/beautifulsoup4-4.7.1-py37_1001",
+   "beautifulsoup4/conda-forge/linux-64/beautifulsoup4-4.8.2-py37_0",
+   "beautifulsoup4/conda-forge/noarch/beautifulsoup4-4.9.3-pyhb0f4dca_0"
+  ],
+  "calendar": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "collections": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "contextlib": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "csv": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "datetime": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "enum": [
+   "privy/conda-forge/noarch/privy-6.0.0-py_0",
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "fnmatch": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "functools": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "glob": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "h5py": [
+   "h5py/conda-forge/linux-64/h5py-2.6.0-np111py34_4",
+   "h5py/conda-forge/linux-64/h5py-2.7.0-np113py36_1"
+  ],
+  "importlib": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "inspect": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "io": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "jinja2": [
+   "jinja2/conda-forge/noarch/jinja2-2.10-py_1",
+   "jinja2/conda-forge/noarch/jinja2-2.11.3-pyh44b312d_0",
+   "jinja2/conda-forge/noarch/jinja2-3.0.0-pyhd8ed1ab_0",
+   "jinja2/conda-forge/noarch/jinja2-3.0.1-pyhd8ed1ab_0"
+  ],
+  "json": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "logging": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "multiprocessing": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "notebook": [
+   "notebook/conda-forge/linux-64/notebook-6.0.1-py38_0",
+   "notebook/conda-forge/linux-64/notebook-6.3.0-py36hd000896_0",
+   "notebook/conda-forge/noarch/notebook-6.4.0-pyha770c72_0"
+  ],
+  "ntpath": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "numpy": [
+   "numpy/conda-forge/linux-64/numpy-1.17.5-py36h95a1406_0",
+   "numpy/conda-forge/linux-64/numpy-1.18.4-py37h8960a57_0",
+   "numpy/conda-forge/linux-64/numpy-1.19.2-py36h68c22af_1"
+  ],
+  "os": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "pandas": [],
+  "pyparsing": [
+   "pyparsing/conda-forge/noarch/pyparsing-2.2.1-py_0",
+   "pyparsing/conda-forge/noarch/pyparsing-2.2.2-py_0",
+   "pyparsing/conda-forge/noarch/pyparsing-2.3.0-py_0",
+   "pyparsing/conda-forge/noarch/pyparsing-2.3.1-py_0",
+   "pyparsing/conda-forge/noarch/pyparsing-2.4.1.1-py_0",
+   "pyparsing/conda-forge/noarch/pyparsing-2.4.4-py_0",
+   "pyparsing/conda-forge/noarch/pyparsing-2.4.6-py_0"
+  ],
+  "pytest": [
+   "pytest/conda-forge/linux-64/pytest-3.7.0-py27_0",
+   "pytest/conda-forge/linux-64/pytest-4.6.0-py37_0",
+   "pytest/conda-forge/linux-64/pytest-6.0.2-py37hc8dfbb8_0"
+  ],
+  "random": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "re": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "resource": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "shlex": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "shutil": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "six": [
+   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
+   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0",
+   "lldb/conda-forge/linux-64/lldb-6.0.0-py35_0",
+   "privy/conda-forge/noarch/privy-6.0.0-py_0",
+   "six/conda-forge/linux-64/six-1.10.0-py34_0",
+   "six/conda-forge/linux-64/six-1.10.0-py34_1",
+   "six/conda-forge/noarch/six-1.14.0-py_1",
+   "six/conda-forge/noarch/six-1.16.0-pyh6c4a22f_0"
+  ],
+  "string": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "subprocess": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "tempfile": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "textwrap": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "unittest": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "uuid": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "vine": [
+   "vine/conda-forge/noarch/vine-1.1.4-py_1",
+   "vine/conda-forge/noarch/vine-1.2.0-py_0",
+   "vine/conda-forge/noarch/vine-1.3.0-py_0",
+   "vine/conda-forge/noarch/vine-5.0.0-pyh9f0ad1d_0",
+   "vine/conda-forge/noarch/vine-5.0.0-pyhd8ed1ab_1"
+  ],
+  "warnings": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ]
+ }
+}
