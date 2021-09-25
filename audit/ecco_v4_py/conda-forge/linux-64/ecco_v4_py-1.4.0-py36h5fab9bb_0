@@ -5,6 +5,29 @@
   "_parse_coords",
   "_parse_section_trsp_inputs",
   "cartopy._crs.PROJ4_VERSION",
+  "cartopy.crs",
+  "cartopy.crs.AlbersEqualArea",
+  "cartopy.crs.EqualEarth",
+  "cartopy.crs.InterruptedGoodeHomolosine",
+  "cartopy.crs.LambertConformal",
+  "cartopy.crs.LambertCylindrical",
+  "cartopy.crs.Mercator",
+  "cartopy.crs.NorthPolarStereo",
+  "cartopy.crs.Orthographic",
+  "cartopy.crs.PlateCarree",
+  "cartopy.crs.Robinson",
+  "cartopy.crs.SouthPolarStereo",
+  "cartopy.crs.epsg",
+  "cartopy.feature",
+  "cartopy.feature.COASTLINE",
+  "cartopy.feature.LAND",
+  "dask",
+  "dask.array.core.Array",
+  "dateutil",
+  "dateutil.relativedelta.relativedelta",
+  "matplotlib.path",
+  "matplotlib.path.Path",
+  "matplotlib.pylab",
   "matplotlib.pylab.Normalize",
   "matplotlib.pylab.cm.ScalarMappable",
   "matplotlib.pylab.colorbar",
@@ -16,88 +39,117 @@
   "matplotlib.pylab.subplots",
   "matplotlib.pylab.xlabel",
   "matplotlib.pylab.ylabel",
+  "matplotlib.pyplot",
+  "matplotlib.pyplot.close",
   "meridional_trsp_at_depth",
+  "numpy",
   "numpy.abs",
+  "numpy.all",
+  "numpy.allclose",
   "numpy.arange",
   "numpy.arctan2",
+  "numpy.array",
+  "numpy.asarray",
   "numpy.ceil",
   "numpy.cos",
   "numpy.datetime64",
   "numpy.dtype",
   "numpy.equal",
+  "numpy.expand_dims",
   "numpy.float32",
+  "numpy.fromfile",
   "numpy.int",
   "numpy.int32",
   "numpy.int64",
+  "numpy.intersect1d",
+  "numpy.isscalar",
+  "numpy.linspace",
+  "numpy.ma.core.MaskedArray",
   "numpy.matmul",
+  "numpy.mean",
+  "numpy.meshgrid",
   "numpy.nan",
+  "numpy.nanmax",
+  "numpy.nanmin",
+  "numpy.nansum",
+  "numpy.ndarray",
   "numpy.pi",
   "numpy.radians",
+  "numpy.reshape",
+  "numpy.rot90",
+  "numpy.shape",
   "numpy.sin",
+  "numpy.sort",
+  "numpy.squeeze",
+  "numpy.vstack",
+  "numpy.where",
   "numpy.zeros",
   "os.path.exists",
+  "pathlib.Path",
+  "pprint.pprint",
+  "pyresample",
+  "pyresample.geometry.GridDefinition",
+  "pyresample.geometry.SwathDefinition",
+  "pyresample.kd_tree.get_neighbour_info",
+  "pyresample.kd_tree.get_sample_from_neighbour_info",
+  "pyresample.kd_tree.resample_custom",
+  "pyresample.kd_tree.resample_nearest",
+  "pytest",
+  "pytest.fixture",
   "pytest.mark.parametrize",
+  "pytest.raises",
+  "re",
   "section_trsp_at_depth",
   "set.union",
+  "shutil",
+  "shutil.move",
   "str.casefold",
   "str.replace",
   "str.split",
   "sys.path.append",
   "update_ecco_dataset_geospatial_metadata",
   "update_ecco_dataset_temporal_coverage_metadata",
-  "warnings.warn"
+  "uuid",
+  "uuid.uuid1",
+  "warnings",
+  "warnings.warn",
+  "xarray",
+  "xarray.DataArray",
+  "xarray.Dataset",
+  "xarray.concat",
+  "xarray.core.dataarray.DataArray",
+  "xarray.core.pycompat.OrderedDict",
+  "xarray.merge",
+  "xarray.ones_like",
+  "xarray.open_dataset",
+  "xarray.testing.assert_allclose",
+  "xarray.testing.assert_equal",
+  "xarray.zeros_like",
+  "xgcm",
+  "xgcm.Grid",
+  "xmitgcm",
+  "xmitgcm.open_mdsdataset",
+  "xmitgcm.test.test_xmitgcm_common._experiments",
+  "xmitgcm.test.test_xmitgcm_common.dlroot",
+  "xmitgcm.test.test_xmitgcm_common.llc_mds_datadirs",
+  "xmitgcm.test.test_xmitgcm_common.setup_mds_dir",
+  "xmitgcm.utils.get_extra_metadata",
+  "xmitgcm.utils.parse_meta_file",
+  "xmitgcm.utils.read_3d_llc_data",
+  "xmitgcm.variables.dimensions"
  ],
  "deps": {
   "__future__": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "_pytest": [
-   "pytest/conda-forge/linux-64/pytest-3.7.0-py27_0",
-   "pytest/conda-forge/linux-64/pytest-4.6.0-py37_0",
-   "pytest/conda-forge/linux-64/pytest-6.0.2-py37hc8dfbb8_0"
-  ],
-  "cartopy": [
-   "cartopy/conda-forge/linux-64/cartopy-0.17.0-py37hbeedcd3_1007",
-   "cartopy/conda-forge/linux-64/cartopy-0.18.0-py37h623d01f_6",
-   "cartopy/conda-forge/linux-64/cartopy-0.19.0.post1-py37h0c48da3_0"
-  ],
   "collections": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "dask": [
-   "dask-core/conda-forge/noarch/dask-core-0.17.5-py_0",
-   "dask-core/conda-forge/noarch/dask-core-0.18.0-py_0",
-   "dask-core/conda-forge/noarch/dask-core-0.20.1-py_0",
-   "dask-core/conda-forge/noarch/dask-core-1.1.1-py_0",
-   "dask-core/conda-forge/noarch/dask-core-1.1.2-py_0",
-   "dask-core/conda-forge/noarch/dask-core-1.1.4-py_0",
-   "dask-core/conda-forge/noarch/dask-core-2.10.1-py_0",
-   "dask-core/conda-forge/noarch/dask-core-2.13.0-py_0",
-   "dask-core/conda-forge/noarch/dask-core-2.17.2-py_0",
-   "dask-core/conda-forge/noarch/dask-core-2.18.0-py_0",
-   "dask-core/conda-forge/noarch/dask-core-2.22.0-py_0",
-   "dask-core/conda-forge/noarch/dask-core-2.25.0-py_0",
-   "dask-core/conda-forge/noarch/dask-core-2.27.0-py_0",
-   "dask-core/conda-forge/noarch/dask-core-2.6.0-py_0",
-   "dask-core/conda-forge/noarch/dask-core-2.8.1-py_0",
-   "dask-core/conda-forge/noarch/dask-core-2020.12.0-pyhd8ed1ab_0",
-   "dask-core/conda-forge/noarch/dask-core-2021.3.1-pyhd8ed1ab_0",
-   "dask-core/conda-forge/noarch/dask-core-2021.4.0-pyhd8ed1ab_0",
-   "dask-core/conda-forge/noarch/dask-core-2021.4.1-pyhd8ed1ab_0",
-   "dask-core/conda-forge/noarch/dask-core-2021.5.1-pyhd8ed1ab_0"
-  ],
   "datetime": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "dateutil": [
-   "python-dateutil/conda-forge/noarch/python-dateutil-2.7.2-py_0",
-   "python-dateutil/conda-forge/noarch/python-dateutil-2.7.4-py_0",
-   "python-dateutil/conda-forge/noarch/python-dateutil-2.7.5-py_0",
-   "python-dateutil/conda-forge/noarch/python-dateutil-2.8.1-py_0",
-   "python-dateutil/conda-forge/noarch/python-dateutil-2.8.2-pyhd8ed1ab_0"
   ],
   "distutils": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -111,72 +163,13 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "matplotlib": [
-   "matplotlib-base/conda-forge/linux-64/matplotlib-base-3.1.1-py37hfd891ef_0",
-   "matplotlib-base/conda-forge/linux-64/matplotlib-base-3.1.1-py38h250f245_2",
-   "matplotlib/conda-forge/linux-64/matplotlib-1.5.3-np111py34_0"
-  ],
   "ntpath": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "numpy": [
-   "numpy/conda-forge/linux-64/numpy-1.17.5-py36h95a1406_0",
-   "numpy/conda-forge/linux-64/numpy-1.18.4-py37h8960a57_0",
-   "numpy/conda-forge/linux-64/numpy-1.19.2-py36h68c22af_1"
-  ],
-  "ordereddict": [
-   "ordereddict/conda-forge/linux-64/ordereddict-1.1-py26_0"
-  ],
   "os": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "pathlib": [
-   "pathlib/conda-forge/noarch/pathlib-1.0.1-py_1",
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "pprint": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "pyresample": [
-   "pyresample/conda-forge/linux-64/pyresample-1.3.1-np112py27_0",
-   "pyresample/conda-forge/linux-64/pyresample-1.5.0-np113py36_0",
-   "pyresample/conda-forge/linux-64/pyresample-1.9.1-py36_0"
-  ],
-  "pytest": [
-   "pytest/conda-forge/linux-64/pytest-3.7.0-py27_0",
-   "pytest/conda-forge/linux-64/pytest-4.6.0-py37_0",
-   "pytest/conda-forge/linux-64/pytest-6.0.2-py37hc8dfbb8_0"
-  ],
-  "re": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "shutil": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "uuid": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "warnings": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "xarray": [],
-  "xgcm": [
-   "xgcm/conda-forge/noarch/xgcm-0.1.0-py_1",
-   "xgcm/conda-forge/noarch/xgcm-0.2.0-py_0",
-   "xgcm/conda-forge/noarch/xgcm-0.3.0-py_0",
-   "xgcm/conda-forge/noarch/xgcm-0.5.1-py_0"
-  ],
-  "xmitgcm": [
-   "xmitgcm/conda-forge/noarch/xmitgcm-0.4.1-py_0",
-   "xmitgcm/conda-forge/noarch/xmitgcm-0.5.0-pyhd3deb0d_1"
   ]
  }
 }

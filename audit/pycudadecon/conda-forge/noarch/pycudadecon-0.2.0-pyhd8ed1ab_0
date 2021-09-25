@@ -3,19 +3,38 @@
   "CTypesFunction",
   "_redirect_stdout",
   "collections.abc.Callable",
+  "fnmatch.fnmatch",
+  "inspect.Parameter",
   "inspect.Parameter.empty",
+  "inspect.signature",
+  "magicgui.magic_factory",
+  "napari.types.ImageData",
+  "napari_plugin_engine.napari_hook_implementation",
+  "numpy",
   "numpy.abs",
+  "numpy.array",
+  "numpy.ascontiguousarray",
   "numpy.cos",
+  "numpy.ctypeslib.as_ctypes_type",
+  "numpy.ctypeslib.ndpointer",
   "numpy.deg2rad",
+  "numpy.dot",
   "numpy.dtype",
   "numpy.empty",
+  "numpy.empty_like",
+  "numpy.eye",
   "numpy.float32",
   "numpy.floor",
   "numpy.inf",
+  "numpy.issubdtype",
   "numpy.maximum",
+  "numpy.median",
+  "numpy.ndarray",
+  "numpy.pad",
   "numpy.pi",
   "numpy.sin",
   "numpy.uint16",
+  "numpy.unravel_index",
   "os.dup",
   "os.dup2",
   "os.listdir",
@@ -24,7 +43,31 @@
   "os.remove",
   "str.encode",
   "sys.stdout.close",
-  "sys.stdout.fileno"
+  "sys.stdout.fileno",
+  "tempfile",
+  "tempfile.NamedTemporaryFile",
+  "tifffile",
+  "tifffile.TiffFile",
+  "tifffile.imread",
+  "tifffile.imsave",
+  "typing.Callable",
+  "typing.Generic",
+  "typing.GenericMeta",
+  "typing.Iterator",
+  "typing.List",
+  "typing.Optional",
+  "typing.Sequence",
+  "typing.Tuple",
+  "typing.Type",
+  "typing.Union",
+  "typing_extensions.Annotated",
+  "typing_extensions.AnnotatedMeta",
+  "typing_extensions.Literal",
+  "typing_extensions.get_args",
+  "typing_extensions.get_origin",
+  "warnings",
+  "warnings.catch_warnings",
+  "warnings.simplefilter"
  ],
  "deps": {
   "collections": [
@@ -39,15 +82,7 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "fnmatch": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "functools": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "inspect": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -55,65 +90,11 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "magicgui": [
-   "magicgui/conda-forge/noarch/magicgui-0.2.10-pyhd8ed1ab_0",
-   "magicgui/conda-forge/noarch/magicgui-0.2.6-pyhd8ed1ab_0",
-   "magicgui/conda-forge/noarch/magicgui-0.2.7-pyhd8ed1ab_0",
-   "magicgui/conda-forge/noarch/magicgui-0.2.9-pyhd8ed1ab_0"
-  ],
-  "napari": [
-   "napari/conda-forge/noarch/napari-0.4.3-pyhd8ed1ab_0",
-   "napari/conda-forge/noarch/napari-0.4.9-pyhd8ed1ab_0"
-  ],
-  "napari_plugin_engine": [
-   "napari-plugin-engine/conda-forge/linux-64/napari-plugin-engine-0.1.9-py38h578d9bd_0",
-   "napari-plugin-engine/conda-forge/noarch/napari-plugin-engine-0.1.4-py_0",
-   "napari-plugin-engine/conda-forge/noarch/napari-plugin-engine-0.1.5-py_0",
-   "napari-plugin-engine/conda-forge/noarch/napari-plugin-engine-0.1.6-py_0",
-   "napari-plugin-engine/conda-forge/noarch/napari-plugin-engine-0.1.7-py_0"
-  ],
   "ntpath": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "numpy": [
-   "numpy/conda-forge/linux-64/numpy-1.17.5-py36h95a1406_0",
-   "numpy/conda-forge/linux-64/numpy-1.18.4-py37h8960a57_0"
-  ],
   "os": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "tempfile": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "tifffile": [
-   "tifffile/conda-forge/linux-64/tifffile-0.14.0-py35_1",
-   "tifffile/conda-forge/noarch/tifffile-2020.11.18-pyhd8ed1ab_0",
-   "tifffile/conda-forge/noarch/tifffile-2020.2.16-py_0",
-   "tifffile/conda-forge/noarch/tifffile-2020.5.11-py_0",
-   "tifffile/conda-forge/noarch/tifffile-2020.5.5-py_0",
-   "tifffile/conda-forge/noarch/tifffile-2020.8.13-py_0",
-   "tifffile/conda-forge/noarch/tifffile-2020.9.22-py_0",
-   "tifffile/conda-forge/noarch/tifffile-2020.9.29-py_0",
-   "tifffile/conda-forge/noarch/tifffile-2021.1.8-pyhd8ed1ab_0",
-   "tifffile/conda-forge/noarch/tifffile-2021.3.31-pyhd8ed1ab_0",
-   "tifffile/conda-forge/noarch/tifffile-2021.4.8-pyhd8ed1ab_0",
-   "tifffile/conda-forge/noarch/tifffile-2021.7.2-pyhd8ed1ab_0",
-   "tifffile/conda-forge/noarch/tifffile-2021.8.30-pyhd8ed1ab_0"
-  ],
-  "typing": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython"
-  ],
-  "typing_extensions": [
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0",
-   "typing_extensions/conda-forge/noarch/typing_extensions-3.10.0.0-pyha770c72_0",
-   "typing_extensions/conda-forge/noarch/typing_extensions-3.7.4.2-py_0",
-   "typing_extensions/conda-forge/noarch/typing_extensions-3.7.4.3-py_0"
-  ],
-  "warnings": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ]
