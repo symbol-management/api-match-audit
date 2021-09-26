@@ -22,10 +22,18 @@
   "datetime.datetime.today",
   "datetime.timezone.utc",
   "filter_errors",
+  "fsspec.Callback",
+  "fsspec.Callback.as_callback",
+  "fsspec.implementations.local.LocalFileSystem",
+  "fsspec.spec.AbstractBufferedFile",
+  "fsspec.spec.AbstractBufferedFile.readuntil",
+  "fsspec.spec.AbstractFileSystem",
+  "fsspec.utils.stringify_path",
   "func",
   "functools.partial",
   "gen",
   "get_mtime",
+  "http.HTTPStatus",
   "http.HTTPStatus.BAD_GATEWAY",
   "http.HTTPStatus.CONFLICT",
   "http.HTTPStatus.CREATED",
@@ -49,17 +57,46 @@
   "http.Method.MOVE",
   "http.Method.PROPFIND",
   "http.Method.PUT",
+  "http.client.responses",
+  "httpx",
+  "httpx.Client",
+  "httpx.HTTPStatusError",
+  "httpx.NetworkError",
+  "httpx.Request",
+  "httpx.Response",
+  "httpx.TimeoutException",
+  "httpx.URL",
+  "httpx._types.AuthTypes",
+  "httpx._types.HeaderTypes",
+  "httpx._types.URLTypes",
+  "httpx._utils.peek_filelike_length",
   "io.BytesIO",
   "io.DEFAULT_BUFFER_SIZE",
   "io.TextIOWrapper",
+  "locale",
+  "locale.getpreferredencoding",
+  "mmap.mmap",
   "os.path.isdir",
+  "posixpath",
+  "posixpath.basename",
+  "posixpath.join",
+  "posixpath.sep",
+  "posixpath.splitext",
   "re.IGNORECASE",
   "read_into",
   "sread",
   "stream.read_until",
   "swrite",
   "sys.stdout.isatty",
-  "timeout"
+  "tempfile",
+  "tempfile.SpooledTemporaryFile",
+  "threading",
+  "timeout",
+  "xml.etree.ElementTree.Element",
+  "xml.etree.ElementTree.ElementTree",
+  "xml.etree.ElementTree.SubElement",
+  "xml.etree.ElementTree.fromstring",
+  "xml.etree.ElementTree.tostring"
  ],
  "deps": {
   "argparse": [
@@ -100,31 +137,15 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "fsspec": [
-   "fsspec/conda-forge/noarch/fsspec-2021.7.0-pyhd8ed1ab_0"
-  ],
   "functools": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "http": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "httpx": [],
   "io": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "locale": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "logging": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "mmap": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -136,23 +157,11 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "posixpath": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "re": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "shutil": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "tempfile": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "threading": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -166,10 +175,6 @@
    "typing_extensions/conda-forge/noarch/typing_extensions-3.10.0.0-pyha770c72_0",
    "typing_extensions/conda-forge/noarch/typing_extensions-3.7.4.2-py_0",
    "typing_extensions/conda-forge/noarch/typing_extensions-3.7.4.3-py_0"
-  ],
-  "xml": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ]
  }
 }

@@ -3,6 +3,10 @@
   "GitArchiver",
   "Queue.Queue",
   "clientclass",
+  "netrc",
+  "netrc.NetrcParseError",
+  "netrc.netrc",
+  "optparse.OptionParser",
   "os.getcwd",
   "os.kill",
   "os.killpg",
@@ -15,14 +19,33 @@
   "os.rmdir",
   "os.setsid",
   "os.sys",
+  "queue.Queue",
   "re.MULTILINE",
   "read_attributes",
+  "shlex",
+  "shlex.split",
+  "signal",
   "signal.CTRL_BREAK_EVENT",
   "signal.SIGTERM",
   "subprocess.CREATE_NEW_PROCESS_GROUP",
   "sys.logger.error",
   "sys.stderr.write",
   "sys.stdout.write",
+  "tarfile",
+  "tarfile.open",
+  "tarfile.version",
+  "tempfile",
+  "tempfile.mkdtemp",
+  "tempfile.mkstemp",
+  "threading",
+  "threading.Thread",
+  "urllib.parse.urlparse",
+  "urllib.parse.urlsplit",
+  "urllib.request.HTTPBasicAuthHandler",
+  "urllib.request.HTTPPasswordMgrWithDefaultRealm",
+  "urllib.request.build_opener",
+  "urllib.request.url2pathname",
+  "urllib.request.urlopen",
   "urllib2.HTTPBasicAuthHandler",
   "urllib2.HTTPPasswordMgrWithDefaultRealm",
   "urllib2.build_opener",
@@ -30,7 +53,15 @@
   "urllib2.urlopen",
   "urlparse.urlparse",
   "urlparse.urlsplit",
-  "vcstools.__init__.setup_logger"
+  "vcstools.__init__.setup_logger",
+  "warnings",
+  "xml.dom.minidom",
+  "yaml",
+  "yaml.dump",
+  "yaml.load",
+  "zipfile.ZIP_DEFLATED",
+  "zipfile.ZipFile",
+  "zipfile.ZipInfo"
  ],
  "deps": {
   "__future__": [
@@ -68,15 +99,7 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "netrc": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "ntpath": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "optparse": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -84,15 +107,7 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "queue": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "re": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "shlex": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -100,45 +115,7 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "signal": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "subprocess": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "tarfile": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "tempfile": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "threading": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "urllib": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "warnings": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "xml": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "yaml": [
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0",
-   "pyyaml/conda-forge/linux-64/pyyaml-3.11-py35_0",
-   "pyyaml/conda-forge/win-64/pyyaml-5.2-py36hfa6e2cd_0"
-  ],
-  "zipfile": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ]

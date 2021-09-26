@@ -7,11 +7,66 @@
   "deriv",
   "f",
   "f.__name__",
+  "f90nml",
+  "f90nml.read",
   "func",
   "func.__doc__",
+  "iris",
+  "iris.Constraint",
+  "iris.analysis",
+  "iris.analysis.Linear",
+  "iris.analysis.MAX",
+  "iris.analysis.MEAN",
+  "iris.analysis.MIN",
+  "iris.analysis.PERCENTILE",
+  "iris.analysis.SUM",
+  "iris.analysis.UnstructuredNearest",
+  "iris.analysis.WeightedAggregator",
+  "iris.analysis.calculus._coord_cos",
+  "iris.analysis.calculus._curl_differentiate",
+  "iris.analysis.calculus._curl_regrid",
+  "iris.analysis.calculus.differentiate",
+  "iris.analysis.cartography._meshgrid",
+  "iris.analysis.cartography.area_weights",
+  "iris.analysis.cartography.rotate_pole",
+  "iris.analysis.cartography.rotate_winds",
+  "iris.analysis.cartography.wrap_lons",
   "iris.analysis.coord_comparison",
+  "iris.analysis.maths.add",
+  "iris.analysis.maths.divide",
+  "iris.analysis.maths.multiply",
+  "iris.coord_categorisation._months_in_season",
+  "iris.coord_categorisation.add_categorised_coord",
+  "iris.coord_systems.GeogCS",
+  "iris.coord_systems.RotatedGeogCS",
+  "iris.coords.AuxCoord",
+  "iris.coords.Coord",
   "iris.coords.DimCoord.from_coord",
+  "iris.cube.Cube",
+  "iris.cube.CubeList",
+  "iris.exceptions.ConstraintMismatchError",
+  "iris.exceptions.CoordinateNotFoundError",
+  "iris.experimental.stratify",
+  "iris.experimental.stratify.relevel",
+  "iris.fileformats.pp.EARTH_RADIUS",
+  "iris.load",
+  "iris.save",
+  "iris.util.broadcast_to_shape",
+  "iris.util.guess_coord_axis",
+  "iris.util.is_regular",
+  "iris.util.promote_aux_coord_to_dim_coord",
+  "iris.util.squeeze",
   "kls",
+  "matplotlib",
+  "matplotlib.colors",
+  "matplotlib.colors.BoundaryNorm",
+  "matplotlib.colors.ListedColormap",
+  "matplotlib.colors.Normalize",
+  "matplotlib.lines.Line2D",
+  "matplotlib.patches.Rectangle",
+  "matplotlib.transforms.offset_copy",
+  "metpy.units",
+  "metpy.units.units",
   "model.um.t_sfc",
   "model.um.x",
   "model.um.y",
@@ -22,13 +77,21 @@
   "numpy.float64",
   "numpy.pi",
   "object.__setattr__",
+  "pathlib.Path",
+  "pint",
+  "pint.errors.DimensionalityError",
   "pyvista.grid_from_sph_coords",
   "pyvista.transform_vectors_sph_to_cart",
   "rel_day",
+  "string",
+  "string.ascii_lowercase",
   "to_iris",
   "to_xarray",
   "update_name_units",
-  "warnings.warn"
+  "warnings",
+  "warnings.warn",
+  "xarray",
+  "xarray.DataArray.from_iris"
  ],
  "deps": {
   "LatLon23": [
@@ -56,32 +119,13 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "f90nml": [
-   "f90nml/conda-forge/noarch/f90nml-1.2-pyh9f0ad1d_0"
-  ],
   "functools": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "iris": [
-   "iris/conda-forge/linux-64/iris-3.0.1-py36hd000896_1",
-   "iris/conda-forge/linux-64/iris-3.0.1-py38h578d9bd_1"
-  ],
   "json": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "matplotlib": [
-   "matplotlib-base/conda-forge/linux-64/matplotlib-base-3.1.1-py37hfd891ef_0",
-   "matplotlib-base/conda-forge/linux-64/matplotlib-base-3.1.1-py38h250f245_2",
-   "matplotlib/conda-forge/linux-64/matplotlib-1.5.3-np111py34_0"
-  ],
-  "metpy": [
-   "metpy/conda-forge/linux-64/metpy-0.7.0-py35_0",
-   "metpy/conda-forge/noarch/metpy-0.12.0-py_0",
-   "metpy/conda-forge/noarch/metpy-0.12.1-py_0",
-   "metpy/conda-forge/noarch/metpy-1.0-pyhd8ed1ab_0",
-   "metpy/conda-forge/noarch/metpy-1.0.1-pyhd8ed1ab_0"
   ],
   "mpl_toolkits": [
    "matplotlib/conda-forge/linux-64/matplotlib-1.5.3-np111py34_0"
@@ -90,43 +134,6 @@
    "numpy/conda-forge/linux-64/numpy-1.17.5-py36h95a1406_0",
    "numpy/conda-forge/linux-64/numpy-1.18.4-py37h8960a57_0",
    "numpy/conda-forge/linux-64/numpy-1.19.2-py36h68c22af_1"
-  ],
-  "pathlib": [
-   "pathlib/conda-forge/noarch/pathlib-1.0.1-py_1",
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "pint": [
-   "pint/conda-forge/linux-64/pint-0.8.1-py27_0",
-   "pint/conda-forge/noarch/pint-0.10-py_0",
-   "pint/conda-forge/noarch/pint-0.10-py_1",
-   "pint/conda-forge/noarch/pint-0.10.1-py_0",
-   "pint/conda-forge/noarch/pint-0.11-py_1",
-   "pint/conda-forge/noarch/pint-0.15-py_0",
-   "pint/conda-forge/noarch/pint-0.16-py_0",
-   "pint/conda-forge/noarch/pint-0.8.1-py_1",
-   "pint/conda-forge/noarch/pint-0.9-py_0"
-  ],
-  "string": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "warnings": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "xarray": [
-   "xarray/conda-forge/linux-64/xarray-0.10.2-py36_0",
-   "xarray/conda-forge/noarch/xarray-0.12.0-py_0",
-   "xarray/conda-forge/noarch/xarray-0.13.0-py_0",
-   "xarray/conda-forge/noarch/xarray-0.14.1-py_0",
-   "xarray/conda-forge/noarch/xarray-0.15.0-py_0",
-   "xarray/conda-forge/noarch/xarray-0.15.1-py_0",
-   "xarray/conda-forge/noarch/xarray-0.16.0-py_0",
-   "xarray/conda-forge/noarch/xarray-0.16.1-py_0",
-   "xarray/conda-forge/noarch/xarray-0.16.2-pyhd8ed1ab_0",
-   "xarray/conda-forge/noarch/xarray-0.18.0-pyhd8ed1ab_0",
-   "xarray/conda-forge/noarch/xarray-0.18.2-pyhd8ed1ab_0"
   ]
  }
 }

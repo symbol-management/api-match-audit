@@ -50,6 +50,9 @@
   "functools.reduce",
   "hashlib.sha1",
   "io.StringIO",
+  "ipaddress.ip_address",
+  "ipaddress.ip_network",
+  "lxml.etree",
   "lxml.etree.Element",
   "lxml.etree.ElementTree",
   "lxml.etree.Entity",
@@ -65,6 +68,7 @@
   "lxml.etree.register_namespace",
   "lxml.etree.tostring",
   "lxml.etree.tounicode",
+  "multiprocessing.pool.ThreadPool",
   "os.R_OK",
   "os.W_OK",
   "os.X_OK",
@@ -78,23 +82,86 @@
   "re.VERBOSE",
   "relay",
   "spawn",
+  "stat",
+  "stat.S_IRUSR",
+  "stat.S_IWUSR",
+  "stat.S_IXUSR",
+  "string",
+  "string.ascii_letters",
+  "string.digits",
+  "struct",
   "struct.pack",
   "sys.stdout.read",
   "sys.stdout.seek",
   "sys.version_info.major",
+  "tempfile",
+  "tempfile.NamedTemporaryFile",
+  "tempfile.mkdtemp",
+  "textwrap",
+  "textwrap.dedent",
+  "threading.Lock",
   "twisted.application.internet.TCPClient",
   "twisted.application.internet.TCPServer",
+  "twisted.application.service.MultiService",
+  "twisted.internet.address.IPv4Address",
+  "twisted.internet.defer",
+  "twisted.internet.defer.Deferred",
+  "twisted.internet.defer.DeferredList",
+  "twisted.internet.defer.FirstError",
+  "twisted.internet.defer.gatherResults",
+  "twisted.internet.defer.maybeDeferred",
+  "twisted.internet.defer.succeed",
+  "twisted.internet.protocol.ClientFactory",
+  "twisted.internet.protocol.ProcessProtocol",
+  "twisted.internet.protocol.Protocol",
+  "twisted.internet.protocol.ReconnectingClientFactory",
+  "twisted.internet.protocol.ReconnectingClientFactory.clientConnectionFailed",
+  "twisted.internet.protocol.ServerFactory",
   "twisted.internet.protocol.ServerFactory.startFactory",
   "twisted.internet.protocol.ServerFactory.stopFactory",
+  "twisted.internet.reactor",
   "twisted.internet.reactor.callLater",
   "twisted.internet.reactor.callWhenRunning",
   "twisted.internet.reactor.getDelayedCalls",
   "twisted.internet.reactor.listenTCP",
   "twisted.internet.reactor.spawnProcess",
   "twisted.internet.reactor.stop",
+  "twisted.internet.task",
+  "twisted.internet.task.Clock",
+  "twisted.internet.task.LoopingCall",
+  "twisted.internet.threads.deferToThread",
+  "twisted.plugin.IPlugin",
   "twisted.plugin.IPlugin.implementedBy",
+  "twisted.plugin.getPlugins",
+  "twisted.plugin.pluginPackagePaths",
+  "twisted.protocols.basic.Int32StringReceiver",
   "twisted.protocols.basic.Int32StringReceiver.lengthLimitExceeded",
+  "twisted.protocols.policies.TimeoutMixin",
+  "twisted.protocols.policies.TimeoutMixin.timeoutConnection",
+  "twisted.protocols.policies.WrappingFactory",
+  "twisted.protocols.policies.WrappingFactory.buildProtocol",
+  "twisted.python.context",
   "twisted.python.context.get",
+  "twisted.python.lockfile",
+  "twisted.python.lockfile.FilesystemLock",
+  "twisted.python.log",
+  "twisted.python.log.ILogContext",
+  "twisted.python.log.addObserver",
+  "twisted.python.log.err",
+  "twisted.python.log.msg",
+  "twisted.python.log.removeObserver",
+  "twisted.python.usage",
+  "twisted.python.usage.Options",
+  "twisted.python.usage.UsageError",
+  "twisted.python.util",
+  "twisted.python.util.sibpath",
+  "twisted.test.proto_helpers",
+  "twisted.test.proto_helpers.StringTransport",
+  "twisted.test.proto_helpers.StringTransportWithDisconnection",
+  "twisted.trial.unittest",
+  "twisted.trial.unittest.TestCase",
+  "unittest.skipIf",
+  "unittest.skipUnless",
   "win32api",
   "zope.interface.Attribute",
   "zope.interface.Interface",
@@ -110,20 +177,6 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "dbm": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "ipaddress": [
-   "ipaddress/conda-forge/noarch/ipaddress-1.0.22-py_1",
-   "ipaddress/conda-forge/noarch/ipaddress-1.0.23-py_0",
-   "privy/conda-forge/noarch/privy-6.0.0-py_0",
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "lxml": [
-   "lxml/conda-forge/linux-64/lxml-4.2.6-py37h23eabaa_1000"
-  ],
-  "multiprocessing": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -144,37 +197,6 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "shutil": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "stat": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "string": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "struct": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "tempfile": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "textwrap": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "threading": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "twisted": [
-   "twisted/conda-forge/linux-64/twisted-18.7.0-py37h14c3975_1001"
-  ],
-  "unittest": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ]
