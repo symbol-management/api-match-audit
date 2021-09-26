@@ -141,6 +141,7 @@
   "cache.preformat_cache",
   "cache.read_cache",
   "cache.write_cache",
+  "ciecplib.get",
   "cli.Coherence",
   "cli.Coherencegram",
   "cli.Qtransform",
@@ -152,12 +153,19 @@
   "cli.cliproduct.ImageProduct",
   "cli.cliproduct.to_float",
   "cls",
+  "collections.OrderedDict",
+  "collections.OrderedDict.fromkeys",
   "collections.abc.KeysView",
   "collections.abc.ValuesView",
+  "collections.namedtuple",
   "colorbar.process_colorbar_kwargs",
   "colors.format_norm",
   "colors.tint",
+  "configparser",
+  "configparser.ConfigParser",
+  "configparser.NoOptionError",
   "connect",
+  "contextlib.contextmanager",
   "copy.__doc__",
   "core.TimeSeriesBase._metadata_slots",
   "core.TimeSeriesBase._print_slots",
@@ -176,12 +184,24 @@
   "datafind.reconnect",
   "datafind.with_connection",
   "datetime.time.min",
+  "dateutil.parser",
+  "dateutil.parser.parse",
+  "dateutil.relativedelta.relativedelta",
+  "dateutil.tz",
+  "dateutil.tz.gettz",
+  "dateutil.tz.tzlocal",
+  "dateutil.tz.tzutc",
+  "decimal.Decimal",
+  "decorator",
   "decorators.return_as",
   "detector.Channel",
   "detector.Channel.MATCH.match",
   "detector.Channel.from_nds2",
   "detector.ChannelList.from_names",
   "detector.units.Unit",
+  "enum",
+  "enum.Enum",
+  "enum.IntEnum",
   "enum.NumpyTypeEnum",
   "env.bool_env",
   "fake",
@@ -211,7 +231,12 @@
   "func",
   "func.__name__",
   "func_",
+  "functools",
   "functools.reduce",
+  "functools.update_wrapper",
+  "functools.wraps",
+  "getpass",
+  "getpass.getpass",
   "glue.lal.Cache.entry_class",
   "glue.ligolw._ilwd.ilwdchar",
   "glue.ligolw.lsctables.SnglBurstTable.reset_next_id",
@@ -240,6 +265,9 @@
   "gwpy.timeseries.io.gwf.__init__.register_gwf_api",
   "gwpy.timeseries.io.gwf.__init__.register_gwf_format",
   "gwpy_plot.main",
+  "gzip",
+  "gzip.GzipFile",
+  "gzip.open",
   "id_func",
   "identifier",
   "index",
@@ -772,32 +800,6 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "astropy": [],
-  "backports": [
-   "configparser/conda-forge/noarch/configparser-5.0.0-py_0"
-  ],
-  "ciecplib": [
-   "ciecplib/conda-forge/noarch/ciecplib-0.2.0-py_0",
-   "ciecplib/conda-forge/noarch/ciecplib-0.2.1-py_0",
-   "ciecplib/conda-forge/noarch/ciecplib-0.3.1-py_0",
-   "ciecplib/conda-forge/noarch/ciecplib-0.4.1-py_0",
-   "ciecplib/conda-forge/noarch/ciecplib-0.4.2-pyhd8ed1ab_0",
-   "ciecplib/conda-forge/noarch/ciecplib-0.4.3-pyhd8ed1ab_0"
-  ],
-  "collections": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "configparser": [
-   "configparser/conda-forge/linux-64/configparser-3.7.1-py27_1",
-   "configparser/conda-forge/noarch/configparser-5.0.0-py_0",
-   "configparser/conda-forge/noarch/configparser-5.0.1-py_0",
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "contextlib": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "copy": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -805,29 +807,6 @@
   "datetime": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "dateutil": [
-   "python-dateutil/conda-forge/noarch/python-dateutil-2.7.2-py_0",
-   "python-dateutil/conda-forge/noarch/python-dateutil-2.7.4-py_0",
-   "python-dateutil/conda-forge/noarch/python-dateutil-2.7.5-py_0",
-   "python-dateutil/conda-forge/noarch/python-dateutil-2.8.1-py_0",
-   "python-dateutil/conda-forge/noarch/python-dateutil-2.8.2-pyhd8ed1ab_0"
-  ],
-  "decimal": [
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "decorator": [
-   "decorator/conda-forge/noarch/decorator-4.3.0-py_0",
-   "decorator/conda-forge/noarch/decorator-4.3.2-py_0",
-   "decorator/conda-forge/noarch/decorator-4.4.0-py_0",
-   "decorator/conda-forge/noarch/decorator-4.4.1-py_0",
-   "decorator/conda-forge/noarch/decorator-4.4.2-py_0",
-   "decorator/conda-forge/noarch/decorator-5.0.2-pyhd8ed1ab_0",
-   "decorator/conda-forge/noarch/decorator-5.0.3-pyhd8ed1ab_0",
-   "decorator/conda-forge/noarch/decorator-5.0.4-pyhd8ed1ab_0",
-   "decorator/conda-forge/noarch/decorator-5.0.5-pyhd8ed1ab_0",
-   "decorator/conda-forge/noarch/decorator-5.0.6-pyhd8ed1ab_0",
-   "decorator/conda-forge/noarch/decorator-5.0.9-pyhd8ed1ab_0"
   ],
   "delta": [
    "delta/conda-forge/noarch/delta-0.4.2-py_0"
@@ -842,24 +821,11 @@
   "dqsegdb2": [
    "dqsegdb2/conda-forge/noarch/dqsegdb2-1.0.1-py_0"
   ],
-  "enum": [
-   "privy/conda-forge/noarch/privy-6.0.0-py_0",
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "freezegun": [
    "freezegun/conda-forge/noarch/freezegun-0.3.13-py_0",
    "freezegun/conda-forge/noarch/freezegun-0.3.14-py_0",
    "freezegun/conda-forge/noarch/freezegun-0.3.15-py_0",
    "freezegun/conda-forge/noarch/freezegun-1.0.0-py_0"
-  ],
-  "functools": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "getpass": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "glue": [
    "lscsoft-glue/conda-forge/linux-64/lscsoft-glue-1.60.0-py37h14c3975_0",
@@ -878,10 +844,6 @@
    "gwosc/conda-forge/noarch/gwosc-0.5.3-py_0",
    "gwosc/conda-forge/noarch/gwosc-0.5.4-py_0",
    "gwosc/conda-forge/noarch/gwosc-0.5.8-pyhd8ed1ab_0"
-  ],
-  "gzip": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "h5py": [
    "h5py/conda-forge/linux-64/h5py-2.10.0-nompi_py37hf7afa78_105",

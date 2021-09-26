@@ -81,9 +81,11 @@
   "headersource.mongo.MDS",
   "hook",
   "itertools.izip_longest",
+  "jsonschema.validate",
   "match",
   "mds_cls",
   "mongo_core.BAD_KEYS_FMT.format",
+  "mongoquery.Query",
   "myplan",
   "numpy.arange",
   "numpy.float32",
@@ -101,6 +103,18 @@
   "numpy.uint16",
   "numpy.uint32",
   "numpy.zeros",
+  "ophyd.Component",
+  "ophyd.Device",
+  "ophyd.sim",
+  "ophyd.sim.NumpySeqHandler",
+  "ophyd.sim.Signal",
+  "ophyd.sim.SynAxis",
+  "ophyd.sim.SynGauss",
+  "ophyd.sim.SynPeriodicSignal",
+  "ophyd.sim.SynSignalWithRegistry",
+  "ophyd.sim.hw",
+  "ophyd.sim.new_uid",
+  "ophyd.sim.short_uid",
   "os.environ.get",
   "os.listdir",
   "os.path.exists",
@@ -108,16 +122,30 @@
   "os.path.isfile",
   "os.remove",
   "os.unlink",
+  "pathlib2.Path",
   "pims.Frame",
   "pims.FramesSequence",
+  "pims.base_frames.FramesSequence",
+  "pkg_resources.resource_filename",
   "plan",
+  "pymongo",
+  "pymongo.ASCENDING",
+  "pymongo.DESCENDING",
+  "pymongo.MongoClient",
+  "pymongo.errors.DuplicateKeyError",
   "pytest.mark.parametrize",
   "pytest.mark.skipif",
   "pytest.mark.usefixtures",
+  "pytz",
+  "pytz.AmbiguousTimeError",
+  "pytz.NonExistentTimeError",
+  "pytz.UTC.localize",
+  "pytz.timezone",
   "query",
   "rename_hook_wrapper",
   "rmap",
   "safe_join",
+  "singledispatch.singledispatch",
   "six.moves.queue",
   "six.moves.queue.Empty",
   "six.moves.queue.Queue",
@@ -260,18 +288,9 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "jsonschema": [
-   "jsonschema/conda-forge/noarch/jsonschema-3.2.0-pyhd8ed1ab_3"
-  ],
   "logging": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "mongoquery": [
-   "mongoquery/conda-forge/linux-64/mongoquery-1.1.0-py35_0",
-   "mongoquery/conda-forge/noarch/mongoquery-1.1.0-py_0",
-   "mongoquery/conda-forge/noarch/mongoquery-1.1.0-py_1",
-   "mongoquery/conda-forge/noarch/mongoquery-1.3.5-py_0"
   ],
   "ntpath": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -290,17 +309,6 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "ophyd": [
-   "ophyd/conda-forge/noarch/ophyd-1.3.3-py_4",
-   "ophyd/conda-forge/noarch/ophyd-1.4.0-py_0",
-   "ophyd/conda-forge/noarch/ophyd-1.4.1-py_0",
-   "ophyd/conda-forge/noarch/ophyd-1.5.0-py_0",
-   "ophyd/conda-forge/noarch/ophyd-1.5.1-py_0",
-   "ophyd/conda-forge/noarch/ophyd-1.5.4-py_0",
-   "ophyd/conda-forge/noarch/ophyd-1.6.0-pyhd8ed1ab_0",
-   "ophyd/conda-forge/noarch/ophyd-1.6.1-pyhd8ed1ab_0",
-   "ophyd/conda-forge/noarch/ophyd-1.6.2-pyhd8ed1ab_0"
-  ],
   "os": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -311,45 +319,14 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "pathlib2": [
-   "pathlib2/conda-forge/linux-64/pathlib2-2.3.3-py36_1000"
-  ],
   "pickle": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "pims": [
-   "pims/conda-forge/linux-64/pims-0.3.3-py27_1",
-   "pims/conda-forge/noarch/pims-0.4.1-py_1",
-   "pims/conda-forge/noarch/pims-0.4.1-pyh9f0ad1d_2",
-   "pims/conda-forge/noarch/pims-0.5-pyh9f0ad1d_1"
-  ],
-  "pkg_resources": [
-   "setuptools/conda-forge/linux-64/setuptools-40.6.1-py36_0",
-   "setuptools/conda-forge/linux-64/setuptools-46.3.0-py38h32f6830_0",
-   "setuptools/conda-forge/linux-64/setuptools-49.1.2-py38h32f6830_0"
-  ],
-  "pymongo": [
-   "pymongo/conda-forge/linux-64/pymongo-3.11.4-py39he80948d_0",
-   "pymongo/conda-forge/win-64/pymongo-3.11.4-py39h415ef7b_0"
   ],
   "pytest": [
    "pytest/conda-forge/linux-64/pytest-3.7.0-py27_0",
    "pytest/conda-forge/linux-64/pytest-4.6.0-py37_0",
    "pytest/conda-forge/linux-64/pytest-6.0.2-py37hc8dfbb8_0"
-  ],
-  "pytz": [
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0",
-   "pytz/conda-forge/noarch/pytz-2017.3-py_1",
-   "pytz/conda-forge/noarch/pytz-2017.3-py_2",
-   "pytz/conda-forge/noarch/pytz-2018.4-py_0",
-   "pytz/conda-forge/noarch/pytz-2018.5-py_0",
-   "pytz/conda-forge/noarch/pytz-2018.6-py_0",
-   "pytz/conda-forge/noarch/pytz-2019.1-py_0",
-   "pytz/conda-forge/noarch/pytz-2019.2-py_0",
-   "pytz/conda-forge/noarch/pytz-2020.1-pyh9f0ad1d_0",
-   "pytz/conda-forge/noarch/pytz-2020.4-pyhd8ed1ab_0"
   ],
   "random": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -372,10 +349,6 @@
   "shutil": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "singledispatch": [
-   "singledispatch/conda-forge/noarch/singledispatch-3.5.0-pyh44b312d_0",
-   "singledispatch/conda-forge/noarch/singledispatch-3.6.0-pyh44b312d_0"
   ],
   "six": [
    "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
