@@ -16,12 +16,7 @@
   "append_coord",
   "append_data_block",
   "append_error_block",
-  "base64",
-  "base64.b64encode",
   "calc_qrcode_bit_length",
-  "chunk",
-  "codecs",
-  "codecs.getwriter",
   "codecs.lookup",
   "collections.defaultdict",
   "consts.ALIGNMENT_POS",
@@ -88,14 +83,9 @@
   "consts.VERSION_RANGE_01_09",
   "consts.VERSION_RANGE_10_26",
   "consts.VERSION_RANGE_27_40",
-  "contextlib.contextmanager",
-  "ctypes",
-  "ctypes.create_string_buffer",
   "ctypes.windll.kernel32.GetConsoleScreenBufferInfo",
   "ctypes.windll.kernel32.GetStdHandle",
   "ctypes.windll.kernel32.SetConsoleTextAttribute",
-  "decimal",
-  "decimal.Decimal",
   "divide_into_chunks",
   "encode",
   "encoder.encode",
@@ -116,7 +106,6 @@
   "get_bit",
   "get_mode_name",
   "get_version_name",
-  "io",
   "io.BytesIO",
   "io.open",
   "is_better",
@@ -128,8 +117,6 @@
   "make_matrix",
   "make_multifield",
   "make_segment",
-  "math",
-  "math.ceil",
   "matrix_to_lines_verbose",
   "multi",
   "n3_pattern_occurrences",
@@ -139,20 +126,12 @@
   "normalize_version",
   "number_of_symbols_by_version",
   "one_item_segments",
-  "operator.gt",
-  "operator.itemgetter",
-  "operator.lt",
-  "operator.xor",
   "os.unlink",
   "pack_row",
   "png_color",
   "point",
   "prepare_data",
   "quotation_mark",
-  "re",
-  "re.compile",
-  "re.escape",
-  "re.sub",
   "rgb_to_floats",
   "row_filter",
   "sa_info",
@@ -170,8 +149,6 @@
   "svg_color",
   "sys.stderr.writelines",
   "sys.stdout.write",
-  "tempfile",
-  "tempfile.NamedTemporaryFile",
   "to_binary",
   "to_byte",
   "to_float",
@@ -185,6 +162,8 @@
   "utils.matrix_iter",
   "utils.matrix_iter_verbose",
   "version_range",
+  "webbrowser",
+  "webbrowser.open_new_tab",
   "write",
   "writeline",
   "writers.as_png_data_uri",
@@ -192,7 +171,12 @@
   "writers.save",
   "writers.write_terminal",
   "writers.write_terminal_win",
-  "writestr"
+  "writestr",
+  "xml.sax.saxutils.escape",
+  "xml.sax.saxutils.quoteattr",
+  "zlib",
+  "zlib.compress",
+  "zlib.crc32"
  ],
  "deps": {
   "__future__": [
@@ -204,8 +188,31 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "base64": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "chunk": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "codecs": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "collections": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "contextlib": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "ctypes": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "decimal": [
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "functools": [
@@ -216,7 +223,19 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "io": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "math": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "numbers": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "operator": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -229,7 +248,15 @@
    "setuptools/conda-forge/linux-64/setuptools-46.3.0-py38h32f6830_0",
    "setuptools/conda-forge/linux-64/setuptools-49.1.2-py38h32f6830_0"
   ],
+  "re": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "struct": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "tempfile": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -242,18 +269,6 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "urllib": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "webbrowser": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "xml": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "zlib": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ]

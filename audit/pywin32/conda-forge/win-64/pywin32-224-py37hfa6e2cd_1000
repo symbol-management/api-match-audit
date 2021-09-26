@@ -14,8 +14,6 @@
   "IRTDUpdateEventKlass",
   "ISAPIParameters",
   "MakePublicAttributeName",
-  "Pyro4",
-  "Pyro4.errors.PyroError",
   "RaiseCOMException",
   "ScriptMapParams",
   "System",
@@ -135,8 +133,6 @@
   "commctrl.LVS_ALIGNLEFT",
   "commctrl.LVS_AUTOARRANGE",
   "commctrl.LVS_REPORT",
-  "copy",
-  "copy.copy",
   "daodump.DumpDB",
   "dbapi20",
   "dbapi20.DatabaseAPI20Test",
@@ -165,8 +161,6 @@
   "gencache.MakeModuleForTypelib",
   "genpy.makepy_version",
   "getevents",
-  "glob",
-  "glob.glob",
   "gtrc",
   "gw_cpp_writer",
   "handler",
@@ -200,6 +194,7 @@
   "object.Method1",
   "object.__class__.__module__",
   "object.__setattr__",
+  "optparse.OptionParser",
   "os.chdir",
   "os.environ.get",
   "os.error",
@@ -215,6 +210,8 @@
   "os.stat",
   "os.system",
   "os.unlink",
+  "pickle.Pickler",
+  "pickle.Unpickler",
   "policy",
   "policy.DefaultPolicy",
   "process_connect_string.process",
@@ -449,11 +446,6 @@
   "pywintypes.__import_pywin32_system_module__",
   "pywintypes.com_error",
   "r",
-  "re",
-  "re.compile",
-  "re.error",
-  "re.match",
-  "re.sub",
   "result_class",
   "retob",
   "script_map_func",
@@ -463,6 +455,9 @@
   "setuptestframework.makeadopackage",
   "setuptestframework.makemdb",
   "setuptestframework.maketemp",
+  "stat",
+  "stat.ST_MTIME",
+  "stat.ST_SIZE",
   "string.lower",
   "string.uppercase",
   "struct.pack",
@@ -497,15 +492,8 @@
   "typ",
   "types.ClassType",
   "types.InstanceType",
-  "unittest",
-  "unittest.FunctionTestCase",
   "unittest.FunctionTestCase.__call__",
-  "unittest.TestCase",
-  "unittest.TestSuite",
-  "unittest.TextTestRunner",
   "unittest.defaultTestLoader.loadTestsFromTestCase",
-  "unittest.main",
-  "unittest.makeSuite",
   "upcaseConverter",
   "util.WrapEnum",
   "warnings.warn",
@@ -738,14 +726,20 @@
   "winxpgui",
   "winxpgui.GetConsoleWindow",
   "winxpgui.error",
-  "xl5en32"
+  "xl5en32",
+  "zipfile",
+  "zipfile.ZipFile"
  ],
  "deps": {
-  "__future__": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  "Pyro4": [
+   "pyro4/conda-forge/noarch/pyro4-4.74-py_0",
+   "pyro4/conda-forge/noarch/pyro4-4.75-py_0",
+   "pyro4/conda-forge/noarch/pyro4-4.76-py_0",
+   "pyro4/conda-forge/noarch/pyro4-4.78-py_0",
+   "pyro4/conda-forge/noarch/pyro4-4.79-py_0",
+   "pyro4/conda-forge/noarch/pyro4-4.80-pyh9f0ad1d_0"
   ],
-  "_pickle": [
+  "__future__": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -756,6 +750,10 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython"
   ],
   "codecs": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "copy": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -771,6 +769,10 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "getopt": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "glob": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -802,15 +804,7 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "optparse": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "os": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "pickle": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -822,11 +816,11 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "shutil": [
+  "re": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "stat": [
+  "shutil": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -854,15 +848,15 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "unittest": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "urllib": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "warnings": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "zipfile": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ]

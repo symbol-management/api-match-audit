@@ -20,8 +20,6 @@
   "actually_do_stuff",
   "aiohttp.__version__.startswith",
   "assign",
-  "base64",
-  "base64.b64decode",
   "callback",
   "cat",
   "celery.signals.task_failure.connect",
@@ -99,8 +97,6 @@
   "elasticapm.traces.execution_context.get_transaction",
   "elasticapm.utils.__init__.default_ports",
   "elasticapm.utils.__init__.partial_types",
-  "elasticapm.utils.compat.urlparse.urlparse",
-  "elasticapm.utils.compat.urlparse.urlsplit",
   "elasticapm.utils.default_ports.get",
   "elasticapm.utils.wrapt.__init__.__version_info__",
   "flask.request.headers",
@@ -115,7 +111,6 @@
   "get_body",
   "grouper",
   "handler",
-  "hashlib",
   "hashlib.sha256",
   "hook",
   "io.BytesIO",
@@ -158,26 +153,38 @@
   "sys.modules.get",
   "sys.pypy_version_info",
   "sys.stderr.write",
+  "threading.local",
+  "timeit",
+  "timeit.default_timer",
+  "tornado",
+  "tornado.escape.json_decode",
+  "tornado.web.Finish",
+  "tornado.web.HTTPError",
+  "tornado.web._has_stream_request_body",
   "transform_rec",
+  "twisted.logger.ILogObserver",
   "type.__new__",
   "types.ClassType",
-  "urllib.error.HTTPError",
   "urllib.getproxies_environment",
-  "urllib.parse",
-  "urllib.parse.quote",
   "urllib.proxy_bypass_environment",
   "urllib.quote",
-  "urllib.request.getproxies_environment",
-  "urllib.request.proxy_bypass_environment",
   "urllib2.HTTPError",
+  "urllib3",
+  "urllib3.PoolManager",
+  "urllib3.exceptions.HTTPError",
+  "urllib3.exceptions.MaxRetryError",
+  "urllib3.exceptions.RequestError",
+  "urllib3.exceptions.TimeoutError",
   "urlparse",
   "uwsgi",
   "uwsgi.atexit",
   "uwsgi.masterpid",
+  "uwsgidecorators.postfork",
   "validator",
   "value_type",
   "warnings.warn",
   "warnings.warn_explicit",
+  "werkzeug.exceptions.ClientDisconnected",
   "wrapped",
   "zope.interface.implementer"
  ],
@@ -193,10 +200,6 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "_threading_local": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "aiohttp": [
    "aiohttp/conda-forge/linux-64/aiohttp-3.6.3-py36h97a6639_2",
    "aiohttp/conda-forge/linux-64/aiohttp-3.7.1-py37h8f50634_0",
@@ -204,6 +207,10 @@
   ],
   "asyncio": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython"
+  ],
+  "base64": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "cachetools": [
    "cachetools/conda-forge/noarch/cachetools-2.1.0-py_0",
@@ -302,6 +309,10 @@
    "gevent/conda-forge/linux-64/gevent-21.1.2-py38h497a2fe_0"
   ],
   "gzip": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "hashlib": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -451,20 +462,9 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "timeit": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "tornado": [
-   "tornado/conda-forge/linux-64/tornado-4.4.3-py35_0",
-   "tornado/conda-forge/linux-64/tornado-6.0.4-py38h1e0a361_2"
-  ],
   "traceback": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "twisted": [
-   "twisted/conda-forge/linux-64/twisted-18.7.0-py37h14c3975_1001"
   ],
   "types": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -474,25 +474,13 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "urllib3": [
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0",
-   "urllib3/conda-forge/linux-64/urllib3-1.24.1-py37_1000",
-   "urllib3/conda-forge/linux-64/urllib3-1.25.7-py36_0",
-   "urllib3/conda-forge/linux-64/urllib3-1.25.8-py37hc8dfbb8_1",
-   "urllib3/conda-forge/noarch/urllib3-1.25.11-py_0",
-   "urllib3/conda-forge/noarch/urllib3-1.26.0-pyhd8ed1ab_0",
-   "urllib3/conda-forge/noarch/urllib3-1.26.2-pyhd8ed1ab_0",
-   "urllib3/conda-forge/noarch/urllib3-1.26.3-pyhd8ed1ab_0",
-   "urllib3/conda-forge/noarch/urllib3-1.26.5-pyhd8ed1ab_0",
-   "urllib3/conda-forge/noarch/urllib3-1.26.6-pyhd8ed1ab_0"
+  "urllib": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "uuid": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "uwsgidecorators": [
-   "uwsgi/conda-forge/linux-64/uwsgi-2.0.19.1-py39h257e732_1"
   ],
   "warnings": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -501,13 +489,6 @@
   "weakref": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "werkzeug": [
-   "werkzeug/conda-forge/noarch/werkzeug-0.12.2-py_1",
-   "werkzeug/conda-forge/noarch/werkzeug-0.15.3-py_0",
-   "werkzeug/conda-forge/noarch/werkzeug-0.16.0-py_0",
-   "werkzeug/conda-forge/noarch/werkzeug-1.0.0-py_0",
-   "werkzeug/conda-forge/noarch/werkzeug-1.0.1-pyh9f0ad1d_0"
   ]
  }
 }
