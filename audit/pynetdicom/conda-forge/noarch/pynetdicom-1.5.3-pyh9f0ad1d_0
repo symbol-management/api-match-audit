@@ -18,17 +18,24 @@
   "SocketServer.TCPServer",
   "SocketServer.ThreadingMixIn",
   "TransferSyntaxSubItem",
+  "__future__.division",
   "_add_failed_instance",
   "_search_universal",
+  "argparse",
+  "argparse.ArgumentParser",
   "c2c",
   "clear",
   "codecs",
   "codecs.encode",
   "collections.MutableSequence",
   "collections.abc.MutableSequence",
+  "configparser.ConfigParser",
+  "copy.deepcopy",
   "create_engine",
+  "datetime",
+  "datetime.datetime",
+  "datetime.datetime.now",
   "datetime.datetime.strftime",
-  "enum.IntEnum",
   "f",
   "f.__doc__",
   "f.__name__",
@@ -43,7 +50,6 @@
   "io.BytesIO",
   "is_exe",
   "message",
-  "multiprocessing",
   "orig",
   "orig_method",
   "os.X_OK",
@@ -60,50 +66,6 @@
   "p2e",
   "pdu",
   "pdu.decode",
-  "pydicom.Dataset",
-  "pydicom._uid_dict.UID_dictionary",
-  "pydicom.config",
-  "pydicom.config.DS_decimal",
-  "pydicom.config.datetime_conversion",
-  "pydicom.datadict.get_entry",
-  "pydicom.datadict.repeater_has_keyword",
-  "pydicom.datadict.tag_for_keyword",
-  "pydicom.dataelem.DataElement",
-  "pydicom.dataset.Dataset",
-  "pydicom.dcmread",
-  "pydicom.errors.InvalidDicomError",
-  "pydicom.filebase.DicomBytesIO",
-  "pydicom.filereader.read_dataset",
-  "pydicom.filewriter.write_data_element",
-  "pydicom.filewriter.write_dataset",
-  "pydicom.filewriter.write_file_meta_info",
-  "pydicom.read_file",
-  "pydicom.tag.BaseTag",
-  "pydicom.tag.Tag",
-  "pydicom.uid.DeflatedExplicitVRLittleEndian",
-  "pydicom.uid.ExplicitVRBigEndian",
-  "pydicom.uid.ExplicitVRLittleEndian",
-  "pydicom.uid.ImplicitVRLittleEndian",
-  "pydicom.uid.JPEG2000",
-  "pydicom.uid.JPEG2000Lossless",
-  "pydicom.uid.JPEG2000MultiComponent",
-  "pydicom.uid.JPEG2000MultiComponentLossless",
-  "pydicom.uid.JPEGBaseline",
-  "pydicom.uid.JPEGExtended",
-  "pydicom.uid.JPEGLSLossless",
-  "pydicom.uid.JPEGLSLossy",
-  "pydicom.uid.JPEGLossless",
-  "pydicom.uid.JPEGLosslessP14",
-  "pydicom.uid.RLELossless",
-  "pydicom.uid.UID",
-  "pydicom.uid.generate_uid",
-  "pydicom.valuerep.DA",
-  "pydicom.valuerep.DSdecimal",
-  "pydicom.valuerep.DSfloat",
-  "pydicom.valuerep.DT",
-  "pydicom.valuerep.IS",
-  "pydicom.valuerep.TM",
-  "pyfakefs",
   "pynetdicom.PYNETDICOM_IMPLEMENTATION_VERSION.encode",
   "pynetdicom.VerificationPresentationContexts.context_id",
   "pynetdicom.__init__.PYNETDICOM_IMPLEMENTATION_UID",
@@ -268,22 +230,16 @@
   "pynetdicom.status.Status.PENDING_WITH_WARNING",
   "pynetdicom.status.Status.SUCCESS",
   "pynetdicom.status.Status.UNABLE_TO_DECODE",
-  "pytest",
-  "pytest.fixture",
   "pytest.mark.parametrize",
   "pytest.mark.skip",
   "pytest.mark.skipif",
-  "pytest.raises",
-  "queue",
   "re.IGNORECASE",
   "re.VERBOSE",
   "reload",
   "sessionmaker",
   "shutil",
   "shutil.rmtree",
-  "signal",
   "signal.SIGINT",
-  "socket",
   "socket.AF_INET",
   "socket.SHUT_RDWR",
   "socket.SOCK_DGRAM",
@@ -292,7 +248,6 @@
   "socket.SO_RCVTIMEO",
   "socket.SO_REUSEADDR",
   "socket.error",
-  "socket.socket",
   "socket.timeout",
   "socketserver.TCPServer.process_request",
   "socketserver.TCPServer.shutdown",
@@ -300,7 +255,6 @@
   "ssl.PROTOCOL_TLSv1_2",
   "ssl.Purpose.CLIENT_AUTH",
   "ssl.TLSVersion.TLSv1_2",
-  "struct",
   "struct.Struct",
   "struct.error",
   "struct.pack",
@@ -316,12 +270,6 @@
   "tempfile.NamedTemporaryFile",
   "tempfile.TemporaryDirectory",
   "tempfile.TemporaryFile",
-  "threading",
-  "threading.Lock",
-  "threading.Thread",
-  "threading.enumerate",
-  "traceback",
-  "traceback.format_tb",
   "unicode",
   "warnings.warn",
   "yappi",
@@ -329,47 +277,24 @@
   "yappi.get_thread_stats",
   "yappi.set_clock_type",
   "yappi.start",
-  "yappi.stop",
-  "zlib",
-  "zlib.DEFLATED",
-  "zlib.MAX_WBITS",
-  "zlib.Z_DEFAULT_COMPRESSION",
-  "zlib.compressobj",
-  "zlib.decompress"
+  "yappi.stop"
  ],
  "deps": {
-  "__future__": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  "_pytest": [
+   "pytest/conda-forge/linux-64/pytest-3.7.0-py27_0",
+   "pytest/conda-forge/linux-64/pytest-4.6.0-py37_0",
+   "pytest/conda-forge/linux-64/pytest-6.0.2-py37hc8dfbb8_0"
   ],
   "_ssl": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "argparse": [
-   "argparse/conda-forge/osx-64/argparse-1.4.0-py26_0",
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "backports": [
-   "configparser/conda-forge/noarch/configparser-5.0.0-py_0"
-  ],
   "collections": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "configparser": [
-   "configparser/conda-forge/linux-64/configparser-3.7.1-py27_1",
-   "configparser/conda-forge/noarch/configparser-5.0.0-py_0",
-   "configparser/conda-forge/noarch/configparser-5.0.1-py_0",
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "copy": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "datetime": [
+  "enum": [
+   "privy/conda-forge/noarch/privy-6.0.0-py_0",
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -385,6 +310,10 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "multiprocessing": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "ntpath": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -392,6 +321,22 @@
   "os": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "pydicom": [
+   "pydicom/conda-forge/noarch/pydicom-1.2.0-py_0",
+   "pydicom/conda-forge/noarch/pydicom-1.2.1-py_0",
+   "pydicom/conda-forge/noarch/pydicom-1.4.1-py_0",
+   "pydicom/conda-forge/noarch/pydicom-2.1.0-pyhd3deb0d_0",
+   "pydicom/conda-forge/noarch/pydicom-2.2.1-pyh6c4a22f_0"
+  ],
+  "pyfakefs": [
+   "pyfakefs/conda-forge/noarch/pyfakefs-3.7-py_0",
+   "pyfakefs/conda-forge/noarch/pyfakefs-4.0.2-py_0",
+   "pyfakefs/conda-forge/noarch/pyfakefs-4.1.0-py_0",
+   "pyfakefs/conda-forge/noarch/pyfakefs-4.2.1-pyhd8ed1ab_0",
+   "pyfakefs/conda-forge/noarch/pyfakefs-4.3.3-pyhd8ed1ab_0",
+   "pyfakefs/conda-forge/noarch/pyfakefs-4.4.0-pyhd8ed1ab_0",
+   "pyfakefs/conda-forge/noarch/pyfakefs-4.5.0-pyhd8ed1ab_0"
   ],
   "pynetdicom": [
    "pynetdicom/conda-forge/noarch/pynetdicom-1.5.0-pyh9f0ad1d_0",
@@ -401,11 +346,29 @@
    "pynetdicom/conda-forge/noarch/pynetdicom-1.5.5-pyhd3deb0d_0",
    "pynetdicom/conda-forge/noarch/pynetdicom-1.5.6-pyh44b312d_0"
   ],
+  "pytest": [
+   "pytest/conda-forge/linux-64/pytest-3.7.0-py27_0",
+   "pytest/conda-forge/linux-64/pytest-4.6.0-py37_0",
+   "pytest/conda-forge/linux-64/pytest-6.0.2-py37hc8dfbb8_0"
+  ],
+  "queue": [
+   "pies2overrides/conda-forge/osx-64/pies2overrides-2.6.7-py27_1000",
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "re": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "select": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "signal": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "socket": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -415,6 +378,10 @@
   ],
   "sqlalchemy": [],
   "ssl": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "struct": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -570,11 +537,23 @@
    "wsproto/conda-forge/noarch/wsproto-0.13.0-py_0",
    "wsproto/conda-forge/noarch/wsproto-0.14.0-py_0"
   ],
+  "threading": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "traceback": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "unicodedata": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "warnings": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "zlib": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ]

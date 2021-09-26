@@ -22,8 +22,21 @@
   "_mssql.connect",
   "_parse_partition_string",
   "_tasks_status",
+  "abc",
+  "abc.ABCMeta",
+  "abc.abstractmethod",
   "add",
   "add_files_for_package",
+  "argparse",
+  "argparse.ArgumentParser",
+  "argparse.SUPPRESS",
+  "ast.literal_eval",
+  "avro",
+  "avro.datafile",
+  "avro.datafile.DataFileReader",
+  "avro.io.DatumReader",
+  "azure.storage.blob.blockblobservice",
+  "azure.storage.blob.blockblobservice.BlockBlobService",
   "boto3.client.send",
   "boto3.client.send_raw_email",
   "callback",
@@ -35,19 +48,43 @@
   "collections.abc.MutableSet",
   "collections.defaultdict",
   "collections.deque",
+  "configparser.BasicInterpolation",
+  "configparser.ConfigParser",
+  "configparser.ConfigParser.add_section",
   "configparser.ConfigParser.get",
   "configparser.ConfigParser.getboolean",
   "configparser.ConfigParser.getfloat",
   "configparser.ConfigParser.getint",
   "configparser.ConfigParser.has_option",
   "configparser.ConfigParser.has_section",
+  "configparser.ConfigParser.set",
+  "configparser.Interpolation",
+  "configparser.InterpolationError",
+  "configparser.NoOptionError",
+  "configparser.NoSectionError",
   "construct_sqla_columns",
+  "copy",
+  "copy.copy",
   "datadog.statsd.gauge",
   "datadog.statsd.increment",
+  "datetime",
+  "datetime.date",
+  "datetime.date.today",
+  "datetime.datetime",
+  "datetime.datetime.combine",
+  "datetime.datetime.now",
+  "datetime.datetime.strptime",
+  "datetime.datetime.utcfromtimestamp",
+  "datetime.datetime.utcnow",
+  "datetime.time",
   "datetime.time.min",
+  "datetime.timedelta",
   "decrease",
   "digit_set_wildcard",
   "email_sender",
+  "enum",
+  "enum.Enum",
+  "enum.IntEnum",
   "exit_handler",
   "f",
   "field",
@@ -160,6 +197,10 @@
   "queue.get",
   "re.IGNORECASE",
   "requests.codes.ok",
+  "shutil",
+  "shutil.copy",
+  "shutil.move",
+  "shutil.rmtree",
   "signal.SIGBREAK",
   "signal.SIGINT",
   "signal.SIGPIPE",
@@ -173,11 +214,26 @@
   "sparkey",
   "sparkey.LogWriter",
   "str.split",
+  "subprocess",
+  "subprocess.CalledProcessError",
+  "subprocess.PIPE",
+  "subprocess.Popen",
+  "subprocess.STDOUT",
+  "subprocess.call",
+  "subprocess.check_call",
+  "subprocess.check_output",
+  "subprocess.list2cmdline",
   "sys.path.append",
   "sys.path.insert",
   "sys.path.pop",
   "sys.stderr.write",
   "sys.stdout.isatty",
+  "tempfile",
+  "tempfile.NamedTemporaryFile",
+  "tempfile.TemporaryDirectory",
+  "tempfile.TemporaryFile",
+  "tempfile.gettempdir",
+  "tempfile.mkdtemp",
   "track_process",
   "ujson",
   "ujson.dumps",
@@ -197,30 +253,6 @@
   "_threading_local": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "abc": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "argparse": [
-   "argparse/conda-forge/osx-64/argparse-1.4.0-py26_0",
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "ast": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "avro": [
-   "python-avro/conda-forge/linux-64/python-avro-1.10.0-py36hc560c46_0",
-   "python-avro/conda-forge/linux-64/python-avro-1.10.0-py37hc8dfbb8_1",
-   "python-avro/conda-forge/linux-64/python-avro-1.8.2-py37_1000"
-  ],
-  "azure": [
-   "azure-storage-blob/conda-forge/noarch/azure-storage-blob-1.3.1-py_0"
-  ],
-  "backports": [
-   "configparser/conda-forge/noarch/configparser-5.0.0-py_0"
   ],
   "base64": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -310,15 +342,7 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "configparser": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "contextlib": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "copy": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -345,10 +369,6 @@
    "datadog/conda-forge/noarch/datadog-0.40.0-pyh44b312d_0",
    "datadog/conda-forge/noarch/datadog-0.42.0-pyhd8ed1ab_0"
   ],
-  "datetime": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "dateutil": [
    "python-dateutil/conda-forge/noarch/python-dateutil-2.7.2-py_0",
    "python-dateutil/conda-forge/noarch/python-dateutil-2.7.4-py_0",
@@ -374,11 +394,6 @@
    "elasticsearch/conda-forge/noarch/elasticsearch-7.8.1-pyh9f0ad1d_0"
   ],
   "email": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "enum": [
-   "privy/conda-forge/noarch/privy-6.0.0-py_0",
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -603,10 +618,6 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "shutil": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "signal": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -624,15 +635,7 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "subprocess": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "tarfile": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "tempfile": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
