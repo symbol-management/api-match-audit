@@ -8,10 +8,6 @@
   "add_and_check_final",
   "block",
   "block.scope",
-  "contextlib2",
-  "contextlib2.ExitStack",
-  "copy",
-  "copy.deepcopy",
   "datasets.build_visualwakewords_data_lib",
   "datasets.build_visualwakewords_data_lib.create_tf_record_for_visualwakewords_dataset",
   "datasets.build_visualwakewords_data_lib.create_visual_wakeword_annotations",
@@ -51,16 +47,9 @@
   "func",
   "func.default_image_size",
   "functools.partial",
-  "gzip",
-  "gzip.open",
-  "hashlib",
   "hashlib.sha256",
   "image_preprocessing_fn",
-  "io",
   "io.BytesIO",
-  "math",
-  "math.ceil",
-  "math.log",
   "net_fn",
   "nets.alexnet",
   "nets.alexnet.alexnet_v2",
@@ -217,21 +206,15 @@
   "nets.vgg.vgg_a",
   "nets.vgg.vgg_arg_scope",
   "network_fn",
-  "numpy",
   "numpy.arange",
-  "numpy.array",
   "numpy.float32",
   "numpy.frombuffer",
   "numpy.int",
   "numpy.int32",
   "numpy.int64",
-  "numpy.linspace",
   "numpy.random.randint",
   "numpy.random.seed",
   "numpy.random.uniform",
-  "numpy.reshape",
-  "numpy.squeeze",
-  "numpy.tile",
   "numpy.uint8",
   "numpy.zeros",
   "op",
@@ -248,9 +231,6 @@
   "preprocessing.preprocessing_factory",
   "preprocessing.preprocessing_factory.get_preprocessing",
   "preprocessing.vgg_preprocessing",
-  "random",
-  "random.seed",
-  "random.shuffle",
   "resnet",
   "six.moves.cPickle",
   "six.moves.cPickle.load",
@@ -260,8 +240,6 @@
   "slim_init_fn",
   "sys.stdout.flush",
   "sys.stdout.write",
-  "tarfile",
-  "tarfile.open",
   "tensorflow.Assert",
   "tensorflow.FixedLenFeature",
   "tensorflow.Graph",
@@ -389,8 +367,6 @@
   "tensorflow.variable_scope",
   "tensorflow.zeros",
   "tensorflow.zeros_initializer",
-  "threading",
-  "threading.Thread",
   "upsample_fn"
  ],
  "deps": {
@@ -411,6 +387,15 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "contextlib2": [
+   "contextlib2/conda-forge/noarch/contextlib2-0.5.5-py_2",
+   "contextlib2/conda-forge/noarch/contextlib2-0.6.0-py_0",
+   "contextlib2/conda-forge/noarch/contextlib2-0.6.0.post1-py_0"
+  ],
+  "copy": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "datetime": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -423,6 +408,18 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "gzip": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "hashlib": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "io": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "json": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -431,11 +428,24 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "math": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "ntpath": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "numpy": [
+   "numpy/conda-forge/linux-64/numpy-1.17.5-py36h95a1406_0",
+   "numpy/conda-forge/linux-64/numpy-1.18.4-py37h8960a57_0",
+   "numpy/conda-forge/linux-64/numpy-1.19.2-py36h68c22af_1"
+  ],
   "os": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "random": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -444,8 +454,16 @@
    "stem/conda-forge/noarch/stem-1.7.1-py_0",
    "stem/conda-forge/noarch/stem-1.8.0-py_0"
   ],
+  "tarfile": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "tensorflow": [
    "tensorflow-base/conda-forge/linux-64/tensorflow-base-1.13.1-py27h58012e3_6"
+  ],
+  "threading": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "xml": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
