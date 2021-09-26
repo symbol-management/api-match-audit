@@ -77,10 +77,6 @@
   "_not_nan",
   "_print_list",
   "_subset",
-  "abc",
-  "abc.ABC",
-  "abc.ABCMeta",
-  "abc.abstractmethod",
   "bool.all",
   "check1",
   "check2",
@@ -100,11 +96,15 @@
   "component_class.name",
   "component_class.needs_fitting",
   "component_class.parameters.items",
+  "copy",
+  "copy.copy",
+  "copy.deepcopy",
   "data_check_class",
   "data_check_class.name",
   "data_check_message_type.DataCheckMessageType.ERROR",
   "data_check_message_type.DataCheckMessageType.WARNING",
-  "enum.Enum",
+  "datetime.datetime",
+  "datetime.datetime.strptime",
   "estimator",
   "evalml.__file__",
   "evalml.data_checks.ClassImbalanceDataCheck.name",
@@ -216,25 +216,7 @@
   "generate_fake_dataset",
   "get_IQR",
   "get_random_seed_vec",
-  "inspect",
-  "inspect.getfullargspec",
-  "inspect.isclass",
-  "inspect.signature",
-  "json",
-  "json.dumps",
-  "json.loads",
-  "locale",
-  "locale.getlocale",
-  "logging",
-  "logging.DEBUG",
-  "logging.Formatter",
-  "logging.INFO",
-  "logging.Logger",
   "logging.Logger.manager.loggerDict",
-  "logging.StreamHandler",
-  "logging.WARNING",
-  "logging.getLogger",
-  "logging.handlers.RotatingFileHandler",
   "make_expected_values",
   "make_mock_data_check",
   "make_mock_random_state",
@@ -242,66 +224,34 @@
   "networkx.DiGraph",
   "networkx.descendants",
   "networkx.is_weakly_connected",
-  "numpy",
   "numpy.abs",
-  "numpy.all",
-  "numpy.allclose",
-  "numpy.any",
-  "numpy.append",
   "numpy.arange",
-  "numpy.array",
-  "numpy.array_equal",
-  "numpy.atleast_2d",
   "numpy.bool_",
-  "numpy.concatenate",
   "numpy.datetime64",
-  "numpy.delete",
   "numpy.dtype",
   "numpy.float32",
-  "numpy.identity",
   "numpy.inf",
   "numpy.int64",
   "numpy.integer",
-  "numpy.isclose",
   "numpy.isinf",
   "numpy.isnan",
-  "numpy.linalg.norm",
-  "numpy.linspace",
   "numpy.log",
   "numpy.logical_and",
   "numpy.logical_or",
-  "numpy.median",
   "numpy.multiply",
   "numpy.nan",
-  "numpy.ndarray",
-  "numpy.newaxis",
-  "numpy.ones",
   "numpy.random.RandomState",
   "numpy.random.rand",
   "numpy.random.random",
   "numpy.random.seed",
-  "numpy.repeat",
-  "numpy.round",
-  "numpy.setdiff1d",
-  "numpy.sort",
   "numpy.sqrt",
-  "numpy.stack",
   "numpy.str_",
-  "numpy.testing.assert_allclose",
-  "numpy.testing.assert_almost_equal",
-  "numpy.testing.assert_array_equal",
-  "numpy.testing.assert_equal",
-  "numpy.tile",
-  "numpy.unique",
-  "numpy.vectorize",
-  "numpy.where",
   "numpy.zeros",
   "obj",
   "obj.is_defined_for_problem_type",
   "obj_",
   "obj_.problem_types",
   "objective_class",
-  "operator.itemgetter",
   "os.W_OK",
   "os.access",
   "os.environ.get",
@@ -365,6 +315,8 @@
   "table_maker",
   "texttable.Texttable.HEADER",
   "total_pipelines",
+  "traceback",
+  "traceback.format_tb",
   "warnings.warn"
  ],
  "deps": {
@@ -376,6 +328,10 @@
    "pytest/conda-forge/linux-64/pytest-3.7.0-py27_0",
    "pytest/conda-forge/linux-64/pytest-4.6.0-py37_0",
    "pytest/conda-forge/linux-64/pytest-6.0.2-py37hc8dfbb8_0"
+  ],
+  "abc": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "click": [
    "click/conda-forge/noarch/click-5.1-py_0",
@@ -395,11 +351,8 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "copy": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "datetime": [
+  "enum": [
+   "privy/conda-forge/noarch/privy-6.0.0-py_0",
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -435,6 +388,22 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "inspect": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "json": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "locale": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "logging": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "math": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -451,6 +420,15 @@
    "nlp-primitives/conda-forge/noarch/nlp-primitives-1.1.0-py_0"
   ],
   "ntpath": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "numpy": [
+   "numpy/conda-forge/linux-64/numpy-1.17.5-py36h95a1406_0",
+   "numpy/conda-forge/linux-64/numpy-1.18.4-py37h8960a57_0",
+   "numpy/conda-forge/linux-64/numpy-1.19.2-py36h68c22af_1"
+  ],
+  "operator": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -541,10 +519,6 @@
    "texttable/conda-forge/noarch/texttable-1.6.2-py_0",
    "texttable/conda-forge/noarch/texttable-1.6.3-pyh9f0ad1d_0",
    "texttable/conda-forge/noarch/texttable-1.6.4-pyhd8ed1ab_0"
-  ],
-  "traceback": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "unittest": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",

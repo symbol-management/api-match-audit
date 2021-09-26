@@ -19,13 +19,11 @@
   "Surfaces",
   "Surfaces.__doc__",
   "_ReadGeoModellerXML",
-  "__future__.annotations",
   "_get_color",
   "_get_layout",
   "_grouped_df_to_standard",
   "_handle_shared_axes",
   "_visualization_2d.PlotSolution.plot_topo_g",
-  "abc.ABC",
   "abs_loss",
   "cmap_",
   "compute_values",
@@ -130,9 +128,12 @@
   "get_coords",
   "grid",
   "hex.lstrip",
+  "importlib",
+  "importlib.reload",
   "in_bounds",
   "incurred_loss",
   "interpolate",
+  "ipyvolume",
   "legend",
   "m",
   "magnetic_direction",
@@ -187,21 +188,51 @@
   "os.path.exists",
   "os.path.isdir",
   "os.path.isfile",
+  "pandas",
+  "pandas.Categorical",
+  "pandas.CategoricalDtype",
+  "pandas.CategoricalIndex",
   "pandas.CategoricalIndex.rename_categories.__doc__",
   "pandas.CategoricalIndex.reorder_categories.__doc__",
   "pandas.CategoricalIndex.sort_values.__doc__",
+  "pandas.DataFrame",
+  "pandas.DataFrame.append",
   "pandas.DataFrame.drop.__doc__",
+  "pandas.DataFrame.from_dict",
+  "pandas.RangeIndex",
+  "pandas.Series",
+  "pandas.concat",
+  "pandas.core.dtypes.common.is_number",
+  "pandas.core.frame.DataFrame",
+  "pandas.core.groupby.DataFrameGroupBy",
+  "pandas.notnull",
   "pandas.options.mode.chained_assignment",
+  "pandas.plotting._matplotlib.tools",
   "pandas.plotting._matplotlib.tools._flatten",
   "pandas.plotting._matplotlib.tools._subplots",
+  "pandas.plotting._tools",
+  "pandas.plotting._tools._flatten",
+  "pandas.plotting._tools._subplots",
+  "pandas.read_csv",
   "pandas.read_csv.__doc__",
+  "pickle",
+  "pickle.HIGHEST_PROTOCOL",
+  "pickle.dump",
+  "pickle.load",
   "plot",
   "plot_axis",
+  "pyevtk",
+  "pyevtk.hl.gridToVTK",
+  "pylab",
   "pyqrcode",
   "pyqrcode.create",
   "pyvista.Line",
   "pyvista.Sphere",
+  "random",
   "recalc_gradients",
+  "requests",
+  "requests.get",
+  "requests.post",
   "res_score_loss",
   "savefig",
   "scipy.constants.G",
@@ -221,7 +252,6 @@
   "steno3d.Surface",
   "steno3d.Volume",
   "str.upper",
-  "subprocess",
   "sys.path.append",
   "th_f",
   "theano.OpFromGraph",
@@ -313,7 +343,10 @@
   "ylabel"
  ],
  "deps": {
-  "_pickle": [
+  "__future__": [
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "abc": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -361,15 +394,6 @@
    "gempy/conda-forge/noarch/gempy-2.2.7-pyhd3deb0d_1",
    "gempy/conda-forge/noarch/gempy-2.2.9-pyh44b312d_0"
   ],
-  "importlib": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "ipyvolume": [
-   "ipyvolume/conda-forge/noarch/ipyvolume-0.5.2-pyh9f0ad1d_1",
-   "ipyvolume/conda-forge/noarch/ipyvolume-0.6.0a4-pyh9f0ad1d_0",
-   "ipyvolume/conda-forge/noarch/ipyvolume-0.6.0a6-pyh9f0ad1d_0"
-  ],
   "ipywidgets": [
    "ipywidgets/conda-forge/noarch/ipywidgets-7.4.1-py_0",
    "ipywidgets/conda-forge/noarch/ipywidgets-7.6.0-pyhd3deb0d_0",
@@ -404,31 +428,14 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "pandas": [],
   "pathlib": [
    "pathlib/conda-forge/noarch/pathlib-1.0.1-py_1",
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "pickle": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "platform": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "pyevtk": [
-   "pyevtk/conda-forge/noarch/pyevtk-1.1.1-pyh24bf2e0_0",
-   "pyevtk/conda-forge/noarch/pyevtk-1.2.0-pyh050c7b8_0",
-   "pyevtk/conda-forge/noarch/pyevtk-1.3.0-pyh8a188c0_0",
-   "pyevtk/conda-forge/noarch/pyevtk-1.4.0-pyh8a188c0_0",
-   "pyevtk/conda-forge/noarch/pyevtk-1.4.1-pyh8a188c0_0"
-  ],
-  "pylab": [
-   "matplotlib-base/conda-forge/linux-64/matplotlib-base-3.1.1-py37hfd891ef_0",
-   "matplotlib-base/conda-forge/linux-64/matplotlib-base-3.1.1-py38h250f245_2",
-   "matplotlib/conda-forge/linux-64/matplotlib-1.5.3-np111py34_0"
   ],
   "pymc": [
    "pymc/conda-forge/linux-64/pymc-2.3.7-py27h87bf951_1002",
@@ -456,23 +463,9 @@
   "qgrid": [
    "qgrid/conda-forge/noarch/qgrid-1.3.1-pyhd8ed1ab_3"
   ],
-  "random": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "re": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "requests": [
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0",
-   "requests/conda-forge/linux-64/requests-2.12.0-py35_0",
-   "requests/conda-forge/noarch/requests-2.23.0-pyh8c360ce_2",
-   "requests/conda-forge/noarch/requests-2.24.0-pyh9f0ad1d_0",
-   "requests/conda-forge/noarch/requests-2.25.0-pyhd3deb0d_0",
-   "requests/conda-forge/noarch/requests-2.25.1-pyhd3deb0d_0",
-   "requests/conda-forge/noarch/requests-2.26.0-pyhd8ed1ab_0"
   ],
   "scipy": [
    "scipy/conda-forge/linux-64/scipy-0.17.1-np110py27_blas_openblas_202",
@@ -496,6 +489,10 @@
    "scikit-learn/conda-forge/linux-64/scikit-learn-0.17.1-np110py27_blas_openblas_200",
    "scikit-learn/conda-forge/linux-64/scikit-learn-0.17.1-np110py35_blas_openblas_202",
    "scikit-learn/conda-forge/linux-64/scikit-learn-0.17.1-np111py35_blas_openblas_202"
+  ],
+  "subprocess": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "theano": [
    "theano-pymc/conda-forge/linux-64/theano-pymc-1.0.5-py36h90709c0_2",
