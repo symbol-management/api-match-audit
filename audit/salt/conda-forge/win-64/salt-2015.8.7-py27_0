@@ -1,13 +1,48 @@
 {
  "bad": [
+  "Cheetah.Template.Template",
   "ClusterShell.NodeSet.NodeSet",
   "Crypticle",
   "Crypticle.generate_key_string",
+  "Crypto",
+  "Crypto.Cipher.AES",
+  "Crypto.Cipher.AES.MODE_CBC",
+  "Crypto.Cipher.AES.new",
+  "Crypto.Cipher.PKCS1_OAEP",
+  "Crypto.Cipher.PKCS1_OAEP.new",
+  "Crypto.Cipher.PKCS1_v1_5",
+  "Crypto.Cipher.PKCS1_v1_5.new",
+  "Crypto.Hash.SHA",
+  "Crypto.Hash.SHA.digest_size",
+  "Crypto.Hash.SHA.new",
+  "Crypto.Hash.SHA256",
+  "Crypto.Hash.SHA256.new",
+  "Crypto.PublicKey.RSA",
+  "Crypto.PublicKey.RSA.generate",
+  "Crypto.PublicKey.RSA.importKey",
+  "Crypto.Random",
+  "Crypto.Random.new",
+  "Crypto.Signature.PKCS1_v1_5",
+  "Crypto.Signature.PKCS1_v1_5.new",
+  "Crypto.Util",
   "FilterDictWrapper",
   "IPv4Network",
   "IPv6Interface",
   "IPv6Network",
+  "IPy.IP",
   "LazyLoader",
+  "M2Crypto",
+  "M2Crypto.BIO.MemoryBuffer",
+  "M2Crypto.EVP.PKey",
+  "M2Crypto.RSA.gen_key",
+  "M2Crypto.RSA.load_key_string",
+  "M2Crypto.RSA.load_pub_key_bio",
+  "M2Crypto.X509.Request",
+  "M2Crypto.X509.X509",
+  "M2Crypto.X509.X509_Extension",
+  "M2Crypto.X509.X509_Extension_Stack",
+  "M2Crypto.X509.load_cert_string",
+  "M2Crypto.X509.load_request_string",
   "M2Crypto.m2.RSA_F4",
   "M2Crypto.m2.x509_get_not_after",
   "M2Crypto.m2.x509_get_not_before",
@@ -394,40 +429,13 @@
   "dict.__setitem__",
   "dict.clear",
   "dict.pop",
-  "django",
-  "django.VERSION",
-  "django.contrib.auth",
-  "django.contrib.auth.authenticate",
-  "django.db.models.loading.get_model",
-  "django.dispatch",
-  "django.dispatch.Signal",
-  "django.setup",
-  "dns.query",
-  "dns.tsigkeyring",
-  "dns.update",
-  "docker",
   "docker.Client",
-  "docker.__version__",
-  "docker.auth.resolve_repository_name",
-  "docker.errors.APIError",
-  "docker.utils",
-  "docker.utils.create_host_config",
-  "docker.version_info",
   "download_updates",
   "driver",
   "drun_all",
   "dt_encode",
-  "dulwich.client",
-  "dulwich.config",
-  "dulwich.errors",
-  "dulwich.objects",
-  "dulwich.repo",
   "dump",
   "edit_conf",
-  "elasticsearch",
-  "elasticsearch.Elasticsearch",
-  "elasticsearch.exceptions.ConnectionError",
-  "elasticsearch.exceptions.NotFoundError",
   "elementtree.ElementTree",
   "elementtree.ElementTree.ParseError",
   "elementtree.cElementTree",
@@ -1652,20 +1660,6 @@
   "zmq.zmq_version"
  ],
  "deps": {
-  "Cheetah": [
-   "cheetah3/conda-forge/linux-64/cheetah3-3.2.6.post2-py36h8f6f2f9_0",
-   "cheetah3/conda-forge/linux-64/cheetah3-3.2.6.post2-py38h497a2fe_0"
-  ],
-  "Crypto": [
-   "pycryptodome/conda-forge/linux-64/pycryptodome-3.3.1-py37he80fd80_0",
-   "pycryptodome/conda-forge/linux-64/pycryptodome-3.7.1-py27h16a7912_0"
-  ],
-  "IPy": [
-   "ipy/conda-forge/noarch/ipy-1.01-pyhd8ed1ab_0"
-  ],
-  "M2Crypto": [
-   "m2crypto/conda-forge/linux-64/m2crypto-0.24.0-py27_1"
-  ],
   "MySQLdb": [
    "mysqlclient/conda-forge/linux-64/mysqlclient-1.4.6-py27haf22ab1_1"
   ],
@@ -1902,6 +1896,37 @@
   "distutils": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "django": [
+   "django/conda-forge/linux-64/django-1.8.14-py34_0",
+   "django/conda-forge/noarch/django-1.8.19-py_0"
+  ],
+  "dns": [
+   "dnspython/conda-forge/noarch/dnspython-1.15.0-py_0",
+   "dnspython/conda-forge/noarch/dnspython-1.16.0-py_1",
+   "dnspython/conda-forge/noarch/dnspython-2.0.0-py_0",
+   "dnspython/conda-forge/noarch/dnspython-2.1.0-pyhd8ed1ab_0"
+  ],
+  "docker": [
+   "docker-py/conda-forge/linux-64/docker-py-3.3.0-py35_0",
+   "docker-py/conda-forge/linux-64/docker-py-4.4.3-py37h9c2f6ca_0"
+  ],
+  "dulwich": [
+   "dulwich/conda-forge/linux-64/dulwich-0.19.16-py36h8c4c3a4_0",
+   "dulwich/conda-forge/linux-64/dulwich-0.20.22-py39h3811e60_0"
+  ],
+  "elasticsearch": [
+   "elasticsearch/conda-forge/noarch/elasticsearch-6.3.1-py_0",
+   "elasticsearch/conda-forge/noarch/elasticsearch-7.0.4-py_0",
+   "elasticsearch/conda-forge/noarch/elasticsearch-7.1.0-py_0",
+   "elasticsearch/conda-forge/noarch/elasticsearch-7.10.0-pyhd3deb0d_0",
+   "elasticsearch/conda-forge/noarch/elasticsearch-7.12.0-pyh44b312d_0",
+   "elasticsearch/conda-forge/noarch/elasticsearch-7.13.1-pyhd8ed1ab_0",
+   "elasticsearch/conda-forge/noarch/elasticsearch-7.13.3-pyhd8ed1ab_0",
+   "elasticsearch/conda-forge/noarch/elasticsearch-7.13.4-pyhd8ed1ab_0",
+   "elasticsearch/conda-forge/noarch/elasticsearch-7.7.1-pyh9f0ad1d_0",
+   "elasticsearch/conda-forge/noarch/elasticsearch-7.8.0-pyh9f0ad1d_0",
+   "elasticsearch/conda-forge/noarch/elasticsearch-7.8.1-pyh9f0ad1d_0"
   ],
   "email": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
