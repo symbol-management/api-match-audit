@@ -5,19 +5,30 @@
   "_gcs_uri_rewriter",
   "_get_filtered_mounts",
   "_local_uri_rewriter",
+  "apiclient.errors",
   "base.JobProvider",
   "base.Task",
   "chronology",
   "collections.Iterator",
   "collections.defaultdict",
+  "contextlib.contextmanager",
+  "csv",
+  "csv.reader",
   "datetime.datetime.max",
   "datetime.datetime.min",
+  "dateutil.tz.tzlocal",
+  "difflib",
+  "difflib.Differ",
   "directory_fmt",
+  "doctest",
+  "doctest.testmod",
   "dsub.providers.google_v2.GoogleV2CustomMachine._MB_PER_GB",
   "dsub_util.load_file",
   "dsub_util.replace_timezone",
   "fake_time",
   "fake_time.FakeTime",
+  "fnmatch",
+  "fnmatch.fnmatch",
   "format_fn",
   "google.GoogleJobProvider",
   "google.auth",
@@ -61,6 +72,7 @@
   "google_v2_pipelines.build_pipeline",
   "google_v2_pipelines.build_resources",
   "google_v2_pipelines.build_service_account",
+  "io",
   "io.BytesIO",
   "job_model.EnvParam",
   "job_model.GCSMountParam",
@@ -145,16 +157,30 @@
   "lib.providers_util.get_job_and_task_param",
   "lib.sorting_util.SortedGeneratorIterator",
   "local.LocalJobProvider",
+  "math",
+  "math.ceil",
   "mock.patch",
+  "os",
   "os.chmod",
+  "os.environ",
   "os.environ.get",
+  "os.getenv",
   "os.getuid",
   "os.kill",
   "os.listdir",
+  "os.makedirs",
+  "os.path.abspath",
+  "os.path.basename",
+  "os.path.dirname",
   "os.path.exists",
   "os.path.getmtime",
   "os.path.isdir",
   "os.path.isfile",
+  "os.path.join",
+  "os.path.normpath",
+  "os.path.realpath",
+  "os.path.split",
+  "os.path.splitext",
   "os.stat",
   "parameterized.parameterized.expand",
   "providers.google_base.DEFAULT_SCOPES",
@@ -167,17 +193,38 @@
   "providers.provider_base.get_provider",
   "providers.provider_base.parse_args",
   "pytz.utc",
+  "random",
+  "random.choice",
+  "re",
+  "re.compile",
+  "re.escape",
+  "re.match",
+  "re.search",
+  "re.split",
+  "re.sub",
   "row_spec",
   "signal.SIGTERM",
+  "six",
   "six.StringIO",
+  "six.add_metaclass",
+  "six.advance_iterator",
+  "six.assertRaisesRegex",
   "six.moves.http_client",
   "six.moves.queue",
   "six.moves.range",
   "six.moves.zip",
+  "six.string_types",
   "socket.error",
   "str.__new__",
+  "subprocess",
+  "subprocess.CalledProcessError",
+  "subprocess.Popen",
+  "subprocess.call",
+  "subprocess.check_output",
   "sys.stdout.encoding",
   "sys.stdout.write",
+  "tempfile",
+  "tempfile.gettempdir",
   "test_fails.FailsJobProvider",
   "test_setup",
   "test_setup.DSUB_PROVIDER",
@@ -202,14 +249,15 @@
   "test_util.expand_tsv_fields",
   "test_util.get_field_from_tsv",
   "test_util.gsutil_cat",
-  "test_util.gsutil_ls_check"
+  "test_util.gsutil_ls_check",
+  "unittest",
+  "unittest.TestCase",
+  "unittest.main",
+  "warnings",
+  "warnings.filterwarnings"
  ],
  "deps": {
   "__future__": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "_csv": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -220,26 +268,6 @@
   "abc": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "apiclient": [
-   "google-api-python-client/conda-forge/noarch/google-api-python-client-1.11.0-pyh9f0ad1d_0",
-   "google-api-python-client/conda-forge/noarch/google-api-python-client-1.12.0-pyh9f0ad1d_0",
-   "google-api-python-client/conda-forge/noarch/google-api-python-client-1.12.3-pyh9f0ad1d_0",
-   "google-api-python-client/conda-forge/noarch/google-api-python-client-1.12.5-pyh9f0ad1d_0",
-   "google-api-python-client/conda-forge/noarch/google-api-python-client-1.12.7-pyhd3deb0d_0",
-   "google-api-python-client/conda-forge/noarch/google-api-python-client-1.12.8-pyhd3deb0d_0",
-   "google-api-python-client/conda-forge/noarch/google-api-python-client-1.6.4-py_0",
-   "google-api-python-client/conda-forge/noarch/google-api-python-client-1.6.5-py_0",
-   "google-api-python-client/conda-forge/noarch/google-api-python-client-1.7.6-py_0",
-   "google-api-python-client/conda-forge/noarch/google-api-python-client-1.8.0-pyh8c360ce_0",
-   "google-api-python-client/conda-forge/noarch/google-api-python-client-1.8.2-pyh9f0ad1d_0",
-   "google-api-python-client/conda-forge/noarch/google-api-python-client-1.9.1-pyh9f0ad1d_0",
-   "google-api-python-client/conda-forge/noarch/google-api-python-client-1.9.1-pyh9f0ad1d_1",
-   "google-api-python-client/conda-forge/noarch/google-api-python-client-2.10.0-pyhd8ed1ab_0",
-   "google-api-python-client/conda-forge/noarch/google-api-python-client-2.13.0-pyhd8ed1ab_0",
-   "google-api-python-client/conda-forge/noarch/google-api-python-client-2.2.0-pyhd8ed1ab_0",
-   "google-api-python-client/conda-forge/noarch/google-api-python-client-2.4.0-pyhd8ed1ab_0",
-   "google-api-python-client/conda-forge/noarch/google-api-python-client-2.6.0-pyhd8ed1ab_0"
   ],
   "argparse": [
    "argparse/conda-forge/osx-64/argparse-1.4.0-py26_0",
@@ -254,38 +282,11 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "contextlib": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "copy": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "csv": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "datetime": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "dateutil": [
-   "python-dateutil/conda-forge/noarch/python-dateutil-2.7.2-py_0",
-   "python-dateutil/conda-forge/noarch/python-dateutil-2.7.4-py_0",
-   "python-dateutil/conda-forge/noarch/python-dateutil-2.7.5-py_0",
-   "python-dateutil/conda-forge/noarch/python-dateutil-2.8.1-py_0",
-   "python-dateutil/conda-forge/noarch/python-dateutil-2.8.2-pyhd8ed1ab_0"
-  ],
-  "difflib": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "doctest": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "fnmatch": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -312,27 +313,11 @@
   "httplib2": [
    "httplib2/conda-forge/noarch/httplib2-0.19.0-pyhd8ed1ab_0"
   ],
-  "io": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "json": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "math": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "ntpath": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "operator": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "os": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -356,14 +341,6 @@
    "pytz/conda-forge/noarch/pytz-2020.1-pyh9f0ad1d_0",
    "pytz/conda-forge/noarch/pytz-2020.4-pyhd8ed1ab_0"
   ],
-  "random": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "re": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "retrying": [
    "retrying/conda-forge/linux-64/retrying-1.3.3-py35_0",
    "retrying/conda-forge/noarch/retrying-1.3.3-py_2"
@@ -371,16 +348,6 @@
   "signal": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "six": [
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0",
-   "lldb/conda-forge/linux-64/lldb-6.0.0-py35_0",
-   "privy/conda-forge/noarch/privy-6.0.0-py_0",
-   "six/conda-forge/linux-64/six-1.10.0-py34_0",
-   "six/conda-forge/linux-64/six-1.10.0-py34_1",
-   "six/conda-forge/noarch/six-1.14.0-py_1",
-   "six/conda-forge/noarch/six-1.16.0-pyh6c4a22f_0"
   ],
   "socket": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -394,10 +361,6 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "subprocess": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "tabulate": [
    "tabulate/conda-forge/noarch/tabulate-0.8.1-py_0",
    "tabulate/conda-forge/noarch/tabulate-0.8.2-py_0",
@@ -407,23 +370,11 @@
    "tabulate/conda-forge/noarch/tabulate-0.8.7-pyh9f0ad1d_0",
    "tabulate/conda-forge/noarch/tabulate-0.8.9-pyhd8ed1ab_0"
   ],
-  "tempfile": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "textwrap": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "unittest": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "uuid": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "warnings": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],

@@ -6,13 +6,23 @@
   "GroupedArrays.ungroupArrays",
   "HDFStoreWrapper",
   "collections.Iterable",
+  "configparser",
   "convert",
   "datetime.datetime.today",
   "f",
   "forwardPath",
   "functools.reduce",
+  "io",
   "io.open",
+  "linecache",
+  "linecache.getline",
+  "locale",
+  "locale.LC_ALL",
+  "locale.LC_NUMERIC",
+  "locale.getdefaultlocale",
+  "locale.setlocale",
   "nodeprops.nodeinfo.NodeInfo",
+  "nose.tools",
   "nose.tools.assert_equal",
   "nose.tools.assert_true",
   "numpy.arange",
@@ -30,15 +40,33 @@
   "numpy.uint32",
   "numpy.uint64",
   "numpy.uint8",
+  "os",
   "os.W_OK",
   "os.access",
   "os.close",
+  "os.getenv",
   "os.listdir",
+  "os.path",
+  "os.path.abspath",
+  "os.path.basename",
+  "os.path.dirname",
   "os.path.exists",
   "os.path.getsize",
   "os.path.isdir",
   "os.path.isfile",
+  "os.path.join",
+  "os.path.split",
+  "os.path.splitext",
+  "pandas",
+  "pandas.HDFStore",
+  "pandas.MultiIndex",
+  "pandas.io.pytables",
+  "pandas.io.pytables.HDFStore",
+  "pkg_resources",
+  "pkg_resources.iter_entry_points",
+  "pkg_resources.resource_string",
   "pt_node",
+  "qtpy.QtCore",
   "qtpy.QtCore.PYQT_VERSION_STR",
   "qtpy.QtCore.QAbstractItemModel",
   "qtpy.QtCore.QAbstractTableModel",
@@ -113,6 +141,7 @@
   "qtpy.QtCore.Signal",
   "qtpy.QtCore.Slot",
   "qtpy.QtCore.qVersion",
+  "qtpy.QtGui",
   "qtpy.QtGui.QBrush",
   "qtpy.QtGui.QColor",
   "qtpy.QtGui.QCursor",
@@ -146,6 +175,7 @@
   "qtpy.QtGui.QStandardItem",
   "qtpy.QtGui.QStandardItemModel",
   "qtpy.QtGui.QTextCursor.End",
+  "qtpy.QtWidgets",
   "qtpy.QtWidgets.QAbstractItemView",
   "qtpy.QtWidgets.QAbstractSlider.SliderToMaximum",
   "qtpy.QtWidgets.QAbstractSlider.SliderToMinimum",
@@ -263,7 +293,13 @@
   "qtpy.QtWidgets.qApp.setOverrideCursor",
   "qtpy.QtWidgets.qApp.setStyle",
   "qtpy.QtWidgets.qApp.topLevelWidgets",
+  "qtpy.uic",
   "qtpy.uic.loadUiType",
+  "re",
+  "re.findall",
+  "re.match",
+  "re.search",
+  "re.split",
   "read_fh",
   "scikits.timeseries",
   "scikits.timeseries.Date",
@@ -271,10 +307,45 @@
   "sip.setapi",
   "str.connect",
   "sys.platform.startswith",
+  "tables",
+  "tables.Atom.from_dtype",
+  "tables.Col.from_dtype",
+  "tables.Filters",
+  "tables.FlavorWarning",
+  "tables.Group",
+  "tables.HDF5ExtError",
+  "tables.Int64Col",
+  "tables.Leaf",
+  "tables.NaturalNameWarning",
+  "tables.NodeError",
+  "tables.StringAtom",
+  "tables.StringCol",
+  "tables.Table",
+  "tables.UnImplemented",
+  "tables.VLArray",
+  "tables.__version__",
+  "tables.exceptions.HDF5ExtError",
+  "tables.exceptions.NoSuchNodeError",
   "tables.is_hdf5_file",
+  "tables.link.Link",
+  "tables.nodes.filenode",
+  "tables.nodes.filenode.NodeType",
+  "tables.nodes.filenode.open_node",
+  "tables.nodes.filenode.read_from_filenode",
+  "tables.numpy.__version__",
+  "tables.open_file",
+  "tables.path.join_path",
+  "tables.restrict_flavors",
   "tables.which_lib_version",
+  "tempfile",
+  "tempfile.TemporaryFile",
+  "tempfile.mkstemp",
   "utils.formatExceptionInfo",
-  "vtwidgets.zoom_cell.ZoomCell"
+  "uuid",
+  "uuid.uuid4",
+  "vtwidgets.zoom_cell.ZoomCell",
+  "warnings",
+  "warnings.filterwarnings"
  ],
  "deps": {
   "argparse": [
@@ -286,13 +357,6 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "configparser": [
-   "configparser/conda-forge/linux-64/configparser-3.7.1-py27_1",
-   "configparser/conda-forge/noarch/configparser-5.0.0-py_0",
-   "configparser/conda-forge/noarch/configparser-5.0.1-py_0",
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "datetime": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -301,26 +365,7 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "io": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "linecache": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "locale": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "logging": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "nose": [
-   "nose/conda-forge/noarch/nose-1.3.7-py_1006"
-  ],
-  "ntpath": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -329,49 +374,7 @@
    "numpy/conda-forge/linux-64/numpy-1.18.4-py37h8960a57_0",
    "numpy/conda-forge/linux-64/numpy-1.19.2-py36h68c22af_1"
   ],
-  "os": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "pandas": [
-   "pandas/conda-forge/linux-64/pandas-1.2.2-py37h40f5888_0"
-  ],
-  "pkg_resources": [
-   "setuptools/conda-forge/linux-64/setuptools-40.6.1-py36_0",
-   "setuptools/conda-forge/linux-64/setuptools-46.3.0-py38h32f6830_0",
-   "setuptools/conda-forge/linux-64/setuptools-49.1.2-py38h32f6830_0"
-  ],
-  "qtpy": [
-   "qtpy/conda-forge/noarch/qtpy-1.5.1-pyh8a2030e_0",
-   "qtpy/conda-forge/noarch/qtpy-1.5.2-pyh8a2030e_0",
-   "qtpy/conda-forge/noarch/qtpy-1.6.0-pyh8a2030e_0",
-   "qtpy/conda-forge/noarch/qtpy-1.7.0-pyh8a2030e_0",
-   "qtpy/conda-forge/noarch/qtpy-1.7.1-pyhde82777_0",
-   "qtpy/conda-forge/noarch/qtpy-1.8.0-py_0",
-   "qtpy/conda-forge/noarch/qtpy-1.9.0-py_0"
-  ],
-  "re": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "tables": [
-   "pytables/conda-forge/linux-64/pytables-3.4.2-py27_5",
-   "pytables/conda-forge/linux-64/pytables-3.4.2-py27_7",
-   "pytables/conda-forge/linux-64/pytables-3.6.1-py38h1b207d3_2"
-  ],
-  "tempfile": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "traceback": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "uuid": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "warnings": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ]

@@ -2,7 +2,37 @@
  "bad": [
   "__builtin__",
   "__builtin__._ASTROPY_SETUP_",
+  "astropy",
+  "astropy.config.configuration.ConfigurationDefaultMissingError",
+  "astropy.config.configuration.ConfigurationDefaultMissingWarning",
+  "astropy.config.configuration.update_default_config",
+  "astropy.io.fits",
+  "astropy.io.fits.HDUList",
+  "astropy.io.fits.Header.fromstring",
+  "astropy.io.fits.PrimaryHDU",
+  "astropy.io.fits.getheader",
+  "astropy.io.fits.hdu.hdulist.HDUList",
+  "astropy.io.fits.hdu.image.ImageHDU",
+  "astropy.io.fits.hdu.image.PrimaryHDU",
+  "astropy.io.fits.open",
+  "astropy.modeling.fitting",
+  "astropy.modeling.fitting.FittingWithOutlierRemoval",
+  "astropy.modeling.fitting.LevMarLSQFitter",
+  "astropy.modeling.fitting.LinearLSQFitter",
+  "astropy.modeling.models",
+  "astropy.modeling.models.AiryDisk2D",
+  "astropy.modeling.models.Gaussian1D",
+  "astropy.modeling.models.Gaussian2D",
+  "astropy.modeling.models.MexicanHat1D",
+  "astropy.modeling.models.Moffat1D",
+  "astropy.modeling.models.Polynomial1D",
+  "astropy.modeling.models.Polynomial2D",
+  "astropy.nddata.nddata.NDData",
+  "astropy.stats.gaussian_sigma_to_fwhm",
+  "astropy.stats.sigma_clip",
+  "astropy.tests.runner.TestRunner",
   "astropy.tests.runner.TestRunner.make_test_runner_in",
+  "astropy.visualization.ZScaleInterval",
   "cString.StringIO",
   "fit",
   "fitted",
@@ -16,6 +46,18 @@
   "fitted.stddev_0.value",
   "fitted.y_0_0.value",
   "get_ipython",
+  "ginga.AstroImage.AstroImage",
+  "ginga.BaseImage.BaseImage",
+  "ginga.cmap",
+  "ginga.cmap.get_names",
+  "ginga.misc.Settings",
+  "ginga.misc.log",
+  "ginga.util.paths",
+  "ginga.util.wcsmod",
+  "ginga.util.wcsmod.use",
+  "ginga.web.pgw.Widgets",
+  "ginga.web.pgw.ipg",
+  "ginga.web.pgw.ipg.make_server",
   "imexam.__init__._have_xpa",
   "imexam.__init__.release",
   "imexam.imexamxpa.XpaException",
@@ -44,7 +86,21 @@
   "math_helper.fit_poly_n",
   "math_helper.gfwhm",
   "math_helper.mfwhm",
+  "matplotlib.get_backend",
+  "matplotlib.image",
+  "matplotlib.image.imread",
+  "matplotlib.pyplot",
+  "matplotlib.pyplot.clf",
+  "matplotlib.pyplot.close",
+  "matplotlib.pyplot.draw",
+  "matplotlib.pyplot.figure",
+  "matplotlib.pyplot.imshow",
+  "matplotlib.pyplot.pause",
+  "matplotlib.pyplot.rcParams",
+  "matplotlib.ticker.FormatStrFormatter",
+  "matplotlib.ticker.LinearLocator",
   "method",
+  "mpl_toolkits.mplot3d.Axes3D",
   "numpy.arange",
   "numpy.bool8",
   "numpy.int",
@@ -53,51 +109,57 @@
   "numpy.sqrt",
   "numpy.uint8",
   "numpy.zeros",
+  "os",
   "os.F_OK",
   "os.access",
+  "os.environ",
   "os.environ.get",
+  "os.getenv",
   "os.kill",
   "os.listdir",
+  "os.path.abspath",
+  "os.path.dirname",
   "os.path.isfile",
+  "os.path.join",
+  "packaging.version",
+  "packaging.version.parse",
+  "photutils",
+  "photutils.CircularAnnulus",
+  "photutils.CircularAperture",
+  "photutils.__version__",
+  "photutils.aperture_photometry",
+  "photutils.centroids.centroid_com",
+  "pkg_resources.DistributionNotFound",
+  "pkg_resources.get_distribution",
+  "scipy.stats",
+  "shutil",
+  "shutil.rmtree",
   "signal.SIGTERM",
+  "socket",
   "socket.setdefaulttimeout",
+  "socket.socket",
+  "subprocess.Popen",
+  "subprocess.call",
   "sys.version_info.major",
+  "tempfile",
+  "tempfile.mkdtemp",
+  "tempfile.mkstemp",
+  "threading",
   "util.check_valid",
   "util.verify_filename",
   "version.githash",
   "version.version",
+  "warnings",
+  "warnings.catch_warnings",
+  "warnings.simplefilter",
   "warnings.warn"
  ],
  "deps": {
-  "astropy": [
-   "astropy/conda-forge/linux-64/astropy-2.0-np111py36_0",
-   "astropy/conda-forge/linux-64/astropy-2.0.2-np111py27_0",
-   "astropy/conda-forge/linux-64/astropy-4.2-py37h5e8e339_1"
-  ],
   "copy": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "ginga": [
-   "ginga/conda-forge/noarch/ginga-2.6.6-py_0",
-   "ginga/conda-forge/noarch/ginga-3.0.0-py_0",
-   "ginga/conda-forge/noarch/ginga-3.0.1-py_0",
-   "ginga/conda-forge/noarch/ginga-3.1.0-py_0",
-   "ginga/conda-forge/noarch/ginga-3.2.0-pyhd8ed1ab_0"
-  ],
   "logging": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "matplotlib": [
-   "matplotlib-base/conda-forge/linux-64/matplotlib-base-3.1.1-py37hfd891ef_0",
-   "matplotlib-base/conda-forge/linux-64/matplotlib-base-3.1.1-py38h250f245_2",
-   "matplotlib/conda-forge/linux-64/matplotlib-1.5.3-np111py34_0"
-  ],
-  "mpl_toolkits": [
-   "matplotlib/conda-forge/linux-64/matplotlib-1.5.3-np111py34_0"
-  ],
-  "ntpath": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -106,55 +168,7 @@
    "numpy/conda-forge/linux-64/numpy-1.18.4-py37h8960a57_0",
    "numpy/conda-forge/linux-64/numpy-1.19.2-py36h68c22af_1"
   ],
-  "os": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "packaging": [
-   "packaging/conda-forge/noarch/packaging-18.0-py_0",
-   "packaging/conda-forge/noarch/packaging-19.0-py_0",
-   "packaging/conda-forge/noarch/packaging-19.2-py_0",
-   "packaging/conda-forge/noarch/packaging-20.0-py_0",
-   "packaging/conda-forge/noarch/packaging-20.1-py_0",
-   "packaging/conda-forge/noarch/packaging-20.7-pyhd3deb0d_0",
-   "packaging/conda-forge/noarch/packaging-20.8-pyhd3deb0d_0",
-   "packaging/conda-forge/noarch/packaging-21.0-pyhd8ed1ab_0"
-  ],
-  "photutils": [
-   "photutils/conda-forge/linux-64/photutils-1.1.0-py37h5e8e339_0",
-   "photutils/conda-forge/osx-64/photutils-0.7.2-py36h0b31af3_0"
-  ],
-  "pkg_resources": [
-   "setuptools/conda-forge/linux-64/setuptools-40.6.1-py36_0",
-   "setuptools/conda-forge/linux-64/setuptools-46.3.0-py38h32f6830_0",
-   "setuptools/conda-forge/linux-64/setuptools-49.1.2-py38h32f6830_0"
-  ],
-  "scipy": [
-   "scipy/conda-forge/linux-64/scipy-0.17.1-np110py27_blas_openblas_202",
-   "scipy/conda-forge/linux-64/scipy-1.7.0-py37h29e03ee_0",
-   "scipy/conda-forge/linux-64/scipy-1.7.0-py37ha768fb6_1"
-  ],
-  "shutil": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "socket": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "stat": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "subprocess": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "tempfile": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "threading": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -163,10 +177,6 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "types": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "warnings": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],

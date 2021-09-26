@@ -10,7 +10,12 @@
   "backends._backend_loader.load",
   "bmemcached",
   "collections.defaultdict",
+  "contextlib",
+  "contextlib.contextmanager",
   "creator",
+  "dbm",
+  "dbm.open",
+  "decorator.decorate",
   "dogpile.cache.backends.__init__._backend_loader",
   "dogpile.cache.backends.__init__.register_backend",
   "exception.DogpileCacheException",
@@ -18,23 +23,61 @@
   "exception.RegionAlreadyConfigured",
   "exception.RegionNotConfigured",
   "exception.ValidationError",
+  "fcntl",
   "functools.partial",
   "get_value",
   "hashlib.sha1",
+  "inspect",
   "inspect.CO_VARARGS",
   "inspect.CO_VARKEYWORDS",
+  "inspect.getfullargspec",
+  "inspect.iscode",
+  "inspect.isfunction",
+  "inspect.ismethod",
   "key_generator",
   "km",
   "mangler",
+  "numbers.Number",
+  "os",
   "os.F_OK",
   "os.O_CREAT",
   "os.O_RDONLY",
   "os.O_WRONLY",
   "os.access",
   "os.close",
+  "os.extsep",
   "os.open",
+  "os.path.abspath",
+  "os.path.join",
+  "os.path.normpath",
+  "pickle",
+  "pickle.dumps",
+  "pickle.loads",
+  "random",
+  "random.random",
+  "re",
+  "re.match",
   "serializer",
   "should_cache_fn",
+  "threading",
+  "threading.RLock",
+  "threading.currentThread",
+  "threading.get_ident",
+  "threading.local",
+  "typing",
+  "typing.Any",
+  "typing.Callable",
+  "typing.Mapping",
+  "typing.MutableMapping",
+  "typing.MutableSet",
+  "typing.NamedTuple",
+  "typing.Optional",
+  "typing.Sequence",
+  "typing.TYPE_CHECKING",
+  "typing.Tuple",
+  "typing.Type",
+  "typing.Union",
+  "typing.cast",
   "user_func",
   "user_func.get",
   "user_func.invalidate",
@@ -49,18 +92,11 @@
   "util.langhelpers.memoized_property",
   "util.langhelpers.to_list",
   "util.memoized_property",
-  "value_fn"
+  "value_fn",
+  "warnings"
  ],
  "deps": {
   "__future__": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "_pickle": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "_threading_local": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -72,40 +108,11 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "contextlib": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "datetime": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "dbm": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "decorator": [
-   "decorator/conda-forge/noarch/decorator-4.3.0-py_0",
-   "decorator/conda-forge/noarch/decorator-4.3.2-py_0",
-   "decorator/conda-forge/noarch/decorator-4.4.0-py_0",
-   "decorator/conda-forge/noarch/decorator-4.4.1-py_0",
-   "decorator/conda-forge/noarch/decorator-4.4.2-py_0",
-   "decorator/conda-forge/noarch/decorator-5.0.2-pyhd8ed1ab_0",
-   "decorator/conda-forge/noarch/decorator-5.0.3-pyhd8ed1ab_0",
-   "decorator/conda-forge/noarch/decorator-5.0.4-pyhd8ed1ab_0",
-   "decorator/conda-forge/noarch/decorator-5.0.5-pyhd8ed1ab_0",
-   "decorator/conda-forge/noarch/decorator-5.0.6-pyhd8ed1ab_0",
-   "decorator/conda-forge/noarch/decorator-5.0.9-pyhd8ed1ab_0"
-  ],
-  "fcntl": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "functools": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "inspect": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -128,22 +135,6 @@
   "memcache": [
    "python-memcached/conda-forge/noarch/python-memcached-1.59-py_0"
   ],
-  "ntpath": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "numbers": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "os": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "pickle": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "pylibmc": [
    "pylibmc/conda-forge/osx-64/pylibmc-1.6.1-py27h89ed719_1"
   ],
@@ -160,14 +151,6 @@
    "pymemcache/conda-forge/noarch/pymemcache-3.4.3-pyhd8ed1ab_0",
    "pymemcache/conda-forge/noarch/pymemcache-3.4.4-pyhd8ed1ab_0",
    "pymemcache/conda-forge/noarch/pymemcache-3.5.0-pyhd8ed1ab_0"
-  ],
-  "random": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "re": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "redis": [
    "redis-py/conda-forge/noarch/redis-py-3.0.0-py_0",
@@ -189,18 +172,6 @@
    "stevedore/conda-forge/noarch/stevedore-1.28.0-py_0",
    "stevedore/conda-forge/noarch/stevedore-1.29.0-py_0",
    "stevedore/conda-forge/noarch/stevedore-1.30.1-py_0"
-  ],
-  "threading": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "typing": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "warnings": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "weakref": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
