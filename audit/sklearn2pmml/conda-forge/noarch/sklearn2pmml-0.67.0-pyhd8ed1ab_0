@@ -2,14 +2,8 @@
  "bad": [
   "collections.defaultdict",
   "func",
-  "h2o.frame.H2OFrame",
   "id.ndim",
   "is_missing",
-  "joblib",
-  "joblib.__version__",
-  "joblib.dump",
-  "lightgbm.LGBMClassifier",
-  "lightgbm.LGBMRegressor",
   "numpy.empty",
   "numpy.float",
   "numpy.greater",
@@ -25,60 +19,18 @@
   "os.close",
   "os.pathsep.join",
   "os.remove",
-  "pandas",
-  "pandas.Categorical",
-  "pandas.DataFrame",
-  "pandas.Index",
-  "pandas.Series",
-  "pandas.__version__",
-  "pandas.cut",
-  "pandas.isnull",
-  "pandas.to_datetime",
-  "pandas.to_timedelta",
   "pcre",
   "pcre.compile",
   "pipeline.PMMLPipeline.__name__",
-  "pkg_resources",
-  "pkg_resources.resource_filename",
-  "platform",
-  "platform.python_version",
-  "re",
   "re.MULTILINE",
-  "re.compile",
-  "re.findall",
-  "re.match",
-  "re.split",
-  "scipy.interpolate.BSpline",
-  "scipy.sparse.lil_matrix",
-  "sklearn",
-  "sklearn.__version__",
-  "sklearn.base.BaseEstimator",
-  "sklearn.base.ClassifierMixin",
-  "sklearn.base.RegressorMixin",
-  "sklearn.base.TransformerMixin",
-  "sklearn.base.clone",
   "sklearn.compose.ColumnTransformer",
   "sklearn.exceptions.NotFittedError",
-  "sklearn.feature_selection.SelectFromModel",
   "sklearn.feature_selection._base.SelectorMixin",
-  "sklearn.feature_selection.base.SelectorMixin",
-  "sklearn.linear_model.LinearRegression",
   "sklearn.linear_model._base.LinearClassifierMixin",
   "sklearn.linear_model._base.LinearModel",
   "sklearn.linear_model._base.SparseCoefMixin",
-  "sklearn.linear_model.base.LinearClassifierMixin",
-  "sklearn.linear_model.base.LinearModel",
-  "sklearn.linear_model.base.LinearRegression",
-  "sklearn.linear_model.base.SparseCoefMixin",
-  "sklearn.pipeline.FeatureUnion",
-  "sklearn.pipeline.Pipeline",
-  "sklearn.preprocessing.LabelBinarizer",
-  "sklearn.preprocessing.LabelEncoder",
-  "sklearn.preprocessing.OneHotEncoder",
   "sklearn.preprocessing.OrdinalEncoder",
-  "sklearn.utils.column_or_1d",
   "sklearn.utils.metaestimators._BaseComposition",
-  "sklearn.utils.validation.check_is_fitted",
   "sklearn2pmml.__init__.SelectorProxy",
   "sklearn2pmml.__init__._classpath",
   "sklearn2pmml.__init__._decode",
@@ -113,24 +65,40 @@
   "sklearn2pmml.preprocessing.__init__._col2d",
   "sklearn2pmml.preprocessing.__init__._int",
   "sklearn2pmml.preprocessing.__init__._regex_engine",
-  "sklearn_pandas",
-  "sklearn_pandas.DataFrameMapper",
-  "sklearn_pandas.__version__",
-  "subprocess.PIPE",
-  "subprocess.Popen",
-  "tempfile",
-  "tempfile.mkstemp",
   "unichr",
-  "unicodedata",
-  "unicodedata.category",
-  "warnings",
-  "warnings.warn",
-  "zipfile.ZipFile"
+  "warnings.warn"
  ],
  "deps": {
   "datetime": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "h2o": [
+   "h2o-py/conda-forge/noarch/h2o-py-3.30.0.4-pyh9f0ad1d_0",
+   "h2o-py/conda-forge/noarch/h2o-py-3.30.0.5-pyh9f0ad1d_0",
+   "h2o-py/conda-forge/noarch/h2o-py-3.30.0.6-pyh9f0ad1d_0",
+   "h2o-py/conda-forge/noarch/h2o-py-3.30.0.7-pyh9f0ad1d_0",
+   "h2o-py/conda-forge/noarch/h2o-py-3.30.1.1-pyh9f0ad1d_0",
+   "h2o-py/conda-forge/noarch/h2o-py-3.30.1.2-pyh9f0ad1d_0",
+   "h2o-py/conda-forge/noarch/h2o-py-3.32.0.4-pyh44b312d_0",
+   "h2o-py/conda-forge/noarch/h2o-py-3.32.1.1-pyhd8ed1ab_0",
+   "h2o-py/conda-forge/noarch/h2o-py-3.32.1.4-pyhd8ed1ab_0",
+   "h2o-py/conda-forge/noarch/h2o-py-3.32.1.7-pyhd8ed1ab_0"
+  ],
+  "joblib": [
+   "joblib/conda-forge/noarch/joblib-0.12.1-py_0",
+   "joblib/conda-forge/noarch/joblib-0.12.2-py_0",
+   "joblib/conda-forge/noarch/joblib-0.12.4-py_0",
+   "joblib/conda-forge/noarch/joblib-0.13.1-py_0",
+   "joblib/conda-forge/noarch/joblib-0.13.2-py_0",
+   "joblib/conda-forge/noarch/joblib-0.14.0-py_0",
+   "joblib/conda-forge/noarch/joblib-0.14.1-py_0",
+   "joblib/conda-forge/noarch/joblib-0.17.0-py_0",
+   "joblib/conda-forge/noarch/joblib-1.0.0-pyhd8ed1ab_0",
+   "joblib/conda-forge/noarch/joblib-1.0.1-pyhd8ed1ab_0"
+  ],
+  "lightgbm": [
+   "lightgbm/conda-forge/linux-64/lightgbm-2.1.2-py36hfc679d8_0"
   ],
   "numpy": [
    "numpy/conda-forge/linux-64/numpy-1.17.5-py36h95a1406_0",
@@ -138,6 +106,54 @@
    "numpy/conda-forge/linux-64/numpy-1.19.2-py36h68c22af_1"
   ],
   "os": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "pandas": [],
+  "pkg_resources": [
+   "setuptools/conda-forge/linux-64/setuptools-40.6.1-py36_0",
+   "setuptools/conda-forge/linux-64/setuptools-46.3.0-py38h32f6830_0",
+   "setuptools/conda-forge/linux-64/setuptools-49.1.2-py38h32f6830_0"
+  ],
+  "platform": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "re": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "scipy": [
+   "scipy/conda-forge/linux-64/scipy-1.7.0-py37h29e03ee_0",
+   "scipy/conda-forge/linux-64/scipy-1.7.0-py37ha768fb6_1"
+  ],
+  "sklearn": [
+   "scikit-learn/conda-forge/linux-64/scikit-learn-0.17.1-np110py27_blas_openblas_200",
+   "scikit-learn/conda-forge/linux-64/scikit-learn-0.17.1-np110py35_blas_openblas_202",
+   "scikit-learn/conda-forge/linux-64/scikit-learn-0.17.1-np111py35_blas_openblas_202"
+  ],
+  "sklearn_pandas": [
+   "sklearn-pandas/conda-forge/noarch/sklearn-pandas-2.0.3-pyhd8ed1ab_0",
+   "sklearn-pandas/conda-forge/noarch/sklearn-pandas-2.0.4-pyhd8ed1ab_0",
+   "sklearn-pandas/conda-forge/noarch/sklearn-pandas-2.1.0-pyhd8ed1ab_0"
+  ],
+  "subprocess": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "tempfile": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "unicodedata": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "warnings": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "zipfile": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ]
