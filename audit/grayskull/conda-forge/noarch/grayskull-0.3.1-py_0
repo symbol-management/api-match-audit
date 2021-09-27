@@ -8,36 +8,11 @@
   "colorama.Fore.LIGHTMAGENTA_EX",
   "colorama.Style.BRIGHT",
   "colorama.Style.RESET_ALL",
-  "fuzzywuzzy.fuzz.token_set_ratio",
-  "fuzzywuzzy.fuzz.token_sort_ratio",
-  "fuzzywuzzy.process",
-  "fuzzywuzzy.process.extractBests",
-  "fuzzywuzzy.process.extractOne",
   "get_full_list",
   "get_small_py3_version",
   "get_val",
-  "glob.glob",
-  "grayskull.pypi.PyPi._download_sdist_pkg",
-  "grayskull.pypi.PyPi._format_dependencies",
-  "grayskull.pypi.PyPi._generic_py_ver_to",
-  "grayskull.pypi.PyPi._get_compilers",
-  "grayskull.pypi.PyPi._get_entry_points_from_sdist",
-  "grayskull.pypi.PyPi._get_extra_from_requires_dist",
-  "grayskull.pypi.PyPi._get_name_version_from_requires_dist",
-  "grayskull.pypi.PyPi._get_setup_cfg",
-  "grayskull.pypi.PyPi._get_test_entry_points",
-  "grayskull.pypi.PyPi._get_test_imports",
-  "grayskull.pypi.PyPi._merge_pypi_sdist_metadata",
-  "grayskull.pypi.PyPi._normalize_pkg_name",
-  "grayskull.pypi.PyPi._parse_extra_metadata_to_selector",
-  "grayskull.pypi.PyPi._update_requirements_with_pin",
-  "grayskull.pypi.PyPi.get_sha256_from_pypi_metadata",
-  "grayskull.pypi.PyPi.py_version_to_limit_python",
-  "grayskull.pypi.PyPi.py_version_to_selector",
-  "hashlib",
   "hashlib.sha256",
   "is_compiler_present",
-  "operator.itemgetter",
   "os.chdir",
   "os.getcwd",
   "os.listdir",
@@ -45,12 +20,10 @@
   "os.path.exists",
   "os.path.isfile",
   "print_req",
-  "pytest.fixture",
   "pytest.mark.parametrize",
   "pytest.mark.serial",
   "pytest.mark.skipif",
   "pytest.mark.xfail",
-  "pytest.raises",
   "re.DOTALL",
   "re.IGNORECASE",
   "re.MULTILINE",
@@ -60,15 +33,15 @@
   "ruamel.yaml.comments.CommentedSeq",
   "ruamel.yaml.error.CommentMark",
   "setup_core_original",
-  "shutil",
-  "shutil.copyfile",
-  "shutil.rmtree",
-  "shutil.unpack_archive",
   "sys.path.append",
-  "sys.platform.startswith",
-  "tempfile.mkdtemp"
+  "sys.platform.startswith"
  ],
  "deps": {
+  "_pytest": [
+   "pytest/conda-forge/linux-64/pytest-3.7.0-py27_0",
+   "pytest/conda-forge/linux-64/pytest-4.6.0-py37_0",
+   "pytest/conda-forge/linux-64/pytest-6.0.2-py37hc8dfbb8_0"
+  ],
   "abc": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -120,6 +93,29 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "fuzzywuzzy": [
+   "fuzzywuzzy/conda-forge/noarch/fuzzywuzzy-0.16.0-py_0",
+   "fuzzywuzzy/conda-forge/noarch/fuzzywuzzy-0.17.0-py_0",
+   "fuzzywuzzy/conda-forge/noarch/fuzzywuzzy-0.18.0-pyhd8ed1ab_0"
+  ],
+  "glob": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "grayskull": [
+   "grayskull/conda-forge/noarch/grayskull-0.2.4-py_0",
+   "grayskull/conda-forge/noarch/grayskull-0.3.1-py_0",
+   "grayskull/conda-forge/noarch/grayskull-0.6.0-py_0",
+   "grayskull/conda-forge/noarch/grayskull-0.7.1-py_0",
+   "grayskull/conda-forge/noarch/grayskull-0.7.3-py_1",
+   "grayskull/conda-forge/noarch/grayskull-0.8.1-py_0",
+   "grayskull/conda-forge/noarch/grayskull-0.8.3-py_0",
+   "grayskull/conda-forge/noarch/grayskull-0.8.4-pyhd8ed1ab_0"
+  ],
+  "hashlib": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "json": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -136,6 +132,10 @@
    "numpy/conda-forge/linux-64/numpy-1.17.5-py36h95a1406_0",
    "numpy/conda-forge/linux-64/numpy-1.18.4-py37h8960a57_0",
    "numpy/conda-forge/linux-64/numpy-1.19.2-py36h68c22af_1"
+  ],
+  "operator": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "os": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -180,11 +180,19 @@
    "setuptools/conda-forge/linux-64/setuptools-46.3.0-py38h32f6830_0",
    "setuptools/conda-forge/linux-64/setuptools-49.1.2-py38h32f6830_0"
   ],
+  "shutil": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "stdlib_list": [
    "stdlib-list/conda-forge/linux-64/stdlib-list-0.3.2-py34_0",
    "stdlib-list/conda-forge/noarch/stdlib-list-0.7.0-py_2"
   ],
   "subprocess": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "tempfile": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
