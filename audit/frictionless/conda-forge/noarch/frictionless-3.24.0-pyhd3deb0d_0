@@ -57,14 +57,7 @@
   "contains_posix_var",
   "contains_windows_var",
   "create",
-  "csv",
-  "csv.Error",
-  "csv.QUOTE_MINIMAL",
   "csv.QUOTE_NONE",
-  "csv.Sniffer",
-  "csv.excel",
-  "csv.reader",
-  "data",
   "decimal.InvalidOperation",
   "dialects.InlineDialect",
   "dict.__setitem__",
@@ -116,13 +109,10 @@
   "exceptions.FrictionlessException",
   "func",
   "functools.partial",
-  "gdown",
-  "gdown.download",
   "gzip",
   "gzip.BadGzipFile",
   "gzip.open",
   "hash.split",
-  "hashlib",
   "hashlib.sha256",
   "helpers.ControlledDict",
   "helpers.ControlledList",
@@ -150,46 +140,20 @@
   "importlib.import_module",
   "index_class",
   "infer",
-  "inspect.signature",
   "internal_delete",
-  "io",
   "io.BufferedRandom",
   "io.BytesIO",
   "io.DEFAULT_BUFFER_SIZE",
-  "io.RawIOBase",
-  "io.SEEK_CUR",
-  "io.SEEK_END",
-  "io.SEEK_SET",
   "io.StringIO",
   "io.TextIOWrapper",
   "io.open",
-  "isodate",
-  "isodate.Duration",
-  "isodate.duration_isoformat",
-  "isodate.parse_duration",
   "itertools.chain.from_iterable",
-  "json",
-  "json.decoder.JSONDecodeError",
-  "json.dump",
-  "json.dumps",
-  "json.loads",
-  "jsonlines",
-  "jsonlines.Reader",
-  "jsonlines.Writer",
-  "jsonschema",
-  "jsonschema.validators.validator_for",
   "list.__setitem__",
   "main.program.command",
   "metadata.Metadata.property",
   "metadata_property",
-  "multiprocessing",
   "multiprocessing.Pool",
   "multiprocessing.cpu_count",
-  "openpyxl",
-  "openpyxl.Workbook",
-  "openpyxl.load_workbook",
-  "openpyxl.utils.rows_from_range",
-  "operator.setitem",
   "os.environ.get",
   "os.getcwd",
   "os.listdir",
@@ -199,18 +163,13 @@
   "os.remove",
   "p1",
   "parsers.JsonParser.native_types",
-  "pkgutil",
-  "pkgutil.iter_modules",
   "pprint.pformat",
   "pq",
   "process",
   "report.Report.from_validate",
-  "requests",
-  "requests.Session",
-  "requests.get",
-  "requests.request",
-  "requests.utils",
   "resource.Resource.from_source",
+  "subprocess",
+  "subprocess.run",
   "system.system.create_check",
   "system.system.create_control",
   "system.system.create_dialect",
@@ -218,10 +177,6 @@
   "system.system.create_parser",
   "system.system.create_server",
   "system.system.create_storage",
-  "tempfile",
-  "tempfile.NamedTemporaryFile",
-  "tempfile.TemporaryFile",
-  "tempfile.mkdtemp",
   "type.capitalize",
   "type_value",
   "unicodecsv.writer",
@@ -237,6 +192,10 @@
   "zipfile.BadZipfile"
  ],
  "deps": {
+  "_csv": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "base64": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -265,6 +224,13 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "csv": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "data": [
+   "dateparser/conda-forge/noarch/dateparser-0.6.0-py_0"
+  ],
   "datetime": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -283,15 +249,72 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "gdown": [
+   "gdown/conda-forge/noarch/gdown-3.11.0-pyh9f0ad1d_0",
+   "gdown/conda-forge/noarch/gdown-3.11.1-pyh9f0ad1d_0",
+   "gdown/conda-forge/noarch/gdown-3.12.2-pyh9f0ad1d_0",
+   "gdown/conda-forge/noarch/gdown-3.13.0-pyhd8ed1ab_0",
+   "gdown/conda-forge/noarch/gdown-3.9.0-py_0"
+  ],
   "glob": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "hashlib": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "inspect": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "io": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "isodate": [
+   "isodate/conda-forge/noarch/isodate-0.6.0-py_0"
+  ],
+  "json": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "jsonlines": [
+   "jsonlines/conda-forge/noarch/jsonlines-1.2.0-py_1",
+   "jsonlines/conda-forge/noarch/jsonlines-1.2.0-pyh9f0ad1d_2",
+   "jsonlines/conda-forge/noarch/jsonlines-2.0.0-pyhd3deb0d_0"
+  ],
+  "jsonschema": [
+   "jsonschema/conda-forge/noarch/jsonschema-3.2.0-pyhd8ed1ab_3"
   ],
   "logging": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "multiprocessing": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "ntpath": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "openpyxl": [
+   "openpyxl/conda-forge/linux-64/openpyxl-2.4.5-py36_0",
+   "openpyxl/conda-forge/noarch/openpyxl-2.5.11-py_0",
+   "openpyxl/conda-forge/noarch/openpyxl-2.5.4-py_1",
+   "openpyxl/conda-forge/noarch/openpyxl-2.5.7-py_0",
+   "openpyxl/conda-forge/noarch/openpyxl-2.5.8-py_0",
+   "openpyxl/conda-forge/noarch/openpyxl-2.5.9-py_0",
+   "openpyxl/conda-forge/noarch/openpyxl-2.6.0-py_0",
+   "openpyxl/conda-forge/noarch/openpyxl-2.6.3-py_0",
+   "openpyxl/conda-forge/noarch/openpyxl-3.0.0-py_0",
+   "openpyxl/conda-forge/noarch/openpyxl-3.0.3-py_0",
+   "openpyxl/conda-forge/noarch/openpyxl-3.0.4-py_0",
+   "openpyxl/conda-forge/noarch/openpyxl-3.0.5-py_0",
+   "openpyxl/conda-forge/noarch/openpyxl-3.0.7-pyhd8ed1ab_0"
+  ],
+  "operator": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -304,9 +327,23 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "pkgutil": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "re": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "requests": [
+   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
+   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0",
+   "requests/conda-forge/linux-64/requests-2.12.0-py35_0",
+   "requests/conda-forge/noarch/requests-2.23.0-pyh8c360ce_2",
+   "requests/conda-forge/noarch/requests-2.24.0-pyh9f0ad1d_0",
+   "requests/conda-forge/noarch/requests-2.25.0-pyhd3deb0d_0",
+   "requests/conda-forge/noarch/requests-2.25.1-pyhd3deb0d_0",
+   "requests/conda-forge/noarch/requests-2.26.0-pyhd8ed1ab_0"
   ],
   "rfc3986": [
    "rfc3986/conda-forge/noarch/rfc3986-1.4.0-pyh9f0ad1d_0",
@@ -347,10 +384,6 @@
   "stringcase": [
    "stringcase/conda-forge/noarch/stringcase-1.2.0-py_0"
   ],
-  "subprocess": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "tabulate": [
    "tabulate/conda-forge/noarch/tabulate-0.8.1-py_0",
    "tabulate/conda-forge/noarch/tabulate-0.8.2-py_0",
@@ -359,6 +392,10 @@
    "tabulate/conda-forge/noarch/tabulate-0.8.6-py_0",
    "tabulate/conda-forge/noarch/tabulate-0.8.7-pyh9f0ad1d_0",
    "tabulate/conda-forge/noarch/tabulate-0.8.9-pyhd8ed1ab_0"
+  ],
+  "tempfile": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "typing": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
