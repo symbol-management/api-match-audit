@@ -38,31 +38,13 @@
   "XRD",
   "_default",
   "add_meta_data",
-  "array",
-  "ase",
-  "ase.Atoms",
-  "ase.io",
-  "ase.io.read",
-  "ase.io.write",
-  "ast",
-  "ast.literal_eval",
   "atom.Atom.create",
   "atom_sort",
   "axis.Axis",
-  "base64",
-  "base64.b64encode",
   "basis_to_niggli",
-  "bokeh.embed.components",
-  "bokeh.models.HoverTool",
-  "bokeh.models.Span",
-  "bokeh.plotting",
-  "bokeh.plotting.ColumnDataSource",
-  "bokeh.plotting.figure",
   "cif.read",
   "cif.write",
   "clean",
-  "collections",
-  "collections.OrderedDict",
   "collections.defaultdict",
   "comp_to_latex",
   "composition.Composition.get",
@@ -280,13 +262,31 @@
   "resources.Host.objects.filter",
   "resources.Project.get",
   "resources.Project.objects.get",
+  "rest_framework.generics",
+  "rest_framework.generics.ListAPIView",
+  "rest_framework.generics.RetrieveAPIView",
+  "rest_framework.pagination.LimitOffsetPagination",
+  "rest_framework.renderers.BrowsableAPIRenderer",
+  "rest_framework.renderers.JSONRenderer",
+  "rest_framework.response.Response",
+  "rest_framework.routers",
+  "rest_framework.serializers",
+  "rest_framework.serializers.ModelSerializer",
+  "rest_framework.serializers.SerializerMethodField",
   "roundclose",
+  "scipy",
   "scipy.append",
   "scipy.array",
   "scipy.cos",
   "scipy.dot",
   "scipy.exp",
   "scipy.identity",
+  "scipy.integrate",
+  "scipy.integrate.dblquad",
+  "scipy.integrate.quad",
+  "scipy.linalg",
+  "scipy.linalg.eigvals",
+  "scipy.linalg.norm",
   "scipy.linspace",
   "scipy.log",
   "scipy.pi",
@@ -298,9 +298,23 @@
   "script",
   "set.union",
   "shortest_dist",
+  "shutil",
+  "shutil.copy",
   "sign",
   "signal.SIGTERM",
   "sin",
+  "site",
+  "sklearn",
+  "spglib",
+  "spglib.find_primitive",
+  "spglib.get_pointgroup",
+  "spglib.get_spacegroup",
+  "spglib.get_spacegroup_type",
+  "spglib.get_symmetry",
+  "spglib.get_symmetry_dataset",
+  "spglib.get_symmetry_from_database",
+  "spglib.refine_cell",
+  "spglib.standardize_cell",
   "sqrt",
   "sys.path.append",
   "sys.path.insert",
@@ -316,9 +330,12 @@
   "text.get_flot_series",
   "text.point.coord",
   "text.text",
+  "threading",
+  "threading.Thread",
   "unit_comp",
   "unravel_index",
   "update",
+  "utils",
   "wrap",
   "write_or_return",
   "zeros"
@@ -337,8 +354,36 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "array": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "ase": [
+   "ase/conda-forge/linux-64/ase-3.13.0-py27_0",
+   "ase/conda-forge/noarch/ase-3.16.2-py_0",
+   "ase/conda-forge/noarch/ase-3.17.0-py_0",
+   "ase/conda-forge/noarch/ase-3.18.1-py_0",
+   "ase/conda-forge/noarch/ase-3.18.2-py_0",
+   "ase/conda-forge/noarch/ase-3.20.1-py_0",
+   "ase/conda-forge/noarch/ase-3.21.0-pyhd8ed1ab_0"
+  ],
+  "ast": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "backports": [
    "configparser/conda-forge/noarch/configparser-5.0.0-py_0"
+  ],
+  "base64": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "bokeh": [
+   "bokeh/conda-forge/linux-64/bokeh-1.3.1-py27_0"
+  ],
+  "collections": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "configparser": [
    "configparser/conda-forge/linux-64/configparser-3.7.1-py27_1",
@@ -493,33 +538,6 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "rest_framework": [
-   "djangorestframework/conda-forge/noarch/djangorestframework-3.10.2-py_0",
-   "djangorestframework/conda-forge/noarch/djangorestframework-3.10.3-py_0",
-   "djangorestframework/conda-forge/noarch/djangorestframework-3.12.0-py_0",
-   "djangorestframework/conda-forge/noarch/djangorestframework-3.12.1-py_0",
-   "djangorestframework/conda-forge/noarch/djangorestframework-3.6.4-py_0",
-   "djangorestframework/conda-forge/noarch/djangorestframework-3.7.0-py_0",
-   "djangorestframework/conda-forge/noarch/djangorestframework-3.7.7-py_0",
-   "djangorestframework/conda-forge/noarch/djangorestframework-3.8.2-py_0"
-  ],
-  "scipy": [
-   "scipy/conda-forge/linux-64/scipy-1.7.0-py37h29e03ee_0",
-   "scipy/conda-forge/linux-64/scipy-1.7.0-py37ha768fb6_1"
-  ],
-  "shutil": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "site": [
-   "ambertools/conda-forge/linux-64/ambertools-19.0-py37h5dc2433_0",
-   "ambertools/conda-forge/linux-64/ambertools-20.0-py36he882800_0",
-   "mlpack/conda-forge/linux-64/mlpack-3.0.2-py37_blas_openblash7b9f9f4_1202",
-   "moab/conda-forge/linux-64/moab-5.1.0-mpi_openmpi_tempest_py38hec516c0_10",
-   "openmc/conda-forge/linux-64/openmc-0.10.0-py35hb8ecfd0_2",
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "six": [
    "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
    "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0",
@@ -529,16 +547,6 @@
    "six/conda-forge/linux-64/six-1.10.0-py34_1",
    "six/conda-forge/noarch/six-1.14.0-py_1",
    "six/conda-forge/noarch/six-1.16.0-pyh6c4a22f_0"
-  ],
-  "sklearn": [
-   "scikit-learn/conda-forge/linux-64/scikit-learn-0.17.1-np110py27_blas_openblas_200",
-   "scikit-learn/conda-forge/linux-64/scikit-learn-0.17.1-np110py35_blas_openblas_202",
-   "scikit-learn/conda-forge/linux-64/scikit-learn-0.17.1-np111py35_blas_openblas_202"
-  ],
-  "spglib": [
-   "spglib/conda-forge/linux-64/spglib-1.10.0.2-py35_0",
-   "spglib/conda-forge/linux-64/spglib-1.10.3.52-py35_0",
-   "spglib/conda-forge/linux-64/spglib-1.14.1-py36hda16e5c_1"
   ],
   "stat": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -552,10 +560,6 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "threading": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "unittest": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -563,9 +567,6 @@
   "urllib": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "utils": [
-   "cif2cell/conda-forge/win-64/cif2cell-1.2.10-py27_0"
   ],
   "yaml": [
    "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
