@@ -10,16 +10,42 @@
   "os.path.getsize",
   "os.path.isfile",
   "os.remove",
+  "oslo_serialization.jsonutils",
+  "oslo_serialization.jsonutils.dumps",
+  "oslo_serialization.jsonutils.loads",
+  "oslo_utils.encodeutils",
+  "oslo_utils.encodeutils.safe_decode",
+  "oslo_utils.importutils",
+  "oslo_utils.importutils.import_versioned_module",
+  "oslo_utils.uuidutils",
+  "oslo_utils.uuidutils.is_uuid_like",
   "oslotest.base",
   "oslotest.base.BaseTestCase",
+  "pbr.version",
+  "pbr.version.VersionInfo",
   "qinlingclient.__init__.version_info",
   "qinlingclient.utils.get_item_properties",
+  "requests",
+  "requests.certs.where",
+  "requests.exceptions.ConnectionError",
+  "requests.request",
+  "requests_mock.contrib.fixture",
+  "requests_mock.contrib.fixture.Fixture",
+  "shutil",
+  "shutil.copyfileobj",
   "six.StringIO",
   "six.moves.urllib",
   "six.moves.urllib.parse.urlencode",
+  "socket",
   "socket.error",
   "socket.gaierror",
-  "socket.timeout"
+  "socket.timeout",
+  "testtools",
+  "testtools.TestCase",
+  "zipfile",
+  "zipfile.ZIP_STORED",
+  "zipfile.ZipFile",
+  "zipfile.is_zipfile"
  ],
  "deps": {
   "abc": [
@@ -30,10 +56,6 @@
    "argparse/conda-forge/osx-64/argparse-1.4.0-py26_0",
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "certifi": [
-   "certifi/conda-forge/linux-64/certifi-2016.9.26-py27_0",
-   "certifi/conda-forge/linux-64/certifi-2020.12.5-py36hd000896_1"
   ],
   "copy": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -90,60 +112,7 @@
   "oslo_log": [
    "oslo.log/conda-forge/linux-64/oslo.log-4.1.1-py38h32f6830_0"
   ],
-  "oslo_serialization": [
-   "oslo.serialization/conda-forge/linux-64/oslo.serialization-2.24.0-py27_0",
-   "oslo.serialization/conda-forge/linux-64/oslo.serialization-3.0.0-py38_0",
-   "oslo.serialization/conda-forge/noarch/oslo.serialization-3.0.0-py_1",
-   "oslo.serialization/conda-forge/noarch/oslo.serialization-3.1.0-py_0",
-   "oslo.serialization/conda-forge/noarch/oslo.serialization-3.1.1-py_0",
-   "oslo.serialization/conda-forge/noarch/oslo.serialization-4.1.0-pyhd8ed1ab_0"
-  ],
-  "oslo_utils": [
-   "oslo.utils/conda-forge/noarch/oslo.utils-3.28.0-py_0",
-   "oslo.utils/conda-forge/noarch/oslo.utils-3.29.0-py_0",
-   "oslo.utils/conda-forge/noarch/oslo.utils-3.31.0-py_0",
-   "oslo.utils/conda-forge/noarch/oslo.utils-3.36.0-py_0",
-   "oslo.utils/conda-forge/noarch/oslo.utils-4.4.0-py_0",
-   "oslo.utils/conda-forge/noarch/oslo.utils-4.7.0-pyhd8ed1ab_0",
-   "oslo.utils/conda-forge/noarch/oslo.utils-4.8.0-pyhd8ed1ab_0",
-   "oslo.utils/conda-forge/noarch/oslo.utils-4.9.2-pyhd8ed1ab_0"
-  ],
-  "pbr": [
-   "pbr/conda-forge/noarch/pbr-4.0.4-py_0",
-   "pbr/conda-forge/noarch/pbr-4.1.0-py_0",
-   "pbr/conda-forge/noarch/pbr-4.2.0-py_0",
-   "pbr/conda-forge/noarch/pbr-5.1.2-py_0",
-   "pbr/conda-forge/noarch/pbr-5.1.3-py_0",
-   "pbr/conda-forge/noarch/pbr-5.2.0-py_0",
-   "pbr/conda-forge/noarch/pbr-5.2.1-py_0",
-   "pbr/conda-forge/noarch/pbr-5.4.2-py_0",
-   "pbr/conda-forge/noarch/pbr-5.4.5-pyh9f0ad1d_0",
-   "pbr/conda-forge/noarch/pbr-5.5.0-pyh9f0ad1d_0",
-   "pbr/conda-forge/noarch/pbr-5.5.1-pyh9f0ad1d_0",
-   "pbr/conda-forge/noarch/pbr-5.6.0-pyhd8ed1ab_0"
-  ],
   "re": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "requests": [
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0",
-   "requests/conda-forge/linux-64/requests-2.12.0-py35_0",
-   "requests/conda-forge/noarch/requests-2.23.0-pyh8c360ce_2",
-   "requests/conda-forge/noarch/requests-2.24.0-pyh9f0ad1d_0",
-   "requests/conda-forge/noarch/requests-2.25.0-pyhd3deb0d_0",
-   "requests/conda-forge/noarch/requests-2.25.1-pyhd3deb0d_0",
-   "requests/conda-forge/noarch/requests-2.26.0-pyhd8ed1ab_0"
-  ],
-  "requests_mock": [
-   "requests-mock/conda-forge/noarch/requests-mock-1.5.2-py_0",
-   "requests-mock/conda-forge/noarch/requests-mock-1.8.0-pyh9f0ad1d_0",
-   "requests-mock/conda-forge/noarch/requests-mock-1.9.1-pyhd8ed1ab_0",
-   "requests-mock/conda-forge/noarch/requests-mock-1.9.2-pyhd8ed1ab_0",
-   "requests-mock/conda-forge/noarch/requests-mock-1.9.3-pyhd8ed1ab_0"
-  ],
-  "shutil": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -157,17 +126,9 @@
    "six/conda-forge/noarch/six-1.14.0-py_1",
    "six/conda-forge/noarch/six-1.16.0-pyh6c4a22f_0"
   ],
-  "socket": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "tempfile": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "testtools": [
-   "testtools/conda-forge/noarch/testtools-2.3.0-py_1",
-   "testtools/conda-forge/osx-64/testtools-2.2.0-py27_0"
   ],
   "textwrap": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -178,10 +139,6 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "uuid": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "zipfile": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ]
