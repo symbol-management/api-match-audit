@@ -11,8 +11,6 @@
   "cStringIO.StringIO",
   "collections.defaultdict",
   "collections.deque",
-  "couchdb.Server",
-  "ctypes",
   "ctypes.windll.kernel32.CloseHandle",
   "ctypes.windll.kernel32.MoveFileExW",
   "ctypes.windll.kernel32.MoveFileTransactedW",
@@ -22,24 +20,13 @@
   "dict.items",
   "dict.iteritems",
   "dispatch",
-  "email.header.Header",
-  "email.message.Message",
-  "email.utils.formatdate",
   "func",
   "func.__module__",
   "func.__name__",
   "functools.partial",
-  "gevent",
-  "gevent.local.local",
-  "gevent.lock.BoundedSemaphore",
-  "gevent.monkey.get_original",
-  "gevent.thread.get_ident",
-  "gevent.threading.__threading__",
   "gtk.gdk",
   "gtk.gdk.Pixbuf",
   "gtk.gdk.pixbuf_new_from_file",
-  "gzip",
-  "gzip.open",
   "hash.update",
   "hashlib.sha1",
   "httplib",
@@ -66,7 +53,6 @@
   "logging.root.addHandler",
   "logging.root.handlers",
   "logging.root.setLevel",
-  "math",
   "object.__new__",
   "os.environ.get",
   "os.getpid",
@@ -76,19 +62,14 @@
   "os.remove",
   "os.rename",
   "os.stat",
-  "pymongo.ASCENDING",
-  "pymongo.DESCENDING",
   "pymongo.connection.Connection",
   "pymongo.connection.Connection.PORT",
   "pymongo.connection._parse_uri",
-  "pymongo.errors.AutoReconnect",
   "pymongo.objectid.ObjectId",
-  "pymongo.uri_parser.parse_uri",
   "re.UNICODE",
   "riemann_client.client",
   "riemann_client.transport",
   "sha.new",
-  "simplejson",
   "socket.AF_INET",
   "socket.AF_UNIX",
   "socket.SOCK_DGRAM",
@@ -106,19 +87,18 @@
   "table.c.desc",
   "thread._local",
   "thread.get_ident",
+  "threading.local",
   "time.time.sleep",
   "type.__new__",
   "unicode",
+  "urllib.parse.parse_qsl",
+  "urllib.parse.urlencode",
   "urllib.urlencode",
   "urlparse.parse_qsl",
   "weakref.ref"
  ],
  "deps": {
   "_contextvars": [
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "_threading_local": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "base64": [
@@ -146,11 +126,29 @@
    "contextvars/conda-forge/noarch/contextvars-2.4-py_0",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "couchdb": [
+   "python-couchdb/conda-forge/noarch/python-couchdb-1.2-py_0"
+  ],
+  "ctypes": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "datetime": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "email": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "functools": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "gevent": [
+   "gevent/conda-forge/linux-64/gevent-21.1.2-py38h497a2fe_0"
+  ],
+  "gzip": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -173,6 +171,10 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "math": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "multiprocessing": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -189,6 +191,10 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "pymongo": [
+   "pymongo/conda-forge/linux-64/pymongo-3.11.4-py39he80948d_0",
+   "pymongo/conda-forge/win-64/pymongo-3.11.4-py39h415ef7b_0"
+  ],
   "queue": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -200,6 +206,11 @@
   "re": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "simplejson": [
+   "simplejson/conda-forge/linux-64/simplejson-3.16.0-py27h470a237_2",
+   "simplejson/conda-forge/linux-64/simplejson-3.16.0-py35h470a237_2",
+   "simplejson/conda-forge/linux-64/simplejson-3.17.0-py38h516909a_0"
   ],
   "smtplib": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -226,10 +237,6 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "traceback": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "urllib": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
