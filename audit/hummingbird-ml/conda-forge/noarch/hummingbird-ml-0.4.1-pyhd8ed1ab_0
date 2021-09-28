@@ -34,12 +34,16 @@
   "container",
   "converter",
   "depth_f_traversal",
+  "enum.Enum",
   "fix_dim",
   "fix_graph",
   "fix_value_info",
   "get_parameters_for_tree_trav",
   "hummingbird.__init__.__version__",
   "hummingbird.ml.constants.N_THREADS",
+  "hummingbird.ml.containers.ONNXSklearnContainer.load",
+  "hummingbird.ml.containers.PyTorchSklearnContainer.load",
+  "hummingbird.ml.containers.TVMSklearnContainer.load",
   "hummingbird.ml.operator_converters._kneighbors_implementations.MetricType.mahalanobis",
   "hummingbird.ml.operator_converters._kneighbors_implementations.MetricType.minkowski",
   "hummingbird.ml.operator_converters._kneighbors_implementations.MetricType.seuclidean",
@@ -63,7 +67,14 @@
   "input.type.tensor_type",
   "input.type.tensor_type.elem_type",
   "input.type.tensor_type.shape.dim",
+  "lightgbm",
+  "lightgbm.Booster",
+  "lightgbm.LGBMClassifier",
+  "lightgbm.LGBMRanker",
+  "lightgbm.LGBMRegressor",
+  "lightgbm.__version__",
   "load_param_dict",
+  "memory_profiler.memory_usage",
   "metric",
   "numpy.datetime64",
   "numpy.empty",
@@ -86,10 +97,33 @@
   "numpy.reciprocal",
   "numpy.sqrt",
   "numpy.zeros",
+  "onnx",
   "onnx.__name__",
+  "onnx.load",
+  "onnx.save",
+  "onnxconverter_common.container.CommonSklearnModelContainer",
+  "onnxconverter_common.data_types.DoubleTensorType",
+  "onnxconverter_common.data_types.FloatTensorType",
+  "onnxconverter_common.data_types.Int32TensorType",
+  "onnxconverter_common.data_types.Int64TensorType",
+  "onnxconverter_common.data_types.StringTensorType",
+  "onnxconverter_common.optimizer.LinkedNode",
+  "onnxconverter_common.optimizer.LinkedNode.build_from_onnx",
+  "onnxconverter_common.optimizer._topological_sort",
+  "onnxconverter_common.registration.get_converter",
+  "onnxconverter_common.registration.register_converter",
+  "onnxconverter_common.topology.Topology",
+  "onnxconverter_common.topology.Variable",
+  "onnxmltools",
   "onnxmltools.convert.common.data_types.FloatTensorType",
+  "onnxmltools.convert.convert_lightgbm",
+  "onnxmltools.convert.convert_xgboost",
+  "onnxruntime",
   "onnxruntime.ExecutionMode.ORT_SEQUENTIAL",
+  "onnxruntime.InferenceSession",
   "onnxruntime.SessionOptions",
+  "onnxruntime.__version__",
+  "operator",
   "operator.inputs",
   "operator.outputs",
   "operator_converters.constants.CONTAINER",
@@ -108,8 +142,12 @@
   "os.remove",
   "os.system",
   "output_proc",
+  "pathlib.Path",
   "predict_fn",
   "prepare_function",
+  "scipy",
+  "scipy.stats",
+  "scipy.stats.trim_mean",
   "signal.SIGALRM",
   "signal.alarm",
   "sklearn.compose.ColumnTransformer",
@@ -175,6 +213,7 @@
   "torch.min",
   "torch.mm",
   "torch.mode",
+  "torch.mul",
   "torch.neg",
   "torch.ones_like",
   "torch.pow",
@@ -201,6 +240,8 @@
   "tvm.relay.frontend.from_pytorch",
   "tvm.runtime.module.load_module",
   "tvm.transform.PassContext",
+  "types.ModuleType",
+  "urllib.request.urlretrieve",
   "urllib.urlretrieve",
   "warnings.warn",
   "xgboost.core._LIB.XGBoosterDumpModelEx"
@@ -208,121 +249,89 @@
  "deps": {
   "_pickle": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
   ],
   "abc": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
   ],
   "argparse": [
    "argparse/conda-forge/osx-64/argparse-1.4.0-py26_0",
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
   ],
   "ast": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
   ],
   "collections": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
   ],
   "copy": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
   ],
   "datetime": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
   ],
   "dill": [],
   "distutils": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "enum": [
-   "privy/conda-forge/noarch/privy-6.0.0-py_0",
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "hummingbird": [
-   "hummingbird-ml/conda-forge/noarch/hummingbird-ml-0.2.2-pyhd8ed1ab_0",
-   "hummingbird-ml/conda-forge/noarch/hummingbird-ml-0.3.0-pyhd8ed1ab_0",
-   "hummingbird-ml/conda-forge/noarch/hummingbird-ml-0.4.0-pyhd8ed1ab_0",
-   "hummingbird-ml/conda-forge/noarch/hummingbird-ml-0.4.1-pyhd8ed1ab_0"
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
   ],
   "inspect": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
   ],
   "json": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "lightgbm": [
-   "lightgbm/conda-forge/linux-64/lightgbm-2.1.2-py36hfc679d8_0"
-  ],
-  "memory_profiler": [
-   "memory_profiler/conda-forge/noarch/memory_profiler-0.54.0-py_0",
-   "memory_profiler/conda-forge/noarch/memory_profiler-0.55.0-py_0",
-   "memory_profiler/conda-forge/noarch/memory_profiler-0.56.0-py_0",
-   "memory_profiler/conda-forge/noarch/memory_profiler-0.57.0-py_0",
-   "memory_profiler/conda-forge/noarch/memory_profiler-0.58.0-py_0"
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
   ],
   "ntpath": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
   ],
   "numpy": [
    "numpy/conda-forge/linux-64/numpy-1.17.5-py36h95a1406_0",
    "numpy/conda-forge/linux-64/numpy-1.18.4-py37h8960a57_0"
   ],
-  "onnx": [
-   "onnx/conda-forge/linux-64/onnx-1.7.0-py37h4832c58_4",
-   "onnx/conda-forge/linux-64/onnx-1.9.0-py37h4613701_0"
-  ],
-  "onnxconverter_common": [
-   "onnxconverter-common/conda-forge/noarch/onnxconverter-common-1.5.5-pyhd8ed1ab_0",
-   "onnxconverter-common/conda-forge/noarch/onnxconverter-common-1.6.0-pyhd8ed1ab_0",
-   "onnxconverter-common/conda-forge/noarch/onnxconverter-common-1.6.1-pyhd8ed1ab_0",
-   "onnxconverter-common/conda-forge/noarch/onnxconverter-common-1.7.0-pyhd8ed1ab_0"
-  ],
-  "onnxmltools": [
-   "onnxmltools/conda-forge/noarch/onnxmltools-1.7.0-pyhd8ed1ab_0",
-   "onnxmltools/conda-forge/noarch/onnxmltools-1.9.0-pyhd8ed1ab_0",
-   "onnxmltools/conda-forge/noarch/onnxmltools-1.9.1-pyhd8ed1ab_0"
-  ],
-  "onnxruntime": [
-   "onnxruntime/conda-forge/osx-64/onnxruntime-1.7.2-py38h38de968_1"
-  ],
-  "operator": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "os": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
   ],
   "pandas": [
-   "pandas/conda-forge/linux-64/pandas-1.2.2-py37h40f5888_0"
-  ],
-  "pathlib": [
-   "pathlib/conda-forge/noarch/pathlib-1.0.1-py_1",
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+   "pandas/conda-forge/linux-64/pandas-1.2.2-py37h40f5888_0",
+   "pandas/conda-forge/linux-64/pandas-1.2.4-py37h40f5888_0"
   ],
   "pickle": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
   ],
   "pprint": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
   ],
   "prophet": [
    "prophet/conda-forge/noarch/prophet-1.0.1-pyhd8ed1ab_0"
   ],
   "psutil": [
+   "psutil/conda-forge/linux-64/psutil-5.4.8-py37h14c3975_1000",
    "psutil/conda-forge/linux-64/psutil-5.7.3-py39h38d8fee_0"
   ],
   "pyspark": [
@@ -333,18 +342,15 @@
    "pyspark/conda-forge/noarch/pyspark-2.4.6-py_0",
    "pyspark/conda-forge/noarch/pyspark-3.0.2-pyh44b312d_0"
   ],
-  "scipy": [
-   "scipy/conda-forge/linux-64/scipy-0.17.1-np110py27_blas_openblas_202",
-   "scipy/conda-forge/linux-64/scipy-1.7.0-py37h29e03ee_0",
-   "scipy/conda-forge/linux-64/scipy-1.7.0-py37ha768fb6_1"
-  ],
   "shutil": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
   ],
   "signal": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
   ],
   "skl2onnx": [
    "skl2onnx/conda-forge/noarch/skl2onnx-1.8.0-pyhd8ed1ab_0",
@@ -363,21 +369,15 @@
    "tvm-py/conda-forge/linux-64/tvm-py-0.6.0-py36h830a2c2_0",
    "tvm-py/conda-forge/osx-64/tvm-py-0.6.1-py37h94625e5_0"
   ],
-  "types": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "urllib": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "uuid": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
   ],
   "warnings": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
   ],
   "xgboost": [
    "py-xgboost/conda-forge/linux-64/py-xgboost-1.3.0-py36h5fab9bb_0",
