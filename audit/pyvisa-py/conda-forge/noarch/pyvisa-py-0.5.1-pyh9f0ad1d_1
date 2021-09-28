@@ -26,6 +26,8 @@
   "gpib_ctypes.gpib.gpib._lib.ibpct",
   "gpib_ctypes.gpib.listener",
   "gpib_ctypes.gpib.version",
+  "importlib_metadata.PackageNotFoundError",
+  "importlib_metadata.version",
   "log_func",
   "meth",
   "os._exit",
@@ -45,9 +47,13 @@
   "protocols.vxi11.RX_CHR",
   "protocols.vxi11.RX_END",
   "protocols.vxi11.Vxi11Error",
+  "pyvisa.attributes",
+  "pyvisa.attributes.AttributesByID",
   "pyvisa.attributes.AttributesByID.default",
   "pyvisa.attributes.AttributesByID.visa_name",
+  "pyvisa.constants",
   "pyvisa.constants.ATNLineOperation",
+  "pyvisa.constants.AccessModes",
   "pyvisa.constants.AccessModes.no_lock",
   "pyvisa.constants.BufferOperation",
   "pyvisa.constants.BufferOperation.discard_read_buffer",
@@ -59,10 +65,14 @@
   "pyvisa.constants.BufferOperation.flush_transmit_buffer",
   "pyvisa.constants.BufferOperation.flush_write_buffer",
   "pyvisa.constants.EventAttribute",
+  "pyvisa.constants.EventMechanism",
+  "pyvisa.constants.EventType",
+  "pyvisa.constants.InterfaceType",
   "pyvisa.constants.InterfaceType.asrl",
   "pyvisa.constants.InterfaceType.gpib",
   "pyvisa.constants.InterfaceType.tcpip",
   "pyvisa.constants.InterfaceType.usb",
+  "pyvisa.constants.LineState",
   "pyvisa.constants.LineState.asserted",
   "pyvisa.constants.LineState.unasserted",
   "pyvisa.constants.LineState.unknown",
@@ -94,10 +104,12 @@
   "pyvisa.constants.ResourceAttribute.termchar",
   "pyvisa.constants.ResourceAttribute.termchar_enabled",
   "pyvisa.constants.ResourceAttribute.timeout_value",
+  "pyvisa.constants.SerialTermination",
   "pyvisa.constants.SerialTermination.last_bit",
   "pyvisa.constants.SerialTermination.none",
   "pyvisa.constants.SerialTermination.termination_break",
   "pyvisa.constants.SerialTermination.termination_char",
+  "pyvisa.constants.StatusCode",
   "pyvisa.constants.StatusCode.error_abort",
   "pyvisa.constants.StatusCode.error_allocation",
   "pyvisa.constants.StatusCode.error_attribute_read_only",
@@ -128,17 +140,96 @@
   "pyvisa.constants.StopBits.one_and_a_half",
   "pyvisa.constants.StopBits.two",
   "pyvisa.constants.TriggerProtocol",
+  "pyvisa.constants.VI_ASRL_FLOW_DTR_DSR",
+  "pyvisa.constants.VI_ASRL_FLOW_RTS_CTS",
+  "pyvisa.constants.VI_ASRL_FLOW_XON_XOFF",
+  "pyvisa.constants.VI_ATTR_ASRL_ALLOW_TRANSMIT",
+  "pyvisa.constants.VI_ATTR_ASRL_AVAIL_NUM",
+  "pyvisa.constants.VI_ATTR_ASRL_BAUD",
+  "pyvisa.constants.VI_ATTR_ASRL_BREAK_LEN",
+  "pyvisa.constants.VI_ATTR_ASRL_BREAK_STATE",
+  "pyvisa.constants.VI_ATTR_ASRL_CONNECTED",
+  "pyvisa.constants.VI_ATTR_ASRL_CTS_STATE",
+  "pyvisa.constants.VI_ATTR_ASRL_DATA_BITS",
+  "pyvisa.constants.VI_ATTR_ASRL_DCD_STATE",
+  "pyvisa.constants.VI_ATTR_ASRL_DISCARD_NULL",
+  "pyvisa.constants.VI_ATTR_ASRL_DSR_STATE",
+  "pyvisa.constants.VI_ATTR_ASRL_DTR_STATE",
+  "pyvisa.constants.VI_ATTR_ASRL_FLOW_CNTRL",
+  "pyvisa.constants.VI_ATTR_ASRL_PARITY",
+  "pyvisa.constants.VI_ATTR_ASRL_RI_STATE",
+  "pyvisa.constants.VI_ATTR_ASRL_RTS_STATE",
+  "pyvisa.constants.VI_ATTR_ASRL_STOP_BITS",
+  "pyvisa.constants.VI_ATTR_ASRL_XOFF_CHAR",
+  "pyvisa.constants.VI_ATTR_GPIB_ATN_STATE",
+  "pyvisa.constants.VI_ATTR_GPIB_CIC_STATE",
+  "pyvisa.constants.VI_ATTR_GPIB_NDAC_STATE",
+  "pyvisa.constants.VI_ATTR_GPIB_READDR_EN",
+  "pyvisa.constants.VI_ATTR_GPIB_REN_STATE",
+  "pyvisa.constants.VI_ATTR_GPIB_SRQ_STATE",
+  "pyvisa.constants.VI_ATTR_GPIB_UNADDR_EN",
+  "pyvisa.constants.VI_ATTR_INTF_TYPE",
+  "pyvisa.constants.VI_ATTR_SUPPRESS_END_EN",
+  "pyvisa.constants.VI_ATTR_TCPIP_ADDR",
+  "pyvisa.constants.VI_ATTR_TCPIP_DEVICE_NAME",
+  "pyvisa.constants.VI_ATTR_TCPIP_HOSTNAME",
+  "pyvisa.constants.VI_ATTR_TCPIP_KEEPALIVE",
+  "pyvisa.constants.VI_ATTR_TCPIP_NODELAY",
+  "pyvisa.constants.VI_ATTR_TCPIP_PORT",
+  "pyvisa.constants.VI_ATTR_TMO_VALUE",
   "pyvisa.constants.VI_ATTR_TMO_VALUE.default",
+  "pyvisa.constants.VI_ERROR_RSRC_NFOUND",
+  "pyvisa.constants.VI_FALSE",
+  "pyvisa.constants.VI_GPIB_ATN_ASSERT",
+  "pyvisa.constants.VI_GPIB_ATN_ASSERT_IMMEDIATE",
+  "pyvisa.constants.VI_GPIB_ATN_DEASSERT",
+  "pyvisa.constants.VI_GPIB_ATN_DEASSERT_HANDSHAKE",
+  "pyvisa.constants.VI_GPIB_REN_ADDRESS_GTL",
+  "pyvisa.constants.VI_GPIB_REN_ASSERT",
+  "pyvisa.constants.VI_GPIB_REN_ASSERT_ADDRESS",
+  "pyvisa.constants.VI_GPIB_REN_ASSERT_ADDRESS_LLO",
+  "pyvisa.constants.VI_GPIB_REN_ASSERT_LLO",
+  "pyvisa.constants.VI_GPIB_REN_DEASSERT",
+  "pyvisa.constants.VI_GPIB_REN_DEASSERT_GTL",
+  "pyvisa.constants.VI_NO_SEC_ADDR",
+  "pyvisa.constants.VI_STATE_UNKNOWN",
+  "pyvisa.constants.VI_TMO_IMMEDIATE",
+  "pyvisa.constants.VI_TMO_INFINITE",
+  "pyvisa.constants.VI_TRIG_PROT_DEFAULT",
+  "pyvisa.constants.VI_TRUE",
   "pyvisa.constants.VisaBoolean",
   "pyvisa.constants.VisaBoolean.false",
   "pyvisa.constants.VisaBoolean.true",
+  "pyvisa.errors",
+  "pyvisa.errors.VisaIOError",
+  "pyvisa.highlevel",
+  "pyvisa.highlevel.VisaLibraryBase",
+  "pyvisa.highlevel.list_backends",
+  "pyvisa.logger",
   "pyvisa.logger.debug",
   "pyvisa.logger.exception",
   "pyvisa.logger.warning",
+  "pyvisa.rname",
+  "pyvisa.rname.ASRLInstr",
+  "pyvisa.rname.GPIBInstr",
+  "pyvisa.rname.GPIBIntfc",
+  "pyvisa.rname.InvalidResourceName",
+  "pyvisa.rname.ResourceName",
+  "pyvisa.rname.TCPIPInstr",
+  "pyvisa.rname.TCPIPSocket",
+  "pyvisa.rname.USBInstr",
+  "pyvisa.rname.USBRaw",
+  "pyvisa.rname.filter",
+  "pyvisa.rname.parse_resource_name",
+  "pyvisa.testsuite.BaseTestCase",
   "pyvisa.typing.VISAEventContext",
   "pyvisa.typing.VISARMSession",
   "pyvisa.typing.VISASession",
+  "pyvisa.util.LibraryPath",
   "pyvisa_py.testsuite.__init__.testsuite",
+  "random",
+  "random.getrandbits",
+  "random.randint",
   "raw_read",
   "raw_write",
   "read_fun",
@@ -179,15 +270,27 @@
   "socket.error",
   "socket.socket",
   "socket.timeout",
+  "struct",
   "struct.pack",
   "struct.unpack",
   "struct.unpack_from",
+  "typing.Any",
+  "typing.Callable",
+  "typing.Dict",
+  "typing.Iterable",
+  "typing.Iterator",
+  "typing.List",
+  "typing.Optional",
+  "typing.Tuple",
+  "typing.Type",
+  "typing.TypeVar",
+  "typing.Union",
+  "typing.cast",
   "unittest",
   "unittest.TestLoader",
   "unittest.TestResult",
   "unittest.TextTestRunner",
   "unittest.main",
-  "usb",
   "usb.ENDPOINT_IN",
   "usb.ENDPOINT_OUT",
   "usb.ENDPOINT_TYPE_BULK",
@@ -196,86 +299,72 @@
   "usb.ENDPOINT_TYPE_ISOCHRONOUS",
   "usb.ENDPOINT_TYPE_MASK",
   "usb.USBError",
-  "usb.__version__",
-  "usb.core.USBError",
-  "usb.core.find",
-  "usb.util.CTRL_IN",
-  "usb.util.CTRL_RECIPIENT_ENDPOINT",
-  "usb.util.CTRL_RECIPIENT_INTERFACE",
-  "usb.util.CTRL_TYPE_CLASS",
-  "usb.util.build_request_type",
-  "usb.util.dispose_resources",
-  "usb.util.endpoint_direction",
-  "usb.util.endpoint_type",
-  "usb.util.find_descriptor",
-  "warnings.warn",
-  "xdrlib",
-  "xdrlib.Packer",
-  "xdrlib.Unpacker"
+  "warnings.warn"
  ],
  "deps": {
   "abc": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
   ],
   "bisect": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
   ],
   "collections": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
   ],
   "ctypes": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
   ],
   "enum": [
    "privy/conda-forge/noarch/privy-6.0.0-py_0",
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
   ],
   "fnmatch": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
   ],
   "importlib": [
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "importlib_metadata": [
-   "importlib_metadata/conda-forge/noarch/importlib_metadata-0.5-py_0"
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
   ],
   "logging": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
   ],
   "ntpath": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
   ],
   "os": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
   ],
-  "pyvisa": [
-   "pyvisa/conda-forge/linux-64/pyvisa-1.10.1-py36hc560c46_2",
-   "pyvisa/conda-forge/linux-64/pyvisa-1.10.1-py36hc560c46_3"
-  ],
-  "random": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "struct": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "typing": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  "usb": [
+   "pyusb/conda-forge/noarch/pyusb-1.0.2-py_0",
+   "pyusb/conda-forge/noarch/pyusb-1.1.0-pyh9f0ad1d_0"
   ],
   "warnings": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
+  ],
+  "xdrlib": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
   ]
  }
 }

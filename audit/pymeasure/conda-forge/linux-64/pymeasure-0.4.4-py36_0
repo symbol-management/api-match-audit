@@ -76,6 +76,8 @@
   "instrumental.drivers.daq.ni",
   "io.BytesIO",
   "io.StringIO",
+  "msgpack_numpy.dumps",
+  "msgpack_numpy.loads",
   "multiprocessing.Event",
   "multiprocessing.Process",
   "multiprocessing.Queue",
@@ -118,15 +120,37 @@
   "pymeasure.experiment.procedure.Procedure.FAILED",
   "pymeasure.experiment.procedure.Procedure.FINISHED",
   "pymeasure.experiment.procedure.Procedure.RUNNING",
+  "pymeasure.instruments.Instrument.control",
+  "pymeasure.instruments.Instrument.measurement",
+  "pymeasure.instruments.Instrument.setting",
+  "pyqtgraph",
+  "pyqtgraph.PlotDataItem",
+  "pyqtgraph.PlotWidget",
+  "pyqtgraph.Qt.QtCore",
   "pyqtgraph.Qt.QtCore.QSignal",
   "pyqtgraph.Qt.QtCore.pyqtSignal",
+  "pyqtgraph.Qt.QtGui",
   "pyqtgraph.Qt.QtGui.QWidget",
+  "pyqtgraph.Qt.loadUiType",
+  "pyqtgraph.intColor",
+  "pyqtgraph.mkPen",
+  "pytest",
   "pytest.config.getoption",
   "pytest.mark.skipif",
+  "pytest.raises",
+  "pyvisa.errors.VisaIOError",
+  "random",
+  "random.random",
+  "random.seed",
   "range.setter",
   "re.MULTILINE",
+  "serial",
   "set_process",
+  "signal",
   "sleep",
+  "threading.Event",
+  "threading.Thread",
+  "traceback.format_exc",
   "tst_validator",
   "type.setter",
   "units_found",
@@ -141,11 +165,6 @@
    "ipython/conda-forge/linux-64/ipython-7.10.2-py36h5ca1d4c_0",
    "ipython/conda-forge/linux-64/ipython-7.12.0-py36h5ca1d4c_0"
   ],
-  "_pytest": [
-   "pytest/conda-forge/linux-64/pytest-3.7.0-py27_0",
-   "pytest/conda-forge/linux-64/pytest-4.6.0-py37_0",
-   "pytest/conda-forge/linux-64/pytest-6.0.2-py37hc8dfbb8_0"
-  ],
   "backports": [
    "configparser/conda-forge/noarch/configparser-5.0.0-py_0"
   ],
@@ -154,109 +173,80 @@
    "configparser/conda-forge/noarch/configparser-5.0.0-py_0",
    "configparser/conda-forge/noarch/configparser-5.0.1-py_0",
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
   ],
   "copy": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
   ],
   "ctypes": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
   ],
   "datetime": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
   ],
   "importlib": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
   ],
   "inspect": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
   ],
   "logging": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
   ],
   "matplotlib": [
    "matplotlib-base/conda-forge/linux-64/matplotlib-base-3.1.1-py37hfd891ef_0",
    "matplotlib-base/conda-forge/linux-64/matplotlib-base-3.1.1-py38h250f245_2",
+   "matplotlib/conda-forge/linux-64/matplotlib-1.5.3-np111py27_1",
    "matplotlib/conda-forge/linux-64/matplotlib-1.5.3-np111py34_0"
-  ],
-  "msgpack_numpy": [
-   "msgpack-numpy/conda-forge/noarch/msgpack-numpy-0.4.1-py_0",
-   "msgpack-numpy/conda-forge/noarch/msgpack-numpy-0.4.4.1-py_0",
-   "msgpack-numpy/conda-forge/noarch/msgpack-numpy-0.4.4.2-py_0",
-   "msgpack-numpy/conda-forge/noarch/msgpack-numpy-0.4.4.2-py_1",
-   "msgpack-numpy/conda-forge/noarch/msgpack-numpy-0.4.5-pyh9f0ad1d_0",
-   "msgpack-numpy/conda-forge/noarch/msgpack-numpy-0.4.6.1-pyh9f0ad1d_0",
-   "msgpack-numpy/conda-forge/noarch/msgpack-numpy-0.4.6.post0-pyh9f0ad1d_0",
-   "msgpack-numpy/conda-forge/noarch/msgpack-numpy-0.4.7-pyh9f0ad1d_0",
-   "msgpack-numpy/conda-forge/noarch/msgpack-numpy-0.4.7.1-pyh9f0ad1d_0"
   ],
   "ntpath": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
   ],
   "numpy": [
+   "numpy/conda-forge/linux-64/numpy-1.16.2-py37_blas_openblash1522bff_0",
    "numpy/conda-forge/linux-64/numpy-1.17.5-py36h95a1406_0",
    "numpy/conda-forge/linux-64/numpy-1.18.4-py37h8960a57_0",
    "numpy/conda-forge/linux-64/numpy-1.19.2-py36h68c22af_1"
   ],
   "os": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
   ],
   "pandas": [],
-  "pymeasure": [
-   "pymeasure/conda-forge/linux-64/pymeasure-0.4.4-py36_0",
-   "pymeasure/conda-forge/linux-64/pymeasure-0.5.1-py37_1000"
-  ],
-  "pyqtgraph": [
-   "pyqtgraph/conda-forge/noarch/pyqtgraph-0.12.2-pyhd8ed1ab_0"
-  ],
-  "pytest": [
-   "pytest/conda-forge/linux-64/pytest-3.7.0-py27_0",
-   "pytest/conda-forge/linux-64/pytest-4.6.0-py37_0",
-   "pytest/conda-forge/linux-64/pytest-6.0.2-py37hc8dfbb8_0"
-  ],
   "pyvisa": [
    "pyvisa/conda-forge/linux-64/pyvisa-1.10.1-py36hc560c46_2",
    "pyvisa/conda-forge/linux-64/pyvisa-1.10.1-py36hc560c46_3"
   ],
-  "random": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "re": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "serial": [
-   "pyserial/conda-forge/noarch/pyserial-3.4-py_2",
-   "pyserial/conda-forge/noarch/pyserial-3.5-pyhd8ed1ab_0"
-  ],
-  "signal": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
   ],
   "subprocess": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
   ],
   "tempfile": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "threading": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "traceback": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
   ],
   "visa": [
    "pyvisa/conda-forge/linux-64/pyvisa-1.10.1-py36hc560c46_2",
