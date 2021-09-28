@@ -131,6 +131,8 @@
   "mmap_error",
   "mock.Mock",
   "mock.patch",
+  "morfessor",
+  "morfessor.MorfessorIO",
   "multiprocessing.Pool",
   "multiprocessing.Process",
   "multiprocessing.Queue",
@@ -233,11 +235,6 @@
   "queue",
   "queue.Empty",
   "queue.Queue",
-  "random",
-  "random.Random",
-  "random.choice",
-  "random.randint",
-  "random.sample",
   "re.DOTALL",
   "re.UNICODE",
   "replace_with_separator",
@@ -249,14 +246,29 @@
   "scipy.special.expit",
   "scipy.stats.halfnorm.rvs",
   "sentiment_document",
+  "signal",
   "signal.SIGINT",
   "signal.SIG_IGN",
+  "signal.signal",
+  "six",
+  "six.PY2",
+  "six.PY3",
+  "six.integer_types",
+  "six.iteritems",
+  "six.iterkeys",
+  "six.itervalues",
   "six.moves.map",
   "six.moves.queue",
   "six.moves.queue.Full",
   "six.moves.queue.Queue",
   "six.moves.range",
   "six.moves.zip",
+  "six.next",
+  "six.raise_from",
+  "six.string_types",
+  "six.text_type",
+  "six.u",
+  "six.unichr",
   "sklearn.exceptions.NotFittedError",
   "socket.AF_INET",
   "socket.SOCK_DGRAM",
@@ -265,10 +277,19 @@
   "sparsesvd.sparsesvd",
   "sslm.fit_sslm",
   "sslm.sslm_counts_init",
+  "stat",
+  "stat.ST_MTIME",
+  "stat.ST_SIZE",
   "stochastic_svd",
   "struct.calcsize",
   "struct.pack",
   "struct.unpack",
+  "subprocess",
+  "subprocess.CalledProcessError",
+  "subprocess.PIPE",
+  "subprocess.Popen",
+  "subprocess.STDOUT",
+  "subprocess.check_call",
   "sys.path.insert",
   "sys.stdout.flush",
   "sys.stdout.write",
@@ -276,6 +297,17 @@
   "theano.config.floatX",
   "token_filter",
   "unique_ids_from_segments",
+  "unittest",
+  "unittest.SkipTest",
+  "unittest.TestCase",
+  "unittest.TestLoader",
+  "unittest.TestSuite",
+  "unittest.TextTestRunner",
+  "unittest.main",
+  "unittest.mock.Mock",
+  "unittest.skip",
+  "unittest.skipIf",
+  "unittest.skipUnless",
   "unpickle",
   "urllib2.urlopen",
   "visdom.Visdom",
@@ -430,10 +462,6 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
   ],
-  "morfessor": [
-   "morfessor/conda-forge/noarch/morfessor-2.0.4-py_1",
-   "morfessor/conda-forge/noarch/morfessor-2.0.6-py_1"
-  ],
   "multiprocessing": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
@@ -458,6 +486,11 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
   ],
+  "random": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
+  ],
   "re": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
@@ -468,23 +501,6 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
-  ],
-  "signal": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
-  ],
-  "six": [
-   "compass-interface-http/conda-forge/noarch/compass-interface-http-0.24.1-pyhd8ed1ab_7",
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0",
-   "lldb/conda-forge/linux-64/lldb-6.0.0-py35_0",
-   "privy/conda-forge/noarch/privy-6.0.0-py_0",
-   "six/conda-forge/linux-64/six-1.10.0-py34_0",
-   "six/conda-forge/linux-64/six-1.10.0-py34_1",
-   "six/conda-forge/linux-64/six-1.12.0-py37_1001",
-   "six/conda-forge/noarch/six-1.14.0-py_1",
-   "six/conda-forge/noarch/six-1.16.0-pyh6c4a22f_0"
   ],
   "sklearn": [
    "scikit-learn/conda-forge/linux-64/scikit-learn-0.17.1-np110py27_blas_openblas_200",
@@ -506,22 +522,12 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
   ],
-  "stat": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
-  ],
   "string": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
   ],
   "struct": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
-  ],
-  "subprocess": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
@@ -569,11 +575,6 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
   ],
   "unicodedata": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
-  ],
-  "unittest": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"

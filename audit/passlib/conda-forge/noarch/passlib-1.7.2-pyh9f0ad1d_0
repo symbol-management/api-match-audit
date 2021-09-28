@@ -16,19 +16,6 @@
   "_iter_key_schedule",
   "_outer_copy",
   "a_ctx_update",
-  "abc.ABCMeta",
-  "abc.abstractmethod",
-  "abc.abstractproperty",
-  "argon2",
-  "argon2.PasswordHasher",
-  "argon2.Type",
-  "argon2.__version__",
-  "argon2.exceptions.HashingError",
-  "argon2.exceptions.VerificationError",
-  "argon2.exceptions.VerifyMismatchError",
-  "argon2.low_level.ARGON2_VERSION",
-  "argon2.low_level.hash_secret",
-  "argon2.low_level.verify_secret",
   "argon2pure",
   "argon2pure.ARGON2_DEFAULT_VERSION",
   "argon2pure.Argon2Error",
@@ -39,26 +26,10 @@
   "assert_lacks_wrap_bug",
   "assert_rounds_range",
   "auth_tests.test_hashers",
-  "base64",
-  "base64.b16decode",
-  "base64.b16encode",
-  "base64.b32decode",
-  "base64.b32encode",
-  "base64.b64decode",
-  "base64.b64encode",
   "bchr",
-  "bcrypt",
-  "bcrypt.__about__.__version__",
   "bcrypt._backend_mixin_map",
-  "bcrypt._bcrypt.__version__",
-  "bcrypt.hashpw",
   "bcryptor",
   "bcryptor.engine.Engine",
-  "binascii.Error",
-  "binascii.a2b_base64",
-  "binascii.b2a_base64",
-  "binascii.hexlify",
-  "binascii.unhexlify",
   "bmix",
   "builder",
   "calc",
@@ -108,11 +79,32 @@
   "dict.__setitem__",
   "dict.clear",
   "dict.pop",
+  "django.VERSION",
+  "django.apps.apps",
   "django.apps.apps.populate",
+  "django.conf.LazySettings",
+  "django.conf.settings",
   "django.conf.settings.configure",
   "django.conf.settings.configured",
+  "django.contrib.auth.hashers",
+  "django.contrib.auth.hashers.BCryptPasswordHasher",
+  "django.contrib.auth.hashers.UnsaltedMD5PasswordHasher",
+  "django.contrib.auth.hashers.check_password",
+  "django.contrib.auth.hashers.get_hasher",
+  "django.contrib.auth.hashers.identify_hasher",
+  "django.contrib.auth.hashers.is_password_usable",
+  "django.contrib.auth.hashers.make_password",
+  "django.contrib.auth.hashers.mask_hash",
+  "django.contrib.auth.hashers.reset_hashers",
+  "django.contrib.auth.models",
+  "django.contrib.auth.models.User",
   "django.contrib.auth.models.User.set_password",
+  "django.contrib.auth.models.check_password",
+  "django.core.signals.setting_changed",
   "django.core.signals.setting_changed.disconnect",
+  "django.dispatch.receiver",
+  "django.utils.module_loading.import_string",
+  "django.utils.translation.ugettext_noop",
   "django_to_passlib_name",
   "dummy",
   "dummy.value",
@@ -203,13 +195,19 @@
   "hmac.compare_digest",
   "ig1",
   "ig2",
+  "inspect",
   "inspect.Parameter.VAR_KEYWORD",
   "inspect.Parameter.VAR_POSITIONAL",
+  "inspect.currentframe",
+  "inspect.getargspec",
   "integerify",
   "iter_pairs",
   "itertools.chain.from_iterable",
   "itertools.imap",
   "itertools.izip",
+  "json",
+  "json.dumps",
+  "json.loads",
   "keyed_hmac",
   "keyed_hmac.digest_info.digest_size",
   "launch",
@@ -236,6 +234,7 @@
   "object.__getattribute__",
   "object.__setattr__",
   "onload",
+  "operator",
   "options",
   "orig",
   "os.close",
@@ -340,6 +339,7 @@
   "passlib.registry._locations.clear",
   "passlib.registry._locations.update",
   "passlib.tests.backports.TestCase._random_global_seed",
+  "passlib.tests.backports.unittest.skipUnless",
   "passlib.tests.test_handlers.UPASS_TABLE.encode",
   "passlib.tests.utils.HandlerCase.FuzzHashGenerator.settings_map.copy",
   "passlib.tests.utils.HandlerCase.fuzz_verifiers",
@@ -452,6 +452,11 @@
   "subcls.now",
   "subcls.period",
   "subcls.wallet",
+  "subprocess",
+  "subprocess.CalledProcessError",
+  "subprocess.PIPE",
+  "subprocess.Popen",
+  "subprocess.STDOUT",
   "sys.float_info.mant_dig",
   "sys.float_info.radix",
   "sys.maxint",
@@ -475,6 +480,7 @@
   "type.encode",
   "type.upper",
   "types.ModuleType.__repr__",
+  "unittest",
   "unittest2.TestCase.assertRaisesRegexp",
   "unittest2.TestCase.assertRegexpMatches",
   "update_rounds",
@@ -508,8 +514,30 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
   ],
+  "abc": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
+  ],
+  "argon2": [
+   "argon2-cffi/conda-forge/linux-64/argon2-cffi-19.2.0-py27hdf8410d_1",
+   "argon2-cffi/conda-forge/linux-64/argon2-cffi-20.1.0-py36h8c4c3a4_0",
+   "argon2_cffi/conda-forge/linux-64/argon2_cffi-18.3.0-py36h14c3975_1001",
+   "privy/conda-forge/noarch/privy-6.0.0-py_0"
+  ],
   "backports": [
    "configparser/conda-forge/noarch/configparser-5.0.0-py_0"
+  ],
+  "base64": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
+  ],
+  "bcrypt": [
+   "bcrypt/conda-forge/linux-64/bcrypt-3.2.0-py36h97a6639_0"
+  ],
+  "binascii": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython"
   ],
   "calendar": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -556,10 +584,6 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
   ],
-  "django": [
-   "django/conda-forge/linux-64/django-1.8.14-py34_0",
-   "django/conda-forge/noarch/django-1.8.19-py_0"
-  ],
   "functools": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
@@ -575,16 +599,6 @@
    "helper/conda-forge/noarch/helper-2.4.2-py_1",
    "helper/conda-forge/noarch/helper-2.5.0-pyh44b312d_0"
   ],
-  "inspect": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
-  ],
-  "json": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
-  ],
   "logging": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
@@ -599,11 +613,6 @@
    "nose/conda-forge/noarch/nose-1.3.7-py_1006"
   ],
   "ntpath": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
-  ],
-  "operator": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
@@ -654,11 +663,6 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
   ],
   "struct": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
-  ],
-  "subprocess": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
@@ -846,11 +850,6 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
   ],
   "unicodedata": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
-  ],
-  "unittest": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
