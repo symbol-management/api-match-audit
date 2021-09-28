@@ -92,11 +92,14 @@
   "_validate_user_input",
   "_verify_condition",
   "action",
+  "base64",
+  "base64.b64encode",
   "branch",
   "bytes.decode",
   "cElementTree",
   "clr",
   "clr.AddReference",
+  "codecs.BOM_UTF8",
   "collections.Mapping",
   "collections.MutableMapping",
   "com.sun.tools.javac.code.Flags.PUBLIC",
@@ -113,7 +116,11 @@
   "context.EXECUTION_CONTEXTS.current",
   "context.EXECUTION_CONTEXTS.current.output.library_listeners",
   "context.EXECUTION_CONTEXTS.start_suite",
+  "contextlib.contextmanager",
   "converter",
+  "copy",
+  "copy.copy",
+  "copy.deepcopy",
   "ctypes.byref",
   "ctypes.cdll.kernel32",
   "ctypes.pythonapi.PyThreadState_SetAsyncExc",
@@ -158,14 +165,22 @@
   "highlighter.red",
   "highlighter.reset",
   "highlighter.yellow",
-  "html.entities.entitydefs",
-  "html.parser.HTMLParser",
   "htmlentitydefs.entitydefs",
-  "http.client",
   "http.client.HTTP",
   "httplib",
   "importer",
   "input.split",
+  "inspect",
+  "inspect.getargspec",
+  "inspect.getdoc",
+  "inspect.getfile",
+  "inspect.getfullargspec",
+  "inspect.getmro",
+  "inspect.isclass",
+  "inspect.isfunction",
+  "inspect.ismethod",
+  "inspect.ismodule",
+  "inspect.isroutine",
   "io.BytesIO",
   "io.StringIO",
   "io.open",
@@ -264,12 +279,6 @@
   "next.islower",
   "object.__init__",
   "object.__init__.__func__",
-  "operator.attrgetter",
-  "operator.eq",
-  "operator.ge",
-  "operator.gt",
-  "operator.le",
-  "operator.lt",
   "ordereddict.OrderedDict.__delattr__",
   "ordereddict.OrderedDict.__setattr__",
   "ordinals",
@@ -277,45 +286,22 @@
   "org.python.core.PyReflectedFunction",
   "org.robotframework.RobotPythonRunner",
   "org.robotframework.RobotRunner.getResourceAsStream",
-  "os",
-  "os.environ",
   "os.environ.copy",
   "os.environ.get",
   "os.environ.split",
-  "os.getenv",
   "os.killpg",
-  "os.linesep",
   "os.listdir",
-  "os.makedirs",
-  "os.pardir",
-  "os.path",
-  "os.path.abspath",
-  "os.path.basename",
-  "os.path.dirname",
   "os.path.exists",
-  "os.path.expanduser",
-  "os.path.isabs",
   "os.path.isdir",
   "os.path.isfile",
-  "os.path.join",
-  "os.path.normpath",
-  "os.path.pathsep",
-  "os.path.realpath",
-  "os.path.split",
-  "os.path.splitdrive",
-  "os.path.splitext",
-  "os.pathsep",
   "os.remove",
   "os.rmdir",
-  "os.sep",
   "os.sep.join",
   "os.setsid",
   "os.stat",
   "os.utime",
   "populators.PROCESS_CURDIR",
   "populators.READERS",
-  "pprint.PrettyPrinter",
-  "pprint.PrettyPrinter.format",
   "pyloggingconf.set_level",
   "pythonpathsetter",
   "re.DOTALL",
@@ -355,6 +341,12 @@
   "runner",
   "runner.Runner",
   "runner.run_steps",
+  "shutil",
+  "shutil.Error",
+  "shutil.copy",
+  "shutil.copytree",
+  "shutil.move",
+  "shutil.rmtree",
   "signal.CTRL_BREAK_EVENT",
   "signal.ITIMER_REAL",
   "signal.SIGALRM",
@@ -425,23 +417,7 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "base64": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "codecs": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "collections": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "contextlib": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "copy": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -480,11 +456,16 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "importlib": [
+  "html": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "inspect": [
+  "http": [
+   "pies2overrides/conda-forge/osx-64/pies2overrides-2.6.7-py27_1000",
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "importlib": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -497,12 +478,29 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "lxml": [
+   "compass-interface-http/conda-forge/noarch/compass-interface-http-0.24.1-pyhd8ed1ab_7",
    "lxml/conda-forge/linux-64/lxml-4.2.6-py37h23eabaa_1000"
+  ],
+  "ntpath": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "operator": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "ordereddict": [
    "ordereddict/conda-forge/linux-64/ordereddict-1.1-py26_0"
   ],
+  "os": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "posixpath": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "pprint": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
@@ -523,10 +521,6 @@
    "robotframework/conda-forge/noarch/robotframework-3.1.1-py_0"
   ],
   "shlex": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "shutil": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],

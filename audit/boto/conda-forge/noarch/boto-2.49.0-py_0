@@ -28,6 +28,22 @@
   "ValidationException",
   "WorkflowExecution",
   "__spec__.submodule_search_locations",
+  "base64",
+  "base64.b64decode",
+  "base64.b64encode",
+  "base64.decodestring",
+  "base64.encodebytes",
+  "base64.encodestring",
+  "bdb",
+  "bdb.BdbQuit",
+  "binascii",
+  "binascii.a2b_base64",
+  "binascii.a2b_hex",
+  "binascii.b2a_base64",
+  "binascii.b2a_hex",
+  "binascii.crc32",
+  "binascii.hexlify",
+  "binascii.unhexlify",
   "boto.__init__.BUCKET_NAME_RE",
   "boto.__init__.GENERATION_RE",
   "boto.__init__.NullHandler",
@@ -49,7 +65,20 @@
   "boto.compat.http_client.HTTPSConnection",
   "boto.compat.http_client.HTTPS_PORT",
   "boto.compat.http_client.ssl.SSLSocket",
+  "boto.compat.json.JSONDecodeError",
+  "boto.compat.json.dump",
+  "boto.compat.json.dumps",
+  "boto.compat.json.load",
+  "boto.compat.json.loads",
+  "boto.compat.six.PY2",
+  "boto.compat.six.PY3",
+  "boto.compat.six.binary_type",
+  "boto.compat.six.integer_types",
+  "boto.compat.six.iteritems",
   "boto.compat.six.moves.input",
+  "boto.compat.six.string_types",
+  "boto.compat.six.text_type",
+  "boto.compat.six.unichr",
   "boto.compat.urllib.error.HTTPError",
   "boto.compat.urllib.error.URLError",
   "boto.compat.urllib.parse.quote",
@@ -114,12 +143,36 @@
   "boto.vendored.six.moves.urllib.request.urlopen",
   "boto.vendored.six.moves.zip",
   "cb",
+  "cgi",
+  "cgi.escape",
   "cls",
   "cmp",
+  "codecs",
   "codecs.decode",
   "collections.Iterable",
   "collections.Mapping",
   "collections.defaultdict",
+  "configparser.ConfigParser",
+  "configparser.NoOptionError",
+  "configparser.NoSectionError",
+  "contextlib.closing",
+  "contextlib.contextmanager",
+  "copy",
+  "copy.copy",
+  "copy.deepcopy",
+  "datetime",
+  "datetime.date",
+  "datetime.date.today",
+  "datetime.datetime",
+  "datetime.datetime.now",
+  "datetime.datetime.strptime",
+  "datetime.datetime.utcnow",
+  "datetime.time",
+  "datetime.timedelta",
+  "decimal.Clamped",
+  "decimal.Context",
+  "decimal.Decimal",
+  "decimal.DecimalException",
   "decimal.Inexact",
   "decimal.Overflow",
   "decimal.Rounded",
@@ -215,6 +268,9 @@
   "safequote",
   "safestr",
   "sha",
+  "shutil",
+  "shutil.copyfile",
+  "shutil.copyfileobj",
   "socket.error",
   "socket.gaierror",
   "socket.gethostname",
@@ -236,6 +292,7 @@
   "sys.stdout.isatty",
   "sys.stdout.write",
   "termios.TCSADRAIN",
+  "time.isoformat",
   "type.__new__",
   "type.split",
   "types.ClassType",
@@ -254,55 +311,8 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "backports": [
-   "configparser/conda-forge/noarch/configparser-5.0.0-py_0"
-  ],
-  "base64": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "bdb": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "binascii": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "boto": [
-   "boto/conda-forge/noarch/boto-2.49.0-py_0"
-  ],
-  "cgi": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython"
-  ],
-  "codecs": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "collections": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "configparser": [
-   "configparser/conda-forge/linux-64/configparser-3.7.1-py27_1",
-   "configparser/conda-forge/noarch/configparser-5.0.0-py_0",
-   "configparser/conda-forge/noarch/configparser-5.0.1-py_0",
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "contextlib": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "copy": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "datetime": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "decimal": [
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "dummy_threading": [
@@ -362,6 +372,7 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
   "lxml": [
+   "compass-interface-http/conda-forge/noarch/compass-interface-http-0.24.1-pyhd8ed1ab_7",
    "lxml/conda-forge/linux-64/lxml-4.2.6-py37h23eabaa_1000"
   ],
   "math": [
@@ -432,6 +443,7 @@
    "requests/conda-forge/noarch/requests-2.26.0-pyhd8ed1ab_0"
   ],
   "rsa": [
+   "compass-interface-http/conda-forge/noarch/compass-interface-http-0.24.1-pyhd8ed1ab_7",
    "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
    "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0",
    "rsa/conda-forge/noarch/rsa-3.4.2-py_1",
@@ -443,10 +455,6 @@
    "rsa/conda-forge/noarch/rsa-4.7-pyhd3deb0d_0"
   ],
   "select": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "shutil": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],

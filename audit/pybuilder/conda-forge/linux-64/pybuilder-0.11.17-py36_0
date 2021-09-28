@@ -42,15 +42,30 @@
   "execute_distutils",
   "execute_tests_matching",
   "functools.reduce",
+  "imp",
+  "imp.load_source",
+  "imp.reload",
+  "inspect",
+  "inspect.currentframe",
+  "inspect.getargspec",
+  "inspect.getfullargspec",
   "install_dependency",
   "io.StringIO",
   "itertools.chain.from_iterable",
+  "json",
+  "json.dumps",
   "list.append",
   "logger_func",
+  "multiprocessing",
   "multiprocessing.Process",
   "multiprocessing.Queue",
   "multiprocessing.SimpleQueue",
   "multiprocessing.cpu_count",
+  "multiprocessing.process",
+  "multiprocessing.process.BaseProcess",
+  "multiprocessing.queues.SimpleQueue",
+  "multiprocessing.spawn",
+  "multiprocessing.spawn.get_preparation_data",
   "normalize_candidate_name",
   "normalize_dependency_package",
   "old_addError",
@@ -91,9 +106,6 @@
   "pyfix.testcollector.TestCollector",
   "pyfix.testrunner.TestRunListener",
   "pyfix.testrunner.TestRunner",
-  "pypandoc",
-  "pypandoc.convert_file",
-  "queue.Empty",
   "re.MULTILINE",
   "run_command",
   "run_single_test",
@@ -103,14 +115,8 @@
   "shutil.copytree",
   "shutil.ignore_patterns",
   "shutil.rmtree",
-  "sphinx",
-  "sphinx.version_info",
   "str.rstrip",
   "strongconnect",
-  "subprocess",
-  "subprocess.PIPE",
-  "subprocess.Popen",
-  "subprocess.check_output",
   "sys.modules.keys",
   "sys.path.append",
   "sys.path.insert",
@@ -120,17 +126,8 @@
   "sys.stdout.flush",
   "sys.stdout.isatty",
   "sys.stdout.write",
-  "tailer",
-  "tailer.tail",
   "target",
-  "tblib.pickling_support",
-  "textwrap.dedent",
-  "thread.get_ident",
-  "types",
-  "types.FunctionType",
-  "types.MethodType",
-  "unittest",
-  "unittest.defaultTestLoader"
+  "thread.get_ident"
  ],
  "deps": {
   "__future__": [
@@ -179,22 +176,6 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
-  "imp": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "inspect": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "json": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "multiprocessing": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "ntpath": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
@@ -203,19 +184,74 @@
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "pypandoc": [
+   "pypandoc/conda-forge/noarch/pypandoc-1.4-py_1",
+   "pypandoc/conda-forge/noarch/pypandoc-1.6.3-pyhd8ed1ab_0"
+  ],
+  "queue": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "re": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "sphinx": [
+   "sphinx/conda-forge/linux-64/sphinx-1.8.3-py36_1000",
+   "sphinx/conda-forge/noarch/sphinx-2.0.0-py_1",
+   "sphinx/conda-forge/noarch/sphinx-2.1.0-py_0",
+   "sphinx/conda-forge/noarch/sphinx-2.2.0-py_0",
+   "sphinx/conda-forge/noarch/sphinx-3.0.1-py_0",
+   "sphinx/conda-forge/noarch/sphinx-3.0.3-py_0",
+   "sphinx/conda-forge/noarch/sphinx-3.0.4-py_0",
+   "sphinx/conda-forge/noarch/sphinx-3.2.0-py_0",
+   "sphinx/conda-forge/noarch/sphinx-3.2.1-py_0",
+   "sphinx/conda-forge/noarch/sphinx-3.3.0-pyhd8ed1ab_0",
+   "sphinx/conda-forge/noarch/sphinx-3.3.1-pyhd8ed1ab_0",
+   "sphinx/conda-forge/noarch/sphinx-3.3.1-pyhd8ed1ab_1",
+   "sphinx/conda-forge/noarch/sphinx-3.4.2-pyhd8ed1ab_0",
+   "sphinx/conda-forge/noarch/sphinx-3.4.3-pyhd8ed1ab_0",
+   "sphinx/conda-forge/noarch/sphinx-3.5.2-pyhd8ed1ab_0",
+   "sphinx/conda-forge/noarch/sphinx-4.0.1-pyh6c4a22f_0",
+   "sphinx/conda-forge/noarch/sphinx-4.0.2-pyh6c4a22f_1",
+   "sphinx/conda-forge/noarch/sphinx-4.0.3-pyh6c4a22f_0",
+   "sphinx/conda-forge/noarch/sphinx-4.1.1-pyh6c4a22f_0"
   ],
   "string": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "subprocess": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "tailer": [
+   "tailer/conda-forge/noarch/tailer-0.4.1-pyh9f0ad1d_0"
+  ],
+  "tblib": [
+   "tblib/conda-forge/noarch/tblib-1.3.2-py_1",
+   "tblib/conda-forge/noarch/tblib-1.4.0-py_0",
+   "tblib/conda-forge/noarch/tblib-1.5.0-py_0",
+   "tblib/conda-forge/noarch/tblib-1.6.0-py_0",
+   "tblib/conda-forge/noarch/tblib-1.7.0-pyhd8ed1ab_0"
+  ],
   "tempfile": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ],
+  "textwrap": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
   "traceback": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "types": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  ],
+  "unittest": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
   ]
