@@ -36,19 +36,25 @@
   "altair.expr.datum.zip_code",
   "altair.expr.if_",
   "altair.expr.substring",
-  "altair.pd.DataFrame",
   "altair.renderers.enable",
-  "altair.vegalite.v2.Chart.from_dict",
   "altair.vegalite.v2.examples.__name__",
   "altair.vegalite.v2.examples.__path__",
   "altair.vegalite.v2.themes.active",
   "altair.vegalite.v2.themes.enable",
+  "ast",
   "ast.Expr",
   "ast.Interactive",
   "ast.Module",
+  "ast.Str",
+  "ast.parse",
+  "base64",
+  "base64.decodebytes",
   "check",
   "check_data_type",
   "collections.Mapping",
+  "contextlib",
+  "contextlib.contextmanager",
+  "contextlib.redirect_stdout",
   "core.AreaConfig",
   "core.AxisConfig",
   "core.BarConfig",
@@ -108,22 +114,11 @@
   "expr.funcs.__all__",
   "filter.ref",
   "func",
-  "hashlib",
   "hashlib.md5",
-  "http.server",
-  "inspect",
-  "inspect.getargspec",
-  "inspect.getfullargspec",
   "io.BytesIO",
   "io.StringIO",
   "jinja2",
   "jinja2.Template",
-  "json",
-  "json.JSONDecodeError",
-  "json.dump",
-  "json.dumps",
-  "json.load",
-  "json.loads",
   "jsonschema",
   "jsonschema.RefResolver.from_schema",
   "jsonschema.ValidationError",
@@ -167,7 +162,6 @@
   "os.listdir",
   "os.path.exists",
   "os.remove",
-  "pandas",
   "pandas.DataFrame",
   "pandas.NaT",
   "pandas.RangeIndex",
@@ -181,9 +175,6 @@
   "pandas.read_json",
   "pandas.timedelta_range",
   "pandas.to_datetime",
-  "pkgutil",
-  "pkgutil.get_data",
-  "pkgutil.iter_modules",
   "pytest.mark.parametrize",
   "pytest.mark.skipif",
   "random",
@@ -265,8 +256,10 @@
   "schema.mixins.ConfigMethodMixin",
   "schema.mixins.MarkMethodMixin",
   "schemapi._FromDict.hash_schema",
+  "socket",
   "socket.AF_INET",
   "socket.SOCK_STREAM",
+  "socket.socket",
   "sys.stdout.flush",
   "the_theme",
   "theme.themes.get",
@@ -332,26 +325,24 @@
    "pytest/conda-forge/linux-64/pytest-4.6.0-py37_0",
    "pytest/conda-forge/linux-64/pytest-6.0.2-py37hc8dfbb8_0"
   ],
-  "ast": [
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
-  ],
-  "base64": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
-  ],
+  "altair": [],
   "collections": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
   ],
-  "contextlib": [
+  "copy": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
   ],
-  "copy": [
+  "hashlib": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
+  ],
+  "http": [
+   "pies2overrides/conda-forge/osx-64/pies2overrides-2.6.7-py27_1000",
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
@@ -362,7 +353,17 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
   ],
+  "inspect": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
+  ],
   "io": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
+  ],
+  "json": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
@@ -379,6 +380,15 @@
    "numpy/conda-forge/linux-64/numpy-1.19.2-py36h68c22af_1"
   ],
   "os": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
+  ],
+  "pandas": [
+   "pandas/conda-forge/linux-64/pandas-1.2.2-py37h40f5888_0",
+   "pandas/conda-forge/linux-64/pandas-1.2.4-py37h40f5888_0"
+  ],
+  "pkgutil": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
@@ -408,11 +418,6 @@
    "six/conda-forge/linux-64/six-1.12.0-py37_1001",
    "six/conda-forge/noarch/six-1.14.0-py_1",
    "six/conda-forge/noarch/six-1.16.0-pyh6c4a22f_0"
-  ],
-  "socket": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
   ],
   "sphinx": [
    "sphinx/conda-forge/linux-64/sphinx-1.8.3-py36_1000",

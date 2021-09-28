@@ -1,68 +1,12 @@
 {
  "bad": [
   "OnClose",
-  "docopt.docopt",
   "get_params",
-  "glob",
-  "glob.glob",
   "import_auth",
   "install_alpine_package",
-  "localstack",
   "localstack.__file__",
-  "localstack.config",
-  "localstack.config.CLI_COMMANDS",
-  "localstack.config.CONFIG_ENV_VARS",
-  "localstack.config.DOCKER_HOST_FROM_CONTAINER",
-  "localstack.config.EDGE_PORT",
-  "localstack.config.EDGE_PORT_HTTP",
-  "localstack.config.TMP_FOLDER",
-  "localstack.config.in_docker",
-  "localstack.config.populate_configs",
-  "localstack.constants",
-  "localstack.constants.API_ENDPOINT",
-  "localstack.constants.DEFAULT_SERVICE_PORTS",
-  "localstack.constants.DOCKER_IMAGE_NAME",
-  "localstack.constants.FALSE_STRINGS",
-  "localstack.constants.LOCALSTACK_INFRA_PROCESS",
-  "localstack.constants.LOCALSTACK_ROOT_FOLDER",
-  "localstack.constants.LOCALSTACK_WEB_PROCESS",
-  "localstack.constants.TRUE_STRINGS",
-  "localstack.dashboard.infra",
-  "localstack.dashboard.infra.get_graph",
-  "localstack.services.apigateway.apigateway_listener",
   "localstack.services.apigateway.apigateway_listener.UPDATE_APIGATEWAY.forward_request",
-  "localstack.services.generic_proxy",
-  "localstack.services.generic_proxy.SERVER_CERT_PEM_FILE",
-  "localstack.services.plugins.Plugin",
-  "localstack.services.plugins.register_plugin",
-  "localstack.utils.aws.aws_models",
-  "localstack.utils.aws.aws_models.Component",
-  "localstack.utils.aws.aws_models.LambdaFunction",
-  "localstack.utils.aws.aws_stack",
-  "localstack.utils.aws.aws_stack.connect_to_service",
-  "localstack.utils.bootstrap.API_DEPENDENCIES",
-  "localstack.utils.bootstrap.is_api_enabled",
-  "localstack.utils.common",
-  "localstack.utils.common.chmod_r",
-  "localstack.utils.common.download",
-  "localstack.utils.common.get_arch",
-  "localstack.utils.common.in_docker",
-  "localstack.utils.common.is_alpine",
-  "localstack.utils.common.is_port_open",
-  "localstack.utils.common.load_file",
-  "localstack.utils.common.mkdir",
-  "localstack.utils.common.new_tmp_file",
-  "localstack.utils.common.now",
-  "localstack.utils.common.parallelize",
-  "localstack.utils.common.rm_rf",
-  "localstack.utils.common.run",
-  "localstack.utils.common.safe_requests",
   "localstack.utils.common.safe_requests.post",
-  "localstack.utils.common.save_file",
-  "localstack.utils.common.short_uid",
-  "localstack.utils.common.to_bytes",
-  "localstack.utils.common.to_str",
-  "localstack.utils.common.unzip",
   "localstack_ext.services.apigateway.apigateway_extended",
   "localstack_ext.services.apigateway.apigateway_extended.patch_apigateway",
   "localstack_ext.services.appsync.appsync_starter",
@@ -170,15 +114,9 @@
   "os.path.exists",
   "os.path.getmtime",
   "os.remove",
-  "re",
   "re.DOTALL",
   "re.MULTILINE",
-  "re.match",
   "run_cmd",
-  "shutil",
-  "shutil.copy",
-  "six",
-  "six.binary_type",
   "six.moves.BaseHTTPServer.BaseHTTPRequestHandler",
   "six.moves.BaseHTTPServer.HTTPServer",
   "six.moves.socketserver.ThreadingMixIn",
@@ -195,14 +133,13 @@
   "sys.path.append",
   "sys.stdout.flush",
   "tcp_proxy.server_loop",
-  "threading",
-  "threading.Thread",
   "to_str"
  ],
  "deps": {
   "base64": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
   ],
   "boto3": [
    "boto3/conda-forge/noarch/boto3-1.10.14-py_0",
@@ -243,24 +180,45 @@
    "boto3/conda-forge/noarch/boto3-1.9.57-py_0",
    "boto3/conda-forge/noarch/boto3-1.9.67-py_0"
   ],
+  "docopt": [
+   "docopt/conda-forge/linux-64/docopt-0.6.2-py27_0",
+   "docopt/conda-forge/noarch/docopt-0.6.2-py_1"
+  ],
+  "glob": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
+  ],
   "json": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
+  ],
+  "localstack": [
+   "localstack/conda-forge/linux-64/localstack-0.11.1-py38h32f6830_0"
   ],
   "logging": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
   ],
   "ntpath": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
   ],
   "os": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
   ],
   "pyaes": [
    "pyaes/conda-forge/noarch/pyaes-1.6.1-py_0"
+  ],
+  "re": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
   ],
   "requests": [
    "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
@@ -274,23 +232,50 @@
   ],
   "select": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
+  ],
+  "shutil": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
+  ],
+  "six": [
+   "compass-interface-http/conda-forge/noarch/compass-interface-http-0.24.1-pyhd8ed1ab_7",
+   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
+   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0",
+   "lldb/conda-forge/linux-64/lldb-6.0.0-py35_0",
+   "privy/conda-forge/noarch/privy-6.0.0-py_0",
+   "six/conda-forge/linux-64/six-1.10.0-py34_0",
+   "six/conda-forge/linux-64/six-1.10.0-py34_1",
+   "six/conda-forge/linux-64/six-1.12.0-py37_1001",
+   "six/conda-forge/noarch/six-1.14.0-py_1",
+   "six/conda-forge/noarch/six-1.16.0-pyh6c4a22f_0"
   ],
   "socket": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
   ],
   "subprocess": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
   ],
   "tempfile": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
+  ],
+  "threading": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
   ],
   "uuid": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
   ]
  }
 }

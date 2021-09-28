@@ -14,77 +14,14 @@
   "encoder",
   "functools.partial",
   "hed",
-  "inferno.extensions.containers.graph.Graph",
-  "inferno.extensions.containers.sequential.Sequential2",
-  "inferno.extensions.layers.convolutional",
-  "inferno.extensions.layers.convolutional.BNReLUConv2D",
-  "inferno.extensions.layers.convolutional.BNReLUConv3D",
-  "inferno.extensions.layers.convolutional.Conv2D",
-  "inferno.extensions.layers.convolutional.Conv3D",
-  "inferno.extensions.layers.convolutional.ConvELU2D",
-  "inferno.extensions.layers.convolutional.ConvELU3D",
-  "inferno.extensions.layers.convolutional.DilatedConv2D",
-  "inferno.extensions.layers.convolutional.DilatedConvELU2D",
-  "inferno.extensions.layers.convolutional.GlobalConv2D",
-  "inferno.extensions.layers.reshape",
-  "inferno.extensions.layers.reshape.As2D",
-  "inferno.extensions.layers.reshape.As3D",
-  "inferno.extensions.layers.sampling.AnisotropicPool",
-  "inferno.extensions.layers.sampling.AnisotropicPool2D",
-  "inferno.extensions.layers.sampling.AnisotropicUpsample",
-  "inferno.extensions.layers.sampling.AnisotropicUpsample2D",
-  "inferno.extensions.layers.sampling.Upsample",
-  "inferno.extensions.metrics.arand.ArandError",
-  "inferno.io.core.Concatenate",
-  "inferno.io.core.Zip",
-  "inferno.io.core.ZipReject",
-  "inferno.io.core.base.IndexSpec",
-  "inferno.io.core.base.SyncableDataset",
-  "inferno.io.transform.Compose",
-  "inferno.io.transform.Transform",
-  "inferno.io.transform.generic.AsTorchBatch",
-  "inferno.io.transform.generic.Cast",
-  "inferno.io.transform.generic.Normalize",
-  "inferno.io.transform.image.AdditiveGaussianNoise",
-  "inferno.io.transform.image.CenterCrop",
-  "inferno.io.transform.image.ElasticTransform",
-  "inferno.io.transform.image.RandomRotate",
-  "inferno.io.transform.volume.AdditiveNoise",
-  "inferno.io.transform.volume.RandomFlip3D",
-  "inferno.io.transform.volume.VolumeAsymmetricCrop",
-  "inferno.io.volumetric",
-  "inferno.io.volumetric.HDF5VolumeLoader",
-  "inferno.io.volumetric.LazyN5VolumeLoader",
-  "inferno.io.volumetric.TIFVolumeLoader",
-  "inferno.trainers.basic.Trainer",
-  "inferno.trainers.basic.Trainer.build",
-  "inferno.utils.io_utils.yaml2dict",
-  "inferno.utils.python_utils",
-  "inferno.utils.python_utils.is_listlike",
-  "inferno.utils.python_utils.to_iterable",
-  "inferno.utils.torch_utils",
-  "inferno.utils.torch_utils.where",
-  "math",
-  "math.ceil",
-  "math.cos",
-  "math.floor",
-  "math.pi",
-  "math.sin",
   "mu_net.transform.superpixel_augmentation.WatershedAugmentation",
   "neurofire.metrics.arand.adapted_rand",
   "neurofire.metrics.base.Metric",
   "neurofire.metrics.voi.voi",
-  "nifty",
-  "nifty.graph.opt.multicut",
   "nifty.graph.opt.multicut.multicutObjective",
-  "nifty.graph.rag",
   "nifty.graph.rag.accumulateAffinityStandartFeatures",
   "nifty.graph.rag.accumulateEdgeStandartFeatures",
-  "nifty.graph.rag.gridRag",
   "nifty.graph.rag.projectScalarNodeDataToPixels",
-  "nifty.graph.undirectedGraph",
-  "numbers",
-  "numbers.Integral",
   "numpy.abs",
   "numpy.arange",
   "numpy.exp",
@@ -102,52 +39,17 @@
   "numpy.random.random",
   "numpy.random.uniform",
   "numpy.zeros",
-  "queue.Empty",
-  "skimage.draw.line",
-  "skimage.morphology.label",
   "test_time_augmentation.TestTimeAugmenter.default_tda",
-  "torch",
-  "torch.autograd.Function",
-  "torch.autograd.Variable",
   "torch.cat",
   "torch.eq",
   "torch.exp",
   "torch.from_numpy",
-  "torch.is_tensor",
-  "torch.multiprocessing",
   "torch.multiprocessing.Event",
   "torch.multiprocessing.Process",
-  "torch.multiprocessing.Queue",
-  "torch.nn",
-  "torch.nn.Conv2d",
-  "torch.nn.MaxPool2d",
-  "torch.nn.MaxPool3d",
-  "torch.nn.Module",
-  "torch.nn.UpsamplingNearest2d",
-  "torch.nn.functional",
-  "torch.nn.functional.conv2d",
-  "torch.nn.functional.conv3d",
-  "torch.nn.functional.sigmoid",
-  "torch.nn.functional.softmax",
-  "torch.no_grad",
   "torch.sigmoid",
   "torch.stack",
-  "torch.tensor",
-  "torch.utils.data.dataloader.DataLoader",
-  "torch.utils.data.dataloader.ExceptionWrapper",
   "torch.zeros_like",
-  "transform.segmentation.Segmentation2MultiOrderAffinities",
-  "us",
-  "vigra",
-  "vigra.analysis.labelImageWithBackground",
-  "vigra.analysis.labelMultiArrayWithBackground",
-  "vigra.analysis.localMaxima",
-  "vigra.analysis.localMaxima3D",
-  "vigra.analysis.relabelConsecutive",
-  "vigra.analysis.watershedsNew",
-  "vigra.filters.gaussianSmoothing",
-  "vigra.gaussianSmoothing",
-  "z5py"
+  "transform.segmentation.Segmentation2MultiOrderAffinities"
  ],
  "deps": {
   "affogato": [
@@ -160,21 +62,67 @@
   ],
   "copy": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
+  ],
+  "inferno": [
+   "inferno/conda-forge/noarch/inferno-v0.4.0-py_0"
   ],
   "logging": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
+  ],
+  "math": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
+  ],
+  "nifty": [
+   "nifty/conda-forge/linux-64/nifty-1.0.8-py36h6ca15f2_3"
+  ],
+  "numbers": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
   ],
   "numpy": [
+   "numpy/conda-forge/linux-64/numpy-1.16.2-py37_blas_openblash1522bff_0",
    "numpy/conda-forge/linux-64/numpy-1.17.5-py36h95a1406_0",
    "numpy/conda-forge/linux-64/numpy-1.18.4-py37h8960a57_0",
    "numpy/conda-forge/linux-64/numpy-1.19.2-py36h68c22af_1"
+  ],
+  "queue": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
   ],
   "scipy": [
    "scipy/conda-forge/linux-64/scipy-0.17.1-np110py27_blas_openblas_202",
    "scipy/conda-forge/linux-64/scipy-1.7.0-py37h29e03ee_0",
    "scipy/conda-forge/linux-64/scipy-1.7.0-py37ha768fb6_1"
+  ],
+  "skimage": [
+   "scikit-image/conda-forge/win-64/scikit-image-0.13.0-np113py36_0"
+  ],
+  "torch": [
+   "pytorch/conda-forge/linux-64/pytorch-1.6.0-cuda92py37hc3ec645_1",
+   "pytorch/conda-forge/linux-64/pytorch-1.6.0-cuda92py38hb6ed0dd_1"
+  ],
+  "us": [
+   "us/conda-forge/noarch/us-1.0.0-py_1",
+   "us/conda-forge/noarch/us-2.0.2-pyhd8ed1ab_0"
+  ],
+  "vigra": [
+   "vigra/conda-forge/linux-64/vigra-1.11.0-np112py36_11",
+   "vigra/conda-forge/linux-64/vigra-1.11.1-np111py36_0",
+   "vigra/conda-forge/linux-64/vigra-1.11.1-py36_6",
+   "vigra/conda-forge/linux-64/vigra-1.11.1-py38h943acb2_1018"
+  ],
+  "z5py": [
+   "z5py/conda-forge/linux-64/z5py-1.0.0-py27hf823e65_0",
+   "z5py/conda-forge/linux-64/z5py-2.0.6-py39h3f3ea7e_0",
+   "z5py/conda-forge/linux-64/z5py-2.0.6-py39h3f3ea7e_1"
   ]
  }
 }
