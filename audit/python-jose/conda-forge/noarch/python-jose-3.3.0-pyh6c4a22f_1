@@ -42,7 +42,9 @@
   "hashlib.sha256",
   "hashlib.sha384",
   "hashlib.sha512",
+  "hmac",
   "hmac.compare_digest",
+  "hmac.new",
   "int.from_bytes",
   "jose.backends.pycrypto_backend.get_random_bytes",
   "jose.constants.ALGORITHMS.AES",
@@ -59,31 +61,71 @@
   "jose.constants.ALGORITHMS.SUPPORTED",
   "jose.constants.ALGORITHMS.SUPPORTED.add",
   "jose.constants.ALGORITHMS.SUPPORTED.remove",
+  "json",
+  "json.dumps",
+  "json.loads",
   "jwk.construct",
   "key_class",
+  "math",
+  "math.ceil",
   "os.urandom",
+  "pyasn1.codec.der.decoder",
+  "pyasn1.codec.der.decoder.decode",
+  "pyasn1.codec.der.encoder",
+  "pyasn1.codec.der.encoder.encode",
+  "pyasn1.error.PyAsn1Error",
+  "pyasn1.type.namedtype",
+  "pyasn1.type.namedtype.NamedType",
+  "pyasn1.type.namedtype.NamedTypes",
+  "pyasn1.type.univ",
+  "pyasn1.type.univ.BitString",
+  "pyasn1.type.univ.BitString.fromOctetString",
+  "pyasn1.type.univ.Integer",
+  "pyasn1.type.univ.Null",
+  "pyasn1.type.univ.ObjectIdentifier",
+  "pyasn1.type.univ.OctetString",
+  "pyasn1.type.univ.Sequence",
+  "rsa",
+  "rsa.DecryptionError",
+  "rsa.PrivateKey",
+  "rsa.PublicKey",
+  "rsa.decrypt",
+  "rsa.encrypt",
+  "rsa.pem",
+  "rsa.pem.save_pem",
+  "rsa.pkcs1.VerificationError",
+  "rsa.sign",
+  "rsa.verify",
+  "struct",
   "struct.pack",
   "struct.unpack",
-  "warnings.warn"
+  "warnings.warn",
+  "zlib",
+  "zlib.compress",
+  "zlib.decompress"
  ],
  "deps": {
   "base64": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
   ],
   "binascii": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython"
   ],
   "calendar": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
   ],
   "cryptography": [],
   "datetime": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
   ],
   "ecdsa": [
+   "compass-interface-http/conda-forge/noarch/compass-interface-http-0.24.1-pyhd8ed1ab_7",
    "ecdsa/conda-forge/noarch/ecdsa-0.13-py_0",
    "ecdsa/conda-forge/noarch/ecdsa-0.16.0-pyhd8ed1ab_0",
    "ecdsa/conda-forge/noarch/ecdsa-0.16.1-pyhd8ed1ab_0",
@@ -91,56 +133,18 @@
   ],
   "hashlib": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "hmac": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "json": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "math": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
   ],
   "os": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "pyasn1": [
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0",
-   "pyasn1/conda-forge/noarch/pyasn1-0.3.4-py_0",
-   "pyasn1/conda-forge/noarch/pyasn1-0.3.5-py_0",
-   "pyasn1/conda-forge/noarch/pyasn1-0.3.6-py_0",
-   "pyasn1/conda-forge/noarch/pyasn1-0.3.7-py_0",
-   "pyasn1/conda-forge/noarch/pyasn1-0.4.2-py_0",
-   "pyasn1/conda-forge/noarch/pyasn1-0.4.5-py_0"
-  ],
-  "rsa": [
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0",
-   "rsa/conda-forge/noarch/rsa-3.4.2-py_1",
-   "rsa/conda-forge/noarch/rsa-4.0-py_0",
-   "rsa/conda-forge/noarch/rsa-4.2-pyh9f0ad1d_0",
-   "rsa/conda-forge/noarch/rsa-4.4-pyh9f0ad1d_0",
-   "rsa/conda-forge/noarch/rsa-4.4.1-pyh9f0ad1d_0",
-   "rsa/conda-forge/noarch/rsa-4.6-pyh9f0ad1d_0",
-   "rsa/conda-forge/noarch/rsa-4.7-pyhd3deb0d_0"
-  ],
-  "struct": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
   ],
   "warnings": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "zlib": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
   ]
  }
 }

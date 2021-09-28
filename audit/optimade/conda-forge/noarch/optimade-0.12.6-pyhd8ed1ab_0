@@ -4,6 +4,39 @@
   "call_next",
   "collections.defaultdict",
   "datetime.timezone.utc",
+  "elasticsearch_dsl.Field",
+  "elasticsearch_dsl.Integer",
+  "elasticsearch_dsl.Keyword",
+  "elasticsearch_dsl.Q",
+  "elasticsearch_dsl.Text",
+  "enum.Enum",
+  "enum.IntEnum",
+  "fastapi.APIRouter",
+  "fastapi.Depends",
+  "fastapi.FastAPI",
+  "fastapi.HTTPException",
+  "fastapi.Query",
+  "fastapi.Request",
+  "fastapi.encoders.jsonable_encoder",
+  "fastapi.exceptions.RequestValidationError",
+  "fastapi.exceptions.StarletteHTTPException",
+  "fastapi.middleware.cors.CORSMiddleware",
+  "fastapi.responses.JSONResponse",
+  "fastapi.responses.Response",
+  "fastapi.templating.Jinja2Templates",
+  "jarvis.core.atoms.Atoms",
+  "json",
+  "json.JSONDecodeError",
+  "json.load",
+  "lark.Lark",
+  "lark.Token",
+  "lark.Transformer",
+  "lark.Tree",
+  "lark.exceptions.VisitError",
+  "lark.lexer.Token",
+  "lark.v_args",
+  "linecache",
+  "linecache.getline",
   "mongomock",
   "mongomock.MongoClient",
   "numpy.arccos",
@@ -93,8 +126,6 @@
   "optimade.validator.config.VALIDATOR_CONFIG.unique_properties",
   "optimade.validator.config.VALIDATOR_CONFIG.versions_endpoint",
   "os.environ.get",
-  "pathlib.Path",
-  "pathlib.Path.home",
   "pprint",
   "pretty_print",
   "pydantic.AnyHttpUrl",
@@ -116,6 +147,13 @@
   "random.randint",
   "random.sample",
   "recursive_postprocessing",
+  "requests",
+  "requests.Response",
+  "requests.exceptions.ConnectTimeout",
+  "requests.exceptions.ConnectionError",
+  "requests.exceptions.MissingSchema",
+  "requests.get",
+  "requests.models.Response",
   "simplejson",
   "simplejson.JSONDecodeError",
   "simplejson.dumps",
@@ -127,36 +165,11 @@
   "starlette.responses.StreamingResponse",
   "starlette.routing.Route",
   "starlette.routing.Router",
-  "string.ascii_lowercase",
   "sys.float_info.epsilon",
   "test_fn",
   "test_fn.__name__",
-  "traceback",
-  "traceback.format_exc",
-  "traceback.format_exception",
-  "traceback.print_exc",
   "traceback.split",
   "type_",
-  "typing.Any",
-  "typing.Callable",
-  "typing.Dict",
-  "typing.Generator",
-  "typing.IO",
-  "typing.Iterable",
-  "typing.List",
-  "typing.Literal",
-  "typing.Optional",
-  "typing.Set",
-  "typing.Tuple",
-  "typing.Type",
-  "typing.Union",
-  "urllib",
-  "urllib.parse",
-  "urllib.parse.ParseResult",
-  "urllib.parse.SplitResult",
-  "urllib.parse.parse_qs",
-  "urllib.parse.urlencode",
-  "urllib.parse.urlparse",
   "values",
   "warning_pprint",
   "warnings.warn"
@@ -164,7 +177,8 @@
  "deps": {
   "abc": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
   ],
   "aiida": [
    "aiida-core/conda-forge/noarch/aiida-core-1.4.0-pyh9f0ad1d_1",
@@ -179,7 +193,8 @@
   "argparse": [
    "argparse/conda-forge/osx-64/argparse-1.4.0-py26_0",
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
   ],
   "ase": [
    "ase/conda-forge/linux-64/ase-3.13.0-py27_0",
@@ -196,7 +211,8 @@
   ],
   "copy": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
   ],
   "dataclasses": [
    "dataclasses/conda-forge/noarch/dataclasses-0.5-py_0",
@@ -204,11 +220,13 @@
    "dataclasses/conda-forge/noarch/dataclasses-0.8-pyh787bdff_0",
    "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
    "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
   ],
   "datetime": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
   ],
   "django": [
    "django/conda-forge/linux-64/django-1.8.14-py34_0",
@@ -223,66 +241,20 @@
    "django/conda-forge/noarch/django-3.2.3-pyhd8ed1ab_0",
    "django/conda-forge/noarch/django-3.2.5-pyhd8ed1ab_0"
   ],
-  "elasticsearch_dsl": [
-   "elasticsearch-dsl/conda-forge/linux-64/elasticsearch-dsl-6.2.1-py36_1000",
-   "elasticsearch-dsl/conda-forge/noarch/elasticsearch-dsl-6.1.0-py_0"
-  ],
-  "enum": [
-   "privy/conda-forge/noarch/privy-6.0.0-py_0",
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "fastapi": [
-   "fastapi/conda-forge/noarch/fastapi-0.55.0-py_0",
-   "fastapi/conda-forge/noarch/fastapi-0.56.0-py_0",
-   "fastapi/conda-forge/noarch/fastapi-0.57.0-py_0",
-   "fastapi/conda-forge/noarch/fastapi-0.58.0-py_0",
-   "fastapi/conda-forge/noarch/fastapi-0.60.0-py_0",
-   "fastapi/conda-forge/noarch/fastapi-0.61.0-py_0",
-   "fastapi/conda-forge/noarch/fastapi-0.62.0-pyhd8ed1ab_0",
-   "fastapi/conda-forge/noarch/fastapi-0.64.0-pyhd8ed1ab_0",
-   "fastapi/conda-forge/noarch/fastapi-0.65.2-pyhd8ed1ab_0",
-   "fastapi/conda-forge/noarch/fastapi-0.66.0-pyhd8ed1ab_0"
-  ],
   "functools": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
   ],
   "inspect": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "jarvis": [
-   "jarvis-tools/conda-forge/noarch/jarvis-tools-2020.12.31-pyhd8ed1ab_0",
-   "jarvis-tools/conda-forge/noarch/jarvis-tools-2021.3.13-pyhd8ed1ab_0",
-   "jarvis-tools/conda-forge/noarch/jarvis-tools-2021.3.4-pyhd8ed1ab_0",
-   "jarvis-tools/conda-forge/noarch/jarvis-tools-2021.4.18-pyhd8ed1ab_0",
-   "jarvis-tools/conda-forge/noarch/jarvis-tools-2021.5.16-pyhd8ed1ab_0",
-   "jarvis-tools/conda-forge/noarch/jarvis-tools-2021.5.31-pyhd8ed1ab_0",
-   "jarvis-tools/conda-forge/noarch/jarvis-tools-2021.7.10-pyhd8ed1ab_0",
-   "jarvis-tools/conda-forge/noarch/jarvis-tools-2021.7.19-pyhd8ed1ab_0",
-   "jarvis-tools/conda-forge/noarch/jarvis-tools-2021.7.5-pyhd8ed1ab_0"
-  ],
-  "json": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "lark": [
-   "lark-parser/conda-forge/noarch/lark-parser-0.11.3-pyhd8ed1ab_0",
-   "lark-parser/conda-forge/noarch/lark-parser-0.7.1-py_0",
-   "lark-parser/conda-forge/noarch/lark-parser-0.7.5-py_0",
-   "lark-parser/conda-forge/noarch/lark-parser-0.8.1-py_0",
-   "lark-parser/conda-forge/noarch/lark-parser-0.8.3-pyh9f0ad1d_0",
-   "lark-parser/conda-forge/noarch/lark-parser-0.8.6-pyh9f0ad1d_0",
-   "lark-parser/conda-forge/noarch/lark-parser-0.8.7-pyh9f0ad1d_0"
-  ],
-  "linecache": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
   ],
   "logging": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
   ],
   "numpy": [
    "numpy/conda-forge/linux-64/numpy-1.17.5-py36h95a1406_0",
@@ -291,46 +263,56 @@
   ],
   "os": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
+  ],
+  "pathlib": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
   ],
   "re": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
   ],
-  "requests": [
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0",
-   "requests/conda-forge/linux-64/requests-2.12.0-py35_0",
-   "requests/conda-forge/noarch/requests-2.23.0-pyh8c360ce_2",
-   "requests/conda-forge/noarch/requests-2.24.0-pyh9f0ad1d_0",
-   "requests/conda-forge/noarch/requests-2.25.0-pyhd3deb0d_0",
-   "requests/conda-forge/noarch/requests-2.25.1-pyhd3deb0d_0",
-   "requests/conda-forge/noarch/requests-2.26.0-pyhd8ed1ab_0"
+  "string": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
   ],
-  "starlette": [
-   "starlette-base/conda-forge/noarch/starlette-base-0.13.5-py_2",
-   "starlette-base/conda-forge/noarch/starlette-base-0.13.6-py_0",
-   "starlette/conda-forge/noarch/starlette-0.11.1-py_0",
-   "starlette/conda-forge/noarch/starlette-0.11.4-py_0",
-   "starlette/conda-forge/noarch/starlette-0.12.1-py_0",
-   "starlette/conda-forge/noarch/starlette-0.12.10-py_0",
-   "starlette/conda-forge/noarch/starlette-0.12.4-py_0",
-   "starlette/conda-forge/noarch/starlette-0.12.8-py_0",
-   "starlette/conda-forge/noarch/starlette-0.13.8-py_0"
+  "traceback": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
+  ],
+  "typing": [
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
   ],
   "typing_extensions": [
+   "compass-interface-http/conda-forge/noarch/compass-interface-http-0.24.1-pyhd8ed1ab_7",
    "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
    "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0",
+   "typing_extensions/conda-forge/linux-64/typing_extensions-3.7.4.1-py27h8c360ce_1",
    "typing_extensions/conda-forge/noarch/typing_extensions-3.10.0.0-pyha770c72_0",
+   "typing_extensions/conda-forge/noarch/typing_extensions-3.10.0.1-pyha770c72_0",
+   "typing_extensions/conda-forge/noarch/typing_extensions-3.10.0.2-pyha770c72_0",
    "typing_extensions/conda-forge/noarch/typing_extensions-3.7.4.2-py_0",
    "typing_extensions/conda-forge/noarch/typing_extensions-3.7.4.3-py_0"
+  ],
+  "urllib": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
   ],
   "uvicorn": [
    "uvicorn/conda-forge/linux-64/uvicorn-0.12.3-py36h5fab9bb_0"
   ],
   "warnings": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
   ]
  }
 }

@@ -25,6 +25,7 @@
   "glue.iterutils.inplace_filter",
   "glue.text_progress_bar.ProgressBar",
   "injection_was_made",
+  "lal",
   "lal.ArrivalTimeDiff",
   "lal.C_SI",
   "lal.ComputeDetAMResponse",
@@ -35,11 +36,22 @@
   "lal.REARTH_SI",
   "lal.TimeDelayFromEarthCenter",
   "lal.UTCToGPS",
+  "lal.cached_detector_by_prefix",
   "lal.cached_detector_by_prefix.location",
   "lal.cached_detector_by_prefix.response",
+  "lal.rate",
+  "lal.rate.BinnedLnPDF.from_xml",
   "lal.rate.BinnedRatios",
+  "lal.rate.HashableBins",
+  "lal.rate.LogarithmicBins",
+  "lal.rate.NDBins",
   "lal.rate.NDBins.xml_bins_name_mapping.update",
+  "lal.rate.filter_array",
   "lal.rate.filter_binned_ratios",
+  "lal.rate.gaussian_window",
+  "lal.utils.CacheEntry",
+  "lalmetaio",
+  "lalsimulation",
   "ligo.lw.array",
   "ligo.lw.array.use_in",
   "ligo.lw.dbtables",
@@ -84,17 +96,37 @@
   "ligo.lw.utils.search_summary.segmentlistdict_fromsearchsummary",
   "ligo.lw.utils.segments",
   "ligo.lw.utils.time_slide",
+  "ligo.segments",
+  "ligo.segments.NegInfinity",
+  "ligo.segments.segment",
+  "ligo.segments.segmentlistdict",
   "ligo.segments.utils",
   "ligo.segments.utils.vote",
   "lnP_noise_func",
   "lnP_signal_func",
   "ln_likelihood_ratio_func",
+  "math",
+  "math.ceil",
+  "math.cos",
+  "math.isinf",
+  "math.log",
+  "math.log10",
+  "math.pi",
+  "math.sin",
+  "math.sqrt",
+  "matplotlib",
+  "matplotlib.backends.backend_agg.FigureCanvasAgg",
+  "matplotlib.figure",
+  "matplotlib.figure.Figure",
   "matplotlib.rcParams.update",
   "metaclass",
   "n_prime",
+  "numpy",
   "numpy.arange",
   "numpy.arcsin",
   "numpy.arctan2",
+  "numpy.array",
+  "numpy.dot",
   "numpy.zeros",
   "offsetvector.component_offsetvectors",
   "offsetvector.offsetvector",
@@ -104,6 +136,9 @@
   "packing.Bin.add",
   "packing.Packer",
   "queueb_get_coincs",
+  "random",
+  "random.choice",
+  "random.uniform",
   "reduce",
   "secular_equation",
   "snglcluster.cluster_events",
@@ -128,59 +163,28 @@
  "deps": {
   "__future__": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
   ],
   "bisect": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
   ],
   "collections": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
   ],
   "copy": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "lal": [
-   "python-lal/conda-forge/linux-64/python-lal-6.19.0-py35h7eb728f_1",
-   "python-lal/conda-forge/linux-64/python-lal-6.22.0-mkl_py36h32b98d5_0",
-   "python-lal/conda-forge/linux-64/python-lal-7.1.0-fftw_py36h75dcf95_100"
-  ],
-  "lalmetaio": [
-   "python-lalmetaio/conda-forge/linux-64/python-lalmetaio-1.3.1-py35h7eb728f_2",
-   "python-lalmetaio/conda-forge/linux-64/python-lalmetaio-2.0.1-py37h902c9e0_0",
-   "python-lalmetaio/conda-forge/linux-64/python-lalmetaio-2.0.1-py38h5c078b8_2"
-  ],
-  "lalsimulation": [
-   "python-lalsimulation/conda-forge/linux-64/python-lalsimulation-1.8.1-py37h3010b51_0",
-   "python-lalsimulation/conda-forge/linux-64/python-lalsimulation-2.2.1-py38hab2c0dc_0",
-   "python-lalsimulation/conda-forge/linux-64/python-lalsimulation-2.4.0-py38h5c078b8_0"
-  ],
-  "ligo": [
-   "ligo-segments/conda-forge/linux-64/ligo-segments-1.0.1-py36h14c3975_1000"
-  ],
-  "math": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "matplotlib": [
-   "matplotlib-base/conda-forge/linux-64/matplotlib-base-3.1.1-py37hfd891ef_0",
-   "matplotlib-base/conda-forge/linux-64/matplotlib-base-3.1.1-py38h250f245_2",
-   "matplotlib/conda-forge/linux-64/matplotlib-1.5.3-np111py34_0"
-  ],
-  "numpy": [
-   "numpy/conda-forge/linux-64/numpy-1.17.5-py36h95a1406_0",
-   "numpy/conda-forge/linux-64/numpy-1.18.4-py37h8960a57_0",
-   "numpy/conda-forge/linux-64/numpy-1.19.2-py36h68c22af_1"
-  ],
-  "random": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
   ],
   "re": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
   ],
   "scipy": [
    "scipy/conda-forge/linux-64/scipy-0.17.1-np110py27_blas_openblas_202",
@@ -189,11 +193,13 @@
   ],
   "traceback": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
   ],
   "warnings": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
   ]
  }
 }
