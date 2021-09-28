@@ -48,8 +48,20 @@
   "colorama.Fore.YELLOW",
   "colorama.Style.RESET_ALL",
   "compute_generic_thumbnail",
+  "contextlib2.contextmanager",
   "convert_to_hive_type",
+  "cron_descriptor.get_description",
+  "croniter",
+  "croniter.croniter",
   "croniter.croniter.is_valid",
+  "cryptography.hazmat.backends.default_backend",
+  "cryptography.hazmat.backends.openssl.x509._Certificate",
+  "cryptography.x509",
+  "cryptography.x509.load_pem_x509_certificate",
+  "dataclasses",
+  "dataclasses.asdict",
+  "dataclasses.dataclass",
+  "dataclasses.field",
   "datetime.datetime.today",
   "datetime.timezone.utc",
   "deser",
@@ -166,67 +178,18 @@
   "pandas.api.types.infer_dtype",
   "pandas.api.types.is_numeric_dtype",
   "pandas.io.parsers.STR_NA_VALUES",
-  "pkgutil",
-  "pkgutil.iter_modules",
   "plugin",
-  "polyline",
-  "polyline.decode",
-  "polyline.encode",
   "postgres.PostgreSQLValidator.get",
   "presto_db.PrestoDBSQLValidator.get",
-  "pyarrow",
   "pyarrow.ArrowSerializationError",
   "pyarrow.DataType",
   "pyarrow.Table",
-  "pyarrow.default_serialization_context",
   "pyarrow.deserialize",
-  "pyarrow.types.is_boolean",
-  "pyarrow.types.is_floating",
-  "pyarrow.types.is_integer",
-  "pyarrow.types.is_string",
-  "pyarrow.types.is_temporal",
-  "pydruid.client.PyDruid",
-  "pydruid.utils.aggregators.count",
-  "pydruid.utils.dimensions.MapLookupExtraction",
-  "pydruid.utils.dimensions.RegexExtraction",
-  "pydruid.utils.dimensions.RegisteredLookupExtraction",
-  "pydruid.utils.dimensions.TimeFormatExtraction",
-  "pydruid.utils.filters.Bound",
-  "pydruid.utils.filters.Dimension",
-  "pydruid.utils.filters.Filter",
-  "pydruid.utils.having.Aggregation",
-  "pydruid.utils.having.Having",
-  "pydruid.utils.postaggregator.Const",
-  "pydruid.utils.postaggregator.Field",
-  "pydruid.utils.postaggregator.HyperUniqueCardinality",
-  "pydruid.utils.postaggregator.Postaggregator",
-  "pydruid.utils.postaggregator.Quantile",
-  "pydruid.utils.postaggregator.Quantiles",
-  "pyhive",
-  "pyhive.exc.DatabaseError",
-  "pyhive.exc.ProgrammingError",
-  "pyhive.hive",
-  "pyhive.hive.Cursor",
   "pyhive.hive.ProgrammingError",
-  "pyhive.hive._check_status",
-  "pyhive.hive._unwrap_column",
   "pyhive.hive.ttypes.TOperationState.INITIALIZED_STATE",
   "pyhive.hive.ttypes.TOperationState.RUNNING_STATE",
-  "pyparsing.CaselessKeyword",
-  "pyparsing.Forward",
-  "pyparsing.Group",
-  "pyparsing.Optional",
-  "pyparsing.ParseException",
-  "pyparsing.ParseResults",
-  "pyparsing.ParserElement",
-  "pyparsing.ParserElement.enablePackrat",
-  "pyparsing.Suppress",
-  "pyparsing.pyparsing_common",
   "pyparsing.pyparsing_common.signed_integer",
-  "pyparsing.quotedString",
   "pyparsing.quotedString.setName",
-  "pytz",
-  "pytz._FixedOffset",
   "pytz.utc",
   "pytz.utc.localize",
   "quartile1",
@@ -235,20 +198,11 @@
   "quote",
   "re.IGNORECASE",
   "re.VERBOSE",
-  "redis",
-  "redis.Redis",
-  "requests",
-  "requests.auth.HTTPBasicAuth",
-  "requests.get",
   "result_func",
-  "retry.api.retry",
-  "retry.api.retry_call",
   "selenium.webdriver.common.by.By.CLASS_NAME",
   "session_class",
-  "signal",
   "signal.SIGALRM",
   "signal.alarm",
-  "signal.signal",
   "slice.id",
   "slice.params",
   "slice.slice_name",
@@ -411,7 +365,6 @@
   "superset.db_engine_specs.base.LimitMethod.FETCH_MANY",
   "superset.db_engine_specs.base.LimitMethod.WRAP_SQL",
   "superset.db_engine_specs.engines.get",
-  "superset.db_engines.hive.Cursor.fetch_logs",
   "superset.db_engines.hive.TCLIService",
   "superset.db_engines.hive.constants",
   "superset.db_engines.hive.ttypes",
@@ -791,40 +744,9 @@
   "superset_config",
   "superset_config.__file__",
   "template_processor",
-  "textwrap",
-  "textwrap.dedent",
-  "textwrap.indent",
-  "threading",
-  "threading.current_thread",
-  "threading.main_thread",
   "to_lower",
   "trigger_celery",
   "type_validator",
-  "typing.Any",
-  "typing.Callable",
-  "typing.ClassVar",
-  "typing.DefaultDict",
-  "typing.Dict",
-  "typing.Hashable",
-  "typing.Iterable",
-  "typing.Iterator",
-  "typing.List",
-  "typing.Mapping",
-  "typing.Match",
-  "typing.NamedTuple",
-  "typing.Optional",
-  "typing.Pattern",
-  "typing.Sequence",
-  "typing.Set",
-  "typing.TYPE_CHECKING",
-  "typing.Tuple",
-  "typing.Type",
-  "typing.TypeVar",
-  "typing.Union",
-  "typing.cast",
-  "uuid",
-  "uuid.UUID",
-  "uuid.uuid4",
   "visit",
   "viz_class",
   "vstringify",
@@ -854,11 +776,13 @@
    "pyhive/conda-forge/noarch/pyhive-0.6.4-pyhd8ed1ab_0"
   ],
   "__future__": [
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
   ],
   "abc": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
   ],
   "alembic": [
    "alembic/conda-forge/noarch/alembic-0.8.10-py_2",
@@ -899,7 +823,8 @@
   ],
   "base64": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
   ],
   "billiard": [
    "billiard/conda-forge/linux-64/billiard-3.5.0.2-py36_0",
@@ -964,7 +889,8 @@
   ],
   "calendar": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
   ],
   "celery": [
    "celery/conda-forge/linux-64/celery-4.0.1-py35_0",
@@ -986,9 +912,11 @@
   ],
   "collections": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
   ],
   "colorama": [
+   "colorama/conda-forge/linux-64/colorama-0.3.9-py36_0",
    "colorama/conda-forge/noarch/colorama-0.3.9-py_1",
    "colorama/conda-forge/noarch/colorama-0.4.1-py_0",
    "colorama/conda-forge/noarch/colorama-0.4.3-py_0",
@@ -996,47 +924,18 @@
   ],
   "contextlib": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "contextlib2": [
-   "contextlib2/conda-forge/noarch/contextlib2-0.5.5-py_2",
-   "contextlib2/conda-forge/noarch/contextlib2-0.6.0-py_0",
-   "contextlib2/conda-forge/noarch/contextlib2-0.6.0.post1-py_0"
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
   ],
   "copy": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "cron_descriptor": [
-   "cron-descriptor/conda-forge/noarch/cron-descriptor-1.2.24-pyhd8ed1ab_0"
-  ],
-  "croniter": [
-   "croniter/conda-forge/noarch/croniter-0.3.20-py_0",
-   "croniter/conda-forge/noarch/croniter-0.3.24-py_0",
-   "croniter/conda-forge/noarch/croniter-0.3.25-py_0",
-   "croniter/conda-forge/noarch/croniter-0.3.27-py_0",
-   "croniter/conda-forge/noarch/croniter-0.3.29-py_0",
-   "croniter/conda-forge/noarch/croniter-0.3.34-pyh9f0ad1d_0",
-   "croniter/conda-forge/noarch/croniter-0.3.36-pyhd8ed1ab_0",
-   "croniter/conda-forge/noarch/croniter-1.0.12-pyhd8ed1ab_0"
-  ],
-  "cryptography": [
-   "cryptography/conda-forge/linux-64/cryptography-3.2.1-py37hc72a4ac_0",
-   "cryptography/conda-forge/linux-64/cryptography-3.3-py36h0a59100_0",
-   "cryptography/conda-forge/linux-64/cryptography-3.4.6-py38ha5dfef3_0",
-   "privy/conda-forge/noarch/privy-6.0.0-py_0"
-  ],
-  "dataclasses": [
-   "dataclasses/conda-forge/noarch/dataclasses-0.5-py_0",
-   "dataclasses/conda-forge/noarch/dataclasses-0.6-py_0",
-   "dataclasses/conda-forge/noarch/dataclasses-0.8-pyh787bdff_0",
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
   ],
   "datetime": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
   ],
   "dateutil": [
    "python-dateutil/conda-forge/noarch/python-dateutil-2.7.2-py_0",
@@ -1046,20 +945,24 @@
    "python-dateutil/conda-forge/noarch/python-dateutil-2.8.2-pyhd8ed1ab_0"
   ],
   "decimal": [
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
   ],
   "distutils": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
   ],
   "email": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
   ],
   "enum": [
    "privy/conda-forge/noarch/privy-6.0.0-py_0",
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
   ],
   "es": [
    "elasticsearch-dbapi/conda-forge/noarch/elasticsearch-dbapi-0.1.0-pyhd8ed1ab_0",
@@ -1072,6 +975,7 @@
    "fbprophet/conda-forge/linux-64/fbprophet-0.2-py27_0"
   ],
   "flask": [
+   "flask/conda-forge/linux-64/flask-0.11.1-py27_0",
    "flask/conda-forge/linux-64/flask-0.12-py36_0",
    "flask/conda-forge/noarch/flask-0.11.1-py_1",
    "flask/conda-forge/noarch/flask-1.0.2-py_1",
@@ -1146,11 +1050,13 @@
   ],
   "formatter": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
   ],
   "functools": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
   ],
   "geohash": [
    "python-geohash/conda-forge/linux-64/python-geohash-0.8.5-py36h90709c0_1"
@@ -1168,11 +1074,13 @@
   ],
   "gzip": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
   ],
   "hashlib": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
   ],
   "holidays": [
    "holidays/conda-forge/noarch/holidays-0.10.3-pyh9f0ad1d_0",
@@ -1192,19 +1100,23 @@
   ],
   "imp": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
   ],
   "importlib": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
   ],
   "inspect": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
   ],
   "io": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
   ],
   "isodate": [
    "isodate/conda-forge/noarch/isodate-0.6.0-py_0"
@@ -1217,7 +1129,8 @@
   ],
   "json": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
   ],
   "jwt": [
    "pyjwt/conda-forge/noarch/pyjwt-1.6.0-py_0",
@@ -1230,7 +1143,8 @@
   ],
   "logging": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
   ],
   "markdown": [
    "markdown/conda-forge/noarch/markdown-2.6.7-py_0",
@@ -1261,7 +1175,8 @@
   ],
   "math": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
   ],
   "msgpack": [
    "msgpack-python/conda-forge/linux-64/msgpack-python-1.0.0-py38hc9558a2_0",
@@ -1269,24 +1184,26 @@
   ],
   "multiprocessing": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
   ],
   "ntpath": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
   ],
   "numpy": [
-   "numpy/conda-forge/linux-64/numpy-1.17.5-py36h95a1406_0",
-   "numpy/conda-forge/linux-64/numpy-1.18.4-py37h8960a57_0",
-   "numpy/conda-forge/linux-64/numpy-1.19.2-py36h68c22af_1"
+   "numpy/conda-forge/linux-64/numpy-1.16.2-py37_blas_openblash1522bff_0"
   ],
   "operator": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
   ],
   "os": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
   ],
   "pandas": [],
   "pandas_gbq": [
@@ -1304,6 +1221,7 @@
    "pandas-gbq/conda-forge/noarch/pandas-gbq-0.9.0-py_1"
   ],
   "parsedatetime": [
+   "parsedatetime/conda-forge/linux-64/parsedatetime-2.1-py35_0",
    "parsedatetime/conda-forge/linux-64/parsedatetime-2.2-py35_0",
    "parsedatetime/conda-forge/noarch/parsedatetime-2.4-py_1",
    "parsedatetime/conda-forge/noarch/parsedatetime-2.6-pyh9f0ad1d_0"
@@ -1311,7 +1229,8 @@
   "pathlib": [
    "pathlib/conda-forge/noarch/pathlib-1.0.1-py_1",
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
   ],
   "pathlib2": [
    "pathlib2/conda-forge/linux-64/pathlib2-2.3.3-py36_1000"
@@ -1324,21 +1243,98 @@
    "setuptools/conda-forge/linux-64/setuptools-46.3.0-py38h32f6830_0",
    "setuptools/conda-forge/linux-64/setuptools-49.1.2-py38h32f6830_0"
   ],
+  "pkgutil": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
+  ],
   "platform": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
+  ],
+  "polyline": [
+   "polyline/conda-forge/linux-64/polyline-1.3.2-py27_0",
+   "polyline/conda-forge/noarch/polyline-1.4.0-py_0"
+  ],
+  "pyarrow": [
+   "pyarrow/conda-forge/linux-64/pyarrow-1.0.1-py38h7b0d817_30_cuda",
+   "pyarrow/conda-forge/linux-64/pyarrow-2.0.0-py36ha2c856d_3_cuda"
+  ],
+  "pydruid": [
+   "pydruid/conda-forge/noarch/pydruid-0.5.7-py_0",
+   "pydruid/conda-forge/noarch/pydruid-0.6.2-pyhd8ed1ab_0"
+  ],
+  "pyhive": [
+   "pyhive/conda-forge/noarch/pyhive-0.6.3-pyhd8ed1ab_1",
+   "pyhive/conda-forge/noarch/pyhive-0.6.4-pyhd8ed1ab_0"
+  ],
+  "pyparsing": [
+   "pyparsing/conda-forge/noarch/pyparsing-2.2.1-py_0",
+   "pyparsing/conda-forge/noarch/pyparsing-2.2.2-py_0",
+   "pyparsing/conda-forge/noarch/pyparsing-2.3.0-py_0",
+   "pyparsing/conda-forge/noarch/pyparsing-2.3.1-py_0",
+   "pyparsing/conda-forge/noarch/pyparsing-2.4.1.1-py_0",
+   "pyparsing/conda-forge/noarch/pyparsing-2.4.4-py_0",
+   "pyparsing/conda-forge/noarch/pyparsing-2.4.6-py_0"
+  ],
+  "pytz": [
+   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
+   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0",
+   "pytz/conda-forge/noarch/pytz-2017.3-py_1",
+   "pytz/conda-forge/noarch/pytz-2017.3-py_2",
+   "pytz/conda-forge/noarch/pytz-2018.4-py_0",
+   "pytz/conda-forge/noarch/pytz-2018.5-py_0",
+   "pytz/conda-forge/noarch/pytz-2018.6-py_0",
+   "pytz/conda-forge/noarch/pytz-2019.1-py_0",
+   "pytz/conda-forge/noarch/pytz-2019.2-py_0",
+   "pytz/conda-forge/noarch/pytz-2020.1-pyh9f0ad1d_0",
+   "pytz/conda-forge/noarch/pytz-2020.4-pyhd8ed1ab_0"
   ],
   "random": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
   ],
   "re": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
+  ],
+  "redis": [
+   "redis-py/conda-forge/noarch/redis-py-3.0.0-py_0",
+   "redis-py/conda-forge/noarch/redis-py-3.1.0-py_0",
+   "redis-py/conda-forge/noarch/redis-py-3.2.1-py_0",
+   "redis-py/conda-forge/noarch/redis-py-3.3.10-py_0",
+   "redis-py/conda-forge/noarch/redis-py-3.3.3-py_0",
+   "redis-py/conda-forge/noarch/redis-py-3.3.5-py_0",
+   "redis-py/conda-forge/noarch/redis-py-3.3.6-py_0",
+   "redis-py/conda-forge/noarch/redis-py-3.3.7-py_0",
+   "redis-py/conda-forge/noarch/redis-py-3.3.8-py_0",
+   "redis-py/conda-forge/noarch/redis-py-3.4.0-py_0",
+   "redis-py/conda-forge/noarch/redis-py-3.4.1-py_0"
+  ],
+  "requests": [
+   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
+   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0",
+   "requests/conda-forge/linux-64/requests-2.12.0-py35_0",
+   "requests/conda-forge/noarch/requests-2.23.0-pyh8c360ce_2",
+   "requests/conda-forge/noarch/requests-2.24.0-pyh9f0ad1d_0",
+   "requests/conda-forge/noarch/requests-2.25.0-pyhd3deb0d_0",
+   "requests/conda-forge/noarch/requests-2.25.1-pyhd3deb0d_0",
+   "requests/conda-forge/noarch/requests-2.26.0-pyhd8ed1ab_0"
+  ],
+  "retry": [
+   "retry/conda-forge/noarch/retry-0.9.2-py_0"
   ],
   "selenium": [
    "selenium/conda-forge/linux-64/selenium-3.12.0-py35_0",
    "selenium/conda-forge/linux-64/selenium-3.4.0-py36_0"
+  ],
+  "signal": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
   ],
   "simplejson": [
    "simplejson/conda-forge/linux-64/simplejson-3.16.0-py27h470a237_2",
@@ -1372,7 +1368,8 @@
   ],
   "smtplib": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
   ],
   "sqlalchemy": [],
   "sqlalchemy_utils": [
@@ -1401,11 +1398,13 @@
   ],
   "string": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
   ],
   "subprocess": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
   ],
   "superset": [
    "superset/conda-forge/noarch/superset-0.37.2-py_0",
@@ -1433,7 +1432,18 @@
   ],
   "tempfile": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
+  ],
+  "textwrap": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
+  ],
+  "threading": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
   ],
   "thrift": [
    "hive-thrift-py/conda-forge/noarch/hive-thrift-py-0.0.1-py_1",
@@ -1445,26 +1455,38 @@
   ],
   "timeit": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
   ],
   "traceback": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
   ],
   "types": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
+  ],
+  "typing": [
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
   ],
   "typing_extensions": [
+   "compass-interface-http/conda-forge/noarch/compass-interface-http-0.24.1-pyhd8ed1ab_7",
    "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
    "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0",
+   "typing_extensions/conda-forge/linux-64/typing_extensions-3.7.4.1-py27h8c360ce_1",
    "typing_extensions/conda-forge/noarch/typing_extensions-3.10.0.0-pyha770c72_0",
+   "typing_extensions/conda-forge/noarch/typing_extensions-3.10.0.1-pyha770c72_0",
+   "typing_extensions/conda-forge/noarch/typing_extensions-3.10.0.2-pyha770c72_0",
    "typing_extensions/conda-forge/noarch/typing_extensions-3.7.4.2-py_0",
    "typing_extensions/conda-forge/noarch/typing_extensions-3.7.4.3-py_0"
   ],
   "urllib": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
   ],
   "urllib3": [
    "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
@@ -1479,6 +1501,11 @@
    "urllib3/conda-forge/noarch/urllib3-1.26.5-pyhd8ed1ab_0",
    "urllib3/conda-forge/noarch/urllib3-1.26.6-pyhd8ed1ab_0"
   ],
+  "uuid": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
+  ],
   "validate": [
    "configobj/conda-forge/noarch/configobj-5.0.6-py_0"
   ],
@@ -1487,7 +1514,8 @@
   ],
   "warnings": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
   ],
   "werkzeug": [
    "werkzeug/conda-forge/noarch/werkzeug-0.15.3-py_0",
@@ -1518,11 +1546,13 @@
   ],
   "zipfile": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
   ],
   "zlib": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
   ]
  }
 }
