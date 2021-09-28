@@ -6,7 +6,13 @@
   "os.environ.get",
   "os.path.isdir",
   "struct.calcsize",
-  "zarr.storage.array_meta_key.get_config"
+  "zarr.meta.encode_fill_value",
+  "zarr.storage.array_meta_key",
+  "zarr.storage.array_meta_key.get_config",
+  "zarr.storage.attrs_key",
+  "zarr.storage.default_compressor",
+  "zarr.storage.group_meta_key",
+  "zarr.util.normalize_shape"
  ],
  "deps": {
   "cachey": [
@@ -16,7 +22,8 @@
   ],
   "copy": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
   ],
   "dask": [
    "dask-core/conda-forge/noarch/dask-core-0.17.5-py_0",
@@ -41,6 +48,7 @@
    "dask-core/conda-forge/noarch/dask-core-2021.5.1-pyhd8ed1ab_0"
   ],
   "fastapi": [
+   "compass-interface-http/conda-forge/noarch/compass-interface-http-0.24.1-pyhd8ed1ab_7",
    "fastapi/conda-forge/noarch/fastapi-0.42.0-py_0",
    "fastapi/conda-forge/noarch/fastapi-0.43.0-py_0",
    "fastapi/conda-forge/noarch/fastapi-0.45.0-py_0",
@@ -57,25 +65,30 @@
   ],
   "h5py": [
    "h5py/conda-forge/linux-64/h5py-2.10.0-nompi_py37hf7afa78_105",
+   "h5py/conda-forge/linux-64/h5py-2.6.0-np110py35_5",
    "h5py/conda-forge/linux-64/h5py-2.6.0-np111py34_4",
    "h5py/conda-forge/linux-64/h5py-2.7.0-np113py36_1"
   ],
   "importlib": [
    "importlib/conda-forge/linux-64/importlib-1.0.4-py26_0",
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
   ],
   "json": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
   ],
   "locale": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
   ],
   "logging": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
   ],
   "netCDF4": [
    "netcdf4/conda-forge/linux-64/netcdf4-1.2.4-np111py35_1",
@@ -91,7 +104,8 @@
   ],
   "os": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
   ],
   "pkg_resources": [
    "setuptools/conda-forge/linux-64/setuptools-40.6.1-py36_0",
@@ -100,9 +114,11 @@
   ],
   "platform": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
   ],
   "starlette": [
+   "compass-interface-http/conda-forge/noarch/compass-interface-http-0.24.1-pyhd8ed1ab_7",
    "starlette-base/conda-forge/noarch/starlette-base-0.13.5-py_2",
    "starlette-base/conda-forge/noarch/starlette-base-0.13.6-py_0",
    "starlette/conda-forge/noarch/starlette-0.10.2-py_0",
@@ -120,15 +136,18 @@
   ],
   "struct": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
   ],
   "subprocess": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
   ],
   "typing": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
   ],
   "uvicorn": [
    "uvicorn/conda-forge/linux-64/uvicorn-0.12.3-py36h5fab9bb_0",
@@ -140,17 +159,6 @@
    "xarray/conda-forge/noarch/xarray-0.16.2-pyhd8ed1ab_0",
    "xarray/conda-forge/noarch/xarray-0.18.0-pyhd8ed1ab_0",
    "xarray/conda-forge/noarch/xarray-0.18.2-pyhd8ed1ab_0"
-  ],
-  "zarr": [
-   "zarr/conda-forge/linux-64/zarr-2.1.1-py34_0",
-   "zarr/conda-forge/linux-64/zarr-2.3.1-py27_0",
-   "zarr/conda-forge/noarch/zarr-2.2.0-py_1",
-   "zarr/conda-forge/noarch/zarr-2.7.1-pyhd8ed1ab_0",
-   "zarr/conda-forge/noarch/zarr-2.8.0-pyhd8ed1ab_1",
-   "zarr/conda-forge/noarch/zarr-2.8.0-pyhd8ed1ab_2",
-   "zarr/conda-forge/noarch/zarr-2.8.2-pyhd8ed1ab_0",
-   "zarr/conda-forge/noarch/zarr-2.8.3-pyhd8ed1ab_0",
-   "zarr/conda-forge/noarch/zarr-2.9.5-pyhd8ed1ab_0"
   ]
  }
 }

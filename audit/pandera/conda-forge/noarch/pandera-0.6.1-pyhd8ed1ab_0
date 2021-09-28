@@ -11,9 +11,6 @@
   "_try_coercion",
   "_wrapper",
   "_write_yaml",
-  "black",
-  "black.FileMode",
-  "black.format_str",
   "bool.get",
   "build_complex",
   "check",
@@ -47,9 +44,6 @@
   "compat_kwargs",
   "complex.get",
   "constants.N_FAILURE_CASES",
-  "copy",
-  "copy.copy",
-  "copy.deepcopy",
   "dict.fromkeys",
   "dtype_",
   "dtype_.str_alias",
@@ -96,47 +90,28 @@
   "handle_stat_dtype",
   "index_constructor",
   "int.get",
+  "json",
+  "json.dumps",
   "left_op",
   "make_row_strategy",
   "max_op",
   "method",
   "min_op",
+  "numpy",
+  "numpy.array",
   "numpy.complex",
   "numpy.dtype",
   "numpy.float",
   "numpy.int",
   "numpy.int64",
+  "numpy.ones",
   "numpy.sctypes.values",
   "numpy.uint",
   "obj_getter",
   "object.get",
-  "operator",
-  "operator.ge",
-  "operator.gt",
-  "operator.le",
-  "operator.lt",
-  "pandas",
-  "pandas.DataFrame",
-  "pandas.Index",
-  "pandas.MultiIndex",
-  "pandas.MultiIndex.from_arrays",
-  "pandas.MultiIndex.from_frame",
-  "pandas.Series",
-  "pandas.__version__",
-  "pandas.api.extensions.register_dataframe_accessor",
-  "pandas.api.extensions.register_series_accessor",
   "pandas.api.types.infer_dtype",
   "pandas.api.types.is_extension_array_dtype",
-  "pandas.concat",
-  "pandas.core.dtypes.base.ExtensionDtype",
-  "pandas.core.dtypes.dtypes.ExtensionDtype",
   "pandas.core.dtypes.dtypes.registry",
-  "pandas.core.groupby.DataFrameGroupBy",
-  "pandas.core.groupby.SeriesGroupBy",
-  "pandas.option_context",
-  "pandas.to_datetime",
-  "pandas.to_timedelta",
-  "pandas.util.Substitution",
   "parse_checks",
   "register_check_wrapper",
   "right_op",
@@ -149,9 +124,6 @@
   "schemas.DataFrameSchema.strategy.__doc__",
   "schemas.DataFrameSchema.validate.__doc__",
   "schemas.SeriesSchema",
-  "scipy.stats",
-  "scipy.stats.ttest_1samp",
-  "scipy.stats.ttest_ind",
   "str.get",
   "strategies.column_strategy",
   "strategies.dataframe_strategy",
@@ -182,17 +154,34 @@
   "wrapped_fn"
  ],
  "deps": {
+  "black": [
+   "black/conda-forge/noarch/black-18.5b1-py_0",
+   "black/conda-forge/noarch/black-18.9b0-py_0",
+   "black/conda-forge/noarch/black-19.3b0-py_0",
+   "black/conda-forge/noarch/black-20.8b1-py_0",
+   "black/conda-forge/noarch/black-20.8b1-py_1",
+   "black/conda-forge/noarch/black-21.5b0-pyhd8ed1ab_0",
+   "black/conda-forge/noarch/black-21.5b1-pyhd8ed1ab_0"
+  ],
   "collections": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
+  ],
+  "copy": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
   ],
   "formatter": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
   ],
   "functools": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
   ],
   "hypothesis": [
    "hypothesis/conda-forge/noarch/hypothesis-6.13.1-pyhd8ed1ab_0",
@@ -205,16 +194,13 @@
   ],
   "inspect": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
   ],
-  "json": [
+  "operator": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "numpy": [
-   "numpy/conda-forge/linux-64/numpy-1.17.5-py36h95a1406_0",
-   "numpy/conda-forge/linux-64/numpy-1.18.4-py37h8960a57_0",
-   "numpy/conda-forge/linux-64/numpy-1.19.2-py36h68c22af_1"
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
   ],
   "packaging": [
    "packaging/conda-forge/noarch/packaging-18.0-py_0",
@@ -226,22 +212,35 @@
    "packaging/conda-forge/noarch/packaging-20.8-pyhd3deb0d_0",
    "packaging/conda-forge/noarch/packaging-21.0-pyhd8ed1ab_0"
   ],
+  "pandas": [],
   "pathlib": [
    "pathlib/conda-forge/noarch/pathlib-1.0.1-py_1",
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
   ],
   "re": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
+  ],
+  "scipy": [
+   "scipy/conda-forge/linux-64/scipy-0.17.1-np110py27_blas_openblas_202",
+   "scipy/conda-forge/linux-64/scipy-1.7.0-py37h29e03ee_0",
+   "scipy/conda-forge/linux-64/scipy-1.7.0-py37ha768fb6_1"
   ],
   "typing": [
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
   ],
   "typing_extensions": [
+   "compass-interface-http/conda-forge/noarch/compass-interface-http-0.24.1-pyhd8ed1ab_7",
    "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
    "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0",
+   "typing_extensions/conda-forge/linux-64/typing_extensions-3.7.4.1-py27h8c360ce_1",
    "typing_extensions/conda-forge/noarch/typing_extensions-3.10.0.0-pyha770c72_0",
+   "typing_extensions/conda-forge/noarch/typing_extensions-3.10.0.1-pyha770c72_0",
+   "typing_extensions/conda-forge/noarch/typing_extensions-3.10.0.2-pyha770c72_0",
    "typing_extensions/conda-forge/noarch/typing_extensions-3.7.4.2-py_0",
    "typing_extensions/conda-forge/noarch/typing_extensions-3.7.4.3-py_0"
   ],
@@ -254,7 +253,8 @@
   ],
   "warnings": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
   ],
   "wrapt": [
    "wrapt/conda-forge/linux-64/wrapt-1.12.1-py36h8c4c3a4_1",
