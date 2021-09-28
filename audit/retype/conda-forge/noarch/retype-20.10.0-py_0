@@ -12,10 +12,35 @@
   "ensure_no_annotation",
   "flatten_some",
   "functools.partial",
+  "functools.singledispatch",
   "get_annotated_param",
   "get_offset_and_prefix",
+  "io",
   "io.BytesIO",
   "lazy_func",
+  "lib2to3.pgen2.driver",
+  "lib2to3.pgen2.driver.Driver",
+  "lib2to3.pgen2.parse.ParseError",
+  "lib2to3.pgen2.token",
+  "lib2to3.pgen2.token.COLON",
+  "lib2to3.pgen2.token.COMMA",
+  "lib2to3.pgen2.token.DOT",
+  "lib2to3.pgen2.token.DOUBLESTAR",
+  "lib2to3.pgen2.token.EQUAL",
+  "lib2to3.pgen2.token.INDENT",
+  "lib2to3.pgen2.token.LPAR",
+  "lib2to3.pgen2.token.LSQB",
+  "lib2to3.pgen2.token.NAME",
+  "lib2to3.pgen2.token.NEWLINE",
+  "lib2to3.pgen2.token.NUMBER",
+  "lib2to3.pgen2.token.RARROW",
+  "lib2to3.pgen2.token.RPAR",
+  "lib2to3.pgen2.token.RSQB",
+  "lib2to3.pgen2.token.STAR",
+  "lib2to3.pgen2.token.STRING",
+  "lib2to3.pygram",
+  "lib2to3.pygram.python_grammar_no_print_statement",
+  "lib2to3.pygram.python_symbols",
   "lib2to3.pygram.python_symbols.annassign",
   "lib2to3.pygram.python_symbols.arglist",
   "lib2to3.pygram.python_symbols.argument",
@@ -44,6 +69,10 @@
   "lib2to3.pygram.python_symbols.trailer",
   "lib2to3.pygram.python_symbols.try_stmt",
   "lib2to3.pygram.python_symbols.typedargslist",
+  "lib2to3.pytree",
+  "lib2to3.pytree.Leaf",
+  "lib2to3.pytree.Node",
+  "lib2to3.pytree.convert",
   "make_import",
   "maybe_replace_any_if_equal",
   "maybe_space_before_comment",
@@ -54,10 +83,11 @@
   "parse_signature_type_comment",
   "parse_type_comment",
   "pathlib.Path",
-  "pathspec.PathSpec",
-  "pathspec.PathSpec.from_lines",
+  "re",
   "re.MULTILINE",
   "re.VERBOSE",
+  "re.compile",
+  "re.sub",
   "remove_function_signature_type_comment",
   "retype.__init__._dot",
   "retype.__init__._load_ignore",
@@ -99,18 +129,6 @@
   "retype.__init__.retype_file",
   "retype.__init__.serialize_attribute",
   "retype.__init__.walk_not_git_ignored",
-  "token",
-  "token.ENDMARKER",
-  "token.NAME",
-  "token.NEWLINE",
-  "token.OP",
-  "token.STRING",
-  "tokenize",
-  "tokenize.ENCODING",
-  "tokenize.open",
-  "tokenize.tokenize",
-  "tokenize.untokenize",
-  "typed_ast.ast3",
   "typed_ast.ast3.AnnAssign",
   "typed_ast.ast3.Assign",
   "typed_ast.ast3.AsyncFunctionDef",
@@ -135,8 +153,7 @@
   "typed_ast.ast3.Tuple",
   "typed_ast.ast3.alias",
   "typed_ast.ast3.expr",
-  "typed_ast.ast3.keyword",
-  "typed_ast.ast3.parse"
+  "typed_ast.ast3.keyword"
  ],
  "deps": {
   "click": [
@@ -146,36 +163,43 @@
    "click/conda-forge/noarch/click-7.1-pyh8c360ce_0",
    "click/conda-forge/noarch/click-7.1.1-pyh8c360ce_0"
   ],
-  "functools": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "io": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "lib2to3": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "mercurial": [
    "mercurial/conda-forge/linux-64/mercurial-4.5-py27_0"
   ],
   "os": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
   ],
-  "re": [
+  "pathspec": [
+   "pathspec/conda-forge/noarch/pathspec-0.5.9-py_0",
+   "pathspec/conda-forge/noarch/pathspec-0.6.0-py_0",
+   "pathspec/conda-forge/noarch/pathspec-0.7.0-py_0",
+   "pathspec/conda-forge/noarch/pathspec-0.8.0-pyh9f0ad1d_0",
+   "pathspec/conda-forge/noarch/pathspec-0.8.1-pyhd3deb0d_0"
+  ],
+  "token": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
+  ],
+  "tokenize": [
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython"
   ],
   "traceback": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
+  ],
+  "typed_ast": [
+   "typed-ast/conda-forge/linux-64/typed-ast-1.3.0-py36h14c3975_0",
+   "typed-ast/conda-forge/linux-64/typed-ast-1.4.1-py37h5e8e339_1",
+   "typed-ast/conda-forge/linux-64/typed-ast-1.4.2-py36h8f6f2f9_0"
   ],
   "typing": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
   ]
  }
 }

@@ -1,26 +1,44 @@
 {
  "bad": [
   "Parser",
+  "array",
   "array.array",
   "bytes.tostring",
+  "chardet",
+  "chardet.detect",
   "cmapdb.CMapDB.CMapNotFound",
   "cmapdb.CMapDB.get_cmap",
+  "cryptography.hazmat.backends.default_backend",
+  "cryptography.hazmat.primitives.ciphers.Cipher",
+  "cryptography.hazmat.primitives.ciphers.algorithms",
+  "cryptography.hazmat.primitives.ciphers.algorithms.AES",
+  "cryptography.hazmat.primitives.ciphers.modes",
+  "cryptography.hazmat.primitives.ciphers.modes.CBC",
   "decode",
   "dist",
   "encoder",
+  "factory",
   "func",
   "get_colorspace",
   "glyphlist.glyphname2unicode.get",
+  "gzip",
+  "gzip.open",
   "hash.digest",
   "hash.update",
   "hashlib.md5",
   "hashlib.sha256",
+  "heapq",
+  "heapq.heapify",
+  "heapq.heappop",
+  "heapq.heappush",
+  "html.escape",
   "io.BytesIO",
   "io.StringIO",
   "isany",
   "lookup",
   "os.environ.get",
   "os.path.exists",
+  "parser",
   "pdfcolor.PREDEFINED_COLORSPACE.copy",
   "pdfcolor.PREDEFINED_COLORSPACE.get",
   "pdfminer.__init__.__version__",
@@ -28,7 +46,10 @@
   "psparser.PSStackParser.seek",
   "pygame",
   "pygame.image.save",
+  "re",
   "re.IGNORECASE",
+  "re.compile",
+  "re.sub",
   "render",
   "search",
   "settings.STRICT",
@@ -37,6 +58,8 @@
   "struct.pack",
   "struct.unpack",
   "sys.stdout.buffer",
+  "unittest",
+  "unittest.main",
   "utils.bbox2str",
   "utils.compatible_encode_method",
   "utils.enc",
@@ -44,6 +67,7 @@
   "utils.make_compat_bytes",
   "utils.mult_matrix",
   "utils.translate_matrix",
+  "warnings",
   "warnings.warn"
  ],
  "deps": {
@@ -57,52 +81,12 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
   ],
-  "array": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
-  ],
-  "chardet": [
-   "chardet/conda-forge/linux-64/chardet-3.0.2-py35_1",
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0"
-  ],
   "collections": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
   ],
   "copy": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
-  ],
-  "cryptography": [
-   "compass-interface-http/conda-forge/noarch/compass-interface-http-0.24.1-pyhd8ed1ab_7",
-   "cryptography/conda-forge/linux-64/cryptography-3.2.1-py37hc72a4ac_0",
-   "cryptography/conda-forge/linux-64/cryptography-3.3-py36h0a59100_0",
-   "cryptography/conda-forge/linux-64/cryptography-3.4.6-py38ha5dfef3_0",
-   "privy/conda-forge/noarch/privy-6.0.0-py_0"
-  ],
-  "factory": [
-   "factory_boy/conda-forge/noarch/factory_boy-2.10.0-py_0",
-   "factory_boy/conda-forge/noarch/factory_boy-2.11.0-py_0",
-   "factory_boy/conda-forge/noarch/factory_boy-2.11.1-py_0",
-   "factory_boy/conda-forge/noarch/factory_boy-2.11.1-pyh9f0ad1d_1",
-   "factory_boy/conda-forge/noarch/factory_boy-3.0.1-pyh9f0ad1d_1",
-   "factory_boy/conda-forge/noarch/factory_boy-3.1.0-pyh9f0ad1d_0"
-  ],
-  "gzip": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
-  ],
-  "heapq": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
-  ],
-  "html": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
@@ -127,32 +111,12 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
   ],
-  "parser": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
-  ],
   "pickle": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
   ],
-  "re": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
-  ],
   "struct": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
-  ],
-  "unittest": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
-  ],
-  "warnings": [
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
