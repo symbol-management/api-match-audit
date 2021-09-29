@@ -3,6 +3,12 @@
   "convert_molecule",
   "create_cml_conversion",
   "create_filename_frominchikey",
+  "logging",
+  "logging.INFO",
+  "logging.WARN",
+  "logging.basicConfig",
+  "logging.getLogger",
+  "lxml.etree",
   "lxml.etree.Element",
   "lxml.etree.ElementTree",
   "lxml.etree.XML",
@@ -14,7 +20,11 @@
   "openbabel.openbabel.OBMol",
   "os.path.isfile",
   "os.remove",
+  "pathlib",
+  "pathlib.Path",
+  "rdkit.Chem",
   "rdkit.Chem.AddHs",
+  "rdkit.Chem.AllChem",
   "rdkit.Chem.AllChem.ETKDG",
   "rdkit.Chem.AllChem.EmbedMolecule",
   "rdkit.Chem.AllChem.EmbedMultipleConfs",
@@ -22,58 +32,43 @@
   "rdkit.Chem.AllChem.MolFromSmiles",
   "rdkit.Chem.AllChem.MolToMolBlock",
   "rdkit.Chem.AllChem.UFFOptimizeMoleculeConfs",
-  "rdkit.Chem.SanitizeMol"
+  "rdkit.Chem.SanitizeMol",
+  "re",
+  "re.match",
+  "unittest",
+  "unittest.TestCase",
+  "unittest.TestLoader",
+  "unittest.TestSuite",
+  "unittest.TextTestRunner",
+  "xmlvalidator.xmlvalidation",
+  "xmlvalidator.xmlvalidation.CML_SCHEMA",
+  "xmlvalidator.xmlvalidation.validate_xml"
  ],
  "deps": {
   "argparse": [
    "argparse/conda-forge/osx-64/argparse-1.4.0-py26_0",
+   "python/conda-forge/linux-64/python-2.7.14-3",
+   "python/conda-forge/linux-64/python-2.7.15-h938d71a_1004",
+   "python/conda-forge/linux-64/python-3.5.4-0",
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython",
+   "python/conda-forge/linux-64/python-3.9.0-h2a148a8_4_cpython"
   ],
   "glob": [
+   "python/conda-forge/linux-64/python-2.7.15-h938d71a_1004",
+   "python/conda-forge/linux-64/python-3.5.4-0",
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
-  ],
-  "logging": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
-  ],
-  "lxml": [
-   "compass-interface-http/conda-forge/noarch/compass-interface-http-0.24.1-pyhd8ed1ab_7",
-   "lxml/conda-forge/linux-64/lxml-4.2.6-py37h23eabaa_1000",
-   "lxml/conda-forge/linux-64/lxml-4.6.3-py37h77fd288_0"
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython",
+   "python/conda-forge/linux-64/python-3.9.0-h2a148a8_4_cpython"
   ],
   "os": [
+   "python/conda-forge/linux-64/python-3.5.4-0",
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
-  ],
-  "pathlib": [
-   "pathlib/conda-forge/noarch/pathlib-1.0.1-py_1",
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
-  ],
-  "rdkit": [
-   "rdkit/conda-forge/linux-64/rdkit-2018.09.3-py27h9c20d5c_0",
-   "rdkit/conda-forge/linux-64/rdkit-2019.03.4-py37hb31dc5d_1",
-   "rdkit/conda-forge/linux-64/rdkit-2020.09.4-py39hccf6a74_0"
-  ],
-  "re": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
-  ],
-  "unittest": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
-  ],
-  "xmlvalidator": [
-   "xmlvalidator/conda-forge/noarch/xmlvalidator-1.0.0.b3-pyhd8ed1ab_0"
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython",
+   "python/conda-forge/linux-64/python-3.9.0-h2a148a8_4_cpython"
   ]
  }
 }

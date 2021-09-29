@@ -9,21 +9,53 @@
   "builders.TextBuilder",
   "builders.WordBoxBuilder",
   "convertion",
+  "ctypes",
   "ctypes.POINTER",
+  "ctypes.Structure",
   "ctypes.byref",
+  "ctypes.c_bool",
+  "ctypes.c_char",
+  "ctypes.c_char_p",
+  "ctypes.c_float",
+  "ctypes.c_int",
+  "ctypes.c_void_p",
+  "ctypes.cast",
   "ctypes.cdll.LoadLibrary",
   "ctypes.pointer",
+  "get_version",
+  "html.parser.HTMLParser",
   "io.BytesIO",
+  "locale",
+  "locale.LC_ALL",
+  "locale.setlocale",
+  "logging",
+  "logging.getLogger",
+  "os.devnull",
   "os.path.exists",
+  "os.path.join",
+  "os.pathsep",
   "os.remove",
   "pyocr.libtesseract.__init__.LibtesseractPdfBuilder",
   "pyocr.libtesseract.__init__._tess_box_to_pyocr_box",
   "pyocr.libtesseract.__init__.get_available_languages",
   "pyocr.libtesseract.__init__.get_version",
   "pyocr.libtesseract.__init__.logger",
+  "re",
+  "re.compile",
+  "re.match",
+  "shutil",
+  "shutil.which",
+  "subprocess",
+  "subprocess.PIPE",
+  "subprocess.Popen",
   "subprocess.STARTF_USESHOWWINDOW",
+  "subprocess.STARTUPINFO",
+  "subprocess.STDOUT",
   "subprocess.SW_HIDE",
   "sys._MEIPASS",
+  "tempfile",
+  "tempfile.NamedTemporaryFile",
+  "tempfile.TemporaryDirectory",
   "tesseract_raw.Orientation.PAGE_DOWN",
   "tesseract_raw.Orientation.PAGE_LEFT",
   "tesseract_raw.Orientation.PAGE_RIGHT",
@@ -54,67 +86,23 @@
   "tesseract_raw.set_debug_file",
   "tesseract_raw.set_image",
   "tesseract_raw.set_is_numeric",
-  "tesseract_raw.set_page_seg_mode"
+  "tesseract_raw.set_page_seg_mode",
+  "xml.dom.minidom"
  ],
  "deps": {
-  "_ctypes": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
   "codecs": [
+   "python/conda-forge/linux-64/python-3.5.4-0",
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "ctypes": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "get_version": [
-   "get_version/conda-forge/noarch/get_version-2.1-py_0",
-   "get_version/conda-forge/noarch/get_version-2.1-py_1",
-   "get_version/conda-forge/noarch/get_version-3.2-pyhd8ed1ab_0",
-   "get_version/conda-forge/noarch/get_version-3.4-pyhd8ed1ab_0",
-   "get_version/conda-forge/noarch/get_version-3.5-pyhd8ed1ab_0"
-  ],
-  "html": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "locale": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "logging": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "ntpath": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython",
+   "python/conda-forge/linux-64/python-3.9.0-h2a148a8_4_cpython"
   ],
   "os": [
+   "python/conda-forge/linux-64/python-3.5.4-0",
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "re": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "shutil": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "subprocess": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "tempfile": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
-  ],
-  "xml": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython",
+   "python/conda-forge/linux-64/python-3.9.0-h2a148a8_4_cpython"
   ]
  }
 }
