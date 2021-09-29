@@ -1,65 +1,49 @@
 {
  "bad": [
-  "cast",
-  "check",
+  "_DummyHook",
+  "_format_item",
+  "_format_subdict",
+  "_format_sublist",
+  "airflow.contrib.kubernetes.kube_client",
+  "airflow.contrib.kubernetes.kube_client.get_kube_client",
+  "airflow.contrib.kubernetes.pod.Resources",
+  "airflow.contrib.kubernetes.pod_generator",
+  "airflow.contrib.kubernetes.pod_generator.PodGenerator",
+  "airflow.contrib.kubernetes.pod_launcher",
+  "airflow.contrib.kubernetes.pod_launcher.PodLauncher",
+  "airflow.hooks.docker_hook.DockerHook",
+  "airflow.operators.BaseOperator",
+  "airflow.utils.state.State.SUCCESS",
   "collections.defaultdict",
-  "config.DEFAULT_FIELD_FORMAT",
-  "config.DEFAULT_FIELD_TYPE",
-  "config.DEFAULT_MISSING_VALUES",
-  "config.ERROR",
-  "config.REMOTE_SCHEMES",
-  "exceptions.CastError",
-  "exceptions.IntegrityError",
-  "exceptions.LoadError",
-  "exceptions.RelationError",
-  "exceptions.StorageError",
-  "exceptions.TableSchemaException",
-  "exceptions.ValidationError",
-  "expand",
-  "format.replace",
-  "format.startswith",
-  "functools.partial",
-  "helpers.ensure_dir",
-  "helpers.expand_schema_descriptor",
-  "io.open",
-  "jsonschema.exceptions.SchemaError.create_from",
-  "os.path.exists",
-  "parent_cls",
-  "processor",
-  "six.moves.urllib.parse.urlparse",
-  "storage.Storage.connect",
-  "sys.meta_path.append",
-  "tableschema.plugins.__init__.importer",
-  "warnings.warn"
+  "dagster.DagsterEventType.STEP_SKIPPED.value",
+  "dagster.core.definitions.utils.VALID_NAME_REGEX.match",
+  "factory.make_airflow_dag_containerized_for_recon_repo",
+  "factory.make_airflow_dag_for_operator",
+  "factory.make_airflow_dag_for_recon_repo",
+  "factory.make_airflow_dag_kubernetized_for_recon_repo",
+  "operators.docker_operator.DagsterDockerOperator",
+  "operators.kubernetes_operator.DagsterKubernetesPodOperator",
+  "os.environ.update",
+  "os.path.isdir",
+  "vendor.python_operator.PythonOperator"
  ],
  "deps": {
-  "__future__": [
-   "python/conda-forge/linux-64/python-2.7.14-3",
-   "python/conda-forge/linux-64/python-2.7.15-h938d71a_1004",
-   "python/conda-forge/linux-64/python-3.5.4-0",
-   "python/conda-forge/linux-64/python-3.5.4-3",
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.6.11-h425cb1d_0_cpython",
-   "python/conda-forge/linux-64/python-3.6.7-h357f687_1006",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_3_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython",
-   "python/conda-forge/linux-64/python-3.9.0-h2a148a8_4_cpython"
+  "_pytest": [
+   "pytest/conda-forge/linux-64/pytest-3.3.0-py27_0",
+   "pytest/conda-forge/linux-64/pytest-3.4.0-py35_0",
+   "pytest/conda-forge/linux-64/pytest-3.7.0-py27_0",
+   "pytest/conda-forge/linux-64/pytest-3.7.1-py27_0",
+   "pytest/conda-forge/linux-64/pytest-3.7.2-py36_0",
+   "pytest/conda-forge/linux-64/pytest-4.6.0-py37_0",
+   "pytest/conda-forge/linux-64/pytest-5.2.4-py37_0",
+   "pytest/conda-forge/linux-64/pytest-6.0.2-py37hc8dfbb8_0"
   ],
-  "abc": [
-   "python/conda-forge/linux-64/python-2.7.14-3",
-   "python/conda-forge/linux-64/python-2.7.15-h938d71a_1004",
-   "python/conda-forge/linux-64/python-3.5.4-0",
-   "python/conda-forge/linux-64/python-3.5.4-3",
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.6.11-h425cb1d_0_cpython",
-   "python/conda-forge/linux-64/python-3.6.7-h357f687_1006",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_3_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython",
-   "python/conda-forge/linux-64/python-3.9.0-h2a148a8_4_cpython"
+  "airflow": [
+   "airflow/conda-forge/linux-64/airflow-2.1.0-py37h89c1867_0",
+   "airflow/conda-forge/linux-64/airflow-2.1.2-py36h5fab9bb_0"
   ],
-  "base64": [
+  "ast": [
+   "python/conda-forge/linux-64/python-2.7.15-h938d71a_1004",
    "python/conda-forge/linux-64/python-3.5.4-0",
    "python/conda-forge/linux-64/python-3.5.4-3",
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -88,7 +72,7 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython",
    "python/conda-forge/linux-64/python-3.9.0-h2a148a8_4_cpython"
   ],
-  "copy": [
+  "contextlib": [
    "python/conda-forge/linux-64/python-3.5.4-0",
    "python/conda-forge/linux-64/python-3.5.4-3",
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -98,6 +82,18 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython",
    "python/conda-forge/linux-64/python-3.9.0-h2a148a8_4_cpython"
+  ],
+  "dagster": [],
+  "dagster_graphql": [
+   "dagster-graphql/conda-forge/noarch/dagster-graphql-0.9.14-pyh32f6830_0",
+   "dagster-graphql/conda-forge/noarch/dagster-graphql-0.9.14-pyh32f6830_1",
+   "dagster-graphql/conda-forge/noarch/dagster-graphql-0.9.2-pyh32f6830_0",
+   "dagster-graphql/conda-forge/noarch/dagster-graphql-0.9.2-pyh32f6830_1",
+   "dagster-graphql/conda-forge/noarch/dagster-graphql-0.9.2-pyhc8dfbb8_0",
+   "dagster-graphql/conda-forge/noarch/dagster-graphql-0.9.2-pyhc8dfbb8_1",
+   "dagster-graphql/conda-forge/noarch/dagster-graphql-0.9.3-pyhc8dfbb8_0",
+   "dagster-graphql/conda-forge/noarch/dagster-graphql-0.9.5-pyh32f6830_1",
+   "dagster-graphql/conda-forge/noarch/dagster-graphql-0.9.9-pyh32f6830_1"
   ],
   "datetime": [
    "python/conda-forge/linux-64/python-3.5.4-0",
@@ -117,37 +113,9 @@
    "python-dateutil/conda-forge/noarch/python-dateutil-2.8.1-py_0",
    "python-dateutil/conda-forge/noarch/python-dateutil-2.8.2-pyhd8ed1ab_0"
   ],
-  "decimal": [
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_3_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython",
-   "python/conda-forge/linux-64/python-3.9.0-h2a148a8_4_cpython"
-  ],
-  "importlib": [
-   "importlib/conda-forge/linux-64/importlib-1.0.4-py26_0",
-   "python/conda-forge/linux-64/python-2.7.15-h938d71a_1004",
-   "python/conda-forge/linux-64/python-3.5.4-0",
-   "python/conda-forge/linux-64/python-3.5.4-3",
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.6.11-h425cb1d_0_cpython",
-   "python/conda-forge/linux-64/python-3.6.7-h357f687_1006",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython",
-   "python/conda-forge/linux-64/python-3.9.0-h2a148a8_4_cpython"
-  ],
-  "io": [
-   "python/conda-forge/linux-64/python-2.7.15-h938d71a_1004",
-   "python/conda-forge/linux-64/python-3.5.4-0",
-   "python/conda-forge/linux-64/python-3.5.4-3",
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.6.11-h425cb1d_0_cpython",
-   "python/conda-forge/linux-64/python-3.6.7-h357f687_1006",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython",
-   "python/conda-forge/linux-64/python-3.9.0-h2a148a8_4_cpython"
-  ],
-  "isodate": [
-   "isodate/conda-forge/noarch/isodate-0.6.0-py_0"
+  "docker": [
+   "docker-py/conda-forge/linux-64/docker-py-3.3.0-py35_0",
+   "docker-py/conda-forge/linux-64/docker-py-4.4.3-py37h9c2f6ca_0"
   ],
   "json": [
    "python/conda-forge/linux-64/python-3.5.4-0",
@@ -159,8 +127,20 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython",
    "python/conda-forge/linux-64/python-3.9.0-h2a148a8_4_cpython"
   ],
-  "jsonschema": [
-   "jsonschema/conda-forge/noarch/jsonschema-3.2.0-pyhd8ed1ab_3"
+  "lazy_object_proxy": [
+   "lazy-object-proxy/conda-forge/linux-64/lazy-object-proxy-1.5.1-py36h8c4c3a4_1",
+   "lazy-object-proxy/conda-forge/linux-64/lazy-object-proxy-1.5.1-py37h8f50634_0"
+  ],
+  "logging": [
+   "python/conda-forge/linux-64/python-2.7.15-h938d71a_1004",
+   "python/conda-forge/linux-64/python-3.5.4-0",
+   "python/conda-forge/linux-64/python-3.5.4-3",
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.6.11-h425cb1d_0_cpython",
+   "python/conda-forge/linux-64/python-3.6.7-h357f687_1006",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython",
+   "python/conda-forge/linux-64/python-3.9.0-h2a148a8_4_cpython"
   ],
   "ntpath": [
    "python/conda-forge/linux-64/python-2.7.15-h938d71a_1004",
@@ -181,6 +161,28 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython",
    "python/conda-forge/linux-64/python-3.9.0-h2a148a8_4_cpython"
   ],
+  "pendulum": [
+   "pendulum/conda-forge/linux-64/pendulum-1.4.4-py38_1",
+   "pendulum/conda-forge/linux-64/pendulum-2.0.2-py36_0",
+   "pendulum/conda-forge/linux-64/pendulum-2.1.0-py38_0",
+   "pendulum/conda-forge/noarch/pendulum-2.1.2-pyhd8ed1ab_1"
+  ],
+  "pkg_resources": [
+   "setuptools/conda-forge/linux-64/setuptools-40.6.1-py36_0",
+   "setuptools/conda-forge/linux-64/setuptools-44.0.0-py27_0",
+   "setuptools/conda-forge/linux-64/setuptools-46.3.0-py38h32f6830_0",
+   "setuptools/conda-forge/linux-64/setuptools-49.1.2-py38h32f6830_0"
+  ],
+  "pytest": [
+   "pytest/conda-forge/linux-64/pytest-3.3.0-py27_0",
+   "pytest/conda-forge/linux-64/pytest-3.4.0-py35_0",
+   "pytest/conda-forge/linux-64/pytest-3.7.0-py27_0",
+   "pytest/conda-forge/linux-64/pytest-3.7.1-py27_0",
+   "pytest/conda-forge/linux-64/pytest-3.7.2-py36_0",
+   "pytest/conda-forge/linux-64/pytest-4.6.0-py37_0",
+   "pytest/conda-forge/linux-64/pytest-5.2.4-py37_0",
+   "pytest/conda-forge/linux-64/pytest-6.0.2-py37hc8dfbb8_0"
+  ],
   "re": [
    "python/conda-forge/linux-64/python-3.5.4-0",
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
@@ -189,63 +191,13 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython",
    "python/conda-forge/linux-64/python-3.9.0-h2a148a8_4_cpython"
   ],
-  "requests": [
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
-   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0",
-   "requests/conda-forge/linux-64/requests-2.12.0-py35_0",
-   "requests/conda-forge/noarch/requests-2.23.0-pyh8c360ce_2",
-   "requests/conda-forge/noarch/requests-2.24.0-pyh9f0ad1d_0",
-   "requests/conda-forge/noarch/requests-2.25.0-pyhd3deb0d_0",
-   "requests/conda-forge/noarch/requests-2.25.1-pyhd3deb0d_0",
-   "requests/conda-forge/noarch/requests-2.26.0-pyhd8ed1ab_0"
-  ],
-  "rfc3986": [
-   "compass-interface-http/conda-forge/noarch/compass-interface-http-0.24.1-pyhd8ed1ab_7",
-   "rfc3986/conda-forge/noarch/rfc3986-1.4.0-pyh9f0ad1d_0",
-   "rfc3986/conda-forge/noarch/rfc3986-1.5.0-pyhd8ed1ab_0"
-  ],
   "six": [
    "compass-interface-http/conda-forge/noarch/compass-interface-http-0.24.1-pyhd8ed1ab_7",
    "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
    "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0",
-   "lldb/conda-forge/linux-64/lldb-6.0.0-py35_0",
-   "privy/conda-forge/noarch/privy-6.0.0-py_0",
-   "six/conda-forge/linux-64/six-1.10.0-py34_0",
-   "six/conda-forge/linux-64/six-1.10.0-py34_1",
    "six/conda-forge/linux-64/six-1.12.0-py37_1001",
    "six/conda-forge/noarch/six-1.14.0-py_1",
    "six/conda-forge/noarch/six-1.16.0-pyh6c4a22f_0"
-  ],
-  "tabulator": [
-   "tabulator-py/conda-forge/noarch/tabulator-py-1.14.0-py_1",
-   "tabulator-py/conda-forge/noarch/tabulator-py-1.3.1-py_0",
-   "tabulator/conda-forge/noarch/tabulator-1.14.4-py_0",
-   "tabulator/conda-forge/noarch/tabulator-1.17.1-py_0",
-   "tabulator/conda-forge/noarch/tabulator-1.18.0-py_0",
-   "tabulator/conda-forge/noarch/tabulator-1.19.1-py_0",
-   "tabulator/conda-forge/noarch/tabulator-1.27.0-py_0",
-   "tabulator/conda-forge/noarch/tabulator-1.28.0-py_0",
-   "tabulator/conda-forge/noarch/tabulator-1.31.1-py_0",
-   "tabulator/conda-forge/noarch/tabulator-1.32.0-py_0",
-   "tabulator/conda-forge/noarch/tabulator-1.35.0-py_0",
-   "tabulator/conda-forge/noarch/tabulator-1.38.2-pyh9f0ad1d_0",
-   "tabulator/conda-forge/noarch/tabulator-1.41.0-pyh9f0ad1d_0",
-   "tabulator/conda-forge/noarch/tabulator-1.42.0-pyh9f0ad1d_0",
-   "tabulator/conda-forge/noarch/tabulator-1.44.2-pyh9f0ad1d_0",
-   "tabulator/conda-forge/noarch/tabulator-1.44.5-pyh9f0ad1d_0",
-   "tabulator/conda-forge/noarch/tabulator-1.49.2-pyh9f0ad1d_0",
-   "tabulator/conda-forge/noarch/tabulator-1.51.2-pyh9f0ad1d_0",
-   "tabulator/conda-forge/noarch/tabulator-1.52.0-pyh9f0ad1d_0",
-   "tabulator/conda-forge/noarch/tabulator-1.52.3-pyh9f0ad1d_0",
-   "tabulator/conda-forge/noarch/tabulator-1.52.4-pyh9f0ad1d_0",
-   "tabulator/conda-forge/noarch/tabulator-1.53.0-pyhd8ed1ab_0"
-  ],
-  "uuid": [
-   "python/conda-forge/linux-64/python-3.5.4-0",
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython",
-   "python/conda-forge/linux-64/python-3.9.0-h2a148a8_4_cpython"
   ],
   "warnings": [
    "python/conda-forge/linux-64/python-3.5.4-0",
@@ -253,6 +205,12 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython",
    "python/conda-forge/linux-64/python-3.9.0-h2a148a8_4_cpython"
+  ],
+  "yaml": [
+   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
+   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0",
+   "pyyaml/conda-forge/linux-64/pyyaml-3.11-py35_0",
+   "pyyaml/conda-forge/win-64/pyyaml-5.2-py36hfa6e2cd_0"
   ]
  }
 }
