@@ -2,42 +2,66 @@
  "bad": [
   "_pytest.nodes.File.from_parent",
   "_pytest.nodes.Item.from_parent",
-  "dill",
-  "dill.dumps",
-  "dill.loads",
-  "functools.wraps",
   "get_marker",
   "get_marker_value",
-  "html.escape",
   "original_func",
   "pytest.mark._markers.add",
   "pytest.mark.optionalhook",
-  "six.PY2",
+  "reportportal_client.ReportPortalService",
+  "reportportal_client.errors.ResponseError",
+  "reportportal_client.external.google_analytics.send_event",
+  "reportportal_client.helpers.gen_attributes",
+  "reportportal_client.helpers.get_launch_sys_attrs",
+  "reportportal_client.helpers.get_package_version",
+  "reportportal_client.service._dict_to_payload",
   "six.moves.queue",
   "six.moves.queue.Empty",
   "six.moves.queue.Queue",
   "six.moves.urllib.parse.urlparse",
-  "six.with_metaclass",
   "sys.stderr.flush",
+  "traceback",
+  "traceback.print_exception",
   "wrap_log",
   "wrap_makeRecord"
  ],
  "deps": {
   "_pytest": [],
   "cgi": [
+   "python/conda-forge/linux-64/python-3.5.4-0",
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython"
   ],
   "contextlib": [
+   "python/conda-forge/linux-64/python-3.5.4-0",
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
+  ],
+  "dill": [],
+  "functools": [
+   "python/conda-forge/linux-64/python-2.7.15-h938d71a_1004",
+   "python/conda-forge/linux-64/python-3.5.4-0",
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
+  ],
+  "html": [
+   "python/conda-forge/linux-64/python-3.5.4-0",
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
   ],
   "logging": [
+   "python/conda-forge/linux-64/python-2.7.15-h938d71a_1004",
+   "python/conda-forge/linux-64/python-3.5.4-0",
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
   ],
   "os": [
+   "python/conda-forge/linux-64/python-3.5.4-0",
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython"
   ],
   "pkg_resources": [
    "setuptools/conda-forge/linux-64/setuptools-40.6.1-py36_0",
@@ -45,12 +69,10 @@
    "setuptools/conda-forge/linux-64/setuptools-49.1.2-py38h32f6830_0"
   ],
   "pytest": [
+   "pytest/conda-forge/linux-64/pytest-3.4.0-py35_0",
    "pytest/conda-forge/linux-64/pytest-3.7.0-py27_0",
    "pytest/conda-forge/linux-64/pytest-4.6.0-py37_0",
    "pytest/conda-forge/linux-64/pytest-6.0.2-py37hc8dfbb8_0"
-  ],
-  "reportportal_client": [
-   "reportportal-client/conda-forge/noarch/reportportal-client-5.0.12-pyhd8ed1ab_0"
   ],
   "requests": [
    "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
@@ -62,9 +84,17 @@
    "requests/conda-forge/noarch/requests-2.25.1-pyhd3deb0d_0",
    "requests/conda-forge/noarch/requests-2.26.0-pyhd8ed1ab_0"
   ],
-  "traceback": [
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython"
+  "six": [
+   "compass-interface-http/conda-forge/noarch/compass-interface-http-0.24.1-pyhd8ed1ab_7",
+   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
+   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0",
+   "lldb/conda-forge/linux-64/lldb-6.0.0-py35_0",
+   "privy/conda-forge/noarch/privy-6.0.0-py_0",
+   "six/conda-forge/linux-64/six-1.10.0-py34_0",
+   "six/conda-forge/linux-64/six-1.10.0-py34_1",
+   "six/conda-forge/linux-64/six-1.12.0-py37_1001",
+   "six/conda-forge/noarch/six-1.14.0-py_1",
+   "six/conda-forge/noarch/six-1.16.0-pyh6c4a22f_0"
   ]
  }
 }
