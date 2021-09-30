@@ -1,42 +1,59 @@
 {
  "bad": [
-  "_recurse_list",
-  "basic.GettableProperty",
-  "basic.Property",
-  "basic.Renamed",
-  "cls",
-  "func",
-  "func.__code__.co_argcount",
-  "func.__name__",
-  "func.setter",
-  "handlers.ClassValidator",
-  "handlers.Observer",
-  "handlers._get_listeners",
-  "handlers._set_listener",
-  "handlers.listeners_disabled",
-  "handlers.validator",
-  "ignore_kwargs",
-  "io.BytesIO",
-  "matplotlib.cm.cmap_d.keys",
-  "max.setter",
-  "min.setter",
-  "numpy.bool_",
-  "object.__setattr__",
-  "observable_class",
-  "out_class",
-  "utils.SelfReferenceError",
-  "utils.everything",
-  "utils.filter_props",
-  "utils.undefined",
-  "val",
-  "val.func",
-  "value",
-  "value.__class__.deserialize",
-  "value.serialize",
-  "value_type",
+  "cv2.pyrDown",
+  "cv2.pyrUp",
+  "data.data.max",
+  "data.data.min",
+  "fz",
+  "geonum.BASEMAP_AVAILABLE",
+  "geonum.CV2_AVAILABLE",
+  "geonum.LATLON_AVAILABLE",
+  "geonum.NETCDF_AVAILABLE",
+  "geonum.SRTM_AVAILABLE",
+  "geonum.__init__.LOCAL_TOPO_PATH",
+  "geonum.__init__._LIBDIR",
+  "geonum.__init__.__dir__",
+  "geonum.__init__.check_requirements",
+  "hav",
+  "map.draw_geo_point_2d",
+  "map.draw_geo_point_3d",
+  "map.draw_geo_vector_3d",
+  "map.draw_text_3d",
+  "map.write_point_name_2d",
+  "matplotlib.cm.Oranges",
+  "matplotlib.cm.coolwarm",
+  "matplotlib.cm.seismic",
+  "mpl_toolkits.basemap.Basemap",
+  "netCDF4.Dataset",
+  "numpy.arcsin",
+  "numpy.arctan",
+  "numpy.ceil",
+  "numpy.deg2rad",
+  "numpy.degrees",
+  "numpy.floor",
+  "numpy.hypot",
+  "numpy.int",
+  "numpy.log",
+  "numpy.log2",
+  "numpy.logical_and",
+  "numpy.nan",
+  "numpy.rad2deg",
+  "numpy.radians",
+  "numpy.sign",
+  "numpy.tan",
+  "os.getcwd",
+  "os.listdir",
+  "os.path.exists",
+  "os.remove",
+  "p_lats",
+  "p_lons",
+  "pytest.mark.skipif",
   "warnings.warn"
  ],
  "deps": {
+  "LatLon23": [
+   "latlon23/conda-forge/noarch/latlon23-1.0.7-py_0"
+  ],
   "__future__": [
    "python/conda-forge/linux-64/python-2.7.12-1",
    "python/conda-forge/linux-64/python-2.7.13-0",
@@ -67,7 +84,23 @@
    "python/conda-forge/linux-64/python-3.8.6-hffdb5ce_5_cpython",
    "python/conda-forge/linux-64/python-3.9.0-h2a148a8_4_cpython"
   ],
-  "_pickle": [
+  "_pytest": [
+   "pytest/conda-forge/linux-64/pytest-3.3.0-py27_0",
+   "pytest/conda-forge/linux-64/pytest-3.4.0-py35_0",
+   "pytest/conda-forge/linux-64/pytest-3.7.0-py27_0",
+   "pytest/conda-forge/linux-64/pytest-3.7.1-py27_0",
+   "pytest/conda-forge/linux-64/pytest-3.7.2-py36_0",
+   "pytest/conda-forge/linux-64/pytest-4.6.0-py37_0",
+   "pytest/conda-forge/linux-64/pytest-5.2.4-py37_0",
+   "pytest/conda-forge/linux-64/pytest-6.0.0-py38h32f6830_0",
+   "pytest/conda-forge/linux-64/pytest-6.0.2-py37hc8dfbb8_0"
+  ],
+  "abc": [
+   "python/conda-forge/linux-64/python-2.7.13-1",
+   "python/conda-forge/linux-64/python-2.7.14-3",
+   "python/conda-forge/linux-64/python-2.7.14-5",
+   "python/conda-forge/linux-64/python-2.7.15-h938d71a_1002",
+   "python/conda-forge/linux-64/python-2.7.15-h938d71a_1004",
    "python/conda-forge/linux-64/python-3.5.4-0",
    "python/conda-forge/linux-64/python-3.5.4-3",
    "python/conda-forge/linux-64/python-3.6.0b2-1",
@@ -80,67 +113,16 @@
    "python/conda-forge/linux-64/python-3.6.7-h357f687_1006",
    "python/conda-forge/linux-64/python-3.7.1-h381d211_1003",
    "python/conda-forge/linux-64/python-3.7.6-h357f687_3_cpython",
-   "python/conda-forge/linux-64/python-3.8.1-h357f687_1",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_3_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython",
    "python/conda-forge/linux-64/python-3.8.6-hffdb5ce_5_cpython",
    "python/conda-forge/linux-64/python-3.9.0-h2a148a8_4_cpython"
   ],
-  "base64": [
-   "python/conda-forge/linux-64/python-3.5.4-0",
-   "python/conda-forge/linux-64/python-3.5.4-3",
-   "python/conda-forge/linux-64/python-3.6.0b2-1",
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.6.11-h425cb1d_0_cpython",
-   "python/conda-forge/linux-64/python-3.6.11-h6f2ec95_0_cpython",
-   "python/conda-forge/linux-64/python-3.6.13-hffdb5ce_0_cpython",
-   "python/conda-forge/linux-64/python-3.6.5-0",
-   "python/conda-forge/linux-64/python-3.6.6-h5001a0f_3",
-   "python/conda-forge/linux-64/python-3.6.7-h357f687_1006",
-   "python/conda-forge/linux-64/python-3.7.1-h381d211_1003",
-   "python/conda-forge/linux-64/python-3.7.6-h357f687_3_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_3_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython",
-   "python/conda-forge/linux-64/python-3.8.6-hffdb5ce_5_cpython",
-   "python/conda-forge/linux-64/python-3.9.0-h2a148a8_4_cpython"
+  "data": [
+   "dateparser/conda-forge/noarch/dateparser-0.6.0-py_0"
   ],
-  "collections": [
-   "python/conda-forge/linux-64/python-3.5.4-0",
-   "python/conda-forge/linux-64/python-3.5.4-3",
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.6.11-h425cb1d_0_cpython",
-   "python/conda-forge/linux-64/python-3.6.11-h6f2ec95_0_cpython",
-   "python/conda-forge/linux-64/python-3.6.13-hffdb5ce_0_cpython",
-   "python/conda-forge/linux-64/python-3.6.5-0",
-   "python/conda-forge/linux-64/python-3.6.6-h5001a0f_3",
-   "python/conda-forge/linux-64/python-3.6.7-h357f687_1006",
-   "python/conda-forge/linux-64/python-3.7.1-h381d211_1003",
-   "python/conda-forge/linux-64/python-3.7.6-h357f687_3_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_3_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython",
-   "python/conda-forge/linux-64/python-3.8.6-hffdb5ce_5_cpython",
-   "python/conda-forge/linux-64/python-3.9.0-h2a148a8_4_cpython"
-  ],
-  "datetime": [
-   "python/conda-forge/linux-64/python-3.5.4-0",
-   "python/conda-forge/linux-64/python-3.5.4-3",
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.6.11-h425cb1d_0_cpython",
-   "python/conda-forge/linux-64/python-3.6.11-h6f2ec95_0_cpython",
-   "python/conda-forge/linux-64/python-3.6.6-h5001a0f_3",
-   "python/conda-forge/linux-64/python-3.6.7-h357f687_1006",
-   "python/conda-forge/linux-64/python-3.7.1-h381d211_1003",
-   "python/conda-forge/linux-64/python-3.7.6-h357f687_3_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_3_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython",
-   "python/conda-forge/linux-64/python-3.8.6-hffdb5ce_5_cpython",
-   "python/conda-forge/linux-64/python-3.9.0-h2a148a8_4_cpython"
-  ],
-  "functools": [
+  "glob": [
    "python/conda-forge/linux-64/python-2.7.13-1",
    "python/conda-forge/linux-64/python-2.7.14-5",
    "python/conda-forge/linux-64/python-2.7.15-h938d71a_1004",
@@ -158,32 +140,6 @@
    "python/conda-forge/linux-64/python-3.8.6-hffdb5ce_5_cpython",
    "python/conda-forge/linux-64/python-3.9.0-h2a148a8_4_cpython"
   ],
-  "json": [
-   "python/conda-forge/linux-64/python-3.5.4-0",
-   "python/conda-forge/linux-64/python-3.5.4-3",
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.6.11-h425cb1d_0_cpython",
-   "python/conda-forge/linux-64/python-3.6.6-h5001a0f_3",
-   "python/conda-forge/linux-64/python-3.6.7-h357f687_1006",
-   "python/conda-forge/linux-64/python-3.7.1-h381d211_1003",
-   "python/conda-forge/linux-64/python-3.7.6-h357f687_3_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython",
-   "python/conda-forge/linux-64/python-3.8.6-hffdb5ce_5_cpython",
-   "python/conda-forge/linux-64/python-3.9.0-h2a148a8_4_cpython"
-  ],
-  "math": [
-   "python/conda-forge/linux-64/python-3.5.4-0",
-   "python/conda-forge/linux-64/python-3.5.4-3",
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.6.11-h425cb1d_0_cpython",
-   "python/conda-forge/linux-64/python-3.6.6-h5001a0f_3",
-   "python/conda-forge/linux-64/python-3.6.7-h357f687_1006",
-   "python/conda-forge/linux-64/python-3.7.1-h381d211_1003",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython",
-   "python/conda-forge/linux-64/python-3.9.0-h2a148a8_4_cpython"
-  ],
   "matplotlib": [
    "matplotlib-base/conda-forge/linux-64/matplotlib-base-2.2.5-py36h250f245_1",
    "matplotlib-base/conda-forge/linux-64/matplotlib-base-3.1.1-py37hfd891ef_0",
@@ -192,8 +148,14 @@
    "matplotlib/conda-forge/linux-64/matplotlib-1.5.3-np111py27_1",
    "matplotlib/conda-forge/linux-64/matplotlib-1.5.3-np111py34_0"
   ],
-  "numpy": [],
-  "pickle": [
+  "mpl_toolkits": [
+   "matplotlib/conda-forge/linux-64/matplotlib-1.5.3-np111py27_1",
+   "matplotlib/conda-forge/linux-64/matplotlib-1.5.3-np111py34_0"
+  ],
+  "ntpath": [
+   "python/conda-forge/linux-64/python-2.7.13-1",
+   "python/conda-forge/linux-64/python-2.7.14-5",
+   "python/conda-forge/linux-64/python-2.7.15-h938d71a_1004",
    "python/conda-forge/linux-64/python-3.5.4-0",
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.6.11-h425cb1d_0_cpython",
@@ -203,8 +165,38 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython",
    "python/conda-forge/linux-64/python-3.9.0-h2a148a8_4_cpython"
   ],
-  "png": [
-   "pypng/conda-forge/noarch/pypng-0.0.20-py_0"
+  "numpy": [],
+  "os": [
+   "python/conda-forge/linux-64/python-3.5.4-0",
+   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
+   "python/conda-forge/linux-64/python-3.6.11-h425cb1d_0_cpython",
+   "python/conda-forge/linux-64/python-3.6.7-h357f687_1006",
+   "python/conda-forge/linux-64/python-3.7.1-h381d211_1003",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
+   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython",
+   "python/conda-forge/linux-64/python-3.9.0-h2a148a8_4_cpython"
+  ],
+  "pkg_resources": [
+   "setuptools/conda-forge/linux-64/setuptools-37.0.0-py27_0",
+   "setuptools/conda-forge/linux-64/setuptools-38.5.2-py27_0",
+   "setuptools/conda-forge/linux-64/setuptools-40.6.1-py36_0",
+   "setuptools/conda-forge/linux-64/setuptools-40.6.3-py27_0",
+   "setuptools/conda-forge/linux-64/setuptools-44.0.0-py27_0",
+   "setuptools/conda-forge/linux-64/setuptools-45.2.0-py37_0",
+   "setuptools/conda-forge/linux-64/setuptools-46.3.0-py38h32f6830_0",
+   "setuptools/conda-forge/linux-64/setuptools-49.1.2-py38h32f6830_0",
+   "setuptools/conda-forge/linux-64/setuptools-49.2.0-py38h32f6830_0"
+  ],
+  "pytest": [
+   "pytest/conda-forge/linux-64/pytest-3.3.0-py27_0",
+   "pytest/conda-forge/linux-64/pytest-3.4.0-py35_0",
+   "pytest/conda-forge/linux-64/pytest-3.7.0-py27_0",
+   "pytest/conda-forge/linux-64/pytest-3.7.1-py27_0",
+   "pytest/conda-forge/linux-64/pytest-3.7.2-py36_0",
+   "pytest/conda-forge/linux-64/pytest-4.6.0-py37_0",
+   "pytest/conda-forge/linux-64/pytest-5.2.4-py37_0",
+   "pytest/conda-forge/linux-64/pytest-6.0.0-py38h32f6830_0",
+   "pytest/conda-forge/linux-64/pytest-6.0.2-py37hc8dfbb8_0"
   ],
   "random": [
    "python/conda-forge/linux-64/python-3.5.4-0",
@@ -216,15 +208,20 @@
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython",
    "python/conda-forge/linux-64/python-3.9.0-h2a148a8_4_cpython"
   ],
-  "re": [
-   "python/conda-forge/linux-64/python-3.5.4-0",
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.6.11-h425cb1d_0_cpython",
-   "python/conda-forge/linux-64/python-3.6.7-h357f687_1006",
-   "python/conda-forge/linux-64/python-3.7.1-h381d211_1003",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython",
-   "python/conda-forge/linux-64/python-3.9.0-h2a148a8_4_cpython"
+  "scipy": [
+   "scipy/conda-forge/linux-64/scipy-0.17.1-np110py27_blas_openblas_202",
+   "scipy/conda-forge/linux-64/scipy-0.17.1-np110py34_blas_openblas_203",
+   "scipy/conda-forge/linux-64/scipy-0.17.1-np111py34_blas_openblas_205",
+   "scipy/conda-forge/linux-64/scipy-0.19.1-np113py35_blas_openblas_200",
+   "scipy/conda-forge/linux-64/scipy-1.0.1-py35_blas_openblas_200",
+   "scipy/conda-forge/linux-64/scipy-1.1.0-py27_blas_openblas_200",
+   "scipy/conda-forge/linux-64/scipy-1.1.0-py27_blas_openblashb06ca3d_202",
+   "scipy/conda-forge/linux-64/scipy-1.2.1-py27h921218d_2",
+   "scipy/conda-forge/linux-64/scipy-1.3.3-py36h921218d_0",
+   "scipy/conda-forge/linux-64/scipy-1.5.2-py36h24f379b_2",
+   "scipy/conda-forge/linux-64/scipy-1.5.2-py39h9bf99d4_2",
+   "scipy/conda-forge/linux-64/scipy-1.7.0-py37h29e03ee_0",
+   "scipy/conda-forge/linux-64/scipy-1.7.0-py37ha768fb6_1"
   ],
   "six": [
    "compass-interface-http/conda-forge/noarch/compass-interface-http-0.24.1-pyhd8ed1ab_7",
@@ -239,42 +236,18 @@
    "six/conda-forge/noarch/six-1.15.0-pyh9f0ad1d_0",
    "six/conda-forge/noarch/six-1.16.0-pyh6c4a22f_0"
   ],
-  "traitlets": [
-   "traitlets/conda-forge/linux-64/traitlets-4.2.1-py35_0",
-   "traitlets/conda-forge/linux-64/traitlets-4.2.2-py27_0",
-   "traitlets/conda-forge/linux-64/traitlets-4.3.0-py34_0",
-   "traitlets/conda-forge/linux-64/traitlets-4.3.1-py27_0",
-   "traitlets/conda-forge/linux-64/traitlets-4.3.1-py35_0",
-   "traitlets/conda-forge/linux-64/traitlets-4.3.1-py36_0",
-   "traitlets/conda-forge/linux-64/traitlets-4.3.2-py27_0",
-   "traitlets/conda-forge/linux-64/traitlets-4.3.2-py36_1000",
-   "traitlets/conda-forge/linux-64/traitlets-4.3.2-py37_0",
-   "traitlets/conda-forge/linux-64/traitlets-4.3.3-py27h8c360ce_1",
-   "traitlets/conda-forge/linux-64/traitlets-4.3.3-py38h32f6830_1",
-   "traitlets/conda-forge/noarch/traitlets-4.3.3-pyhd8ed1ab_2",
-   "traitlets/conda-forge/noarch/traitlets-5.0.4-py_0",
-   "traitlets/conda-forge/noarch/traitlets-5.0.4-py_1",
-   "traitlets/conda-forge/noarch/traitlets-5.0.5-py_0",
-   "traitlets/conda-forge/noarch/traitlets-5.1.0-pyhd8ed1ab_0"
+  "srtm": [
+   "srtm.py/conda-forge/noarch/srtm.py-0.3.4-py_0"
   ],
-  "types": [
+  "traceback": [
    "python/conda-forge/linux-64/python-2.7.13-1",
    "python/conda-forge/linux-64/python-2.7.14-5",
-   "python/conda-forge/linux-64/python-2.7.15-h938d71a_1004"
-  ],
-  "uuid": [
+   "python/conda-forge/linux-64/python-2.7.15-h938d71a_1004",
    "python/conda-forge/linux-64/python-3.5.4-0",
    "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
    "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython",
    "python/conda-forge/linux-64/python-3.9.0-h2a148a8_4_cpython"
-  ],
-  "vectormath": [
-   "vectormath/conda-forge/linux-64/vectormath-0.1.4-py27_0",
-   "vectormath/conda-forge/linux-64/vectormath-0.2.0-py35_0",
-   "vectormath/conda-forge/noarch/vectormath-0.2.0-py_1",
-   "vectormath/conda-forge/noarch/vectormath-0.2.1-py_0",
-   "vectormath/conda-forge/noarch/vectormath-0.2.2-py_0"
   ],
   "warnings": [
    "python/conda-forge/linux-64/python-3.5.4-0",
