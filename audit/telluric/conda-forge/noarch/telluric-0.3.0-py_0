@@ -45,6 +45,7 @@
   "shapely.geometry.CAP_STYLE.round",
   "shapely.geometry.CAP_STYLE.square",
   "shapely.geometry.shape.buffer",
+  "statistics.median_low",
   "telluric.constants.MERCATOR_RESOLUTION_MAPPING.items",
   "telluric.georaster.MergeStrategy.INTERSECTION",
   "type_max",
@@ -1705,55 +1706,6 @@
    "shapely/conda-forge/linux-64/shapely-1.8.0-py39hc7dd4e9_1",
    "shapely/conda-forge/linux-64/shapely-1.8.0-py39hc7dd4e9_2"
   ],
-  "statistics": [
-   "python/conda-forge/linux-64/python-3.5.2-2",
-   "python/conda-forge/linux-64/python-3.5.3-3",
-   "python/conda-forge/linux-64/python-3.5.4-0",
-   "python/conda-forge/linux-64/python-3.6.0-0",
-   "python/conda-forge/linux-64/python-3.6.0a4-0",
-   "python/conda-forge/linux-64/python-3.6.0b3-0",
-   "python/conda-forge/linux-64/python-3.6.10-h8356626_1010_cpython",
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.6.11-h425cb1d_0_cpython",
-   "python/conda-forge/linux-64/python-3.6.11-h4d41432_1_cpython",
-   "python/conda-forge/linux-64/python-3.6.11-hffdb5ce_3_cpython",
-   "python/conda-forge/linux-64/python-3.6.13-hffdb5ce_0_cpython",
-   "python/conda-forge/linux-64/python-3.6.2-0",
-   "python/conda-forge/linux-64/python-3.6.3-2",
-   "python/conda-forge/linux-64/python-3.6.3-3",
-   "python/conda-forge/linux-64/python-3.6.5-0",
-   "python/conda-forge/linux-64/python-3.6.6-h5001a0f_3",
-   "python/conda-forge/linux-64/python-3.6.6-hd21baee_1001",
-   "python/conda-forge/linux-64/python-3.6.7-h357f687_1006",
-   "python/conda-forge/linux-64/python-3.6.7-h5001a0f_0",
-   "python/conda-forge/linux-64/python-3.6.7-hd21baee_1001",
-   "python/conda-forge/linux-64/python-3.6.7-hd21baee_1002",
-   "python/conda-forge/linux-64/python-3.7.0-h5001a0f_6",
-   "python/conda-forge/linux-64/python-3.7.0-hd21baee_1006",
-   "python/conda-forge/linux-64/python-3.7.1-h381d211_1003",
-   "python/conda-forge/linux-64/python-3.7.10-hb7a2778_102_cpython",
-   "python/conda-forge/linux-64/python-3.7.10-hffdb5ce_100_cpython",
-   "python/conda-forge/linux-64/python-3.7.8-h6238437_2_cpython",
-   "python/conda-forge/linux-64/python-3.7.8-h8bdb77d_2_cpython",
-   "python/conda-forge/linux-64/python-3.7.8-hdad413e_2_cpython",
-   "python/conda-forge/linux-64/python-3.7.8-hffdb5ce_3_cpython",
-   "python/conda-forge/linux-64/python-3.8.1-h357f687_2",
-   "python/conda-forge/linux-64/python-3.8.10-hb7a2778_2_cpython",
-   "python/conda-forge/linux-64/python-3.8.12-hf930737_1_cpython",
-   "python/conda-forge/linux-64/python-3.8.2-he5300dc_7_cpython",
-   "python/conda-forge/linux-64/python-3.8.4-cpython_h425cb1d_0",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython",
-   "python/conda-forge/linux-64/python-3.8.6-hffdb5ce_1_cpython",
-   "python/conda-forge/linux-64/python-3.9.0-h2a148a8_4_cpython",
-   "python/conda-forge/linux-64/python-3.9.0-hffdb5ce_5_cpython",
-   "python/conda-forge/linux-64/python-3.9.1-hffdb5ce_1_cpython",
-   "python/conda-forge/linux-64/python-3.9.1-hffdb5ce_2_cpython",
-   "python/conda-forge/linux-64/python-3.9.1-hffdb5ce_3_cpython",
-   "python/conda-forge/linux-64/python-3.9.1-hffdb5ce_4_cpython",
-   "statistics/conda-forge/linux-64/statistics-1.0.3.5-py27_1001",
-   "statistics/conda-forge/noarch/statistics-1.0.3.5-py_1002"
-  ],
   "telluric": [
    "telluric/conda-forge/noarch/telluric-0.10.0-py_0",
    "telluric/conda-forge/noarch/telluric-0.10.1-py_0",
@@ -2021,13 +1973,15 @@
    "1.8.19",
    "1.8.20",
    "1.8.21",
+   "1.8.22",
    "1.8.3",
    "1.8.5",
    "1.8.6",
    "1.8.7"
   ],
   "folium": [
-   "0.12.1.post1"
+   "0.12.1.post1",
+   "0.13.0"
   ],
   "imageio": [
    "2.13.1",
@@ -2046,7 +2000,12 @@
    "2.19.1",
    "2.19.2",
    "2.19.3",
-   "2.2.0"
+   "2.2.0",
+   "2.21.0",
+   "2.21.1",
+   "2.21.2",
+   "2.21.3",
+   "2.22.0"
   ],
   "ipyleaflet": [
    "0.10.0",
@@ -2079,6 +2038,8 @@
    "0.15.0",
    "0.16.0",
    "0.17.0",
+   "0.17.1",
+   "0.17.2",
    "0.2.0",
    "0.2.1",
    "0.3.0",
@@ -2123,7 +2084,11 @@
    "3.4.3",
    "3.5.0",
    "3.5.1",
-   "3.5.2"
+   "3.5.2",
+   "3.5.3",
+   "3.6.0",
+   "3.6.1",
+   "3.6.2"
   ],
   "mercantile": [
    "0.10.0",
@@ -2186,7 +2151,8 @@
    "3.2.0",
    "3.2.1",
    "3.3.0",
-   "3.3.1"
+   "3.3.1",
+   "3.4.0"
   ],
   "python": [
    "1.0.1",
@@ -2206,6 +2172,8 @@
    "3.10.2",
    "3.10.4",
    "3.10.5",
+   "3.10.6",
+   "3.11.0",
    "3.4.5",
    "3.6.0rc1",
    "3.6.15",
@@ -2244,7 +2212,12 @@
    "1.2.7",
    "1.2.8",
    "1.2.9",
-   "1.3.0"
+   "1.3.0",
+   "1.3.0.post1",
+   "1.3.1",
+   "1.3.2",
+   "1.3.3",
+   "1.3.4"
   ],
   "shapely": [
    "1.5.13",
@@ -2252,7 +2225,10 @@
    "1.5.16",
    "1.5.17",
    "1.8.1",
-   "1.8.2"
+   "1.8.2",
+   "1.8.3",
+   "1.8.4",
+   "1.8.5"
   ],
   "telluric": [
    "0.13.10",
@@ -2260,7 +2236,9 @@
    "0.13.12",
    "0.13.13",
    "0.13.14",
-   "0.14.0"
+   "0.14.0",
+   "0.14.1",
+   "0.14.2"
   ]
  },
  "version_ranges": [
