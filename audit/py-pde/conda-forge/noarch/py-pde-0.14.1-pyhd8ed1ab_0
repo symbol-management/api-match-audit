@@ -185,49 +185,13 @@
   "norm",
   "norm_numba",
   "normalize",
-  "numba",
-  "numba.__version__",
   "numba.__version__.split",
-  "numba.carray",
-  "numba.complex128",
   "numba.config.DISABLE_JIT",
   "numba.config.NUMBA_DEFAULT_NUM_THREADS",
   "numba.config.NUMBA_NUM_THREADS",
   "numba.config.USING_SVML",
-  "numba.core.cgutils",
-  "numba.core.cgutils.voidptr_t",
-  "numba.core.dispatcher.Dispatcher",
-  "numba.core.extending.overload",
-  "numba.core.extending.register_jitable",
-  "numba.core.types",
-  "numba.core.types.npytypes",
-  "numba.core.types.npytypes.Array",
-  "numba.core.types.scalars",
-  "numba.core.types.scalars.Complex",
-  "numba.core.types.voidptr",
-  "numba.cuda",
-  "numba.cuda.is_available",
-  "numba.dispatcher.Dispatcher",
-  "numba.double",
-  "numba.extending.intrinsic",
   "numba.extending.is_jitted",
-  "numba.extending.overload",
-  "numba.extending.register_jitable",
-  "numba.generated_jit",
-  "numba.jit",
   "numba.numba_environment",
-  "numba.objmode",
-  "numba.prange",
-  "numba.roc",
-  "numba.roc.is_available",
-  "numba.threading_layer",
-  "numba.typeof",
-  "numba.types.Array",
-  "numba.types.Float",
-  "numba.types.Integer",
-  "numba.types.NoneType",
-  "numba.types.Number",
-  "numba.types.Omitted",
   "numpy.arccos",
   "numpy.arcsin",
   "numpy.arctan",
@@ -2884,6 +2848,7 @@
    "python/conda-forge/linux-64/python-3.9.6-h49503c6_0_cpython",
    "python/conda-forge/linux-64/python-3.9.7-hb7a2778_2_cpython"
   ],
+  "numba": [],
   "numbers": [
    "python/conda-forge/linux-64/python-2.7.12-0",
    "python/conda-forge/linux-64/python-2.7.12-1",
@@ -4084,11 +4049,18 @@
    "8.1.1",
    "8.2.0",
    "8.3.0",
-   "8.4.0"
+   "8.4.0",
+   "8.5.0",
+   "8.6.0"
   ],
   "ipywidgets": [
+   "7.6.6",
    "7.7.0",
-   "7.7.1"
+   "7.7.1",
+   "7.7.2",
+   "8.0.0",
+   "8.0.1",
+   "8.0.2"
   ],
   "lap": [
    "0.3.0"
@@ -4118,7 +4090,11 @@
    "3.4.3",
    "3.5.0",
    "3.5.1",
-   "3.5.2"
+   "3.5.2",
+   "3.5.3",
+   "3.6.0",
+   "3.6.1",
+   "3.6.2"
   ],
   "matplotlib-base": [
    "2.1.2",
@@ -4137,7 +4113,11 @@
    "3.4.3",
    "3.5.0",
    "3.5.1",
-   "3.5.2"
+   "3.5.2",
+   "3.5.3",
+   "3.6.0",
+   "3.6.1",
+   "3.6.2"
   ],
   "netket": [
    "2.1",
@@ -4159,7 +4139,9 @@
    "3.3.4",
    "3.4",
    "3.4.1",
-   "3.4.2"
+   "3.4.2",
+   "3.5",
+   "3.5.2"
   ],
   "noise": [],
   "pandas": [
@@ -4195,7 +4177,10 @@
    "1.4.0",
    "1.4.1",
    "1.4.2",
-   "1.4.3"
+   "1.4.3",
+   "1.4.4",
+   "1.5.0",
+   "1.5.1"
   ],
   "py-pde": [
    "0.16.7",
@@ -4207,7 +4192,13 @@
    "0.19.0",
    "0.19.1",
    "0.19.2",
-   "0.20.0"
+   "0.20.0",
+   "0.21.0",
+   "0.22.3",
+   "0.22.4",
+   "0.22.5",
+   "0.22.6",
+   "0.23.0"
   ],
   "pyfftw": [
    "0.11.1",
@@ -4299,7 +4290,9 @@
    "7.0.1",
    "7.1.0",
    "7.1.1",
-   "7.1.2"
+   "7.1.2",
+   "7.1.3",
+   "7.2.0"
   ],
   "python": [
    "1.0.1",
@@ -4315,6 +4308,8 @@
    "3.10.2",
    "3.10.4",
    "3.10.5",
+   "3.10.6",
+   "3.11.0",
    "3.4.5",
    "3.6.15",
    "3.7.12",
@@ -4352,7 +4347,10 @@
    "1.7.3",
    "1.8.0",
    "1.8.1",
-   "1.9.0"
+   "1.9.0",
+   "1.9.1",
+   "1.9.2",
+   "1.9.3"
   ],
   "sympy": [
    "1.0",
@@ -4360,6 +4358,7 @@
    "1.1.1",
    "1.10",
    "1.10.1",
+   "1.11.1",
    "1.2",
    "1.3",
    "1.4",
@@ -4421,6 +4420,7 @@
    "4.63.1",
    "4.63.2",
    "4.64.0",
+   "4.64.1",
    "4.7.2",
    "4.7.4",
    "4.7.6",
@@ -4428,6 +4428,12 @@
    "4.8.2",
    "4.8.4",
    "4.9.0"
+  ],
+  "typing": [
+   "3.10.0.0",
+   "3.5.0.1",
+   "3.7.4.2",
+   "3.7.4.3"
   ]
  },
  "version_ranges": [
@@ -4449,6 +4455,7 @@
   "scipy >=1.2.0,<=1.2.1|1.3.1|>=1.5.2,<=1.5.3",
   "sympy 1.5.1",
   "tqdm >=4.36.1,<=4.62.3",
+  "typing >=3.5.3.0,<=3.7.4.1",
   "google-cloud-bigquery-storage-core >=2.0.0,<=2.1.0"
  ]
 }
