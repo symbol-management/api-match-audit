@@ -18,8 +18,6 @@
   "signal.Signals.SIGUSR1",
   "sys.path.append",
   "typing.WEEKDAYS.index",
-  "typing_extensions.Literal",
-  "typing_extensions.Protocol",
   "watch_reload"
  ],
  "deps": {
@@ -1552,6 +1550,44 @@
    "python/conda-forge/linux-64/python-3.9.1-hffdb5ce_3_cpython",
    "python/conda-forge/linux-64/python-3.9.1-hffdb5ce_4_cpython"
   ],
+  "typing_extensions": [
+   "compass-interface-http/conda-forge/noarch/compass-interface-http-0.24.1-pyhd8ed1ab_4",
+   "compass-interface-http/conda-forge/noarch/compass-interface-http-0.24.1-pyhd8ed1ab_7",
+   "compass-interface-pandas/conda-forge/noarch/compass-interface-pandas-0.24.1-pyhd8ed1ab_4",
+   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.0-pyh9f0ad1d_1",
+   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.0.1-pyh9f0ad1d_0",
+   "google-cloud-bigquery-storage-core/conda-forge/noarch/google-cloud-bigquery-storage-core-2.1.0-pyhd3deb0d_0",
+   "typing_extensions/conda-forge/linux-64/typing_extensions-3.7.2-py27_1000",
+   "typing_extensions/conda-forge/linux-64/typing_extensions-3.7.2-py36_1000",
+   "typing_extensions/conda-forge/linux-64/typing_extensions-3.7.2-py37_1000",
+   "typing_extensions/conda-forge/linux-64/typing_extensions-3.7.4-py27_0",
+   "typing_extensions/conda-forge/linux-64/typing_extensions-3.7.4-py36_0",
+   "typing_extensions/conda-forge/linux-64/typing_extensions-3.7.4-py37_0",
+   "typing_extensions/conda-forge/linux-64/typing_extensions-3.7.4-py38_0",
+   "typing_extensions/conda-forge/linux-64/typing_extensions-3.7.4.1-py27_0",
+   "typing_extensions/conda-forge/linux-64/typing_extensions-3.7.4.1-py27h8c360ce_1",
+   "typing_extensions/conda-forge/linux-64/typing_extensions-3.7.4.1-py36_0",
+   "typing_extensions/conda-forge/linux-64/typing_extensions-3.7.4.1-py36h9f0ad1d_1",
+   "typing_extensions/conda-forge/linux-64/typing_extensions-3.7.4.1-py36h9f0ad1d_2",
+   "typing_extensions/conda-forge/linux-64/typing_extensions-3.7.4.1-py36h9f0ad1d_3",
+   "typing_extensions/conda-forge/linux-64/typing_extensions-3.7.4.1-py36hc560c46_1",
+   "typing_extensions/conda-forge/linux-64/typing_extensions-3.7.4.1-py36hc560c46_2",
+   "typing_extensions/conda-forge/linux-64/typing_extensions-3.7.4.1-py36hc560c46_3",
+   "typing_extensions/conda-forge/linux-64/typing_extensions-3.7.4.1-py37_0",
+   "typing_extensions/conda-forge/linux-64/typing_extensions-3.7.4.1-py37hc8dfbb8_1",
+   "typing_extensions/conda-forge/linux-64/typing_extensions-3.7.4.1-py37hc8dfbb8_2",
+   "typing_extensions/conda-forge/linux-64/typing_extensions-3.7.4.1-py37hc8dfbb8_3",
+   "typing_extensions/conda-forge/linux-64/typing_extensions-3.7.4.1-py38_0",
+   "typing_extensions/conda-forge/linux-64/typing_extensions-3.7.4.1-py38h32f6830_1",
+   "typing_extensions/conda-forge/linux-64/typing_extensions-3.7.4.1-py38h32f6830_2",
+   "typing_extensions/conda-forge/linux-64/typing_extensions-3.7.4.1-py38h32f6830_3",
+   "typing_extensions/conda-forge/noarch/typing_extensions-3.10.0.0-pyha770c72_0",
+   "typing_extensions/conda-forge/noarch/typing_extensions-3.10.0.1-pyha770c72_0",
+   "typing_extensions/conda-forge/noarch/typing_extensions-3.10.0.2-pyha770c72_0",
+   "typing_extensions/conda-forge/noarch/typing_extensions-3.7.4.2-py_0",
+   "typing_extensions/conda-forge/noarch/typing_extensions-3.7.4.3-py_0",
+   "typing_extensions/conda-forge/noarch/typing_extensions-4.0.0-pyha770c72_0"
+  ],
   "urllib": [
    "python/conda-forge/linux-64/python-3.5.4-0",
    "python/conda-forge/linux-64/python-3.6.0-0",
@@ -1627,16 +1663,7 @@
   ]
  },
  "missing_versions": {
-  "async-timeout": [
-   "1.2.1",
-   "1.4.0",
-   "2.0.0",
-   "2.0.1",
-   "3.0.0",
-   "4.0.0",
-   "4.0.1",
-   "4.0.2"
-  ],
+  "async_timeout": [],
   "click": [
    "8.0.4",
    "8.1.0",
@@ -1709,6 +1736,15 @@
    "3.9.13",
    "3.9.9"
   ],
+  "typing_extensions": [
+   "3.6.5",
+   "3.6.6",
+   "4.0.1",
+   "4.1.1",
+   "4.2.0",
+   "4.3.0",
+   "4.4.0"
+  ],
   "watchgod": [
    "0.8",
    "0.8.1",
@@ -1716,10 +1752,11 @@
   ]
  },
  "version_ranges": [
-  "async-timeout 3.0.1",
+  "async_timeout >=3.0.1",
   "python >=3.7.0,<=3.7.10|>=3.8.0,<=3.8.12|>=3.9.0,<=3.9.7",
   "click >=5.1,<=8.0.3",
   "pydantic >=0.18.1,<=0.21|>=0.23,<=0.28|>=0.30,<=0.32.2|>=1.1,<=1.8.2",
+  "typing_extensions >=3.7.2,<=4.0.0",
   "watchgod >=0.6,<=0.7"
  ]
 }
