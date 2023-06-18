@@ -13,14 +13,23 @@
   "distributed.models.lgb.LGBMForecast",
   "distributed.models.xgb.XGBForecast",
   "itertools.chain.from_iterable",
+  "numba.njit",
   "numpy.float32",
   "numpy.float64",
   "numpy.random.RandomState",
   "numpy.random.rand",
   "numpy.uint16",
   "numpy.uint8",
+  "pandas",
+  "pandas.DataFrame",
+  "pandas.Index",
+  "pandas.Series",
   "pandas.api.types.is_categorical_dtype",
   "pandas.api.types.is_datetime64_dtype",
+  "pandas.concat",
+  "pandas.date_range",
+  "pandas.to_datetime",
+  "pandas.tseries.frequencies.Day",
   "reader",
   "warnings.warn",
   "writer"
@@ -811,7 +820,6 @@
    "python/conda-forge/linux-64/python-3.9.6-h49503c6_0_cpython",
    "python/conda-forge/linux-64/python-3.9.7-hb7a2778_2_cpython"
   ],
-  "numba": [],
   "numpy": [],
   "operator": [
    "python/conda-forge/linux-64/python-3.5.2-2",
@@ -894,7 +902,6 @@
    "python/conda-forge/linux-64/python-3.9.6-h49503c6_0_cpython",
    "python/conda-forge/linux-64/python-3.9.7-hb7a2778_2_cpython"
   ],
-  "pandas": [],
   "pathlib": [
    "pathlib/conda-forge/noarch/pathlib-1.0.1-py_1",
    "python/conda-forge/linux-64/python-3.5.2-2",
@@ -1210,10 +1217,6 @@
   ]
  },
  "missing_versions": {
-  "compass-interface-pandas": [
-   "0.25.0",
-   "0.26.0"
-  ],
   "dask": [
    "0.10.0",
    "0.10.1",
@@ -1322,10 +1325,27 @@
    "2021.9.1",
    "2022.1.0",
    "2022.1.1",
+   "2022.10.0",
+   "2022.10.2",
+   "2022.11.0",
    "2022.2.0",
    "2022.2.1",
    "2022.3.0",
-   "2022.4.0"
+   "2022.4.0",
+   "2022.4.1",
+   "2022.4.2",
+   "2022.5.0",
+   "2022.5.1",
+   "2022.5.2",
+   "2022.6.0",
+   "2022.6.1",
+   "2022.7.0",
+   "2022.7.1",
+   "2022.8.0",
+   "2022.8.1",
+   "2022.9.0",
+   "2022.9.1",
+   "2022.9.2"
   ],
   "lightgbm": [
    "2.0.10",
@@ -1345,7 +1365,8 @@
    "3.1.0",
    "3.1.1",
    "3.3.1",
-   "3.3.2"
+   "3.3.2",
+   "3.3.3"
   ],
   "py-xgboost": [
    "0.80",
@@ -1359,7 +1380,40 @@
    "1.4.1",
    "1.4.2",
    "1.5.0",
-   "1.5.1"
+   "1.5.1",
+   "1.6.1",
+   "1.6.2",
+   "1.7.0",
+   "1.7.1"
+  ],
+  "pydantic": [
+   "0.18.1",
+   "0.18.2",
+   "0.19",
+   "0.20",
+   "0.20.1",
+   "0.21",
+   "0.22",
+   "0.23",
+   "0.24",
+   "0.25",
+   "0.26",
+   "0.28",
+   "0.29",
+   "0.30",
+   "0.30.1",
+   "0.31",
+   "0.31.1",
+   "0.32",
+   "0.32.1",
+   "0.32.2",
+   "1.0",
+   "1.10.0",
+   "1.10.1",
+   "1.10.2",
+   "1.9.0",
+   "1.9.1",
+   "1.9.2"
   ],
   "python": [
    "1.0.1",
@@ -1378,6 +1432,9 @@
    "3.10.1",
    "3.10.2",
    "3.10.4",
+   "3.10.5",
+   "3.10.6",
+   "3.11.0",
    "3.4.5",
    "3.6.0rc1",
    "3.6.15",
@@ -1385,6 +1442,7 @@
    "3.8.13",
    "3.9.10",
    "3.9.12",
+   "3.9.13",
    "3.9.2",
    "3.9.9"
   ],
@@ -1400,13 +1458,20 @@
    "0.3.4"
   ],
   "typer": [
-   "0.4.1"
+   "0.4.1",
+   "0.4.2",
+   "0.5.0",
+   "0.6.1",
+   "0.7.0"
   ],
   "typing_extensions": [
    "3.6.5",
    "3.6.6",
    "4.0.1",
-   "4.1.1"
+   "4.1.1",
+   "4.2.0",
+   "4.3.0",
+   "4.4.0"
   ],
   "window_ops": []
  },
@@ -1414,7 +1479,7 @@
   "python >=3.5.1,<=3.6.0b4|>=3.6.0,<=3.6.13|>=3.7.0,<=3.7.10|>=3.8.0,<=3.8.12|>=3.9.0,<=3.9.1|>=3.9.4,<=3.9.7",
   "dask >=0.14.1,<=0.15.0",
   "lightgbm >=3.2.0,<=3.2.1",
-  "compass-interface-pandas 0.24.1",
+  "pydantic >=1.1,<=1.8.2",
   "s3path >=0.1.8,<=0.3.2",
   "typer >=0.2.1,<=0.4.0",
   "typing_extensions >=3.7.2,<=4.0.0",
