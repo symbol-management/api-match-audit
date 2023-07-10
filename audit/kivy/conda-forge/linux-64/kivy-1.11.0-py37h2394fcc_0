@@ -960,7 +960,10 @@
   "win32gui.LoadImage",
   "work_insert",
   "wr",
-  "x"
+  "x",
+  "zlib",
+  "zlib.compress",
+  "zlib.decompress"
  ],
  "deps": {
   "PIL": [
@@ -7545,48 +7548,9 @@
    "python/conda-forge/linux-64/python-3.9.0-hffdb5ce_5_cpython",
    "python/conda-forge/linux-64/python-3.9.1-hffdb5ce_3_cpython",
    "python/conda-forge/linux-64/python-3.9.1-hffdb5ce_4_cpython"
-  ],
-  "zlib": [
-   "python/conda-forge/linux-64/python-3.5.4-0",
-   "python/conda-forge/linux-64/python-3.6.0-0",
-   "python/conda-forge/linux-64/python-3.6.0b3-0",
-   "python/conda-forge/linux-64/python-3.6.10-h8356626_1010_cpython",
-   "python/conda-forge/linux-64/python-3.6.10-he5300dc_1011_cpython",
-   "python/conda-forge/linux-64/python-3.6.11-h425cb1d_0_cpython",
-   "python/conda-forge/linux-64/python-3.6.13-hffdb5ce_0_cpython",
-   "python/conda-forge/linux-64/python-3.6.3-2",
-   "python/conda-forge/linux-64/python-3.6.3-3",
-   "python/conda-forge/linux-64/python-3.6.6-h5001a0f_3",
-   "python/conda-forge/linux-64/python-3.6.6-hd21baee_1001",
-   "python/conda-forge/linux-64/python-3.6.7-h357f687_1006",
-   "python/conda-forge/linux-64/python-3.6.7-hd21baee_1001",
-   "python/conda-forge/linux-64/python-3.6.7-hd21baee_1002",
-   "python/conda-forge/linux-64/python-3.7.0-h5001a0f_6",
-   "python/conda-forge/linux-64/python-3.7.10-hb7a2778_102_cpython",
-   "python/conda-forge/linux-64/python-3.7.8-h6238437_2_cpython",
-   "python/conda-forge/linux-64/python-3.7.8-h8bdb77d_2_cpython",
-   "python/conda-forge/linux-64/python-3.7.8-hffdb5ce_3_cpython",
-   "python/conda-forge/linux-64/python-3.8.10-hb7a2778_2_cpython",
-   "python/conda-forge/linux-64/python-3.8.12-hf930737_1_cpython",
-   "python/conda-forge/linux-64/python-3.8.2-he5300dc_7_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_6_cpython",
-   "python/conda-forge/linux-64/python-3.8.5-h1103e12_8_cpython",
-   "python/conda-forge/linux-64/python-3.8.6-hffdb5ce_1_cpython",
-   "python/conda-forge/linux-64/python-3.9.0-h2a148a8_4_cpython",
-   "python/conda-forge/linux-64/python-3.9.0-hffdb5ce_5_cpython",
-   "python/conda-forge/linux-64/python-3.9.1-hffdb5ce_3_cpython",
-   "python/conda-forge/linux-64/python-3.9.1-hffdb5ce_4_cpython"
   ]
  },
  "missing_versions": {
-  "acorns": [
-   "0.0.1",
-   "0.0.3",
-   "0.0.4",
-   "1.0",
-   "2.0",
-   "3.0"
-  ],
   "configparser": [
    "3.5.0",
    "3.5.0b2",
@@ -7594,9 +7558,13 @@
    "3.7.3",
    "5.0.1",
    "5.1.0",
-   "5.2.0"
+   "5.2.0",
+   "5.3.0"
   ],
-  "dbus-python": [],
+  "dbus-python": [
+   "1.2.18",
+   "1.3.2"
+  ],
   "distance": [],
   "docutils": [
    "0.12",
@@ -7607,22 +7575,33 @@
    "0.17",
    "0.17.1",
    "0.18",
-   "0.18.1"
+   "0.18.1",
+   "0.19"
   ],
   "ffmpeg-python": [],
   "ffpyplayer": [
    "4.3.0",
-   "4.3.1"
+   "4.3.1",
+   "4.3.5"
   ],
   "flask": [
    "1.1.3",
-   "1.1.4"
+   "1.1.4",
+   "2.0.3",
+   "2.1.0",
+   "2.1.1",
+   "2.1.2",
+   "2.1.3",
+   "2.2.0",
+   "2.2.1",
+   "2.2.2"
   ],
   "kivy": [
    "1.10.1",
    "1.11.1",
    "2.0.0",
-   "2.0.0rc4"
+   "2.0.0rc4",
+   "2.1.0"
   ],
   "mock": [
    "1.3.0",
@@ -7671,6 +7650,17 @@
    "1.21.3",
    "1.21.4",
    "1.21.5",
+   "1.21.6",
+   "1.22.0",
+   "1.22.1",
+   "1.22.2",
+   "1.22.3",
+   "1.22.4",
+   "1.23.0",
+   "1.23.1",
+   "1.23.2",
+   "1.23.3",
+   "1.23.4",
    "1.7.2"
   ],
   "pep8": [],
@@ -7703,11 +7693,20 @@
    "8.3.0",
    "8.3.1",
    "8.3.2",
-   "8.4.0"
+   "8.4.0",
+   "9.0.0",
+   "9.0.1",
+   "9.1.0",
+   "9.1.1",
+   "9.2.0"
   ],
   "pygments": [
    "1.6",
-   "2.1.3"
+   "2.1.3",
+   "2.11.1",
+   "2.11.2",
+   "2.12.0",
+   "2.13.0"
   ],
   "pygobject": [
    "3.25.1",
@@ -7720,7 +7719,9 @@
    "3.36.1",
    "3.38.0",
    "3.40.0",
-   "3.42.0"
+   "3.42.0",
+   "3.42.1",
+   "3.42.2"
   ],
   "pyinstaller": [
    "3.2",
@@ -7731,16 +7732,25 @@
    "3.5",
    "3.6",
    "4.1",
+   "4.10",
    "4.2",
    "4.3",
    "4.4",
    "4.5.1",
    "4.6",
-   "4.7"
+   "4.7",
+   "4.8",
+   "4.9",
+   "5.0",
+   "5.0.1",
+   "5.1",
+   "5.6.2"
   ],
   "pyjnius": [
    "1.1.1.post54",
-   "1.2.1"
+   "1.2.1",
+   "1.4.1",
+   "1.4.2"
   ],
   "pysmb": [],
   "pytest": [
@@ -7823,7 +7833,14 @@
    "6.2.2",
    "6.2.3",
    "6.2.4",
-   "6.2.5"
+   "6.2.5",
+   "7.0.0",
+   "7.0.1",
+   "7.1.0",
+   "7.1.1",
+   "7.1.2",
+   "7.1.3",
+   "7.2.0"
   ],
   "python": [
    "1.0.1",
@@ -7836,6 +7853,11 @@
    "2.6.9",
    "3.10.0",
    "3.10.1",
+   "3.10.2",
+   "3.10.4",
+   "3.10.5",
+   "3.10.6",
+   "3.11.0",
    "3.4.5",
    "3.5.1",
    "3.5.2",
@@ -7877,6 +7899,7 @@
    "3.8.1",
    "3.8.10",
    "3.8.12",
+   "3.8.13",
    "3.8.2",
    "3.8.3",
    "3.8.4",
@@ -7885,6 +7908,9 @@
    "3.8.8",
    "3.9.0",
    "3.9.1",
+   "3.9.10",
+   "3.9.12",
+   "3.9.13",
    "3.9.2",
    "3.9.4",
    "3.9.5",
@@ -7893,11 +7919,32 @@
    "3.9.9"
   ],
   "python-configuration": [],
+  "pyzxing": [],
   "redis-py": [
-   "4.0.2"
+   "4.0.2",
+   "4.1.0",
+   "4.1.1",
+   "4.1.2",
+   "4.1.3",
+   "4.1.4",
+   "4.2.0",
+   "4.2.2",
+   "4.3.0",
+   "4.3.1",
+   "4.3.2",
+   "4.3.3",
+   "4.3.4"
   ],
-  "requests": [],
-  "resample": [],
+  "requests": [
+   "2.27.0",
+   "2.27.1",
+   "2.28.0",
+   "2.28.1"
+  ],
+  "resample": [
+   "1.5.1",
+   "1.5.2"
+  ],
   "twisted": [
    "18.9.0",
    "19.10.0",
@@ -7905,7 +7952,12 @@
    "19.7.0",
    "20.3.0",
    "21.2.0",
-   "21.7.0"
+   "21.7.0",
+   "22.1.0",
+   "22.10.0",
+   "22.2.0",
+   "22.4.0",
+   "22.8.0"
   ],
   "watchdog": [
    "0.10.0",
@@ -7922,7 +7974,10 @@
    "2.1.2",
    "2.1.4",
    "2.1.5",
-   "2.1.6"
+   "2.1.6",
+   "2.1.7",
+   "2.1.8",
+   "2.1.9"
   ]
  },
  "version_ranges": [
@@ -7931,25 +7986,25 @@
   "python >=2.7.12,<=2.7.15",
   "python-configuration >=0.5.0",
   "configparser 5.0.0|5.0.2",
-  "dbus-python >=1.2.16",
+  "dbus-python 1.2.16",
   "distance >=0.1.3",
   "docutils >=0.15.2,<=0.16",
   "ffmpeg-python >=0.2.0",
-  "ffpyplayer >=4.1.0.dev0,<=4.1.0|>=4.3.2",
-  "flask >=0.11.1,<=1.1.2|>=2.0.0",
+  "ffpyplayer >=4.1.0.dev0,<=4.1.0|4.3.2",
+  "flask >=0.11.1,<=1.1.2|>=2.0.0,<=2.0.2",
   "pygobject 3.30.5|3.40.1",
   "pyjnius >=1.1.3,<=1.2.0",
   "kivy 1.11.0",
   "mock 1.0.1",
   "numpy >=1.8.2,<=1.11.2|1.12.1|>=1.13.2,<=1.13.3|1.14.1|>=1.14.3,<=1.14.6|>=1.15.1,<=1.15.4",
   "pep8 >=1.7.0",
-  "pygments >=2.2.0",
+  "pygments >=2.2.0,<=2.10.0",
   "pytest 3.3.0|3.4.0|3.6.0|>=3.7.0,<=3.7.2|4.0.2|4.3.1|4.6.0|5.2.4|>=6.0.0,<=6.0.2|6.2.1",
   "redis-py >=2.10.5,<=4.0.1",
-  "requests >=2.9.2",
-  "resample >=1.0.1",
+  "requests >=2.9.2,<=2.26.0",
+  "resample 1.0.1",
   "pysmb >=1.2.1",
-  "acorns 0.0.2|1.0",
+  "pyzxing >=1.0.0",
   "twisted 18.7.0|19.2.1",
   "watchdog >=0.8.3,<=0.9.0|0.10.4|2.0.2|2.1.3"
  ]
