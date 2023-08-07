@@ -1,6 +1,5 @@
 {
  "bad": [
-  "_version.__version__",
   "apache_beam.Create",
   "apache_beam.Distinct",
   "apache_beam.FlatMap",
@@ -16,6 +15,9 @@
   "task"
  ],
  "deps": {
+  "_version": [
+   "configobj/conda-forge/noarch/configobj-5.0.6-py_0"
+  ],
   "apache_beam": [
    "apache-beam/conda-forge/linux-64/apache-beam-2.21.0-py36h8c4c3a4_0",
    "apache-beam/conda-forge/linux-64/apache-beam-2.22.0-py37h5e8e339_0",
@@ -530,6 +532,7 @@
    "2.8.0",
    "2.9.0"
   ],
+  "configobj": [],
   "dask-core": [
    "0.15.2",
    "0.15.3",
@@ -820,6 +823,7 @@
   ]
  },
  "version_ranges": [
+  "configobj >=5.0.6",
   "apache-beam 2.5.0|>=2.21.0,<=2.22.0",
   "dask-core >=0.18.0,<=2.12.0",
   "toolz >=0.8.2,<=0.11.1",
