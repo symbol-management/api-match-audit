@@ -2831,6 +2831,18 @@
   "distributed": [
    "distributed/conda-forge/linux-64/distributed-1.14.1-py27_0",
    "distributed/conda-forge/linux-64/distributed-1.14.3-py34_0",
+   "distributed/conda-forge/linux-64/distributed-1.15.0-py36_0",
+   "distributed/conda-forge/linux-64/distributed-1.15.1-py34_0",
+   "distributed/conda-forge/linux-64/distributed-1.15.2-py27_0",
+   "distributed/conda-forge/linux-64/distributed-1.16.0-py27_0",
+   "distributed/conda-forge/linux-64/distributed-1.16.1-py27_0",
+   "distributed/conda-forge/linux-64/distributed-1.16.3-py35_0",
+   "distributed/conda-forge/linux-64/distributed-1.17.0-py27_0",
+   "distributed/conda-forge/linux-64/distributed-1.17.1-py35_0",
+   "distributed/conda-forge/linux-64/distributed-1.18.1-py27_0",
+   "distributed/conda-forge/linux-64/distributed-1.18.1-py36_0",
+   "distributed/conda-forge/linux-64/distributed-1.19.1-py35_0",
+   "distributed/conda-forge/linux-64/distributed-1.19.2-py27_0",
    "distributed/conda-forge/linux-64/distributed-1.20.0-py27_0",
    "distributed/conda-forge/linux-64/distributed-1.20.0-py36_0",
    "distributed/conda-forge/linux-64/distributed-1.21.0-py27_0",
@@ -8107,16 +8119,6 @@
   ]
  },
  "missing_versions": {
-  "ansible-runner": [
-   "1.3.4",
-   "2.0.2",
-   "2.1.1",
-   "2.1.2",
-   "2.1.3",
-   "2.2.1",
-   "2.3.0",
-   "2.3.1"
-  ],
   "bokeh": [
    "0.12.10",
    "0.12.11",
@@ -8213,20 +8215,9 @@
    "1.13.1",
    "1.13.2",
    "1.13.3",
-   "1.15.0",
-   "1.15.1",
-   "1.15.2",
-   "1.16.0",
-   "1.16.1",
-   "1.16.3",
-   "1.17.0",
-   "1.17.1",
    "1.18.0",
-   "1.18.1",
    "1.18.3",
    "1.19.0",
-   "1.19.1",
-   "1.19.2",
    "1.19.3",
    "1.20.1",
    "1.20.2",
@@ -8275,13 +8266,14 @@
    "2022.9.1",
    "2022.9.2"
   ],
-  "filemagic": [],
   "google-cloud-bigquery-storage-core": [
    "0.6.0",
    "0.7.0",
    "0.8.0",
    "1.1.0",
+   "2.10.0",
    "2.10.1",
+   "2.11.0",
    "2.2.1",
    "2.9.1"
   ],
@@ -8479,6 +8471,7 @@
    "4.0.0",
    "4.0.2"
   ],
+  "mistletoe-ebp": [],
   "mock": [
    "1.3.0",
    "2.0.0",
@@ -8734,6 +8727,14 @@
    "1.9.1",
    "1.9.2"
   ],
+  "python-magic": [
+   "0.4.13",
+   "0.4.15",
+   "0.4.18",
+   "0.4.22",
+   "0.4.25",
+   "0.4.27"
+  ],
   "python-snappy": [
    "0.5",
    "0.5.1",
@@ -8770,6 +8771,12 @@
    "23.2.1",
    "24.0.0",
    "24.0.1"
+  ],
+  "requests": [
+   "2.27.0",
+   "2.27.1",
+   "2.28.0",
+   "2.28.1"
   ],
   "scikit-learn": [
    "0.17.1",
@@ -8896,6 +8903,7 @@
    "65.5.1"
   ],
   "singledispatch": [],
+  "six": [],
   "sortedcontainers": [
    "1.5.10",
    "1.5.9",
@@ -8944,7 +8952,7 @@
    "6.1",
    "6.2"
   ],
-  "win_unicode_console": []
+  "win-unicode-console": []
  },
  "version_ranges": [
   "ipython 5.0.0|>=7.10.2,<=7.12.0|>=7.20.0,<=7.21.0|7.24.0",
@@ -8955,7 +8963,7 @@
   "click >=6.6,<=7.1.2",
   "cloudpickle >=1.2.0,<=2.0.0",
   "cytoolz 0.8.2|>=0.10.1,<=0.11.0",
-  "distributed >=1.14.1,<=1.14.3|1.20.0|1.21.0|>=1.21.3,<=1.21.4|>=1.21.6,<=1.21.7|1.22.0|>=1.23.1,<=1.24.0|>=1.25.1,<=1.26.1|>=1.27.1,<=2.17.0|2.19.0|>=2.21.0,<=2.25.0|>=2.28.0,<=2.30.0|>=2020.12.0,<=2021.1.0|>=2021.2.0,<=2021.9.1",
+  "distributed >=1.14.1,<=1.17.1|1.18.1|>=1.19.1,<=1.19.2|1.20.0|1.21.0|>=1.21.3,<=1.21.4|>=1.21.6,<=1.21.7|1.22.0|>=1.23.1,<=1.24.0|>=1.25.1,<=1.26.1|>=1.27.1,<=2.17.0|2.19.0|>=2.21.0,<=2.25.0|>=2.28.0,<=2.30.0|>=2020.12.0,<=2021.1.0|>=2021.2.0,<=2021.9.1",
   "msgpack-python 1.0.0|1.0.2",
   "h5py >=2.6.0,<=3.4.0",
   "ipykernel >=4.3.1,<=6.4.1",
@@ -8967,24 +8975,26 @@
   "keras 2.2.4|2.4.3",
   "tensorflow-base 1.13.1",
   "lz4 >=1.1.0,<=3.1.3",
-  "filemagic >=1.6",
+  "python-magic 0.4.24",
   "mock 1.0.1",
   "mpi4py >=3.0.1,<=3.1.1",
   "netcdf4 1.2.4|>=1.4.0,<=1.4.1|1.4.3.1|>=1.5.1.2,<=1.5.3|>=1.5.5,<=1.5.6",
   "paramiko 2.1.2|>=2.3.1,<=2.4.1|>=2.7.1,<=2.7.2",
   "setuptools >=25.1.4,<=41.2.0|>=41.5.1,<=58.5.2",
   "psutil >=4.1.0,<=5.8.0",
-  "google-cloud-bigquery-storage-core >=2.0.0,<=2.1.0|2.10.0|>=2.11.0",
-  "win_unicode_console ",
+  "requests >=2.9.2,<=2.26.0",
+  "win-unicode-console ",
   "scipy >=0.18.0,<=0.19.1|>=1.2.0,<=1.2.1|1.3.1|>=1.5.2,<=1.6.0|1.6.3|1.7.1",
   "singledispatch >=3.4.0.3",
+  "six >=1.10.0",
   "scikit-learn 0.19.2|0.20.1",
   "python-snappy >=0.5.2,<=0.5.4",
   "sortedcontainers >=1.5.3,<=1.5.7|>=2.0.4",
   "tblib >=1.3.2",
-  "ansible-runner >=1.4.0,<=1.4.7|2.0.3|2.2.0",
+  "mistletoe-ebp >=0.8.2",
   "toolz >=0.8.2,<=0.11.1",
   "tornado >=5.0.1,<=5.1.1",
+  "google-cloud-bigquery-storage-core >=2.0.0,<=2.1.0",
   "pyzmq 17.0.0|>=18.0.1,<=18.0.2|19.0.0"
  ]
 }
